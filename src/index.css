@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "RSFont"; /* The name you want to use for this font. */
+  src: url("../src/assets/fonts/rssmall.ttf") format("truetype"); /* Path to your TTF font file. */
+}
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  /* background: url("./assets//wallpapers/Mainbg.webp"); */
+  /* background-position: center; */
+  background-color: rgb(21, 32, 40);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Define the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(155, 151, 151);
+  border-radius: 6px;
+}
+
+/* Define the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: rgb(32, 46, 57);
+  border-radius: 6px; /* Adjust this value for more or less rounding */
+}
+
+/* Define the scrollbar track on Firefox */
+/* scrollbar-width: thin; */
+/* scrollbar-color: rgb(32, 46, 57) transparent; */
+
+/* Optionally, you can style the scrollbar track and arrows */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}

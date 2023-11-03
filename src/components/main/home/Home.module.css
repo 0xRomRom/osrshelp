@@ -1,0 +1,105 @@
+.modal {
+  width: 100%;
+  height: 100%;
+}
+
+.imageBox {
+  position: relative;
+  width: 100%;
+  height: 12.5rem;
+  overflow: hidden;
+  background: url("../../../assets/wallpapers/Barrows.webp");
+  background-size: cover;
+  background-position: 20% 29%;
+  background-repeat: no-repeat;
+  border-radius: 0.8rem;
+  filter: brightness(0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerimage {
+  width: 75%;
+  margin: 0 auto;
+  position: absolute;
+  height: 100%;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
+}
+
+.welcometxt {
+  /* position: absolute; */
+  width: 96%;
+  max-width: 1300px;
+  filter: brightness(1.24);
+}
+
+.modalbottom {
+  position: relative;
+  display: flex;
+}
+
+.userbox {
+  width: 75%;
+  height: 18rem;
+  padding: 3rem;
+  padding-left: 8.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background: url("../../../assets/wallpapers/Loginscreen.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.loginbg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.nameinput {
+  position: relative;
+  z-index: 10;
+  margin-left: 0.4rem;
+  height: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+  color: white;
+  padding-left: 0.2rem;
+  font-size: 14px;
+  width: 5.5rem;
+}
+
+label {
+  position: relative;
+  z-index: 10;
+  color: rgb(221, 218, 218);
+}
+
+.cta {
+  padding: 0.3rem 1.2rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 2.7rem;
+  top: 1rem;
+  position: relative;
+  /* background: linear-gradient(130deg, brown, red); */
+  border-radius: 0.2rem;
+  color: white;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+.cta:active {
+  background-color: black;
+}

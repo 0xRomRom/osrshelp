@@ -1,0 +1,280 @@
+.modal {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../../assets/wallpapers/Barrows.webp");
+  border-radius: 0.8rem;
+  padding: 1rem 0rem;
+}
+
+.modalInner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(32, 46, 57, 0.671);
+  border-radius: 0.8rem;
+  padding: 1rem 0rem;
+}
+
+.skill {
+  width: 47%;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+}
+
+.skill:hover img {
+  margin-left: 1.5rem;
+}
+
+.iconImg {
+  position: absolute;
+  margin-left: 1rem;
+  height: 22px;
+  margin-top: 7px;
+  transition: all 0.15s ease-in-out;
+}
+
+.skillName {
+  color: white;
+  font-size: 30px;
+  font-family: RSFont;
+  margin-left: 4rem;
+  height: 100%;
+  position: relative;
+  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 3.5rem;
+}
+
+.black {
+  color: black;
+}
+
+.attack {
+  background: linear-gradient(110deg, white, red, rgba(255, 0, 0, 0.747));
+}
+
+.defence {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(115, 136, 203),
+    rgba(115, 136, 203, 0.747)
+  );
+}
+
+.strength {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(13, 122, 79),
+    rgba(13, 122, 79, 0.747)
+  );
+}
+
+.hitpoints {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(203, 51, 24),
+    rgba(203, 51, 24, 0.897)
+  );
+}
+
+.ranged {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(91, 115, 29),
+    rgba(91, 115, 29, 0.897)
+  );
+}
+
+.prayer {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(212, 212, 210),
+    rgba(212, 212, 210, 0.897)
+  );
+}
+
+.magic {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(15, 22, 158),
+    rgb(15, 22, 158),
+    rgba(15, 22, 158, 0.808)
+  );
+}
+
+.cooking {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(93, 48, 106),
+    rgb(93, 48, 106),
+    rgba(93, 48, 106, 0.808)
+  );
+}
+
+.woodcutting {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(153, 125, 69),
+    rgb(153, 125, 69),
+    rgba(153, 125, 69, 0.808)
+  );
+}
+
+.fletching {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(9, 68, 71),
+    rgb(9, 68, 71),
+    rgba(9, 68, 71, 0.808)
+  );
+}
+
+.fishing {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(92, 151, 200),
+    rgb(92, 151, 200),
+    rgba(92, 151, 200, 0.808)
+  );
+}
+
+.firemaking {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(208, 127, 24),
+    rgb(208, 98, 24),
+    rgba(208, 127, 24, 0.808)
+  );
+}
+
+.crafting {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(135, 103, 76),
+    rgb(135, 103, 76),
+    rgba(135, 103, 76, 0.808)
+  );
+}
+
+.smithing {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(127, 127, 118),
+    rgb(127, 127, 118),
+    rgba(127, 127, 118, 0.808)
+  );
+}
+
+.mining {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(121, 162, 180),
+    rgb(121, 162, 180),
+    rgba(121, 162, 180, 0.808)
+  );
+}
+
+.herblore {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(13, 111, 16),
+    rgb(13, 111, 16),
+    rgba(13, 111, 16, 0.808)
+  );
+}
+
+.agility {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(64, 65, 131),
+    rgb(35, 36, 98),
+    rgba(35, 36, 98, 0.808)
+  );
+}
+
+.thieving {
+  background: linear-gradient(
+    110deg,
+    white,
+    rgb(110, 61, 93),
+    rgb(110, 61, 93),
+    rgba(110, 61, 93, 0.808)
+  );
+}
+
+.slayer {
+  background: linear-gradient(
+    110deg,
+    rgb(206, 203, 203),
+    rgb(40, 38, 38),
+    rgb(40, 38, 38),
+    rgba(40, 38, 38, 0.808)
+  );
+}
+
+.farming {
+  background: linear-gradient(
+    110deg,
+    rgb(206, 203, 203),
+    rgb(60, 107, 61),
+    rgb(60, 107, 61),
+    rgba(60, 107, 61, 0.808)
+  );
+}
+
+.runecrafting {
+  background: linear-gradient(
+    110deg,
+    #ffffff,
+    rgb(85, 147, 189),
+    rgb(85, 147, 189),
+    rgba(85, 147, 189, 0.8)
+  );
+}
+
+.hunter {
+  background: linear-gradient(
+    110deg,
+    #ffffff,
+    rgb(97, 91, 65),
+    rgb(97, 91, 65),
+    rgba(97, 91, 65, 0.808)
+  );
+}
+
+.construction {
+  background: linear-gradient(
+    110deg,
+    #ffffff,
+    rgb(164, 152, 131),
+    rgb(164, 152, 131),
+    rgba(164, 152, 131, 0.808)
+  );
+}

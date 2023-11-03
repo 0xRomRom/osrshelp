@@ -1,0 +1,152 @@
+.modal {
+  width: 100%;
+  height: 100%;
+}
+
+.topBar {
+  /* background: linear-gradient(110deg, white, red, red, rgba(255, 0, 0, 0.747)); */
+  background-color: rgb(32, 46, 57);
+  width: 100%;
+  height: 6rem;
+  padding-left: 6rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.8rem;
+  user-select: none;
+  color: rgb(224, 214, 214);
+}
+
+.backArrow {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  font-size: 1.2rem;
+  color: gray;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.backArrow:hover {
+  color: rgb(255, 255, 255);
+}
+
+.skillImg {
+  width: 30px;
+}
+
+.skillTitle {
+  font-family: RSFont;
+  font-size: 50px;
+  margin-left: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.userStatsBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+.playerName {
+  position: relative;
+  font-size: 25px;
+  margin-top: 0.2rem;
+  font-weight: 800;
+}
+
+.playerLvl {
+  position: relative;
+  font-size: 25px;
+}
+
+.userBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.remainderBlock {
+  position: relative;
+  height: 100%;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.2rem;
+}
+
+.expToGo {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.remaining {
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+}
+
+.fetchUserBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 5rem;
+  padding-top: 1.25rem;
+}
+
+.nameInput {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+  /* font-family: RSFont; */
+  font-size: 1.25rem;
+  width: 7rem;
+  margin-top: 0.8rem;
+  margin-left: 0.8rem;
+}
+
+.enterUsername {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.usernameCta {
+  margin-left: 0.5rem;
+  top: 0.5rem;
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.goArrow {
+  font-size: 2rem;
+  transform: rotate(180deg);
+  color: black;
+}
+
+.trashcan {
+  position: relative;
+  margin-top: 0.4rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: rgb(233, 227, 227);
+  transition: all 0.1s ease-in-out;
+}
+
+.trashcan:hover {
+  color: white;
+}
+
+.configRow {
+  position: relative;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-start;
+}
