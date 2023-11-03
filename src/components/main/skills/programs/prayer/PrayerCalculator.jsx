@@ -6,7 +6,6 @@ import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
-import NPCGrid from "../attack/npcgrid/NPCGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import { useState } from "react";
 

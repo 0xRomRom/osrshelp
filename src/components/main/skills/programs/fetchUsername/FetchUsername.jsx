@@ -71,7 +71,7 @@ const FetchUsername = (props) => {
   };
 
   return (
-    <form className={stl.fetchUserBox}>
+    <form className={stl.fetchUserBox} id="usernameform">
       <input
         type="text"
         className={stl.nameInput}
