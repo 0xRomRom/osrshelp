@@ -1,7 +1,7 @@
-import stl from "./HitpointsCalculator.module.css";
+import stl from "./RangedCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import hitpointsIcon from "../../../../../assets/skillicons/Hitpoints.webp";
+import rangedIcon from "../../../../../assets/skillicons/Ranged.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -10,7 +10,7 @@ import NPCGrid from "../attack/npcgrid/NPCGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import { useState } from "react";
 
-const HitpointsCalculator = (props) => {
+const RangedCalculator = (props) => {
   const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
 
@@ -34,18 +34,14 @@ const HitpointsCalculator = (props) => {
           className={stl.backArrow}
           onClick={handleMenuSwitch}
         />
-        <img
-          src={hitpointsIcon}
-          alt="Hitpoints Level"
-          className={stl.skillImg}
-        />
-        <span className={stl.skillTitle}>Hitpoints</span>
+        <img src={rangedIcon} alt="Ranged Level" className={stl.skillImg} />
+        <span className={stl.skillTitle}>Ranged</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["hitpoints"]}
+                Level {props.skills["ranged"]}
               </span>
             </div>
 
@@ -53,8 +49,8 @@ const HitpointsCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"hitpoints"}
-                  currentLvl={props.skills["hitpoints"]}
+                  skillname={"ranged"}
+                  currentLvl={props.skills["ranged"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -79,8 +75,8 @@ const HitpointsCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"hitpoints"}
-            currentLvl={props.skills["hitpoints"]}
+            skillName={"ranged"}
+            currentLvl={props.skills["ranged"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}
@@ -98,4 +94,4 @@ const HitpointsCalculator = (props) => {
   );
 };
 
-export default HitpointsCalculator;
+export default RangedCalculator;
