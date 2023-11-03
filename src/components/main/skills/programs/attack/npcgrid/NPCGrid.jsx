@@ -115,7 +115,7 @@ const NPCGrid = (props) => {
         {monsterDB.map((monster) => {
           return (
             <>
-              <div className={stl.row}>
+              <div className={stl.row} key={Math.random()}>
                 <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                   {monster.monster}
                 </span>

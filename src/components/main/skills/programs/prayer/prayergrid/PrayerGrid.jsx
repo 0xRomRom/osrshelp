@@ -32,23 +32,23 @@ const PrayerGrid = (props) => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
 
   const calculateBonesToUse = useCallback(
-    (monster) => {
+    (bone) => {
       const expToGo = props.remainingExp;
-      const monsterExp = +monster * 4;
-      const result = Math.ceil(expToGo / monsterExp);
+      const boneExp = bone.cost;
+      const result = Math.ceil(expToGo / boneExp);
       return result ? result : "?";
     },
     [props.remainingExp]
   );
 
   const filterMonsters = useCallback(() => {
-    // const filteredMonsters = prayerList.filter((monster) =>
-    //   monster.monster.toLowerCase().includes(props.searchState.toLowerCase())
-    // );
-    // setBonesDB([...filteredMonsters]);
+    const filteredMonsters = prayerList.filter((bone) =>
+      bone.name.toLowerCase().includes(props.searchState.toLowerCase())
+    );
+    setBonesDB([...filteredMonsters]);
   }, [props.searchState]);
 
   useEffect(() => {
@@ -134,7 +134,7 @@ const PrayerGrid = (props) => {
         {bonesDB.map((bone) => {
           return (
             <>
-              <div className={stl.row}>
+              <div className={stl.row} key={Math.random()}>
                 <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                   {bone.name}
                 </span>
