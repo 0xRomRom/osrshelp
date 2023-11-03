@@ -29,6 +29,7 @@ import DefenceCalculator from "../skills/programs/defence/DefenceCalculator";
 import StrengthCalculator from "./programs/strength/StrengthCalculator";
 import HitpointsCalculator from "./programs/hitpoints/HitpointsCalculator";
 import RangedCalculator from "./programs/ranged/RangedCalculator";
+import PrayerCalculator from "./programs/prayer/PrayerCalculator";
 
 const SkillsTab = (props) => {
   const handleTabOpen = (path) => {
@@ -87,6 +88,18 @@ const SkillsTab = (props) => {
 
       {props.subState === "Ranged" && (
         <RangedCalculator
+          skills={props.skills}
+          skillsExp={props.skillsExp}
+          playerName={props.playerName}
+          setSkills={props.setSkills}
+          setSkillsExp={props.setSkillsExp}
+          setPlayerName={props.setPlayerName}
+          setSubState={props.setSubState}
+        />
+      )}
+
+      {props.subState === "Prayer" && (
+        <PrayerCalculator
           skills={props.skills}
           skillsExp={props.skillsExp}
           playerName={props.playerName}
