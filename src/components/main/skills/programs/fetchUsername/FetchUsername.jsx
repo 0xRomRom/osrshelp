@@ -1,12 +1,9 @@
 import stl from "./FetchUsername.module.css";
 import { useRef, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { playerStats } from "../../../../../utils/playerStats";
 
 const FetchUsername = (props) => {
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
   const nameRef = useRef(null);
 
   const updateSkills = (data) => {
@@ -48,7 +45,6 @@ const FetchUsername = (props) => {
     e.preventDefault();
     if (!user || user === "") return;
     setLoading(true);
-    setError(false);
 
     props.setPlayerName(user);
     const filteredUser = user.replaceAll(" ", "_");
@@ -69,7 +65,6 @@ const FetchUsername = (props) => {
       updateSkills(data.result);
       updateSkillsExp(data.result);
     } catch (err) {
-      setError(true);
       console.error(err);
     }
     setLoading(false);

@@ -27,6 +27,7 @@ import hunterIcon from "../../../assets/skillicons/Hunter.webp";
 import AttackCalculator from "../skills/programs/attack/AttackCalculator";
 import DefenceCalculator from "../skills/programs/defence/DefenceCalculator";
 import StrengthCalculator from "./programs/strength/StrengthCalculator";
+import HitpointsCalculator from "./programs/hitpoints/HitpointsCalculator";
 
 const SkillsTab = (props) => {
   const handleTabOpen = (path) => {
@@ -61,6 +62,18 @@ const SkillsTab = (props) => {
 
       {props.subState === "Strength" && (
         <StrengthCalculator
+          skills={props.skills}
+          skillsExp={props.skillsExp}
+          playerName={props.playerName}
+          setSkills={props.setSkills}
+          setSkillsExp={props.setSkillsExp}
+          setPlayerName={props.setPlayerName}
+          setSubState={props.setSubState}
+        />
+      )}
+
+      {props.subState === "Hitpoints" && (
+        <HitpointsCalculator
           skills={props.skills}
           skillsExp={props.skillsExp}
           playerName={props.playerName}

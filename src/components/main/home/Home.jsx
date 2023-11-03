@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import stl from "./Home.module.css";
 
-import barrows from "../../../assets/wallpapers/Barrows.webp";
 import welcometxt from "../../../assets/Welcometxt.png";
 
 import LoginBox from "./loginbox/LoginBox";
