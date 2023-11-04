@@ -8,7 +8,7 @@ import memberLogo from "../../../../../../assets/icons/Member.webp";
 import { useEffect, useState, useCallback } from "react";
 
 const PrayerGrid = (props) => {
-  const [bonesDB, setBonesDB] = useState([]);
+  const [bonesDB, setBonesDB] = useState(prayerList);
   //   const [monsterSorted, setMonsterSorted] = useState(false);
   //   const [memberSorted, setMemberSorted] = useState(false);
   //   const [combatSorted, setCombatSorted] = useState(false);
@@ -109,6 +109,7 @@ const PrayerGrid = (props) => {
     if (costSorted) {
       const sorter = bonesDB.sort((a, b) => a.cost - b.cost);
       setBonesDB(sorter);
+      console.log(bonesDB);
       setCostSorted(!costSorted);
       return;
     } else {
@@ -144,21 +145,20 @@ const PrayerGrid = (props) => {
       <div className={stl.resultGrid}>
         {bonesDB.map((bone) => {
           return (
-            <>
-              <div className={stl.row} key={bone.name}>
-                <span className={`${stl.rowItem} ${stl.monsterRow}`}>
-                  {bone.name}
-                </span>
-                <span className={stl.rowItem}>{bone.exp}</span>
-                <span className={stl.rowItem}>
-                  {" "}
-                  {calculateBonesToUse(bone).toLocaleString()}
-                </span>
-                <span className={stl.rowItem}>
-                  {calculateCost(bone).toLocaleString()}
-                </span>
-              </div>
-            </>
+            <div className={stl.row} key={bone.name}>
+              >
+              <span className={`${stl.rowItem} ${stl.monsterRow}`}>
+                {bone.name}
+              </span>
+              <span className={stl.rowItem}>{bone.exp}</span>
+              <span className={stl.rowItem}>
+                {" "}
+                {calculateBonesToUse(bone).toLocaleString()}
+              </span>
+              <span className={stl.rowItem}>
+                {calculateCost(bone).toLocaleString()}
+              </span>
+            </div>
           );
         })}
       </div>
