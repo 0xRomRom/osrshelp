@@ -12,13 +12,14 @@ const PrayerGrid = (props) => {
   //   const [monsterSorted, setMonsterSorted] = useState(false);
   //   const [memberSorted, setMemberSorted] = useState(false);
   //   const [combatSorted, setCombatSorted] = useState(false);
-  //   const [toGoSorted, setToGoSorted] = useState(false);
+  const [costSorted, setCostSorted] = useState(false);
 
   const fetchData = useCallback(async () => {
     const fetcher = await fetch(
       "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Bones|Wolf%20bones|Burnt%20bones|Monkey%20bones|Bat%20bones|Big%20bones|Jogre%20bones|Zogre%20bones|Shaikahan%20bones|Babydragon%20bones|Wyrm%20bones|Wyvern%20bones|Dragon%20bones|Drake%20bones|Fayrg%20bones|Lava%20dragon%20bones|Raurg%20bones|Hydra%20bones|Dagannoth%20bones|Ourg%20bones|Superior%20dragon%20bones|Ensouled%20goblin%20head|Ensouled%20monkey%20head|Ensouled%20imp%20head|Ensouled%20minotaur%20head|Ensouled%20scorpion%20head|Ensouled%20bear%20head|Ensouled%20unicorn%20head|Ensouled%20dog%20head|Ensouled%20chaos%20druid%20head|Ensouled%20giant%20head|Ensouled%20ogre%20head|Ensouled%20elf%20head|Ensouled%20troll%20head|Ensouled%20horror%20head|Ensouled%20kalphite%20head|Ensouled%20dagannoth%20head|Ensouled%20bloodveld%20head|Ensouled%20tzhaar%20head|Ensouled%20demon%20head|Ensouled%20hellhound%20head|Ensouled%20aviansie%20head|Ensouled%20abyssal%20head|Ensouled%20dragon%20head"
     );
     const result = await fetcher.json();
+    console.log(result);
     let bonesList = prayerList;
 
     for (let i = 0; i < bonesList.length; i++) {
@@ -27,7 +28,8 @@ const PrayerGrid = (props) => {
         bonesList[i].cost = result[boneId].price;
       }
     }
-    setBonesDB([...bonesList]);
+    console.log(bonesList);
+    setBonesDB(() => [...bonesList]);
   }, []);
 
   useEffect(() => {
@@ -37,11 +39,20 @@ const PrayerGrid = (props) => {
   const calculateBonesToUse = useCallback(
     (bone) => {
       const expToGo = props.remainingExp;
-      const boneExp = bone.cost;
+      const boneExp = bone.exp;
       const result = Math.ceil(expToGo / boneExp);
       return result ? result : "?";
     },
     [props.remainingExp]
+  );
+
+  const calculateCost = useCallback(
+    (bone) => {
+      const bonePrice = bone.cost;
+      const result = bonePrice * calculateBonesToUse(bone);
+      return result;
+    },
+    [calculateBonesToUse]
   );
 
   const filterMonsters = useCallback(() => {
@@ -94,21 +105,21 @@ const PrayerGrid = (props) => {
     // }
   };
 
-  const sortToGo = () => {
-    // if (toGoSorted) {
-    //   const sorter = bonesDB.sort((a, b) => +a.hp - +b.hp);
-    //   setBonesDB([...sorter]);
-    //   setToGoSorted(!toGoSorted);
-    //   return;
-    // } else {
-    //   const sorter = bonesDB.sort((a, b) => +b.hp - +a.hp);
-    //   setBonesDB([...sorter]);
-    //   setToGoSorted(!toGoSorted);
-    // }
+  const sortCost = () => {
+    if (costSorted) {
+      const sorter = bonesDB.sort((a, b) => a.cost - b.cost);
+      setBonesDB(sorter);
+      setCostSorted(!costSorted);
+      return;
+    } else {
+      const sorter = bonesDB.sort((a, b) => b.cost - a.cost);
+      setBonesDB(sorter);
+      setCostSorted(!costSorted);
+    }
   };
 
   return (
-    <div className={stl.grid} onClick={fetchData}>
+    <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortMonsters}>
           <img src={attackLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
@@ -126,7 +137,7 @@ const PrayerGrid = (props) => {
           <img src={healthLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
           Amount
         </span>
-        <span onClick={sortToGo}>
+        <span onClick={sortCost}>
           <img src={slayerLogo} alt="Cost Logo" className={stl.miniLogo} /> Cost
         </span>
       </div>
@@ -134,14 +145,17 @@ const PrayerGrid = (props) => {
         {bonesDB.map((bone) => {
           return (
             <>
-              <div className={stl.row} key={Math.random()}>
+              <div className={stl.row} key={bone.name}>
                 <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                   {bone.name}
                 </span>
                 <span className={stl.rowItem}>{bone.exp}</span>
-                <span className={stl.rowItem}>{bone.combat}</span>
                 <span className={stl.rowItem}>
-                  {calculateBonesToUse(bone.cost).toLocaleString()}
+                  {" "}
+                  {calculateBonesToUse(bone).toLocaleString()}
+                </span>
+                <span className={stl.rowItem}>
+                  {calculateCost(bone).toLocaleString()}
                 </span>
               </div>
             </>
