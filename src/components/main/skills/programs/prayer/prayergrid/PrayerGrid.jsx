@@ -114,7 +114,11 @@ const PrayerGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortMonsters}>
-          <img src={attackLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="bones/Bones.webp"
+            alt="Bones Logo"
+            className={stl.miniLogo}
+          />{" "}
           Bones
         </span>
         <span onClick={sortExp}>
@@ -143,12 +147,20 @@ const PrayerGrid = (props) => {
                   alt="Bone Image"
                   className={stl.boneMiniImg}
                 />
-                {bone.name}
+                <span className={stl.bonename}>{bone.name}</span>
               </span>
-              <span className={stl.rowItem}>{bone.exp}</span>
-              <span className={stl.rowItem}> {bone.toGo.toLocaleString()}</span>
-              <span className={stl.rowItem}>
+              <span className={`${stl.rowItem} ${stl.prayerRow}`}>
+                {bone.exp}
+                <span className={stl.gpperxp}>
+                  {(bone.price / bone.exp).toFixed(1)}gp/exp
+                </span>
+              </span>
+              <span className={`${stl.rowItem} ${stl.amountRow}`}>
+                {bone.toGo.toLocaleString()}
+              </span>
+              <span className={`${stl.rowItem} ${stl.costRow}`}>
                 {(bone.toGo * bone.price).toLocaleString()}
+                <span className={stl.gpcost}>gp</span>
               </span>
             </div>
           );
