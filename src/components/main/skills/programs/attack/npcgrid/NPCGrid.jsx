@@ -114,20 +114,18 @@ const NPCGrid = (props) => {
       <div className={stl.resultGrid}>
         {monsterDB.map((monster) => {
           return (
-            <>
-              <div className={stl.row} key={Math.random()}>
-                <span className={`${stl.rowItem} ${stl.monsterRow}`}>
-                  {monster.monster}
-                </span>
-                <span className={stl.rowItem}>
-                  {monster.member ? "Yes" : "No"}
-                </span>
-                <span className={stl.rowItem}>{monster.combat}</span>
-                <span className={stl.rowItem}>
-                  {calculateMonstersToKill(monster.hp).toLocaleString()}
-                </span>
-              </div>
-            </>
+            <div className={stl.row} key={Math.random()}>
+              <span className={`${stl.rowItem} ${stl.monsterRow}`}>
+                {monster.monster}
+              </span>
+              <span className={stl.rowItem}>
+                {monster.member ? "Yes" : "No"}
+              </span>
+              <span className={stl.rowItem}>{monster.combat}</span>
+              <span className={stl.rowItem}>
+                {calculateMonstersToKill(monster.hp).toLocaleString()}
+              </span>
+            </div>
           );
         })}
       </div>

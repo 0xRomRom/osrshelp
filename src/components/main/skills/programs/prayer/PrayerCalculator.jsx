@@ -90,7 +90,11 @@ const PrayerCalculator = (props) => {
         )}
         <SearchFilter setSearchState={setSearchState} />
       </div>
-      <PrayerGrid searchState={searchState} remainingExp={remainingExp} />
+      <PrayerGrid
+        searchState={searchState}
+        remainingExp={remainingExp}
+        skills={props.skills}
+      />
     </div>
   );
 };

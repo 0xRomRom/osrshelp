@@ -9,57 +9,60 @@ import { useEffect, useState, useCallback } from "react";
 
 const PrayerGrid = (props) => {
   const [bonesDB, setBonesDB] = useState(prayerList);
-  //   const [monsterSorted, setMonsterSorted] = useState(false);
+  const [xpSorted, setXPSorted] = useState(false);
   //   const [memberSorted, setMemberSorted] = useState(false);
   //   const [combatSorted, setCombatSorted] = useState(false);
   const [costSorted, setCostSorted] = useState(false);
 
-  const fetchData = useCallback(async () => {
-    const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Bones|Wolf%20bones|Burnt%20bones|Monkey%20bones|Bat%20bones|Big%20bones|Jogre%20bones|Zogre%20bones|Shaikahan%20bones|Babydragon%20bones|Wyrm%20bones|Wyvern%20bones|Dragon%20bones|Drake%20bones|Fayrg%20bones|Lava%20dragon%20bones|Raurg%20bones|Hydra%20bones|Dagannoth%20bones|Ourg%20bones|Superior%20dragon%20bones|Ensouled%20goblin%20head|Ensouled%20monkey%20head|Ensouled%20imp%20head|Ensouled%20minotaur%20head|Ensouled%20scorpion%20head|Ensouled%20bear%20head|Ensouled%20unicorn%20head|Ensouled%20dog%20head|Ensouled%20chaos%20druid%20head|Ensouled%20giant%20head|Ensouled%20ogre%20head|Ensouled%20elf%20head|Ensouled%20troll%20head|Ensouled%20horror%20head|Ensouled%20kalphite%20head|Ensouled%20dagannoth%20head|Ensouled%20bloodveld%20head|Ensouled%20tzhaar%20head|Ensouled%20demon%20head|Ensouled%20hellhound%20head|Ensouled%20aviansie%20head|Ensouled%20abyssal%20head|Ensouled%20dragon%20head"
-    );
-    const result = await fetcher.json();
-    console.log(result);
-    let bonesList = prayerList;
+  useEffect(() => {
+    const fetchData = async () => {
+      const fetcher = await fetch(
+        "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Bones|Wolf%20bones|Burnt%20bones|Monkey%20bones|Bat%20bones|Big%20bones|Jogre%20bones|Zogre%20bones|Shaikahan%20bones|Babydragon%20bones|Wyrm%20bones|Wyvern%20bones|Dragon%20bones|Drake%20bones|Fayrg%20bones|Lava%20dragon%20bones|Raurg%20bones|Hydra%20bones|Dagannoth%20bones|Ourg%20bones|Superior%20dragon%20bones|Ensouled%20goblin%20head|Ensouled%20monkey%20head|Ensouled%20imp%20head|Ensouled%20minotaur%20head|Ensouled%20scorpion%20head|Ensouled%20bear%20head|Ensouled%20unicorn%20head|Ensouled%20dog%20head|Ensouled%20chaos%20druid%20head|Ensouled%20giant%20head|Ensouled%20ogre%20head|Ensouled%20elf%20head|Ensouled%20troll%20head|Ensouled%20horror%20head|Ensouled%20kalphite%20head|Ensouled%20dagannoth%20head|Ensouled%20bloodveld%20head|Ensouled%20tzhaar%20head|Ensouled%20demon%20head|Ensouled%20hellhound%20head|Ensouled%20aviansie%20head|Ensouled%20abyssal%20head|Ensouled%20dragon%20head"
+      );
+      const result = await fetcher.json();
+      let bonesList = prayerList;
 
-    for (let i = 0; i < bonesList.length; i++) {
-      const boneId = bonesList[i].name;
-      if (result.hasOwnProperty(boneId)) {
-        bonesList[i].cost = result[boneId].price;
+      for (let i = 0; i < bonesList.length; i++) {
+        const boneId = bonesList[i].name;
+        if (result.hasOwnProperty(boneId)) {
+          bonesList[i].cost = +result[boneId].price;
+        }
       }
-    }
-    console.log(bonesList);
-    setBonesDB(() => [...bonesList]);
+      setBonesDB(bonesList);
+    };
+    fetchData();
   }, []);
 
   useEffect(() => {
-    fetchData();
-  }, [fetchData]);
-
-  const calculateBonesToUse = useCallback(
-    (bone) => {
+    const calculateBonesToUse = (db) => {
+      let dbCopy = JSON.parse(JSON.stringify(db));
       const expToGo = props.remainingExp;
-      const boneExp = bone.exp;
-      const result = Math.ceil(expToGo / boneExp);
-      return result ? result : "?";
-    },
-    [props.remainingExp]
-  );
 
-  const calculateCost = useCallback(
-    (bone) => {
-      const bonePrice = bone.cost;
-      const result = bonePrice * calculateBonesToUse(bone);
-      return result;
-    },
-    [calculateBonesToUse]
-  );
+      for (let i = 0; i < bonesDB.length; i++) {
+        const boneExp = dbCopy[i].exp;
+        dbCopy[i].toGo = Math.ceil(expToGo / boneExp);
+      }
+      setBonesDB(dbCopy);
+    };
+    calculateBonesToUse(bonesDB);
+  }, [props.remainingExp]);
+
+  //   const calculateCost = useCallback(() => {
+  //     let dbCopy = bonesDB;
+  //     console.log(dbCopy);
+  //     for (let i = 0; i < bonesDB.length; i++) {
+  //       const boneCost = dbCopy[i].cost;
+  //       dbCopy[i].cost = boneCost * dbCopy[i].toGo;
+  //     }
+  //     console.log(dbCopy);
+  //     setBonesDB(dbCopy);
+  //   }, [bonesDB]);
 
   const filterMonsters = useCallback(() => {
     const filteredMonsters = prayerList.filter((bone) =>
       bone.name.toLowerCase().includes(props.searchState.toLowerCase())
     );
-    setBonesDB([...filteredMonsters]);
+    setBonesDB(filteredMonsters);
   }, [props.searchState]);
 
   useEffect(() => {
@@ -79,19 +82,6 @@ const PrayerGrid = (props) => {
     // }
   };
 
-  const sortMembers = () => {
-    // if (memberSorted) {
-    //   const sorter = bonesDB.sort((a, b) => a.member - b.member);
-    //   setBonesDB([...sorter]);
-    //   setMemberSorted(!memberSorted);
-    //   return;
-    // } else {
-    //   const sorter = bonesDB.sort((a, b) => b.member - a.member);
-    //   setBonesDB([...sorter]);
-    //   setMemberSorted(!memberSorted);
-    // }
-  };
-
   const sortCombat = () => {
     // if (combatSorted) {
     //   const sorter = bonesDB.sort((a, b) => +a.combat - +b.combat);
@@ -105,18 +95,23 @@ const PrayerGrid = (props) => {
     // }
   };
 
+  const sortExp = () => {
+    const sorter = [...bonesDB];
+    sorter.sort((a, b) => (xpSorted ? a.exp - b.exp : b.exp - a.exp));
+    setBonesDB(sorter);
+    setXPSorted(!xpSorted);
+  };
+
   const sortCost = () => {
     if (costSorted) {
       const sorter = bonesDB.sort((a, b) => a.cost - b.cost);
       setBonesDB(sorter);
-      console.log(bonesDB);
       setCostSorted(!costSorted);
       return;
-    } else {
-      const sorter = bonesDB.sort((a, b) => b.cost - a.cost);
-      setBonesDB(sorter);
-      setCostSorted(!costSorted);
     }
+    const sorter = bonesDB.sort((a, b) => b.cost - a.cost);
+    setBonesDB(sorter);
+    setCostSorted(!costSorted);
   };
 
   return (
@@ -126,7 +121,7 @@ const PrayerGrid = (props) => {
           <img src={attackLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
           Bones
         </span>
-        <span onClick={sortMembers}>
+        <span onClick={sortExp}>
           <img
             src={memberLogo}
             alt="Experience Logo"
@@ -146,18 +141,12 @@ const PrayerGrid = (props) => {
         {bonesDB.map((bone) => {
           return (
             <div className={stl.row} key={bone.name}>
-              >
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 {bone.name}
               </span>
               <span className={stl.rowItem}>{bone.exp}</span>
-              <span className={stl.rowItem}>
-                {" "}
-                {calculateBonesToUse(bone).toLocaleString()}
-              </span>
-              <span className={stl.rowItem}>
-                {calculateCost(bone).toLocaleString()}
-              </span>
+              <span className={stl.rowItem}> {bone.toGo.toLocaleString()}</span>
+              <span className={stl.rowItem}>{bone.cost.toLocaleString()}</span>
             </div>
           );
         })}

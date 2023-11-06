@@ -7,7 +7,6 @@ const TargetLevel = ({
   skillsExp,
   skillName,
   currentLvl,
-  currentExp,
   setRemainingExp,
   remainingExp,
 }) => {
