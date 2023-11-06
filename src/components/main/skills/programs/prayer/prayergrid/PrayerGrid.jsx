@@ -13,8 +13,8 @@ const PrayerGrid = (props) => {
   const [initialFetch, setInitialFetch] = useState(false);
   const [bonesDB, setBonesDB] = useState(prayerList);
   const [xpSorted, setXPSorted] = useState(false);
-  //   const [memberSorted, setMemberSorted] = useState(false);
-  //   const [combatSorted, setCombatSorted] = useState(false);
+  const [bonesSorted, setBonesSorted] = useState(false);
+  const [amountSorted, setAmountSorted] = useState(false);
   const [costSorted, setCostSorted] = useState(false);
 
   useEffect(() => {
@@ -65,20 +65,22 @@ const PrayerGrid = (props) => {
     filterMonsters();
   }, [filterMonsters]);
 
-  const sortMonsters = () => {
-    // if (monsterSorted) {
-    //   const sorter = bonesDB.sort((a, b) => a.monster.localeCompare(b.monster));
-    //   setMonsterSorted(!monsterSorted);
-    //   setBonesDB([...sorter]);
-    //   return;
-    // } else {
-    //   const sorter = bonesDB.sort((a, b) => b.monster.localeCompare(a.monster));
-    //   setMonsterSorted(!monsterSorted);
-    //   setBonesDB([...sorter]);
-    // }
+  const sortBones = () => {
+    let sorter = [...bonesDB];
+    sorter.sort((a, b) =>
+      bonesSorted ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
+    );
+    setBonesDB(sorter);
+    setBonesSorted(!bonesSorted);
   };
 
-  const sortCombat = () => {
+  const sortAmount = () => {
+    let sorter = [...bonesDB];
+    sorter.sort((a, b) =>
+      bonesSorted ? +b.toGo - +a.toGo : +a.toGo - +b.toGo
+    );
+    setBonesDB(sorter);
+    setBonesSorted(!bonesSorted);
     // if (combatSorted) {
     //   const sorter = bonesDB.sort((a, b) => +a.combat - +b.combat);
     //   setBonesDB([...sorter]);
@@ -92,20 +94,15 @@ const PrayerGrid = (props) => {
   };
 
   const sortExp = () => {
-    const sorter = [...bonesDB];
+    let sorter = [...bonesDB];
     sorter.sort((a, b) => (xpSorted ? a.exp - b.exp : b.exp - a.exp));
     setBonesDB(sorter);
     setXPSorted(!xpSorted);
   };
 
   const sortCost = () => {
-    if (costSorted) {
-      const sorter = bonesDB.sort((a, b) => a.price - b.price);
-      setBonesDB(sorter);
-      setCostSorted(!costSorted);
-      return;
-    }
-    const sorter = bonesDB.sort((a, b) => b.price - a.price);
+    let sorter = [...bonesDB];
+    sorter.sort((a, b) => (costSorted ? a.price - b.price : b.price - a.price));
     setBonesDB(sorter);
     setCostSorted(!costSorted);
   };
@@ -113,7 +110,7 @@ const PrayerGrid = (props) => {
   return (
     <div className={stl.grid}>
       <div className={stl.typeRow}>
-        <span className={stl.monsterTitleRow} onClick={sortMonsters}>
+        <span className={stl.monsterTitleRow} onClick={sortBones}>
           <img
             src="bones/Bones.webp"
             alt="Bones Logo"
@@ -129,7 +126,7 @@ const PrayerGrid = (props) => {
           />{" "}
           Exp
         </span>
-        <span onClick={sortCombat}>
+        <span onClick={sortAmount}>
           <img src={prayerLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
           Amount
         </span>
