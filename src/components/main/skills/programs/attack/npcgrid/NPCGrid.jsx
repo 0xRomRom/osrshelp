@@ -36,59 +36,39 @@ const NPCGrid = (props) => {
   }, [filterMonsters]);
 
   const sortMonsters = () => {
-    if (monsterSorted) {
-      const sorter = monsterDB.sort((a, b) =>
-        a.monster.localeCompare(b.monster)
-      );
-      setMonsterSorted(!monsterSorted);
-      setMonsterDB([...sorter]);
-      return;
-    } else {
-      const sorter = monsterDB.sort((a, b) =>
-        b.monster.localeCompare(a.monster)
-      );
-      setMonsterSorted(!monsterSorted);
-      setMonsterDB([...sorter]);
-    }
+    setMonsterSorted(!monsterSorted);
+    let sorter = [...monsterDB];
+    sorter.sort((a, b) =>
+      monsterSorted
+        ? a.monster.localeCompare(b.monster)
+        : b.monster.localeCompare(a.monster)
+    );
+    setMonsterDB(sorter);
   };
 
   const sortMembers = () => {
-    if (memberSorted) {
-      const sorter = monsterDB.sort((a, b) => a.member - b.member);
-      setMonsterDB([...sorter]);
-      setMemberSorted(!memberSorted);
-      return;
-    } else {
-      const sorter = monsterDB.sort((a, b) => b.member - a.member);
-      setMonsterDB([...sorter]);
-      setMemberSorted(!memberSorted);
-    }
+    setMemberSorted(!memberSorted);
+    let sorter = [...monsterDB];
+    sorter.sort((a, b) =>
+      memberSorted ? a.member - b.member : b.member - a.member
+    );
+    setMonsterDB(sorter);
   };
 
   const sortCombat = () => {
-    if (combatSorted) {
-      const sorter = monsterDB.sort((a, b) => +a.combat - +b.combat);
-      setMonsterDB([...sorter]);
-      setCombatSorted(!combatSorted);
-      return;
-    } else {
-      const sorter = monsterDB.sort((a, b) => +b.combat - +a.combat);
-      setMonsterDB([...sorter]);
-      setCombatSorted(!combatSorted);
-    }
+    setCombatSorted(!combatSorted);
+    let sorter = [...monsterDB];
+    sorter.sort((a, b) =>
+      combatSorted ? +a.combat - +b.combat : +b.combat - +a.combat
+    );
+    setMonsterDB(sorter);
   };
 
   const sortToGo = () => {
-    if (toGoSorted) {
-      const sorter = monsterDB.sort((a, b) => +a.hp - +b.hp);
-      setMonsterDB([...sorter]);
-      setToGoSorted(!toGoSorted);
-      return;
-    } else {
-      const sorter = monsterDB.sort((a, b) => +b.hp - +a.hp);
-      setMonsterDB([...sorter]);
-      setToGoSorted(!toGoSorted);
-    }
+    setToGoSorted(!toGoSorted);
+    let sorter = [...monsterDB];
+    sorter.sort((a, b) => (toGoSorted ? +a.hp - +b.hp : +b.hp - +a.hp));
+    setMonsterDB(sorter);
   };
 
   return (
