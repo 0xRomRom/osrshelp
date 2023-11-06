@@ -1,9 +1,10 @@
 import stl from "./PrayerGrid.module.css";
 import prayerList from "../../../../../../utils/prayerList";
 import attackLogo from "../../../../../../assets/skillicons/Attack.webp";
-import healthLogo from "../../../../../../assets/skillicons/Hitpoints.webp";
-import slayerLogo from "../../../../../../assets/skillicons/Slayer.png";
+import prayerLogo from "../../../../../../assets/skillicons/Prayer.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
+import memberLogos from "../../../../../../assets/bones/Bones.webp";
+import rsgp from "../../../../../../assets/icons/Donate.webp";
 
 import { useEffect, useState, useCallback } from "react";
 
@@ -31,8 +32,8 @@ const PrayerGrid = (props) => {
         result = initialDB;
       }
       let bonesList = JSON.parse(JSON.stringify(prayerList));
-      console.log(result);
       //Set initial boneprice
+
       for (let i = 0; i < bonesList.length; i++) {
         const boneId = bonesList[i].name;
         if (result.hasOwnProperty(boneId)) {
@@ -52,32 +53,6 @@ const PrayerGrid = (props) => {
     };
     fetchData();
   }, [bonesDB.length, props.remainingExp, initialDB, initialFetch]);
-
-  //   useEffect(() => {
-  //     const calculateBonesToUse = () => {
-  //       let dbCopy = JSON.parse(JSON.stringify(bonesDB));
-  //       const expToGo = props.remainingExp;
-
-  //       for (let i = 0; i < bonesDB.length; i++) {
-  //         const boneExp = dbCopy[i].exp;
-  //         dbCopy[i].toGo = Math.ceil(expToGo / boneExp);
-  //       }
-  //       setBonesDB(dbCopy);
-  //     };
-
-  //     calculateBonesToUse();
-  //   }, [props.remainingExp]);
-
-  //   const calculateCost = useCallback(() => {
-  //     let dbCopy = bonesDB;
-  //     console.log(dbCopy);
-  //     for (let i = 0; i < bonesDB.length; i++) {
-  //       const boneCost = dbCopy[i].cost;
-  //       dbCopy[i].cost = boneCost * dbCopy[i].toGo;
-  //     }
-  //     console.log(dbCopy);
-  //     setBonesDB(dbCopy);
-  //   }, [bonesDB]);
 
   const filterMonsters = useCallback(() => {
     const filteredMonsters = prayerList.filter((bone) =>
@@ -151,11 +126,11 @@ const PrayerGrid = (props) => {
           Exp
         </span>
         <span onClick={sortCombat}>
-          <img src={healthLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
+          <img src={prayerLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
           Amount
         </span>
         <span onClick={sortCost}>
-          <img src={slayerLogo} alt="Cost Logo" className={stl.miniLogo} /> Cost
+          <img src={rsgp} alt="Cost Logo" className={stl.miniLogo} /> Cost
         </span>
       </div>
       <div className={stl.resultGrid}>
@@ -163,6 +138,11 @@ const PrayerGrid = (props) => {
           return (
             <div className={stl.row} key={bone.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
+                <img
+                  src={bone.src}
+                  alt="Bone Image"
+                  className={stl.boneMiniImg}
+                />
                 {bone.name}
               </span>
               <span className={stl.rowItem}>{bone.exp}</span>

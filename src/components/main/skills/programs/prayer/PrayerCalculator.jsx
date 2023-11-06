@@ -42,7 +42,7 @@ const PrayerCalculator = (props) => {
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["hitpoints"]}
+                Level {props.skills["prayer"]}
               </span>
             </div>
 
