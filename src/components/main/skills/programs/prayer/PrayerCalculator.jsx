@@ -6,13 +6,12 @@ import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
-import SearchFilter from "../searchfilter/SearchFilter";
+import PrayerFilters from "./PrayerFilters";
 import { useState } from "react";
 
 import PrayerGrid from "./prayergrid/PrayerGrid";
 
 const PrayerCalculator = (props) => {
-  const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
 
   const handleMenuSwitch = () => {
@@ -88,13 +87,9 @@ const PrayerCalculator = (props) => {
             remainingExp={remainingExp}
           />
         )}
-        <SearchFilter setSearchState={setSearchState} />
+        <PrayerFilters />
       </div>
-      <PrayerGrid
-        searchState={searchState}
-        remainingExp={remainingExp}
-        skills={props.skills}
-      />
+      <PrayerGrid remainingExp={remainingExp} skills={props.skills} />
     </div>
   );
 };

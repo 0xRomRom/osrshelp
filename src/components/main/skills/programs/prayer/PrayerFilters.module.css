@@ -1,0 +1,53 @@
+.modal {
+  background-color: rgb(32, 46, 57);
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.checkRow {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+}
+
+.checkDesc {
+  color: rgb(199, 199, 199);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px; /* Space for the custom checkbox */
+  cursor: pointer;
+  user-select: none;
+}
+
+label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(32, 46, 57);
+  border: 2px solid #aeafaf;
+  border-radius: 0.4rem;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: #aeafaf;
+  border: 2px solid #aeafaf;
+}

@@ -54,17 +54,6 @@ const PrayerGrid = (props) => {
     fetchData();
   }, [bonesDB.length, props.remainingExp, initialDB, initialFetch]);
 
-  const filterMonsters = useCallback(() => {
-    const filteredMonsters = prayerList.filter((bone) =>
-      bone.name.toLowerCase().includes(props.searchState.toLowerCase())
-    );
-    setBonesDB(filteredMonsters);
-  }, [props.searchState]);
-
-  useEffect(() => {
-    filterMonsters();
-  }, [filterMonsters]);
-
   const sortBones = () => {
     setBonesSorted(!bonesSorted);
     let sorter = [...bonesDB];
