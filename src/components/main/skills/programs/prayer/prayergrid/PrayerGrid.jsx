@@ -12,8 +12,8 @@ const PrayerGrid = (props) => {
   const [initialDB, setInitialDB] = useState([]);
   const [initialFetch, setInitialFetch] = useState(false);
   const [bonesDB, setBonesDB] = useState(prayerList);
-  const [xpSorted, setXPSorted] = useState(false);
   const [bonesSorted, setBonesSorted] = useState(false);
+  const [xpSorted, setXPSorted] = useState(false);
   const [amountSorted, setAmountSorted] = useState(false);
   const [costSorted, setCostSorted] = useState(false);
 
@@ -66,45 +66,39 @@ const PrayerGrid = (props) => {
   }, [filterMonsters]);
 
   const sortBones = () => {
+    setBonesSorted(!bonesSorted);
     let sorter = [...bonesDB];
     sorter.sort((a, b) =>
       bonesSorted ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
     );
     setBonesDB(sorter);
-    setBonesSorted(!bonesSorted);
   };
 
   const sortAmount = () => {
+    setAmountSorted(!amountSorted);
     let sorter = [...bonesDB];
     sorter.sort((a, b) =>
-      bonesSorted ? +b.toGo - +a.toGo : +a.toGo - +b.toGo
+      amountSorted ? +b.toGo - +a.toGo : +a.toGo - +b.toGo
     );
     setBonesDB(sorter);
-    setBonesSorted(!bonesSorted);
-    // if (combatSorted) {
-    //   const sorter = bonesDB.sort((a, b) => +a.combat - +b.combat);
-    //   setBonesDB([...sorter]);
-    //   setCombatSorted(!combatSorted);
-    //   return;
-    // } else {
-    //   const sorter = bonesDB.sort((a, b) => +b.combat - +a.combat);
-    //   setBonesDB([...sorter]);
-    //   setCombatSorted(!combatSorted);
-    // }
   };
 
   const sortExp = () => {
+    setXPSorted(!xpSorted);
     let sorter = [...bonesDB];
     sorter.sort((a, b) => (xpSorted ? a.exp - b.exp : b.exp - a.exp));
     setBonesDB(sorter);
-    setXPSorted(!xpSorted);
   };
 
   const sortCost = () => {
-    let sorter = [...bonesDB];
-    sorter.sort((a, b) => (costSorted ? a.price - b.price : b.price - a.price));
-    setBonesDB(sorter);
     setCostSorted(!costSorted);
+    let sorter = [...bonesDB];
+    sorter.sort((a, b) =>
+      costSorted
+        ? a.price * a.toGo - b.price * b.toGo
+        : b.price * b.toGo - a.price * a.toGo
+    );
+    setBonesDB(sorter);
   };
 
   return (
