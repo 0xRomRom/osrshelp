@@ -13,6 +13,7 @@ import PrayerGrid from "./prayergrid/PrayerGrid";
 
 const PrayerCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
+  const [multiplier, setMultiplier] = useState(0);
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -87,7 +88,7 @@ const PrayerCalculator = (props) => {
             remainingExp={remainingExp}
           />
         )}
-        <PrayerFilters />
+        <PrayerFilters setMultiplier={setMultiplier} multiplier={multiplier} />
       </div>
       <PrayerGrid remainingExp={remainingExp} skills={props.skills} />
     </div>

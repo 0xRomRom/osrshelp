@@ -1,11 +1,8 @@
 import stl from "./PrayerFilters.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 
-const PrayerFilters = (props) => {
+const PrayerFilters = ({ multiplier, setMultiplier }) => {
   const [checkboxState, setCheckboxState] = useState({});
-  const [multiplier, setMultiplier] = useState(0);
 
   const handleCheckboxChange = (e) => {
     const checkboxId = e.target.id;
@@ -13,6 +10,7 @@ const PrayerFilters = (props) => {
 
     const chosenMultiplier = +e.target.dataset.multiplier;
 
+    // Reset multiplier if deselected
     checkboxState[checkboxId] === true
       ? setMultiplier(0)
       : setMultiplier(chosenMultiplier);
@@ -42,6 +40,7 @@ const PrayerFilters = (props) => {
             type="checkbox"
             id="gilded-altar"
             data-multiplier="350"
+            checked={checkboxState["gilded-altar"] || false}
             onChange={handleCheckboxChange}
           />
           <label htmlFor="gilded-altar">Lit Gilded Altar (+350%)</label>
@@ -51,6 +50,7 @@ const PrayerFilters = (props) => {
             type="checkbox"
             id="ecto-funtus"
             data-multiplier="400"
+            checked={checkboxState["ecto-funtus"] || false}
             onChange={handleCheckboxChange}
           />
           <label htmlFor="ecto-funtus">Ectofuntus (+400%)</label>
@@ -59,6 +59,7 @@ const PrayerFilters = (props) => {
           <input
             type="checkbox"
             id="chaos-altar"
+            checked={checkboxState["chaos-altar"] || false}
             onChange={handleCheckboxChange}
             data-multiplier="700"
           />
@@ -68,6 +69,7 @@ const PrayerFilters = (props) => {
           <input
             type="checkbox"
             id="sacred-bone"
+            checked={checkboxState["sacred-bone"] || false}
             onChange={handleCheckboxChange}
             data-multiplier="300"
           />
@@ -77,6 +79,7 @@ const PrayerFilters = (props) => {
           <input
             type="checkbox"
             id="dark-altar"
+            checked={checkboxState["dark-altar"] || false}
             onChange={handleCheckboxChange}
             data-multiplier="400"
           />
@@ -86,6 +89,7 @@ const PrayerFilters = (props) => {
           <input
             type="checkbox"
             id="xeric-altar"
+            checked={checkboxState["xeric-altar"] || false}
             onChange={handleCheckboxChange}
             data-multiplier="200"
           />
@@ -95,6 +99,7 @@ const PrayerFilters = (props) => {
           <input
             type="checkbox"
             id="demonic-offering"
+            checked={checkboxState["demonic-offering"] || false}
             onChange={handleCheckboxChange}
             data-multiplier="300"
           />
