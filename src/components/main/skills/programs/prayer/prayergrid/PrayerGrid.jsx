@@ -152,7 +152,14 @@ const PrayerGrid = (props) => {
               <span className={`${stl.rowItem} ${stl.prayerRow}`}>
                 {bone.exp}
                 <span className={stl.gpperxp}>
-                  {(bone.price / bone.exp).toFixed(1)}gp/exp
+                  {+props.multiplier === 0 &&
+                    (bone.price / bone.exp).toFixed(1)}
+                  {+props.multiplier > 0 &&
+                    (
+                      (bone.price * (+props.multiplier / 100)) /
+                      bone.exp
+                    ).toFixed(2)}
+                  gp/exp
                 </span>
               </span>
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
