@@ -8,14 +8,30 @@
   border-radius: 0.8rem;
   margin-top: 1rem;
   margin-left: 1rem;
+
+  padding-bottom: 0rem;
+  padding-left: 1rem;
+  scroll-behavior: smooth;
+}
+
+.innerWrap {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding-bottom: 1rem;
+  overflow-y: scroll;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
 }
 
 .checkRow {
   width: 100%;
-  display: block;
-  padding: 1rem;
-  gap: 1rem;
-  display: flex;
+  display: inline-block;
+  gap: 3rem;
+
+  position: relative;
 }
 
 .checkDesc {
@@ -27,11 +43,11 @@ input[type="checkbox"] {
 }
 
 label {
-  display: inline-block;
   position: relative;
   padding-left: 25px; /* Space for the custom checkbox */
   cursor: pointer;
   user-select: none;
+  font-size: 15px;
 }
 
 label::before {
