@@ -2,9 +2,9 @@ import stl from "./SearchFilter.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-const SearchFilter = (props) => {
-  const handleMonsterSearch = (e) => {
-    props.setSearchState(e.target.value);
+const SearchFilter = ({ setSearchState }) => {
+  const handleSearch = (e) => {
+    setSearchState(e.target.value);
   };
 
   return (
@@ -14,7 +14,7 @@ const SearchFilter = (props) => {
         type="text"
         className={stl.monsterInput}
         placeholder="Search Monster"
-        onChange={handleMonsterSearch}
+        onChange={handleSearch}
       />
     </div>
   );
