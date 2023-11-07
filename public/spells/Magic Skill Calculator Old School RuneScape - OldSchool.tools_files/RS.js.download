@@ -1,0 +1,46 @@
+var RS = {
+	levelToExp: function(level) {
+		if(level < 1) {
+			return 0;
+		}
+		
+		points = 0;	
+		for(lvl = 1; lvl < level; lvl++) {
+			points += Math.floor(lvl + 300 * Math.pow(2, lvl / 7.));
+		}
+
+		return Math.floor(points/4);
+	},
+
+	expToLevel: function(experience) {
+		for(var i = 0; i < 200; i++) {
+			if(RS.levelToExp(i) > experience) {
+				return (i - 1);
+			}
+		}
+		
+		return 0;
+	},
+
+	expToNextLevel: function(exp) {
+		if(exp < 0) {
+			return 0;
+		}
+		
+		var lvl = RS.expToLevel(exp);
+		return RS.levelToExp(lvl+1) - exp;
+	},
+
+	progressToNextLevel: function(exp) {
+		if(exp < 0) {
+			return 0;
+		}
+		
+		var lvl = RS.expToLevel(exp);
+		var base_lvl_exp = RS.levelToExp(lvl);
+		
+		var exp_diff = RS.levelToExp(lvl + 1) - RS.levelToExp(lvl);
+
+		return Math.round((exp - base_lvl_exp) / exp_diff * 100, 0);
+	}
+};
