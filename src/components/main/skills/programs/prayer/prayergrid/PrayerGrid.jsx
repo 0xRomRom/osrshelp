@@ -1,17 +1,16 @@
 import stl from "./PrayerGrid.module.css";
 import prayerList from "../../../../../../utils/prayerList";
-import attackLogo from "../../../../../../assets/skillicons/Attack.webp";
 import prayerLogo from "../../../../../../assets/skillicons/Prayer.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
-import memberLogos from "../../../../../../assets/bones/Bones.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 
 const PrayerGrid = (props) => {
   const [initialDB, setInitialDB] = useState([]);
   const [initialFetch, setInitialFetch] = useState(false);
   const [bonesDB, setBonesDB] = useState(prayerList);
+  const [cachedDB, setCachedDB] = useState([]);
   const [bonesSorted, setBonesSorted] = useState(false);
   const [xpSorted, setXPSorted] = useState(false);
   const [amountSorted, setAmountSorted] = useState(false);
@@ -50,9 +49,31 @@ const PrayerGrid = (props) => {
         dbCopy[i].toGo = Math.ceil(expToGo / boneExp);
       }
       setBonesDB(dbCopy);
+      setCachedDB(dbCopy);
     };
     fetchData();
   }, [bonesDB.length, props.remainingExp, initialDB, initialFetch]);
+
+  useEffect(() => {
+    setBonesDB(cachedDB);
+    const multiValue = +props.multiplier / 100;
+    if (multiValue === 0) {
+      setBonesDB(cachedDB);
+      return;
+    }
+
+    setBonesDB((prevBonesDB) => {
+      // Use the functional update to avoid the infinite render loop
+      const updatedBonesList = prevBonesDB.map((bone) => {
+        if (bone.price === 0) return bone;
+        return {
+          ...bone,
+          price: +bone.price / multiValue,
+        };
+      });
+      return updatedBonesList;
+    });
+  }, [props.multiplier, cachedDB, props.filterChanged]);
 
   const sortBones = () => {
     setBonesSorted(!bonesSorted);
@@ -124,7 +145,7 @@ const PrayerGrid = (props) => {
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <img
                   src={bone.src}
-                  alt="Bone Image"
+                  alt="Runescape Bones"
                   className={stl.boneMiniImg}
                 />
                 <span className={stl.bonename}>{bone.name}</span>

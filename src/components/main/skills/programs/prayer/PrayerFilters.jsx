@@ -1,12 +1,13 @@
 import stl from "./PrayerFilters.module.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-const PrayerFilters = ({ multiplier, setMultiplier }) => {
+const PrayerFilters = ({ setMultiplier, setFilterChanged, filterChanged }) => {
   const [checkboxState, setCheckboxState] = useState({});
 
   const handleCheckboxChange = (e) => {
     const checkboxId = e.target.id;
     const isChecked = e.target.checked;
+    setFilterChanged(!filterChanged);
 
     const chosenMultiplier = +e.target.dataset.multiplier;
 
@@ -27,10 +28,6 @@ const PrayerFilters = ({ multiplier, setMultiplier }) => {
       }
     }
   };
-
-  useEffect(() => {
-    console.log(multiplier);
-  }, [multiplier]);
 
   return (
     <div className={stl.modal}>
