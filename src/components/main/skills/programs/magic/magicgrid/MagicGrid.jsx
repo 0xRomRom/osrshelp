@@ -1,6 +1,6 @@
 import stl from "./MagidGrid.module.css";
-import prayerList from "../../../../../../utils/prayerList";
-import prayerLogo from "../../../../../../assets/skillicons/Prayer.webp";
+import prayerList from "../../../../../../utils/spellbookList";
+import magicLogo from "../../../../../../assets/skillicons/Magic.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
@@ -114,12 +114,7 @@ const MagicGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
-          <img
-            src="bones/Bones.webp"
-            alt="Bones Logo"
-            className={stl.miniLogo}
-          />{" "}
-          Bones
+          <img src={magicLogo} alt="Bones Logo" className={stl.miniLogo} /> Lvl
         </span>
         <span onClick={sortExp}>
           <img
@@ -127,11 +122,10 @@ const MagicGrid = (props) => {
             alt="Experience Logo"
             className={stl.miniLogo}
           />{" "}
-          Exp
+          Spell
         </span>
         <span onClick={sortAmount}>
-          <img src={prayerLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
-          Amount
+          <img src={magicLogo} alt="Amount Logo" className={stl.miniLogo} /> Exp
         </span>
         <span onClick={sortCost}>
           <img src={rsgp} alt="Cost Logo" className={stl.miniLogo} /> Cost

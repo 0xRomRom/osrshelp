@@ -1,7 +1,7 @@
 import stl from "./MagicCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import prayerIcon from "../../../../../assets/skillicons/Prayer.webp";
+import magicIcon from "../../../../../assets/skillicons/Magic.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -36,14 +36,14 @@ const MagicCalculator = (props) => {
           className={stl.backArrow}
           onClick={handleMenuSwitch}
         />
-        <img src={prayerIcon} alt="Prayer Level" className={stl.skillImg} />
-        <span className={stl.skillTitle}>Prayer</span>
+        <img src={magicIcon} alt="Magic Level" className={stl.skillImg} />
+        <span className={stl.skillTitle}>Magic</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["prayer"]}
+                Level {props.skills["magic"]}
               </span>
             </div>
 
@@ -51,8 +51,8 @@ const MagicCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"prayer"}
-                  currentLvl={props.skills["prayer"]}
+                  skillname={"magic"}
+                  currentLvl={props.skills["magic"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -77,8 +77,8 @@ const MagicCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"prayer"}
-            currentLvl={props.skills["prayer"]}
+            skillName={"magic"}
+            currentLvl={props.skills["magic"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}
