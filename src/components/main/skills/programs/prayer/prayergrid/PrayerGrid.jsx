@@ -158,7 +158,7 @@ const PrayerGrid = (props) => {
                     (
                       (bone.price * (+props.multiplier / 100)) /
                       bone.exp
-                    ).toFixed(2)}
+                    ).toFixed(1)}
                   gp/exp
                 </span>
               </span>

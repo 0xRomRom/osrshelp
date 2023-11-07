@@ -25,6 +25,8 @@ const MagicGrid = (props) => {
           "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Bones|Wolf%20bones|Burnt%20bones|Monkey%20bones|Bat%20bones|Big%20bones|Jogre%20bones|Zogre%20bones|Shaikahan%20bones|Babydragon%20bones|Wyrm%20bones|Wyvern%20bones|Dragon%20bones|Drake%20bones|Fayrg%20bones|Lava%20dragon%20bones|Raurg%20bones|Hydra%20bones|Dagannoth%20bones|Ourg%20bones|Superior%20dragon%20bones|Ensouled%20goblin%20head|Ensouled%20monkey%20head|Ensouled%20imp%20head|Ensouled%20minotaur%20head|Ensouled%20scorpion%20head|Ensouled%20bear%20head|Ensouled%20unicorn%20head|Ensouled%20dog%20head|Ensouled%20chaos%20druid%20head|Ensouled%20giant%20head|Ensouled%20ogre%20head|Ensouled%20elf%20head|Ensouled%20troll%20head|Ensouled%20horror%20head|Ensouled%20kalphite%20head|Ensouled%20dagannoth%20head|Ensouled%20bloodveld%20head|Ensouled%20tzhaar%20head|Ensouled%20demon%20head|Ensouled%20hellhound%20head|Ensouled%20aviansie%20head|Ensouled%20abyssal%20head|Ensouled%20dragon%20head"
         );
         result = await fetcher.json();
+
+        console.log(result);
         setInitialDB(result);
       }
       if (initialFetch) {
@@ -126,8 +128,8 @@ const MagicGrid = (props) => {
           Exp
         </span>
         <span onClick={sortAmount}>
-          <img src={magicLogo} alt="Amount Logo" className={stl.miniLogo} /> To
-          Go
+          <img src={magicLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
+          Casts
         </span>
         <span onClick={sortCost}>
           <img src={rsgp} alt="Cost Logo" className={stl.miniLogo} /> Cost
@@ -151,7 +153,9 @@ const MagicGrid = (props) => {
               </span>
 
               <span className={`${stl.rowItem} ${stl.prayerRow}`}>
-                {bone.exp}
+                {+props.multiplier > 0
+                  ? bone.exp / (+props.multiplier / 100)
+                  : bone.exp}
                 <span className={stl.gpperxp}>
                   {+props.multiplier === 0 &&
                     (bone.price / bone.exp).toFixed(1)}
