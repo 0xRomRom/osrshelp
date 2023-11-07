@@ -31,7 +31,6 @@ const PrayerGrid = (props) => {
         result = initialDB;
       }
       let bonesList = JSON.parse(JSON.stringify(prayerList));
-      //Set initial boneprice
 
       for (let i = 0; i < bonesList.length; i++) {
         const boneId = bonesList[i].name;
@@ -57,18 +56,18 @@ const PrayerGrid = (props) => {
   useEffect(() => {
     setBonesDB(cachedDB);
     const multiValue = +props.multiplier / 100;
-    if (multiValue === 0) {
-      setBonesDB(cachedDB);
-      return;
-    }
+    if (multiValue === 0) return;
 
     setBonesDB((prevBonesDB) => {
-      // Use the functional update to avoid the infinite render loop
       const updatedBonesList = prevBonesDB.map((bone) => {
         if (bone.price === 0) return bone;
         return {
           ...bone,
           price: +bone.price / multiValue,
+
+          exp: Number.isInteger(bone.exp * multiValue)
+            ? bone.exp * multiValue
+            : (bone.exp * multiValue).toFixed(1),
         };
       });
       return updatedBonesList;
@@ -157,10 +156,19 @@ const PrayerGrid = (props) => {
                 </span>
               </span>
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
-                {bone.toGo.toLocaleString()}
+                {+props.multiplier > 0 &&
+                  Math.ceil(
+                    bone.toGo / (+props.multiplier / 100)
+                  ).toLocaleString()}
+                {+props.multiplier === 0 && bone.toGo.toLocaleString()}
               </span>
               <span className={`${stl.rowItem} ${stl.costRow}`}>
-                {(bone.toGo * bone.price).toLocaleString()}
+                {bone.toGo * bone.price > 1000
+                  ? (bone.toGo * bone.price).toLocaleString(undefined, {
+                      minimumFractionDigits: 0,
+                      maximumFractionDigits: 0,
+                    })
+                  : (bone.toGo * bone.price).toFixed(0)}
                 <span className={stl.gpcost}>gp</span>
               </span>
             </div>

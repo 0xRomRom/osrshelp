@@ -75,22 +75,22 @@ const PrayerFilters = ({ setMultiplier, setFilterChanged, filterChanged }) => {
         <div className={stl.checkRow}>
           <input
             type="checkbox"
-            id="dark-altar"
-            checked={checkboxState["dark-altar"] || false}
-            onChange={handleCheckboxChange}
-            data-multiplier="400"
-          />
-          <label htmlFor="dark-altar">Relic: Dark Altar Devotion (+400%)</label>
-        </div>
-        <div className={stl.checkRow}>
-          <input
-            type="checkbox"
             id="xeric-altar"
             checked={checkboxState["xeric-altar"] || false}
             onChange={handleCheckboxChange}
             data-multiplier="200"
           />
           <label htmlFor="xeric-altar">Relic: Xeric's Wisdom (+200%)</label>
+        </div>
+        <div className={stl.checkRow}>
+          <input
+            type="checkbox"
+            id="dark-altar"
+            checked={checkboxState["dark-altar"] || false}
+            onChange={handleCheckboxChange}
+            data-multiplier="400"
+          />
+          <label htmlFor="dark-altar">Relic: Dark Altar Devotion (+400%)</label>
         </div>
         <div className={stl.checkRow}>
           <input
