@@ -114,7 +114,8 @@ const MagicGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
-          <img src={magicLogo} alt="Bones Logo" className={stl.miniLogo} /> Lvl
+          <img src={magicLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
+          Spell
         </span>
         <span onClick={sortExp}>
           <img
@@ -122,15 +123,17 @@ const MagicGrid = (props) => {
             alt="Experience Logo"
             className={stl.miniLogo}
           />{" "}
-          Spell
+          Exp
         </span>
         <span onClick={sortAmount}>
-          <img src={magicLogo} alt="Amount Logo" className={stl.miniLogo} /> Exp
+          <img src={magicLogo} alt="Amount Logo" className={stl.miniLogo} /> To
+          Go
         </span>
         <span onClick={sortCost}>
           <img src={rsgp} alt="Cost Logo" className={stl.miniLogo} /> Cost
         </span>
       </div>
+
       <div className={stl.resultGrid}>
         {bonesDB.map((bone) => {
           return (
@@ -141,8 +144,12 @@ const MagicGrid = (props) => {
                   alt="Runescape Bones"
                   className={stl.boneMiniImg}
                 />
-                <span className={stl.bonename}>{bone.name}</span>
+                <span className={stl.bonename}>
+                  <span className={stl.magelvl}>Lvl {bone.level}</span>{" "}
+                  {bone.name}
+                </span>
               </span>
+
               <span className={`${stl.rowItem} ${stl.prayerRow}`}>
                 {bone.exp}
                 <span className={stl.gpperxp}>
@@ -156,6 +163,7 @@ const MagicGrid = (props) => {
                   gp/exp
                 </span>
               </span>
+
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
                 {+props.multiplier > 0 &&
                   Math.ceil(
@@ -163,6 +171,7 @@ const MagicGrid = (props) => {
                   ).toLocaleString()}
                 {+props.multiplier === 0 && bone.toGo.toLocaleString()}
               </span>
+
               <span className={`${stl.rowItem} ${stl.costRow}`}>
                 {bone.toGo * bone.price > 1000
                   ? (bone.toGo * bone.price).toLocaleString(undefined, {

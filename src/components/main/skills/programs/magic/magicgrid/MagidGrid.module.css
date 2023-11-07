@@ -104,6 +104,7 @@
 
 .bonename {
   padding-top: 0.7rem;
+  text-align: start;
 }
 
 .amountRow {
@@ -112,4 +113,9 @@
 
 .costRow {
   padding-top: 0.45rem;
+}
+
+.magelvl {
+  color: rgb(139, 138, 138);
+  font-size: 12px;
 }
