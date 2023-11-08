@@ -203,10 +203,9 @@ const MagicGrid = (props) => {
                   {+props.multiplier === 0 &&
                     (mage.price / mage.exp).toFixed(1)}
                   {+props.multiplier > 0 &&
-                    (
-                      (mage.price * (+props.multiplier / 100)) /
-                      mage.exp
-                    ).toFixed(2)}
+                    (mage.price / (+props.multiplier / 100) / mage.exp).toFixed(
+                      2
+                    )}
                   gp/exp
                 </span>
               </span>
