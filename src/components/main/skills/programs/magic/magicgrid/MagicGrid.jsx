@@ -100,85 +100,24 @@ const MagicGrid = (props) => {
   useEffect(() => {}, []);
 
   // useEffect(() => {
-  //   const fetchData = async () => {
-  //     let result = [];
-  //     let spellsList = JSON.parse(JSON.stringify(spellbookList));
+  //   const multiValue = +props.multiplier / 100;
+  //   if (multiValue === 0) return;
 
-  //     // if (!initialFetch) {
-  //     setInitialFetch(!initialFetch);
-  //     // const fetcher = await fetch(
-  //     //   "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Air_rune|Mind_rune|Water_rune|Earth_rune|Fire_rune|Body_rune|Cosmic_rune|Chaos_rune|Nature_rune|Law_rune|Death_rune|Astral_rune|Blood_rune|Soul_rune|Wrath_rune|Opal_bolts|Opal_bolts_(e)|Sapphire_bolts|Sapphire_bolts_(e)|Pearl_bolts|Pearl_bolts_(e)|Emerald_bolts|Emerald_bolts_(e)|Topaz_bolts|Topaz_bolts_(e)|Ruby_bolts|Ruby_bolts_(e)|Diamond_bolts|Diamond_bolts_(e)|Dragonstone_bolts|Dragonstone_bolts_(e)|Onyx_bolts|Onyx_bolts_(e)"
-  //     // );
-  //     // result = await fetcher.json();
+  //   setMageDB((prevBonesDB) => {
+  //     const updatedBonesList = prevBonesDB.map((bone) => {
+  //       if (bone.price === 0) return bone;
+  //       return {
+  //         ...bone,
+  //         price: +bone.price / multiValue,
 
-  //     const runeData = [];
-  //     SPELLBOOKRUNESLIST.forEach((obj) => {
-  //       const runeNames = Object.keys(obj);
-  //       const runeAmounts = Object.values(obj);
-
-  //       runeData.push({ names: runeNames, amounts: runeAmounts });
+  //         exp: Number.isInteger(bone.exp * multiValue)
+  //           ? bone.exp * multiValue
+  //           : (bone.exp * multiValue).toFixed(1),
+  //       };
   //     });
-
-  //     console.log(spellsList);
-
-  //     runeData.map((spell, index) => {
-  //       let arr = result;
-  //       const spellCount = spell.names.length;
-  //       let count = 0;
-
-  //       for (let i = 0; i < spellCount; i++) {
-  //         const spellName = spell.names[i];
-  //         const runeCount = spell.amounts[i];
-  //         const runePrice = arr[spellName].price * runeCount;
-  //         count += runePrice;
-  //       }
-  //       spellsList[index].price += count;
-  //       count = 0;
-  //       return null;
-  //     });
-
-  //     console.log(spellsList);
-  //     setInitialDB(spellsList);
-  //     // }
-
-  //     // if (initialFetch) {
-  //     result = initialDB;
-  //     // }
-  //     console.log(spellsList);
-  //     //Calc bones to use
-  //     // let dbCopy = JSON.parse(JSON.stringify(spellsList));
-  //     // console.log(dbCopy);
-  //     const expToGo = props.remainingExp;
-
-  //     for (let i = 0; i < spellsList.length; i++) {
-  //       const boneExp = spellsList[i].exp;
-  //       spellsList[i].toGo = Math.ceil(expToGo / boneExp);
-  //     }
-  //     setBonesDB(spellsList);
-  //     setCachedDB(spellsList);
-  //   };
-  //   fetchData();
-  // }, [bonesDB.length, props.remainingExp, initialDB, initialFetch]);
-
-  useEffect(() => {
-    const multiValue = +props.multiplier / 100;
-    if (multiValue === 0) return;
-
-    setMageDB((prevBonesDB) => {
-      const updatedBonesList = prevBonesDB.map((bone) => {
-        if (bone.price === 0) return bone;
-        return {
-          ...bone,
-          price: +bone.price / multiValue,
-
-          exp: Number.isInteger(bone.exp * multiValue)
-            ? bone.exp * multiValue
-            : (bone.exp * multiValue).toFixed(1),
-        };
-      });
-      return updatedBonesList;
-    });
-  }, [props.multiplier, props.filterChanged]);
+  //     return updatedBonesList;
+  //   });
+  // }, [props.multiplier, props.filterChanged]);
 
   const sortBones = () => {
     setBonesSorted(!bonesSorted);
@@ -241,32 +180,32 @@ const MagicGrid = (props) => {
       </div>
 
       <div className={stl.resultGrid}>
-        {mageDB.map((bone) => {
+        {mageDB.map((mage) => {
           return (
-            <div className={stl.row} key={bone.name}>
+            <div className={stl.row} key={mage.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <img
-                  src={bone.src}
+                  src={mage.src}
                   alt="Runescape Bones"
                   className={stl.boneMiniImg}
                 />
                 <span className={stl.bonename}>
-                  <span className={stl.magelvl}>Lvl {bone.level}</span>{" "}
-                  {bone.name}
+                  <span className={stl.magelvl}>Lvl {mage.level}</span>{" "}
+                  {mage.name}
                 </span>
               </span>
 
               <span className={`${stl.rowItem} ${stl.prayerRow}`}>
                 {+props.multiplier > 0
-                  ? bone.exp / (+props.multiplier / 100)
-                  : bone.exp}
+                  ? mage.exp * (+props.multiplier / 100)
+                  : mage.exp}
                 <span className={stl.gpperxp}>
                   {+props.multiplier === 0 &&
-                    (bone.price / bone.exp).toFixed(1)}
+                    (mage.price / mage.exp).toFixed(1)}
                   {+props.multiplier > 0 &&
                     (
-                      (bone.price * (+props.multiplier / 100)) /
-                      bone.exp
+                      (mage.price * (+props.multiplier / 100)) /
+                      mage.exp
                     ).toFixed(2)}
                   gp/exp
                 </span>
@@ -275,18 +214,23 @@ const MagicGrid = (props) => {
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
                 {+props.multiplier > 0 &&
                   Math.ceil(
-                    bone.toGo / (+props.multiplier / 100)
+                    mage.toGo / (+props.multiplier / 100)
                   ).toLocaleString()}
-                {+props.multiplier === 0 && bone.toGo.toLocaleString()}
+                {+props.multiplier === 0 && mage.toGo.toLocaleString()}
               </span>
 
               <span className={`${stl.rowItem} ${stl.costRow}`}>
-                {bone.toGo * bone.price > 1000
-                  ? (bone.toGo * bone.price).toLocaleString(undefined, {
-                      minimumFractionDigits: 0,
-                      maximumFractionDigits: 0,
-                    })
-                  : (bone.toGo * bone.price).toFixed(0)}
+                {+props.multiplier > 0 &&
+                  (
+                    Math.ceil(mage.toGo * mage.price) /
+                    (+props.multiplier / 100)
+                  ).toLocaleString(undefined, {
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0,
+                  })}
+                {+props.multiplier === 0 &&
+                  (mage.toGo * mage.price).toLocaleString()}
+
                 <span className={stl.gpcost}>gp</span>
               </span>
             </div>
