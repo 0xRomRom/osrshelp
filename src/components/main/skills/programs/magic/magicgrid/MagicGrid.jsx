@@ -1,66 +1,170 @@
 import stl from "./MagidGrid.module.css";
-import prayerList from "../../../../../../utils/spellbookList";
+import spellbookList from "../../../../../../utils/spellbookList";
+import SPELLBOOKRUNESLIST from "../../../../../../utils/spellbookRunesList";
 import magicLogo from "../../../../../../assets/skillicons/Magic.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const MagicGrid = (props) => {
-  const [initialDB, setInitialDB] = useState([]);
-  const [initialFetch, setInitialFetch] = useState(false);
-  const [bonesDB, setBonesDB] = useState(prayerList);
-  const [cachedDB, setCachedDB] = useState([]);
+  const [mageDB, setMageDB] = useState(spellbookList);
+
+  const [runePrices, setRunePrices] = useState({});
+
   const [bonesSorted, setBonesSorted] = useState(false);
   const [xpSorted, setXPSorted] = useState(false);
   const [amountSorted, setAmountSorted] = useState(false);
   const [costSorted, setCostSorted] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      let result = [];
-      if (!initialFetch) {
-        setInitialFetch(!initialFetch);
-        const fetcher = await fetch(
-          "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Air_rune|Mind_rune|Water_rune|Earth_rune|Fire_rune|Body_rune|Cosmic_rune|Chaos_rune|Nature_rune|Law_rune|Death_rune|Astral_rune|Blood_rune|Soul_rune|Wrath_rune|Opal_bolts|Opal_bolts_(e)|Sapphire_bolts|Sapphire_bolts_(e)|Pearl_bolts|Pearl_bolts_(e)|Emerald_bolts|Emerald_bolts_(e)|Topaz_bolts|Topaz_bolts_(e)|Ruby_bolts|Ruby_bolts_(e)|Diamond_bolts|Diamond_bolts_(e)|Dragonstone_bolts|Dragonstone_bolts_(e)|Onyx_bolts|Onyx_bolts_(e)"
-        );
-        result = await fetcher.json();
+  const priceFetcher = async () => {
+    const fetcher = await fetch(
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Air_rune|Mind_rune|Water_rune|Earth_rune|Fire_rune|Body_rune|Cosmic_rune|Chaos_rune|Nature_rune|Law_rune|Death_rune|Astral_rune|Blood_rune|Soul_rune|Wrath_rune|Opal_bolts|Opal_bolts_(e)|Sapphire_bolts|Sapphire_bolts_(e)|Pearl_bolts|Pearl_bolts_(e)|Emerald_bolts|Emerald_bolts_(e)|Topaz_bolts|Topaz_bolts_(e)|Ruby_bolts|Ruby_bolts_(e)|Diamond_bolts|Diamond_bolts_(e)|Dragonstone_bolts|Dragonstone_bolts_(e)|Onyx_bolts|Onyx_bolts_(e)"
+    );
+    const result = await fetcher.json();
+    setRunePrices(result);
+  };
 
-        console.log(result);
-        setInitialDB(result);
-      }
-      if (initialFetch) {
-        result = initialDB;
-      }
-      let bonesList = JSON.parse(JSON.stringify(prayerList));
+  const mapRequiredSpells = () => {
+    const runeData = [];
+    SPELLBOOKRUNESLIST.forEach((obj) => {
+      const runeNames = Object.keys(obj);
+      const runeAmounts = Object.values(obj);
 
-      for (let i = 0; i < bonesList.length; i++) {
-        const boneId = bonesList[i].name;
-        if (result.hasOwnProperty(boneId)) {
-          bonesList[i].price = +result[boneId].price;
-        }
-      }
+      runeData.push({ names: runeNames, amounts: runeAmounts });
+    });
+    return runeData;
+  };
 
-      //Calc bones to use
-      let dbCopy = JSON.parse(JSON.stringify(bonesList));
+  const calcSpellsToUse = useCallback(
+    (spellsList) => {
       const expToGo = props.remainingExp;
+      console.log(spellsList);
 
-      for (let i = 0; i < bonesDB.length; i++) {
-        const boneExp = dbCopy[i].exp;
-        dbCopy[i].toGo = Math.ceil(expToGo / boneExp);
+      for (let i = 0; i < spellsList.length; i++) {
+        const boneExp = spellsList[i].exp;
+        console.log(boneExp);
+        spellsList[i].toGo = Math.ceil(expToGo / boneExp);
       }
-      setBonesDB(dbCopy);
-      setCachedDB(dbCopy);
-    };
-    fetchData();
-  }, [bonesDB.length, props.remainingExp, initialDB, initialFetch]);
+      return spellsList;
+    },
+    [props.remainingExp]
+  );
+
+  const mapSpellPrices = useCallback(
+    (runeData) => {
+      let spellsList = JSON.parse(JSON.stringify(spellbookList));
+      const mapper = runeData.map((spell, index) => {
+        const spellCount = spell.names.length;
+        let count = 0;
+
+        for (let i = 0; i < spellCount; i++) {
+          const spellName = spell.names[i];
+          const runeCount = spell.amounts[i];
+          const runePrice = runePrices[spellName].price * runeCount;
+          count += runePrice;
+        }
+        spellsList[index].price += count;
+        count = 0;
+        return spellsList;
+      });
+      const data = mapper[0];
+      return data;
+    },
+    [runePrices]
+  );
 
   useEffect(() => {
-    setBonesDB(cachedDB);
+    if (Object.keys(runePrices).length === 0) {
+      priceFetcher();
+    }
+  }, [runePrices]);
+
+  useEffect(() => {
+    if (Object.keys(runePrices).length > 0) {
+      // Array of all required runes and amounts
+      const runeArray = mapRequiredSpells();
+      // console.log(runeArray);
+
+      // Update spellprices
+      const updatedSpells = mapSpellPrices(runeArray);
+      console.log(updatedSpells);
+
+      // Update spells to go
+      const updatedCasts = calcSpellsToUse(updatedSpells);
+      console.log(updatedCasts);
+      setMageDB(updatedCasts);
+    }
+  }, [runePrices, mapSpellPrices, calcSpellsToUse]);
+
+  useEffect(() => {}, []);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     let result = [];
+  //     let spellsList = JSON.parse(JSON.stringify(spellbookList));
+
+  //     // if (!initialFetch) {
+  //     setInitialFetch(!initialFetch);
+  //     // const fetcher = await fetch(
+  //     //   "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Air_rune|Mind_rune|Water_rune|Earth_rune|Fire_rune|Body_rune|Cosmic_rune|Chaos_rune|Nature_rune|Law_rune|Death_rune|Astral_rune|Blood_rune|Soul_rune|Wrath_rune|Opal_bolts|Opal_bolts_(e)|Sapphire_bolts|Sapphire_bolts_(e)|Pearl_bolts|Pearl_bolts_(e)|Emerald_bolts|Emerald_bolts_(e)|Topaz_bolts|Topaz_bolts_(e)|Ruby_bolts|Ruby_bolts_(e)|Diamond_bolts|Diamond_bolts_(e)|Dragonstone_bolts|Dragonstone_bolts_(e)|Onyx_bolts|Onyx_bolts_(e)"
+  //     // );
+  //     // result = await fetcher.json();
+
+  //     const runeData = [];
+  //     SPELLBOOKRUNESLIST.forEach((obj) => {
+  //       const runeNames = Object.keys(obj);
+  //       const runeAmounts = Object.values(obj);
+
+  //       runeData.push({ names: runeNames, amounts: runeAmounts });
+  //     });
+
+  //     console.log(spellsList);
+
+  //     runeData.map((spell, index) => {
+  //       let arr = result;
+  //       const spellCount = spell.names.length;
+  //       let count = 0;
+
+  //       for (let i = 0; i < spellCount; i++) {
+  //         const spellName = spell.names[i];
+  //         const runeCount = spell.amounts[i];
+  //         const runePrice = arr[spellName].price * runeCount;
+  //         count += runePrice;
+  //       }
+  //       spellsList[index].price += count;
+  //       count = 0;
+  //       return null;
+  //     });
+
+  //     console.log(spellsList);
+  //     setInitialDB(spellsList);
+  //     // }
+
+  //     // if (initialFetch) {
+  //     result = initialDB;
+  //     // }
+  //     console.log(spellsList);
+  //     //Calc bones to use
+  //     // let dbCopy = JSON.parse(JSON.stringify(spellsList));
+  //     // console.log(dbCopy);
+  //     const expToGo = props.remainingExp;
+
+  //     for (let i = 0; i < spellsList.length; i++) {
+  //       const boneExp = spellsList[i].exp;
+  //       spellsList[i].toGo = Math.ceil(expToGo / boneExp);
+  //     }
+  //     setBonesDB(spellsList);
+  //     setCachedDB(spellsList);
+  //   };
+  //   fetchData();
+  // }, [bonesDB.length, props.remainingExp, initialDB, initialFetch]);
+
+  useEffect(() => {
     const multiValue = +props.multiplier / 100;
     if (multiValue === 0) return;
 
-    setBonesDB((prevBonesDB) => {
+    setMageDB((prevBonesDB) => {
       const updatedBonesList = prevBonesDB.map((bone) => {
         if (bone.price === 0) return bone;
         return {
@@ -74,42 +178,42 @@ const MagicGrid = (props) => {
       });
       return updatedBonesList;
     });
-  }, [props.multiplier, cachedDB, props.filterChanged]);
+  }, [props.multiplier, props.filterChanged]);
 
   const sortBones = () => {
     setBonesSorted(!bonesSorted);
-    let sorter = [...bonesDB];
+    let sorter = [...mageDB];
     sorter.sort((a, b) =>
       bonesSorted ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
     );
-    setBonesDB(sorter);
+    setMageDB(sorter);
   };
 
   const sortAmount = () => {
     setAmountSorted(!amountSorted);
-    let sorter = [...bonesDB];
+    let sorter = [...mageDB];
     sorter.sort((a, b) =>
       amountSorted ? +b.toGo - +a.toGo : +a.toGo - +b.toGo
     );
-    setBonesDB(sorter);
+    setMageDB(sorter);
   };
 
   const sortExp = () => {
     setXPSorted(!xpSorted);
-    let sorter = [...bonesDB];
+    let sorter = [...mageDB];
     sorter.sort((a, b) => (xpSorted ? a.exp - b.exp : b.exp - a.exp));
-    setBonesDB(sorter);
+    setMageDB(sorter);
   };
 
   const sortCost = () => {
     setCostSorted(!costSorted);
-    let sorter = [...bonesDB];
+    let sorter = [...mageDB];
     sorter.sort((a, b) =>
       costSorted
         ? a.price * a.toGo - b.price * b.toGo
         : b.price * b.toGo - a.price * a.toGo
     );
-    setBonesDB(sorter);
+    setMageDB(sorter);
   };
 
   return (
@@ -137,7 +241,7 @@ const MagicGrid = (props) => {
       </div>
 
       <div className={stl.resultGrid}>
-        {bonesDB.map((bone) => {
+        {mageDB.map((bone) => {
           return (
             <div className={stl.row} key={bone.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
