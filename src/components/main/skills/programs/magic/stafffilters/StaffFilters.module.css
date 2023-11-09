@@ -6,24 +6,27 @@
   align-items: center;
   flex-direction: column;
   border-radius: 0.8rem;
-  padding-top: 0.5rem;
-  overflow-y: scroll;
+  /* padding-top: 0.5rem; */
+  width: 224px;
+
   overflow-x: hidden;
-  padding-bottom: 0.5rem;
   padding-left: 1rem;
   scroll-behavior: smooth;
 }
 
 .innerWrap {
   position: relative;
-  width: 100%;
+  width: 97.5%;
+  height: 85%;
   /* background-color: red; */
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  padding-bottom: 0.6rem;
   margin-right: 1rem;
-  padding-top: 11rem;
+  /* padding-top: 11rem; */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  overflow-y: scroll;
 }
 
 .checkRow {

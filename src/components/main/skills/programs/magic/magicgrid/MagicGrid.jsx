@@ -136,7 +136,6 @@ const MagicGrid = (props) => {
     for (const key in freeRunes) {
       runeNames.push(key);
     }
-    console.log(runeNames);
 
     // If the rune name is in the runeNames array, set its amount to 0
     let runeData = [];
@@ -290,7 +289,7 @@ const MagicGrid = (props) => {
                     ? Math.abs(
                         Math.ceil(mage.toGo * mage.price) /
                           (+props.multiplier / 100)
-                      )
+                      ).toFixed(0)
                     : -(mage.toGo * mage.price)
                   ).toLocaleString()}
 

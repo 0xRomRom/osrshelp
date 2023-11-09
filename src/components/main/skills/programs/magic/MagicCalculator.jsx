@@ -8,6 +8,8 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import MagicFilters from "./magicfilters/MagicFilters";
 import SearchFilter from "../searchfilter/SearchFilter";
+import AlchemyFilter from "./alchemyfilter/AlchemyFilter";
+
 import { useState } from "react";
 
 import MagicGrid from "./magicgrid/MagicGrid";
@@ -110,6 +112,7 @@ const MagicCalculator = (props) => {
           setStaffFilterChanged={setStaffFilterChanged}
           staffFilterChanged={staffFilterChanged}
         />
+        <AlchemyFilter />
       </div>
       <MagicGrid
         remainingExp={remainingExp}
