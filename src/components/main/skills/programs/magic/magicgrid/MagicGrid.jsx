@@ -19,7 +19,7 @@ const MagicGrid = (props) => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Air_rune|Mind_rune|Water_rune|Earth_rune|Fire_rune|Body_rune|Cosmic_rune|Chaos_rune|Nature_rune|Law_rune|Death_rune|Astral_rune|Blood_rune|Soul_rune|Wrath_rune|Opal_bolts|Opal_bolts_(e)|Sapphire_bolts|Sapphire_bolts_(e)|Pearl_bolts|Pearl_bolts_(e)|Emerald_bolts|Emerald_bolts_(e)|Topaz_bolts|Topaz_bolts_(e)|Ruby_bolts|Ruby_bolts_(e)|Diamond_bolts|Diamond_bolts_(e)|Dragonstone_bolts|Dragonstone_bolts_(e)|Jade_bolts|Jade_bolts_(e)|Onyx_bolts|Onyx_bolts_(e)"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Unpowered_orb|Water_orb|Air_rune|Mind_rune|Water_rune|Earth_rune|Fire_rune|Body_rune|Cosmic_rune|Chaos_rune|Nature_rune|Law_rune|Death_rune|Astral_rune|Blood_rune|Soul_rune|Wrath_rune|Opal_bolts|Opal_bolts_(e)|Sapphire_bolts|Sapphire_bolts_(e)|Pearl_bolts|Pearl_bolts_(e)|Emerald_bolts|Emerald_bolts_(e)|Topaz_bolts|Topaz_bolts_(e)|Ruby_bolts|Ruby_bolts_(e)|Diamond_bolts|Diamond_bolts_(e)|Dragonstone_bolts|Dragonstone_bolts_(e)|Onyx_bolts|Onyx_bolts_(e)"
     );
     const result = await fetcher.json();
     console.log(result);
@@ -69,6 +69,14 @@ const MagicGrid = (props) => {
             // Deduct twice because it was already added above
             const deductAmount = runePrices[spellName].price * runeCount * 2;
             const minusEnchanted = count - deductAmount;
+            spellsList[index].price = minusEnchanted;
+          }
+          if (spellName.includes("orb")) {
+            // Deduct twice because it was already added above
+            console.log(count);
+            console.log(runePrices[spellName].price);
+            const deductAmount = runePrices[spellName].price * runeCount;
+            const minusEnchanted = deductAmount - count;
             spellsList[index].price = minusEnchanted;
           }
         }

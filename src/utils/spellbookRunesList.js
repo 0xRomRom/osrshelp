@@ -103,166 +103,276 @@ const SPELLBOOKRUNESLIST = [
     "Water rune": 3,
     "Nature rune": 2,
   },
-];
+  {
+    // Low Level Alchemy
+    "Fire rune": 3,
+    "Nature rune": 1,
+  },
+  {
+    // Water Bolt
+    "Air rune": 2,
+    "Water rune": 2,
+    "Chaos rune": 1,
+  },
+  {
+    // Battlefront Teleport
+    "Blood rune": 1,
+    "Wrath rune": 1,
+    "Law rune": 1,
+  },
+  {
+    // Enchant Crossbow Bolt (Pearl)
+    "Water rune": 2,
+    "Cosmic rune": 1,
+    "Pearl bolts": 10,
+    "Pearl bolts (e)": 10,
+  },
+  {
+    // Varrock Teleport
+    "Air rune": 3,
+    "Fire rune": 1,
+    "Law rune": 1,
+  },
+  {
+    // Lvl-2 Enchant
+    "Air rune": 3,
+    "Cosmic rune": 1,
+  },
+  {
+    // Enchant Crossbow Bolt (Emerald)
+    "Air rune": 3,
+    "Cosmic rune": 1,
+    "Nature rune": 1,
+    "Emerald bolts": 10,
+    "Emerald bolts (e)": 10,
+  },
+  {
+    // Lvl-2 Enchant
+    "Air rune": 3,
+    "Cosmic rune": 1,
+  },
+  {
+    // Mind Altar Teleport
+    "Law rune": 1,
+    "Mind rune": 2,
+  },
+  {
+    // Enchant Crossbow Bolt (Red Topaz)
+    "Fire rune": 2,
+    "Cosmic rune": 1,
+    "Topaz bolts": 10,
+    "Topaz bolts (e)": 10,
+  },
+  {
+    // Earth Bolt
+    "Air rune": 2,
+    "Earth rune": 3,
+    "Chaos rune": 1,
+  },
+  {
+    // Lumbridge Teleport
+    "Air rune": 3,
+    "Earth rune": 1,
+    "Law rune": 1,
+  },
+  {
+    // Telekinetic Grab
+    "Air rune": 1,
+    "Law rune": 1,
+  },
+  {
+    // Respawn Teleport
+    "Law rune": 1,
+    "Soul rune": 1,
+  },
+  {
+    // Fire Bolt
+    "Air rune": 3,
+    "Fire rune": 4,
+    "Chaos rune": 1,
+  },
+  {
+    // Ghostly Grasp
+    "Air rune": 4,
+    "Chaos rune": 1,
+  },
+  {
+    // Falador Teleport
+    "Air rune": 3,
+    "Water rune": 1,
+    "Law rune": 1,
+  },
+  {
+    // Resurrect Lesser Ghost
+    "Air rune": 10,
+    "Cosmic rune": 1,
+    "Mind rune": 5,
+  },
+  {
+    // Resurrect Lesser Skeleton
+    "Air rune": 10,
+    "Cosmic rune": 1,
+    "Mind rune": 5,
+  },
+  {
+    // Resurrect Lesser Zombie
+    "Air rune": 10,
+    "Cosmic rune": 1,
+    "Mind rune": 5,
+  },
+  {
+    // Crumble Undead
+    "Air rune": 2,
+    "Earth rune": 2,
+    "Chaos rune": 1,
+  },
+  {
+    // Salve Graveyard Teleport
+    "Law rune": 1,
+    "Soul rune": 2,
+  },
+  {
+    // Teleport to House
+    "Air rune": 1,
+    "Earth rune": 1,
+    "Law rune": 1,
+  },
+  {
+    // Wind Blast
+    "Air rune": 3,
+    "Death rune": 1,
+  },
+  {
+    // Adept Reanimation
+    "Body rune": 4,
+    "Nature rune": 3,
+    "Soul rune": 1,
+  },
+  {
+    // Superheat Item
+    "Fire rune": 4,
+    "Nature rune": 1,
+  },
+  {
+    // Inferior Demonbane
+    "Fire rune": 4,
+    "Chaos rune": 1,
+  },
+  {
+    // Camelot Teleport
+    "Air rune": 5,
+    "Law rune": 1,
+  },
+  {
+    // Water Blast
+    "Air rune": 3,
+    "Water rune": 3,
+    "Death rune": 1,
+  },
+  {
+    // Shadow Veil
+    "Earth rune": 5,
+    "Fire rune": 5,
+    "Cosmic rune": 5,
+  },
+  {
+    // Fenkenstrain's Castle Teleport
+    "Earth rune": 1,
+    "Law rune": 1,
+    "Soul rune": 1,
+  },
+  {
+    // Lvl-3 Enchant
+    "Fire rune": 5,
+    "Cosmic rune": 1,
+  },
+  {
+    // Enchant Crossbow Bolt (Ruby)
+    "Fire rune": 5,
+    "Blood rune": 1,
+    "Cosmic rune": 1,
+    "Ruby bolts": 10,
+    "Ruby bolts (e)": 10,
+  },
+  {
+    // Lvl-3 Enchant
+    "Fire rune": 5,
+    "Cosmic rune": 1,
+  },
+  {
+    // Dark Lure
+    "Death rune": 1,
+    "Nature rune": 1,
+  },
+  {
+    // Iban Blast
+    "Fire rune": 5,
+    "Death rune": 1,
+  },
+  {
+    // Smoke Rush
+    "Air rune": 1,
+    "Fire rune": 1,
+    "Chaos rune": 2,
+    "Death rune": 2,
+  },
+  {
+    // Magic Dart
+    "Death rune": 1,
+    "Mind rune": 4,
+  },
+  {
+    // Snare
+    "Earth rune": 4,
+    "Water rune": 4,
+    "Nature rune": 3,
+  },
+  {
+    // Ardougne Teleport
+    "Water rune": 2,
+    "Law rune": 2,
+  },
+  {
+    // Shadow Rush
+    "Air rune": 1,
+    "Chaos rune": 2,
+    "Death rune": 2,
+    "Soul rune": 1,
+  },
+  {
+    // Earth Blast
+    "Air rune": 3,
+    "Earth rune": 4,
+    "Death rune": 1,
+  },
+  {
+    // Paddewwa Teleport
+    "Air rune": 1,
+    "Fire rune": 1,
+    "Law rune": 2,
+  },
+  {
+    // High Level Alchemy
+    "Fire rune": 5,
+    "Nature rune": 1,
+  },
+  {
+    // Skeletal Grasp
+    "Earth rune": 8,
+    "Death rune": 1,
+  },
+  {
+    // Charge Water Orb
+    "Water rune": 30,
+    "Cosmic rune": 3,
+    "Unpowered orb": 1,
+    "Water orb": 1,
+  },
+]; // cost 438
+//gives 968
 
 export default SPELLBOOKRUNESLIST;
 
-//   {
-//     // Low Level Alchemy
-//     "Fire rune": 3,
-//     "Nature rune": 1,
-//   },
-//   {
-//     // Water Bolt
-//     "Air rune": 2,
-//     "Water rune": 2,
-//     "Chaos rune": 1,
-//   },
-//   {
-//     // Enchant Crossbow Bolt (Pearl)
-//     "Water rune": 2,
-//     "Cosmic rune": 1,
-//     "Pearl bolts 5.png": 10,
-//   },
-//   {
-//     // Varrock Teleport
-//     "Air rune": 3,
-//     "Fire rune": 1,
-//     "Law rune": 1,
-//   },
-//   {
-//     // Lvl-2 Enchant
-//     "Air rune": 3,
-//     "Cosmic rune": 1,
-//   },
-//   {
-//     // Enchant Crossbow Bolt (Emerald)
-//     "Air rune": 3,
-//     "Cosmic rune": 1,
-//     "Nature rune": 1,
-//     "Emerald bolts 5.png": 10,
-//   },
-//   {
-//     // Earth Bolt
-//     "Air rune": 2,
-//     "Earth rune": 3,
-//     "Chaos rune": 1,
-//   },
-//   {
-//     // Enchant Crossbow Bolt (Red Topaz)
-//     "Fire rune": 2,
-//     "Cosmic rune": 1,
-//     "Topaz bolts 5.png": 10,
-//   },
-//   {
-//     // Lumbridge Teleport
-//     "Air rune": 3,
-//     "Earth rune": 1,
-//     "Law rune": 1,
-//   },
-//   {
-//     // Telekinetic Grab
-//     "Air rune": 1,
-//     "Law rune": 1,
-//   },
-//   {
-//     // Fire Bolt
-//     "Air rune": 3,
-//     "Fire rune": 4,
-//     "Chaos rune": 1,
-//   },
-//   {
-//     // Falador Teleport
-//     "Air rune": 3,
-//     "Water rune": 1,
-//     "Law rune": 1,
-//   },
-//   {
-//     // Crumble Undead
-//     "Air rune": 2,
-//     "Earth rune": 2,
-//     "Chaos rune": 1,
-//   },
-//   {
-//     // Teleport to House
-//     "Air rune": 1,
-//     "Earth rune": 1,
-//     "Law rune": 1,
-//   },
-//   {
-//     // Wind Blast
-//     "Air rune": 3,
-//     "Death rune": 1,
-//   },
-//   {
-//     // Superheat Item
-//     "Fire rune": 4,
-//     "Nature rune": 1,
-//     "Smithing icon (detail).png": 6.2,
-//   },
-//   {
-//     // Camelot Teleport
-//     "Air rune": 5,
-//     "Law rune": 1,
-//   },
-//   {
-//     // Water Blast
-//     "Air rune": 3,
-//     "Water rune": 3,
-//     "Death rune": 1,
-//   },
-//   {
-//     // Lvl-3 Enchant
-//     "Fire rune": 5,
-//     "Cosmic rune": 1,
-//   },
-//   {
-//     // Enchant Crossbow Bolt (Ruby)
-//     "Fire rune": 5,
-//     "Blood rune": 1,
-//     "Cosmic rune": 1,
-//     "Ruby bolts 5.png": 10,
-//   },
-//   {
-//     // Iban Blast
-//     "Fire rune": 5,
-//     "Death rune": 1,
-//     "Iban's staff.png": 1,
-//   },
-//   {
-//     // Snare
-//     "Earth rune": 4,
-//     "Water rune": 4,
-//     "Nature rune": 3,
-//   },
-//   {
-//     // Magic Dart
-//     "Death rune": 1,
-//     "Mind rune": 4,
-//     "Slayer's staff.png": 1,
-//   },
-//   {
-//     // Ardougne Teleport
-//     "Water rune": 2,
-//     "Law rune": 2,
-//   },
-//   {
-//     // Earth Blast
-//     "Air rune": 3,
-//     "Earth rune": 4,
-//     "Death rune": 1,
-//   },
-//   {
-//     // High Level Alchemy
-//     "Fire rune": 5,
-//     "Nature rune": 1,
-//   },
-//   {
-//     // Charge Water Orb
-//     "Water rune": 30,
-//     "Cosmic rune": 3,
-//     "Unpowered orb.png": 1,
-//   },
 //   {
 //     // Lvl-4 Enchant
 //     "Earth rune": 10,
@@ -488,26 +598,7 @@ export default SPELLBOOKRUNESLIST;
 //     "Fire rune": 10,
 //     "Wrath rune": 1,
 //   },
-//   {
-//     // Smoke Rush
-//     "Air rune": 1,
-//     "Fire rune": 1,
-//     "Chaos rune": 2,
-//     "Death rune": 2,
-//   },
-//   {
-//     // Shadow Rush
-//     "Air rune": 1,
-//     "Chaos rune": 2,
-//     "Death rune": 2,
-//     "Soul rune": 1,
-//   },
-//   {
-//     // Paddewwa Teleport
-//     "Air rune": 1,
-//     "Fire rune": 1,
-//     "Law rune": 2,
-//   },
+
 //   {
 //     // Blood Rush
 //     "Blood rune": 1,
@@ -914,83 +1005,6 @@ export default SPELLBOOKRUNESLIST;
 //     "Experience": 10,
 //   },
 
-// {
-//     // Battlefront Teleport
-//     "Blood rune": 1,
-//     "Wrath rune": 1,
-//     "Law rune": 1
-//   },
-//   {
-//     // Mind Altar Teleport
-//     "Law rune": 1,
-//     "Mind rune": 2
-//   },
-//   {
-//     // Respawn Teleport
-//     "Law rune": 1,
-//     "Soul rune": 1
-//   },
-//   {
-//     // Ghostly Grasp
-//     "Air rune": 4,
-//     "Chaos rune": 1
-//   },
-//   {
-//     // Resurrect Lesser Ghost
-//     "Air rune": 10,
-//     "Cosmic rune": 1,
-//     "Mind rune": 5
-//   },
-//   {
-//     // Resurrect Lesser Skeleton
-//     "Air rune": 10,
-//     "Cosmic rune": 1,
-//     "Mind rune": 5
-//   },
-//   {
-//     // Resurrect Lesser Zombie
-//     "Air rune": 10,
-//     "Cosmic rune": 1,
-//     "Mind rune": 5
-//   },
-//   {
-//     // Salve Graveyard Teleport
-//     "Law rune": 1,
-//     "Soul rune": 2
-//   },
-//   {
-//     // Adept Reanimation
-//     "Body rune": 4,
-//     "Nature rune": 3,
-//     "Soul rune": 1
-//   },
-//   {
-//     // Inferior Demonbane
-//     "Fire rune": 4,
-//     "Chaos rune": 1
-//   },
-//   {
-//     // Shadow Veil
-//     "Earth rune": 5,
-//     "Fire rune": 5,
-//     "Cosmic rune": 5
-//   },
-//   {
-//     // Fenkenstrain's Castle Teleport
-//     "Earth rune": 1,
-//     "Law rune": 1,
-//     "Soul rune": 1
-//   },
-//   {
-//     // Dark Lure
-//     "Death rune": 1,
-//     "Nature rune": 1
-//   },
-//   {
-//     // Skeletal Grasp
-//     "Earth rune": 8,
-//     "Death rune": 1
-//   },
 //   {
 //     // Resurrect Superior Ghost
 //     "Earth rune": 10,
