@@ -194,12 +194,19 @@ const MagicGrid = (props) => {
                   ? mage.exp * (+props.multiplier / 100)
                   : mage.exp}
                 <span className={stl.gpperxp}>
+                  {mage.price / mage.exp > 0 ? "-" : "+"}
                   {+props.multiplier === 0 &&
-                    (mage.price / mage.exp).toFixed(1)}
+                    (mage.price / mage.exp > 0
+                      ? Math.abs(mage.price / mage.exp)
+                      : -(mage.price / mage.exp)
+                    ).toFixed(1)}
                   {+props.multiplier > 0 &&
-                    (mage.price / (+props.multiplier / 100) / mage.exp).toFixed(
-                      2
-                    )}
+                    (mage.price / (+props.multiplier / 100) / mage.exp > 0
+                      ? Math.abs(
+                          mage.price / (+props.multiplier / 100) / mage.exp
+                        )
+                      : -(mage.price / (+props.multiplier / 100) / mage.exp)
+                    ).toFixed(2)}
                   gp/exp
                 </span>
               </span>
@@ -219,16 +226,19 @@ const MagicGrid = (props) => {
               >
                 {mage.price > 0 ? "-" : "+"}
                 {+props.multiplier > 0 &&
-                  (
-                    Math.ceil(mage.toGo * mage.price) /
-                    (+props.multiplier / 100)
+                  (mage.toGo * mage.price > 0
+                    ? Math.abs(
+                        Math.ceil(mage.toGo * mage.price) /
+                          (+props.multiplier / 100)
+                      )
+                    : -(mage.toGo * mage.price)
                   ).toLocaleString()}
+
                 {+props.multiplier === 0 &&
                   (mage.toGo * mage.price > 0
                     ? Math.abs(mage.toGo * mage.price)
                     : -(mage.toGo * mage.price)
                   ).toLocaleString()}
-
                 <span className={stl.gpcost}>gp</span>
               </span>
             </div>
