@@ -54,6 +54,7 @@ const MagicGrid = (props) => {
   const mapSpellPrices = useCallback(
     (runeData) => {
       let spellsList = JSON.parse(JSON.stringify(spellbookList));
+
       const mapper = runeData.map((spell, index) => {
         const spellCount = spell.names.length;
         let count = 0;
@@ -62,12 +63,22 @@ const MagicGrid = (props) => {
           const spellName = spell.names[i];
           const runeCount = spell.amounts[i];
           const runePrice = runePrices[spellName].price * runeCount;
+          console.log("Rune price: ", runePrice);
+
           count += runePrice;
+          spellsList[index].price += count;
+
+          if (spellName.includes("(e)")) {
+            const deductAmount = runePrices[spellName].price * runeCount * 2;
+            console.log(deductAmount);
+            console.log(count);
+            const minusEnchanted = count - deductAmount;
+            spellsList[index].price = minusEnchanted;
+          }
         }
-        spellsList[index].price += count;
-        count = 0;
         return spellsList;
       });
+
       const data = mapper[0];
       return data;
     },
@@ -98,26 +109,6 @@ const MagicGrid = (props) => {
   }, [runePrices, mapSpellPrices, calcSpellsToUse]);
 
   useEffect(() => {}, []);
-
-  // useEffect(() => {
-  //   const multiValue = +props.multiplier / 100;
-  //   if (multiValue === 0) return;
-
-  //   setMageDB((prevBonesDB) => {
-  //     const updatedBonesList = prevBonesDB.map((bone) => {
-  //       if (bone.price === 0) return bone;
-  //       return {
-  //         ...bone,
-  //         price: +bone.price / multiValue,
-
-  //         exp: Number.isInteger(bone.exp * multiValue)
-  //           ? bone.exp * multiValue
-  //           : (bone.exp * multiValue).toFixed(1),
-  //       };
-  //     });
-  //     return updatedBonesList;
-  //   });
-  // }, [props.multiplier, props.filterChanged]);
 
   const sortBones = () => {
     setBonesSorted(!bonesSorted);

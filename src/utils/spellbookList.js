@@ -15,14 +15,14 @@ const SPELLBOOKDATA = [
     toGo: 0,
     src: "spells/confuse.png",
   },
-  // {
-  //   level: 4,
-  //   name: "Enchant Opal Bolt",
-  //   exp: 9,
-  //   price: 0,
-  //   toGo: 0,
-  //   src: "spells/enchant_crossbow_bolt.png",
-  // },
+  {
+    level: 4,
+    name: "Enchant Opal Bolt",
+    exp: 9,
+    price: 0,
+    toGo: 0,
+    src: "spells/enchant_crossbow_bolt.png",
+  },
   // {
   //   level: 5,
   //   name: "Water Strike",

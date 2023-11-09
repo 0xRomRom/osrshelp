@@ -10,13 +10,13 @@ const SPELLBOOKRUNESLIST = [
     "Body rune": 1,
     "Water rune": 3,
   },
-  //   {
-  //     // Enchant Crossbow Bolt (Opal)
-  //     "Air rune": 2,
-  //     "Cosmic rune": 1,
-  //     "Opal bolts": 10,
-  //     "Opal bolts (e)": 10,
-  //   },
+  {
+    // Enchant Crossbow Bolt (Opal)
+    "Air rune": 2,
+    "Cosmic rune": 1,
+    "Opal bolts": 10,
+    "Opal bolts (e)": 10,
+  },
 ];
 
 export default SPELLBOOKRUNESLIST;
