@@ -7,6 +7,7 @@ import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import MagicFilters from "./MagicFilters";
+import SearchFilter from "../searchfilter/SearchFilter";
 import { useState } from "react";
 
 import MagicGrid from "./magicgrid/MagicGrid";
@@ -15,6 +16,7 @@ const MagicCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
   const [filterChanged, setFilterChanged] = useState(false);
+  const [searchState, setSearchState] = useState("");
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -94,12 +96,17 @@ const MagicCalculator = (props) => {
           setFilterChanged={setFilterChanged}
           filterChanged={filterChanged}
         />
+        <SearchFilter
+          setSearchState={setSearchState}
+          searchType="Search Spell"
+        />
       </div>
       <MagicGrid
         remainingExp={remainingExp}
         skills={props.skills}
         multiplier={multiplier}
         filterChanged={filterChanged}
+        searchState={searchState}
       />
     </div>
   );

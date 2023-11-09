@@ -87,7 +87,10 @@ const AttackCalculator = (props) => {
             remainingExp={remainingExp}
           />
         )}
-        <SearchFilter setSearchState={setSearchState} />
+        <SearchFilter
+          setSearchState={setSearchState}
+          searchType="Search Monster"
+        />
       </div>
       <NPCGrid searchState={searchState} remainingExp={remainingExp} />
     </div>

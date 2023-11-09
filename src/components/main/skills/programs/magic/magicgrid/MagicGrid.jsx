@@ -9,7 +9,7 @@ import { useCallback, useEffect, useState } from "react";
 
 const MagicGrid = (props) => {
   const [mageDB, setMageDB] = useState(spellbookList);
-
+  const [filteredMageDB, setFilteredMageDB] = useState(spellbookList);
   const [runePrices, setRunePrices] = useState({});
 
   const [bonesSorted, setBonesSorted] = useState(false);
@@ -25,6 +25,22 @@ const MagicGrid = (props) => {
     console.log(result);
     setRunePrices(result);
   };
+
+  const filterSpells = useCallback(() => {
+    if (props.searchState) {
+      const filteredSpells = mageDB.filter((spell) =>
+        spell.name.toLowerCase().includes(props.searchState.toLowerCase())
+      );
+      setFilteredMageDB(filteredSpells);
+    } else {
+      // If search state is empty, reset to the original data
+      setFilteredMageDB(mageDB);
+    }
+  }, [props.searchState, mageDB]);
+
+  useEffect(() => {
+    filterSpells();
+  }, [filterSpells]);
 
   const mapRequiredSpells = () => {
     const runeData = [];
@@ -174,7 +190,7 @@ const MagicGrid = (props) => {
       </div>
 
       <div className={stl.resultGrid}>
-        {mageDB.map((mage) => {
+        {filteredMageDB.map((mage) => {
           return (
             <div className={stl.row} key={mage.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>

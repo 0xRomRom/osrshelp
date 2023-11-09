@@ -2,7 +2,7 @@ import stl from "./SearchFilter.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-const SearchFilter = ({ setSearchState }) => {
+const SearchFilter = ({ setSearchState, searchType }) => {
   const handleSearch = (e) => {
     setSearchState(e.target.value);
   };
@@ -13,7 +13,7 @@ const SearchFilter = ({ setSearchState }) => {
       <input
         type="text"
         className={stl.monsterInput}
-        placeholder="Search Monster"
+        placeholder={searchType}
         onChange={handleSearch}
       />
     </div>
