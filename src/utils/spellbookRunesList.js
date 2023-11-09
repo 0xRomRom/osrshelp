@@ -17,28 +17,16 @@ const SPELLBOOKRUNESLIST = [
     "Opal bolts": 10,
     "Opal bolts (e)": 10,
   },
+  {
+    // Water Strike
+    "Air rune": 1,
+    "Water rune": 1,
+    "Mind rune": 1,
+  },
 ];
 
 export default SPELLBOOKRUNESLIST;
-// {
 
-//   {
-//     // Wind Strike
-//     "Air rune": 1,
-//     "Mind rune": 1,
-//   },
-//   {
-//     // Confuse
-//     "Earth rune": 2,
-//     "Water rune": 3,
-//     "Body rune": 1,
-//   },
-//   {
-//     // Enchant Crossbow Bolt (Opal)
-//     "Air rune": 2,
-//     "Cosmic rune": 1,
-//     "Opal bolts 5.png": 10,
-//   },
 //   {
 //     // Water Strike
 //     "Air rune": 1,

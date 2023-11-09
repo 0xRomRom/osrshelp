@@ -39,11 +39,9 @@ const MagicGrid = (props) => {
   const calcSpellsToUse = useCallback(
     (spellsList) => {
       const expToGo = props.remainingExp;
-      console.log(spellsList);
 
       for (let i = 0; i < spellsList.length; i++) {
         const boneExp = spellsList[i].exp;
-        console.log(boneExp);
         spellsList[i].toGo = Math.ceil(expToGo / boneExp);
       }
       return spellsList;
@@ -63,15 +61,13 @@ const MagicGrid = (props) => {
           const spellName = spell.names[i];
           const runeCount = spell.amounts[i];
           const runePrice = runePrices[spellName].price * runeCount;
-          console.log("Rune price: ", runePrice);
-
+          console.log(runePrice);
           count += runePrice;
-          spellsList[index].price += count;
+          spellsList[index].price = count;
 
           if (spellName.includes("(e)")) {
+            // Deduct twice because it was already added above
             const deductAmount = runePrices[spellName].price * runeCount * 2;
-            console.log(deductAmount);
-            console.log(count);
             const minusEnchanted = count - deductAmount;
             spellsList[index].price = minusEnchanted;
           }
@@ -95,7 +91,6 @@ const MagicGrid = (props) => {
     if (Object.keys(runePrices).length > 0) {
       // Array of all required runes and amounts
       const runeArray = mapRequiredSpells();
-      // console.log(runeArray);
 
       // Update spellprices
       const updatedSpells = mapSpellPrices(runeArray);

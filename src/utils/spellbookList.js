@@ -23,14 +23,14 @@ const SPELLBOOKDATA = [
     toGo: 0,
     src: "spells/enchant_crossbow_bolt.png",
   },
-  // {
-  //   level: 5,
-  //   name: "Water Strike",
-  //   exp: 7.5,
-  //   price: 0,
-  //   toGo: 0,
-  //   src: "spells/water_strike.png",
-  // },
+  {
+    level: 5,
+    name: "Water Strike",
+    exp: 7.5,
+    price: 0,
+    toGo: 0,
+    src: "spells/water_strike.png",
+  },
   // {
   //   level: 6,
   //   name: "Lumbridge Graveyard Teleport",
