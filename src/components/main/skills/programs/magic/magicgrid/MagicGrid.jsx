@@ -217,17 +217,17 @@ const MagicGrid = (props) => {
                   mage.toGo * mage.price > 0 ? stl.red : stl.green
                 }`}
               >
-                {mage.toGo * mage.price > 0 ? "-" : "+"}
+                {mage.price > 0 ? "-" : "+"}
                 {+props.multiplier > 0 &&
                   (
                     Math.ceil(mage.toGo * mage.price) /
                     (+props.multiplier / 100)
-                  ).toLocaleString(undefined, {
-                    minimumFractionDigits: 0,
-                    maximumFractionDigits: 0,
-                  })}
+                  ).toLocaleString()}
                 {+props.multiplier === 0 &&
-                  (mage.toGo * mage.price).toLocaleString()}
+                  (mage.toGo * mage.price > 0
+                    ? Math.abs(mage.toGo * mage.price)
+                    : -(mage.toGo * mage.price)
+                  ).toLocaleString()}
 
                 <span className={stl.gpcost}>gp</span>
               </span>
