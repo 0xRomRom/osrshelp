@@ -1469,7 +1469,7 @@ const SPELLBOOKDATA = [
     exp: 180,
     price: 0,
     toGo: 0,
-    src: "spells/Sinister_Offering.webp",
+    src: "spells/Sinister_Offering.png",
   },
   {
     level: 92,

@@ -6,17 +6,20 @@ import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
-import MagicFilters from "./MagicFilters";
+import MagicFilters from "./magicfilters/MagicFilters";
 import SearchFilter from "../searchfilter/SearchFilter";
 import { useState } from "react";
 
 import MagicGrid from "./magicgrid/MagicGrid";
+import StaffFilters from "./stafffilters/StaffFilters";
 
 const MagicCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
   const [filterChanged, setFilterChanged] = useState(false);
   const [searchState, setSearchState] = useState("");
+  const [staffFilterChanged, setStaffFilterChanged] = useState(false);
+  const [selectedStaff, setSelectedStaff] = useState("");
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -101,12 +104,21 @@ const MagicCalculator = (props) => {
           searchType="Search Spell"
         />
       </div>
+      <div className={stl.configRow2}>
+        <StaffFilters
+          setSelectedStaff={setSelectedStaff}
+          setStaffFilterChanged={setStaffFilterChanged}
+          staffFilterChanged={staffFilterChanged}
+        />
+      </div>
       <MagicGrid
         remainingExp={remainingExp}
         skills={props.skills}
         multiplier={multiplier}
         filterChanged={filterChanged}
         searchState={searchState}
+        staffFilterChanged={staffFilterChanged}
+        selectedStaff={selectedStaff}
       />
     </div>
   );
