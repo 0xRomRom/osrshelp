@@ -23,75 +23,90 @@ const SPELLBOOKRUNESLIST = [
     "Water rune": 1,
     "Mind rune": 1,
   },
+  {
+    // Arceuus Library Teleport
+    "Earth rune": 2,
+    "Law rune": 2,
+  },
+  {
+    // Lvl-1 Enchant
+    "Water rune": 1,
+    "Cosmic rune": 1,
+  },
+  {
+    // Enchant Crossbow Bolt (Sapphire)
+    "Water rune": 1,
+    "Cosmic rune": 1,
+    "Mind rune": 1,
+    "Sapphire bolts": 10,
+    "Sapphire bolts (e)": 10,
+  },
+  {
+    // Lvl-1 Enchant
+    "Water rune": 1,
+    "Cosmic rune": 1,
+  },
+  {
+    // Earth Strike
+    "Air rune": 1,
+    "Earth rune": 2,
+    "Mind rune": 1,
+  },
+  {
+    // Weaken
+    "Earth rune": 2,
+    "Water rune": 3,
+    "Body rune": 1,
+  },
+  {
+    // Fire Strike
+    "Air rune": 2,
+    "Fire rune": 3,
+    "Mind rune": 1,
+  },
+  {
+    // Enchant Crossbow Bolt (Jade)
+    "Earth rune": 2,
+    "Cosmic rune": 1,
+  },
+  {
+    // Bones to Bananas
+    "Earth rune": 2,
+    "Water rune": 2,
+    "Nature rune": 1,
+  },
+  {
+    // Basic Reanimation
+    "Body rune": 4,
+    "Nature rune": 2,
+  },
+  {
+    // Draynor Manor Teleport
+    "Earth rune": 1,
+    "Water rune": 1,
+    "Law rune": 1,
+  },
+  {
+    // Wind Bolt
+    "Air rune": 2,
+    "Chaos rune": 1,
+  },
+  {
+    // Curse
+    "Earth rune": 3,
+    "Water rune": 2,
+    "Body rune": 1,
+  },
+  {
+    // Bind
+    "Earth rune": 3,
+    "Water rune": 3,
+    "Nature rune": 2,
+  },
 ];
 
 export default SPELLBOOKRUNESLIST;
 
-//   {
-//     // Water Strike
-//     "Air rune": 1,
-//     "Water rune": 1,
-//     "Mind rune": 1,
-//   },
-//   {
-//     // Lvl-1 Enchant
-//     "Water rune": 1,
-//     "Cosmic rune": 1,
-//   },
-//   {
-//     // Enchant Crossbow Bolt (Sapphire)
-//     "Water rune": 1,
-//     "Cosmic rune": 1,
-//     "Mind rune": 1,
-//     "Sapphire bolts 5.png": 10,
-//   },
-//   {
-//     // Earth Strike
-//     "Air rune": 1,
-//     "Earth rune": 2,
-//     "Mind rune": 1,
-//   },
-//   {
-//     // Weaken
-//     "Earth rune": 2,
-//     "Water rune": 3,
-//     "Body rune": 1,
-//   },
-//   {
-//     // Fire Strike
-//     "Air rune": 2,
-//     "Fire rune": 3,
-//     "Mind rune": 1,
-//   },
-//   {
-//     // Enchant Crossbow Bolt (Jade)
-//     "Earth rune": 2,
-//     "Cosmic rune": 1,
-//     "Jade bolts 5.png": 10,
-//   },
-//   {
-//     // Bones to Bananas
-//     "Earth rune": 2,
-//     "Water rune": 2,
-//     "Nature rune": 1,
-//   },
-//   {
-//     // Wind Bolt
-//     "Air rune": 2,
-//     "Chaos rune": 1,
-//   },
-//   {
-//     // Curse
-//     "Earth rune": 3,
-//     "Water rune": 2,
-//     "Body rune": 1,
-//   },
-//   {
-//     // Bind
-//     "Earth rune": 3,
-//     "Water rune": 3,
-//     "Nature rune": 2,
-//   },
 //   {
 //     // Low Level Alchemy
 //     "Fire rune": 3,
@@ -898,255 +913,227 @@ export default SPELLBOOKRUNESLIST;
 //     "Runes": "2 Earth, 1 Law",
 //     "Experience": 10,
 //   },
-//   {
-//     // Basic Reanimation
-//     "Level": 16,
-//     "Runes": "4 Body, 2 Nature",
-//     "Experience": 32,
-//   },
-//   {
-//     // Draynor Manor Teleport
-//     "Level": 17,
-//     "Runes": "1 Earth, 1 Water, 1 Law",
-//     "Experience": 16,
-//   },
-//   {
+
+// {
 //     // Battlefront Teleport
-//     "Level": 23,
-//     "Runes": "1 Earth, 1 Fire, 1 Law",
-//     "Experience": 19,
+//     "Blood rune": 1,
+//     "Wrath rune": 1,
+//     "Law rune": 1
 //   },
 //   {
 //     // Mind Altar Teleport
-//     "Level": 28,
-//     "Runes": "1 Law, 2 Mind",
-//     "Experience": 22,
+//     "Law rune": 1,
+//     "Mind rune": 2
 //   },
 //   {
 //     // Respawn Teleport
-//     "Level": 34,
-//     "Runes": "1 Law, 1 Soul",
-//     "Experience": 27,
+//     "Law rune": 1,
+//     "Soul rune": 1
 //   },
 //   {
 //     // Ghostly Grasp
-//     "Level": 35,
-//     "Runes": "4 Air, 1 Chaos",
-//     "Experience": 22.5,
+//     "Air rune": 4,
+//     "Chaos rune": 1
 //   },
 //   {
 //     // Resurrect Lesser Ghost
-//     "Level": 38,
-//     "Runes": "10 Air, 1 Cosmic, 5 Mind",
-//     "Experience": 55,
+//     "Air rune": 10,
+//     "Cosmic rune": 1,
+//     "Mind rune": 5
 //   },
 //   {
 //     // Resurrect Lesser Skeleton
-//     "Level": 38,
-//     "Runes": "10 Air, 1 Cosmic, 5 Mind",
-//     "Experience": 55,
+//     "Air rune": 10,
+//     "Cosmic rune": 1,
+//     "Mind rune": 5
 //   },
 //   {
 //     // Resurrect Lesser Zombie
-//     "Level": 38,
-//     "Runes": "10 Air, 1 Cosmic, 5 Mind",
-//     "Experience": 55,
+//     "Air rune": 10,
+//     "Cosmic rune": 1,
+//     "Mind rune": 5
 //   },
 //   {
 //     // Salve Graveyard Teleport
-//     "Level": 40,
-//     "Runes": "1 Law, 2 Soul",
-//     "Experience": 30,
+//     "Law rune": 1,
+//     "Soul rune": 2
 //   },
 //   {
 //     // Adept Reanimation
-//     "Level": 41,
-//     "Runes": "4 Body, 3 Nature, 1 Soul",
-//     "Experience": 80,
+//     "Body rune": 4,
+//     "Nature rune": 3,
+//     "Soul rune": 1
 //   },
 //   {
 //     // Inferior Demonbane
-//     "Level": 44,
-//     "Runes": "4 Fire, 1 Chaos",
-//     "Experience": 27,
+//     "Fire rune": 4,
+//     "Chaos rune": 1
 //   },
 //   {
 //     // Shadow Veil
-//     "Level": 47,
-//     "Runes": "5 Earth, 5 Fire, 5 Cosmic",
-//     "Experience": 58,
+//     "Earth rune": 5,
+//     "Fire rune": 5,
+//     "Cosmic rune": 5
 //   },
 //   {
 //     // Fenkenstrain's Castle Teleport
-//     "Level": 48,
-//     "Runes": "1 Earth, 1 Law, 1 Soul",
-//     "Experience": 50,
+//     "Earth rune": 1,
+//     "Law rune": 1,
+//     "Soul rune": 1
 //   },
 //   {
 //     // Dark Lure
-//     "Level": 50,
-//     "Runes": "1 Death, 1 Nature",
-//     "Experience": 60,
+//     "Death rune": 1,
+//     "Nature rune": 1
 //   },
 //   {
 //     // Skeletal Grasp
-//     "Level": 56,
-//     "Runes": "8 Earth, 1 Death",
-//     "Experience": 33,
+//     "Earth rune": 8,
+//     "Death rune": 1
 //   },
 //   {
 //     // Resurrect Superior Ghost
-//     "Level": 57,
-//     "Runes": "10 Earth, 1 Cosmic, 5 Death",
-//     "Experience": 70,
+//     "Earth rune": 10,
+//     "Cosmic rune": 1,
+//     "Death rune": 5
 //   },
 //   {
 //     // Resurrect Superior Skeleton
-//     "Level": 57,
-//     "Runes": "10 Earth, 1 Cosmic, 5 Death",
-//     "Experience": 70,
+//     "Earth rune": 10,
+//     "Cosmic rune": 1,
+//     "Death rune": 5
 //   },
 //   {
 //     // Resurrect Superior Zombie
-//     "Level": 57,
-//     "Runes": "10 Earth, 1 Cosmic, 5 Death",
-//     "Experience": 70,
+//     "Earth rune": 10,
+//     "Cosmic rune": 1,
+//     "Death rune": 5
 //   },
 //   {
 //     // Mark of Darkness
-//     "Level": 59,
-//     "Runes": "1 Cosmic, 1 Soul",
-//     "Experience": 70,
+//     "Cosmic rune": 1,
+//     "Soul rune": 1
 //   },
 //   {
 //     // West Ardougne Teleport
-//     "Level": 61,
-//     "Runes": "2 Law, 2 Soul",
-//     "Experience": 68,
+//     "Law rune": 2,
+//     "Soul rune": 2
 //   },
 //   {
 //     // Superior Demonbane
-//     "Level": 62,
-//     "Runes": "8 Fire, 1 Soul",
-//     "Experience": 36,
+//     "Fire rune": 8,
+//     "Soul rune": 1
 //   },
 //   {
 //     // Lesser Corruption
-//     "Level": 64,
-//     "Runes": "1 Death, 2 Soul",
-//     "Experience": 75,
+//     "Death rune": 1,
+//     "Soul rune": 2
 //   },
 //   {
 //     // Harmony Island Teleport
-//     "Level": 65,
-//     "Runes": "1 Law, 1 Nature, 1 Soul",
-//     "Experience": 74,
+//     "Law rune": 1,
+//     "Nature rune": 1,
+//     "Soul rune": 1
 //   },
 //   {
 //     // Vile Vigour
-//     "Level": 66,
-//     "Runes": "3 Air, 1 Soul",
-//     "Experience": 76,
+//     "Air rune": 3,
+//     "Soul rune": 1
 //   },
 //   {
 //     // Degrime
-//     "Level": 70,
-//     "Runes": "4 Earth, 2 Nature",
-//     "Experience": 83,
+//     "Earth rune": 4,
+//     "Nature rune": 2
 //   },
 //   {
 //     // Cemetery Teleport
-//     "Level": 71,
-//     "Runes": "1 Blood, 1 Law, 1 Soul",
-//     "Experience": 82,
+//     "Blood rune": 1,
+//     "Law rune": 1,
+//     "Soul rune": 1
 //   },
 //   {
 //     // Expert Reanimation
-//     "Level": 72,
-//     "Runes": "1 Blood, 3 Nature, 2 Soul",
-//     "Experience": 138,
+//     "Blood rune": 1,
+//     "Nature rune": 3,
+//     "Soul rune": 2
 //   },
 //   {
 //     // Ward of Arceuus
-//     "Level": 73,
-//     "Runes": "1 Cosmic, 2 Nature, 4 Soul",
-//     "Experience": 83,
+//     "Cosmic rune": 1,
+//     "Nature rune": 2,
+//     "Soul rune": 4
 //   },
 //   {
 //     // Resurrect Greater Ghost
-//     "Level": 76,
-//     "Runes": "10 Fire, 5 Blood, 1 Cosmic",
-//     "Experience": 88,
+//     "Fire rune": 10,
+//     "Blood rune": 5,
+//     "Cosmic rune": 1
 //   },
 //   {
 //     // Resurrect Greater Skeleton
-//     "Level": 76,
-//     "Runes": "10 Fire, 5 Blood, 1 Cosmic",
-//     "Experience": 88,
+//     "Fire rune": 10,
+//     "Blood rune": 5,
+//     "Cosmic rune": 1
 //   },
 //   {
 //     // Resurrect Greater Zombie
-//     "Level": 76,
-//     "Runes": "10 Fire, 5 Blood, 1 Cosmic",
-//     "Experience": 88,
+//     "Fire rune": 10,
+//     "Blood rune": 5,
+//     "Cosmic rune": 1
 //   },
 //   {
 //     // Resurrect Crops
-//     "Level": 78,
-//     "Runes": "25 Earth, 8 Blood, 12 Nature, 8 Soul",
-//     "Experience": 90,
+//     "Earth rune": 25,
+//     "Blood rune": 8,
+//     "Nature rune": 12,
+//     "Soul rune": 8
 //   },
 //   {
 //     // Undead Grasp
-//     "Level": 79,
-//     "Runes": "12 Fire, 1 Blood",
-//     "Experience": 46.5,
+//     "Fire rune": 12,
+//     "Blood rune": 1
 //   },
 //   {
 //     // Death Charge
-//     "Level": 80,
-//     "Runes": "1 Blood, 1 Death, 1 Soul",
-//     "Experience": 90,
+//     "Blood rune": 1,
+//     "Death rune": 1,
+//     "Soul rune": 1
 //   },
 //   {
 //     // Dark Demonbane
-//     "Level": 82,
-//     "Runes": "12 Fire, 2 Soul",
-//     "Experience": 43.5,
+//     "Fire rune": 12,
+//     "Soul rune": 2
 //   },
 //   {
 //     // Barrows Teleport
-//     "Level": 83,
-//     "Runes": "1 Blood, 2 Law, 2 Soul",
-//     "Experience": 90,
+//     "Blood rune": 1,
+//     "Law rune": 2,
+//     "Soul rune": 2
 //   },
 //   {
 //     // Demonic Offering
-//     "Level": 84,
-//     "Runes": "1 Soul, 1 Wrath",
-//     "Experience": 175,
+//     "Soul rune": 1,
+//     "Wrath rune": 1
 //   },
 //   {
 //     // Greater Corruption
-//     "Level": 85,
-//     "Runes": "1 Blood, 3 Soul",
-//     "Experience": 95,
+//     "Blood rune": 1,
+//     "Soul rune": 3
 //   },
 //   {
 //     // Master Reanimation
-//     "Level": 90,
-//     "Runes": "2 Blood, 4 Nature, 4 Soul",
-//     "Experience": 170,
+//     "Blood rune": 2,
+//     "Nature rune": 4,
+//     "Soul rune": 4
 //   },
 //   {
 //     // Ape Atoll Teleport
-//     "Level": 90,
-//     "Runes": "2 Blood, 2 Law, 2 Soul",
-//     "Experience": 100,
+//     "Blood rune": 2,
+//     "Law rune": 2,
+//     "Soul rune": 2
 //   },
 //   {
 //     // Sinister Offering
-//     "Level": 92,
-//     "Runes": "1 Blood, 1 Wrath",
-//     "Experience": 180,
-//   },
+//     "Blood rune": 1,
+//     "Wrath rune": 1
+//   }
