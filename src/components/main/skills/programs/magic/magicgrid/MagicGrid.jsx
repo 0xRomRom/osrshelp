@@ -117,7 +117,7 @@ const MagicGrid = (props) => {
     setBonesSorted(!bonesSorted);
     let sorter = [...mageDB];
     sorter.sort((a, b) =>
-      bonesSorted ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
+      bonesSorted ? a.level - b.level : b.level - a.level
     );
     setMageDB(sorter);
   };
@@ -212,7 +212,12 @@ const MagicGrid = (props) => {
                 {+props.multiplier === 0 && mage.toGo.toLocaleString()}
               </span>
 
-              <span className={`${stl.rowItem} ${stl.costRow}`}>
+              <span
+                className={`${stl.rowItem} ${stl.costRow} ${
+                  mage.toGo * mage.price > 0 ? stl.red : stl.green
+                }`}
+              >
+                {mage.toGo * mage.price > 0 ? "-" : "+"}
                 {+props.multiplier > 0 &&
                   (
                     Math.ceil(mage.toGo * mage.price) /
