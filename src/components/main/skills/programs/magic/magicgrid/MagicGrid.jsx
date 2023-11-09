@@ -4,6 +4,7 @@ import SPELLBOOKRUNESLIST from "../../../../../../utils/spellbookRunesList";
 import magicLogo from "../../../../../../assets/skillicons/Magic.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
+import STAVESLIST from "../../../../../../utils/stavesList";
 
 import { useCallback, useEffect, useState } from "react";
 
@@ -24,6 +25,12 @@ const MagicGrid = (props) => {
     const result = await fetcher.json();
     setRunePrices(result);
   };
+
+  useEffect(() => {
+    if (Object.keys(runePrices).length === 0) {
+      priceFetcher();
+    }
+  }, [runePrices]);
 
   const filterSpells = useCallback(() => {
     if (props.searchState) {
@@ -66,10 +73,10 @@ const MagicGrid = (props) => {
   );
 
   const mapSpellPrices = useCallback(
-    (runeData) => {
-      let spellsList = JSON.parse(JSON.stringify(spellbookList));
+    (runeData, list = spellbookList) => {
+      let spellsList = JSON.parse(JSON.stringify(list));
 
-      const mapper = runeData.map((spell, index) => {
+      let mapper = runeData.map((spell, index) => {
         const spellCount = spell.names.length;
         let count = 0;
 
@@ -103,26 +110,68 @@ const MagicGrid = (props) => {
   );
 
   useEffect(() => {
-    if (Object.keys(runePrices).length === 0) {
-      priceFetcher();
-    }
-  }, [runePrices]);
-
-  useEffect(() => {
     if (Object.keys(runePrices).length > 0) {
       // Array of all required runes and amounts
       const runeArray = mapRequiredSpells();
 
       // Update spellprices
       const updatedSpells = mapSpellPrices(runeArray);
+      // console.log(updatedSpells);
 
       // Update spells to go
       const updatedCasts = calcSpellsToUse(updatedSpells);
       setMageDB(updatedCasts);
+      setFilteredMageDB(updatedCasts);
     }
   }, [runePrices, mapSpellPrices, calcSpellsToUse]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (Object.keys(runePrices).length === 0) return;
+    // Get current rune prices
+
+    // Get names of free runes per staff
+    const freeRunes = STAVESLIST[0][props.selectedStaff];
+    // Free runes from staff
+    const runeNames = [];
+    for (const key in freeRunes) {
+      runeNames.push(key);
+    }
+    console.log(runeNames);
+
+    // If the rune name is in the runeNames array, set its amount to 0
+    let runeData = [];
+    SPELLBOOKRUNESLIST.forEach((obj) => {
+      let runeNamesArray = Object.keys(obj);
+      let runeAmountsArray = Object.values(obj);
+
+      for (let i = 0; i < runeNamesArray.length; i++) {
+        if (runeNames.includes(runeNamesArray[i])) {
+          runeAmountsArray[i] = 0;
+        }
+      }
+
+      runeData.push({ names: runeNamesArray, amounts: runeAmountsArray });
+    });
+    console.log(runeData);
+
+    if (props.selectedStaff === "") {
+      runeData = mapRequiredSpells();
+    }
+    console.log(runeData);
+
+    const updatedSpells = mapSpellPrices(runeData);
+
+    // Update spells to go
+    const updatedCasts = calcSpellsToUse(updatedSpells);
+    setMageDB(updatedCasts);
+    setFilteredMageDB(updatedCasts);
+
+    // setMageDB(updatedCasts);
+  }, [props.selectedStaff, runePrices, calcSpellsToUse, mapSpellPrices]);
+
+  //////////////////
+  // Sort filters //
+  //////////////////
 
   const sortBones = () => {
     setBonesSorted(!bonesSorted);

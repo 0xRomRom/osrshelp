@@ -13,7 +13,7 @@ const StaffFilters = ({
     const isChecked = e.target.checked;
     setStaffFilterChanged(!staffFilterChanged);
 
-    const chosenStaff = +e.target.dataset.multiplier;
+    const chosenStaff = e.target.dataset.staff;
 
     // Reset multiplier if deselected
     checkboxState[checkboxId] === true
@@ -42,7 +42,7 @@ const StaffFilters = ({
             id="staffofair"
             checked={checkboxState["staffofair"] || false}
             onChange={handleCheckboxChange}
-            data-multiplier="200"
+            data-staff="staffofair"
           />
           <label htmlFor="staffofair">
             <img
@@ -59,7 +59,7 @@ const StaffFilters = ({
             id="staffofwater"
             checked={checkboxState["staffofwater"] || false}
             onChange={handleCheckboxChange}
-            data-multiplier="200"
+            data-staff="staffofwater"
           />
           <label htmlFor="staffofwater">
             <img
@@ -76,7 +76,7 @@ const StaffFilters = ({
             id="staffofearth"
             checked={checkboxState["staffofearth"] || false}
             onChange={handleCheckboxChange}
-            data-multiplier="200"
+            data-staff="staffofearth"
           />
           <label htmlFor="staffofearth">
             <img
@@ -93,7 +93,7 @@ const StaffFilters = ({
             id="staffoffire"
             checked={checkboxState["staffoffire"] || false}
             onChange={handleCheckboxChange}
-            data-multiplier="200"
+            data-staff="staffoffire"
           />
           <label htmlFor="staffoffire">
             <img
@@ -110,7 +110,7 @@ const StaffFilters = ({
             id="lavabattlestaff"
             checked={checkboxState["lavabattlestaff"] || false}
             onChange={handleCheckboxChange}
-            data-multiplier="200"
+            data-staff="lavabattlestaff"
           />
           <label htmlFor="lavabattlestaff">
             <img
@@ -127,7 +127,7 @@ const StaffFilters = ({
             id="mudbattlestaff"
             checked={checkboxState["mudbattlestaff"] || false}
             onChange={handleCheckboxChange}
-            data-multiplier="200"
+            data-staff="mudbattlestaff"
           />
           <label htmlFor="mudbattlestaff">
             <img
@@ -144,7 +144,7 @@ const StaffFilters = ({
             id="steambattlestaff"
             checked={checkboxState["steambattlestaff"] || false}
             onChange={handleCheckboxChange}
-            data-multiplier="200"
+            data-staff="steambattlestaff"
           />
           <label htmlFor="steambattlestaff">
             <img
@@ -161,7 +161,7 @@ const StaffFilters = ({
             id="smokebattlestaff"
             checked={checkboxState["smokebattlestaff"] || false}
             onChange={handleCheckboxChange}
-            data-multiplier="200"
+            data-staff="smokebattlestaff"
           />
           <label htmlFor="smokebattlestaff">
             <img
@@ -178,7 +178,7 @@ const StaffFilters = ({
             id="mistbattlestaff"
             checked={checkboxState["mistbattlestaff"] || false}
             onChange={handleCheckboxChange}
-            data-multiplier="200"
+            data-staff="mistbattlestaff"
           />
           <label htmlFor="mistbattlestaff">
             <img
@@ -195,7 +195,7 @@ const StaffFilters = ({
             id="dustbattlestaff"
             checked={checkboxState["dustbattlestaff"] || false}
             onChange={handleCheckboxChange}
-            data-multiplier="200"
+            data-staff="dustbattlestaff"
           />
           <label htmlFor="dustbattlestaff">
             <img

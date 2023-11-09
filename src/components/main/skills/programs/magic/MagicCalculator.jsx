@@ -115,9 +115,7 @@ const MagicCalculator = (props) => {
         remainingExp={remainingExp}
         skills={props.skills}
         multiplier={multiplier}
-        filterChanged={filterChanged}
         searchState={searchState}
-        staffFilterChanged={staffFilterChanged}
         selectedStaff={selectedStaff}
       />
     </div>
