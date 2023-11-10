@@ -79,4 +79,16 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.lvlSpan {
+  display: inline;
+  color: rgb(139, 138, 138);
+  font-size: 12px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+  position: relative;
+  top: 3px;
 }

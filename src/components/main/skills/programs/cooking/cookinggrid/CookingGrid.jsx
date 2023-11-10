@@ -38,9 +38,7 @@ const CookingGrid = (props) => {
     setMonsterSorted(!monsterSorted);
     let sorter = [...foodDB];
     sorter.sort((a, b) =>
-      monsterSorted
-        ? a.food.localeCompare(b.food)
-        : b.food.localeCompare(a.food)
+      monsterSorted ? a.level - b.level : b.level - a.level
     );
     setFoodDB(sorter);
   };
@@ -98,6 +96,7 @@ const CookingGrid = (props) => {
                     alt="Food picture"
                     className={stl.minifood}
                   />
+                  <span className={stl.lvlSpan}>Lvl {food.level}</span>
                   {food.food}
                 </span>
               </span>
