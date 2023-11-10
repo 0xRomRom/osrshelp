@@ -1,7 +1,7 @@
 import stl from "./PrayerGrid.module.css";
 import prayerList from "../../../../../../utils/prayerList";
 import prayerLogo from "../../../../../../assets/skillicons/Prayer.webp";
-import memberLogo from "../../../../../../assets/icons/Member.webp";
+import expLogo from "../../../../../../assets/random/Stats_icon.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
 import { useEffect, useState } from "react";
@@ -122,11 +122,7 @@ const PrayerGrid = (props) => {
           Bones
         </span>
         <span onClick={sortExp}>
-          <img
-            src={memberLogo}
-            alt="Experience Logo"
-            className={stl.miniLogo}
-          />{" "}
+          <img src={expLogo} alt="Experience Logo" className={stl.miniLogo} />{" "}
           Exp
         </span>
         <span onClick={sortAmount}>

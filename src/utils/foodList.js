@@ -2,7 +2,7 @@ const FOODLIST = [
   {
     food: "Meat",
     member: false,
-    exp: 1,
+    exp: 30,
     toGo: 0,
     level: 1,
     src: "/foods/Cooked_meat.webp",
@@ -10,7 +10,7 @@ const FOODLIST = [
   {
     food: "Chicken",
     member: false,
-    exp: 1,
+    exp: 30,
     toGo: 0,
     level: 1,
     src: "/foods/Cooked_chicken.webp",
@@ -50,7 +50,7 @@ const FOODLIST = [
   {
     food: "Karambwan",
     member: true,
-    exp: 80,
+    exp: 190,
     toGo: 0,
     level: 1,
     src: "/foods/Cooked_karambwan.webp",

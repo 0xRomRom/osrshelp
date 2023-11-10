@@ -17,8 +17,7 @@ const CookingGrid = (props) => {
   const calculateFoodToCook = useCallback(
     (food) => {
       const expToGo = props.remainingExp;
-      const foodExp = +food * 4;
-      const result = Math.ceil(expToGo / foodExp);
+      const result = Math.ceil(expToGo / food.exp);
       return result ? result : "?";
     },
     [props.remainingExp]
@@ -35,13 +34,13 @@ const CookingGrid = (props) => {
     filterFoods();
   }, [filterFoods]);
 
-  const sortMonsters = () => {
+  const sortFood = () => {
     setMonsterSorted(!monsterSorted);
     let sorter = [...foodDB];
     sorter.sort((a, b) =>
       monsterSorted
-        ? a.monster.localeCompare(b.monster)
-        : b.monster.localeCompare(a.monster)
+        ? a.food.localeCompare(b.food)
+        : b.food.localeCompare(a.food)
     );
     setFoodDB(sorter);
   };
@@ -55,26 +54,24 @@ const CookingGrid = (props) => {
     setFoodDB(sorter);
   };
 
-  const sortCombat = () => {
+  const sortExp = () => {
     setCombatSorted(!combatSorted);
     let sorter = [...foodDB];
-    sorter.sort((a, b) =>
-      combatSorted ? +a.combat - +b.combat : +b.combat - +a.combat
-    );
+    sorter.sort((a, b) => (combatSorted ? a.exp - b.exp : b.exp - a.exp));
     setFoodDB(sorter);
   };
 
   const sortToGo = () => {
     setToGoSorted(!toGoSorted);
     let sorter = [...foodDB];
-    sorter.sort((a, b) => (toGoSorted ? +a.hp - +b.hp : +b.hp - +a.hp));
+    sorter.sort((a, b) => (toGoSorted ? a.exp - b.exp : b.exp - a.exp));
     setFoodDB(sorter);
   };
 
   return (
     <div className={stl.grid}>
       <div className={stl.typeRow}>
-        <span className={stl.monsterTitleRow} onClick={sortMonsters}>
+        <span className={stl.monsterTitleRow} onClick={sortFood}>
           <img src={cookingLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
           Food
         </span>
@@ -82,7 +79,7 @@ const CookingGrid = (props) => {
           <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
           Member
         </span>
-        <span onClick={sortCombat}>
+        <span onClick={sortExp}>
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
         </span>
         <span onClick={sortToGo}>
@@ -95,17 +92,19 @@ const CookingGrid = (props) => {
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
-                <img
-                  src={food.src}
-                  alt="Food picture"
-                  className={stl.minifood}
-                />
-                {food.food}
+                <span className={stl.innerSpan}>
+                  <img
+                    src={food.src}
+                    alt="Food picture"
+                    className={stl.minifood}
+                  />
+                  {food.food}
+                </span>
               </span>
               <span className={stl.rowItem}>{food.member ? "Yes" : "No"}</span>
               <span className={stl.rowItem}>{food.exp}</span>
               <span className={stl.rowItem}>
-                {calculateFoodToCook(food.exp).toLocaleString()}
+                {calculateFoodToCook(food).toLocaleString()}
               </span>
             </div>
           );

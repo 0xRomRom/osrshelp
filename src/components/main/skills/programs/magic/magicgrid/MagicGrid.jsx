@@ -303,7 +303,7 @@ const MagicGrid = (props) => {
                     ? Math.abs(
                         Math.ceil(mage.toGo * mage.price) /
                           (+props.multiplier / 100)
-                      ).toFixed(0)
+                      ).toLocaleString()
                     : -(mage.toGo * mage.price)
                   ).toLocaleString()}
 

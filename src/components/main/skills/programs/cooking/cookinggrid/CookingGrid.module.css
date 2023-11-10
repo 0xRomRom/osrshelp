@@ -71,5 +71,12 @@
 .minifood {
   width: 25px;
   height: 25px;
-  margin-right: 0.3rem;
+  margin-right: 0.4rem;
+  position: relative;
+}
+
+.innerSpan {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
