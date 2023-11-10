@@ -6,7 +6,6 @@
   padding: 1rem;
   border-radius: 0.8rem;
   padding-bottom: 2.5rem;
-  margin-bottom: 1rem;
 }
 
 .typeRow {
@@ -51,22 +50,14 @@
 
 .rowItem {
   width: 25%;
-  height: 100%;
-  /* background-color: red; */
   color: white;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-content: center;
 }
 
 .monsterRow {
-  /* text-align: left; */
-  padding-left: 0.5rem;
+  text-align: left;
+  padding-left: 1.1rem;
   /* background-color: red; */
-  display: flex;
-  justify-content: flex-start;
-  align-content: center;
 }
 
 .miniLogo {
@@ -75,56 +66,29 @@
 
 .monsterTitleRow {
   text-align: left !important;
-  padding-left: 1.25rem;
 }
 
-.boneMiniImg {
-  margin-right: 10px;
-  margin-top: 10px;
-  width: 22px;
-  height: 22px;
+.minifood {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.4rem;
+  position: relative;
 }
 
-.gpcost {
-  color: rgb(175, 175, 175);
-  margin-left: 3px;
-}
-
-.gpperxp {
-  color: rgb(209, 207, 207);
-  margin-left: 3px;
-  font-size: 11px;
-}
-
-.prayerRow {
+.innerSpan {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  height: 100%;
+  /* background-color: red; */
 }
 
-.bonename {
-  padding-top: 0.7rem;
-  text-align: start;
-}
-
-.amountRow {
-  padding-top: 0.5rem;
-}
-
-.costRow {
-  padding-top: 0.45rem;
-}
-
-.magelvl {
+.lvlSpan {
+  display: inline;
   color: rgb(139, 138, 138);
   font-size: 12px;
-  margin-right: 4px;
-}
-
-.red {
-  color: red;
-}
-.green {
-  color: green;
+  margin-right: 7px;
+  margin-bottom: 5px;
+  position: relative;
+  top: 3px;
 }
