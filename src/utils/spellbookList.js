@@ -24,6 +24,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_crossbow_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 5,
@@ -32,6 +33,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/water_strike.png",
+    spellbook: "Standard",
   },
   {
     level: 6,
@@ -40,6 +42,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/lumbridge_graveyard_teleport.png",
+    spellbook: "Arceuus",
   },
   {
     level: 7,
@@ -48,6 +51,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_sapphire_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 7,
@@ -56,6 +60,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_crossbow_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 7,
@@ -64,6 +69,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_sapphire_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 9,
@@ -72,6 +78,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/earth_strike.png",
+    spellbook: "Standard",
   },
   {
     level: 11,
@@ -80,6 +87,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/weaken.png",
+    spellbook: "Standard",
   },
   {
     level: 13,
@@ -88,6 +96,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/fire_strike.png",
+    spellbook: "Standard",
   },
   {
     level: 14,
@@ -96,6 +105,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_crossbow_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 15,
@@ -104,6 +114,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/bones_to_bananas.png",
+    spellbook: "Standard",
   },
   {
     level: 16,
@@ -112,6 +123,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/basic-reanimation.png",
+    spellbook: "Arceuus",
   },
   {
     level: 17,
@@ -120,6 +132,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/draynor_manor_teleport.png",
+    spellbook: "Arceuus",
   },
   {
     level: 17,
@@ -128,6 +141,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/wind_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 19,
@@ -136,6 +150,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/curse.png",
+    spellbook: "Standard",
   },
   {
     level: 20,
@@ -144,6 +159,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/bind.png",
+    spellbook: "Standard",
   },
   {
     level: 21,
@@ -152,6 +168,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/low_level_alchemy.png",
+    spellbook: "Standard",
   },
   {
     level: 23,
@@ -160,6 +177,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/water_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 23,
@@ -168,6 +186,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Battlefront_Teleport.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 24,
@@ -176,6 +195,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_crossbow_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 25,
@@ -184,6 +204,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/varrock_teleport.png",
+    spellbook: "Standard",
   },
   {
     level: 27,
@@ -192,6 +213,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_emerald_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 27,
@@ -200,6 +222,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_crossbow_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 27,
@@ -208,6 +231,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_emerald_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 28,
@@ -216,6 +240,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/mind_altar_teleport.png",
+    spellbook: "Arceuus",
   },
   {
     level: 29,
@@ -224,6 +249,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_crossbow_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 29,
@@ -232,6 +258,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/earth_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 31,
@@ -240,6 +267,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/lumbridge_teleport.png",
+    spellbook: "Standard",
   },
   {
     level: 33,
@@ -248,6 +276,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/telekinetic_grab.png",
+    spellbook: "Standard",
   },
   {
     level: 34,
@@ -256,6 +285,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/respawn_teleport.png",
+    spellbook: "Arceuus",
   },
   {
     level: 35,
@@ -264,6 +294,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/fire_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 35,
@@ -272,6 +303,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Ghostly_Grasp.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 37,
@@ -280,6 +312,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/falador_teleport.png",
+    spellbook: "Standard",
   },
   {
     level: 38,
@@ -288,6 +321,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Resurrect_Lesser_Ghost.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 38,
@@ -296,6 +330,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Resurrect_Lesser_Skeleton.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 38,
@@ -304,6 +339,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Resurrect_Lesser_Zombie.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 39,
@@ -312,6 +348,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/crumble_undead.png",
+    spellbook: "Standard",
   },
   {
     level: 40,
@@ -320,6 +357,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/salve_graveyard_teleport.png",
+    spellbook: "Arceuus",
   },
   {
     level: 40,
@@ -328,6 +366,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/teleport_to_house.png",
+    spellbook: "Standard",
   },
   {
     level: 41,
@@ -336,6 +375,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/wind_blast.png",
+    spellbook: "Standard",
   },
   {
     level: 41,
@@ -344,6 +384,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/adept-reanimation.png",
+    spellbook: "Arceuus",
   },
   {
     level: 43,
@@ -352,6 +393,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/superheat_item.png",
+    spellbook: "Standard",
   },
   {
     level: 44,
@@ -360,6 +402,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Inferior_Demonbane.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 45,
@@ -368,6 +411,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/camelot_teleport.png",
+    spellbook: "Standard",
   },
   {
     level: 47,
@@ -376,6 +420,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/water_blast.png",
+    spellbook: "Standard",
   },
   {
     level: 47,
@@ -384,6 +429,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Shadow_Veil.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 48,
@@ -392,6 +438,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/fenkenstrains_castle_teleport.png",
+    spellbook: "Arceuus",
   },
   {
     level: 49,
@@ -400,6 +447,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_ruby_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 49,
@@ -408,6 +456,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_crossbow_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 49,
@@ -416,6 +465,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_ruby_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 50,
@@ -424,6 +474,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Dark_Lure.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 50,
@@ -432,6 +483,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/iban_blast.png",
+    spellbook: "Standard",
   },
   {
     level: 50,
@@ -440,6 +492,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/smoke_rush.png",
+    spellbook: "Ancient",
   },
   {
     level: 50,
@@ -448,6 +501,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/magic_dart.png",
+    spellbook: "Standard",
   },
   {
     level: 50,
@@ -456,6 +510,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/snare.png",
+    spellbook: "Standard",
   },
   {
     level: 51,
@@ -464,6 +519,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/ardougne_teleport.png",
+    spellbook: "Standard",
   },
   {
     level: 52,
@@ -472,6 +528,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/shadow_rush.png",
+    spellbook: "Ancient",
   },
   {
     level: 53,
@@ -480,6 +537,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/earth_blast.png",
+    spellbook: "Standard",
   },
   {
     level: 54,
@@ -488,6 +546,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/paddewwa_teleport.png",
+    spellbook: "Ancient",
   },
   {
     level: 55,
@@ -496,6 +555,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/high_level_alchemy.png",
+    spellbook: "Standard",
   },
   {
     level: 56,
@@ -504,6 +564,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Skeletal_Grasp.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 56,
@@ -512,6 +573,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/charge_water_orb.png",
+    spellbook: "Standard",
   },
   {
     level: 56,
@@ -520,6 +582,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/blood_rush.png",
+    spellbook: "Ancient",
   },
   {
     level: 57,
@@ -528,6 +591,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Resurrect_Superior_Ghost.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 57,
@@ -536,6 +600,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Resurrect_Superior_Skeleton.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 57,
@@ -544,6 +609,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Resurrect_Superior_Zombie.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 57,
@@ -552,6 +618,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_crossbow_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 57,
@@ -560,6 +627,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_diamond_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 57,
@@ -568,6 +636,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_diamond_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 58,
@@ -576,6 +645,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/watchtower_teleport.png",
+    spellbook: "Standard",
   },
   {
     level: 58,
@@ -584,6 +654,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/ice_rush.png",
+    spellbook: "Standard",
   },
   {
     level: 59,
@@ -592,6 +663,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/fire_blast.png",
+    spellbook: "Standard",
   },
   {
     level: 59,
@@ -600,6 +672,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Mark_of_Darkness.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 60,
@@ -608,6 +681,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/senntisten_teleport.png",
+    spellbook: "Ancient",
   },
   {
     level: 60,
@@ -616,6 +690,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/claws_of_guthix.png",
+    spellbook: "Standard",
   },
   {
     level: 60,
@@ -624,6 +699,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/flames_of_zamorak.png",
+    spellbook: "Standard",
   },
   {
     level: 60,
@@ -632,6 +708,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/saradomin_strike.png",
+    spellbook: "Standard",
   },
   {
     level: 60,
@@ -640,6 +717,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/charge_earth_orb.png",
+    spellbook: "Standard",
   },
   {
     level: 60,
@@ -648,6 +726,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/bones_to_peaches.png",
+    spellbook: "Standard",
   },
   {
     level: 61,
@@ -656,6 +735,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/west_ardougne_teleport.png",
+    spellbook: "Arceuus",
   },
   {
     level: 61,
@@ -664,6 +744,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/trollheim_teleport.png",
+    spellbook: "Standard",
   },
   {
     level: 62,
@@ -672,6 +753,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Superior_Demonbane.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 62,
@@ -680,6 +762,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/smoke_burst.png",
+    spellbook: "Ancient",
   },
   {
     level: 62,
@@ -688,6 +771,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/wind_wave.png",
+    spellbook: "Standard",
   },
   {
     level: 63,
@@ -696,6 +780,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/charge_fire_orb.png",
+    spellbook: "Standard",
   },
   {
     level: 64,
@@ -704,6 +789,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/shadow_burst.png",
+    spellbook: "Arceuus",
   },
   {
     level: 64,
@@ -712,6 +798,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/shadow_burst.png",
+    spellbook: "Ancient",
   },
   {
     level: 64,
@@ -720,6 +807,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/teleport_ape_atoll.png",
+    spellbook: "Standard",
   },
   {
     level: 65,
@@ -728,6 +816,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/bake_pie.png",
+    spellbook: "Lunar",
   },
   {
     level: 65,
@@ -736,6 +825,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/harmony_island_teleport.png",
+    spellbook: "Arceuus",
   },
   {
     level: 65,
@@ -744,6 +834,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/geomancy.png",
+    spellbook: "Arceuus",
   },
   {
     level: 65,
@@ -752,6 +843,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/water_wave.png",
+    spellbook: "Standard",
   },
   {
     level: 66,
@@ -760,6 +852,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Vile_Vigour.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 66,
@@ -768,6 +861,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/charge_air_orb.png",
+    spellbook: "Standard",
   },
   {
     level: 66,
@@ -776,6 +870,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/cure_plant.png",
+    spellbook: "Lunar",
   },
   {
     level: 66,
@@ -784,6 +879,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/kharyrll_teleport.png",
+    spellbook: "Ancient",
   },
   {
     level: 66,
@@ -792,6 +888,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/vulnerability.png",
+    spellbook: "Standard",
   },
   {
     level: 66,
@@ -800,6 +897,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/monster_examine.png",
+    spellbook: "Lunar",
   },
   {
     level: 67,
@@ -808,6 +906,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/npc_contact.png",
+    spellbook: "Lunar",
   },
   {
     level: 68,
@@ -816,6 +915,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/blood_burst.png",
+    spellbook: "Ancient",
   },
   {
     level: 68,
@@ -824,6 +924,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/cure_other.png",
+    spellbook: "Lunar",
   },
   {
     level: 68,
@@ -832,6 +933,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_dragonstone_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 68,
@@ -840,6 +942,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_crossbow_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 68,
@@ -848,6 +951,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/humidify.png",
+    spellbook: "Lunar",
   },
   {
     level: 68,
@@ -856,6 +960,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_dragonstone_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 69,
@@ -864,6 +969,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/teleport_to_kourend.png",
+    spellbook: "Arceuus",
   },
   {
     level: 69,
@@ -872,6 +978,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/moonclan_teleport.png",
+    spellbook: "Lunar",
   },
   {
     level: 70,
@@ -880,6 +987,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Degrime.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 70,
@@ -888,6 +996,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/earth_wave.png",
+    spellbook: "Standard",
   },
   {
     level: 70,
@@ -896,6 +1005,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/ice_burst.png",
+    spellbook: "Ancient",
   },
   {
     level: 70,
@@ -904,6 +1014,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/tele_group_moonclan.png",
+    spellbook: "Lunar",
   },
   {
     level: 71,
@@ -912,6 +1023,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/cemetery_teleport.png",
+    spellbook: "Arceuus",
   },
   {
     level: 71,
@@ -920,6 +1032,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/cure_me.png",
+    spellbook: "Lunar",
   },
   {
     level: 71,
@@ -928,6 +1041,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/hunter_kit.png",
+    spellbook: "Lunar",
   },
   {
     level: 71,
@@ -936,6 +1050,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/ourania_teleport.png",
+    spellbook: "Lunar",
   },
   {
     level: 72,
@@ -944,6 +1059,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/lassar_teleport.png",
+    spellbook: "Ancient",
   },
   {
     level: 72,
@@ -952,6 +1068,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/waterbirth_teleport.png",
+    spellbook: "Lunar",
   },
   {
     level: 72,
@@ -960,6 +1077,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/expert-reanimation.png",
+    spellbook: "Arceuus",
   },
   {
     level: 73,
@@ -968,6 +1086,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Ward_of_Arceuus.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 73,
@@ -976,6 +1095,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/tele_group_waterbirth.png",
+    spellbook: "Lunar",
   },
   {
     level: 73,
@@ -984,6 +1104,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enfeeble.png",
+    spellbook: "Standard",
   },
   {
     level: 74,
@@ -992,6 +1113,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/teleother_lumbridge.png",
+    spellbook: "Standard",
   },
   {
     level: 74,
@@ -1000,6 +1122,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/smoke_blitz.png",
+    spellbook: "Ancient",
   },
   {
     level: 74,
@@ -1008,6 +1131,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/cure_group.png",
+    spellbook: "Lunar",
   },
   {
     level: 75,
@@ -1016,6 +1140,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/stat_spy.png",
+    spellbook: "Lunar",
   },
   {
     level: 75,
@@ -1024,6 +1149,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/barbarian_teleport.png",
+    spellbook: "Lunar",
   },
   {
     level: 75,
@@ -1032,6 +1158,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/fire_wave.png",
+    spellbook: "Standard",
   },
   {
     level: 76,
@@ -1040,6 +1167,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Resurrect_Greater_Ghost.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 76,
@@ -1048,6 +1176,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Resurrect_Greater_Skeleton.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 76,
@@ -1056,6 +1185,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Resurrect_Greater_Zombie.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 76,
@@ -1064,6 +1194,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/tele_group_barbarian.png",
+    spellbook: "Lunar",
   },
   {
     level: 76,
@@ -1072,6 +1203,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/shadow_blitz.png",
+    spellbook: "Ancient",
   },
   {
     level: 76,
@@ -1080,6 +1212,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/spin_flax.png",
+    spellbook: "Lunar",
   },
   {
     level: 77,
@@ -1088,6 +1221,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/superglass_make.png",
+    spellbook: "Lunar",
   },
   {
     level: 78,
@@ -1096,6 +1230,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/tan_leather.png",
+    spellbook: "Lunar",
   },
   {
     level: 78,
@@ -1104,6 +1239,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/khazard_teleport.png",
+    spellbook: "Lunar",
   },
   {
     level: 78,
@@ -1112,6 +1248,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/dareeyak_teleport.png",
+    spellbook: "Ancient",
   },
   {
     level: 78,
@@ -1120,6 +1257,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/resurrect_crops.png",
+    spellbook: "Lunar",
   },
   {
     level: 79,
@@ -1128,6 +1266,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Undead_Grasp.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 79,
@@ -1136,6 +1275,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/entangle.png",
+    spellbook: "Standard",
   },
   {
     level: 79,
@@ -1144,6 +1284,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/tele_group_khazard.png",
+    spellbook: "Lunar",
   },
   {
     level: 79,
@@ -1152,6 +1293,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/dream.png",
+    spellbook: "Lunar",
   },
   {
     level: 80,
@@ -1160,6 +1302,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Death_Charge.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 80,
@@ -1168,6 +1311,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/charge.png",
+    spellbook: "Standard",
   },
   {
     level: 80,
@@ -1176,6 +1320,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/blood_blitz.png",
+    spellbook: "Ancient",
   },
   {
     level: 80,
@@ -1184,6 +1329,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/stun.png",
+    spellbook: "Standard",
   },
   {
     level: 80,
@@ -1192,6 +1338,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/string_jewellery.png",
+    spellbook: "Lunar",
   },
   {
     level: 81,
@@ -1200,6 +1347,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/stat_restore_pot_share.png",
+    spellbook: "Lunar",
   },
   {
     level: 81,
@@ -1208,6 +1356,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/wind_surge.png",
+    spellbook: "Standard",
   },
   {
     level: 82,
@@ -1216,6 +1365,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Dark_Demonbane.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 82,
@@ -1224,6 +1374,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/teleother_falador.png",
+    spellbook: "Standard",
   },
   {
     level: 82,
@@ -1232,6 +1383,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/magic_imbue.png",
+    spellbook: "Lunar",
   },
   {
     level: 82,
@@ -1240,6 +1392,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/ice_blitz.png",
+    spellbook: "Ancient",
   },
   {
     level: 83,
@@ -1248,6 +1401,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/fertile_soil.png",
+    spellbook: "Lunar",
   },
   {
     level: 83,
@@ -1256,6 +1410,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/barrows_teleport.png",
+    spellbook: "Arceuus",
   },
   {
     level: 84,
@@ -1264,6 +1419,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Demonic_Offering.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 84,
@@ -1272,6 +1428,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/carrallangar_teleport.png",
+    spellbook: "Ancient",
   },
   {
     level: 84,
@@ -1280,6 +1437,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/boost_potion_share.png",
+    spellbook: "Lunar",
   },
   {
     level: 85,
@@ -1288,6 +1446,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Greater_Corruption.webp",
+    spellbook: "Arceuus",
   },
   {
     level: 85,
@@ -1296,6 +1455,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/water_surge.png",
+    spellbook: "Standard",
   },
   {
     level: 85,
@@ -1304,6 +1464,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/fishing_guild_teleport.png",
+    spellbook: "Lunar",
   },
   {
     level: 85,
@@ -1312,6 +1473,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/tele_block.png",
+    spellbook: "Standard",
   },
   {
     level: 85,
@@ -1320,6 +1482,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/teleport_to_bounty_target.png",
+    spellbook: "Standard",
   },
   {
     level: 86,
@@ -1328,6 +1491,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/smoke_barrage.png",
+    spellbook: "Ancient",
   },
   {
     level: 86,
@@ -1336,6 +1500,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/tele_group_fishing_guild.png",
+    spellbook: "Lunar",
   },
   {
     level: 86,
@@ -1344,6 +1509,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/plank_make.png",
+    spellbook: "Lunar",
   },
   {
     level: 87,
@@ -1352,6 +1518,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/catherby_teleport.png",
+    spellbook: "Lunar",
   },
   {
     level: 87,
@@ -1360,6 +1527,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_onyx_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 87,
@@ -1368,6 +1536,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_crossbow_bolt.png",
+    spellbook: "Standard",
   },
   {
     level: 87,
@@ -1376,6 +1545,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_onyx_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 88,
@@ -1384,6 +1554,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/shadow_barrage.png",
+    spellbook: "Ancient",
   },
   {
     level: 88,
@@ -1392,6 +1563,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/tele_group_catherby.png",
+    spellbook: "Lunar",
   },
   {
     level: 89,
@@ -1400,6 +1572,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/ice_plateau_teleport.png",
+    spellbook: "Lunar",
   },
   {
     level: 89,
@@ -1408,6 +1581,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/recharge_dragonstone.png",
+    spellbook: "Lunar",
   },
   {
     level: 90,
@@ -1416,6 +1590,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/annakarl_teleport.png",
+    spellbook: "Ancient",
   },
   {
     level: 90,
@@ -1424,6 +1599,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/earth_surge.png",
+    spellbook: "Standard",
   },
   {
     level: 90,
@@ -1432,6 +1608,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/tele_group_ice_plateau.png",
+    spellbook: "Lunar",
   },
   {
     level: 90,
@@ -1440,6 +1617,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/teleother_camelot.png",
+    spellbook: "Standard",
   },
   {
     level: 90,
@@ -1448,6 +1626,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/ape_atoll_teleport.png",
+    spellbook: "Arceuus",
   },
   {
     level: 90,
@@ -1456,6 +1635,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/master-reanimation.png",
+    spellbook: "Arceuus",
   },
   {
     level: 91,
@@ -1464,6 +1644,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/energy_transfer.png",
+    spellbook: "Lunar",
   },
   {
     level: 92,
@@ -1472,6 +1653,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/Sinister_Offering.png",
+    spellbook: "Arceuus",
   },
   {
     level: 92,
@@ -1480,6 +1662,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/blood_barrage.png",
+    spellbook: "Ancient",
   },
   {
     level: 92,
@@ -1488,6 +1671,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/heal_other.png",
+    spellbook: "Lunar",
   },
   {
     level: 93,
@@ -1496,6 +1680,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/vengeance_other.png",
+    spellbook: "Lunar",
   },
   {
     level: 93,
@@ -1504,6 +1689,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_zenyte_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 93,
@@ -1512,6 +1698,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/enchant_zenyte_jewellery.png",
+    spellbook: "Standard",
   },
   {
     level: 94,
@@ -1520,6 +1707,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/ice_barrage.png",
+    spellbook: "Ancient",
   },
   {
     level: 94,
@@ -1528,6 +1716,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/vengeance.png",
+    spellbook: "Lunar",
   },
   {
     level: 95,
@@ -1536,6 +1725,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/heal_group.png",
+    spellbook: "Lunar",
   },
   {
     level: 95,
@@ -1544,6 +1734,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/fire_surge.png",
+    spellbook: "Standard",
   },
   {
     level: 96,
@@ -1552,6 +1743,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/ghorrock_teleport.png",
+    spellbook: "Ancient",
   },
   {
     level: 96,
@@ -1560,6 +1752,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/spellbook_swap.png",
+    spellbook: "Lunar",
   },
 ];
 
