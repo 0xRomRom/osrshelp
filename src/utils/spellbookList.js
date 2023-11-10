@@ -6,6 +6,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/wind_strike.png",
+    spellbook: "Standard",
   },
   {
     level: 3,
@@ -14,6 +15,7 @@ const SPELLBOOKDATA = [
     price: 0,
     toGo: 0,
     src: "spells/confuse.png",
+    spellbook: "Standard",
   },
   {
     level: 4,

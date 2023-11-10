@@ -116,7 +116,6 @@ const MagicGrid = (props) => {
 
       // Update spellprices
       const updatedSpells = mapSpellPrices(runeArray);
-      // console.log(updatedSpells);
 
       // Update spells to go
       const updatedCasts = calcSpellsToUse(updatedSpells);
@@ -151,12 +150,10 @@ const MagicGrid = (props) => {
 
       runeData.push({ names: runeNamesArray, amounts: runeAmountsArray });
     });
-    console.log(runeData);
 
     if (props.selectedStaff === "") {
       runeData = mapRequiredSpells();
     }
-    console.log(runeData);
 
     const updatedSpells = mapSpellPrices(runeData);
 
@@ -167,6 +164,23 @@ const MagicGrid = (props) => {
 
     // setMageDB(updatedCasts);
   }, [props.selectedStaff, runePrices, calcSpellsToUse, mapSpellPrices]);
+
+  const filterSpellbook = useCallback(() => {
+    if (Object.keys(mageDB).length === 0) return;
+    if (props.activeSpellbook !== "All") {
+      const filteredSpells = mageDB.filter((spell) =>
+        spell.spellbook.includes(props.activeSpellbook)
+      );
+      setFilteredMageDB(filteredSpells);
+    } else {
+      // If search state is empty, reset to the original data
+      setFilteredMageDB(mageDB);
+    }
+  }, [props.activeSpellbook, mageDB]);
+
+  useEffect(() => {
+    filterSpellbook();
+  }, [filterSpellbook]);
 
   //////////////////
   // Sort filters //

@@ -22,6 +22,7 @@ const MagicCalculator = (props) => {
   const [searchState, setSearchState] = useState("");
   const [staffFilterChanged, setStaffFilterChanged] = useState(false);
   const [selectedStaff, setSelectedStaff] = useState("");
+  const [activeSpellbook, setActiveSpellbook] = useState("All");
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -112,7 +113,10 @@ const MagicCalculator = (props) => {
           setSearchState={setSearchState}
           searchType="Search Spell"
         />
-        <SpellBookFilter />
+        <SpellBookFilter
+          setActiveSpellbook={setActiveSpellbook}
+          activeSpellbook={activeSpellbook}
+        />
       </div>
       <MagicGrid
         remainingExp={remainingExp}
@@ -120,6 +124,7 @@ const MagicCalculator = (props) => {
         multiplier={multiplier}
         searchState={searchState}
         selectedStaff={selectedStaff}
+        activeSpellbook={activeSpellbook}
       />
     </div>
   );

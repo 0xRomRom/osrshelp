@@ -1,13 +1,11 @@
-import React, { useState } from "react";
 import stl from "./SpellBookFilter.module.css";
 
-const SpellBookFilter = () => {
-  const [activeSpellbook, setActiveSpellbook] = useState("All");
-
+const SpellBookFilter = ({ setActiveSpellbook, activeSpellbook }) => {
   const handleSpellbookChange = (spellbook) => {
     setActiveSpellbook(spellbook);
   };
 
+  // Toggle styling classes
   const getSpellbookClassName = (spellbook) => {
     return activeSpellbook === spellbook ? stl.activeSpellbook : "";
   };
