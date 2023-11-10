@@ -149,4 +149,5 @@
   /* background-color: red; */
   display: flex;
   justify-content: flex-start;
+  margin: 1rem 0rem;
 }

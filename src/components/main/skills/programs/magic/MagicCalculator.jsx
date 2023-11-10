@@ -8,7 +8,6 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import MagicFilters from "./magicfilters/MagicFilters";
 import SearchFilter from "../searchfilter/SearchFilter";
-import AlchemyFilter from "./alchemyfilter/AlchemyFilter";
 
 import { useState } from "react";
 
@@ -101,10 +100,6 @@ const MagicCalculator = (props) => {
           setFilterChanged={setFilterChanged}
           filterChanged={filterChanged}
         />
-        <SearchFilter
-          setSearchState={setSearchState}
-          searchType="Search Spell"
-        />
       </div>
       <div className={stl.configRow2}>
         <StaffFilters
@@ -112,7 +107,10 @@ const MagicCalculator = (props) => {
           setStaffFilterChanged={setStaffFilterChanged}
           staffFilterChanged={staffFilterChanged}
         />
-        <AlchemyFilter />
+        <SearchFilter
+          setSearchState={setSearchState}
+          searchType="Search Spell"
+        />
       </div>
       <MagicGrid
         remainingExp={remainingExp}
