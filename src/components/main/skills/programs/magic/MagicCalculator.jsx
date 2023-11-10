@@ -8,6 +8,7 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import MagicFilters from "./magicfilters/MagicFilters";
 import SearchFilter from "../searchfilter/SearchFilter";
+import SpellBookFilter from "./spellbookfilters/SpellBookFilter";
 
 import { useState } from "react";
 
@@ -111,6 +112,7 @@ const MagicCalculator = (props) => {
           setSearchState={setSearchState}
           searchType="Search Spell"
         />
+        <SpellBookFilter />
       </div>
       <MagicGrid
         remainingExp={remainingExp}

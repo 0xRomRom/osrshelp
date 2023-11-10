@@ -1,0 +1,54 @@
+.modal {
+  background-color: rgb(32, 46, 57);
+  height: 6rem;
+  border-radius: 0.8rem;
+  overflow-x: hidden;
+  margin-left: 1rem;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+}
+
+.innerWrap {
+  position: relative;
+  width: 97.5%;
+  height: 72%;
+  display: flex;
+  gap: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.spellChoice {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: rgb(164, 164, 164);
+  width: 75px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.bookIcon {
+  margin: 0 auto;
+  height: 25px;
+  width: 25px;
+}
+
+.activeSpellbook {
+  background-color: #0084ff7a;
+  color: white;
+  border-radius: 5px;
+}
