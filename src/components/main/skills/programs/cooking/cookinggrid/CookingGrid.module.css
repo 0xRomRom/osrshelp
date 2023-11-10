@@ -67,3 +67,9 @@
 .monsterTitleRow {
   text-align: left !important;
 }
+
+.minifood {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.3rem;
+}

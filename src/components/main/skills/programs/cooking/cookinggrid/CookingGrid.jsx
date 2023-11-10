@@ -95,6 +95,11 @@ const CookingGrid = (props) => {
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
+                <img
+                  src={food.src}
+                  alt="Food picture"
+                  className={stl.minifood}
+                />
                 {food.food}
               </span>
               <span className={stl.rowItem}>{food.member ? "Yes" : "No"}</span>
