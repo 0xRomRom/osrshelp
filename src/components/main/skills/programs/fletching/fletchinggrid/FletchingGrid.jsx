@@ -1,8 +1,8 @@
 import stl from "./FletchingGrid.module.css";
 import FLETCHLIST from "../../../../../../utils/fletchlist";
-import cookingLogo from "../../../../../../assets/skillicons/Cooking.webp";
+import fletchingLogo from "../../../../../../assets/skillicons/Fletching.webp";
 import axeLogo from "../../../../../../assets/random/Rune_axe.png";
-import memberLogo from "../../../../../../assets/icons/Member.webp";
+import donate from "../../../../../../assets/icons/Donate.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
 import { useState, useCallback, useEffect } from "react";
@@ -64,18 +64,22 @@ const FletchingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortTree}>
-          <img src={cookingLogo} alt="Tree Logo" className={stl.miniLogo} />{" "}
-          Tree
-        </span>
-        <span onClick={sortMembers}>
-          <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
-          Member
+          <img src={fletchingLogo} alt="Tree Logo" className={stl.miniLogo} />{" "}
+          Item
         </span>
         <span onClick={sortExp}>
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
         </span>
+        <span onClick={sortMembers}>
+          <img
+            src="/fletching/Knife.webp"
+            alt="Member Logo"
+            className={stl.miniLogo}
+          />{" "}
+          Amount
+        </span>
         <span onClick={sortToGo}>
-          <img src={axeLogo} alt="Slayer Logo" className={stl.miniLogo} /> To Go
+          <img src={donate} alt="Slayer Logo" className={stl.miniLogo} /> Cost
         </span>
       </div>
       <div className={stl.resultGrid}>
@@ -94,8 +98,8 @@ const FletchingGrid = (props) => {
                   {tree.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{tree.members ? "Yes" : "No"}</span>
               <span className={stl.rowItem}>{tree.exp}</span>
+              <span className={stl.rowItem}>{tree.members ? "Yes" : "No"}</span>
               <span className={stl.rowItem}>{treePrice.toLocaleString()}</span>
             </div>
           );
