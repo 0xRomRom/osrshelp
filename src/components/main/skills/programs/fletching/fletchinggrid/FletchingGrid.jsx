@@ -9,10 +9,29 @@ import { useState, useCallback, useEffect } from "react";
 const FletchingGrid = (props) => {
   const [fletchDB, setFletchDB] = useState(FLETCHLIST);
   const [filteredfletchDB, setFilteredfletchDB] = useState(FLETCHLIST);
+  const [fletchPrices, setFletchPrices] = useState({});
+
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
   const [toGoSorted, setToGoSorted] = useState(false);
+
+  const priceFetcher = async () => {
+    const fetcher = await fetch(
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Headless_arrow|Bronze_arrow|Bronze_javelin|Ogre_arrow|Shortbow_(u)|Shortbow|Wooden_stock|Bronze_crossbow_(u)|Bronze_crossbow|Bronze_bolts|Bronze_dart|Longbow_(u)|Longbow|Opal_bolts_(e)|Iron_arrow|Iron_javelin|Oak_shortbow(u)|Oak_shortbow|Iron_dart|Oak_longbow_(u)|Oak_longbow|Oak_shield|Steel_arrow|Steel_javelin|Kebbit_bolts|Willow_shortbow_(u)|Willow_shortbow|Steel_dart|Willow_stock|Iron_crossbow_(u)|Iron_crossbow|Iron_bolts|Willow_longbow_(u)|Willow_longbow|Battlestaff|Pearl_bolts_(e)|Willow_shield|Long_kebbit_bolts|Silver_bolts"
+    );
+    const result = await fetcher.json();
+    setFletchPrices(result);
+  };
+  useEffect(() => {
+    console.log(fletchPrices);
+  }, [fletchPrices]);
+
+  useEffect(() => {
+    if (Object.keys(fletchPrices).length === 0) {
+      priceFetcher();
+    }
+  }, [fletchPrices]);
 
   const calculateFletchActions = useCallback(
     (fletch) => {
