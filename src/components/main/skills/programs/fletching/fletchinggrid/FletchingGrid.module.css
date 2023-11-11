@@ -93,3 +93,26 @@
   position: relative;
   top: 3px;
 }
+
+.gpcost {
+  color: rgb(175, 175, 175);
+  margin-left: 3px;
+}
+
+.gpperxp {
+  color: rgb(209, 207, 207);
+  margin-left: 3px;
+  font-size: 11px;
+}
+
+.expRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}

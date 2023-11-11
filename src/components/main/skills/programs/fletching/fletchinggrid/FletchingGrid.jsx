@@ -128,23 +128,19 @@ const FletchingGrid = (props) => {
       const finalPrices = data.map((item, index) => {
         const itemName = item.name;
         let itemPrice;
-        console.log("Index: ", index);
-        console.log("Itemname: ", itemName);
         if (
           itemName.toLowerCase().includes("blurite") ||
           itemName.toLowerCase().includes("jade bolts") ||
           itemName.toLowerCase().includes("broad arrows") ||
           itemName.toLowerCase().includes("amethyst bolts")
         ) {
-          console.log("CONTAINER: ", itemName);
           itemPrice = 0;
         } else {
           itemPrice = skillListPrices[itemName].price;
         }
         data[index].cost -= itemPrice;
-        return null;
+        return data[index].cost;
       });
-      console.log(finalPrices);
 
       return data;
     },
@@ -225,10 +221,14 @@ const FletchingGrid = (props) => {
     setFletchDB(sorter);
   };
 
-  const sortToGo = () => {
+  const sortCost = () => {
     setToGoSorted(!toGoSorted);
     let sorter = [...fletchDB];
-    sorter.sort((a, b) => (toGoSorted ? a.exp - b.exp : b.exp - a.exp));
+    sorter.sort((a, b) =>
+      toGoSorted
+        ? a.cost * a.toGo - b.cost * b.toGo
+        : b.cost * b.toGo - a.cost * a.toGo
+    );
     setFletchDB(sorter);
   };
 
@@ -250,7 +250,7 @@ const FletchingGrid = (props) => {
           />{" "}
           Actions
         </span>
-        <span onClick={sortToGo}>
+        <span onClick={sortCost}>
           <img src={donate} alt="Slayer Logo" className={stl.miniLogo} /> Cost
         </span>
       </div>
@@ -270,12 +270,29 @@ const FletchingGrid = (props) => {
                   {fletch.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{fletch.exp}</span>
-              <span className={stl.rowItem}>{fletchAmount}</span>
+              <span className={`${stl.rowItem} ${stl.expRow}`}>
+                {fletch.exp}
+                <span className={stl.gpperxp}>
+                  {fletch.cost / fletch.exp > 0 ? "" : ""}
+                  {fletch.cost / fletch.exp > 0
+                    ? "-" + Math.abs(fletch.cost / fletch.exp).toFixed(1)
+                    : "+" + Math.abs(fletch.cost / fletch.exp).toFixed(1)}{" "}
+                  gp/exp
+                </span>
+              </span>
               <span className={stl.rowItem}>
+                {fletchAmount.toLocaleString()}
+              </span>
+              <span
+                className={`${stl.rowItem}  ${
+                  fletch.cost > 0 ? stl.red : stl.green
+                }`}
+              >
+                {fletch.cost * fletchAmount > 0 ? "-" : "+"}
                 {fletch.cost * fletchAmount
-                  ? (fletch.cost * fletchAmount).toLocaleString()
+                  ? Math.abs(fletch.cost * fletchAmount).toLocaleString()
                   : "?"}
+                <span className={stl.gpcost}>gp</span>
               </span>
             </div>
           );
