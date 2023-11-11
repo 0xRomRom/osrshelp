@@ -1,57 +1,89 @@
 const FLETCHITEMLIST = [
   {
     // Headless arrow
+    Arrow_shaft: 15,
+    Feather: 15,
   },
   {
     // Bronze arrow
+    Headless_arrow: 15,
+    Bronze_arrowtips: 15,
   },
   {
     // Bronze javelin
+    Bronze_javelin_heads: 15,
+    Javelin_shaft: 15,
   },
   {
     // Ogre arrow
+    Flighted_ogre_arrow: 6,
+    Wolfbone_arrowtips: 6,
   },
   {
     // Shortbow (u)
+    Logs: 1,
   },
   {
     // Shortbow
+    "Shortbow_(u)": 1,
+    Bow_string: 1,
   },
   {
     // Wooden stock
+    Logs: 1,
   },
   {
     // Bronze crossbow (u)
+    Wooden_stock: 1,
+    Bronze_limbs: 1,
   },
   {
     // Bronze crossbow
+    "Bronze_crossbow_(u)": 1,
+    Bow_string: 1,
   },
   {
     // Bronze bolts
+    "Bronze_bolts_(unf)": 10,
+    Feather: 10,
   },
   {
     // Bronze dart
+    Bronze_dart_tip: 10,
+    Feather: 10,
   },
   {
     // Longbow (u)
+    Logs: 1,
   },
   {
     // Longbow
+    "Longbow_(u)": 1,
+    Bow_string: 1,
   },
   {
     // Opal-tipped bronze bolts
+    Bronze_bolts: 10,
+    Opal_bolt_tips: 10,
   },
   {
     // Iron arrow
+    Headless_arrow: 15,
+    Iron_arrowtips: 15,
   },
   {
     // Iron javelin
+    Iron_javelin_heads: 15,
+    Javelin_shaft: 15,
   },
   {
     // Oak shortbow (u)
+    Oak_logs: 1,
   },
   {
     // Oak shortbow
+    "Oak_shortbow_(u)": 1,
+    Bow_string: 1,
   },
   {
     // Iron dart
