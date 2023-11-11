@@ -6,7 +6,7 @@ import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
-import CookingGrid from "../cooking/cookinggrid/CookingGrid";
+import WoodcuttingGrid from "./woodcuttinggrid/WoodcuttingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import { useState } from "react";
 
@@ -34,14 +34,18 @@ const WoodcuttingCalculator = (props) => {
           className={stl.backArrow}
           onClick={handleMenuSwitch}
         />
-        <img src={cookingIcon} alt="Cooking Level" className={stl.skillImg} />
-        <span className={stl.skillTitle}>Cooking</span>
+        <img
+          src={cookingIcon}
+          alt="Woodcutting Level"
+          className={stl.skillImg}
+        />
+        <span className={stl.skillTitle}>Woodcutting</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["cooking"]}
+                Level {props.skills["woodcutting"]}
               </span>
             </div>
 
@@ -49,8 +53,8 @@ const WoodcuttingCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"cooking"}
-                  currentLvl={props.skills["cooking"]}
+                  skillname={"woodcutting"}
+                  currentLvl={props.skills["woodcutting"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -75,8 +79,8 @@ const WoodcuttingCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"cooking"}
-            currentLvl={props.skills["cooking"]}
+            skillName={"woodcutting"}
+            currentLvl={props.skills["woodcutting"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}
@@ -89,10 +93,10 @@ const WoodcuttingCalculator = (props) => {
         )}
         <SearchFilter
           setSearchState={setSearchState}
-          searchType="Search Food"
+          searchType="Search Tree"
         />
       </div>
-      <CookingGrid searchState={searchState} remainingExp={remainingExp} />
+      <WoodcuttingGrid searchState={searchState} remainingExp={remainingExp} />
     </div>
   );
 };

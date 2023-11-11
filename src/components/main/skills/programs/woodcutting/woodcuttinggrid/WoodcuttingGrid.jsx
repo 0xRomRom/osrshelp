@@ -1,9 +1,10 @@
-import stl from "./CookingGrid.module.css";
+import stl from "./WoodcuttingGrid.module.css";
 import FOODLIST from "../../../../../../utils/foodList";
+import TREELIST from "../../../../../../utils/treeList";
 import cookingLogo from "../../../../../../assets/skillicons/Cooking.webp";
+import axeLogo from "../../../../../../assets/random/Rune_axe.png";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
-import fireLogo from "../../../../../../assets/random/Frying_pan.webp";
 
 import { useState, useEffect, useCallback } from "react";
 
@@ -14,7 +15,7 @@ const WoodcuttingGrid = (props) => {
   const [combatSorted, setCombatSorted] = useState(false);
   const [toGoSorted, setToGoSorted] = useState(false);
 
-  const calculateFoodToCook = useCallback(
+  const calculateTreesToCut = useCallback(
     (food) => {
       const expToGo = props.remainingExp;
       const result = Math.ceil(expToGo / food.exp);
@@ -71,7 +72,7 @@ const WoodcuttingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortFood}>
           <img src={cookingLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
-          Food
+          Tree
         </span>
         <span onClick={sortMembers}>
           <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
@@ -81,12 +82,11 @@ const WoodcuttingGrid = (props) => {
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
         </span>
         <span onClick={sortToGo}>
-          <img src={fireLogo} alt="Slayer Logo" className={stl.miniLogo} /> To
-          Go
+          <img src={axeLogo} alt="Slayer Logo" className={stl.miniLogo} /> To Go
         </span>
       </div>
       <div className={stl.resultGrid}>
-        {foodDB.map((food) => {
+        {TREELIST.map((food) => {
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -103,7 +103,7 @@ const WoodcuttingGrid = (props) => {
               <span className={stl.rowItem}>{food.member ? "Yes" : "No"}</span>
               <span className={stl.rowItem}>{food.exp}</span>
               <span className={stl.rowItem}>
-                {calculateFoodToCook(food).toLocaleString()}
+                {calculateTreesToCut(food).toLocaleString()}
               </span>
             </div>
           );
