@@ -32,8 +32,8 @@ const FletchingGrid = (props) => {
     data = { ...result, ...result2 };
     setFletchPrices(data);
 
-    let data2 = {};
     // Required item prices
+    let data2 = {};
     const pricesFetch = await fetch(
       "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Arrow_shaft|Feather|Headless_arrow|Bronze_arrowtips|Bronze_javelin_heads|Javelin_shaft|Flighted_ogre_arrow|Wolfbone_arrowtips|Logs|Shortbow_(u)|Bow_string|Wooden_stock|Bronze_limbs|Bronze_crossbow_(u)|Bronze_bolts_(unf)|Bronze_dart_tip|Longbow_(u)|Bronze_bolts|Opal_bolt_tips|Iron_arrowtips|Iron_javelin_heads|Oak_logs|Oak_shortbow_(u)|Iron_dart_tip|Oak_stock|Crossbow_string|Oak_longbow_(u)|Jade_bolt_tips|Steel_arrowtips|Steel_javelin_heads|Kebbit_spike|Willow_logs|Willow_shortbow_(u)|Steel_dart_tip|Willow_stock|Iron_limbs|Iron_crossbow_(u)|Iron_bolts_(unf)|Willow_longbow_(u)|Celastrus_bark|Iron_bolts|Pearl_bolt_tips|Long_kebbit_spike|Silver_bolts_(unf)|Mithril_arrowtips|Teak_logs|Teak_stock|Steel_limbs|Steel_crossbow_(u)|Steel_bolts_(unf)|Mithril_javelin_heads|Steel_bolts|Topaz_bolt_tips|Maple_logs|Maple_shortbow_(u)|Barb_bolttips|Mithril_dart_tip|Broad_arrowheads|Tanzanite_fang|Mithril_bolts_(unf)|Maple_stock|Mithril_limbs|Mithril_crossbow_(u)|Unfinished_broad_bolts|Maple_longbow_(u)|Mithril_bolts|Sapphire_bolt_tips|Emerald_bolt_tips|Adamant_arrowtips|Adamant_bolts_(unf)|Mahogany_logs|Mahogany_stock|Adamantite_limbs|Adamant_crossbow_(u)|Adamant_javelin_heads|Adamant_bolts|Ruby_bolt_tips|Diamond_bolt_tips|Yew_logs|Yew_shortbow_(u)|Adamant_dart_tip|Runite_bolts_(unf)"
     );
@@ -46,16 +46,99 @@ const FletchingGrid = (props) => {
     data2 = { ...priceResult, ...priceResult2 };
     setReqItemPrices(data2);
   };
-  useEffect(() => {
-    console.log(fletchPrices);
-    console.log(reqItemPrices);
-  }, [fletchPrices, reqItemPrices]);
 
   useEffect(() => {
     if (Object.keys(fletchPrices).length === 0) {
       priceFetcher();
     }
   }, [fletchPrices]);
+
+  const mapRequiredItems = () => {
+    const runeData = [];
+    FLETCHITEMLIST.forEach((obj) => {
+      const itemName = Object.keys(obj);
+      const itemAmounts = Object.values(obj);
+
+      runeData.push({ names: itemName, amounts: itemAmounts });
+    });
+    return runeData;
+  };
+
+  const calcSpellsToUse = useCallback(
+    (spellsList) => {
+      const expToGo = props.remainingExp;
+
+      for (let i = 0; i < spellsList.length; i++) {
+        const boneExp = spellsList[i].exp;
+        spellsList[i].toGo = Math.ceil(expToGo / boneExp);
+      }
+      return spellsList;
+    },
+    [props.remainingExp]
+  );
+
+  const mapItemPrices = useCallback(
+    (fletchData, list = FLETCHLIST) => {
+      let fletchList = JSON.parse(JSON.stringify(list));
+
+      console.log(fletchList);
+      console.log(reqItemPrices);
+
+      const mapper = fletchData.map((item, index) => {
+        const itemCount = item.names.length;
+        let count = 0;
+
+        for (let i = 0; i < itemCount; i++) {
+          const itemName = item.names[i].replaceAll("_", " ");
+          const runeCount = item.amounts[i];
+          console.log(itemName);
+          const itemCost = reqItemPrices[itemName].price * runeCount;
+          console.log(itemCost);
+          count += itemCost;
+          fletchList[index].cost = count;
+
+          // if (spellName.includes("(e)")) {
+          //   // Deduct twice because it was already added above
+          //   const deductAmount = runePrices[spellName].price * runeCount * 2;
+          //   const minusEnchanted = count - deductAmount;
+          //   fletchList[index].price = minusEnchanted;
+          // }
+          // if (spellName.includes("orb")) {
+          //   // Deduct twice because it was already added above
+          //   const deductAmount = runePrices[spellName].price * runeCount;
+          //   const minusEnchanted = deductAmount - count;
+          //   fletchList[index].price = minusEnchanted;
+          // }
+        }
+        return fletchList;
+      });
+
+      const data = mapper[0];
+      return data;
+    },
+    [reqItemPrices]
+  );
+
+  useEffect(() => {
+    if (
+      Object.keys(fletchPrices).length > 0 &&
+      Object.keys(reqItemPrices).length > 0
+    ) {
+      // Array of all required items and amounts
+      const itemArray = mapRequiredItems();
+      console.log(itemArray);
+
+      // Update fletchprices
+      const updatedPrices = mapItemPrices(itemArray);
+      console.log(updatedPrices);
+
+      // // Update fletches to go
+      const updatedCasts = calcSpellsToUse(updatedPrices);
+      setFletchDB(updatedCasts);
+      setFilteredfletchDB(updatedCasts);
+    }
+    // }, [runePrices, mapItemPrices, calcSpellsToUse]);
+  }, [fletchPrices, reqItemPrices, mapItemPrices, calcSpellsToUse]);
 
   const calculateFletchActions = useCallback(
     (fletch) => {
