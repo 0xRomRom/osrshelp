@@ -217,7 +217,7 @@ const FLETCHLIST = [
   },
   {
     level: 26,
-    name: "Jade-tipped blurite bolts",
+    name: "Jade bolts",
     exp: 2.4,
     src: "/fletching/Jade_bolts_5.webp",
     cost: 0,
@@ -343,7 +343,7 @@ const FLETCHLIST = [
   },
   {
     level: 40,
-    name: "Battlestaves",
+    name: "Battlestaff",
     exp: 80,
     src: "/fletching/Battlestaff.webp",
     cost: 0,
@@ -352,7 +352,7 @@ const FLETCHLIST = [
   },
   {
     level: 41,
-    name: "Pearl-tipped iron bolts",
+    name: "Pearl bolts",
     exp: 3.2,
     src: "/fletching/Pearl_bolts_(e)_5.webp",
     cost: 0,
@@ -442,7 +442,7 @@ const FLETCHLIST = [
   },
   {
     level: 48,
-    name: "Red topaz-tipped steel bolts",
+    name: "Topaz bolts",
     exp: 4,
     src: "/fletching/Topaz_bolts_(e)_5.webp",
     cost: 0,
@@ -469,7 +469,7 @@ const FLETCHLIST = [
   },
   {
     level: 51,
-    name: "Barbed-tipped bronze bolts",
+    name: "Barbed bolts",
     exp: 9.5,
     src: "/fletching/Barbed_bolts_5.webp",
     cost: 0,
@@ -568,7 +568,7 @@ const FLETCHLIST = [
   },
   {
     level: 56,
-    name: "Sapphire-tipped mithril bolts",
+    name: "Sapphire bolts",
     exp: 4.7,
     src: "/fletching/Sapphire_bolts_(e)_5.webp",
     cost: 0,
@@ -586,7 +586,7 @@ const FLETCHLIST = [
   },
   {
     level: 58,
-    name: "Emerald-tipped mithril bolts",
+    name: "Emerald bolts",
     exp: 5.5,
     src: "/fletching/Emerald_bolts_(e)_5.webp",
     cost: 0,
@@ -649,7 +649,7 @@ const FLETCHLIST = [
   },
   {
     level: 63,
-    name: "Ruby-tipped adamant bolts",
+    name: "Ruby bolts",
     exp: 6.3,
     src: "/fletching/Ruby_bolts_(e)_5.webp",
     cost: 0,
@@ -658,7 +658,7 @@ const FLETCHLIST = [
   },
   {
     level: 65,
-    name: "Diamond-tipped adamant bolts",
+    name: "Diamond bolts",
     exp: 7,
     src: "/fletching/Diamond_bolts_(e)_5.webp",
     cost: 0,
@@ -721,7 +721,7 @@ const FLETCHLIST = [
   },
   {
     level: 69,
-    name: "Runite crossbow",
+    name: "Rune crossbow",
     exp: 50,
     src: "/fletching/Rune_crossbow.webp",
     cost: 0,
@@ -748,7 +748,7 @@ const FLETCHLIST = [
   },
   {
     level: 71,
-    name: "Dragonstone-tipped runite bolts",
+    name: "Dragonstone bolts",
     exp: 8.2,
     src: "/fletching/Dragonstone_bolts_(e)_5.webp",
     cost: 0,
@@ -766,7 +766,7 @@ const FLETCHLIST = [
   },
   {
     level: 73,
-    name: "Onyx-tipped runite bolts",
+    name: "Onyx bolts",
     exp: 94,
     src: "/fletching/Onyx_bolts_(e)_5.webp",
     cost: 0,
@@ -784,7 +784,7 @@ const FLETCHLIST = [
   },
   {
     level: 76,
-    name: "Amethyst-tipped broad bolts",
+    name: "Amethyst bolts",
     exp: 10.6,
     src: "/fletching/Amethyst_broad_bolts_5.webp",
     cost: 0,
@@ -1018,7 +1018,7 @@ const FLETCHLIST = [
   },
   {
     level: 92,
-    name: "Redwood shields",
+    name: "Redwood shield",
     exp: 216,
     src: "/fletching/Redwood_shield.webp",
     cost: 0,

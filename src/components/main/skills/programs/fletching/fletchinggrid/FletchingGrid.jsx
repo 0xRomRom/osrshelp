@@ -31,13 +31,12 @@ const FletchingGrid = (props) => {
       "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Headless_arrow|Bronze_arrow|Bronze_javelin|Ogre_arrow|Shortbow_(u)|Shortbow|Wooden_stock|Bronze_crossbow_(u)|Bronze_crossbow|Bronze_bolts|Bronze_dart|Longbow_(u)|Longbow|Opal_bolts|Iron_arrow|Iron_javelin|Oak_shortbow_(u)|Oak_shortbow|Iron_dart|Oak_longbow_(u)|Oak_longbow|Oak_shield|Steel_arrow|Steel_javelin|Kebbit_bolts|Willow_shortbow_(u)|Willow_shortbow|Steel_dart|Willow_stock|Iron_crossbow_(u)|Iron_crossbow|Iron_bolts|Willow_longbow_(u)|Willow_longbow|Battlestaff|Pearl_bolts|Willow_shield|Long_kebbit_bolts|Silver_bolts|Mithril_arrow|Teak_stock|Steel_crossbow_(u)|Steel_crossbow|Steel_bolts|Mithril_javelin|Topaz_bolts|Maple_shortbow_(u)|Maple_shortbow|Barbed_bolts|Mithril_dart|Maple_stock|Mithril_bolts|Mithril_crossbow_(u)|Mithril_crossbow|Maple_longbow_(u)|Maple_longbow|Sapphire_bolts|Maple_shield|Emerald_bolts"
     );
     const result = await fetcher.json();
-    console.log(result);
     const fetcher2 = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Mahogany_stock|Adamant_crossbow_(u)|Adamant_crossbow|Adamant_javelin|Ruby_bolts|Diamond_bolts|Yew_shortbow_(u)|Yew_shortbow|Adamant_dart|Runite_bolts|Yew_stock|Runite_crossbpw_(u)|Runite_crossbow|Yew_longbow_(u)|Yew_longbow|Dragonstone_bolts|Yew_shield|Onyx_bolts|Rune_arrow|Rune_javelin|Magic_stock|Dragon_crossbow_(u)|Dragon_crossbow|Magic_shortbow_(u)|Magic_shortbow|Rune_dart|Amethyst_arrow|Dragon_bolts|Opal_dragon_bolts|Jade_dragon_bolts|Pearl_dragon_bolts|Topaz_dragon_bolts|Sapphire_dragon_bolts|Emerald_dragon_bolts|Ruby_dragon_bolts|Diamond_dragon_bolts|Dragonstone_dragon_bolts|Onyx_dragon_bolts|Amethyst_javelin|Magic_longbow_(u)|Magic_longbow|Magic_shield|Amethyst_dart|Dragon_arrow|Redwood_shield|Dragon_javelin|Dragon_dart|Toxic_blowpipe_(empty)|Adamant_arrow|Adamant_bolts"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Mahogany_stock|Adamant_crossbow_(u)|Adamant_crossbow|Adamant_javelin|Ruby_bolts|Diamond_bolts|Yew_shortbow_(u)|Yew_shortbow|Adamant_dart|Runite_bolts|Yew_stock|Runite_crossbow_(u)|Rune_crossbow|Yew_longbow_(u)|Yew_longbow|Dragonstone_bolts|Yew_shield|Onyx_bolts|Rune_arrow|Rune_javelin|Magic_stock|Dragon_crossbow_(u)|Dragon_crossbow|Magic_shortbow_(u)|Magic_shortbow|Rune_dart|Amethyst_arrow|Dragon_bolts|Opal_dragon_bolts|Jade_dragon_bolts|Pearl_dragon_bolts|Topaz_dragon_bolts|Sapphire_dragon_bolts|Emerald_dragon_bolts|Ruby_dragon_bolts|Diamond_dragon_bolts|Dragonstone_dragon_bolts|Onyx_dragon_bolts|Amethyst_javelin|Magic_longbow_(u)|Magic_longbow|Magic_shield|Amethyst_dart|Dragon_arrow|Redwood_shield|Dragon_javelin|Dragon_dart|Toxic_blowpipe_(empty)|Adamant_arrow|Adamant_bolts|Broad_bolts"
     );
     const result2 = await fetcher2.json();
     data = { ...result, ...result2 };
-    console.log("Fetchitem List: ", data);
+    console.log(data);
     setFletchPrices(data);
 
     // Required item prices
@@ -48,11 +47,11 @@ const FletchingGrid = (props) => {
     const priceResult = await pricesFetch.json();
 
     const pricesFetch2 = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Yew_stock|Runite_limbs|Runite_crossbow_(u)|Yew_longbow_(u)|Runite_bolts|Dragonstone_bolt_tips|Onyx_bolt_tips|Rune_arrowtips|Broad_bolts|Amethyst_bolt_tips|Rune_javelin_heads|Magic_logs|Magic_stock|Dragon_limbs|Dragon_crossbow_(u)|Magic_shortbow_(u)|Rune_dart_tip|Amethyst_arrowtips|Dragon_bolts_(unf)|Dragon_bolts|Amethyst_javelin_heads|Magic_longbow_(u)|Amethyst_dart_tip|Dragon_arrowtips|Redwood_logs|Dragon_javelin_heads|Dragon_dart_tip"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Yew_stock|Runite_limbs|Broad_bolts|Runite_crossbow_(u)|Yew_longbow_(u)|Runite_bolts|Dragonstone_bolt_tips|Onyx_bolt_tips|Rune_arrowtips|Amethyst_bolt_tips|Rune_javelin_heads|Magic_logs|Magic_stock|Dragon_limbs|Dragon_crossbow_(u)|Magic_shortbow_(u)|Rune_dart_tip|Amethyst_arrowtips|Dragon_bolts_(unf)|Dragon_bolts|Amethyst_javelin_heads|Magic_longbow_(u)|Amethyst_dart_tip|Dragon_arrowtips|Redwood_logs|Dragon_javelin_heads|Dragon_dart_tip"
     );
     const priceResult2 = await pricesFetch2.json();
     data2 = { ...priceResult, ...priceResult2 };
-    console.log("Required item List: ", data2);
+    console.log(data2);
     setReqItemPrices(data2);
   };
 
@@ -102,7 +101,6 @@ const FletchingGrid = (props) => {
           let count = 0;
           const itemName = item.names[i].replaceAll("_", " ");
           const itemCount = item.amounts[i];
-          console.log(itemName);
           const itemCost = reqItemPrices[itemName].price * itemCount;
           count += itemCost;
           fletchList[index].cost += count;
@@ -126,16 +124,24 @@ const FletchingGrid = (props) => {
       });
 
       const data = mapper[0];
-      console.log(data);
-      console.log(fletchPrices);
       const skillListPrices = JSON.parse(JSON.stringify(fletchPrices));
-      console.log(skillListPrices);
       const finalPrices = data.map((item, index) => {
         const itemName = item.name;
+        let itemPrice;
         console.log("Index: ", index);
         console.log("Itemname: ", itemName);
-        const itemPrice = skillListPrices[itemName].price;
-        console.log("Itemprice: ", itemPrice);
+        if (
+          itemName.toLowerCase().includes("blurite") ||
+          itemName.toLowerCase().includes("jade bolts") ||
+          itemName.toLowerCase().includes("broad arrows") ||
+          itemName.toLowerCase().includes("amethyst bolts")
+        ) {
+          console.log("CONTAINER: ", itemName);
+          itemPrice = 0;
+        } else {
+          itemPrice = skillListPrices[itemName].price;
+          console.log("Itemprice: ", itemPrice);
+        }
       });
       console.log(finalPrices);
 
