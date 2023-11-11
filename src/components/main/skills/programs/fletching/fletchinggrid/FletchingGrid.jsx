@@ -1,4 +1,4 @@
-import stl from "./WoodcuttingGrid.module.css";
+import stl from "./FletchingGrid.module.css";
 import TREELIST from "../../../../../../utils/treeList";
 import cookingLogo from "../../../../../../assets/skillicons/Cooking.webp";
 import axeLogo from "../../../../../../assets/random/Rune_axe.png";

@@ -6,8 +6,8 @@ import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
-import WoodcuttingGrid from "./woodcuttinggrid/WoodcuttingGrid";
-import WoodcuttingFilter from "./woodcuttingfilters/WoodcuttingFilter";
+import WoodcuttingGrid from "./fletchinggrid/FletchingGrid";
+import WoodcuttingFilter from "./woodcuttingfilters/FletchingFilter";
 import { useState } from "react";
 
 const FletchingCalculator = (props) => {

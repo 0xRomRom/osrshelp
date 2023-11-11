@@ -1,4 +1,4 @@
-import stl from "./WoodcuttingFilter.module.css";
+import stl from "./FletchingFilter.module.css";
 import { useState } from "react";
 
 const WoodcuttingFilter = ({
