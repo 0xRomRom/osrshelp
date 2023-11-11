@@ -123,7 +123,7 @@ const FletchingGrid = (props) => {
         return fletchList;
       });
 
-      const data = mapper[0];
+      let data = mapper[0];
       const skillListPrices = JSON.parse(JSON.stringify(fletchPrices));
       const finalPrices = data.map((item, index) => {
         const itemName = item.name;
@@ -140,8 +140,9 @@ const FletchingGrid = (props) => {
           itemPrice = 0;
         } else {
           itemPrice = skillListPrices[itemName].price;
-          console.log("Itemprice: ", itemPrice);
         }
+        data[index].cost -= itemPrice;
+        return null;
       });
       console.log(finalPrices);
 
@@ -255,7 +256,7 @@ const FletchingGrid = (props) => {
       </div>
       <div className={stl.resultGrid}>
         {filteredfletchDB.map((fletch) => {
-          const fletchAmount = calculateFletchActions(fletch).toLocaleString();
+          const fletchAmount = calculateFletchActions(fletch);
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -272,8 +273,9 @@ const FletchingGrid = (props) => {
               <span className={stl.rowItem}>{fletch.exp}</span>
               <span className={stl.rowItem}>{fletchAmount}</span>
               <span className={stl.rowItem}>
-                {(fletch.cost * fletchAmount).toLocaleString()}
-                {/* {fletch.cost} */}
+                {fletch.cost * fletchAmount
+                  ? (fletch.cost * fletchAmount).toLocaleString()
+                  : "?"}
               </span>
             </div>
           );
