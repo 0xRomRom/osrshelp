@@ -8,6 +8,7 @@ import { useState, useCallback, useEffect } from "react";
 
 const FletchingGrid = (props) => {
   const [fletchDB, setFletchDB] = useState(FLETCHLIST);
+  const [filteredfletchDB, setFilteredfletchDB] = useState(FLETCHLIST);
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
@@ -22,9 +23,25 @@ const FletchingGrid = (props) => {
     [props.remainingExp]
   );
 
+  const filterSpells = useCallback(() => {
+    if (props.searchState) {
+      const filteredSpells = fletchDB.filter((item) =>
+        item.name.toLowerCase().includes(props.searchState.toLowerCase())
+      );
+      setFilteredfletchDB(filteredSpells);
+    } else {
+      // If search state is empty, reset to the original data
+      setFilteredfletchDB(fletchDB);
+    }
+  }, [props.searchState, fletchDB]);
+
   useEffect(() => {
-    console.log(props.multiplier);
-  }, [props.multiplier]);
+    filterSpells();
+  }, [filterSpells]);
+
+  /////////////
+  // Filters //
+  /////////////
 
   const sortItem = () => {
     setMonsterSorted(!monsterSorted);
@@ -82,7 +99,7 @@ const FletchingGrid = (props) => {
         </span>
       </div>
       <div className={stl.resultGrid}>
-        {fletchDB.map((fletch) => {
+        {filteredfletchDB.map((fletch) => {
           const fletchAmount = calculateFletchActions(fletch).toLocaleString();
           return (
             <div className={stl.row} key={Math.random()}>

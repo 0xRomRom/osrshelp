@@ -7,10 +7,12 @@ import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import FletchingGrid from "./fletchinggrid/FletchingGrid";
+import SearchFilter from "../searchfilter/SearchFilter";
 import { useState } from "react";
 
 const FletchingCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
+  const [searchState, setSearchState] = useState("");
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -89,8 +91,12 @@ const FletchingCalculator = (props) => {
             remainingExp={remainingExp}
           />
         )}
+        <SearchFilter
+          setSearchState={setSearchState}
+          searchType="Search Item"
+        />
       </div>
-      <FletchingGrid remainingExp={remainingExp} />
+      <FletchingGrid remainingExp={remainingExp} searchState={searchState} />
     </div>
   );
 };
