@@ -1,5 +1,6 @@
 import stl from "./FletchingGrid.module.css";
 import TREELIST from "../../../../../../utils/treeList";
+import FLETCHLIST from "../../../../../../utils/fletchlist";
 import cookingLogo from "../../../../../../assets/skillicons/Cooking.webp";
 import axeLogo from "../../../../../../assets/random/Rune_axe.png";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
@@ -7,14 +8,14 @@ import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
 import { useState, useCallback, useEffect } from "react";
 
-const WoodcuttingGrid = (props) => {
-  const [treeDB, setTreeDB] = useState(TREELIST);
+const FletchingGrid = (props) => {
+  const [treeDB, setTreeDB] = useState(FLETCHLIST);
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
   const [toGoSorted, setToGoSorted] = useState(false);
 
-  const calculateTreesToCut = useCallback(
+  const calculateFletchActions = useCallback(
     (tree) => {
       const expToGo = props.remainingExp;
       const result = Math.ceil(expToGo / tree.exp);
@@ -80,7 +81,7 @@ const WoodcuttingGrid = (props) => {
       </div>
       <div className={stl.resultGrid}>
         {treeDB.map((tree) => {
-          const treePrice = calculateTreesToCut(tree);
+          const treePrice = calculateFletchActions(tree);
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -95,16 +96,8 @@ const WoodcuttingGrid = (props) => {
                 </span>
               </span>
               <span className={stl.rowItem}>{tree.members ? "Yes" : "No"}</span>
-              <span className={stl.rowItem}>
-                {+props.multiplier > 0 &&
-                  (tree.exp * (1 + 2.5 / 100)).toFixed(1)}
-                {+props.multiplier === 0 && tree.exp}
-              </span>
-              <span className={stl.rowItem}>
-                {+props.multiplier > 0 &&
-                  Math.round(treePrice / (1 + 2.5 / 100)).toLocaleString()}
-                {+props.multiplier === 0 && treePrice.toLocaleString()}
-              </span>
+              <span className={stl.rowItem}>{tree.exp}</span>
+              <span className={stl.rowItem}>{treePrice.toLocaleString()}</span>
             </div>
           );
         })}
@@ -113,4 +106,4 @@ const WoodcuttingGrid = (props) => {
   );
 };
 
-export default WoodcuttingGrid;
+export default FletchingGrid;

@@ -1,6 +1,6 @@
 import stl from "./WoodcuttingGrid.module.css";
 import TREELIST from "../../../../../../utils/treeList";
-import cookingLogo from "../../../../../../assets/skillicons/Cooking.webp";
+import woodcuttingIcon from "../../../../../../assets/skillicons/Woodcutting.webp";
 import axeLogo from "../../../../../../assets/random/Rune_axe.png";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
@@ -64,7 +64,7 @@ const WoodcuttingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortTree}>
-          <img src={cookingLogo} alt="Tree Logo" className={stl.miniLogo} />{" "}
+          <img src={woodcuttingIcon} alt="Tree Logo" className={stl.miniLogo} />{" "}
           Tree
         </span>
         <span onClick={sortMembers}>

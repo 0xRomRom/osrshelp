@@ -1,19 +1,16 @@
 import stl from "./FletchingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import cookingIcon from "../../../../../assets/skillicons/Cooking.webp";
+import fletchingIcon from "../../../../../assets/skillicons/Fletching.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
-import WoodcuttingGrid from "./fletchinggrid/FletchingGrid";
-import WoodcuttingFilter from "./woodcuttingfilters/FletchingFilter";
+import FletchingGrid from "./fletchinggrid/FletchingGrid";
 import { useState } from "react";
 
 const FletchingCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
-  const [multiplier, setMultiplier] = useState(0);
-  const [filterChanged, setFilterChanged] = useState(false);
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -36,17 +33,17 @@ const FletchingCalculator = (props) => {
           onClick={handleMenuSwitch}
         />
         <img
-          src={cookingIcon}
-          alt="Woodcutting Level"
+          src={fletchingIcon}
+          alt="Fletching Level"
           className={stl.skillImg}
         />
-        <span className={stl.skillTitle}>Woodcutting</span>
+        <span className={stl.skillTitle}>Fletching</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["woodcutting"]}
+                Level {props.skills["fletching"]}
               </span>
             </div>
 
@@ -54,8 +51,8 @@ const FletchingCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"woodcutting"}
-                  currentLvl={props.skills["woodcutting"]}
+                  skillname={"fletching"}
+                  currentLvl={props.skills["fletching"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -80,8 +77,8 @@ const FletchingCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"woodcutting"}
-            currentLvl={props.skills["woodcutting"]}
+            skillName={"fletching"}
+            currentLvl={props.skills["fletching"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}
@@ -92,13 +89,8 @@ const FletchingCalculator = (props) => {
             remainingExp={remainingExp}
           />
         )}
-        <WoodcuttingFilter
-          setMultiplier={setMultiplier}
-          setFilterChanged={setFilterChanged}
-          filterChanged={filterChanged}
-        />
       </div>
-      <WoodcuttingGrid remainingExp={remainingExp} multiplier={multiplier} />
+      <FletchingGrid remainingExp={remainingExp} />
     </div>
   );
 };
