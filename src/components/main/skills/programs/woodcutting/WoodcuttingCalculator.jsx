@@ -7,12 +7,13 @@ import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import WoodcuttingGrid from "./woodcuttinggrid/WoodcuttingGrid";
-import SearchFilter from "../searchfilter/SearchFilter";
+import WoodcuttingFilter from "./woodcuttingfilters/WoodcuttingFilter";
 import { useState } from "react";
 
 const WoodcuttingCalculator = (props) => {
-  const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
+  const [multiplier, setMultiplier] = useState(0);
+  const [filterChanged, setFilterChanged] = useState(false);
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -91,12 +92,13 @@ const WoodcuttingCalculator = (props) => {
             remainingExp={remainingExp}
           />
         )}
-        <SearchFilter
-          setSearchState={setSearchState}
-          searchType="Search Tree"
+        <WoodcuttingFilter
+          setMultiplier={setMultiplier}
+          setFilterChanged={setFilterChanged}
+          filterChanged={filterChanged}
         />
       </div>
-      <WoodcuttingGrid searchState={searchState} remainingExp={remainingExp} />
+      <WoodcuttingGrid remainingExp={remainingExp} multiplier={multiplier} />
     </div>
   );
 };

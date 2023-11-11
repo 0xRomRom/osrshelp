@@ -5,7 +5,7 @@ import axeLogo from "../../../../../../assets/random/Rune_axe.png";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 const WoodcuttingGrid = (props) => {
   const [treeDB, setTreeDB] = useState(TREELIST);
@@ -23,16 +23,9 @@ const WoodcuttingGrid = (props) => {
     [props.remainingExp]
   );
 
-  const filterTrees = useCallback(() => {
-    const filteredTrees = TREELIST.filter((tree) =>
-      tree.name.toLowerCase().includes(props.searchState.toLowerCase())
-    );
-    setTreeDB([...filteredTrees]);
-  }, [props.searchState]);
-
   useEffect(() => {
-    filterTrees();
-  }, [filterTrees]);
+    console.log(props.multiplier);
+  }, [props.multiplier]);
 
   const sortTree = () => {
     setMonsterSorted(!monsterSorted);
@@ -71,7 +64,7 @@ const WoodcuttingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortTree}>
-          <img src={cookingLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
+          <img src={cookingLogo} alt="Tree Logo" className={stl.miniLogo} />{" "}
           Tree
         </span>
         <span onClick={sortMembers}>
@@ -87,6 +80,7 @@ const WoodcuttingGrid = (props) => {
       </div>
       <div className={stl.resultGrid}>
         {treeDB.map((tree) => {
+          const treePrice = calculateTreesToCut(tree);
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -101,9 +95,15 @@ const WoodcuttingGrid = (props) => {
                 </span>
               </span>
               <span className={stl.rowItem}>{tree.members ? "Yes" : "No"}</span>
-              <span className={stl.rowItem}>{tree.exp}</span>
               <span className={stl.rowItem}>
-                {calculateTreesToCut(tree).toLocaleString()}
+                {+props.multiplier > 0 &&
+                  (tree.exp * (1 + 2.5 / 100)).toFixed(2)}
+                {+props.multiplier === 0 && tree.exp}
+              </span>
+              <span className={stl.rowItem}>
+                {+props.multiplier > 0 &&
+                  Math.round(treePrice / (1 + 2.5 / 100)).toLocaleString()}
+                {+props.multiplier === 0 && treePrice.toLocaleString()}
               </span>
             </div>
           );
