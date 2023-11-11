@@ -33,6 +33,7 @@ import PrayerCalculator from "./programs/prayer/PrayerCalculator";
 import MagicCalculator from "./programs/magic/MagicCalculator";
 import CookingCalculator from "./programs/cooking/CookingCalculator";
 import WoodcuttingCalculator from "./programs/woodcutting/WoodcuttingCalculator";
+import FletchingCalculator from "./programs/fletching/FletchingCalculator";
 
 const SkillsTab = (props) => {
   const handleTabOpen = (path) => {
@@ -139,6 +140,18 @@ const SkillsTab = (props) => {
 
       {props.subState === "Woodcutting" && (
         <WoodcuttingCalculator
+          skills={props.skills}
+          skillsExp={props.skillsExp}
+          playerName={props.playerName}
+          setSkills={props.setSkills}
+          setSkillsExp={props.setSkillsExp}
+          setPlayerName={props.setPlayerName}
+          setSubState={props.setSubState}
+        />
+      )}
+
+      {props.subState === "Fletching" && (
+        <FletchingCalculator
           skills={props.skills}
           skillsExp={props.skillsExp}
           playerName={props.playerName}
