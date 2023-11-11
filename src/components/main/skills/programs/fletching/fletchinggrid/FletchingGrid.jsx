@@ -11,6 +11,7 @@ const FletchingGrid = (props) => {
   const [fletchDB, setFletchDB] = useState(FLETCHLIST);
   const [filteredfletchDB, setFilteredfletchDB] = useState(FLETCHLIST);
   const [fletchPrices, setFletchPrices] = useState({});
+  const [reqItemPrices, setReqItemPrices] = useState({});
 
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
@@ -18,7 +19,8 @@ const FletchingGrid = (props) => {
   const [toGoSorted, setToGoSorted] = useState(false);
 
   const priceFetcher = async () => {
-    let data = [];
+    // Fletchlist items
+    let data = {};
     const fetcher = await fetch(
       "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Headless_arrow|Bronze_arrow|Bronze_javelin|Ogre_arrow|Shortbow_(u)|Shortbow|Wooden_stock|Bronze_crossbow_(u)|Bronze_crossbow|Bronze_bolts|Bronze_dart|Longbow_(u)|Longbow|Opal_bolts_(e)|Iron_arrow|Iron_javelin|Oak_shortbow(u)|Oak_shortbow|Iron_dart|Oak_longbow_(u)|Oak_longbow|Oak_shield|Steel_arrow|Steel_javelin|Kebbit_bolts|Willow_shortbow_(u)|Willow_shortbow|Steel_dart|Willow_stock|Iron_crossbow_(u)|Iron_crossbow|Iron_bolts|Willow_longbow_(u)|Willow_longbow|Battlestaff|Pearl_bolts_(e)|Willow_shield|Long_kebbit_bolts|Silver_bolts|Mithril_arrow|Teak_stock|Steel_crossbow_(u)|Steel_crossbow|Steel_bolts|Mithril_javelin|Topaz_bolts_(e)|Maple_shortbow_(u)|Maple_shortbow|Barbed_bolts|Mithril_dart|Toxic_blowpipe|Maple_stock|Mithril_bolts|Mithril_crossbow_(u)|Mithril_crossbow|Maple_longbow_(u)|Maple_longbow|Sapphire_bolts_(e)|Maple_shield|Emerald_bolts_(e)|Adamant_arrow|Adamant_bolts"
     );
@@ -29,10 +31,25 @@ const FletchingGrid = (props) => {
     const result2 = await fetcher2.json();
     data = { ...result, ...result2 };
     setFletchPrices(data);
+
+    let data2 = {};
+    // Required item prices
+    const pricesFetch = await fetch(
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Arrow_shaft|Feather|Headless_arrow|Bronze_arrowtips|Bronze_javelin_heads|Javelin_shaft|Flighted_ogre_arrow|Wolfbone_arrowtips|Logs|Shortbow_(u)|Bow_string|Wooden_stock|Bronze_limbs|Bronze_crossbow_(u)|Bronze_bolts_(unf)|Bronze_dart_tip|Longbow_(u)|Bronze_bolts|Opal_bolt_tips|Iron_arrowtips|Iron_javelin_heads|Oak_logs|Oak_shortbow_(u)|Iron_dart_tip|Oak_stock|Crossbow_string|Oak_longbow_(u)|Jade_bolt_tips|Steel_arrowtips|Steel_javelin_heads|Kebbit_spike|Willow_logs|Willow_shortbow_(u)|Steel_dart_tip|Willow_stock|Iron_limbs|Iron_crossbow_(u)|Iron_bolts_(unf)|Willow_longbow_(u)|Celastrus_bark|Iron_bolts|Pearl_bolt_tips|Long_kebbit_spike|Silver_bolts_(unf)|Mithril_arrowtips|Teak_logs|Teak_stock|Steel_limbs|Steel_crossbow_(u)|Steel_bolts_(unf)|Mithril_javelin_heads|Steel_bolts|Topaz_bolt_tips|Maple_logs|Maple_shortbow_(u)|Barb_bolttips|Mithril_dart_tip|Broad_arrowheads|Tanzanite_fang|Mithril_bolts_(unf)|Maple_stock|Mithril_limbs|Mithril_crossbow_(u)|Unfinished_broad_bolts|Maple_longbow_(u)|Mithril_bolts|Sapphire_bolt_tips|Emerald_bolt_tips|Adamant_arrowtips|Adamant_bolts_(unf)|Mahogany_logs|Mahogany_stock|Adamantite_limbs|Adamant_crossbow_(u)|Adamant_javelin_heads|Adamant_bolts|Ruby_bolt_tips|Diamond_bolt_tips|Yew_logs|Yew_shortbow_(u)|Adamant_dart_tip|Runite_bolts_(unf)"
+    );
+    const priceResult = await pricesFetch.json();
+
+    const pricesFetch2 = await fetch(
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Yew_stock|Runite_limbs|Runite_crossbow_(u)|Yew_longbow_(u)|Runite_bolts|Dragonstone_bolt_tips|Onyx_bolt_tips|Rune_arrowtips|Broad_bolts|Amethyst_bolt_tips|Rune_javelin_heads|Magic_logs|Magic_stock|Dragon_limbs|Dragon_crossbow_(u)|Magic_shortbow_(u)|Rune_dart_tip|Amethyst_arrowtips|Dragon_bolts_(unf)|Dragon_bolts|Amethyst_javelin_heads|Magic_longbow_(u)|Amethyst_dart_tip|Dragon_arrowtips|Redwood_logs|Dragon_javelin_heads|Dragon_dart_tip"
+    );
+    const priceResult2 = await pricesFetch2.json();
+    data2 = { ...priceResult, ...priceResult2 };
+    setReqItemPrices(data2);
   };
   useEffect(() => {
     console.log(fletchPrices);
-  }, [fletchPrices]);
+    console.log(reqItemPrices);
+  }, [fletchPrices, reqItemPrices]);
 
   useEffect(() => {
     if (Object.keys(fletchPrices).length === 0) {

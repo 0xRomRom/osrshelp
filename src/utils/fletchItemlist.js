@@ -548,4 +548,31 @@ const FLETCHITEMLIST = [
   },
 ];
 
+let resultArray = [];
+
+FLETCHITEMLIST.forEach((item) => {
+  const keys = Object.keys(item);
+  keys.forEach((key) => {
+    resultArray.push(key);
+    if (typeof item[key] !== "string") {
+      resultArray.push(item[key]);
+    }
+  });
+});
+
+console.log(resultArray);
+
+const filtered = resultArray.filter((item) => typeof item === "string");
+// console.log(filtered);
+
+const filteredArray = filtered.filter((item, index, array) => {
+  return array.indexOf(item) === index;
+});
+
+// console.log(filteredArray);
+
+const joined = filteredArray.join("|");
+// console.log(joined);
+
 export default FLETCHITEMLIST;
+// Arrow_shaft|Feather|Headless_arrow|Bronze_arrowtips|Bronze_javelin_heads|Javelin_shaft|Flighted_ogre_arrow|Wolfbone_arrowtips|Logs|Shortbow_(u)|Bow_string|Wooden_stock|Bronze_limbs|Bronze_crossbow_(u)|Bronze_bolts_(unf)|Bronze_dart_tip|Longbow_(u)|Bronze_bolts|Opal_bolt_tips|Iron_arrowtips|Iron_javelin_heads|Oak_logs|Oak_shortbow_(u)|Iron_dart_tip|Oak_stock|Crossbow_string|Oak_longbow_(u)|Jade_bolt_tips|Steel_arrowtips|Steel_javelin_heads|Kebbit_spike|Willow_logs|Willow_shortbow_(u)|Steel_dart_tip|Willow_stock|Iron_limbs|Iron_crossbow_(u)|Iron_bolts_(unf)|Willow_longbow_(u)|Celastrus_bark|Iron_bolts|Pearl_bolt_tips|Long_kebbit_spike|Silver_bolts_(unf)|Mithril_arrowtips|Teak_logs|Teak_stock|Steel_limbs|Steel_crossbow_(u)|Steel_bolts_(unf)|Mithril_javelin_heads|Steel_bolts|Topaz_bolt_tips|Maple_logs|Maple_shortbow_(u)|Barb_bolttips|Mithril_dart_tip|Broad_arrowheads|Tanzanite_fang|Mithril_bolts_(unf)|Maple_stock|Mithril_limbs|Mithril_crossbow_(u)|Unfinished_broad_bolts|Maple_longbow_(u)|Mithril_bolts|Sapphire_bolt_tips|Emerald_bolt_tips|Adamant_arrowtips|Adamant_bolts_(unf)|Mahogany_logs|Mahogany_stock|Adamantite_limbs|Adamant_crossbow_(u)|Adamant_javelin_heads|Adamant_bolts|Ruby_bolt_tips|Diamond_bolt_tips|Yew_logs|Yew_shortbow_(u)|Adamant_dart_tip|Runite_bolts_(unf)|Yew_stock|Runite_limbs|Runite_crossbow_(u)|Yew_longbow_(u)|Runite_bolts|Dragonstone_bolt_tips|Onyx_bolt_tips|Rune_arrowtips|Broad_bolts|Amethyst_bolt_tips|Rune_javelin_heads|Magic_logs|Magic_stock|Dragon_limbs|Dragon_crossbow_(u)|Magic_shortbow_(u)|Rune_dart_tip|Amethyst_arrowtips|Dragon_bolts_(unf)|Dragon_bolts|Amethyst_javelin_heads|Magic_longbow_(u)|Amethyst_dart_tip|Dragon_arrowtips|Redwood_logs|Dragon_javelin_heads|Dragon_dart_tip
