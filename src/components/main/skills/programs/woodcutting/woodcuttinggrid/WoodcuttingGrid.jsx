@@ -1,5 +1,4 @@
 import stl from "./WoodcuttingGrid.module.css";
-import FOODLIST from "../../../../../../utils/foodList";
 import TREELIST from "../../../../../../utils/treeList";
 import cookingLogo from "../../../../../../assets/skillicons/Cooking.webp";
 import axeLogo from "../../../../../../assets/random/Rune_axe.png";
@@ -9,68 +8,69 @@ import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 import { useState, useEffect, useCallback } from "react";
 
 const WoodcuttingGrid = (props) => {
-  const [foodDB, setFoodDB] = useState(FOODLIST);
+  const [treeDB, setTreeDB] = useState(TREELIST);
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
   const [toGoSorted, setToGoSorted] = useState(false);
 
   const calculateTreesToCut = useCallback(
-    (food) => {
+    (tree) => {
       const expToGo = props.remainingExp;
-      const result = Math.ceil(expToGo / food.exp);
+      const result = Math.ceil(expToGo / tree.exp);
       return result ? result : "?";
     },
     [props.remainingExp]
   );
 
-  const filterFoods = useCallback(() => {
-    const filteredFoods = FOODLIST.filter((food) =>
-      food.food.toLowerCase().includes(props.searchState.toLowerCase())
+  const filterTrees = useCallback(() => {
+    const filteredTrees = TREELIST.filter((tree) =>
+      tree.name.toLowerCase().includes(props.searchState.toLowerCase())
     );
-    setFoodDB([...filteredFoods]);
+    setTreeDB([...filteredTrees]);
   }, [props.searchState]);
 
   useEffect(() => {
-    filterFoods();
-  }, [filterFoods]);
+    filterTrees();
+  }, [filterTrees]);
 
-  const sortFood = () => {
+  const sortTree = () => {
     setMonsterSorted(!monsterSorted);
-    let sorter = [...foodDB];
+    let sorter = [...treeDB];
+    console.log(sorter);
     sorter.sort((a, b) =>
       monsterSorted ? a.level - b.level : b.level - a.level
     );
-    setFoodDB(sorter);
+    setTreeDB(sorter);
   };
 
   const sortMembers = () => {
     setMemberSorted(!memberSorted);
-    let sorter = [...foodDB];
+    let sorter = [...treeDB];
     sorter.sort((a, b) =>
-      memberSorted ? a.member - b.member : b.member - a.member
+      memberSorted ? a.members - b.members : b.members - a.members
     );
-    setFoodDB(sorter);
+    setTreeDB(sorter);
   };
 
   const sortExp = () => {
     setCombatSorted(!combatSorted);
-    let sorter = [...foodDB];
+    let sorter = [...treeDB];
     sorter.sort((a, b) => (combatSorted ? a.exp - b.exp : b.exp - a.exp));
-    setFoodDB(sorter);
+    setTreeDB(sorter);
   };
 
   const sortToGo = () => {
     setToGoSorted(!toGoSorted);
-    let sorter = [...foodDB];
+    let sorter = [...treeDB];
     sorter.sort((a, b) => (toGoSorted ? a.exp - b.exp : b.exp - a.exp));
-    setFoodDB(sorter);
+    setTreeDB(sorter);
   };
 
   return (
     <div className={stl.grid}>
       <div className={stl.typeRow}>
-        <span className={stl.monsterTitleRow} onClick={sortFood}>
+        <span className={stl.monsterTitleRow} onClick={sortTree}>
           <img src={cookingLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
           Tree
         </span>
@@ -86,24 +86,24 @@ const WoodcuttingGrid = (props) => {
         </span>
       </div>
       <div className={stl.resultGrid}>
-        {TREELIST.map((food) => {
+        {treeDB.map((tree) => {
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <span className={stl.innerSpan}>
                   <img
-                    src={food.src}
-                    alt="Food picture"
+                    src={tree.src}
+                    alt="Oldschool Runescape Trees"
                     className={stl.minifood}
                   />
-                  <span className={stl.lvlSpan}>Lvl {food.level}</span>
-                  {food.name}
+                  <span className={stl.lvlSpan}>Lvl {tree.level}</span>
+                  {tree.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{food.members ? "Yes" : "No"}</span>
-              <span className={stl.rowItem}>{food.exp}</span>
+              <span className={stl.rowItem}>{tree.members ? "Yes" : "No"}</span>
+              <span className={stl.rowItem}>{tree.exp}</span>
               <span className={stl.rowItem}>
-                {calculateTreesToCut(food).toLocaleString()}
+                {calculateTreesToCut(tree).toLocaleString()}
               </span>
             </div>
           );
