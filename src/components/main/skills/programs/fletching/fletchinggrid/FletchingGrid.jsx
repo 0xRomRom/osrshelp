@@ -44,6 +44,7 @@ const FletchingGrid = (props) => {
     );
     const priceResult2 = await pricesFetch2.json();
     data2 = { ...priceResult, ...priceResult2 };
+    console.log(data2);
     setReqItemPrices(data2);
   };
 
@@ -81,36 +82,36 @@ const FletchingGrid = (props) => {
     (fletchData, list = FLETCHLIST) => {
       let fletchList = JSON.parse(JSON.stringify(list));
 
-      console.log(fletchList);
-      console.log(reqItemPrices);
+      // console.log(fletchList);
+      // console.log(reqItemPrices);
 
       const mapper = fletchData.map((item, index) => {
         const itemCount = item.names.length;
-        let count = 0;
-        console.log(count);
 
         for (let i = 0; i < itemCount; i++) {
+          let count = 0;
           const itemName = item.names[i].replaceAll("_", " ");
-          const runeCount = item.amounts[i];
-          const itemCost = reqItemPrices[itemName].price * runeCount;
+          const itemCount = item.amounts[i];
+          const itemCost = reqItemPrices[itemName].price * itemCount;
           console.log("Total Cost For Item: ", itemName, itemCost);
           count += itemCost;
-          fletchList[index].cost = count;
-          count = 0;
+          fletchList[index].cost += count;
+          // count = 0;
 
           // if (spellName.includes("(e)")) {
           //   // Deduct twice because it was already added above
-          //   const deductAmount = runePrices[spellName].price * runeCount * 2;
+          //   const deductAmount = runePrices[spellName].price * itemCount * 2;
           //   const minusEnchanted = count - deductAmount;
           //   fletchList[index].price = minusEnchanted;
           // }
           // if (spellName.includes("orb")) {
           //   // Deduct twice because it was already added above
-          //   const deductAmount = runePrices[spellName].price * runeCount;
+          //   const deductAmount = runePrices[spellName].price * itemCount;
           //   const minusEnchanted = deductAmount - count;
           //   fletchList[index].price = minusEnchanted;
           // }
         }
+        console.log(item.names);
         return fletchList;
       });
 
@@ -243,7 +244,8 @@ const FletchingGrid = (props) => {
               <span className={stl.rowItem}>{fletch.exp}</span>
               <span className={stl.rowItem}>{fletchAmount}</span>
               <span className={stl.rowItem}>
-                {(fletch.cost * fletchAmount).toLocaleString()}
+                {/* {(fletch.cost * fletchAmount).toLocaleString()} */}
+                {fletch.cost}
               </span>
             </div>
           );
