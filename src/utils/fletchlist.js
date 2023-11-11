@@ -118,7 +118,7 @@ const FLETCHLIST = [
   },
   {
     level: 11,
-    name: "Opal-tipped bronze bolts",
+    name: "Opal bolts",
     exp: 1.6,
     src: "/fletching/Opal_bolts_5.webp",
     cost: 0,
@@ -496,7 +496,7 @@ const FLETCHLIST = [
   },
   {
     level: 52,
-    name: "Toxic blowpipe",
+    name: "Toxic blowpipe (empty)",
     exp: 120,
     src: "/fletching/Toxic_blowpipe.webp",
     cost: 0,
