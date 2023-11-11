@@ -1,5 +1,4 @@
 import stl from "./FletchingGrid.module.css";
-import TREELIST from "../../../../../../utils/treeList";
 import FLETCHLIST from "../../../../../../utils/fletchlist";
 import cookingLogo from "../../../../../../assets/skillicons/Cooking.webp";
 import axeLogo from "../../../../../../assets/random/Rune_axe.png";
