@@ -97,10 +97,10 @@ const WoodcuttingGrid = (props) => {
                     className={stl.minifood}
                   />
                   <span className={stl.lvlSpan}>Lvl {food.level}</span>
-                  {food.food}
+                  {food.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{food.member ? "Yes" : "No"}</span>
+              <span className={stl.rowItem}>{food.members ? "Yes" : "No"}</span>
               <span className={stl.rowItem}>{food.exp}</span>
               <span className={stl.rowItem}>
                 {calculateTreesToCut(food).toLocaleString()}
