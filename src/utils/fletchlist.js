@@ -759,7 +759,7 @@ const FLETCHLIST = [
     level: 72,
     name: "Yew shield",
     exp: 150,
-    src: "/fletching/Yew_shield_5.webp",
+    src: "/fletching/Yew_shield.webp",
     cost: 0,
     toGo: 0,
     type: "Shields",

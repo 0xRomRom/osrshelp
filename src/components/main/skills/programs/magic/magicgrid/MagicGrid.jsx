@@ -76,7 +76,7 @@ const MagicGrid = (props) => {
     (runeData, list = spellbookList) => {
       let spellsList = JSON.parse(JSON.stringify(list));
 
-      let mapper = runeData.map((spell, index) => {
+      const mapper = runeData.map((spell, index) => {
         const spellCount = spell.names.length;
         let count = 0;
 
