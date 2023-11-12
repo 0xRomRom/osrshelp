@@ -1,9 +1,11 @@
 import stl from "./FishingGrid.module.css";
 import FOODLIST from "../../../../../../utils/foodList";
-import cookingLogo from "../../../../../../assets/skillicons/Cooking.webp";
+import FISHLIST from "../../../../../../utils/fishlist";
+import harpoonLogo from "../../../../../../assets/random/Harpoon.webp";
+import moneyLogo from "../../../../../../assets/icons/Donate.webp";
+import fishingLogo from "../../../../../../assets/skillicons/Fishing.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
-import fireLogo from "../../../../../../assets/random/Frying_pan.webp";
 
 import { useState, useEffect, useCallback } from "react";
 
@@ -13,6 +15,10 @@ const FishingGrid = (props) => {
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
   const [toGoSorted, setToGoSorted] = useState(false);
+
+  useEffect(() => {
+    console.log(props.multiplier);
+  }, [props.multiplier]);
 
   const calculateFoodToCook = useCallback(
     (food) => {
@@ -70,8 +76,8 @@ const FishingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortFood}>
-          <img src={cookingLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
-          Food
+          <img src={fishingLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
+          Catch
         </span>
         <span onClick={sortMembers}>
           <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
@@ -81,8 +87,12 @@ const FishingGrid = (props) => {
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
         </span>
         <span onClick={sortToGo}>
-          <img src={fireLogo} alt="Slayer Logo" className={stl.miniLogo} /> To
-          Go
+          <img src={harpoonLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          To Go
+        </span>
+        <span onClick={sortToGo}>
+          <img src={moneyLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          Profit
         </span>
       </div>
       <div className={stl.resultGrid}>
@@ -97,6 +107,11 @@ const FishingGrid = (props) => {
                 </span>
               </span>
               <span className={stl.rowItem}>{food.member ? "Yes" : "No"}</span>
+              <span className={stl.rowItem}>
+                {+props.multiplier > 0 &&
+                  (food.exp * (1 + 2.5 / 100)).toFixed(1)}
+                {+props.multiplier === 0 && food.exp}
+              </span>
               <span className={stl.rowItem}>{food.exp}</span>
               <span className={stl.rowItem}>
                 {calculateFoodToCook(food).toLocaleString()}

@@ -23,10 +23,6 @@ const WoodcuttingGrid = (props) => {
     [props.remainingExp]
   );
 
-  useEffect(() => {
-    console.log(props.multiplier);
-  }, [props.multiplier]);
-
   const sortTree = () => {
     setMonsterSorted(!monsterSorted);
     let sorter = [...treeDB];

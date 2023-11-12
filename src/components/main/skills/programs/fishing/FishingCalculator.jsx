@@ -1,18 +1,21 @@
 import stl from "./FishingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import cookingIcon from "../../../../../assets/skillicons/Cooking.webp";
+import fishingIcon from "../../../../../assets/skillicons/Fishing.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import FishingGrid from "./fishinggrid/FishingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
+import FishingFilter from "./fishingfilters/FishingFilters";
 import { useState } from "react";
 
 const FishingCalculator = (props) => {
   const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
+  const [multiplier, setMultiplier] = useState(0);
+  const [filterChanged, setFilterChanged] = useState(false);
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -34,14 +37,14 @@ const FishingCalculator = (props) => {
           className={stl.backArrow}
           onClick={handleMenuSwitch}
         />
-        <img src={cookingIcon} alt="Cooking Level" className={stl.skillImg} />
-        <span className={stl.skillTitle}>Cooking</span>
+        <img src={fishingIcon} alt="Fishing Level" className={stl.skillImg} />
+        <span className={stl.skillTitle}>Fishing</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["cooking"]}
+                Level {props.skills["fishing"]}
               </span>
             </div>
 
@@ -49,8 +52,8 @@ const FishingCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"cooking"}
-                  currentLvl={props.skills["cooking"]}
+                  skillname={"fishing"}
+                  currentLvl={props.skills["fishing"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -75,8 +78,8 @@ const FishingCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"cooking"}
-            currentLvl={props.skills["cooking"]}
+            skillName={"fishing"}
+            currentLvl={props.skills["fishing"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}
@@ -87,12 +90,21 @@ const FishingCalculator = (props) => {
             remainingExp={remainingExp}
           />
         )}
+        <FishingFilter
+          setMultiplier={setMultiplier}
+          setFilterChanged={setFilterChanged}
+          filterChanged={filterChanged}
+        />
         <SearchFilter
           setSearchState={setSearchState}
-          searchType="Search Food"
+          searchType="Search Fish"
         />
       </div>
-      <FishingGrid searchState={searchState} remainingExp={remainingExp} />
+      <FishingGrid
+        searchState={searchState}
+        remainingExp={remainingExp}
+        multiplier={multiplier}
+      />
     </div>
   );
 };
