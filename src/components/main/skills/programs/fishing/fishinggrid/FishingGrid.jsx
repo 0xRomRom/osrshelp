@@ -123,7 +123,7 @@ const FishingGrid = (props) => {
       </div>
       <div className={stl.resultGrid}>
         {foodDB.map((food) => {
-          const fishPrice = calculateFishToCatch(food);
+          const fishAmount = calculateFishToCatch(food);
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -139,13 +139,20 @@ const FishingGrid = (props) => {
                   (food.exp * (1 + 2.5 / 100)).toFixed(1)}
                 {+props.multiplier === 0 && food.exp}
               </span>
+
               <span className={stl.rowItem}>
                 {+props.multiplier > 0 &&
-                  Math.round(fishPrice / (1 + 2.5 / 100)).toLocaleString()}
-                {+props.multiplier === 0 && fishPrice.toLocaleString()}
+                  Math.round(fishAmount / (1 + 2.5 / 100)).toLocaleString()}
+                {+props.multiplier === 0 && fishAmount.toLocaleString()}
               </span>
+
               <span className={stl.rowItem}>
-                {food.profit > 0 ? food.profit : "x"}
+                {+props.multiplier === 0 &&
+                  Math.round(food.profit * fishAmount).toLocaleString()}
+                {+props.multiplier > 0 &&
+                  Math.round(
+                    (food.profit * fishAmount) / (1 + 2.5 / 100)
+                  ).toLocaleString()}
               </span>
             </div>
           );
