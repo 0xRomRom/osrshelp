@@ -7,7 +7,7 @@ const LOGSLIST = [
     src: "logs/Logs.webp",
   },
   {
-    name: "Achey logs",
+    name: "Achey tree logs",
     exp: 40,
     price: 0,
     toGo: 0,
@@ -63,7 +63,7 @@ const LOGSLIST = [
     src: "logs/Yew_logs.webp",
   },
   {
-    name: "Blisterwood logs",
+    name: "Bucket",
     exp: 96,
     price: 0,
     toGo: 0,
@@ -94,13 +94,6 @@ const LOGSLIST = [
     src: "logs/Pyre_logs.webp",
   },
   {
-    name: "Achey pyre logs",
-    exp: 50.5,
-    price: 0,
-    toGo: 0,
-    src: "logs/Pyre_logs.webp",
-  },
-  {
     name: "Oak pyre logs",
     exp: 70,
     price: 0,
@@ -122,7 +115,7 @@ const LOGSLIST = [
     src: "logs/Teak_pyre_logs.webp",
   },
   {
-    name: "Arctic pine pyre logs",
+    name: "Arctic pyre logs",
     exp: 158,
     price: 0,
     toGo: 0,
