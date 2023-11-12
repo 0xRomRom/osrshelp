@@ -42,7 +42,7 @@ const FLETCHLIST = [
     src: "/fletching/Shortbow_(u).webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 5,
@@ -105,7 +105,7 @@ const FLETCHLIST = [
     src: "/fletching/Longbow_(u).webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 10,
@@ -150,7 +150,7 @@ const FLETCHLIST = [
     src: "/fletching/Oak_shortbow_(u).webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 20,
@@ -204,7 +204,7 @@ const FLETCHLIST = [
     src: "/fletching/Oak_longbow_(u).webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 25,
@@ -267,7 +267,7 @@ const FLETCHLIST = [
     src: "/fletching/Willow_shortbow_(u).webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 35,
@@ -330,7 +330,7 @@ const FLETCHLIST = [
     src: "/fletching/Willow_longbow_(u).webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 40,
@@ -456,7 +456,7 @@ const FLETCHLIST = [
     src: "/fletching/Maple_shortbow_(u).png",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 50,
@@ -555,7 +555,7 @@ const FLETCHLIST = [
     src: "/fletching/Maple_longbow_(u).webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 55,
@@ -564,7 +564,7 @@ const FLETCHLIST = [
     src: "/fletching/Maple_longbow.webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 56,
@@ -672,7 +672,7 @@ const FLETCHLIST = [
     src: "/fletching/Yew_shortbow_(u).webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 65,
@@ -735,7 +735,7 @@ const FLETCHLIST = [
     src: "/fletching/Yew_longbow_(u).webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 70,
@@ -834,7 +834,7 @@ const FLETCHLIST = [
     src: "/fletching/Magic_shortbow_(u).webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 80,
@@ -978,7 +978,7 @@ const FLETCHLIST = [
     src: "/fletching/Magic_longbow_(u).webp",
     cost: 0,
     toGo: 0,
-    type: "Unstrung",
+    type: "Stringless",
   },
   {
     level: 85,

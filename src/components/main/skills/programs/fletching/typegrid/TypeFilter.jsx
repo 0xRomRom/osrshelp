@@ -100,8 +100,8 @@ const TypeFilter = ({ setActiveFilter, activeFilter }) => {
             <span>Strung</span>
           </div>
           <div
-            className={`${stl.spellChoice} ${getTypeClassName("Unstrung")}`}
-            onClick={() => handleTypeSwitch("Unstrung")}
+            className={`${stl.spellChoice} ${getTypeClassName("Stringless")}`}
+            onClick={() => handleTypeSwitch("Stringless")}
           >
             <img
               src="fletching/Magic_shortbow_(u).webp"
