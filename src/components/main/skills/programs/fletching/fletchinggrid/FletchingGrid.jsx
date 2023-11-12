@@ -19,11 +19,7 @@ const FletchingGrid = (props) => {
   const [toGoSorted, setToGoSorted] = useState(false);
 
   const priceFetcher = async () => {
-    // const debuggers = await fetch(
-    //   "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Oak_shortbow_(u)"
-    // );
-    // const logBugger = await debuggers.json();
-    // console.log(logBugger);
+    // Fetch twice due to 100 item limit
 
     // Fletchlist items
     let data = {};

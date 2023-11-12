@@ -6,6 +6,7 @@ const FISHLIST = [
     toGo: 0,
     level: 1,
     src: "/fish/Raw_shrimps.webp",
+    profit: 0,
   },
   {
     food: "Sardine",
@@ -14,6 +15,7 @@ const FISHLIST = [
     toGo: 0,
     level: 5,
     src: "/fish/Raw_sardine.webp",
+    profit: 0,
   },
   {
     food: "Karambwanji",
@@ -22,6 +24,7 @@ const FISHLIST = [
     toGo: 0,
     level: 5,
     src: "/fish/Karambwanji.webp",
+    profit: 0,
   },
   {
     food: "Herring",
@@ -30,6 +33,7 @@ const FISHLIST = [
     toGo: 0,
     level: 10,
     src: "/fish/Raw_herring.webp",
+    profit: 0,
   },
   {
     food: "Anchovies",
@@ -38,6 +42,7 @@ const FISHLIST = [
     toGo: 0,
     level: 15,
     src: "/fish/Raw_anchovies.webp",
+    profit: 0,
   },
   {
     food: "Mackerel",
@@ -46,6 +51,7 @@ const FISHLIST = [
     toGo: 0,
     level: 16,
     src: "/fish/Raw_mackerel.webp",
+    profit: 0,
   },
   {
     food: "Trout",
@@ -54,6 +60,7 @@ const FISHLIST = [
     toGo: 0,
     level: 20,
     src: "/fish/Raw_trout.webp",
+    profit: 0,
   },
   {
     food: "Cod",
@@ -62,6 +69,7 @@ const FISHLIST = [
     toGo: 0,
     level: 23,
     src: "/fish/Raw_cod.webp",
+    profit: 0,
   },
   {
     food: "Pike",
@@ -70,6 +78,7 @@ const FISHLIST = [
     toGo: 0,
     level: 25,
     src: "/fish/Raw_pike.webp",
+    profit: 0,
   },
   {
     food: "Slimy eel",
@@ -78,6 +87,7 @@ const FISHLIST = [
     toGo: 0,
     level: 28,
     src: "/fish/Raw_slimy_eel.webp",
+    profit: 0,
   },
   {
     food: "Salmon",
@@ -86,6 +96,7 @@ const FISHLIST = [
     toGo: 0,
     level: 30,
     src: "/fish/Raw_salmon.webp",
+    profit: 0,
   },
   {
     food: "Frog spawn",
@@ -94,6 +105,7 @@ const FISHLIST = [
     toGo: 0,
     level: 33,
     src: "/fish/Frog_spawn.webp",
+    profit: 0,
   },
   {
     food: "Tuna",
@@ -102,6 +114,7 @@ const FISHLIST = [
     toGo: 0,
     level: 35,
     src: "/fish/Raw_tuna.webp",
+    profit: 0,
   },
   {
     food: "Rainbow fish",
@@ -110,6 +123,7 @@ const FISHLIST = [
     toGo: 0,
     level: 38,
     src: "/fish/Rainbow_fish.webp",
+    profit: 0,
   },
   {
     food: "Cave eel",
@@ -118,6 +132,7 @@ const FISHLIST = [
     toGo: 0,
     level: 38,
     src: "/fish/Cave_eel.webp",
+    profit: 0,
   },
   {
     food: "Lobster",
@@ -126,6 +141,7 @@ const FISHLIST = [
     toGo: 0,
     level: 40,
     src: "/fish/Raw_lobster.webp",
+    profit: 0,
   },
   {
     food: "Bass",
@@ -134,6 +150,7 @@ const FISHLIST = [
     toGo: 0,
     level: 46,
     src: "/fish/Raw_bass.webp",
+    profit: 0,
   },
   {
     food: "Leaping trout",
@@ -142,6 +159,7 @@ const FISHLIST = [
     toGo: 0,
     level: 48,
     src: "/fish/Leaping_trout.webp",
+    profit: 0,
   },
   {
     food: "Swordfish",
@@ -150,6 +168,7 @@ const FISHLIST = [
     toGo: 0,
     level: 50,
     src: "/fish/Raw_swordfish.webp",
+    profit: 0,
   },
   {
     food: "Lava eel",
@@ -158,6 +177,7 @@ const FISHLIST = [
     toGo: 0,
     level: 53,
     src: "/fish/Raw_lava_eel.webp",
+    profit: 0,
   },
   {
     food: "Leaping salmon",
@@ -166,6 +186,7 @@ const FISHLIST = [
     toGo: 0,
     level: 58,
     src: "/fish/Leaping_salmon.webp",
+    profit: 0,
   },
   {
     food: "Monkfish",
@@ -174,6 +195,7 @@ const FISHLIST = [
     toGo: 0,
     level: 62,
     src: "/fish/Raw_monkfish.webp",
+    profit: 0,
   },
   {
     food: "Karambwan",
@@ -182,6 +204,7 @@ const FISHLIST = [
     toGo: 0,
     level: 65,
     src: "/fish/Raw_karambwan.webp",
+    profit: 0,
   },
   {
     food: "Leaping sturgeon",
@@ -190,6 +213,7 @@ const FISHLIST = [
     toGo: 0,
     level: 70,
     src: "/fish/Leaping_sturgeon.webp",
+    profit: 0,
   },
   {
     food: "Shark",
@@ -198,6 +222,7 @@ const FISHLIST = [
     toGo: 0,
     level: 76,
     src: "/fish/Raw_shark.webp",
+    profit: 0,
   },
   {
     food: "Sea turtle",
@@ -206,6 +231,7 @@ const FISHLIST = [
     toGo: 0,
     level: 79,
     src: "/fish/Raw_sea_turtle.webp",
+    profit: 0,
   },
   {
     food: "Infernal eel",
@@ -214,6 +240,7 @@ const FISHLIST = [
     toGo: 0,
     level: 80,
     src: "/fish/Infernal_eel.webp",
+    profit: 0,
   },
   {
     food: "Manta ray",
@@ -222,6 +249,7 @@ const FISHLIST = [
     toGo: 0,
     level: 81,
     src: "/fish/Raw_manta_ray.webp",
+    profit: 0,
   },
   {
     food: "Minnow",
@@ -230,6 +258,7 @@ const FISHLIST = [
     toGo: 0,
     level: 82,
     src: "/fish/Minnow_5.webp",
+    profit: 0,
   },
   {
     food: "Anglerfish",
@@ -238,6 +267,7 @@ const FISHLIST = [
     toGo: 0,
     level: 82,
     src: "/fish/Raw_anglerfish.webp",
+    profit: 0,
   },
   {
     food: "Dark crab",
@@ -246,6 +276,7 @@ const FISHLIST = [
     toGo: 0,
     level: 85,
     src: "/fish/Raw_dark_crab.webp",
+    profit: 0,
   },
   {
     food: "Sacred eel",
@@ -254,6 +285,7 @@ const FISHLIST = [
     toGo: 0,
     level: 87,
     src: "/fish/Sacred_eel.webp",
+    profit: 0,
   },
 ];
 
