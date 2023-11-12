@@ -103,7 +103,7 @@ const FishingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortFood}>
           <img src={fishingLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
-          Catch
+          Fish
         </span>
         <span onClick={sortMembers}>
           <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
@@ -114,7 +114,7 @@ const FishingGrid = (props) => {
         </span>
         <span onClick={sortToGo}>
           <img src={harpoonLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
-          To Go
+          Catch
         </span>
         <span onClick={sortToGo}>
           <img src={moneyLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
