@@ -191,7 +191,7 @@ const FletchingGrid = (props) => {
     sorter.sort((a, b) =>
       monsterSorted ? a.level - b.level : b.level - a.level
     );
-    setFletchDB(sorter);
+    setFilteredfletchDB(sorter);
   };
 
   const sortAmount = () => {
@@ -200,14 +200,14 @@ const FletchingGrid = (props) => {
     sorter.sort((a, b) =>
       memberSorted ? a.exp - b.exp - b.exp : b.exp - a.exp
     );
-    setFletchDB(sorter);
+    setFilteredfletchDB(sorter);
   };
 
   const sortExp = () => {
     setCombatSorted(!combatSorted);
     let sorter = [...filteredfletchDB];
     sorter.sort((a, b) => (combatSorted ? a.exp - b.exp : b.exp - a.exp));
-    setFletchDB(sorter);
+    setFilteredfletchDB(sorter);
   };
 
   const sortCost = () => {
@@ -218,7 +218,7 @@ const FletchingGrid = (props) => {
         ? a.cost * a.toGo - b.cost * b.toGo
         : b.cost * b.toGo - a.cost * a.toGo
     );
-    setFletchDB(sorter);
+    setFilteredfletchDB(sorter);
   };
 
   return (
