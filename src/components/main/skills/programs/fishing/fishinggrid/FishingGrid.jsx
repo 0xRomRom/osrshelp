@@ -29,7 +29,20 @@ const FishingGrid = (props) => {
     if (Object.keys(fetchedFishPrices).length === 0) {
       priceFetcher();
     }
-  }, [fetchedFishPrices]);
+    if (Object.keys(fetchedFishPrices).length > 0) {
+      let dbref = foodDB;
+      console.log(fetchedFishPrices);
+      console.log(foodDB);
+      dbref.forEach((fish, index) => {
+        const fishname = "Raw " + fish.food.toLowerCase();
+        const price = fetchedFishPrices[fishname]?.price || 0;
+        const res = Number(price) ? price : 0;
+
+        fish.profit = res;
+      });
+      setFoodDB(dbref);
+    }
+  }, [fetchedFishPrices, foodDB]);
 
   const calculateFishToCatch = useCallback(
     (food) => {
@@ -79,7 +92,9 @@ const FishingGrid = (props) => {
   const sortToGo = () => {
     setToGoSorted(!toGoSorted);
     let sorter = [...foodDB];
-    sorter.sort((a, b) => (toGoSorted ? a.exp - b.exp : b.exp - a.exp));
+    sorter.sort((a, b) =>
+      toGoSorted ? a.profit - b.profit : b.profit - a.profit
+    );
     setFoodDB(sorter);
   };
 
@@ -130,7 +145,7 @@ const FishingGrid = (props) => {
                 {+props.multiplier === 0 && fishPrice.toLocaleString()}
               </span>
               <span className={stl.rowItem}>
-                {calculateFishToCatch(food).toLocaleString()}
+                {food.profit > 0 ? food.profit : "x"}
               </span>
             </div>
           );
