@@ -62,7 +62,6 @@ const FletchingGrid = (props) => {
       const filteredSpells = fletchDB.filter((item) =>
         item.type.toLowerCase().includes(props.activeFilter.toLowerCase())
       );
-      // If search state is "All", reset to the original data
       setFilteredfletchDB(filteredSpells);
     }
   }, [props.activeFilter, fletchDB]);
@@ -188,7 +187,7 @@ const FletchingGrid = (props) => {
 
   const sortItem = () => {
     setMonsterSorted(!monsterSorted);
-    let sorter = [...fletchDB];
+    let sorter = [...filteredfletchDB];
     sorter.sort((a, b) =>
       monsterSorted ? a.level - b.level : b.level - a.level
     );
@@ -197,7 +196,7 @@ const FletchingGrid = (props) => {
 
   const sortAmount = () => {
     setMemberSorted(!memberSorted);
-    let sorter = [...fletchDB];
+    let sorter = [...filteredfletchDB];
     sorter.sort((a, b) =>
       memberSorted ? a.exp - b.exp - b.exp : b.exp - a.exp
     );
@@ -206,14 +205,14 @@ const FletchingGrid = (props) => {
 
   const sortExp = () => {
     setCombatSorted(!combatSorted);
-    let sorter = [...fletchDB];
+    let sorter = [...filteredfletchDB];
     sorter.sort((a, b) => (combatSorted ? a.exp - b.exp : b.exp - a.exp));
     setFletchDB(sorter);
   };
 
   const sortCost = () => {
     setToGoSorted(!toGoSorted);
-    let sorter = [...fletchDB];
+    let sorter = [...filteredfletchDB];
     sorter.sort((a, b) =>
       toGoSorted
         ? a.cost * a.toGo - b.cost * b.toGo
