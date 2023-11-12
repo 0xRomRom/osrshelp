@@ -8,11 +8,13 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import FletchingGrid from "./fletchinggrid/FletchingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
+import TypeFilter from "./typegrid/TypeFilter";
 import { useState } from "react";
 
 const FletchingCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
   const [searchState, setSearchState] = useState("");
+  const [activeFilter, setActiveFilter] = useState("All");
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -95,8 +97,16 @@ const FletchingCalculator = (props) => {
           setSearchState={setSearchState}
           searchType="Search Item"
         />
+        <TypeFilter
+          setActiveFilter={setActiveFilter}
+          activeFilter={activeFilter}
+        />
       </div>
-      <FletchingGrid remainingExp={remainingExp} searchState={searchState} />
+      <FletchingGrid
+        remainingExp={remainingExp}
+        searchState={searchState}
+        activeFilter={activeFilter}
+      />
     </div>
   );
 };

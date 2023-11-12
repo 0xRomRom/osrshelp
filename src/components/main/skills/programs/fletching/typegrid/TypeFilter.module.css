@@ -1,0 +1,83 @@
+.modal {
+  background-color: rgb(32, 46, 57);
+  height: 6rem;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  margin-left: 1rem;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19rem;
+}
+
+.innerWrap {
+  position: relative;
+  display: flex;
+  gap: 0.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.innerWrap span {
+  font-size: 13px;
+}
+
+.spellChoice {
+  display: flex;
+  flex-direction: column;
+  color: rgb(164, 164, 164);
+  width: 20%;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.bookIcon {
+  margin: 0 auto;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 2px;
+}
+
+.activeFilter {
+  background-color: #0084ff7a;
+  color: white;
+  border-radius: 5px;
+  width: 15%;
+}
+
+.innerRow1 {
+  position: relative;
+  display: flex;
+  width: 95%;
+  left: 2.5%;
+  height: 50%;
+}
+
+.innerRow1 div {
+  width: 20%;
+}
+
+.innerRow2 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  width: 95%;
+  left: 2.5%;
+  height: 50%;
+}
+
+.innerRow2 div {
+  width: 20%;
+}

@@ -36,7 +36,6 @@ const FletchingGrid = (props) => {
     );
     const result2 = await fetcher2.json();
     data = { ...result, ...result2 };
-    console.log(data);
     setFletchPrices(data);
 
     // Required item prices
@@ -51,18 +50,27 @@ const FletchingGrid = (props) => {
     );
     const priceResult2 = await pricesFetch2.json();
     data2 = { ...priceResult, ...priceResult2 };
-    console.log(data2);
     setReqItemPrices(data2);
   };
+
+  useEffect(() => {
+    console.log(props.activeFilter);
+
+    if (props.activeFilter === "All") {
+      setFilteredfletchDB(fletchDB);
+    } else {
+      const filteredSpells = fletchDB.filter((item) =>
+        item.type.toLowerCase().includes(props.activeFilter.toLowerCase())
+      );
+      // If search state is "All", reset to the original data
+      setFilteredfletchDB(filteredSpells);
+    }
+  }, [props.activeFilter, fletchDB]);
 
   useEffect(() => {
     if (Object.keys(fletchPrices).length === 0) {
       priceFetcher();
     }
-  }, [fletchPrices]);
-
-  useEffect(() => {
-    console.log(fletchPrices);
   }, [fletchPrices]);
 
   const mapRequiredItems = () => {
@@ -92,11 +100,9 @@ const FletchingGrid = (props) => {
   const mapItemPrices = useCallback(
     (fletchData, list = FLETCHLIST) => {
       let fletchList = JSON.parse(JSON.stringify(list));
-      console.log(fletchList);
 
       const mapper = fletchData.map((item, index) => {
         const itemCount = item.names.length;
-
         for (let i = 0; i < itemCount; i++) {
           let count = 0;
           const itemName = item.names[i].replaceAll("_", " ");
@@ -104,20 +110,6 @@ const FletchingGrid = (props) => {
           const itemCost = reqItemPrices[itemName].price * itemCount;
           count += itemCost;
           fletchList[index].cost += count;
-          // count = 0;
-
-          // if (spellName.includes("(e)")) {
-          //   // Deduct twice because it was already added above
-          //   const deductAmount = runePrices[spellName].price * itemCount * 2;
-          //   const minusEnchanted = count - deductAmount;
-          //   fletchList[index].price = minusEnchanted;
-          // }
-          // if (spellName.includes("orb")) {
-          //   // Deduct twice because it was already added above
-          //   const deductAmount = runePrices[spellName].price * itemCount;
-          //   const minusEnchanted = deductAmount - count;
-          //   fletchList[index].price = minusEnchanted;
-          // }
         }
 
         return fletchList;
@@ -125,7 +117,7 @@ const FletchingGrid = (props) => {
 
       let data = mapper[0];
       const skillListPrices = JSON.parse(JSON.stringify(fletchPrices));
-      const finalPrices = data.map((item, index) => {
+      data.forEach((item, index) => {
         const itemName = item.name;
         let itemPrice;
         if (
@@ -139,7 +131,6 @@ const FletchingGrid = (props) => {
           itemPrice = skillListPrices[itemName].price;
         }
         data[index].cost -= itemPrice;
-        return data[index].cost;
       });
 
       return data;
@@ -157,7 +148,6 @@ const FletchingGrid = (props) => {
 
       // Update fletchprices
       const updatedPrices = mapItemPrices(itemArray);
-      console.log(updatedPrices);
 
       // // Update fletches to go
       const updatedCasts = calcSpellsToUse(updatedPrices);
