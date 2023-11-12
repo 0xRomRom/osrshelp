@@ -1,5 +1,4 @@
 import stl from "./FishingGrid.module.css";
-import FOODLIST from "../../../../../../utils/foodList";
 import FISHLIST from "../../../../../../utils/fishlist";
 import harpoonLogo from "../../../../../../assets/random/Harpoon.webp";
 import moneyLogo from "../../../../../../assets/icons/Donate.webp";
@@ -10,7 +9,7 @@ import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 import { useState, useEffect, useCallback } from "react";
 
 const FishingGrid = (props) => {
-  const [foodDB, setFoodDB] = useState(FOODLIST);
+  const [foodDB, setFoodDB] = useState(FISHLIST);
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
@@ -20,7 +19,7 @@ const FishingGrid = (props) => {
     console.log(props.multiplier);
   }, [props.multiplier]);
 
-  const calculateFoodToCook = useCallback(
+  const calculateFishToCatch = useCallback(
     (food) => {
       const expToGo = props.remainingExp;
       const result = Math.ceil(expToGo / food.exp);
@@ -30,7 +29,7 @@ const FishingGrid = (props) => {
   );
 
   const filterFoods = useCallback(() => {
-    const filteredFoods = FOODLIST.filter((food) =>
+    const filteredFoods = FISHLIST.filter((food) =>
       food.food.toLowerCase().includes(props.searchState.toLowerCase())
     );
     setFoodDB([...filteredFoods]);
@@ -97,6 +96,7 @@ const FishingGrid = (props) => {
       </div>
       <div className={stl.resultGrid}>
         {foodDB.map((food) => {
+          const fishPrice = calculateFishToCatch(food);
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -112,9 +112,13 @@ const FishingGrid = (props) => {
                   (food.exp * (1 + 2.5 / 100)).toFixed(1)}
                 {+props.multiplier === 0 && food.exp}
               </span>
-              <span className={stl.rowItem}>{food.exp}</span>
               <span className={stl.rowItem}>
-                {calculateFoodToCook(food).toLocaleString()}
+                {+props.multiplier > 0 &&
+                  Math.round(fishPrice / (1 + 2.5 / 100)).toLocaleString()}
+                {+props.multiplier === 0 && fishPrice.toLocaleString()}
+              </span>
+              <span className={stl.rowItem}>
+                {calculateFishToCatch(food).toLocaleString()}
               </span>
             </div>
           );

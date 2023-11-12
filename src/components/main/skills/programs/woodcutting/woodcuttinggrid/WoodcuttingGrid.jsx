@@ -5,7 +5,7 @@ import axeLogo from "../../../../../../assets/random/Rune_axe.png";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
 
 const WoodcuttingGrid = (props) => {
   const [treeDB, setTreeDB] = useState(TREELIST);
