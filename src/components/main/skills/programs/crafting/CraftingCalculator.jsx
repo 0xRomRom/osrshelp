@@ -36,14 +36,14 @@ const CraftingCalculator = (props) => {
           className={stl.backArrow}
           onClick={handleMenuSwitch}
         />
-        <img src={magicIcon} alt="Magic Level" className={stl.skillImg} />
-        <span className={stl.skillTitle}>Magic</span>
+        <img src={magicIcon} alt="Crafting Level" className={stl.skillImg} />
+        <span className={stl.skillTitle}>Crafting</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["magic"]}
+                Level {props.skills["crafting"]}
               </span>
             </div>
 
@@ -51,8 +51,8 @@ const CraftingCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"magic"}
-                  currentLvl={props.skills["magic"]}
+                  skillname={"crafting"}
+                  currentLvl={props.skills["crafting"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -77,8 +77,8 @@ const CraftingCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"magic"}
-            currentLvl={props.skills["magic"]}
+            skillName={"crafting"}
+            currentLvl={props.skills["crafting"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}
@@ -89,13 +89,12 @@ const CraftingCalculator = (props) => {
             remainingExp={remainingExp}
           />
         )}
-      </div>
-      <div className={stl.configRow2}>
         <SearchFilter
           setSearchState={setSearchState}
-          searchType="Search Spell"
+          searchType="Search Item"
         />
       </div>
+
       <CraftingGrid
         remainingExp={remainingExp}
         skills={props.skills}

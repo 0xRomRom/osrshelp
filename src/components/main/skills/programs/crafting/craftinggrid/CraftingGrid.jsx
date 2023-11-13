@@ -1,16 +1,15 @@
 import stl from "./CraftingGrid.module.css";
-import spellbookList from "../../../../../../utils/spellbookList";
-import SPELLBOOKRUNESLIST from "../../../../../../utils/spellbookRunesList";
+import CRAFTINGLIST from "../../../../../../utils/craftingList";
+import CRAFTINGITEMLIST from "../../../../../../utils/craftingItemList";
 import magicLogo from "../../../../../../assets/skillicons/Magic.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
-import STAVESLIST from "../../../../../../utils/stavesList";
 
 import { useCallback, useEffect, useState } from "react";
 
 const CraftingGrid = (props) => {
-  const [mageDB, setMageDB] = useState(spellbookList);
-  const [filteredMageDB, setFilteredMageDB] = useState(spellbookList);
+  const [filteredCraftDB, setFilteredCraftDB] = useState(CRAFTINGLIST);
+  const [craftDB, setCraftDB] = useState(CRAFTINGLIST);
   const [runePrices, setRunePrices] = useState({});
 
   const [bonesSorted, setBonesSorted] = useState(false);
@@ -34,15 +33,15 @@ const CraftingGrid = (props) => {
 
   const filterSpells = useCallback(() => {
     if (props.searchState) {
-      const filteredSpells = mageDB.filter((spell) =>
+      const filteredSpells = craftDB.filter((spell) =>
         spell.name.toLowerCase().includes(props.searchState.toLowerCase())
       );
-      setFilteredMageDB(filteredSpells);
+      setFilteredCraftDB(filteredSpells);
     } else {
       // If search state is empty, reset to the original data
-      setFilteredMageDB(mageDB);
+      setFilteredCraftDB(craftDB);
     }
-  }, [props.searchState, mageDB]);
+  }, [props.searchState, craftDB]);
 
   useEffect(() => {
     filterSpells();
@@ -50,7 +49,7 @@ const CraftingGrid = (props) => {
 
   const mapRequiredSpells = () => {
     const runeData = [];
-    SPELLBOOKRUNESLIST.forEach((obj) => {
+    CRAFTINGITEMLIST.forEach((obj) => {
       const runeNames = Object.keys(obj);
       const runeAmounts = Object.values(obj);
 
@@ -73,7 +72,7 @@ const CraftingGrid = (props) => {
   );
 
   const mapSpellPrices = useCallback(
-    (runeData, list = spellbookList) => {
+    (runeData, list = CRAFTINGLIST) => {
       let spellsList = JSON.parse(JSON.stringify(list));
 
       const mapper = runeData.map((spell, index) => {
@@ -119,68 +118,10 @@ const CraftingGrid = (props) => {
 
       // Update spells to go
       const updatedCasts = calcSpellsToUse(updatedSpells);
-      setMageDB(updatedCasts);
-      setFilteredMageDB(updatedCasts);
+      setCraftDB(updatedCasts);
+      setFilteredCraftDB(updatedCasts);
     }
   }, [runePrices, mapSpellPrices, calcSpellsToUse]);
-
-  useEffect(() => {
-    if (Object.keys(runePrices).length === 0) return;
-    // Get current rune prices
-
-    // Get names of free runes per staff
-    const freeRunes = STAVESLIST[0][props.selectedStaff];
-    // Free runes from staff
-    const runeNames = [];
-    for (const key in freeRunes) {
-      runeNames.push(key);
-    }
-
-    // If the rune name is in the runeNames array, set its amount to 0
-    let runeData = [];
-    SPELLBOOKRUNESLIST.forEach((obj) => {
-      let runeNamesArray = Object.keys(obj);
-      let runeAmountsArray = Object.values(obj);
-
-      for (let i = 0; i < runeNamesArray.length; i++) {
-        if (runeNames.includes(runeNamesArray[i])) {
-          runeAmountsArray[i] = 0;
-        }
-      }
-
-      runeData.push({ names: runeNamesArray, amounts: runeAmountsArray });
-    });
-
-    if (props.selectedStaff === "") {
-      runeData = mapRequiredSpells();
-    }
-
-    const updatedSpells = mapSpellPrices(runeData);
-
-    // Update spells to go
-    const updatedCasts = calcSpellsToUse(updatedSpells);
-    setMageDB(updatedCasts);
-    setFilteredMageDB(updatedCasts);
-
-    // setMageDB(updatedCasts);
-  }, [props.selectedStaff, runePrices, calcSpellsToUse, mapSpellPrices]);
-
-  const filterSpellbook = useCallback(() => {
-    if (Object.keys(mageDB).length === 0) return;
-    if (props.activeSpellbook !== "All") {
-      const filteredSpells = mageDB.filter((spell) =>
-        spell.spellbook.includes(props.activeSpellbook)
-      );
-      setFilteredMageDB(filteredSpells);
-    } else {
-      // If search state is empty, reset to the original data
-      setFilteredMageDB(mageDB);
-    }
-  }, [props.activeSpellbook, mageDB]);
-
-  useEffect(() => {
-    filterSpellbook();
-  }, [filterSpellbook]);
 
   //////////////////
   // Sort filters //
@@ -188,38 +129,38 @@ const CraftingGrid = (props) => {
 
   const sortBones = () => {
     setBonesSorted(!bonesSorted);
-    let sorter = [...mageDB];
+    let sorter = [...craftDB];
     sorter.sort((a, b) =>
       bonesSorted ? a.level - b.level : b.level - a.level
     );
-    setMageDB(sorter);
+    setCraftDB(sorter);
   };
 
   const sortAmount = () => {
     setAmountSorted(!amountSorted);
-    let sorter = [...mageDB];
+    let sorter = [...craftDB];
     sorter.sort((a, b) =>
       amountSorted ? +b.toGo - +a.toGo : +a.toGo - +b.toGo
     );
-    setMageDB(sorter);
+    setCraftDB(sorter);
   };
 
   const sortExp = () => {
     setXPSorted(!xpSorted);
-    let sorter = [...mageDB];
+    let sorter = [...craftDB];
     sorter.sort((a, b) => (xpSorted ? a.exp - b.exp : b.exp - a.exp));
-    setMageDB(sorter);
+    setCraftDB(sorter);
   };
 
   const sortCost = () => {
     setCostSorted(!costSorted);
-    let sorter = [...mageDB];
+    let sorter = [...craftDB];
     sorter.sort((a, b) =>
       costSorted
         ? a.price * a.toGo - b.price * b.toGo
         : b.price * b.toGo - a.price * a.toGo
     );
-    setMageDB(sorter);
+    setCraftDB(sorter);
   };
 
   return (
@@ -247,7 +188,7 @@ const CraftingGrid = (props) => {
       </div>
 
       <div className={stl.resultGrid}>
-        {filteredMageDB.map((mage) => {
+        {filteredCraftDB.map((mage) => {
           return (
             <div className={stl.row} key={mage.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>

@@ -190,7 +190,7 @@ const SkillsTab = (props) => {
       )}
 
       {props.subState === "Crafting" && (
-        <FiremakingCalculator
+        <CraftingCalculator
           skills={props.skills}
           skillsExp={props.skillsExp}
           playerName={props.playerName}
