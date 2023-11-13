@@ -21,19 +21,19 @@ const CraftingGrid = (props) => {
 
   const priceFetcher = async () => {
     // const debuggers = await fetch(
-    //   "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Empty_sack|Jute_fibre"
+    //   "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Empty_sack|Green_d'hide_vambraces"
     // );
     // const res = await debuggers.json();
     // console.log("Res 1", res);
 
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Ball_of_wool|Bow_string|Crossbow_string|Magic_string|Rope|Empty_sack|Drift_net|Basket|Pot|Empty_cup|Pie_dish|Bowl|Empty_plant_pot|Pot_lid"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Ball_of_wool|Bow_string|Crossbow_string|Magic_string|Rope|Empty_sack|Drift_net|Basket|Pot|Empty_cup|Pie_dish|Bowl|Empty_plant_pot|Pot_lid|Leather_gloves|Leather_boots|Leather_cowl|Leather_vambraces|Leather_body|Leather_chaps|Hardleather_body|Spiky_vambraces|Coif|Hard_leather_shield|Studded_body|Studded_chaps|Green_spiky_vambraces"
     );
     const result = await fetcher.json();
     console.log(result);
     setCraftingPrices(result);
     const fetcher2 = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Wool|Flax|Sinew|Magic_roots|Hair|Ball_of_wool|Jute_fibre|Willow_branch|Soft_clay"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Wool|Flax|Sinew|Magic_roots|Hair|Ball_of_wool|Jute_fibre|Willow_branch|Soft_clay|Leather|Hard_leather|Kebbit_claws|Oak_shield|Bronze_nails|Leather_body|Leather_chaps|Steel_studs|Leather_vambraces|Green_d'hide_vambraces"
     );
     const result2 = await fetcher2.json();
     console.log(result2);
@@ -223,7 +223,9 @@ const CraftingGrid = (props) => {
                 }`}
               >
                 {craft.price > 0 ? "-" : "+"}
-                {craft.price}
+                {Math.round(
+                  (craft.price * +props.remainingExp) / craft.exp
+                ).toLocaleString()}
                 <span className={stl.gpcost}>gp</span>
               </span>
             </div>

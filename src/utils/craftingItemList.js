@@ -55,6 +55,44 @@ const CRAFTINGITEMLIST = [
     //Pot lid
     "Soft clay": 1,
   },
+  {
+    //Leather gloves
+    Leather: 1,
+  },
+  {
+    //Leather boots
+    Leather: 1,
+  },
+  {
+    //Leather cowl
+    Leather: 1,
+  },
+  {
+    //Leather vambraces
+    Leather: 1,
+  },
+  {
+    //Leather body
+    Leather: 1,
+  },
+  {
+    //Leather chaps
+    Leather: 1,
+  },
+  {
+    //Hardleather body
+    "Hard leather": 1,
+  },
+  {
+    //Spiky vambraces
+    "Leather vambraces": 1,
+    "Kebbit claws": 1,
+  },
+  {
+    //Green spiky vambraces
+    "Green d'hide vambraces": 1,
+    "Kebbit claws": 1,
+  },
 ];
 
 export default CRAFTINGITEMLIST;
