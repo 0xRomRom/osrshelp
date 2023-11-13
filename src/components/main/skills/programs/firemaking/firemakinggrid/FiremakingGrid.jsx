@@ -58,7 +58,7 @@ const FiremakingGrid = (props) => {
       setLogsDB(newDB);
       setFilteredLogsDB(newDB);
     }
-  }, [logPrices, logsDB]);
+  }, [logPrices, logsDB, props.remainingExp]);
 
   const sortBones = () => {
     setBonesSorted(!bonesSorted);

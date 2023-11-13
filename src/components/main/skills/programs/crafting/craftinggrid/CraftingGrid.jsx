@@ -10,7 +10,9 @@ import { useCallback, useEffect, useState } from "react";
 const CraftingGrid = (props) => {
   const [filteredCraftDB, setFilteredCraftDB] = useState(CRAFTINGLIST);
   const [craftDB, setCraftDB] = useState(CRAFTINGLIST);
-  const [runePrices, setRunePrices] = useState({});
+
+  const [craftingPrices, setCraftingPrices] = useState({});
+  const [craftingItemPrices, setCraftingItemPrices] = useState({});
 
   const [bonesSorted, setBonesSorted] = useState(false);
   const [xpSorted, setXPSorted] = useState(false);
@@ -19,17 +21,22 @@ const CraftingGrid = (props) => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Banana|Unpowered_orb|Water_orb|Earth_orb|Air_orb|Fire_orb|Air_rune|Mind_rune|Water_rune|Earth_rune|Fire_rune|Body_rune|Cosmic_rune|Chaos_rune|Nature_rune|Law_rune|Death_rune|Astral_rune|Blood_rune|Soul_rune|Wrath_rune|Opal_bolts|Opal_bolts_(e)|Sapphire_bolts|Sapphire_bolts_(e)|Pearl_bolts|Pearl_bolts_(e)|Emerald_bolts|Emerald_bolts_(e)|Topaz_bolts|Topaz_bolts_(e)|Ruby_bolts|Ruby_bolts_(e)|Diamond_bolts|Diamond_bolts_(e)|Dragonstone_bolts|Dragonstone_bolts_(e)|Onyx_bolts|Onyx_bolts_(e)"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Ball_of_wool"
     );
     const result = await fetcher.json();
-    setRunePrices(result);
+    setCraftingPrices(result);
+    const fetcher2 = await fetch(
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Wool"
+    );
+    const result2 = await fetcher2.json();
+    setCraftingItemPrices(result2);
   };
 
   useEffect(() => {
-    if (Object.keys(runePrices).length === 0) {
+    if (Object.keys(craftingPrices).length === 0) {
       priceFetcher();
     }
-  }, [runePrices]);
+  }, [craftingPrices]);
 
   const filterSpells = useCallback(() => {
     if (props.searchState) {
@@ -48,80 +55,62 @@ const CraftingGrid = (props) => {
   }, [filterSpells]);
 
   const mapRequiredSpells = () => {
-    const runeData = [];
+    const craftingData = [];
     CRAFTINGITEMLIST.forEach((obj) => {
-      const runeNames = Object.keys(obj);
-      const runeAmounts = Object.values(obj);
+      const craftingNames = Object.keys(obj);
+      const craftingAmounts = Object.values(obj);
 
-      runeData.push({ names: runeNames, amounts: runeAmounts });
+      craftingData.push({ names: craftingNames, amounts: craftingAmounts });
     });
-    return runeData;
+    return craftingData;
   };
 
-  const calcSpellsToUse = useCallback(
-    (spellsList) => {
-      const expToGo = props.remainingExp;
-
-      for (let i = 0; i < spellsList.length; i++) {
-        const boneExp = spellsList[i].exp;
-        spellsList[i].toGo = Math.ceil(expToGo / boneExp);
-      }
-      return spellsList;
-    },
-    [props.remainingExp]
-  );
-
-  const mapSpellPrices = useCallback(
+  const mapCraftPrices = useCallback(
     (runeData, list = CRAFTINGLIST) => {
-      let spellsList = JSON.parse(JSON.stringify(list));
-
-      const mapper = runeData.map((spell, index) => {
-        const spellCount = spell.names.length;
+      let craftingList = JSON.parse(JSON.stringify(list));
+      console.log(runeData);
+      console.log(craftingList);
+      console.log(craftingItemPrices);
+      const mapper = runeData.map((item, index) => {
+        const itemCount = item.names.length;
         let count = 0;
 
-        for (let i = 0; i < spellCount; i++) {
-          const spellName = spell.names[i];
-          const runeCount = spell.amounts[i];
-          const runePrice = runePrices[spellName].price * runeCount;
-          count += runePrice;
-          spellsList[index].price = count;
-
-          if (spellName.includes("(e)")) {
-            // Deduct twice because it was already added above
-            const deductAmount = runePrices[spellName].price * runeCount * 2;
-            const minusEnchanted = count - deductAmount;
-            spellsList[index].price = minusEnchanted;
-          }
-          if (spellName.includes("orb")) {
-            // Deduct twice because it was already added above
-            const deductAmount = runePrices[spellName].price * runeCount;
-            const minusEnchanted = deductAmount - count;
-            spellsList[index].price = minusEnchanted;
-          }
+        for (let i = 0; i < itemCount; i++) {
+          const itemName = item.names[i];
+          const itemCounts = item.amounts[i];
+          console.log(craftingItemPrices[itemName].price);
+          const craftPrice = craftingItemPrices[itemName].price * itemCounts;
+          count += craftPrice;
+          craftingList[index].price = count;
         }
-        return spellsList;
+        return craftingList;
       });
 
-      const data = mapper[0];
+      let data = mapper[0];
+      data.forEach((item) => {
+        item.price -= craftingPrices[item.name].price;
+      });
       return data;
     },
-    [runePrices]
+    [craftingPrices, craftingItemPrices]
   );
 
   useEffect(() => {
-    if (Object.keys(runePrices).length > 0) {
+    if (
+      Object.keys(craftingPrices).length > 0 &&
+      Object.keys(craftingItemPrices).length > 0
+    ) {
       // Array of all required runes and amounts
       const runeArray = mapRequiredSpells();
 
       // Update spellprices
-      const updatedSpells = mapSpellPrices(runeArray);
+      const updatedSpells = mapCraftPrices(runeArray);
 
       // Update spells to go
-      const updatedCasts = calcSpellsToUse(updatedSpells);
-      setCraftDB(updatedCasts);
-      setFilteredCraftDB(updatedCasts);
+      setCraftDB(updatedSpells);
+      setFilteredCraftDB(updatedSpells);
     }
-  }, [runePrices, mapSpellPrices, calcSpellsToUse]);
+  }, [craftingPrices, mapCraftPrices, craftingItemPrices]);
 
   //////////////////
   // Sort filters //
@@ -188,71 +177,54 @@ const CraftingGrid = (props) => {
       </div>
 
       <div className={stl.resultGrid}>
-        {filteredCraftDB.map((mage) => {
+        {filteredCraftDB.map((craft) => {
           return (
-            <div className={stl.row} key={mage.name}>
+            <div className={stl.row} key={craft.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <img
-                  src={mage.src}
+                  src={craft.src}
                   alt="Runescape Bones"
                   className={stl.boneMiniImg}
                 />
                 <span className={stl.bonename}>
-                  <span className={stl.magelvl}>Lvl {mage.level}</span>{" "}
-                  {mage.name}
+                  <span className={stl.magelvl}>Lvl {craft.level}</span>{" "}
+                  {craft.name}
                 </span>
               </span>
 
               <span className={`${stl.rowItem} ${stl.prayerRow}`}>
                 {+props.multiplier > 0
-                  ? mage.exp * (+props.multiplier / 100)
-                  : mage.exp}
+                  ? craft.exp * (+props.multiplier / 100)
+                  : craft.exp}
                 <span className={stl.gpperxp}>
-                  {mage.price / mage.exp > 0 ? "-" : "+"}
+                  {craft.price / craft.exp > 0 ? "-" : "+"}
                   {+props.multiplier === 0 &&
-                    (mage.price / mage.exp > 0
-                      ? Math.abs(mage.price / mage.exp)
-                      : -(mage.price / mage.exp)
+                    (craft.price / craft.exp > 0
+                      ? Math.abs(craft.price / craft.exp)
+                      : -(craft.price / craft.exp)
                     ).toFixed(1)}
                   {+props.multiplier > 0 &&
-                    (mage.price / (+props.multiplier / 100) / mage.exp > 0
+                    (craft.price / (+props.multiplier / 100) / craft.exp > 0
                       ? Math.abs(
-                          mage.price / (+props.multiplier / 100) / mage.exp
+                          craft.price / (+props.multiplier / 100) / craft.exp
                         )
-                      : -(mage.price / (+props.multiplier / 100) / mage.exp)
+                      : -(craft.price / (+props.multiplier / 100) / craft.exp)
                     ).toFixed(2)}
                   gp/exp
                 </span>
               </span>
 
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
-                {+props.multiplier > 0 &&
-                  Math.ceil(
-                    mage.toGo / (+props.multiplier / 100)
-                  ).toLocaleString()}
-                {+props.multiplier === 0 && mage.toGo.toLocaleString()}
+                {+props.remainingExp / craft.exp}
               </span>
 
               <span
                 className={`${stl.rowItem} ${stl.costRow} ${
-                  mage.toGo * mage.price > 0 ? stl.red : stl.green
+                  craft.price > 0 ? stl.red : stl.green
                 }`}
               >
-                {mage.price > 0 ? "-" : "+"}
-                {+props.multiplier > 0 &&
-                  (mage.toGo * mage.price > 0
-                    ? Math.abs(
-                        Math.ceil(mage.toGo * mage.price) /
-                          (+props.multiplier / 100)
-                      ).toLocaleString()
-                    : -(mage.toGo * mage.price)
-                  ).toLocaleString()}
-
-                {+props.multiplier === 0 &&
-                  (mage.toGo * mage.price > 0
-                    ? Math.abs(mage.toGo * mage.price)
-                    : -(mage.toGo * mage.price)
-                  ).toLocaleString()}
+                {craft.price > 0 ? "-" : "+"}
+                {craft.price}
                 <span className={stl.gpcost}>gp</span>
               </span>
             </div>

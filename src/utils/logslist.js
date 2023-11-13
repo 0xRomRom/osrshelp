@@ -176,8 +176,4 @@ const LOGSLIST = [
     level: 95,
   },
 ];
-
-const sorted = LOGSLIST.sort((a, b) => a.level - b.level);
-console.log(sorted);
-
 export default LOGSLIST;

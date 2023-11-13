@@ -1,8 +1,7 @@
 const CRAFTINGITEMLIST = [
   {
-    //Wind Strike
-    "Mind rune": 1,
-    "Air rune": 1,
+    //Ball of wool
+    Wool: 1,
   },
 ];
 
