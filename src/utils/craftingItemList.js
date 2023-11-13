@@ -252,6 +252,200 @@ const CRAFTINGITEMLIST = [
     //Broken bark snelm
     "Blamish bark shell": 1,
   },
+  {
+    //Bruise blue shell (pointed)
+    "Blamish blue shell (pointed)": 1,
+  },
+  {
+    //Bruise blue shell (round)
+    "Blamish blue shell (round)": 1,
+  },
+  {
+    //Myre snelm (pointed)
+    "Blamish myre shell (pointed)": 1,
+  },
+  {
+    //Myre snelm (round)
+    "Blamish myre shell (round)": 1,
+  },
+  {
+    //Ochre snelm (pointed)
+    "Blamish ochre shell (pointed)": 1,
+  },
+  {
+    //Ochre snelm (round)
+    "Blamish ochre shell (round)": 1,
+  },
+  {
+    //Xerician hat
+    "Xerician fabric": 3,
+  },
+  {
+    //Xerician robe
+    "Xerician fabric": 4,
+  },
+  {
+    //Xerician top
+    "Xerician fabric": 5,
+  },
+  {
+    //Splitbark gauntlets
+    "Fine cloth": 1,
+    Bark: 1,
+  },
+  {
+    //Splitbark boots
+    "Fine cloth": 1,
+    Bark: 1,
+  },
+  {
+    //Splitbark helm
+    "Fine cloth": 2,
+    Bark: 2,
+  },
+  {
+    //Splitbark legs
+    "Fine cloth": 3,
+    Bark: 3,
+  },
+  {
+    //Splitbark body
+    "Fine cloth": 4,
+    Bark: 4,
+  },
+  {
+    //Beer glass
+    "Molten glass": 1,
+  },
+  {
+    //Empty candle lantern
+    "Molten glass": 1,
+  },
+  {
+    //Empty oil lamp
+    "Molten glass": 1,
+  },
+  {
+    //Oil lantern
+    "Empty oil lamp": 1,
+    "Oil lantern frame": 1,
+  },
+  {
+    //Vial
+    "Molten glass": 1,
+  },
+  {
+    //Empty fishbowl
+    "Molten glass": 1,
+  },
+  {
+    //Unpowered orb
+    "Molten glass": 1,
+  },
+  {
+    //Lantern lens
+    "Molten glass": 1,
+  },
+  {
+    //Opal
+    "Uncut opal": 1,
+  },
+  {
+    //Jade
+    "Uncut jade": 1,
+  },
+  {
+    //Red topaz
+    "Uncut red topaz": 1,
+  },
+  {
+    //Sapphire
+    "Uncut sapphire": 1,
+  },
+  {
+    //Emerald
+    "Uncut emerald": 1,
+  },
+  {
+    //Ruby
+    "Uncut ruby": 1,
+  },
+  {
+    //Diamond
+    "Uncut diamond": 1,
+  },
+  {
+    //Dragonstone
+    "Uncut dragonstone": 1,
+  },
+  {
+    //Onyx
+    "Uncut onyx": 1,
+  },
+  {
+    //Zenyte
+    "Uncut zenyte": 1,
+  },
+  {
+    //Opal ring
+    Opal: 1,
+    "Silver bar": 1,
+  },
+  {
+    //Opal necklace
+    Opal: 1,
+    "Silver bar": 1,
+  },
+  {
+    //Opal bracelet
+    Opal: 1,
+    "Silver bar": 1,
+  },
+  {
+    //Opal amulet (u)
+    Opal: 1,
+    "Silver bar": 1,
+  },
+  {
+    //Jade ring
+    Jade: 1,
+    "Silver bar": 1,
+  },
+  {
+    //Jade necklace
+    Jade: 1,
+    "Silver bar": 1,
+  },
+  {
+    //Jade bracelet
+    Jade: 1,
+    "Silver bar": 1,
+  },
+  {
+    //Jade amulet (u)
+    Jade: 1,
+    "Silver bar": 1,
+  },
+  {
+    //Topaz ring
+    "Red topaz": 1,
+    "Silver bar": 1,
+  },
+  {
+    //Topaz necklace
+    "Red topaz": 1,
+    "Silver bar": 1,
+  },
+  {
+    //Topaz bracelet
+    "Red topaz": 1,
+    "Silver bar": 1,
+  },
+  {
+    //Topaz amulet (u)
+    "Red topaz": 1,
+    "Silver bar": 1,
+  },
 ];
 
 export default CRAFTINGITEMLIST;
