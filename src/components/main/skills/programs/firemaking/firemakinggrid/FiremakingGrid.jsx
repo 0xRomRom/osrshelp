@@ -44,7 +44,6 @@ const FiremakingGrid = (props) => {
         let logName = log.name;
         log.price = logPrices[logName].price;
         log.toGo = Math.ceil(+props.remainingExp / log.exp);
-        console.log(logPrices[logName]);
 
         if (logName === "Arctic pine pyre logs") {
           logName = "Arctic pyre logs";
@@ -87,7 +86,6 @@ const FiremakingGrid = (props) => {
   const sortCost = () => {
     setCostSorted(!costSorted);
     let sorter = [...logsDB];
-    console.log(sorter);
     sorter.sort((a, b) =>
       costSorted
         ? a.price * a.toGo - b.price * b.toGo
