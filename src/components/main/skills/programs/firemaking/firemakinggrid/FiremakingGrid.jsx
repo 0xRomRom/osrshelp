@@ -1,6 +1,5 @@
 import stl from "./FiremakingGrid.module.css";
 import LOGSLIST from "../../../../../../utils/logslist";
-import prayerLogo from "../../../../../../assets/skillicons/Prayer.webp";
 import expLogo from "../../../../../../assets/random/Stats_icon.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
@@ -8,6 +7,7 @@ import { useEffect, useState, useCallback } from "react";
 
 const FiremakingGrid = (props) => {
   const [logsDB, setLogsDB] = useState(LOGSLIST);
+  const [filteredLogsDB, setFilteredLogsDB] = useState(LOGSLIST);
   const [bonesSorted, setBonesSorted] = useState(false);
   const [logPrices, setLogPrices] = useState({});
   const [xpSorted, setXPSorted] = useState(false);
@@ -57,6 +57,7 @@ const FiremakingGrid = (props) => {
       });
 
       setLogsDB(newDB);
+      setFilteredLogsDB(newDB);
     }
   }, [logPrices, logsDB]);
 
@@ -95,6 +96,22 @@ const FiremakingGrid = (props) => {
     setLogsDB(sorter);
   };
 
+  const filterSpells = useCallback(() => {
+    if (props.searchState) {
+      const filteredSpells = logsDB.filter((item) =>
+        item.name.toLowerCase().includes(props.searchState.toLowerCase())
+      );
+      setFilteredLogsDB(filteredSpells);
+    } else {
+      // If search state is empty, reset to the original data
+      setFilteredLogsDB(logsDB);
+    }
+  }, [props.searchState, logsDB]);
+
+  useEffect(() => {
+    filterSpells();
+  }, [filterSpells]);
+
   return (
     <div className={stl.grid}>
       <div className={stl.typeRow}>
@@ -119,7 +136,7 @@ const FiremakingGrid = (props) => {
         </span>
       </div>
       <div className={stl.resultGrid}>
-        {logsDB.map((logs) => {
+        {filteredLogsDB.map((logs) => {
           const logsAmount = calculateLogsToBurn(logs);
           return (
             <div className={stl.row} key={logs.name}>

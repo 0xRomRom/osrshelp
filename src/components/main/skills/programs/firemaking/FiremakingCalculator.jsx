@@ -11,10 +11,12 @@ import FiremakingFilters from "./FiremakingFilters";
 import { useState } from "react";
 
 import FiremakingGrid from "./firemakinggrid/FiremakingGrid";
+import SearchFilter from "../searchfilter/SearchFilter";
 
 const FiremakingCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
+  const [searchState, setSearchState] = useState("");
   const [filterChanged, setFilterChanged] = useState(false);
 
   const handleMenuSwitch = () => {
@@ -99,12 +101,17 @@ const FiremakingCalculator = (props) => {
           setFilterChanged={setFilterChanged}
           filterChanged={filterChanged}
         />
+        <SearchFilter
+          setSearchState={setSearchState}
+          searchType="Search Logs"
+        />
       </div>
       <FiremakingGrid
         remainingExp={remainingExp}
         skills={props.skills}
         multiplier={multiplier}
         filterChanged={filterChanged}
+        searchState={searchState}
       />
     </div>
   );
