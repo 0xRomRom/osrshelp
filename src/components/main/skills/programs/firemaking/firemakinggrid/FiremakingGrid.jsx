@@ -4,7 +4,7 @@ import prayerLogo from "../../../../../../assets/skillicons/Prayer.webp";
 import expLogo from "../../../../../../assets/random/Stats_icon.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 const FiremakingGrid = (props) => {
   const [logsDB, setLogsDB] = useState(LOGSLIST);
@@ -27,6 +27,15 @@ const FiremakingGrid = (props) => {
       priceFetcher();
     }
   }, [logPrices]);
+
+  const calculateLogsToBurn = useCallback(
+    (logs) => {
+      const expToGo = props.remainingExp;
+      const result = Math.ceil(expToGo / logs.exp);
+      return result ? result : "?";
+    },
+    [props.remainingExp]
+  );
 
   useEffect(() => {
     if (Object.keys(logPrices).length > 0) {
@@ -116,6 +125,7 @@ const FiremakingGrid = (props) => {
       </div>
       <div className={stl.resultGrid}>
         {logsDB.map((logs) => {
+          const logsAmount = calculateLogsToBurn(logs);
           return (
             <div className={stl.row} key={logs.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -130,25 +140,33 @@ const FiremakingGrid = (props) => {
                 </span>
               </span>
               <span className={`${stl.rowItem} ${stl.prayerRow}`}>
-                {logs.exp}
+                {+props.multiplier === 0 && logs.exp}
+                {+props.multiplier > 0 &&
+                  (logs.exp / (1 + 2.5 / 100)).toFixed(1)}
+
                 <span className={stl.gpperxp}>
                   {+props.multiplier === 0 &&
                     (logs.price / logs.exp).toFixed(1)}
                   {+props.multiplier > 0 &&
-                    (
-                      (logs.price * (+props.multiplier / 100)) /
-                      logs.exp
-                    ).toFixed(1)}
+                    ((logs.price * (1 + 2.5 / 100)) / logs.exp).toFixed(1)}
                   gp/exp
                 </span>
               </span>
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
-                {Math.ceil(+props.remainingExp / logs.exp).toLocaleString()}
+                {+props.multiplier === 0 &&
+                  Math.ceil(+props.remainingExp / logs.exp).toLocaleString()}
+                {+props.multiplier > 0 &&
+                  Math.ceil(
+                    +props.remainingExp / logs.exp / (1 + 2.5 / 100)
+                  ).toLocaleString()}
               </span>
               <span className={`${stl.rowItem} ${stl.costRow}`}>
-                {(
-                  logs.price * Math.ceil(+props.remainingExp / logs.exp)
-                ).toLocaleString()}
+                {+props.multiplier > 0 &&
+                  Math.round(
+                    ((logsAmount * logs.price) / (1 + 2.5 / 100)).toFixed(0)
+                  ).toLocaleString()}
+                {+props.multiplier === 0 &&
+                  (logsAmount * logs.price).toLocaleString()}
                 <span className={stl.gpcost}>gp</span>
               </span>
             </div>
