@@ -298,6 +298,7 @@ const MagicGrid = (props) => {
                 }`}
               >
                 {mage.price > 0 ? "-" : "+"}
+
                 {+props.multiplier > 0 &&
                   (mage.toGo * mage.price > 0
                     ? Math.abs(

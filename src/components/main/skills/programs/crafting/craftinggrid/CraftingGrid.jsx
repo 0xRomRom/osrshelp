@@ -20,15 +20,23 @@ const CraftingGrid = (props) => {
   const [costSorted, setCostSorted] = useState(false);
 
   const priceFetcher = async () => {
+    // const debuggers = await fetch(
+    //   "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Empty_sack|Jute_fibre"
+    // );
+    // const res = await debuggers.json();
+    // console.log("Res 1", res);
+
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Ball_of_wool"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Ball_of_wool|Bow_string|Crossbow_string|Magic_string|Rope|Empty_sack|Drift_net|Basket|Pot|Empty_cup|Pie_dish|Bowl|Empty_plant_pot|Pot_lid"
     );
     const result = await fetcher.json();
+    console.log(result);
     setCraftingPrices(result);
     const fetcher2 = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Wool"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Wool|Flax|Sinew|Magic_roots|Hair|Ball_of_wool|Jute_fibre|Willow_branch|Soft_clay"
     );
     const result2 = await fetcher2.json();
+    console.log(result2);
     setCraftingItemPrices(result2);
   };
 
@@ -68,9 +76,7 @@ const CraftingGrid = (props) => {
   const mapCraftPrices = useCallback(
     (runeData, list = CRAFTINGLIST) => {
       let craftingList = JSON.parse(JSON.stringify(list));
-      console.log(runeData);
-      console.log(craftingList);
-      console.log(craftingItemPrices);
+
       const mapper = runeData.map((item, index) => {
         const itemCount = item.names.length;
         let count = 0;
@@ -78,7 +84,6 @@ const CraftingGrid = (props) => {
         for (let i = 0; i < itemCount; i++) {
           const itemName = item.names[i];
           const itemCounts = item.amounts[i];
-          console.log(craftingItemPrices[itemName].price);
           const craftPrice = craftingItemPrices[itemName].price * itemCounts;
           count += craftPrice;
           craftingList[index].price = count;
@@ -203,19 +208,13 @@ const CraftingGrid = (props) => {
                       ? Math.abs(craft.price / craft.exp)
                       : -(craft.price / craft.exp)
                     ).toFixed(1)}
-                  {+props.multiplier > 0 &&
-                    (craft.price / (+props.multiplier / 100) / craft.exp > 0
-                      ? Math.abs(
-                          craft.price / (+props.multiplier / 100) / craft.exp
-                        )
-                      : -(craft.price / (+props.multiplier / 100) / craft.exp)
-                    ).toFixed(2)}
+                  {(craft.price / craft.exp).toFixed(2)}
                   gp/exp
                 </span>
               </span>
 
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
-                {+props.remainingExp / craft.exp}
+                {Math.ceil(+props.remainingExp / craft.exp)}
               </span>
 
               <span
