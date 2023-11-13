@@ -40,26 +40,22 @@ const FiremakingGrid = (props) => {
   useEffect(() => {
     if (Object.keys(logPrices).length > 0) {
       let newDB = logsDB;
-      console.log(newDB);
       newDB.forEach((log, index) => {
         let logName = log.name;
-        console.log(logName);
-        console.log(index);
         log.price = logPrices[logName].price;
+        log.toGo = Math.ceil(+props.remainingExp / log.exp);
+        console.log(logPrices[logName]);
 
         if (logName === "Arctic pine pyre logs") {
           logName = "Arctic pyre logs";
-          log.price = logPrices[logName].price;
+          log.price = +logPrices[logName].price;
         }
         if (logName === "Blisterwood logs") {
           logName = "Bucket";
           log.price = 0;
         }
       });
-      // console.log(newDB[9].name);
-      // newDB[9].name = "Blisterwood logs";
-      // newDB[9].price = 0;
-      console.log(newDB);
+
       setLogsDB(newDB);
     }
   }, [logPrices, logsDB]);
@@ -68,7 +64,7 @@ const FiremakingGrid = (props) => {
     setBonesSorted(!bonesSorted);
     let sorter = [...logsDB];
     sorter.sort((a, b) =>
-      bonesSorted ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name)
+      bonesSorted ? a.level - b.level : b.level - a.level
     );
     setLogsDB(sorter);
   };
@@ -76,9 +72,7 @@ const FiremakingGrid = (props) => {
   const sortAmount = () => {
     setAmountSorted(!amountSorted);
     let sorter = [...logsDB];
-    sorter.sort((a, b) =>
-      amountSorted ? +b.toGo - +a.toGo : +a.toGo - +b.toGo
-    );
+    sorter.sort((a, b) => (amountSorted ? b.exp - a.exp : a.exp - b.exp));
     setLogsDB(sorter);
   };
 
@@ -92,6 +86,7 @@ const FiremakingGrid = (props) => {
   const sortCost = () => {
     setCostSorted(!costSorted);
     let sorter = [...logsDB];
+    console.log(sorter);
     sorter.sort((a, b) =>
       costSorted
         ? a.price * a.toGo - b.price * b.toGo
