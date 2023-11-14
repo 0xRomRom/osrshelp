@@ -97,11 +97,9 @@ const SmithingGrid = (props) => {
       const mapper = runeData.map((item, index) => {
         const itemCount = item.names.length;
         let count = 0;
-        console.log(craftingItemPrices);
 
         for (let i = 0; i < itemCount; i++) {
           const itemName = item.names[i];
-          // console.log(itemName);
           const itemCounts = +item.amounts[i];
           const craftPrice = craftingItemPrices[itemName].price * itemCounts;
           count += craftPrice;
