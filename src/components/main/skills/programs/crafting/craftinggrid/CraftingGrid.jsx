@@ -21,7 +21,7 @@ const CraftingGrid = (props) => {
 
   const priceFetcher = async () => {
     // const debuggers = await fetch(
-    //   "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Dragon_necklace"
+    //   "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Bird_house"
     // );
     // const res = await debuggers.json();
     // console.log("Res 1", res);
@@ -32,17 +32,26 @@ const CraftingGrid = (props) => {
     );
     const resultA = await fetcherA.json();
     const fetcherB = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Opal_ring|Opal_necklace|Opal_bracelet|Opal_amulet_(u)|Jade_ring|Jade_bracelet|Jade_necklace|Jade_amulet_(u)|Topaz_ring|Topaz_necklace|Topaz_bracelet|Topaz_amulet_(u)|Gold_ring|Gold_necklace|Gold_bracelet|Gold_amulet_(u)|Sapphire_ring|Sapphire_necklace|Sapphire_bracelet|Sapphire_amulet_(u)|Emerald_ring|Emerald_necklace|Emerald_bracelet|Emerald_amulet_(u)|Ruby_ring|Ruby_necklace|Ruby_bracelet|Gold_tiara|Ruby_amulet_(u)|Diamond_ring|Diamond_necklace|Diamond_bracelet|Diamond_amulet_(u)|Dragonstone_ring|Dragon_necklace|Dragonstone_bracelet|Dragonstone_amulet_(u)|Onyx_ring|Onyx_necklace|Onyx_bracelet|Onyx_amulet_(u)|Zenyte_ring|Zenyte_necklace|Zenyte_bracelet|Zenyte_amulet_(u)"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Opal_ring|Opal_necklace|Opal_bracelet|Opal_amulet_(u)|Jade_ring|Jade_bracelet|Jade_necklace|Jade_amulet_(u)|Topaz_ring|Topaz_necklace|Topaz_bracelet|Topaz_amulet_(u)|Gold_ring|Gold_necklace|Gold_bracelet|Gold_amulet_(u)|Sapphire_ring|Sapphire_necklace|Sapphire_bracelet|Sapphire_amulet_(u)|Emerald_ring|Emerald_necklace|Emerald_bracelet|Emerald_amulet_(u)|Ruby_ring|Ruby_necklace|Ruby_bracelet|Gold_tiara|Ruby_amulet_(u)|Diamond_ring|Diamond_necklace|Diamond_bracelet|Diamond_amulet_(u)|Dragonstone_ring|Dragon_necklace|Dragonstone_bracelet|Dragonstone_amulet_(u)|Onyx_ring|Onyx_necklace|Onyx_bracelet|Onyx_amulet_(u)|Zenyte_ring|Zenyte_necklace|Zenyte_bracelet|Zenyte_amulet_(u)|Silver_sickle|Silver_bolts_(unf)|Water_battlestaff|Earth_battlestaff|Air_battlestaff|Fire_battlestaff|Amethyst_bolt_tips|Amethyst_arrowtips|Amethyst_javelin_heads|Amethyst_dart_tip|Unstrung_symbol|Unstrung_emblem|Tiara|Bird_house|Oak_bird_house|Willow_bird_house|Teak_bird_house|Maple_bird_house|Mahogany_bird_house|Yew_bird_house|Magic_bird_house|Redwood_bird_house"
     );
     const resultB = await fetcherB.json();
     result1 = { ...resultA, ...resultB };
     console.log(result1);
 
     setCraftingPrices(result1);
-    const fetcher2 = await fetch(
+
+    let result2 = {};
+    const fetcherC = await fetch(
       "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Wool|Flax|Sinew|Magic_roots|Hair|Ball_of_wool|Jute_fibre|Willow_branch|Soft_clay|Leather|Hard_leather|Kebbit_claws|Oak_shield|Bronze_nails|Leather_body|Leather_chaps|Steel_studs|Leather_vambraces|Green_d'hide_vambraces|Blue_d'hide_vambraces|Red_d'hide_vambraces|Black_d'hide_vambraces|Green_dragon_leather|Maple_shield|Steel_nails|Blue_dragon_leather|Yew_shield|Mithril_nails|Red_dragon_leather|Magic_shield|Adamantite_nails|Black_dragon_leather|Redwood_shield|Rune_nails|Snakeskin|Tribal_mask_(disease)|Nails|Willow_shield|Iron_nails|Tribal_mask|Cured_yak-hide|Thread|Blamish_red_shell_(pointed)|Blamish_red_shell_(round)|Blamish_bark_shell|Blamish_blue_shell_(pointed)|Blamish_blue_shell_(round)|Blamish_myre_shell_(pointed)|Blamish_myre_shell_(round)|Blamish_ochre_shell_(pointed)|Blamish_ochre_shell_(round)|Xerician_fabric|Bark|Fine_cloth|Molten_glass|Empty_oil_lamp|Oil_lantern_frame|Empty_light_orb|Uncut_opal|Uncut_jade|Uncut_red_topaz|Uncut_sapphire|Uncut_emerald|Uncut_ruby|Uncut_diamond|Dragonstone|Uncut_dragonstone|Uncut_onyx|Uncut_zenyte|Opal|Silver_bar|Jade|Red_topaz|Gold_bar|Sapphire|Emerald|Ruby|Diamond|Onyx|Zenyte"
     );
-    const result2 = await fetcher2.json();
+    const resultC = await fetcherC.json();
+
+    const fetcherD = await fetch(
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Battlestaff|Water_orb|Earth_orb|Fire_orb|Air_orb|Amethyst|Logs|Clockwork|Oak_logs|Willow_logs|Teak_logs|Maple_logs|Mahogany_logs|Yew_logs|Magic_logs|Redwood_logs"
+    );
+    const resultD = await fetcherD.json();
+
+    result2 = { ...resultC, ...resultD };
     console.log(result2);
     setCraftingItemPrices(result2);
   };
