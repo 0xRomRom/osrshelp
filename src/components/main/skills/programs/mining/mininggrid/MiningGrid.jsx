@@ -2,7 +2,7 @@ import stl from "./MiningGrid.module.css";
 import ORESLIST from "../../../../../../utils/oresList";
 import harpoonLogo from "../../../../../../assets/random/Harpoon.webp";
 import moneyLogo from "../../../../../../assets/icons/Donate.webp";
-import fishingLogo from "../../../../../../assets/skillicons/Fishing.webp";
+import miningLogo from "../../../../../../assets/skillicons/Mining.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
@@ -105,7 +105,11 @@ const MiningGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortOre}>
-          <img src={fishingLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="ores/Runite_ore.webp"
+            alt="Attack Logo"
+            className={stl.miniLogo}
+          />{" "}
           Yield
         </span>
         <span onClick={sortMembers}>
@@ -116,7 +120,7 @@ const MiningGrid = (props) => {
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
         </span>
         <span onClick={sortToGo}>
-          <img src={harpoonLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          <img src={miningLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
           Mine
         </span>
         <span onClick={sortToGo}>
@@ -136,7 +140,7 @@ const MiningGrid = (props) => {
                   {ore.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{ore.member ? "Yes" : "No"}</span>
+              <span className={stl.rowItem}>{ore.members ? "Yes" : "No"}</span>
               <span className={stl.rowItem}>
                 {+props.multiplier > 0 &&
                   (ore.exp * (1 + 2.5 / 100)).toFixed(2)}

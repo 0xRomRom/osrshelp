@@ -136,7 +136,7 @@ const ORESLIST = [
     src: "/ores/Dense_essence_block.webp",
   },
   {
-    name: "Uncut red topaz",
+    name: "Gem rocks",
     level: 40,
     exp: 65,
     profit: 0,
