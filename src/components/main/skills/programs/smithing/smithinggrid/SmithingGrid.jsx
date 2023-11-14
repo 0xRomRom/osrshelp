@@ -1,15 +1,16 @@
 import stl from "./SmithingGrid.module.css";
-import CRAFTINGLIST from "../../../../../../utils/craftingList";
-import CRAFTINGITEMLIST from "../../../../../../utils/craftingItemList";
-import craftingLogo from "../../../../../../assets/skillicons/Crafting.webp";
+import SMITHINGLIST from "../../../../../../utils/smithingList";
+import SMITHINGLISTITEMS from "../../../../../../utils/smithingItemList";
+import smithingLogo from "../../../../../../assets/skillicons/Smithing.webp";
+
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
 import { useCallback, useEffect, useState } from "react";
 
 const SmithingGrid = (props) => {
-  const [filteredCraftDB, setFilteredCraftDB] = useState(CRAFTINGLIST);
-  const [craftDB, setCraftDB] = useState(CRAFTINGLIST);
+  const [filteredCraftDB, setFilteredCraftDB] = useState(SMITHINGLIST);
+  const [craftDB, setCraftDB] = useState(SMITHINGLIST);
 
   const [craftingPrices, setCraftingPrices] = useState({});
   const [craftingItemPrices, setCraftingItemPrices] = useState({});
@@ -28,11 +29,11 @@ const SmithingGrid = (props) => {
 
     let result1 = {};
     const fetcherA = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Ball_of_wool|Bow_string|Crossbow_string|Magic_string|Rope|Empty_sack|Drift_net|Basket|Pot|Empty_cup|Pie_dish|Bowl|Empty_plant_pot|Pot_lid|Leather_gloves|Leather_boots|Leather_cowl|Leather_vambraces|Leather_body|Leather_chaps|Hardleather_body|Spiky_vambraces|Coif|Hard_leather_shield|Studded_body|Studded_chaps|Green_spiky_vambraces|Blue_spiky_vambraces|Red_spiky_vambraces|Black_spiky_vambraces|Green_d'hide_vambraces|Green_d'hide_chaps|Green_d'hide_shield||Green_d'hide_body|Blue_d'hide_vambraces|Blue_d'hide_chaps|Blue_d'hide_shield|Blue_d'hide_body|Red_d'hide_vambraces|Red_d'hide_chaps|Red_d'hide_shield|Red_d'hide_body|Black_d'hide_vambraces|Black_d'hide_chaps|Black_d'hide_shield|Black_d'hide_body|Broodoo_shield_(disease)|Snakeskin_boots|Snakeskin_vambraces|Snakeskin_bandana|Snakeskin_chaps|Snakeskin_body|Snakeskin_shield|Yak-hide_armour_(legs)|Yak-hide_armour_(top)|Blood'n'tar_snelm_(pointed)|Blood'n'tar_snelm_(round)|Broken_bark_snelm|Bruise_blue_snelm_(pointed)|Bruise_blue_snelm_(round)|Myre_snelm_(pointed)|Myre_snelm_(round)|Ochre_snelm_(pointed)|Ochre_snelm_(round)|Xerician_hat|Xerician_robe|Xerician_top|Splitbark_gauntlets|Splitbark_boots|Splitbark_helm|Splitbark_legs|Splitbark_body|Beer_glass|Empty_candle_lantern|Empty_oil_lamp|Oil_lantern|Vial|Empty_fishbowl|Unpowered_orb|Lantern_lens|Light_orb|Opal|Jade|Red_topaz|Sapphire|Emerald|Ruby|Diamond|Dragonstone|Onyx|Zenyte"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Bronze_bar|Bronze_dagger|Bronze_axe|Bronze_mace|Bronze_med_helm|Bronze_bolts_unfinished|Bronze_sword|Bronze_dart_tip|Bronze_wire|Bronze_nails|Bronze_scimitar|Bronze_spear|Bronze_hasta|Bronze_arrowtips|Bronze_limbs|Bronze_longsword|Bronze_javelin_heads|Bronze_full_helm|Bronze_knife|Bronze_sq_shield|Bronze_warhammer|Bronze_battleaxe|Bronze_chainbody|Bronze_kiteshield|Blurite_bar|Bronze_claws|Bronze_2h_sword|Iron_bar|Iron_dagger|Bronze_platelegs|Bronze_plateskirt|Iron_axe|Iron_mace|Iron_spit|Bronze_platebody|Iron_med_helm|Iron_bolts_unf|Iron_sword|Iron_dart_tip|Iron_nails|Silver_bar|Iron_scimitar|Iron_spear|Iron_hasta|Iron_arrowtips|Iron_longsword|Iron_javelin_heads|Iron_full_helm|Iron_knife|Iron_sq_shield|Iron_limbs|Iron_warhammer|Iron_battleaxe|Iron_chainbody|Oil_lantern_frame|Iron_kiteshield|Iron_claws|Iron_2h_sword|Steel_bar|Steel_dagger|Iron_platelegs|Iron_plateskirt|Steel_axe|Steel_mace|Iron_platebody|Steel_med_helm|Steel_bolts_unf|Steel_sword|Steel_nails|Steel_dart_tip|Steel_scimitar|Steel_spear|Steel_hasta|Steel_arrowtips|Cannonball|Steel_limbs|Steel_longsword|Steel_javelin_heads|Steel_studs|Steel_full_helm|Steel_knife|Steel_sq_shield|Steel_warhammer|Gold_bar|Steel_battleaxe|Steel_chainbody|Steel_kiteshield|Steel_claws|Mithril_limbs|Mithril_longsword|Mithril_javelin_heads|Mithril_full_helm|Mithril_knife|Mithril_sq_shield|Mithril_warhammer"
     );
     const resultA = await fetcherA.json();
     const fetcherB = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Opal_ring|Opal_necklace|Opal_bracelet|Opal_amulet_(u)|Jade_ring|Jade_bracelet|Jade_necklace|Jade_amulet_(u)|Topaz_ring|Topaz_necklace|Topaz_bracelet|Topaz_amulet_(u)|Gold_ring|Gold_necklace|Gold_bracelet|Gold_amulet_(u)|Sapphire_ring|Sapphire_necklace|Sapphire_bracelet|Sapphire_amulet_(u)|Emerald_ring|Emerald_necklace|Emerald_bracelet|Emerald_amulet_(u)|Ruby_ring|Ruby_necklace|Ruby_bracelet|Gold_tiara|Ruby_amulet_(u)|Diamond_ring|Diamond_necklace|Diamond_bracelet|Diamond_amulet_(u)|Dragonstone_ring|Dragon_necklace|Dragonstone_bracelet|Dragonstone_amulet_(u)|Onyx_ring|Onyx_necklace|Onyx_bracelet|Onyx_amulet_(u)|Zenyte_ring|Zenyte_necklace|Zenyte_bracelet|Zenyte_amulet_(u)|Silver_sickle|Silver_bolts_(unf)|Water_battlestaff|Earth_battlestaff|Air_battlestaff|Fire_battlestaff|Amethyst_bolt_tips|Amethyst_arrowtips|Amethyst_javelin_heads|Amethyst_dart_tip|Unstrung_symbol|Unstrung_emblem|Tiara|Bird_house|Oak_bird_house|Willow_bird_house|Teak_bird_house|Maple_bird_house|Mahogany_bird_house|Yew_bird_house|Magic_bird_house|Redwood_bird_house"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Mith_grapple_tip|Mithril_battleaxe|Mithril_chainbody|Mithril_kiteshield|Mithril_claws|Mithril_2h_sword|Mithril_platelegs|Mithril_plateskirt|Mithril_platebody|Adamantite_bar|Adamant_dagger|Adamant_axe|Adamant_mace|Adamant_med_helm|Adamant_bolts_unf|Adamant_sword|Adamantite_nails|Adamant_dart_tip|Adamant_scimitar|Adamant_spear|Adamant_hasta|Adamant_arrowtips|Adamantite_limbs|Adamant_longsword|Adamant_javelin_heads|Adamant_full_helm|Adamant_knife|Adamant_sq_shield|Adamant_warhammer|Adamant_battleaxe|Adamant_chainbody|Adamant_kiteshield|Adamant_claws|Adamant_2h_sword|Runite_bar|Rune_dagger|Adamant_platelegs|Adamant_plateskirt|Rune_axe|Rune_mace|Adamant_platebody|Rune_med_helm|Runite_bolts_unf|Rune_sword|Rune_nails|Rune_dart_tip|Rune_scimitar|Rune_spear|Rune_hasta|Rune_arrowtips|Runite_limbs|Rune_longsword|Rune_javelin_heads|Rune_full_helm|Rune_knife|Rune_sq_shield|Rune_warhammer|Rune_battleaxe|Rune_chainbody|Rune_kiteshield|Rune_claws|Rune_2h_sword|Rune_platelegs|Rune_plateskirt|Rune_platebody|Steel_2h_sword|Steel_platelegs|Steel_plateskirt|Steel_platebody|Bullseye_lantern_unf|Mithril_bar|Gold_helmet|Gold_bowl|Mithril_dagger|Mithril_axe|Mithril_mace|Mithril_med_helm|Mithril_bolts_unf|Mithril_sword|Mithril_nails|Mithril_dart_tip|Mithril_scimitar|Mithril_spear|Mithril_hasta|Mithril_arrowtips"
     );
     const resultB = await fetcherB.json();
     result1 = { ...resultA, ...resultB };
@@ -42,12 +43,12 @@ const SmithingGrid = (props) => {
 
     let result2 = {};
     const fetcherC = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Wool|Flax|Sinew|Magic_roots|Hair|Ball_of_wool|Jute_fibre|Willow_branch|Soft_clay|Leather|Hard_leather|Kebbit_claws|Oak_shield|Bronze_nails|Leather_body|Leather_chaps|Steel_studs|Leather_vambraces|Green_d'hide_vambraces|Blue_d'hide_vambraces|Red_d'hide_vambraces|Black_d'hide_vambraces|Green_dragon_leather|Maple_shield|Steel_nails|Blue_dragon_leather|Yew_shield|Mithril_nails|Red_dragon_leather|Magic_shield|Adamantite_nails|Black_dragon_leather|Redwood_shield|Rune_nails|Snakeskin|Tribal_mask_(disease)|Nails|Willow_shield|Iron_nails|Tribal_mask|Cured_yak-hide|Thread|Blamish_red_shell_(pointed)|Blamish_red_shell_(round)|Blamish_bark_shell|Blamish_blue_shell_(pointed)|Blamish_blue_shell_(round)|Blamish_myre_shell_(pointed)|Blamish_myre_shell_(round)|Blamish_ochre_shell_(pointed)|Blamish_ochre_shell_(round)|Xerician_fabric|Bark|Fine_cloth|Molten_glass|Empty_oil_lamp|Oil_lantern_frame|Empty_light_orb|Uncut_opal|Uncut_jade|Uncut_red_topaz|Uncut_sapphire|Uncut_emerald|Uncut_ruby|Uncut_diamond|Dragonstone|Uncut_dragonstone|Uncut_onyx|Uncut_zenyte|Opal|Silver_bar|Jade|Red_topaz|Gold_bar|Sapphire|Emerald|Ruby|Diamond|Onyx|Zenyte"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Copper_Ore|Tin_Ore|Iron_Ore|Silver_Ore|Coal|Gold_Ore|Mithril_Ore|Adamantite_Ore|Runite_Ore|Bronze_bar|Iron_bar|Steel_bar|Gold_bar|Mithril_bar|Adamantite_bar|Runite_bar"
     );
     const resultC = await fetcherC.json();
 
     const fetcherD = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Battlestaff|Water_orb|Earth_orb|Fire_orb|Air_orb|Amethyst|Logs|Clockwork|Oak_logs|Willow_logs|Teak_logs|Maple_logs|Mahogany_logs|Yew_logs|Magic_logs|Redwood_logs"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Battlestaff"
     );
     const resultD = await fetcherD.json();
 
@@ -80,7 +81,7 @@ const SmithingGrid = (props) => {
 
   const mapRequiredSpells = () => {
     const craftingData = [];
-    CRAFTINGITEMLIST.forEach((obj) => {
+    SMITHINGLISTITEMS.forEach((obj) => {
       const craftingNames = Object.keys(obj);
       const craftingAmounts = Object.values(obj);
 
@@ -90,7 +91,7 @@ const SmithingGrid = (props) => {
   };
 
   const mapCraftPrices = useCallback(
-    (runeData, list = CRAFTINGLIST) => {
+    (runeData, list = SMITHINGLIST) => {
       let craftingList = JSON.parse(JSON.stringify(list));
 
       const mapper = runeData.map((item, index) => {
@@ -192,7 +193,7 @@ const SmithingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
-          <img src={craftingLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
+          <img src={smithingLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
           Item
         </span>
         <span onClick={sortExp}>
@@ -204,7 +205,7 @@ const SmithingGrid = (props) => {
           Exp
         </span>
         <span onClick={sortAmount}>
-          <img src={craftingLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
+          <img src={smithingLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
           Actions
         </span>
         <span onClick={sortCost}>
