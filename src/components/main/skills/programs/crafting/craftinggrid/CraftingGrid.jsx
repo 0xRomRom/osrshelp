@@ -1,7 +1,7 @@
 import stl from "./CraftingGrid.module.css";
 import CRAFTINGLIST from "../../../../../../utils/craftingList";
 import CRAFTINGITEMLIST from "../../../../../../utils/craftingItemList";
-import magicLogo from "../../../../../../assets/skillicons/Magic.webp";
+import craftingLogo from "../../../../../../assets/skillicons/Crafting.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
@@ -140,7 +140,7 @@ const CraftingGrid = (props) => {
 
   const sortBones = () => {
     setBonesSorted(!bonesSorted);
-    let sorter = [...craftDB];
+    let sorter = [...filteredCraftDB];
     sorter.sort((a, b) =>
       bonesSorted ? a.level - b.level : b.level - a.level
     );
@@ -149,27 +149,32 @@ const CraftingGrid = (props) => {
 
   const sortAmount = () => {
     setAmountSorted(!amountSorted);
-    let sorter = [...craftDB];
+    let sorter = [...filteredCraftDB];
     sorter.sort((a, b) =>
-      amountSorted ? +b.toGo - +a.toGo : +a.toGo - +b.toGo
+      amountSorted
+        ? +props.remainingExp / a.exp - +props.remainingExp / b.exp
+        : +props.remainingExp / b.exp - +props.remainingExp / a.exp
     );
     setCraftDB(sorter);
   };
 
   const sortExp = () => {
     setXPSorted(!xpSorted);
-    let sorter = [...craftDB];
+    let sorter = [...filteredCraftDB];
     sorter.sort((a, b) => (xpSorted ? a.exp - b.exp : b.exp - a.exp));
     setCraftDB(sorter);
   };
 
   const sortCost = () => {
     setCostSorted(!costSorted);
-    let sorter = [...craftDB];
+    let sorter = [...filteredCraftDB];
+    console.log(sorter);
     sorter.sort((a, b) =>
       costSorted
-        ? a.price * a.toGo - b.price * b.toGo
-        : b.price * b.toGo - a.price * a.toGo
+        ? a.price * (+props.remainingExp / a.exp) -
+          b.price * (+props.remainingExp / b.exp)
+        : b.price * (+props.remainingExp / b.exp) -
+          a.price * (+props.remainingExp / a.exp)
     );
     setCraftDB(sorter);
   };
@@ -178,8 +183,8 @@ const CraftingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
-          <img src={magicLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
-          Spell
+          <img src={craftingLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
+          Item
         </span>
         <span onClick={sortExp}>
           <img
@@ -190,8 +195,8 @@ const CraftingGrid = (props) => {
           Exp
         </span>
         <span onClick={sortAmount}>
-          <img src={magicLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
-          Casts
+          <img src={craftingLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
+          Actions
         </span>
         <span onClick={sortCost}>
           <img src={rsgp} alt="Cost Logo" className={stl.miniLogo} /> Cost

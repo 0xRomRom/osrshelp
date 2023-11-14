@@ -1,7 +1,7 @@
 import stl from "./CraftingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import magicIcon from "../../../../../assets/skillicons/Magic.webp";
+import craftingIcon from "../../../../../assets/skillicons/Crafting.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -36,7 +36,7 @@ const CraftingCalculator = (props) => {
           className={stl.backArrow}
           onClick={handleMenuSwitch}
         />
-        <img src={magicIcon} alt="Crafting Level" className={stl.skillImg} />
+        <img src={craftingIcon} alt="Crafting Level" className={stl.skillImg} />
         <span className={stl.skillTitle}>Crafting</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
