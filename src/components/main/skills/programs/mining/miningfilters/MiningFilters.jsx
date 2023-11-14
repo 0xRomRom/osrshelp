@@ -1,6 +1,6 @@
 import stl from "./MiningFilters.module.css";
 import { useState } from "react";
-import anglerHat from "../../../../../../assets/random/Angler_hat.webp";
+import anglerHat from "../../../../../../assets/random/Prospector_helmet.webp";
 
 const MiningFilters = ({ setMultiplier, setFilterChanged, filterChanged }) => {
   const [checkboxState, setCheckboxState] = useState({});
@@ -36,17 +36,17 @@ const MiningFilters = ({ setMultiplier, setFilterChanged, filterChanged }) => {
         <div className={stl.checkRow}>
           <input
             type="checkbox"
-            id="angler"
-            checked={checkboxState["angler"] || false}
+            id="prospector"
+            checked={checkboxState["prospector"] || false}
             onChange={handleCheckboxChange}
             data-multiplier="200"
           />
 
-          <label htmlFor="angler">
-            Angler's outfit (+2.5%)
+          <label htmlFor="prospector">
+            Prospector kit (+2.5%)
             <img
               src={anglerHat}
-              alt="Angler's outfit"
+              alt="Prospector kit"
               className={stl.anglerHat}
             />
           </label>

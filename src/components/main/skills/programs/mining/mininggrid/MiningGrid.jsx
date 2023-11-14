@@ -1,5 +1,5 @@
 import stl from "./MiningGrid.module.css";
-import FISHLIST from "../../../../../../utils/fishlist";
+import ORESLIST from "../../../../../../utils/oresList";
 import harpoonLogo from "../../../../../../assets/random/Harpoon.webp";
 import moneyLogo from "../../../../../../assets/icons/Donate.webp";
 import fishingLogo from "../../../../../../assets/skillicons/Fishing.webp";
@@ -9,8 +9,8 @@ import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 import { useState, useEffect, useCallback } from "react";
 
 const MiningGrid = (props) => {
-  const [foodDB, setFoodDB] = useState(FISHLIST);
-  const [fetchedFishPrices, setFetchedFishPrices] = useState({});
+  const [oresDB, setOresDB] = useState(ORESLIST);
+  const [fetchedOrePrices, setFetchedOrePrices] = useState({});
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
@@ -18,92 +18,92 @@ const MiningGrid = (props) => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Raw_shrimps|Raw_sardine|Raw_herring|Raw_anchovies|Raw_mackerel|Raw_trout|Raw_cod|Raw_pike|Raw_slimy_eel|Raw_salmon|Raw_tuna|Raw_rainbow_fish|Raw_cave_eel|Raw_lobster|Raw_bass|Raw_swordfish|Raw_monkfish|Raw_karambwan|Raw_shark|Raw_sea_turtle|Raw_manta_ray|Raw_anglerfish|Raw_dark_crab"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Clay|Rune_essence|Copper_ore|Tin_ore|Limestone|Stardust|Blurite_ore|Barronite_shards|Iron_ore|Daeyalt_ore|Silver_ore|Volcanic_ash|Pure_essence|Coal|Pay-dirt|Sandstone|Dense_essence_block|Uncut_red_topaz|Gold_ore|Volcanic_sulphur|Blasted_ore|Granite|Mithril_ore|Lunar_ore|Daeyalt_shard|Lovakite_ore|Adamantite_ore|Soft_clay|Efh_salt|Ancient_essence|Runite_ore|Amethyst"
     );
     const result = await fetcher.json();
     console.log(result);
-    setFetchedFishPrices(result);
+    setFetchedOrePrices(result);
   };
 
   useEffect(() => {
-    if (Object.keys(fetchedFishPrices).length === 0) {
+    if (Object.keys(fetchedOrePrices).length === 0) {
       priceFetcher();
     }
-    if (Object.keys(fetchedFishPrices).length > 0) {
-      let dbref = foodDB;
-      console.log(fetchedFishPrices);
-      console.log(foodDB);
-      dbref.forEach((fish, index) => {
-        const fishname = "Raw " + fish.food.toLowerCase();
-        const price = fetchedFishPrices[fishname]?.price || 0;
+    if (Object.keys(fetchedOrePrices).length > 0) {
+      let dbref = oresDB;
+      console.log(fetchedOrePrices);
+      console.log(oresDB);
+      dbref.forEach((ore, index) => {
+        const oreName = ore.name;
+        const price = fetchedOrePrices[oreName]?.price || 0;
         const res = Number(price) ? price : 0;
 
-        fish.profit = res;
+        ore.profit = res;
       });
-      setFoodDB(dbref);
+      setOresDB(dbref);
     }
-  }, [fetchedFishPrices, foodDB]);
+  }, [fetchedOrePrices, oresDB]);
 
-  const calculateFishToCatch = useCallback(
-    (food) => {
+  const calcOresToMine = useCallback(
+    (ore) => {
       const expToGo = props.remainingExp;
-      const result = Math.ceil(expToGo / food.exp);
+      const result = Math.ceil(expToGo / ore.exp);
       return result ? result : "?";
     },
     [props.remainingExp]
   );
 
-  const filterFoods = useCallback(() => {
-    const filteredFoods = FISHLIST.filter((food) =>
-      food.food.toLowerCase().includes(props.searchState.toLowerCase())
+  const filterOres = useCallback(() => {
+    const filteredOres = ORESLIST.filter((ore) =>
+      ore.name.toLowerCase().includes(props.searchState.toLowerCase())
     );
-    setFoodDB([...filteredFoods]);
+    setOresDB([...filteredOres]);
   }, [props.searchState]);
 
   useEffect(() => {
-    filterFoods();
-  }, [filterFoods]);
+    filterOres();
+  }, [filterOres]);
 
-  const sortFood = () => {
+  const sortOre = () => {
     setMonsterSorted(!monsterSorted);
-    let sorter = [...foodDB];
+    let sorter = [...oresDB];
     sorter.sort((a, b) =>
       monsterSorted ? a.level - b.level : b.level - a.level
     );
-    setFoodDB(sorter);
+    setOresDB(sorter);
   };
 
   const sortMembers = () => {
     setMemberSorted(!memberSorted);
-    let sorter = [...foodDB];
+    let sorter = [...oresDB];
     sorter.sort((a, b) =>
-      memberSorted ? a.member - b.member : b.member - a.member
+      memberSorted ? a.members - b.members : b.members - a.members
     );
-    setFoodDB(sorter);
+    setOresDB(sorter);
   };
 
   const sortExp = () => {
     setCombatSorted(!combatSorted);
-    let sorter = [...foodDB];
+    let sorter = [...oresDB];
     sorter.sort((a, b) => (combatSorted ? a.exp - b.exp : b.exp - a.exp));
-    setFoodDB(sorter);
+    setOresDB(sorter);
   };
 
   const sortToGo = () => {
     setToGoSorted(!toGoSorted);
-    let sorter = [...foodDB];
+    let sorter = [...oresDB];
     sorter.sort((a, b) =>
       toGoSorted ? a.profit - b.profit : b.profit - a.profit
     );
-    setFoodDB(sorter);
+    setOresDB(sorter);
   };
 
   return (
     <div className={stl.grid}>
       <div className={stl.typeRow}>
-        <span className={stl.monsterTitleRow} onClick={sortFood}>
+        <span className={stl.monsterTitleRow} onClick={sortOre}>
           <img src={fishingLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
-          Fish
+          Yield
         </span>
         <span onClick={sortMembers}>
           <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
@@ -114,7 +114,7 @@ const MiningGrid = (props) => {
         </span>
         <span onClick={sortToGo}>
           <img src={harpoonLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
-          Catch
+          Mine
         </span>
         <span onClick={sortToGo}>
           <img src={moneyLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
@@ -122,22 +122,22 @@ const MiningGrid = (props) => {
         </span>
       </div>
       <div className={stl.resultGrid}>
-        {foodDB.map((food) => {
-          const fishAmount = calculateFishToCatch(food);
+        {oresDB.map((ore) => {
+          const fishAmount = calcOresToMine(ore);
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <span className={stl.innerSpan}>
-                  <img src={food.src} alt="Food" className={stl.minifood} />
-                  <span className={stl.lvlSpan}>Lvl {food.level}</span>
-                  {food.food}
+                  <img src={ore.src} alt="Ore" className={stl.minifood} />
+                  <span className={stl.lvlSpan}>Lvl {ore.level}</span>
+                  {ore.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{food.member ? "Yes" : "No"}</span>
+              <span className={stl.rowItem}>{ore.member ? "Yes" : "No"}</span>
               <span className={stl.rowItem}>
                 {+props.multiplier > 0 &&
-                  (food.exp * (1 + 2.5 / 100)).toFixed(2)}
-                {+props.multiplier === 0 && food.exp}
+                  (ore.exp * (1 + 2.5 / 100)).toFixed(2)}
+                {+props.multiplier === 0 && ore.exp}
               </span>
 
               <span className={stl.rowItem}>
@@ -148,10 +148,10 @@ const MiningGrid = (props) => {
 
               <span className={stl.rowItem}>
                 {+props.multiplier === 0 &&
-                  Math.round(food.profit * fishAmount).toLocaleString()}
+                  Math.round(ore.profit * fishAmount).toLocaleString()}
                 {+props.multiplier > 0 &&
                   Math.round(
-                    (food.profit * fishAmount) / (1 + 2.5 / 100)
+                    (ore.profit * fishAmount) / (1 + 2.5 / 100)
                   ).toLocaleString()}
               </span>
             </div>

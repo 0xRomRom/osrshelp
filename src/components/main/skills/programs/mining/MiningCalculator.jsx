@@ -1,7 +1,7 @@
 import stl from "./MiningCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import fishingIcon from "../../../../../assets/skillicons/Fishing.webp";
+import miningIcon from "../../../../../assets/skillicons/Mining.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -37,14 +37,14 @@ const MiningCalculator = (props) => {
           className={stl.backArrow}
           onClick={handleMenuSwitch}
         />
-        <img src={fishingIcon} alt="Fishing Level" className={stl.skillImg} />
+        <img src={miningIcon} alt="Mining Level" className={stl.skillImg} />
         <span className={stl.skillTitle}>Mining</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["fishing"]}
+                Level {props.skills["mining"]}
               </span>
             </div>
 
@@ -52,8 +52,8 @@ const MiningCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"fishing"}
-                  currentLvl={props.skills["fishing"]}
+                  skillname={"mining"}
+                  currentLvl={props.skills["mining"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -78,8 +78,8 @@ const MiningCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"fishing"}
-            currentLvl={props.skills["fishing"]}
+            skillName={"mining"}
+            currentLvl={props.skills["mining"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}
@@ -95,10 +95,7 @@ const MiningCalculator = (props) => {
           setFilterChanged={setFilterChanged}
           filterChanged={filterChanged}
         />
-        <SearchFilter
-          setSearchState={setSearchState}
-          searchType="Search Fish"
-        />
+        <SearchFilter setSearchState={setSearchState} searchType="Search Ore" />
       </div>
       <MiningGrid
         searchState={searchState}
