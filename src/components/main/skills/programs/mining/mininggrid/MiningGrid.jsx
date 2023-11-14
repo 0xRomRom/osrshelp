@@ -37,7 +37,6 @@ const MiningGrid = (props) => {
         const oreName = ore.name;
         const price = fetchedOrePrices[oreName]?.price || 0;
         const res = Number(price) ? price : 0;
-
         ore.profit = res;
       });
       setOresDB(dbref);
@@ -47,8 +46,12 @@ const MiningGrid = (props) => {
   const calcOresToMine = useCallback(
     (ore) => {
       const expToGo = props.remainingExp;
-      const result = Math.ceil(expToGo / ore.exp);
-      return result ? result : "?";
+      let result = Math.ceil(expToGo / ore.exp);
+      console.log(result);
+      if (result === Infinity) {
+        result = 0;
+      }
+      return result ? result : 0;
     },
     [props.remainingExp]
   );
@@ -123,7 +126,7 @@ const MiningGrid = (props) => {
       </div>
       <div className={stl.resultGrid}>
         {oresDB.map((ore) => {
-          const fishAmount = calcOresToMine(ore);
+          const oreAmount = calcOresToMine(ore);
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -142,16 +145,16 @@ const MiningGrid = (props) => {
 
               <span className={stl.rowItem}>
                 {+props.multiplier > 0 &&
-                  Math.round(fishAmount / (1 + 2.5 / 100)).toLocaleString()}
-                {+props.multiplier === 0 && fishAmount.toLocaleString()}
+                  Math.round(oreAmount / (1 + 2.5 / 100)).toLocaleString()}
+                {+props.multiplier === 0 && oreAmount.toLocaleString()}
               </span>
 
               <span className={stl.rowItem}>
                 {+props.multiplier === 0 &&
-                  Math.round(ore.profit * fishAmount).toLocaleString()}
+                  Math.round(ore.profit * oreAmount).toLocaleString()}
                 {+props.multiplier > 0 &&
                   Math.round(
-                    (ore.profit * fishAmount) / (1 + 2.5 / 100)
+                    (ore.profit * oreAmount) / (1 + 2.5 / 100)
                   ).toLocaleString()}
               </span>
             </div>
