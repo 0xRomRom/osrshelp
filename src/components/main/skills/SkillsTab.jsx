@@ -38,6 +38,7 @@ import FishingCalculator from "./programs/fishing/FishingCalculator";
 import FiremakingCalculator from "./programs/firemaking/FiremakingCalculator";
 import CraftingCalculator from "./programs/crafting/CraftingCalculator";
 import SmithingCalculator from "./programs/smithing/SmithingCalculator";
+import MiningCalculator from "./programs/mining/MiningCalculator";
 
 const SkillsTab = (props) => {
   const handleTabOpen = (path) => {
@@ -204,6 +205,18 @@ const SkillsTab = (props) => {
 
       {props.subState === "Smithing" && (
         <SmithingCalculator
+          skills={props.skills}
+          skillsExp={props.skillsExp}
+          playerName={props.playerName}
+          setSkills={props.setSkills}
+          setSkillsExp={props.setSkillsExp}
+          setPlayerName={props.setPlayerName}
+          setSubState={props.setSubState}
+        />
+      )}
+
+      {props.subState === "Mining" && (
+        <MiningCalculator
           skills={props.skills}
           skillsExp={props.skillsExp}
           playerName={props.playerName}

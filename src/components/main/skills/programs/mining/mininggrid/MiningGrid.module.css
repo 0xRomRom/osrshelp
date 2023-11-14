@@ -1,0 +1,94 @@
+.grid {
+  position: relative;
+  width: 100%;
+  height: 31rem;
+  background-color: rgb(32, 46, 57);
+  padding: 1rem;
+  border-radius: 0.8rem;
+  padding-bottom: 2.5rem;
+}
+
+.typeRow {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.typeRow > span {
+  width: 20%;
+  text-align: center;
+}
+
+.resultGrid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid gray;
+  user-select: none;
+}
+
+.row:hover {
+  background-color: rgb(27, 39, 48);
+}
+
+.rowItem {
+  width: 20%;
+  color: white;
+  text-align: center;
+}
+
+.monsterRow {
+  text-align: left;
+  padding-left: 1.1rem;
+  /* background-color: red; */
+}
+
+.miniLogo {
+  width: 15px;
+}
+
+.monsterTitleRow {
+  text-align: left !important;
+}
+
+.minifood {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.4rem;
+  position: relative;
+}
+
+.innerSpan {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.lvlSpan {
+  display: inline;
+  color: rgb(139, 138, 138);
+  font-size: 12px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+  position: relative;
+  top: 3px;
+}

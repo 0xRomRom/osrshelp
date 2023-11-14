@@ -1,4 +1,4 @@
-import stl from "./FishingGrid.module.css";
+import stl from "./MiningGrid.module.css";
 import FISHLIST from "../../../../../../utils/fishlist";
 import harpoonLogo from "../../../../../../assets/random/Harpoon.webp";
 import moneyLogo from "../../../../../../assets/icons/Donate.webp";
@@ -8,7 +8,7 @@ import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
 import { useState, useEffect, useCallback } from "react";
 
-const FishingGrid = (props) => {
+const MiningGrid = (props) => {
   const [foodDB, setFoodDB] = useState(FISHLIST);
   const [fetchedFishPrices, setFetchedFishPrices] = useState({});
   const [monsterSorted, setMonsterSorted] = useState(false);
@@ -162,4 +162,4 @@ const FishingGrid = (props) => {
   );
 };
 
-export default FishingGrid;
+export default MiningGrid;

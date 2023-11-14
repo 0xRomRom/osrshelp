@@ -242,7 +242,7 @@ const SmithingGrid = (props) => {
               </span>
 
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
-                {Math.ceil(+props.remainingExp / craft.exp)}
+                {Math.ceil(+props.remainingExp / craft.exp).toLocaleString()}
               </span>
 
               <span
