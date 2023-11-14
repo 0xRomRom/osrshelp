@@ -258,10 +258,9 @@ const FletchingGrid = (props) => {
               <span className={`${stl.rowItem} ${stl.expRow}`}>
                 {fletch.exp}
                 <span className={stl.gpperxp}>
-                  {fletch.cost / fletch.exp > 0 ? "" : ""}
                   {fletch.cost / fletch.exp > 0
                     ? "-" + Math.abs(fletch.cost / fletch.exp).toFixed(1)
-                    : "+" + Math.abs(fletch.cost / fletch.exp).toFixed(1)}{" "}
+                    : "+" + Math.abs(fletch.cost / fletch.exp).toFixed(1)}
                   gp/exp
                 </span>
               </span>

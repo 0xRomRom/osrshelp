@@ -179,6 +179,15 @@ const CraftingGrid = (props) => {
     setCraftDB(sorter);
   };
 
+  const calcCraftActions = useCallback(
+    (craft) => {
+      const expToGo = props.remainingExp;
+      const result = Math.ceil(expToGo / craft.exp);
+      return result ? result : "?";
+    },
+    [props.remainingExp]
+  );
+
   return (
     <div className={stl.grid}>
       <div className={stl.typeRow}>
@@ -205,6 +214,7 @@ const CraftingGrid = (props) => {
 
       <div className={stl.resultGrid}>
         {filteredCraftDB.map((craft) => {
+          const craftAmount = calcCraftActions(craft);
           return (
             <div className={stl.row} key={craft.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -224,13 +234,9 @@ const CraftingGrid = (props) => {
                   ? craft.exp * (+props.multiplier / 100)
                   : craft.exp}
                 <span className={stl.gpperxp}>
-                  {craft.price / craft.exp > 0 ? "-" : "+"}
-                  {+props.multiplier === 0 &&
-                    (craft.price / craft.exp > 0
-                      ? Math.abs(craft.price / craft.exp)
-                      : -(craft.price / craft.exp)
-                    ).toFixed(1)}
-                  {(craft.price / craft.exp).toFixed(2)}
+                  {craft.price / craft.exp > 0
+                    ? "-" + Math.abs(craft.price / craft.exp).toFixed(1)
+                    : "+" + Math.abs(craft.price / craft.exp).toFixed(1)}
                   gp/exp
                 </span>
               </span>
@@ -244,10 +250,10 @@ const CraftingGrid = (props) => {
                   craft.price > 0 ? stl.red : stl.green
                 }`}
               >
-                {craft.price > 0 ? "-" : "+"}
-                {Math.round(
-                  (craft.price * +props.remainingExp) / craft.exp
-                ).toLocaleString()}
+                {craft.price * craftAmount > 0 ? "-" : "+"}
+                {craft.price * craftAmount
+                  ? Math.abs(craft.price * craftAmount).toLocaleString()
+                  : "?"}
                 <span className={stl.gpcost}>gp</span>
               </span>
             </div>
