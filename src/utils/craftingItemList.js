@@ -446,6 +446,166 @@ const CRAFTINGITEMLIST = [
     "Red topaz": 1,
     "Silver bar": 1,
   },
+  {
+    //Gold ring
+    "Gold bar": 1,
+  },
+  {
+    //Gold necklace
+    "Gold bar": 1,
+  },
+  {
+    //Gold bracelet
+    "Gold bar": 1,
+  },
+  {
+    //Gold amulet (u)
+    "Gold bar": 1,
+  },
+  {
+    //Sapphire ring
+    "Gold bar": 1,
+    Sapphire: 1,
+  },
+  {
+    //Sapphire necklace
+    "Gold bar": 1,
+    Sapphire: 1,
+  },
+  {
+    //Sapphire bracelet
+    "Gold bar": 1,
+    Sapphire: 1,
+  },
+  {
+    //Sapphire amulet (u)
+    "Gold bar": 1,
+    Sapphire: 1,
+  },
+  {
+    //Emerald ring
+    "Gold bar": 1,
+    Emerald: 1,
+  },
+  {
+    //Emerald necklace
+    "Gold bar": 1,
+    Emerald: 1,
+  },
+  {
+    //Emerald bracelet
+    "Gold bar": 1,
+    Emerald: 1,
+  },
+  {
+    //Emerald amulet (u)
+    "Gold bar": 1,
+    Emerald: 1,
+  },
+  {
+    //Ruby ring
+    "Gold bar": 1,
+    Ruby: 1,
+  },
+  {
+    //Ruby necklace
+    "Gold bar": 1,
+    Ruby: 1,
+  },
+  {
+    //Ruby bracelet
+    "Gold bar": 1,
+    Ruby: 1,
+  },
+  {
+    //Gold tiara
+    "Gold bar": 1,
+  },
+  {
+    //Ruby amulet (u)
+    "Gold bar": 1,
+    Ruby: 1,
+  },
+  {
+    //Diamond ring
+    "Gold bar": 1,
+    Diamond: 1,
+  },
+  {
+    //Diamond necklace
+    "Gold bar": 1,
+    Diamond: 1,
+  },
+  {
+    //Diamond bracelet
+    "Gold bar": 1,
+    Diamond: 1,
+  },
+  {
+    //Diamond amulet (u)
+    "Gold bar": 1,
+    Diamond: 1,
+  },
+  {
+    //Dragonstone ring
+    "Gold bar": 1,
+    Dragonstone: 1,
+  },
+  {
+    //Dragonstone necklace
+    "Gold bar": 1,
+    Dragonstone: 1,
+  },
+  {
+    //Dragonstone bracelet
+    "Gold bar": 1,
+    Dragonstone: 1,
+  },
+  {
+    //Dragonstone amulet (u)
+    "Gold bar": 1,
+    Dragonstone: 1,
+  },
+  {
+    //Onyx ring
+    "Gold bar": 1,
+    Onyx: 1,
+  },
+  {
+    //Onyx necklace
+    "Gold bar": 1,
+    Onyx: 1,
+  },
+  {
+    //Onyx bracelet
+    "Gold bar": 1,
+    Onyx: 1,
+  },
+  {
+    //Onyx amulet (u)
+    "Gold bar": 1,
+    Onyx: 1,
+  },
+  {
+    //Zenyte ring
+    "Gold bar": 1,
+    Zenyte: 1,
+  },
+  {
+    //Zenyte necklace
+    "Gold bar": 1,
+    Zenyte: 1,
+  },
+  {
+    //Zenyte bracelet
+    "Gold bar": 1,
+    Zenyte: 1,
+  },
+  {
+    //Zenyte amulet (u)
+    "Gold bar": 1,
+    Zenyte: 1,
+  },
 ];
 
 export default CRAFTINGITEMLIST;
