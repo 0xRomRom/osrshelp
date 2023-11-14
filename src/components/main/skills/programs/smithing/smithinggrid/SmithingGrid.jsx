@@ -33,7 +33,7 @@ const SmithingGrid = (props) => {
     );
     const resultA = await fetcherA.json();
     const fetcherB = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Mith_grapple_tip|Mithril_battleaxe|Mithril_chainbody|Mithril_kiteshield|Mithril_claws|Mithril_2h_sword|Mithril_platelegs|Mithril_plateskirt|Mithril_platebody|Adamantite_bar|Adamant_dagger|Adamant_axe|Adamant_mace|Adamant_med_helm|Adamant_bolts_(unf)|Adamant_sword|Adamantite_nails|Adamant_dart_tip|Adamant_scimitar|Adamant_spear|Adamant_hasta|Adamant_arrowtips|Adamantite_limbs|Adamant_longsword|Adamant_javelin_heads|Adamant_full_helm|Adamant_knife|Adamant_sq_shield|Adamant_warhammer|Adamant_battleaxe|Adamant_chainbody|Adamant_kiteshield|Adamant_claws|Adamant_2h_sword|Runite_bar|Rune_dagger|Adamant_platelegs|Adamant_plateskirt|Rune_axe|Rune_mace|Adamant_platebody|Rune_med_helm|Runite_bolts_(unf)|Rune_sword|Rune_nails|Rune_dart_tip|Rune_scimitar|Rune_spear|Rune_hasta|Rune_arrowtips|Runite_limbs|Rune_longsword|Rune_javelin_heads|Rune_full_helm|Rune_knife|Rune_sq_shield|Rune_warhammer|Rune_battleaxe|Rune_chainbody|Rune_kiteshield|Rune_claws|Rune_2h_sword|Rune_platelegs|Rune_plateskirt|Rune_platebody|Steel_2h_sword|Steel_platelegs|Steel_plateskirt|Steel_platebody|Bullseye_lantern_(unf)|Mithril_bar|Gold_helmet|Gold_bowl|Mithril_dagger|Mithril_axe|Mithril_mace|Mithril_med_helm|Mithril_bolts_(unf)|Mithril_sword|Mithril_nails|Mithril_dart_tip|Mithril_scimitar|Mithril_spear|Mithril_hasta|Mithril_arrowtips"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Mith_grapple_tip|Mithril_battleaxe|Mithril_chainbody|Mithril_kiteshield|Mithril_claws|Mithril_2h_sword|Mithril_platelegs|Mithril_plateskirt|Mithril_platebody|Adamantite_bar|Adamant_dagger|Adamant_axe|Adamant_mace|Adamant_med_helm|Adamant_bolts(unf)|Adamant_sword|Adamantite_nails|Adamant_dart_tip|Adamant_scimitar|Adamant_spear|Adamant_hasta|Adamant_arrowtips|Adamantite_limbs|Adamant_longsword|Adamant_javelin_heads|Adamant_full_helm|Adamant_knife|Adamant_sq_shield|Adamant_warhammer|Adamant_battleaxe|Adamant_chainbody|Adamant_kiteshield|Adamant_claws|Adamant_2h_sword|Runite_bar|Rune_dagger|Adamant_platelegs|Adamant_plateskirt|Rune_axe|Rune_mace|Adamant_platebody|Rune_med_helm|Runite_bolts_(unf)|Rune_sword|Rune_nails|Rune_dart_tip|Rune_scimitar|Rune_spear|Rune_hasta|Rune_arrowtips|Runite_limbs|Rune_longsword|Rune_javelin_heads|Rune_full_helm|Rune_knife|Rune_sq_shield|Rune_warhammer|Rune_battleaxe|Rune_chainbody|Rune_kiteshield|Rune_claws|Rune_2h_sword|Rune_platelegs|Rune_plateskirt|Rune_platebody|Steel_2h_sword|Steel_platelegs|Steel_plateskirt|Steel_platebody|Bullseye_lantern_(unf)|Mithril_bar|Gold_helmet|Gold_bowl|Mithril_dagger|Mithril_axe|Mithril_mace|Mithril_med_helm|Mithril_bolts_(unf)|Mithril_sword|Mithril_nails|Mithril_dart_tip|Mithril_scimitar|Mithril_spear|Mithril_hasta|Mithril_arrowtips"
     );
     const resultB = await fetcherB.json();
     result1 = { ...resultA, ...resultB };
@@ -97,11 +97,12 @@ const SmithingGrid = (props) => {
       const mapper = runeData.map((item, index) => {
         const itemCount = item.names.length;
         let count = 0;
+        console.log(craftingItemPrices);
 
         for (let i = 0; i < itemCount; i++) {
           const itemName = item.names[i];
           // console.log(itemName);
-          const itemCounts = item.amounts[i];
+          const itemCounts = +item.amounts[i];
           const craftPrice = craftingItemPrices[itemName].price * itemCounts;
           count += craftPrice;
           craftingList[index].price = count;
