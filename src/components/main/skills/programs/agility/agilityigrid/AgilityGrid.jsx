@@ -1,4 +1,4 @@
-import stl from "./MiningGrid.module.css";
+import stl from "./AgilityGrid.module.css";
 import ORESLIST from "../../../../../../utils/oresList";
 import moneyLogo from "../../../../../../assets/icons/Donate.webp";
 import miningLogo from "../../../../../../assets/skillicons/Mining.webp";
@@ -7,7 +7,7 @@ import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
 import { useState, useEffect, useCallback } from "react";
 
-const MiningGrid = (props) => {
+const AgilityGrid = (props) => {
   const [oresDB, setOresDB] = useState(ORESLIST);
   const [fetchedOrePrices, setFetchedOrePrices] = useState({});
   const [monsterSorted, setMonsterSorted] = useState(false);
@@ -168,4 +168,4 @@ const MiningGrid = (props) => {
   );
 };
 
-export default MiningGrid;
+export default AgilityGrid;

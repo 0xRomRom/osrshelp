@@ -40,6 +40,7 @@ import CraftingCalculator from "./programs/crafting/CraftingCalculator";
 import SmithingCalculator from "./programs/smithing/SmithingCalculator";
 import MiningCalculator from "./programs/mining/MiningCalculator";
 import HerbloreCalculator from "./programs/herblore/HerbloreCalculator";
+import AgilityCalculator from "./programs/agility/AgilityCalculator";
 
 const SkillsTab = (props) => {
   const handleTabOpen = (path) => {
@@ -230,6 +231,18 @@ const SkillsTab = (props) => {
 
       {props.subState === "Herblore" && (
         <HerbloreCalculator
+          skills={props.skills}
+          skillsExp={props.skillsExp}
+          playerName={props.playerName}
+          setSkills={props.setSkills}
+          setSkillsExp={props.setSkillsExp}
+          setPlayerName={props.setPlayerName}
+          setSubState={props.setSubState}
+        />
+      )}
+
+      {props.subState === "Agility" && (
+        <AgilityCalculator
           skills={props.skills}
           skillsExp={props.skillsExp}
           playerName={props.playerName}
