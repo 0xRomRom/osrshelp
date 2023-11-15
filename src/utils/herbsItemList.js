@@ -71,17 +71,17 @@ const HERBSITEMLIST = [
   // Guthix rest tea
   { "Cup of hot water": 1, Harralander: 1, "Guam leaf": 2, Marrentill: 1 },
 
-  //   // Compost potion
-  //   { "Vial of water": 1, Harralander: 1, "Volcanic ash": 1 },
+  // Compost potion
+  { "Vial of water": 1, Harralander: 1, "Volcanic ash": 1 },
 
-  //   // Restore potion
-  //   { "Vial of water": 1, Harralander: 1, "Red spiders' eggs": 1 },
+  // Restore potion
+  { "Vial of water": 1, Harralander: 1, "Red spiders' eggs": 1 },
 
-  //   // Guthix balance
-  //   { "Restore potion": 1, Garlic: 1, "Silver dust": 1 },
+  // Guthix balance
+  { "Restore potion(4)": 1, Garlic: 1, "Silver dust": 1 },
 
-  //   // Energy potion
-  //   { "Vial of water": 1, Harralander: 1, "Chocolate dust": 1 },
+  // Energy potion
+  { "Vial of water": 1, Harralander: 1, "Chocolate dust": 1 },
 
   //   // Defence potion
   //   { "Vial of water": 1, Ranarr_weed: 1, "White berries": 1 },
