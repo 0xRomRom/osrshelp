@@ -35,7 +35,7 @@ const HerbloreGrid = (props) => {
     );
     const resultA = await fetcherA.json();
     const fetcherB = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Cup_of_hot_water|Imp_repellent|Attack_potion(4)|Antipoison(4)|Relicym's_balm(4)|Strength_potion(4)|Serum_207_(4)|Guthix_rest(4)|Compost_potion(4)|Restore_potion(4)|Guthix_balance(4)|Energy_potion(4)|Defence_potion|Agility_potion|Combat_potion|Prayer_potion|Super_attack|Goblin_potion|Superantipoison|Fishing_potion|Super_energy|Shrink-me-quick|Hunter_potion|Super_strength|Magic_essence|Weapon_poison|Super_restore|Sanfew_serum|Super_defence|Antidote+|Antifire_potion|Divine_super_attack_potion|Divine_super_defence_potion|Divine_super_strength_potion|Ranging_potion|Weapon_poison+|Divine_ranging_potion|Magic_potion|Stamina_potion|Zamorak_brew|Divine_magic_potion|Antidote++|Bastion_potion|Battlemage_potion|Saradomin_brew|Weapon_poison++|Extended_antifire|Ancient_brew|Divine_bastion_potion|Divine_battlemage_potion|Anti-venom|Menaphite_remedy|Super_combat_potion|Forgotten_brew|Super_antifire_potion|Anti-venom+|Divine_super_combat_potion|Extended_super_antifire"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Cup_of_hot_water|Imp_repellent|Attack_potion(4)|Antipoison(4)|Relicym's_balm(4)|Strength_potion(4)|Serum_207_(4)|Guthix_rest(4)|Compost_potion(4)|Restore_potion(4)|Guthix_balance(4)|Energy_potion(4)|Defence_potion(4)|Agility_potion(4)|Combat_potion(4)|Prayer_potion(4)|Super_attack(4)|Goblin_potion|Superantipoison|Fishing_potion|Super_energy|Shrink-me-quick|Hunter_potion|Super_strength|Magic_essence|Weapon_poison|Super_restore|Sanfew_serum|Super_defence|Antidote+|Antifire_potion|Divine_super_attack_potion|Divine_super_defence_potion|Divine_super_strength_potion|Ranging_potion|Weapon_poison+|Divine_ranging_potion|Magic_potion|Stamina_potion|Zamorak_brew|Divine_magic_potion|Antidote++|Bastion_potion|Battlemage_potion|Saradomin_brew|Weapon_poison++|Extended_antifire|Ancient_brew|Divine_bastion_potion|Divine_battlemage_potion|Anti-venom|Menaphite_remedy|Super_combat_potion|Forgotten_brew|Super_antifire_potion|Anti-venom+|Divine_super_combat_potion|Extended_super_antifire"
     );
     const resultB = await fetcherB.json();
     result1 = { ...resultA, ...resultB };
@@ -45,7 +45,7 @@ const HerbloreGrid = (props) => {
 
     let result2 = {};
     const fetcherC = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Limpwurt_root|Guam_leaf|Marrentill|Tarromin|Harralander|Ranarr_weed|Restore_potion|Toadflax|Irit_leaf|Avantoe|Kwuarm|Snapdragon|Cadantine|Lantadyme|Dwarf_weed|Torstol|Silver_dust|Garlic|Chocolate_dust"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=White_berries|Goat_horn_dust|Toad's_legs|Limpwurt_root|Guam_leaf|Marrentill|Tarromin|Harralander|Ranarr_weed|Restore_potion|Toadflax|Irit_leaf|Avantoe|Kwuarm|Snapdragon|Cadantine|Lantadyme|Dwarf_weed|Torstol|Silver_dust|Garlic|Chocolate_dust|Snape_grass"
     );
     const resultC = await fetcherC.json();
 

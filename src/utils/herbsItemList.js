@@ -83,17 +83,17 @@ const HERBSITEMLIST = [
   // Energy potion
   { "Vial of water": 1, Harralander: 1, "Chocolate dust": 1 },
 
-  //   // Defence potion
-  //   { "Vial of water": 1, Ranarr_weed: 1, "White berries": 1 },
+  // Defence potion
+  { "Vial of water": 1, "Ranarr weed": 1, "White berries": 1 },
 
-  //   // Agility potion
-  //   { "Vial of water": 1, Toadflax: 1, "Toad's legs": 1 },
+  // Agility potion
+  { "Vial of water": 1, Toadflax: 1, "Toad's legs": 1 },
 
-  //   // Combat potion
-  //   { "Vial of water": 1, Harralander: 1, "Goat horn dust": 1 },
+  // Combat potion
+  { "Vial of water": 1, Harralander: 1, "Goat horn dust": 1 },
 
-  //   // Prayer potion
-  //   { "Vial of water": 1, Ranarr_weed: 1, "Snape grass": 1 },
+  // Prayer potion
+  { "Vial of water": 1, "Ranarr weed": 1, "Snape grass": 1 },
 
   //   // Super attack
   //   { "Vial of water": 1, Irit_leaf: 1, "Eye of newt": 1 },
