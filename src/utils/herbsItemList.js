@@ -192,32 +192,34 @@ const HERBSITEMLIST = [
   // Divine battlemage potion
   { "Battlemage potion(4)": 1 },
 
-  //   // Anti-venom
-  //   { "Antidote++": 1, "Zulrah's scales": 1 },
+  // Anti-venom
+  { "Antidote++(4)": 1, "Zulrah's scales": 1 },
 
-  //   // Menaphite remedy
-  //   { "Vial of water": 1, Dwarf_weed: 1, "Lily of the sands": 1 },
+  // Menaphite remedy
+  { "Vial of water": 1, "Dwarf weed": 1, "Lily of the sands": 1 },
 
-  //   // Super combat potion
-  //   { "Super attack": 1, "Super strength": 1, "Super defence": 1, Torstol: 1 },
+  // Super combat potion
+  {
+    "Super attack(4)": 1,
+    "Super strength(4)": 1,
+    "Super defence(4)": 1,
+    Torstol: 1,
+  },
 
-  //   // Forgotten brew
-  //   { "Ancient brew": 1, "Ancient essence": 1 },
+  // Forgotten brew
+  { "Ancient brew(4)": 1, "Ancient essence": 1 },
 
-  //   // Super antifire potion
-  //   { "Antifire potion": 1, "Crushed superior dragon bones": 1 },
+  // Super antifire potion
+  { "Antifire potion(4)": 1, "Crushed superior dragon bones": 1 },
 
-  //   // Anti-venom+
-  //   { "Anti-venom": 1, Torstol: 1 },
+  // Anti-venom+
+  { "Anti-venom(4)": 1, Torstol: 1 },
 
-  //   // Divine super combat potion
-  //   { "Super combat potion": 1, "Crystal dust": 1 },
+  // Divine super combat potion
+  { "Super combat potion(4)": 1 },
 
-  //   // Extended super antifire
-  //   { "Super antifire potion": 1, "Lava scale shard": 1 },
-
-  //   // Extended antifire
-  //   { "Crushed superior dragon bones": 1 },
+  // Extended super antifire
+  { "Super antifire potion(4)": 1, "Lava scale shard": 1 },
 ];
 
 export default HERBSITEMLIST;
