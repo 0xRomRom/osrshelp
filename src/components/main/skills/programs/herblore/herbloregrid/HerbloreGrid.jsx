@@ -4,6 +4,7 @@ import HERBSITEMLIST from "../../../../../../utils/herbsItemList";
 import craftingLogo from "../../../../../../assets/skillicons/Crafting.webp";
 import potion from "../../../../../../assets/random/Potion.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
+import pestleNmortar from "../../../../../../assets/random/Pestle_and_mortar.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
 import { useCallback, useEffect, useState } from "react";
@@ -43,7 +44,7 @@ const HerbloreGrid = (props) => {
     const resultA = await fetcherA.json();
     //
     const query2 =
-      "Cup_of_hot_water|Imp_repellent|Attack_potion(4)|Antipoison(4)|Relicym's_balm(4)|Strength_potion(4)|Serum_207_(4)|Guthix_rest(4)|Compost_potion(4)|Restore_potion(4)|Guthix_balance(4)|Energy_potion(4)|Defence_potion(4)|Agility_potion(4)|Combat_potion(4)|Prayer_potion(4)|Super_attack(4)|Goblin_potion|Superantipoison(4)|Fishing_potion(4)|Super_energy|Shrink-me-quick|Hunter_potion(4)|Super_strength(4)|Weapon_poison|Super_restore(4)|Sanfew_serum(4)|Super_defence|Antidote+(4)|Antifire_potion(4)|Divine_super_attack_potion(4)|Divine_super_defence_potion(4)|Divine_super_strength_potion(4)|Ranging_potion(4)|Weapon_poison(+)|Divine_ranging_potion(4)|Magic_potion(4)|Stamina_potion|Zamorak_brew|Divine_magic_potion|Antidote++(4)|Bastion_potion(4)|Battlemage_potion(4)|Saradomin_brew(4)|Weapon_poison(++)|Extended_antifire(4)|Ancient_brew(4)|Divine_bastion_potion|Divine_battlemage_potion(4)|Anti-venom(4)|Menaphite_remedy(4)|Superantipoison|Super_combat_potion(4)|Forgotten_brew(4)|Super_antifire_potion(4)|Anti-venom+(4)|Divine_super_combat_potion(4)|Extended_super_antifire(4)";
+      "Cup_of_hot_water|Imp_repellent|Attack_potion(3)|Antipoison(3)|Relicym's_balm(3)|Strength_potion(3)|Serum_207_(3)|Guthix_rest(3)|Compost_potion(3)|Restore_potion(3)|Guthix_balance(3)|Energy_potion(3)|Defence_potion(3)|Agility_potion(3)|Combat_potion(3)|Prayer_potion(3)|Super_attack(3)|Goblin_potion|Superantipoison(3)|Fishing_potion(3)|Super_energy|Shrink-me-quick|Hunter_potion(3)|Super_strength(3)|Weapon_poison|Super_restore(3)|Sanfew_serum(3)|Super_defence|Antidote+(3)|Antifire_potion(3)|Divine_super_attack_potion(3)|Divine_super_defence_potion(3)|Divine_super_strength_potion(3)|Ranging_potion(3)|Weapon_poison(+)|Divine_ranging_potion(3)|Magic_potion(3)|Stamina_potion|Zamorak_brew|Divine_magic_potion|Antidote++(3)|Bastion_potion(3)|Battlemage_potion(3)|Saradomin_brew(3)|Weapon_poison(++)|Extended_antifire(3)|Ancient_brew(3)|Divine_bastion_potion|Divine_battlemage_potion(3)|Anti-venom(3)|Menaphite_remedy(3)|Superantipoison|Super_combat_potion(3)|Forgotten_brew(3)|Super_antifire_potion(3)|Anti-venom+(3)|Divine_super_combat_potion(3)|Extended_super_antifire(3)";
     const query2Encoded = encodeURIComponent(query2);
     const fetcherB = await fetch(
       `  https://api.weirdgloop.org/exchange/history/osrs/latest?name=${query2Encoded}`
@@ -65,7 +66,7 @@ const HerbloreGrid = (props) => {
     const resultC = await fetcherC.json();
     //
     const query4 =
-      "Gorak_claw_powder|Volcanic_ash|Super_restore|Super_restore(4)|Kebbit_teeth_dust|Nail_beast_nails|Ashes|Unicorn_horn_dust|Eye_of_newt|Vial_of_water|Cadantine|White_berries|Coconut_milk|Toadflax|Yew_roots|Lantadyme|Dragon_scale_dust|Super_attack|Crystal_dust|Super_defence(4)|Super_strength|Ranging_potion|Dwarf_weed|Dragon_scale_dust|Wine_of_zamorak|Weapon_poison+(4)|Cactus_spine|Red_spiders'_eggs|Magic_potion|Potato_cactus|Stamina_potion(4)|Super_energy(4)|Amylase_crystal|Zamorak_brew(4)|Torstol|Jangerberries|Divine_magic_potion(4)|Antidote++|Magic_roots|Vial_of_blood|Wine_of_zamorak|Antifire_potion|Lava_scale_shard|Divine_battlemage_potion|Battlemage_potion|Saradomin_brew|Mort_myre_fungus|Crushed_nest|Weapon_poison++|Cave_nightshade|Poison_ivy_berries|Extended_antifire|Ancient_brew|Nihil_dust|Divine_bastion_potion(4)|Bastion_potion|Anti-venom|Zulrah's_scales|Menaphite_remedy|Lily_of_the_sands|Super_combat_potion|Ancient_brew|Ancient_essence|Super_antifire_potion|Crushed_superior_dragon_bones|Anti-venom+|Divine_super_combat_potion|Extended_super_antifire|Crushed_superior_dragon_bones";
+      "Gorak_claw_powder|Volcanic_ash|Super_restore|Super_restore(3)|Kebbit_teeth_dust|Nail_beast_nails|Ashes|Unicorn_horn_dust|Eye_of_newt|Vial_of_water|Cadantine|White_berries|Coconut_milk|Toadflax|Yew_roots|Lantadyme|Dragon_scale_dust|Super_attack|Crystal_dust|Super_defence(3)|Super_strength|Ranging_potion|Dwarf_weed|Dragon_scale_dust|Wine_of_zamorak|Weapon_poison+(3)|Cactus_spine|Red_spiders'_eggs|Magic_potion|Potato_cactus|Stamina_potion(3)|Super_energy(3)|Amylase_crystal|Zamorak_brew(3)|Torstol|Jangerberries|Divine_magic_potion(3)|Antidote++|Magic_roots|Vial_of_blood|Wine_of_zamorak|Antifire_potion|Lava_scale_shard|Divine_battlemage_potion|Battlemage_potion|Saradomin_brew|Mort_myre_fungus|Crushed_nest|Weapon_poison++|Cave_nightshade|Poison_ivy_berries|Extended_antifire|Ancient_brew|Nihil_dust|Divine_bastion_potion(3)|Bastion_potion|Anti-venom|Zulrah's_scales|Menaphite_remedy|Lily_of_the_sands|Super_combat_potion|Ancient_brew|Ancient_essence|Super_antifire_potion|Crushed_superior_dragon_bones|Anti-venom+|Divine_super_combat_potion|Extended_super_antifire|Crushed_superior_dragon_bones";
     const query4Encoded = encodeURIComponent(query4);
 
     const fetcherD = await fetch(
@@ -231,7 +232,7 @@ const HerbloreGrid = (props) => {
           Exp
         </span>
         <span onClick={sortAmount}>
-          <img src={craftingLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
+          <img src={pestleNmortar} alt="Amount Logo" className={stl.miniLogo} />{" "}
           Actions
         </span>
         <span onClick={sortCost}>
@@ -269,7 +270,7 @@ const HerbloreGrid = (props) => {
               </span>
 
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
-                {Math.ceil(+props.remainingExp / craft.exp)}
+                {Math.ceil(+props.remainingExp / craft.exp).toLocaleString()}
               </span>
 
               <span

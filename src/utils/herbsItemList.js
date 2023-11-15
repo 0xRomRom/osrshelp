@@ -78,7 +78,7 @@ const HERBSITEMLIST = [
   { "Vial of water": 1, Harralander: 1, "Red spiders' eggs": 1 },
 
   // Guthix balance
-  { "Restore potion(4)": 1, Garlic: 1, "Silver dust": 1 },
+  { "Restore potion(3)": 1, Garlic: 1, "Silver dust": 1 },
 
   // Energy potion
   { "Vial of water": 1, Harralander: 1, "Chocolate dust": 1 },
@@ -121,7 +121,7 @@ const HERBSITEMLIST = [
 
   // Sanfew serum
   {
-    "Super restore(4)": 1,
+    "Super restore(3)": 1,
     "Unicorn horn dust": 1,
     "Nail beast nails": 1,
   },
@@ -136,13 +136,13 @@ const HERBSITEMLIST = [
   { "Vial of water": 1, Lantadyme: 1, "Dragon scale dust": 1 },
 
   // Divine super attack potion
-  { "Super attack(4)": 1 },
+  { "Super attack(3)": 1 },
 
   // Divine super defence potion
-  { "Super defence(4)": 1 },
+  { "Super defence(3)": 1 },
 
   // Divine super strength potion
-  { "Super strength(4)": 1 },
+  { "Super strength(3)": 1 },
 
   // Ranging potion
   { "Vial of water": 1, "Dwarf weed": 1, "Wine of zamorak": 1 },
@@ -151,19 +151,19 @@ const HERBSITEMLIST = [
   { "Coconut milk": 1, "Cactus spine": 1, "Red spiders' eggs": 1 },
 
   // Divine ranging potion
-  { "Ranging potion(4)": 1 },
+  { "Ranging potion(3)": 1 },
 
   // Magic potion
   { "Vial of water": 1, Lantadyme: 1, "Potato cactus": 1 },
 
   // Stamina potion
-  { "Super energy(4)": 1, "Amylase crystal": 1 },
+  { "Super energy(3)": 1, "Amylase crystal": 1 },
 
   // Zamorak brew
   { "Vial of water": 1, Torstol: 1, Jangerberries: 1 },
 
   // Divine magic potion
-  { "Magic potion(4)": 1 },
+  { "Magic potion(3)": 1 },
 
   // Antidote++
   { "Coconut milk": 1, "Irit leaf": 1, "Magic roots": 1 },
@@ -181,45 +181,45 @@ const HERBSITEMLIST = [
   { "Coconut milk": 1, "Poison ivy berries": 1 },
 
   // Extended antifire
-  { "Antifire potion(4)": 1, "Lava scale shard": 1 },
+  { "Antifire potion(3)": 1, "Lava scale shard": 1 },
 
   // Ancient brew
   { "Vial of water": 1, "Dwarf weed": 1, "Nihil dust": 1 },
 
   // Divine bastion potion
-  { "Bastion potion(4)": 1 },
+  { "Bastion potion(3)": 1 },
 
   // Divine battlemage potion
-  { "Battlemage potion(4)": 1 },
+  { "Battlemage potion(3)": 1 },
 
   // Anti-venom
-  { "Antidote++(4)": 1, "Zulrah's scales": 1 },
+  { "Antidote++(3)": 1, "Zulrah's scales": 1 },
 
   // Menaphite remedy
   { "Vial of water": 1, "Dwarf weed": 1, "Lily of the sands": 1 },
 
   // Super combat potion
   {
-    "Super attack(4)": 1,
-    "Super strength(4)": 1,
-    "Super defence(4)": 1,
+    "Super attack(3)": 1,
+    "Super strength(3)": 1,
+    "Super defence(3)": 1,
     Torstol: 1,
   },
 
   // Forgotten brew
-  { "Ancient brew(4)": 1, "Ancient essence": 1 },
+  { "Ancient brew(3)": 1, "Ancient essence": 1 },
 
   // Super antifire potion
-  { "Antifire potion(4)": 1, "Crushed superior dragon bones": 1 },
+  { "Antifire potion(3)": 1, "Crushed superior dragon bones": 1 },
 
   // Anti-venom+
-  { "Anti-venom(4)": 1, Torstol: 1 },
+  { "Anti-venom(3)": 1, Torstol: 1 },
 
   // Divine super combat potion
-  { "Super combat potion(4)": 1 },
+  { "Super combat potion(3)": 1 },
 
   // Extended super antifire
-  { "Super antifire potion(4)": 1, "Lava scale shard": 1 },
+  { "Super antifire potion(3)": 1, "Lava scale shard": 1 },
 ];
 
 export default HERBSITEMLIST;
