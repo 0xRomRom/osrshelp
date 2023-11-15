@@ -1,7 +1,6 @@
 import stl from "./HerbloreGrid.module.css";
 import HERBSLIST from "../../../../../../utils/herbsList";
 import HERBSITEMLIST from "../../../../../../utils/herbsItemList";
-import craftingLogo from "../../../../../../assets/skillicons/Crafting.webp";
 import potion from "../../../../../../assets/random/Potion.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import pestleNmortar from "../../../../../../assets/random/Pestle_and_mortar.webp";

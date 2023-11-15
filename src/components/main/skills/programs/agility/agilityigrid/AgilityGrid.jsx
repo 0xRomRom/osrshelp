@@ -1,5 +1,5 @@
 import stl from "./AgilityGrid.module.css";
-import ORESLIST from "../../../../../../utils/oresList";
+import COURSESLIST from "../../../../../../utils/coursesList";
 import moneyLogo from "../../../../../../assets/icons/Donate.webp";
 import miningLogo from "../../../../../../assets/skillicons/Mining.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
@@ -8,7 +8,7 @@ import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 import { useState, useEffect, useCallback } from "react";
 
 const AgilityGrid = (props) => {
-  const [oresDB, setOresDB] = useState(ORESLIST);
+  const [coursesDB, setCoursesDB] = useState(COURSESLIST);
   const [fetchedOrePrices, setFetchedOrePrices] = useState({});
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
@@ -17,7 +17,7 @@ const AgilityGrid = (props) => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Clay|Rune_essence|Copper_ore|Tin_ore|Limestone|Stardust|Blurite_ore|Barronite_shards|Iron_ore|Daeyalt_ore|Silver_ore|Volcanic_ash|Pure_essence|Coal|Pay-dirt|Sandstone|Dense_essence_block|Uncut_red_topaz|Gold_ore|Volcanic_sulphur|Blasted_ore|Granite|Mithril_ore|Lunar_ore|Daeyalt_shard|Lovakite_ore|Adamantite_ore|Soft_clay|Efh_salt|Ancient_essence|Runite_ore|Amethyst"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Amylase_crystal"
     );
     const result = await fetcher.json();
     console.log(result);
@@ -29,37 +29,26 @@ const AgilityGrid = (props) => {
       priceFetcher();
     }
     if (Object.keys(fetchedOrePrices).length > 0) {
-      let dbref = oresDB;
-      console.log(fetchedOrePrices);
-      console.log(oresDB);
+      const crystalPrice = fetchedOrePrices["Amylase crystal"].price;
+      const packValue = crystalPrice * 100;
+      const pricePerMarkOfGrace = packValue / 8;
+      let dbref = coursesDB;
       dbref.forEach((ore, index) => {
-        const oreName = ore.name;
-        const price = fetchedOrePrices[oreName]?.price || 0;
-        const res = Number(price) ? price : 0;
-        ore.profit = res;
-      });
-      setOresDB(dbref);
-    }
-  }, [fetchedOrePrices, oresDB]);
+        const profitPerCourseHour = pricePerMarkOfGrace * ore.marksPerHour;
 
-  const calcOresToMine = useCallback(
-    (ore) => {
-      const expToGo = props.remainingExp;
-      let result = Math.ceil(expToGo / ore.exp);
-      console.log(result);
-      if (result === Infinity) {
-        result = 0;
-      }
-      return result ? result : 0;
-    },
-    [props.remainingExp]
-  );
+        // ore.price =
+        const price = Number(profitPerCourseHour) ? profitPerCourseHour : 0;
+        ore.hourlyProfit = price;
+      });
+      setCoursesDB(dbref);
+    }
+  }, [fetchedOrePrices, coursesDB, props.remainingExp]);
 
   const filterOres = useCallback(() => {
-    const filteredOres = ORESLIST.filter((ore) =>
+    const filteredOres = COURSESLIST.filter((ore) =>
       ore.name.toLowerCase().includes(props.searchState.toLowerCase())
     );
-    setOresDB([...filteredOres]);
+    setCoursesDB([...filteredOres]);
   }, [props.searchState]);
 
   useEffect(() => {
@@ -68,36 +57,36 @@ const AgilityGrid = (props) => {
 
   const sortOre = () => {
     setMonsterSorted(!monsterSorted);
-    let sorter = [...oresDB];
+    let sorter = [...coursesDB];
     sorter.sort((a, b) =>
       monsterSorted ? a.level - b.level : b.level - a.level
     );
-    setOresDB(sorter);
+    setCoursesDB(sorter);
   };
 
   const sortMembers = () => {
     setMemberSorted(!memberSorted);
-    let sorter = [...oresDB];
+    let sorter = [...coursesDB];
     sorter.sort((a, b) =>
       memberSorted ? a.members - b.members : b.members - a.members
     );
-    setOresDB(sorter);
+    setCoursesDB(sorter);
   };
 
   const sortExp = () => {
     setCombatSorted(!combatSorted);
-    let sorter = [...oresDB];
+    let sorter = [...coursesDB];
     sorter.sort((a, b) => (combatSorted ? a.exp - b.exp : b.exp - a.exp));
-    setOresDB(sorter);
+    setCoursesDB(sorter);
   };
 
   const sortToGo = () => {
     setToGoSorted(!toGoSorted);
-    let sorter = [...oresDB];
+    let sorter = [...coursesDB];
     sorter.sort((a, b) =>
       toGoSorted ? a.profit - b.profit : b.profit - a.profit
     );
-    setOresDB(sorter);
+    setCoursesDB(sorter);
   };
 
   return (
@@ -109,18 +98,19 @@ const AgilityGrid = (props) => {
             alt="Attack Logo"
             className={stl.miniLogo}
           />{" "}
-          Yield
+          Course
         </span>
         <span onClick={sortMembers}>
           <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
-          Member
+          Exp/lap
         </span>
         <span onClick={sortExp}>
-          <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
+          <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} />{" "}
+          Exp/hour
         </span>
         <span onClick={sortToGo}>
           <img src={miningLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
-          Mine
+          Laps/goal
         </span>
         <span onClick={sortToGo}>
           <img src={moneyLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
@@ -128,37 +118,30 @@ const AgilityGrid = (props) => {
         </span>
       </div>
       <div className={stl.resultGrid}>
-        {oresDB.map((ore) => {
-          const oreAmount = calcOresToMine(ore);
+        {coursesDB.map((ore) => {
+          const propsExp = +props.remainingExp ? +props.remainingExp : 0;
+          const totalProfit = Math.ceil(
+            (+props.remainingExp / ore["exp/hour"]) * ore.hourlyProfit
+          );
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <span className={stl.innerSpan}>
-                  <img src={ore.src} alt="Ore" className={stl.minifood} />
                   <span className={stl.lvlSpan}>Lvl {ore.level}</span>
                   {ore.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{ore.members ? "Yes" : "No"}</span>
+              <span className={stl.rowItem}>{ore["exp/lap"]}</span>
               <span className={stl.rowItem}>
-                {+props.multiplier > 0 &&
-                  (ore.exp * (1 + 2.5 / 100)).toFixed(2)}
-                {+props.multiplier === 0 && ore.exp}
+                {ore["exp/hour"].toLocaleString()}
               </span>
 
               <span className={stl.rowItem}>
-                {+props.multiplier > 0 &&
-                  Math.round(oreAmount / (1 + 2.5 / 100)).toLocaleString()}
-                {+props.multiplier === 0 && oreAmount.toLocaleString()}
+                {Math.ceil(propsExp / ore["exp/lap"]).toLocaleString()}
               </span>
 
               <span className={stl.rowItem}>
-                {+props.multiplier === 0 &&
-                  Math.round(ore.profit * oreAmount).toLocaleString()}
-                {+props.multiplier > 0 &&
-                  Math.round(
-                    (ore.profit * oreAmount) / (1 + 2.5 / 100)
-                  ).toLocaleString()}
+                {totalProfit ? totalProfit.toLocaleString() : 0}
               </span>
             </div>
           );

@@ -1,7 +1,7 @@
 import stl from "./AgilityCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import miningIcon from "../../../../../assets/skillicons/Mining.webp";
+import agilityIcon from "../../../../../assets/skillicons/Agility.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -34,14 +34,14 @@ const AgilityCalculator = (props) => {
           className={stl.backArrow}
           onClick={handleMenuSwitch}
         />
-        <img src={miningIcon} alt="Mining Level" className={stl.skillImg} />
-        <span className={stl.skillTitle}>Mining</span>
+        <img src={agilityIcon} alt="Agility Level" className={stl.skillImg} />
+        <span className={stl.skillTitle}>Agility</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["mining"]}
+                Level {props.skills["agility"]}
               </span>
             </div>
 
@@ -49,8 +49,8 @@ const AgilityCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"mining"}
-                  currentLvl={props.skills["mining"]}
+                  skillname={"agility"}
+                  currentLvl={props.skills["agility"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -75,8 +75,8 @@ const AgilityCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"mining"}
-            currentLvl={props.skills["mining"]}
+            skillName={"agility"}
+            currentLvl={props.skills["agility"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}
@@ -88,7 +88,10 @@ const AgilityCalculator = (props) => {
           />
         )}
 
-        <SearchFilter setSearchState={setSearchState} searchType="Search Ore" />
+        <SearchFilter
+          setSearchState={setSearchState}
+          searchType="Search Course"
+        />
       </div>
       <AgilityGrid searchState={searchState} remainingExp={remainingExp} />
     </div>
