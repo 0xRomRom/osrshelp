@@ -65,11 +65,11 @@ const HERBSITEMLIST = [
   // Strength potion
   { "Vial of water": 1, Tarromin: 1, "Limpwurt root": 1 },
 
-  //   // Serum 207
-  //   { "Vial of water": 1, Tarromin: 1, Ashes: 1 },
+  // Serum 207
+  { "Vial of water": 1, Tarromin: 1, Ashes: 1 },
 
-  //   // Guthix rest tea
-  //   { "Cup of hot water": 1, Harralander: 1, "Guam leaf": 2, Marrentill: 1 },
+  // Guthix rest tea
+  { "Cup of hot water": 1, Harralander: 1, "Guam leaf": 2, Marrentill: 1 },
 
   //   // Compost potion
   //   { "Vial of water": 1, Harralander: 1, "Volcanic ash": 1 },
@@ -79,9 +79,6 @@ const HERBSITEMLIST = [
 
   //   // Guthix balance
   //   { "Restore potion": 1, Garlic: 1, "Silver dust": 1 },
-
-  //   // Blamish oil
-  //   { "Vial of water": 1, Harralander: 1, "Blamish snail slime": 1 },
 
   //   // Energy potion
   //   { "Vial of water": 1, Harralander: 1, "Chocolate dust": 1 },
