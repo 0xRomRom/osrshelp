@@ -12,6 +12,8 @@ const HerbloreGrid = (props) => {
   const [filteredCraftDB, setFilteredCraftDB] = useState(HERBSLIST);
   const [craftDB, setCraftDB] = useState(HERBSLIST);
 
+  const [globalPrices, setGlobalPrices] = useState({});
+
   const [craftingPrices, setCraftingPrices] = useState({});
   const [craftingItemPrices, setCraftingItemPrices] = useState({});
 
@@ -22,7 +24,7 @@ const HerbloreGrid = (props) => {
 
   const priceFetcher = async () => {
     // const debuggers = await fetch(
-    //   "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Bird_house"
+    //   "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Anchovyoil"
     // );
     // const res = await debuggers.json();
     // console.log("Res 1", res);
@@ -33,7 +35,7 @@ const HerbloreGrid = (props) => {
     );
     const resultA = await fetcherA.json();
     const fetcherB = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Opal_ring"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Imp_repellent|Attack_potion(4)|Antipoison(4)|Relicym's_balm(4)|Strength_potion(4)|Serum_207|Guthix_rest_tea|Compost_potion|Restore_potion|Guthix_balance|Blamish_oil|Energy_potion|Defence_potion|Agility_potion|Combat_potion|Prayer_potion|Super_attack|Goblin_potion|Superantipoison|Fishing_potion|Super_energy|Shrink-me-quick|Hunter_potion|Super_strength|Magic_essence|Weapon_poison|Super_restore|Sanfew_serum|Super_defence|Antidote+|Antifire_potion|Divine_super_attack_potion|Divine_super_defence_potion|Divine_super_strength_potion|Ranging_potion|Weapon_poison+|Divine_ranging_potion|Magic_potion|Stamina_potion|Zamorak_brew|Divine_magic_potion|Antidote++|Bastion_potion|Battlemage_potion|Saradomin_brew|Weapon_poison++|Extended_antifire|Ancient_brew|Divine_bastion_potion|Divine_battlemage_potion|Anti-venom|Menaphite_remedy|Super_combat_potion|Forgotten_brew|Super_antifire_potion|Anti-venom+|Divine_super_combat_potion|Extended_super_antifire"
     );
     const resultB = await fetcherB.json();
     result1 = { ...resultA, ...resultB };
@@ -43,18 +45,21 @@ const HerbloreGrid = (props) => {
 
     let result2 = {};
     const fetcherC = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Guam_leaf|Marrentill|Tarromin|Harralander|Ranarr_weed|Toadflax|Irit_leaf|Avantoe|Kwuarm|Snapdragon|Cadantine|Lantadyme|Dwarf_weed|Torstol"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Limpwurt_root|Guam_leaf|Marrentill|Tarromin|Harralander|Ranarr_weed|Toadflax|Irit_leaf|Avantoe|Kwuarm|Snapdragon|Cadantine|Lantadyme|Dwarf_weed|Torstol"
     );
     const resultC = await fetcherC.json();
 
     const fetcherD = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Battlestaff"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Unicorn_horn_dust|Eye_of_newt|Vial_of_water|Cadantine|White_berries|Coconut_milk|Toadflax|Yew_roots|Lantadyme|Dragon_scale_dust|Super_attack|Crystal_dust|Super_defence|Super_strength|Ranging_potion|Dwarf_weed|Wine_of_zamorak|Weapon_poison+|Cactus_spine|Red_spiders'_eggs|Magic_potion|Potato_cactus|Stamina_potion|Super_energy|Amylase_crystal|Zamorak_brew|Torstol|Jangerberries|Divine_magic_potion|Antidote++|Magic_roots|Vial_of_blood|Wine_of_zamorak|Antifire_potion|Lava_scale_shard|Divine_battlemage_potion|Battlemage_potion|Saradomin_brew|Crushed_nest|Weapon_poison++|Cave_nightshade|Poison_ivy_berries|Extended_antifire|Ancient_brew|Nihil_dust|Divine_bastion_potion|Bastion_potion|Anti-venom|Zulrah's_scales|Menaphite_remedy|Lily_of_the_sands|Super_combat_potion|Ancient_brew|Ancient_essence|Super_antifire_potion|Crushed_superior_dragon_bones|Anti-venom+|Divine_super_combat_potion|Extended_super_antifire|Crushed_superior_dragon_bones"
     );
     const resultD = await fetcherD.json();
 
     result2 = { ...resultC, ...resultD };
     console.log(result2);
     setCraftingItemPrices(result2);
+    const totals = { ...result1, ...result2 };
+    console.log(totals);
+    setGlobalPrices(totals);
   };
 
   useEffect(() => {
@@ -93,7 +98,6 @@ const HerbloreGrid = (props) => {
   const mapCraftPrices = useCallback(
     (runeData, list = HERBSLIST) => {
       let craftingList = JSON.parse(JSON.stringify(list));
-
       const mapper = runeData.map((item, index) => {
         const itemCount = item.names.length;
         let count = 0;
@@ -102,6 +106,7 @@ const HerbloreGrid = (props) => {
           const itemName = item.names[i];
           // console.log(itemName);
           const itemCounts = item.amounts[i];
+          // console.log(itemCounts);
           const craftPrice = craftingItemPrices[itemName].price * itemCounts;
           count += craftPrice;
           craftingList[index].price = count;
@@ -110,8 +115,14 @@ const HerbloreGrid = (props) => {
       });
 
       let data = mapper[0];
+      console.log(data);
+      console.log(globalPrices);
       data.forEach((item) => {
-        item.price -= craftingPrices[item.name].price;
+        if (globalPrices[item.name].price) {
+          item.price -= globalPrices[item.name].price;
+        } else {
+          item.price -= 0;
+        }
       });
       return data;
     },

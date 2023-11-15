@@ -55,6 +55,182 @@ const HERBSITEMLIST = [
     // Grimy torstol
     Torstol: 1,
   },
+
+  // Attack potion
+  { "Vial of water": 1, "Guam leaf": 1, "Eye of newt": 1 },
+
+  // Antipoison
+  { "Vial of water": 1, Marrentill: 1, "Unicorn horn dust": 1 },
+
+  // Strength potion
+  { "Vial of water": 1, Tarromin: 1, "Limpwurt root": 1 },
+
+  //   // Serum 207
+  //   { "Vial of water": 1, Tarromin: 1, Ashes: 1 },
+
+  //   // Guthix rest tea
+  //   { "Cup of hot water": 1, Harralander: 1, "Guam leaf": 2, Marrentill: 1 },
+
+  //   // Compost potion
+  //   { "Vial of water": 1, Harralander: 1, "Volcanic ash": 1 },
+
+  //   // Restore potion
+  //   { "Vial of water": 1, Harralander: 1, "Red spiders' eggs": 1 },
+
+  //   // Guthix balance
+  //   { "Restore potion": 1, Garlic: 1, "Silver dust": 1 },
+
+  //   // Blamish oil
+  //   { "Vial of water": 1, Harralander: 1, "Blamish snail slime": 1 },
+
+  //   // Energy potion
+  //   { "Vial of water": 1, Harralander: 1, "Chocolate dust": 1 },
+
+  //   // Defence potion
+  //   { "Vial of water": 1, Ranarr_weed: 1, "White berries": 1 },
+
+  //   // Agility potion
+  //   { "Vial of water": 1, Toadflax: 1, "Toad's legs": 1 },
+
+  //   // Combat potion
+  //   { "Vial of water": 1, Harralander: 1, "Goat horn dust": 1 },
+
+  //   // Prayer potion
+  //   { "Vial of water": 1, Ranarr_weed: 1, "Snape grass": 1 },
+
+  //   // Super attack
+  //   { "Vial of water": 1, Irit_leaf: 1, "Eye of newt": 1 },
+
+  //   // Goblin potion
+  //   { "Vial of water": 1, Toadflax: 1, "Pharmakos berries": 1 },
+
+  //   // Superantipoison
+  //   { "Vial of water": 1, Irit_leaf: 1, "Unicorn horn dust": 1 },
+
+  //   // Fishing potion
+  //   { "Vial of water": 1, Avantoe: 1, "Snape grass": 1 },
+
+  //   // Super energy
+  //   { "Vial of water": 1, Avantoe: 1, "Mort myre fungus": 1 },
+
+  //   // Shrink-me-quick
+  //   { "Vial of water": 1, Tarromin: 1, "Shrunk ogleroot": 1 },
+
+  //   // Hunter potion
+  //   { "Vial of water": 1, Avantoe: 1, "Kebbit teeth dust": 1 },
+
+  //   // Super strength
+  //   { "Vial of water": 1, Kwuarm: 1, "Limpwurt root": 1 },
+
+  //   // Magic essence
+  //   { "Vial of water": 1, Star_flower: 1, "Gorak claw powder": 1 },
+
+  //   // Weapon poison
+  //   { "Vial of water": 1, Kwuarm: 1, "Dragon scale dust": 1 },
+
+  //   // Super restore
+  //   { "Vial of water": 1, Snapdragon: 1, "Red spiders' eggs": 1 },
+
+  //   // Sanfew serum
+  //   {
+  //     "Super restore": 1,
+  //     "Unicorn horn dust": 1,
+  //     "Snake weed": 1,
+  //     "Nail beast nails": 1,
+  //   },
+
+  //   // Super defence
+  //   { "Vial of water": 1, Cadantine: 1, "White berries": 1 },
+
+  //   // Antidote+
+  //   { "Coconut milk": 1, Toadflax: 1, "Yew roots": 1 },
+
+  //   // Antifire potion
+  //   { "Vial of water": 1, Lantadyme: 1, "Dragon scale dust": 1 },
+
+  //   // Divine super attack potion
+  //   { "Super attack": 1, "Crystal dust": 1 },
+
+  //   // Divine super defence potion
+  //   { "Super defence": 1, "Crystal dust": 1 },
+
+  //   // Divine super strength potion
+  //   { "Super strength": 1, "Crystal dust": 1 },
+
+  //   // Ranging potion
+  //   { "Vial of water": 1, Dwarf_weed: 1, "Wine of zamorak": 1 },
+
+  //   // Weapon poison+
+  //   { "Coconut milk": 1, "Cactus spine": 1, "Red spiders' eggs": 1 },
+
+  //   // Divine ranging potion
+  //   { "Ranging potion": 1, "Crystal dust": 1 },
+
+  //   // Magic potion
+  //   { "Vial of water": 1, Lantadyme: 1, "Potato cactus": 1 },
+
+  //   // Stamina potion
+  //   { "Super energy": 1, "Amylase crystal": 1 },
+
+  //   // Zamorak brew
+  //   { "Vial of water": 1, Torstol: 1, Jangerberries: 1 },
+
+  //   // Divine magic potion
+  //   { "Magic potion": 1, "Crystal dust": 1 },
+
+  //   // Antidote++
+  //   { "Coconut milk": 1, Irit_leaf: 1, "Magic roots": 1 },
+
+  //   // Bastion potion
+  //   { "Vial of blood": 1, Cadantine: 1, "Wine of zamorak": 1 },
+
+  //   // Battlemage potion
+  //   { "Vial of blood": 1, Cadantine: 1, "Potato cactus": 1 },
+
+  //   // Saradomin brew
+  //   { "Vial of water": 1, Toadflax: 1, "Crushed nest": 1 },
+
+  //   // Weapon poison++
+  //   { "Coconut milk": 1, "Cave nightshade": 1, "Poison ivy berries": 1 },
+
+  //   // Extended antifire
+  //   { "Antifire potion": 1, "Lava scale shard": 1 },
+
+  //   // Ancient brew
+  //   { "Vial of water": 1, Dwarf_weed: 1, "Nihil dust": 1 },
+
+  //   // Divine bastion potion
+  //   { "Bastion potion": 1, "Crystal dust": 1 },
+
+  //   // Divine battlemage potion
+  //   { "Battlemage potion": 1, "Crystal dust": 1 },
+
+  //   // Anti-venom
+  //   { "Antidote++": 1, "Zulrah's scales": 1 },
+
+  //   // Menaphite remedy
+  //   { "Vial of water": 1, Dwarf_weed: 1, "Lily of the sands": 1 },
+
+  //   // Super combat potion
+  //   { "Super attack": 1, "Super strength": 1, "Super defence": 1, Torstol: 1 },
+
+  //   // Forgotten brew
+  //   { "Ancient brew": 1, "Ancient essence": 1 },
+
+  //   // Super antifire potion
+  //   { "Antifire potion": 1, "Crushed superior dragon bones": 1 },
+
+  //   // Anti-venom+
+  //   { "Anti-venom": 1, Torstol: 1 },
+
+  //   // Divine super combat potion
+  //   { "Super combat potion": 1, "Crystal dust": 1 },
+
+  //   // Extended super antifire
+  //   { "Super antifire potion": 1, "Lava scale shard": 1 },
+
+  //   // Extended antifire
+  //   { "Crushed superior dragon bones": 1 },
 ];
 
 export default HERBSITEMLIST;
