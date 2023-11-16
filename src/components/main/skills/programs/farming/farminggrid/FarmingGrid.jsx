@@ -8,8 +8,8 @@ import rsgp from "../../../../../../assets/icons/Donate.webp";
 import { useCallback, useEffect, useState } from "react";
 
 const FarmingGrid = (props) => {
-  const [filteredCraftDB, setFilteredCraftDB] = useState(FARMINGLIST);
-  const [craftDB, setCraftDB] = useState(FARMINGLIST);
+  const [filteredFarmDB, setFilteredFarmDB] = useState(FARMINGLIST);
+  const [farmDB, setFarmDB] = useState(FARMINGLIST);
 
   const [craftingPrices, setCraftingPrices] = useState({});
   const [craftingItemPrices, setCraftingItemPrices] = useState({});
@@ -30,7 +30,7 @@ const FarmingGrid = (props) => {
 
     let result1 = {};
     const fetcherA = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato|Onion|Cabbage|Tomato|Sweetcorn|Strawberry|Watermelon|Snape_grass"
     );
     const resultA = await fetcherA.json();
     const fetcherB = await fetch(
@@ -43,7 +43,7 @@ const FarmingGrid = (props) => {
 
     let result2 = {};
     const fetcherC = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato_seed"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato_seed|Onion_seed|Cabbage_seed|Tomato_seed|Sweetcorn_seed|Strawberry_seed|Watermelon_seed|Snape_grass_seed"
     );
     const resultC = await fetcherC.json();
 
@@ -65,15 +65,15 @@ const FarmingGrid = (props) => {
 
   const filterSpells = useCallback(() => {
     if (props.searchState) {
-      const filteredSpells = craftDB.filter((spell) =>
+      const filteredSpells = farmDB.filter((spell) =>
         spell.name.toLowerCase().includes(props.searchState.toLowerCase())
       );
-      setFilteredCraftDB(filteredSpells);
+      setFilteredFarmDB(filteredSpells);
     } else {
       // If search state is empty, reset to the original data
-      setFilteredCraftDB(craftDB);
+      setFilteredFarmDB(farmDB);
     }
-  }, [props.searchState, craftDB]);
+  }, [props.searchState, farmDB]);
 
   useEffect(() => {
     filterSpells();
@@ -91,27 +91,35 @@ const FarmingGrid = (props) => {
   };
 
   const mapCraftPrices = useCallback(
-    (runeData, list = FARMINGLIST) => {
-      let craftingList = JSON.parse(JSON.stringify(list));
+    (farmData, list = FARMINGLIST) => {
+      let farmingList = JSON.parse(JSON.stringify(list));
+      let yieldMultiplier = 0;
+      let seedMultiplier = 0;
 
-      const mapper = runeData.map((item, index) => {
+      const mapper = farmData.map((item, index) => {
         const itemCount = item.names.length;
+        const patchType = farmingList[index].patch;
+        console.log(patchType);
         let count = 0;
+
+        if (patchType === "allotment") {
+          yieldMultiplier = 14;
+          seedMultiplier = 3;
+        }
 
         for (let i = 0; i < itemCount; i++) {
           const itemName = item.names[i];
-          // console.log(itemName);
-          const itemCounts = item.amounts[i];
-          const craftPrice = globalPrices[itemName].price * itemCounts;
-          count += craftPrice;
-          craftingList[index].price = count;
+          console.log(itemName);
+          const farmPrice = globalPrices[itemName].price * seedMultiplier;
+          count += farmPrice;
+          farmingList[index].price = count;
         }
-        return craftingList;
+        return farmingList;
       });
 
       let data = mapper[0];
       data.forEach((item) => {
-        item.price -= globalPrices[item.name].price;
+        item.price -= globalPrices[item.name].price * yieldMultiplier;
       });
       return data;
     },
@@ -132,8 +140,8 @@ const FarmingGrid = (props) => {
       const updatedSpells = mapCraftPrices(runeArray);
 
       // Update spells to go
-      setCraftDB(updatedSpells);
-      setFilteredCraftDB(updatedSpells);
+      setFarmDB(updatedSpells);
+      setFilteredFarmDB(updatedSpells);
     }
   }, [craftingPrices, mapCraftPrices, craftingItemPrices, globalPrices]);
 
@@ -143,34 +151,34 @@ const FarmingGrid = (props) => {
 
   const sortBones = () => {
     setBonesSorted(!bonesSorted);
-    let sorter = [...filteredCraftDB];
+    let sorter = [...filteredFarmDB];
     sorter.sort((a, b) =>
       bonesSorted ? a.level - b.level : b.level - a.level
     );
-    setCraftDB(sorter);
+    setFarmDB(sorter);
   };
 
   const sortAmount = () => {
     setAmountSorted(!amountSorted);
-    let sorter = [...filteredCraftDB];
+    let sorter = [...filteredFarmDB];
     sorter.sort((a, b) =>
       amountSorted
         ? +props.remainingExp / a.exp - +props.remainingExp / b.exp
         : +props.remainingExp / b.exp - +props.remainingExp / a.exp
     );
-    setCraftDB(sorter);
+    setFarmDB(sorter);
   };
 
   const sortExp = () => {
     setXPSorted(!xpSorted);
-    let sorter = [...filteredCraftDB];
+    let sorter = [...filteredFarmDB];
     sorter.sort((a, b) => (xpSorted ? a.exp - b.exp : b.exp - a.exp));
-    setCraftDB(sorter);
+    setFarmDB(sorter);
   };
 
   const sortCost = () => {
     setCostSorted(!costSorted);
-    let sorter = [...filteredCraftDB];
+    let sorter = [...filteredFarmDB];
     console.log(sorter);
     sorter.sort((a, b) =>
       costSorted
@@ -179,7 +187,7 @@ const FarmingGrid = (props) => {
         : b.price * (+props.remainingExp / b.exp) -
           a.price * (+props.remainingExp / a.exp)
     );
-    setCraftDB(sorter);
+    setFarmDB(sorter);
   };
 
   const calcCraftActions = useCallback(
@@ -216,7 +224,7 @@ const FarmingGrid = (props) => {
       </div>
 
       <div className={stl.resultGrid}>
-        {filteredCraftDB.map((craft) => {
+        {filteredFarmDB.map((craft) => {
           const craftAmount = calcCraftActions(craft);
           return (
             <div className={stl.row} key={craft.name}>
@@ -228,7 +236,7 @@ const FarmingGrid = (props) => {
                 />
                 <span className={stl.bonename}>
                   <span className={stl.magelvl}>Lvl {craft.level}</span>{" "}
-                  {craft.name}
+                  {craft.displayName}
                 </span>
               </span>
 
