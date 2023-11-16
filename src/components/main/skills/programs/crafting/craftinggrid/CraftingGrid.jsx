@@ -36,7 +36,6 @@ const CraftingGrid = (props) => {
     );
     const resultB = await fetcherB.json();
     result1 = { ...resultA, ...resultB };
-    console.log(result1);
 
     setCraftingPrices(result1);
 
@@ -52,7 +51,6 @@ const CraftingGrid = (props) => {
     const resultD = await fetcherD.json();
 
     result2 = { ...resultC, ...resultD };
-    console.log(result2);
     setCraftingItemPrices(result2);
   };
 

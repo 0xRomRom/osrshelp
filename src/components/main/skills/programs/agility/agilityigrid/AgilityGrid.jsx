@@ -1,7 +1,6 @@
 import stl from "./AgilityGrid.module.css";
 import COURSESLIST from "../../../../../../utils/coursesList";
 import moneyLogo from "../../../../../../assets/icons/Donate.webp";
-import miningLogo from "../../../../../../assets/skillicons/Mining.webp";
 import agilityLogo from "../../../../../../assets/skillicons/Agility.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";

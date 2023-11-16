@@ -20,7 +20,6 @@ const MiningGrid = (props) => {
       "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Clay|Rune_essence|Copper_ore|Tin_ore|Limestone|Stardust|Blurite_ore|Barronite_shards|Iron_ore|Daeyalt_ore|Silver_ore|Volcanic_ash|Pure_essence|Coal|Pay-dirt|Sandstone|Dense_essence_block|Uncut_red_topaz|Gold_ore|Volcanic_sulphur|Blasted_ore|Granite|Mithril_ore|Lunar_ore|Daeyalt_shard|Lovakite_ore|Adamantite_ore|Soft_clay|Efh_salt|Ancient_essence|Runite_ore|Amethyst"
     );
     const result = await fetcher.json();
-    console.log(result);
     setFetchedOrePrices(result);
   };
 
@@ -30,8 +29,6 @@ const MiningGrid = (props) => {
     }
     if (Object.keys(fetchedOrePrices).length > 0) {
       let dbref = oresDB;
-      console.log(fetchedOrePrices);
-      console.log(oresDB);
       dbref.forEach((ore, index) => {
         const oreName = ore.name;
         const price = fetchedOrePrices[oreName]?.price || 0;
@@ -46,7 +43,6 @@ const MiningGrid = (props) => {
     (ore) => {
       const expToGo = props.remainingExp;
       let result = Math.ceil(expToGo / ore.exp);
-      console.log(result);
       if (result === Infinity) {
         result = 0;
       }

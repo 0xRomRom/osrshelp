@@ -23,15 +23,6 @@ const HerbloreGrid = (props) => {
   const [costSorted, setCostSorted] = useState(false);
 
   const priceFetcher = async () => {
-    const url = "Weapon_poison(++)";
-    const encodedUrl = encodeURIComponent(url);
-    const debuggers = await fetch(
-      `https://api.weirdgloop.org/exchange/history/osrs/latest?name=${encodedUrl}`
-    );
-    const res = await debuggers.json();
-    console.log("Res 1", res);
-
-    //
     let result1 = {};
     const query1 =
       "Grimy_guam_leaf|Grimy_marrentill|Grimy_tarromin|Grimy_harralander|Grimy_ranarr_weed|Grimy_toadflax|Grimy_irit_leaf|Grimy_avantoe|Grimy_kwuarm|Grimy_snapdragon|Grimy_cadantine|Grimy_lantadyme|Grimy_dwarf_weed|Grimy_torstol";
@@ -50,7 +41,6 @@ const HerbloreGrid = (props) => {
     );
     const resultB = await fetcherB.json();
     result1 = { ...resultA, ...resultB };
-    console.log(result1);
 
     setCraftingPrices(result1);
     //
@@ -74,10 +64,8 @@ const HerbloreGrid = (props) => {
     const resultD = await fetcherD.json();
 
     result2 = { ...resultC, ...resultD };
-    console.log(result2);
     setCraftingItemPrices(result2);
     const totals = { ...result1, ...result2 };
-    console.log(totals);
     setGlobalPrices(totals);
   };
 
@@ -123,9 +111,7 @@ const HerbloreGrid = (props) => {
 
         for (let i = 0; i < itemCount; i++) {
           const itemName = item.names[i];
-          // console.log(itemName);
           const itemCounts = item.amounts[i];
-          // console.log(itemCounts);
           const craftPrice = globalPrices[itemName].price * itemCounts;
           count += craftPrice;
           craftingList[index].price = count;

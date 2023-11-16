@@ -50,8 +50,6 @@ const FletchingGrid = (props) => {
   };
 
   useEffect(() => {
-    console.log(props.activeFilter);
-
     if (props.activeFilter === "All") {
       setFilteredfletchDB(fletchDB);
     } else {

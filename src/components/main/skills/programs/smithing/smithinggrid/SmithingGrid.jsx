@@ -37,7 +37,6 @@ const SmithingGrid = (props) => {
     );
     const resultB = await fetcherB.json();
     result1 = { ...resultA, ...resultB };
-    console.log(result1);
 
     setCraftingPrices(result1);
 
@@ -53,7 +52,6 @@ const SmithingGrid = (props) => {
     const resultD = await fetcherD.json();
 
     result2 = { ...resultC, ...resultD };
-    console.log(result2);
     setCraftingItemPrices(result2);
   };
 
@@ -168,7 +166,6 @@ const SmithingGrid = (props) => {
   const sortCost = () => {
     setCostSorted(!costSorted);
     let sorter = [...filteredCraftDB];
-    console.log(sorter);
     sorter.sort((a, b) =>
       costSorted
         ? a.price * (+props.remainingExp / a.exp) -

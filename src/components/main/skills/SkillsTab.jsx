@@ -19,7 +19,7 @@ import magicIcon from "../../../assets/skillicons/Magic.webp";
 import fletchingIcon from "../../../assets/skillicons/Fletching.webp";
 import woodcuttingIcon from "../../../assets/skillicons/Woodcutting.webp";
 import runecraftingIcon from "../../../assets/skillicons/Runecraft.webp";
-import slayerIcon from "../../../assets/skillicons/Slayer.png";
+// import slayerIcon from "../../../assets/skillicons/Slayer.png";
 import farmingIcon from "../../../assets/skillicons/Farming.webp";
 import constructionIcon from "../../../assets/skillicons/Construction.webp";
 import hunterIcon from "../../../assets/skillicons/Hunter.webp";
@@ -447,13 +447,13 @@ const SkillsTab = (props) => {
               />
               <span className={stl.skillName}>Thieving</span>
             </div>
-            <div
+            {/* <div
               className={`${stl.skill} ${stl.slayer}`}
               onClick={() => handleTabOpen("Slayer")}
             >
               <img src={slayerIcon} alt="Slayer Icon" className={stl.iconImg} />
               <span className={stl.skillName}>Slayer</span>
-            </div>
+            </div> */}
             <div
               className={`${stl.skill} ${stl.farming}`}
               onClick={() => handleTabOpen("Farming")}

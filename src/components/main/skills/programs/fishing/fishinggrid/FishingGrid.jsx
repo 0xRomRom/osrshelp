@@ -21,7 +21,6 @@ const FishingGrid = (props) => {
       "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Raw_shrimps|Raw_sardine|Raw_herring|Raw_anchovies|Raw_mackerel|Raw_trout|Raw_cod|Raw_pike|Raw_slimy_eel|Raw_salmon|Raw_tuna|Raw_rainbow_fish|Raw_cave_eel|Raw_lobster|Raw_bass|Raw_swordfish|Raw_monkfish|Raw_karambwan|Raw_shark|Raw_sea_turtle|Raw_manta_ray|Raw_anglerfish|Raw_dark_crab"
     );
     const result = await fetcher.json();
-    console.log(result);
     setFetchedFishPrices(result);
   };
 
@@ -31,8 +30,6 @@ const FishingGrid = (props) => {
     }
     if (Object.keys(fetchedFishPrices).length > 0) {
       let dbref = foodDB;
-      console.log(fetchedFishPrices);
-      console.log(foodDB);
       dbref.forEach((fish, index) => {
         const fishname = "Raw " + fish.food.toLowerCase();
         const price = fetchedFishPrices[fishname]?.price || 0;

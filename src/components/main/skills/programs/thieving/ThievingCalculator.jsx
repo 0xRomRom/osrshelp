@@ -13,7 +13,6 @@ import SearchFilter from "../searchfilter/SearchFilter";
 const ThievingCalculator = (props) => {
   const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
-  const [multiplier, setMultiplier] = useState(0);
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -94,11 +93,7 @@ const ThievingCalculator = (props) => {
           searchType="Search Action"
         />
       </div>
-      <ThievingGrid
-        remainingExp={remainingExp}
-        multiplier={multiplier}
-        searchState={searchState}
-      />
+      <ThievingGrid remainingExp={remainingExp} searchState={searchState} />
     </div>
   );
 };
