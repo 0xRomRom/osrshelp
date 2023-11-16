@@ -473,7 +473,7 @@ const SPELLBOOKDATA = [
     exp: 60,
     price: 0,
     toGo: 0,
-    src: "spells/Dark_Lure.webp",
+    src: "spells/Dark_Lure.png",
     spellbook: "Arceuus",
   },
   {

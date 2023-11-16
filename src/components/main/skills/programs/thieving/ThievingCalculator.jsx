@@ -91,7 +91,7 @@ const ThievingCalculator = (props) => {
 
         <SearchFilter
           setSearchState={setSearchState}
-          searchType="Search Food"
+          searchType="Search Action"
         />
       </div>
       <ThievingGrid
