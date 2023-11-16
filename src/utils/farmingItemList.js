@@ -163,6 +163,109 @@ const FARMINGITEMLIST = [
     //Poison ivy berries
     "Poison ivy seed": 1,
   },
+  {
+    //Oak tree
+    Acorn: 1,
+    "Tomatoes(5)": 1,
+  },
+  {
+    //Willow tree
+    "Willow seed": 1,
+    "Apples(5)": 1,
+  },
+  {
+    //Maple tree
+    "Maple seed": 1,
+    "Oranges(5)": 1,
+  },
+  {
+    //Yew tree
+    "Yew seed": 1,
+    "Cactus spine": 10,
+  },
+  {
+    //Magic tree
+    "Magic seed": 1,
+    Coconut: 25,
+  },
+  {
+    //Apple tree
+    "Apple tree seed": 1,
+    Sweetcorn: 9,
+  },
+  {
+    //Banana tree
+    "Banana tree seed": 1,
+    "Apples(5)": 4,
+  },
+  {
+    //Orange tree
+    "Orange tree seed": 1,
+    "Strawberries(5)": 3,
+  },
+  {
+    //Curry tree
+    "Curry tree seed": 1,
+    "Bananas(5)": 3,
+  },
+  {
+    //Pineapple tree
+    "Pineapple seed": 1,
+    Watermelon: 10,
+  },
+  {
+    //Papaya tree
+    "Papaya tree seed": 1,
+    Pineapple: 10,
+  },
+  {
+    //Palm tree
+    "Palm tree seed": 1,
+    "Papaya fruit": 15,
+  },
+  {
+    //Dragonfruit tree
+    "Dragonfruit tree seed": 1,
+    Coconut: 15,
+  },
+  {
+    //Hespori
+    Coconut: 0,
+  },
+  {
+    //Teak tree
+    "Teak seed": 1,
+    "Limpwurt root": 15,
+  },
+  {
+    //Mahogany tree
+    "Mahogany seed": 1,
+    "Yanillian hops": 25,
+  },
+  {
+    //Calquat tree
+    "Calquat tree seed": 1,
+    "Poison ivy berries": 8,
+  },
+  {
+    //Crystal tree
+    "Poison ivy berries": 0,
+  },
+  {
+    //Spirit tree
+    "Monkey nuts": 5,
+    "Monkey bar": 1,
+  },
+  {
+    //Celastrus tree
+    "Celastrus seed": 1,
+    "Potato cactus": 8,
+  },
+  {
+    //Redwood tree
+    "Redwood tree seed": 1,
+    Dragonfruit: 6,
+  },
 ];
 
 export default FARMINGITEMLIST;

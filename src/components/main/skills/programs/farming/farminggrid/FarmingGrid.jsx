@@ -34,7 +34,7 @@ const FarmingGrid = (props) => {
     );
     const resultA = await fetcherA.json();
     const fetcherB = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Grimy_guam_leaf|Grimy_marrentill|Grimy_tarromin|Grimy_harralander|Grimy_ranarr_weed|Grimy_toadflax|Grimy_irit_leaf|Grimy_avantoe|Grimy_kwuarm|Grimy_snapdragon|Grimy_cadantine|Grimy_lantadyme|Grimy_dwarf_weed|Grimy_torstol"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Grimy_guam_leaf|Grimy_marrentill|Grimy_tarromin|Grimy_harralander|Grimy_ranarr_weed|Grimy_toadflax|Grimy_irit_leaf|Grimy_avantoe|Grimy_kwuarm|Grimy_snapdragon|Grimy_cadantine|Grimy_lantadyme|Grimy_dwarf_weed|Grimy_torstol|Yew_seed|Magic_seed|Apple_tree_seed|Banana_tree_seed|Orange_tree_seed|Curry_tree_seed|Pineapple_seed|Papaya_tree_seed|Palm_tree_seed|Dragonfruit_tree_seed|Celastrus_seed|Potato_cactus"
     );
     const resultB = await fetcherB.json();
     result1 = { ...resultA, ...resultB };
@@ -43,16 +43,79 @@ const FarmingGrid = (props) => {
 
     let result2 = {};
     const fetcherC = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato_seed|Onion_seed|Cabbage_seed|Tomato_seed|Sweetcorn_seed|Strawberry_seed|Watermelon_seed|Snape_grass_seed|Marigold_seed|Nasturtium_seed|Rosemary_seed|Woad_seed|Limpwurt_seed|White_lily_seed|Barley_seed|Hammerstone_seed|Asgarnian_seed|Jute_seed|Yanillian_seed|Krandorian_seed|Wildblood_seed"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato_seed|Onion_seed|Cabbage_seed|Tomato_seed|Sweetcorn_seed|Strawberry_seed|Watermelon_seed|Snape_grass_seed|Marigold_seed|Nasturtium_seed|Rosemary_seed|Woad_seed|Limpwurt_seed|White_lily_seed|Barley_seed|Hammerstone_seed|Asgarnian_seed|Jute_seed|Yanillian_seed|Krandorian_seed|Wildblood_seed|Maple_seed|Oranges(5)|Yew_tree|Cactus_spine|Coconut|Bananas(5)|Mahogany_seed|Monkey_nuts|Monkey_bar"
     );
     const resultC = await fetcherC.json();
 
     const fetcherD = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Guam_seed|Marrentill_seed|Tarromin_seed|Harralander_seed|Ranarr_seed|Toadflax_seed|Irit_seed|Avantoe_seed|Kwuarm_seed|Snapdragon_seed|Cadantine_seed|Lantadyme_seed|Dwarf_weed_seed|Torstol_seed|Redberry_seed|Cadavaberry_seed|Dwellberry_seed|Jangerberry_seed|Whiteberry_seed|Poison_ivy_seed"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Guam_seed|Marrentill_seed|Tarromin_seed|Harralander_seed|Ranarr_seed|Toadflax_seed|Irit_seed|Avantoe_seed|Kwuarm_seed|Snapdragon_seed|Cadantine_seed|Lantadyme_seed|Dwarf_weed_seed|Torstol_seed|Redberry_seed|Cadavaberry_seed|Dwellberry_seed|Jangerberry_seed|Whiteberry_seed|Poison_ivy_seed|Acorn|Tomatoes(5)|Willow_seed|Apples(5)|Sweetcorn|Strawberries(5)|Wateremelon|Pineapple|Papaya_fruit|Teak_seed|Calquat_tree_seed|Poison_ivy_berries|Redwood_tree_seed|Dragonfruit"
     );
     const resultD = await fetcherD.json();
 
     result2 = { ...resultC, ...resultD };
+    result2["Oak tree"] = {
+      price: 0,
+    };
+    result2["Willow tree"] = {
+      price: 0,
+    };
+    result2["Maple tree"] = {
+      price: 0,
+    };
+    result2["Yew tree"] = {
+      price: 0,
+    };
+    result2["Magic tree"] = {
+      price: 0,
+    };
+    result2["Apple tree"] = {
+      price: 0,
+    };
+    result2["Banana tree"] = {
+      price: 0,
+    };
+    result2["Orange tree"] = {
+      price: 0,
+    };
+    result2["Curry tree"] = {
+      price: 0,
+    };
+    result2["Pineapple tree"] = {
+      price: 0,
+    };
+    result2["Papaya tree"] = {
+      price: 0,
+    };
+    result2["Palm tree"] = {
+      price: 0,
+    };
+    result2["Dragonfruit tree"] = {
+      price: 0,
+    };
+    result2["Hespori"] = {
+      price: 0,
+    };
+    result2["Teak tree"] = {
+      price: 0,
+    };
+    result2["Mahogany tree"] = {
+      price: 0,
+    };
+    result2["Calquat tree"] = {
+      price: 0,
+    };
+    result2["Crystal tree"] = {
+      price: 0,
+    };
+    result2["Spirit tree"] = {
+      price: 0,
+    };
+    result2["Celastrus tree"] = {
+      price: 0,
+    };
+    result2["Redwood tree"] = {
+      price: 0,
+    };
     setCraftingItemPrices(result2);
     setGlobalPrices({ ...result1, ...result2 });
   };
@@ -104,7 +167,6 @@ const FarmingGrid = (props) => {
         for (let i = 0; i < itemCount; i++) {
           const itemName = item.names[i];
           const itemAmount = item.amounts[i];
-          console.log(itemName);
           const farmPrice = globalPrices[itemName].price * itemAmount;
           console.log(farmPrice);
           count += farmPrice;
@@ -125,6 +187,8 @@ const FarmingGrid = (props) => {
           yieldMultiplier = 1;
         } else if (item.patch === "bushes") {
           yieldMultiplier = 13;
+        } else if (item.patch === "trees") {
+          yieldMultiplier = 1;
         }
 
         item.price -= globalPrices[item.name].price * yieldMultiplier;
@@ -250,9 +314,7 @@ const FarmingGrid = (props) => {
               </span>
 
               <span className={`${stl.rowItem} ${stl.prayerRow}`}>
-                {+props.multiplier > 0
-                  ? craft.exp * (+props.multiplier / 100)
-                  : craft.exp}
+                {craft.exp.toLocaleString()}
                 <span className={stl.gpperxp}>
                   {craft.price / craft.exp > 0
                     ? "-" + Math.abs(craft.price / craft.exp).toFixed(1)
@@ -262,7 +324,7 @@ const FarmingGrid = (props) => {
               </span>
 
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
-                {Math.ceil(+props.remainingExp / craft.exp)}
+                {Math.ceil(+props.remainingExp / craft.exp).toLocaleString()}
               </span>
 
               <span
