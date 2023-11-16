@@ -101,29 +101,12 @@ const FarmingGrid = (props) => {
         console.log(patchType);
         let count = 0;
 
-        if (patchType === "allotment") {
-          yieldMultiplier = 14;
-        }
-
-        if (patchType === "flower") {
-          yieldMultiplier = 1;
-        }
-
-        if (patchType === "herbs") {
-          yieldMultiplier = 7;
-        }
-        if (patchType === "hops") {
-          yieldMultiplier = 1;
-        }
-        if (patchType === "bushes") {
-          yieldMultiplier = 13;
-        }
-
         for (let i = 0; i < itemCount; i++) {
           const itemName = item.names[i];
           const itemAmount = item.amounts[i];
           console.log(itemName);
           const farmPrice = globalPrices[itemName].price * itemAmount;
+          console.log(farmPrice);
           count += farmPrice;
           farmingList[index].price = count;
         }
@@ -132,7 +115,20 @@ const FarmingGrid = (props) => {
 
       let data = mapper[0];
       data.forEach((item) => {
+        if (item.patch === "allotment") {
+          yieldMultiplier = 14;
+        } else if (item.patch === "flower") {
+          yieldMultiplier = 1;
+        } else if (item.patch === "herbs") {
+          yieldMultiplier = 7;
+        } else if (item.patch === "hops") {
+          yieldMultiplier = 1;
+        } else if (item.patch === "bushes") {
+          yieldMultiplier = 13;
+        }
+
         item.price -= globalPrices[item.name].price * yieldMultiplier;
+        yieldMultiplier = 0;
       });
       return data;
     },
