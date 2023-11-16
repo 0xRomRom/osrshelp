@@ -34,7 +34,7 @@ const FarmingGrid = (props) => {
     );
     const resultA = await fetcherA.json();
     const fetcherB = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Opal_ring"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Grimy_guam_leaf|Grimy_marrentill|Grimy_tarromin|Grimy_harralander|Grimy_ranarr_weed|Grimy_toadflax|Grimy_irit_leaf|Grimy_avantoe|Grimy_kwuarm|Grimy_snapdragon|Grimy_cadantine|Grimy_lantadyme|Grimy_dwarf_weed|Grimy_torstol"
     );
     const resultB = await fetcherB.json();
     result1 = { ...resultA, ...resultB };
@@ -48,7 +48,7 @@ const FarmingGrid = (props) => {
     const resultC = await fetcherC.json();
 
     const fetcherD = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Battlestaff"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Guam_seed|Marrentill_seed|Tarromin_seed|Harralander_seed|Ranarr_seed|Toadflax_seed|Irit_seed|Avantoe_seed|Kwuarm_seed|Snapdragon_seed|Cadantine_seed|Lantadyme_seed|Dwarf_weed_seed|Torstol_seed"
     );
     const resultD = await fetcherD.json();
 
@@ -107,6 +107,11 @@ const FarmingGrid = (props) => {
 
         if (patchType === "flower") {
           yieldMultiplier = 1;
+          console.log(patchType);
+        }
+
+        if (patchType === "herbs") {
+          yieldMultiplier = 7;
           console.log(patchType);
         }
 
