@@ -17,7 +17,7 @@ const AgilityGrid = (props) => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Amylase_crystal"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Amylase_crystal|Toadflax"
     );
     const result = await fetcher.json();
     console.log(result);
@@ -39,10 +39,42 @@ const AgilityGrid = (props) => {
         // ore.price =
         const price = Number(profitPerCourseHour) ? profitPerCourseHour : 0;
         ore.hourlyProfit = price;
+        if (ore.name === "Brimhaven Agility Arena") {
+          // console.log(fetchedOrePrices["Toadflax"].price * 20);
+          ore.hourlyProfit = fetchedOrePrices["Toadflax"].price * 20;
+        }
+        if (ore.name === "Agility Pyramid") {
+          // console.log(fetchedOrePrices["Toadflax"].price * 20);
+          ore.hourlyProfit = 260000;
+        }
+        if (ore.name === "Hallowed Sepulchre") {
+          // console.log(fetchedOrePrices["Toadflax"].price * 20);
+          if (props.currentLvl >= 52 && props.currentLvl <= 62) {
+            ore["exp/hour"] = 36000;
+          }
+          if (props.currentLvl >= 62 && props.currentLvl <= 71) {
+            ore["exp/hour"] = 348000;
+          }
+          if (props.currentLvl >= 72 && props.currentLvl <= 81) {
+            ore["exp/hour"] = 55000;
+          }
+          if (props.currentLvl >= 82 && props.currentLvl <= 91) {
+            ore["exp/hour"] = 66000;
+          }
+          if (props.currentLvl >= 92 && props.currentLvl <= 99) {
+            ore["exp/hour"] = 75000;
+          }
+        }
       });
       setCoursesDB(dbref);
     }
-  }, [fetchedOrePrices, coursesDB, props.remainingExp]);
+  }, [
+    fetchedOrePrices,
+    coursesDB,
+    props.remainingExp,
+    props.currentLevel,
+    props,
+  ]);
 
   const filterOres = useCallback(() => {
     const filteredOres = COURSESLIST.filter((ore) =>

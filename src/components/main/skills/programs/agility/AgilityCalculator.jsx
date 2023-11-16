@@ -93,7 +93,11 @@ const AgilityCalculator = (props) => {
           searchType="Search Course"
         />
       </div>
-      <AgilityGrid searchState={searchState} remainingExp={remainingExp} />
+      <AgilityGrid
+        searchState={searchState}
+        remainingExp={remainingExp}
+        currentLvl={arePropsDefined ? props.skills["agility"] : 1}
+      />
     </div>
   );
 };
