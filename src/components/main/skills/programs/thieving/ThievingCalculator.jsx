@@ -1,7 +1,7 @@
 import stl from "./ThievingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import woodcuttingIcon from "../../../../../assets/skillicons/Woodcutting.webp";
+import thievingIcon from "../../../../../assets/skillicons/Thieving.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -35,18 +35,14 @@ const ThievingCalculator = (props) => {
           className={stl.backArrow}
           onClick={handleMenuSwitch}
         />
-        <img
-          src={woodcuttingIcon}
-          alt="Woodcutting Level"
-          className={stl.skillImg}
-        />
+        <img src={thievingIcon} alt="Thieving Level" className={stl.skillImg} />
         <span className={stl.skillTitle}>Thieving</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["woodcutting"]}
+                Level {props.skills["thieving"]}
               </span>
             </div>
 
@@ -54,8 +50,8 @@ const ThievingCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"woodcutting"}
-                  currentLvl={props.skills["woodcutting"]}
+                  skillname={"thieving"}
+                  currentLvl={props.skills["thieving"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -80,8 +76,8 @@ const ThievingCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"woodcutting"}
-            currentLvl={props.skills["woodcutting"]}
+            skillName={"thieving"}
+            currentLvl={props.skills["thieving"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}

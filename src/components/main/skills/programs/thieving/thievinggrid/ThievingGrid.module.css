@@ -19,7 +19,7 @@
 }
 
 .typeRow > span {
-  width: 25%;
+  width: 33%;
   text-align: center;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .rowItem {
-  width: 25%;
+  width: 33%;
   color: white;
   text-align: center;
 }
