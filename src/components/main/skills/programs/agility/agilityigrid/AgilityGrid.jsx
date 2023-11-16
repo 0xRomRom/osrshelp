@@ -2,6 +2,7 @@ import stl from "./AgilityGrid.module.css";
 import COURSESLIST from "../../../../../../utils/coursesList";
 import moneyLogo from "../../../../../../assets/icons/Donate.webp";
 import miningLogo from "../../../../../../assets/skillicons/Mining.webp";
+import agilityLogo from "../../../../../../assets/skillicons/Agility.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
@@ -14,13 +15,13 @@ const AgilityGrid = (props) => {
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
   const [toGoSorted, setToGoSorted] = useState(false);
+  const [priceSorted, setPriceSorted] = useState(false);
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
       "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Amylase_crystal|Toadflax"
     );
     const result = await fetcher.json();
-    console.log(result);
     setFetchedOrePrices(result);
   };
 
@@ -34,21 +35,20 @@ const AgilityGrid = (props) => {
       const pricePerMarkOfGrace = packValue / 8;
       let dbref = coursesDB;
       dbref.forEach((ore, index) => {
-        const profitPerCourseHour = pricePerMarkOfGrace * ore.marksPerHour;
+        const profitPerCourseHour = (
+          pricePerMarkOfGrace * ore.marksPerHour
+        ).toFixed(0);
 
         // ore.price =
         const price = Number(profitPerCourseHour) ? profitPerCourseHour : 0;
         ore.hourlyProfit = price;
         if (ore.name === "Brimhaven Agility Arena") {
-          // console.log(fetchedOrePrices["Toadflax"].price * 20);
           ore.hourlyProfit = fetchedOrePrices["Toadflax"].price * 20;
         }
         if (ore.name === "Agility Pyramid") {
-          // console.log(fetchedOrePrices["Toadflax"].price * 20);
           ore.hourlyProfit = 260000;
         }
         if (ore.name === "Hallowed Sepulchre") {
-          // console.log(fetchedOrePrices["Toadflax"].price * 20);
           if (props.currentLvl >= 52 && props.currentLvl <= 62) {
             ore["exp/hour"] = 36000;
           }
@@ -61,7 +61,7 @@ const AgilityGrid = (props) => {
           if (props.currentLvl >= 82 && props.currentLvl <= 91) {
             ore["exp/hour"] = 66000;
           }
-          if (props.currentLvl >= 92 && props.currentLvl <= 99) {
+          if (props.currentLvl >= 92 && props.currentLvl < 99) {
             ore["exp/hour"] = 75000;
           }
         }
@@ -96,11 +96,11 @@ const AgilityGrid = (props) => {
     setCoursesDB(sorter);
   };
 
-  const sortMembers = () => {
+  const sortExpLap = () => {
     setMemberSorted(!memberSorted);
     let sorter = [...coursesDB];
     sorter.sort((a, b) =>
-      memberSorted ? a.members - b.members : b.members - a.members
+      memberSorted ? a["exp/lap"] - b["exp/lap"] : b["exp/lap"] - a["exp/lap"]
     );
     setCoursesDB(sorter);
   };
@@ -108,15 +108,32 @@ const AgilityGrid = (props) => {
   const sortExp = () => {
     setCombatSorted(!combatSorted);
     let sorter = [...coursesDB];
-    sorter.sort((a, b) => (combatSorted ? a.exp - b.exp : b.exp - a.exp));
+    sorter.sort((a, b) =>
+      combatSorted
+        ? a["exp/hour"] - b["exp/hour"]
+        : b["exp/hour"] - a["exp/hour"]
+    );
     setCoursesDB(sorter);
   };
 
-  const sortToGo = () => {
+  const sortLapsGoal = () => {
     setToGoSorted(!toGoSorted);
     let sorter = [...coursesDB];
     sorter.sort((a, b) =>
-      toGoSorted ? a.profit - b.profit : b.profit - a.profit
+      toGoSorted ? a["exp/hour"] - b["exp/hour"] : b["exp/hour"] - a["exp/hour"]
+    );
+    setCoursesDB(sorter);
+  };
+
+  const sortProfits = () => {
+    setPriceSorted(!priceSorted);
+    let sorter = [...coursesDB];
+    sorter.sort((a, b) =>
+      priceSorted
+        ? (+props.remainingExp / a["exp/hour"]) * +a.hourlyProfit -
+          (+props.remainingExp / b["exp/hour"]) * +b.hourlyProfit
+        : (+props.remainingExp / b["exp/hour"]) * +b.hourlyProfit -
+          (+props.remainingExp / a["exp/hour"]) * +a.hourlyProfit
     );
     setCoursesDB(sorter);
   };
@@ -125,14 +142,10 @@ const AgilityGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortOre}>
-          <img
-            src="ores/Runite_ore.webp"
-            alt="Attack Logo"
-            className={stl.miniLogo}
-          />{" "}
+          <img src={agilityLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
           Course
         </span>
-        <span onClick={sortMembers}>
+        <span onClick={sortExpLap}>
           <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
           Exp/lap
         </span>
@@ -140,11 +153,11 @@ const AgilityGrid = (props) => {
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} />{" "}
           Exp/hour
         </span>
-        <span onClick={sortToGo}>
-          <img src={miningLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+        <span onClick={sortLapsGoal}>
+          <img src={agilityLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
           Laps/goal
         </span>
-        <span onClick={sortToGo}>
+        <span onClick={sortProfits}>
           <img src={moneyLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
           Profit
         </span>

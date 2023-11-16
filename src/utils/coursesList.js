@@ -15,7 +15,6 @@ const COURSESLIST = [
     hourlyProfit: 0,
     marksPerHour: 0,
   },
-
   {
     name: "Shayzien Basic Course",
     level: 5,
@@ -24,7 +23,6 @@ const COURSESLIST = [
     hourlyProfit: 0,
     marksPerHour: 0,
   },
-
   {
     name: "Draynor Village Rooftop Course",
     level: 10,
@@ -65,7 +63,6 @@ const COURSESLIST = [
     hourlyProfit: 0,
     marksPerHour: 0,
   },
-
   {
     name: "Barbarian Outpost Agility Course",
     level: 35,
@@ -74,7 +71,6 @@ const COURSESLIST = [
     hourlyProfit: 0,
     marksPerHour: 0,
   },
-
   {
     name: "Canifis Rooftop Course",
     level: 40,
@@ -83,7 +79,6 @@ const COURSESLIST = [
     hourlyProfit: 0,
     marksPerHour: 17,
   },
-
   {
     name: "Shayzien Advanced Course",
     level: 48,
@@ -124,7 +119,6 @@ const COURSESLIST = [
     hourlyProfit: 0,
     marksPerHour: 0,
   },
-
   {
     name: "Werewolf Agility Course",
     level: 60,
@@ -133,7 +127,6 @@ const COURSESLIST = [
     hourlyProfit: 0,
     marksPerHour: 0,
   },
-
   {
     name: "Seers' Village Rooftop Course",
     level: 60,
@@ -150,7 +143,6 @@ const COURSESLIST = [
     hourlyProfit: 0,
     marksPerHour: 0,
   },
-
   {
     name: "Pollnivneach Rooftop Course",
     level: 70,
@@ -167,7 +159,6 @@ const COURSESLIST = [
     hourlyProfit: 0,
     marksPerHour: 0,
   },
-
   {
     name: "Rellekka Rooftop Course",
     level: 80,
@@ -185,8 +176,5 @@ const COURSESLIST = [
     marksPerHour: 17.05,
   },
 ];
-
-const sorted = COURSESLIST.sort((a, b) => a.level - b.level);
-console.log(sorted);
 
 export default COURSESLIST;
