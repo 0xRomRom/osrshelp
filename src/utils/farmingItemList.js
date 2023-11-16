@@ -108,8 +108,60 @@ const FARMINGITEMLIST = [
     "Dwarf weed seed": 1,
   },
   {
-    //torstol
+    //Torstol
     "Torstol seed": 1,
+  },
+  {
+    //Barley
+    "Barley seed": 1,
+  },
+  {
+    //Hammerstone
+    "Hammerstone seed": 1,
+  },
+  {
+    //Asgarnian
+    "Asgarnian seed": 1,
+  },
+  {
+    //Jute
+    "Jute seed": 1,
+  },
+  {
+    //Yanillian
+    "Yanillian seed": 1,
+  },
+  {
+    //Krandorian
+    "Krandorian seed": 1,
+  },
+  {
+    //Wildblood
+    "Wildblood seed": 1,
+  },
+  {
+    //Redberries
+    "Redberry seed": 1,
+  },
+  {
+    //Cadavaberry
+    "Cadavaberry seed": 1,
+  },
+  {
+    //Dwellberries
+    "Dwellberry seed": 1,
+  },
+  {
+    //Jangerberries
+    "Jangerberry seed": 1,
+  },
+  {
+    //White berries
+    "Whiteberry seed": 1,
+  },
+  {
+    //Poison ivy berries
+    "Poison ivy seed": 1,
   },
 ];
 

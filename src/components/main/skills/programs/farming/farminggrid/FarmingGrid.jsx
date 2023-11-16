@@ -30,7 +30,7 @@ const FarmingGrid = (props) => {
 
     let result1 = {};
     const fetcherA = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato|Onion|Cabbage|Tomato|Sweetcorn|Strawberry|Watermelon|Snape_grass|Marigolds|Rosemary|Nasturtiums|Woad_leaf|Limpwurt_root|White_lily"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato|Onion|Cabbage|Tomato|Sweetcorn|Strawberry|Watermelon|Snape_grass|Marigolds|Rosemary|Nasturtiums|Woad_leaf|Limpwurt_root|White_lily|Barley|Hammerstone_hops|Asgarnian_hops|Jute_fibre|Yanillian_hops|Krandorian_hops|Wildblood_hops|Redberries|Cadava_berries|Dwellberries|Jangerberries|White_berries|Poison_ivy_berries"
     );
     const resultA = await fetcherA.json();
     const fetcherB = await fetch(
@@ -43,12 +43,12 @@ const FarmingGrid = (props) => {
 
     let result2 = {};
     const fetcherC = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato_seed|Onion_seed|Cabbage_seed|Tomato_seed|Sweetcorn_seed|Strawberry_seed|Watermelon_seed|Snape_grass_seed|Marigold_seed|Nasturtium_seed|Rosemary_seed|Woad_seed|Limpwurt_seed|White_lily_seed"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato_seed|Onion_seed|Cabbage_seed|Tomato_seed|Sweetcorn_seed|Strawberry_seed|Watermelon_seed|Snape_grass_seed|Marigold_seed|Nasturtium_seed|Rosemary_seed|Woad_seed|Limpwurt_seed|White_lily_seed|Barley_seed|Hammerstone_seed|Asgarnian_seed|Jute_seed|Yanillian_seed|Krandorian_seed|Wildblood_seed"
     );
     const resultC = await fetcherC.json();
 
     const fetcherD = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Guam_seed|Marrentill_seed|Tarromin_seed|Harralander_seed|Ranarr_seed|Toadflax_seed|Irit_seed|Avantoe_seed|Kwuarm_seed|Snapdragon_seed|Cadantine_seed|Lantadyme_seed|Dwarf_weed_seed|Torstol_seed"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Guam_seed|Marrentill_seed|Tarromin_seed|Harralander_seed|Ranarr_seed|Toadflax_seed|Irit_seed|Avantoe_seed|Kwuarm_seed|Snapdragon_seed|Cadantine_seed|Lantadyme_seed|Dwarf_weed_seed|Torstol_seed|Redberry_seed|Cadavaberry_seed|Dwellberry_seed|Jangerberry_seed|Whiteberry_seed|Poison_ivy_seed"
     );
     const resultD = await fetcherD.json();
 
@@ -107,12 +107,16 @@ const FarmingGrid = (props) => {
 
         if (patchType === "flower") {
           yieldMultiplier = 1;
-          console.log(patchType);
         }
 
         if (patchType === "herbs") {
           yieldMultiplier = 7;
-          console.log(patchType);
+        }
+        if (patchType === "hops") {
+          yieldMultiplier = 1;
+        }
+        if (patchType === "bushes") {
+          yieldMultiplier = 13;
         }
 
         for (let i = 0; i < itemCount; i++) {
