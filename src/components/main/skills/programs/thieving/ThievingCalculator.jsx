@@ -7,13 +7,13 @@ import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import ThievingGrid from "./thievinggrid/ThievingGrid";
-import ThievingFilter from "./thievingfilter/ThievingFilter";
 import { useState } from "react";
+import SearchFilter from "../searchfilter/SearchFilter";
 
 const ThievingCalculator = (props) => {
+  const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
-  const [filterChanged, setFilterChanged] = useState(false);
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -88,13 +88,17 @@ const ThievingCalculator = (props) => {
             remainingExp={remainingExp}
           />
         )}
-        <ThievingFilter
-          setMultiplier={setMultiplier}
-          setFilterChanged={setFilterChanged}
-          filterChanged={filterChanged}
+
+        <SearchFilter
+          setSearchState={setSearchState}
+          searchType="Search Food"
         />
       </div>
-      <ThievingGrid remainingExp={remainingExp} multiplier={multiplier} />
+      <ThievingGrid
+        remainingExp={remainingExp}
+        multiplier={multiplier}
+        searchState={searchState}
+      />
     </div>
   );
 };

@@ -1,16 +1,26 @@
 import stl from "./ThievingGrid.module.css";
 import THIEVINGLIST from "../../../../../../utils/thievingList";
 import thievingIcon from "../../../../../../assets/skillicons/Thieving.webp";
-import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 const ThievingGrid = (props) => {
   const [thievDB, setThievDB] = useState(THIEVINGLIST);
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
   const [toGoSorted, setToGoSorted] = useState(false);
+
+  const filterThiev = useCallback(() => {
+    const filteredActions = THIEVINGLIST.filter((thiev) =>
+      thiev.name.toLowerCase().includes(props.searchState.toLowerCase())
+    );
+    setThievDB([...filteredActions]);
+  }, [props.searchState]);
+
+  useEffect(() => {
+    filterThiev();
+  }, [filterThiev]);
 
   const calcThievAmount = useCallback(
     (tree) => {
@@ -54,7 +64,7 @@ const ThievingGrid = (props) => {
             alt="Thieving Logo"
             className={stl.miniLogo}
           />{" "}
-          NPC
+          Steal from
         </span>
         <span onClick={sortExp}>
           <img src={statsLogo} alt="Stats Logo" className={stl.miniLogo} /> Exp
