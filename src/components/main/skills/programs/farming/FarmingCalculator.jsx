@@ -1,7 +1,7 @@
 import stl from "./FarmingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import craftingIcon from "../../../../../assets/skillicons/Crafting.webp";
+import farmingIcon from "../../../../../assets/skillicons/Farming.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -10,7 +10,7 @@ import SearchFilter from "../searchfilter/SearchFilter";
 
 import { useState } from "react";
 
-import FarmingGrid from "./craftinggrid/FarmingGrid";
+import FarmingGrid from "./farminggrid/FarmingGrid";
 
 const FarmingCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
@@ -36,14 +36,14 @@ const FarmingCalculator = (props) => {
           className={stl.backArrow}
           onClick={handleMenuSwitch}
         />
-        <img src={craftingIcon} alt="Crafting Level" className={stl.skillImg} />
-        <span className={stl.skillTitle}>Crafting</span>
+        <img src={farmingIcon} alt="Farming Level" className={stl.skillImg} />
+        <span className={stl.skillTitle}>Farming</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["crafting"]}
+                Level {props.skills["farming"]}
               </span>
             </div>
 
@@ -51,8 +51,8 @@ const FarmingCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"crafting"}
-                  currentLvl={props.skills["crafting"]}
+                  skillname={"farming"}
+                  currentLvl={props.skills["farming"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -77,8 +77,8 @@ const FarmingCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"crafting"}
-            currentLvl={props.skills["crafting"]}
+            skillName={"farming"}
+            currentLvl={props.skills["farming"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}
