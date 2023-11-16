@@ -31,6 +31,30 @@ const FARMINGITEMLIST = [
     //Snape grass
     "Snape grass seed": 3,
   },
+  {
+    //Marigolds
+    "Marigold seed": 1,
+  },
+  {
+    //Rosemary
+    "Rosemary seed": 1,
+  },
+  {
+    //Nasturtium
+    "Nasturtium seed": 1,
+  },
+  {
+    //Woad
+    "Woad seed": 1,
+  },
+  {
+    //Limpwurt
+    "Limpwurt seed": 1,
+  },
+  {
+    //White lily
+    "White lily seed": 1,
+  },
 ];
 
 export default FARMINGITEMLIST;

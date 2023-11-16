@@ -30,7 +30,7 @@ const FarmingGrid = (props) => {
 
     let result1 = {};
     const fetcherA = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato|Onion|Cabbage|Tomato|Sweetcorn|Strawberry|Watermelon|Snape_grass"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato|Onion|Cabbage|Tomato|Sweetcorn|Strawberry|Watermelon|Snape_grass|Marigolds|Rosemary|Nasturtiums|Woad_leaf|Limpwurt_root|White_lily"
     );
     const resultA = await fetcherA.json();
     const fetcherB = await fetch(
@@ -43,7 +43,7 @@ const FarmingGrid = (props) => {
 
     let result2 = {};
     const fetcherC = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato_seed|Onion_seed|Cabbage_seed|Tomato_seed|Sweetcorn_seed|Strawberry_seed|Watermelon_seed|Snape_grass_seed"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato_seed|Onion_seed|Cabbage_seed|Tomato_seed|Sweetcorn_seed|Strawberry_seed|Watermelon_seed|Snape_grass_seed|Marigold_seed|Nasturtium_seed|Rosemary_seed|Woad_seed|Limpwurt_seed|White_lily_seed"
     );
     const resultC = await fetcherC.json();
 
@@ -94,7 +94,6 @@ const FarmingGrid = (props) => {
     (farmData, list = FARMINGLIST) => {
       let farmingList = JSON.parse(JSON.stringify(list));
       let yieldMultiplier = 0;
-      let seedMultiplier = 0;
 
       const mapper = farmData.map((item, index) => {
         const itemCount = item.names.length;
@@ -104,13 +103,18 @@ const FarmingGrid = (props) => {
 
         if (patchType === "allotment") {
           yieldMultiplier = 14;
-          seedMultiplier = 3;
+        }
+
+        if (patchType === "flower") {
+          yieldMultiplier = 1;
+          console.log(patchType);
         }
 
         for (let i = 0; i < itemCount; i++) {
           const itemName = item.names[i];
+          const itemAmount = item.amounts[i];
           console.log(itemName);
-          const farmPrice = globalPrices[itemName].price * seedMultiplier;
+          const farmPrice = globalPrices[itemName].price * itemAmount;
           count += farmPrice;
           farmingList[index].price = count;
         }
