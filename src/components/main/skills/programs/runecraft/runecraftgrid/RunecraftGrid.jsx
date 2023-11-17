@@ -81,9 +81,13 @@ const RunecraftGrid = (props) => {
             globalPrices["Earth rune"].price + globalPrices["Fire rune"].price;
           finalMath -= required + essencePrice;
         }
-
-        rune.profit = finalMath;
-        rune.toGo = Math.ceil(props.remainingExp / rune.exp);
+        if (runeName === "Soul rune") {
+          finalMath += essencePrice;
+        }
+        const remExp = props.remainingExp || 84;
+        const toCraft = Math.ceil(remExp / rune.exp);
+        rune.toGo = toCraft;
+        rune.profit = finalMath * toCraft;
       });
 
       setTreeDB(runesList);
@@ -91,13 +95,19 @@ const RunecraftGrid = (props) => {
   }, [initFetch, globalPrices, treeDB, props.remainingExp]);
 
   useEffect(() => {
-    let dbRef = treeDB;
+    if (Object.keys(globalPrices).length > 0) {
+      let dbRef = treeDB;
 
-    dbRef.forEach((item) => {
-      item.toGo = props.remainingExp / item.exp;
-    });
-    setTreeDB(dbRef);
-  }, [props.remainingExp, treeDB]);
+      dbRef.forEach((item) => {
+        const remExp = props.remainingExp || 84;
+        const toCraft = remExp / item.exp;
+        item.toGo = toCraft;
+        // item.profit = toCraft * globalPrices[item.name].price;
+      });
+      console.log(dbRef);
+      setTreeDB(dbRef);
+    }
+  }, [props.remainingExp, treeDB, globalPrices]);
 
   const sortTree = () => {
     setMonsterSorted(!monsterSorted);
@@ -138,12 +148,9 @@ const RunecraftGrid = (props) => {
 
   const sortProfit = () => {
     setProfitSorted(!profitSorted);
-    const remainder = props.remainingExp || 84;
     let sorter = [...treeDB];
     sorter.sort((a, b) =>
-      profitSorted
-        ? a.profit / remainder - b.profit / remainder
-        : b.profit / remainder - a.profit / remainder
+      profitSorted ? a.profit - b.profit : b.profit - a.profit
     );
     setTreeDB(sorter);
   };
@@ -173,7 +180,6 @@ const RunecraftGrid = (props) => {
       </div>
       <div className={stl.resultGrid}>
         {treeDB.map((tree) => {
-          const remainderExp = props.remainderExp || 84;
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -190,10 +196,10 @@ const RunecraftGrid = (props) => {
               <span className={stl.rowItem}>{tree.members ? "Yes" : "No"}</span>
               <span className={stl.rowItem}>{tree.exp}</span>
               <span className={stl.rowItem}>
-                {(props.remainingExp / tree.exp).toFixed(0)}
+                {Math.ceil(tree.toGo).toLocaleString()}
               </span>
               <span className={stl.rowItem}>
-                {Math.round(remainderExp * tree.profit).toLocaleString()}
+                {Math.round(tree.profit).toLocaleString()}
               </span>
             </div>
           );
