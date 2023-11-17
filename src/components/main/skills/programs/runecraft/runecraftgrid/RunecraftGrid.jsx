@@ -198,7 +198,12 @@ const RunecraftGrid = (props) => {
               <span className={stl.rowItem}>
                 {Math.ceil(tree.toGo).toLocaleString()}
               </span>
-              <span className={stl.rowItem}>
+              <span
+                className={`${stl.rowItem} ${stl.costRow} ${
+                  tree.profit > 0 ? stl.green : stl.red
+                }`}
+              >
+                {tree.profit > 0 ? "+" : ""}
                 {Math.round(tree.profit).toLocaleString()}
               </span>
             </div>
