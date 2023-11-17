@@ -15,6 +15,7 @@ const RunecraftGrid = (props) => {
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
   const [toGoSorted, setToGoSorted] = useState(false);
+  const [profitSorted, setProfitSorted] = useState(false);
 
   const initFetch = useCallback(async () => {
     const fetcher = await fetch(
@@ -24,7 +25,6 @@ const RunecraftGrid = (props) => {
 
     console.log(result);
     result["Blood rune (Kourend)"] = { price: 0 };
-    console.log(result);
     setGlobalPrices(result);
   }, []);
 
@@ -83,11 +83,21 @@ const RunecraftGrid = (props) => {
         }
 
         rune.profit = finalMath;
+        rune.toGo = Math.ceil(props.remainingExp / rune.exp);
       });
-      console.log(globalPrices);
+
       setTreeDB(runesList);
     }
-  }, [initFetch, globalPrices, treeDB]);
+  }, [initFetch, globalPrices, treeDB, props.remainingExp]);
+
+  useEffect(() => {
+    let dbRef = treeDB;
+
+    dbRef.forEach((item) => {
+      item.toGo = props.remainingExp / item.exp;
+    });
+    setTreeDB(dbRef);
+  }, [props.remainingExp, treeDB]);
 
   const sortTree = () => {
     setMonsterSorted(!monsterSorted);
@@ -118,7 +128,23 @@ const RunecraftGrid = (props) => {
   const sortToGo = () => {
     setToGoSorted(!toGoSorted);
     let sorter = [...treeDB];
-    sorter.sort((a, b) => (toGoSorted ? a.exp - b.exp : b.exp - a.exp));
+    sorter.sort((a, b) =>
+      toGoSorted
+        ? a.exp * props.remainingExp - b.exp * props.remainingExp
+        : b.exp * props.remainingExp - a.exp * props.remainingExp
+    );
+    setTreeDB(sorter);
+  };
+
+  const sortProfit = () => {
+    setProfitSorted(!profitSorted);
+    const remainder = props.remainingExp || 84;
+    let sorter = [...treeDB];
+    sorter.sort((a, b) =>
+      profitSorted
+        ? a.profit / remainder - b.profit / remainder
+        : b.profit / remainder - a.profit / remainder
+    );
     setTreeDB(sorter);
   };
 
@@ -140,13 +166,14 @@ const RunecraftGrid = (props) => {
           <img src={runecraftIcon} alt="Slayer Logo" className={stl.miniLogo} />{" "}
           To Go
         </span>
-        <span onClick={sortToGo}>
+        <span onClick={sortProfit}>
           <img src={coinsLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
           Profit
         </span>
       </div>
       <div className={stl.resultGrid}>
         {treeDB.map((tree) => {
+          const remainderExp = props.remainderExp || 84;
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -161,18 +188,12 @@ const RunecraftGrid = (props) => {
                 </span>
               </span>
               <span className={stl.rowItem}>{tree.members ? "Yes" : "No"}</span>
+              <span className={stl.rowItem}>{tree.exp}</span>
               <span className={stl.rowItem}>
-                {+props.multiplier > 0 &&
-                  (tree.exp * (1 + 2.5 / 100)).toFixed(1)}
-                {+props.multiplier === 0 && tree.exp}
+                {(props.remainingExp / tree.exp).toFixed(0)}
               </span>
               <span className={stl.rowItem}>
-                {Math.ceil(props.remainingExp / tree.exp).toLocaleString()}
-              </span>
-              <span className={stl.rowItem}>
-                {(
-                  tree.profit * (props.remainingExp / tree.exp).toFixed(0)
-                ).toLocaleString()}
+                {Math.round(remainderExp * tree.profit).toLocaleString()}
               </span>
             </div>
           );

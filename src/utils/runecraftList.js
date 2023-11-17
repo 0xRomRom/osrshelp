@@ -6,6 +6,7 @@ const rUNECRAFTLIST = [
     exp: 5,
     profit: 0,
     src: "runecraft/Air_rune.webp",
+    toGo: 0,
   },
   {
     name: "Mind rune",
@@ -14,6 +15,7 @@ const rUNECRAFTLIST = [
     exp: 5.5,
     profit: 0,
     src: "runecraft/Mind_rune.webp",
+    toGo: 0,
   },
   {
     name: "Water rune",
@@ -22,6 +24,7 @@ const rUNECRAFTLIST = [
     exp: 6,
     profit: 0,
     src: "runecraft/Water_rune.webp",
+    toGo: 0,
   },
   {
     name: "Mist rune",
@@ -30,6 +33,7 @@ const rUNECRAFTLIST = [
     exp: 8.25,
     profit: 0,
     src: "runecraft/Mist_rune.webp",
+    toGo: 0,
   },
   {
     name: "Earth rune",
@@ -38,6 +42,7 @@ const rUNECRAFTLIST = [
     exp: 6.5,
     profit: 0,
     src: "runecraft/Earth_rune.webp",
+    toGo: 0,
   },
   {
     name: "Dust rune",
@@ -46,6 +51,7 @@ const rUNECRAFTLIST = [
     exp: 8.65,
     profit: 0,
     src: "runecraft/Dust_rune.webp",
+    toGo: 0,
   },
   {
     name: "Mud rune",
@@ -54,6 +60,7 @@ const rUNECRAFTLIST = [
     exp: 9.4,
     profit: 0,
     src: "runecraft/Mud_rune.webp",
+    toGo: 0,
   },
   {
     name: "Fire rune",
@@ -62,6 +69,7 @@ const rUNECRAFTLIST = [
     exp: 7,
     profit: 0,
     src: "runecraft/Fire_rune.webp",
+    toGo: 0,
   },
   {
     name: "Smoke rune",
@@ -70,6 +78,7 @@ const rUNECRAFTLIST = [
     exp: 9,
     profit: 0,
     src: "runecraft/Smoke_rune.webp",
+    toGo: 0,
   },
   {
     name: "Steam rune",
@@ -78,6 +87,7 @@ const rUNECRAFTLIST = [
     exp: 9.65,
     profit: 0,
     src: "runecraft/Steam_rune.webp",
+    toGo: 0,
   },
   {
     name: "Body rune",
@@ -86,6 +96,7 @@ const rUNECRAFTLIST = [
     exp: 7.5,
     profit: 0,
     src: "runecraft/Body_rune.webp",
+    toGo: 0,
   },
   {
     name: "Lava rune",
@@ -94,6 +105,7 @@ const rUNECRAFTLIST = [
     exp: 10.25,
     profit: 0,
     src: "runecraft/Lava_rune.webp",
+    toGo: 0,
   },
   {
     name: "Cosmic rune",
@@ -102,6 +114,7 @@ const rUNECRAFTLIST = [
     exp: 8,
     profit: 0,
     src: "runecraft/Cosmic_rune.webp",
+    toGo: 0,
   },
   {
     name: "Chaos rune",
@@ -110,6 +123,7 @@ const rUNECRAFTLIST = [
     exp: 8.5,
     profit: 0,
     src: "runecraft/Chaos_rune.webp",
+    toGo: 0,
   },
   {
     name: "Astral rune",
@@ -118,6 +132,7 @@ const rUNECRAFTLIST = [
     exp: 8.7,
     profit: 0,
     src: "runecraft/Astral_rune.webp",
+    toGo: 0,
   },
   {
     name: "Nature rune",
@@ -126,6 +141,7 @@ const rUNECRAFTLIST = [
     exp: 9,
     profit: 0,
     src: "runecraft/Nature_rune.webp",
+    toGo: 0,
   },
   {
     name: "Law rune",
@@ -134,6 +150,7 @@ const rUNECRAFTLIST = [
     exp: 9.5,
     profit: 0,
     src: "runecraft/Law_rune.webp",
+    toGo: 0,
   },
   {
     name: "Death rune",
@@ -142,6 +159,7 @@ const rUNECRAFTLIST = [
     exp: 10,
     profit: 0,
     src: "runecraft/Death_rune.webp",
+    toGo: 0,
   },
   {
     name: "Blood rune",
@@ -150,6 +168,7 @@ const rUNECRAFTLIST = [
     exp: 10.5,
     profit: 0,
     src: "runecraft/Blood_rune.webp",
+    toGo: 0,
   },
   {
     name: "Blood rune (Kourend)",
@@ -158,6 +177,7 @@ const rUNECRAFTLIST = [
     exp: 23.8,
     profit: 0,
     src: "runecraft/Blood_rune.webp",
+    toGo: 0,
   },
   {
     name: "Soul rune",
@@ -166,6 +186,7 @@ const rUNECRAFTLIST = [
     exp: 29.7,
     profit: 0,
     src: "runecraft/Soul_rune.webp",
+    toGo: 0,
   },
   {
     name: "Wrath rune",
@@ -174,6 +195,7 @@ const rUNECRAFTLIST = [
     exp: 8,
     profit: 0,
     src: "runecraft/Wrath_rune.webp",
+    toGo: 0,
   },
 ];
 
