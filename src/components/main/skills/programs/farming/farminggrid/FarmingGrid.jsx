@@ -55,66 +55,87 @@ const FarmingGrid = (props) => {
     result2 = { ...resultC, ...resultD };
     result2["Oak tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Willow tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Maple tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Yew tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Magic tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Apple tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Banana tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Orange tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Curry tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Pineapple tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Papaya tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Palm tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Dragonfruit tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Hespori"] = {
       price: 0,
+      profit: 0,
     };
     result2["Teak tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Mahogany tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Calquat tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Crystal tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Spirit tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Celastrus tree"] = {
       price: 0,
+      profit: 0,
     };
     result2["Redwood tree"] = {
       price: 0,
+      profit: 0,
     };
     setCraftingItemPrices(result2);
     setGlobalPrices({ ...result1, ...result2 });
@@ -167,7 +188,7 @@ const FarmingGrid = (props) => {
           const itemAmount = item.amounts[i];
           const farmPrice = globalPrices[itemName].price * itemAmount;
           count += farmPrice;
-          farmingList[index].price = count;
+          farmingList[index].profit = count;
         }
         return farmingList;
       });
@@ -190,7 +211,7 @@ const FarmingGrid = (props) => {
           yieldMultiplier = 1;
         }
 
-        item.price -= globalPrices[item.name].price * yieldMultiplier;
+        item.profit -= globalPrices[item.name].price * yieldMultiplier;
         yieldMultiplier = 0;
       });
 
@@ -211,6 +232,7 @@ const FarmingGrid = (props) => {
 
       // Update spellprices
       const updatedSpells = mapCraftPrices(runeArray);
+      console.log(updatedSpells);
 
       // Update spells to go
       setFarmDB(updatedSpells);
@@ -312,9 +334,9 @@ const FarmingGrid = (props) => {
               <span className={`${stl.rowItem} ${stl.prayerRow}`}>
                 {craft.exp.toLocaleString()}
                 <span className={stl.gpperxp}>
-                  {craft.price / craft.exp > 0
-                    ? "-" + Math.abs(craft.price / craft.exp).toFixed(1)
-                    : "+" + Math.abs(craft.price / craft.exp).toFixed(1)}
+                  {craft.profit / craft.exp > 0
+                    ? "-" + Math.abs(craft.profit / craft.exp).toFixed(1)
+                    : "+" + Math.abs(craft.profit / craft.exp).toFixed(1)}
                   gp/exp
                 </span>
               </span>
@@ -325,13 +347,12 @@ const FarmingGrid = (props) => {
 
               <span
                 className={`${stl.rowItem} ${stl.costRow} ${
-                  craft.price > 0 ? stl.red : stl.green
+                  craft.profit * craftAmount > 0 ? stl.red : stl.green
                 }`}
               >
-                {craft.price * craftAmount > 0 ? "-" : "+"}
-                {craft.price * craftAmount
-                  ? Math.abs(craft.price * craftAmount).toLocaleString()
-                  : "?"}
+                {craft.profit * craftAmount > 0
+                  ? "-" + (craft.profit * craftAmount).toLocaleString()
+                  : "+" + Math.abs(craft.profit * craftAmount).toLocaleString()}
                 <span className={stl.gpcost}>gp</span>
               </span>
             </div>
