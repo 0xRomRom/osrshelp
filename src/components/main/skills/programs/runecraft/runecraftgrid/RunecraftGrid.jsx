@@ -35,13 +35,53 @@ const RunecraftGrid = (props) => {
     if (Object.keys(globalPrices).length > 0) {
       let runesList = treeDB;
       const essencePrice = globalPrices["Pure essence"].price;
+
       runesList.forEach((rune) => {
         const runeName = rune.name;
         let runePrice = globalPrices[runeName].price;
+
         if (runeName === "Blood rune (Kourend)") {
           runePrice = globalPrices["Blood rune"].price;
         }
-        const finalMath = runePrice - essencePrice;
+
+        let finalMath = runePrice - essencePrice;
+
+        if (runeName === "Mist rune") {
+          const required =
+            globalPrices["Air rune"].price + globalPrices["Water rune"].price;
+          finalMath -= required + essencePrice;
+        }
+
+        if (runeName === "Dust rune") {
+          const required =
+            globalPrices["Air rune"].price + globalPrices["Earth rune"].price;
+          finalMath -= required + essencePrice;
+        }
+
+        if (runeName === "Mud rune") {
+          const required =
+            globalPrices["Water rune"].price + globalPrices["Earth rune"].price;
+          finalMath -= required + essencePrice;
+        }
+
+        if (runeName === "Smoke rune") {
+          const required =
+            globalPrices["Air rune"].price + globalPrices["Fire rune"].price;
+          finalMath -= required + essencePrice;
+        }
+
+        if (runeName === "Steam rune") {
+          const required =
+            globalPrices["Water rune"].price + globalPrices["Fire rune"].price;
+          finalMath -= required + essencePrice;
+        }
+
+        if (runeName === "Lava rune") {
+          const required =
+            globalPrices["Earth rune"].price + globalPrices["Fire rune"].price;
+          finalMath -= required + essencePrice;
+        }
+
         rune.profit = finalMath;
       });
       console.log(globalPrices);
