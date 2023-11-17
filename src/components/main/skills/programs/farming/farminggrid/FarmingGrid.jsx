@@ -226,13 +226,11 @@ const FarmingGrid = (props) => {
       Object.keys(craftingItemPrices).length > 0 &&
       Object.keys(globalPrices).length > 0
     ) {
-      console.log(globalPrices);
       // Array of all required runes and amounts
       const runeArray = mapRequiredSpells();
 
       // Update spellprices
       const updatedSpells = mapCraftPrices(runeArray);
-      console.log(updatedSpells);
 
       // Update spells to go
       setFarmDB(updatedSpells);
@@ -274,9 +272,8 @@ const FarmingGrid = (props) => {
   const sortCost = () => {
     setCostSorted(!costSorted);
     let sorter = [...filteredFarmDB];
-    console.log(sorter);
     sorter.sort((a, b) =>
-      costSorted ? a.profit - b.profit : b.profit - a.profit
+      costSorted ? b.profit - a.profit : a.profit - b.profit
     );
     setFarmDB(sorter);
   };
@@ -306,7 +303,11 @@ const FarmingGrid = (props) => {
           Exp
         </span>
         <span onClick={sortAmount}>
-          <img src={farmingLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="farming/Spade.webp"
+            alt="Amount Logo"
+            className={stl.miniLogo}
+          />{" "}
           Actions
         </span>
         <span onClick={sortCost}>
