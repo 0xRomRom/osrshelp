@@ -1,7 +1,7 @@
 import stl from "./RunecraftCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import woodcuttingIcon from "../../../../../assets/skillicons/Woodcutting.webp";
+import runecraftIcon from "../../../../../assets/skillicons/Runecraft.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -36,17 +36,17 @@ const RunecraftCalculator = (props) => {
           onClick={handleMenuSwitch}
         />
         <img
-          src={woodcuttingIcon}
-          alt="Woodcutting Level"
+          src={runecraftIcon}
+          alt="Runecraft Level"
           className={stl.skillImg}
         />
-        <span className={stl.skillTitle}>Woodcutting</span>
+        <span className={stl.skillTitle}>Runecraft</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["woodcutting"]}
+                Level {props.skills["runecraft"]}
               </span>
             </div>
 
@@ -54,8 +54,8 @@ const RunecraftCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"woodcutting"}
-                  currentLvl={props.skills["woodcutting"]}
+                  skillname={"runecraft"}
+                  currentLvl={props.skills["runecraft"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -80,8 +80,8 @@ const RunecraftCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"woodcutting"}
-            currentLvl={props.skills["woodcutting"]}
+            skillName={"runecraft"}
+            currentLvl={props.skills["runecraft"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}

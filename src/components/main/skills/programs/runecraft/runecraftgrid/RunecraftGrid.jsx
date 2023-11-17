@@ -1,27 +1,53 @@
 import stl from "./RunecraftGrid.module.css";
-import TREELIST from "../../../../../../utils/treeList";
+import RUNECRAFTLIST from "../../../../../../utils/runecraftList";
 import woodcuttingIcon from "../../../../../../assets/skillicons/Woodcutting.webp";
-import axeLogo from "../../../../../../assets/random/Rune_axe.png";
+import coinsLogo from "../../../../../../assets/icons/Donate.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
+import runecraftIcon from "../../../../../../assets/skillicons/Runecraft.webp";
 
-import { useState, useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const RunecraftGrid = (props) => {
-  const [treeDB, setTreeDB] = useState(TREELIST);
+  const [treeDB, setTreeDB] = useState(RUNECRAFTLIST);
+  const [globalPrices, setGlobalPrices] = useState({});
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
   const [toGoSorted, setToGoSorted] = useState(false);
 
-  const calculateTreesToCut = useCallback(
-    (tree) => {
-      const expToGo = props.remainingExp;
-      const result = Math.ceil(expToGo / tree.exp);
-      return result ? result : "?";
-    },
-    [props.remainingExp]
-  );
+  const initFetch = useCallback(async () => {
+    const fetcher = await fetch(
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Air_rune|Mind_rune|Water_rune|Mist_rune|Earth_rune|Dust_rune|Mud_rune|Fire_rune|Smoke_rune|Steam_rune|Body_rune|Lava_rune|Cosmic_rune|Chaos_rune|Astral_rune|Nature_rune|Law_rune|Death_rune|Blood_rune|Soul_rune|Wrath_rune|Pure_essence"
+    );
+    let result = await fetcher.json();
+
+    console.log(result);
+    result["Blood rune (Kourend)"] = { price: 0 };
+    console.log(result);
+    setGlobalPrices(result);
+  }, []);
+
+  useEffect(() => {
+    if (Object.keys(globalPrices).length === 0) {
+      initFetch();
+    }
+    if (Object.keys(globalPrices).length > 0) {
+      let runesList = treeDB;
+      const essencePrice = globalPrices["Pure essence"].price;
+      runesList.forEach((rune) => {
+        const runeName = rune.name;
+        let runePrice = globalPrices[runeName].price;
+        if (runeName === "Blood rune (Kourend)") {
+          runePrice = globalPrices["Blood rune"].price;
+        }
+        const finalMath = runePrice - essencePrice;
+        rune.profit = finalMath;
+      });
+      console.log(globalPrices);
+      setTreeDB(runesList);
+    }
+  }, [initFetch, globalPrices, treeDB]);
 
   const sortTree = () => {
     setMonsterSorted(!monsterSorted);
@@ -61,7 +87,7 @@ const RunecraftGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortTree}>
           <img src={woodcuttingIcon} alt="Tree Logo" className={stl.miniLogo} />{" "}
-          Tree
+          Rune
         </span>
         <span onClick={sortMembers}>
           <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
@@ -71,12 +97,16 @@ const RunecraftGrid = (props) => {
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
         </span>
         <span onClick={sortToGo}>
-          <img src={axeLogo} alt="Slayer Logo" className={stl.miniLogo} /> To Go
+          <img src={runecraftIcon} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          To Go
+        </span>
+        <span onClick={sortToGo}>
+          <img src={coinsLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          Profit
         </span>
       </div>
       <div className={stl.resultGrid}>
         {treeDB.map((tree) => {
-          const treePrice = calculateTreesToCut(tree);
           return (
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
@@ -97,9 +127,12 @@ const RunecraftGrid = (props) => {
                 {+props.multiplier === 0 && tree.exp}
               </span>
               <span className={stl.rowItem}>
-                {+props.multiplier > 0 &&
-                  Math.round(treePrice / (1 + 2.5 / 100)).toLocaleString()}
-                {+props.multiplier === 0 && treePrice.toLocaleString()}
+                {Math.ceil(props.remainingExp / tree.exp).toLocaleString()}
+              </span>
+              <span className={stl.rowItem}>
+                {(
+                  tree.profit * (props.remainingExp / tree.exp).toFixed(0)
+                ).toLocaleString()}
               </span>
             </div>
           );
