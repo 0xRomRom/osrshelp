@@ -43,6 +43,7 @@ import HerbloreCalculator from "./programs/herblore/HerbloreCalculator";
 import AgilityCalculator from "./programs/agility/AgilityCalculator";
 import ThievingCalculator from "./programs/thieving/ThievingCalculator";
 import FarmingCalculator from "./programs/farming/FarmingCalculator";
+import RunecraftCalculator from "./programs/runecraft/RunecraftCalculator";
 
 const SkillsTab = (props) => {
   const handleTabOpen = (path) => {
@@ -279,6 +280,18 @@ const SkillsTab = (props) => {
         />
       )}
 
+      {props.subState === "Runecraft" && (
+        <RunecraftCalculator
+          skills={props.skills}
+          skillsExp={props.skillsExp}
+          playerName={props.playerName}
+          setSkills={props.setSkills}
+          setSkillsExp={props.setSkillsExp}
+          setPlayerName={props.setPlayerName}
+          setSubState={props.setSubState}
+        />
+      )}
+
       {props.subState === null && (
         <div className={stl.modal}>
           <div className={stl.modalInner}>
@@ -479,15 +492,15 @@ const SkillsTab = (props) => {
               <span className={stl.skillName}>Farming</span>
             </div>
             <div
-              className={`${stl.skill} ${stl.runecrafting}`}
-              onClick={() => handleTabOpen("Runecrafting")}
+              className={`${stl.skill} ${stl.runecraft}`}
+              onClick={() => handleTabOpen("Runecraft")}
             >
               <img
                 src={runecraftingIcon}
-                alt="Runecrafting Icon"
+                alt="Runecraft Icon"
                 className={stl.iconImg}
               />
-              <span className={stl.skillName}>Runecrafting</span>
+              <span className={stl.skillName}>Runecraft</span>
             </div>
             <div
               className={`${stl.skill} ${stl.hunter}`}

@@ -48,7 +48,6 @@
   gap: 10px;
   cursor: pointer;
   user-select: none;
-  transition: all 0.2s ease;
   filter: grayscale(0.8);
 }
 
