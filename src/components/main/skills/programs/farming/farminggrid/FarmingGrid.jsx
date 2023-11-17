@@ -160,15 +160,12 @@ const FarmingGrid = (props) => {
 
       const mapper = farmData.map((item, index) => {
         const itemCount = item.names.length;
-        const patchType = farmingList[index].patch;
-        console.log(patchType);
         let count = 0;
 
         for (let i = 0; i < itemCount; i++) {
           const itemName = item.names[i];
           const itemAmount = item.amounts[i];
           const farmPrice = globalPrices[itemName].price * itemAmount;
-          console.log(farmPrice);
           count += farmPrice;
           farmingList[index].price = count;
         }
@@ -189,11 +186,14 @@ const FarmingGrid = (props) => {
           yieldMultiplier = 13;
         } else if (item.patch === "trees") {
           yieldMultiplier = 1;
+        } else {
+          yieldMultiplier = 1;
         }
 
         item.price -= globalPrices[item.name].price * yieldMultiplier;
         yieldMultiplier = 0;
       });
+
       return data;
     },
     [globalPrices]
@@ -254,11 +254,7 @@ const FarmingGrid = (props) => {
     let sorter = [...filteredFarmDB];
     console.log(sorter);
     sorter.sort((a, b) =>
-      costSorted
-        ? a.price * (+props.remainingExp / a.exp) -
-          b.price * (+props.remainingExp / b.exp)
-        : b.price * (+props.remainingExp / b.exp) -
-          a.price * (+props.remainingExp / a.exp)
+      costSorted ? a.profit - b.profit : b.profit - a.profit
     );
     setFarmDB(sorter);
   };
