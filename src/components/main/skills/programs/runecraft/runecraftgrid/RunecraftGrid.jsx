@@ -168,7 +168,9 @@ const RunecraftGrid = (props) => {
     setProfitSorted(!profitSorted);
     let sorter = [...treeDB];
     sorter.sort((a, b) =>
-      profitSorted ? a.profit - b.profit : b.profit - a.profit
+      profitSorted
+        ? calcCraftAmount(b) * calcPrice(b) - calcCraftAmount(a) * calcPrice(a)
+        : calcPrice(a) * calcCraftAmount(a) - calcPrice(b) * calcCraftAmount(b)
     );
     setTreeDB(sorter);
   };
