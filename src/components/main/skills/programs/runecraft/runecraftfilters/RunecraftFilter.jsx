@@ -7,6 +7,7 @@ import Boots from "../../../../../../assets/gear/Boots.webp";
 
 const RunecraftFilter = () => {
   const [gearSelected, setGearSelected] = useState({});
+  const [multiplier, setMultiplier] = useState(0);
 
   const handleCheckboxChange = (e) => {
     let gear = e.target.parentNode.dataset.gear;
@@ -21,6 +22,18 @@ const RunecraftFilter = () => {
 
   useEffect(() => {
     console.log(gearSelected);
+    let multi = 0;
+    for (const key in gearSelected) {
+      if (gearSelected[key] === true) {
+        multi += 10;
+      }
+      // console.log(gearSelected[key]);
+    }
+    console.log(multi);
+    if (multi === 40) {
+      multi += 20;
+    }
+    setMultiplier(multi);
   }, [gearSelected]);
 
   return (
@@ -85,7 +98,7 @@ const RunecraftFilter = () => {
             />
           </div>
         </div>
-        <div className={stl.expBoostRow}>0% Extra Runes</div>
+        <div className={stl.expBoostRow}>{multiplier}% Extra Runes</div>
       </div>
     </div>
   );
