@@ -5,9 +5,8 @@ import Robe from "../../../../../../assets/gear/Robe.webp";
 import Top from "../../../../../../assets/gear/Top.webp";
 import Boots from "../../../../../../assets/gear/Boots.webp";
 
-const RunecraftFilter = () => {
+const RunecraftFilter = ({ multiplier, setMultiplier }) => {
   const [gearSelected, setGearSelected] = useState({});
-  const [multiplier, setMultiplier] = useState(0);
 
   const handleCheckboxChange = (e) => {
     let gear = e.target.parentNode.dataset.gear;
@@ -21,20 +20,19 @@ const RunecraftFilter = () => {
   };
 
   useEffect(() => {
-    console.log(gearSelected);
-    let multi = 0;
-    for (const key in gearSelected) {
-      if (gearSelected[key] === true) {
-        multi += 10;
+    if (Object.keys(gearSelected).length > 0) {
+      let multi = 0;
+      for (const key in gearSelected) {
+        if (gearSelected[key] === true) {
+          multi += 1;
+        }
       }
-      // console.log(gearSelected[key]);
+      if (multi === 4) {
+        multi += 2;
+      }
+      setMultiplier(multi);
     }
-    console.log(multi);
-    if (multi === 40) {
-      multi += 20;
-    }
-    setMultiplier(multi);
-  }, [gearSelected]);
+  }, [gearSelected, setMultiplier]);
 
   return (
     <div className={stl.modal}>
@@ -47,12 +45,7 @@ const RunecraftFilter = () => {
             onClick={handleCheckboxChange}
             data-gear="Hat"
           >
-            <img
-              src={Hat}
-              alt="Hat image"
-              className={stl.gearImg}
-              data-gear="Hat"
-            />
+            <img src={Hat} alt="Hat" className={stl.gearImg} data-gear="Hat" />
           </div>
 
           <div
@@ -62,12 +55,7 @@ const RunecraftFilter = () => {
             onClick={handleCheckboxChange}
             data-gear="Top"
           >
-            <img
-              src={Top}
-              alt="Top image"
-              className={stl.gearImg}
-              data-gear="Top"
-            />
+            <img src={Top} alt="Top" className={stl.gearImg} data-gear="Top" />
           </div>
           <div
             className={`${stl.gearSlot} ${
@@ -78,7 +66,7 @@ const RunecraftFilter = () => {
           >
             <img
               src={Robe}
-              alt="Robe image"
+              alt="Robe"
               className={stl.gearImg}
               data-gear="Robe"
             />
@@ -92,13 +80,13 @@ const RunecraftFilter = () => {
           >
             <img
               src={Boots}
-              alt="Boots image"
+              alt="Boots"
               className={stl.gearImg}
               data-gear="Boots"
             />
           </div>
         </div>
-        <div className={stl.expBoostRow}>{multiplier}% Extra Runes</div>
+        <div className={stl.expBoostRow}>{multiplier * 10}% Extra Runes</div>
       </div>
     </div>
   );

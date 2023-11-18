@@ -13,10 +13,10 @@ import { useState } from "react";
 const RunecraftCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
-  const [filterChanged, setFilterChanged] = useState(false);
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
+    console.log(remainingExp);
   };
 
   const handleUserReset = () => {
@@ -94,8 +94,7 @@ const RunecraftCalculator = (props) => {
         )}
         <RunecraftFilter
           setMultiplier={setMultiplier}
-          setFilterChanged={setFilterChanged}
-          filterChanged={filterChanged}
+          multiplier={multiplier}
         />
       </div>
       <RunecraftGrid remainingExp={remainingExp} multiplier={multiplier} />

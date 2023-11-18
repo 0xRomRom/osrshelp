@@ -23,10 +23,29 @@ const RunecraftGrid = (props) => {
     );
     let result = await fetcher.json();
 
-    console.log(result);
     result["Blood rune (Kourend)"] = { price: 0 };
     setGlobalPrices(result);
   }, []);
+
+  const calcPrice = useCallback(
+    (tree) => {
+      const itemProfit = tree.profit;
+      const extraMultiplier =
+        props.multiplier > 0 ? props.multiplier / 10 + 1 : 1;
+      const multipliedPrice = itemProfit * extraMultiplier;
+      return multipliedPrice;
+    },
+    [props.multiplier]
+  );
+
+  const calcCraftAmount = useCallback(
+    (rune) => {
+      const expToGo = props.remainingExp;
+      const result = Math.ceil(expToGo / rune.exp);
+      return result ? result : "?";
+    },
+    [props.remainingExp]
+  );
 
   useEffect(() => {
     if (Object.keys(globalPrices).length === 0) {
@@ -86,8 +105,10 @@ const RunecraftGrid = (props) => {
         }
         const remExp = props.remainingExp || 84;
         const toCraft = Math.ceil(remExp / rune.exp);
+
+        const finalProfit = finalMath;
         rune.toGo = toCraft;
-        rune.profit = finalMath * toCraft;
+        rune.profit = finalProfit;
       });
 
       setTreeDB(runesList);
@@ -110,7 +131,6 @@ const RunecraftGrid = (props) => {
   const sortTree = () => {
     setMonsterSorted(!monsterSorted);
     let sorter = [...treeDB];
-    console.log(sorter);
     sorter.sort((a, b) =>
       monsterSorted ? a.level - b.level : b.level - a.level
     );
@@ -194,7 +214,7 @@ const RunecraftGrid = (props) => {
               <span className={stl.rowItem}>{tree.members ? "Yes" : "No"}</span>
               <span className={stl.rowItem}>{tree.exp}</span>
               <span className={stl.rowItem}>
-                {Math.ceil(tree.toGo).toLocaleString()}
+                {calcCraftAmount(tree).toLocaleString()}
               </span>
               <span
                 className={`${stl.rowItem} ${stl.costRow} ${
@@ -202,7 +222,9 @@ const RunecraftGrid = (props) => {
                 }`}
               >
                 {tree.profit > 0 ? "+" : ""}
-                {Math.round(tree.profit).toLocaleString()}
+                {Math.round(
+                  calcCraftAmount(tree) * calcPrice(tree)
+                ).toLocaleString()}
               </span>
             </div>
           );

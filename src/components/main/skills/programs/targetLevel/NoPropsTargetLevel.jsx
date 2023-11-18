@@ -18,6 +18,8 @@ const NoPropsTargetLevel = ({ setRemainingExp, remainingExp }) => {
     const nextLevelExp = osrsXpTable[selectedLvl + 1];
     const expDiff = +nextLevelExp - +currLevelExp;
 
+    console.log(expDiff);
+
     setRemainingExp(expDiff);
   }, [selectedLvl, setRemainingExp]);
 
