@@ -102,9 +102,7 @@ const RunecraftGrid = (props) => {
         const remExp = props.remainingExp || 84;
         const toCraft = remExp / item.exp;
         item.toGo = toCraft;
-        // item.profit = toCraft * globalPrices[item.name].price;
       });
-      console.log(dbRef);
       setTreeDB(dbRef);
     }
   }, [props.remainingExp, treeDB, globalPrices]);

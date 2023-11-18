@@ -1,51 +1,31 @@
 import stl from "./RunecraftFilter.module.css";
 import { useState } from "react";
+import Hat from "../../../../../../assets/gear/Hat.webp";
+import Robe from "../../../../../../assets/gear/Robe.webp";
+import Top from "../../../../../../assets/gear/Top.webp";
+import Boots from "../../../../../../assets/gear/Boots.webp";
 
-const RunecraftFilter = ({
-  setMultiplier,
-  setFilterChanged,
-  filterChanged,
-}) => {
-  const [checkboxState, setCheckboxState] = useState({});
-
-  const handleCheckboxChange = (e) => {
-    const checkboxId = e.target.id;
-    const isChecked = e.target.checked;
-    setFilterChanged(!filterChanged);
-
-    const chosenMultiplier = +e.target.dataset.multiplier;
-
-    // Reset multiplier if deselected
-    checkboxState[checkboxId] === true
-      ? setMultiplier(0)
-      : setMultiplier(chosenMultiplier);
-
-    setCheckboxState({ [checkboxId]: isChecked });
-
-    // Uncheck other checkboxes
-    for (const id in checkboxState) {
-      if (id !== checkboxId) {
-        setCheckboxState((prevState) => ({
-          ...prevState,
-          [id]: false,
-        }));
-      }
-    }
-  };
+const RunecraftFilter = () => {
+  const handleCheckboxChange = (e) => {};
 
   return (
     <div className={stl.modal}>
       <div className={stl.innerWrap}>
-        <div className={stl.checkRow}>
-          <input
-            type="checkbox"
-            id="lumberjack-outfit"
-            checked={checkboxState["lumberjack-outfit"] || false}
-            onChange={handleCheckboxChange}
-            data-multiplier="250"
-          />
-          <label htmlFor="lumberjack-outfit">Lumberjack outfit (+2.5%)</label>
+        <div className={stl.gearRow}>
+          <div className={stl.gearSlot}>
+            <img src={Hat} alt="Hat image" className={stl.gearImg} />
+          </div>
+          <div className={stl.gearSlot}>
+            <img src={Robe} alt="Hat image" className={stl.gearImg} />
+          </div>
+          <div className={stl.gearSlot}>
+            <img src={Top} alt="Top image" className={stl.gearImg} />
+          </div>
+          <div className={stl.gearSlot}>
+            <img src={Boots} alt="Boots image" className={stl.gearImg} />
+          </div>
         </div>
+        <div className={stl.expBoostRow}>0% Extra Runes</div>
       </div>
     </div>
   );

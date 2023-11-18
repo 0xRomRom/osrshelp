@@ -26,44 +26,36 @@
   padding-top: 0.5rem;
 }
 
-.checkRow {
-  width: 100%;
-  display: inline-block;
-  gap: 3rem;
-
-  position: relative;
+.gearRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0rem 1rem;
 }
 
-.checkDesc {
-  color: rgb(199, 199, 199);
-}
-
-input[type="checkbox"] {
-  display: none;
-}
-
-label {
-  position: relative;
-  padding-left: 25px; /* Space for the custom checkbox */
-  cursor: pointer;
-  user-select: none;
-  font-size: 15px;
-}
-
-label::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  top: 1px;
-  width: 15px;
-  height: 15px;
-  background-color: rgb(32, 46, 57);
-  border: 2px solid #aeafaf;
+.gearSlot {
+  background-color: rgba(55, 0, 255, 0.445);
   border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  padding: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label::before {
-  background-color: #aeafaf;
-  border: 2px solid #aeafaf;
+.gearSlot:hover {
+  border: 1px solid rgba(128, 128, 128, 0.274);
+}
+
+.selected {
+  background-color: rgb(55, 0, 255);
+}
+
+.expBoostRow {
+  display: flex;
+  justify-content: center;
+  color: rgb(221, 215, 215);
+  padding-top: 0.2rem;
 }
