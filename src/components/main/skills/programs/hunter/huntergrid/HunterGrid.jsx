@@ -1,14 +1,14 @@
 import stl from "./HunterGrid.module.css";
-import TREELIST from "../../../../../../utils/treeList";
-import woodcuttingIcon from "../../../../../../assets/skillicons/Woodcutting.webp";
-import axeLogo from "../../../../../../assets/random/Rune_axe.png";
-import memberLogo from "../../../../../../assets/icons/Member.webp";
+import HUNTERLIST from "../../../../../../utils/hunterList";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
+import hunterLogo from "../../../../../../assets/skillicons/Hunter.webp";
+import worldMap from "../../../../../../assets/skillicons/Worldmap.webp";
+import birdSnare from "../../../../../../assets/icons/Birdsnare.webp";
 
 import { useState, useCallback } from "react";
 
 const HunterGrid = (props) => {
-  const [treeDB, setTreeDB] = useState(TREELIST);
+  const [treeDB, setTreeDB] = useState(HUNTERLIST);
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
@@ -60,18 +60,18 @@ const HunterGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortTree}>
-          <img src={woodcuttingIcon} alt="Tree Logo" className={stl.miniLogo} />{" "}
-          Tree
+          <img src={hunterLogo} alt="Tree Logo" className={stl.miniLogo} />{" "}
+          Catch
         </span>
         <span onClick={sortMembers}>
-          <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
-          Member
+          <img src={worldMap} alt="Member Logo" className={stl.miniLogo} /> Area
         </span>
         <span onClick={sortExp}>
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
         </span>
         <span onClick={sortToGo}>
-          <img src={axeLogo} alt="Slayer Logo" className={stl.miniLogo} /> To Go
+          <img src={birdSnare} alt="Slayer Logo" className={stl.miniLogo} /> To
+          Go
         </span>
       </div>
       <div className={stl.resultGrid}>

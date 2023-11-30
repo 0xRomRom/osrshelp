@@ -1,7 +1,7 @@
 import stl from "./HunterCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import woodcuttingIcon from "../../../../../assets/skillicons/Woodcutting.webp";
+import hunterIcon from "../../../../../assets/skillicons/Hunter.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -11,7 +11,6 @@ import { useState } from "react";
 
 const HunterCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
-  const [multiplier, setMultiplier] = useState(0);
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -33,18 +32,14 @@ const HunterCalculator = (props) => {
           className={stl.backArrow}
           onClick={handleMenuSwitch}
         />
-        <img
-          src={woodcuttingIcon}
-          alt="Woodcutting Level"
-          className={stl.skillImg}
-        />
-        <span className={stl.skillTitle}>Woodcutting</span>
+        <img src={hunterIcon} alt="Hunter Level" className={stl.skillImg} />
+        <span className={stl.skillTitle}>Hunter</span>
         {arePropsDefined ? (
           <div className={stl.userStatsBox}>
             <div className={stl.userBlock}>
               <span className={stl.playerName}>{props.playerName}</span>
               <span className={stl.playerLvl}>
-                Level {props.skills["woodcutting"]}
+                Level {props.skills["hunter"]}
               </span>
             </div>
 
@@ -52,8 +47,8 @@ const HunterCalculator = (props) => {
               <span className={stl.expToGo}>Xp till level</span>
               <span className={stl.remaining}>
                 <CalculateRemainderExp
-                  skillname={"woodcutting"}
-                  currentLvl={props.skills["woodcutting"]}
+                  skillname={"hunter"}
+                  currentLvl={props.skills["hunter"]}
                   currentExp={props.skillsExp}
                   className={stl.remainder}
                 />
@@ -78,8 +73,8 @@ const HunterCalculator = (props) => {
           <TargetLevel
             skills={props.skills}
             skillsExp={props.skillsExp}
-            skillName={"woodcutting"}
-            currentLvl={props.skills["woodcutting"]}
+            skillName={"hunter"}
+            currentLvl={props.skills["hunter"]}
             currentExp={props.skillsExp}
             setRemainingExp={setRemainingExp}
             remainingExp={remainingExp}
@@ -91,7 +86,7 @@ const HunterCalculator = (props) => {
           />
         )}
       </div>
-      <HunterGrid remainingExp={remainingExp} multiplier={multiplier} />
+      <HunterGrid remainingExp={remainingExp} />
     </div>
   );
 };
