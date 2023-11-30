@@ -1,6 +1,6 @@
 import stl from "./ConstructionGrid.module.css";
-import FLETCHLIST from "../../../../../../utils/fletchlist";
-import FLETCHITEMLIST from "../../../../../../utils/fletchItemlist";
+import CONSTRUCTIONLIST from "../../../../../../utils/constructionList";
+import CONSTRUCTIONITEMLIST from "../../../../../../utils/constructionItemList";
 import fletchingLogo from "../../../../../../assets/skillicons/Fletching.webp";
 import donate from "../../../../../../assets/icons/Donate.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
@@ -8,8 +8,8 @@ import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 import { useState, useCallback, useEffect } from "react";
 
 const ConstructionGrid = (props) => {
-  const [fletchDB, setFletchDB] = useState(FLETCHLIST);
-  const [filteredfletchDB, setFilteredfletchDB] = useState(FLETCHLIST);
+  const [fletchDB, setFletchDB] = useState(CONSTRUCTIONLIST);
+  const [filteredfletchDB, setFilteredfletchDB] = useState(CONSTRUCTIONLIST);
   const [fletchPrices, setFletchPrices] = useState({});
   const [reqItemPrices, setReqItemPrices] = useState({});
 
@@ -57,7 +57,7 @@ const ConstructionGrid = (props) => {
 
   const mapRequiredItems = () => {
     const runeData = [];
-    FLETCHITEMLIST.forEach((obj) => {
+    CONSTRUCTIONITEMLIST.forEach((obj) => {
       const itemName = Object.keys(obj);
       const itemAmounts = Object.values(obj);
 
@@ -80,7 +80,7 @@ const ConstructionGrid = (props) => {
   );
 
   const mapItemPrices = useCallback(
-    (fletchData, list = FLETCHLIST) => {
+    (fletchData, list = CONSTRUCTIONLIST) => {
       let fletchList = JSON.parse(JSON.stringify(list));
 
       const mapper = fletchData.map((item, index) => {
