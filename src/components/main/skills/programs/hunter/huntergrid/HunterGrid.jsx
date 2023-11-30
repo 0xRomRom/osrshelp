@@ -8,7 +8,7 @@ import birdSnare from "../../../../../../assets/icons/Birdsnare.webp";
 import { useState, useCallback } from "react";
 
 const HunterGrid = (props) => {
-  const [treeDB, setTreeDB] = useState(HUNTERLIST);
+  const [hunterDB, setHunterDB] = useState(HUNTERLIST);
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
@@ -25,35 +25,35 @@ const HunterGrid = (props) => {
 
   const sortLevel = () => {
     setMonsterSorted(!monsterSorted);
-    let sorter = [...treeDB];
+    let sorter = [...hunterDB];
     console.log(sorter);
     sorter.sort((a, b) =>
       monsterSorted ? a.level - b.level : b.level - a.level
     );
-    setTreeDB(sorter);
+    setHunterDB(sorter);
   };
 
   const sortArea = () => {
     setMemberSorted(!memberSorted);
-    let sorter = [...treeDB];
+    let sorter = [...hunterDB];
     sorter.sort((a, b) =>
       memberSorted ? a.area.localeCompare(b.area) : b.area.localeCompare(a.area)
     );
-    setTreeDB(sorter);
+    setHunterDB(sorter);
   };
 
   const sortExp = () => {
     setCombatSorted(!combatSorted);
-    let sorter = [...treeDB];
+    let sorter = [...hunterDB];
     sorter.sort((a, b) => (combatSorted ? a.exp - b.exp : b.exp - a.exp));
-    setTreeDB(sorter);
+    setHunterDB(sorter);
   };
 
   const sortToGo = () => {
     setToGoSorted(!toGoSorted);
-    let sorter = [...treeDB];
+    let sorter = [...hunterDB];
     sorter.sort((a, b) => (toGoSorted ? a.exp - b.exp : b.exp - a.exp));
-    setTreeDB(sorter);
+    setHunterDB(sorter);
   };
 
   return (
@@ -75,7 +75,7 @@ const HunterGrid = (props) => {
         </span>
       </div>
       <div className={stl.resultGrid}>
-        {treeDB.map((tree) => {
+        {hunterDB.map((tree) => {
           const treePrice = calculateTreesToCut(tree);
           return (
             <div className={stl.row} key={Math.random()}>
@@ -91,16 +91,8 @@ const HunterGrid = (props) => {
                 </span>
               </span>
               <span className={stl.rowItem}>{tree.area}</span>
-              <span className={stl.rowItem}>
-                {+props.multiplier > 0 &&
-                  (tree.exp * (1 + 2.5 / 100)).toFixed(1)}
-                {+props.multiplier === 0 && tree.exp}
-              </span>
-              <span className={stl.rowItem}>
-                {+props.multiplier > 0 &&
-                  Math.round(treePrice / (1 + 2.5 / 100)).toLocaleString()}
-                {+props.multiplier === 0 && treePrice.toLocaleString()}
-              </span>
+              <span className={stl.rowItem}>{tree.exp}</span>
+              <span className={stl.rowItem}>{treePrice.toLocaleString()}</span>
             </div>
           );
         })}
