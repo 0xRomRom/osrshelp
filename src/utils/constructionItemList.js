@@ -1,8 +1,7 @@
 const CONSTRUCTIONITEMLIST = [
   {
-    // Headless arrow
-    Arrow_shaft: 15,
-    Feather: 15,
+    // Exit portal
+    Iron_bar: 10,
   },
 ];
 
