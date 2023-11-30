@@ -8,9 +8,11 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import HunterGrid from "./huntergrid/HunterGrid";
 import { useState } from "react";
+import SearchFilter from "../searchfilter/SearchFilter";
 
 const HunterCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
+  const [searchState, setSearchState] = useState("");
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -85,8 +87,13 @@ const HunterCalculator = (props) => {
             remainingExp={remainingExp}
           />
         )}
+        <SearchFilter
+          setSearchState={setSearchState}
+          searchType="Search Creature"
+        />
       </div>
-      <HunterGrid remainingExp={remainingExp} />
+
+      <HunterGrid remainingExp={remainingExp} searchState={searchState} />
     </div>
   );
 };

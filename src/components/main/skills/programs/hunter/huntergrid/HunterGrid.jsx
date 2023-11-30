@@ -5,14 +5,31 @@ import hunterLogo from "../../../../../../assets/skillicons/Hunter.webp";
 import worldMap from "../../../../../../assets/skillicons/Worldmap.webp";
 import birdSnare from "../../../../../../assets/icons/Birdsnare.webp";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 const HunterGrid = (props) => {
   const [hunterDB, setHunterDB] = useState(HUNTERLIST);
+  const [filteredHunterDB, setFilteredHunterDB] = useState(HUNTERLIST);
   const [monsterSorted, setMonsterSorted] = useState(false);
   const [memberSorted, setMemberSorted] = useState(false);
   const [combatSorted, setCombatSorted] = useState(false);
   const [toGoSorted, setToGoSorted] = useState(false);
+
+  const filterSpells = useCallback(() => {
+    if (props.searchState) {
+      const filteredSpells = hunterDB.filter((spell) =>
+        spell.name.toLowerCase().includes(props.searchState.toLowerCase())
+      );
+      setFilteredHunterDB(filteredSpells);
+    } else {
+      // If search state is empty, reset to the original data
+      setFilteredHunterDB(hunterDB);
+    }
+  }, [props.searchState, hunterDB]);
+
+  useEffect(() => {
+    filterSpells();
+  }, [filterSpells]);
 
   const calculateTreesToCut = useCallback(
     (tree) => {
@@ -75,7 +92,7 @@ const HunterGrid = (props) => {
         </span>
       </div>
       <div className={stl.resultGrid}>
-        {hunterDB.map((tree) => {
+        {filteredHunterDB.map((tree) => {
           const treePrice = calculateTreesToCut(tree);
           return (
             <div className={stl.row} key={Math.random()}>
