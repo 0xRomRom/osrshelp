@@ -45,6 +45,7 @@ import ThievingCalculator from "./programs/thieving/ThievingCalculator";
 import FarmingCalculator from "./programs/farming/FarmingCalculator";
 import RunecraftCalculator from "./programs/runecraft/RunecraftCalculator";
 import HunterCalculator from "./programs/hunter/HunterCalculator";
+import ConstructionCalculator from "./programs/construction/ConstructionCalculator";
 
 const SkillsTab = (props) => {
   const handleTabOpen = (path) => {
@@ -295,6 +296,18 @@ const SkillsTab = (props) => {
 
       {props.subState === "Hunter" && (
         <HunterCalculator
+          skills={props.skills}
+          skillsExp={props.skillsExp}
+          playerName={props.playerName}
+          setSkills={props.setSkills}
+          setSkillsExp={props.setSkillsExp}
+          setPlayerName={props.setPlayerName}
+          setSubState={props.setSubState}
+        />
+      )}
+
+      {props.subState === "Construction" && (
+        <ConstructionCalculator
           skills={props.skills}
           skillsExp={props.skillsExp}
           playerName={props.playerName}
