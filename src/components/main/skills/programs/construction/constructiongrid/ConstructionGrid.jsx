@@ -20,7 +20,7 @@ const ConstructionGrid = (props) => {
 
   const priceFetcher = async () => {
     const constructionPrices = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Iron_bar"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Iron_bar|Plank|Steel_nails|Oak_plank|Teak_plank|Mahogany_plank|Soft_clay|Bolt_of_cloth|Steel_bar|Limestone_brick|Gold_leaf|Marble_block|Magic_stone|Bagged_plant_1"
     );
     const resultPrices = await constructionPrices.json();
 
