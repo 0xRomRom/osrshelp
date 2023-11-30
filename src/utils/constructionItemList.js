@@ -426,6 +426,312 @@ const CONSTRUCTIONITEMLIST = [
     // Carved teak bench
     Teak_plank: 4,
   },
+  {
+    // Oak shelves 2
+    Oak_plank: 3,
+    Soft_clay: 6,
+  },
+  {
+    // Carved teak table
+    Teak_plank: 6,
+    Bolt_of_cloth: 4,
+  },
+  {
+    // Large teak bed
+    Teak_plank: 5,
+    Bolt_of_cloth: 2,
+  },
+  {
+    // Maple tree
+    Bagged_maple_tree: 1,
+  },
+  {
+    // Teak dresser
+    Teak_plank: 2,
+    Molten_glass: 1,
+  },
+  {
+    // Sink
+    Steel_bar: 15,
+  },
+  {
+    // Eagle lectern
+    Oak_plank: 2,
+  },
+  {
+    // Demon lectern
+    Oak_plank: 2,
+  },
+  {
+    // Mythical cape (mounted)
+    Teak_plank: 3,
+  },
+  {
+    // Chef's delight
+    Oak_plank: 3,
+    Steel_bar: 2,
+    "Chef's_delight": 8,
+  },
+  {
+    // Teak portal
+    Teak_plank: 3,
+  },
+  {
+    // Mahogany armchair
+    Mahogany_plank: 2,
+  },
+  {
+    // Ornamental globe
+    Teak_plank: 3,
+  },
+  {
+    // Teleport focus
+    Limestone_brick: 2,
+  },
+  {
+    // Teak drawers
+    Teak_plank: 2,
+  },
+  {
+    // Combat ring
+    Teak_plank: 6,
+    Bolt_of_cloth: 6,
+  },
+  {
+    // Mahogany bench
+    Mahogany_plank: 4,
+  },
+  {
+    // Mahogany table
+    Mahogany_plank: 6,
+  },
+  {
+    // 4-poster
+    Mahogany_plank: 3,
+    Bolt_of_cloth: 2,
+  },
+  {
+    // Extra weapons rack
+    Teak_plank: 4,
+    Steel_bar: 4,
+  },
+  {
+    // Elemental_sphere_icon
+    Teak_plank: 3,
+    Gold_leaf: 1,
+    Unpowered_orb: 1,
+  },
+  {
+    // Teak clock
+    Teak_plank: 2,
+    Clockwork: 1,
+  },
+  {
+    // Gilded decoration
+    Mahogany_plank: 3,
+    Gold_leaf: 2,
+  },
+  {
+    // Fancy teak dresser
+    Teak_plank: 2,
+    Molten_glass: 2,
+  },
+  {
+    // Teak shelves 1
+    Teak_plank: 3,
+    Soft_clay: 6,
+  },
+  {
+    // Teak eagle lectern
+    Teak_plank: 2,
+  },
+  {
+    // Teak demon lectern
+    Teak_plank: 2,
+  },
+  {
+    // Lunar globe
+    Teak_plank: 3,
+    Gold_leaf: 1,
+  },
+  {
+    // Gilded 4-poster
+    Mahogany_plank: 5,
+    Bolt_of_cloth: 2,
+    Gold_leaf: 2,
+  },
+  {
+    // Posh bell-pull
+    Teak_plank: 1,
+    Bolt_of_cloth: 2,
+    Gold_leaf: 1,
+  },
+  {
+    // Yew tree
+    Bagged_yew_tree: 1,
+  },
+  {
+    // Gilded bench
+    Mahogany_plank: 4,
+    Gold_leaf: 4,
+  },
+  {
+    // Teak wardrobe
+    Teak_plank: 3,
+  },
+  {
+    // Marble fireplace
+    Marble_block: 1,
+  },
+  {
+    // Astronomical chart
+    Bolt_of_cloth: 3,
+  },
+  {
+    // Teak telescope
+    Teak_plank: 2,
+    Molten_glass: 1,
+  },
+  {
+    // Mahogany dresser
+    Mahogany_plank: 2,
+    Molten_glass: 1,
+  },
+  {
+    // Mahogany portal
+    Mahogany_plank: 3,
+  },
+  {
+    // Greater teleport focus
+    Marble_block: 1,
+  },
+  {
+    // Opulent rug
+    Bolt_of_cloth: 4,
+    Gold_leaf: 1,
+  },
+  {
+    // Crystal of power
+    Mahogany_plank: 2,
+    Gold_leaf: 2,
+    Unpowered_orb: 1,
+  },
+  {
+    // Teak garden bench
+    Teak_plank: 6,
+  },
+  {
+    // Teak shelves 2
+    Teak_plank: 3,
+    Soft_clay: 6,
+    Gold_leaf: 2,
+  },
+  {
+    // Mahogany demon lectern
+    Mahogany_plank: 2,
+    Gold_leaf: 1,
+  },
+  {
+    // Mahogany eagle lectern
+    Mahogany_plank: 2,
+    Gold_leaf: 1,
+  },
+  {
+    // Celestial globe
+    Teak_plank: 3,
+    Gold_leaf: 1,
+  },
+  {
+    // Carved teak magic wardrobe
+    Oak_plank: 10,
+    Teak_plank: 10,
+  },
+  {
+    // Dungeon entrance
+    Marble_block: 1,
+  },
+  {
+    // Ranging pedestals
+    Teak_plank: 8,
+  },
+  {
+    // Opulent table
+    Mahogany_plank: 6,
+    Bolt_of_cloth: 4,
+    Gold_leaf: 4,
+    Marble_block: 2,
+  },
+  {
+    // Oak door
+    Oak_plank: 10,
+  },
+  {
+    // Gilded dresser
+    Mahogany_plank: 2,
+    Molten_glass: 2,
+    Gold_leaf: 1,
+  },
+  {
+    // Mahogany wardrobe
+    Mahogany_plank: 3,
+  },
+  {
+    // Magic tree
+    Bagged_magic_tree: 1,
+  },
+  {
+    // Armillary sphere
+    Mahogany_plank: 2,
+    Gold_leaf: 2,
+    Steel_bar: 4,
+  },
+  {
+    // Gnome bench
+    Mahogany_plank: 6,
+  },
+  {
+    // Marble portal
+    Marble_block: 3,
+  },
+  {
+    // Scrying pool
+    Marble_block: 4,
+  },
+  {
+    // Balance beam
+    Teak_plank: 10,
+    Steel_bar: 5,
+  },
+  {
+    // Infernal chart
+    Bolt_of_cloth: 4,
+  },
+  {
+    // Mahogany telescope
+    Mahogany_plank: 2,
+    Molten_glass: 1,
+  },
+  {
+    // Gilded clock
+    Mahogany_plank: 2,
+    Clockwork: 1,
+    Gold_leaf: 1,
+  },
+  {
+    // Small orrery
+    Mahogany_plank: 3,
+    Gold_leaf: 3,
+  },
+  {
+    // Gilded wardrobe
+    Mahogany_plank: 3,
+    Gold_leaf: 1,
+  },
+  {
+    // Large orrery
+    Mahogany_plank: 3,
+    Gold_leaf: 5,
+  },
 ];
 
 export default CONSTRUCTIONITEMLIST;
