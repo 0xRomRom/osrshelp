@@ -23,7 +23,7 @@ const HunterGrid = (props) => {
     [props.remainingExp]
   );
 
-  const sortTree = () => {
+  const sortLevel = () => {
     setMonsterSorted(!monsterSorted);
     let sorter = [...treeDB];
     console.log(sorter);
@@ -33,11 +33,11 @@ const HunterGrid = (props) => {
     setTreeDB(sorter);
   };
 
-  const sortMembers = () => {
+  const sortArea = () => {
     setMemberSorted(!memberSorted);
     let sorter = [...treeDB];
     sorter.sort((a, b) =>
-      memberSorted ? a.members - b.members : b.members - a.members
+      memberSorted ? a.area.localeCompare(b.area) : b.area.localeCompare(a.area)
     );
     setTreeDB(sorter);
   };
@@ -59,11 +59,11 @@ const HunterGrid = (props) => {
   return (
     <div className={stl.grid}>
       <div className={stl.typeRow}>
-        <span className={stl.monsterTitleRow} onClick={sortTree}>
+        <span className={stl.monsterTitleRow} onClick={sortLevel}>
           <img src={hunterLogo} alt="Tree Logo" className={stl.miniLogo} />{" "}
           Catch
         </span>
-        <span onClick={sortMembers}>
+        <span onClick={sortArea}>
           <img src={worldMap} alt="Member Logo" className={stl.miniLogo} /> Area
         </span>
         <span onClick={sortExp}>
@@ -90,7 +90,7 @@ const HunterGrid = (props) => {
                   {tree.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{tree.members ? "Yes" : "No"}</span>
+              <span className={stl.rowItem}>{tree.area}</span>
               <span className={stl.rowItem}>
                 {+props.multiplier > 0 &&
                   (tree.exp * (1 + 2.5 / 100)).toFixed(1)}
