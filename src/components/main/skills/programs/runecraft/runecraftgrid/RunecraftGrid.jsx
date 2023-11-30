@@ -28,8 +28,8 @@ const RunecraftGrid = (props) => {
   }, []);
 
   const calcPrice = useCallback(
-    (tree) => {
-      const itemProfit = tree.profit;
+    (rune) => {
+      const itemProfit = rune.profit;
       const extraMultiplier =
         props.multiplier > 0 ? props.multiplier / 10 + 1 : 1;
       const multipliedPrice = itemProfit * extraMultiplier;
