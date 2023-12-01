@@ -2,13 +2,11 @@
   color: white;
   font-size: 18px;
   padding: 2rem;
-  width: 500px;
-  max-width: 500px;
+  width: 350px;
   background-color: rgb(32, 46, 57);
   margin: 1rem;
   margin-left: 0rem;
   border-radius: 0.8rem;
-  padding-bottom: 2.75rem;
   display: flex;
   gap: 1rem;
 }
@@ -32,6 +30,7 @@
   padding-left: 0.3rem;
   font-size: 14px;
   width: 8rem;
+  bottom: 3px;
 }
 
 .cta {

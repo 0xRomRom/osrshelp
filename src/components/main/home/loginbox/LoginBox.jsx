@@ -97,11 +97,6 @@ const LoginBox = (props) => {
           </button>
         </div>
       </form>
-      <img
-        src={connectionLogo}
-        alt="Connection Logo"
-        className={stl.connectionSvg}
-      />
     </div>
   );
 };
