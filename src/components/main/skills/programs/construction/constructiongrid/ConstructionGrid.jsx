@@ -85,7 +85,6 @@ const ConstructionGrid = (props) => {
 
       // Update fletchprices
       const updatedPrices = mapItemPrices(itemArray);
-      console.log(updatedPrices);
 
       // // Update fletches to go
       const updatedCasts = calcSpellsToUse(updatedPrices);
@@ -203,16 +202,28 @@ const ConstructionGrid = (props) => {
                 </span>
               </span>
               <span className={`${stl.rowItem} ${stl.expRow}`}>
-                {fletch.exp}
+                {+props.multiplier > 0 &&
+                  (fletch.exp * (1 + 2.5 / 100)).toFixed(1).toLocaleString()}
+                {+props.multiplier === 0 && fletch.exp}
                 <span className={stl.gpperxp}>
-                  {fletch.cost / fletch.exp > 0
-                    ? "-" + Math.abs(fletch.cost / fletch.exp).toFixed(1)
-                    : "+" + Math.abs(fletch.cost / fletch.exp).toFixed(1)}
+                  {fletch.cost / fletch.exp > 0 ? "-" : "+"}
+                  {+props.multiplier === 0 &&
+                    (fletch.cost / fletch.exp > 0
+                      ? Math.abs(fletch.cost / fletch.exp)
+                      : -(fletch.cost / fletch.exp)
+                    ).toFixed(1)}
+                  {+props.multiplier > 0 &&
+                    (fletch.cost / (+props.multiplier / 100) / fletch.exp > 0
+                      ? Math.abs(fletch.cost / (1 + 2.5 / 100) / fletch.exp)
+                      : -(fletch.cost / (1 + 2.5 / 100) / fletch.exp)
+                    ).toFixed(2)}
                   gp/exp
                 </span>
               </span>
               <span className={stl.rowItem}>
-                {fletchAmount.toLocaleString()}
+                {+props.multiplier > 0 &&
+                  Math.round(fletchAmount / (1 + 2.5 / 100)).toLocaleString()}
+                {+props.multiplier === 0 && fletchAmount.toLocaleString()}
               </span>
               <span
                 className={`${stl.rowItem}  ${
@@ -220,9 +231,13 @@ const ConstructionGrid = (props) => {
                 }`}
               >
                 {fletch.cost * fletchAmount > 0 ? "-" : "+"}
-                {fletch.cost * fletchAmount
-                  ? Math.abs(fletch.cost * fletchAmount).toLocaleString()
-                  : "?"}
+                {+props.multiplier === 0 &&
+                  Math.abs(fletch.cost * fletchAmount).toLocaleString()}
+                {+props.multiplier > 0 &&
+                  Math.round(
+                    (fletch.cost * fletchAmount) / (1 + 2.5 / 100)
+                  ).toLocaleString()}
+
                 <span className={stl.gpcost}>gp</span>
               </span>
             </div>

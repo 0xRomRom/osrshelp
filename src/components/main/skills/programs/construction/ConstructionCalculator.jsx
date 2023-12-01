@@ -9,10 +9,13 @@ import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import ConstructionGrid from "./constructiongrid/ConstructionGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import { useState } from "react";
+import ConstructionFilters from "./constructionfilters/ConstructionFilters";
 
 const ConstructionCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
   const [searchState, setSearchState] = useState("");
+  const [multiplier, setMultiplier] = useState(0);
+  const [filterChanged, setFilterChanged] = useState(false);
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
@@ -93,10 +96,19 @@ const ConstructionCalculator = (props) => {
         )}
         <SearchFilter
           setSearchState={setSearchState}
-          searchType="Search Item"
+          searchType="Search Object"
+        />
+        <ConstructionFilters
+          setMultiplier={setMultiplier}
+          setFilterChanged={setFilterChanged}
+          filterChanged={filterChanged}
         />
       </div>
-      <ConstructionGrid remainingExp={remainingExp} searchState={searchState} />
+      <ConstructionGrid
+        remainingExp={remainingExp}
+        searchState={searchState}
+        multiplier={multiplier}
+      />
     </div>
   );
 };
