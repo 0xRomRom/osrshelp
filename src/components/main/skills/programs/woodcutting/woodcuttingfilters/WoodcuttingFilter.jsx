@@ -1,5 +1,6 @@
 import stl from "./WoodcuttingFilter.module.css";
 import { useState } from "react";
+import lumberjackHat from "../../../../../../assets/random/Lumberjack.webp";
 
 const WoodcuttingFilter = ({
   setMultiplier,
@@ -44,7 +45,14 @@ const WoodcuttingFilter = ({
             onChange={handleCheckboxChange}
             data-multiplier="250"
           />
-          <label htmlFor="lumberjack-outfit">Lumberjack outfit (+2.5%)</label>
+          <label htmlFor="lumberjack-outfit">
+            Lumberjack outfit (+2.5%){" "}
+            <img
+              src={lumberjackHat}
+              alt="Carpenter's outfit"
+              className={stl.anglerHat}
+            />
+          </label>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import stl from "./FiremakingFilters.module.css";
 import { useState } from "react";
+import pyromancerHat from "../../../../../assets/random/Pyromancer.webp";
 
 const PrayerFilters = ({ setMultiplier, setFilterChanged, filterChanged }) => {
   const [checkboxState, setCheckboxState] = useState({});
@@ -40,7 +41,14 @@ const PrayerFilters = ({ setMultiplier, setFilterChanged, filterChanged }) => {
             checked={checkboxState["pyromancer"] || false}
             onChange={handleCheckboxChange}
           />
-          <label htmlFor="pyromancer">Pyromancer outfit (+2.5%)</label>
+          <label htmlFor="pyromancer">
+            Pyromancer outfit (+2.5%){" "}
+            <img
+              src={pyromancerHat}
+              alt="Pyromancer's outfit"
+              className={stl.anglerHat}
+            />
+          </label>
         </div>
       </div>
     </div>
