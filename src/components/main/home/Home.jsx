@@ -5,6 +5,7 @@ import welcometxt from "../../../assets/Welcometxt.png";
 
 import LoginBox from "./loginbox/LoginBox";
 import UserBox from "./userbox/UserBox";
+import TotalUsers from "./totalUsersBox/TotalUsers";
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
@@ -36,6 +37,7 @@ const Home = (props) => {
             setPlayerName={props.setPlayerName}
           />
         )}
+        <TotalUsers />
       </div>
     </div>
   );

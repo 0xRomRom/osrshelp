@@ -1,0 +1,26 @@
+.totalusers {
+  color: white;
+  font-size: 18px;
+  padding: 2rem;
+  width: 350px;
+  height: 254px;
+  background-color: rgb(32, 46, 57);
+  margin: 1rem;
+  margin-left: 0rem;
+  border-radius: 0.8rem;
+  padding-bottom: 2.75rem;
+  display: flex;
+  gap: 0.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userCount {
+  font-size: 40px;
+}
+
+.visitorsSpan {
+  color: gray;
+  font-size: 20px;
+}
