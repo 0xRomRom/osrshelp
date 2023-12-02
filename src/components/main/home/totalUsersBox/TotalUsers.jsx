@@ -15,16 +15,16 @@ const TotalUsers = () => {
 
   const setCurrentTimestamp = () => {
     const now = new Date();
-    const currentDay = now.getDay();
-    const currentHour = now.getMinutes();
+    const currentH = now.getHours();
+    const currentM = now.getMinutes();
 
-    localStorage.setItem("activeStamp", currentDay + "-" + currentHour);
+    localStorage.setItem("activeStamp", currentH + "-" + currentM);
   };
 
   useEffect(() => {
     const now = new Date();
-    const currentDay = now.getDay();
-    const currentHour = now.getMinutes();
+    const currentH = now.getHours();
+    const currentM = now.getMinutes();
     const previousVisit = localStorage.getItem("activeStamp");
 
     if (!previousVisit) {
@@ -33,34 +33,50 @@ const TotalUsers = () => {
       setIncrementDB(true);
     }
     if (previousVisit) {
-      const visitedDay = +previousVisit.split("-")[0];
-      const visitedHour = +previousVisit.split("-")[1];
-      console.log("visitedDay:", visitedDay);
-      console.log("visitedHour:", visitedHour);
+      const visitedH = +previousVisit.split("-")[0];
+      const visitedM = +previousVisit.split("-")[1];
+      console.log("visitedH:", visitedH);
+      console.log("visitedM:", visitedM);
 
-      console.log("Current Day:", currentDay);
-      console.log("Current Hour", currentHour);
+      console.log("Current Day:", currentH);
+      console.log("Current Hour", currentM);
 
-      if (currentDay > visitedDay) {
+      if (currentH > visitedH) {
         setCurrentTimestamp();
         setIncrementDB(true);
         localStorage.removeItem("activeStamp");
         return;
       }
-      if (currentHour === 0 && visitedHour > 0) {
+      if (currentH === 0 && visitedH > 0) {
         setCurrentTimestamp();
         setIncrementDB(true);
         localStorage.removeItem("activeStamp");
         return;
       }
-      if (currentHour > visitedHour) {
+      if (currentH === visitedH && currentM - 5 >= visitedM) {
         setCurrentTimestamp();
         setIncrementDB(true);
         localStorage.removeItem("activeStamp");
         return;
+      }
+
+      if (currentH === visitedH) {
+        if (
+          (currentM - 5 === -5 > visitedM && visitedM === 55) ||
+          (currentM - 5 === -4 > visitedM && visitedM === 56) ||
+          (currentM - 5 === -3 > visitedM && visitedM === 57) ||
+          (currentM - 5 === -2 > visitedM && visitedM === 58) ||
+          (currentM - 5 === -1 > visitedM && visitedM === 59)
+        ) {
+          setCurrentTimestamp();
+          setIncrementDB(true);
+          localStorage.removeItem("activeStamp");
+          return;
+        }
       }
     }
-  }, []);
+    setIncrementDB(false);
+  }, []); //86 om 17:37
 
   useEffect(() => {
     // console.log(localStorage.getItem("activeStamp"));
