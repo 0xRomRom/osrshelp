@@ -6,34 +6,48 @@ import app from "./../../../../../src/utils/firebase";
 import { getDatabase, get, ref as refs, set } from "firebase/database";
 
 const TotalUsers = () => {
-  const [totalUsers, setTotalUsers] = useState(3341);
+  const [totalUsers, setTotalUsers] = useState(0);
+  const [initialFetch, setInitialFetch] = useState(false);
   const [ref, inView] = useInView({
     triggerOnce: false,
   });
 
   useEffect(() => {
-    const dbRef = refs(getDatabase());
-    get(dbRef)
-      .then((snapshot) => {
-        if (snapshot.exists()) {
-          snapshot.forEach((review) => {
-            console.log(review.val());
-            let count = 0;
-            review.forEach((item) => {
-              const finalRes = +item.val().rating;
-              count += finalRes;
-            });
-          });
-        } else {
-          console.log("No data available");
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    if (!totalUsers) {
+      const db = getDatabase(app);
+      const dbRef = refs(getDatabase());
+      let currValue = 0;
 
-    console.log(app);
-  }, [app]);
+      get(dbRef)
+        .then((snapshot) => {
+          if (snapshot.exists()) {
+            const value = snapshot.val().totalUsers.Counter.totalUsers;
+            currValue += value;
+            currValue++;
+            setTotalUsers(currValue);
+            console.log(currValue);
+          } else {
+            console.log("No data available");
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+      console.log(currValue);
+    }
+  }, [totalUsers]);
+
+  useEffect(() => {
+    if (totalUsers > 0 && !initialFetch) {
+      const dbSetter = getDatabase();
+
+      set(refs(dbSetter, `totalUsers/Counter`), {
+        totalUsers: totalUsers,
+      });
+      setTotalUsers(totalUsers + 1);
+      setInitialFetch(true);
+    }
+  }, [totalUsers, initialFetch]);
 
   return (
     <div className={stl.totalusers}>

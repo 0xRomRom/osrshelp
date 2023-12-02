@@ -12,8 +12,6 @@ const firebaseConfig = {
   storageBucket: "osrshelp-b4456.appspot.com",
   messagingSenderId: "84326070431",
   appId: "1:84326070431:web:6d4c76db30ba84094d8aaa",
-  databaseURL:
-    "https://osrshelp-b4456-default-rtdb.europe-west1.firebasedatabase.app/",
 };
 
 // Initialize Firebase
