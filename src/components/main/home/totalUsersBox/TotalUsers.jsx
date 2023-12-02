@@ -8,27 +8,34 @@ import { getDatabase, get, ref as refs, set } from "firebase/database";
 const TotalUsers = () => {
   const [totalUsers, setTotalUsers] = useState(0);
   const [initialFetch, setInitialFetch] = useState(false);
+  const [incrementDB, setIncrementDB] = useState(false);
   const [ref, inView] = useInView({
     triggerOnce: false,
   });
 
+  const setCurrentTimestamp = () => {
+    const now = new Date();
+    const currentDay = now.getDay();
+    const currentHour = now.getHours();
+
+    localStorage.setItem("activeStamp", currentDay + "-" + currentHour);
+  };
+
   useEffect(() => {
     const now = new Date();
-    const currentMinute = now.getMinutes();
+    const currentDay = now.getDay();
+    const currentHour = now.getHours();
     const previousVisit = localStorage.getItem("activeStamp");
 
-    let currMin = +currentMinute;
-    let currVisit = +previousVisit;
-
-    console.log("Current minute:", currMin);
-    console.log("Previous visit:", currVisit);
-    console.log("Time difference:", currMin - currVisit);
-    if (currMin === 560) {
-      // alert("Long ago!");
+    if (!previousVisit) {
+      console.log("No visit");
+      setCurrentTimestamp();
+      setIncrementDB(true);
     }
-
-    // localStorage.setItem("activeStamp", currentMinute);
-    // console.log("Previous visit:", previousVisit);
+    if (previousVisit) {
+    }
+    const setHour = previousVisit?.split("-")[0];
+    console.log(setHour);
   }, []);
 
   useEffect(() => {
@@ -60,16 +67,16 @@ const TotalUsers = () => {
   }, [totalUsers]);
 
   useEffect(() => {
-    if (totalUsers > 0 && !initialFetch) {
+    if (totalUsers > 0 && !initialFetch && incrementDB) {
       const dbSetter = getDatabase();
 
-      // set(refs(dbSetter, `totalUsers/Counter`), {
-      //   totalUsers: totalUsers,
-      // });
+      set(refs(dbSetter, `totalUsers/Counter`), {
+        totalUsers: totalUsers,
+      });
       setTotalUsers(totalUsers);
       setInitialFetch(true);
     }
-  }, [totalUsers, initialFetch]);
+  }, [totalUsers, initialFetch, incrementDB]);
 
   return (
     <div className={stl.totalusers}>
