@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import stl from "./LoginBox.module.css";
 import { playerStats } from "../../../../utils/playerStats.js";
-import connectionLogo from "../../../../assets/icons/Connection.svg";
 
 const LoginBox = (props) => {
   const usernameRef = useRef(null);
