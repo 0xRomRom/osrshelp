@@ -75,7 +75,7 @@ const TotalUsers = () => {
         }
       }
     }
-    setIncrementDB(false);
+    // setIncrementDB(false);
   }, []); //86 om 17:37
 
   useEffect(() => {
