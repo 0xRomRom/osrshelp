@@ -7,7 +7,6 @@ import { getDatabase, get, ref as refs, set } from "firebase/database";
 
 const TotalUsers = () => {
   const [totalUsers, setTotalUsers] = useState(0);
-  const [initialFetch, setInitialFetch] = useState(false);
   const [incrementDB, setIncrementDB] = useState(false);
   const [ref, inView] = useInView({
     triggerOnce: false,
@@ -35,11 +34,6 @@ const TotalUsers = () => {
     if (previousVisit) {
       const visitedH = +previousVisit.split("-")[0];
       const visitedM = +previousVisit.split("-")[1];
-      console.log("visitedH:", visitedH);
-      console.log("visitedM:", visitedM);
-
-      console.log("Current Day:", currentH);
-      console.log("Current Hour", currentM);
 
       if (currentH > visitedH) {
         setCurrentTimestamp();
@@ -75,11 +69,6 @@ const TotalUsers = () => {
         }
       }
     }
-    // setIncrementDB(false);
-  }, []); //86 om 17:37
-
-  useEffect(() => {
-    // console.log(localStorage.getItem("activeStamp"));
   }, []);
 
   // Get initial database values
@@ -107,16 +96,15 @@ const TotalUsers = () => {
   }, [totalUsers]);
 
   useEffect(() => {
-    if (totalUsers > 0 && !initialFetch && incrementDB) {
+    if (totalUsers > 0 && incrementDB) {
       const dbSetter = getDatabase();
 
       set(refs(dbSetter, `totalUsers/Counter`), {
         totalUsers: totalUsers,
       });
       setTotalUsers(totalUsers);
-      setInitialFetch(true);
     }
-  }, [totalUsers, initialFetch, incrementDB]);
+  }, [totalUsers, incrementDB]);
 
   return (
     <div className={stl.totalusers}>

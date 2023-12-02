@@ -18,6 +18,16 @@ body {
   /* background: url("./assets//wallpapers/Mainbg.webp"); */
   /* background-position: center; */
   background-color: rgb(21, 32, 40);
+  background-color: rgb(12, 16, 29);
+  background-color: rgb(13, 18, 31);
+  background: linear-gradient(
+    100deg,
+    rgb(23, 33, 56),
+    rgb(21, 29, 48),
+    rgb(18, 26, 49),
+    rgb(23, 33, 56)
+  );
+  height: 100vh;
 }
 
 code {
