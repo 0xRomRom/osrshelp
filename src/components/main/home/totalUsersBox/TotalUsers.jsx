@@ -16,7 +16,7 @@ const TotalUsers = () => {
   const setCurrentTimestamp = () => {
     const now = new Date();
     const currentDay = now.getDay();
-    const currentHour = now.getHours();
+    const currentHour = now.getMinutes();
 
     localStorage.setItem("activeStamp", currentDay + "-" + currentHour);
   };
@@ -24,7 +24,7 @@ const TotalUsers = () => {
   useEffect(() => {
     const now = new Date();
     const currentDay = now.getDay();
-    const currentHour = now.getHours();
+    const currentHour = now.getMinutes();
     const previousVisit = localStorage.getItem("activeStamp");
 
     if (!previousVisit) {
@@ -33,9 +33,33 @@ const TotalUsers = () => {
       setIncrementDB(true);
     }
     if (previousVisit) {
+      const visitedDay = +previousVisit.split("-")[0];
+      const visitedHour = +previousVisit.split("-")[1];
+      console.log("visitedDay:", visitedDay);
+      console.log("visitedHour:", visitedHour);
+
+      console.log("Current Day:", currentDay);
+      console.log("Current Hour", currentHour);
+
+      if (currentDay > visitedDay) {
+        setCurrentTimestamp();
+        setIncrementDB(true);
+        localStorage.removeItem("activeStamp");
+        return;
+      }
+      if (currentHour === 0 && visitedHour > 0) {
+        setCurrentTimestamp();
+        setIncrementDB(true);
+        localStorage.removeItem("activeStamp");
+        return;
+      }
+      if (currentHour > visitedHour) {
+        setCurrentTimestamp();
+        setIncrementDB(true);
+        localStorage.removeItem("activeStamp");
+        return;
+      }
     }
-    const setHour = previousVisit?.split("-")[0];
-    console.log(setHour);
   }, []);
 
   useEffect(() => {
