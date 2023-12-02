@@ -15,7 +15,7 @@ const TotalUsers = () => {
   useEffect(() => {
     if (!totalUsers) {
       const db = getDatabase(app);
-      const dbRef = refs(getDatabase());
+      const dbRef = refs(db);
       let currValue = 0;
 
       get(dbRef)
@@ -25,7 +25,6 @@ const TotalUsers = () => {
             currValue += value;
             currValue++;
             setTotalUsers(currValue);
-            console.log(currValue);
           } else {
             console.log("No data available");
           }
@@ -44,7 +43,7 @@ const TotalUsers = () => {
       set(refs(dbSetter, `totalUsers/Counter`), {
         totalUsers: totalUsers,
       });
-      setTotalUsers(totalUsers + 1);
+      setTotalUsers(totalUsers);
       setInitialFetch(true);
     }
   }, [totalUsers, initialFetch]);
