@@ -8,7 +8,6 @@ import { getDatabase, get, ref as refs, set } from "firebase/database";
 const TotalUsers = () => {
   const [totalUsers, setTotalUsers] = useState(0);
   const [initialFetch, setInitialFetch] = useState(false);
-  const [alreadyActive, setAlreadyActive] = useState(false);
   const [ref, inView] = useInView({
     triggerOnce: false,
   });
@@ -16,22 +15,27 @@ const TotalUsers = () => {
   useEffect(() => {
     const now = new Date();
     const currentMinute = now.getMinutes();
+    const previousVisit = localStorage.getItem("activeStamp");
 
-    const hasVisited = localStorage.getItem("activeStamp");
-    console.log(hasVisited);
-    if (!hasVisited) {
-      localStorage.setItem("activeStamp", currentMinute);
-      setAlreadyActive(false);
-    } else {
-      setAlreadyActive(true);
-      console.log("Entered at minute", hasVisited);
+    let currMin = +currentMinute;
+    let currVisit = +previousVisit;
+
+    console.log("Current minute:", currMin);
+    console.log("Previous visit:", currVisit);
+    console.log("Time difference:", currMin - currVisit);
+    if (currMin === 560) {
+      // alert("Long ago!");
     }
-  }, [setAlreadyActive]);
 
-  useEffect(() => {
-    console.log(localStorage.getItem("activeStamp"));
+    // localStorage.setItem("activeStamp", currentMinute);
+    // console.log("Previous visit:", previousVisit);
   }, []);
 
+  useEffect(() => {
+    // console.log(localStorage.getItem("activeStamp"));
+  }, []);
+
+  // Get initial database values
   useEffect(() => {
     if (!totalUsers) {
       const db = getDatabase(app);
@@ -55,18 +59,17 @@ const TotalUsers = () => {
     }
   }, [totalUsers]);
 
-  // Get initial database values
   useEffect(() => {
-    if (totalUsers > 0 && !initialFetch && !alreadyActive) {
+    if (totalUsers > 0 && !initialFetch) {
       const dbSetter = getDatabase();
 
-      set(refs(dbSetter, `totalUsers/Counter`), {
-        totalUsers: totalUsers,
-      });
+      // set(refs(dbSetter, `totalUsers/Counter`), {
+      //   totalUsers: totalUsers,
+      // });
       setTotalUsers(totalUsers);
       setInitialFetch(true);
     }
-  }, [totalUsers, initialFetch, alreadyActive]);
+  }, [totalUsers, initialFetch]);
 
   return (
     <div className={stl.totalusers}>
