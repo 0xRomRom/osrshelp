@@ -6,6 +6,7 @@ import combatoptions from "../../assets/icons/Combatoptions.webp";
 import gear from "../../assets/icons/Gear.webp";
 import xptable from "../../assets/icons/Xptable.webp";
 import donate from "../../assets/icons/Donate.webp";
+import mills from "../../assets/icons/Mills.webp";
 
 const Nav = (props) => {
   const handleTabSwitch = (tab, path) => {
@@ -53,15 +54,7 @@ const Nav = (props) => {
             <img src={stats} alt="Skills Icon" className={stl.icon} />
             Skill Calculators
           </li>
-          <li
-            className={`${stl.navitem} ${
-              props.activeTab === "combat" ? stl.active : ""
-            }`}
-            onClick={() => handleTabSwitch("combat", "Combat Calculators")}
-          >
-            <img src={combatoptions} alt="Combat Icon" className={stl.icon} />
-            Combat Calculator
-          </li>
+
           <li
             className={`${stl.navitem} ${
               props.activeTab === "gear" ? stl.active : ""
@@ -73,12 +66,30 @@ const Nav = (props) => {
           </li>
           <li
             className={`${stl.navitem} ${
+              props.activeTab === "moneymakers" ? stl.active : ""
+            }`}
+            onClick={() => handleTabSwitch("moneymakers", "Money Makers")}
+          >
+            <img src={mills} alt="Millions Icon" className={stl.icon} />
+            Money Makers
+          </li>
+          <li
+            className={`${stl.navitem} ${
               props.activeTab === "xp" ? stl.active : ""
             }`}
             onClick={() => handleTabSwitch("xp", "XP Table")}
           >
             <img src={xptable} alt="XP Icon" className={stl.icon} />
             XP Table
+          </li>
+          <li
+            className={`${stl.navitem} ${
+              props.activeTab === "combat" ? stl.active : ""
+            }`}
+            onClick={() => handleTabSwitch("combat", "Combat Calculators")}
+          >
+            <img src={combatoptions} alt="Combat Icon" className={stl.icon} />
+            Combat Calculator
           </li>
           <li
             className={`${stl.navitem} ${

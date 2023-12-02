@@ -56,11 +56,11 @@ const TotalUsers = () => {
 
       if (currentH === visitedH) {
         if (
-          (currentM - 5 === -5 > visitedM && visitedM === 55) ||
-          (currentM - 5 === -4 > visitedM && visitedM === 56) ||
-          (currentM - 5 === -3 > visitedM && visitedM === 57) ||
-          (currentM - 5 === -2 > visitedM && visitedM === 58) ||
-          (currentM - 5 === -1 > visitedM && visitedM === 59)
+          (currentM - 5 === -5 && visitedM === 55) ||
+          (currentM - 5 === -4 && visitedM === 56) ||
+          (currentM - 5 === -3 && visitedM === 57) ||
+          (currentM - 5 === -2 && visitedM === 58) ||
+          (currentM - 5 === -1 && visitedM === 59)
         ) {
           setCurrentTimestamp();
           setIncrementDB(true);
