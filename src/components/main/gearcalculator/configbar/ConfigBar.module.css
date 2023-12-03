@@ -50,3 +50,20 @@
 .resultItem:hover {
   background-color: #0084ffa7;
 }
+
+.microSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.microIcon {
+  height: 15px;
+}
+
+.microCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
