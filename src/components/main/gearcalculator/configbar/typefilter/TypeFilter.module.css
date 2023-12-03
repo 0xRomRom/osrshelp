@@ -1,0 +1,13 @@
+.typefilter {
+  height: 40px;
+  width: 250px;
+  position: relative;
+  border-radius: 0.4rem;
+  display: block;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid gray;
+}

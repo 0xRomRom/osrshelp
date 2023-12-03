@@ -1,7 +1,6 @@
 .gearGrid {
   width: 300px;
   height: 100%;
-  border: 1px solid red;
   position: relative;
 }
 
@@ -76,6 +75,6 @@
 }
 
 .selected {
-  border: 2px solid rgb(236, 8, 187);
+  border: 2px solid #0084ff;
   border-radius: 0.7rem;
 }

@@ -1,7 +1,6 @@
 .configbar {
   padding-top: 3rem;
   width: 300px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +18,8 @@
   border: 1px solid gray;
   border-radius: 0.4rem;
   caret-color: white;
+  color: white;
+  padding-right: 5px;
 }
 
 .searchbar::placeholder {
@@ -26,11 +27,11 @@
 }
 
 .resultList {
-  margin-top: 1rem;
   width: 250px;
-  height: 300px;
+  height: 310px;
   border: 1px solid gray;
   border-radius: 0.4rem;
+  overflow: hidden;
 }
 
 .resultItem {
@@ -47,5 +48,5 @@
 }
 
 .resultItem:hover {
-  background-color: rgb(45, 43, 67);
+  background-color: #0084ffa7;
 }
