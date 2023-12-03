@@ -1,0 +1,26 @@
+.configbar {
+  padding-top: 3rem;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.searchbar {
+  width: 250px;
+  height: 2.5rem;
+  font-size: 1.15rem;
+  padding-left: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 0.4rem;
+  caret-color: white;
+}
+
+.searchbar::placeholder {
+  color: gray;
+}
