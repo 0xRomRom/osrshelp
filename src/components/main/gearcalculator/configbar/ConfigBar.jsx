@@ -59,16 +59,6 @@ const ConfigBar = ({ activeSlot }) => {
               return (
                 <li key={item.src} className={stl.resultItem}>
                   <div className={stl.microCol}>
-                    {item.defLvl && (
-                      <span className={stl.microSpan}>
-                        <img
-                          src={defenceIcon}
-                          alt="Defence Skill Icon"
-                          className={stl.microIcon}
-                        />
-                        {item.defLvl}
-                      </span>
-                    )}
                     {item.rangedLvl > 0 && (
                       <span className={stl.microSpan}>
                         <img
@@ -99,14 +89,24 @@ const ConfigBar = ({ activeSlot }) => {
                         {item.prayerLvl}
                       </span>
                     )}
-                    {item.magicIcon > 0 && (
+                    {item.magicLvl > 0 && (
                       <span className={stl.microSpan}>
                         <img
                           src={magicIcon}
                           alt="Magic Skill Icon"
                           className={stl.microIcon}
                         />
-                        {item.magicIcon}
+                        {item.magicLvl}
+                      </span>
+                    )}
+                    {item.defLvl && (
+                      <span className={stl.microSpan}>
+                        <img
+                          src={defenceIcon}
+                          alt="Defence Skill Icon"
+                          className={stl.microIcon}
+                        />
+                        {item.defLvl}
                       </span>
                     )}
                   </div>
