@@ -27,6 +27,8 @@
   width: 60px;
   height: 60px;
   cursor: pointer;
+  border: 2px solid transparent;
+  user-select: none;
 }
 
 .row {
@@ -80,4 +82,9 @@
   justify-content: center;
   align-items: center;
   gap: 28px;
+}
+
+.selected {
+  border: 2px solid rgb(236, 8, 187);
+  border-radius: 0.7rem;
 }
