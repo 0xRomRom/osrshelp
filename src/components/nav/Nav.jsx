@@ -57,9 +57,9 @@ const Nav = (props) => {
 
           <li
             className={`${stl.navitem} ${
-              props.activeTab === "gear" ? stl.active : ""
+              props.activeTab === "gearcalculator" ? stl.active : ""
             }`}
-            onClick={() => handleTabSwitch("gear", "Gear Calculator")}
+            onClick={() => handleTabSwitch("gearcalculator", "Gear Calculator")}
           >
             <img src={gear} alt="Gear Icon" className={stl.icon} />
             Gear Calculator

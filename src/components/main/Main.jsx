@@ -3,6 +3,7 @@ import Home from "./home/Home";
 import SkillsTab from "./skills/SkillsTab";
 import Pagination from "./pagination/Pagination";
 import MoneyMakers from "./moneymakers/MoneyMakers";
+import GearCalculator from "./gearcalculator/GearCalculator";
 
 const Main = (props) => {
   return (
@@ -46,6 +47,16 @@ const Main = (props) => {
             playerName={props.playerName}
             setSubState={props.setSubState}
             subState={props.subState}
+          />
+        )}
+        {props.activeTab === "gearcalculator" && (
+          <GearCalculator
+            setSkills={props.setSkills}
+            skills={props.skills}
+            setSkillsExp={props.setSkillsExp}
+            skillsExp={props.skillsExp}
+            setPlayerName={props.setPlayerName}
+            playerName={props.playerName}
           />
         )}
       </div>
