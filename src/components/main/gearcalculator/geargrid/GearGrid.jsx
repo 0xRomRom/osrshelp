@@ -10,12 +10,23 @@ import legs from "../../../../assets/gearslots/Legs.png";
 import gloves from "../../../../assets/gearslots/Gloves.png";
 import boots from "../../../../assets/gearslots/Boots.png";
 import ring from "../../../../assets/gearslots/Ring.png";
+import { useEffect } from "react";
 
-const GearGrid = ({ activeSlot, setActiveSlot }) => {
+const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
   const handleSlotChange = (slot) => {
     if (slot === activeSlot) return setActiveSlot(null);
     setActiveSlot(slot);
   };
+
+  const headImg = overlayImages["Headpiece"].src;
+
+  // useEffect(() => {
+  //   console.log(overlayImages);
+  //   for (const key in overlayImages) {
+  //     console.log(key);
+  //   }
+  // }, [overlayImages]);
+
   return (
     <div className={stl.gearGrid}>
       <div className={`${stl.row} ${stl.rowA}`}>
@@ -25,6 +36,13 @@ const GearGrid = ({ activeSlot, setActiveSlot }) => {
           }`}
           onClick={() => handleSlotChange("Headpiece")}
         >
+          {headImg && (
+            <img
+              src={headImg}
+              alt="Head Item Piece"
+              className={stl.overlayItem}
+            />
+          )}
           <img src={head} className={stl.headSlot} alt="Head gear slot" />
         </div>
       </div>

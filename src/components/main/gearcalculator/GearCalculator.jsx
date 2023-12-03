@@ -27,7 +27,11 @@ const GearCalculator = () => {
 
   return (
     <div className={stl.gearcalculator}>
-      <GearGrid activeSlot={activeSlot} setActiveSlot={setActiveSlot} />
+      <GearGrid
+        activeSlot={activeSlot}
+        setActiveSlot={setActiveSlot}
+        overlayImages={overlayImages}
+      />
       <ConfigBar activeSlot={activeSlot} setOverlayImages={setOverlayImages} />
     </div>
   );
