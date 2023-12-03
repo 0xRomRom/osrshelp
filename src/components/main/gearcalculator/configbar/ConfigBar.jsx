@@ -9,7 +9,7 @@ import magicIcon from "../../../../assets/skillicons/Magic.webp";
 import rangedIcon from "../../../../assets/skillicons/Ranged.webp";
 import prayerIcon from "../../../../assets/skillicons/Prayer.webp";
 
-const ConfigBar = ({ activeSlot }) => {
+const ConfigBar = ({ activeSlot, setOverlayImages }) => {
   const searchRef = useRef(null);
   const [itemList, setItemList] = useState([]);
   const [listCopy, setListCopy] = useState([]);
@@ -24,6 +24,13 @@ const ConfigBar = ({ activeSlot }) => {
       setItemList([]);
     }
   }, [activeSlot]);
+
+  const addSelectedGear = (slot, obj) => {
+    setOverlayImages((prevState) => ({
+      ...prevState,
+      [slot]: obj,
+    }));
+  };
 
   useEffect(() => {
     if (searchRef.current) {
@@ -57,7 +64,11 @@ const ConfigBar = ({ activeSlot }) => {
           <ul className={stl.resultList}>
             {listCopy.map((item) => {
               return (
-                <li key={item.src} className={stl.resultItem}>
+                <li
+                  key={item.src}
+                  className={stl.resultItem}
+                  onClick={() => addSelectedGear(item.slot, item)}
+                >
                   <div className={stl.microCol}>
                     {item.rangedLvl > 0 && (
                       <span className={stl.microSpan}>

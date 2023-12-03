@@ -39,6 +39,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Bronze_med_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -76,6 +77,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Bronze_full_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -113,6 +115,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Iron_med_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -150,6 +153,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Iron_full_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -187,6 +191,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Steel_med_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -224,6 +229,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Steel_full_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -261,6 +267,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Black_med_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -298,6 +305,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Black_full_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -335,6 +343,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/White_med_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -372,6 +381,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/White_full_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -409,6 +419,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Mithril_med_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -446,6 +457,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Mithril_full_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -483,6 +495,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Adamant_med_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -520,6 +533,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Adamant_full_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -557,6 +571,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Rune_med_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -594,6 +609,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Rune_full_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -631,6 +647,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Dragon_med_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -668,6 +685,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Dragon_full_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -705,6 +723,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Tyras_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -742,6 +761,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Initiate_sallet.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -779,6 +799,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Proselyte_sallet.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -816,6 +837,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Dragonstone_full_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -853,6 +875,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Slayer_helmet.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -890,6 +913,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Neitiznot_faceguard.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -927,6 +951,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/3rd_age_full_helmet.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -964,6 +989,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Serpentine_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1001,6 +1027,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Guthan's_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1038,6 +1065,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Torag's_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1075,6 +1103,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Verac's_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1112,6 +1141,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Torva_full_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1149,6 +1179,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Justiciar_faceguard.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1186,6 +1217,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Crab_helmet.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1223,6 +1255,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Khazard_helmet.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1260,6 +1293,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Decorative_helm_(red).webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1297,6 +1331,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Gold_helmet.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1334,6 +1369,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Decorative_helm_(white).webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1371,6 +1407,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Decorative_helm_(gold).webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1408,6 +1445,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Gilded_med_helm.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1445,6 +1483,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+    slot: "Headpiece",
   },
   {
     type: "Melee",
@@ -1482,6 +1521,7 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Dharok's_helm.webp",
+    slot: "Headpiece",
   },
 
   //////////////
@@ -1497,6 +1537,7 @@ const HELMS = [
   //   strengthLvl: 0,
   //   slayer
   //   src: "./gearcalculator/helms/Leather_cowl.webp",
+  //   slot: "Headpiece",
   // },
 
   // //////////////
@@ -1512,6 +1553,7 @@ const HELMS = [
   //   magicLvl: 1,
   //   strengthLvl: 0,
   //   src: "./gearcalculator/helms/Blue_wizard_hat.webp",
+  //   slot: "Headpiece",
   // },
 ];
 
