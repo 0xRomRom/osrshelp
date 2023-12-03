@@ -25,6 +25,16 @@ const HELMS = [
     name: "Leather cowl",
     src: "./gearcalculator/helms/Leather_cowl.webp",
   },
+
+  //////////////
+  //  Magic  //
+  //////////////
+
+  {
+    type: "Magic",
+    name: "Blue Wizard hat",
+    src: "./gearcalculator/helms/Blue_wizard_hat.webp",
+  },
 ];
 
 export default HELMS;
