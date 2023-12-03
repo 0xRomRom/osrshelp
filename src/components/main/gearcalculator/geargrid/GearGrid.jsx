@@ -43,7 +43,11 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
               className={stl.overlayItem}
             />
           )}
-          <img src={head} className={stl.headSlot} alt="Head gear slot" />
+          <img
+            src={head}
+            className={`${stl.headSlot} ${headImg ? stl.lowOpacity : ""}`}
+            alt="Head gear slot"
+          />
         </div>
       </div>
       <div className={`${stl.row} ${stl.rowB}`}>
