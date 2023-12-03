@@ -261,6 +261,41 @@ const HELMS = [
         Stab: 0,
         Slash: 0,
         Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 13,
+        Crush: 10,
+        Magic: -1,
+        Range: 12,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Black_full_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "White med helm",
+    defLvl: 10,
+    rangedLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
         Magic: -3,
         Range: 0,
       },
@@ -277,11 +312,326 @@ const HELMS = [
         "Melee strength": 0,
         "Ranged strength": 0,
         "Magic damage": 0,
+        Prayer: 1,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/helms/White_med_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "White full helm",
+    defLvl: 10,
+    rangedLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 13,
+        Crush: 10,
+        Magic: -1,
+        Range: 12,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        Prayer: 1,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/White_full_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Mithril med helm",
+    defLvl: 20,
+    rangedLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 10,
+        Slash: 11,
+        Crush: 9,
+        Magic: -1,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/helms/Mithril_med_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Mithril full helm",
+    defLvl: 20,
+    rangedLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 13,
+        Slash: 14,
+        Crush: 11,
+        Magic: -1,
+        Range: 13,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/helms/Mithril_full_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Adamant med helm",
+    defLvl: 30,
+    rangedLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 14,
+        Slash: 15,
+        Crush: 13,
+        Magic: -1,
+        Range: 14,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/helms/Adamant_med_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Adamant full helm",
+    defLvl: 30,
+    rangedLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 19,
+        Slash: 21,
+        Crush: 16,
+        Magic: -1,
+        Range: 19,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/helms/Adamant_full_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Rune med helm",
+    defLvl: 40,
+    rangedLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 22,
+        Slash: 23,
+        Crush: 21,
+        Magic: -1,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
         Prayer: 0,
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/helms/Black_full_helm.webp",
+    src: "./gearcalculator/helms/Rune_med_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Rune full helm",
+    defLvl: 40,
+    rangedLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 30,
+        Slash: 32,
+        Crush: 27,
+        Magic: -1,
+        Range: 30,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Rune_full_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Dragon med helm",
+    defLvl: 60,
+    rangedLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 33,
+        Slash: 35,
+        Crush: 32,
+        Magic: -1,
+        Range: 34,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/helms/Dragon_med_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Dragon full helm",
+    defLvl: 60,
+    rangedLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 45,
+        Slash: 48,
+        Crush: 41,
+        Magic: -1,
+        Range: 46,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        Prayer: 0,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/helms/Dragon_full_helm.webp",
   },
 
   //////////////

@@ -31,7 +31,7 @@
   height: 310px;
   border: 1px solid gray;
   border-radius: 0.4rem;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .resultItem {
