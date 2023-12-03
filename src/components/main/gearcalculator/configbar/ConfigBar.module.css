@@ -24,3 +24,28 @@
 .searchbar::placeholder {
   color: gray;
 }
+
+.resultList {
+  margin-top: 1rem;
+  width: 250px;
+  height: 300px;
+  border: 1px solid gray;
+  border-radius: 0.4rem;
+}
+
+.resultItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  /* background-color: blue; */
+  padding: 5px 0px;
+  padding-left: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.resultItem:hover {
+  background-color: rgb(45, 43, 67);
+}
