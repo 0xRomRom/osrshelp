@@ -19,6 +19,9 @@
   cursor: pointer;
   border: 2px solid transparent;
   user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .row {
@@ -77,4 +80,12 @@
 .selected {
   border: 2px solid #0084ff;
   border-radius: 0.7rem;
+}
+
+.overlayItem {
+  position: absolute;
+  /* background-color: red; */
+  /* max-width: 50px; */
+  width: 35px;
+  max-height: 45px;
 }
