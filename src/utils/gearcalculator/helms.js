@@ -1002,6 +1002,154 @@ const HELMS = [
     ],
     src: "./gearcalculator/helms/Guthan's_helm.webp",
   },
+  {
+    type: "Melee",
+    name: "Torag's helm",
+    defLvl: 75,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 55,
+        Slash: 58,
+        Crush: 54,
+        Magic: -1,
+        Range: 62,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Torag's_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Verac's helm",
+    defLvl: 75,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 55,
+        Slash: 58,
+        Crush: 54,
+        Magic: 0,
+        Range: 56,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/helms/Verac's_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Torva full helm",
+    defLvl: 80,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -5,
+        Range: -5,
+      },
+      // Defence
+      {
+        Stab: 59,
+        Slash: 60,
+        Crush: 62,
+        Magic: -2,
+        Range: 57,
+      },
+      // Other
+      {
+        "Melee strength": 8,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Torva_full_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Torva full helm",
+    defLvl: 80,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -5,
+        Range: -5,
+      },
+      // Defence
+      {
+        Stab: 59,
+        Slash: 60,
+        Crush: 62,
+        Magic: -2,
+        Range: 57,
+      },
+      // Other
+      {
+        "Melee strength": 8,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Justiciar_faceguard.webp",
+  },
 
   //////////////
   //  RANGED  //
