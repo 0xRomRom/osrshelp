@@ -1150,6 +1150,339 @@ const HELMS = [
     ],
     src: "./gearcalculator/helms/Justiciar_faceguard.webp",
   },
+  {
+    type: "Melee",
+    name: "Crab helmet",
+    defLvl: 1,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 5,
+        Slash: 4,
+        Crush: 3,
+        Magic: -1,
+        Range: 4,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/helms/Crab_helmet.webp",
+  },
+  {
+    type: "Melee",
+    name: "Khazard helmet",
+    defLvl: 1,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 5,
+        Crush: 3,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Khazard_helmet.webp",
+  },
+  {
+    type: "Melee",
+    name: "Decorative helm (red)",
+    defLvl: 5,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 7,
+        Slash: 8,
+        Crush: 6,
+        Magic: -1,
+        Range: 7,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/helms/Decorative_helm_(red).webp",
+  },
+  {
+    type: "Melee",
+    name: "Gold helmet",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 10,
+        Crush: 20,
+        Magic: 0,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 31.751,
+      },
+    ],
+    src: "./gearcalculator/helms/Gold_helmet.webp",
+  },
+  {
+    type: "Melee",
+    name: "Decorative helm (white)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 10,
+        Slash: 11,
+        Crush: 9,
+        Magic: -1,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/helms/Decorative_helm_(white).webp",
+  },
+  {
+    type: "Melee",
+    name: "Decorative helm (gold)",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 14,
+        Slash: 15,
+        Crush: 13,
+        Magic: -1,
+        Range: 14,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/helms/Decorative_helm_(gold).webp",
+  },
+  {
+    type: "Melee",
+    name: "Gilded med helm",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 22,
+        Slash: 23,
+        Crush: 21,
+        Magic: -1,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/helms/Gilded_med_helm.webp",
+  },
+  {
+    type: "Melee",
+    name: "Helm of neitiznot",
+    defLvl: 55,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 31,
+        Slash: 29,
+        Crush: 34,
+        Magic: 3,
+        Range: 30,
+      },
+      // Other
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+  },
+  {
+    type: "Melee",
+    name: "Dharok's helm",
+    defLvl: 70,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 45,
+        Slash: 48,
+        Crush: 44,
+        Magic: -1,
+        Range: 51,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/helms/Dharok's_helm.webp",
+  },
 
   //////////////
   //  RANGED  //
