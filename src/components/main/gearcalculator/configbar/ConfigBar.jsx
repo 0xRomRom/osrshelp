@@ -6,12 +6,13 @@ import TypeFilter from "./typefilter/TypeFilter";
 const ConfigBar = ({ activeSlot }) => {
   const searchRef = useRef(null);
   const [itemList, setItemList] = useState([]);
-  const [gearFilter, setGearFilter] = useState("all");
+  const [gearFilter, setGearFilter] = useState("All");
 
   const setActiveItemList = useCallback(() => {
     if (activeSlot === "Headpiece") {
       setItemList(HELMS);
-    } else {
+    }
+    if (!activeSlot) {
       setItemList([]);
     }
   }, [activeSlot]);
