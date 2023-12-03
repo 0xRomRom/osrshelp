@@ -2,6 +2,7 @@ import stl from "./Main.module.css";
 import Home from "./home/Home";
 import SkillsTab from "./skills/SkillsTab";
 import Pagination from "./pagination/Pagination";
+import MoneyMakers from "./moneymakers/MoneyMakers";
 
 const Main = (props) => {
   return (
@@ -25,6 +26,18 @@ const Main = (props) => {
         )}
         {props.activeTab === "skills" && (
           <SkillsTab
+            setSkills={props.setSkills}
+            skills={props.skills}
+            setSkillsExp={props.setSkillsExp}
+            skillsExp={props.skillsExp}
+            setPlayerName={props.setPlayerName}
+            playerName={props.playerName}
+            setSubState={props.setSubState}
+            subState={props.subState}
+          />
+        )}
+        {props.activeTab === "moneymakers" && (
+          <MoneyMakers
             setSkills={props.setSkills}
             skills={props.skills}
             setSkillsExp={props.setSkillsExp}
