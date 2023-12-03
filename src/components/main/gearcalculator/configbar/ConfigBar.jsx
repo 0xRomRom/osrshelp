@@ -47,13 +47,13 @@ const ConfigBar = ({ activeSlot }) => {
     <div className={stl.configbar}>
       {activeSlot && (
         <>
+          <TypeFilter gearFilter={gearFilter} setGearFilter={setGearFilter} />
           <input
             ref={searchRef}
             type="search"
             className={stl.searchbar}
             placeholder={`Search ${activeSlot}`}
           />
-          <TypeFilter gearFilter={gearFilter} setGearFilter={setGearFilter} />
           <ul className={stl.resultList}>
             {listCopy.map((item) => {
               return (
