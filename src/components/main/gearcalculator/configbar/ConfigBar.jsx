@@ -6,11 +6,13 @@ import TypeFilter from "./typefilter/TypeFilter";
 const ConfigBar = ({ activeSlot }) => {
   const searchRef = useRef(null);
   const [itemList, setItemList] = useState([]);
+  const [listCopy, setListCopy] = useState([]);
   const [gearFilter, setGearFilter] = useState("All");
 
   const setActiveItemList = useCallback(() => {
     if (activeSlot === "Headpiece") {
       setItemList(HELMS);
+      setListCopy(HELMS);
     }
     if (!activeSlot) {
       setItemList([]);
@@ -24,6 +26,17 @@ const ConfigBar = ({ activeSlot }) => {
     setActiveItemList();
   }, [activeSlot, setActiveItemList]);
 
+  useEffect(() => {
+    console.log(gearFilter);
+    if (gearFilter === "All") {
+      setListCopy(itemList);
+      return;
+    }
+
+    const filteredList = itemList.filter((item) => item.type === gearFilter);
+    setListCopy(filteredList);
+  }, [gearFilter, itemList]);
+
   return (
     <div className={stl.configbar}>
       {activeSlot && (
@@ -36,7 +49,7 @@ const ConfigBar = ({ activeSlot }) => {
           />
           <TypeFilter gearFilter={gearFilter} setGearFilter={setGearFilter} />
           <ul className={stl.resultList}>
-            {itemList.map((item) => {
+            {listCopy.map((item) => {
               return (
                 <li key={item.src} className={stl.resultItem}>
                   <img
