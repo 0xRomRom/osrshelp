@@ -1,6 +1,7 @@
 import stl from "./ConfigBar.module.css";
 import { useRef, useEffect, useState, useCallback } from "react";
 import HELMS from "../../../../utils/gearcalculator/helms";
+import CAPES from "../../../../utils/gearcalculator/capes";
 import TypeFilter from "./typefilter/TypeFilter";
 
 import defenceIcon from "../../../../assets/skillicons/Defence.webp";
@@ -21,6 +22,10 @@ const ConfigBar = ({ activeSlot, setOverlayImages }) => {
     if (activeSlot === "Headpiece") {
       setItemList(HELMS);
       setListCopy(HELMS);
+    }
+    if (activeSlot === "Cape") {
+      setItemList(CAPES);
+      setListCopy(CAPES);
     }
     if (!activeSlot) {
       setItemList([]);

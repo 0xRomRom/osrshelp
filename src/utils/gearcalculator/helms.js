@@ -3972,46 +3972,7 @@ const HELMS = [
     src: "./gearcalculator/helms/Elemental_helmet.webp",
     slot: "Headpiece",
   },
-  {
-    type: "Magic",
-    name: "Mind helmet",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 1,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 6,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.113,
-      },
-    ],
-    src: "./gearcalculator/helms/Mind_helmet.webp",
-    slot: "Headpiece",
-  },
+
   {
     type: "Magic",
     name: "Mind helmet",

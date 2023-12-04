@@ -62,7 +62,11 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
           {capeImg && (
             <img src={capeImg} alt="Cape Piece" className={stl.overlayItem} />
           )}
-          <img src={cape} className={stl.headSlot} alt="Cape slot" />
+          <img
+            src={cape}
+            className={`${stl.headSlot} ${capeImg ? stl.lowOpacity : ""}`}
+            alt="Cape slot"
+          />
         </div>
         <div
           className={`${stl.slotWrap} ${
@@ -73,7 +77,11 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
           {neckImg && (
             <img src={neckImg} alt="Neck Piece" className={stl.overlayItem} />
           )}
-          <img src={necklace} className={stl.headSlot} alt="Necklace  slot" />
+          <img
+            src={necklace}
+            className={`${stl.headSlot} ${neckImg ? stl.lowOpacity : ""}`}
+            alt="Necklace  slot"
+          />
         </div>
         <div
           className={`${stl.slotWrap} ${
@@ -88,7 +96,11 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
               className={stl.overlayItem}
             />
           )}
-          <img src={amunition} className={stl.headSlot} alt="Amunition slot" />
+          <img
+            src={amunition}
+            className={`${stl.headSlot} ${amunitionImg ? stl.lowOpacity : ""}`}
+            alt="Amunition slot"
+          />
         </div>
       </div>
       <div className={`${stl.row} ${stl.rowC}`}>
@@ -105,7 +117,11 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
               className={stl.overlayItem}
             />
           )}
-          <img src={weapon} className={stl.headSlot} alt="Weapon slot" />
+          <img
+            src={weapon}
+            className={`${stl.headSlot} ${weaponImg ? stl.lowOpacity : ""}`}
+            alt="Weapon slot"
+          />
         </div>
         <div
           className={`${stl.slotWrap} ${
@@ -116,7 +132,11 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
           {bodyImg && (
             <img src={bodyImg} alt="Body Piece" className={stl.overlayItem} />
           )}
-          <img src={body} className={stl.headSlot} alt="Body slot" />
+          <img
+            src={body}
+            className={`${stl.headSlot} ${bodyImg ? stl.lowOpacity : ""}`}
+            alt="Body slot"
+          />
         </div>
         <div
           className={`${stl.slotWrap} ${
@@ -131,7 +151,11 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
               className={stl.overlayItem}
             />
           )}
-          <img src={shield} className={stl.headSlot} alt="Shield slot" />
+          <img
+            src={shield}
+            className={`${stl.headSlot} ${shieldImg ? stl.lowOpacity : ""}`}
+            alt="Shield slot"
+          />
         </div>
       </div>
       <div className={`${stl.row} ${stl.rowD}`}>
@@ -144,7 +168,11 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
           {legsImg && (
             <img src={legsImg} alt="Legs Piece" className={stl.overlayItem} />
           )}
-          <img src={legs} className={stl.headSlot} alt="Legs slot" />
+          <img
+            src={legs}
+            className={`${stl.headSlot} ${legsImg ? stl.lowOpacity : ""}`}
+            alt="Legs slot"
+          />
         </div>
       </div>
       <div className={`${stl.row} ${stl.rowE}`}>
@@ -161,7 +189,11 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
               className={stl.overlayItem}
             />
           )}
-          <img src={gloves} className={stl.headSlot} alt="Gloves slot" />
+          <img
+            src={gloves}
+            className={`${stl.headSlot} ${glovesImg ? stl.lowOpacity : ""}`}
+            alt="Gloves slot"
+          />
         </div>
         <div
           className={`${stl.slotWrap} ${
@@ -172,7 +204,11 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
           {bootsImg && (
             <img src={bootsImg} alt="Boots Piece" className={stl.overlayItem} />
           )}
-          <img src={boots} className={stl.headSlot} alt="Boots slot" />
+          <img
+            src={boots}
+            className={`${stl.headSlot} ${bootsImg ? stl.lowOpacity : ""}`}
+            alt="Boots slot"
+          />
         </div>
         <div
           className={`${stl.slotWrap} ${
@@ -183,7 +219,11 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
           {ringImg && (
             <img src={ringImg} alt="Ring Piece" className={stl.overlayItem} />
           )}
-          <img src={ring} className={stl.headSlot} alt="Ring slot" />
+          <img
+            src={ring}
+            className={`${stl.headSlot} ${ringImg ? stl.lowOpacity : ""}`}
+            alt="Ring slot"
+          />
         </div>
       </div>
     </div>
