@@ -645,6 +645,326 @@ const HELMS = [
   },
   {
     type: "Melee",
+    name: "Guthix halo",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 12,
+        Crush: 10,
+        Magic: 11,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Guthix_halo.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Saradomin halo",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 12,
+        Crush: 10,
+        Magic: 11,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Saradomin_halo.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Zamorak halo",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 12,
+        Crush: 10,
+        Magic: 11,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Zamorak_halo.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Armadyl halo",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 12,
+        Crush: 10,
+        Magic: 11,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Armadyl_halo.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Bandos halo",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 12,
+        Crush: 10,
+        Magic: 11,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Bandos_halo.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Ancient halo",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 12,
+        Crush: 10,
+        Magic: 11,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Ancient_halo.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Seren halo",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 12,
+        Crush: 10,
+        Magic: 11,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Seren_halo.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Brassica halo",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 12,
+        Crush: 10,
+        Magic: 11,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Brassica_halo.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
     name: "Guthix full helm",
     defLvl: 40,
     rangedLvl: 0,
