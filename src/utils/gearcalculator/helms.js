@@ -5,12 +5,14 @@ const HELMS = [
 
   {
     type: "Melee",
-    name: "Bronze Med Helm",
+    name: "Bronze med Helm",
     defLvl: 1,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -49,6 +51,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -87,6 +91,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -125,6 +131,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -163,6 +171,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -201,6 +211,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -239,6 +251,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -277,6 +291,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -315,6 +331,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -353,6 +371,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -391,6 +411,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -429,6 +451,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -467,6 +491,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -505,6 +531,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -543,6 +571,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -581,6 +611,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -619,6 +651,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -657,6 +691,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -695,6 +731,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -733,6 +771,8 @@ const HELMS = [
     prayerLvl: 10,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -771,6 +811,8 @@ const HELMS = [
     prayerLvl: 20,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -809,6 +851,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -847,6 +891,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -885,6 +931,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -923,6 +971,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -961,6 +1011,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -999,6 +1051,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1037,6 +1091,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1075,6 +1131,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1113,6 +1171,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1151,6 +1211,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1189,6 +1251,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1227,6 +1291,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1265,6 +1331,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1303,6 +1371,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1341,6 +1411,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1379,6 +1451,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1417,6 +1491,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1455,6 +1531,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1493,6 +1571,8 @@ const HELMS = [
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
     stats: [
       // Attack
       {
@@ -1528,33 +1608,264 @@ const HELMS = [
   //  RANGED  //
   //////////////
 
-  // {
-  //   type: "Ranged",
-  //   name: "Leather cowl",
-  //   defLvl: 1,
-  //   rangedLvl: 1,
-  //   magicLvl: 0,
-  //   strengthLvl: 0,
-  //   slayer
-  //   src: "./gearcalculator/helms/Leather_cowl.webp",
-  //   slot: "Headpiece",
-  // },
-
-  // //////////////
-  // //  Magic  //
-  // //////////////
-
-  // {
-  //   type: "Magic",
-  //   name: "Blue Wizard hat",
-  //   defLvl: 1,
-  //   rangedLvl: 0,
-  // prayerLvl: 0,
-  //   magicLvl: 1,
-  //   strengthLvl: 0,
-  //   src: "./gearcalculator/helms/Blue_wizard_hat.webp",
-  //   slot: "Headpiece",
-  // },
+  {
+    type: "Ranged",
+    name: "Leather cowl",
+    defLvl: 1,
+    rangedLvl: 1,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 1,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 4,
+        Magic: 2,
+        Range: 3,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/helms/Leather_cowl.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Coif",
+    defLvl: 1,
+    rangedLvl: 20,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -1,
+        Range: 2,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 6,
+        Crush: 8,
+        Magic: 4,
+        Range: 4,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/helms/Coif.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Snakeskin bandana",
+    defLvl: 30,
+    rangedLvl: 30,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -5,
+        Range: 4,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 4,
+        Crush: 4,
+        Magic: 2,
+        Range: 2,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/helms/Snakeskin_bandana.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Robin hood hat",
+    defLvl: 10,
+    rangedLvl: 40,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 6,
+        Crush: 8,
+        Magic: 4,
+        Range: 4,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.283,
+      },
+    ],
+    src: "./gearcalculator/helms/Robin_hood_hat.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Spined helm",
+    defLvl: 40,
+    rangedLvl: 40,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -6,
+        Slash: -6,
+        Crush: -6,
+        Magic: -6,
+        Range: 6,
+      },
+      // Defence
+      {
+        Stab: 6,
+        Slash: 6,
+        Crush: 6,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Spined_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Void ranger helm",
+    defLvl: 42,
+    rangedLvl: 42,
+    prayerLvl: 22,
+    magicLvl: 42,
+    strengthLvl: 42,
+    attackLvl: 42,
+    hitpointsLvl: 42,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 6,
+        Slash: 6,
+        Crush: 6,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/helms/Void_ranger_helm.webp",
+    slot: "Headpiece",
+  },
 ];
 
 export default HELMS;
+
+// //////////////
+// //  Magic  //
+// //////////////
+
+// {
+//   type: "Magic",
+//   name: "Blue Wizard hat",
+//   defLvl: 1,
+//   rangedLvl: 0,
+// prayerLvl: 0,
+//   magicLvl: 1,
+//   strengthLvl: 0,
+//   attackLvl: 0,
+//   hitpointsLvl: 0,
+//   src: "./gearcalculator/helms/Blue_wizard_hat.webp",
+//   slot: "Headpiece",
+// },

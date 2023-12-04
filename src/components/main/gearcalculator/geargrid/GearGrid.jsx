@@ -10,7 +10,6 @@ import legs from "../../../../assets/gearslots/Legs.png";
 import gloves from "../../../../assets/gearslots/Gloves.png";
 import boots from "../../../../assets/gearslots/Boots.png";
 import ring from "../../../../assets/gearslots/Ring.png";
-import { useEffect } from "react";
 
 const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
   const handleSlotChange = (slot) => {
@@ -29,13 +28,6 @@ const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
   const glovesImg = overlayImages["Gloves"].src;
   const bootsImg = overlayImages["Boots"].src;
   const ringImg = overlayImages["Ring"].src;
-
-  // useEffect(() => {
-  //   console.log(overlayImages);
-  //   for (const key in overlayImages) {
-  //     console.log(key);
-  //   }
-  // }, [overlayImages]);
 
   return (
     <div className={stl.gearGrid}>

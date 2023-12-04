@@ -8,6 +8,8 @@ import strengthicon from "../../../../assets/skillicons/Strength.png";
 import magicIcon from "../../../../assets/skillicons/Magic.webp";
 import rangedIcon from "../../../../assets/skillicons/Ranged.webp";
 import prayerIcon from "../../../../assets/skillicons/Prayer.webp";
+import attackIcon from "../../../../assets/skillicons/Attack.webp";
+import hitpointsIcon from "../../../../assets/skillicons/Hitpoints.webp";
 
 const ConfigBar = ({ activeSlot, setOverlayImages }) => {
   const searchRef = useRef(null);
@@ -110,7 +112,7 @@ const ConfigBar = ({ activeSlot, setOverlayImages }) => {
                         {item.magicLvl}
                       </span>
                     )}
-                    {item.defLvl && (
+                    {item.defLvl > 0 && (
                       <span className={stl.microSpan}>
                         <img
                           src={defenceIcon}
@@ -118,6 +120,26 @@ const ConfigBar = ({ activeSlot, setOverlayImages }) => {
                           className={stl.microIcon}
                         />
                         {item.defLvl}
+                      </span>
+                    )}
+                    {item.hitpointsLvl > 0 && (
+                      <span className={stl.microSpan}>
+                        <img
+                          src={hitpointsIcon}
+                          alt="Hitpoints Skill Icon"
+                          className={stl.microIcon}
+                        />
+                        {item.hitpointsLvl}
+                      </span>
+                    )}
+                    {item.attackLvl > 0 && (
+                      <span className={stl.microSpan}>
+                        <img
+                          src={attackIcon}
+                          alt="Attack Skill Icon"
+                          className={stl.microIcon}
+                        />
+                        {item.attackLvl}
                       </span>
                     )}
                   </div>
