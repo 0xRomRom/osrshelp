@@ -645,6 +645,246 @@ const HELMS = [
   },
   {
     type: "Melee",
+    name: "Guthix full helm",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 30,
+        Slash: 32,
+        Crush: 27,
+        Magic: -1,
+        Range: 30,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Guthix_full_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Saradomin full helm",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 30,
+        Slash: 32,
+        Crush: 27,
+        Magic: -1,
+        Range: 30,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Saradomin_full_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Zamorak full helm",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 30,
+        Slash: 32,
+        Crush: 27,
+        Magic: -1,
+        Range: 30,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Zamorak_full_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Armadyl full helm",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 30,
+        Slash: 32,
+        Crush: 27,
+        Magic: -1,
+        Range: 30,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Armadyl_full_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Bandos full helm",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 30,
+        Slash: 32,
+        Crush: 27,
+        Magic: -1,
+        Range: 30,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Bandos_full_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Ancient full helm",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 30,
+        Slash: 32,
+        Crush: 27,
+        Magic: -1,
+        Range: 30,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Ancient_full_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
     name: "Dragon med helm",
     defLvl: 60,
     rangedLvl: 0,
@@ -681,6 +921,86 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Dragon_med_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Zealot's_helm",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/helms/Zealot's_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
+    name: "Inquisitor's great helm",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 70,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: -2,
+        Crush: 8,
+        Magic: -5,
+        Range: -5,
+      },
+      // Defence
+      {
+        Stab: 19,
+        Slash: 10,
+        Crush: 21,
+        Magic: 0,
+        Range: 12,
+      },
+      // Other
+      {
+        "Melee strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Inquisitor's_great_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3730,6 +4050,46 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Ancient_mitre.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Ancient ceremonial mask",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Ancient_ceremonial_mask.webp",
     slot: "Headpiece",
   },
 ];
