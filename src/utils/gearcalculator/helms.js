@@ -2050,6 +2050,46 @@ const HELMS = [
   },
   {
     type: "Ranged",
+    name: "Masori mask (f)",
+    defLvl: 30,
+    rangedLvl: 80,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -1,
+        Range: 12,
+      },
+      // Defence
+      {
+        Stab: 8,
+        Slash: 10,
+        Crush: 12,
+        Magic: 12,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/helms/Masori_mask_(f).webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
     name: "Ancient coif",
     defLvl: 40,
     rangedLvl: 70,
