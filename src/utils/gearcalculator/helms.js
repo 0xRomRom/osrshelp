@@ -1848,6 +1848,446 @@ const HELMS = [
     src: "./gearcalculator/helms/Void_ranger_helm.webp",
     slot: "Headpiece",
   },
+  {
+    type: "Ranged",
+    name: "Crystal helm",
+    defLvl: 70,
+    rangedLvl: 1,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 9,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 8,
+        Crush: 14,
+        Magic: 10,
+        Range: 18,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 0.5,
+      },
+    ],
+    src: "./gearcalculator/helms/Crystal_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "3rd age range coif",
+    defLvl: 45,
+    rangedLvl: 65,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -2,
+        Range: 9,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 7,
+        Crush: 10,
+        Magic: 5,
+        Range: 8,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/helms/3rd_age_range_coif.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Karil's coif",
+    defLvl: 70,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -1,
+        Range: 7,
+      },
+      // Defence
+      {
+        Stab: 6,
+        Slash: 9,
+        Crush: 12,
+        Magic: 6,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/helms/Karil's_coif.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Armadyl helmet",
+    defLvl: 70,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -5,
+        Slash: -5,
+        Crush: -5,
+        Magic: -5,
+        Range: 10,
+      },
+      // Defence
+      {
+        Stab: 6,
+        Slash: 8,
+        Crush: 10,
+        Magic: 10,
+        Range: 8,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 0.5,
+      },
+    ],
+    src: "./gearcalculator/helms/Armadyl_helmet.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Masori mask",
+    defLvl: 30,
+    rangedLvl: 80,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -1,
+        Range: 12,
+      },
+      // Defence
+      {
+        Stab: 3,
+        Slash: 4,
+        Crush: 3,
+        Magic: 6,
+        Range: 4,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/helms/Masori_mask.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Ancient coif",
+    defLvl: 40,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -1,
+        Range: 7,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 7,
+        Crush: 10,
+        Magic: 4,
+        Range: 8,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 0.9,
+      },
+    ],
+    src: "./gearcalculator/helms/Ancient_coif.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Armadyl coif",
+    defLvl: 40,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -1,
+        Range: 7,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 7,
+        Crush: 10,
+        Magic: 4,
+        Range: 8,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 0.9,
+      },
+    ],
+    src: "./gearcalculator/helms/Armadyl_coif.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Bandos coif",
+    defLvl: 40,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -1,
+        Range: 7,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 7,
+        Crush: 10,
+        Magic: 4,
+        Range: 8,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 0.9,
+      },
+    ],
+    src: "./gearcalculator/helms/Bandos_coif.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Guthix coif",
+    defLvl: 40,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -1,
+        Range: 7,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 7,
+        Crush: 10,
+        Magic: 4,
+        Range: 8,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 0.9,
+      },
+    ],
+    src: "./gearcalculator/helms/Guthix_coif.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Saradomin coif",
+    defLvl: 40,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -1,
+        Range: 7,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 7,
+        Crush: 10,
+        Magic: 4,
+        Range: 8,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 0.9,
+      },
+    ],
+    src: "./gearcalculator/helms/Saradomin_coif.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Ranged",
+    name: "Zamorak coif",
+    defLvl: 40,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -1,
+        Range: 7,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 7,
+        Crush: 10,
+        Magic: 4,
+        Range: 8,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 0.9,
+      },
+    ],
+    src: "./gearcalculator/helms/Zamorak_coif.webp",
+    slot: "Headpiece",
+  },
 ];
 
 export default HELMS;
