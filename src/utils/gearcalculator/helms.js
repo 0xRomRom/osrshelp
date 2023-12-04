@@ -6,7 +6,7 @@ const HELMS = [
   {
     type: "Melee",
     name: "Bronze med Helm",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,
@@ -46,7 +46,7 @@ const HELMS = [
   {
     type: "Melee",
     name: "Bronze full helm",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,
@@ -86,7 +86,7 @@ const HELMS = [
   {
     type: "Melee",
     name: "Iron med helm",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,
@@ -126,7 +126,7 @@ const HELMS = [
   {
     type: "Melee",
     name: "Iron full helm",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,
@@ -246,7 +246,7 @@ const HELMS = [
   {
     type: "Melee",
     name: "Black med helm",
-    defLvl: 10,
+    defLvl: 5,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,
@@ -286,7 +286,7 @@ const HELMS = [
   {
     type: "Melee",
     name: "Black full helm",
-    defLvl: 10,
+    defLvl: 5,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,
@@ -1246,7 +1246,7 @@ const HELMS = [
   {
     type: "Melee",
     name: "Crab helmet",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,
@@ -1286,7 +1286,7 @@ const HELMS = [
   {
     type: "Melee",
     name: "Khazard helmet",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,
@@ -1611,7 +1611,7 @@ const HELMS = [
   {
     type: "Ranged",
     name: "Leather cowl",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 1,
     prayerLvl: 0,
     magicLvl: 0,
@@ -1651,7 +1651,7 @@ const HELMS = [
   {
     type: "Ranged",
     name: "Coif",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 20,
     prayerLvl: 0,
     magicLvl: 0,
@@ -1731,7 +1731,7 @@ const HELMS = [
   {
     type: "Ranged",
     name: "Robin hood hat",
-    defLvl: 10,
+    defLvl: 0,
     rangedLvl: 40,
     prayerLvl: 0,
     magicLvl: 0,
@@ -2335,7 +2335,7 @@ const HELMS = [
   {
     type: "Magic",
     name: "Blue Wizard hat",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 1,
@@ -2375,7 +2375,7 @@ const HELMS = [
   {
     type: "Magic",
     name: "Wizard hat",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 1,
@@ -2415,7 +2415,7 @@ const HELMS = [
   {
     type: "Magic",
     name: "Ghostly hood",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 1,
@@ -2455,7 +2455,7 @@ const HELMS = [
   {
     type: "Magic",
     name: "Elder chaos druid hood",
-    defLvl: 1,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 40,
@@ -2495,7 +2495,7 @@ const HELMS = [
   {
     type: "Magic",
     name: "Xerician hat",
-    defLvl: 10,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 20,
@@ -2730,6 +2730,1006 @@ const HELMS = [
       },
     ],
     src: "./gearcalculator/helms/Mystic_hat_(dusk).webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Enchanted hat",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/helms/Enchanted_hat.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Hood of darkness",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/helms/Hood_of_darkness.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Skeletal helm",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 2,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 10,
+        Slash: 9,
+        Crush: 11,
+        Magic: 3,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/helms/Skeletal_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Splitbark helm",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 10,
+        Slash: 9,
+        Crush: 11,
+        Magic: 3,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/helms/Splitbark_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Void mage helm",
+    defLvl: 42,
+    rangedLvl: 42,
+    prayerLvl: 22,
+    magicLvl: 42,
+    strengthLvl: 42,
+    attackLvl: 42,
+    hitpointsLvl: 42,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 6,
+        Slash: 6,
+        Crush: 6,
+        Magic: 6,
+        Range: 6,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/helms/Void_mage_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Swampbark helm",
+    defLvl: 50,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 13,
+        Slash: 11,
+        Crush: 14,
+        Magic: 5,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/helms/Swampbark_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Infinity hat",
+    defLvl: 25,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 6,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/helms/Infinity_hat.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Bloodbark helm",
+    defLvl: 60,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 60,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 5,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 16,
+        Slash: 14,
+        Crush: 17,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/helms/Bloodbark_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "3rd age mage hat",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 65,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 8,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 8,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.4,
+      },
+    ],
+    src: "./gearcalculator/helms/3rd_age_mage_hat.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Lunar helm",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 65,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 8,
+        Slash: 7,
+        Crush: 10,
+        Magic: 2,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/helms/Lunar_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Dagon'hai hat",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 70,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 5,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 5,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/helms/Dagon'hai_hat.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Ancestral hat",
+    defLvl: 65,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 8,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 11,
+        Crush: 13,
+        Magic: 5,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 2,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/helms/Ancestral_hat.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Ahrim's hood",
+    defLvl: 70,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 70,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 6,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 15,
+        Slash: 13,
+        Crush: 16,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/helms/Ahrim's_hood.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Virtus mask",
+    defLvl: 75,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 78,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 15,
+        Slash: 14,
+        Crush: 16,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 1,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.206,
+      },
+    ],
+    src: "./gearcalculator/helms/Virtus_mask.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Elemental helmet",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 1,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.113,
+      },
+    ],
+    src: "./gearcalculator/helms/Elemental_helmet.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Mind helmet",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 1,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.113,
+      },
+    ],
+    src: "./gearcalculator/helms/Mind_helmet.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Mind helmet",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 1,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.113,
+      },
+    ],
+    src: "./gearcalculator/helms/Mind_helmet.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Farseer helm",
+    defLvl: 45,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 1,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -5,
+        Slash: -5,
+        Crush: -5,
+        Magic: 6,
+        Range: -5,
+      },
+      // Defence
+      {
+        Stab: 8,
+        Slash: 10,
+        Crush: 12,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Farseer_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Healer hat",
+    defLvl: 45,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 1,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -5,
+        Slash: -5,
+        Crush: -5,
+        Magic: 6,
+        Range: -5,
+      },
+      // Defence
+      {
+        Stab: 6,
+        Slash: 8,
+        Crush: 10,
+        Magic: 7,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/helms/Healer_hat.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Zamorak mitre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 40,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Zamorak_mitre.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Saradomin mitre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 40,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Saradomin_mitre.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Guthix mitre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 40,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Guthix_mitre.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Armadyl mitre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 40,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Armadyl_mitre.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Bandos mitre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 40,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Bandos_mitre.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Magic",
+    name: "Ancient mitre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 40,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.3,
+      },
+    ],
+    src: "./gearcalculator/helms/Ancient_mitre.webp",
     slot: "Headpiece",
   },
 ];
