@@ -3,6 +3,7 @@ import { useRef, useEffect, useState, useCallback } from "react";
 import HELMS from "../../../../utils/gearcalculator/helms";
 import CAPES from "../../../../utils/gearcalculator/capes";
 import NECKLACE from "../../../../utils/gearcalculator/necklace";
+import AMUNITION from "../../../../utils/gearcalculator/amunition";
 import TypeFilter from "./typefilter/TypeFilter";
 
 import defenceIcon from "../../../../assets/skillicons/Defence.webp";
@@ -31,6 +32,10 @@ const ConfigBar = ({ activeSlot, setOverlayImages }) => {
     if (activeSlot === "Necklace") {
       setItemList(NECKLACE);
       setListCopy(NECKLACE);
+    }
+    if (activeSlot === "Amunition") {
+      setItemList(AMUNITION);
+      setListCopy(AMUNITION);
     }
     if (!activeSlot) {
       setItemList([]);
