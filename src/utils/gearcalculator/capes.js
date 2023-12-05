@@ -444,46 +444,7 @@ const CAPES = [
     src: "./gearcalculator/capes/Armadyl_cloak.webp",
     slot: "Cape",
   },
-  {
-    type: "Melee",
-    name: "Assembler max cape",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 8,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 1,
-        Crush: 1,
-        Magic: 8,
-        Range: 2,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 2,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/capes/Assembler_max_cape.webp",
-    slot: "Cape",
-  },
+
   {
     type: "Melee",
     name: "Attack cape(t)",
@@ -564,126 +525,7 @@ const CAPES = [
     src: "./gearcalculator/capes/Attack_cape.webp",
     slot: "Cape",
   },
-  {
-    type: "Melee",
-    name: "Ava's accumulator",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 4,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 4,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.435,
-      },
-    ],
-    src: "./gearcalculator/capes/Ava's_accumulator.webp",
-    slot: "Cape",
-  },
-  {
-    type: "Melee",
-    name: "Ava's assembler",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 8,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 1,
-        Crush: 1,
-        Magic: 8,
-        Range: 2,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 2,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 5.896,
-      },
-    ],
-    src: "./gearcalculator/capes/Ava's_assembler.webp",
-    slot: "Cape",
-  },
-  {
-    type: "Melee",
-    name: "Ava's attractor",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 2,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 2,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 2,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 4.535,
-      },
-    ],
-    src: "./gearcalculator/capes/Ava's_attractor.webp",
-    slot: "Cape",
-  },
+
   {
     type: "Melee",
     name: "Bandos cloak",
@@ -1166,7 +1008,7 @@ const CAPES = [
   },
   {
     type: "Melee",
-    name: "Cooking_cape(t)",
+    name: "Cooking cape(t)",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -1202,6 +1044,86 @@ const CAPES = [
       },
     ],
     src: "./gearcalculator/capes/Cooking_cape(t).webp",
+    slot: "Cape",
+  },
+  {
+    type: "Melee",
+    name: "Mining_cape(t)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Mining_cape(t).webp",
+    slot: "Cape",
+  },
+  {
+    type: "Melee",
+    name: "Mining_cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Mining_cape.webp",
     slot: "Cape",
   },
   {
@@ -1286,7 +1208,7 @@ const CAPES = [
   },
   {
     type: "Melee",
-    name: "Crafting_cape",
+    name: "Crafting cape",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -1402,6 +1324,46 @@ const CAPES = [
       },
     ],
     src: "./gearcalculator/capes/Defence_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Melee",
+    name: "Max cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: -4,
+      },
+    ],
+    src: "./gearcalculator/capes/Max_cape.webp",
     slot: "Cape",
   },
   {
@@ -2004,6 +1966,326 @@ const CAPES = [
     src: "./gearcalculator/capes/Graceful_cape.webp",
     slot: "Cape",
   },
+  {
+    type: "Melee",
+    name: "Herblore cape(t)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Herblore_cape(t).webp",
+    slot: "Cape",
+  },
+  {
+    type: "Melee",
+    name: "Herblore cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Herblore_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Melee",
+    name: "Hitpoints cape(t)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Hitpoints_cape(t).webp",
+    slot: "Cape",
+  },
+  {
+    type: "Melee",
+    name: "Hitpoints cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Hitpoints_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Melee",
+    name: "Hunter cape(t)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Hunter_cape(t).webp",
+    slot: "Cape",
+  },
+  {
+    type: "Melee",
+    name: "Hunter cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Hunter_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Melee",
+    name: "Infernal cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 4,
+        Slash: 4,
+        Crush: 4,
+        Magic: 1,
+        Range: 1,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 12,
+        Crush: 12,
+        Magic: 12,
+        Range: 12,
+      },
+      // Other
+      {
+        "Melee strength": 8,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/capes/Infernal_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Melee",
+    name: "Infernal max cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 4,
+        Slash: 4,
+        Crush: 4,
+        Magic: 1,
+        Range: 1,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 12,
+        Crush: 12,
+        Magic: 12,
+        Range: 12,
+      },
+      // Other
+      {
+        "Melee strength": 8,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Infernal_max_cape.webp",
+    slot: "Cape",
+  },
 
   // //////////////
   // //  Magic  //
@@ -2049,10 +2331,769 @@ const CAPES = [
     src: "./gearcalculator/capes/Guthix_cape.webp",
     slot: "Cape",
   },
+  {
+    type: "Magic",
+    name: "Moonclan cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 2,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 2,
+        Range: -2,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Moonclan_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Lunar cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 0,
+        Range: 2,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Lunar_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Magic cape(t)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Magic_cape(t).webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Music cape(t)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Music_cape(t).webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Music cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Music_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Magic cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 9,
+        Slash: 9,
+        Crush: 9,
+        Magic: 9,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Magic_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Imbued guthix cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 3,
+        Slash: 3,
+        Crush: 3,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 2,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Imbued_guthix_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Saradomin cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 2,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Saradomin_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Imbued saradomin cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 3,
+        Slash: 3,
+        Crush: 3,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 2,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Imbued_saradomin_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Imbued saradomin max cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 3,
+        Slash: 3,
+        Crush: 3,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 2,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Imbued_saradomin_max_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Zamorak cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 2,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Zamorak_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Imbued zamorak cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 3,
+        Slash: 3,
+        Crush: 3,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 2,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Magic",
+    name: "Imbued zamorak max cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 3,
+        Slash: 3,
+        Crush: 3,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 2,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Imbued_zamorak_max_cape.webp",
+    slot: "Cape",
+  },
+  //////////////
+  //  RANGED  //
+  //////////////
+  {
+    type: "Ranged",
+    name: "Masori assembler max cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 1,
+        Magic: 8,
+        Range: 2,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Masori_assembler_max_cape.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Ranged",
+    name: "Ava's accumulator",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 4,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.435,
+      },
+    ],
+    src: "./gearcalculator/capes/Ava's_accumulator.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Ranged",
+    name: "Ava's assembler",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 1,
+        Magic: 8,
+        Range: 2,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.896,
+      },
+    ],
+    src: "./gearcalculator/capes/Ava's_assembler.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Ranged",
+    name: "Ava's attractor",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 2,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 2,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/capes/Ava's_attractor.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Ranged",
+    name: "Masori assembler",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 2,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/capes/Masori_assembler.webp",
+    slot: "Cape",
+  },
+  {
+    type: "Melee",
+    name: "Assembler max cape",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 1,
+        Magic: 8,
+        Range: 2,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/capes/Assembler_max_cape.webp",
+    slot: "Cape",
+  },
 ];
 
 export default CAPES;
-
-//////////////
-//  RANGED  //
-//////////////
