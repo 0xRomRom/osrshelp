@@ -14,7 +14,7 @@ import prayerIcon from "../../../../assets/skillicons/Prayer.webp";
 import attackIcon from "../../../../assets/skillicons/Attack.webp";
 import hitpointsIcon from "../../../../assets/skillicons/Hitpoints.webp";
 
-const ConfigBar = ({ activeSlot, setOverlayImages }) => {
+const ConfigBar = ({ activeSlot, setBonusState }) => {
   const searchRef = useRef(null);
   const [itemList, setItemList] = useState([]);
   const [listCopy, setListCopy] = useState([]);
@@ -43,15 +43,18 @@ const ConfigBar = ({ activeSlot, setOverlayImages }) => {
     }
   }, [activeSlot]);
 
-  const addSelectedGear = (slot, name) => {
-    // setOverlayImages((prevState) => ({
-    //   ...prevState,
-    //   [slot]: obj,
-    // }));
+  // State to add styling to the selected equipment
+  const addSelectedGear = (slot, name, item) => {
     setActiveNames((prevState) => {
       return {
         ...prevState,
         [slot]: name,
+      };
+    });
+    setBonusState((prevState) => {
+      return {
+        ...prevState,
+        [slot]: item,
       };
     });
   };
@@ -64,11 +67,6 @@ const ConfigBar = ({ activeSlot, setOverlayImages }) => {
   }, [activeSlot, setActiveItemList]);
 
   useEffect(() => {
-    console.log(activeNames);
-  }, [activeNames]);
-
-  useEffect(() => {
-    console.log(gearFilter);
     if (gearFilter === "All") {
       setListCopy(itemList);
       return;
@@ -97,7 +95,7 @@ const ConfigBar = ({ activeSlot, setOverlayImages }) => {
                   className={`${stl.resultItem} ${
                     item.name === activeNames[item.slot] ? stl.selected : ""
                   }`}
-                  onClick={() => addSelectedGear(item.slot, item.name)}
+                  onClick={() => addSelectedGear(item.slot, item.name, item)}
                 >
                   <div className={stl.microCol}>
                     {item.rangedLvl > 0 && (

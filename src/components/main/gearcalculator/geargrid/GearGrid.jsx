@@ -11,24 +11,23 @@ import gloves from "../../../../assets/gearslots/Gloves.png";
 import boots from "../../../../assets/gearslots/Boots.png";
 import ring from "../../../../assets/gearslots/Ring.png";
 
-const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
+const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
   const handleSlotChange = (slot) => {
-    console.log(slot);
     if (slot === activeSlot) return setActiveSlot(null);
     setActiveSlot(slot);
   };
 
-  const headImg = overlayImages["Headpiece"].src;
-  const capeImg = overlayImages["Cape"].src;
-  const neckImg = overlayImages["Necklace"].src;
-  const amunitionImg = overlayImages["Amunition"].src;
-  const weaponImg = overlayImages["Weapon"].src;
-  const bodyImg = overlayImages["Body"].src;
-  const shieldImg = overlayImages["Shield"].src;
-  const legsImg = overlayImages["Legs"].src;
-  const glovesImg = overlayImages["Gloves"].src;
-  const bootsImg = overlayImages["Boots"].src;
-  const ringImg = overlayImages["Ring"].src;
+  const headImg = bonusState["Headpiece"].src;
+  const capeImg = bonusState["Cape"].src;
+  const neckImg = bonusState["Necklace"].src;
+  const amunitionImg = bonusState["Amunition"].src;
+  const weaponImg = bonusState["Weapon"].src;
+  const bodyImg = bonusState["Body"].src;
+  const shieldImg = bonusState["Shield"].src;
+  const legsImg = bonusState["Legs"].src;
+  const glovesImg = bonusState["Gloves"].src;
+  const bootsImg = bonusState["Boots"].src;
+  const ringImg = bonusState["Ring"].src;
 
   return (
     <div className={stl.gearGrid}>

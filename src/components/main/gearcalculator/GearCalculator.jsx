@@ -4,11 +4,11 @@ import GearGrid from "./geargrid/GearGrid";
 import ConfigBar from "./configbar/ConfigBar";
 import ResultBox from "./resultbox/ResultBox";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const GearCalculator = () => {
   const [activeSlot, setActiveSlot] = useState(null);
-  const [overlayImages, setOverlayImages] = useState({
+  const [bonusState, setBonusState] = useState({
     Headpiece: {},
     Cape: {},
     Necklace: {},
@@ -22,19 +22,15 @@ const GearCalculator = () => {
     Ring: {},
   });
 
-  // useEffect(() => {
-  //   console.log(overlayImages);
-  // }, [overlayImages]);
-
   return (
     <div className={stl.gearcalculator}>
       <GearGrid
         activeSlot={activeSlot}
         setActiveSlot={setActiveSlot}
-        overlayImages={overlayImages}
+        bonusState={bonusState}
       />
-      <ConfigBar activeSlot={activeSlot} setOverlayImages={setOverlayImages} />
-      <ResultBox overlayImages={overlayImages} />
+      <ConfigBar activeSlot={activeSlot} setBonusState={setBonusState} />
+      <ResultBox bonusState={bonusState} />
     </div>
   );
 };

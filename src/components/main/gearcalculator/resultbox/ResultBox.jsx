@@ -2,7 +2,7 @@ import stl from "./ResultBox.module.css";
 import slayerIcon from "../../../../assets/skillicons/Slayer.png";
 import { useEffect, useState } from "react";
 
-const ResultBox = ({ overlayImages }) => {
+const ResultBox = ({ bonusState }) => {
   const [resultState, setResultState] = useState({
     // Attack
     stab: 0,
@@ -33,7 +33,7 @@ const ResultBox = ({ overlayImages }) => {
     setResultState((currentState) => {
       let newState = { ...currentState };
 
-      for (const values of Object.entries(overlayImages)) {
+      for (const values of Object.entries(bonusState)) {
         if (Object.keys(values[1]).length > 0) {
           const stats = values[1].stats;
 
@@ -59,7 +59,7 @@ const ResultBox = ({ overlayImages }) => {
 
       return newState;
     });
-  }, [overlayImages]);
+  }, [bonusState]);
 
   return (
     <div className={stl.resultbox}>
