@@ -2,6 +2,7 @@ import stl from "./GearCalculator.module.css";
 
 import GearGrid from "./geargrid/GearGrid";
 import ConfigBar from "./configbar/ConfigBar";
+import ResultBox from "./resultbox/ResultBox";
 
 import { useState, useEffect } from "react";
 
@@ -21,9 +22,9 @@ const GearCalculator = () => {
     Ring: {},
   });
 
-  useEffect(() => {
-    console.log(overlayImages);
-  }, [overlayImages]);
+  // useEffect(() => {
+  //   console.log(overlayImages);
+  // }, [overlayImages]);
 
   return (
     <div className={stl.gearcalculator}>
@@ -33,6 +34,7 @@ const GearCalculator = () => {
         overlayImages={overlayImages}
       />
       <ConfigBar activeSlot={activeSlot} setOverlayImages={setOverlayImages} />
+      <ResultBox overlayImages={overlayImages} />
     </div>
   );
 };
