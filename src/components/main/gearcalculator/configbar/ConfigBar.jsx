@@ -19,6 +19,7 @@ const ConfigBar = ({ activeSlot, setOverlayImages }) => {
   const [itemList, setItemList] = useState([]);
   const [listCopy, setListCopy] = useState([]);
   const [gearFilter, setGearFilter] = useState("All");
+  const [activeNames, setActiveNames] = useState({});
 
   const setActiveItemList = useCallback(() => {
     if (activeSlot === "Headpiece") {
@@ -42,11 +43,17 @@ const ConfigBar = ({ activeSlot, setOverlayImages }) => {
     }
   }, [activeSlot]);
 
-  const addSelectedGear = (slot, obj) => {
-    setOverlayImages((prevState) => ({
-      ...prevState,
-      [slot]: obj,
-    }));
+  const addSelectedGear = (slot, name) => {
+    // setOverlayImages((prevState) => ({
+    //   ...prevState,
+    //   [slot]: obj,
+    // }));
+    setActiveNames((prevState) => {
+      return {
+        ...prevState,
+        [slot]: name,
+      };
+    });
   };
 
   useEffect(() => {
@@ -55,6 +62,10 @@ const ConfigBar = ({ activeSlot, setOverlayImages }) => {
     }
     setActiveItemList();
   }, [activeSlot, setActiveItemList]);
+
+  useEffect(() => {
+    console.log(activeNames);
+  }, [activeNames]);
 
   useEffect(() => {
     console.log(gearFilter);
@@ -83,8 +94,10 @@ const ConfigBar = ({ activeSlot, setOverlayImages }) => {
               return (
                 <li
                   key={item.src}
-                  className={stl.resultItem}
-                  onClick={() => addSelectedGear(item.slot, item)}
+                  className={`${stl.resultItem} ${
+                    item.name === activeNames[item.slot] ? stl.selected : ""
+                  }`}
+                  onClick={() => addSelectedGear(item.slot, item.name)}
                 >
                   <div className={stl.microCol}>
                     {item.rangedLvl > 0 && (
