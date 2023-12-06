@@ -869,7 +869,7 @@ const AMUNITION = [
       // Other
       {
         "Melee strength": 0,
-        "Ranged strength": 135,
+        "Ranged strength": 0,
         "Magic damage": 0,
         "Slayer Bonus": 0,
         Prayer: 0,
@@ -909,7 +909,7 @@ const AMUNITION = [
       // Other
       {
         "Melee strength": 0,
-        "Ranged strength": 135,
+        "Ranged strength": 0,
         "Magic damage": 0,
         "Slayer Bonus": 0,
         Prayer: 1,
@@ -949,7 +949,7 @@ const AMUNITION = [
       // Other
       {
         "Melee strength": 0,
-        "Ranged strength": 135,
+        "Ranged strength": 0,
         "Magic damage": 0,
         "Slayer Bonus": 0,
         Prayer: 1,
@@ -989,7 +989,7 @@ const AMUNITION = [
       // Other
       {
         "Melee strength": 0,
-        "Ranged strength": 135,
+        "Ranged strength": 0,
         "Magic damage": 0,
         "Slayer Bonus": 0,
         Prayer: 1,
@@ -1189,7 +1189,7 @@ const AMUNITION = [
       // Other
       {
         "Melee strength": 0,
-        "Ranged strength": 135,
+        "Ranged strength": 0,
         "Magic damage": 0,
         "Slayer Bonus": 0,
         Prayer: 1,
@@ -1229,7 +1229,7 @@ const AMUNITION = [
       // Other
       {
         "Melee strength": 0,
-        "Ranged strength": 135,
+        "Ranged strength": 0,
         "Magic damage": 0,
         "Slayer Bonus": 0,
         Prayer: 1,
@@ -1269,7 +1269,7 @@ const AMUNITION = [
       // Other
       {
         "Melee strength": 0,
-        "Ranged strength": 135,
+        "Ranged strength": 0,
         "Magic damage": 0,
         "Slayer Bonus": 0,
         Prayer: 1,
@@ -2676,7 +2676,7 @@ const AMUNITION = [
         Weight: 0.0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_arrow(p)_1.webp",
+    src: "./gearcalculator/amunition/Dragon_arrow(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -2756,7 +2756,7 @@ const AMUNITION = [
         Weight: 0.0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_arrow(p)_1.webp",
+    src: "./gearcalculator/amunition/Dragon_arrow(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -2796,7 +2796,7 @@ const AMUNITION = [
         Weight: 0.0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_arrow_5.webp",
+    src: "./gearcalculator/amunition/Dragon_arrow.webp",
     slot: "Amunition",
   },
   {
@@ -3039,46 +3039,7 @@ const AMUNITION = [
     src: "./gearcalculator/amunition/Dragon_javelin(p).webp",
     slot: "Amunition",
   },
-  {
-    type: "Ranged",
-    name: "Dragon javelin(p)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 150,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.0,
-      },
-    ],
-    src: "./gearcalculator/amunition/Dragon_javelin(p).webp",
-    slot: "Amunition",
-  },
+
   {
     type: "Ranged",
     name: "Dragon javelin(p+)",

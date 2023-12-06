@@ -13,6 +13,7 @@ import ring from "../../../../assets/gearslots/Ring.png";
 
 const GearGrid = ({ activeSlot, setActiveSlot, overlayImages }) => {
   const handleSlotChange = (slot) => {
+    console.log(slot);
     if (slot === activeSlot) return setActiveSlot(null);
     setActiveSlot(slot);
   };
