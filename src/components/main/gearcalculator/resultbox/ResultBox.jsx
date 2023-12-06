@@ -29,34 +29,36 @@ const ResultBox = ({ overlayImages }) => {
   });
 
   useEffect(() => {
-    let currentState = resultState;
+    // Create a copy of the current state to avoid mutating the state directly
+    setResultState((currentState) => {
+      let newState = { ...currentState };
 
-    for (const values of Object.entries(overlayImages)) {
-      if (Object.keys(values[1]).length > 0) {
-        const stats = values[1].stats;
-        console.log(stats);
-        currentState.stab += stats[0].Stab;
-        currentState.slash += stats[0].Slash;
-        currentState.crush += stats[0].Crush;
-        currentState.magic += stats[0].Magic;
-        currentState.range += stats[0].Range;
+      for (const values of Object.entries(overlayImages)) {
+        if (Object.keys(values[1]).length > 0) {
+          const stats = values[1].stats;
 
-        currentState.stabDef += stats[1].Stab;
-        currentState.slashDef += stats[1].Slash;
-        currentState.crushDef += stats[1].Crush;
-        currentState.magicDef += stats[1].Magic;
-        currentState.rangeDef += stats[1].Range;
+          newState.stab = stats[0].Stab;
+          newState.slash = stats[0].Slash;
+          newState.crush = stats[0].Crush;
+          newState.magic = stats[0].Magic;
+          newState.range = stats[0].Range;
 
-        currentState.magicDamage += stats[2]["Magic damage"];
-        currentState.rangedDamage += stats[2]["Ranged damage"];
-        currentState.strengthDamage += stats[2]["Melee damage"];
-        currentState.prayer += stats[2].Prayer;
-        currentState.weight += stats[2].Weight;
+          newState.stabDef = stats[1].Stab;
+          newState.slashDef = stats[1].Slash;
+          newState.crushDef = stats[1].Crush;
+          newState.magicDef = stats[1].Magic;
+          newState.rangeDef = stats[1].Range;
 
-        console.log(values[1].stats);
-        console.log(currentState);
+          newState.magicDamage = stats[2]["Magic damage"];
+          newState.rangedDamage = stats[2]["Ranged strength"];
+          newState.strengthDamage = stats[2]["Melee strength"];
+          newState.prayer = stats[2].Prayer;
+          newState.weight = stats[2].Weight;
+        }
       }
-    }
+
+      return newState;
+    });
   }, [overlayImages]);
 
   return (
@@ -71,7 +73,7 @@ const ResultBox = ({ overlayImages }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Stab: +{resultState["stab"]}
+              Stab: +{resultState.stab}
             </span>
             <span className={stl.statValue}>
               <img
@@ -79,7 +81,7 @@ const ResultBox = ({ overlayImages }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Slash: +0
+              Slash: +{resultState.slash}
             </span>
             <span className={stl.statValue}>
               <img
@@ -87,7 +89,7 @@ const ResultBox = ({ overlayImages }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Crush: +0
+              Crush: +{resultState.crush}
             </span>
             <span className={stl.statValue}>
               <img
@@ -95,7 +97,7 @@ const ResultBox = ({ overlayImages }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Magic: +0
+              Magic: +{resultState.magic}
             </span>
             <span className={stl.statValue}>
               <img
@@ -103,7 +105,7 @@ const ResultBox = ({ overlayImages }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Range: +0
+              Range: +{resultState.range}
             </span>
           </div>
           <div className={stl.half}>
@@ -119,7 +121,7 @@ const ResultBox = ({ overlayImages }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Stab: +0
+              Stab: +{resultState.stabDef}
             </span>
             <span className={stl.statValue}>
               <img
@@ -132,7 +134,7 @@ const ResultBox = ({ overlayImages }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Slash: +0
+              Slash: +{resultState.slashDef}
             </span>
             <span className={stl.statValue}>
               <img
@@ -145,7 +147,7 @@ const ResultBox = ({ overlayImages }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Crush: +0
+              Crush: +{resultState.crushDef}
             </span>
             <span className={stl.statValue}>
               <img
@@ -158,7 +160,7 @@ const ResultBox = ({ overlayImages }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Magic: +0
+              Magic: +{resultState.magicDef}
             </span>
             <span className={stl.statValue}>
               <img
@@ -171,7 +173,7 @@ const ResultBox = ({ overlayImages }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Range: +0
+              Range: +{resultState.rangeDef}
             </span>
           </div>
         </div>
@@ -182,7 +184,7 @@ const ResultBox = ({ overlayImages }) => {
             alt="Stab attack"
             className={stl.miniIcon}
           />
-          Ranged strength: +0
+          Ranged strength: +{resultState.rangedDamage}
         </span>
         <span className={stl.statValue}>
           <img
@@ -190,7 +192,7 @@ const ResultBox = ({ overlayImages }) => {
             alt="Stab attack"
             className={stl.miniIcon}
           />
-          Magic damage: +%
+          Magic damage: +% {resultState.magicDamage}
         </span>
         <span className={stl.statValue}>
           <img
@@ -198,7 +200,7 @@ const ResultBox = ({ overlayImages }) => {
             alt="Stab attack"
             className={stl.miniIcon}
           />
-          Melee strength: +0
+          Melee strength: +{resultState.strengthDamage}
         </span>
         <span className={stl.statValue}>
           <img
@@ -206,11 +208,11 @@ const ResultBox = ({ overlayImages }) => {
             alt="Stab attack"
             className={stl.miniIcon}
           />
-          Prayer: +0
+          Prayer: +{resultState.prayer}
         </span>
         <span className={stl.statValue}>
           <img src={slayerIcon} alt="Slayer Icon" className={stl.miniIcon} />
-          Slayer: +0
+          Slayer: +{resultState.slayer}
         </span>
 
         <span className={stl.statValue}>
@@ -219,7 +221,7 @@ const ResultBox = ({ overlayImages }) => {
             alt="Stab attack"
             className={stl.miniIcon}
           />
-          Weight: +{resultState.weight}
+          Weight: +{resultState.weight.toFixed(2)}
         </span>
       </ul>
     </div>
