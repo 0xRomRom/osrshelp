@@ -51,6 +51,7 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
         [slot]: name,
       };
     });
+
     setBonusState((prevState) => {
       return {
         ...prevState,
@@ -76,6 +77,13 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
     setListCopy(filteredList);
   }, [gearFilter, itemList]);
 
+  const searchFilter = () => {
+    const filteredValues = itemList.filter((item) =>
+      item.name.toLowerCase().includes(searchRef.current.value.toLowerCase())
+    );
+    setListCopy(filteredValues);
+  };
+
   return (
     <div className={stl.configbar}>
       {activeSlot && (
@@ -86,6 +94,7 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
             type="search"
             className={stl.searchbar}
             placeholder={`Search ${activeSlot}`}
+            onChange={searchFilter}
           />
           <ul className={stl.resultList}>
             {listCopy.map((item) => {
