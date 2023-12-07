@@ -21,8 +21,10 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
   const [listCopy, setListCopy] = useState([]);
   const [gearFilter, setGearFilter] = useState("All");
   const [activeNames, setActiveNames] = useState({});
+  const [searchValue, setSearchValue] = useState("");
 
   const setActiveItemList = useCallback(() => {
+    clearSeachInput();
     if (activeSlot === "Headpiece") {
       setItemList(HELMS);
       setListCopy(HELMS);
@@ -56,6 +58,7 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
         [slot]: name,
       };
     });
+
     setBonusState((prevState) => {
       return {
         ...prevState,
@@ -81,6 +84,25 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
     setListCopy(filteredList);
   }, [gearFilter, itemList]);
 
+  const searchFilter = useCallback(() => {
+    const filteredValues = itemList.filter((item) =>
+      item.name.toLowerCase().includes(searchValue.toLowerCase())
+    );
+    setListCopy(filteredValues);
+  }, [itemList, searchValue]);
+
+  useEffect(() => {
+    searchFilter();
+  }, [searchFilter]);
+
+  const handleSearch = (e) => {
+    setSearchValue(e.target.value);
+  };
+
+  const clearSeachInput = () => {
+    setSearchValue("");
+  };
+
   return (
     <div className={stl.configbar}>
       {activeSlot && (
@@ -91,6 +113,8 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
             type="search"
             className={stl.searchbar}
             placeholder={`Search ${activeSlot}`}
+            onChange={handleSearch}
+            value={searchValue}
           />
           <ul className={stl.resultList}>
             {listCopy.map((item) => {
