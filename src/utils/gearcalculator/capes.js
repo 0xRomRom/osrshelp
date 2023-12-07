@@ -1402,7 +1402,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Woodcutting_cape(t).webp",
+    src: "./gearcalculator/capes/Woodcut.webp",
     slot: "Cape",
   },
   {
