@@ -1,59 +1,34 @@
 import stl from "./ResultBox.module.css";
 import slayerIcon from "../../../../assets/skillicons/Slayer.png";
 import { useEffect, useState } from "react";
+import { INITIALSTATE as emptyState } from "../../../../utils/gearcalculator/initialState";
 
 const ResultBox = ({ bonusState }) => {
-  const [resultState, setResultState] = useState({
-    // Attack
-    stab: 0,
-    slash: 0,
-    crush: 0,
-    magic: 0,
-    range: 0,
-
-    // Defence
-    stabDef: 0,
-    slashDef: 0,
-    crushDef: 0,
-    magicDef: 0,
-    rangeDef: 0,
-
-    //Bonus
-
-    magicDamage: 0,
-    rangedDamage: 0,
-    strengthDamage: 0,
-    prayer: 0,
-    slayer: 0,
-    weight: 0,
-  });
+  const [resultState, setResultState] = useState(emptyState);
 
   useEffect(() => {
     // Create a copy of the current state to avoid mutating the state directly
-    setResultState((currentState) => {
-      let newState = { ...currentState };
+    setResultState(() => {
+      let newState = { ...emptyState };
+      for (const values of Object.values(bonusState)) {
+        if (Object.keys(values).length > 0) {
+          newState.stab += values.stats[0].Stab;
+          newState.slash += values.stats[0].Slash;
+          newState.crush += values.stats[0].Crush;
+          newState.magic += values.stats[0].Magic;
+          newState.range += values.stats[0].Range;
 
-      for (const values of Object.entries(bonusState)) {
-        if (Object.keys(values[1]).length > 0) {
-          const stats = values[1].stats;
-
-          newState.stab = stats[0].Stab;
-          newState.slash = stats[0].Slash;
-          newState.crush = stats[0].Crush;
-          newState.magic = stats[0].Magic;
-          newState.range = stats[0].Range;
-
-          newState.stabDef = stats[1].Stab;
-          newState.slashDef = stats[1].Slash;
-          newState.crushDef = stats[1].Crush;
-          newState.magicDef = stats[1].Magic;
-          newState.rangeDef = stats[1].Range;
-
-          newState.magicDamage = stats[2]["Magic damage"];
-          newState.rangedDamage = stats[2]["Ranged strength"];
-          newState.strengthDamage = stats[2]["Melee strength"];
-          newState.prayer = stats[2].Prayer;
-          newState.weight = stats[2].Weight;
+          newState.stabDef += values.stats[1].Stab;
+          newState.slashDef += values.stats[1].Slash;
+          newState.crushDef += values.stats[1].Crush;
+          newState.magicDef += values.stats[1].Magic;
+          newState.magicDef += values.stats[1].Range;
+          newState.magicDamage += values.stats[2]["Magic damage"];
+          newState.rangedDamage += values.stats[2]["Ranged strength"];
+          newState.strengthDamage += values.stats[2]["Melee strength"];
+          newState.prayer += values.stats[2]["Prayer"];
+          newState.slayer += values.stats[2]["Slayer Bonus"];
+          newState.weight += values.stats[2]["Weight"];
         }
       }
 
@@ -192,7 +167,7 @@ const ResultBox = ({ bonusState }) => {
             alt="Stab attack"
             className={stl.miniIcon}
           />
-          Magic damage: +% {resultState.magicDamage}
+          Magic damage: +{resultState.magicDamage}%
         </span>
         <span className={stl.statValue}>
           <img
