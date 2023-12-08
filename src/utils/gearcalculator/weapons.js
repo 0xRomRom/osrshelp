@@ -1041,6 +1041,46 @@ const WEAPONS = [
   },
   {
     type: "Magic",
+    name: "Mud battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mud_battlestaff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
     name: "Mist battlestaff",
     defLvl: 0,
     rangedLvl: 0,
@@ -5080,6 +5120,46 @@ const WEAPONS = [
     slot: "Weapon",
   },
   {
+    type: "Magic",
+    name: "Nightmare staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 82,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 50,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 16,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.6,
+      },
+    ],
+    src: "./gearcalculator/weapons/Nightmare_staff.webp",
+    slot: "Weapon",
+  },
+  {
     type: "Melee",
     name: "Emerald sickle (b)",
     defLvl: 0,
@@ -5923,10 +6003,10 @@ const WEAPONS = [
     type: "Magic",
     name: "Iban's staff",
     defLvl: 0,
-    rangedLvl: 50,
+    rangedLvl: 0,
     prayerLvl: 0,
-    magicLvl: 75,
-    strengthLvl: 60,
+    magicLvl: 50,
+    strengthLvl: 0,
     attackLvl: 50,
     hitpointsLvl: 0,
     stats: [
@@ -5963,7 +6043,7 @@ const WEAPONS = [
     type: "Magic",
     name: "Ice ancient sceptre",
     defLvl: 0,
-    rangedLvl: 50,
+    rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 75,
     strengthLvl: 60,
@@ -7717,6 +7797,1046 @@ const WEAPONS = [
       },
     ],
     src: "./gearcalculator/weapons/Mithril_hasta.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Mithril knife",
+    defLvl: 0,
+    rangedLvl: 20,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 11,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 10,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_knife.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Mithril longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 15,
+        Slash: 20,
+        Crush: -2,
+        Magic: 0,
+        Range: 11,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 22,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_longsword.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Mithril mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 11,
+        Slash: -2,
+        Crush: 18,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 16,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_mace.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Mithril pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 12,
+        Slash: -2,
+        Crush: 10,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 13,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_pickaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Mithril scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 5,
+        Slash: 21,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 20,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_scimitar.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Mithril sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 16,
+        Slash: 11,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 17,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_sword.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Mithril thrownaxe",
+    defLvl: 0,
+    rangedLvl: 20,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 12,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 16,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_thrownaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Mithril warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 25,
+        Magic: -4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 27,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_warhammer.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Morrigan's javelin",
+    defLvl: 0,
+    rangedLvl: 75,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 105,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 145,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Morrigan's_javelin_(bh).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Morrigan's throwing axe",
+    defLvl: 0,
+    rangedLvl: 75,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 93,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 117,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Morrigan's_throwing_axe_(bh).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Mystic air staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_air_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Mystic dust staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_dust_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Mystic earth staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_earth_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Mystic fire staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_fire_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Mystic lava staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_lava_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Mystic mist staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_mist_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Mystic mud staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_mud_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Mystic smoke staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_smoke_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Mystic steam staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_steam_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Mystic water staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_water_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Oak blackjack",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 2,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Oak_blackjack.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Oak blackjack (d)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 4,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Oak_blackjack(d).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Oak blackjack (o)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 4,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Oak_blackjack(o).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Opal machete",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 8,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Opal_machete.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Osmumten's fang",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 82,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 105,
+        Slash: 75,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 103,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Osmumten's_fang.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Pharaoh's sceptre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 25,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: -1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 32,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/weapons/Pharaoh's_sceptre_(1).webp",
     slot: "Weapon",
   },
 ];
