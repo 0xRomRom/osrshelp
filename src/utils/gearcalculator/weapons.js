@@ -8839,6 +8839,926 @@ const WEAPONS = [
     src: "./gearcalculator/weapons/Pharaoh's_sceptre_(1).webp",
     slot: "Weapon",
   },
+  {
+    type: "Ranged",
+    name: "Phoenix crossbow",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 6,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/weapons/Phoenix_crossbow.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Piscarilius banner",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 12,
+        Slash: 12,
+        Crush: 12,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Piscarilius_banner.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rapier",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 45,
+        Slash: 7,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 44,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rapier.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Red chinchompa",
+    defLvl: 0,
+    rangedLvl: 55,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 70,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 15,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Red_chinchompa.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Red topaz machete",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 16,
+        Crush: -2,
+        Magic: 0,
+        Range: 70,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 10,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Red_topaz_machete.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Rod of ivandis",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: -1,
+        Crush: 7,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.001,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rod_of_ivandis.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rolling pin",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 20,
+        Slash: -2,
+        Crush: 39,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 36,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rolling_pin.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Ruby sickle (b)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 1,
+        Range: 1,
+      },
+      // Other
+      {
+        "Melee strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ruby_sickle_(b).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rune axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: 26,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 29,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_axe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rune battleaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: 48,
+        Crush: 43,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 64,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_battleaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rune cane",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 20,
+        Slash: -2,
+        Crush: 39,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 36,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_cane.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Rune crossbow",
+    defLvl: 0,
+    rangedLvl: 61,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 90,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 6,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_crossbow.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rune dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 25,
+        Slash: 12,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 24,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_dagger.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Rune dart",
+    defLvl: 0,
+    rangedLvl: 40,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 26,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_dart.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rune hasta",
+    defLvl: 0,
+    rangedLvl: 40,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 36,
+        Slash: 36,
+        Crush: 36,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: -10,
+        Slash: -10,
+        Crush: -9,
+        Magic: 0,
+        Range: -10,
+      },
+      // Other
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_hasta.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Rune knife",
+    defLvl: 0,
+    rangedLvl: 40,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 25,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 24,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_knife.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rune longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 38,
+        Slash: 47,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 49,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_longsword.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rune mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 20,
+        Slash: -2,
+        Crush: 39,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 36,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_mace.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rune pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 26,
+        Slash: -2,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 29,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_pickaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rune scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: 45,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 44,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_scimitar.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rune sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 38,
+        Slash: 26,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 39,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_sword.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Rune thrownaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 26,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 36,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_thrownaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Rune warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 53,
+        Magic: -4,
+        Range: 26,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 62,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_warhammer.webp",
+    slot: "Weapon",
+  },
 ];
 
 export default WEAPONS;
