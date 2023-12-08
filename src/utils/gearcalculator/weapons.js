@@ -1041,6 +1041,46 @@ const WEAPONS = [
   },
   {
     type: "Magic",
+    name: "Steam battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steam_battlestaff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
     name: "Mud battlestaff",
     defLvl: 0,
     rangedLvl: 0,
@@ -1321,6 +1361,46 @@ const WEAPONS = [
   },
   {
     type: "Magic",
+    name: "Saradomin crozier",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 60,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 25,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 32,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 6,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/weapons/Saradomin_crozier.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
     name: "Guthix crozier",
     defLvl: 0,
     rangedLvl: 0,
@@ -1517,6 +1597,46 @@ const WEAPONS = [
       },
     ],
     src: "./gearcalculator/weapons/Ancient_sceptre.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Smoke ancient sceptre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 70,
+    strengthLvl: 60,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 20,
+        Slash: -1,
+        Crush: 50,
+        Magic: 20,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 60,
+        "Ranged strength": 0,
+        "Magic damage": 5,
+        "Slayer Bonus": 0,
+        Prayer: -1,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Smoke_ancient_sceptre.webp",
     slot: "Weapon",
   },
   {
@@ -5001,6 +5121,46 @@ const WEAPONS = [
   },
   {
     type: "Magic",
+    name: "Smoke battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Smoke_battlestaff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
     name: "Earth battlestaff",
     defLvl: 0,
     rangedLvl: 0,
@@ -5920,6 +6080,46 @@ const WEAPONS = [
     slot: "Weapon",
   },
   {
+    type: "Magic",
+    name: "Sanguinesti staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 82,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 25,
+        Range: 4,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Sanguinesti_staff.webp",
+    slot: "Weapon",
+  },
+  {
     type: "Ranged",
     name: "Holy water",
     defLvl: 0,
@@ -6077,6 +6277,46 @@ const WEAPONS = [
       },
     ],
     src: "./gearcalculator/weapons/Ice_ancient_sceptre.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Shadow ancient sceptre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 60,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 20,
+        Slash: -1,
+        Crush: 50,
+        Magic: 20,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 60,
+        "Ranged strength": 0,
+        "Magic damage": 5,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Shadow_ancient_sceptre.webp",
     slot: "Weapon",
   },
   {
@@ -9757,6 +9997,686 @@ const WEAPONS = [
       },
     ],
     src: "./gearcalculator/weapons/Rune_warhammer.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Sarachnis cudgel",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 65,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 30,
+        Slash: 0,
+        Crush: 70,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 70,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Sarachnis_cudgel.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Saradomin staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 60,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -1,
+        Slash: -1,
+        Crush: 6,
+        Magic: 6,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 2,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Saradomin_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Silver sickle",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 1,
+        Magic: 1,
+        Range: 1,
+      },
+      // Other
+      {
+        "Melee strength": 1,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Silver_sickle.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Silver sickle (b)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 1,
+        Magic: 1,
+        Range: 1,
+      },
+      // Other
+      {
+        "Melee strength": 1,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Silver_sickle_(b).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Silverlight",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 9,
+        Slash: 14,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 1,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Silverlight.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Skull sceptre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: -1,
+        Crush: 7,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Skull_sceptre.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Slayer's staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 25,
+        Magic: 12,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Slayer's_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: -1,
+        Crush: 7,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Staff of air",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: -1,
+        Crush: 7,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff_of_air.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Staff of balance",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 55,
+        Slash: 70,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 3,
+        Magic: 17,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff_of_balance.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Staff of bob the cat",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 2,
+        Slash: -1,
+        Crush: 10,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff_of_bob_the_cat.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Staff of earth",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 1,
+        Slash: -1,
+        Crush: 9,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 5,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff_of_earth.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Staff of fire",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 3,
+        Slash: -1,
+        Crush: 9,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 6,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff_of_fire.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Staff of water",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: -1,
+        Crush: 7,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff_of_water.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Staff of light",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 55,
+        Slash: 70,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 3,
+        Magic: 17,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff_of_light.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Staff of the dead",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 55,
+        Slash: 70,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 3,
+        Magic: 17,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff_of_the_dead.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Statius's warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 75,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 123,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 114,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Statius's_warhammer_(bh).webp",
     slot: "Weapon",
   },
 ];
