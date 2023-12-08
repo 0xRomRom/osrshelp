@@ -38,6 +38,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/'24-carat'_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -78,6 +79,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/3rd_age_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -118,6 +120,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/3rd_age_longsword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -158,6 +161,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/3rd_age_wand.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -198,6 +202,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Abyssal_dagger_(bh).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -238,6 +243,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Abyssal_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -278,6 +284,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Abyssal_tentacle.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -318,6 +325,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Abyssal_whip.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -358,6 +366,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Accursed_sceptre.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -398,6 +407,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -438,6 +448,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_battleaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -478,6 +489,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_cane.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -518,6 +530,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -558,6 +571,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -598,6 +612,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_dart.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -638,6 +653,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_hasta.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -678,6 +694,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_knife.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -718,6 +735,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_longsword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -758,6 +776,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -798,6 +817,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_pickaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -838,6 +858,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_scimitar.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -878,6 +899,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -918,6 +940,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_thrownaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -958,6 +981,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Adamant_warhammer.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -998,6 +1022,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Ahrim's_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1038,6 +1063,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Air_battlestaff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1078,6 +1104,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Water_battlestaff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1118,6 +1145,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steam_battlestaff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1158,6 +1186,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mud_battlestaff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1198,6 +1227,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mist_battlestaff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1238,6 +1268,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Lava_battlestaff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1278,6 +1309,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Fire_battlestaff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -1318,6 +1350,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Amethyst_dart.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -1358,6 +1391,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Amy's_saw.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1398,6 +1432,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Ancient_crozier.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1438,6 +1473,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Zamorak_crozier.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1478,6 +1514,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Saradomin_crozier.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1518,6 +1555,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Guthix_crozier.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1558,6 +1596,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Armadyl_crozier.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1598,6 +1637,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bandos_crozier.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -1638,6 +1678,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Ancient_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1678,6 +1719,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Ancient_sceptre.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1718,6 +1760,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Smoke_ancient_sceptre.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1758,6 +1801,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Ancient_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -1798,6 +1842,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Apprentice_wand.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -1838,6 +1883,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Arceuus_banner.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -1878,6 +1924,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Arclight.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -1918,6 +1965,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -1958,6 +2006,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Assorted_flowers.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -1998,6 +2047,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Barb-tail_harpoon.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2038,6 +2088,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Barronite_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -2078,6 +2129,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Battlestaff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -2118,6 +2170,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Beginner_wand.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2158,6 +2211,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2198,6 +2252,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_battleaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2238,6 +2293,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_cane.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -2278,6 +2334,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_chinchompa.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2318,6 +2375,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -2358,6 +2416,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_dart.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2398,6 +2457,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_longsword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -2438,6 +2498,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_knife.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2478,6 +2539,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2518,6 +2580,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_pickaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2558,6 +2621,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_scimitar.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2598,6 +2662,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2638,6 +2703,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Black_warhammer.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2678,6 +2744,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Blade_of_saeldor.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2718,6 +2785,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Blessed_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2758,6 +2826,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Blisterwood_flail.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2798,6 +2867,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Blisterwood_sickle.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -2838,6 +2908,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Blood_ancient_sceptre.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -2878,6 +2949,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Blurite_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2918,6 +2990,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Blurite_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2958,6 +3031,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bone_club.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -2998,6 +3072,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bone_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3038,6 +3113,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bone_spear.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3078,6 +3154,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Brine_sabre.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3118,6 +3195,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3158,6 +3236,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_battleaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -3198,6 +3277,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3238,6 +3318,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -3278,6 +3359,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_dart.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3318,6 +3400,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_hasta.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -3358,6 +3441,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_knife.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3398,6 +3482,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_longsword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3438,6 +3523,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3478,6 +3564,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_pickaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3518,6 +3605,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_scimitar.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3558,6 +3646,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -3598,6 +3687,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_thrownaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3638,6 +3728,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bronze_warhammer.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -3678,6 +3769,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Bryophyta's_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -3718,6 +3810,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Chinchompa.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3758,6 +3851,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Cleaver.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -3798,6 +3892,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3838,6 +3933,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Crystal_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3878,6 +3974,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Crystal_harpoon.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3918,6 +4015,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Crystal_pickaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3958,6 +4056,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Crystal_sceptre.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -3998,6 +4097,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Cursed_goblin_hammer.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4038,6 +4138,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dark_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4078,6 +4179,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Darklight.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4118,6 +4220,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Decorative_sword_(white).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4158,6 +4261,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Decorative_sword_(red).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4198,6 +4302,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Decorative_sword_(gold).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -4238,6 +4343,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dorgeshuun_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4278,6 +4384,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4318,6 +4425,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_battleaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4358,6 +4466,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_cane.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -4398,6 +4507,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4438,6 +4548,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -4478,6 +4589,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_dart.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4518,6 +4630,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_harpoon.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4558,6 +4671,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_hasta.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -4598,6 +4712,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_hunter_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4638,6 +4753,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_hunter_lance.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4678,6 +4794,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_knife.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4718,6 +4835,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_longsword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4758,6 +4876,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_longsword_(bh).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4798,6 +4917,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_longsword_(cr).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4838,6 +4958,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4878,6 +4999,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_mace_(cr).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4918,6 +5040,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_mace_(bh).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4958,6 +5081,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_pickaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -4998,6 +5122,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_scimitar.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5038,6 +5163,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5078,6 +5204,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_thrownaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5118,6 +5245,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dragon_warhammer.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -5158,6 +5286,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dramen_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -5198,6 +5327,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Dust_battlestaff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -5238,6 +5368,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Smoke_battlestaff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -5278,6 +5409,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Earth_battlestaff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5318,6 +5450,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Egg_whisk.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -5358,6 +5491,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Eldritch_nightmare_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -5398,6 +5532,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Nightmare_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5438,6 +5573,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Emerald_sickle_(b).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5478,6 +5614,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Enchanted_emerald_sickle_(b).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5518,6 +5655,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Enchanted_ruby_sickle_(b).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5558,6 +5696,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Excalibur.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5598,6 +5737,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Fremennik_blade.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5638,6 +5778,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Frying_pan.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5678,6 +5819,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Ghrazi_rapier.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5718,6 +5860,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Gilded_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5758,6 +5901,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Gilded_hasta.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5798,6 +5942,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Gilded_pickaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5838,6 +5983,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Gilded_scimitar.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5878,6 +6024,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Glowing_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5918,6 +6065,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Granite_hammer.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -5958,6 +6106,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Granite_longsword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -5998,6 +6147,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Guthix_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -6038,6 +6188,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Harmonised_nightmare_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6078,6 +6229,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Harry's_cutlass.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6118,6 +6270,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Holy_ghrazi_rapier.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -6158,6 +6311,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Holy_sanguinesti_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -6198,6 +6352,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Sanguinesti_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -6238,6 +6393,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Holy_water.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -6278,6 +6434,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Hunters'_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -6318,6 +6475,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iban's_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -6358,6 +6516,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Ice_ancient_sceptre.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -6398,6 +6557,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Shadow_ancient_sceptre.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6438,6 +6598,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Infernal_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6478,6 +6639,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Infernal_harpoon.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6518,6 +6680,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Infernal_pickaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6558,6 +6721,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Inquisitor's_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6598,6 +6762,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6638,6 +6803,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_battleaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -6678,6 +6844,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6718,6 +6885,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -6758,6 +6926,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_dart.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6798,6 +6967,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_hasta.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -6838,6 +7008,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_knife.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6878,6 +7049,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_longsword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6918,6 +7090,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6958,6 +7131,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_pickaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -6998,6 +7172,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_scimitar.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7038,6 +7213,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_sickle.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7078,6 +7254,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -7118,6 +7295,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_thrownaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7158,6 +7336,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Iron_warhammer.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7198,6 +7377,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Ivandis_flail.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7238,6 +7418,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Jade_machete.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7278,6 +7459,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Keris_partisan.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7318,6 +7500,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Keris.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7358,6 +7541,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Kitchen_knife.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -7398,6 +7582,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Kodai_wand.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7438,6 +7623,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Leaf-bladed_battleaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7478,6 +7664,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Leaf-bladed_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7518,6 +7705,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Lucky_cutlass.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -7558,6 +7746,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Lunar_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7598,6 +7787,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Machete.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7638,6 +7828,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Magic_secateurs.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -7678,6 +7869,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Magic_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7718,6 +7910,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Maple_blackjack.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7758,6 +7951,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Maple_blackjack(d).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7798,6 +7992,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Maple_blackjack(o).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -7838,6 +8033,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Master_wand.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7878,6 +8074,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Meat_tenderiser.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7918,6 +8115,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -7958,6 +8156,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_battleaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -7998,6 +8197,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -8038,6 +8238,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -8078,6 +8279,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_dart.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -8118,6 +8320,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_hasta.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -8158,6 +8361,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_knife.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -8198,6 +8402,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_longsword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -8238,6 +8443,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -8278,6 +8484,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_pickaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -8318,6 +8525,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_scimitar.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -8358,6 +8566,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -8398,6 +8607,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_thrownaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -8438,6 +8648,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mithril_warhammer.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -8478,6 +8689,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Morrigan's_javelin_(bh).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -8518,6 +8730,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Morrigan's_throwing_axe_(bh).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -8558,6 +8771,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mystic_air_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -8598,6 +8812,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mystic_dust_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -8638,6 +8853,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mystic_earth_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -8678,6 +8894,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mystic_fire_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -8718,6 +8935,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mystic_lava_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -8758,6 +8976,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mystic_mist_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -8798,6 +9017,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mystic_mud_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -8838,6 +9058,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mystic_smoke_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -8878,6 +9099,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mystic_steam_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -8918,6 +9140,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Mystic_water_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -8958,6 +9181,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Oak_blackjack.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -8998,6 +9222,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Oak_blackjack(d).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9038,6 +9263,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Oak_blackjack(o).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9078,6 +9304,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Opal_machete.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9118,6 +9345,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Osmumten's_fang.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9158,6 +9386,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Pharaoh's_sceptre_(1).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -9198,6 +9427,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Phoenix_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9238,6 +9468,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Piscarilius_banner.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9278,6 +9509,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rapier.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -9318,6 +9550,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Red_chinchompa.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9358,6 +9591,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Red_topaz_machete.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -9398,6 +9632,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rod_of_ivandis.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9438,6 +9673,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rolling_pin.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9478,6 +9714,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Ruby_sickle_(b).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9518,6 +9755,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9558,6 +9796,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_battleaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9598,6 +9837,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_cane.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -9638,6 +9878,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9678,6 +9919,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -9718,6 +9960,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_dart.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9758,6 +10001,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_hasta.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -9798,6 +10042,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_knife.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9838,6 +10083,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_longsword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9878,6 +10124,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9918,6 +10165,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_pickaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9958,6 +10206,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_scimitar.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -9998,6 +10247,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -10038,6 +10288,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_thrownaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -10078,6 +10329,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Rune_warhammer.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -10118,6 +10370,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Sarachnis_cudgel.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10158,6 +10411,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Saradomin_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10198,6 +10452,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Zamorak_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -10238,6 +10493,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Silver_sickle.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -10278,6 +10534,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Silver_sickle_(b).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -10318,6 +10575,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Silverlight.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -10358,6 +10616,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Skull_sceptre.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10398,6 +10657,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Slayer's_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10438,6 +10698,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10478,6 +10739,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Staff_of_air.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10518,6 +10780,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Staff_of_balance.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10558,6 +10821,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Staff_of_bob_the_cat.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10598,6 +10862,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Staff_of_earth.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10638,6 +10903,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Staff_of_fire.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10678,6 +10944,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Staff_of_water.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10718,6 +10985,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Staff_of_light.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -10758,6 +11026,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Staff_of_the_dead.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -10798,6 +11067,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Statius's_warhammer_(bh).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -10838,6 +11108,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_axe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -10878,6 +11149,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_battleaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -10918,6 +11190,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -10958,6 +11231,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -10998,6 +11272,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_dart.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11038,6 +11313,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_hasta.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -11078,6 +11354,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_knife.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11118,6 +11395,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_longsword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11158,6 +11436,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11198,6 +11477,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_pickaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11238,6 +11518,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_scimitar.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11278,6 +11559,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -11318,6 +11600,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_thrownaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11358,6 +11641,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Steel_warhammer.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -11398,6 +11682,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Teacher_wand.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -11438,6 +11723,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Thammaron's_sceptre.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11478,6 +11764,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Toktz-xil-ak.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11518,6 +11805,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Toktz-xil-ek.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -11558,6 +11846,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Toktz-xil-ul.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -11598,6 +11887,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -11638,6 +11928,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Toxic_staff_(uncharged).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11678,6 +11969,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Training_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -11718,6 +12010,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Trident_of_the_seas_(full).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -11758,6 +12051,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Trident_of_the_swamp.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11798,6 +12092,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Tzhaar-ket-em.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11838,6 +12133,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Ursine_chainmace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11878,6 +12174,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Vesta's_longsword_(bh).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11918,6 +12215,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Viggora's_chainmace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11958,6 +12256,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Void_knight_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -11998,6 +12297,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Voidwaker.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12038,6 +12338,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Volatile_nightmare_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -12078,6 +12379,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Warped_sceptre.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12118,6 +12420,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Western_banner_1.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12158,6 +12461,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Western_banner_2.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12198,6 +12502,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Western_banner_3.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12238,6 +12543,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Western_banner_4.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12278,6 +12584,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/White_battleaxe.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12318,6 +12625,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/White_dagger.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12358,6 +12666,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/White_longsword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12398,6 +12707,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/White_mace.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -12438,6 +12748,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/White_magic_staff.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12478,6 +12789,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/White_scimitar.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12518,6 +12830,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/White_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12558,6 +12871,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/White_warhammer.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12598,6 +12912,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Wilderness_sword_1.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12638,6 +12953,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Wilderness_sword_2.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12678,6 +12994,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Wilderness_sword_3.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12718,6 +13035,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Wilderness_sword_4.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12758,6 +13076,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Willow_blackjack.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12798,6 +13117,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Willow_blackjack(d).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12838,6 +13158,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Willow_blackjack(o).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12878,6 +13199,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Wolfbane.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12918,6 +13240,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Wooden_spoon.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12958,6 +13281,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Wooden_sword.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -12998,6 +13322,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Zamorakian_hasta.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Ranged",
@@ -13038,6 +13363,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Zaryte_crossbow.webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Melee",
@@ -13078,6 +13404,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Zombie_head_(Treasure_Trails).webp",
     slot: "Weapon",
+    twoHanded: false,
   },
   {
     type: "Magic",
@@ -13118,6 +13445,335 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Zuriel's_staff_(bh).webp",
     slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Ranged",
+    name: "3rd age bow",
+    defLvl: 0,
+    rangedLvl: 65,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 80,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/3rd_age_bow.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "3rd age felling axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 65,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: 38,
+        Crush: 32,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/3rd_age_felling_axe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Abyssal bludgeon",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 70,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 102,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 85,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 6,
+      },
+    ],
+    src: "./gearcalculator/weapons/Abyssal_bludgeon.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Adamant 2h sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -4,
+        Slash: 43,
+        Crush: 30,
+        Magic: -4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 44,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.082,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_2h_sword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Adamant claws",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 18,
+        Slash: 23,
+        Crush: -4,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 6,
+        Slash: 12,
+        Crush: 3,
+        Magic: 0,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 24,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_claws.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Adamant felling axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: 17,
+        Crush: 15,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 19,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_felling_axe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Adamant halberd",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 28,
+        Slash: 41,
+        Crush: 0,
+        Magic: -4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: -1,
+        Slash: 3,
+        Crush: 4,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_halberd.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Adamant spear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 24,
+        Slash: 24,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 28,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_spear.webp",
+    slot: "Weapon",
+    twoHanded: true,
   },
 ];
 
