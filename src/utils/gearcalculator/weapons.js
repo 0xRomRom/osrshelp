@@ -5601,7 +5601,7 @@ const WEAPONS = [
   },
   {
     type: "Magic",
-    name: "GHarmonised nightmare staff",
+    name: "Harmonised nightmare staff",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -5633,10 +5633,850 @@ const WEAPONS = [
         "Magic damage": 15,
         "Slayer Bonus": 0,
         Prayer: 0,
-        Weight: 1,6,
+        Weight: 1.6,
       },
     ],
     src: "./gearcalculator/weapons/Harmonised_nightmare_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Harry's cutlass",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 3,
+        Slash: 14,
+        Crush: 0,
+        Magic: -5,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 4,
+        Crush: 4,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 22,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Harry's_cutlass.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Holy ghrazi rapier",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 94,
+        Slash: 55,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 89,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Holy_ghrazi_rapier.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Holy sanguinesti staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 82,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 25,
+        Range: 4,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Holy_sanguinesti_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Holy water",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 82,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 6,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 12,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Holy_water.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Hunters' crossbow",
+    defLvl: 0,
+    rangedLvl: 50,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 55,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Hunters'_crossbow.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Iban's staff",
+    defLvl: 0,
+    rangedLvl: 50,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 60,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iban's_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Ice ancient sceptre",
+    defLvl: 0,
+    rangedLvl: 50,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 60,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 20,
+        Slash: -1,
+        Crush: 50,
+        Magic: 20,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 60,
+        "Ranged strength": 0,
+        "Magic damage": 5,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ice_ancient_sceptre.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Infernal axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: 38,
+        Crush: 32,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Infernal_axe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Infernal harpoon",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 38,
+        Slash: 32,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Infernal_harpoon.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Infernal pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 38,
+        Slash: -2,
+        Crush: 32,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.4,
+      },
+    ],
+    src: "./gearcalculator/weapons/Infernal_pickaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Inquisitor's mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 52,
+        Slash: -4,
+        Crush: 95,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 89,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Inquisitor's_mace.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Iron axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: 5,
+        Crush: 3,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iron_axe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Iron battleaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: 8,
+        Crush: 5,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 13,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iron_battleaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Iron crossbow",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 42,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iron_crossbow.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Iron dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 5,
+        Slash: 3,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iron_dagger.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Iron dart",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iron_dart.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Iron hasta",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 8,
+        Slash: 8,
+        Crush: 8,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: -2,
+        Slash: -2,
+        Crush: -2,
+        Magic: 0,
+        Range: -2,
+      },
+      // Other
+      {
+        "Melee strength": 10,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iron_hasta.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Iron knife",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 5,
+      },
+      // Defence
+      {
+        Stab: -2,
+        Slash: -2,
+        Crush: -2,
+        Magic: 0,
+        Range: -2,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 4,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iron_knife.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Iron longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 6,
+        Slash: 8,
+        Crush: -2,
+        Magic: 0,
+        Range: 5,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: -2,
+      },
+      // Other
+      {
+        "Melee strength": 10,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iron_longsword.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Iron mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 4,
+        Slash: -2,
+        Crush: -9,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iron_mace.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Iron pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 4,
+        Slash: -2,
+        Crush: -9,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iron_pickaxe.webp",
     slot: "Weapon",
   },
 ];
