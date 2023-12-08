@@ -1401,6 +1401,46 @@ const WEAPONS = [
   },
   {
     type: "Magic",
+    name: "Zamorak crozier",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 60,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 25,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 32,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 6,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/weapons/Zamorak_crozier.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
     name: "Saradomin crozier",
     defLvl: 0,
     rangedLvl: 0,
@@ -10120,6 +10160,46 @@ const WEAPONS = [
     slot: "Weapon",
   },
   {
+    type: "Magic",
+    name: "Zamorak staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 60,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -1,
+        Slash: -1,
+        Crush: 6,
+        Magic: 6,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 2,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Zamorak_staff.webp",
+    slot: "Weapon",
+  },
+  {
     type: "Melee",
     name: "Silver sickle",
     defLvl: 0,
@@ -12292,9 +12372,9 @@ const WEAPONS = [
     stats: [
       // Attack
       {
-        Stab: 13,
-        Slash: 18,
-        Crush: -2,
+        Stab: 8,
+        Slash: -2,
+        Crush: 16,
         Magic: 0,
         Range: 0,
       },
@@ -12308,7 +12388,87 @@ const WEAPONS = [
       },
       // Other
       {
-        "Melee strength": 16,
+        "Melee strength": 13,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_mace.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "White magic staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 2,
+        Slash: -1,
+        Crush: 10,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_magic_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "White scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 4,
+        Slash: 19,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 14,
         "Ranged strength": 0,
         "Magic damage": 0,
         "Slayer Bonus": 0,
@@ -12316,7 +12476,647 @@ const WEAPONS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/weapons/White_mace.webp",
+    src: "./gearcalculator/weapons/White_scimitar.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "White sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 14,
+        Slash: 10,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_sword.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "White warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 22,
+        Magic: -4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 22,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_warhammer.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Wilderness sword 1",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 6,
+        Slash: 4,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Wilderness_sword_1.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Wilderness sword 2",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 11,
+        Slash: 8,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Wilderness_sword_2.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Wilderness sword 3",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 16,
+        Slash: 11,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 17,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Wilderness_sword_3.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Wilderness sword 4",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 23,
+        Slash: 18,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 24,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Wilderness_sword_4.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Willow blackjack",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 8,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Willow_blackjack.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Willow blackjack(d)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 8,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 8,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Willow_blackjack(d).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Willow blackjack(o)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 8,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 8,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Willow_blackjack(o).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Wolfbane",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 11,
+        Slash: 5,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 10,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Wolfbane.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Wooden spoon",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 4,
+        Slash: 5,
+        Crush: -2,
+        Magic: 1,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Wooden_spoon.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Wooden sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 4,
+        Slash: 3,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 5,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Wooden_sword.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Zamorak hasta",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 85,
+        Slash: 85,
+        Crush: 65,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 13,
+        Slash: 13,
+        Crush: 12,
+        Magic: 0,
+        Range: 13,
+      },
+      // Other
+      {
+        "Melee strength": 75,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 3,
+      },
+    ],
+    src: "./gearcalculator/weapons/Zamorakian_hasta.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Zaryte crossbow",
+    defLvl: 0,
+    rangedLvl: 80,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 110,
+      },
+      // Defence
+      {
+        Stab: 14,
+        Slash: 14,
+        Crush: 12,
+        Magic: 15,
+        Range: 16,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 6.001,
+      },
+    ],
+    src: "./gearcalculator/weapons/Zaryte_crossbow.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Zombie head",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 80,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 10,
+        Magic: -4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 8,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Zombie_head_(Treasure_Trails).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Zuriel's staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 13,
+        Slash: -1,
+        Crush: 65,
+        Magic: 18,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 5,
+        Slash: 7,
+        Crush: 4,
+        Magic: 18,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 10,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Zuriel's_staff_(bh).webp",
     slot: "Weapon",
   },
 ];
