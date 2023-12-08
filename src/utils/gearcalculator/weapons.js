@@ -10679,6 +10679,566 @@ const WEAPONS = [
     src: "./gearcalculator/weapons/Statius's_warhammer_(bh).webp",
     slot: "Weapon",
   },
+  {
+    type: "Melee",
+    name: "Steel axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: 8,
+        Crush: 6,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 9,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_axe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Steel battleaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: 16,
+        Crush: 11,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      // Other
+      {
+        "Melee strength": 20,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_battleaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Steel crossbow",
+    defLvl: 0,
+    rangedLvl: 31,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 54,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_crossbow.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Steel dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 8,
+        Slash: 4,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_dagger.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Steel dart",
+    defLvl: 0,
+    rangedLvl: 5,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 3,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_dart.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Steel hasta",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 12,
+        Slash: 12,
+        Crush: 12,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: -3,
+        Slash: -3,
+        Crush: -3,
+        Magic: 0,
+        Range: -3,
+      },
+      // Other
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_hasta.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Ranged",
+    name: "Steel knife",
+    defLvl: 0,
+    rangedLvl: 5,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 7,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_knife.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Steel longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 9,
+        Slash: 14,
+        Crush: -2,
+        Magic: 0,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 16,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_longsword.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Steel mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -2,
+        Crush: 13,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 11,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_mace.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Steel pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 8,
+        Slash: -2,
+        Crush: 6,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 9,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_pickaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Steel scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 3,
+        Slash: 15,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_scimitar.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Steel sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 11,
+        Slash: 8,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_sword.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Steel thrownaxe",
+    defLvl: 0,
+    rangedLvl: 5,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 11,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_thrownaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Steel warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 18,
+        Magic: -4,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 16,
+        "Ranged strength": 11,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_warhammer.webp",
+    slot: "Weapon",
+  },
 ];
 
 export default WEAPONS;
