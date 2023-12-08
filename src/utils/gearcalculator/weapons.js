@@ -1040,6 +1040,46 @@ const WEAPONS = [
     slot: "Weapon",
   },
   {
+    type: "Magic",
+    name: "Fire battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Fire_battlestaff.webp",
+    slot: "Weapon",
+  },
+  {
     type: "Ranged",
     name: "Amethyst dart",
     defLvl: 0,
@@ -1157,6 +1197,46 @@ const WEAPONS = [
       },
     ],
     src: "./gearcalculator/weapons/Ancient_crozier.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Guthix crozier",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 60,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 25,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 32,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 6,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/weapons/Guthix_crozier.webp",
     slot: "Weapon",
   },
   {
@@ -4677,6 +4757,886 @@ const WEAPONS = [
       },
     ],
     src: "./gearcalculator/weapons/Dragon_thrownaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Dragon warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 95,
+        Magic: -4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 85,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_warhammer.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Dramen staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -1,
+        Slash: -1,
+        Crush: 10,
+        Magic: 10,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 10,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dramen_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Dust battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dust_battlestaff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Earth battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Earth_battlestaff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Egg whisk",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 5,
+        Slash: 3,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Egg_whisk.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Eldritch nightmare staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 82,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 50,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 16,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.6,
+      },
+    ],
+    src: "./gearcalculator/weapons/Eldritch_nightmare_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Emerald sickle (b)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 16,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 1,
+        Range: 1,
+      },
+      // Other
+      {
+        "Melee strength": 2,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Emerald_sickle_(b).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Enchanted emerald sickle (b)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 16,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 1,
+        Range: 1,
+      },
+      // Other
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Enchanted_emerald_sickle_(b).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Enchanted ruby sickle (b)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 16,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 1,
+        Range: 1,
+      },
+      // Other
+      {
+        "Melee strength": 6,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Enchanted_ruby_sickle_(b).webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Excalibur",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 20,
+        Slash: 29,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 1,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 25,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Excalibur.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Fremennik blade",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 6,
+        Slash: 29,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 28,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Fremennik_blade.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Frying pan",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 25,
+        Magic: -4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 20,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Frying_pan.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Ghrazi rapier",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 95,
+        Slash: 55,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 89,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ghrazi_rapier.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Gilded axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: 26,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 29,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Gilded_axe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Gilded hasta",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 36,
+        Slash: 36,
+        Crush: 36,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: -10,
+        Slash: -10,
+        Crush: -9,
+        Magic: 0,
+        Range: -10,
+      },
+      // Other
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Gilded_hasta.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Gilded pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 26,
+        Slash: -2,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 29,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Gilded_pickaxe.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Gilded scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: 45,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 44,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Gilded_scimitar.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Glowing dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 5,
+        Slash: 3,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Glowing_dagger.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Granite hammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 50,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 57,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 56,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Granite_hammer.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Melee",
+    name: "Granite longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 50,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 56,
+        Slash: 65,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 62,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Granite_longsword.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "Guthix staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 60,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -1,
+        Slash: -1,
+        Crush: 6,
+        Magic: 6,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 2,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Guthix_staff.webp",
+    slot: "Weapon",
+  },
+  {
+    type: "Magic",
+    name: "GHarmonised nightmare staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 82,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 50,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 16,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1,6,
+      },
+    ],
+    src: "./gearcalculator/weapons/Harmonised_nightmare_staff.webp",
     slot: "Weapon",
   },
 ];
