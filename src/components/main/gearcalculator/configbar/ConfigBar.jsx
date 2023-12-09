@@ -6,6 +6,7 @@ import NECKLACE from "../../../../utils/gearcalculator/necklace";
 import AMUNITION from "../../../../utils/gearcalculator/amunition";
 import WEAPONS from "../../../../utils/gearcalculator/weapons";
 import BODIES from "../../../../utils/gearcalculator/bodies";
+import SHIELDS from "../../../../utils/gearcalculator/shields";
 import TypeFilter from "./typefilter/TypeFilter";
 
 import defenceIcon from "../../../../assets/skillicons/Defence.webp";
@@ -49,6 +50,10 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
     if (activeSlot === "Body") {
       setItemList(BODIES);
       setListCopy(BODIES);
+    }
+    if (activeSlot === "Shield") {
+      setItemList(SHIELDS);
+      setListCopy(SHIELDS);
     }
     if (!activeSlot) {
       setItemList([]);
