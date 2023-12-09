@@ -441,6 +441,46 @@ const BODIES = [
   },
   {
     type: "Ranged",
+    name: "Guthix d'hide body",
+    defLvl: 40,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -15,
+        Range: 30,
+      },
+      // Defence
+      {
+        Stab: 55,
+        Slash: 47,
+        Crush: 60,
+        Magic: 50,
+        Range: 55,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 6,
+      },
+    ],
+    src: "./gearcalculator/bodies/Guthix_d'hide_body.webp",
+    slot: "Body",
+  },
+  {
+    type: "Ranged",
     name: "Armadyl d'hide body",
     defLvl: 40,
     rangedLvl: 70,
@@ -517,6 +557,46 @@ const BODIES = [
       },
     ],
     src: "./gearcalculator/bodies/Ancient_platebody.webp",
+    slot: "Body",
+  },
+  {
+    type: "Melee",
+    name: "Guthix platebody",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -30,
+        Range: -15,
+      },
+      // Defence
+      {
+        Stab: 82,
+        Slash: 80,
+        Crush: 72,
+        Magic: -6,
+        Range: 80,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 9.979,
+      },
+    ],
+    src: "./gearcalculator/bodies/Guthix_platebody.webp",
     slot: "Body",
   },
   {
@@ -637,6 +717,46 @@ const BODIES = [
       },
     ],
     src: "./gearcalculator/bodies/Ancient_robe_top.webp",
+    slot: "Body",
+  },
+  {
+    type: "Magic",
+    name: "Guthix robe top",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 20,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 6,
+        Weight: 0.005,
+      },
+    ],
+    src: "./gearcalculator/bodies/Guthix_robe_top.webp",
     slot: "Body",
   },
   {
@@ -3277,6 +3397,326 @@ const BODIES = [
       },
     ],
     src: "./gearcalculator/bodies/Green_d'hide_body_(t).webp",
+    slot: "Body",
+  },
+  {
+    type: "Melee",
+    name: "Group iron platebody",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -30,
+        Range: -15,
+      },
+      // Defence
+      {
+        Stab: 21,
+        Slash: 20,
+        Crush: 12,
+        Magic: -6,
+        Range: 20,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/bodies/Group_iron_platebody_(V).webp",
+    slot: "Body",
+  },
+  {
+    type: "Melee",
+    name: "Guthan's platebody",
+    defLvl: 70,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -30,
+        Range: -10,
+      },
+      // Defence
+      {
+        Stab: 122,
+        Slash: 120,
+        Crush: 107,
+        Magic: -6,
+        Range: 132,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.979,
+      },
+    ],
+    src: "./gearcalculator/bodies/Guthan's_platebody.webp",
+    slot: "Body",
+  },
+  {
+    type: "Melee",
+    name: "Ham shirt",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/bodies/Ham_shirt.webp",
+    slot: "Body",
+  },
+  {
+    type: "Melee",
+    name: "Hardcore group iron platebody",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -30,
+        Range: -15,
+      },
+      // Defence
+      {
+        Stab: 21,
+        Slash: 20,
+        Crush: 12,
+        Magic: -6,
+        Range: 20,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/bodies/Hardcore_group_iron_platebody_(V).webp",
+    slot: "Body",
+  },
+  {
+    type: "Melee",
+    name: "Hardcore ironman platebody",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -30,
+        Range: -15,
+      },
+      // Defence
+      {
+        Stab: 21,
+        Slash: 20,
+        Crush: 12,
+        Magic: -6,
+        Range: 20,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/bodies/Hardcore_ironman_platebody.webp",
+    slot: "Body",
+  },
+  {
+    type: "Ranged",
+    name: "Hardleather body",
+    defLvl: 10,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -4,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 15,
+        Crush: 18,
+        Magic: 6,
+        Range: 15,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/bodies/Hardleather_body.webp",
+    slot: "Body",
+  },
+  {
+    type: "Magic",
+    name: "Infinity top",
+    defLvl: 25,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 22,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 22,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/bodies/Infinity_top.webp",
+    slot: "Body",
+  },
+  {
+    type: "Melee",
+    name: "Initiate hauberk",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 10,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -30,
+        Range: -15,
+      },
+      // Defence
+      {
+        Stab: 46,
+        Slash: 44,
+        Crush: 38,
+        Magic: -6,
+        Range: 44,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 6,
+        Weight: 8.618,
+      },
+    ],
+    src: "./gearcalculator/bodies/Infinity_top.webp",
     slot: "Body",
   },
 ];
