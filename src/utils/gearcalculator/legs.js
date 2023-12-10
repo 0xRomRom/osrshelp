@@ -2599,6 +2599,566 @@ const LEGS = [
     src: "./gearcalculator/legs/Decorative_armour_(red_platelegs).webp",
     slot: "Legs",
   },
+  {
+    type: "Melee",
+    name: "Decorative armour (red plateskirt)",
+    defLvl: 5,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 17,
+        Slash: 16,
+        Crush: 15,
+        Magic: -4,
+        Range: 16,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Decorative_armour_(red_plateskirt).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Decorative armour (white platelegs)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 24,
+        Slash: 22,
+        Crush: 20,
+        Magic: -4,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Decorative_armour_(white_platelegs).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Decorative armour (white plateskirt)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 24,
+        Slash: 22,
+        Crush: 20,
+        Magic: -4,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Decorative_armour_(white_plateskirt).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Desert camo legs",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -7,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: 0,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.226,
+      },
+    ],
+    src: "./gearcalculator/legs/Desert_camo_legs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Dharok's platelegs",
+    defLvl: 70,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 85,
+        Slash: 82,
+        Crush: 83,
+        Magic: -4,
+        Range: 92,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Dharok's_platelegs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Dragon platelegs",
+    defLvl: 60,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 68,
+        Slash: 66,
+        Crush: 63,
+        Magic: -4,
+        Range: 65,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Dragon_platelegs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Dragon platelegs (g)",
+    defLvl: 60,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 68,
+        Slash: 66,
+        Crush: 63,
+        Magic: -4,
+        Range: 65,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Dragon_platelegs_(g).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Dragon plateskirt",
+    defLvl: 60,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 68,
+        Slash: 66,
+        Crush: 63,
+        Magic: -4,
+        Range: 65,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Dragon_plateskirt.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Dragon plateskirt (g)",
+    defLvl: 60,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 68,
+        Slash: 66,
+        Crush: 63,
+        Magic: -4,
+        Range: 65,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Dragon_plateskirt_(g).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Dragonstone platelegs",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 51,
+        Slash: 49,
+        Crush: 47,
+        Magic: -4,
+        Range: 49,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Dragonstone_platelegs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Druid's robe",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/legs/Druid's_robe.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Elder chaos robe",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 6,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 0.18,
+      },
+    ],
+    src: "./gearcalculator/legs/Elder_chaos_robe.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Elite void robe",
+    defLvl: 42,
+    rangedLvl: 42,
+    prayerLvl: 22,
+    magicLvl: 42,
+    strengthLvl: 42,
+    attackLvl: 42,
+    hitpointsLvl: 42,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 30,
+        Slash: 30,
+        Crush: 30,
+        Magic: 30,
+        Range: 30,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 8.164,
+      },
+    ],
+    src: "./gearcalculator/legs/Elder_chaos_robe.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Enchanted robe",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/legs/Enchanted_robe.webp",
+    slot: "Legs",
+  },
 ];
 
 export default LEGS;
