@@ -1081,6 +1081,46 @@ const SHIELDS = [
   },
   {
     type: "Magic",
+    name: "Holy book",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 50,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 8,
+        Slash: 8,
+        Crush: 8,
+        Magic: 8,
+        Range: 8,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/shields/Holy_book.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Magic",
     name: "Book of darkness",
     defLvl: 0,
     rangedLvl: 0,
