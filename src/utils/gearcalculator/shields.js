@@ -441,6 +441,46 @@ const SHIELDS = [
   },
   {
     type: "Melee",
+    name: "Guthix kiteshield",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 44,
+        Slash: 48,
+        Crush: 46,
+        Magic: -1,
+        Range: 46,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Guthix_kiteshield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
     name: "Armadyl kiteshield",
     defLvl: 40,
     rangedLvl: 0,
@@ -1880,6 +1920,86 @@ const SHIELDS = [
     slot: "Shield",
   },
   {
+    type: "Ranged",
+    name: "Dragonfire ward (uncharged)",
+    defLvl: 75,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -10,
+        Slash: -10,
+        Crush: -10,
+        Magic: -10,
+        Range: -10,
+      },
+      // Defence
+      {
+        Stab: -25,
+        Slash: -20,
+        Crush: -22,
+        Magic: 28,
+        Range: 18,
+      },
+      // Other
+      {
+        "Melee strength": -2,
+        "Ranged strength": 8,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.082,
+      },
+    ],
+    src: "./gearcalculator/shields/Dragonfire_ward_(uncharged).webp",
+    slot: "Shield",
+  },
+  {
+    type: "Ranged",
+    name: "Dragonfire ward",
+    defLvl: 75,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -10,
+        Slash: -10,
+        Crush: -10,
+        Magic: -10,
+        Range: -10,
+      },
+      // Defence
+      {
+        Stab: 25,
+        Slash: 30,
+        Crush: 28,
+        Magic: 28,
+        Range: 68,
+      },
+      // Other
+      {
+        "Melee strength": -2,
+        "Ranged strength": 8,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.082,
+      },
+    ],
+    src: "./gearcalculator/shields/Dragonfire_ward.webp",
+    slot: "Shield",
+  },
+  {
     type: "Melee",
     name: "Dragonfire shield",
     defLvl: 75,
@@ -1917,6 +2037,646 @@ const SHIELDS = [
       },
     ],
     src: "./gearcalculator/shields/Dragonfire_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Elemental shield",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 6,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.226,
+      },
+    ],
+    src: "./gearcalculator/shields/Elemental_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Magic",
+    name: "Elidinis' ward",
+    defLvl: 80,
+    rangedLvl: 0,
+    prayerLvl: 80,
+    magicLvl: 90,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 5,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 5,
+        Slash: 3,
+        Crush: 9,
+        Magic: 0,
+        Range: 6,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 3,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 0.708,
+      },
+    ],
+    src: "./gearcalculator/shields/Elidinis'_ward.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Magic",
+    name: "Elidinis' ward (f)",
+    defLvl: 80,
+    rangedLvl: 0,
+    prayerLvl: 80,
+    magicLvl: 90,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 25,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 53,
+        Slash: 55,
+        Crush: 73,
+        Magic: 2,
+        Range: 52,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 5,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 3.708,
+      },
+    ],
+    src: "./gearcalculator/shields/Elidinis'_ward_(f).webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Elysian spirit shield",
+    defLvl: 75,
+    rangedLvl: 0,
+    prayerLvl: 75,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 63,
+        Slash: 65,
+        Crush: 75,
+        Magic: 2,
+        Range: 57,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/shields/Elysian_spirit_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Falador shield 1",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 8,
+        Slash: 10,
+        Crush: 9,
+        Magic: -1,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Falador_shield_1.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Falador shield 2",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 13,
+        Slash: 15,
+        Crush: 14,
+        Magic: -1,
+        Range: 14,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Falador_shield_2.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Falador shield 3",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 18,
+        Slash: 22,
+        Crush: 20,
+        Magic: -1,
+        Range: 20,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Falador_shield_3.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Falador shield 4",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 27,
+        Slash: 31,
+        Crush: 29,
+        Magic: -1,
+        Range: 29,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Falador_shield_4.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Fremennik shield",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 27,
+        Slash: 31,
+        Crush: 29,
+        Magic: -1,
+        Range: 29,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/shields/Fremennik_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Ghommal's avernic_defender",
+    defLvl: 70,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 30,
+        Slash: 29,
+        Crush: 28,
+        Magic: -5,
+        Range: -4,
+      },
+      // Defence
+      {
+        Stab: 30,
+        Slash: 29,
+        Crush: 28,
+        Magic: -5,
+        Range: -4,
+      },
+      // Other
+      {
+        "Melee strength": 8,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/shields/Ghommal's_avernic_defender_6.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Gilded kiteshield",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 44,
+        Slash: 48,
+        Crush: 46,
+        Magic: -1,
+        Range: 46,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Gilded_kiteshield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Gilded sq shield",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 38,
+        Slash: 40,
+        Crush: 36,
+        Magic: 0,
+        Range: 38,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/shields/Gilded_sq_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Granite shield",
+    defLvl: 50,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 50,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -12,
+        Range: -8,
+      },
+      // Defence
+      {
+        Stab: 40,
+        Slash: 42,
+        Crush: 38,
+        Magic: 0,
+        Range: 65,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 6.803,
+      },
+    ],
+    src: "./gearcalculator/shields/Granite_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Ranged",
+    name: "Green d'hide shield",
+    defLvl: 40,
+    rangedLvl: 40,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -15,
+        Slash: -15,
+        Crush: -11,
+        Magic: -10,
+        Range: 4,
+      },
+      // Defence
+      {
+        Stab: 14,
+        Slash: 12,
+        Crush: 11,
+        Magic: 9,
+        Range: 11,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 8,
+      },
+    ],
+    src: "./gearcalculator/shields/Green_d'hide_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Ranged",
+    name: "Guthix d'hide shield",
+    defLvl: 40,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -15,
+        Slash: -15,
+        Crush: -11,
+        Magic: -10,
+        Range: 7,
+      },
+      // Defence
+      {
+        Stab: 21,
+        Slash: 18,
+        Crush: 16,
+        Magic: 15,
+        Range: 14,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 8,
+      },
+    ],
+    src: "./gearcalculator/shields/Guthix_d'hide_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Ranged",
+    name: "Hard leather shield",
+    defLvl: 10,
+    rangedLvl: 20,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -15,
+        Slash: -15,
+        Crush: -11,
+        Magic: -10,
+        Range: 2,
+      },
+      // Defence
+      {
+        Stab: 8,
+        Slash: 7,
+        Crush: 7,
+        Magic: 5,
+        Range: 9,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 7,
+      },
+    ],
+    src: "./gearcalculator/shields/Hard_leather_shield.webp",
     slot: "Shield",
   },
 ];
