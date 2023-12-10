@@ -401,6 +401,46 @@ const SHIELDS = [
   },
   {
     type: "Melee",
+    name: "Saradomin kiteshield",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 44,
+        Slash: 48,
+        Crush: 46,
+        Magic: -1,
+        Range: 46,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Saradomin_kiteshield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
     name: "Bandos kiteshield",
     defLvl: 40,
     rangedLvl: 0,
@@ -437,6 +477,46 @@ const SHIELDS = [
       },
     ],
     src: "./gearcalculator/shields/Bandos_kiteshield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Zamorak kiteshield",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 44,
+        Slash: 48,
+        Crush: 46,
+        Magic: -1,
+        Range: 46,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Zamorak_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -3536,27 +3616,1147 @@ const SHIELDS = [
         Slash: -15,
         Crush: -11,
         Magic: -10,
-        Range: -6,
+        Range: 6,
       },
       // Defence
       {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 24,
-        Range: 52,
+        Stab: 18,
+        Slash: 16,
+        Crush: 14,
+        Magic: 13,
+        Range: 13,
       },
       // Other
       {
         "Melee strength": 0,
-        "Ranged strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 8,
+      },
+    ],
+    src: "./gearcalculator/shields/Red_d'hide_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Redwood shield",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 15,
+        Crush: 11,
+        Magic: 4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/shields/Redwood_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Rune defender",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 20,
+        Slash: 19,
+        Crush: 18,
+        Magic: -3,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 20,
+        Slash: 19,
+        Crush: 18,
+        Magic: -3,
+        Range: -2,
+      },
+      // Other
+      {
+        "Melee strength": 5,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/shields/Rune_defender.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Rune kiteshield",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 44,
+        Slash: 48,
+        Crush: 46,
+        Magic: -1,
+        Range: 46,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Rune_kiteshield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Rune kiteshield (g)",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 44,
+        Slash: 48,
+        Crush: 46,
+        Magic: -1,
+        Range: 46,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Rune_kiteshield_(g).webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Rune kiteshield (t)",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 44,
+        Slash: 48,
+        Crush: 46,
+        Magic: -1,
+        Range: 46,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Rune_kiteshield_(t).webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Rune sq shield",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 38,
+        Slash: 40,
+        Crush: 36,
+        Magic: 0,
+        Range: 38,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
         "Magic damage": 0,
         "Slayer Bonus": 0,
         Prayer: 0,
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/Red_d'hide_shield.webp",
+    src: "./gearcalculator/shields/Rune_sq_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Ranged",
+    name: "Saradomin d'hide shield",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -15,
+        Slash: -15,
+        Crush: -11,
+        Magic: -10,
+        Range: 7,
+      },
+      // Defence
+      {
+        Stab: 21,
+        Slash: 18,
+        Crush: 16,
+        Magic: 15,
+        Range: 14,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 8,
+      },
+    ],
+    src: "./gearcalculator/shields/Saradomin_d'hide_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Ranged",
+    name: "Snakeskin shield",
+    defLvl: 30,
+    rangedLvl: 30,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -15,
+        Slash: -15,
+        Crush: -11,
+        Magic: -10,
+        Range: 3,
+      },
+      // Defence
+      {
+        Stab: 10,
+        Slash: 9,
+        Crush: 8,
+        Magic: 7,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 8,
+      },
+    ],
+    src: "./gearcalculator/shields/Snakeskin_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Spectral spirit shield",
+    defLvl: 75,
+    rangedLvl: 30,
+    prayerLvl: 70,
+    magicLvl: 65,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 53,
+        Slash: 55,
+        Crush: 73,
+        Magic: 30,
+        Range: 52,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/shields/Spectral_spirit_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Spirit shield",
+    defLvl: 45,
+    rangedLvl: 0,
+    prayerLvl: 55,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 39,
+        Slash: 41,
+        Crush: 50,
+        Magic: 1,
+        Range: 45,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/shields/Spirit_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Steel defender",
+    defLvl: 5,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 7,
+        Slash: 6,
+        Crush: 5,
+        Magic: -3,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 7,
+        Slash: 6,
+        Crush: 5,
+        Magic: -3,
+        Range: -2,
+      },
+      // Other
+      {
+        "Melee strength": 1,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/shields/Steel_defender.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Steel kiteshield",
+    defLvl: 5,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 13,
+        Slash: 15,
+        Crush: 14,
+        Magic: -1,
+        Range: 14,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Steel_kiteshield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Steel kiteshield (g)",
+    defLvl: 5,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 13,
+        Slash: 15,
+        Crush: 14,
+        Magic: -1,
+        Range: 14,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Spirit_kiteshield_(g).webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Steel kiteshield (t)",
+    defLvl: 5,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 13,
+        Slash: 15,
+        Crush: 14,
+        Magic: -1,
+        Range: 14,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Spirit_kiteshield_(t).webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Steel sq shield",
+    defLvl: 5,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 13,
+        Crush: 11,
+        Magic: 0,
+        Range: 12,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/shields/Steel_sq_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Toktz-ket-xil",
+    defLvl: 60,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -12,
+        Range: -8,
+      },
+      // Defence
+      {
+        Stab: 40,
+        Slash: 42,
+        Crush: 38,
+        Magic: 0,
+        Range: 65,
+      },
+      // Other
+      {
+        "Melee strength": 5,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/shields/Toktz-ket-xil.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Magic",
+    name: "Tome of fire",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 8,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 8,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/shields/Tome_of_fire.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Magic",
+    name: "Tome of water",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 8,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 8,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/shields/Tome_of_water.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Training shield",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 5,
+        Crush: 3,
+        Magic: 1,
+        Range: 4,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Training_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Twisted buckler",
+    defLvl: 75,
+    rangedLvl: 75,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -7,
+        Slash: -8,
+        Crush: -7,
+        Magic: -10,
+        Range: 18,
+      },
+      // Defence
+      {
+        Stab: 22,
+        Slash: 24,
+        Crush: 22,
+        Magic: 26,
+        Range: 58,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 10,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/Twisted_buckler.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Unholy book",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 8,
+        Slash: 8,
+        Crush: 8,
+        Magic: 8,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/shields/Unholy_book.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "V's shield",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 27,
+        Slash: 31,
+        Crush: 29,
+        Magic: 5,
+        Range: 29,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/shields/V's_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "White kiteshield",
+    defLvl: 10,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 17,
+        Slash: 19,
+        Crush: 18,
+        Magic: -1,
+        Range: 18,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/shields/White_kiteshield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "White sq shield",
+    defLvl: 10,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 15,
+        Slash: 16,
+        Crush: 14,
+        Magic: 0,
+        Range: 15,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/shields/White_sq_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Willow shield",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 6,
+        Slash: 7,
+        Crush: 5,
+        Magic: 2,
+        Range: 6,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/shields/Willow_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Wooden shield",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 5,
+        Crush: 3,
+        Magic: 1,
+        Range: 4,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/shields/Wooden_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Yew shield",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 8,
+        Slash: 9,
+        Crush: 7,
+        Magic: 3,
+        Range: 8,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/shields/Yew_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Ranged",
+    name: "Zamorak d'hide shield",
+    defLvl: 40,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -15,
+        Slash: -15,
+        Crush: -11,
+        Magic: -10,
+        Range: 7,
+      },
+      // Defence
+      {
+        Stab: 21,
+        Slash: 18,
+        Crush: 16,
+        Magic: 15,
+        Range: 14,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 8,
+      },
+    ],
+    src: "./gearcalculator/shields/Zamorak_d'hide_shield.webp",
     slot: "Shield",
   },
 ];
