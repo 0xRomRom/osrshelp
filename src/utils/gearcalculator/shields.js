@@ -3160,7 +3160,7 @@ const SHIELDS = [
     slot: "Shield",
   },
   {
-    type: "melee",
+    type: "Melee",
     name: "Mirror shield",
     defLvl: 0,
     rangedLvl: 0,
@@ -3197,6 +3197,366 @@ const SHIELDS = [
       },
     ],
     src: "./gearcalculator/shields/Mirror_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Mithril defender",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: 9,
+        Crush: 8,
+        Magic: -3,
+        Range: -2,
+      },
+      // Defence
+      {
+        Stab: 10,
+        Slash: 9,
+        Crush: 8,
+        Magic: -3,
+        Range: -2,
+      },
+      // Other
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/shields/Mithril_defender.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Mithril kiteshield",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 18,
+        Slash: 22,
+        Crush: 20,
+        Magic: -1,
+        Range: 20,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/shields/Mithril_kiteshield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Mithril kiteshield (g)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 18,
+        Slash: 22,
+        Crush: 20,
+        Magic: -1,
+        Range: 20,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/shields/Mithril_kiteshield_(g).webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Mithril kiteshield (t)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: -3,
+      },
+      // Defence
+      {
+        Stab: 18,
+        Slash: 22,
+        Crush: 20,
+        Magic: -1,
+        Range: 20,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/shields/Mithril_kiteshield_(t).webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Mithril sq shield",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -6,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 17,
+        Slash: 19,
+        Crush: 15,
+        Magic: 0,
+        Range: 17,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/shields/Mithril_sq_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Neitiznot shield",
+    defLvl: 25,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: -10,
+      },
+      // Defence
+      {
+        Stab: 17,
+        Slash: 17,
+        Crush: 31,
+        Magic: -4,
+        Range: 33,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/shields/Neitiznot_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Melee",
+    name: "Oak shield",
+    defLvl: 10,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 5,
+        Slash: 6,
+        Crush: 4,
+        Magic: 1,
+        Range: 5,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/shields/Oak_shield.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Ranged",
+    name: "Odium ward",
+    defLvl: 60,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -12,
+        Slash: -12,
+        Crush: -12,
+        Magic: -8,
+        Range: 12,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 24,
+        Range: 52,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 4,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/shields/Odium_ward.webp",
+    slot: "Shield",
+  },
+  {
+    type: "Ranged",
+    name: "Red d'hide shield",
+    defLvl: 40,
+    rangedLvl: 60,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -15,
+        Slash: -15,
+        Crush: -11,
+        Magic: -10,
+        Range: -6,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 24,
+        Range: 52,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 4,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/shields/Red_d'hide_shield.webp",
     slot: "Shield",
   },
 ];
