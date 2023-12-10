@@ -601,6 +601,46 @@ const LEGS = [
   },
   {
     type: "Ranged",
+    name: "Guthix chaps",
+    defLvl: 0,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 17,
+      },
+      // Defence
+      {
+        Stab: 31,
+        Slash: 25,
+        Crush: 33,
+        Magic: 28,
+        Range: 31,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 5,
+      },
+    ],
+    src: "./gearcalculator/legs/Guthix_chaps.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
     name: "Bandos chaps",
     defLvl: 0,
     rangedLvl: 70,
@@ -717,6 +757,86 @@ const LEGS = [
       },
     ],
     src: "./gearcalculator/legs/Ancient_platelegs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Guthix platelegs",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 51,
+        Slash: 49,
+        Crush: 47,
+        Magic: -4,
+        Range: 49,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Guthix_platelegs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Guthix plateskirt",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 51,
+        Slash: 49,
+        Crush: 47,
+        Magic: -4,
+        Range: 49,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Guthix_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -957,6 +1077,46 @@ const LEGS = [
       },
     ],
     src: "./gearcalculator/legs/Ancient_robe_legs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Guthix robe legs",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.005,
+      },
+    ],
+    src: "./gearcalculator/legs/Guthix_robe_legs.webp",
     slot: "Legs",
   },
   {
@@ -2280,6 +2440,166 @@ const LEGS = [
     slot: "Legs",
   },
   {
+    type: "Melee",
+    name: "Purple robe bottoms",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/legs/Purple_robe_bottoms.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Pink robe bottoms",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/legs/Pink_robe_bottoms.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Green robe bottoms",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/legs/Green_robe_bottoms.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Grey robe bottoms",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/legs/Grey_robe_bottoms.webp",
+    slot: "Legs",
+  },
+  {
     type: "Ranged",
     name: "Crystal legs",
     defLvl: 70,
@@ -2397,6 +2717,86 @@ const LEGS = [
       },
     ],
     src: "./gearcalculator/legs/Dark_infinity_bottoms.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Light infinity bottoms",
+    defLvl: 25,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/legs/Light_infinity_bottoms.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Infinity bottoms",
+    defLvl: 25,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/legs/Infinity_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -3557,6 +3957,2206 @@ const LEGS = [
       },
     ],
     src: "./gearcalculator/legs/Granite_legs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Green d'hide chaps",
+    defLvl: 0,
+    rangedLvl: 40,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 15,
+        Crush: 18,
+        Magic: 8,
+        Range: 17,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/legs/Green_d'hide_chaps.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Green d'hide chaps (g)",
+    defLvl: 0,
+    rangedLvl: 40,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 15,
+        Crush: 18,
+        Magic: 8,
+        Range: 17,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/legs/Green_d'hide_chaps_(g).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Green d'hide chaps (t)",
+    defLvl: 0,
+    rangedLvl: 40,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 8,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 15,
+        Crush: 18,
+        Magic: 8,
+        Range: 17,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/legs/Green_d'hide_chaps_(t).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Green d'hide chaps (t)",
+    defLvl: 0,
+    rangedLvl: 40,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: -4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/legs/Green_d'hide_chaps_(t).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Guthan's chainskirt",
+    defLvl: 70,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -14,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 75,
+        Slash: 72,
+        Crush: 73,
+        Magic: -4,
+        Range: 82,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 8.164,
+      },
+    ],
+    src: "./gearcalculator/legs/Guthan's_chainskirt.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Ham robe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/legs/Ham_robe.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Hardcore group iron platelegs",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: -4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/legs/Hardcore_group_iron_platelegs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Hardcore ironman platelegs",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: -4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/legs/Hardcore_ironman_platelegs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Initiate cuisse",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 10,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 24,
+        Slash: 22,
+        Crush: 20,
+        Magic: -4,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 7.711,
+      },
+    ],
+    src: "./gearcalculator/legs/Initiate_cuisse.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Inquisitor's plateskirt",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 70,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -3,
+        Slash: -3,
+        Crush: 12,
+        Magic: -9,
+        Range: -5,
+      },
+      // Defence
+      {
+        Stab: 42,
+        Slash: 30,
+        Crush: 49,
+        Magic: 0,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 2,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Inquisitor's_plateskirt.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Iron platelegs",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: -4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Iron_platelegs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Iron plateskirt",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: -4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Iron_plateskirt.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Iron platelegs (g)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: -4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Iron_platelegs_(g).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Iron platelegs (t)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: -4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 8.164,
+      },
+    ],
+    src: "./gearcalculator/legs/Iron_platelegs_(t).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Iron plateskirt (g)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: -4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 8.164,
+      },
+    ],
+    src: "./gearcalculator/legs/Iron_plateskirt_(g).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Iron plateskirt (t)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: -4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 8.164,
+      },
+    ],
+    src: "./gearcalculator/legs/Iron_plateskirt_(t).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Ironman platelegs",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: -4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/legs/Ironman_platelegs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Jungle camo legs",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -7,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: 0,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.226,
+      },
+    ],
+    src: "./gearcalculator/legs/Jungle_camo_legs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Justiciar legguards",
+    defLvl: 75,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -31,
+        Range: -17,
+      },
+      // Defence
+      {
+        Stab: 95,
+        Slash: 92,
+        Crush: 93,
+        Magic: -14,
+        Range: 102,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Justiciar_legguards.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Karil's leatherskirt",
+    defLvl: 70,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 17,
+      },
+      // Defence
+      {
+        Stab: 26,
+        Slash: 20,
+        Crush: 28,
+        Magic: 35,
+        Range: 33,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/legs/Karil's_leatherskirt.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Kyatt legs",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -7,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: 0,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.226,
+      },
+    ],
+    src: "./gearcalculator/legs/Kyatt_legs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Larupia legs",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -7,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: 0,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.226,
+      },
+    ],
+    src: "./gearcalculator/legs/Larupia_legs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Leather chaps",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 4,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/legs/Leather_chaps.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Leather chaps (g)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 4,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/legs/Leather_chaps_(g).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Lunar legs",
+    defLvl: 40,
+    rangedLvl: 65,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 7,
+        Range: -7,
+      },
+      // Defence
+      {
+        Stab: 20,
+        Slash: 19,
+        Crush: 23,
+        Magic: 9,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/legs/Lunar_legs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Masori chaps",
+    defLvl: 30,
+    rangedLvl: 80,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -2,
+        Range: 27,
+      },
+      // Defence
+      {
+        Stab: 26,
+        Slash: 24,
+        Crush: 29,
+        Magic: 19,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 7,
+      },
+    ],
+    src: "./gearcalculator/legs/Masori_chaps.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Masori chaps",
+    defLvl: 30,
+    rangedLvl: 80,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -2,
+        Range: 27,
+      },
+      // Defence
+      {
+        Stab: 26,
+        Slash: 24,
+        Crush: 29,
+        Magic: 19,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 7,
+      },
+    ],
+    src: "./gearcalculator/legs/Masori_chaps.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Masori chaps (f)",
+    defLvl: 80,
+    rangedLvl: 80,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -2,
+        Range: 27,
+      },
+      // Defence
+      {
+        Stab: 35,
+        Slash: 30,
+        Crush: 39,
+        Magic: 46,
+        Range: 37,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 8.5,
+      },
+    ],
+    src: "./gearcalculator/legs/Masori_chaps_(f).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Mithril platelegs",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 24,
+        Slash: 22,
+        Crush: 20,
+        Magic: -4,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 7.711,
+      },
+    ],
+    src: "./gearcalculator/legs/Mithril_platelegs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Mithril platelegs (g)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 24,
+        Slash: 22,
+        Crush: 20,
+        Magic: -4,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 7.711,
+      },
+    ],
+    src: "./gearcalculator/legs/Mithril_platelegs_(g).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Mithril platelegs (t)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 24,
+        Slash: 22,
+        Crush: 20,
+        Magic: -4,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 7.711,
+      },
+    ],
+    src: "./gearcalculator/legs/Mithril_platelegs_(t).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Mithril plateskirt",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 24,
+        Slash: 22,
+        Crush: 20,
+        Magic: -4,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 7.257,
+      },
+    ],
+    src: "./gearcalculator/legs/Mithril_plateskirt.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Mithril plateskirt (g)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 24,
+        Slash: 22,
+        Crush: 20,
+        Magic: -4,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 7.257,
+      },
+    ],
+    src: "./gearcalculator/legs/Mithril_plateskirt_(g).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Mithril plateskirt (t)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 24,
+        Slash: 22,
+        Crush: 20,
+        Magic: -4,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 7.257,
+      },
+    ],
+    src: "./gearcalculator/legs/Mithril_plateskirt_(t).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Monk's robe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/legs/Monk's_robe.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Monk's robe (g)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/legs/Monk's_robe_(g).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Monk's robe (t)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/legs/Monk's_robe_(t).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Moonclan skirt",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 5,
+        Range: -7,
+      },
+      // Defence
+      {
+        Stab: 5,
+        Slash: 5,
+        Crush: 5,
+        Magic: 5,
+        Range: -7,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/legs/Moonclan_skirt.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Morrigan's leather chaps",
+    defLvl: 78,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 23,
+      },
+      // Defence
+      {
+        Stab: 35,
+        Slash: 29,
+        Crush: 37,
+        Magic: 46,
+        Range: 35,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 6,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/legs/Morrigan's_leather_chaps_(bh).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Morytania legs 1",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -7,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: -4,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Morytania_legs_1.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Morytania legs 2",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -7,
+      },
+      // Defence
+      {
+        Stab: 17,
+        Slash: 16,
+        Crush: 15,
+        Magic: -4,
+        Range: 16,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Morytania_legs_2.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Morytania legs 3",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -7,
+      },
+      // Defence
+      {
+        Stab: 24,
+        Slash: 22,
+        Crush: 20,
+        Magic: -4,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Morytania_legs_3.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Morytania legs 4",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -7,
+      },
+      // Defence
+      {
+        Stab: 33,
+        Slash: 31,
+        Crush: 29,
+        Magic: -4,
+        Range: 31,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Morytania_legs_4.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Mystic robe bottom",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/legs/Mystic_robe_bottom.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Mystic robe bottom (dark)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/legs/Mystic_robe_bottom_(dark).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Mystic robe bottom (dusk)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/legs/Mystic_robe_bottom_(dusk).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Mystic robe bottom (light)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/legs/Mystic_robe_bottom_(light).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Mystic robe bottom (or)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 15,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/legs/Mystic_robe_bottom_(or).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Obsidian platelegs",
+    defLvl: 60,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 46,
+        Slash: 43,
+        Crush: 41,
+        Magic: -10,
+        Range: 40,
+      },
+      // Other
+      {
+        "Melee strength": 1,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Obsidion_platelegs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Penance skirt",
+    defLvl: 40,
+    rangedLvl: 60,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 15,
+      },
+      // Defence
+      {
+        Stab: 26,
+        Slash: 21,
+        Crush: 28,
+        Magic: 19,
+        Range: 26,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3,
+      },
+    ],
+    src: "./gearcalculator/legs/Penance_skirt.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Polar camo legs",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -7,
+      },
+      // Defence
+      {
+        Stab: 11,
+        Slash: 10,
+        Crush: 10,
+        Magic: 0,
+        Range: 10,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.226,
+      },
+    ],
+    src: "./gearcalculator/legs/Penance_skirt.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Priest gown",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/legs/Priest_gown_(bottom).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Proselyte cuisse",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 20,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 33,
+        Slash: 31,
+        Crush: 29,
+        Magic: -4,
+        Range: 31,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 6,
+        Weight: 7.711,
+      },
+    ],
+    src: "./gearcalculator/legs/Proselyte_cuisse.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Proselyte tasset",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 20,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 33,
+        Slash: 31,
+        Crush: 29,
+        Magic: -4,
+        Range: 31,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 6,
+        Weight: 8.164,
+      },
+    ],
+    src: "./gearcalculator/legs/Proselyte_tasset.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Rangers' tights",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 20,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 15,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/legs/Rangers'_tights.webp",
     slot: "Legs",
   },
 ];
