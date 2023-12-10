@@ -2079,6 +2079,526 @@ const LEGS = [
     src: "./gearcalculator/legs/Citizen_trousers.webp",
     slot: "Legs",
   },
+  {
+    type: "Ranged",
+    name: "Corrupted morrigan's leather chaps",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: 23,
+      },
+      // Defence
+      {
+        Stab: 18,
+        Slash: 15,
+        Crush: 16,
+        Magic: 20,
+        Range: 19,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 4,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/legs/Corrupted_morrigan's_leather_chaps_(bh).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Corrupted statius's platelegs",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 10,
+        Magic: -26,
+        Range: -13,
+      },
+      // Defence
+      {
+        Stab: 25,
+        Slash: 23,
+        Crush: 21,
+        Magic: -10,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 2,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Corrupted_statius's_platelegs_(bh).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Corrupted vesta's plateskirt",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 10,
+        Slash: 10,
+        Crush: 3,
+        Magic: -24,
+        Range: -12,
+      },
+      // Defence
+      {
+        Stab: 22,
+        Slash: 20,
+        Crush: 18,
+        Magic: -9,
+        Range: 22,
+      },
+      // Other
+      {
+        "Melee strength": 2,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 8.164,
+      },
+    ],
+    src: "./gearcalculator/legs/Corrupted_vesta's_plateskirt_(bh).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Corrupted zuriel's robe bottom",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 18,
+        Range: -6,
+      },
+      // Defence
+      {
+        Stab: 21,
+        Slash: 20,
+        Crush: 23,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 2,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/legs/Corrupted_zuriel's_robe_bottom_(bh).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Cream robe bottoms",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/legs/Cream_robe_bottoms.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Crystal legs",
+    defLvl: 70,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -12,
+        Range: 18,
+      },
+      // Defence
+      {
+        Stab: 26,
+        Slash: 21,
+        Crush: 30,
+        Magic: 34,
+        Range: 38,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/legs/Crystal_legs.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Dagon'hai robe bottom",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 70,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 18,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 14,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/legs/Dagon'hai_robe_bottom.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Dark infinity bottoms",
+    defLvl: 25,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/legs/Dark_infinity_bottoms.webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Decorative armour (gold platelegs)",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 33,
+        Slash: 31,
+        Crush: 29,
+        Magic: -4,
+        Range: 31,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Decorative_armour_(gold_platelegs).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Decorative armour (gold plateskirt)",
+    defLvl: 30,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 33,
+        Slash: 31,
+        Crush: 29,
+        Magic: -4,
+        Range: 31,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Decorative_armour_(gold_plateskirt).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Magic",
+    name: "Decorative armour (magic legs)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 20,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 15,
+        Slash: 15,
+        Crush: 15,
+        Magic: 15,
+        Range: 15,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 8.164,
+      },
+    ],
+    src: "./gearcalculator/legs/Decorative_armour_(magic_legs).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Ranged",
+    name: "Decorative armour (ranged legs)",
+    defLvl: 0,
+    rangedLvl: 30,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 15,
+        Slash: 15,
+        Crush: 15,
+        Magic: 15,
+        Range: 15,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 8.164,
+      },
+    ],
+    src: "./gearcalculator/legs/Decorative_armour_(ranged_legs).webp",
+    slot: "Legs",
+  },
+  {
+    type: "Melee",
+    name: "Decorative armour (red platelegs)",
+    defLvl: 5,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -21,
+        Range: -11,
+      },
+      // Defence
+      {
+        Stab: 17,
+        Slash: 16,
+        Crush: 15,
+        Magic: -4,
+        Range: 16,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 9.071,
+      },
+    ],
+    src: "./gearcalculator/legs/Decorative_armour_(red_platelegs).webp",
+    slot: "Legs",
+  },
 ];
 
 export default LEGS;
