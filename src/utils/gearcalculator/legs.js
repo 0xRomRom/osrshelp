@@ -8748,8 +8748,8 @@ const LEGS = [
       },
       // Other
       {
-        "Melee strengthgt": 0,
-        "Ranged strenh": 0,
+        "Melee strength": 0,
+        "Ranged strength": 0,
         "Magic damage": 2,
         "Slayer Bonus": 0,
         Prayer: 0,
