@@ -1,5 +1,5 @@
 .radio {
-  color: white;
+  color: rgb(205, 205, 205);
   font-size: 18px;
   padding: 2rem;
   width: 350px;
@@ -10,5 +10,36 @@
   margin-left: 0rem;
   border-radius: 0.8rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
+}
+
+.btnRow {
+  display: flex;
+  gap: 2rem;
+}
+
+.cta {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid gray;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.enlarge {
+  font-size: 1.75rem;
+}
+
+.cta:hover {
+  background-color: gray;
 }
