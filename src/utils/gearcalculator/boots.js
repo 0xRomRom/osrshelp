@@ -322,6 +322,86 @@ const BOOTS = [
   },
   {
     type: "Melee",
+    name: "Green boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.34,
+      },
+    ],
+    src: "./gearcalculator/boots/Green_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Grey boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.34,
+      },
+    ],
+    src: "./gearcalculator/boots/Grey_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
     name: "Cream boots",
     defLvl: 0,
     rangedLvl: 0,
@@ -838,6 +918,806 @@ const BOOTS = [
       },
     ],
     src: "./gearcalculator/boots/Decorative_boots_(white).webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Devout boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 60,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.5,
+      },
+    ],
+    src: "./gearcalculator/boots/Devout_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Dragon boots",
+    defLvl: 60,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 16,
+        Slash: 17,
+        Crush: 18,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/boots/Dragon_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Dragon boots (g)",
+    defLvl: 60,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 16,
+        Slash: 17,
+        Crush: 18,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/boots/Dragon_boots_(g).webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Dragonstone boots",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 13,
+        Crush: 14,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 2,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/boots/Dragonstone_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Magic",
+    name: "Eternal boots",
+    defLvl: 75,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 8,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 5,
+        Slash: 5,
+        Crush: 5,
+        Magic: 8,
+        Range: 5,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.84,
+      },
+    ],
+    src: "./gearcalculator/boots/Eternal_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Fancier boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 2,
+        Crush: 3,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.01,
+      },
+    ],
+    src: "./gearcalculator/boots/Fancier_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Fancy boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 2,
+        Crush: 3,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.01,
+      },
+    ],
+    src: "./gearcalculator/boots/Fancy_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Fighting boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 2,
+        Crush: 3,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.01,
+      },
+    ],
+    src: "./gearcalculator/boots/Fighting_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Flippers",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: -2,
+        Slash: -2,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.34,
+      },
+    ],
+    src: "./gearcalculator/boots/Flippers.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Fremennik boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.34,
+      },
+    ],
+    src: "./gearcalculator/boots/Fremennik_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Fremennik sea boots 1",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 4,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.4,
+      },
+    ],
+    src: "./gearcalculator/boots/Fremennik_sea_boots_1.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Fremennik sea boots 2",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 5,
+        Slash: 6,
+        Crush: 7,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.4,
+      },
+    ],
+    src: "./gearcalculator/boots/Fremennik_sea_boots_2.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Fremennik sea boots 3",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 7,
+        Slash: 8,
+        Crush: 9,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.4,
+      },
+    ],
+    src: "./gearcalculator/boots/Fremennik_sea_boots_3.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Fremennik sea boots 4",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 1,
+      },
+      // Defence
+      {
+        Stab: 10,
+        Slash: 11,
+        Crush: 12,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 1,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.4,
+      },
+    ],
+    src: "./gearcalculator/boots/Fremennik_sea_boots_4.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Ranged",
+    name: "Frog-leather boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -8,
+        Range: 2,
+      },
+      // Defence
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 1,
+        Magic: 0,
+        Range: 1,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/boots/Frog-leather_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Magic",
+    name: "Ghostly boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 2,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 2,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.001,
+      },
+    ],
+    src: "./gearcalculator/boots/Ghostly_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Gilded boots",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 12,
+        Slash: 13,
+        Crush: 14,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 2,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/boots/Gilded_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Graceful boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: -4,
+      },
+    ],
+    src: "./gearcalculator/boots/Graceful_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Granite boots",
+    defLvl: 50,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 50,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 15,
+        Slash: 16,
+        Crush: 17,
+        Magic: 0,
+        Range: 8,
+      },
+      // Other
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/boots/Granite_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Guardian boots",
+    defLvl: 75,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 32,
+        Slash: 32,
+        Crush: 32,
+        Magic: -3,
+        Range: 24,
+      },
+      // Other
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 7,
+      },
+    ],
+    src: "./gearcalculator/boots/Guardian_boots.webp",
     slot: "Boots",
   },
 ];
