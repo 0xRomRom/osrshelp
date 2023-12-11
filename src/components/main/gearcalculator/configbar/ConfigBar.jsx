@@ -29,55 +29,25 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
   const [activeNames, setActiveNames] = useState({});
   const [searchValue, setSearchValue] = useState("");
 
+  const slotMappings = {
+    Headpiece: HELMS,
+    Cape: CAPES,
+    Necklace: NECKLACE,
+    Amunition: AMUNITION,
+    Weapon: WEAPONS,
+    Body: BODIES,
+    Shield: SHIELDS,
+    Legs: LEGS,
+    Gloves: GLOVES,
+    Boots: BOOTS,
+    Ring: RINGS,
+  };
+
   const setActiveItemList = useCallback(() => {
     clearSeachInput();
-    if (activeSlot === "Headpiece") {
-      setItemList(HELMS);
-      setListCopy(HELMS);
-    }
-    if (activeSlot === "Cape") {
-      setItemList(CAPES);
-      setListCopy(CAPES);
-    }
-    if (activeSlot === "Necklace") {
-      setItemList(NECKLACE);
-      setListCopy(NECKLACE);
-    }
-    if (activeSlot === "Amunition") {
-      setItemList(AMUNITION);
-      setListCopy(AMUNITION);
-    }
-    if (activeSlot === "Weapon") {
-      setItemList(WEAPONS);
-      setListCopy(WEAPONS);
-    }
-    if (activeSlot === "Body") {
-      setItemList(BODIES);
-      setListCopy(BODIES);
-    }
-    if (activeSlot === "Shield") {
-      setItemList(SHIELDS);
-      setListCopy(SHIELDS);
-    }
-    if (activeSlot === "Legs") {
-      setItemList(LEGS);
-      setListCopy(LEGS);
-    }
-    if (activeSlot === "Gloves") {
-      setItemList(GLOVES);
-      setListCopy(GLOVES);
-    }
-    if (activeSlot === "Boots") {
-      setItemList(BOOTS);
-      setListCopy(BOOTS);
-    }
-    if (activeSlot === "Ring") {
-      setItemList(RINGS);
-      setListCopy(RINGS);
-    }
-    if (!activeSlot) {
-      setItemList([]);
-    }
+    const selectedItems = slotMappings[activeSlot] || [];
+    setItemList(selectedItems);
+    setListCopy(selectedItems);
   }, [activeSlot]);
 
   // State to add styling to the selected equipment
