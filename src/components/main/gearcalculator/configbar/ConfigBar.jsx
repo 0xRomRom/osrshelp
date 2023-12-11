@@ -10,6 +10,7 @@ import SHIELDS from "../../../../utils/gearcalculator/shields";
 import LEGS from "../../../../utils/gearcalculator/legs";
 import GLOVES from "../../../../utils/gearcalculator/gloves";
 import BOOTS from "../../../../utils/gearcalculator/boots";
+import RINGS from "../../../../utils/gearcalculator/rings";
 import TypeFilter from "./typefilter/TypeFilter";
 
 import defenceIcon from "../../../../assets/skillicons/Defence.webp";
@@ -69,6 +70,10 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
     if (activeSlot === "Boots") {
       setItemList(BOOTS);
       setListCopy(BOOTS);
+    }
+    if (activeSlot === "Ring") {
+      setItemList(RINGS);
+      setListCopy(RINGS);
     }
     if (!activeSlot) {
       setItemList([]);

@@ -3736,7 +3736,7 @@ const BOOTS = [
         Stab: 0,
         Slash: 0,
         Crush: 0,
-        Magic: 4,
+        Magic: 0,
         Range: 0,
       },
       // Defence
@@ -3744,7 +3744,7 @@ const BOOTS = [
         Stab: 0,
         Slash: 0,
         Crush: 0,
-        Magic: 4,
+        Magic: 0,
         Range: 0,
       },
       // Other
@@ -3753,7 +3753,7 @@ const BOOTS = [
         "Ranged strength": 0,
         "Magic damage": 0,
         "Slayer Bonus": 0,
-        Prayer: 0,
+        Prayer: 1,
         Weight: 0.283,
       },
     ],
