@@ -241,7 +241,7 @@ const GLOVES = [
   },
   {
     type: "Ranged",
-    name: "Zaryte bracers",
+    name: "Zaryte vambracers",
     defLvl: 45,
     rangedLvl: 80,
     prayerLvl: 0,
@@ -269,14 +269,14 @@ const GLOVES = [
       // Other
       {
         "Melee strength": 0,
-        "Ranged strength": 0,
+        "Ranged strength": 2,
         "Magic damage": 0,
         "Slayer Bonus": 0,
         Prayer: 1,
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Zaryte_bracers.webp",
+    src: "./gearcalculator/gloves/Zaryte_vambraces.webp",
     slot: "Gloves",
   },
   {
