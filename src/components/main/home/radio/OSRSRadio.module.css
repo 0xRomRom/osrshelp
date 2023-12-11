@@ -1,0 +1,14 @@
+.radio {
+  color: white;
+  font-size: 18px;
+  padding: 2rem;
+  width: 350px;
+  background-color: rgb(32, 46, 57);
+  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+
+  margin: 1rem;
+  margin-left: 0rem;
+  border-radius: 0.8rem;
+  display: flex;
+  gap: 1rem;
+}

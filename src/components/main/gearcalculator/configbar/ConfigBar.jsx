@@ -50,11 +50,6 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
     setListCopy(selectedItems);
   }, [activeSlot]);
 
-  useEffect(() => {
-    console.log(itemList);
-    console.log(listCopy);
-  }, [itemList, listCopy]);
-
   // State to add styling to the selected equipment
   const addSelectedGear = (slot, name, item) => {
     setActiveNames((prevState) => {

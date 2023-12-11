@@ -6,6 +6,7 @@ import welcometxt from "../../../assets/Welcometxt.png";
 import LoginBox from "./loginbox/LoginBox";
 import UserBox from "./userbox/UserBox";
 import TotalUsers from "./totalUsersBox/TotalUsers";
+import OSRSRadio from "./radio/OSRSRadio";
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
@@ -38,6 +39,7 @@ const Home = (props) => {
           />
         )}
         <TotalUsers />
+        <OSRSRadio />
       </div>
     </div>
   );
