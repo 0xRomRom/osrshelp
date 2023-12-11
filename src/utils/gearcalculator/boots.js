@@ -161,6 +161,46 @@ const BOOTS = [
   },
   {
     type: "Ranged",
+    name: "Zamorak d'hide boots",
+    defLvl: 40,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 7,
+      },
+      // Defence
+      {
+        Stab: 4,
+        Slash: 4,
+        Crush: 4,
+        Magic: 4,
+        Range: 4,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.4,
+      },
+    ],
+    src: "./gearcalculator/boots/Zamorak_d'hide_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Ranged",
     name: "Saradomin d'hide boots",
     defLvl: 40,
     rangedLvl: 70,
@@ -598,6 +638,46 @@ const BOOTS = [
       },
     ],
     src: "./gearcalculator/boots/Pink_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Yellow boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.34,
+      },
+    ],
+    src: "./gearcalculator/boots/Yellow_boots.webp",
     slot: "Boots",
   },
   {
@@ -3518,6 +3598,166 @@ const BOOTS = [
       },
     ],
     src: "./gearcalculator/boots/Swampbark_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Vyrewatch shoes",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/boots/Vyrewatch_shoes.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "White boots",
+    defLvl: 10,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -3,
+        Range: -1,
+      },
+      // Defence
+      {
+        Stab: 7,
+        Slash: 8,
+        Crush: 9,
+        Magic: 0,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/boots/White_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Magic",
+    name: "Wizard boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 20,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.283,
+      },
+    ],
+    src: "./gearcalculator/boots/Wizard_boots.webp",
+    slot: "Boots",
+  },
+  {
+    type: "Melee",
+    name: "Zealot's boots",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Defence
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.283,
+      },
+    ],
+    src: "./gearcalculator/boots/Zealot's_boots.webp",
     slot: "Boots",
   },
 ];
