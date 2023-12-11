@@ -1,5 +1,5 @@
 import stl from "./ConfigBar.module.css";
-import { useRef, useEffect, useState, useCallback } from "react";
+import { useRef, useEffect, useState, useCallback, useMemo } from "react";
 import HELMS from "../../../../utils/gearcalculator/helms";
 import CAPES from "../../../../utils/gearcalculator/capes";
 import NECKLACE from "../../../../utils/gearcalculator/necklace";
@@ -29,26 +29,29 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
   const [activeNames, setActiveNames] = useState({});
   const [searchValue, setSearchValue] = useState("");
 
-  const slotMappings = {
-    Headpiece: HELMS,
-    Cape: CAPES,
-    Necklace: NECKLACE,
-    Amunition: AMUNITION,
-    Weapon: WEAPONS,
-    Body: BODIES,
-    Shield: SHIELDS,
-    Legs: LEGS,
-    Gloves: GLOVES,
-    Boots: BOOTS,
-    Ring: RINGS,
-  };
+  const slotMappings = useMemo(
+    () => ({
+      Headpiece: HELMS,
+      Cape: CAPES,
+      Necklace: NECKLACE,
+      Amunition: AMUNITION,
+      Weapon: WEAPONS,
+      Body: BODIES,
+      Shield: SHIELDS,
+      Legs: LEGS,
+      Gloves: GLOVES,
+      Boots: BOOTS,
+      Ring: RINGS,
+    }),
+    []
+  );
 
   const setActiveItemList = useCallback(() => {
     clearSeachInput();
     const selectedItems = slotMappings[activeSlot] || [];
     setItemList(selectedItems);
     setListCopy(selectedItems);
-  }, [activeSlot]);
+  }, [activeSlot, slotMappings]);
 
   // State to add styling to the selected equipment
   const addSelectedGear = (slot, name, item) => {
