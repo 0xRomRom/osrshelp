@@ -6,7 +6,7 @@
 .topBar {
   /* background: linear-gradient(110deg, white, red, red, rgba(255, 0, 0, 0.747)); */
   background-color: rgb(32, 46, 57);
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(26, 35, 41));
+  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
   width: 100%;
   height: 6rem;
   padding-left: 6rem;
