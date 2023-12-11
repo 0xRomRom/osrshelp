@@ -276,7 +276,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Adamant_sq_shield.webp",
+    src: "./gearcalculator/shields/Adamant_d'hide_shield.webp",
     slot: "Shield",
   },
   {
@@ -636,7 +636,7 @@ const SHIELDS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/shields/Ancient_kiteshield.webp",
+    src: "./gearcalculator/shields/Ancient_wyvern_shield.webp",
     slot: "Shield",
   },
   {

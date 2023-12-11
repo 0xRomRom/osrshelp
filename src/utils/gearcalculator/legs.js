@@ -156,7 +156,7 @@ const LEGS = [
         Weight: 3,
       },
     ],
-    src: "./gearcalculator/legs/3rd_age_plateskirt.webp",
+    src: "./gearcalculator/legs/3rd_age_range_legs.webp",
     slot: "Legs",
   },
   {
@@ -556,7 +556,7 @@ const LEGS = [
         Weight: 0.8,
       },
     ],
-    src: "./gearcalculator/legs/Ancestral_robe_bottom.webp",
+    src: "./gearcalculator/legs/Ancient_ceremonial_legs.webp",
     slot: "Legs",
   },
   {
@@ -3996,7 +3996,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Elder_chaos_robe.webp",
+    src: "./gearcalculator/legs/Elite_void_robe.webp",
     slot: "Legs",
   },
   {
@@ -4559,46 +4559,7 @@ const LEGS = [
     src: "./gearcalculator/legs/Green_d'hide_chaps_(t).webp",
     slot: "Legs",
   },
-  {
-    type: "Ranged",
-    name: "Green d'hide chaps (t)",
-    defLvl: 0,
-    rangedLvl: 40,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: -21,
-        Range: -11,
-      },
-      // Defence
-      {
-        Stab: 11,
-        Slash: 10,
-        Crush: 10,
-        Magic: -4,
-        Range: 10,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 4.535,
-      },
-    ],
-    src: "./gearcalculator/legs/Green_d'hide_chaps_(t).webp",
-    slot: "Legs",
-  },
+
   {
     type: "Melee",
     name: "Guthan's chainskirt",
@@ -5437,46 +5398,6 @@ const LEGS = [
       },
     ],
     src: "./gearcalculator/legs/Lunar_legs.webp",
-    slot: "Legs",
-  },
-  {
-    type: "Magic",
-    name: "Masori chaps",
-    defLvl: 30,
-    rangedLvl: 80,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: -2,
-        Range: 27,
-      },
-      // Defence
-      {
-        Stab: 26,
-        Slash: 24,
-        Crush: 29,
-        Magic: 19,
-        Range: 22,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 2,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 7,
-      },
-    ],
-    src: "./gearcalculator/legs/Masori_chaps.webp",
     slot: "Legs",
   },
   {
@@ -6476,7 +6397,7 @@ const LEGS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/legs/Penance_skirt.webp",
+    src: "./gearcalculator/legs/Polar_camo_legs.webp",
     slot: "Legs",
   },
   {
@@ -8116,7 +8037,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Swampbark_legs.webp",
+    src: "./gearcalculator/legs/Torag's_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -8196,7 +8117,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Torva_platelegs.webp",
+    src: "./gearcalculator/legs/Twisted_ancestral_robe_bottom.webp",
     slot: "Legs",
   },
   {

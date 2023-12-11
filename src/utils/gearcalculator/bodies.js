@@ -3676,7 +3676,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Gilded_d'hide_body.webp",
+    src: "./gearcalculator/bodies/Gilded_platebody.webp",
     slot: "Body",
   },
   {
@@ -6476,7 +6476,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Snakeskin_body.webp",
+    src: "./gearcalculator/bodies/Spined.webp",
     slot: "Body",
   },
   {
@@ -7316,7 +7316,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Virtus_robe_top.webp",
+    src: "./gearcalculator/bodies/Void_robe_top.webp",
     slot: "Body",
   },
   {
@@ -7599,46 +7599,7 @@ const BODIES = [
     src: "./gearcalculator/bodies/Zamorak_monk_top.webp",
     slot: "Body",
   },
-  {
-    type: "Melee",
-    name: "Zamorak monk top",
-    defLvl: 20,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 2,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 3,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/bodies/Zamorak_monk_top.webp",
-    slot: "Body",
-  },
+
   {
     type: "Melee",
     name: "Zealot's robe top",
@@ -7716,7 +7677,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Zealot's_robe_top.webp",
+    src: "./gearcalculator/bodies/Zuriel's_robe_top.webp",
     slot: "Body",
   },
 ];

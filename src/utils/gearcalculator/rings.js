@@ -556,7 +556,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Granite_ring_(i).webp",
+    src: "./gearcalculator/rings/Lunar_ring.webp",
     slot: "Ring",
   },
   {

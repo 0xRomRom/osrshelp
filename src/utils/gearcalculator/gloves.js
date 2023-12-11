@@ -756,7 +756,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Blue_spiky_vambraces.webp",
+    src: "./gearcalculator/gloves/Bronze_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1196,7 +1196,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Gilded_d'hide_vambraces.webp",
+    src: "./gearcalculator/gloves/Gloves_of_darkness.webp",
     slot: "Gloves",
   },
   {
@@ -1316,7 +1316,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Graceful_gloves.webp",
+    src: "./gearcalculator/gloves/Granite_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2276,7 +2276,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Klank's_gauntlets.webp",
+    src: "./gearcalculator/gloves/Leather_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -3116,7 +3116,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Shayzien_gloves_(5).webp",
+    src: "./gearcalculator/gloves/Slayer_gloves.webp",
     slot: "Gloves",
   },
   {
