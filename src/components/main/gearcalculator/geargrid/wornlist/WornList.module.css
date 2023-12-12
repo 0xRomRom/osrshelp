@@ -1,0 +1,24 @@
+.wornList {
+  width: 15rem;
+  height: 30rem;
+  margin: 0 auto;
+
+  /* border: 1px solid red; */
+}
+
+.liItem {
+  display: flex;
+  gap: 1rem;
+  color: rgb(218, 218, 218);
+  background-color: rgb(17, 23, 27);
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.4rem;
+  padding: 4px 0px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.miniSlotIcon {
+  width: 20px;
+}

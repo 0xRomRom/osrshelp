@@ -13,6 +13,9 @@ import ring from "../../../../assets/gearslots/Ring.png";
 import blank from "../../../../assets/gearslots/Blank.png";
 import { useEffect, useRef, useState } from "react";
 import { IoIosClose } from "react-icons/io";
+
+import WornList from "./wornlist/WornList";
+
 const GearGrid = ({
   activeSlot,
   setActiveSlot,
@@ -380,6 +383,7 @@ const GearGrid = ({
           <span className={stl.alertSpan}>Hold slot for 1 second to clear</span>
         </div>
       )}
+      <WornList bonusState={bonusState} />
     </div>
   );
 };
