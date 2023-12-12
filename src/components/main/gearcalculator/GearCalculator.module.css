@@ -11,7 +11,8 @@
 .midBlock {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   padding-left: 2rem;
+  height: 580px;
 }

@@ -1,6 +1,5 @@
 .gearGrid {
   width: 259px;
-  height: 100%;
   position: relative;
 }
 
@@ -8,7 +7,7 @@
   position: relative;
   width: 100%;
   height: 360px;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .headSlot {
