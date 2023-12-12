@@ -19,12 +19,12 @@
   background-color: transparent;
   border: none;
   outline: none;
-  border: 1px solid gray;
   border-radius: 0.4rem;
   caret-color: white;
   color: white;
   padding-right: 5px;
   margin-bottom: 0.5rem;
+  background-color: rgb(17, 23, 27);
 }
 
 .searchbar::placeholder {
@@ -34,7 +34,7 @@
 .resultList {
   width: 100%;
   height: 310px;
-  border: 1px solid gray;
+  background-color: rgb(17, 23, 27);
   border-radius: 0.4rem;
   overflow-y: scroll;
 }

@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   gap: 0.65rem;
-  border: 1px solid gray;
+  background-color: rgb(17, 23, 27);
 }
 
 .cta {
@@ -19,7 +19,7 @@
   border: none;
   outline: none;
   color: white;
-  border: 1px solid gray;
+  border: 1px solid rgb(17, 23, 27);
   border-radius: 0.2rem;
   display: flex;
   justify-content: center;
