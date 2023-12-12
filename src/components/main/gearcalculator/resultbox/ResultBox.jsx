@@ -84,12 +84,12 @@ const ResultBox = ({ bonusState }) => {
             </span>
           </div>
           <div className={stl.half}>
-            <span className={stl.title}>Defence bonus</span>
+            <span className={stl.titleDef}>Defence bonus</span>
             <span className={stl.statValue}>
               <img
                 src="./gearcalculator/icons/White_dagger.webp"
                 alt="Stab attack"
-                className={stl.miniIcon}
+                className={stl.miniIconDef}
               />
               <img
                 src="./gearcalculator/icons/Defence_icon.webp"
@@ -102,7 +102,7 @@ const ResultBox = ({ bonusState }) => {
               <img
                 src="./gearcalculator/icons/White_scimitar.webp"
                 alt="Stab attack"
-                className={stl.miniIcon}
+                className={stl.miniIconDef}
               />
               <img
                 src="./gearcalculator/icons/Defence_icon.webp"
@@ -115,7 +115,7 @@ const ResultBox = ({ bonusState }) => {
               <img
                 src="./gearcalculator/icons/White_warhammer.webp"
                 alt="Stab attack"
-                className={stl.miniIcon}
+                className={stl.miniIconDef}
               />
               <img
                 src="./gearcalculator/icons/Defence_icon.webp"
@@ -128,7 +128,7 @@ const ResultBox = ({ bonusState }) => {
               <img
                 src="./gearcalculator/icons/Magic_icon.webp"
                 alt="Stab attack"
-                className={stl.miniIcon}
+                className={stl.miniIconDef}
               />
               <img
                 src="./gearcalculator/icons/Defence_icon.webp"
@@ -141,7 +141,7 @@ const ResultBox = ({ bonusState }) => {
               <img
                 src="./gearcalculator/icons/Ranged_icon.webp"
                 alt="Stab attack"
-                className={stl.miniIcon}
+                className={stl.miniIconDef}
               />
               <img
                 src="./gearcalculator/icons/Defence_icon.webp"
@@ -152,52 +152,54 @@ const ResultBox = ({ bonusState }) => {
             </span>
           </div>
         </div>
-        <span className={stl.title}>Other bonuses</span>
-        <span className={stl.statValue}>
-          <img
-            src="./gearcalculator/icons/Ranged_Strength_icon.webp"
-            alt="Stab attack"
-            className={stl.miniIcon}
-          />
-          Ranged strength: +{resultState.rangedDamage}
-        </span>
-        <span className={stl.statValue}>
-          <img
-            src="./gearcalculator/icons/Magic_Damage_icon.webp"
-            alt="Stab attack"
-            className={stl.miniIcon}
-          />
-          Magic damage: +{resultState.magicDamage}%
-        </span>
-        <span className={stl.statValue}>
-          <img
-            src="./gearcalculator/icons/Strength_icon.webp"
-            alt="Stab attack"
-            className={stl.miniIcon}
-          />
-          Melee strength: +{resultState.strengthDamage}
-        </span>
-        <span className={stl.statValue}>
-          <img
-            src="./gearcalculator/icons/Prayer_icon.webp"
-            alt="Stab attack"
-            className={stl.miniIcon}
-          />
-          Prayer: +{resultState.prayer}
-        </span>
-        <span className={stl.statValue}>
-          <img src={slayerIcon} alt="Slayer Icon" className={stl.miniIcon} />
-          Slayer: +{resultState.slayer}
-        </span>
+        <div className={stl.otherWrap}>
+          <span className={stl.title}>Other bonuses</span>
+          <span className={stl.statValue}>
+            <img
+              src="./gearcalculator/icons/Ranged_Strength_icon.webp"
+              alt="Stab attack"
+              className={stl.miniIcon}
+            />
+            Ranged strength: +{resultState.rangedDamage}
+          </span>
+          <span className={stl.statValue}>
+            <img
+              src="./gearcalculator/icons/Magic_Damage_icon.webp"
+              alt="Stab attack"
+              className={stl.miniIcon}
+            />
+            Magic damage: +{resultState.magicDamage}%
+          </span>
+          <span className={stl.statValue}>
+            <img
+              src="./gearcalculator/icons/Strength_icon.webp"
+              alt="Stab attack"
+              className={stl.miniIcon}
+            />
+            Melee strength: +{resultState.strengthDamage}
+          </span>
+          <span className={stl.statValue}>
+            <img
+              src="./gearcalculator/icons/Prayer_icon.webp"
+              alt="Stab attack"
+              className={stl.miniIcon}
+            />
+            Prayer: +{resultState.prayer}
+          </span>
+          <span className={stl.statValue}>
+            <img src={slayerIcon} alt="Slayer Icon" className={stl.miniIcon} />
+            Slayer: +{resultState.slayer}
+          </span>
 
-        <span className={stl.statValue}>
-          <img
-            src="./gearcalculator/icons/Weight_icon.webp"
-            alt="Stab attack"
-            className={stl.miniIcon}
-          />
-          Weight: +{resultState.weight.toFixed(2)}
-        </span>
+          <span className={stl.statValue}>
+            <img
+              src="./gearcalculator/icons/Weight_icon.webp"
+              alt="Stab attack"
+              className={stl.miniIcon}
+            />
+            Weight: +{resultState.weight.toFixed(2)}
+          </span>
+        </div>
       </ul>
     </div>
   );

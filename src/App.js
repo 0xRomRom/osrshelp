@@ -36,6 +36,4 @@ const App = () => {
     </div>
   );
 };
-// https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Ft9qipepq8bw61.png
-// https://www.reddit.com/r/UI_Design/comments/n1tmc6/modern_forum_design_i_did_a_few_months_back_let/
 export default App;

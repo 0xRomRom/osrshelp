@@ -3,6 +3,7 @@ import stl from "./GearCalculator.module.css";
 import GearGrid from "./geargrid/GearGrid";
 import ConfigBar from "./configbar/ConfigBar";
 import ResultBox from "./resultbox/ResultBox";
+import CtaBar from "./ctabar/CtaBar";
 
 import { useState } from "react";
 
@@ -24,13 +25,16 @@ const GearCalculator = () => {
 
   return (
     <div className={stl.gearcalculator}>
-      <GearGrid
-        activeSlot={activeSlot}
-        setActiveSlot={setActiveSlot}
-        bonusState={bonusState}
-      />
-      <ConfigBar activeSlot={activeSlot} setBonusState={setBonusState} />
-      <ResultBox bonusState={bonusState} />
+      <CtaBar />
+      <div className={stl.midBlock}>
+        <GearGrid
+          activeSlot={activeSlot}
+          setActiveSlot={setActiveSlot}
+          bonusState={bonusState}
+        />
+        <ConfigBar activeSlot={activeSlot} setBonusState={setBonusState} />
+        <ResultBox bonusState={bonusState} />
+      </div>
     </div>
   );
 };

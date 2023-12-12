@@ -1,8 +1,5 @@
 .resultbox {
-  width: 300px;
-  height: 400px;
-  border: 1px solid gray;
-  margin-top: 4rem;
+  margin-top: 3rem;
   border-radius: 0.4rem;
   padding: 0.5rem;
 }
@@ -12,14 +9,23 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  align-items: flex-start;
 }
 
 .title {
   font-size: 14px;
   color: rgb(188, 188, 188);
-  margin-top: 1rem;
+  left: 1rem;
+  position: relative;
+}
+
+.titleDef {
+  font-size: 14px;
+  color: rgb(188, 188, 188);
+  left: 1.8rem;
+  position: relative;
 }
 
 .statValue {
@@ -33,17 +39,33 @@
 
 .topBlock {
   display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 .half {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.half:nth-child(2) {
+  left: -10px;
+  position: relative;
 }
 
 .miniIcon {
   width: 12px;
+}
+.miniIconDef {
+  width: 12px;
+  position: relative;
+  left: 8px;
+}
+
+.otherWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

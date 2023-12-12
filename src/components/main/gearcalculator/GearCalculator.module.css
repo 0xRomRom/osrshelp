@@ -5,5 +5,11 @@
   border-radius: 0.8rem;
   display: flex;
   justify-content: flex-start;
-  padding: 2rem;
+  flex-direction: column;
+}
+
+.midBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
