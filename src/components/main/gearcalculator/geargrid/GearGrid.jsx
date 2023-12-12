@@ -23,10 +23,8 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
 
   const handleMouseDown = (slot) => {
     timeoutRef.current = setTimeout(() => {
-      if (slot === "Headpiece") {
-        // Your logic here for holding the headpiece for 2 seconds
-        resetState("Headpiece");
-      }
+      // Your logic here for holding the headpiece for 2 seconds
+      resetState(slot);
     }, 1000);
   };
 
@@ -91,6 +89,9 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
             activeSlot === "Cape" ? stl.selected : ""
           }`}
           onClick={() => handleSlotChange("Cape")}
+          onMouseDown={() => handleMouseDown("Cape")}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {capeImg && (
             <>
@@ -109,6 +110,9 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
             activeSlot === "Necklace" ? stl.selected : ""
           }`}
           onClick={() => handleSlotChange("Necklace")}
+          onMouseDown={() => handleMouseDown("Necklace")}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {neckImg && (
             <>
@@ -127,6 +131,9 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
             activeSlot === "Amunition" ? stl.selected : ""
           }`}
           onClick={() => handleSlotChange("Amunition")}
+          onMouseDown={() => handleMouseDown("Amunition")}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {amunitionImg && (
             <>
@@ -151,6 +158,9 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
             activeSlot === "Weapon" ? stl.selected : ""
           }`}
           onClick={() => handleSlotChange("Weapon")}
+          onMouseDown={() => handleMouseDown("Weapon")}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {weaponImg && (
             <>
@@ -173,6 +183,9 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
             activeSlot === "Body" ? stl.selected : ""
           }`}
           onClick={() => handleSlotChange("Body")}
+          onMouseDown={() => handleMouseDown("Body")}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {bodyImg && (
             <>
@@ -191,6 +204,9 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
             activeSlot === "Shield" ? stl.selected : ""
           }`}
           onClick={() => handleSlotChange("Shield")}
+          onMouseDown={() => handleMouseDown("Shield")}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {shieldImg && (
             <>
@@ -215,6 +231,9 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
             activeSlot === "Legs" ? stl.selected : ""
           }`}
           onClick={() => handleSlotChange("Legs")}
+          onMouseDown={() => handleMouseDown("Legs")}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {legsImg && (
             <>
@@ -235,6 +254,9 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
             activeSlot === "Gloves" ? stl.selected : ""
           }`}
           onClick={() => handleSlotChange("Gloves")}
+          onMouseDown={() => handleMouseDown("Gloves")}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {glovesImg && (
             <>
@@ -257,6 +279,9 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
             activeSlot === "Boots" ? stl.selected : ""
           }`}
           onClick={() => handleSlotChange("Boots")}
+          onMouseDown={() => handleMouseDown("Boots")}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {bootsImg && (
             <>
@@ -279,6 +304,9 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
             activeSlot === "Ring" ? stl.selected : ""
           }`}
           onClick={() => handleSlotChange("Ring")}
+          onMouseDown={() => handleMouseDown("Ring")}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {ringImg && (
             <>
