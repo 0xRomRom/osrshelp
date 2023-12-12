@@ -109,7 +109,7 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
   return (
     <div className={stl.configbar}>
       {activeSlot && (
-        <>
+        <div className={stl.activeWrapper}>
           <TypeFilter gearFilter={gearFilter} setGearFilter={setGearFilter} />
           <input
             ref={searchRef}
@@ -223,8 +223,9 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
               );
             })}
           </ul>
-        </>
+        </div>
       )}
+      {!activeSlot && <></>}
     </div>
   );
 };
