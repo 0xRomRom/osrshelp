@@ -7677,7 +7677,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Zuriel's_robe_top.webp",
+    src: "./gearcalculator/bodies/Zuriel's_robe_top_(bh).webp",
     slot: "Body",
   },
 ];

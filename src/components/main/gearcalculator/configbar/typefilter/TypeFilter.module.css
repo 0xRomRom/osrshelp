@@ -1,5 +1,5 @@
 .typefilter {
-  height: 50px;
+  height: 55px;
   width: 100%;
   position: relative;
   border-radius: 0.4rem;
@@ -8,12 +8,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.65rem;
+  gap: 1rem;
   background-color: rgb(17, 23, 27);
 }
 
 .cta {
-  width: 3rem;
+  width: 3.25rem;
   font-size: 20px;
   background-color: transparent;
   border: none;
@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  height: 40px;
   cursor: pointer;
 }
 

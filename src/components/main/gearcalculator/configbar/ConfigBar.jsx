@@ -77,7 +77,9 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
     setActiveItemList();
   }, [activeSlot, setActiveItemList]);
   useEffect(() => {
-    searchRef.current.focus();
+    if (searchRef.current) {
+      searchRef.current.focus();
+    }
   }, [gearFilter]);
 
   useEffect(() => {
