@@ -276,49 +276,10 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Adamant_d'hide_shield.webp",
-    slot: "Shield",
-  },
-  {
-    type: "Ranged",
-    name: "Ancient d'hide shield",
-    defLvl: 40,
-    rangedLvl: 70,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -15,
-        Slash: -15,
-        Crush: -11,
-        Magic: -10,
-        Range: 7,
-      },
-      // Defence
-      {
-        Stab: 21,
-        Slash: 18,
-        Crush: 16,
-        Magic: 15,
-        Range: 14,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 8,
-      },
-    ],
     src: "./gearcalculator/shields/Ancient_d'hide_shield.webp",
     slot: "Shield",
   },
+
   {
     type: "Ranged",
     name: "Bandos d'hide shield",

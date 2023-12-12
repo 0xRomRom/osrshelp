@@ -200,12 +200,24 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
                         {item.attackLvl}
                       </span>
                     )}
+                    {item.defLvl === 0 && (
+                      <span className={stl.microSpan}>
+                        <img
+                          src={defenceIcon}
+                          alt="Defence Skill Icon"
+                          className={stl.microIcon}
+                        />
+                        {1}
+                      </span>
+                    )}
                   </div>
-                  <img
-                    src={item.src}
-                    alt="Gear item"
-                    className={stl.gearIcon}
-                  />
+                  <div className={stl.imgWrap}>
+                    <img
+                      src={item.src}
+                      alt="Gear item"
+                      className={stl.gearIcon}
+                    />
+                  </div>
                   <span>{item.name}</span>
                 </li>
               );
