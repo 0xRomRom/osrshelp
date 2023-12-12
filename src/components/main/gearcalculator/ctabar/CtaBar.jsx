@@ -4,10 +4,26 @@ import { FaCameraRetro, FaSav } from "react-icons/fa";
 import { FaSave } from "react-icons/fa";
 import { BsFillShareFill } from "react-icons/bs";
 
-const CtaBar = () => {
+const CtaBar = ({ setBonusState }) => {
+  const handleClearSlots = () => {
+    setBonusState({
+      Headpiece: {},
+      Cape: {},
+      Necklace: {},
+      Amunition: {},
+      Weapon: {},
+      Body: {},
+      Shield: {},
+      Legs: {},
+      Gloves: {},
+      Boots: {},
+      Ring: {},
+    });
+  };
+
   return (
     <div className={stl.ctaBar}>
-      <button>
+      <button onClick={handleClearSlots}>
         <ImBin className={stl.ctaIcon} />
         <span className={stl.infoSpan}>Clear</span>
       </button>

@@ -27,7 +27,7 @@ const GearCalculator = () => {
 
   return (
     <div className={stl.gearcalculator}>
-      <CtaBar />
+      <CtaBar setBonusState={setBonusState} />
       <div className={stl.midBlock}>
         <GearGrid
           activeSlot={activeSlot}
