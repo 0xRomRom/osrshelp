@@ -10,6 +10,7 @@ import legs from "../../../../assets/gearslots/Legs.png";
 import gloves from "../../../../assets/gearslots/Gloves.png";
 import boots from "../../../../assets/gearslots/Boots.png";
 import ring from "../../../../assets/gearslots/Ring.png";
+import blank from "../../../../assets/gearslots/Blank.png";
 
 const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
   const handleSlotChange = (slot) => {
@@ -39,11 +40,14 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
           onClick={() => handleSlotChange("Headpiece")}
         >
           {headImg && (
-            <img
-              src={headImg}
-              alt="Head Item Piece"
-              className={stl.overlayItem}
-            />
+            <>
+              <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              <img
+                src={headImg}
+                alt="Head Item Piece"
+                className={stl.overlayItem}
+              />
+            </>
           )}
           <img
             src={head}
@@ -60,7 +64,10 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
           onClick={() => handleSlotChange("Cape")}
         >
           {capeImg && (
-            <img src={capeImg} alt="Cape Piece" className={stl.overlayItem} />
+            <>
+              <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              <img src={capeImg} alt="Cape Piece" className={stl.overlayItem} />
+            </>
           )}
           <img
             src={cape}
@@ -75,7 +82,10 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
           onClick={() => handleSlotChange("Necklace")}
         >
           {neckImg && (
-            <img src={neckImg} alt="Neck Piece" className={stl.overlayItem} />
+            <>
+              <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              <img src={neckImg} alt="Neck Piece" className={stl.overlayItem} />
+            </>
           )}
           <img
             src={necklace}
@@ -90,11 +100,14 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
           onClick={() => handleSlotChange("Amunition")}
         >
           {amunitionImg && (
-            <img
-              src={amunitionImg}
-              alt="Amunition Piece"
-              className={stl.overlayItem}
-            />
+            <>
+              <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              <img
+                src={amunitionImg}
+                alt="Amunition Piece"
+                className={stl.overlayItem}
+              />
+            </>
           )}
           <img
             src={amunition}
@@ -111,11 +124,14 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
           onClick={() => handleSlotChange("Weapon")}
         >
           {weaponImg && (
-            <img
-              src={weaponImg}
-              alt="Weapon Piece"
-              className={stl.overlayItem}
-            />
+            <>
+              <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              <img
+                src={weaponImg}
+                alt="Weapon Piece"
+                className={stl.overlayItem}
+              />
+            </>
           )}
           <img
             src={weapon}
@@ -130,7 +146,10 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
           onClick={() => handleSlotChange("Body")}
         >
           {bodyImg && (
-            <img src={bodyImg} alt="Body Piece" className={stl.overlayItem} />
+            <>
+              <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              <img src={bodyImg} alt="Body Piece" className={stl.overlayItem} />
+            </>
           )}
           <img
             src={body}
@@ -145,11 +164,14 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
           onClick={() => handleSlotChange("Shield")}
         >
           {shieldImg && (
-            <img
-              src={shieldImg}
-              alt="Shield Piece"
-              className={stl.overlayItem}
-            />
+            <>
+              <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              <img
+                src={shieldImg}
+                alt="Shield Piece"
+                className={stl.overlayItem}
+              />
+            </>
           )}
           <img
             src={shield}
@@ -166,7 +188,10 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
           onClick={() => handleSlotChange("Legs")}
         >
           {legsImg && (
-            <img src={legsImg} alt="Legs Piece" className={stl.overlayItem} />
+            <>
+              <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              <img src={legsImg} alt="Legs Piece" className={stl.overlayItem} />
+            </>
           )}
           <img
             src={legs}
@@ -183,11 +208,14 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
           onClick={() => handleSlotChange("Gloves")}
         >
           {glovesImg && (
-            <img
-              src={glovesImg}
-              alt="Gloves Piece"
-              className={stl.overlayItem}
-            />
+            <>
+              <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              <img
+                src={glovesImg}
+                alt="Gloves Piece"
+                className={stl.overlayItem}
+              />
+            </>
           )}
           <img
             src={gloves}
@@ -202,7 +230,14 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
           onClick={() => handleSlotChange("Boots")}
         >
           {bootsImg && (
-            <img src={bootsImg} alt="Boots Piece" className={stl.overlayItem} />
+            <>
+              <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              <img
+                src={bootsImg}
+                alt="Boots Piece"
+                className={stl.overlayItem}
+              />
+            </>
           )}
           <img
             src={boots}
@@ -217,7 +252,10 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
           onClick={() => handleSlotChange("Ring")}
         >
           {ringImg && (
-            <img src={ringImg} alt="Ring Piece" className={stl.overlayItem} />
+            <>
+              <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              <img src={ringImg} alt="Ring Piece" className={stl.overlayItem} />
+            </>
           )}
           <img
             src={ring}

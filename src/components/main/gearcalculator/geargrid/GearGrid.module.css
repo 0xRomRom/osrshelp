@@ -14,7 +14,7 @@
 }
 
 .lowOpacity {
-  opacity: 0.2;
+  opacity: 0;
 }
 
 .slotWrap {
@@ -92,4 +92,11 @@
   /* max-width: 50px; */
   width: 35px;
   max-height: 45px;
+}
+
+.blankCover {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  opacity: 0.3;
 }
