@@ -11,11 +11,36 @@ import gloves from "../../../../assets/gearslots/Gloves.png";
 import boots from "../../../../assets/gearslots/Boots.png";
 import ring from "../../../../assets/gearslots/Ring.png";
 import blank from "../../../../assets/gearslots/Blank.png";
+import { useRef, useState } from "react";
 
-const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
+const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
+  const timeoutRef = useRef(null);
+
   const handleSlotChange = (slot) => {
     if (slot === activeSlot) return setActiveSlot(null);
     setActiveSlot(slot);
+  };
+
+  const handleMouseDown = (slot) => {
+    timeoutRef.current = setTimeout(() => {
+      if (slot === "Headpiece") {
+        // Your logic here for holding the headpiece for 2 seconds
+        resetState("Headpiece");
+      }
+    }, 1000);
+  };
+
+  const resetState = (slot) => {
+    setBonusState((prevState) => {
+      return {
+        ...prevState,
+        [slot]: {},
+      };
+    });
+  };
+
+  const handleMouseUp = () => {
+    clearTimeout(timeoutRef.current);
   };
 
   const headImg = bonusState["Headpiece"].src;
@@ -34,10 +59,14 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState }) => {
     <div className={stl.gearGrid}>
       <div className={`${stl.row} ${stl.rowA}`}>
         <div
+          ref={timeoutRef}
           className={`${stl.slotWrap} ${
             activeSlot === "Headpiece" ? stl.selected : ""
           }`}
           onClick={() => handleSlotChange("Headpiece")}
+          onMouseDown={() => handleMouseDown("Headpiece")}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
         >
           {headImg && (
             <>

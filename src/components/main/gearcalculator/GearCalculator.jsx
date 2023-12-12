@@ -31,6 +31,7 @@ const GearCalculator = () => {
           activeSlot={activeSlot}
           setActiveSlot={setActiveSlot}
           bonusState={bonusState}
+          setBonusState={setBonusState}
         />
         <ConfigBar activeSlot={activeSlot} setBonusState={setBonusState} />
         <ResultBox bonusState={bonusState} />
