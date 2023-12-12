@@ -1,6 +1,5 @@
 .wornList {
   width: 15rem;
-  height: 30rem;
   margin: 0 auto;
 
   /* border: 1px solid red; */
@@ -17,6 +16,7 @@
   padding: 4px 0px;
   padding-left: 10px;
   font-size: 15px;
+  margin-bottom: 5px;
 }
 
 .miniSlotIcon {
