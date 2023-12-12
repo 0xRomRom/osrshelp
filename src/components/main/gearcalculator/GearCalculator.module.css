@@ -1,5 +1,6 @@
 .gearcalculator {
-  width: 100%;
+  width: 50rem;
+  margin: 0 auto;
   /* height: 700px; */
   background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
   border-radius: 0.8rem;
@@ -10,10 +11,9 @@
 
 .midBlock {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   gap: 1rem;
-  padding-left: 2rem;
   /* height: 580px; */
   padding-bottom: 3rem;
 }

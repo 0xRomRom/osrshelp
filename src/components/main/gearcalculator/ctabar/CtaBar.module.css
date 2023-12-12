@@ -1,5 +1,43 @@
 .ctaBar {
   width: 100%;
-  background-color: red;
-  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.ctaBar button {
+  width: 3.75rem;
+  padding: 0.7rem 0rem;
+  border-radius: 0.4rem;
+  background-color: rgb(17, 23, 27);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctaBar button:hover .ctaIcon {
+  color: white;
+}
+
+.ctaIcon {
+  font-size: 1.5rem;
+  color: rgb(191, 191, 191);
+  transition: all 0.3s ease-in-out;
+}
+
+.infoSpan {
+  color: white;
+  position: absolute;
+  top: 5rem;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.ctaBar button:hover .infoSpan {
+  opacity: 1;
 }
