@@ -3,7 +3,7 @@ import { FaPlay } from "react-icons/fa";
 import { MdSkipPrevious, MdSkipNext } from "react-icons/md";
 import { useEffect, useMemo, useRef, useState } from "react";
 import song1 from "../../../../assets/tracks/Track.mp3";
-// import song2 from "../../../../assets/tracks/Track2.mp3";
+import song2 from "../../../../assets/tracks/Track2.mp3";
 // import song3 from "../../../../assets/tracks/Track3.mp3";
 // import song4 from "../../../../assets/tracks/Track4.mp3";
 // import song5 from "../../../../assets/tracks/Track5.mp3";
@@ -14,26 +14,23 @@ const OSRSRadio = () => {
   const [songIndex, setSongIndex] = useState(0);
 
   const memoizedSongs = useMemo(() => {
-    const songs = [song1];
+    const songs = [song1, song2];
     return songs;
   }, []);
 
   useEffect(() => {
     // Set the audio source when the song index changes
-    audioRef.current.src = memoizedSongs[songIndex];
-    // Play the audio if isPlaying is true
     if (isPlaying) {
+      audioRef.current.src = memoizedSongs[songIndex];
       audioRef.current.play();
+      // Play the audio if isPlaying is true
+      setIsPlaying(false);
     }
   }, [songIndex, memoizedSongs, isPlaying]);
 
   const togglePlay = () => {
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
-    }
     setIsPlaying(!isPlaying);
+    audioRef.current.play();
   };
 
   const handleNext = () => {
