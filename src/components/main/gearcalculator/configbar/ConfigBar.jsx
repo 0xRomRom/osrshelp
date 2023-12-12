@@ -21,11 +21,17 @@ import prayerIcon from "../../../../assets/skillicons/Prayer.webp";
 import attackIcon from "../../../../assets/skillicons/Attack.webp";
 import hitpointsIcon from "../../../../assets/skillicons/Hitpoints.webp";
 
-const ConfigBar = ({ activeSlot, setBonusState }) => {
+const ConfigBar = ({
+  activeSlot,
+  setBonusState,
+  gridActive,
+  setGearFilter,
+  gearFilter,
+}) => {
   const searchRef = useRef(null);
   const [itemList, setItemList] = useState([]);
   const [listCopy, setListCopy] = useState([]);
-  const [gearFilter, setGearFilter] = useState("All");
+
   const [activeNames, setActiveNames] = useState({});
   const [searchValue, setSearchValue] = useState("");
 
@@ -76,6 +82,7 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
     }
     setActiveItemList();
   }, [activeSlot, setActiveItemList]);
+
   useEffect(() => {
     if (searchRef.current) {
       searchRef.current.focus();
@@ -113,14 +120,14 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
 
   return (
     <div className={stl.configbar}>
-      {activeSlot && (
+      {gridActive && (
         <div className={stl.activeWrapper}>
           <TypeFilter gearFilter={gearFilter} setGearFilter={setGearFilter} />
           <input
             ref={searchRef}
             type="search"
             className={stl.searchbar}
-            placeholder={`Search ${activeSlot}`}
+            placeholder={activeSlot ? `Search ${activeSlot}` : "Select gear"}
             onChange={handleSearch}
             value={searchValue}
           />
@@ -230,7 +237,7 @@ const ConfigBar = ({ activeSlot, setBonusState }) => {
           </ul>
         </div>
       )}
-      {!activeSlot && <></>}
+      {!gridActive && <></>}
     </div>
   );
 };

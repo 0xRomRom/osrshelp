@@ -10,6 +10,7 @@ import { useState } from "react";
 const GearCalculator = () => {
   const [activeSlot, setActiveSlot] = useState(null);
   const [gridActive, setGridActive] = useState(false);
+  const [gearFilter, setGearFilter] = useState("All");
   const [bonusState, setBonusState] = useState({
     Headpiece: {},
     Cape: {},
@@ -34,8 +35,15 @@ const GearCalculator = () => {
           bonusState={bonusState}
           setBonusState={setBonusState}
           setGridActive={setGridActive}
+          setGearFilter={setGearFilter}
         />
-        <ConfigBar activeSlot={activeSlot} setBonusState={setBonusState} />
+        <ConfigBar
+          activeSlot={activeSlot}
+          setBonusState={setBonusState}
+          gridActive={gridActive}
+          setGearFilter={setGearFilter}
+          gearFilter={gearFilter}
+        />
         <ResultBox bonusState={bonusState} />
       </div>
     </div>

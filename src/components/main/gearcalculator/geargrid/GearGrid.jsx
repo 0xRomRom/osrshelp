@@ -11,13 +11,26 @@ import gloves from "../../../../assets/gearslots/Gloves.png";
 import boots from "../../../../assets/gearslots/Boots.png";
 import ring from "../../../../assets/gearslots/Ring.png";
 import blank from "../../../../assets/gearslots/Blank.png";
-import { useRef, useState } from "react";
+import { useRef } from "react";
 
-const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
+const GearGrid = ({
+  activeSlot,
+  setActiveSlot,
+  bonusState,
+  setBonusState,
+  setGridActive,
+  setGearFilter,
+}) => {
   const timeoutRef = useRef(null);
 
   const handleSlotChange = (slot) => {
-    if (slot === activeSlot) return setActiveSlot(null);
+    if (slot === activeSlot) {
+      setActiveSlot(null);
+      setGridActive(false);
+      setGearFilter("All");
+      return;
+    }
+    setGridActive(true);
     setActiveSlot(slot);
   };
 
@@ -35,6 +48,7 @@ const GearGrid = ({ activeSlot, setActiveSlot, bonusState, setBonusState }) => {
         [slot]: {},
       };
     });
+    setGridActive(false);
   };
 
   const handleMouseUp = () => {
