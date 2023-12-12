@@ -27,7 +27,6 @@ const TotalUsers = () => {
     const previousVisit = localStorage.getItem("activeStamp");
 
     if (!previousVisit) {
-      console.log("No visit");
       setCurrentTimestamp();
       setIncrementDB(true);
     }

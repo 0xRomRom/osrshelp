@@ -14,10 +14,6 @@ import boots from "../../../../../assets/gearslots/Boots.png";
 import ring from "../../../../../assets/gearslots/Ring.png";
 
 const WornList = ({ bonusState }) => {
-  useEffect(() => {
-    console.log(bonusState);
-  }, [bonusState]);
-
   const headImg = bonusState["Headpiece"].name;
   const capeImg = bonusState["Cape"].name;
   const neckImg = bonusState["Necklace"].name;

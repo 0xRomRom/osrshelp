@@ -4,7 +4,7 @@ import { FaCameraRetro, FaSav } from "react-icons/fa";
 import { FaSave } from "react-icons/fa";
 import { BsFillShareFill } from "react-icons/bs";
 
-const CtaBar = ({ setBonusState }) => {
+const CtaBar = ({ setBonusState, captureScreenshot }) => {
   const handleClearSlots = () => {
     setBonusState({
       Headpiece: {},
@@ -28,7 +28,7 @@ const CtaBar = ({ setBonusState }) => {
         <span className={stl.infoSpan}>Clear</span>
       </button>
       <button>
-        <FaCameraRetro className={stl.ctaIcon} />
+        <FaCameraRetro className={stl.ctaIcon} onClick={captureScreenshot} />
         <span className={stl.infoSpan}>Screenshot</span>
       </button>
       <button>
