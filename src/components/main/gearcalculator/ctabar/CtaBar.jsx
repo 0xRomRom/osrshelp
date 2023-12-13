@@ -28,8 +28,8 @@ const CtaBar = ({ setBonusState, captureScreenshot, setActiveSlot }) => {
         <ImBin className={stl.ctaIcon} />
         <span className={stl.infoSpan}>Clear</span>
       </button>
-      <button>
-        <FaCameraRetro className={stl.ctaIcon} onClick={captureScreenshot} />
+      <button onClick={captureScreenshot}>
+        <FaCameraRetro className={stl.ctaIcon} />
         <span className={stl.infoSpan}>Screenshot</span>
       </button>
       <button>
