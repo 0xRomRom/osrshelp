@@ -37,28 +37,8 @@ const Main = (props) => {
             subState={props.subState}
           />
         )}
-        {props.activeTab === "moneymakers" && (
-          <MoneyMakers
-            setSkills={props.setSkills}
-            skills={props.skills}
-            setSkillsExp={props.setSkillsExp}
-            skillsExp={props.skillsExp}
-            setPlayerName={props.setPlayerName}
-            playerName={props.playerName}
-            setSubState={props.setSubState}
-            subState={props.subState}
-          />
-        )}
-        {props.activeTab === "gearcalculator" && (
-          <GearCalculator
-            setSkills={props.setSkills}
-            skills={props.skills}
-            setSkillsExp={props.setSkillsExp}
-            skillsExp={props.skillsExp}
-            setPlayerName={props.setPlayerName}
-            playerName={props.playerName}
-          />
-        )}
+        {props.activeTab === "moneymakers" && <MoneyMakers />}
+        {props.activeTab === "gearcalculator" && <GearCalculator />}
       </div>
     </div>
   );

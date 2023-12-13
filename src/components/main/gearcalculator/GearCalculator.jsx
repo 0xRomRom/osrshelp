@@ -4,6 +4,7 @@ import GearGrid from "./geargrid/GearGrid";
 import ConfigBar from "./configbar/ConfigBar";
 import ResultBox from "./resultbox/ResultBox";
 import CtaBar from "./ctabar/CtaBar";
+import SavedBuilds from "./savedbuilds/SavedBuilds";
 
 import html2canvas from "html2canvas";
 
@@ -91,6 +92,7 @@ const GearCalculator = () => {
           </div>
         </div>
       </div>
+      <SavedBuilds />
     </div>
   );
 };
