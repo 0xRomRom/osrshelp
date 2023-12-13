@@ -29,23 +29,16 @@ const GearCalculator = () => {
   });
 
   const captureScreenshot = () => {
-    const options = {
-      useCORS: true, // Enable cross-origin resource sharing (if needed)
-      width: targetDivRef.current.offsetWidth, // Set the width to the div's width
-      height: targetDivRef.current.offsetHeight, // Set the height to the div's height
-    };
-
     if (targetDivRef.current) {
-      html2canvas(targetDivRef.current, options)
+      html2canvas(targetDivRef.current)
         .then((canvas) => {
           // Convert canvas to image data URL
-          const imgData = canvas.toDataURL("image/png");
+          const imgData = canvas.toDataURL("image/webp");
 
           // Create a download link
           const downloadLink = document.createElement("a");
-          downloadLink.style.paddingLeft = "5px";
           downloadLink.href = imgData;
-          downloadLink.download = "screenshot.png";
+          downloadLink.download = "Gearsetup.webp";
 
           // Append the link to the document and trigger a click
           document.body.appendChild(downloadLink);
