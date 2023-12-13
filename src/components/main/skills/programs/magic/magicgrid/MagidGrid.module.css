@@ -82,8 +82,9 @@
 .boneMiniImg {
   margin-right: 10px;
   margin-top: 10px;
-  width: 22px;
-  height: 22px;
+  max-width: 22px;
+  max-height: 22px;
+  transform: scale(0.9);
 }
 
 .gpcost {
