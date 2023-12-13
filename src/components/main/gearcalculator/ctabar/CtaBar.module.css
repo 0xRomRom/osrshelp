@@ -33,7 +33,7 @@
 .infoSpan {
   color: white;
   position: absolute;
-  top: 5rem;
+  top: 5.2rem;
   opacity: 0;
   transition: all 0.1s ease-in-out;
 }

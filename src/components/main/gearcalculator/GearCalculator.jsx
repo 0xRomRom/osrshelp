@@ -29,15 +29,21 @@ const GearCalculator = () => {
   });
 
   const captureScreenshot = () => {
-    alert("hi");
+    const options = {
+      useCORS: true, // Enable cross-origin resource sharing (if needed)
+      width: targetDivRef.current.offsetWidth, // Set the width to the div's width
+      height: targetDivRef.current.offsetHeight, // Set the height to the div's height
+    };
+
     if (targetDivRef.current) {
-      html2canvas(targetDivRef.current)
+      html2canvas(targetDivRef.current, options)
         .then((canvas) => {
           // Convert canvas to image data URL
           const imgData = canvas.toDataURL("image/png");
 
           // Create a download link
           const downloadLink = document.createElement("a");
+          downloadLink.style.paddingLeft = "5px";
           downloadLink.href = imgData;
           downloadLink.download = "screenshot.png";
 
@@ -56,12 +62,12 @@ const GearCalculator = () => {
 
   return (
     <div className={stl.gearcalculator}>
-      <div className={stl.innerWrap} ref={targetDivRef}>
+      <div className={stl.innerWrap}>
         <CtaBar
           setBonusState={setBonusState}
           captureScreenshot={captureScreenshot}
         />
-        <div className={stl.midBlock}>
+        <div className={stl.midBlock} ref={targetDivRef}>
           <GearGrid
             activeSlot={activeSlot}
             setActiveSlot={setActiveSlot}
