@@ -15,11 +15,7 @@ body {
   background-color: black;
   width: 100%;
   height: 100%;
-  /* background: url("./assets//wallpapers/Mainbg.webp"); */
-  /* background-position: center; */
-  background-color: rgb(21, 32, 40);
-  background-color: rgb(12, 16, 29);
-  background-color: rgb(13, 18, 31);
+
   background: linear-gradient(
     100deg,
     rgb(10, 14, 24),
@@ -29,7 +25,6 @@ body {
     rgb(8, 12, 20),
     rgb(11, 14, 24)
   );
-  height: 100vh;
 }
 
 code {

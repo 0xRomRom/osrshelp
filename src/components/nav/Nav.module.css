@@ -1,7 +1,6 @@
 .modal {
   position: relative;
   min-width: 275px;
-  /* height: 500px; */
   border-right: 1px solid rgb(42, 57, 69);
 }
 

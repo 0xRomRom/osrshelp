@@ -1,13 +1,11 @@
 .main {
   position: relative;
-  height: 100%;
   border-radius: 0.5rem;
   width: 100%;
 }
 
 .content {
   position: relative;
-  height: 100%;
   margin-left: 2rem;
   margin-right: 2rem;
 }
