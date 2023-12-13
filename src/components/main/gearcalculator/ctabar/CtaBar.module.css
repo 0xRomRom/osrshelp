@@ -5,6 +5,9 @@
   align-items: center;
   padding: 2rem;
   gap: 2rem;
+  /* background-color: rgb(17, 23, 27); */
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
 }
 
 .ctaBar button {

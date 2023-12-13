@@ -92,6 +92,7 @@
   /* background-color: red; */
   /* max-width: 50px; */
   max-height: 45px;
+  transform: scale(1.4);
 }
 
 .blankCover {
