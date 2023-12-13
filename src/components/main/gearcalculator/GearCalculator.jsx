@@ -7,6 +7,8 @@ import CtaBar from "./ctabar/CtaBar";
 
 import html2canvas from "html2canvas";
 
+import mainLogo from "../../../assets/characters/Ancient_staff_equipped_male.webp";
+
 import { useState, useRef } from "react";
 
 const GearCalculator = () => {
@@ -61,22 +63,28 @@ const GearCalculator = () => {
           captureScreenshot={captureScreenshot}
         />
         <div className={stl.midBlock} ref={targetDivRef}>
-          <GearGrid
-            activeSlot={activeSlot}
-            setActiveSlot={setActiveSlot}
-            bonusState={bonusState}
-            setBonusState={setBonusState}
-            setGridActive={setGridActive}
-            setGearFilter={setGearFilter}
-          />
-          <ConfigBar
-            activeSlot={activeSlot}
-            setBonusState={setBonusState}
-            gridActive={gridActive}
-            setGearFilter={setGearFilter}
-            gearFilter={gearFilter}
-          />
-          <ResultBox bonusState={bonusState} />
+          <div className={stl.rowWrap}>
+            <GearGrid
+              activeSlot={activeSlot}
+              setActiveSlot={setActiveSlot}
+              bonusState={bonusState}
+              setBonusState={setBonusState}
+              setGridActive={setGridActive}
+              setGearFilter={setGearFilter}
+            />
+            <ConfigBar
+              activeSlot={activeSlot}
+              setBonusState={setBonusState}
+              gridActive={gridActive}
+              setGearFilter={setGearFilter}
+              gearFilter={gearFilter}
+            />
+            <ResultBox bonusState={bonusState} />
+          </div>
+          <div className={stl.brandBox}>
+            <img src={mainLogo} alt="OSRS Help logo" className={stl.mainLogo} />
+            <span className={stl.dotCom}>OSRSHelp.com</span>
+          </div>
         </div>
       </div>
     </div>
