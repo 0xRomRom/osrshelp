@@ -1,14 +1,13 @@
 import stl from "./GearCalculator.module.css";
+import html2canvas from "html2canvas";
+import mainLogo from "../../../assets/characters/Ancient_staff_equipped_male.webp";
 
 import GearGrid from "./geargrid/GearGrid";
 import ConfigBar from "./configbar/ConfigBar";
 import ResultBox from "./resultbox/ResultBox";
 import CtaBar from "./ctabar/CtaBar";
 import SavedBuilds from "./savedbuilds/SavedBuilds";
-
-import html2canvas from "html2canvas";
-
-import mainLogo from "../../../assets/characters/Ancient_staff_equipped_male.webp";
+import PreBuilds from "./prebuilds/PreBuilds";
 
 import { useState, useRef } from "react";
 
@@ -60,41 +59,48 @@ const GearCalculator = () => {
 
   return (
     <div className={stl.gearcalculator}>
-      <div className={stl.innerWrap}>
-        <CtaBar
-          setBonusState={setBonusState}
-          captureScreenshot={captureScreenshot}
-          setActiveSlot={setActiveSlot}
-          activeSlot={activeSlot}
-        />
-        <div className={stl.midBlock} ref={targetDivRef}>
-          <div className={stl.rowWrap}>
-            <GearGrid
-              activeSlot={activeSlot}
-              setActiveSlot={setActiveSlot}
-              bonusState={bonusState}
-              setBonusState={setBonusState}
-              setGridActive={setGridActive}
-              setGearFilter={setGearFilter}
-            />
-            <ConfigBar
-              activeSlot={activeSlot}
-              setBonusState={setBonusState}
-              gridActive={gridActive}
-              setGearFilter={setGearFilter}
-              gearFilter={gearFilter}
-              setActiveSlot={setActiveSlot}
-              setGridActive={setGridActive}
-            />
-            <ResultBox bonusState={bonusState} />
-          </div>
-          <div className={stl.brandBox}>
-            <img src={mainLogo} alt="OSRS Help logo" className={stl.mainLogo} />
-            <span className={stl.dotCom}>OSRSHelp.com</span>
+      <div className={stl.topWrap}>
+        <div className={stl.innerWrap}>
+          <CtaBar
+            setBonusState={setBonusState}
+            captureScreenshot={captureScreenshot}
+            setActiveSlot={setActiveSlot}
+            activeSlot={activeSlot}
+          />
+          <div className={stl.midBlock} ref={targetDivRef}>
+            <div className={stl.rowWrap}>
+              <GearGrid
+                activeSlot={activeSlot}
+                setActiveSlot={setActiveSlot}
+                bonusState={bonusState}
+                setBonusState={setBonusState}
+                setGridActive={setGridActive}
+                setGearFilter={setGearFilter}
+              />
+              <ConfigBar
+                activeSlot={activeSlot}
+                setBonusState={setBonusState}
+                gridActive={gridActive}
+                setGearFilter={setGearFilter}
+                gearFilter={gearFilter}
+                setActiveSlot={setActiveSlot}
+                setGridActive={setGridActive}
+              />
+              <ResultBox bonusState={bonusState} />
+            </div>
+            <div className={stl.brandBox}>
+              <img
+                src={mainLogo}
+                alt="OSRS Help logo"
+                className={stl.mainLogo}
+              />
+              <span className={stl.dotCom}>OSRSHelp.com</span>
+            </div>
           </div>
         </div>
+        <SavedBuilds />
       </div>
-      <SavedBuilds />
+      <PreBuilds />
     </div>
   );
 };
