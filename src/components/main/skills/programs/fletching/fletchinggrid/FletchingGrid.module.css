@@ -71,8 +71,9 @@
 }
 
 .minifood {
-  width: 25px;
-  height: 25px;
+  margin-top: 5px;
+  max-width: 25px;
+  max-height: 25px;
   margin-right: 0.4rem;
   position: relative;
 }

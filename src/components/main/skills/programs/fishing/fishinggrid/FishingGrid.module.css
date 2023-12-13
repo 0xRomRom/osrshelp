@@ -70,8 +70,8 @@
 }
 
 .minifood {
-  width: 25px;
-  height: 25px;
+  max-width: 30px;
+  max-height: 30px;
   margin-right: 0.4rem;
   position: relative;
 }
