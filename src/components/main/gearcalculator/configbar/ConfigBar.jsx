@@ -27,6 +27,8 @@ const ConfigBar = ({
   gridActive,
   setGearFilter,
   gearFilter,
+  setActiveSlot,
+  setGridActive,
 }) => {
   const searchRef = useRef(null);
   const [itemList, setItemList] = useState([]);
@@ -34,6 +36,11 @@ const ConfigBar = ({
 
   const [activeNames, setActiveNames] = useState({});
   const [searchValue, setSearchValue] = useState("");
+
+  const hideConfig = () => {
+    setActiveSlot(null);
+    setGridActive(false);
+  };
 
   const slotMappings = useMemo(
     () => ({
@@ -52,15 +59,6 @@ const ConfigBar = ({
     []
   );
 
-  const setActiveItemList = useCallback(() => {
-    console.log(activeSlot);
-    clearSeachInput();
-    const selectedItems = slotMappings[activeSlot] || [];
-
-    setItemList(selectedItems);
-    setListCopy(selectedItems);
-  }, [activeSlot, slotMappings]);
-
   // State to add styling to the selected equipment
   const addSelectedGear = (slot, name, item) => {
     setActiveNames((prevState) => {
@@ -77,6 +75,14 @@ const ConfigBar = ({
       };
     });
   };
+
+  const setActiveItemList = useCallback(() => {
+    clearSeachInput();
+    const selectedItems = slotMappings[activeSlot] || [];
+
+    setItemList(selectedItems);
+    setListCopy(selectedItems);
+  }, [activeSlot, slotMappings]);
 
   useEffect(() => {
     if (searchRef.current) {
@@ -235,6 +241,9 @@ const ConfigBar = ({
               );
             })}
           </ul>
+          <div className={stl.hideBox} onClick={hideConfig}>
+            Hide
+          </div>
         </div>
       )}
       {!gridActive && <></>}

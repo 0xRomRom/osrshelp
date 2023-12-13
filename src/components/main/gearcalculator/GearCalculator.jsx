@@ -83,6 +83,8 @@ const GearCalculator = () => {
               gridActive={gridActive}
               setGearFilter={setGearFilter}
               gearFilter={gearFilter}
+              setActiveSlot={setActiveSlot}
+              setGridActive={setGridActive}
             />
             <ResultBox bonusState={bonusState} />
           </div>

@@ -31,7 +31,7 @@ const GearGrid = ({
   const handleSlotChange = (slot) => {
     if (slot === activeSlot) {
       setActiveSlot(null);
-      setGridActive(false);
+      // setGridActive(false);
       setGearFilter("All");
       return;
     }
@@ -52,7 +52,6 @@ const GearGrid = ({
         [slot]: {},
       };
     });
-    setGridActive(false);
   };
 
   const handleMouseUp = () => {
