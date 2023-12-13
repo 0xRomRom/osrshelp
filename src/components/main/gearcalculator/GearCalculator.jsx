@@ -31,7 +31,8 @@ const GearCalculator = () => {
   });
 
   const captureScreenshot = () => {
-    if (targetDivRef.current) {
+    setGridActive(false);
+    if (targetDivRef.current && !gridActive) {
       html2canvas(targetDivRef.current)
         .then((canvas) => {
           // Convert canvas to image data URL
