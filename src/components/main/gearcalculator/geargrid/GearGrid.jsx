@@ -41,7 +41,6 @@ const GearGrid = ({
 
   const handleMouseDown = (slot) => {
     timeoutRef.current = setTimeout(() => {
-      // Your logic here for holding the headpiece for 2 seconds
       resetState(slot);
     }, 1000);
   };
@@ -71,7 +70,7 @@ const GearGrid = ({
     if (firstVisit) {
       setBalloonActive(false);
     }
-  }, [setBalloonActive]);
+  }, [setBalloonActive, firstVisit]);
 
   const headImg = bonusState["Headpiece"].src;
   const capeImg = bonusState["Cape"].src;

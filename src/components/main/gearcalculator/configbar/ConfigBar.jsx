@@ -53,8 +53,10 @@ const ConfigBar = ({
   );
 
   const setActiveItemList = useCallback(() => {
+    console.log(activeSlot);
     clearSeachInput();
     const selectedItems = slotMappings[activeSlot] || [];
+
     setItemList(selectedItems);
     setListCopy(selectedItems);
   }, [activeSlot, slotMappings]);
@@ -80,21 +82,19 @@ const ConfigBar = ({
     if (searchRef.current) {
       searchRef.current.focus();
     }
+
     setActiveItemList();
   }, [activeSlot, setActiveItemList]);
 
   useEffect(() => {
-    if (searchRef.current) {
-      searchRef.current.focus();
-    }
-  }, [gearFilter]);
-
-  useEffect(() => {
+    console.log(gearFilter);
     if (gearFilter === "All") {
       setListCopy(itemList);
       return;
     }
-
+    if (searchRef.current) {
+      searchRef.current.focus();
+    }
     const filteredList = itemList.filter((item) => item.type === gearFilter);
     setListCopy(filteredList);
   }, [gearFilter, itemList]);
