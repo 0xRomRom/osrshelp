@@ -62,6 +62,8 @@ const GearCalculator = () => {
         <CtaBar
           setBonusState={setBonusState}
           captureScreenshot={captureScreenshot}
+          setActiveSlot={setActiveSlot}
+          activeSlot={activeSlot}
         />
         <div className={stl.midBlock} ref={targetDivRef}>
           <div className={stl.rowWrap}>
