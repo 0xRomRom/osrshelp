@@ -4361,7 +4361,7 @@ const SHIELDS = [
     slot: "Shield",
   },
   {
-    type: "Melee",
+    type: "Ranged",
     name: "Twisted buckler",
     defLvl: 75,
     rangedLvl: 75,

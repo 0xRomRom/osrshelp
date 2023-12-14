@@ -7268,7 +7268,7 @@ const BODIES = [
       },
       // Other
       {
-        "Melee strength": 6,
+        "Melee strength": 0,
         "Ranged strength": 0,
         "Magic damage": 1,
         "Slayer Bonus": 0,
@@ -7308,15 +7308,55 @@ const BODIES = [
       },
       // Other
       {
-        "Melee strength": 6,
+        "Melee strength": 0,
         "Ranged strength": 0,
-        "Magic damage": 1,
+        "Magic damage": 0,
         "Slayer Bonus": 0,
         Prayer: 0,
         Weight: 6.803,
       },
     ],
     src: "./gearcalculator/bodies/Void_knight_top.webp",
+    slot: "Body",
+  },
+  {
+    type: "Melee",
+    name: "Crystal body",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -18,
+        Range: 31,
+      },
+      // Defence
+      {
+        Stab: 46,
+        Slash: 38,
+        Crush: 48,
+        Magic: 44,
+        Range: 68,
+      },
+      // Other
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/bodies/Crystal_body.webp",
     slot: "Body",
   },
   {
