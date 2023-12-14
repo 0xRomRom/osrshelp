@@ -48,11 +48,21 @@ const PreBuilds = ({ handlePrebuildSetup }) => {
                   key={build.src}
                   onClick={() => handlePrebuildSetup(itemState)}
                 >
-                  <img
-                    src={build.src}
-                    alt={build.alt}
-                    className={stl.tileGear}
-                  />
+                  <div className={stl.imgCenter}>
+                    <img
+                      src={build.src}
+                      alt={build.alt}
+                      className={stl.tileGear}
+                    />
+                    {build.src2 && (
+                      <img
+                        src={build.src2}
+                        alt={build.alt}
+                        className={stl.tileGear2}
+                      />
+                    )}
+                  </div>
+
                   <span className={stl.gearName}>{build.name}</span>
                 </div>
               );

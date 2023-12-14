@@ -77,6 +77,12 @@
 .tileGear {
   transform: scale(1.25);
 }
+.tileGear2 {
+  transform: scale(1.25);
+  position: absolute;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+}
 
 .gearName {
   color: rgb(202, 202, 202);
@@ -110,4 +116,10 @@
 
 .flipped {
   flex-direction: column-reverse;
+}
+
+.imgCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

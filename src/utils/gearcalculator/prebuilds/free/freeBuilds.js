@@ -3900,6 +3900,7 @@ const FREEBUILDS = [
   {
     name: "Range Tank",
     src: "./gearcalculator/shields/Dragonfire_shield.webp",
+    src2: "./gearcalculator/weapons/Armadyl_crossbow.webp",
     alt: "Range Tank Equipment",
     itemState: {
       Headpiece: {
