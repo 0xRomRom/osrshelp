@@ -9,61 +9,61 @@ const SavedBuilds = () => {
         <div className={stl.buildSlot}>
           <div className={stl.empty}>
             <span>Empty</span>
-            <CiSquarePlus />
+            <CiSquarePlus className={stl.plus} />
           </div>
         </div>
         <div className={stl.buildSlot}>
           <div className={stl.empty}>
             <span>Empty</span>
-            <CiSquarePlus />
+            <CiSquarePlus className={stl.plus} />
           </div>
         </div>
         <div className={stl.buildSlot}>
           <div className={stl.empty}>
             <span>Empty</span>
-            <CiSquarePlus />
+            <CiSquarePlus className={stl.plus} />
           </div>
         </div>
         <div className={stl.buildSlot}>
           <div className={stl.empty}>
             <span>Empty</span>
-            <CiSquarePlus />
+            <CiSquarePlus className={stl.plus} />
           </div>
         </div>
         <div className={stl.buildSlot}>
           <div className={stl.empty}>
             <span>Empty</span>
-            <CiSquarePlus />
+            <CiSquarePlus className={stl.plus} />
           </div>
         </div>
         <div className={stl.buildSlot}>
           <div className={stl.empty}>
             <span>Empty</span>
-            <CiSquarePlus />
+            <CiSquarePlus className={stl.plus} />
           </div>
         </div>
         <div className={stl.buildSlot}>
           <div className={stl.empty}>
             <span>Empty</span>
-            <CiSquarePlus />
+            <CiSquarePlus className={stl.plus} />
           </div>
         </div>
         <div className={stl.buildSlot}>
           <div className={stl.empty}>
             <span>Empty</span>
-            <CiSquarePlus />
+            <CiSquarePlus className={stl.plus} />
           </div>
         </div>
         <div className={stl.buildSlot}>
           <div className={stl.empty}>
             <span>Empty</span>
-            <CiSquarePlus />
+            <CiSquarePlus className={stl.plus} />
           </div>
         </div>
         <div className={stl.buildSlot}>
           <div className={stl.empty}>
             <span>Empty</span>
-            <CiSquarePlus />
+            <CiSquarePlus className={stl.plus} />
           </div>
         </div>
       </div>
