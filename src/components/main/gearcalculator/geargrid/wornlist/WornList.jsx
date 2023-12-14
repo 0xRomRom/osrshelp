@@ -13,7 +13,7 @@ import gloves from "../../../../../assets/gearslots/Gloves.png";
 import boots from "../../../../../assets/gearslots/Boots.png";
 import ring from "../../../../../assets/gearslots/Ring.png";
 
-const WornList = ({ bonusState }) => {
+const WornList = ({ bonusState, slotHovered }) => {
   const headImg = bonusState["Headpiece"].name;
   const capeImg = bonusState["Cape"].name;
   const neckImg = bonusState["Necklace"].name;
@@ -29,7 +29,11 @@ const WornList = ({ bonusState }) => {
   return (
     <ul className={stl.wornList}>
       {headImg && (
-        <li className={stl.liItem}>
+        <li
+          className={`${stl.liItem} ${
+            slotHovered === "Headpiece" ? stl.hovered : ""
+          }`}
+        >
           <img src={head} alt="Head item slot" className={stl.miniSlotIcon} />
           {headImg}
         </li>

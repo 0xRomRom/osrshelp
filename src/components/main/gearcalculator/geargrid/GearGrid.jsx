@@ -25,6 +25,7 @@ const GearGrid = ({
   setGearFilter,
 }) => {
   const [balloonActive, setBalloonActive] = useState(true);
+  const [slotHovered, setSlotHovered] = useState(null);
   const timeoutRef = useRef(null);
   const firstVisit = localStorage.getItem("Visited");
 
@@ -56,6 +57,7 @@ const GearGrid = ({
 
   const handleMouseUp = () => {
     clearTimeout(timeoutRef.current);
+    hoverStyling(null);
   };
 
   const handleAlertHide = () => {
@@ -70,6 +72,10 @@ const GearGrid = ({
       setBalloonActive(false);
     }
   }, [setBalloonActive, firstVisit]);
+
+  const hoverStyling = (slot) => {
+    setSlotHovered(slot);
+  };
 
   const headImg = bonusState["Headpiece"].src;
   const capeImg = bonusState["Cape"].src;
@@ -96,6 +102,7 @@ const GearGrid = ({
             onMouseDown={() => handleMouseDown("Headpiece")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            onMouseOver={() => hoverStyling("Headpiece")}
           >
             {headImg && (
               <>
@@ -381,7 +388,7 @@ const GearGrid = ({
           <span className={stl.alertSpan}>Hold slot for 1 second to clear</span>
         </div>
       )}
-      <WornList bonusState={bonusState} />
+      <WornList bonusState={bonusState} slotHovered={slotHovered} />
     </div>
   );
 };
