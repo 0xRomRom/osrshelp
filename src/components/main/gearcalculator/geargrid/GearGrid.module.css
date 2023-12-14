@@ -1,17 +1,19 @@
 .gearGrid {
-  width: 259px;
+  width: 300px;
   position: relative;
 }
 
 .innerGrid {
   position: relative;
   width: 100%;
-  height: 360px;
-  margin-top: 4rem;
+  height: 455px;
+  margin-top: 2.7rem;
+  /* border: 1px solid red; */
 }
 
 .headSlot {
-  width: 100%;
+  width: 71px;
+  height: 71px;
 }
 
 .lowOpacity {
@@ -19,8 +21,8 @@
 }
 
 .slotWrap {
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   cursor: pointer;
   border: 2px solid transparent;
   user-select: none;
@@ -39,13 +41,13 @@
 
 .rowA {
   position: absolute;
-  top: 5px;
+  top: 10px;
 }
 
 .rowB {
   position: absolute;
   /* background-color: red; */
-  top: 75px;
+  top: 105px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +57,7 @@
 .rowC {
   position: absolute;
   /* background-color: red; */
-  top: 145px;
+  top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +67,7 @@
 .rowD {
   position: absolute;
   /* background-color: red; */
-  top: 215px;
+  top: 290px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +77,7 @@
 .rowE {
   position: absolute;
   /* background-color: red; */
-  top: 285px;
+  top: 385px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,13 +94,13 @@
   /* background-color: red; */
   /* max-width: 50px; */
   max-height: 45px;
-  transform: scale(1.4);
+  transform: scale(1.8);
 }
 
 .blankCover {
   position: absolute;
-  width: 56px;
-  height: 56px;
+  width: 75px;
+  height: 75px;
   opacity: 0.3;
 }
 
