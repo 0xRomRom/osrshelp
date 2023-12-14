@@ -1,6 +1,6 @@
 .prebuilds {
   width: 1066px;
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(21, 31, 37));
   border-radius: 0.4rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
@@ -20,10 +20,10 @@
   width: 95%;
   left: 2.5%;
 
-  height: 4rem;
   background-color: rgb(17, 23, 27);
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .subHero {
@@ -39,5 +39,41 @@
 
   height: 4rem;
   background-color: rgb(17, 23, 27);
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
+  padding-bottom: 1rem;
+}
+
+.tilesGrid {
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+  /* border: 1px solid gray; */
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.5rem;
+}
+
+.gridTile {
+  width: 100px;
+  height: 100px;
+  border: 1px solid brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tileGear {
+  width: 45px;
+  height: 80px;
+}
+
+.gearName {
+  color: rgb(202, 202, 202);
+  position: absolute;
+  bottom: 10px;
+  font-size: 14px;
 }
