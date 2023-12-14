@@ -60,6 +60,8 @@ const GearCalculator = () => {
 
   const handlePrebuildSetup = (updatedState) => {
     setBonusState(updatedState);
+    setGridActive(false);
+    setActiveSlot(null);
     window.scrollTo(0, 200);
   };
 
