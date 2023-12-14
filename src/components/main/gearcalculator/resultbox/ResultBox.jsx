@@ -22,7 +22,7 @@ const ResultBox = ({ bonusState }) => {
           newState.slashDef += values.stats[1].Slash;
           newState.crushDef += values.stats[1].Crush;
           newState.magicDef += values.stats[1].Magic;
-          newState.magicDef += values.stats[1].Range;
+          newState.rangeDef += values.stats[1].Range;
           newState.magicDamage += values.stats[2]["Magic damage"];
           newState.rangedDamage += values.stats[2]["Ranged strength"];
           newState.strengthDamage += values.stats[2]["Melee strength"];

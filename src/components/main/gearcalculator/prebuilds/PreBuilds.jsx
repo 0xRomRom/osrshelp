@@ -11,18 +11,14 @@ const PreBuilds = ({ handlePrebuildSetup }) => {
   const flipSaved = localStorage.getItem("Flipped");
 
   useEffect(() => {
-    console.log(flipSaved);
     if (flipSaved === "Flipped") {
       setReversed(true);
       return;
-    }
-    if (flipSaved === "Unflipped") {
     }
     setReversed(false);
   }, [flipSaved, reversed]);
 
   const handleReverseList = () => {
-    console.log(flipSaved);
     if (!flipSaved) {
       localStorage.setItem("Flipped", "Flipped");
       setReversed(true);
