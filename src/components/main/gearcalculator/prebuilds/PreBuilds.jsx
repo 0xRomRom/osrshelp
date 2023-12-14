@@ -15,6 +15,14 @@ const PreBuilds = () => {
             />
             <span className={stl.gearName}>Dharok's</span>
           </div>
+          <div className={stl.gridTile}>
+            <img
+              src="./geartiles/Verac.webp"
+              alt="Verac Equipment"
+              className={stl.tileGear}
+            />
+            <span className={stl.gearName}>Verac's</span>
+          </div>
         </div>
       </div>
       <div className={stl.premiumBox}>
