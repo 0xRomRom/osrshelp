@@ -48,7 +48,8 @@ const ResultBox = ({ bonusState }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Stab: +{resultState.stab}
+              Stab: {resultState.stab >= 0 ? "+" : "-"}
+              {Math.abs(resultState.stab)}
             </span>
             <span className={stl.statValue}>
               <img
@@ -56,7 +57,8 @@ const ResultBox = ({ bonusState }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Slash: +{resultState.slash}
+              Slash: {resultState.slash >= 0 ? "+" : "-"}
+              {Math.abs(resultState.slash)}
             </span>
             <span className={stl.statValue}>
               <img
@@ -64,7 +66,8 @@ const ResultBox = ({ bonusState }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Crush: +{resultState.crush}
+              Crush: {resultState.crush >= 0 ? "+" : "-"}
+              {Math.abs(resultState.crush)}
             </span>
             <span className={stl.statValue}>
               <img
@@ -72,7 +75,8 @@ const ResultBox = ({ bonusState }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Magic: +{resultState.magic}
+              Magic: {resultState.magic >= 0 ? "+" : "-"}
+              {Math.abs(resultState.magic)}
             </span>
             <span className={stl.statValue}>
               <img
@@ -80,7 +84,8 @@ const ResultBox = ({ bonusState }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Range: +{resultState.range}
+              Range: {resultState.range >= 0 ? "+" : "-"}
+              {Math.abs(resultState.range)}
             </span>
           </div>
           <div className={stl.half}>
@@ -96,7 +101,8 @@ const ResultBox = ({ bonusState }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Stab: +{resultState.stabDef}
+              Stab: {resultState.stabDef >= 0 ? "+" : "-"}
+              {Math.abs(resultState.stabDef)}
             </span>
             <span className={stl.statValue}>
               <img
@@ -109,7 +115,8 @@ const ResultBox = ({ bonusState }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Slash: +{resultState.slashDef}
+              Slash: {resultState.slashDef >= 0 ? "+" : "-"}
+              {Math.abs(resultState.slashDef)}
             </span>
             <span className={stl.statValue}>
               <img
@@ -122,7 +129,8 @@ const ResultBox = ({ bonusState }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Crush: +{resultState.crushDef}
+              Crush: {resultState.crushDef >= 0 ? "+" : "-"}
+              {Math.abs(resultState.crushDef)}
             </span>
             <span className={stl.statValue}>
               <img
@@ -135,7 +143,8 @@ const ResultBox = ({ bonusState }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Magic: +{resultState.magicDef}
+              Magic: {resultState.magicDef >= 0 ? "+" : "-"}
+              {Math.abs(resultState.magicDef)}
             </span>
             <span className={stl.statValue}>
               <img
@@ -148,7 +157,8 @@ const ResultBox = ({ bonusState }) => {
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
-              Range: +{resultState.rangeDef}
+              Range: {resultState.rangeDef >= 0 ? "+" : "-"}
+              {resultState.rangeDef}
             </span>
           </div>
         </div>
@@ -160,7 +170,8 @@ const ResultBox = ({ bonusState }) => {
               alt="Stab attack"
               className={stl.miniIcon}
             />
-            Ranged strength: +{resultState.rangedDamage}
+            Ranged strength: {resultState.rangedDamage >= 0 ? "+" : "-"}
+            {Math.abs(resultState.rangedDamage)}
           </span>
           <span className={stl.statValue}>
             <img
@@ -168,7 +179,8 @@ const ResultBox = ({ bonusState }) => {
               alt="Stab attack"
               className={stl.miniIcon}
             />
-            Magic damage: +{resultState.magicDamage}%
+            Magic damage: {resultState.magicDamage >= 0 ? "+" : "-"}
+            {Math.abs(resultState.magicDamage)}%
           </span>
           <span className={stl.statValue}>
             <img
@@ -176,7 +188,8 @@ const ResultBox = ({ bonusState }) => {
               alt="Stab attack"
               className={stl.miniIcon}
             />
-            Melee strength: +{resultState.strengthDamage}
+            Melee strength: {resultState.strengthDamage >= 0 ? "+" : "-"}
+            {Math.abs(resultState.strengthDamage)}
           </span>
           <span className={stl.statValue}>
             <img
@@ -184,11 +197,13 @@ const ResultBox = ({ bonusState }) => {
               alt="Stab attack"
               className={stl.miniIcon}
             />
-            Prayer: +{resultState.prayer}
+            Prayer: {resultState.prayer >= 0 ? "+" : "-"}
+            {Math.abs(resultState.prayer)}
           </span>
           <span className={stl.statValue}>
             <img src={slayerIcon} alt="Slayer Icon" className={stl.miniIcon} />
-            Slayer: +{resultState.slayer}
+            Slayer: {resultState.slayer >= 0 ? "+" : "-"}
+            {Math.abs(resultState.slayer)}
           </span>
 
           <span className={stl.statValue}>
@@ -197,7 +212,8 @@ const ResultBox = ({ bonusState }) => {
               alt="Stab attack"
               className={stl.miniIcon}
             />
-            Weight: +{resultState.weight.toFixed(2)}
+            Weight: {resultState.weight >= 0 ? "+" : "-"}
+            {Math.abs(resultState.weight).toFixed(2)}
           </span>
         </div>
       </ul>
