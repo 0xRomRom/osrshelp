@@ -60,6 +60,7 @@ const GearCalculator = () => {
 
   const handlePrebuildSetup = (updatedState) => {
     setBonusState(updatedState);
+    window.scrollTo(0, 0);
   };
 
   useEffect(() => {
