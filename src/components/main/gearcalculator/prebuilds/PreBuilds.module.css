@@ -68,6 +68,7 @@
   background-color: rgb(22, 9, 9);
   cursor: pointer;
   transition: all 0.3s ease;
+  gap: 0.5rem;
 }
 
 .gridTile:hover {
@@ -75,13 +76,12 @@
 }
 
 .tileGear {
-  width: 45px;
-  height: 80px;
+  transform: scale(1.25);
 }
 
 .gearName {
   color: rgb(202, 202, 202);
-  position: absolute;
-  bottom: 10px;
+  position: relative;
+  /* bottom: 10px; */
   font-size: 14px;
 }
