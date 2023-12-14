@@ -22,7 +22,6 @@
 
   background-color: rgb(17, 23, 27);
   border-radius: 0.4rem;
-  margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -84,4 +83,31 @@
   position: relative;
   /* bottom: 10px; */
   font-size: 14px;
+}
+
+.reverseWrap {
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reverseCta {
+  color: gray;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.reverseCta:hover {
+  color: white;
+}
+
+.flipList {
+  display: flex;
+  flex-direction: column;
+}
+
+.flipped {
+  flex-direction: column-reverse;
 }
