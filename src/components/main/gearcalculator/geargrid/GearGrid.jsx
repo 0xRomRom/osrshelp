@@ -130,6 +130,7 @@ const GearGrid = ({
             onMouseDown={() => handleMouseDown("Cape")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            onMouseOver={() => hoverStyling("Cape")}
           >
             {capeImg && (
               <>
@@ -155,6 +156,7 @@ const GearGrid = ({
             onMouseDown={() => handleMouseDown("Necklace")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            onMouseOver={() => hoverStyling("Necklace")}
           >
             {neckImg && (
               <>
@@ -180,6 +182,7 @@ const GearGrid = ({
             onMouseDown={() => handleMouseDown("Amunition")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            onMouseOver={() => hoverStyling("Amunition")}
           >
             {amunitionImg && (
               <>
@@ -209,6 +212,7 @@ const GearGrid = ({
             onMouseDown={() => handleMouseDown("Weapon")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            onMouseOver={() => hoverStyling("Weapon")}
           >
             {weaponImg && (
               <>
@@ -234,6 +238,7 @@ const GearGrid = ({
             onMouseDown={() => handleMouseDown("Body")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            onMouseOver={() => hoverStyling("Body")}
           >
             {bodyImg && (
               <>
@@ -259,6 +264,7 @@ const GearGrid = ({
             onMouseDown={() => handleMouseDown("Shield")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            onMouseOver={() => hoverStyling("Shield")}
           >
             {shieldImg && (
               <>
@@ -286,6 +292,7 @@ const GearGrid = ({
             onMouseDown={() => handleMouseDown("Legs")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            onMouseOver={() => hoverStyling("Legs")}
           >
             {legsImg && (
               <>
@@ -313,6 +320,7 @@ const GearGrid = ({
             onMouseDown={() => handleMouseDown("Gloves")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            onMouseOver={() => hoverStyling("Gloves")}
           >
             {glovesImg && (
               <>
@@ -338,6 +346,7 @@ const GearGrid = ({
             onMouseDown={() => handleMouseDown("Boots")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            onMouseOver={() => hoverStyling("Boots")}
           >
             {bootsImg && (
               <>
@@ -363,6 +372,7 @@ const GearGrid = ({
             onMouseDown={() => handleMouseDown("Ring")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
+            onMouseOver={() => hoverStyling("Ring")}
           >
             {ringImg && (
               <>

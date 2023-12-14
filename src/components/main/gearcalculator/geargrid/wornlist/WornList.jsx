@@ -39,13 +39,21 @@ const WornList = ({ bonusState, slotHovered }) => {
         </li>
       )}
       {capeImg && (
-        <li className={stl.liItem}>
+        <li
+          className={`${stl.liItem} ${
+            slotHovered === "Cape" ? stl.hovered : ""
+          }`}
+        >
           <img src={cape} alt="Cape item slot" className={stl.miniSlotIcon} />
           {capeImg}
         </li>
       )}
       {neckImg && (
-        <li className={stl.liItem}>
+        <li
+          className={`${stl.liItem} ${
+            slotHovered === "Necklace" ? stl.hovered : ""
+          }`}
+        >
           <img
             src={necklace}
             alt="Neck item slot"
@@ -55,7 +63,11 @@ const WornList = ({ bonusState, slotHovered }) => {
         </li>
       )}
       {amunitionImg && (
-        <li className={stl.liItem}>
+        <li
+          className={`${stl.liItem} ${
+            slotHovered === "Amunition" ? stl.hovered : ""
+          }`}
+        >
           <img
             src={amunition}
             alt="Amunition item slot"
@@ -65,7 +77,11 @@ const WornList = ({ bonusState, slotHovered }) => {
         </li>
       )}
       {weaponImg && (
-        <li className={stl.liItem}>
+        <li
+          className={`${stl.liItem} ${
+            slotHovered === "Weapon" ? stl.hovered : ""
+          }`}
+        >
           <img
             src={weapon}
             alt="Weapon item slot"
@@ -75,13 +91,21 @@ const WornList = ({ bonusState, slotHovered }) => {
         </li>
       )}
       {bodyImg && (
-        <li className={stl.liItem}>
+        <li
+          className={`${stl.liItem} ${
+            slotHovered === "Body" ? stl.hovered : ""
+          }`}
+        >
           <img src={body} alt="Body item slot" className={stl.miniSlotIcon} />
           {bodyImg}
         </li>
       )}
       {shieldImg && (
-        <li className={stl.liItem}>
+        <li
+          className={`${stl.liItem} ${
+            slotHovered === "Shield" ? stl.hovered : ""
+          }`}
+        >
           <img
             src={shield}
             alt="Shield item slot"
@@ -91,13 +115,21 @@ const WornList = ({ bonusState, slotHovered }) => {
         </li>
       )}
       {legsImg && (
-        <li className={stl.liItem}>
+        <li
+          className={`${stl.liItem} ${
+            slotHovered === "Legs" ? stl.hovered : ""
+          }`}
+        >
           <img src={legs} alt="Legs item slot" className={stl.miniSlotIcon} />
           {legsImg}
         </li>
       )}
       {glovesImg && (
-        <li className={stl.liItem}>
+        <li
+          className={`${stl.liItem} ${
+            slotHovered === "Gloves" ? stl.hovered : ""
+          }`}
+        >
           <img
             src={gloves}
             alt="Gloves item slot"
@@ -107,13 +139,21 @@ const WornList = ({ bonusState, slotHovered }) => {
         </li>
       )}
       {bootsImg && (
-        <li className={stl.liItem}>
+        <li
+          className={`${stl.liItem} ${
+            slotHovered === "Boots" ? stl.hovered : ""
+          }`}
+        >
           <img src={boots} alt="Boots item slot" className={stl.miniSlotIcon} />
           {bootsImg}
         </li>
       )}
       {ringImg && (
-        <li className={stl.liItem}>
+        <li
+          className={`${stl.liItem} ${
+            slotHovered === "Ring" ? stl.hovered : ""
+          }`}
+        >
           <img src={ring} alt="Ring item slot" className={stl.miniSlotIcon} />
           {ringImg}
         </li>
