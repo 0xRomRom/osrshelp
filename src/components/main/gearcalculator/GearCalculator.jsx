@@ -10,6 +10,7 @@ import SavedBuilds from "./savedbuilds/SavedBuilds";
 import PreBuilds from "./prebuilds/PreBuilds";
 
 import { useState, useRef } from "react";
+import { useEffect } from "react";
 
 const GearCalculator = () => {
   const targetDivRef = useRef(null);
@@ -57,6 +58,14 @@ const GearCalculator = () => {
     }
   };
 
+  const handlePrebuildSetup = (updatedState) => {
+    setBonusState(updatedState);
+  };
+
+  useEffect(() => {
+    console.log(bonusState);
+  }, [bonusState]);
+
   return (
     <div className={stl.gearcalculator}>
       <div className={stl.topWrap}>
@@ -100,7 +109,7 @@ const GearCalculator = () => {
         </div>
         <SavedBuilds />
       </div>
-      <PreBuilds />
+      <PreBuilds handlePrebuildSetup={handlePrebuildSetup} />
     </div>
   );
 };

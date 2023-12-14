@@ -6476,7 +6476,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Spined.webp",
+    src: "./gearcalculator/bodies/Spined_body.webp",
     slot: "Body",
   },
   {
@@ -7316,7 +7316,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Void_robe_top.webp",
+    src: "./gearcalculator/bodies/Void_knight_top.webp",
     slot: "Body",
   },
   {
