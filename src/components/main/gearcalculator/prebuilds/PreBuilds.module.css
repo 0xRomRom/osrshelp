@@ -1,16 +1,18 @@
 .prebuilds {
   width: 1066px;
-  height: 10rem;
   background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
   border-radius: 0.4rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .hero {
   color: gray;
-  text-align: center;
+  /* text-align: center; */
   padding-top: 1rem;
   font-size: 20px;
   padding-bottom: 1rem;
+  padding-left: 1.8rem;
 }
 
 .freeBox {
@@ -21,10 +23,21 @@
   height: 4rem;
   background-color: rgb(17, 23, 27);
   border-radius: 0.2rem;
+  margin-bottom: 1rem;
 }
 
 .subHero {
   color: gray;
   padding-top: 1rem;
-  padding-left: 1rem;
+  text-align: center;
+}
+
+.premiumBox {
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+
+  height: 4rem;
+  background-color: rgb(17, 23, 27);
+  border-radius: 0.2rem;
 }

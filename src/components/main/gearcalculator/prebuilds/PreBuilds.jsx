@@ -7,6 +7,9 @@ const PreBuilds = () => {
       <div className={stl.freeBox}>
         <h3 className={stl.subHero}>Free</h3>
       </div>
+      <div className={stl.premiumBox}>
+        <h3 className={stl.subHero}>Premium</h3>
+      </div>
     </div>
   );
 };
