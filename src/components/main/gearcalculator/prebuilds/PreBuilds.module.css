@@ -4,3 +4,27 @@
   background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
   border-radius: 0.4rem;
 }
+
+.hero {
+  color: gray;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 20px;
+  padding-bottom: 1rem;
+}
+
+.freeBox {
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+
+  height: 4rem;
+  background-color: rgb(17, 23, 27);
+  border-radius: 0.2rem;
+}
+
+.subHero {
+  color: gray;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
