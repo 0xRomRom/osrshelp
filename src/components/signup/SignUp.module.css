@@ -58,6 +58,7 @@
 .googleCta:hover {
   background-color: white;
   color: black;
+  border: 2px solid white;
 }
 
 .googleIcon {
@@ -65,9 +66,13 @@
 }
 
 .orBox {
+  width: 100%;
   font-size: 16px;
   padding: 1.5rem 0rem;
   color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loginForm {
@@ -87,10 +92,15 @@
   padding-left: 1rem;
   font-size: 16px;
   color: white;
+  transition: all 0.2s ease-in-out;
 }
 
 .input::placeholder {
   color: gray;
+}
+
+.input:focus {
+  border: 2px solid rgb(164, 6, 164);
 }
 
 .createCta {
@@ -103,4 +113,35 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.createCta:hover {
+  background-color: purple;
+  background: linear-gradient(120deg, purple, pink);
+  color: white;
+}
+
+.border {
+  height: 1px;
+  display: block;
+  background-color: rgba(128, 128, 128, 0.37);
+  width: 100%;
+}
+
+.or {
+  padding: 0rem 0.75rem;
+}
+
+.loginSpan {
+  font-size: 16px;
+  text-align: center;
+  color: rgb(172, 172, 172);
+}
+
+.login {
+  color: rgb(164, 6, 164);
+  text-shadow: 0px 0px 2px black;
+  font-weight: bold;
+  cursor: pointer;
 }
