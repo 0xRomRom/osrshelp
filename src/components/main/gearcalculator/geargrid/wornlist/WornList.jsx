@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import stl from "./WornList.module.css";
 
 import head from "../../../../../assets/gearslots/Head.png";

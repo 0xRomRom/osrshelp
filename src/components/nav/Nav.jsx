@@ -7,6 +7,7 @@ import gear from "../../assets/icons/Gear.webp";
 import xptable from "../../assets/icons/Xptable.webp";
 import donate from "../../assets/icons/Donate.webp";
 import mills from "../../assets/icons/Mills.webp";
+import { Link } from "react-router-dom";
 
 const Nav = (props) => {
   const handleTabSwitch = (tab, path) => {
@@ -32,28 +33,32 @@ const Nav = (props) => {
       </div>
       <nav className={stl.nav}>
         <ul className={stl.navlist}>
-          <li
-            className={`${stl.navitem} ${
-              props.activeTab === "home" ? stl.active : ""
-            }`}
-            onClick={() => handleTabSwitch("home", "Home")}
-          >
-            <img
-              src={hometeleport}
-              alt="Home Teleport Icon"
-              className={stl.icon}
-            />
-            Home
-          </li>
-          <li
-            className={`${stl.navitem} ${
-              props.activeTab === "skills" ? stl.active : ""
-            }`}
-            onClick={() => handleTabSwitch("skills", "Skill Calculators")}
-          >
-            <img src={stats} alt="Skills Icon" className={stl.icon} />
-            Skill Calculators
-          </li>
+          <Link to="/">
+            <li
+              className={`${stl.navitem} ${
+                props.activeTab === "home" ? stl.active : ""
+              }`}
+              onClick={() => handleTabSwitch("home", "Home")}
+            >
+              <img
+                src={hometeleport}
+                alt="Home Teleport Icon"
+                className={stl.icon}
+              />
+              Home
+            </li>
+          </Link>
+          <Link to="/skillstab">
+            <li
+              className={`${stl.navitem} ${
+                props.activeTab === "skills" ? stl.active : ""
+              }`}
+              onClick={() => handleTabSwitch("skills", "Skill Calculators")}
+            >
+              <img src={stats} alt="Skills Icon" className={stl.icon} />
+              Skill Calculators
+            </li>
+          </Link>
 
           <li
             className={`${stl.navitem} ${
