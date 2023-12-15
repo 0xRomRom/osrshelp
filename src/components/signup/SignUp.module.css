@@ -92,6 +92,7 @@
   font-size: 16px;
   color: white;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .input::placeholder {
@@ -100,6 +101,7 @@
 
 .input:focus {
   border: 2px solid rgb(164, 6, 164);
+  cursor: initial;
 }
 
 .createCta {
@@ -184,4 +186,59 @@
     rgb(189, 7, 189),
     rgb(160, 6, 160)
   );
+}
+
+.resetHero {
+  font-size: 32px;
+  padding: 0rem 3rem;
+  color: rgb(220, 220, 220);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.resetPassModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.focused {
+  border: 2px solid rgb(164, 6, 164);
+}
+
+.resetPassCta {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 1rem 0rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  /* transition: all 0.2s ease-in-out; */
+  background-color: rgb(164, 6, 164);
+  color: white;
+}
+
+.resetPassCta:hover {
+  background: linear-gradient(
+    120deg,
+    rgb(142, 5, 142),
+    rgb(189, 7, 189),
+    rgb(160, 6, 160)
+  );
+}
+
+.cancelSpan {
+  color: rgb(163, 163, 163);
+  font-size: 16px;
+  padding-top: 1rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cancelSpan:hover {
+  color: rgb(230, 230, 230);
 }
