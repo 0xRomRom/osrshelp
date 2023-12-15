@@ -33,7 +33,7 @@ const Nav = (props) => {
       </div>
       <nav className={stl.nav}>
         <ul className={stl.navlist}>
-          <Link to="/">
+          <Link to="/" className={stl.link}>
             <li
               className={`${stl.navitem} ${
                 props.activeTab === "home" ? stl.active : ""
@@ -48,7 +48,7 @@ const Nav = (props) => {
               Home
             </li>
           </Link>
-          <Link to="/skillcalculators">
+          <Link to="/skillcalculators" className={stl.link}>
             <li
               className={`${stl.navitem} ${
                 props.activeTab === "skills" ? stl.active : ""
@@ -60,7 +60,7 @@ const Nav = (props) => {
             </li>
           </Link>
 
-          <Link to="/gearcalculator">
+          <Link to="/gearcalculator" className={stl.link}>
             <li
               className={`${stl.navitem} ${
                 props.activeTab === "gearcalculator" ? stl.active : ""

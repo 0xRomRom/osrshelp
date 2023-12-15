@@ -47,6 +47,7 @@
   cursor: pointer;
   user-select: none;
   filter: grayscale(0.8);
+  text-decoration: none;
 }
 
 .icon {
@@ -83,4 +84,7 @@
 .loggedInUser {
   color: white;
   margin-left: 1rem;
+}
+.link {
+  text-decoration: none;
 }
