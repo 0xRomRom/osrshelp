@@ -99,12 +99,11 @@
 .iconRow::before {
   position: absolute;
   content: "";
-  height: 100%;
+  height: 120%;
   width: 15rem;
-  background-color: black;
   background: linear-gradient(
     90deg,
-    rgb(36, 36, 86),
+    rgb(33, 33, 79),
     rgba(36, 36, 86, 0.65),
     rgba(36, 36, 86, 0.35),
     rgba(36, 36, 86, 0.15)
@@ -116,15 +115,14 @@
 .iconRow::after {
   position: absolute;
   content: "";
-  height: 100%;
+  height: 120%;
   width: 15rem;
-  background-color: black;
   background: linear-gradient(
     90deg,
-    rgb(36, 36, 86),
-    rgba(36, 36, 86, 0.65),
+    rgba(36, 36, 86, 0.15),
     rgba(36, 36, 86, 0.35),
-    rgba(36, 36, 86, 0.15)
+    rgba(36, 36, 86, 0.65),
+    rgb(36, 36, 86)
   );
   right: 0;
   z-index: 10;
