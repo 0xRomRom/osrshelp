@@ -77,7 +77,6 @@
 
 .loginForm {
   /* padding: 1.5rem 0rem; */
-  padding-bottom: 1.5rem;
   width: 100%;
   gap: 1rem;
 }
@@ -118,7 +117,7 @@
 
 .createCta:hover {
   background-color: purple;
-  background: linear-gradient(120deg, purple, pink);
+  background-color: rgb(164, 6, 164);
   color: white;
 }
 
@@ -137,6 +136,7 @@
   font-size: 16px;
   text-align: center;
   color: rgb(172, 172, 172);
+  padding-top: 1rem;
 }
 
 .login {
@@ -144,4 +144,44 @@
   text-shadow: 0px 0px 2px black;
   font-weight: bold;
   cursor: pointer;
+}
+
+.login:hover {
+  color: rgb(189, 41, 189);
+}
+
+.resetPassword {
+  font-size: 16px;
+  text-align: center;
+  color: rgb(203, 203, 203);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.resetPassword:hover {
+  color: white;
+}
+
+.loginCta {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem 0rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  /* transition: all 0.2s ease-in-out; */
+  background-color: rgb(164, 6, 164);
+  color: white;
+}
+
+.loginCta:hover {
+  background: linear-gradient(
+    120deg,
+    rgb(142, 5, 142),
+    rgb(189, 7, 189),
+    rgb(160, 6, 160)
+  );
 }
