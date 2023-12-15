@@ -244,3 +244,7 @@
 .cancelSpan:hover {
   color: rgb(230, 230, 230);
 }
+
+.purple {
+  color: rgb(189, 41, 189);
+}

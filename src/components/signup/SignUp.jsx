@@ -1,5 +1,15 @@
 import stl from "./SignUp.module.css";
 import { useState, useRef, useEffect } from "react";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+} from "firebase/auth";
+import { getDatabase, ref, set } from "firebase/database";
+
+const auth = getAuth();
+
+const db = getDatabase();
 
 const SignUp = () => {
   const signupEmail = useRef(null);
@@ -25,12 +35,44 @@ const SignUp = () => {
     setSignupState(!signupState);
   };
 
+  const handleRegister = async (e) => {
+    e.preventDefault();
+
+    try {
+      const register = await createUserWithEmailAndPassword(
+        auth,
+        signupEmail.current.value,
+        signupPassword.current.value
+      );
+      console.log(register);
+      // await set(ref(db, "users/" + register.user.uid), register.user.uid);
+
+      // navigate("/bank");
+    } catch (err) {
+      console.error(err);
+    }
+  };
+  const handleLogin = (e) => {
+    e.preventDefault();
+  };
+  const handlePasswordReset = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className={stl.signup}>
       <div className={stl.modal}>
         {!resetPassActive && (
           <>
-            <h1 className={stl.hero}>Sign up or log in</h1>
+            <h1 className={stl.hero}>
+              <span className={`${signupState ? stl.purple : ""}`}>
+                Sign up
+              </span>{" "}
+              or{" "}
+              <span className={`${!signupState ? stl.purple : ""}`}>
+                log in
+              </span>
+            </h1>
             {signupState && (
               <form className={stl.loginForm}>
                 <input
@@ -45,7 +87,9 @@ const SignUp = () => {
                   placeholder="Password"
                   ref={signupPassword}
                 />
-                <button className={stl.createCta}>Create account</button>
+                <button className={stl.createCta} onClick={handleRegister}>
+                  Create account
+                </button>
               </form>
             )}
             {!signupState && (
@@ -62,7 +106,9 @@ const SignUp = () => {
                   placeholder="Password"
                   ref={loginPassword}
                 />
-                <button className={stl.loginCta}>Login</button>
+                <button className={stl.loginCta} onClick={handleLogin}>
+                  Login
+                </button>
                 <span
                   className={stl.resetPassword}
                   onClick={() => setResetPassActive(true)}
@@ -92,7 +138,9 @@ const SignUp = () => {
               placeholder="Email"
               ref={recoverMail}
             />
-            <button className={stl.resetPassCta}>Reset password</button>
+            <button className={stl.resetPassCta} onClick={handlePasswordReset}>
+              Reset password
+            </button>
             <span
               className={stl.cancelSpan}
               onClick={() => setResetPassActive(false)}
