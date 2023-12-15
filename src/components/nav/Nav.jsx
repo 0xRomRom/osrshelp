@@ -48,7 +48,7 @@ const Nav = (props) => {
               Home
             </li>
           </Link>
-          <Link to="/skillstab">
+          <Link to="/skillcalculators">
             <li
               className={`${stl.navitem} ${
                 props.activeTab === "skills" ? stl.active : ""
@@ -60,15 +60,19 @@ const Nav = (props) => {
             </li>
           </Link>
 
-          <li
-            className={`${stl.navitem} ${
-              props.activeTab === "gearcalculator" ? stl.active : ""
-            }`}
-            onClick={() => handleTabSwitch("gearcalculator", "Gear Calculator")}
-          >
-            <img src={gear} alt="Gear Icon" className={stl.icon} />
-            Gear Calculator
-          </li>
+          <Link to="/gearcalculator">
+            <li
+              className={`${stl.navitem} ${
+                props.activeTab === "gearcalculator" ? stl.active : ""
+              }`}
+              onClick={() =>
+                handleTabSwitch("gearcalculator", "Gear Calculator")
+              }
+            >
+              <img src={gear} alt="Gear Icon" className={stl.icon} />
+              Gear Calculator
+            </li>
+          </Link>
           <li
             className={`${stl.navitem} ${
               props.activeTab === "moneymakers" ? stl.active : ""

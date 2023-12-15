@@ -31,7 +31,7 @@ const Main = (props) => {
           )}
           {props.activeTab === "skills" && (
             <Route
-              path="/skillstab"
+              path="/skillcalculators"
               element={
                 <SkillsTab
                   setSkills={props.setSkills}
@@ -40,14 +40,17 @@ const Main = (props) => {
                   skillsExp={props.skillsExp}
                   setPlayerName={props.setPlayerName}
                   playerName={props.playerName}
-                  setSubState={props.setSubState}
+                  mainState={props.mainState}
                   subState={props.subState}
+                  setSubState={props.setSubState}
                 />
               }
             />
           )}
+          {props.activeTab === "gearcalculator" && (
+            <Route path="/gearcalculator" element={<GearCalculator />} />
+          )}
           {props.activeTab === "moneymakers" && <MoneyMakers />}
-          {props.activeTab === "gearcalculator" && <GearCalculator />}
         </Routes>
       </div>
     </div>
