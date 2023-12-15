@@ -1,10 +1,21 @@
 import stl from "./SignUp.module.css";
 import googleIcon from "../../assets/icons/Google.png";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 
 const SignUp = () => {
+  const loginEmail = useRef(null);
+  const loginPassword = useRef(null);
+  const recoverMail = useRef(null);
+
   const [signupState, setSignupState] = useState(true);
   const [resetPassActive, setResetPassActive] = useState(false);
+
+  useEffect(() => {
+    if (recoverMail) {
+      recoverMail.current?.focus();
+    }
+  }, [resetPassActive]);
 
   const toggleView = () => {
     setSignupState(!signupState);
@@ -101,9 +112,15 @@ const SignUp = () => {
               type="email"
               className={`${stl.input} ${stl.focused}`}
               placeholder="Email"
+              ref={recoverMail}
             />
             <button className={stl.resetPassCta}>Reset password</button>
-            <span className={stl.cancelSpan}>Cancel</span>
+            <span
+              className={stl.cancelSpan}
+              onClick={() => setResetPassActive(false)}
+            >
+              Cancel
+            </span>
           </form>
         )}
       </div>
