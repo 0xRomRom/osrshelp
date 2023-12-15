@@ -18245,7 +18245,7 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Magic",
+    type: "Ranged",
     name: "Twisted bow",
     defLvl: 0,
     rangedLvl: 85,

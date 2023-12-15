@@ -95,3 +95,37 @@
 .weaponIcon {
   transform: scale(1.2);
 }
+
+.iconRow::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 15rem;
+  background-color: black;
+  background: linear-gradient(
+    90deg,
+    rgb(36, 36, 86),
+    rgba(36, 36, 86, 0.65),
+    rgba(36, 36, 86, 0.35),
+    rgba(36, 36, 86, 0.15)
+  );
+  left: 0;
+  z-index: 10;
+}
+
+.iconRow::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 15rem;
+  background-color: black;
+  background: linear-gradient(
+    90deg,
+    rgb(36, 36, 86),
+    rgba(36, 36, 86, 0.65),
+    rgba(36, 36, 86, 0.35),
+    rgba(36, 36, 86, 0.15)
+  );
+  right: 0;
+  z-index: 10;
+}
