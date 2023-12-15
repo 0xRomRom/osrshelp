@@ -6,8 +6,7 @@ import { HiArrowsUpDown } from "react-icons/hi2";
 import { useState } from "react";
 import { useEffect } from "react";
 
-import ahrim from "../../../../assets/characters/Ahrim.webp";
-import dharok from "../../../../assets/characters/Dharok.webp";
+import PremiumBanner from "./PremiumBanner/PremiumBanner";
 
 const PreBuilds = ({ handlePrebuildSetup }) => {
   const [reversed, setReversed] = useState(false);
@@ -80,29 +79,7 @@ const PreBuilds = ({ handlePrebuildSetup }) => {
         </div>
         <div className={stl.premiumBox}>
           <h3 className={stl.subHero}>Premium</h3>
-          <div className={stl.getPremiumBanner}>
-            <div className={stl.leftBlock}>
-              <img
-                src={ahrim}
-                alt="Ahrim the blighted"
-                className={stl.ahrimGhost}
-              />
-            </div>
-            <div className={stl.midblock}>
-              <h1 className={stl.bannerHero}>
-                Access <span className={stl.white}>100+</span> prebuilds
-                <br /> as a Rune user
-              </h1>
-              <button className={stl.cta}>Upgrade</button>
-            </div>
-            <div className={stl.rightBlock}>
-              <img
-                src={dharok}
-                alt="Dharok the wretched"
-                className={stl.dharokGhost}
-              />
-            </div>
-          </div>
+          <PremiumBanner />
         </div>
       </div>
     </div>

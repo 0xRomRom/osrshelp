@@ -105,12 +105,12 @@
 }
 
 .alertBalloon {
-  width: 15rem;
+  width: 17.35rem;
   margin: 0 auto;
   height: 4rem;
   position: relative;
   background-color: rgb(17, 23, 27);
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
   margin-bottom: 0.5rem;
   border-radius: 0.4rem;
   display: flex;

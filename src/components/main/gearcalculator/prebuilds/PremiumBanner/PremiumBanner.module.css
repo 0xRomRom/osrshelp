@@ -1,0 +1,97 @@
+.getPremiumBanner {
+  position: relative;
+  width: 98%;
+  left: 1%;
+  background-color: black;
+  height: 20rem;
+  margin-top: 1.3rem;
+  border-radius: 0.4rem;
+  background: linear-gradient(180deg, rgb(18, 13, 30), rgb(33, 33, 73));
+  background: linear-gradient(
+    180deg,
+    rgb(18, 13, 30),
+    rgb(33, 33, 73),
+    rgb(36, 36, 86)
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bannerHero {
+  color: rgb(195, 195, 195);
+  text-align: center;
+  width: 85rem;
+  font-weight: bold;
+}
+
+.dharokGhost {
+  transform: rotateY(180deg);
+  width: 4rem;
+  top: 0rem;
+  right: 0.5rem;
+  position: absolute;
+}
+
+.ahrimGhost {
+  width: 5rem;
+  top: 1rem;
+  position: absolute;
+  left: 0.5rem;
+}
+
+.midblock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  margin-top: 1rem;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  background-color: yellow;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta:hover {
+  background-color: black;
+  color: yellow;
+}
+
+.white {
+  color: white;
+  font-weight: bold;
+}
+
+.rune {
+  color: rgb(127, 174, 184);
+  font-weight: bold;
+}
+
+.upper {
+  display: flex;
+}
+
+.iconRow {
+  position: relative;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.weaponIcon {
+  transform: scale(1.2);
+}

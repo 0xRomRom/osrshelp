@@ -45,6 +45,46 @@ const HELMS = [
   },
   {
     type: "Melee",
+    name: "Berserker helm",
+    defLvl: 45,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      // Attack
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -5,
+        Range: -5,
+      },
+      // Defence
+      {
+        Stab: 31,
+        Slash: 29,
+        Crush: 33,
+        Magic: 0,
+        Range: 30,
+      },
+      // Other
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/helms/Berserker_helm.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
     name: "Bronze full helm",
     defLvl: 0,
     rangedLvl: 0,

@@ -1,6 +1,7 @@
 .prebuilds {
   width: 1100px;
   background: linear-gradient(130deg, rgb(32, 46, 57), rgb(21, 31, 37));
+  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(21, 31, 37));
   border-radius: 0.4rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
@@ -122,83 +123,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.getPremiumBanner {
-  position: relative;
-  width: 98%;
-  left: 1%;
-  background-color: black;
-  height: 20rem;
-  margin-top: 1.5rem;
-  border-radius: 0.4rem;
-  background: linear-gradient(180deg, rgb(18, 13, 30), rgb(33, 33, 73));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bannerHero {
-  color: rgb(195, 195, 195);
-  text-align: center;
-  width: 85rem;
-  font-weight: bold;
-}
-
-.leftBlock {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  /* background-color: black; */
-  /* border: 1px solid red; */
-}
-
-.rightBlock {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  /* background-color: black; */
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-}
-
-.dharokGhost {
-  transform: rotateY(180deg);
-  width: 4rem;
-  top: 0rem;
-  right: 0.5rem;
-  position: absolute;
-}
-
-.ahrimGhost {
-  width: 5rem;
-  top: 1rem;
-  position: absolute;
-  left: 0.5rem;
-}
-
-.midblock {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-
-.cta {
-  margin-top: 1rem;
-  width: 8rem;
-  height: 2.5rem;
-  border-radius: 0.4rem;
-  background-color: yellow;
-  border: none;
-  outline: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.white {
-  color: white;
-  font-weight: bold;
 }
