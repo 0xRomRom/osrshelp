@@ -23,22 +23,30 @@ const CtaBar = ({ setBonusState, captureScreenshot, setActiveSlot }) => {
 
   return (
     <div className={stl.ctaBar}>
-      <button onClick={handleClearSlots}>
-        <ImBin className={stl.ctaIcon} />
+      <div className={stl.btnBox}>
+        <button onClick={handleClearSlots}>
+          <ImBin className={stl.ctaIcon} />
+        </button>
         <span className={stl.infoSpan}>Clear</span>
-      </button>
-      <button onClick={captureScreenshot}>
-        <FaCameraRetro className={stl.ctaIcon} />
+      </div>
+      <div className={stl.btnBox}>
+        <button onClick={captureScreenshot}>
+          <FaCameraRetro className={stl.ctaIcon} />
+        </button>
         <span className={stl.infoSpan}>Screenshot</span>
-      </button>
-      <button>
-        <FaSave className={stl.ctaIcon} />
+      </div>
+      <div className={stl.btnBox}>
+        <button>
+          <FaSave className={stl.ctaIcon} />
+        </button>
         <span className={stl.infoSpan}>Save</span>
-      </button>
-      <button>
-        <BsFillShareFill className={stl.ctaIcon} />
+      </div>
+      <div className={stl.btnBox}>
+        <button>
+          <BsFillShareFill className={stl.ctaIcon} />
+        </button>
         <span className={stl.infoSpan}>Share</span>
-      </button>
+      </div>
     </div>
   );
 };

@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-.ctaBar button:hover .ctaIcon {
+.btnBox button:hover .ctaIcon {
   color: white;
 }
 
@@ -35,12 +35,18 @@
 
 .infoSpan {
   color: white;
-  position: absolute;
-  top: 5.4rem;
+  position: relative;
   opacity: 0;
   transition: all 0.1s ease-in-out;
 }
 
-.ctaBar button:hover .infoSpan {
+.btnBox:hover .infoSpan {
   opacity: 1;
+}
+
+.btnBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.3rem;
 }
