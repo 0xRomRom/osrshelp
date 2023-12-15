@@ -9,10 +9,12 @@ import CtaBar from "./ctabar/CtaBar";
 import SavedBuilds from "./savedbuilds/SavedBuilds";
 import PreBuilds from "./prebuilds/PreBuilds";
 
+import Pagination from "../pagination/Pagination";
+
 import { useState, useRef } from "react";
 import { useEffect } from "react";
 
-const GearCalculator = () => {
+const GearCalculator = (props) => {
   const targetDivRef = useRef(null);
   const [activeSlot, setActiveSlot] = useState(null);
   const [gridActive, setGridActive] = useState(false);
@@ -70,50 +72,58 @@ const GearCalculator = () => {
   }, [bonusState]);
 
   return (
-    <div className={stl.gearcalculator}>
-      <div className={stl.topWrap}>
-        <div className={stl.innerWrap}>
-          <CtaBar
-            setBonusState={setBonusState}
-            captureScreenshot={captureScreenshot}
-            setActiveSlot={setActiveSlot}
-            activeSlot={activeSlot}
-          />
-          <div className={stl.midBlock} ref={targetDivRef}>
-            <div className={stl.rowWrap}>
-              <GearGrid
-                activeSlot={activeSlot}
-                setActiveSlot={setActiveSlot}
-                bonusState={bonusState}
-                setBonusState={setBonusState}
-                setGridActive={setGridActive}
-                setGearFilter={setGearFilter}
-              />
-              <ConfigBar
-                activeSlot={activeSlot}
-                setBonusState={setBonusState}
-                gridActive={gridActive}
-                setGearFilter={setGearFilter}
-                gearFilter={gearFilter}
-                setActiveSlot={setActiveSlot}
-                setGridActive={setGridActive}
-              />
-              <ResultBox bonusState={bonusState} />
-            </div>
-            <div className={stl.brandBox}>
-              <img
-                src={mainLogo}
-                alt="OSRS Help logo"
-                className={stl.mainLogo}
-              />
-              <span className={stl.dotCom}>OSRSHelp.com</span>
+    <>
+      <div className={stl.adBar}>[ Advertisements ]</div>
+      <Pagination
+        mainState={props.mainState}
+        subState={props.subState}
+        setSubState={props.setSubState}
+      />
+      <div className={stl.gearcalculator}>
+        <div className={stl.topWrap}>
+          <div className={stl.innerWrap}>
+            <CtaBar
+              setBonusState={setBonusState}
+              captureScreenshot={captureScreenshot}
+              setActiveSlot={setActiveSlot}
+              activeSlot={activeSlot}
+            />
+            <div className={stl.midBlock} ref={targetDivRef}>
+              <div className={stl.rowWrap}>
+                <GearGrid
+                  activeSlot={activeSlot}
+                  setActiveSlot={setActiveSlot}
+                  bonusState={bonusState}
+                  setBonusState={setBonusState}
+                  setGridActive={setGridActive}
+                  setGearFilter={setGearFilter}
+                />
+                <ConfigBar
+                  activeSlot={activeSlot}
+                  setBonusState={setBonusState}
+                  gridActive={gridActive}
+                  setGearFilter={setGearFilter}
+                  gearFilter={gearFilter}
+                  setActiveSlot={setActiveSlot}
+                  setGridActive={setGridActive}
+                />
+                <ResultBox bonusState={bonusState} />
+              </div>
+              <div className={stl.brandBox}>
+                <img
+                  src={mainLogo}
+                  alt="OSRS Help logo"
+                  className={stl.mainLogo}
+                />
+                <span className={stl.dotCom}>OSRSHelp.com</span>
+              </div>
             </div>
           </div>
+          <SavedBuilds />
         </div>
-        <SavedBuilds />
+        <PreBuilds handlePrebuildSetup={handlePrebuildSetup} />
       </div>
-      <PreBuilds handlePrebuildSetup={handlePrebuildSetup} />
-    </div>
+    </>
   );
 };
 

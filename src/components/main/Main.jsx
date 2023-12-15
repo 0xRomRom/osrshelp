@@ -48,7 +48,16 @@ const Main = (props) => {
             />
           )}
           {props.activeTab === "gearcalculator" && (
-            <Route path="/gearcalculator" element={<GearCalculator />} />
+            <Route
+              path="/gearcalculator"
+              element={
+                <GearCalculator
+                  mainState={props.mainState}
+                  subState={props.subState}
+                  setSubState={props.setSubState}
+                />
+              }
+            />
           )}
           {props.activeTab === "moneymakers" && <MoneyMakers />}
         </Routes>
