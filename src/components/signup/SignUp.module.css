@@ -1,9 +1,17 @@
 .signup {
   height: 100vh;
-  width: 100%;
-  background-color: black;
-  position: fixed;
-  top: 0;
+  width: 100vw;
+  background: linear-gradient(
+    100deg,
+    rgb(10, 14, 24),
+    rgb(13, 20, 31),
+    rgb(10, 14, 24),
+    rgb(9, 13, 20),
+    rgb(8, 12, 20),
+    rgb(11, 14, 24)
+  );
   color: white;
   font-size: 10rem;
+  position: fixed;
+  inset: 0;
 }
