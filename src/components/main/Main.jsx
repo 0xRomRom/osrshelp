@@ -10,56 +10,50 @@ const Main = (props) => {
     <div className={stl.main}>
       <div className={stl.content}>
         <Routes>
-          {props.activeTab === "home" && (
-            <Route
-              index
-              path="/"
-              element={
-                <Home
-                  setSkills={props.setSkills}
-                  skills={props.skills}
-                  setSkillsExp={props.setSkillsExp}
-                  skillsExp={props.skillsExp}
-                  setPlayerName={props.setPlayerName}
-                  playerName={props.playerName}
-                  mainState={props.mainState}
-                  subState={props.subState}
-                  setSubState={props.setSubState}
-                />
-              }
-            />
-          )}
-          {props.activeTab === "skills" && (
-            <Route
-              path="/skillcalculators"
-              element={
-                <SkillsTab
-                  setSkills={props.setSkills}
-                  skills={props.skills}
-                  setSkillsExp={props.setSkillsExp}
-                  skillsExp={props.skillsExp}
-                  setPlayerName={props.setPlayerName}
-                  playerName={props.playerName}
-                  mainState={props.mainState}
-                  subState={props.subState}
-                  setSubState={props.setSubState}
-                />
-              }
-            />
-          )}
-          {props.activeTab === "gearcalculator" && (
-            <Route
-              path="/gearcalculator"
-              element={
-                <GearCalculator
-                  mainState={props.mainState}
-                  subState={props.subState}
-                  setSubState={props.setSubState}
-                />
-              }
-            />
-          )}
-          {props.activeTab === "moneymakers" && <MoneyMakers />}
+          <Route
+            index
+            path="/"
+            element={
+              <Home
+                setSkills={props.setSkills}
+                skills={props.skills}
+                setSkillsExp={props.setSkillsExp}
+                skillsExp={props.skillsExp}
+                setPlayerName={props.setPlayerName}
+                playerName={props.playerName}
+                mainState={props.mainState}
+                subState={props.subState}
+                setSubState={props.setSubState}
+              />
+            }
+          />
+          <Route
+            path="/skillcalculators"
+            element={
+              <SkillsTab
+                setSkills={props.setSkills}
+                skills={props.skills}
+                setSkillsExp={props.setSkillsExp}
+                skillsExp={props.skillsExp}
+                setPlayerName={props.setPlayerName}
+                playerName={props.playerName}
+                mainState={props.mainState}
+                subState={props.subState}
+                setSubState={props.setSubState}
+              />
+            }
+          />
+          <Route
+            path="/gearcalculator"
+            element={
+              <GearCalculator
+                mainState={props.mainState}
+                subState={props.subState}
+                setSubState={props.setSubState}
+              />
+            }
+          />
+          <Route path="/moneymakers" element={<MoneyMakers />} />
         </Routes>
       </div>
     </div>

@@ -3,3 +3,31 @@
   justify-content: center;
   justify-content: flex-start;
 }
+
+.main {
+  position: relative;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.adBar {
+  position: relative;
+  width: 100%;
+  height: 105px;
+  background-color: rgba(255, 0, 0, 0.123);
+  margin-bottom: 2rem;
+  margin-left: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: 2rem;
+}

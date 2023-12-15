@@ -2,6 +2,13 @@ import { useState } from "react";
 import stl from "./App.module.css";
 import Nav from "./components/nav/Nav";
 import Main from "./components/main/Main";
+import { Routes, Route } from "react-router-dom";
+import SignUp from "./components/signup/SignUp";
+
+import Home from "./components/main/home/Home";
+import SkillsTab from "./components/main/skills/SkillsTab";
+import MoneyMakers from "./components/main/moneymakers/MoneyMakers";
+import GearCalculator from "./components/main/gearcalculator/GearCalculator";
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("home");
@@ -13,6 +20,9 @@ const App = () => {
   const [subState, setSubState] = useState(null);
   return (
     <div className={stl.app}>
+      <Routes>
+        <Route path="/login" element={<SignUp />} />
+      </Routes>
       <Nav
         setActiveTab={setActiveTab}
         setMainState={setMainState}
@@ -20,19 +30,55 @@ const App = () => {
         activeTab={activeTab}
         playerName={playerName}
       />
-      <Main
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-        setSkills={setSkills}
-        skills={skills}
-        setSkillsExp={setSkillsExp}
-        skillsExp={skillsExp}
-        setPlayerName={setPlayerName}
-        playerName={playerName}
-        mainState={mainState}
-        setSubState={setSubState}
-        subState={subState}
-      />
+
+      <div className={stl.content}>
+        <Routes>
+          <Route
+            index
+            path="/"
+            element={
+              <Home
+                setSkills={setSkills}
+                skills={skills}
+                setSkillsExp={setSkillsExp}
+                skillsExp={skillsExp}
+                setPlayerName={setPlayerName}
+                playerName={playerName}
+                mainState={mainState}
+                setSubState={setSubState}
+                subState={subState}
+              />
+            }
+          />
+          <Route
+            path="/skillcalculators"
+            element={
+              <SkillsTab
+                setSkills={setSkills}
+                skills={skills}
+                setSkillsExp={setSkillsExp}
+                skillsExp={skillsExp}
+                setPlayerName={setPlayerName}
+                playerName={playerName}
+                mainState={mainState}
+                setSubState={setSubState}
+                subState={subState}
+              />
+            }
+          />
+          <Route
+            path="/gearcalculator"
+            element={
+              <GearCalculator
+                mainState={mainState}
+                setSubState={setSubState}
+                subState={subState}
+              />
+            }
+          />
+          <Route path="/moneymakers" element={<MoneyMakers />} />
+        </Routes>
+      </div>
     </div>
   );
 };
