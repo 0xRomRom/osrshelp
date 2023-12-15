@@ -1,9 +1,10 @@
 import stl from "./SignUp.module.css";
-import googleIcon from "../../assets/icons/Google.png";
 import { useState, useRef, useEffect } from "react";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 
 const SignUp = () => {
+  const signupEmail = useRef(null);
+  const signupPassword = useRef(null);
+
   const loginEmail = useRef(null);
   const loginPassword = useRef(null);
   const recoverMail = useRef(null);
@@ -14,6 +15,9 @@ const SignUp = () => {
   useEffect(() => {
     if (recoverMail) {
       recoverMail.current?.focus();
+    }
+    if (resetPassActive) {
+      loginEmail.current?.focus();
     }
   }, [resetPassActive]);
 
@@ -28,70 +32,44 @@ const SignUp = () => {
           <>
             <h1 className={stl.hero}>Sign up or log in</h1>
             {signupState && (
-              <>
-                <button className={stl.googleCta}>
-                  <img
-                    src={googleIcon}
-                    alt="Google logo"
-                    className={stl.googleIcon}
-                  />
-                  Signup with Google
-                </button>
-                <div className={stl.orBox}>
-                  <div className={stl.border}></div>
-                  <span className={stl.or}>or</span>
-                  <div className={stl.border}></div>
-                </div>
-                <form className={stl.loginForm}>
-                  <input
-                    type="email"
-                    className={stl.input}
-                    placeholder="Email"
-                  />
-                  <input
-                    type="password"
-                    className={stl.input}
-                    placeholder="Password"
-                  />
-                  <button className={stl.createCta}>Create account</button>
-                </form>
-              </>
+              <form className={stl.loginForm}>
+                <input
+                  type="email"
+                  className={stl.input}
+                  placeholder="Email"
+                  ref={signupEmail}
+                />
+                <input
+                  type="password"
+                  className={stl.input}
+                  placeholder="Password"
+                  ref={signupPassword}
+                />
+                <button className={stl.createCta}>Create account</button>
+              </form>
             )}
             {!signupState && (
-              <>
-                <button className={stl.googleCta}>
-                  <img
-                    src={googleIcon}
-                    alt="Google logo"
-                    className={stl.googleIcon}
-                  />
-                  Login with Google
-                </button>
-                <div className={stl.orBox}>
-                  <div className={stl.border}></div>
-                  <span className={stl.or}>or</span>
-                  <div className={stl.border}></div>
-                </div>
-                <form className={stl.loginForm}>
-                  <input
-                    type="email"
-                    className={stl.input}
-                    placeholder="Email"
-                  />
-                  <input
-                    type="password"
-                    className={stl.input}
-                    placeholder="Password"
-                  />
-                  <button className={stl.loginCta}>Login</button>
-                  <span
-                    className={stl.resetPassword}
-                    onClick={() => setResetPassActive(true)}
-                  >
-                    Reset password
-                  </span>
-                </form>
-              </>
+              <form className={stl.loginForm}>
+                <input
+                  type="email"
+                  className={stl.input}
+                  placeholder="Email"
+                  ref={loginEmail}
+                />
+                <input
+                  type="password"
+                  className={stl.input}
+                  placeholder="Password"
+                  ref={loginPassword}
+                />
+                <button className={stl.loginCta}>Login</button>
+                <span
+                  className={stl.resetPassword}
+                  onClick={() => setResetPassActive(true)}
+                >
+                  Reset password
+                </span>
+              </form>
             )}
 
             <span className={stl.loginSpan}>
