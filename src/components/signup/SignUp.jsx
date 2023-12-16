@@ -14,6 +14,10 @@ const db = getDatabase(firebase);
 
 const SignUp = ({ setLoggedInUser }) => {
   const prefersLoginScreen = localStorage.getItem("PrefersLoginScreen");
+  const savedUsername = localStorage.getItem("SaveUsername");
+  const saveChecked = localStorage.getItem("SaveChecked");
+
+  const [storedUsername, setStoredUsername] = useState("");
 
   const navigate = useNavigate();
 
@@ -32,12 +36,31 @@ const SignUp = ({ setLoggedInUser }) => {
   const [isChecked, setIsChecked] = useState(true);
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
+    if (isChecked) {
+      localStorage.removeItem("SaveUsername");
+      localStorage.setItem("SaveChecked", "False");
+      return;
+    }
+    localStorage.removeItem("SaveChecked");
+  };
+
+  const loginInputChange = (e) => {
+    const newValue = e.target.value;
+    setStoredUsername(newValue);
+    localStorage.setItem("SaveUsername", newValue);
   };
 
   useEffect(() => {
+    if (saveChecked) {
+      setIsChecked(false);
+    }
     if (prefersLoginScreen === "True") {
       setSignupState(false);
     }
+    if (savedUsername) {
+      setStoredUsername(savedUsername);
+    }
+
     signupEmail.current?.focus();
     if (signupEmail) {
     }
@@ -48,7 +71,13 @@ const SignUp = ({ setLoggedInUser }) => {
     if (resetPassActive) {
       recoverMail.current?.focus();
     }
-  }, [signupState, prefersLoginScreen, resetPassActive]);
+  }, [
+    signupState,
+    prefersLoginScreen,
+    resetPassActive,
+    saveChecked,
+    savedUsername,
+  ]);
 
   const toggleView = () => {
     setError("");
@@ -101,6 +130,11 @@ const SignUp = ({ setLoggedInUser }) => {
         loginPassword.current.value
       );
       setLoggedInUser(user);
+      localStorage.setItem("PrefersLoginScreen", "True");
+      localStorage.removeItem("SaveUsername");
+      if (isChecked) {
+        localStorage.setItem("SaveUsername", loginEmail.current.value);
+      }
       navigate("/");
     } catch (err) {
       const code = err.code;
@@ -162,6 +196,8 @@ const SignUp = ({ setLoggedInUser }) => {
                   className={stl.input}
                   placeholder="Email"
                   ref={loginEmail}
+                  value={storedUsername}
+                  onChange={loginInputChange}
                 />
                 <input
                   type="password"
