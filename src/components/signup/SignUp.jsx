@@ -72,14 +72,17 @@ const SignUp = ({ setLoggedInUser }) => {
       setStoredUsername(savedUsername);
       loginPassword.current?.focus();
     }
-  }, [saveChecked, savedUsername, resetPassActive]);
+  }, [savedUsername, resetPassActive]);
 
   useEffect(() => {
     if (signupState) {
       signupEmail.current?.focus();
     }
     loginEmail.current?.focus();
-  }, [signupState, savedUsername, storedUsername]);
+    if (savedUsername) {
+      loginPassword.current?.focus();
+    }
+  }, [signupState, savedUsername]);
 
   const toggleView = () => {
     setError("");

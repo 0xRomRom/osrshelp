@@ -39,11 +39,8 @@ const App = () => {
         }
       });
     }
+    setPremiumUser(false);
   }, [loggedInUser]);
-
-  useEffect(() => {
-    console.log(premiumUser);
-  }, [premiumUser]);
 
   return (
     <div className={stl.app}>

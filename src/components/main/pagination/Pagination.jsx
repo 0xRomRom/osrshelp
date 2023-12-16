@@ -55,7 +55,7 @@ const Pagination = ({ mainState, subState, setSubState, premiumUser }) => {
         )}
       </div>
       <div className={stl.rightBar}>
-        {!premiumUser && <button>Upgrade</button>}
+        {!premiumUser && connectedUser && <button>Upgrade</button>}
         <button className={stl.loginBtn} onClick={handleClick}>
           {auth.currentUser ? "Logout" : "Login"}
         </button>
