@@ -14,14 +14,6 @@ import { loadStripe } from "@stripe/stripe-js";
 import CheckoutForm from "../../../utils/checkoutForm/CheckoutForm";
 
 const Home = (props) => {
-  const [skillsFetched, setSkillsFetched] = useState(false);
-
-  useEffect(() => {
-    if (props.skills || props.skillsExp) {
-      setSkillsFetched(true);
-    }
-  }, [props.skills, props.skillsExp]);
-
   const [stripePromise, setStripePromise] = useState(null);
   const [clientSecret, setClientSecret] = useState("");
 

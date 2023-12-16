@@ -10,6 +10,8 @@ import SkillsTab from "./components/main/skills/SkillsTab";
 import MoneyMakers from "./components/main/moneymakers/MoneyMakers";
 import GearCalculator from "./components/main/gearcalculator/GearCalculator";
 
+import Checkout from "./utils/checkout/Checkout";
+
 const db = getDatabase();
 
 const App = () => {
@@ -55,6 +57,7 @@ const App = () => {
 
       <div className={stl.content}>
         <Routes>
+          <Route path="/checkout" element={<Checkout />} />
           <Route
             path="/login"
             element={<SignUp setLoggedInUser={setLoggedInUser} />}

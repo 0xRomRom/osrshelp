@@ -5,8 +5,8 @@ import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
 } from "firebase/auth";
-import { getDatabase, ref, set } from "firebase/database";
 import { useNavigate } from "react-router-dom";
+import { getDatabase, ref, set } from "firebase/database";
 import firebase from "../../utils/firebase";
 import Spinner from "../../utils/loadingspinner/Spinner";
 
