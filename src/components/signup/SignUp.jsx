@@ -57,9 +57,8 @@ const SignUp = ({ setLoggedInUser }) => {
         signupEmail.current.value,
         signupPassword.current.value
       );
-      console.log(user);
       setLoggedInUser(user);
-      // await set(ref(db, "users/" + register.user.uid), register.user.uid);
+      await set(ref(db, "users/" + user.user.uid), user.user.uid);
 
       navigate("/");
     } catch (err) {
@@ -78,9 +77,9 @@ const SignUp = ({ setLoggedInUser }) => {
       }
 
       console.error(err);
-      console.error(err.code);
     }
   };
+
   const handleLogin = async (e) => {
     e.preventDefault();
 
@@ -105,7 +104,6 @@ const SignUp = ({ setLoggedInUser }) => {
       }
 
       console.error(err);
-      console.error(err.code);
     }
   };
   const handlePasswordReset = (e) => {

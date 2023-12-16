@@ -58,6 +58,7 @@ const App = () => {
                 mainState={mainState}
                 setSubState={setSubState}
                 subState={subState}
+                loggedInUser={loggedInUser}
               />
             }
           />

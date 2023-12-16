@@ -3,11 +3,41 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
+import { getAuth, signOut } from "firebase/auth";
+import { useEffect, useState } from "react";
+
 const Pagination = ({ mainState, subState, setSubState }) => {
   const navigate = useNavigate();
 
+  const [connectedUser, setConnectedUser] = useState(false);
+
   const clearSubState = () => {
     setSubState(null);
+  };
+
+  const auth = getAuth();
+
+  useEffect(() => {
+    if (auth.currentUser) {
+      setConnectedUser(true);
+    }
+  }, [auth]);
+
+  const handleClick = () => {
+    if (!connectedUser) {
+      navigate("/login");
+      return;
+    }
+
+    console.log(auth);
+    signOut(auth)
+      .then(() => {
+        // Sign-out successful.
+        setConnectedUser(false);
+      })
+      .catch((error) => {
+        // An error happened.
+      });
   };
 
   return (
@@ -25,8 +55,8 @@ const Pagination = ({ mainState, subState, setSubState }) => {
         )}
       </div>
       <div className={stl.rightBar}>
-        <button className={stl.loginBtn} onClick={() => navigate("/login")}>
-          Login
+        <button className={stl.loginBtn} onClick={handleClick}>
+          {connectedUser ? "Logout" : "Login"}
         </button>
       </div>
     </div>
