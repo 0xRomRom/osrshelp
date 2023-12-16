@@ -8,6 +8,7 @@ import {
 import { getDatabase, ref, set } from "firebase/database";
 import { useNavigate } from "react-router-dom";
 import firebase from "../../utils/firebase";
+import Spinner from "../../utils/loadingspinner/Spinner";
 
 const auth = getAuth(firebase);
 const db = getDatabase(firebase);
@@ -32,6 +33,7 @@ const SignUp = ({ setLoggedInUser }) => {
   const [resetPassActive, setResetPassActive] = useState(false);
 
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const [isChecked, setIsChecked] = useState(true);
   const handleCheckboxChange = (event) => {
@@ -47,14 +49,14 @@ const SignUp = ({ setLoggedInUser }) => {
   const loginInputChange = (e) => {
     const newValue = e.target.value;
     setStoredUsername(newValue);
-    localStorage.setItem("SaveUsername", newValue);
+    // localStorage.setItem("SaveUsername", newValue);
   };
 
   useEffect(() => {
     if (saveChecked) {
       setIsChecked(false);
     }
-    if (prefersLoginScreen === "True") {
+    if (prefersLoginScreen) {
       setSignupState(false);
     }
     if (savedUsername) {
@@ -62,12 +64,12 @@ const SignUp = ({ setLoggedInUser }) => {
     }
 
     signupEmail.current?.focus();
-    if (signupEmail) {
-    }
 
     loginEmail.current?.focus();
-    if (loginEmail) {
+    if (savedUsername) {
+      loginPassword.current?.focus();
     }
+
     if (resetPassActive) {
       recoverMail.current?.focus();
     }
@@ -90,6 +92,7 @@ const SignUp = ({ setLoggedInUser }) => {
     setError("");
 
     try {
+      setLoading(true);
       const user = await createUserWithEmailAndPassword(
         auth,
         signupEmail.current.value,
@@ -99,9 +102,10 @@ const SignUp = ({ setLoggedInUser }) => {
       localStorage.setItem("PrefersLoginScreen", "True");
 
       await set(ref(db, "users/" + user.user.uid), user.user.uid);
-
+      setLoading(false);
       navigate("/");
     } catch (err) {
+      setLoading(false);
       const code = err.code;
       if (code === "auth/invalid-email") {
         setError("Invalid email");
@@ -124,6 +128,7 @@ const SignUp = ({ setLoggedInUser }) => {
     e.preventDefault();
 
     try {
+      setLoading(true);
       const user = await signInWithEmailAndPassword(
         auth,
         loginEmail.current.value,
@@ -135,8 +140,10 @@ const SignUp = ({ setLoggedInUser }) => {
       if (isChecked) {
         localStorage.setItem("SaveUsername", loginEmail.current.value);
       }
+      setLoading(false);
       navigate("/");
     } catch (err) {
+      setLoading(false);
       const code = err.code;
       if (code === "auth/invalid-email") {
         setError("Invalid email");
@@ -221,7 +228,7 @@ const SignUp = ({ setLoggedInUser }) => {
                 </div>
                 {error && <span className={stl.errorMsg}>{error}</span>}
                 <button className={stl.loginCta} onClick={handleLogin}>
-                  Login
+                  {loading ? <Spinner /> : "Login"}
                 </button>
                 <span
                   className={stl.resetPassword}
