@@ -29,7 +29,6 @@ const Pagination = ({ mainState, subState, setSubState, premiumUser }) => {
       return;
     }
 
-    console.log(auth);
     signOut(auth)
       .then(() => {
         // Sign-out successful.
@@ -55,7 +54,14 @@ const Pagination = ({ mainState, subState, setSubState, premiumUser }) => {
         )}
       </div>
       <div className={stl.rightBar}>
-        {!premiumUser && connectedUser && <button>Upgrade</button>}
+        {!premiumUser && connectedUser && (
+          <button
+            className={stl.upgradeCta}
+            onClick={() => navigate("/checkout")}
+          >
+            Upgrade
+          </button>
+        )}
         <button className={stl.loginBtn} onClick={handleClick}>
           {auth.currentUser ? "Logout" : "Login"}
         </button>
