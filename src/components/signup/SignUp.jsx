@@ -7,13 +7,14 @@ import {
 } from "firebase/auth";
 import { getDatabase, ref, set } from "firebase/database";
 import { useNavigate } from "react-router-dom";
-import { initializeApp } from "firebase/app";
 import firebase from "../../utils/firebase";
 
 const auth = getAuth(firebase);
 const db = getDatabase(firebase);
 
 const SignUp = ({ setLoggedInUser }) => {
+  const prefersLoginScreen = localStorage.getItem("PrefersLoginScreen");
+
   const navigate = useNavigate();
 
   const signupEmail = useRef(null);
@@ -28,7 +29,15 @@ const SignUp = ({ setLoggedInUser }) => {
 
   const [error, setError] = useState("");
 
+  const [isChecked, setIsChecked] = useState(true);
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
+
   useEffect(() => {
+    if (prefersLoginScreen === "True") {
+      setSignupState(false);
+    }
     if (signupEmail) {
       signupEmail.current?.focus();
     }
@@ -58,6 +67,8 @@ const SignUp = ({ setLoggedInUser }) => {
         signupPassword.current.value
       );
       setLoggedInUser(user);
+      localStorage.setItem("PrefersLoginScreen", "True");
+
       await set(ref(db, "users/" + user.user.uid), user.user.uid);
 
       navigate("/");
@@ -163,6 +174,8 @@ const SignUp = ({ setLoggedInUser }) => {
                     type="checkbox"
                     className={stl.checkBox}
                     id="remember"
+                    checked={isChecked}
+                    onChange={handleCheckboxChange}
                   />
                   <label for="remember" className={stl.rememberLabel}></label>
                   <span className={stl.rememberUsername}>Remember email</span>
