@@ -49,37 +49,34 @@ const SignUp = ({ setLoggedInUser }) => {
   const loginInputChange = (e) => {
     const newValue = e.target.value;
     setStoredUsername(newValue);
-    // localStorage.setItem("SaveUsername", newValue);
+    loginEmail.current.value = newValue;
   };
 
   useEffect(() => {
-    if (saveChecked) {
-      setIsChecked(false);
+    if (resetPassActive) {
+      recoverMail.current?.focus();
     }
     if (prefersLoginScreen) {
       setSignupState(false);
     }
     if (savedUsername) {
       setStoredUsername(savedUsername);
-    }
-
-    signupEmail.current?.focus();
-
-    loginEmail.current?.focus();
-    if (savedUsername) {
       loginPassword.current?.focus();
     }
+  }, [prefersLoginScreen, saveChecked, savedUsername, resetPassActive]);
 
-    if (resetPassActive) {
-      recoverMail.current?.focus();
+  useEffect(() => {
+    if (signupState) {
+      signupEmail.current?.focus();
     }
-  }, [
-    signupState,
-    prefersLoginScreen,
-    resetPassActive,
-    saveChecked,
-    savedUsername,
-  ]);
+    if (!signupState) {
+      if (savedUsername) {
+        loginPassword.current?.focus();
+        return;
+      }
+      loginEmail.current?.focus();
+    }
+  }, [signupState, savedUsername]);
 
   const toggleView = () => {
     setError("");
@@ -192,7 +189,7 @@ const SignUp = ({ setLoggedInUser }) => {
                 />
                 {error && <span className={stl.errorMsg}>{error}</span>}
                 <button className={stl.createCta} onClick={handleRegister}>
-                  Create account
+                  {loading ? <Spinner /> : "Create account"}
                 </button>
               </form>
             )}
