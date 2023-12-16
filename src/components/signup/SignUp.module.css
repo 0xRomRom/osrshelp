@@ -254,3 +254,41 @@
   font-size: 16px;
   color: red;
 }
+
+.rememberBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rememberUsername {
+  font-size: 16px;
+  color: gray;
+}
+
+.rememberLabel {
+  position: relative;
+  padding-left: 25px; /* Space for the custom checkbox */
+  cursor: pointer;
+  user-select: none;
+  font-size: 15px;
+}
+
+.rememberLabel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 2px solid rgb(189, 41, 189);
+  border-radius: 0.4rem;
+}
+
+input[type="checkbox"]:checked + .rememberLabel::before {
+  background-color: rgb(189, 41, 189);
+  border: 2px solid rgb(189, 41, 189);
+}

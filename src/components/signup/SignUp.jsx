@@ -158,6 +158,15 @@ const SignUp = ({ setLoggedInUser }) => {
                   placeholder="Password"
                   ref={loginPassword}
                 />
+                <div className={stl.rememberBox}>
+                  <input
+                    type="checkbox"
+                    className={stl.checkBox}
+                    id="remember"
+                  />
+                  <label for="remember" className={stl.rememberLabel}></label>
+                  <span className={stl.rememberUsername}>Remember email</span>
+                </div>
                 {error && <span className={stl.errorMsg}>{error}</span>}
                 <button className={stl.loginCta} onClick={handleLogin}>
                   Login
