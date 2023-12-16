@@ -42,6 +42,7 @@ const SignUp = ({ setLoggedInUser }) => {
   }, [resetPassActive]);
 
   const toggleView = () => {
+    setError("");
     setSignupState(!signupState);
   };
 
@@ -72,6 +73,9 @@ const SignUp = ({ setLoggedInUser }) => {
       if (code === "auth/weak-password") {
         setError("Weak password");
       }
+      if (code === "auth/email-already-in-use") {
+        setError("Email already in use");
+      }
 
       console.error(err);
       console.error(err.code);
@@ -88,7 +92,21 @@ const SignUp = ({ setLoggedInUser }) => {
       );
       setLoggedInUser(user);
       navigate("/");
-    } catch (err) {}
+    } catch (err) {
+      const code = err.code;
+      if (code === "auth/invalid-email") {
+        setError("Invalid email");
+      }
+      if (code === "auth/missing-password") {
+        setError("Missing password");
+      }
+      if (code === "auth/invalid-credential") {
+        setError("Wrong email or password");
+      }
+
+      console.error(err);
+      console.error(err.code);
+    }
   };
   const handlePasswordReset = (e) => {
     e.preventDefault();
@@ -142,6 +160,7 @@ const SignUp = ({ setLoggedInUser }) => {
                   placeholder="Password"
                   ref={loginPassword}
                 />
+                {error && <span className={stl.errorMsg}>{error}</span>}
                 <button className={stl.loginCta} onClick={handleLogin}>
                   Login
                 </button>

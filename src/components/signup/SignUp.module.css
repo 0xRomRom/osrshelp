@@ -107,7 +107,7 @@
 }
 
 .createCta {
-  /* margin-top: 1rem; */
+  margin-top: 0.5rem;
   width: 100%;
   padding: 1rem 0rem;
   border: none;
@@ -167,7 +167,7 @@
 }
 
 .loginCta {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   width: 100%;
   padding: 1rem 0rem;
   border: none;
