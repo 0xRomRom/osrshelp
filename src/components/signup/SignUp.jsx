@@ -40,10 +40,10 @@ const SignUp = ({ setLoggedInUser }) => {
     setIsChecked(event.target.checked);
     if (isChecked) {
       localStorage.removeItem("SaveUsername");
-      localStorage.setItem("SaveChecked", "False");
+      localStorage.removeItem("SaveChecked");
       return;
     }
-    localStorage.removeItem("SaveChecked");
+    localStorage.setItem("SaveChecked", "True");
   };
 
   const loginInputChange = (e) => {
@@ -51,6 +51,12 @@ const SignUp = ({ setLoggedInUser }) => {
     setStoredUsername(newValue);
     loginEmail.current.value = newValue;
   };
+
+  useEffect(() => {
+    if (!saveChecked) {
+      setIsChecked(false);
+    }
+  }, [saveChecked]);
 
   useEffect(() => {
     if (resetPassActive) {
@@ -106,15 +112,19 @@ const SignUp = ({ setLoggedInUser }) => {
       const code = err.code;
       if (code === "auth/invalid-email") {
         setError("Invalid email");
-      }
-      if (code === "auth/missing-password") {
-        setError("Missing password");
-      }
-      if (code === "auth/weak-password") {
-        setError("Weak password");
+        signupEmail.current?.focus();
       }
       if (code === "auth/email-already-in-use") {
         setError("Email already in use");
+        signupEmail.current?.focus();
+      }
+      if (code === "auth/missing-password") {
+        setError("Missing password");
+        signupPassword.current?.focus();
+      }
+      if (code === "auth/weak-password") {
+        setError("Weak password");
+        signupPassword.current?.focus();
       }
 
       console.error(err);
@@ -144,9 +154,11 @@ const SignUp = ({ setLoggedInUser }) => {
       const code = err.code;
       if (code === "auth/invalid-email") {
         setError("Invalid email");
+        loginEmail.current?.focus();
       }
       if (code === "auth/missing-password") {
         setError("Missing password");
+        loginPassword.current?.focus();
       }
       if (code === "auth/invalid-credential") {
         setError("Wrong email or password");

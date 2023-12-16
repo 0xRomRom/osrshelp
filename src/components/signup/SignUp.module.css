@@ -117,6 +117,7 @@
   font-size: 16px;
   font-weight: bold;
   transition: all 0.2s ease-in-out;
+  max-height: 53px;
 }
 
 .createCta:hover {
@@ -179,6 +180,7 @@
   /* transition: all 0.2s ease-in-out; */
   background-color: rgb(164, 6, 164);
   color: white;
+  max-height: 53px;
 }
 
 .loginCta:hover {
@@ -222,6 +224,7 @@
   /* transition: all 0.2s ease-in-out; */
   background-color: rgb(164, 6, 164);
   color: white;
+  max-height: 53px;
 }
 
 .resetPassCta:hover {
