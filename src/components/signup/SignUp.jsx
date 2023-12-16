@@ -6,12 +6,16 @@ import {
   createUserWithEmailAndPassword,
 } from "firebase/auth";
 import { getDatabase, ref, set } from "firebase/database";
+import { useNavigate } from "react-router-dom";
+import { initializeApp } from "firebase/app";
+import firebase from "../../utils/firebase";
 
-const auth = getAuth();
-
-const db = getDatabase();
+const auth = getAuth(firebase);
+const db = getDatabase(firebase);
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
   const signupEmail = useRef(null);
   const signupPassword = useRef(null);
 
@@ -47,7 +51,7 @@ const SignUp = () => {
       console.log(register);
       // await set(ref(db, "users/" + register.user.uid), register.user.uid);
 
-      // navigate("/bank");
+      navigate("/");
     } catch (err) {
       console.error(err);
     }

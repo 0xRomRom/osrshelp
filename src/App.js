@@ -20,23 +20,15 @@ const App = () => {
   const [mainState, setMainState] = useState("Home");
   const [subState, setSubState] = useState(null);
 
-  useEffect(() => {
-    console.log(window.location.href.slice(-5));
-  }, []);
-
-  const location = window.location.href.slice(-5);
-
   return (
     <div className={stl.app}>
-      {location !== "login" && (
-        <Nav
-          setActiveTab={setActiveTab}
-          setMainState={setMainState}
-          setSubState={setSubState}
-          activeTab={activeTab}
-          playerName={playerName}
-        />
-      )}
+      <Nav
+        setActiveTab={setActiveTab}
+        setMainState={setMainState}
+        setSubState={setSubState}
+        activeTab={activeTab}
+        playerName={playerName}
+      />
       <Routes>
         <Route path="/login" element={<SignUp />} />
       </Routes>
