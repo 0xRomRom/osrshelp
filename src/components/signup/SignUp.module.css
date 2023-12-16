@@ -107,7 +107,7 @@
 }
 
 .createCta {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   width: 100%;
   padding: 1rem 0rem;
   border: none;
@@ -247,4 +247,10 @@
 
 .purple {
   color: rgb(189, 41, 189);
+}
+
+.errorMsg {
+  text-align: center;
+  font-size: 16px;
+  color: red;
 }

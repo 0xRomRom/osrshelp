@@ -26,7 +26,13 @@ const SignUp = ({ setLoggedInUser }) => {
   const [signupState, setSignupState] = useState(true);
   const [resetPassActive, setResetPassActive] = useState(false);
 
+  const [error, setError] = useState("");
+
   useEffect(() => {
+    if (signupEmail) {
+      signupEmail.current?.focus();
+    }
+
     if (recoverMail) {
       recoverMail.current?.focus();
     }
@@ -42,6 +48,8 @@ const SignUp = ({ setLoggedInUser }) => {
   const handleRegister = async (e) => {
     e.preventDefault();
 
+    setError("");
+
     try {
       const user = await createUserWithEmailAndPassword(
         auth,
@@ -54,7 +62,19 @@ const SignUp = ({ setLoggedInUser }) => {
 
       navigate("/");
     } catch (err) {
+      const code = err.code;
+      if (code === "auth/invalid-email") {
+        setError("Invalid email");
+      }
+      if (code === "auth/missing-password") {
+        setError("Missing password");
+      }
+      if (code === "auth/weak-password") {
+        setError("Weak password");
+      }
+
       console.error(err);
+      console.error(err.code);
     }
   };
   const handleLogin = async (e) => {
@@ -102,6 +122,7 @@ const SignUp = ({ setLoggedInUser }) => {
                   placeholder="Password"
                   ref={signupPassword}
                 />
+                {error && <span className={stl.errorMsg}>{error}</span>}
                 <button className={stl.createCta} onClick={handleRegister}>
                   Create account
                 </button>
