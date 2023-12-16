@@ -58,32 +58,27 @@ const SignUp = ({ setLoggedInUser }) => {
     if (!saveChecked) {
       setIsChecked(false);
     }
-  }, [saveChecked]);
+    if (prefersLoginScreen) {
+      setSignupState(false);
+    }
+  }, [saveChecked, prefersLoginScreen]);
 
   useEffect(() => {
     if (resetPassActive) {
       recoverMail.current?.focus();
     }
-    if (prefersLoginScreen) {
-      setSignupState(false);
-    }
+
     if (savedUsername) {
       setStoredUsername(savedUsername);
       loginPassword.current?.focus();
     }
-  }, [prefersLoginScreen, saveChecked, savedUsername, resetPassActive]);
+  }, [saveChecked, savedUsername, resetPassActive]);
 
   useEffect(() => {
     if (signupState) {
       signupEmail.current?.focus();
     }
-    if (!signupState) {
-      if (savedUsername || storedUsername) {
-        loginPassword.current?.focus();
-        return;
-      }
-      loginEmail.current?.focus();
-    }
+    loginEmail.current?.focus();
   }, [signupState, savedUsername, storedUsername]);
 
   const toggleView = () => {

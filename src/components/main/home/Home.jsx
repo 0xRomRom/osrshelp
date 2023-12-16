@@ -9,30 +9,14 @@ import TotalUsers from "./totalUsersBox/TotalUsers";
 import OSRSRadio from "./radio/OSRSRadio";
 import Pagination from "../pagination/Pagination";
 
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
-import CheckoutForm from "../../../utils/checkoutForm/CheckoutForm";
-
 const Home = (props) => {
-  const [stripePromise, setStripePromise] = useState(null);
-  const [clientSecret, setClientSecret] = useState("");
+  const [skillsFetched, setSkillsFetched] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5252/config").then(async (r) => {
-      const { publishableKey } = await r.json();
-      setStripePromise(loadStripe(publishableKey));
-    });
-  }, []);
-
-  useEffect(() => {
-    fetch("http://localhost:5252/create-payment-intent", {
-      method: "POST",
-      body: JSON.stringify({}),
-    }).then(async (result) => {
-      var { clientSecret } = await result.json();
-      setClientSecret(clientSecret);
-    });
-  }, []);
+    if (props.skills || props.skillsExp) {
+      setSkillsFetched(true);
+    }
+  }, [props.skills, props.skillsExp]);
 
   return (
     <>
@@ -41,19 +25,14 @@ const Home = (props) => {
         mainState={props.mainState}
         subState={props.subState}
         setSubState={props.setSubState}
+        premiumUser={props.premiumUser}
       />
       <div className={stl.modal}>
         <div className={stl.imageBox}>
           <img src={welcometxt} alt="Welcome Text" className={stl.welcometxt} />
         </div>
         <div className={stl.modalbottom}>
-          {clientSecret && stripePromise && (
-            <Elements stripe={stripePromise} options={{ clientSecret }}>
-              <CheckoutForm />
-            </Elements>
-          )}
-
-          {/* {skillsFetched ? (
+          {skillsFetched ? (
             <UserBox
               skills={props.skills}
               skillsExp={props.skillsExp}
@@ -69,7 +48,7 @@ const Home = (props) => {
             />
           )}
           <TotalUsers />
-          <OSRSRadio /> */}
+          <OSRSRadio />
         </div>
       </div>
     </>

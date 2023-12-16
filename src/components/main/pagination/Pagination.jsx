@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 
-const Pagination = ({ mainState, subState, setSubState }) => {
+const Pagination = ({ mainState, subState, setSubState, premiumUser }) => {
   const navigate = useNavigate();
 
   const [connectedUser, setConnectedUser] = useState(false);
@@ -55,8 +55,9 @@ const Pagination = ({ mainState, subState, setSubState }) => {
         )}
       </div>
       <div className={stl.rightBar}>
+        {!premiumUser && <button>Upgrade</button>}
         <button className={stl.loginBtn} onClick={handleClick}>
-          {connectedUser ? "Logout" : "Login"}
+          {auth.currentUser ? "Logout" : "Login"}
         </button>
       </div>
     </div>

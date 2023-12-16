@@ -14,7 +14,7 @@
   background: linear-gradient(90deg, rgb(189, 41, 189), rgb(159, 35, 159));
 }
 
-form {
+.payform {
   width: 25rem;
   height: 25rem;
   height: initial;
@@ -24,7 +24,7 @@ form {
 .lifetime {
   font-size: 16px;
   color: black;
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
   top: -1rem;
   position: relative;
@@ -34,4 +34,9 @@ form {
 .purple {
   color: rgb(189, 41, 189);
   font-weight: bold;
+  font-size: 28px;
+}
+
+#payment-message {
+  font-size: 16px;
 }

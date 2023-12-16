@@ -34,12 +34,13 @@ export default function CheckoutForm() {
     } else {
       setMessage("An unexpected error occured.");
     }
+    console.log("paid");
 
     setIsProcessing(false);
   };
 
   return (
-    <form id="payment-form" onSubmit={handleSubmit}>
+    <form id="payment-form" onSubmit={handleSubmit} className={stl.payform}>
       <span className={stl.lifetime}>
         Lifetime for only <span className={stl.purple}>$9.99</span>
       </span>

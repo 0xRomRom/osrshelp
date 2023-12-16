@@ -24,7 +24,7 @@ const App = () => {
   const [subState, setSubState] = useState(null);
 
   const [loggedInUser, setLoggedInUser] = useState({});
-  const [runeUser, setRuneUser] = useState(false);
+  const [premiumUser, setPremiumUser] = useState(false);
 
   useEffect(() => {
     if (Object.keys(loggedInUser).length > 0) {
@@ -35,15 +35,15 @@ const App = () => {
       get(child(dbref, "users/" + uid)).then((snapshot) => {
         const data = snapshot.val();
         if (data.premium) {
-          setRuneUser(true);
+          setPremiumUser(true);
         }
       });
     }
   }, [loggedInUser]);
 
   useEffect(() => {
-    console.log(runeUser);
-  }, [runeUser]);
+    console.log(premiumUser);
+  }, [premiumUser]);
 
   return (
     <div className={stl.app}>
@@ -77,6 +77,7 @@ const App = () => {
                 setSubState={setSubState}
                 subState={subState}
                 loggedInUser={loggedInUser}
+                premiumUser={premiumUser}
               />
             }
           />

@@ -2,9 +2,8 @@ import stl from "./Checkout.module.css";
 import { useNavigate } from "react-router-dom";
 import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 
-import { Elements, PaymentElement } from "@stripe/react-stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
 import { useState } from "react";
-import { useStripe, useElements } from "@stripe/react-stripe-js";
 
 import CheckoutForm from "../checkoutForm/CheckoutForm";
 import { useEffect } from "react";
