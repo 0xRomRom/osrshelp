@@ -76,7 +76,7 @@ const SignUp = ({ setLoggedInUser }) => {
       signupEmail.current?.focus();
     }
     if (!signupState) {
-      if (savedUsername) {
+      if (savedUsername || storedUsername) {
         loginPassword.current?.focus();
         return;
       }
