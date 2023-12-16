@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import stl from "./App.module.css";
 import Nav from "./components/nav/Nav";
 import { Routes, Route } from "react-router-dom";
@@ -9,8 +9,6 @@ import SkillsTab from "./components/main/skills/SkillsTab";
 import MoneyMakers from "./components/main/moneymakers/MoneyMakers";
 import GearCalculator from "./components/main/gearcalculator/GearCalculator";
 
-import { useEffect } from "react";
-
 const App = () => {
   const [activeTab, setActiveTab] = useState("home");
   const [skills, setSkills] = useState(null);
@@ -19,6 +17,14 @@ const App = () => {
 
   const [mainState, setMainState] = useState("Home");
   const [subState, setSubState] = useState(null);
+
+  const [loggedInUser, setLoggedInUser] = useState({});
+
+  useEffect(() => {
+    if (Object.keys(loggedInUser).length > 0) {
+      console.log(loggedInUser);
+    }
+  }, [loggedInUser]);
 
   return (
     <div className={stl.app}>
@@ -30,7 +36,10 @@ const App = () => {
         playerName={playerName}
       />
       <Routes>
-        <Route path="/login" element={<SignUp />} />
+        <Route
+          path="/login"
+          element={<SignUp setLoggedInUser={setLoggedInUser} />}
+        />
       </Routes>
 
       <div className={stl.content}>

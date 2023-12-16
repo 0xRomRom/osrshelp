@@ -13,7 +13,7 @@ import firebase from "../../utils/firebase";
 const auth = getAuth(firebase);
 const db = getDatabase(firebase);
 
-const SignUp = () => {
+const SignUp = ({ setLoggedInUser }) => {
   const navigate = useNavigate();
 
   const signupEmail = useRef(null);
@@ -43,12 +43,13 @@ const SignUp = () => {
     e.preventDefault();
 
     try {
-      const register = await createUserWithEmailAndPassword(
+      const user = await createUserWithEmailAndPassword(
         auth,
         signupEmail.current.value,
         signupPassword.current.value
       );
-      console.log(register);
+      console.log(user);
+      setLoggedInUser(user);
       // await set(ref(db, "users/" + register.user.uid), register.user.uid);
 
       navigate("/");
