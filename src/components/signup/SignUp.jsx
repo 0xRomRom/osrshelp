@@ -91,6 +91,22 @@ const SignUp = ({ setLoggedInUser }) => {
     setSignupState(!signupState);
   };
 
+  const newUser = {
+    premium: false,
+    prebuilds: {
+      slot1: {},
+      slot2: {},
+      slot3: {},
+      slot4: {},
+      slot5: {},
+      slot6: {},
+      slot7: {},
+      slot8: {},
+      slot9: {},
+      slot10: {},
+    },
+  };
+
   const handleRegister = async (e) => {
     e.preventDefault();
 
@@ -106,7 +122,7 @@ const SignUp = ({ setLoggedInUser }) => {
       setLoggedInUser(user);
       localStorage.setItem("PrefersLoginScreen", "True");
 
-      await set(ref(db, "users/" + user.user.uid), user.user.uid);
+      await set(ref(db, "users/" + user.user.uid), newUser);
       setLoading(false);
       navigate("/");
     } catch (err) {

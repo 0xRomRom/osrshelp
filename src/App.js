@@ -3,12 +3,14 @@ import stl from "./App.module.css";
 import Nav from "./components/nav/Nav";
 import { Routes, Route } from "react-router-dom";
 import SignUp from "./components/signup/SignUp";
+import { get, getDatabase, ref, child } from "firebase/database";
 
 import Home from "./components/main/home/Home";
 import SkillsTab from "./components/main/skills/SkillsTab";
 import MoneyMakers from "./components/main/moneymakers/MoneyMakers";
 import GearCalculator from "./components/main/gearcalculator/GearCalculator";
 
+const db = getDatabase();
 const App = () => {
   const [activeTab, setActiveTab] = useState("home");
   const [skills, setSkills] = useState(null);
@@ -22,7 +24,15 @@ const App = () => {
 
   useEffect(() => {
     if (Object.keys(loggedInUser).length > 0) {
-      console.log(loggedInUser);
+      const uid = loggedInUser.user.uid;
+      console.log(loggedInUser.user.uid);
+
+      const dbref = ref(db);
+
+      get(child(dbref, "users/" + uid)).then((snapshot) => {
+        const data = snapshot.val();
+        console.log(data.premium);
+      });
     }
   }, [loggedInUser]);
 
