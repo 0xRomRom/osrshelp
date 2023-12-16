@@ -1,0 +1,37 @@
+.cta {
+  height: 3rem;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  background-color: rgb(189, 41, 189);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background: linear-gradient(90deg, rgb(189, 41, 189), rgb(159, 35, 159));
+}
+
+form {
+  width: 25rem;
+  height: 25rem;
+  height: initial;
+  color: white !important;
+}
+
+.lifetime {
+  font-size: 16px;
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  top: -1rem;
+  position: relative;
+  font-weight: bold;
+}
+
+.purple {
+  color: rgb(189, 41, 189);
+  font-weight: bold;
+}

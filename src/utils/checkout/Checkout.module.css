@@ -40,3 +40,14 @@
   margin-top: 0.4rem;
   font-size: 16px;
 }
+
+.modal {
+  width: 27.5rem;
+  height: 27.5rem;
+  background-color: rgb(52, 21, 52);
+  background-color: rgb(232, 232, 232);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4rem;
+}

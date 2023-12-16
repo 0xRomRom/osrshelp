@@ -1,6 +1,7 @@
 import { PaymentElement } from "@stripe/react-stripe-js";
 import { useState } from "react";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
+import stl from "./CheckoutForm.module.css";
 
 export default function CheckoutForm() {
   const stripe = useStripe();
@@ -39,8 +40,15 @@ export default function CheckoutForm() {
 
   return (
     <form id="payment-form" onSubmit={handleSubmit}>
+      <span className={stl.lifetime}>
+        Lifetime for only <span className={stl.purple}>$9.99</span>
+      </span>
       <PaymentElement id="payment-element" />
-      <button disabled={isProcessing || !stripe || !elements} id="submit">
+      <button
+        disabled={isProcessing || !stripe || !elements}
+        id="submit"
+        className={stl.cta}
+      >
         <span id="button-text">
           {isProcessing ? "Processing ... " : "Pay now"}
         </span>
