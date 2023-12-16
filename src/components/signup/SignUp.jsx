@@ -38,17 +38,17 @@ const SignUp = ({ setLoggedInUser }) => {
     if (prefersLoginScreen === "True") {
       setSignupState(false);
     }
+    signupEmail.current?.focus();
     if (signupEmail) {
-      signupEmail.current?.focus();
     }
 
-    if (recoverMail) {
-      recoverMail.current?.focus();
+    loginEmail.current?.focus();
+    if (loginEmail) {
     }
     if (resetPassActive) {
-      loginEmail.current?.focus();
+      recoverMail.current?.focus();
     }
-  }, [resetPassActive]);
+  }, [signupState, prefersLoginScreen, resetPassActive]);
 
   const toggleView = () => {
     setError("");
@@ -177,7 +177,10 @@ const SignUp = ({ setLoggedInUser }) => {
                     checked={isChecked}
                     onChange={handleCheckboxChange}
                   />
-                  <label for="remember" className={stl.rememberLabel}></label>
+                  <label
+                    htmlFor="remember"
+                    className={stl.rememberLabel}
+                  ></label>
                   <span className={stl.rememberUsername}>Remember email</span>
                 </div>
                 {error && <span className={stl.errorMsg}>{error}</span>}
