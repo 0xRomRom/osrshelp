@@ -57,8 +57,18 @@ const SignUp = ({ setLoggedInUser }) => {
       console.error(err);
     }
   };
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
+
+    try {
+      const user = await signInWithEmailAndPassword(
+        auth,
+        loginEmail.current.value,
+        loginPassword.current.value
+      );
+      setLoggedInUser(user);
+      navigate("/");
+    } catch (err) {}
   };
   const handlePasswordReset = (e) => {
     e.preventDefault();
