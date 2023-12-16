@@ -9,6 +9,10 @@ import TotalUsers from "./totalUsersBox/TotalUsers";
 import OSRSRadio from "./radio/OSRSRadio";
 import Pagination from "../pagination/Pagination";
 
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import CheckoutForm from "../../../utils/checkoutForm/CheckoutForm";
+
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
 
@@ -17,6 +21,26 @@ const Home = (props) => {
       setSkillsFetched(true);
     }
   }, [props.skills, props.skillsExp]);
+
+  const [stripePromise, setStripePromise] = useState(null);
+  const [clientSecret, setClientSecret] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:5252/config").then(async (r) => {
+      const { publishableKey } = await r.json();
+      setStripePromise(loadStripe(publishableKey));
+    });
+  }, []);
+
+  useEffect(() => {
+    fetch("http://localhost:5252/create-payment-intent", {
+      method: "POST",
+      body: JSON.stringify({}),
+    }).then(async (result) => {
+      var { clientSecret } = await result.json();
+      setClientSecret(clientSecret);
+    });
+  }, []);
 
   return (
     <>
@@ -31,7 +55,13 @@ const Home = (props) => {
           <img src={welcometxt} alt="Welcome Text" className={stl.welcometxt} />
         </div>
         <div className={stl.modalbottom}>
-          {skillsFetched ? (
+          {clientSecret && stripePromise && (
+            <Elements stripe={stripePromise} options={{ clientSecret }}>
+              <CheckoutForm />
+            </Elements>
+          )}
+
+          {/* {skillsFetched ? (
             <UserBox
               skills={props.skills}
               skillsExp={props.skillsExp}
@@ -47,7 +77,7 @@ const Home = (props) => {
             />
           )}
           <TotalUsers />
-          <OSRSRadio />
+          <OSRSRadio /> */}
         </div>
       </div>
     </>

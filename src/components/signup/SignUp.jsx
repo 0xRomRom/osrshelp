@@ -84,7 +84,7 @@ const SignUp = ({ setLoggedInUser }) => {
       }
       loginEmail.current?.focus();
     }
-  }, [signupState, savedUsername]);
+  }, [signupState, savedUsername, storedUsername]);
 
   const toggleView = () => {
     setError("");
@@ -93,18 +93,6 @@ const SignUp = ({ setLoggedInUser }) => {
 
   const newUser = {
     premium: false,
-    prebuilds: {
-      slot1: {},
-      slot2: {},
-      slot3: {},
-      slot4: {},
-      slot5: {},
-      slot6: {},
-      slot7: {},
-      slot8: {},
-      slot9: {},
-      slot10: {},
-    },
   };
 
   const handleRegister = async (e) => {

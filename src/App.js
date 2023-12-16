@@ -11,6 +11,7 @@ import MoneyMakers from "./components/main/moneymakers/MoneyMakers";
 import GearCalculator from "./components/main/gearcalculator/GearCalculator";
 
 const db = getDatabase();
+
 const App = () => {
   const [activeTab, setActiveTab] = useState("home");
   const [skills, setSkills] = useState(null);
@@ -21,20 +22,26 @@ const App = () => {
   const [subState, setSubState] = useState(null);
 
   const [loggedInUser, setLoggedInUser] = useState({});
+  const [runeUser, setRuneUser] = useState(false);
 
   useEffect(() => {
     if (Object.keys(loggedInUser).length > 0) {
       const uid = loggedInUser.user.uid;
-      console.log(loggedInUser.user.uid);
 
       const dbref = ref(db);
 
       get(child(dbref, "users/" + uid)).then((snapshot) => {
         const data = snapshot.val();
-        console.log(data.premium);
+        if (data.premium) {
+          setRuneUser(true);
+        }
       });
     }
   }, [loggedInUser]);
+
+  useEffect(() => {
+    console.log(runeUser);
+  }, [runeUser]);
 
   return (
     <div className={stl.app}>
@@ -45,15 +52,13 @@ const App = () => {
         activeTab={activeTab}
         playerName={playerName}
       />
-      <Routes>
-        <Route
-          path="/login"
-          element={<SignUp setLoggedInUser={setLoggedInUser} />}
-        />
-      </Routes>
 
       <div className={stl.content}>
         <Routes>
+          <Route
+            path="/login"
+            element={<SignUp setLoggedInUser={setLoggedInUser} />}
+          />
           <Route
             index
             path="/"
