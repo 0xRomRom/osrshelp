@@ -22,7 +22,8 @@
 
 .modal {
   padding: 36px;
-
+  width: 350px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,6 +126,11 @@
   background-color: rgb(164, 6, 164);
   color: white;
 }
+.createCta:focus {
+  background-color: purple;
+  background-color: rgb(164, 6, 164);
+  color: white;
+}
 
 .border {
   height: 1px;
@@ -191,10 +197,17 @@
     rgb(160, 6, 160)
   );
 }
+.loginCta:focus {
+  background: linear-gradient(
+    120deg,
+    rgb(142, 5, 142),
+    rgb(189, 7, 189),
+    rgb(160, 6, 160)
+  );
+}
 
 .resetHero {
   font-size: 32px;
-  padding: 0rem 1.5rem;
   color: rgb(220, 220, 220);
   text-align: center;
   padding-bottom: 2rem;
@@ -228,6 +241,14 @@
 }
 
 .resetPassCta:hover {
+  background: linear-gradient(
+    120deg,
+    rgb(142, 5, 142),
+    rgb(189, 7, 189),
+    rgb(160, 6, 160)
+  );
+}
+.resetPassCta:focus {
   background: linear-gradient(
     120deg,
     rgb(142, 5, 142),
@@ -294,4 +315,26 @@
 input[type="checkbox"]:checked + .rememberLabel::before {
   background-color: rgb(189, 41, 189);
   border: 2px solid rgb(189, 41, 189);
+}
+
+.homeBox {
+  position: absolute;
+  left: 0rem;
+  top: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.osrshelpLogo {
+  width: 20px;
+  margin: 0.5rem 1rem;
+}
+
+.navLogoSpan {
+  color: white;
+  font-weight: 800;
+  margin-top: 0.4rem;
+  font-size: 16px;
 }

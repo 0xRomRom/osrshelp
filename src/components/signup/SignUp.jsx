@@ -10,6 +10,8 @@ import { useNavigate } from "react-router-dom";
 import firebase from "../../utils/firebase";
 import Spinner from "../../utils/loadingspinner/Spinner";
 
+import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
+
 const auth = getAuth(firebase);
 const db = getDatabase(firebase);
 
@@ -173,17 +175,16 @@ const SignUp = ({ setLoggedInUser }) => {
 
   return (
     <div className={stl.signup}>
+      <div className={stl.homeBox} onClick={() => navigate("/")}>
+        <img src={mainLogo} alt="OSRS Help logo" className={stl.osrshelpLogo} />
+        <span className={stl.navLogoSpan}>OSRS Help</span>
+      </div>
       <div className={stl.modal}>
         {!resetPassActive && (
           <>
             <h1 className={stl.hero}>
-              <span className={`${signupState ? stl.purple : ""}`}>
-                Sign up
-              </span>{" "}
-              or{" "}
-              <span className={`${!signupState ? stl.purple : ""}`}>
-                log in
-              </span>
+              {signupState && <span>Sign up</span>}
+              {!signupState && <span>Log in</span>}
             </h1>
             {signupState && (
               <form className={stl.loginForm}>
