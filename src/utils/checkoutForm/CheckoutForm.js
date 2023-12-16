@@ -2,6 +2,7 @@ import { PaymentElement } from "@stripe/react-stripe-js";
 import { useState } from "react";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
 import stl from "./CheckoutForm.module.css";
+import partyhat from "../../assets/random/Blue_partyhat.webp";
 
 export default function CheckoutForm() {
   const stripe = useStripe();
@@ -44,6 +45,7 @@ export default function CheckoutForm() {
       <span className={stl.lifetime}>
         Lifetime for only <span className={stl.purple}>$9.99</span>
       </span>
+      <img src={partyhat} alt="Blue partyhat" className={stl.phat} />
       <PaymentElement id="payment-element" />
       <button
         disabled={isProcessing || !stripe || !elements}
@@ -55,7 +57,11 @@ export default function CheckoutForm() {
         </span>
       </button>
       {/* Show any error or success messages */}
-      {message && <div id="payment-message">{message}</div>}
+      {message && (
+        <div id="payment-message" className={stl.errorMsg}>
+          {message}
+        </div>
+      )}
     </form>
   );
 }
