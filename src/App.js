@@ -10,7 +10,7 @@ import SkillsTab from "./components/main/skills/SkillsTab";
 import MoneyMakers from "./components/main/moneymakers/MoneyMakers";
 import GearCalculator from "./components/main/gearcalculator/GearCalculator";
 
-import Checkout from "./utils/checkout/Checkout";
+import Checkout from "./components/checkout/Checkout";
 
 const db = getDatabase();
 

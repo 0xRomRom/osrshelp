@@ -5,7 +5,7 @@ import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 import { Elements } from "@stripe/react-stripe-js";
 import { useState } from "react";
 
-import CheckoutForm from "../checkoutForm/CheckoutForm";
+import CheckoutForm from "./checkoutForm/CheckoutForm";
 import { useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 

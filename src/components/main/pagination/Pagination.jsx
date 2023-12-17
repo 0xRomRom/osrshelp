@@ -58,6 +58,7 @@ const Pagination = ({ mainState, subState, setSubState, premiumUser }) => {
           <button
             className={stl.upgradeCta}
             onClick={() => navigate("/checkout")}
+            style={{ display: !premiumUser ? "inline" : "none" }}
           >
             Upgrade
           </button>

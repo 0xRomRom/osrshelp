@@ -2,7 +2,7 @@ import { PaymentElement } from "@stripe/react-stripe-js";
 import { useState } from "react";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
 import stl from "./CheckoutForm.module.css";
-import partyhat from "../../assets/random/Blue_partyhat.webp";
+import partyhat from "../../../assets/random/Blue_partyhat.webp";
 
 export default function CheckoutForm() {
   const stripe = useStripe();
