@@ -11,6 +11,7 @@ import MoneyMakers from "./components/main/moneymakers/MoneyMakers";
 import GearCalculator from "./components/main/gearcalculator/GearCalculator";
 
 import Checkout from "./components/checkout/Checkout";
+import PaymentSucces from "./components/paymentSuccess/PaymentSucces";
 
 const db = getDatabase();
 
@@ -54,6 +55,7 @@ const App = () => {
 
       <div className={stl.content}>
         <Routes>
+          <Route path="/succesful-payment" element={<PaymentSucces />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route
             path="/login"
