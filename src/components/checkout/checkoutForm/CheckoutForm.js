@@ -1,10 +1,18 @@
 import { PaymentElement } from "@stripe/react-stripe-js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
 import stl from "./CheckoutForm.module.css";
 import partyhat from "../../../assets/random/Blue_partyhat.webp";
+import { getAuth } from "firebase/auth";
+import firebase from "../../../utils/firebase";
+import { getDatabase, ref, set } from "firebase/database";
 
-export default function CheckoutForm() {
+const auth = getAuth(firebase);
+const db = getDatabase();
+
+const CheckoutForm = () => {
+  useEffect(() => {}, []);
+
   const stripe = useStripe();
   const elements = useElements();
 
@@ -21,20 +29,28 @@ export default function CheckoutForm() {
     }
 
     setIsProcessing(true);
+    try {
+      const { error } = await stripe.confirmPayment({
+        elements,
+        confirmParams: {
+          // Make sure to change this to your payment completion page
+          return_url: `${window.location.origin}/successful-payment`,
+        },
+      });
+      const uid = auth.currentUser.uid;
 
-    const { error } = await stripe.confirmPayment({
-      elements,
-      confirmParams: {
-        // Make sure to change this to your payment completion page
-        return_url: `${window.location.origin}/succesful-payment`,
-      },
-    });
-
-    if (error.type === "card_error" || error.type === "validation_error") {
-      setMessage(error.message);
-    } else {
-      setMessage("An unexpected error occured.");
+      await set(ref(db, `users/${uid}`), {
+        premium: true,
+      });
+    } catch (err) {
+      console.error(err);
+      if (err.type === "card_error" || err.type === "validation_error") {
+        setMessage(err.message);
+      } else {
+        setMessage("An unexpected error occured.");
+      }
     }
+
     console.log("paid");
 
     setIsProcessing(false);
@@ -64,4 +80,6 @@ export default function CheckoutForm() {
       )}
     </form>
   );
-}
+};
+
+export default CheckoutForm;

@@ -30,6 +30,7 @@ const App = () => {
   useEffect(() => {
     if (Object.keys(loggedInUser).length > 0) {
       const uid = loggedInUser.user.uid;
+      console.log(uid);
 
       const dbref = ref(db);
 
@@ -37,6 +38,7 @@ const App = () => {
         const data = snapshot.val();
         if (data.premium) {
           setPremiumUser(true);
+          return;
         }
       });
     }
@@ -55,8 +57,11 @@ const App = () => {
 
       <div className={stl.content}>
         <Routes>
-          <Route path="/succesful-payment" element={<PaymentSucces />} />
-          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/successful-payment" element={<PaymentSucces />} />
+          <Route
+            path="/checkout"
+            element={<Checkout loggedInUser={loggedInUser} />}
+          />
           <Route
             path="/login"
             element={<SignUp setLoggedInUser={setLoggedInUser} />}
