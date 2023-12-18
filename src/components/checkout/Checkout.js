@@ -9,6 +9,11 @@ import CheckoutForm from "./checkoutForm/CheckoutForm";
 import { useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 
+import { getAuth } from "firebase/auth";
+import firebase from "../../utils/firebase";
+
+const auth = getAuth(firebase);
+
 const Checkout = () => {
   const navigate = useNavigate();
 
@@ -16,17 +21,26 @@ const Checkout = () => {
   const [clientSecret, setClientSecret] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5252/config").then(async (r) => {
+    fetch(
+      "https://osrshelpstripe.netlify.app/.netlify/functions/server/config"
+    ).then(async (r) => {
       const { publishableKey } = await r.json();
       setStripePromise(loadStripe(publishableKey));
     });
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5252/create-payment-intent", {
-      method: "POST",
-      body: JSON.stringify({}),
-    }).then(async (result) => {
+    const uid = auth.currentUser.uid;
+    fetch(
+      "https://osrshelpstripe.netlify.app/.netlify/functions/server/create-payment-intent",
+      {
+        method: "POST",
+        body: JSON.stringify({ uid: uid }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    ).then(async (result) => {
       var { clientSecret } = await result.json();
       setClientSecret(clientSecret);
     });

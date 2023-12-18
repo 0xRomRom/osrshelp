@@ -3,12 +3,6 @@ import { useState, useEffect } from "react";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
 import stl from "./CheckoutForm.module.css";
 import partyhat from "../../../assets/random/Blue_partyhat.webp";
-import { getAuth } from "firebase/auth";
-import firebase from "../../../utils/firebase";
-import { getDatabase, ref, set } from "firebase/database";
-
-const auth = getAuth(firebase);
-const db = getDatabase();
 
 const CheckoutForm = () => {
   useEffect(() => {}, []);
@@ -37,11 +31,7 @@ const CheckoutForm = () => {
           return_url: `${window.location.origin}/successful-payment`,
         },
       });
-      const uid = auth.currentUser.uid;
-
-      await set(ref(db, `users/${uid}`), {
-        premium: true,
-      });
+      console.log(error);
     } catch (err) {
       console.error(err);
       if (err.type === "card_error" || err.type === "validation_error") {
