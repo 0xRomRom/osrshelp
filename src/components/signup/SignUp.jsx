@@ -195,12 +195,14 @@ const SignUp = ({ setLoggedInUser }) => {
                   className={stl.input}
                   placeholder="Email"
                   ref={signupEmail}
+                  autoComplete="current-password"
                 />
                 <input
                   type="password"
                   className={stl.input}
                   placeholder="Password"
                   ref={signupPassword}
+                  autoComplete="current-password"
                 />
                 {error && <span className={stl.errorMsg}>{error}</span>}
                 <button className={stl.createCta} onClick={handleRegister}>
@@ -217,12 +219,14 @@ const SignUp = ({ setLoggedInUser }) => {
                   ref={loginEmail}
                   value={storedUsername}
                   onChange={loginInputChange}
+                  autoComplete="current-password"
                 />
                 <input
                   type="password"
                   className={stl.input}
                   placeholder="Password"
                   ref={loginPassword}
+                  autoComplete="current-password"
                 />
                 <div className={stl.rememberBox}>
                   <input

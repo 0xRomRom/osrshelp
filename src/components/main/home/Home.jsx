@@ -8,6 +8,8 @@ import UserBox from "./userbox/UserBox";
 import TotalUsers from "./totalUsersBox/TotalUsers";
 import OSRSRadio from "./radio/OSRSRadio";
 import Pagination from "../pagination/Pagination";
+import { get, getDatabase, ref, child } from "firebase/database";
+const db = getDatabase();
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
@@ -17,6 +19,25 @@ const Home = (props) => {
       setSkillsFetched(true);
     }
   }, [props.skills, props.skillsExp]);
+
+  useEffect(() => {
+    if (Object.keys(props.loggedInUser).length > 0) {
+      const uid = props.loggedInUser.user.uid;
+      console.log(uid);
+
+      const dbref = ref(db);
+
+      get(child(dbref, "users/" + uid)).then((snapshot) => {
+        const data = snapshot.val();
+        if (data.premium) {
+          console.log("Premium");
+          props.setPremiumUser(true);
+          return;
+        }
+        props.setPremiumUser(false);
+      });
+    }
+  }, [props]);
 
   return (
     <>

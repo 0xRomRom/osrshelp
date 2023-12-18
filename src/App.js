@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import stl from "./App.module.css";
 import Nav from "./components/nav/Nav";
 import { Routes, Route } from "react-router-dom";
 import SignUp from "./components/signup/SignUp";
-import { get, getDatabase, ref, child } from "firebase/database";
+// import { get, getDatabase, ref, child } from "firebase/database";
 
 import Home from "./components/main/home/Home";
 import SkillsTab from "./components/main/skills/SkillsTab";
@@ -13,7 +13,7 @@ import GearCalculator from "./components/main/gearcalculator/GearCalculator";
 import Checkout from "./components/checkout/Checkout";
 import PaymentSucces from "./components/paymentSuccess/PaymentSucces";
 
-const db = getDatabase();
+// const db = getDatabase();
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("home");
@@ -26,24 +26,6 @@ const App = () => {
 
   const [loggedInUser, setLoggedInUser] = useState({});
   const [premiumUser, setPremiumUser] = useState(false);
-
-  useEffect(() => {
-    if (Object.keys(loggedInUser).length > 0) {
-      const uid = loggedInUser.user.uid;
-      console.log(uid);
-
-      const dbref = ref(db);
-
-      get(child(dbref, "users/" + uid)).then((snapshot) => {
-        const data = snapshot.val();
-        if (data.premium) {
-          setPremiumUser(true);
-          return;
-        }
-      });
-    }
-    setPremiumUser(false);
-  }, [loggedInUser]);
 
   return (
     <div className={stl.app}>
@@ -82,6 +64,7 @@ const App = () => {
                 subState={subState}
                 loggedInUser={loggedInUser}
                 premiumUser={premiumUser}
+                setPremiumUser={setPremiumUser}
               />
             }
           />
