@@ -19,10 +19,8 @@ const PaymentSucces = ({ setPremiumUser }) => {
       ) {
         console.log("==SECURED==");
         setPremiumUser(true);
-      }
-
-      for (const param of searchParams) {
-        console.log(`${param[0]}: ${param[1]}`);
+      } else {
+        navigate("/");
       }
     };
 
