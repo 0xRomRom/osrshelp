@@ -67,7 +67,6 @@ const App = () => {
                 subState={subState}
                 loggedInUser={loggedInUser}
                 premiumUser={premiumUser}
-                setPremiumUser={setPremiumUser}
               />
             }
           />
@@ -84,6 +83,7 @@ const App = () => {
                 mainState={mainState}
                 setSubState={setSubState}
                 subState={subState}
+                premiumUser={premiumUser}
               />
             }
           />
