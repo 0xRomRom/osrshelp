@@ -6,7 +6,7 @@ import {
   createUserWithEmailAndPassword,
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set, get, child } from "firebase/database";
 import firebase from "../../utils/firebase";
 import Spinner from "../../utils/loadingspinner/Spinner";
 
@@ -15,7 +15,7 @@ import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 const auth = getAuth(firebase);
 const db = getDatabase(firebase);
 
-const SignUp = ({ setLoggedInUser }) => {
+const SignUp = ({ setLoggedInUser, setPremiumUser }) => {
   const prefersLoginScreen = localStorage.getItem("PrefersLoginScreen");
   const savedUsername = localStorage.getItem("SaveUsername");
   const saveChecked = localStorage.getItem("SaveChecked");
@@ -152,6 +152,22 @@ const SignUp = ({ setLoggedInUser }) => {
         localStorage.setItem("SaveUsername", loginEmail.current.value);
       }
       setLoading(false);
+
+      const uid = user.user.uid;
+      console.log(uid);
+
+      const dbref = ref(db);
+
+      get(child(dbref, "users/" + uid)).then((snapshot) => {
+        const data = snapshot.val();
+        if (data.premium) {
+          console.log("Premium");
+          setPremiumUser(true);
+          return;
+        }
+        setPremiumUser(false);
+      });
+
       navigate("/");
     } catch (err) {
       setLoading(false);

@@ -13,8 +13,6 @@ import GearCalculator from "./components/main/gearcalculator/GearCalculator";
 import Checkout from "./components/checkout/Checkout";
 import PaymentSucces from "./components/paymentSuccess/PaymentSucces";
 
-// const db = getDatabase();
-
 const App = () => {
   const [activeTab, setActiveTab] = useState("home");
   const [skills, setSkills] = useState(null);
@@ -46,7 +44,12 @@ const App = () => {
           />
           <Route
             path="/login"
-            element={<SignUp setLoggedInUser={setLoggedInUser} />}
+            element={
+              <SignUp
+                setLoggedInUser={setLoggedInUser}
+                setPremiumUser={setPremiumUser}
+              />
+            }
           />
           <Route
             index
