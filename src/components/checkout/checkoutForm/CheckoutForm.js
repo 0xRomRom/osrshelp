@@ -41,8 +41,6 @@ const CheckoutForm = () => {
       }
     }
 
-    console.log("paid");
-
     setIsProcessing(false);
   };
 

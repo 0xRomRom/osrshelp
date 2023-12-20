@@ -37,7 +37,10 @@ const App = () => {
 
       <div className={stl.content}>
         <Routes>
-          <Route path="/successful-payment" element={<PaymentSucces />} />
+          <Route
+            path="/successful-payment"
+            element={<PaymentSucces setPremiumUser={setPremiumUser} />}
+          />
           <Route
             path="/checkout"
             element={<Checkout loggedInUser={loggedInUser} />}
@@ -94,6 +97,7 @@ const App = () => {
                 mainState={mainState}
                 setSubState={setSubState}
                 subState={subState}
+                premiumUser={premiumUser}
               />
             }
           />

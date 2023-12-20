@@ -93,7 +93,6 @@ const ConfigBar = ({
   }, [activeSlot, setActiveItemList]);
 
   useEffect(() => {
-    console.log(gearFilter);
     if (gearFilter === "All") {
       setListCopy(itemList);
       return;

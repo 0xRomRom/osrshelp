@@ -12,7 +12,6 @@ import PreBuilds from "./prebuilds/PreBuilds";
 import Pagination from "../pagination/Pagination";
 
 import { useState, useRef } from "react";
-import { useEffect } from "react";
 
 const GearCalculator = (props) => {
   const targetDivRef = useRef(null);
@@ -67,10 +66,6 @@ const GearCalculator = (props) => {
     window.scrollTo(0, 200);
   };
 
-  useEffect(() => {
-    console.log(bonusState);
-  }, [bonusState]);
-
   return (
     <>
       <div className={stl.adBar}>[ Advertisements ]</div>
@@ -78,6 +73,7 @@ const GearCalculator = (props) => {
         mainState={props.mainState}
         subState={props.subState}
         setSubState={props.setSubState}
+        premiumUser={props.premiumUser}
       />
       <div className={stl.gearcalculator}>
         <div className={stl.topWrap}>
