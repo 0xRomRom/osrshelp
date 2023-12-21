@@ -385,6 +385,42 @@ const SkillsTab = (props) => {
         />
 
         <Route
+          path="/farming"
+          element={
+            <FarmingCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+
+        <Route
+          path="/runecraft"
+          element={
+            <RunecraftCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+
+        <Route
           path="/*"
           element={
             <>
@@ -622,7 +658,8 @@ const SkillsTab = (props) => {
               <img src={slayerIcon} alt="Slayer Icon" className={stl.iconImg} />
               <span className={stl.skillName}>Slayer</span>
             </div> */}
-                  <div
+                  <Link
+                    to="/skillcalculators/farming"
                     className={`${stl.skill} ${stl.farming}`}
                     onClick={() => handleTabOpen("Farming")}
                   >
@@ -632,8 +669,9 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Farming</span>
-                  </div>
-                  <div
+                  </Link>
+                  <Link
+                    to="/skillcalculators/runecraft"
                     className={`${stl.skill} ${stl.runecraft}`}
                     onClick={() => handleTabOpen("Runecraft")}
                   >
@@ -643,7 +681,7 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Runecraft</span>
-                  </div>
+                  </Link>
                   <div
                     className={`${stl.skill} ${stl.hunter}`}
                     onClick={() => handleTabOpen("Hunter")}
