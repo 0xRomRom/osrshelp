@@ -77,6 +77,7 @@ const SkillsTab = (props) => {
             />
           }
         />
+
         <Route
           path="/defence"
           element={
@@ -94,6 +95,7 @@ const SkillsTab = (props) => {
             />
           }
         />
+
         <Route
           path="/strength"
           element={
@@ -111,6 +113,7 @@ const SkillsTab = (props) => {
             />
           }
         />
+
         <Route
           path="/hitpoints"
           element={
@@ -128,6 +131,7 @@ const SkillsTab = (props) => {
             />
           }
         />
+
         <Route
           path="/ranged"
           element={
@@ -145,6 +149,7 @@ const SkillsTab = (props) => {
             />
           }
         />
+
         <Route
           path="/prayer"
           element={
@@ -162,6 +167,42 @@ const SkillsTab = (props) => {
             />
           }
         />
+
+        <Route
+          path="/magic"
+          element={
+            <MagicCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+        <Route
+          path="/cooking"
+          element={
+            <CookingCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+
         <Route
           path="/*"
           element={
@@ -249,7 +290,8 @@ const SkillsTab = (props) => {
                       Prayer
                     </span>
                   </Link>
-                  <div
+                  <Link
+                    to="/skillcalculators/magic"
                     className={`${stl.skill} ${stl.magic}`}
                     onClick={() => handleTabOpen("Magic")}
                   >
@@ -259,8 +301,9 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Magic</span>
-                  </div>
-                  <div
+                  </Link>
+                  <Link
+                    to="/skillcalculators/cooking"
                     className={`${stl.skill} ${stl.cooking}`}
                     onClick={() => handleTabOpen("Cooking")}
                   >
@@ -270,7 +313,7 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Cooking</span>
-                  </div>
+                  </Link>
                   <div
                     className={`${stl.skill} ${stl.woodcutting}`}
                     onClick={() => handleTabOpen("Woodcutting")}

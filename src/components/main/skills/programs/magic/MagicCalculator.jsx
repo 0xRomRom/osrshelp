@@ -9,6 +9,8 @@ import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import MagicFilters from "./magicfilters/MagicFilters";
 import SearchFilter from "../searchfilter/SearchFilter";
 import SpellBookFilter from "./spellbookfilters/SpellBookFilter";
+import Pagination from "../../../pagination/Pagination";
+import { useNavigate } from "react-router-dom";
 
 import { useState } from "react";
 
@@ -16,6 +18,7 @@ import MagicGrid from "./magicgrid/MagicGrid";
 import StaffFilters from "./stafffilters/StaffFilters";
 
 const MagicCalculator = (props) => {
+  const navigate = useNavigate();
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
   const [filterChanged, setFilterChanged] = useState(false);
@@ -26,6 +29,7 @@ const MagicCalculator = (props) => {
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
+    navigate("/skillcalculators");
   };
 
   const handleUserReset = () => {
@@ -37,96 +41,106 @@ const MagicCalculator = (props) => {
   const arePropsDefined = props.skills;
 
   return (
-    <div className={stl.modal}>
-      <div className={stl.topBar}>
-        <FontAwesomeIcon
-          icon={faArrowLeft}
-          className={stl.backArrow}
-          onClick={handleMenuSwitch}
-        />
-        <img src={magicIcon} alt="Magic Level" className={stl.skillImg} />
-        <span className={stl.skillTitle}>Magic</span>
-        {arePropsDefined ? (
-          <div className={stl.userStatsBox}>
-            <div className={stl.userBlock}>
-              <span className={stl.playerName}>{props.playerName}</span>
-              <span className={stl.playerLvl}>
-                Level {props.skills["magic"]}
-              </span>
-            </div>
+    <>
+      <div className={stl.adBar}>[ Advertisements ]</div>
+      <Pagination
+        mainState={props.mainState}
+        subState={props.subState}
+        setSubState={props.setSubState}
+        premiumUser={props.premiumUser}
+        navTo="/skillcalculators"
+      />
+      <div className={stl.modal}>
+        <div className={stl.topBar}>
+          <FontAwesomeIcon
+            icon={faArrowLeft}
+            className={stl.backArrow}
+            onClick={handleMenuSwitch}
+          />
+          <img src={magicIcon} alt="Magic Level" className={stl.skillImg} />
+          <span className={stl.skillTitle}>Magic</span>
+          {arePropsDefined ? (
+            <div className={stl.userStatsBox}>
+              <div className={stl.userBlock}>
+                <span className={stl.playerName}>{props.playerName}</span>
+                <span className={stl.playerLvl}>
+                  Level {props.skills["magic"]}
+                </span>
+              </div>
 
-            <div className={stl.remainderBlock}>
-              <span className={stl.expToGo}>Xp till level</span>
-              <span className={stl.remaining}>
-                <CalculateRemainderExp
-                  skillname={"magic"}
-                  currentLvl={props.skills["magic"]}
-                  currentExp={props.skillsExp}
-                  className={stl.remainder}
-                />
-              </span>
+              <div className={stl.remainderBlock}>
+                <span className={stl.expToGo}>Xp till level</span>
+                <span className={stl.remaining}>
+                  <CalculateRemainderExp
+                    skillname={"magic"}
+                    currentLvl={props.skills["magic"]}
+                    currentExp={props.skillsExp}
+                    className={stl.remainder}
+                  />
+                </span>
+              </div>
+              <FontAwesomeIcon
+                icon={faTrashCan}
+                className={stl.trashcan}
+                onClick={handleUserReset}
+              />
             </div>
-            <FontAwesomeIcon
-              icon={faTrashCan}
-              className={stl.trashcan}
-              onClick={handleUserReset}
+          ) : (
+            <FetchUsername
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
             />
-          </div>
-        ) : (
-          <FetchUsername
-            setSkills={props.setSkills}
-            setSkillsExp={props.setSkillsExp}
-            setPlayerName={props.setPlayerName}
+          )}
+        </div>
+        <div className={stl.configRow}>
+          {arePropsDefined ? (
+            <TargetLevel
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              skillName={"magic"}
+              currentLvl={props.skills["magic"]}
+              currentExp={props.skillsExp}
+              setRemainingExp={setRemainingExp}
+              remainingExp={remainingExp}
+            />
+          ) : (
+            <NoPropsTargetLevel
+              setRemainingExp={setRemainingExp}
+              remainingExp={remainingExp}
+            />
+          )}
+          <MagicFilters
+            setMultiplier={setMultiplier}
+            setFilterChanged={setFilterChanged}
+            filterChanged={filterChanged}
           />
-        )}
-      </div>
-      <div className={stl.configRow}>
-        {arePropsDefined ? (
-          <TargetLevel
-            skills={props.skills}
-            skillsExp={props.skillsExp}
-            skillName={"magic"}
-            currentLvl={props.skills["magic"]}
-            currentExp={props.skillsExp}
-            setRemainingExp={setRemainingExp}
-            remainingExp={remainingExp}
+        </div>
+        <div className={stl.configRow2}>
+          <StaffFilters
+            setSelectedStaff={setSelectedStaff}
+            setStaffFilterChanged={setStaffFilterChanged}
+            staffFilterChanged={staffFilterChanged}
           />
-        ) : (
-          <NoPropsTargetLevel
-            setRemainingExp={setRemainingExp}
-            remainingExp={remainingExp}
+          <SearchFilter
+            setSearchState={setSearchState}
+            searchType="Search Spell"
           />
-        )}
-        <MagicFilters
-          setMultiplier={setMultiplier}
-          setFilterChanged={setFilterChanged}
-          filterChanged={filterChanged}
-        />
-      </div>
-      <div className={stl.configRow2}>
-        <StaffFilters
-          setSelectedStaff={setSelectedStaff}
-          setStaffFilterChanged={setStaffFilterChanged}
-          staffFilterChanged={staffFilterChanged}
-        />
-        <SearchFilter
-          setSearchState={setSearchState}
-          searchType="Search Spell"
-        />
-        <SpellBookFilter
-          setActiveSpellbook={setActiveSpellbook}
+          <SpellBookFilter
+            setActiveSpellbook={setActiveSpellbook}
+            activeSpellbook={activeSpellbook}
+          />
+        </div>
+        <MagicGrid
+          remainingExp={remainingExp}
+          skills={props.skills}
+          multiplier={multiplier}
+          searchState={searchState}
+          selectedStaff={selectedStaff}
           activeSpellbook={activeSpellbook}
         />
       </div>
-      <MagicGrid
-        remainingExp={remainingExp}
-        skills={props.skills}
-        multiplier={multiplier}
-        searchState={searchState}
-        selectedStaff={selectedStaff}
-        activeSpellbook={activeSpellbook}
-      />
-    </div>
+    </>
   );
 };
 
