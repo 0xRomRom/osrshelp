@@ -8,8 +8,6 @@ const AuthProvider = ({ children }) => {
   const [loggedInUser, setLoggedInUser] = useState({});
 
   useEffect(() => {
-    console.log(auth);
-
     onAuthStateChanged(auth, (user) => {
       if (user) {
         console.log(user);
