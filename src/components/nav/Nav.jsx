@@ -8,17 +8,27 @@ import xptable from "../../assets/icons/Xptable.webp";
 import donate from "../../assets/icons/Donate.webp";
 import mills from "../../assets/icons/Mills.webp";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Nav = (props) => {
+  const navigate = useNavigate();
+
   const handleTabSwitch = (tab, path) => {
     props.setActiveTab(tab);
     props.setMainState(path);
     props.setSubState(null);
   };
 
+  const handleHomeRoute = () => {
+    navigate("/");
+    props.setSubState(null);
+    props.setMainState("home");
+    props.setActiveTab("home");
+  };
+
   return (
     <div className={stl.modal}>
-      <div className={stl.logo}>
+      <div className={stl.logo} onClick={handleHomeRoute}>
         <img src={logo} alt="OSRS Help logo" className={stl.logoIcon} />
         <span className={stl.logoSpan}>OSRS Help</span>
       </div>

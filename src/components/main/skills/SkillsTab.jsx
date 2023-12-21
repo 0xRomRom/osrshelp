@@ -71,6 +71,9 @@ const SkillsTab = (props) => {
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
               setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
             />
           }
         />
