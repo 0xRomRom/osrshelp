@@ -349,6 +349,42 @@ const SkillsTab = (props) => {
         />
 
         <Route
+          path="/agility"
+          element={
+            <AgilityCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+
+        <Route
+          path="/thieving"
+          element={
+            <ThievingCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+
+        <Route
           path="/*"
           element={
             <>
@@ -555,7 +591,8 @@ const SkillsTab = (props) => {
                     />
                     <span className={stl.skillName}>Herblore</span>
                   </Link>
-                  <div
+                  <Link
+                    to="/skillcalculators/agility"
                     className={`${stl.skill} ${stl.agility}`}
                     onClick={() => handleTabOpen("Agility")}
                   >
@@ -565,8 +602,9 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Agility</span>
-                  </div>
-                  <div
+                  </Link>
+                  <Link
+                    to="/skillcalculators/thieving"
                     className={`${stl.skill} ${stl.thieving}`}
                     onClick={() => handleTabOpen("Thieving")}
                   >
@@ -576,7 +614,7 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Thieving</span>
-                  </div>
+                  </Link>
                   {/* <div
               className={`${stl.skill} ${stl.slayer}`}
               onClick={() => handleTabOpen("Slayer")}
