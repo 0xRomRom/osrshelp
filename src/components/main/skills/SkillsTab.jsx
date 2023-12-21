@@ -78,6 +78,23 @@ const SkillsTab = (props) => {
           }
         />
         <Route
+          path="/defence"
+          element={
+            <DefenceCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+        <Route
           path="/*"
           element={
             <>
@@ -102,7 +119,8 @@ const SkillsTab = (props) => {
                     />
                     <span className={stl.skillName}>Attack</span>
                   </Link>
-                  <div
+                  <Link
+                    to="/skillcalculators/defence"
                     className={`${stl.skill} ${stl.defence}`}
                     onClick={() => handleTabOpen("Defence")}
                   >
@@ -112,7 +130,7 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Defence</span>
-                  </div>
+                  </Link>
                   <div
                     className={`${stl.skill} ${stl.strength}`}
                     onClick={() => handleTabOpen("Strength")}

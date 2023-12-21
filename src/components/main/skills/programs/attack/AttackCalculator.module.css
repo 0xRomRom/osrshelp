@@ -9,7 +9,7 @@
   background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
   width: 100%;
   height: 6rem;
-  padding-left: 6rem;
+  padding-left: 1rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -20,12 +20,12 @@
 
 .backArrow {
   position: relative;
-  left: -4.75rem;
   top: -1.5rem;
   font-size: 1.2rem;
   color: gray;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  margin-right: 3rem;
 }
 
 .backArrow:hover {
