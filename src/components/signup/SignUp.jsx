@@ -154,14 +154,12 @@ const SignUp = ({ setLoggedInUser, setPremiumUser }) => {
       setLoading(false);
 
       const uid = user.user.uid;
-      console.log(uid);
 
       const dbref = ref(db);
 
       get(child(dbref, "users/" + uid)).then((snapshot) => {
         const data = snapshot.val();
         if (data.premium) {
-          console.log("Premium");
           setPremiumUser(true);
           return;
         }

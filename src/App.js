@@ -74,7 +74,7 @@ const App = () => {
             }
           />
           <Route
-            path="/skillcalculators"
+            path="/skillcalculators/*"
             element={
               <SkillsTab
                 setSkills={setSkills}
