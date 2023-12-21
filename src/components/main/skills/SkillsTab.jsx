@@ -185,10 +185,47 @@ const SkillsTab = (props) => {
             />
           }
         />
+
         <Route
           path="/cooking"
           element={
             <CookingCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+
+        <Route
+          path="/woodcutting"
+          element={
+            <WoodcuttingCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+
+        <Route
+          path="/fletching"
+          element={
+            <FletchingCalculator
               skills={props.skills}
               skillsExp={props.skillsExp}
               playerName={props.playerName}
@@ -314,7 +351,8 @@ const SkillsTab = (props) => {
                     />
                     <span className={stl.skillName}>Cooking</span>
                   </Link>
-                  <div
+                  <Link
+                    to="/skillcalculators/woodcutting"
                     className={`${stl.skill} ${stl.woodcutting}`}
                     onClick={() => handleTabOpen("Woodcutting")}
                   >
@@ -324,8 +362,9 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Woodcutting</span>
-                  </div>
-                  <div
+                  </Link>
+                  <Link
+                    to="/skillcalculators/fletching"
                     className={`${stl.skill} ${stl.fletching}`}
                     onClick={() => handleTabOpen("Fletching")}
                   >
@@ -335,7 +374,7 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Fletching</span>
-                  </div>
+                  </Link>
                   <div
                     className={`${stl.skill} ${stl.fishing}`}
                     onClick={() => handleTabOpen("Fishing")}

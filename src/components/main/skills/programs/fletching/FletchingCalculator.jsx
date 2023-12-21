@@ -10,14 +10,18 @@ import FletchingGrid from "./fletchinggrid/FletchingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import TypeFilter from "./typegrid/TypeFilter";
 import { useState } from "react";
+import Pagination from "../../../pagination/Pagination";
+import { useNavigate } from "react-router-dom";
 
 const FletchingCalculator = (props) => {
+  const navigate = useNavigate();
   const [remainingExp, setRemainingExp] = useState(0);
   const [searchState, setSearchState] = useState("");
   const [activeFilter, setActiveFilter] = useState("All");
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
+    navigate("/skillcalculators");
   };
 
   const handleUserReset = () => {
@@ -29,85 +33,95 @@ const FletchingCalculator = (props) => {
   const arePropsDefined = props.skills;
 
   return (
-    <div className={stl.modal}>
-      <div className={stl.topBar}>
-        <FontAwesomeIcon
-          icon={faArrowLeft}
-          className={stl.backArrow}
-          onClick={handleMenuSwitch}
-        />
-        <img
-          src={fletchingIcon}
-          alt="Fletching Level"
-          className={stl.skillImg}
-        />
-        <span className={stl.skillTitle}>Fletching</span>
-        {arePropsDefined ? (
-          <div className={stl.userStatsBox}>
-            <div className={stl.userBlock}>
-              <span className={stl.playerName}>{props.playerName}</span>
-              <span className={stl.playerLvl}>
-                Level {props.skills["fletching"]}
-              </span>
-            </div>
+    <>
+      <div className={stl.adBar}>[ Advertisements ]</div>
+      <Pagination
+        mainState={props.mainState}
+        subState={props.subState}
+        setSubState={props.setSubState}
+        premiumUser={props.premiumUser}
+        navTo="/skillcalculators"
+      />
+      <div className={stl.modal}>
+        <div className={stl.topBar}>
+          <FontAwesomeIcon
+            icon={faArrowLeft}
+            className={stl.backArrow}
+            onClick={handleMenuSwitch}
+          />
+          <img
+            src={fletchingIcon}
+            alt="Fletching Level"
+            className={stl.skillImg}
+          />
+          <span className={stl.skillTitle}>Fletching</span>
+          {arePropsDefined ? (
+            <div className={stl.userStatsBox}>
+              <div className={stl.userBlock}>
+                <span className={stl.playerName}>{props.playerName}</span>
+                <span className={stl.playerLvl}>
+                  Level {props.skills["fletching"]}
+                </span>
+              </div>
 
-            <div className={stl.remainderBlock}>
-              <span className={stl.expToGo}>Xp till level</span>
-              <span className={stl.remaining}>
-                <CalculateRemainderExp
-                  skillname={"fletching"}
-                  currentLvl={props.skills["fletching"]}
-                  currentExp={props.skillsExp}
-                  className={stl.remainder}
-                />
-              </span>
+              <div className={stl.remainderBlock}>
+                <span className={stl.expToGo}>Xp till level</span>
+                <span className={stl.remaining}>
+                  <CalculateRemainderExp
+                    skillname={"fletching"}
+                    currentLvl={props.skills["fletching"]}
+                    currentExp={props.skillsExp}
+                    className={stl.remainder}
+                  />
+                </span>
+              </div>
+              <FontAwesomeIcon
+                icon={faTrashCan}
+                className={stl.trashcan}
+                onClick={handleUserReset}
+              />
             </div>
-            <FontAwesomeIcon
-              icon={faTrashCan}
-              className={stl.trashcan}
-              onClick={handleUserReset}
+          ) : (
+            <FetchUsername
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
             />
-          </div>
-        ) : (
-          <FetchUsername
-            setSkills={props.setSkills}
-            setSkillsExp={props.setSkillsExp}
-            setPlayerName={props.setPlayerName}
+          )}
+        </div>
+        <div className={stl.configRow}>
+          {arePropsDefined ? (
+            <TargetLevel
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              skillName={"fletching"}
+              currentLvl={props.skills["fletching"]}
+              currentExp={props.skillsExp}
+              setRemainingExp={setRemainingExp}
+              remainingExp={remainingExp}
+            />
+          ) : (
+            <NoPropsTargetLevel
+              setRemainingExp={setRemainingExp}
+              remainingExp={remainingExp}
+            />
+          )}
+          <SearchFilter
+            setSearchState={setSearchState}
+            searchType="Search Item"
           />
-        )}
-      </div>
-      <div className={stl.configRow}>
-        {arePropsDefined ? (
-          <TargetLevel
-            skills={props.skills}
-            skillsExp={props.skillsExp}
-            skillName={"fletching"}
-            currentLvl={props.skills["fletching"]}
-            currentExp={props.skillsExp}
-            setRemainingExp={setRemainingExp}
-            remainingExp={remainingExp}
+          <TypeFilter
+            setActiveFilter={setActiveFilter}
+            activeFilter={activeFilter}
           />
-        ) : (
-          <NoPropsTargetLevel
-            setRemainingExp={setRemainingExp}
-            remainingExp={remainingExp}
-          />
-        )}
-        <SearchFilter
-          setSearchState={setSearchState}
-          searchType="Search Item"
-        />
-        <TypeFilter
-          setActiveFilter={setActiveFilter}
+        </div>
+        <FletchingGrid
+          remainingExp={remainingExp}
+          searchState={searchState}
           activeFilter={activeFilter}
         />
       </div>
-      <FletchingGrid
-        remainingExp={remainingExp}
-        searchState={searchState}
-        activeFilter={activeFilter}
-      />
-    </div>
+    </>
   );
 };
 
