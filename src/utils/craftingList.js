@@ -5,7 +5,7 @@ const CRAFTINGLIST = [
     exp: 2.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Ball_of_wool.webp",
+    src: "/crafting/Ball_of_wool.webp",
     members: false,
   },
   {
@@ -14,7 +14,7 @@ const CRAFTINGLIST = [
     exp: 12.6,
     price: 0,
     toGo: 0,
-    src: "crafting/Pot.webp",
+    src: "/crafting/Pot.webp",
     members: false,
   },
   {
@@ -23,7 +23,7 @@ const CRAFTINGLIST = [
     exp: 13.8,
     price: 0,
     toGo: 0,
-    src: "crafting/Leather_gloves.webp",
+    src: "/crafting/Leather_gloves.webp",
     members: false,
   },
   {
@@ -32,7 +32,7 @@ const CRAFTINGLIST = [
     exp: 17.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Beer_glass.webp",
+    src: "/crafting/Beer_glass.webp",
     members: true,
   },
   {
@@ -41,7 +41,7 @@ const CRAFTINGLIST = [
     exp: 15,
     price: 0,
     toGo: 0,
-    src: "crafting/Opal.webp",
+    src: "/crafting/Opal.webp",
     members: true,
   },
   {
@@ -50,7 +50,7 @@ const CRAFTINGLIST = [
     exp: 10,
     price: 0,
     toGo: 0,
-    src: "crafting/Opal_ring.webp",
+    src: "/crafting/Opal_ring.webp",
     members: true,
   },
   {
@@ -59,7 +59,7 @@ const CRAFTINGLIST = [
     exp: 17,
     price: 0,
     toGo: 0,
-    src: "crafting/Pot.webp",
+    src: "/crafting/Pot.webp",
     members: true,
   },
   {
@@ -68,7 +68,7 @@ const CRAFTINGLIST = [
     exp: 19,
     price: 0,
     toGo: 0,
-    src: "crafting/Empty_candle_lantern.webp",
+    src: "/crafting/Empty_candle_lantern.webp",
     members: true,
   },
   {
@@ -77,7 +77,7 @@ const CRAFTINGLIST = [
     exp: 15,
     price: 0,
     toGo: 0,
-    src: "crafting/Gold_ring.webp",
+    src: "/crafting/Gold_ring.webp",
     members: false,
   },
   {
@@ -86,7 +86,7 @@ const CRAFTINGLIST = [
     exp: 15,
     price: 0,
     toGo: 0,
-    src: "crafting/Bird_house.webp",
+    src: "/crafting/Bird_house.webp",
     members: true,
   },
   {
@@ -95,7 +95,7 @@ const CRAFTINGLIST = [
     exp: 20,
     price: 0,
     toGo: 0,
-    src: "crafting/Gold_necklace.webp",
+    src: "/crafting/Gold_necklace.webp",
     members: false,
   },
   {
@@ -104,7 +104,7 @@ const CRAFTINGLIST = [
     exp: 25,
     price: 0,
     toGo: 0,
-    src: "crafting/Pie_dish.webp",
+    src: "/crafting/Pie_dish.webp",
     members: false,
   },
   {
@@ -113,7 +113,7 @@ const CRAFTINGLIST = [
     exp: 16.3,
     price: 0,
     toGo: 0,
-    src: "crafting/Leather_boots.webp",
+    src: "/crafting/Leather_boots.webp",
     members: false,
   },
   {
@@ -122,7 +122,7 @@ const CRAFTINGLIST = [
     exp: 25,
     price: 0,
     toGo: 0,
-    src: "crafting/Gold_bracelet.webp",
+    src: "/crafting/Gold_bracelet.webp",
     members: true,
   },
   {
@@ -131,7 +131,7 @@ const CRAFTINGLIST = [
     exp: 33,
     price: 0,
     toGo: 0,
-    src: "crafting/Bowl.webp",
+    src: "/crafting/Bowl.webp",
     members: false,
   },
   {
@@ -140,7 +140,7 @@ const CRAFTINGLIST = [
     exp: 30,
     price: 0,
     toGo: 0,
-    src: "crafting/Gold_amulet_(u).webp",
+    src: "/crafting/Gold_amulet_(u).webp",
     members: false,
   },
   {
@@ -149,7 +149,7 @@ const CRAFTINGLIST = [
     exp: 18.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Leather_cowl.webp",
+    src: "/crafting/Leather_cowl.webp",
     members: false,
   },
   {
@@ -158,7 +158,7 @@ const CRAFTINGLIST = [
     exp: 15,
     price: 0,
     toGo: 0,
-    src: "crafting/Bow_string.webp",
+    src: "/crafting/Bow_string.webp",
     members: true,
   },
   {
@@ -167,7 +167,7 @@ const CRAFTINGLIST = [
     exp: 15,
     price: 0,
     toGo: 0,
-    src: "crafting/Crossbow_string.webp",
+    src: "/crafting/Crossbow_string.webp",
     members: true,
   },
   {
@@ -176,7 +176,7 @@ const CRAFTINGLIST = [
     exp: 19,
     price: 0,
     toGo: 0,
-    src: "crafting/Magic_string.webp",
+    src: "/crafting/Magic_string.webp",
     members: true,
   },
   {
@@ -185,7 +185,7 @@ const CRAFTINGLIST = [
     exp: 22,
     price: 0,
     toGo: 0,
-    src: "crafting/Leather_vambraces.webp",
+    src: "/crafting/Leather_vambraces.webp",
     members: false,
   },
   {
@@ -194,7 +194,7 @@ const CRAFTINGLIST = [
     exp: 25,
     price: 0,
     toGo: 0,
-    src: "crafting/Empty_oil_lamp.webp",
+    src: "/crafting/Empty_oil_lamp.webp",
     members: true,
   },
   {
@@ -203,7 +203,7 @@ const CRAFTINGLIST = [
     exp: 20,
     price: 0,
     toGo: 0,
-    src: "crafting/Jade.webp",
+    src: "/crafting/Jade.webp",
     members: true,
   },
   {
@@ -212,7 +212,7 @@ const CRAFTINGLIST = [
     exp: 32,
     price: 0,
     toGo: 0,
-    src: "crafting/Jade_ring.webp",
+    src: "/crafting/Jade_ring.webp",
     members: true,
   },
   {
@@ -221,7 +221,7 @@ const CRAFTINGLIST = [
     exp: 25,
     price: 0,
     toGo: 0,
-    src: "crafting/Leather_body.webp",
+    src: "/crafting/Leather_body.webp",
     members: false,
   },
   {
@@ -230,7 +230,7 @@ const CRAFTINGLIST = [
     exp: 66,
     price: 0,
     toGo: 0,
-    src: "crafting/Xerician_hat.webp",
+    src: "/crafting/Xerician_hat.webp",
     members: true,
   },
   {
@@ -239,7 +239,7 @@ const CRAFTINGLIST = [
     exp: 32.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Blood'n'tar_snelm_(pointed).webp",
+    src: "/crafting/Blood'n'tar_snelm_(pointed).webp",
     members: true,
   },
   {
@@ -248,7 +248,7 @@ const CRAFTINGLIST = [
     exp: 32.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Blood'n'tar_snelm_(round).webp",
+    src: "/crafting/Blood'n'tar_snelm_(round).webp",
     members: true,
   },
   {
@@ -257,7 +257,7 @@ const CRAFTINGLIST = [
     exp: 32.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Broken_bark_snelm.webp",
+    src: "/crafting/Broken_bark_snelm.webp",
     members: true,
   },
   {
@@ -266,7 +266,7 @@ const CRAFTINGLIST = [
     exp: 32.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Bruise_blue_snelm_(pointed).webp",
+    src: "/crafting/Bruise_blue_snelm_(pointed).webp",
     members: true,
   },
   {
@@ -275,7 +275,7 @@ const CRAFTINGLIST = [
     exp: 32.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Bruise_blue_snelm_(round).webp",
+    src: "/crafting/Bruise_blue_snelm_(round).webp",
     members: true,
   },
   {
@@ -284,7 +284,7 @@ const CRAFTINGLIST = [
     exp: 32.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Myre_snelm_(pointed).webp",
+    src: "/crafting/Myre_snelm_(pointed).webp",
     members: true,
   },
   {
@@ -293,7 +293,7 @@ const CRAFTINGLIST = [
     exp: 32.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Myre_snelm_(round).webp",
+    src: "/crafting/Myre_snelm_(round).webp",
     members: true,
   },
   {
@@ -302,7 +302,7 @@ const CRAFTINGLIST = [
     exp: 32.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Ochre_snelm_(pointed).webp",
+    src: "/crafting/Ochre_snelm_(pointed).webp",
     members: true,
   },
   {
@@ -311,7 +311,7 @@ const CRAFTINGLIST = [
     exp: 32.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Myre_snelm_(round).webp",
+    src: "/crafting/Myre_snelm_(round).webp",
     members: true,
   },
   {
@@ -320,7 +320,7 @@ const CRAFTINGLIST = [
     exp: 20,
     price: 0,
     toGo: 0,
-    src: "crafting/Oak_bird_house.webp",
+    src: "/crafting/Oak_bird_house.webp",
     members: true,
   },
   {
@@ -329,7 +329,7 @@ const CRAFTINGLIST = [
     exp: 25,
     price: 0,
     toGo: 0,
-    src: "crafting/Red_topaz.webp",
+    src: "/crafting/Red_topaz.webp",
     members: true,
   },
   {
@@ -338,7 +338,7 @@ const CRAFTINGLIST = [
     exp: 35,
     price: 0,
     toGo: 0,
-    src: "crafting/Opal_necklace.webp",
+    src: "/crafting/Opal_necklace.webp",
     members: true,
   },
   {
@@ -347,7 +347,7 @@ const CRAFTINGLIST = [
     exp: 35,
     price: 0,
     toGo: 0,
-    src: "crafting/Topaz_ring.webp",
+    src: "/crafting/Topaz_ring.webp",
     members: true,
   },
   {
@@ -356,7 +356,7 @@ const CRAFTINGLIST = [
     exp: 50,
     price: 0,
     toGo: 0,
-    src: "crafting/Unstrung_symbol.webp",
+    src: "/crafting/Unstrung_symbol.webp",
     members: false,
   },
   {
@@ -365,7 +365,7 @@ const CRAFTINGLIST = [
     exp: 88,
     price: 0,
     toGo: 0,
-    src: "crafting/Xerician_robe.webp",
+    src: "/crafting/Xerician_robe.webp",
     members: true,
   },
   {
@@ -374,7 +374,7 @@ const CRAFTINGLIST = [
     exp: 50,
     price: 0,
     toGo: 0,
-    src: "crafting/Unstrung_emblem.webp",
+    src: "/crafting/Unstrung_emblem.webp",
     members: true,
   },
   {
@@ -383,7 +383,7 @@ const CRAFTINGLIST = [
     exp: 27,
     price: 0,
     toGo: 0,
-    src: "crafting/Leather_chaps.webp",
+    src: "/crafting/Leather_chaps.webp",
     members: false,
   },
   {
@@ -392,7 +392,7 @@ const CRAFTINGLIST = [
     exp: 50,
     price: 0,
     toGo: 0,
-    src: "crafting/Silver_sickle.webp",
+    src: "/crafting/Silver_sickle.webp",
     members: true,
   },
   {
@@ -401,7 +401,7 @@ const CRAFTINGLIST = [
     exp: 37.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Empty_plant_pot.webp",
+    src: "/crafting/Empty_plant_pot.webp",
     members: true,
   },
   {
@@ -410,7 +410,7 @@ const CRAFTINGLIST = [
     exp: 50,
     price: 0,
     toGo: 0,
-    src: "crafting/Sapphire.webp",
+    src: "/crafting/Sapphire.webp",
     members: false,
   },
   {
@@ -419,7 +419,7 @@ const CRAFTINGLIST = [
     exp: 40,
     price: 0,
     toGo: 0,
-    src: "crafting/Sapphire_ring.webp",
+    src: "/crafting/Sapphire_ring.webp",
     members: false,
   },
   {
@@ -428,7 +428,7 @@ const CRAFTINGLIST = [
     exp: 38,
     price: 0,
     toGo: 0,
-    src: "crafting/Empty_sack.webp",
+    src: "/crafting/Empty_sack.webp",
     members: true,
   },
   {
@@ -437,7 +437,7 @@ const CRAFTINGLIST = [
     exp: 50,
     price: 0,
     toGo: 0,
-    src: "crafting/Silver_bolts_(unf)_5.webp",
+    src: "/crafting/Silver_bolts_(unf)_5.webp",
     members: true,
   },
   {
@@ -446,7 +446,7 @@ const CRAFTINGLIST = [
     exp: 110,
     price: 0,
     toGo: 0,
-    src: "crafting/Xerician_top.webp",
+    src: "/crafting/Xerician_top.webp",
     members: true,
   },
   {
@@ -455,7 +455,7 @@ const CRAFTINGLIST = [
     exp: 45,
     price: 0,
     toGo: 0,
-    src: "crafting/Opal_bracelet.webp",
+    src: "/crafting/Opal_bracelet.webp",
     members: true,
   },
   {
@@ -464,7 +464,7 @@ const CRAFTINGLIST = [
     exp: 55,
     price: 0,
     toGo: 0,
-    src: "crafting/Sapphire_necklace.webp",
+    src: "/crafting/Sapphire_necklace.webp",
     members: false,
   },
   {
@@ -473,7 +473,7 @@ const CRAFTINGLIST = [
     exp: 60,
     price: 0,
     toGo: 0,
-    src: "crafting/Sapphire_bracelet.webp",
+    src: "/crafting/Sapphire_bracelet.webp",
     members: true,
   },
   {
@@ -482,7 +482,7 @@ const CRAFTINGLIST = [
     exp: 52.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Tiara.webp",
+    src: "/crafting/Tiara.webp",
     members: false,
   },
   {
@@ -491,7 +491,7 @@ const CRAFTINGLIST = [
     exp: 65,
     price: 0,
     toGo: 0,
-    src: "crafting/Sapphire_amulet_(u).webp",
+    src: "/crafting/Sapphire_amulet_(u).webp",
     members: false,
   },
   {
@@ -500,7 +500,7 @@ const CRAFTINGLIST = [
     exp: 40,
     price: 0,
     toGo: 0,
-    src: "crafting/Pot_lid.webp",
+    src: "/crafting/Pot_lid.webp",
     members: true,
   },
   {
@@ -509,7 +509,7 @@ const CRAFTINGLIST = [
     exp: 54,
     price: 0,
     toGo: 0,
-    src: "crafting/Jade_necklace.webp",
+    src: "/crafting/Jade_necklace.webp",
     members: true,
   },
   {
@@ -518,7 +518,7 @@ const CRAFTINGLIST = [
     exp: 25,
     price: 0,
     toGo: 0,
-    src: "crafting/Willow_bird_house.webp",
+    src: "/crafting/Willow_bird_house.webp",
     members: true,
   },
   {
@@ -527,7 +527,7 @@ const CRAFTINGLIST = [
     exp: 55,
     price: 0,
     toGo: 0,
-    src: "crafting/Drift_net.png",
+    src: "/crafting/Drift_net.png",
     members: true,
   },
   {
@@ -536,7 +536,7 @@ const CRAFTINGLIST = [
     exp: 50,
     price: 0,
     toGo: 0,
-    src: "crafting/Empty_oil_lamp.webp",
+    src: "/crafting/Empty_oil_lamp.webp",
     members: true,
   },
   {
@@ -545,7 +545,7 @@ const CRAFTINGLIST = [
     exp: 67.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Emerald.webp",
+    src: "/crafting/Emerald.webp",
     members: false,
   },
   {
@@ -554,7 +554,7 @@ const CRAFTINGLIST = [
     exp: 55,
     price: 0,
     toGo: 0,
-    src: "crafting/Opal_amulet_(u).webp",
+    src: "/crafting/Opal_amulet_(u).webp",
     members: true,
   },
   {
@@ -563,7 +563,7 @@ const CRAFTINGLIST = [
     exp: 55,
     price: 0,
     toGo: 0,
-    src: "crafting/Emerald_ring.webp",
+    src: "/crafting/Emerald_ring.webp",
     members: false,
   },
   {
@@ -572,7 +572,7 @@ const CRAFTINGLIST = [
     exp: 35,
     price: 0,
     toGo: 0,
-    src: "crafting/Hardleather_body.webp",
+    src: "/crafting/Hardleather_body.webp",
     members: false,
   },
   {
@@ -581,7 +581,7 @@ const CRAFTINGLIST = [
     exp: 60,
     price: 0,
     toGo: 0,
-    src: "crafting/Jade_bracelet.webp",
+    src: "/crafting/Jade_bracelet.webp",
     members: true,
   },
   {
@@ -590,7 +590,7 @@ const CRAFTINGLIST = [
     exp: 60,
     price: 0,
     toGo: 0,
-    src: "crafting/Emerald_necklace.webp",
+    src: "/crafting/Emerald_necklace.webp",
     members: false,
   },
   {
@@ -599,7 +599,7 @@ const CRAFTINGLIST = [
     exp: 25,
     price: 0,
     toGo: 0,
-    src: "crafting/Rope.webp",
+    src: "/crafting/Rope.webp",
     members: true,
   },
   {
@@ -608,7 +608,7 @@ const CRAFTINGLIST = [
     exp: 65,
     price: 0,
     toGo: 0,
-    src: "crafting/Emerald_bracelet.webp",
+    src: "/crafting/Emerald_bracelet.webp",
     members: true,
   },
   {
@@ -617,7 +617,7 @@ const CRAFTINGLIST = [
     exp: 70,
     price: 0,
     toGo: 0,
-    src: "crafting/Emerald_amulet_(u).webp",
+    src: "/crafting/Emerald_amulet_(u).webp",
     members: false,
   },
   {
@@ -626,7 +626,7 @@ const CRAFTINGLIST = [
     exp: 6,
     price: 0,
     toGo: 0,
-    src: "crafting/Spiky_vambraces.webp",
+    src: "/crafting/Spiky_vambraces.webp",
     members: true,
   },
   {
@@ -635,7 +635,7 @@ const CRAFTINGLIST = [
     exp: 5,
     price: 0,
     toGo: 0,
-    src: "crafting/Green_spiky_vambraces.webp",
+    src: "/crafting/Green_spiky_vambraces.webp",
     members: true,
   },
   {
@@ -644,7 +644,7 @@ const CRAFTINGLIST = [
     exp: 6,
     price: 0,
     toGo: 0,
-    src: "crafting/Blue_spiky_vambraces.webp",
+    src: "/crafting/Blue_spiky_vambraces.webp",
     members: true,
   },
   {
@@ -653,7 +653,7 @@ const CRAFTINGLIST = [
     exp: 5.8,
     price: 0,
     toGo: 0,
-    src: "crafting/Red_spiky_vambraces.webp",
+    src: "/crafting/Red_spiky_vambraces.webp",
     members: true,
   },
   {
@@ -662,7 +662,7 @@ const CRAFTINGLIST = [
     exp: 6,
     price: 0,
     toGo: 0,
-    src: "crafting/Black_spiky_vambraces.webp",
+    src: "/crafting/Black_spiky_vambraces.webp",
     members: true,
   },
   {
@@ -671,7 +671,7 @@ const CRAFTINGLIST = [
     exp: 70,
     price: 0,
     toGo: 0,
-    src: "crafting/Topaz_necklace.webp",
+    src: "/crafting/Topaz_necklace.webp",
     members: true,
   },
   {
@@ -680,7 +680,7 @@ const CRAFTINGLIST = [
     exp: 35,
     price: 0,
     toGo: 0,
-    src: "crafting/Vial.webp",
+    src: "/crafting/Vial.webp",
     members: true,
   },
   {
@@ -689,7 +689,7 @@ const CRAFTINGLIST = [
     exp: 85,
     price: 0,
     toGo: 0,
-    src: "crafting/Ruby.webp",
+    src: "/crafting/Ruby.webp",
     members: false,
   },
   {
@@ -698,7 +698,7 @@ const CRAFTINGLIST = [
     exp: 70,
     price: 0,
     toGo: 0,
-    src: "crafting/Jade_amulet_(u).webp",
+    src: "/crafting/Jade_amulet_(u).webp",
     members: true,
   },
   {
@@ -707,7 +707,7 @@ const CRAFTINGLIST = [
     exp: 70,
     price: 0,
     toGo: 0,
-    src: "crafting/Ruby_ring.webp",
+    src: "/crafting/Ruby_ring.webp",
     members: false,
   },
   {
@@ -716,7 +716,7 @@ const CRAFTINGLIST = [
     exp: 100,
     price: 0,
     toGo: 0,
-    src: "crafting/Broodoo_shield_(disease).webp",
+    src: "/crafting/Broodoo_shield_(disease).webp",
     members: true,
   },
   {
@@ -725,7 +725,7 @@ const CRAFTINGLIST = [
     exp: 30,
     price: 0,
     toGo: 0,
-    src: "crafting/Teak_bird_house.webp",
+    src: "/crafting/Teak_bird_house.webp",
     members: true,
   },
   {
@@ -734,7 +734,7 @@ const CRAFTINGLIST = [
     exp: 56,
     price: 0,
     toGo: 0,
-    src: "crafting/Basket.webp",
+    src: "/crafting/Basket.webp",
     members: true,
   },
   {
@@ -743,7 +743,7 @@ const CRAFTINGLIST = [
     exp: 37,
     price: 0,
     toGo: 0,
-    src: "crafting/Coif.webp",
+    src: "/crafting/Coif.webp",
     members: true,
   },
   {
@@ -752,7 +752,7 @@ const CRAFTINGLIST = [
     exp: 75,
     price: 0,
     toGo: 0,
-    src: "crafting/Topaz_bracelet.webp",
+    src: "/crafting/Topaz_bracelet.webp",
     members: true,
   },
   {
@@ -761,7 +761,7 @@ const CRAFTINGLIST = [
     exp: 75,
     price: 0,
     toGo: 0,
-    src: "crafting/Ruby_necklace.webp",
+    src: "/crafting/Ruby_necklace.webp",
     members: false,
   },
   {
@@ -770,7 +770,7 @@ const CRAFTINGLIST = [
     exp: 70,
     price: 0,
     toGo: 0,
-    src: "crafting/Hard_leather_shield.webp",
+    src: "/crafting/Hard_leather_shield.webp",
     members: true,
   },
   {
@@ -779,7 +779,7 @@ const CRAFTINGLIST = [
     exp: 40,
     price: 0,
     toGo: 0,
-    src: "crafting/Studded_body.webp",
+    src: "/crafting/Studded_body.webp",
     members: true,
   },
   {
@@ -788,7 +788,7 @@ const CRAFTINGLIST = [
     exp: 42.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Empty_fishbowl.webp",
+    src: "/crafting/Empty_fishbowl.webp",
     members: true,
   },
   {
@@ -797,7 +797,7 @@ const CRAFTINGLIST = [
     exp: 80,
     price: 0,
     toGo: 0,
-    src: "crafting/Ruby_bracelet.webp",
+    src: "/crafting/Ruby_bracelet.webp",
     members: true,
   },
   {
@@ -806,7 +806,7 @@ const CRAFTINGLIST = [
     exp: 35,
     price: 0,
     toGo: 0,
-    src: "crafting/Gold_tiara.webp",
+    src: "/crafting/Gold_tiara.webp",
     members: true,
   },
   {
@@ -815,7 +815,7 @@ const CRAFTINGLIST = [
     exp: 32,
     price: 0,
     toGo: 0,
-    src: "crafting/Yak-hide_armour_(legs).webp",
+    src: "/crafting/Yak-hide_armour_(legs).webp",
     members: true,
   },
   {
@@ -824,7 +824,7 @@ const CRAFTINGLIST = [
     exp: 32,
     price: 0,
     toGo: 0,
-    src: "crafting/Yak-hide_armour_(top).webp",
+    src: "/crafting/Yak-hide_armour_(top).webp",
     members: true,
   },
   {
@@ -833,7 +833,7 @@ const CRAFTINGLIST = [
     exp: 107.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Diamond.webp",
+    src: "/crafting/Diamond.webp",
     members: false,
   },
   {
@@ -842,7 +842,7 @@ const CRAFTINGLIST = [
     exp: 85,
     price: 0,
     toGo: 0,
-    src: "crafting/Diamond_ring.webp",
+    src: "/crafting/Diamond_ring.webp",
     members: false,
   },
   {
@@ -851,7 +851,7 @@ const CRAFTINGLIST = [
     exp: 42,
     price: 0,
     toGo: 0,
-    src: "crafting/Studded_chaps.webp",
+    src: "/crafting/Studded_chaps.webp",
     members: true,
   },
   {
@@ -860,7 +860,7 @@ const CRAFTINGLIST = [
     exp: 30,
     price: 0,
     toGo: 0,
-    src: "crafting/Snakeskin_boots.webp",
+    src: "/crafting/Snakeskin_boots.webp",
     members: true,
   },
   {
@@ -869,7 +869,7 @@ const CRAFTINGLIST = [
     exp: 80,
     price: 0,
     toGo: 0,
-    src: "crafting/Topaz_amulet_(u).webp",
+    src: "/crafting/Topaz_amulet_(u).webp",
     members: true,
   },
   {
@@ -878,7 +878,7 @@ const CRAFTINGLIST = [
     exp: 35,
     price: 0,
     toGo: 0,
-    src: "crafting/Maple_bird_house.webp",
+    src: "/crafting/Maple_bird_house.webp",
     members: true,
   },
   {
@@ -887,7 +887,7 @@ const CRAFTINGLIST = [
     exp: 52.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Unpowered_orb.webp",
+    src: "/crafting/Unpowered_orb.webp",
     members: true,
   },
   {
@@ -896,7 +896,7 @@ const CRAFTINGLIST = [
     exp: 35,
     price: 0,
     toGo: 0,
-    src: "crafting/Snakeskin_vambraces.webp",
+    src: "/crafting/Snakeskin_vambraces.webp",
     members: true,
   },
   {
@@ -905,7 +905,7 @@ const CRAFTINGLIST = [
     exp: 45,
     price: 0,
     toGo: 0,
-    src: "crafting/Snakeskin_bandana.webp",
+    src: "/crafting/Snakeskin_bandana.webp",
     members: true,
   },
   {
@@ -914,7 +914,7 @@ const CRAFTINGLIST = [
     exp: 55,
     price: 0,
     toGo: 0,
-    src: "crafting/Lantern_lens.webp",
+    src: "/crafting/Lantern_lens.webp",
     members: true,
   },
   {
@@ -923,7 +923,7 @@ const CRAFTINGLIST = [
     exp: 85,
     price: 0,
     toGo: 0,
-    src: "crafting/Ruby_amulet_(u).webp",
+    src: "/crafting/Ruby_amulet_(u).webp",
     members: false,
   },
   {
@@ -932,7 +932,7 @@ const CRAFTINGLIST = [
     exp: 40,
     price: 0,
     toGo: 0,
-    src: "crafting/Mahogany_bird_house.webp",
+    src: "/crafting/Mahogany_bird_house.webp",
     members: true,
   },
   {
@@ -941,7 +941,7 @@ const CRAFTINGLIST = [
     exp: 50,
     price: 0,
     toGo: 0,
-    src: "crafting/Snakeskin_chaps.webp",
+    src: "/crafting/Snakeskin_chaps.webp",
     members: true,
   },
   {
@@ -950,7 +950,7 @@ const CRAFTINGLIST = [
     exp: 55,
     price: 0,
     toGo: 0,
-    src: "crafting/Snakeskin_body.webp",
+    src: "/crafting/Snakeskin_body.webp",
     members: true,
   },
   {
@@ -959,7 +959,7 @@ const CRAFTINGLIST = [
     exp: 100,
     price: 0,
     toGo: 0,
-    src: "crafting/Water_battlestaff.webp",
+    src: "/crafting/Water_battlestaff.webp",
     members: true,
   },
   {
@@ -968,7 +968,7 @@ const CRAFTINGLIST = [
     exp: 137.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Dragonstone.webp",
+    src: "/crafting/Dragonstone.webp",
     members: true,
   },
   {
@@ -977,7 +977,7 @@ const CRAFTINGLIST = [
     exp: 100,
     price: 0,
     toGo: 0,
-    src: "crafting/Dragonstone_ring.webp",
+    src: "/crafting/Dragonstone_ring.webp",
     members: true,
   },
   {
@@ -986,7 +986,7 @@ const CRAFTINGLIST = [
     exp: 100,
     price: 0,
     toGo: 0,
-    src: "crafting/Snakeskin_shield.png",
+    src: "/crafting/Snakeskin_shield.png",
     members: true,
   },
   {
@@ -995,7 +995,7 @@ const CRAFTINGLIST = [
     exp: 90,
     price: 0,
     toGo: 0,
-    src: "crafting/Diamond_necklace.webp",
+    src: "/crafting/Diamond_necklace.webp",
     members: false,
   },
   {
@@ -1004,7 +1004,7 @@ const CRAFTINGLIST = [
     exp: 62,
     price: 0,
     toGo: 0,
-    src: "crafting/Green_d'hide_vambraces.webp",
+    src: "/crafting/Green_d'hide_vambraces.webp",
     members: true,
   },
   {
@@ -1013,7 +1013,7 @@ const CRAFTINGLIST = [
     exp: 95,
     price: 0,
     toGo: 0,
-    src: "crafting/Diamond_bracelet.webp",
+    src: "/crafting/Diamond_bracelet.webp",
     members: true,
   },
   {
@@ -1022,7 +1022,7 @@ const CRAFTINGLIST = [
     exp: 112.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Earth_battlestaff.webp",
+    src: "/crafting/Earth_battlestaff.webp",
     members: true,
   },
   {
@@ -1031,7 +1031,7 @@ const CRAFTINGLIST = [
     exp: 124,
     price: 0,
     toGo: 0,
-    src: "crafting/Green_d'hide_chaps.webp",
+    src: "/crafting/Green_d'hide_chaps.webp",
     members: true,
   },
   {
@@ -1040,7 +1040,7 @@ const CRAFTINGLIST = [
     exp: 62,
     price: 0,
     toGo: 0,
-    src: "crafting/Splitbark_gauntlets.webp",
+    src: "/crafting/Splitbark_gauntlets.webp",
     members: true,
   },
   {
@@ -1049,7 +1049,7 @@ const CRAFTINGLIST = [
     exp: 62,
     price: 0,
     toGo: 0,
-    src: "crafting/Splitbark_boots.webp",
+    src: "/crafting/Splitbark_boots.webp",
     members: true,
   },
   {
@@ -1058,7 +1058,7 @@ const CRAFTINGLIST = [
     exp: 45,
     price: 0,
     toGo: 0,
-    src: "crafting/Yew_bird_house.webp",
+    src: "/crafting/Yew_bird_house.webp",
     members: true,
   },
   {
@@ -1067,7 +1067,7 @@ const CRAFTINGLIST = [
     exp: 124,
     price: 0,
     toGo: 0,
-    src: "crafting/Splitbark_helm.webp",
+    src: "/crafting/Splitbark_helm.webp",
     members: true,
   },
   {
@@ -1076,7 +1076,7 @@ const CRAFTINGLIST = [
     exp: 124,
     price: 0,
     toGo: 0,
-    src: "crafting/Green_d'hide_shield.webp",
+    src: "/crafting/Green_d'hide_shield.webp",
     members: true,
   },
   {
@@ -1085,7 +1085,7 @@ const CRAFTINGLIST = [
     exp: 186,
     price: 0,
     toGo: 0,
-    src: "crafting/Splitbark_legs.webp",
+    src: "/crafting/Splitbark_legs.webp",
     members: true,
   },
   {
@@ -1094,7 +1094,7 @@ const CRAFTINGLIST = [
     exp: 248,
     price: 0,
     toGo: 0,
-    src: "crafting/Splitbark_body.webp",
+    src: "/crafting/Splitbark_body.webp",
     members: true,
   },
   {
@@ -1103,7 +1103,7 @@ const CRAFTINGLIST = [
     exp: 125,
     price: 0,
     toGo: 0,
-    src: "crafting/Fire_battlestaff.webp",
+    src: "/crafting/Fire_battlestaff.webp",
     members: true,
   },
   {
@@ -1112,7 +1112,7 @@ const CRAFTINGLIST = [
     exp: 186,
     price: 0,
     toGo: 0,
-    src: "crafting/Green_d'hide_body.webp",
+    src: "/crafting/Green_d'hide_body.webp",
     members: true,
   },
   {
@@ -1121,7 +1121,7 @@ const CRAFTINGLIST = [
     exp: 70,
     price: 0,
     toGo: 0,
-    src: "crafting/Blue_d'hide_vambraces.webp",
+    src: "/crafting/Blue_d'hide_vambraces.webp",
     members: true,
   },
   {
@@ -1130,7 +1130,7 @@ const CRAFTINGLIST = [
     exp: 140,
     price: 0,
     toGo: 0,
-    src: "crafting/Blue_d'hide_chaps.webp",
+    src: "/crafting/Blue_d'hide_chaps.webp",
     members: true,
   },
   {
@@ -1139,7 +1139,7 @@ const CRAFTINGLIST = [
     exp: 137.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Air_battlestaff.webp",
+    src: "/crafting/Air_battlestaff.webp",
     members: true,
   },
   {
@@ -1148,7 +1148,7 @@ const CRAFTINGLIST = [
     exp: 167.5,
     price: 0,
     toGo: 0,
-    src: "crafting/Onyx.webp",
+    src: "/crafting/Onyx.webp",
     members: true,
   },
   {
@@ -1157,7 +1157,7 @@ const CRAFTINGLIST = [
     exp: 115,
     price: 0,
     toGo: 0,
-    src: "crafting/Onyx_ring.webp",
+    src: "/crafting/Onyx_ring.webp",
     members: true,
   },
   {
@@ -1166,7 +1166,7 @@ const CRAFTINGLIST = [
     exp: 140,
     price: 0,
     toGo: 0,
-    src: "crafting/Blue_d'hide_shield.webp",
+    src: "/crafting/Blue_d'hide_shield.webp",
     members: true,
   },
   {
@@ -1175,7 +1175,7 @@ const CRAFTINGLIST = [
     exp: 100,
     price: 0,
     toGo: 0,
-    src: "crafting/Diamond_amulet_(u).webp",
+    src: "/crafting/Diamond_amulet_(u).webp",
     members: true,
   },
   {
@@ -1184,7 +1184,7 @@ const CRAFTINGLIST = [
     exp: 210,
     price: 0,
     toGo: 0,
-    src: "crafting/Blue_d'hide_body.webp",
+    src: "/crafting/Blue_d'hide_body.webp",
     members: true,
   },
   {
@@ -1193,7 +1193,7 @@ const CRAFTINGLIST = [
     exp: 105,
     price: 0,
     toGo: 0,
-    src: "crafting/Dragon_necklace.webp",
+    src: "/crafting/Dragon_necklace.webp",
     members: true,
   },
   {
@@ -1202,7 +1202,7 @@ const CRAFTINGLIST = [
     exp: 78,
     price: 0,
     toGo: 0,
-    src: "crafting/Red_d'hide_vambraces.webp",
+    src: "/crafting/Red_d'hide_vambraces.webp",
     members: true,
   },
   {
@@ -1211,7 +1211,7 @@ const CRAFTINGLIST = [
     exp: 86,
     price: 0,
     toGo: 0,
-    src: "crafting/Black_d'hide_vambraces.webp",
+    src: "/crafting/Black_d'hide_vambraces.webp",
     members: true,
   },
   {
@@ -1220,7 +1220,7 @@ const CRAFTINGLIST = [
     exp: 110,
     price: 0,
     toGo: 0,
-    src: "crafting/Dragonstone_bracelet.webp",
+    src: "/crafting/Dragonstone_bracelet.webp",
     members: true,
   },
   {
@@ -1229,7 +1229,7 @@ const CRAFTINGLIST = [
     exp: 156,
     price: 0,
     toGo: 0,
-    src: "crafting/Red_d'hide_chaps.webp",
+    src: "/crafting/Red_d'hide_chaps.webp",
     members: true,
   },
   {
@@ -1238,7 +1238,7 @@ const CRAFTINGLIST = [
     exp: 172,
     price: 0,
     toGo: 0,
-    src: "crafting/Black_d'hide_chaps.webp",
+    src: "/crafting/Black_d'hide_chaps.webp",
     members: true,
   },
   {
@@ -1247,7 +1247,7 @@ const CRAFTINGLIST = [
     exp: 50,
     price: 0,
     toGo: 0,
-    src: "crafting/Magic_bird_house.webp",
+    src: "/crafting/Magic_bird_house.webp",
     members: true,
   },
   {
@@ -1256,7 +1256,7 @@ const CRAFTINGLIST = [
     exp: 156,
     price: 0,
     toGo: 0,
-    src: "crafting/Red_d'hide_shield.webp",
+    src: "/crafting/Red_d'hide_shield.webp",
     members: true,
   },
   {
@@ -1265,7 +1265,7 @@ const CRAFTINGLIST = [
     exp: 172,
     price: 0,
     toGo: 0,
-    src: "crafting/Black_d'hide_shield.webp",
+    src: "/crafting/Black_d'hide_shield.webp",
     members: true,
   },
   {
@@ -1274,7 +1274,7 @@ const CRAFTINGLIST = [
     exp: 234,
     price: 0,
     toGo: 0,
-    src: "crafting/Red_d'hide_body.webp",
+    src: "/crafting/Red_d'hide_body.webp",
     members: true,
   },
   {
@@ -1283,7 +1283,7 @@ const CRAFTINGLIST = [
     exp: 258,
     price: 0,
     toGo: 0,
-    src: "crafting/Black_d'hide_body.webp",
+    src: "/crafting/Black_d'hide_body.webp",
     members: true,
   },
   {
@@ -1292,7 +1292,7 @@ const CRAFTINGLIST = [
     exp: 150,
     price: 0,
     toGo: 0,
-    src: "crafting/Dragonstone_amulet_(u).webp",
+    src: "/crafting/Dragonstone_amulet_(u).webp",
     members: true,
   },
   {
@@ -1301,7 +1301,7 @@ const CRAFTINGLIST = [
     exp: 120,
     price: 0,
     toGo: 0,
-    src: "crafting/Onyx_necklace.webp",
+    src: "/crafting/Onyx_necklace.webp",
     members: true,
   },
   {
@@ -1310,7 +1310,7 @@ const CRAFTINGLIST = [
     exp: 60,
     price: 0,
     toGo: 0,
-    src: "crafting/Amethyst_bolt_tips_5.webp",
+    src: "/crafting/Amethyst_bolt_tips_5.webp",
     members: true,
   },
   {
@@ -1319,7 +1319,7 @@ const CRAFTINGLIST = [
     exp: 125,
     price: 0,
     toGo: 0,
-    src: "crafting/Onyx_bracelet.webp",
+    src: "/crafting/Onyx_bracelet.webp",
     members: true,
   },
   {
@@ -1328,7 +1328,7 @@ const CRAFTINGLIST = [
     exp: 60,
     price: 0,
     toGo: 0,
-    src: "crafting/Amethyst_arrowtips.webp",
+    src: "/crafting/Amethyst_arrowtips.webp",
     members: true,
   },
   {
@@ -1337,7 +1337,7 @@ const CRAFTINGLIST = [
     exp: 60,
     price: 0,
     toGo: 0,
-    src: "crafting/Amethyst_javelin_heads_5.webp",
+    src: "/crafting/Amethyst_javelin_heads_5.webp",
     members: true,
   },
   {
@@ -1346,7 +1346,7 @@ const CRAFTINGLIST = [
     exp: 200,
     price: 0,
     toGo: 0,
-    src: "crafting/Zenyte.webp",
+    src: "/crafting/Zenyte.webp",
     members: true,
   },
   {
@@ -1355,7 +1355,7 @@ const CRAFTINGLIST = [
     exp: 150,
     price: 0,
     toGo: 0,
-    src: "crafting/Zenyte_ring.webp",
+    src: "/crafting/Zenyte_ring.webp",
     members: true,
   },
   {
@@ -1364,7 +1364,7 @@ const CRAFTINGLIST = [
     exp: 60,
     price: 0,
     toGo: 0,
-    src: "crafting/Amethyst_dart_tip.webp",
+    src: "/crafting/Amethyst_dart_tip.webp",
     members: true,
   },
   {
@@ -1373,7 +1373,7 @@ const CRAFTINGLIST = [
     exp: 165,
     price: 0,
     toGo: 0,
-    src: "crafting/Onyx_amulet_(u).webp",
+    src: "/crafting/Onyx_amulet_(u).webp",
     members: true,
   },
   {
@@ -1382,7 +1382,7 @@ const CRAFTINGLIST = [
     exp: 55,
     price: 0,
     toGo: 0,
-    src: "crafting/Redwood_bird_house.webp",
+    src: "/crafting/Redwood_bird_house.webp",
     members: true,
   },
   {
@@ -1391,7 +1391,7 @@ const CRAFTINGLIST = [
     exp: 165,
     price: 0,
     toGo: 0,
-    src: "crafting/Zenyte_necklace.webp",
+    src: "/crafting/Zenyte_necklace.webp",
     members: true,
   },
   {
@@ -1400,7 +1400,7 @@ const CRAFTINGLIST = [
     exp: 180,
     price: 0,
     toGo: 0,
-    src: "crafting/Zenyte_bracelet.webp",
+    src: "/crafting/Zenyte_bracelet.webp",
     members: true,
   },
   {
@@ -1409,7 +1409,7 @@ const CRAFTINGLIST = [
     exp: 200,
     price: 0,
     toGo: 0,
-    src: "crafting/Zenyte_amulet_(u).webp",
+    src: "/crafting/Zenyte_amulet_(u).webp",
     members: true,
   },
 ];

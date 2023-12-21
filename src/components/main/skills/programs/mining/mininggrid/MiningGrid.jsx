@@ -101,7 +101,7 @@ const MiningGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortOre}>
           <img
-            src="ores/Runite_ore.webp"
+            src="/ores/Runite_ore.webp"
             alt="Attack Logo"
             className={stl.miniLogo}
           />{" "}

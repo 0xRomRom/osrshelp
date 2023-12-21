@@ -4,7 +4,7 @@ const LOGSLIST = [
     exp: 40,
     price: 0,
     toGo: 0,
-    src: "logs/Logs.webp",
+    src: "/logs/Logs.webp",
     level: 1,
   },
   {
@@ -12,7 +12,7 @@ const LOGSLIST = [
     exp: 40,
     price: 0,
     toGo: 0,
-    src: "logs/Achey_tree_logs.webp",
+    src: "/logs/Achey_tree_logs.webp",
     level: 1,
   },
   {
@@ -20,7 +20,7 @@ const LOGSLIST = [
     exp: 60,
     price: 0,
     toGo: 0,
-    src: "logs/Oak_logs.webp",
+    src: "/logs/Oak_logs.webp",
     level: 15,
   },
   {
@@ -28,7 +28,7 @@ const LOGSLIST = [
     exp: 90,
     price: 0,
     toGo: 0,
-    src: "logs/Willow_logs.webp",
+    src: "/logs/Willow_logs.webp",
     level: 30,
   },
   {
@@ -36,7 +36,7 @@ const LOGSLIST = [
     exp: 105,
     price: 0,
     toGo: 0,
-    src: "logs/Teak_logs.webp",
+    src: "/logs/Teak_logs.webp",
     level: 35,
   },
   {
@@ -44,7 +44,7 @@ const LOGSLIST = [
     exp: 125,
     price: 0,
     toGo: 0,
-    src: "logs/Arctic_pine_logs.webp",
+    src: "/logs/Arctic_pine_logs.webp",
     level: 42,
   },
   {
@@ -52,7 +52,7 @@ const LOGSLIST = [
     exp: 135,
     price: 0,
     toGo: 0,
-    src: "logs/Maple_logs.webp",
+    src: "/logs/Maple_logs.webp",
     level: 45,
   },
   {
@@ -60,7 +60,7 @@ const LOGSLIST = [
     exp: 157.5,
     price: 0,
     toGo: 0,
-    src: "logs/Mahogany_logs.webp",
+    src: "/logs/Mahogany_logs.webp",
     level: 50,
   },
   {
@@ -68,7 +68,7 @@ const LOGSLIST = [
     exp: 202.5,
     price: 0,
     toGo: 0,
-    src: "logs/Yew_logs.webp",
+    src: "/logs/Yew_logs.webp",
     level: 60,
   },
   {
@@ -76,7 +76,7 @@ const LOGSLIST = [
     exp: 96,
     price: 0,
     toGo: 0,
-    src: "logs/Blisterwood_logs.webp",
+    src: "/logs/Blisterwood_logs.webp",
     level: 62,
   },
   {
@@ -84,7 +84,7 @@ const LOGSLIST = [
     exp: 303.8,
     price: 0,
     toGo: 0,
-    src: "logs/Magic_logs.webp",
+    src: "/logs/Magic_logs.webp",
     level: 75,
   },
   {
@@ -92,7 +92,7 @@ const LOGSLIST = [
     exp: 350,
     price: 0,
     toGo: 0,
-    src: "logs/Redwood_logs.webp",
+    src: "/logs/Redwood_logs.webp",
     level: 90,
   },
   {
@@ -100,7 +100,7 @@ const LOGSLIST = [
     exp: 50.5,
     price: 0,
     toGo: 0,
-    src: "logs/Pyre_logs.webp",
+    src: "/logs/Pyre_logs.webp",
     level: 5,
   },
   {
@@ -108,7 +108,7 @@ const LOGSLIST = [
     exp: 70,
     price: 0,
     toGo: 0,
-    src: "logs/Oak_pyre_logs.webp",
+    src: "/logs/Oak_pyre_logs.webp",
     level: 20,
   },
   {
@@ -116,7 +116,7 @@ const LOGSLIST = [
     exp: 100,
     price: 0,
     toGo: 0,
-    src: "logs/Willow_pyre_logs.webp",
+    src: "/logs/Willow_pyre_logs.webp",
     level: 35,
   },
   {
@@ -124,7 +124,7 @@ const LOGSLIST = [
     exp: 120,
     price: 0,
     toGo: 0,
-    src: "logs/Teak_pyre_logs.webp",
+    src: "/logs/Teak_pyre_logs.webp",
     level: 40,
   },
   {
@@ -132,7 +132,7 @@ const LOGSLIST = [
     exp: 158,
     price: 0,
     toGo: 0,
-    src: "logs/Arctic_pyre_logs.webp",
+    src: "/logs/Arctic_pyre_logs.webp",
     level: 47,
   },
   {
@@ -140,7 +140,7 @@ const LOGSLIST = [
     exp: 175,
     price: 0,
     toGo: 0,
-    src: "logs/Maple_pyre_logs.webp",
+    src: "/logs/Maple_pyre_logs.webp",
     level: 50,
   },
   {
@@ -148,7 +148,7 @@ const LOGSLIST = [
     exp: 210,
     price: 0,
     toGo: 0,
-    src: "logs/Mahogany_pyre_logs.webp",
+    src: "/logs/Mahogany_pyre_logs.webp",
     level: 55,
   },
   {
@@ -156,7 +156,7 @@ const LOGSLIST = [
     exp: 225,
     price: 0,
     toGo: 0,
-    src: "logs/Yew_pyre_logs.webp",
+    src: "/logs/Yew_pyre_logs.webp",
     level: 65,
   },
   {
@@ -164,7 +164,7 @@ const LOGSLIST = [
     exp: 404.5,
     price: 0,
     toGo: 0,
-    src: "logs/Magic_pyre_logs.webp",
+    src: "/logs/Magic_pyre_logs.webp",
     level: 80,
   },
   {
@@ -172,7 +172,7 @@ const LOGSLIST = [
     exp: 500,
     price: 0,
     toGo: 0,
-    src: "logs/Redwood_pyre_logs.webp",
+    src: "/logs/Redwood_pyre_logs.webp",
     level: 95,
   },
 ];

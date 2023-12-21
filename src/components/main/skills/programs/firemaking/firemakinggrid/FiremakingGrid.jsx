@@ -114,7 +114,11 @@ const FiremakingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
-          <img src="logs/Logs.webp" alt="Bones Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="/logs/Logs.webp"
+            alt="Bones Logo"
+            className={stl.miniLogo}
+          />{" "}
           Logs
         </span>
         <span onClick={sortExp}>
@@ -123,7 +127,7 @@ const FiremakingGrid = (props) => {
         </span>
         <span onClick={sortAmount}>
           <img
-            src="logs/Tinderbox.webp"
+            src="/logs/Tinderbox.webp"
             alt="Amount Logo"
             className={stl.miniLogo}
           />{" "}

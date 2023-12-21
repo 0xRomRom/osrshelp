@@ -115,7 +115,7 @@ const PrayerGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
           <img
-            src="bones/Bones.webp"
+            src="/bones/Bones.webp"
             alt="Bones Logo"
             className={stl.miniLogo}
           />{" "}

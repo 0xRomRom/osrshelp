@@ -5,7 +5,7 @@ const FARMINGLIST = [
     displayName: "Potato 14x",
     exp: 134,
     profit: 0,
-    src: "farming/Potato.webp",
+    src: "/farming/Potato.webp",
     patch: "allotment",
   },
   {
@@ -14,7 +14,7 @@ const FARMINGLIST = [
     displayName: "Marigolds 1x",
     exp: 55.5,
     profit: 0,
-    src: "farming/Marigolds.webp",
+    src: "/farming/Marigolds.webp",
     patch: "flower",
   },
   {
@@ -23,7 +23,7 @@ const FARMINGLIST = [
     displayName: "Barley 1x",
     exp: 18,
     profit: 0,
-    src: "farming/Barley.webp",
+    src: "/farming/Barley.webp",
     patch: "hops",
   },
   {
@@ -32,7 +32,7 @@ const FARMINGLIST = [
     displayName: "Hammerstone hops 1x",
     exp: 19,
     profit: 0,
-    src: "farming/Hammerstone_hops.webp",
+    src: "/farming/Hammerstone_hops.webp",
     patch: "hops",
   },
   {
@@ -41,7 +41,7 @@ const FARMINGLIST = [
     displayName: "Onion 14x",
     exp: 9.5,
     profit: 0,
-    src: "farming/Onion.webp",
+    src: "/farming/Onion.webp",
     patch: "allotment",
   },
   {
@@ -50,7 +50,7 @@ const FARMINGLIST = [
     displayName: "Cabbage 14x",
     exp: 10,
     profit: 0,
-    src: "farming/Cabbage.webp",
+    src: "/farming/Cabbage.webp",
     patch: "allotment",
   },
   {
@@ -59,7 +59,7 @@ const FARMINGLIST = [
     displayName: "Asgarnian hops 1x",
     exp: 22.9,
     profit: 0,
-    src: "farming/Asgarnian_hops.webp",
+    src: "/farming/Asgarnian_hops.webp",
     patch: "hops",
   },
   {
@@ -68,7 +68,7 @@ const FARMINGLIST = [
     displayName: "Grimy guam leaf 7x",
     exp: 98.5,
     profit: 0,
-    src: "farming/Grimy_guam_leaf.webp",
+    src: "/farming/Grimy_guam_leaf.webp",
     patch: "herbs",
   },
   {
@@ -77,7 +77,7 @@ const FARMINGLIST = [
     displayName: "Redberries 13x",
     exp: 117.5,
     profit: 0,
-    src: "farming/Redberries.webp",
+    src: "/farming/Redberries.webp",
     patch: "bushes",
   },
   {
@@ -86,7 +86,7 @@ const FARMINGLIST = [
     displayName: "Rosemary 1x",
     exp: 78.5,
     profit: 0,
-    src: "farming/Rosemary.webp",
+    src: "/farming/Rosemary.webp",
     patch: "flower",
   },
   {
@@ -95,7 +95,7 @@ const FARMINGLIST = [
     displayName: "Tomato 14x",
     exp: 12.5,
     profit: 0,
-    src: "farming/Tomato.webp",
+    src: "/farming/Tomato.webp",
     patch: "allotment",
   },
   {
@@ -104,7 +104,7 @@ const FARMINGLIST = [
     displayName: "Jute fibre 1x",
     exp: 27.5,
     profit: 0,
-    src: "farming/Asgarnian_hops.webp",
+    src: "/farming/Asgarnian_hops.webp",
     patch: "hops",
   },
   {
@@ -113,7 +113,7 @@ const FARMINGLIST = [
     displayName: "Grimy marrentill 7x",
     exp: 118.5,
     profit: 0,
-    src: "farming/Grimy_marrentill.webp",
+    src: "/farming/Grimy_marrentill.webp",
     patch: "herbs",
   },
   {
@@ -122,7 +122,7 @@ const FARMINGLIST = [
     displayName: "Oak tree (+protection)",
     exp: 481.3,
     profit: 0,
-    src: "farming/43px-Oak_tree_(grown).webp",
+    src: "/farming/43px-Oak_tree_(grown).webp",
     patch: "trees",
   },
   {
@@ -131,7 +131,7 @@ const FARMINGLIST = [
     displayName: "Yanillian hops 1x",
     exp: 30.5,
     profit: 0,
-    src: "farming/Yanillian_hops.webp",
+    src: "/farming/Yanillian_hops.webp",
     patch: "hops",
   },
   {
@@ -140,7 +140,7 @@ const FARMINGLIST = [
     displayName: "Grimy tarromin 7x",
     exp: 142,
     profit: 0,
-    src: "farming/Grimy_tarromin.webp",
+    src: "/farming/Grimy_tarromin.webp",
     patch: "herbs",
   },
   {
@@ -149,7 +149,7 @@ const FARMINGLIST = [
     displayName: "Sweetcorn 14x",
     exp: 17,
     profit: 0,
-    src: "farming/Sweetcorn.webp",
+    src: "/farming/Sweetcorn.webp",
     patch: "allotment",
   },
   {
@@ -158,7 +158,7 @@ const FARMINGLIST = [
     displayName: "Krandorian hops 1x",
     exp: 37,
     profit: 0,
-    src: "farming/Krandorian_hops.webp",
+    src: "/farming/Krandorian_hops.webp",
     patch: "hops",
   },
   {
@@ -167,7 +167,7 @@ const FARMINGLIST = [
     displayName: "Cadava berries 13x",
     exp: 156.5,
     profit: 0,
-    src: "farming/Cadava_berries.webp",
+    src: "/farming/Cadava_berries.webp",
     patch: "bushes",
   },
   {
@@ -176,7 +176,7 @@ const FARMINGLIST = [
     displayName: "Nasturtium 1x",
     exp: 130.5,
     profit: 0,
-    src: "farming/Nasturtiums.webp",
+    src: "/farming/Nasturtiums.webp",
     patch: "flower",
   },
   {
@@ -185,7 +185,7 @@ const FARMINGLIST = [
     displayName: "Woad 1x",
     exp: 136,
     profit: 0,
-    src: "farming/Woad_leaf_5.webp",
+    src: "/farming/Woad_leaf_5.webp",
     patch: "flower",
   },
   {
@@ -194,7 +194,7 @@ const FARMINGLIST = [
     displayName: "Limpwurt 1x",
     exp: 141.5,
     profit: 0,
-    src: "farming/Limpwurt_root.webp",
+    src: "/farming/Limpwurt_root.webp",
     patch: "flower",
   },
   {
@@ -203,7 +203,7 @@ const FARMINGLIST = [
     displayName: "Grimy harralander 7x",
     exp: 189.5,
     profit: 0,
-    src: "farming/Grimy_harralander.webp",
+    src: "/farming/Grimy_harralander.webp",
     patch: "herbs",
   },
   {
@@ -212,7 +212,7 @@ const FARMINGLIST = [
     displayName: "Apple tree (+protection)",
     exp: 1272.5,
     profit: 0,
-    src: "farming/50px-Apple_tree_(grown).webp",
+    src: "/farming/50px-Apple_tree_(grown).webp",
     patch: "fruittrees",
   },
   {
@@ -221,7 +221,7 @@ const FARMINGLIST = [
     displayName: "Wildblood hops 1x",
     exp: 49,
     profit: 0,
-    src: "farming/Wildblood_hops.webp",
+    src: "/farming/Wildblood_hops.webp",
     patch: "hops",
   },
   {
@@ -230,7 +230,7 @@ const FARMINGLIST = [
     displayName: "Willow tree (+protection)",
     exp: 1456.5,
     profit: 0,
-    src: "farming/36px-Willow_tree_(grown).webp",
+    src: "/farming/36px-Willow_tree_(grown).webp",
     patch: "trees",
   },
   {
@@ -239,7 +239,7 @@ const FARMINGLIST = [
     displayName: "Strawberry 14x",
     exp: 26,
     profit: 0,
-    src: "farming/Strawberry.webp",
+    src: "/farming/Strawberry.webp",
     patch: "allotment",
   },
   {
@@ -248,7 +248,7 @@ const FARMINGLIST = [
     displayName: "Grimy ranarr weed 7x",
     exp: 240.5,
     profit: 0,
-    src: "farming/Grimy_ranarr_weed.webp",
+    src: "/farming/Grimy_ranarr_weed.webp",
     patch: "herbs",
   },
   {
@@ -257,7 +257,7 @@ const FARMINGLIST = [
     displayName: "Banana tree (+protection)",
     exp: 1841.5,
     profit: 0,
-    src: "farming/34px-Banana_tree_(grown).webp",
+    src: "/farming/34px-Banana_tree_(grown).webp",
     patch: "fruittrees",
   },
   {
@@ -266,7 +266,7 @@ const FARMINGLIST = [
     displayName: "Teak tree (+protection)",
     exp: 7325,
     profit: 0,
-    src: "farming/13px-Teak_tree_(grown).webp",
+    src: "/farming/13px-Teak_tree_(grown).webp",
     patch: "special",
   },
   {
@@ -275,7 +275,7 @@ const FARMINGLIST = [
     displayName: "Dwellberries 13x",
     exp: 365,
     profit: 0,
-    src: "farming/Dwellberries.webp",
+    src: "/farming/Dwellberries.webp",
     patch: "bushes",
   },
   {
@@ -284,7 +284,7 @@ const FARMINGLIST = [
     displayName: "Grimy toadflax 7x",
     exp: 303.5,
     profit: 0,
-    src: "farming/Grimy_toadflax.webp",
+    src: "/farming/Grimy_toadflax.webp",
     patch: "herbs",
   },
   {
@@ -293,7 +293,7 @@ const FARMINGLIST = [
     displayName: "Orange tree (+protection)",
     exp: 2586.7,
     profit: 0,
-    src: "farming/30px-Orange_tree_(grown).webp",
+    src: "/farming/30px-Orange_tree_(grown).webp",
     patch: "fruittrees",
   },
   {
@@ -302,7 +302,7 @@ const FARMINGLIST = [
     displayName: "Curry tree (+protection)",
     exp: 3036.9,
     profit: 0,
-    src: "farming/35px-Curry_tree_(grown).webp",
+    src: "/farming/35px-Curry_tree_(grown).webp",
     patch: "fruittrees",
   },
   {
@@ -311,7 +311,7 @@ const FARMINGLIST = [
     displayName: "Grimy irit leaf 7x",
     exp: 382.5,
     profit: 0,
-    src: "farming/Grimy_irit_leaf.webp",
+    src: "/farming/Grimy_irit_leaf.webp",
     patch: "herbs",
   },
   {
@@ -320,7 +320,7 @@ const FARMINGLIST = [
     displayName: "Maple tree (+protection)",
     exp: 3403.4,
     profit: 0,
-    src: "farming/35px-Maple_tree_(grown).webp",
+    src: "/farming/35px-Maple_tree_(grown).webp",
     patch: "trees",
   },
   {
@@ -329,7 +329,7 @@ const FARMINGLIST = [
     displayName: "Watermelon 14x",
     exp: 48.5,
     profit: 0,
-    src: "farming/Watermelon.webp",
+    src: "/farming/Watermelon.webp",
     patch: "allotment",
   },
   {
@@ -338,7 +338,7 @@ const FARMINGLIST = [
     displayName: "Jangerberries 13x",
     exp: 582,
     profit: 0,
-    src: "farming/Jangerberries.webp",
+    src: "/farming/Jangerberries.webp",
     patch: "bushes",
   },
   {
@@ -347,7 +347,7 @@ const FARMINGLIST = [
     displayName: "Grimy avantoe 7x",
     exp: 485,
     profit: 0,
-    src: "farming/Grimy_avantoe.webp",
+    src: "/farming/Grimy_avantoe.webp",
     patch: "herbs",
   },
   {
@@ -356,7 +356,7 @@ const FARMINGLIST = [
     displayName: "Pineapple tree (+protection)",
     exp: 4791.7,
     profit: 0,
-    src: "farming/50px-Pineapple_plant_(grown).webp",
+    src: "/farming/50px-Pineapple_plant_(grown).webp",
     patch: "fruittrees",
   },
   {
@@ -365,7 +365,7 @@ const FARMINGLIST = [
     displayName: "Mahogany tree (+protection)",
     exp: 15783,
     profit: 0,
-    src: "farming/36px-Mahogany_tree_(grown).webp",
+    src: "/farming/36px-Mahogany_tree_(grown).webp",
     patch: "special",
   },
   {
@@ -374,7 +374,7 @@ const FARMINGLIST = [
     displayName: "Grimy kwuarm 7x",
     exp: 615,
     profit: 0,
-    src: "farming/Grimy_kwuarm.webp",
+    src: "/farming/Grimy_kwuarm.webp",
     patch: "herbs",
   },
   {
@@ -383,7 +383,7 @@ const FARMINGLIST = [
     displayName: "Papaya tree (+protection)",
     exp: 6380.4,
     profit: 0,
-    src: "farming/35px-Papaya_tree_(grown).webp",
+    src: "/farming/35px-Papaya_tree_(grown).webp",
     patch: "fruittrees",
   },
   {
@@ -392,7 +392,7 @@ const FARMINGLIST = [
     displayName: "White lily 1x",
     exp: 292,
     profit: 0,
-    src: "farming/White_lily.webp",
+    src: "/farming/White_lily.webp",
     patch: "flower",
   },
   {
@@ -401,7 +401,7 @@ const FARMINGLIST = [
     displayName: "White berries 13x",
     exp: 892.5,
     profit: 0,
-    src: "farming/White_berries.webp",
+    src: "/farming/White_berries.webp",
     patch: "bushes",
   },
   {
@@ -410,7 +410,7 @@ const FARMINGLIST = [
     displayName: "Yew tree (+protection)",
     exp: 7069.9,
     profit: 0,
-    src: "farming/38px-Yew_tree_(grown).webp",
+    src: "/farming/38px-Yew_tree_(grown).webp",
     patch: "trees",
   },
   {
@@ -419,7 +419,7 @@ const FARMINGLIST = [
     displayName: "Snape grass 14x",
     exp: 82,
     profit: 0,
-    src: "farming/Snape_grass.webp",
+    src: "/farming/Snape_grass.webp",
     patch: "allotment",
   },
   {
@@ -428,7 +428,7 @@ const FARMINGLIST = [
     displayName: "Grimy snapdragon 7x",
     exp: 777,
     profit: 0,
-    src: "farming/Grimy_snapdragon.webp",
+    src: "/farming/Grimy_snapdragon.webp",
     patch: "herbs",
   },
   {
@@ -437,7 +437,7 @@ const FARMINGLIST = [
     displayName: "Hespori",
     exp: 12662,
     profit: 0,
-    src: "farming/21px-Hespori_stage_4.webp",
+    src: "/farming/21px-Hespori_stage_4.webp",
     patch: "special",
   },
   {
@@ -446,7 +446,7 @@ const FARMINGLIST = [
     displayName: "Grimy cadantine 7x",
     exp: 946.5,
     profit: 0,
-    src: "farming/Grimy_cadantine.webp",
+    src: "/farming/Grimy_cadantine.webp",
     patch: "herbs",
   },
   {
@@ -455,7 +455,7 @@ const FARMINGLIST = [
     displayName: "Palm tree (+protection)",
     exp: 10509.6,
     profit: 0,
-    src: "farming/33px-Palm_tree_(grown).webp",
+    src: "/farming/33px-Palm_tree_(grown).webp",
     patch: "fruittrees",
   },
   {
@@ -464,7 +464,7 @@ const FARMINGLIST = [
     displayName: "Poison ivy berries 13x",
     exp: 1380,
     profit: 0,
-    src: "farming/Poison_ivy_berries.webp",
+    src: "/farming/Poison_ivy_berries.webp",
     patch: "bushes",
   },
   {
@@ -473,7 +473,7 @@ const FARMINGLIST = [
     displayName: "Grimy lantadyme 7x",
     exp: 1195,
     profit: 0,
-    src: "farming/Grimy_lantadyme.webp",
+    src: "/farming/Grimy_lantadyme.webp",
     patch: "herbs",
   },
   {
@@ -482,7 +482,7 @@ const FARMINGLIST = [
     displayName: "Calquat tree (+protection)",
     exp: 12225.5,
     profit: 0,
-    src: "farming/43px-Calquat_tree_(grown).webp",
+    src: "/farming/43px-Calquat_tree_(grown).webp",
     patch: "special",
   },
   {
@@ -491,7 +491,7 @@ const FARMINGLIST = [
     displayName: "Crystal tree",
     exp: 13366,
     profit: 0,
-    src: "farming/21px-Crystal_tree_(grown).webp",
+    src: "/farming/21px-Crystal_tree_(grown).webp",
     patch: "special",
   },
   {
@@ -500,7 +500,7 @@ const FARMINGLIST = [
     displayName: "Magic tree (+protection)",
     exp: 13768.3,
     profit: 0,
-    src: "farming/27px-Magic_tree_(grown).webp",
+    src: "/farming/27px-Magic_tree_(grown).webp",
     patch: "trees",
   },
   {
@@ -509,7 +509,7 @@ const FARMINGLIST = [
     displayName: "Grimy dwarf weed 7x",
     exp: 1514.5,
     profit: 0,
-    src: "farming/Grimy_dwarf_weed.webp",
+    src: "/farming/Grimy_dwarf_weed.webp",
     patch: "herbs",
   },
   {
@@ -518,7 +518,7 @@ const FARMINGLIST = [
     displayName: "Dragonfruit tree (+protection)",
     exp: 17895,
     profit: 0,
-    src: "farming/40px-Dragonfruit_tree_(grown).png",
+    src: "/farming/40px-Dragonfruit_tree_(grown).png",
     patch: "fruittrees",
   },
   {
@@ -527,7 +527,7 @@ const FARMINGLIST = [
     displayName: "Spirit tree (+protection)",
     exp: 19501,
     profit: 0,
-    src: "farming/34px-Spirit_Tree_(grown).webp",
+    src: "/farming/34px-Spirit_Tree_(grown).webp",
     patch: "special",
   },
   {
@@ -536,7 +536,7 @@ const FARMINGLIST = [
     displayName: "Grimy torstol 7x",
     exp: 1771,
     profit: 0,
-    src: "farming/Grimy_torstol.webp",
+    src: "/farming/Grimy_torstol.webp",
     patch: "herbs",
   },
   {
@@ -545,7 +545,7 @@ const FARMINGLIST = [
     displayName: "Celastrus tree (+protection)",
     exp: 14334,
     profit: 0,
-    src: "farming/23px-Celastrus_tree_(grown).webp",
+    src: "/farming/23px-Celastrus_tree_(grown).webp",
     patch: "special",
   },
   {
@@ -554,7 +554,7 @@ const FARMINGLIST = [
     displayName: "Redwood tree (+protection)",
     exp: 22680,
     profit: 0,
-    src: "farming/27px-Redwood_tree_(grown).webp",
+    src: "/farming/27px-Redwood_tree_(grown).webp",
     patch: "special",
   },
 ];

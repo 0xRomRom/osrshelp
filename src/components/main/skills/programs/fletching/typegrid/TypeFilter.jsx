@@ -25,7 +25,7 @@ const TypeFilter = ({ setActiveFilter, activeFilter }) => {
             onClick={() => handleTypeSwitch("Arrows")}
           >
             <img
-              src="fletching/Dragon_arrow_5.webp"
+              src="/fletching/Dragon_arrow_5.webp"
               alt="Arrows"
               className={stl.bookIcon}
             />
@@ -36,7 +36,7 @@ const TypeFilter = ({ setActiveFilter, activeFilter }) => {
             onClick={() => handleTypeSwitch("Javelins")}
           >
             <img
-              src="fletching/Dragon_javelin.webp"
+              src="/fletching/Dragon_javelin.webp"
               alt="Javelins"
               className={stl.bookIcon}
             />
@@ -47,7 +47,7 @@ const TypeFilter = ({ setActiveFilter, activeFilter }) => {
             onClick={() => handleTypeSwitch("Darts")}
           >
             <img
-              src="fletching/Dragon_dart.webp"
+              src="/fletching/Dragon_dart.webp"
               alt="Darts"
               className={stl.bookIcon}
             />
@@ -58,7 +58,7 @@ const TypeFilter = ({ setActiveFilter, activeFilter }) => {
             onClick={() => handleTypeSwitch("Bolts")}
           >
             <img
-              src="fletching/Diamond_bolts_(e)_5.webp"
+              src="/fletching/Diamond_bolts_(e)_5.webp"
               alt="Bolts"
               className={stl.bookIcon}
             />
@@ -71,7 +71,7 @@ const TypeFilter = ({ setActiveFilter, activeFilter }) => {
             onClick={() => handleTypeSwitch("Crossbows")}
           >
             <img
-              src="fletching/Dragon_crossbow.webp"
+              src="/fletching/Dragon_crossbow.webp"
               alt="Crossbows"
               className={stl.bookIcon}
             />
@@ -82,7 +82,7 @@ const TypeFilter = ({ setActiveFilter, activeFilter }) => {
             onClick={() => handleTypeSwitch("Shields")}
           >
             <img
-              src="fletching/Redwood_shield.webp"
+              src="/fletching/Redwood_shield.webp"
               alt="Shields"
               className={stl.bookIcon}
             />
@@ -93,7 +93,7 @@ const TypeFilter = ({ setActiveFilter, activeFilter }) => {
             onClick={() => handleTypeSwitch("Strung")}
           >
             <img
-              src="fletching/Magic_shortbow.webp"
+              src="/fletching/Magic_shortbow.webp"
               alt="Strung"
               className={stl.bookIcon}
             />
@@ -104,7 +104,7 @@ const TypeFilter = ({ setActiveFilter, activeFilter }) => {
             onClick={() => handleTypeSwitch("Stringless")}
           >
             <img
-              src="fletching/Magic_shortbow_(u).webp"
+              src="/fletching/Magic_shortbow_(u).webp"
               alt="Unstrung"
               className={stl.bookIcon}
             />
@@ -115,7 +115,7 @@ const TypeFilter = ({ setActiveFilter, activeFilter }) => {
             onClick={() => handleTypeSwitch("Misc")}
           >
             <img
-              src="fletching/Toxic_blowpipe.webp"
+              src="/fletching/Toxic_blowpipe.webp"
               alt="Misc"
               className={stl.bookIcon}
             />

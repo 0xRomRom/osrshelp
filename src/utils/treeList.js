@@ -38,7 +38,7 @@ const TREELIST = [
     name: "Achey tree",
     members: true,
     exp: 25,
-    src: "trees/28px-Achey_Tree.webp",
+    src: "/trees/28px-Achey_Tree.webp",
     level: 1,
   },
   {

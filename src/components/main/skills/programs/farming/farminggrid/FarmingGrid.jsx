@@ -304,7 +304,7 @@ const FarmingGrid = (props) => {
         </span>
         <span onClick={sortAmount}>
           <img
-            src="farming/Spade.webp"
+            src="/farming/Spade.webp"
             alt="Amount Logo"
             className={stl.miniLogo}
           />{" "}

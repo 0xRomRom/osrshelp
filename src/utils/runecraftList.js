@@ -5,7 +5,7 @@ const rUNECRAFTLIST = [
     members: false,
     exp: 5,
     profit: 0,
-    src: "runecraft/Air_rune.webp",
+    src: "/runecraft/Air_rune.webp",
     toGo: 0,
   },
   {
@@ -14,7 +14,7 @@ const rUNECRAFTLIST = [
     members: false,
     exp: 5.5,
     profit: 0,
-    src: "runecraft/Mind_rune.webp",
+    src: "/runecraft/Mind_rune.webp",
     toGo: 0,
   },
   {
@@ -23,7 +23,7 @@ const rUNECRAFTLIST = [
     members: false,
     exp: 6,
     profit: 0,
-    src: "runecraft/Water_rune.webp",
+    src: "/runecraft/Water_rune.webp",
     toGo: 0,
   },
   {
@@ -32,7 +32,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 8.25,
     profit: 0,
-    src: "runecraft/Mist_rune.webp",
+    src: "/runecraft/Mist_rune.webp",
     toGo: 0,
   },
   {
@@ -41,7 +41,7 @@ const rUNECRAFTLIST = [
     members: false,
     exp: 6.5,
     profit: 0,
-    src: "runecraft/Earth_rune.webp",
+    src: "/runecraft/Earth_rune.webp",
     toGo: 0,
   },
   {
@@ -50,7 +50,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 8.65,
     profit: 0,
-    src: "runecraft/Dust_rune.webp",
+    src: "/runecraft/Dust_rune.webp",
     toGo: 0,
   },
   {
@@ -59,7 +59,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 9.4,
     profit: 0,
-    src: "runecraft/Mud_rune.webp",
+    src: "/runecraft/Mud_rune.webp",
     toGo: 0,
   },
   {
@@ -68,7 +68,7 @@ const rUNECRAFTLIST = [
     members: false,
     exp: 7,
     profit: 0,
-    src: "runecraft/Fire_rune.webp",
+    src: "/runecraft/Fire_rune.webp",
     toGo: 0,
   },
   {
@@ -77,7 +77,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 9,
     profit: 0,
-    src: "runecraft/Smoke_rune.webp",
+    src: "/runecraft/Smoke_rune.webp",
     toGo: 0,
   },
   {
@@ -86,7 +86,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 9.65,
     profit: 0,
-    src: "runecraft/Steam_rune.webp",
+    src: "/runecraft/Steam_rune.webp",
     toGo: 0,
   },
   {
@@ -95,7 +95,7 @@ const rUNECRAFTLIST = [
     members: false,
     exp: 7.5,
     profit: 0,
-    src: "runecraft/Body_rune.webp",
+    src: "/runecraft/Body_rune.webp",
     toGo: 0,
   },
   {
@@ -104,7 +104,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 10.25,
     profit: 0,
-    src: "runecraft/Lava_rune.webp",
+    src: "/runecraft/Lava_rune.webp",
     toGo: 0,
   },
   {
@@ -113,7 +113,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 8,
     profit: 0,
-    src: "runecraft/Cosmic_rune.webp",
+    src: "/runecraft/Cosmic_rune.webp",
     toGo: 0,
   },
   {
@@ -122,7 +122,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 8.5,
     profit: 0,
-    src: "runecraft/Chaos_rune.webp",
+    src: "/runecraft/Chaos_rune.webp",
     toGo: 0,
   },
   {
@@ -131,7 +131,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 8.7,
     profit: 0,
-    src: "runecraft/Astral_rune.webp",
+    src: "/runecraft/Astral_rune.webp",
     toGo: 0,
   },
   {
@@ -140,7 +140,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 9,
     profit: 0,
-    src: "runecraft/Nature_rune.webp",
+    src: "/runecraft/Nature_rune.webp",
     toGo: 0,
   },
   {
@@ -149,7 +149,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 9.5,
     profit: 0,
-    src: "runecraft/Law_rune.webp",
+    src: "/runecraft/Law_rune.webp",
     toGo: 0,
   },
   {
@@ -158,7 +158,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 10,
     profit: 0,
-    src: "runecraft/Death_rune.webp",
+    src: "/runecraft/Death_rune.webp",
     toGo: 0,
   },
   {
@@ -167,7 +167,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 10.5,
     profit: 0,
-    src: "runecraft/Blood_rune.webp",
+    src: "/runecraft/Blood_rune.webp",
     toGo: 0,
   },
   {
@@ -176,7 +176,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 23.8,
     profit: 0,
-    src: "runecraft/Blood_rune.webp",
+    src: "/runecraft/Blood_rune.webp",
     toGo: 0,
   },
   {
@@ -185,7 +185,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 29.7,
     profit: 0,
-    src: "runecraft/Soul_rune.webp",
+    src: "/runecraft/Soul_rune.webp",
     toGo: 0,
   },
   {
@@ -194,7 +194,7 @@ const rUNECRAFTLIST = [
     members: true,
     exp: 8,
     profit: 0,
-    src: "runecraft/Wrath_rune.webp",
+    src: "/runecraft/Wrath_rune.webp",
     toGo: 0,
   },
 ];

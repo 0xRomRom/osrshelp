@@ -24,7 +24,7 @@ const SpellBookFilter = ({ setActiveSpellbook, activeSpellbook }) => {
           onClick={() => handleSpellbookChange("Standard")}
         >
           <img
-            src="spellbooks/Standard_spellbook.webp"
+            src="/spellbooks/Standard_spellbook.webp"
             alt="Standard spellbook"
             className={stl.bookIcon}
           />
@@ -35,7 +35,7 @@ const SpellBookFilter = ({ setActiveSpellbook, activeSpellbook }) => {
           onClick={() => handleSpellbookChange("Ancient")}
         >
           <img
-            src="spellbooks/Ancient_spellbook.webp"
+            src="/spellbooks/Ancient_spellbook.webp"
             alt="Ancient spellbook"
             className={stl.bookIcon}
           />
@@ -46,7 +46,7 @@ const SpellBookFilter = ({ setActiveSpellbook, activeSpellbook }) => {
           onClick={() => handleSpellbookChange("Lunar")}
         >
           <img
-            src="spellbooks/Lunar_spellbook.webp"
+            src="/spellbooks/Lunar_spellbook.webp"
             alt="Lunar spellbook"
             className={stl.bookIcon}
           />
@@ -57,7 +57,7 @@ const SpellBookFilter = ({ setActiveSpellbook, activeSpellbook }) => {
           onClick={() => handleSpellbookChange("Arceuus")}
         >
           <img
-            src="spellbooks/Arceuus_spellbook.png"
+            src="/spellbooks/Arceuus_spellbook.png"
             alt="Arceuus spellbook"
             className={stl.bookIcon}
           />
