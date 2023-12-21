@@ -66,10 +66,16 @@ const Pagination = ({
             Upgrade
           </button>
         )}
-
-        <button className={stl.loginBtn} onClick={handleClick}>
-          {!loggedInUser ? "Login" : "Logout"}
-        </button>
+        {loggedInUser && (
+          <button className={stl.loginBtn} onClick={handleClick}>
+            Logout
+          </button>
+        )}
+        {!loggedInUser && (
+          <button className={stl.loginBtn} onClick={handleClick}>
+            Login
+          </button>
+        )}
       </div>
     </div>
   );
