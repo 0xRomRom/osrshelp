@@ -2,10 +2,10 @@ import stl from "./Pagination.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 
 import { getAuth, signOut } from "firebase/auth";
-import { useEffect, useState } from "react";
-
 const Pagination = ({
   mainState,
   subState,
@@ -13,9 +13,9 @@ const Pagination = ({
   premiumUser,
   navTo,
 }) => {
+  const { loggedInUser, setLoggedInUser } = useContext(AuthContext);
   const navigate = useNavigate();
-
-  const [connectedUser, setConnectedUser] = useState(false);
+  const auth = getAuth();
 
   const clearSubState = () => {
     setSubState(null);
@@ -24,28 +24,22 @@ const Pagination = ({
     }
   };
 
-  const auth = getAuth();
-
-  useEffect(() => {
-    if (auth.currentUser) {
-      setConnectedUser(true);
-    }
-  }, [auth]);
-
   const handleClick = () => {
-    if (!connectedUser) {
-      navigate("/login");
+    if (loggedInUser) {
+      signOut(auth)
+        .then(() => {
+          // Sign-out successful.
+          setLoggedInUser(false);
+        })
+        .catch((error) => {
+          // An error happened.
+        });
       return;
     }
 
-    signOut(auth)
-      .then(() => {
-        // Sign-out successful.
-        setConnectedUser(false);
-      })
-      .catch((error) => {
-        // An error happened.
-      });
+    if (!loggedInUser) {
+      navigate("/login");
+    }
   };
 
   return (
@@ -63,7 +57,7 @@ const Pagination = ({
         )}
       </div>
       <div className={stl.rightBar}>
-        {!premiumUser && connectedUser && (
+        {!premiumUser && loggedInUser && (
           <button
             className={stl.upgradeCta}
             onClick={() => navigate("/checkout")}
@@ -72,8 +66,9 @@ const Pagination = ({
             Upgrade
           </button>
         )}
+
         <button className={stl.loginBtn} onClick={handleClick}>
-          {connectedUser ? "Logout" : "Login"}
+          {!loggedInUser ? "Login" : "Logout"}
         </button>
       </div>
     </div>

@@ -12,10 +12,14 @@ import Spinner from "../../utils/loadingspinner/Spinner";
 
 import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 
+import { useContext } from "react";
+import { AuthContext } from "../../utils/authprovider/AuthProvider";
+
 const auth = getAuth(firebase);
 const db = getDatabase(firebase);
 
-const SignUp = ({ setLoggedInUser, setPremiumUser }) => {
+const SignUp = ({ setPremiumUser }) => {
+  const { setLoggedInUser } = useContext(AuthContext);
   const prefersLoginScreen = localStorage.getItem("PrefersLoginScreen");
   const savedUsername = localStorage.getItem("SaveUsername");
   const saveChecked = localStorage.getItem("SaveChecked");
