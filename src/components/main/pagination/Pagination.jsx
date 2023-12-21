@@ -67,13 +67,13 @@ const Pagination = ({
           <button
             className={stl.upgradeCta}
             onClick={() => navigate("/checkout")}
-            style={{ display: !premiumUser ? "inline" : "none" }}
+            style={{ display: premiumUser ? "inline" : "none" }}
           >
             Upgrade
           </button>
         )}
         <button className={stl.loginBtn} onClick={handleClick}>
-          {auth.currentUser ? "Logout" : "Login"}
+          {connectedUser ? "Logout" : "Login"}
         </button>
       </div>
     </div>

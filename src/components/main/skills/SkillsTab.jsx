@@ -51,11 +51,16 @@ import HunterCalculator from "./programs/hunter/HunterCalculator";
 import ConstructionCalculator from "./programs/construction/ConstructionCalculator";
 
 import Pagination from "../pagination/Pagination";
+import { useEffect } from "react";
 
 const SkillsTab = (props) => {
   const handleTabOpen = (path) => {
     props.setSubState(path);
   };
+
+  useEffect(() => {
+    console.log(props.premiumUser);
+  }, [props.premiumUser]);
 
   return (
     <>

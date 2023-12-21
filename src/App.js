@@ -87,6 +87,7 @@ const App = () => {
                 setSubState={setSubState}
                 subState={subState}
                 premiumUser={premiumUser}
+                loggedInUser={loggedInUser}
               />
             }
           />

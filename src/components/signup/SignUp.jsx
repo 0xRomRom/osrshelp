@@ -157,7 +157,7 @@ const SignUp = ({ setLoggedInUser, setPremiumUser }) => {
 
       const dbref = ref(db);
 
-      get(child(dbref, "users/" + uid)).then((snapshot) => {
+      await get(child(dbref, "users/" + uid)).then((snapshot) => {
         const data = snapshot.val();
         if (data.premium) {
           setPremiumUser(true);
