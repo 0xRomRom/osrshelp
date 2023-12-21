@@ -6,13 +6,22 @@ import { useNavigate } from "react-router-dom";
 import { getAuth, signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 
-const Pagination = ({ mainState, subState, setSubState, premiumUser }) => {
+const Pagination = ({
+  mainState,
+  subState,
+  setSubState,
+  premiumUser,
+  navTo,
+}) => {
   const navigate = useNavigate();
 
   const [connectedUser, setConnectedUser] = useState(false);
 
   const clearSubState = () => {
     setSubState(null);
+    if (navTo) {
+      navigate(navTo);
+    }
   };
 
   const auth = getAuth();

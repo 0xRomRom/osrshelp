@@ -10,13 +10,16 @@ import NPCGrid from "./npcgrid/NPCGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import { useState } from "react";
 import Pagination from "../../../pagination/Pagination";
+import { useNavigate } from "react-router-dom";
 
 const AttackCalculator = (props) => {
+  const navigate = useNavigate();
   const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
 
   const handleMenuSwitch = () => {
     props.setSubState(null);
+    navigate("/skillcalculators");
   };
 
   const handleUserReset = () => {
@@ -35,6 +38,7 @@ const AttackCalculator = (props) => {
         subState={props.subState}
         setSubState={props.setSubState}
         premiumUser={props.premiumUser}
+        navTo="/skillcalculators"
       />
       <div className={stl.modal}>
         <div className={stl.topBar}>
