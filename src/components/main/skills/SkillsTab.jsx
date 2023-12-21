@@ -95,6 +95,74 @@ const SkillsTab = (props) => {
           }
         />
         <Route
+          path="/strength"
+          element={
+            <StrengthCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+        <Route
+          path="/hitpoints"
+          element={
+            <HitpointsCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+        <Route
+          path="/ranged"
+          element={
+            <RangedCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+        <Route
+          path="/prayer"
+          element={
+            <PrayerCalculator
+              skills={props.skills}
+              skillsExp={props.skillsExp}
+              playerName={props.playerName}
+              setSkills={props.setSkills}
+              setSkillsExp={props.setSkillsExp}
+              setPlayerName={props.setPlayerName}
+              setSubState={props.setSubState}
+              mainState={props.mainState}
+              subState={props.subState}
+              premiumUser={props.premiumUser}
+            />
+          }
+        />
+        <Route
           path="/*"
           element={
             <>
@@ -131,7 +199,8 @@ const SkillsTab = (props) => {
                     />
                     <span className={stl.skillName}>Defence</span>
                   </Link>
-                  <div
+                  <Link
+                    to="/skillcalculators/strength"
                     className={`${stl.skill} ${stl.strength}`}
                     onClick={() => handleTabOpen("Strength")}
                   >
@@ -141,8 +210,9 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Strength</span>
-                  </div>
-                  <div
+                  </Link>
+                  <Link
+                    to="/skillcalculators/hitpoints"
                     className={`${stl.skill} ${stl.hitpoints}`}
                     onClick={() => handleTabOpen("Hitpoints")}
                   >
@@ -152,8 +222,9 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Hitpoints</span>
-                  </div>
-                  <div
+                  </Link>
+                  <Link
+                    to="/skillcalculators/ranged"
                     className={`${stl.skill} ${stl.ranged}`}
                     onClick={() => handleTabOpen("Ranged")}
                   >
@@ -163,8 +234,9 @@ const SkillsTab = (props) => {
                       className={stl.iconImg}
                     />
                     <span className={stl.skillName}>Ranged</span>
-                  </div>
-                  <div
+                  </Link>
+                  <Link
+                    to="/skillcalculators/prayer"
                     className={`${stl.skill} ${stl.prayer}`}
                     onClick={() => handleTabOpen("Prayer")}
                   >
@@ -176,7 +248,7 @@ const SkillsTab = (props) => {
                     <span className={`${stl.skillName} ${stl.black}`}>
                       Prayer
                     </span>
-                  </div>
+                  </Link>
                   <div
                     className={`${stl.skill} ${stl.magic}`}
                     onClick={() => handleTabOpen("Magic")}
