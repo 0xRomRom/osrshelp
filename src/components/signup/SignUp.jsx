@@ -151,6 +151,7 @@ const SignUp = ({ setPremiumUser }) => {
     localStorage.setItem("PrefersLoginScreen", "True");
 
     setLoading(false);
+    setLoggedInUser(data.user);
     navigate("/");
   };
 
