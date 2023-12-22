@@ -397,11 +397,9 @@ input[type="checkbox"]:checked + .rememberLabel::before {
   font-size: 32px;
   position: relative;
   transform: rotate(180deg);
-  width: 2rem;
   color: gray;
   top: -2.5rem;
   left: -8rem;
-  height: auto;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }

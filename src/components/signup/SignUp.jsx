@@ -43,6 +43,11 @@ const SignUp = ({ setPremiumUser }) => {
 
   const [isChecked, setIsChecked] = useState(true);
 
+  const handleBackToLogin = () => {
+    setRegisterComplete(false);
+    setSignupState(false);
+  };
+
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
     if (isChecked) {
@@ -104,17 +109,13 @@ const SignUp = ({ setPremiumUser }) => {
     const { data, error } = await supabase.auth.signUp({
       email: signupEmail.current.value,
       password: signupPassword.current.value,
-      metadata: {
-        premium: false,
-      },
     });
 
-    console.log(data);
-
     const uid = data.user["id"];
-    console.log(uid);
+
     if (error) {
       const message = error.message;
+      console.log(message);
 
       switch (message) {
         case "Unable to validate email address: invalid format":
@@ -130,12 +131,27 @@ const SignUp = ({ setPremiumUser }) => {
           break;
       }
     }
-    setRegisterComplete(true);
 
-    // await supabase.from("users").insert([{ uid: uid, premium: false }]);
+    try {
+      const { error } = await supabase
+        .from("users")
+        .insert([{ uid: uid, premium: false }]);
+
+      if (error) {
+        if (error.details) {
+          console.error("Supabase Error Details:", error.details);
+        }
+        throw new Error(error.message);
+      }
+    } catch (err) {
+      console.error("Supabase Insert Error:", err);
+    }
+
+    setRegisterComplete(true);
     localStorage.setItem("PrefersLoginScreen", "True");
 
     setLoading(false);
+    navigate("/");
   };
 
   const handleLogin = async (e) => {
@@ -305,7 +321,7 @@ const SignUp = ({ setPremiumUser }) => {
           <div className={stl.registerComplete}>
             <FaArrowRightLong
               className={stl.backArrow}
-              onClick={() => setRegisterComplete(false)}
+              onClick={handleBackToLogin}
             />
             <h2 className={stl.verifyHero}>Please verify your email</h2>
 
