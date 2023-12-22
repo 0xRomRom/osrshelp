@@ -11,9 +11,15 @@ const AuthProvider = ({ children }) => {
       if (event === "SIGNED_IN") {
         console.log("SIGNED_IN", session);
         setLoggedInUser(session.user);
+        return;
       }
+      setLoggedInUser({});
     });
   }, [setLoggedInUser]);
+
+  useEffect(() => {
+    console.log(loggedInUser);
+  }, [loggedInUser]);
 
   return (
     <AuthContext.Provider value={{ loggedInUser, setLoggedInUser }}>

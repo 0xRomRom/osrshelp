@@ -4,8 +4,8 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
+import supabase from "../../../utils/supabase/supabase";
 
-import { getAuth, signOut } from "firebase/auth";
 const Pagination = ({
   mainState,
   subState,
@@ -15,7 +15,6 @@ const Pagination = ({
 }) => {
   const { loggedInUser, setLoggedInUser } = useContext(AuthContext);
   const navigate = useNavigate();
-  const auth = getAuth();
 
   const clearSubState = () => {
     setSubState(null);
@@ -24,20 +23,20 @@ const Pagination = ({
     }
   };
 
-  const handleClick = () => {
-    if (loggedInUser) {
-      signOut(auth)
-        .then(() => {
-          // Sign-out successful.
-          setLoggedInUser(false);
-        })
-        .catch((error) => {
-          // An error happened.
-        });
-      return;
+  const handleClick = async () => {
+    if (!loggedInUser) {
+      try {
+        const { error } = await supabase.auth.signOut();
+        if (error) {
+          throw new Error(error);
+        }
+        setLoggedInUser(false);
+      } catch (err) {
+        console.error(err);
+      }
     }
 
-    if (!loggedInUser) {
+    if (loggedInUser) {
       navigate("/login");
     }
   };
@@ -66,12 +65,12 @@ const Pagination = ({
             Upgrade
           </button>
         )}
-        {loggedInUser && (
+        {!loggedInUser && (
           <button className={stl.loginBtn} onClick={handleClick}>
             Logout
           </button>
         )}
-        {!loggedInUser && (
+        {loggedInUser && (
           <button className={stl.loginBtn} onClick={handleClick}>
             Login
           </button>

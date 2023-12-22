@@ -158,50 +158,42 @@ const SignUp = ({ setPremiumUser }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
 
+    setLoading(true);
+
+    // await singInWithEmail
+
     try {
-      setLoading(true);
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: loginEmail.current.value,
+        password: loginPassword.current.value,
+      });
 
-      // await singInWithEmail
-      //loginEmail.current.value,
-      //loginPassword.current.value
-      const user = "result";
-
-      setLoggedInUser(user);
-      localStorage.setItem("PrefersLoginScreen", "True");
-      localStorage.removeItem("SaveUsername");
-      if (isChecked) {
-        localStorage.setItem("SaveUsername", loginEmail.current.value);
+      if (error) {
+        throw new Error(error);
       }
-      setLoading(false);
-
-      //
-      const uid = "Get uid";
-      if (3 > 6) {
-        console.log(uid);
-      }
-
-      //query db to check if user is premium, flip setPremiumUser is true
-
-      // setPremiumUser()
-
-      navigate("/");
-    } catch (err) {
-      setLoading(false);
-      const code = err.code;
-      if (code === "auth/invalid-email") {
-        setError("Invalid email");
-        loginEmail.current?.focus();
-      }
-      if (code === "auth/missing-password") {
-        setError("Missing password");
-        loginPassword.current?.focus();
-      }
-      if (code === "auth/invalid-credential") {
-        setError("Wrong email or password");
-      }
-
-      console.error(err);
+    } catch (error) {
+      console.error(error.details);
+      setError("Invalid email or password");
+      return;
     }
+
+    // setLoggedInUser(data.user);
+    localStorage.setItem("PrefersLoginScreen", "True");
+    localStorage.removeItem("SaveUsername");
+    if (isChecked) {
+      localStorage.setItem("SaveUsername", loginEmail.current.value);
+    }
+    setLoading(false);
+
+    //query db to check if user is premium, flip setPremiumUser is true
+    // const uid = "Get uid";
+    // if (3 > 6) {
+    //   console.log(uid);
+    // }
+
+    // setPremiumUser()
+
+    navigate("/");
   };
   const handlePasswordReset = (e) => {
     e.preventDefault();
