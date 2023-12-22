@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import supabase from "../../../utils/supabase/supabase";
+import { useEffect } from "react";
 
 const Pagination = ({
   mainState,
@@ -22,9 +23,17 @@ const Pagination = ({
       navigate(navTo);
     }
   };
+  const loggedIn = Object.keys(loggedInUser).length > 0;
+  useEffect(() => {
+    console.log(loggedInUser);
+  }, [loggedInUser]);
 
   const handleClick = async () => {
-    if (!loggedInUser) {
+    if (!loggedIn) {
+      navigate("/login");
+    }
+
+    if (loggedIn) {
       try {
         const { error } = await supabase.auth.signOut();
         if (error) {
@@ -34,10 +43,6 @@ const Pagination = ({
       } catch (err) {
         console.error(err);
       }
-    }
-
-    if (loggedInUser) {
-      navigate("/login");
     }
   };
 
@@ -56,7 +61,7 @@ const Pagination = ({
         )}
       </div>
       <div className={stl.rightBar}>
-        {!premiumUser && loggedInUser && (
+        {!premiumUser && loggedIn && (
           <button
             className={stl.upgradeCta}
             onClick={() => navigate("/checkout")}
@@ -65,12 +70,12 @@ const Pagination = ({
             Upgrade
           </button>
         )}
-        {!loggedInUser && (
+        {loggedIn && (
           <button className={stl.loginBtn} onClick={handleClick}>
             Logout
           </button>
         )}
-        {loggedInUser && (
+        {!loggedIn && (
           <button className={stl.loginBtn} onClick={handleClick}>
             Login
           </button>

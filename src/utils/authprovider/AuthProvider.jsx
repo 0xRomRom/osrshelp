@@ -12,14 +12,11 @@ const AuthProvider = ({ children }) => {
         console.log("SIGNED_IN", session);
         setLoggedInUser(session.user);
         return;
+      } else {
+        setLoggedInUser({});
       }
-      setLoggedInUser({});
     });
   }, [setLoggedInUser]);
-
-  useEffect(() => {
-    console.log(loggedInUser);
-  }, [loggedInUser]);
 
   return (
     <AuthContext.Provider value={{ loggedInUser, setLoggedInUser }}>
