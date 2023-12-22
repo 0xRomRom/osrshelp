@@ -167,6 +167,7 @@ const SignUp = ({ setPremiumUser }) => {
         email: loginEmail.current.value,
         password: loginPassword.current.value,
       });
+      setLoggedInUser(data.user);
 
       if (error) {
         throw new Error(error);
@@ -177,7 +178,6 @@ const SignUp = ({ setPremiumUser }) => {
       return;
     }
 
-    // setLoggedInUser(data.user);
     localStorage.setItem("PrefersLoginScreen", "True");
     localStorage.removeItem("SaveUsername");
     if (isChecked) {

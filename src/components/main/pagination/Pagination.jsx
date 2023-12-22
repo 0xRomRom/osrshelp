@@ -24,26 +24,26 @@ const Pagination = ({
     }
   };
   const loggedIn = Object.keys(loggedInUser).length > 0;
+
+  const handleLogout = async () => {
+    try {
+      const { error } = await supabase.auth.signOut();
+      if (error) {
+        throw new Error(error);
+      }
+      setLoggedInUser({});
+      console.log("SIGNED OUT");
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   useEffect(() => {
     console.log(loggedInUser);
   }, [loggedInUser]);
 
-  const handleClick = async () => {
-    if (!loggedIn) {
-      navigate("/login");
-    }
-
-    if (loggedIn) {
-      try {
-        const { error } = await supabase.auth.signOut();
-        if (error) {
-          throw new Error(error);
-        }
-        setLoggedInUser(false);
-      } catch (err) {
-        console.error(err);
-      }
-    }
+  const handleLogin = async () => {
+    navigate("/login");
   };
 
   return (
@@ -70,13 +70,14 @@ const Pagination = ({
             Upgrade
           </button>
         )}
-        {loggedIn && (
-          <button className={stl.loginBtn} onClick={handleClick}>
+        {Object.keys(loggedInUser).length > 0 && (
+          <button className={stl.loginBtn} onClick={handleLogout}>
             Logout
           </button>
         )}
-        {!loggedIn && (
-          <button className={stl.loginBtn} onClick={handleClick}>
+
+        {!Object.keys(loggedInUser).length > 0 && (
+          <button className={stl.loginBtn} onClick={handleLogin}>
             Login
           </button>
         )}
