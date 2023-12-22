@@ -385,7 +385,8 @@ input[type="checkbox"]:checked + .rememberLabel::before {
 }
 
 .providerWrap:hover {
-  border: 2px solid gray;
+  border: 2px solid rgb(68, 68, 68);
+  color: white;
 }
 
 .otherArrow {

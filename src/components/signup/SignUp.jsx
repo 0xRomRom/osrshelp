@@ -36,7 +36,7 @@ const SignUp = ({ setPremiumUser }) => {
 
   const [signupState, setSignupState] = useState(true);
   const [resetPassActive, setResetPassActive] = useState(false);
-  const [registerComplete, setRegisterComplete] = useState(true);
+  const [registerComplete, setRegisterComplete] = useState(false);
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -99,48 +99,43 @@ const SignUp = ({ setPremiumUser }) => {
 
     setError("");
 
-    try {
-      setLoading(true);
+    setLoading(true);
 
-      const { data, error } = await supabase.auth.signUp({
-        email: signupEmail.current.value,
-        password: signupPassword.current.value,
-        options: {
-          premium: false,
-        },
-      });
+    const { data, error } = await supabase.auth.signUp({
+      email: signupEmail.current.value,
+      password: signupPassword.current.value,
+      metadata: {
+        premium: false,
+      },
+    });
 
-      console.log(data);
-      console.log(error.message);
+    console.log(data);
 
-      const uid = data.user.id;
-      console.log(uid);
-      if (error) {
-        const message = error.message;
+    const uid = data.user["id"];
+    console.log(uid);
+    if (error) {
+      const message = error.message;
 
-        switch (message) {
-          case "Unable to validate email address: invalid format":
-            setError("Invalid email");
-            loginEmail.current?.focus();
-            break;
-          case "Password should be at least 6 characters.":
-            setError("Password should be at least 6 characters.");
-            loginPassword.current?.focus();
-            break;
-          default:
-            setError("An unexpected error occurred. Please try again.");
-            break;
-        }
+      switch (message) {
+        case "Unable to validate email address: invalid format":
+          setError("Invalid email");
+          loginEmail.current?.focus();
+          break;
+        case "Password should be at least 6 characters.":
+          setError("Password should be at least 6 characters.");
+          loginPassword.current?.focus();
+          break;
+        default:
+          setError("An unexpected error occurred. Please try again.");
+          break;
       }
-      setRegisterComplete(true);
-
-      // await supabase.from("users").insert([{ uid: uid, premium: false }]);
-      localStorage.setItem("PrefersLoginScreen", "True");
-
-      setLoading(false);
-    } catch (err) {
-      setLoading(false);
     }
+    setRegisterComplete(true);
+
+    // await supabase.from("users").insert([{ uid: uid, premium: false }]);
+    localStorage.setItem("PrefersLoginScreen", "True");
+
+    setLoading(false);
   };
 
   const handleLogin = async (e) => {
@@ -308,7 +303,10 @@ const SignUp = ({ setPremiumUser }) => {
         )}
         {registerComplete && (
           <div className={stl.registerComplete}>
-            <FaArrowRightLong className={stl.backArrow} />
+            <FaArrowRightLong
+              className={stl.backArrow}
+              onClick={() => setRegisterComplete(false)}
+            />
             <h2 className={stl.verifyHero}>Please verify your email</h2>
 
             <div className={stl.mailProviders}>
