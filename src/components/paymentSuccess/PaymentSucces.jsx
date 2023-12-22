@@ -25,7 +25,7 @@ const PaymentSucces = ({ setPremiumUser }) => {
     };
 
     getURLParams();
-  }, [location.search, setPremiumUser]);
+  }, [location.search, setPremiumUser, navigate]);
 
   return (
     <div className={stl.paymentSucces}>

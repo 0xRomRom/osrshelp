@@ -1,13 +1,8 @@
 import stl from "./SignUp.module.css";
 import { useState, useRef, useEffect } from "react";
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-  createUserWithEmailAndPassword,
-} from "firebase/auth";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 import { useNavigate } from "react-router-dom";
-import { getDatabase, ref, set, get, child } from "firebase/database";
-import firebase from "../../utils/firebase";
 import Spinner from "../../utils/loadingspinner/Spinner";
 
 import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
@@ -15,8 +10,12 @@ import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 import { useContext } from "react";
 import { AuthContext } from "../../utils/authprovider/AuthProvider";
 
-const auth = getAuth(firebase);
-const db = getDatabase(firebase);
+////////////
+//Supabase//
+////////////
+import supabase from "../../utils/supabase/supabase";
+
+/////////
 
 const SignUp = ({ setPremiumUser }) => {
   const { setLoggedInUser } = useContext(AuthContext);
@@ -37,11 +36,13 @@ const SignUp = ({ setPremiumUser }) => {
 
   const [signupState, setSignupState] = useState(true);
   const [resetPassActive, setResetPassActive] = useState(false);
+  const [registerComplete, setRegisterComplete] = useState(true);
 
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
   const [isChecked, setIsChecked] = useState(true);
+
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
     if (isChecked) {
@@ -93,10 +94,6 @@ const SignUp = ({ setPremiumUser }) => {
     setSignupState(!signupState);
   };
 
-  const newUser = {
-    premium: false,
-  };
-
   const handleRegister = async (e) => {
     e.preventDefault();
 
@@ -104,38 +101,45 @@ const SignUp = ({ setPremiumUser }) => {
 
     try {
       setLoading(true);
-      const user = await createUserWithEmailAndPassword(
-        auth,
-        signupEmail.current.value,
-        signupPassword.current.value
-      );
-      setLoggedInUser(user);
+
+      const { data, error } = await supabase.auth.signUp({
+        email: signupEmail.current.value,
+        password: signupPassword.current.value,
+        options: {
+          premium: false,
+        },
+      });
+
+      console.log(data);
+      console.log(error.message);
+
+      const uid = data.user.id;
+      console.log(uid);
+      if (error) {
+        const message = error.message;
+
+        switch (message) {
+          case "Unable to validate email address: invalid format":
+            setError("Invalid email");
+            loginEmail.current?.focus();
+            break;
+          case "Password should be at least 6 characters.":
+            setError("Password should be at least 6 characters.");
+            loginPassword.current?.focus();
+            break;
+          default:
+            setError("An unexpected error occurred. Please try again.");
+            break;
+        }
+      }
+      setRegisterComplete(true);
+
+      // await supabase.from("users").insert([{ uid: uid, premium: false }]);
       localStorage.setItem("PrefersLoginScreen", "True");
 
-      await set(ref(db, "users/" + user.user.uid), newUser);
       setLoading(false);
-      navigate("/");
     } catch (err) {
       setLoading(false);
-      const code = err.code;
-      if (code === "auth/invalid-email") {
-        setError("Invalid email");
-        signupEmail.current?.focus();
-      }
-      if (code === "auth/email-already-in-use") {
-        setError("Email already in use");
-        signupEmail.current?.focus();
-      }
-      if (code === "auth/missing-password") {
-        setError("Missing password");
-        signupPassword.current?.focus();
-      }
-      if (code === "auth/weak-password") {
-        setError("Weak password");
-        signupPassword.current?.focus();
-      }
-
-      console.error(err);
     }
   };
 
@@ -144,11 +148,12 @@ const SignUp = ({ setPremiumUser }) => {
 
     try {
       setLoading(true);
-      const user = await signInWithEmailAndPassword(
-        auth,
-        loginEmail.current.value,
-        loginPassword.current.value
-      );
+
+      // await singInWithEmail
+      //loginEmail.current.value,
+      //loginPassword.current.value
+      const user = "result";
+
       setLoggedInUser(user);
       localStorage.setItem("PrefersLoginScreen", "True");
       localStorage.removeItem("SaveUsername");
@@ -157,18 +162,15 @@ const SignUp = ({ setPremiumUser }) => {
       }
       setLoading(false);
 
-      const uid = user.user.uid;
+      //
+      const uid = "Get uid";
+      if (3 > 6) {
+        console.log(uid);
+      }
 
-      const dbref = ref(db);
+      //query db to check if user is premium, flip setPremiumUser is true
 
-      await get(child(dbref, "users/" + uid)).then((snapshot) => {
-        const data = snapshot.val();
-        if (data.premium) {
-          setPremiumUser(true);
-          return;
-        }
-        setPremiumUser(false);
-      });
+      // setPremiumUser()
 
       navigate("/");
     } catch (err) {
@@ -200,7 +202,7 @@ const SignUp = ({ setPremiumUser }) => {
         <span className={stl.navLogoSpan}>OSRS Help</span>
       </div>
       <div className={stl.modal}>
-        {!resetPassActive && (
+        {!resetPassActive && !registerComplete && (
           <>
             <h1 className={stl.hero}>
               {signupState && <span>Sign up</span>}
@@ -281,7 +283,7 @@ const SignUp = ({ setPremiumUser }) => {
             </span>
           </>
         )}
-        {resetPassActive && (
+        {resetPassActive && !registerComplete && (
           <form className={stl.resetPassModal}>
             <h2 className={stl.resetHero}>
               Enter your email to <br />
@@ -303,6 +305,55 @@ const SignUp = ({ setPremiumUser }) => {
               Cancel
             </span>
           </form>
+        )}
+        {registerComplete && (
+          <div className={stl.registerComplete}>
+            <FaArrowRightLong className={stl.backArrow} />
+            <h2 className={stl.verifyHero}>Please verify your email</h2>
+
+            <div className={stl.mailProviders}>
+              <div
+                className={stl.providerWrap}
+                onClick={() => window.open("https://www.gmail.com", "_blank")}
+              >
+                <img
+                  src="/mailicons/Gmail.png"
+                  alt="Gmail logo"
+                  className={stl.mailProvider}
+                />
+                Gmail
+              </div>
+              <div
+                className={stl.providerWrap}
+                onClick={() => window.open("https://www.outlook.com", "_blank")}
+              >
+                <img
+                  src="/mailicons/Outlook.png"
+                  alt="Outlook logo"
+                  className={stl.mailProvider}
+                />
+                Outlook
+              </div>
+              <div
+                className={stl.providerWrap}
+                onClick={() => window.open("https://www.yahoo.com", "_blank")}
+              >
+                <img
+                  src="/mailicons/Yahoo.png"
+                  alt="Yahoo logo"
+                  className={stl.mailProvider}
+                />
+                Yahoo
+              </div>
+              <div
+                className={stl.providerWrap}
+                onClick={() => window.open("https://www.google.com", "_blank")}
+              >
+                <FaArrowRightLong className={stl.otherArrow} />
+                Other
+              </div>
+            </div>
+          </div>
         )}
       </div>
     </div>
