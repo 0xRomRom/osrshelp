@@ -111,8 +111,6 @@ const SignUp = () => {
       password: signupPassword.current.value,
     });
 
-    const uid = data.user["id"];
-
     if (error) {
       const message = error.message;
       console.log(message);
@@ -133,6 +131,7 @@ const SignUp = () => {
     }
 
     try {
+      const uid = data.user["id"];
       const { error } = await supabase
         .from("users")
         .insert([{ uid: uid, premium: false, email: data.session.user.email }]);

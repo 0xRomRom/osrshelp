@@ -9,13 +9,14 @@ import CheckoutForm from "./checkoutForm/CheckoutForm";
 import { useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 
-import { getAuth } from "firebase/auth";
-import firebase from "../../utils/firebase";
-
-const auth = getAuth(firebase);
+import supabase from "../../utils/supabase/supabase";
+import { useContext } from "react";
+import { AuthContext } from "../../utils/authprovider/AuthProvider";
 
 const Checkout = () => {
   const navigate = useNavigate();
+
+  const { userID } = useContext(AuthContext);
 
   const [stripePromise, setStripePromise] = useState(null);
   const [clientSecret, setClientSecret] = useState("");
@@ -25,12 +26,14 @@ const Checkout = () => {
       "https://osrshelpstripe.netlify.app/.netlify/functions/server/config"
     ).then(async (r) => {
       const { publishableKey } = await r.json();
+      console.log(publishableKey);
       setStripePromise(loadStripe(publishableKey));
     });
   }, []);
 
   useEffect(() => {
-    const uid = auth.currentUser.uid;
+    const uid = userID;
+    console.log(uid);
     fetch(
       "https://osrshelpstripe.netlify.app/.netlify/functions/server/create-payment-intent",
       {
@@ -42,6 +45,7 @@ const Checkout = () => {
       }
     ).then(async (result) => {
       var { clientSecret } = await result.json();
+      console.log(clientSecret);
       setClientSecret(clientSecret);
     });
   }, []);

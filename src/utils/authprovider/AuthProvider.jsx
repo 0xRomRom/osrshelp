@@ -6,6 +6,7 @@ export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [loggedInUser, setLoggedInUser] = useState(false);
   const [premiumUser, setPremiumUser] = useState(false);
+  const [userID, setUserID] = useState(false);
 
   const getPremium = useCallback(async (uid) => {
     const { data } = await supabase
@@ -26,13 +27,16 @@ const AuthProvider = ({ children }) => {
         if (event === "INITIAL_SESSION") {
           setLoggedInUser(true);
           getPremium(session.user["id"]);
+          setUserID(session.user["id"]);
         }
         if (event === "SIGNED_OUT") {
           setLoggedInUser(false);
+          setUserID(null);
         }
         if (event === "SIGNED_IN") {
           setLoggedInUser(true);
           getPremium(session.user["id"]);
+          setUserID(session.user["id"]);
         }
       }
     });
@@ -40,7 +44,7 @@ const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ loggedInUser, setLoggedInUser, premiumUser }}
+      value={{ loggedInUser, setLoggedInUser, premiumUser, userID }}
     >
       {children}
     </AuthContext.Provider>
