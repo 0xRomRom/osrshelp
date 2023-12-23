@@ -6,7 +6,6 @@ export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [loggedInUser, setLoggedInUser] = useState(false);
   const [premiumUser, setPremiumUser] = useState(false);
-  const [userID, setUserID] = useState(null);
 
   const getPremium = useCallback(async (uid) => {
     const { data } = await supabase
@@ -14,34 +13,30 @@ const AuthProvider = ({ children }) => {
       .select("premium")
       .eq("uid", uid)
       .single();
-
     if (data.premium) {
       setPremiumUser(true);
-      console.log("--Premium User--");
+    } else {
+      setPremiumUser(false);
     }
   }, []);
-
-  useEffect(() => {
-    if (userID) {
-      getPremium(userID);
-    }
-  }, [userID, getPremium]);
 
   useEffect(() => {
     supabase.auth.onAuthStateChange(async (event, session) => {
       if (session) {
-        console.log(event);
         if (event === "INITIAL_SESSION") {
           setLoggedInUser(true);
-          setUserID(session.user["id"]);
+          getPremium(session.user["id"]);
         }
         if (event === "SIGNED_OUT") {
           setLoggedInUser(false);
-          setUserID(null);
+        }
+        if (event === "SIGNED_IN") {
+          setLoggedInUser(true);
+          getPremium(session.user["id"]);
         }
       }
     });
-  }, []);
+  }, [getPremium]);
 
   return (
     <AuthContext.Provider

@@ -25,7 +25,6 @@ const Pagination = ({ mainState, subState, setSubState, navTo }) => {
         throw new Error(error);
       }
       setLoggedInUser(false);
-      console.log("SIGNED OUT");
     } catch (err) {
       console.error(err);
     }
@@ -54,7 +53,7 @@ const Pagination = ({ mainState, subState, setSubState, navTo }) => {
           <button
             className={stl.upgradeCta}
             onClick={() => navigate("/checkout")}
-            style={{ display: !premiumUser ? "inline" : "none" }}
+            // style={{ display: !premiumUser ? "inline" : "none" }}
           >
             Upgrade
           </button>
