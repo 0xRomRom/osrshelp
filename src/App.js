@@ -22,8 +22,6 @@ const App = () => {
   const [mainState, setMainState] = useState("Home");
   const [subState, setSubState] = useState(null);
 
-  const [premiumUser, setPremiumUser] = useState(false);
-
   return (
     <div className={stl.app}>
       <AuthProvider>
@@ -37,15 +35,9 @@ const App = () => {
 
         <div className={stl.content}>
           <Routes>
-            <Route
-              path="/successful-payment"
-              element={<PaymentSucces setPremiumUser={setPremiumUser} />}
-            />
+            <Route path="/successful-payment" element={<PaymentSucces />} />
             <Route path="/checkout" element={<Checkout />} />
-            <Route
-              path="/login"
-              element={<SignUp setPremiumUser={setPremiumUser} />}
-            />
+            <Route path="/login" element={<SignUp />} />
             <Route
               index
               path="/"
@@ -60,7 +52,6 @@ const App = () => {
                   mainState={mainState}
                   setSubState={setSubState}
                   subState={subState}
-                  premiumUser={premiumUser}
                 />
               }
             />
@@ -77,7 +68,6 @@ const App = () => {
                   mainState={mainState}
                   setSubState={setSubState}
                   subState={subState}
-                  premiumUser={premiumUser}
                 />
               }
             />
@@ -88,7 +78,6 @@ const App = () => {
                   mainState={mainState}
                   setSubState={setSubState}
                   subState={subState}
-                  premiumUser={premiumUser}
                 />
               }
             />

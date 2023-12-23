@@ -465,7 +465,6 @@ const SkillsTab = (props) => {
                 mainState={props.mainState}
                 subState={props.subState}
                 setSubState={props.setSubState}
-                premiumUser={props.premiumUser}
               />
               <div className={stl.modal}>
                 <div className={stl.modalInner}>

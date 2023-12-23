@@ -5,16 +5,10 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import supabase from "../../../utils/supabase/supabase";
-import { useEffect } from "react";
 
-const Pagination = ({
-  mainState,
-  subState,
-  setSubState,
-  premiumUser,
-  navTo,
-}) => {
-  const { loggedInUser, setLoggedInUser } = useContext(AuthContext);
+const Pagination = ({ mainState, subState, setSubState, navTo }) => {
+  const { loggedInUser, setLoggedInUser, premiumUser } =
+    useContext(AuthContext);
   const navigate = useNavigate();
 
   const clearSubState = () => {
@@ -23,7 +17,6 @@ const Pagination = ({
       navigate(navTo);
     }
   };
-  const loggedIn = Object.keys(loggedInUser).length > 0;
 
   const handleLogout = async () => {
     try {
@@ -31,16 +24,12 @@ const Pagination = ({
       if (error) {
         throw new Error(error);
       }
-      setLoggedInUser({});
+      setLoggedInUser(false);
       console.log("SIGNED OUT");
     } catch (err) {
       console.error(err);
     }
   };
-
-  useEffect(() => {
-    console.log(loggedInUser);
-  }, [loggedInUser]);
 
   const handleLogin = async () => {
     navigate("/login");
@@ -61,22 +50,22 @@ const Pagination = ({
         )}
       </div>
       <div className={stl.rightBar}>
-        {!premiumUser && loggedIn && (
+        {!premiumUser && loggedInUser && (
           <button
             className={stl.upgradeCta}
             onClick={() => navigate("/checkout")}
-            style={{ display: premiumUser ? "inline" : "none" }}
+            style={{ display: !premiumUser ? "inline" : "none" }}
           >
             Upgrade
           </button>
         )}
-        {Object.keys(loggedInUser).length > 0 && (
+        {loggedInUser && (
           <button className={stl.loginBtn} onClick={handleLogout}>
             Logout
           </button>
         )}
 
-        {!Object.keys(loggedInUser).length > 0 && (
+        {!loggedInUser && (
           <button className={stl.loginBtn} onClick={handleLogin}>
             Login
           </button>

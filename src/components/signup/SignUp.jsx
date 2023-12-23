@@ -17,7 +17,7 @@ import supabase from "../../utils/supabase/supabase";
 
 /////////
 
-const SignUp = ({ setPremiumUser }) => {
+const SignUp = () => {
   const { setLoggedInUser } = useContext(AuthContext);
   const prefersLoginScreen = localStorage.getItem("PrefersLoginScreen");
   const savedUsername = localStorage.getItem("SaveUsername");
@@ -151,7 +151,7 @@ const SignUp = ({ setPremiumUser }) => {
     localStorage.setItem("PrefersLoginScreen", "True");
 
     setLoading(false);
-    setLoggedInUser(data.user);
+    setLoggedInUser(true);
     navigate("/");
   };
 
@@ -160,14 +160,12 @@ const SignUp = ({ setPremiumUser }) => {
 
     setLoading(true);
 
-    // await singInWithEmail
-
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({
+      const { error } = await supabase.auth.signInWithPassword({
         email: loginEmail.current.value,
         password: loginPassword.current.value,
       });
-      setLoggedInUser(data.user);
+      setLoggedInUser(true);
 
       if (error) {
         throw new Error(error);
@@ -184,14 +182,6 @@ const SignUp = ({ setPremiumUser }) => {
       localStorage.setItem("SaveUsername", loginEmail.current.value);
     }
     setLoading(false);
-
-    //query db to check if user is premium, flip setPremiumUser is true
-    // const uid = "Get uid";
-    // if (3 > 6) {
-    //   console.log(uid);
-    // }
-
-    // setPremiumUser()
 
     navigate("/");
   };

@@ -73,7 +73,6 @@ const GearCalculator = (props) => {
         mainState={props.mainState}
         subState={props.subState}
         setSubState={props.setSubState}
-        premiumUser={props.premiumUser}
       />
       <div className={stl.gearcalculator}>
         <div className={stl.topWrap}>

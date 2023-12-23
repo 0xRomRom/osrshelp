@@ -25,9 +25,6 @@ const Home = (props) => {
         mainState={props.mainState}
         subState={props.subState}
         setSubState={props.setSubState}
-        premiumUser={props.premiumUser}
-        loggedInUser={props.loggedInUser}
-        setLoggedInUser={props.setLoggedInUser}
       />
       <div className={stl.modal}>
         <div className={stl.imageBox}>

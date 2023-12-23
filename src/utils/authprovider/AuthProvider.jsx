@@ -4,24 +4,20 @@ import supabase from "../supabase/supabase";
 
 export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
-  const [loggedInUser, setLoggedInUser] = useState({});
+  const [loggedInUser, setLoggedInUser] = useState(false);
+  const [premiumUser, setPremiumUser] = useState(false);
   const [userID, setUserID] = useState(null);
 
   const getPremium = useCallback(async (uid) => {
-    try {
-      const { data, error } = await supabase
-        .from("users")
-        .select("premium")
-        .eq("uid", uid)
-        .single();
+    const { data } = await supabase
+      .from("users")
+      .select("premium")
+      .eq("uid", uid)
+      .single();
 
-      console.log(data);
-
-      if (error) {
-        throw new Error(error);
-      }
-    } catch (error) {
-      console.error(error);
+    if (data.premium) {
+      setPremiumUser(true);
+      console.log("--Premium User--");
     }
   }, []);
 
@@ -33,19 +29,24 @@ const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     supabase.auth.onAuthStateChange(async (event, session) => {
-      if (event === "SIGNED_IN") {
-        console.log("SIGNED IN");
-
-        // setLoggedInUser(session.user);
-        setUserID(session.user["id"]);
-
-        return;
+      if (session) {
+        console.log(event);
+        if (event === "INITIAL_SESSION") {
+          setLoggedInUser(true);
+          setUserID(session.user["id"]);
+        }
+        if (event === "SIGNED_OUT") {
+          setLoggedInUser(false);
+          setUserID(null);
+        }
       }
     });
-  }, [setLoggedInUser, getPremium]);
+  }, []);
 
   return (
-    <AuthContext.Provider value={{ loggedInUser, setLoggedInUser }}>
+    <AuthContext.Provider
+      value={{ loggedInUser, setLoggedInUser, premiumUser }}
+    >
       {children}
     </AuthContext.Provider>
   );
