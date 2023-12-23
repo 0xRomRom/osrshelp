@@ -2,7 +2,7 @@ import stl from "./Pagination.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import supabase from "../../../utils/supabase/supabase";
 
@@ -30,6 +30,25 @@ const Pagination = ({ mainState, subState, setSubState, navTo }) => {
     }
   };
 
+  const handleCheckout = async () => {
+    try {
+      const { data, error } = await supabase
+        .from("users")
+        .update({ premium: true })
+        .eq("uid", "48a69f4f-d84f-45f9-81f1-58f3bad420ef");
+
+      if (error) {
+        throw new Error(error);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+    console.log("CHECKED OUT");
+    return;
+
+    navigate("/checkout");
+  };
+
   const handleLogin = async () => {
     navigate("/login");
   };
@@ -52,7 +71,7 @@ const Pagination = ({ mainState, subState, setSubState, navTo }) => {
         {!premiumUser && loggedInUser && (
           <button
             className={stl.upgradeCta}
-            onClick={() => navigate("/checkout")}
+            onClick={handleCheckout}
             // style={{ display: !premiumUser ? "inline" : "none" }}
           >
             Upgrade

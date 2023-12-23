@@ -135,7 +135,7 @@ const SignUp = () => {
     try {
       const { error } = await supabase
         .from("users")
-        .insert([{ uid: uid, premium: false }]);
+        .insert([{ uid: uid, premium: false, email: data.session.user.email }]);
 
       if (error) {
         if (error.details) {
@@ -173,6 +173,7 @@ const SignUp = () => {
     } catch (error) {
       console.error(error.details);
       setError("Invalid email or password");
+      setLoading(false);
       return;
     }
 
