@@ -10,7 +10,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -100,
         Slash: -100,
@@ -18,7 +17,6 @@ const WEAPONS = [
         Magic: 2,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -26,7 +24,6 @@ const WEAPONS = [
         Magic: 2,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": -10,
         "Ranged strength": 0,
@@ -41,88 +38,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "3rd age axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 65,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 38,
-        Crush: 32,
-        Magic: 2,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 2,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.36,
-      },
-    ],
-    src: "./gearcalculator/weapons/3rd_age_axe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "3rd age longsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 65,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 72,
-        Crush: 60,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 75,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1,
-      },
-    ],
-    src: "./gearcalculator/weapons/3rd_age_longsword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Magic",
     name: "3rd age wand",
     defLvl: 0,
@@ -133,7 +48,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -141,7 +55,6 @@ const WEAPONS = [
         Magic: 20,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -149,7 +62,6 @@ const WEAPONS = [
         Magic: 20,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -164,170 +76,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Abyssal dagger (bh)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 85,
-        Slash: 40,
-        Crush: -4,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 75,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Abyssal_dagger_(bh).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Abyssal dagger",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 75,
-        Slash: 40,
-        Crush: -4,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 75,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Abyssal_dagger.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Abyssal tentacle",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 90,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 86,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Abyssal_tentacle.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Abyssal whip",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 82,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 82,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Abyssal_whip.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Magic",
     name: "Accursed sceptre",
     defLvl: 0,
@@ -338,7 +86,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -346,7 +93,6 @@ const WEAPONS = [
         Magic: 22,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -354,7 +100,6 @@ const WEAPONS = [
         Magic: 20,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 82,
         "Ranged strength": 0,
@@ -369,129 +114,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Adamant axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 17,
-        Crush: 15,
-        Magic: 22,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 19,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_axe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Adamant battleaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 31,
-        Crush: 26,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 41,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_battleaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Adamant cane",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 13,
-        Slash: -2,
-        Crush: 25,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 23,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 3,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_cane.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Adamant crossbow",
     defLvl: 0,
@@ -502,7 +124,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -510,7 +131,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 78,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -518,7 +138,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -533,47 +152,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Adamant dagger",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 15,
-        Slash: 8,
-        Crush: -4,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.51,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_dagger.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Adamant dart",
     defLvl: 0,
@@ -584,7 +162,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -592,7 +169,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -600,7 +176,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 17,
@@ -615,47 +190,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Adamant hasta",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 24,
-        Slash: 24,
-        Crush: 24,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -6,
-        Slash: -7,
-        Crush: -5,
-        Magic: 0,
-        Range: -6,
-      },
-      // Other
-      {
-        "Melee strength": 28,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.721,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_hasta.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Adamant knife",
     defLvl: 0,
@@ -666,7 +200,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -674,7 +207,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 15,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -682,7 +214,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 14,
@@ -697,211 +228,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Adamant longsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 20,
-        Slash: 29,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 31,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.041,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_longsword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Adamant mace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 13,
-        Slash: -2,
-        Crush: 25,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 31,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.041,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_mace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Adamant pickaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 17,
-        Slash: -2,
-        Crush: 15,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 19,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.721,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_pickaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Adamant scimitar",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 6,
-        Slash: 29,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 28,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.041,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_scimitar.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Adamant sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 23,
-        Slash: 18,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 2,
-        Crush: 1,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 24,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.041,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_sword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Adamant thrownaxe",
     defLvl: 0,
@@ -912,7 +238,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -920,7 +245,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 17,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -928,7 +252,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 23,
@@ -943,375 +266,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Adamant warhammer",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 35,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 2,
-        Crush: 1,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 39,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.041,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_warhammer.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Ahrim's staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 70,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 12,
-        Slash: -1,
-        Crush: 65,
-        Magic: 15,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 68,
-        "Magic damage": 5,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Ahrim's_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Air battlestaff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 28,
-        Magic: 12,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 35,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Air_battlestaff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Water battlestaff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 28,
-        Magic: 12,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 35,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Water_battlestaff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Steam battlestaff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 28,
-        Magic: 12,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 35,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steam_battlestaff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Mud battlestaff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 28,
-        Magic: 12,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 35,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mud_battlestaff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Mist battlestaff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 28,
-        Magic: 12,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 35,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mist_battlestaff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Lava battlestaff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 28,
-        Magic: 12,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 35,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Lava_battlestaff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Fire battlestaff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 28,
-        Magic: 12,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 35,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Fire_battlestaff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Amethyst dart",
     defLvl: 0,
@@ -1322,7 +276,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1330,7 +283,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -1338,7 +290,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 28,
@@ -1363,7 +314,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: 5,
@@ -1371,7 +321,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -1379,7 +328,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -1404,7 +352,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 7,
         Slash: -1,
@@ -1412,7 +359,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -1420,7 +366,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 32,
         "Ranged strength": 0,
@@ -1445,7 +390,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 7,
         Slash: -1,
@@ -1453,7 +397,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -1461,7 +404,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 32,
         "Ranged strength": 0,
@@ -1486,7 +428,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 7,
         Slash: -1,
@@ -1494,7 +435,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -1502,7 +442,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 32,
         "Ranged strength": 0,
@@ -1527,7 +466,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 7,
         Slash: -1,
@@ -1535,7 +473,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -1543,7 +480,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 32,
         "Ranged strength": 0,
@@ -1568,7 +504,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 7,
         Slash: -1,
@@ -1576,7 +511,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -1584,7 +518,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 32,
         "Ranged strength": 0,
@@ -1609,7 +542,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 7,
         Slash: -1,
@@ -1617,7 +549,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -1625,7 +556,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 32,
         "Ranged strength": 0,
@@ -1640,170 +570,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Ancient mace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 25,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 15,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -2,
-        Crush: 16,
-        Magic: 10,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 3,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Ancient_mace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Ancient sceptre",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 70,
-    strengthLvl: 60,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 20,
-        Slash: -1,
-        Crush: 50,
-        Magic: 20,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 15,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 60,
-        "Ranged strength": 0,
-        "Magic damage": 5,
-        "Slayer Bonus": 0,
-        Prayer: -1,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Ancient_sceptre.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Smoke ancient sceptre",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 70,
-    strengthLvl: 60,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 20,
-        Slash: -1,
-        Crush: 50,
-        Magic: 20,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 15,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 60,
-        "Ranged strength": 0,
-        "Magic damage": 5,
-        "Slayer Bonus": 0,
-        Prayer: -1,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Smoke_ancient_sceptre.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Ancient staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 50,
-    strengthLvl: 0,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 15,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 15,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: -1,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Ancient_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Magic",
     name: "Apprentice wand",
     defLvl: 0,
@@ -1814,7 +580,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1822,7 +587,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -1830,7 +594,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1855,7 +618,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 12,
         Slash: 12,
@@ -1863,7 +625,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -1871,7 +632,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 12,
         "Ranged strength": 0,
@@ -1886,47 +646,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Arclight",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: 38,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 2,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 8,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Arclight.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Armadyl crossbow",
     defLvl: 0,
@@ -1937,7 +656,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1945,7 +663,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 100,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -1953,7 +670,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 8,
         "Ranged strength": 0,
@@ -1978,7 +694,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -100,
         Slash: -100,
@@ -1986,7 +701,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 100,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -1994,7 +708,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": -10,
         "Ranged strength": 0,
@@ -2019,7 +732,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 9,
         Slash: 4,
@@ -2027,7 +739,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 100,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -2035,7 +746,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 6,
         "Ranged strength": 0,
@@ -2050,88 +760,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Barronite mace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 20,
-        Slash: -2,
-        Crush: 40,
-        Magic: 0,
-        Range: 100,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 40,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 2,
-      },
-    ],
-    src: "./gearcalculator/weapons/Barronite_mace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Battlestaff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 25,
-        Magic: 12,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 32,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Battlestaff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Magic",
     name: "Beginner wand",
     defLvl: 0,
@@ -2142,7 +770,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2150,7 +777,6 @@ const WEAPONS = [
         Magic: 5,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -2158,7 +784,6 @@ const WEAPONS = [
         Magic: 5,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -2173,129 +798,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Black axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 10,
-        Crush: 8,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 5,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 12,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.36,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_axe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Black battleaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 20,
-        Crush: 15,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 24,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.721,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_battleaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Black cane",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 8,
-        Slash: -2,
-        Crush: 16,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 13,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_cane.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Black chinchompa",
     defLvl: 0,
@@ -2306,7 +808,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2314,7 +815,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 80,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -2322,7 +822,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 30,
@@ -2337,47 +836,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Black dagger",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: 5,
-        Crush: -4,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 7,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_dagger.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Black dart",
     defLvl: 0,
@@ -2388,7 +846,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2396,7 +853,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -2404,7 +860,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 6,
@@ -2419,47 +874,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Black longsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 13,
-        Slash: 18,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 16,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_longsword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Black knife",
     defLvl: 0,
@@ -2470,7 +884,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2478,7 +891,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 10,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -2486,7 +898,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 8,
@@ -2501,416 +912,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Black mace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 8,
-        Slash: -2,
-        Crush: 16,
-        Magic: 0,
-        Range: 10,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 13,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_mace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Black pickaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -2,
-        Crush: 8,
-        Magic: 0,
-        Range: 10,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 11,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.01,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_pickaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Black scimitar",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 4,
-        Slash: 19,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_scimitar.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Black sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 14,
-        Slash: 10,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 2,
-        Crush: 1,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 12,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_sword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Black warhammer",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 22,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 2,
-        Crush: 1,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 22,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_warhammer.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Blade of saeldor",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 80,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 55,
-        Slash: 94,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 89,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Blade_of_saeldor.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Blessed axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 12,
-        Crush: 10,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 13,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 1.162,
-      },
-    ],
-    src: "./gearcalculator/weapons/Blessed_axe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Blisterwood flail",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 30,
-        Slash: 44,
-        Crush: 68,
-        Magic: 8,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 4,
-        Slash: 4,
-        Crush: 2,
-        Magic: 8,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 46,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 5,
-        Weight: 0.001,
-      },
-    ],
-    src: "./gearcalculator/weapons/Blisterwood_flail.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Blisterwood sickle",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 30,
-        Slash: 38,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 2,
-        Crush: 2,
-        Magic: 2,
-        Range: 2,
-      },
-      // Other
-      {
-        "Melee strength": 32,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 5,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Blisterwood_sickle.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Blood ancient sceptre",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 75,
-    strengthLvl: 60,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 20,
-        Slash: -1,
-        Crush: 50,
-        Magic: 20,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 15,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 60,
-        "Ranged strength": 0,
-        "Magic damage": 5,
-        "Slayer Bonus": 0,
-        Prayer: -1,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Blood_ancient_sceptre.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Blurite crossbow",
     defLvl: 0,
@@ -2921,7 +922,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2929,7 +929,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 30,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -2937,7 +936,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -2962,7 +960,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 9,
         Slash: 14,
@@ -2970,7 +967,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 30,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 3,
@@ -2978,7 +974,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 10,
         "Ranged strength": 0,
@@ -3003,7 +998,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: -4,
@@ -3011,7 +1005,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -3019,7 +1012,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 15,
         "Ranged strength": 0,
@@ -3044,7 +1036,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 5,
         Slash: 3,
@@ -3052,7 +1043,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -3060,7 +1050,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 4,
         "Ranged strength": 0,
@@ -3085,7 +1074,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 11,
         Slash: 11,
@@ -3093,7 +1081,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -3101,7 +1088,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 13,
         "Ranged strength": 0,
@@ -3117,47 +1103,6 @@ const WEAPONS = [
   },
   {
     type: "Melee",
-    name: "Brine sabre",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: 47,
-        Crush: -2,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 1,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 46,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Brine_sabre.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
     name: "Bronze axe",
     defLvl: 0,
     rangedLvl: 0,
@@ -3167,7 +1112,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -2,
         Slash: 4,
@@ -3175,7 +1119,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -3183,7 +1126,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -3208,7 +1150,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -2,
         Slash: 6,
@@ -3216,7 +1157,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -3224,7 +1164,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -1,
       },
-      // Other
       {
         "Melee strength": 9,
         "Ranged strength": 0,
@@ -3249,7 +1188,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3257,7 +1195,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 18,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -3265,7 +1202,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 9,
         "Ranged strength": 0,
@@ -3290,7 +1226,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 4,
         Slash: 2,
@@ -3298,7 +1233,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -3306,7 +1240,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 3,
         "Ranged strength": 0,
@@ -3331,7 +1264,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3339,7 +1271,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -3347,7 +1278,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 1,
@@ -3372,7 +1302,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 5,
         Slash: 5,
@@ -3380,7 +1309,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: -1,
         Slash: -1,
@@ -3388,7 +1316,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -1,
       },
-      // Other
       {
         "Melee strength": 6,
         "Ranged strength": 0,
@@ -3413,7 +1340,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3421,7 +1347,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 4,
       },
-      // Defence
       {
         Stab: -1,
         Slash: -1,
@@ -3429,7 +1354,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -1,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 3,
@@ -3454,7 +1378,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 4,
         Slash: 5,
@@ -3462,7 +1385,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 4,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 3,
@@ -3470,7 +1392,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -3495,7 +1416,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 1,
         Slash: -2,
@@ -3503,7 +1423,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 3,
@@ -3511,7 +1430,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -3536,7 +1454,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 4,
         Slash: -2,
@@ -3544,7 +1461,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -3552,7 +1468,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -3577,7 +1492,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 1,
         Slash: 7,
@@ -3585,7 +1499,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -3593,7 +1506,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 6,
         "Ranged strength": 0,
@@ -3618,7 +1530,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 4,
         Slash: 3,
@@ -3626,7 +1537,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -3634,7 +1544,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -3659,7 +1568,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3667,7 +1575,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 4,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -3675,7 +1582,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 5,
@@ -3700,7 +1606,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: -4,
@@ -3708,7 +1613,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -3716,7 +1620,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 8,
@@ -3731,47 +1634,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Magic",
-    name: "Bryophyta's staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 15,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 15,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.5,
-      },
-    ],
-    src: "./gearcalculator/weapons/Bryophyta's_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Chinchompa",
     defLvl: 0,
@@ -3782,7 +1644,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3790,7 +1651,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 45,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -3798,7 +1658,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -3813,47 +1672,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Cleaver",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: 45,
-        Crush: -2,
-        Magic: 0,
-        Range: 45,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 44,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Cleaver.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Crossbow",
     defLvl: 0,
@@ -3864,7 +1682,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3872,7 +1689,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 6,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -3880,7 +1696,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -3896,170 +1711,6 @@ const WEAPONS = [
   },
   {
     type: "Melee",
-    name: "Crystal axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 38,
-        Crush: 32,
-        Magic: 0,
-        Range: 6,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/weapons/Crystal_axe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Crystal harpoon",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 38,
-        Slash: 32,
-        Crush: 0,
-        Magic: 0,
-        Range: 6,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/weapons/Crystal_harpoon.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Crystal pickaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 38,
-        Slash: -2,
-        Crush: 32,
-        Magic: 0,
-        Range: 6,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.36,
-      },
-    ],
-    src: "./gearcalculator/weapons/Crystal_pickaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Crystal sceptre",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 8,
-        Slash: 10,
-        Crush: 16,
-        Magic: 0,
-        Range: 6,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 20,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.003,
-      },
-    ],
-    src: "./gearcalculator/weapons/Crystal_sceptre.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
     name: "Cursed goblin hammer",
     defLvl: 0,
     rangedLvl: 0,
@@ -4069,7 +1720,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -100,
         Slash: -100,
@@ -4077,7 +1727,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -4085,7 +1734,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": -100,
         "Ranged strength": 0,
@@ -4110,7 +1758,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 5,
         Slash: 3,
@@ -4118,7 +1765,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -4126,7 +1772,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -4151,7 +1796,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 10,
         Slash: 16,
@@ -4159,7 +1803,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 3,
@@ -4167,7 +1810,6 @@ const WEAPONS = [
         Magic: 2,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 13,
         "Ranged strength": 0,
@@ -4182,129 +1824,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Decorative sword (white)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 15,
-        Slash: 20,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 22,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Decorative_sword_(white).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Decorative sword (red)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 13,
-        Slash: 18,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 16,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Decorative_sword_(red).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Decorative_sword_(gold)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 20,
-        Slash: 29,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 31,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Decorative_sword_(gold).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Dorgeshuun crossbow",
     defLvl: 0,
@@ -4315,7 +1834,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -4323,7 +1841,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 42,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -4331,7 +1848,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -4346,129 +1862,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Dragon axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 38,
-        Crush: 32,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.36,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_axe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Dragon battleaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 70,
-        Crush: 65,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 85,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.721,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_battleaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Dragon cane",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 40,
-        Slash: -2,
-        Crush: 60,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 55,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 5,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_cane.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Dragon crossbow",
     defLvl: 0,
@@ -4479,7 +1872,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -4487,7 +1879,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 94,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -4495,7 +1886,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -4510,47 +1900,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Dragon dagger",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 40,
-        Slash: 25,
-        Crush: -4,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 40,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_dagger.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Dragon dart",
     defLvl: 0,
@@ -4561,7 +1910,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -4569,7 +1917,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -4577,7 +1924,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 35,
@@ -4592,88 +1938,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Dragon harpoon",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 38,
-        Slash: 32,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_harpoon.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Dragon hasta",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 55,
-        Slash: 55,
-        Crush: 55,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -15,
-        Slash: -15,
-        Crush: -12,
-        Magic: 0,
-        Range: -15,
-      },
-      // Other
-      {
-        "Melee strength": 60,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_hasta.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Dragon hunter crossbow",
     defLvl: 0,
@@ -4684,7 +1948,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -4692,7 +1955,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 95,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -4700,7 +1962,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 60,
         "Ranged strength": 0,
@@ -4715,48 +1976,7 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Dragon hunter lance",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 78,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 85,
-        Slash: 65,
-        Crush: 65,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 70,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_hunter_lance.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
+    type: "Ranged",
     name: "Dragon knife",
     defLvl: 0,
     rangedLvl: 60,
@@ -4766,7 +1986,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -4774,7 +1993,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 28,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -4782,7 +2000,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 30,
@@ -4797,376 +2014,7 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Dragon longsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 58,
-        Slash: 69,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 71,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_longsword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Dragon longsword (bh)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 62,
-        Slash: 75,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 71,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_longsword_(bh).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Dragon longsword (cr)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 58,
-        Slash: 69,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 71,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_longsword_(cr).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Dragon mace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 40,
-        Slash: -2,
-        Crush: 60,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 55,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 5,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_mace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Dragon mace (cr)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 40,
-        Slash: -2,
-        Crush: 60,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 55,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 5,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_mace_(cr).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Dragon mace (bh)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 44,
-        Slash: -2,
-        Crush: 64,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 55,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 5,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_mace_(bh).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Dragon pickaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 38,
-        Slash: -2,
-        Crush: 32,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.4,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_pickaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Dragon scimitar",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 8,
-        Slash: 67,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 66,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_scimitar.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Dragon sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 65,
-        Slash: 55,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 2,
-        Crush: 1,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 63,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_sword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
+    type: "Ranged",
     name: "Dragon thrownaxe",
     defLvl: 0,
     rangedLvl: 60,
@@ -5176,7 +2024,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -5184,7 +2031,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 36,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -5192,7 +2038,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 47,
@@ -5207,47 +2052,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Dragon warhammer",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 95,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 85,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_warhammer.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Magic",
     name: "Dramen staff",
     defLvl: 0,
@@ -5258,7 +2062,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -1,
         Slash: -1,
@@ -5266,7 +2069,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -5274,7 +2076,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 10,
         "Ranged strength": 0,
@@ -5289,129 +2090,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Magic",
-    name: "Dust battlestaff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 28,
-        Magic: 12,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 35,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dust_battlestaff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Smoke battlestaff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 28,
-        Magic: 12,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 35,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Smoke_battlestaff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Earth battlestaff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 28,
-        Magic: 12,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 12,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 35,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Earth_battlestaff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Melee",
     name: "Egg whisk",
     defLvl: 0,
@@ -5422,7 +2100,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 5,
         Slash: 3,
@@ -5430,7 +2107,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -5438,7 +2114,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 4,
         "Ranged strength": 0,
@@ -5463,7 +2138,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 50,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -5471,7 +2145,6 @@ const WEAPONS = [
         Magic: 16,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -5479,7 +2152,6 @@ const WEAPONS = [
         Magic: 14,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -5504,7 +2176,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 50,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -5512,7 +2183,6 @@ const WEAPONS = [
         Magic: 16,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -5520,7 +2190,6 @@ const WEAPONS = [
         Magic: 14,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -5545,7 +2214,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -5553,7 +2221,6 @@ const WEAPONS = [
         Magic: 16,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -5561,7 +2228,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -5586,7 +2252,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -5594,7 +2259,6 @@ const WEAPONS = [
         Magic: 16,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -5602,7 +2266,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 3,
         "Ranged strength": 0,
@@ -5627,7 +2290,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -5635,7 +2297,6 @@ const WEAPONS = [
         Magic: 16,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -5643,7 +2304,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 6,
         "Ranged strength": 0,
@@ -5668,7 +2328,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 20,
         Slash: 29,
@@ -5676,7 +2335,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 3,
@@ -5684,7 +2342,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 25,
         "Ranged strength": 0,
@@ -5709,7 +2366,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 6,
         Slash: 29,
@@ -5717,7 +2373,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -5725,7 +2380,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 28,
         "Ranged strength": 0,
@@ -5740,375 +2394,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Frying pan",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 25,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 20,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Frying_pan.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Ghrazi rapier",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 80,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 95,
-        Slash: 55,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 89,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Ghrazi_rapier.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Gilded axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 26,
-        Crush: 24,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 29,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.36,
-      },
-    ],
-    src: "./gearcalculator/weapons/Gilded_axe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Gilded hasta",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 36,
-        Slash: 36,
-        Crush: 36,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -10,
-        Slash: -10,
-        Crush: -9,
-        Magic: 0,
-        Range: -10,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Gilded_hasta.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Gilded pickaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 26,
-        Slash: -2,
-        Crush: 24,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 29,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Gilded_pickaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Gilded scimitar",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: 45,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 44,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Gilded_scimitar.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Glowing dagger",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 5,
-        Slash: 3,
-        Crush: -4,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Glowing_dagger.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Granite hammer",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 50,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 57,
-        Magic: -3,
-        Range: -1,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 56,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 5,
-      },
-    ],
-    src: "./gearcalculator/weapons/Granite_hammer.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Granite longsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 50,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 56,
-        Slash: 65,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 62,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.721,
-      },
-    ],
-    src: "./gearcalculator/weapons/Granite_longsword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Magic",
     name: "Guthix staff",
     defLvl: 0,
@@ -6119,7 +2404,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -1,
         Slash: -1,
@@ -6127,7 +2411,6 @@ const WEAPONS = [
         Magic: 6,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -6135,7 +2418,6 @@ const WEAPONS = [
         Magic: 6,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -6160,7 +2442,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 50,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -6168,7 +2449,6 @@ const WEAPONS = [
         Magic: 16,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -6176,7 +2456,6 @@ const WEAPONS = [
         Magic: 14,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -6191,88 +2470,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Harry's cutlass",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 3,
-        Slash: 14,
-        Crush: 0,
-        Magic: -5,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 4,
-        Slash: 4,
-        Crush: 4,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 22,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Harry's_cutlass.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Holy ghrazi rapier",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 80,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 94,
-        Slash: 55,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 89,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Holy_ghrazi_rapier.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Magic",
     name: "Holy sanguinesti staff",
     defLvl: 0,
@@ -6283,7 +2480,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -6291,7 +2487,6 @@ const WEAPONS = [
         Magic: 25,
         Range: 4,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -6299,7 +2494,6 @@ const WEAPONS = [
         Magic: 15,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -6324,7 +2518,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -6332,7 +2525,6 @@ const WEAPONS = [
         Magic: 25,
         Range: 4,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -6340,7 +2532,6 @@ const WEAPONS = [
         Magic: 15,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -6365,7 +2556,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -6373,7 +2563,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 6,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -6381,7 +2570,6 @@ const WEAPONS = [
         Magic: 15,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 12,
@@ -6406,7 +2594,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -6414,7 +2601,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 55,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -6422,7 +2608,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -6437,293 +2622,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Magic",
-    name: "Iban's staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 50,
-    strengthLvl: 0,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 10,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 10,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Iban's_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Ice ancient sceptre",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 75,
-    strengthLvl: 60,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 20,
-        Slash: -1,
-        Crush: 50,
-        Magic: 20,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 15,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 60,
-        "Ranged strength": 0,
-        "Magic damage": 5,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Ice_ancient_sceptre.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Shadow ancient sceptre",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 75,
-    strengthLvl: 60,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 20,
-        Slash: -1,
-        Crush: 50,
-        Magic: 20,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 15,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 60,
-        "Ranged strength": 0,
-        "Magic damage": 5,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Shadow_ancient_sceptre.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Infernal axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 38,
-        Crush: 32,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Infernal_axe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Infernal harpoon",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 38,
-        Slash: 32,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Infernal_harpoon.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Infernal pickaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 38,
-        Slash: -2,
-        Crush: 32,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.4,
-      },
-    ],
-    src: "./gearcalculator/weapons/Infernal_pickaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Inquisitor's mace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 52,
-        Slash: -4,
-        Crush: 95,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 89,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Inquisitor's_mace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Melee",
     name: "Iron axe",
     defLvl: 0,
@@ -6734,7 +2632,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -2,
         Slash: 5,
@@ -6742,7 +2639,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -6750,7 +2646,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -6775,7 +2670,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -2,
         Slash: 8,
@@ -6783,7 +2677,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -6791,7 +2684,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -1,
       },
-      // Other
       {
         "Melee strength": 13,
         "Ranged strength": 0,
@@ -6816,7 +2708,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -6824,7 +2715,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 42,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -6832,7 +2722,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -6857,7 +2746,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 5,
         Slash: 3,
@@ -6865,7 +2753,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -6873,7 +2760,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 4,
         "Ranged strength": 0,
@@ -6898,7 +2784,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -6906,7 +2791,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -6914,7 +2798,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 2,
@@ -6939,7 +2822,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 8,
         Slash: 8,
@@ -6947,7 +2829,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: -2,
         Slash: -2,
@@ -6955,7 +2836,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -2,
       },
-      // Other
       {
         "Melee strength": 10,
         "Ranged strength": 0,
@@ -6980,7 +2860,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -6988,7 +2867,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 5,
       },
-      // Defence
       {
         Stab: -2,
         Slash: -2,
@@ -6996,7 +2874,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -2,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 4,
@@ -7021,7 +2898,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 6,
         Slash: 8,
@@ -7029,7 +2905,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 5,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 3,
@@ -7037,7 +2912,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -2,
       },
-      // Other
       {
         "Melee strength": 10,
         "Ranged strength": 0,
@@ -7062,7 +2936,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 4,
         Slash: -2,
@@ -7070,7 +2943,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -7078,7 +2950,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -7103,7 +2974,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 5,
         Slash: -2,
@@ -7111,7 +2981,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -7119,7 +2988,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -7144,7 +3012,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: 10,
@@ -7152,7 +3019,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -7160,7 +3026,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 9,
         "Ranged strength": 0,
@@ -7185,7 +3050,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -7193,7 +3057,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -7201,7 +3064,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -7226,7 +3088,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 6,
         Slash: 4,
@@ -7234,7 +3095,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -7242,7 +3102,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -7267,7 +3126,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -7275,7 +3133,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 5,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -7283,7 +3140,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 7,
@@ -7308,7 +3164,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: -4,
@@ -7316,7 +3171,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 5,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -7324,7 +3178,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 11,
         "Ranged strength": 0,
@@ -7340,47 +3193,6 @@ const WEAPONS = [
   },
   {
     type: "Melee",
-    name: "Ivandis flail",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 24,
-        Slash: 38,
-        Crush: 62,
-        Magic: 8,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 4,
-        Slash: 4,
-        Crush: 2,
-        Magic: 8,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 5,
-        Weight: 0.001,
-      },
-    ],
-    src: "./gearcalculator/weapons/Ivandis_flail.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
     name: "Jade machete",
     defLvl: 0,
     rangedLvl: 0,
@@ -7390,7 +3202,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 11,
@@ -7398,7 +3209,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -7406,7 +3216,6 @@ const WEAPONS = [
         Magic: 8,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 6,
         "Ranged strength": 0,
@@ -7421,129 +3230,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Keris partisan",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 65,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 58,
-        Slash: -2,
-        Crush: 57,
-        Magic: 2,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 45,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 3,
-        Weight: 3.218,
-      },
-    ],
-    src: "./gearcalculator/weapons/Keris_partisan.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Keris",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 40,
-        Slash: 20,
-        Crush: -10,
-        Magic: 2,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 2,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 30,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Keris.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Kitchen knife",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 25,
-        Slash: 12,
-        Crush: -4,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 24,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Kitchen_knife.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Magic",
     name: "Kodai wand",
     defLvl: 0,
@@ -7554,7 +3240,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -7562,7 +3247,6 @@ const WEAPONS = [
         Magic: 28,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 3,
@@ -7570,7 +3254,6 @@ const WEAPONS = [
         Magic: 20,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -7585,129 +3268,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Leaf-bladed battleaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 65,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 72,
-        Crush: 72,
-        Magic: 28,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 92,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.721,
-      },
-    ],
-    src: "./gearcalculator/weapons/Leaf-bladed_battleaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Leaf-bladed sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 67,
-        Slash: 62,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Leaf-bladed_sword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Lucky cutlass",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 5,
-        Slash: 20,
-        Crush: 0,
-        Magic: -5,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 6,
-        Slash: 6,
-        Crush: 6,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 25,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Lucky_cutlass.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Magic",
     name: "Lunar staff",
     defLvl: 0,
@@ -7718,7 +3278,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 3,
         Slash: 2,
@@ -7726,7 +3285,6 @@ const WEAPONS = [
         Magic: 13,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -7734,7 +3292,6 @@ const WEAPONS = [
         Magic: 13,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 15,
         "Ranged strength": 0,
@@ -7759,7 +3316,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 6,
@@ -7767,7 +3323,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -7775,7 +3330,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -7800,7 +3354,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 7,
         Slash: 9,
@@ -7808,7 +3361,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -7816,7 +3368,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 1,
         "Ranged strength": 0,
@@ -7841,7 +3392,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: -1,
@@ -7849,7 +3399,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -7857,7 +3406,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -7882,7 +3430,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -7890,7 +3437,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -7898,7 +3444,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 20,
         "Ranged strength": 0,
@@ -7923,7 +3468,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -7931,7 +3475,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -7939,7 +3482,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 20,
         "Ranged strength": 0,
@@ -7964,7 +3506,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -7972,7 +3513,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -7980,7 +3520,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 20,
         "Ranged strength": 0,
@@ -8005,7 +3544,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -8013,7 +3551,6 @@ const WEAPONS = [
         Magic: 20,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -8021,7 +3558,6 @@ const WEAPONS = [
         Magic: 20,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -8036,129 +3572,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Meat tenderiser",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 40,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 53,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 48,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Meat_tenderiser.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Mithril axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 12,
-        Crush: 10,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 13,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.133,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_axe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Mithril battleaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 22,
-        Crush: 17,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 29,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_battleaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Mithril crossbow",
     defLvl: 0,
@@ -8169,7 +3582,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -8177,7 +3589,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 66,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -8185,7 +3596,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -8200,47 +3610,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Mithril dagger",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 11,
-        Slash: 5,
-        Crush: -4,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 10,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.396,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_dagger.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Mithril dart",
     defLvl: 0,
@@ -8251,7 +3620,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -8259,7 +3627,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -8267,7 +3634,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 9,
@@ -8282,47 +3648,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Mithril hasta",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 17,
-        Slash: 17,
-        Crush: 17,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -5,
-        Slash: -5,
-        Crush: -4,
-        Magic: 0,
-        Range: -5,
-      },
-      // Other
-      {
-        "Melee strength": 18,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_hasta.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Mithril knife",
     defLvl: 0,
@@ -8333,7 +3658,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -8341,7 +3665,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 11,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -8349,7 +3672,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 10,
         "Ranged strength": 0,
@@ -8364,211 +3686,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Mithril longsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 15,
-        Slash: 20,
-        Crush: -2,
-        Magic: 0,
-        Range: 11,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 22,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_longsword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Mithril mace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 11,
-        Slash: -2,
-        Crush: 18,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 16,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 3,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_mace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Mithril pickaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 12,
-        Slash: -2,
-        Crush: 10,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 13,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_pickaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Mithril scimitar",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 5,
-        Slash: 21,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 20,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_scimitar.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Mithril sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 16,
-        Slash: 11,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 2,
-        Crush: 1,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 17,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_sword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Mithril thrownaxe",
     defLvl: 0,
@@ -8579,7 +3696,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -8587,7 +3703,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 12,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -8595,7 +3710,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 16,
@@ -8610,47 +3724,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Mithril warhammer",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 25,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 27,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_warhammer.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Morrigan's javelin",
     defLvl: 0,
@@ -8661,7 +3734,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -8669,7 +3741,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 105,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -8677,7 +3748,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 145,
@@ -8702,7 +3772,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -8710,7 +3779,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 93,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -8718,7 +3786,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 117,
@@ -8733,416 +3800,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Magic",
-    name: "Mystic air staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 14,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 14,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mystic_air_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Mystic dust staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 14,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 14,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mystic_dust_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Mystic earth staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 14,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 14,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mystic_earth_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Mystic fire staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 14,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 14,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mystic_fire_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Mystic lava staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 14,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 14,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mystic_lava_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Mystic mist staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 14,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 14,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mystic_mist_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Mystic mud staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 14,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 14,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mystic_mud_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Mystic smoke staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 14,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 14,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mystic_smoke_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Mystic steam staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 14,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 14,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mystic_steam_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Mystic water staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: -1,
-        Crush: 40,
-        Magic: 14,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 14,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mystic_water_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Melee",
     name: "Oak blackjack",
     defLvl: 0,
@@ -9153,7 +3810,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -9161,7 +3817,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -9169,7 +3824,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -9194,7 +3848,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -9202,7 +3855,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -9210,7 +3862,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 4,
         "Ranged strength": 0,
@@ -9235,7 +3886,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -9243,7 +3893,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -9251,7 +3900,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 4,
         "Ranged strength": 0,
@@ -9276,7 +3924,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 8,
@@ -9284,7 +3931,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -9292,7 +3938,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 4,
         "Ranged strength": 0,
@@ -9307,88 +3952,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Osmumten's fang",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 82,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 105,
-        Slash: 75,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 103,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Osmumten's_fang.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Pharaoh's sceptre",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 30,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -1,
-        Crush: 25,
-        Magic: 10,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: -1,
-        Magic: 10,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 32,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2,
-      },
-    ],
-    src: "./gearcalculator/weapons/Pharaoh's_sceptre_(1).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Phoenix crossbow",
     defLvl: 0,
@@ -9399,7 +3962,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -9407,7 +3969,6 @@ const WEAPONS = [
         Magic: 6,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -9415,7 +3976,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -9440,7 +4000,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 12,
         Slash: 12,
@@ -9448,7 +4007,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -9456,7 +4014,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 12,
         "Ranged strength": 0,
@@ -9471,47 +4028,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Rapier",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 45,
-        Slash: 7,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 44,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rapier.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Red chinchompa",
     defLvl: 0,
@@ -9522,7 +4038,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -9530,7 +4045,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 70,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -9538,7 +4052,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 15,
@@ -9563,7 +4076,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 16,
@@ -9571,7 +4083,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 70,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -9579,7 +4090,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 10,
         "Ranged strength": 0,
@@ -9604,7 +4114,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: -1,
@@ -9612,7 +4121,6 @@ const WEAPONS = [
         Magic: 4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -9620,7 +4128,6 @@ const WEAPONS = [
         Magic: 4,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 3,
         "Ranged strength": 0,
@@ -9635,211 +4142,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Rolling pin",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 20,
-        Slash: -2,
-        Crush: 39,
-        Magic: 4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 36,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 4,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rolling_pin.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Ruby sickle (b)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 1,
-        Magic: 1,
-        Range: 1,
-      },
-      // Other
-      {
-        "Melee strength": 4,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 5,
-        Weight: 1.587,
-      },
-    ],
-    src: "./gearcalculator/weapons/Ruby_sickle_(b).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Rune axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 26,
-        Crush: 24,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 29,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.36,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_axe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Rune battleaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 48,
-        Crush: 43,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 64,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.721,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_battleaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Rune cane",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 20,
-        Slash: -2,
-        Crush: 39,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 36,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 4,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_cane.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Rune crossbow",
     defLvl: 0,
@@ -9850,7 +4152,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -9858,7 +4159,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 90,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -9866,7 +4166,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -9881,47 +4180,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Rune dagger",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 25,
-        Slash: 12,
-        Crush: -4,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 24,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_dagger.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Rune dart",
     defLvl: 0,
@@ -9932,7 +4190,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -9940,7 +4197,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -9948,7 +4204,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 26,
@@ -9973,7 +4228,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 36,
         Slash: 36,
@@ -9981,7 +4235,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: -10,
         Slash: -10,
@@ -9989,7 +4242,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -10,
       },
-      // Other
       {
         "Melee strength": 42,
         "Ranged strength": 0,
@@ -10014,7 +4266,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -10022,7 +4273,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 25,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -10030,7 +4280,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 24,
@@ -10045,334 +4294,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Rune longsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 38,
-        Slash: 47,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 49,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_longsword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Rune mace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 20,
-        Slash: -2,
-        Crush: 39,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 36,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 4,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_mace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Rune pickaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 26,
-        Slash: -2,
-        Crush: 24,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 29,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_pickaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Rune scimitar",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: 45,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 44,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_scimitar.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Rune sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 38,
-        Slash: 26,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 2,
-        Crush: 1,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 39,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_sword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Ranged",
-    name: "Rune thrownaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 26,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 36,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_thrownaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Rune warhammer",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 53,
-        Magic: -4,
-        Range: 26,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 62,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_warhammer.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Sarachnis cudgel",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 65,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 30,
-        Slash: 0,
-        Crush: 70,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 70,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Sarachnis_cudgel.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Magic",
     name: "Saradomin staff",
     defLvl: 0,
@@ -10383,7 +4304,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -1,
         Slash: -1,
@@ -10391,7 +4311,6 @@ const WEAPONS = [
         Magic: 6,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -10399,7 +4318,6 @@ const WEAPONS = [
         Magic: 6,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -10424,7 +4342,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -1,
         Slash: -1,
@@ -10432,7 +4349,6 @@ const WEAPONS = [
         Magic: 6,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -10440,7 +4356,6 @@ const WEAPONS = [
         Magic: 6,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -10465,7 +4380,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -10473,7 +4387,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -10481,7 +4394,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 1,
         "Ranged strength": 0,
@@ -10506,7 +4418,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -10514,7 +4425,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -10522,7 +4432,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 1,
         "Ranged strength": 0,
@@ -10547,7 +4456,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 9,
         Slash: 14,
@@ -10555,7 +4463,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 3,
@@ -10563,7 +4470,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 12,
         "Ranged strength": 0,
@@ -10588,7 +4494,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: -1,
@@ -10596,7 +4501,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -10604,7 +4508,6 @@ const WEAPONS = [
         Magic: 4,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 3,
         "Ranged strength": 0,
@@ -10629,7 +4532,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 7,
         Slash: -1,
@@ -10637,7 +4539,6 @@ const WEAPONS = [
         Magic: 12,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -10645,7 +4546,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 35,
         "Ranged strength": 0,
@@ -10661,47 +4561,6 @@ const WEAPONS = [
   },
   {
     type: "Magic",
-    name: "Staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: -1,
-        Crush: 7,
-        Magic: 4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 4,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 3,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
     name: "Staff of air",
     defLvl: 0,
     rangedLvl: 0,
@@ -10711,7 +4570,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: -1,
@@ -10719,7 +4577,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -10727,7 +4584,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 3,
         "Ranged strength": 0,
@@ -10743,47 +4599,6 @@ const WEAPONS = [
   },
   {
     type: "Magic",
-    name: "Staff of balance",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 75,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 55,
-        Slash: 70,
-        Crush: 0,
-        Magic: 17,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 3,
-        Magic: 17,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 72,
-        "Ranged strength": 0,
-        "Magic damage": 15,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.5,
-      },
-    ],
-    src: "./gearcalculator/weapons/Staff_of_balance.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
     name: "Staff of bob the cat",
     defLvl: 0,
     rangedLvl: 0,
@@ -10793,7 +4608,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: -1,
@@ -10801,7 +4615,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -10809,7 +4622,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -10834,7 +4646,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 1,
         Slash: -1,
@@ -10842,7 +4653,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -10850,7 +4660,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -10875,7 +4684,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 3,
         Slash: -1,
@@ -10883,7 +4691,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -10891,7 +4698,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 6,
         "Ranged strength": 0,
@@ -10916,7 +4722,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: -1,
@@ -10924,7 +4729,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -10932,7 +4736,6 @@ const WEAPONS = [
         Magic: 10,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 3,
         "Ranged strength": 0,
@@ -10947,88 +4750,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Magic",
-    name: "Staff of light",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 75,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 55,
-        Slash: 70,
-        Crush: 0,
-        Magic: 17,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 3,
-        Magic: 17,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 72,
-        "Ranged strength": 0,
-        "Magic damage": 15,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.5,
-      },
-    ],
-    src: "./gearcalculator/weapons/Staff_of_light.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Staff of the dead",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 75,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 55,
-        Slash: 70,
-        Crush: 0,
-        Magic: 17,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 3,
-        Magic: 17,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 72,
-        "Ranged strength": 0,
-        "Magic damage": 15,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.5,
-      },
-    ],
-    src: "./gearcalculator/weapons/Staff_of_the_dead.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Melee",
     name: "Statius's warhammer",
     defLvl: 0,
@@ -11039,7 +4760,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: -4,
@@ -11047,7 +4767,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -11055,7 +4774,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 114,
         "Ranged strength": 0,
@@ -11070,88 +4788,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Steel axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 8,
-        Crush: 6,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 9,
-        "Ranged strength": 0,
-        "Magic damage": 15,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.36,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_axe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Steel battleaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 16,
-        Crush: 11,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 20,
-        "Ranged strength": 0,
-        "Magic damage": 15,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.721,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_battleaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Steel crossbow",
     defLvl: 0,
@@ -11162,7 +4798,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -11170,7 +4805,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 54,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -11178,7 +4812,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -11193,47 +4826,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Steel dagger",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 8,
-        Slash: 4,
-        Crush: -4,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 7,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_dagger.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Steel dart",
     defLvl: 0,
@@ -11244,7 +4836,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -11252,7 +4843,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -11260,7 +4850,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 3,
@@ -11275,47 +4864,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Steel hasta",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 12,
-        Slash: 12,
-        Crush: 12,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -3,
-        Slash: -3,
-        Crush: -3,
-        Magic: 0,
-        Range: -3,
-      },
-      // Other
-      {
-        "Melee strength": 12,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_hasta.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Steel knife",
     defLvl: 0,
@@ -11326,7 +4874,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -11334,7 +4881,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -11342,7 +4888,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 7,
@@ -11357,211 +4902,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Steel longsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 9,
-        Slash: 14,
-        Crush: -2,
-        Magic: 0,
-        Range: 8,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 16,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_longsword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Steel mace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: -2,
-        Crush: 13,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 11,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_mace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Steel pickaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 8,
-        Slash: -2,
-        Crush: 6,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 9,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_pickaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Steel scimitar",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 3,
-        Slash: 15,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_scimitar.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Steel sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 11,
-        Slash: 8,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 2,
-        Crush: 1,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 12,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_sword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Steel thrownaxe",
     defLvl: 0,
@@ -11572,7 +4912,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -11580,7 +4919,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -11588,7 +4926,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 11,
@@ -11603,47 +4940,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Steel warhammer",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 18,
-        Magic: -4,
-        Range: 8,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 16,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_warhammer.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Magic",
     name: "Teacher wand",
     defLvl: 0,
@@ -11654,7 +4950,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -11662,7 +4957,6 @@ const WEAPONS = [
         Magic: 15,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -11670,7 +4964,6 @@ const WEAPONS = [
         Magic: 15,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -11695,7 +4988,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -11703,7 +4995,6 @@ const WEAPONS = [
         Magic: 15,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -11711,7 +5002,6 @@ const WEAPONS = [
         Magic: 20,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -11726,88 +5016,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Toktz-xil-ak",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 47,
-        Slash: 38,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 49,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Toktz-xil-ak.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Toktz-xil-ek",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 16,
-        Slash: 48,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 39,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/Toktz-xil-ek.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Toktz-xil-ul",
     defLvl: 0,
@@ -11818,7 +5026,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -11826,7 +5033,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 69,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -11834,7 +5040,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 49,
@@ -11849,88 +5054,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Magic",
-    name: "Toxic staff of the dead",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 75,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 55,
-        Slash: 70,
-        Crush: 0,
-        Magic: 25,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 3,
-        Magic: 17,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 72,
-        "Ranged strength": 0,
-        "Magic damage": 15,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.5,
-      },
-    ],
-    src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "Toxic staff (uncharged)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 75,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 55,
-        Slash: 70,
-        Crush: 0,
-        Magic: 17,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 3,
-        Magic: 17,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 72,
-        "Ranged strength": 0,
-        "Magic damage": 15,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.5,
-      },
-    ],
-    src: "./gearcalculator/weapons/Toxic_staff_(uncharged).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Melee",
     name: "Training sword",
     defLvl: 0,
@@ -11941,7 +5064,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 4,
         Slash: 3,
@@ -11949,7 +5071,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -11957,7 +5078,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -11982,7 +5102,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -11990,7 +5109,6 @@ const WEAPONS = [
         Magic: 15,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -11998,7 +5116,6 @@ const WEAPONS = [
         Magic: 15,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -12023,7 +5140,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -12031,7 +5147,6 @@ const WEAPONS = [
         Magic: 25,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -12039,7 +5154,6 @@ const WEAPONS = [
         Magic: 15,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -12055,252 +5169,6 @@ const WEAPONS = [
   },
   {
     type: "Melee",
-    name: "Tzhaar-ket-em",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 62,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 56,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Tzhaar-ket-em.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Ursine chainmace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 53,
-        Slash: -2,
-        Crush: 71,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 74,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 2,
-      },
-    ],
-    src: "./gearcalculator/weapons/Ursine_chainmace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Vesta's longsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 106,
-        Slash: 121,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 4,
-        Crush: 3,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 118,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Vesta's_longsword_(bh).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Viggora's chainmace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 53,
-        Slash: -2,
-        Crush: 67,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 66,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 2,
-      },
-    ],
-    src: "./gearcalculator/weapons/Viggora's_chainmace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Void knight mace",
-    defLvl: 22,
-    rangedLvl: 22,
-    prayerLvl: 22,
-    magicLvl: 22,
-    strengthLvl: 22,
-    attackLvl: 22,
-    hitpointsLvl: 22,
-    stats: [
-      // Attack
-      {
-        Stab: 22,
-        Slash: 0,
-        Crush: 41,
-        Magic: 8,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 2,
-        Crush: 2,
-        Magic: 2,
-        Range: 2,
-      },
-      // Other
-      {
-        "Melee strength": 38,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 6,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Void_knight_mace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "Voidwaker",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 70,
-        Slash: 80,
-        Crush: -2,
-        Magic: 5,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 2,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 80,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Voidwaker.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
     name: "Volatile nightmare staff",
     defLvl: 0,
     rangedLvl: 0,
@@ -12310,7 +5178,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 50,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -12318,7 +5185,6 @@ const WEAPONS = [
         Magic: 16,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -12326,7 +5192,6 @@ const WEAPONS = [
         Magic: 14,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -12351,7 +5216,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -12359,7 +5223,6 @@ const WEAPONS = [
         Magic: 12,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -12367,7 +5230,6 @@ const WEAPONS = [
         Magic: 12,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -12392,7 +5254,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 12,
         Slash: 12,
@@ -12400,7 +5261,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -12408,7 +5268,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 12,
         "Ranged strength": 0,
@@ -12433,7 +5292,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 15,
         Slash: 15,
@@ -12441,7 +5299,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -12449,7 +5306,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 16,
         "Ranged strength": 0,
@@ -12474,7 +5330,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 17,
         Slash: 17,
@@ -12482,7 +5337,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -12490,7 +5344,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 18,
         "Ranged strength": 0,
@@ -12515,7 +5368,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 24,
         Slash: 24,
@@ -12523,7 +5375,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -12531,7 +5382,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 28,
         "Ranged strength": 0,
@@ -12547,334 +5397,6 @@ const WEAPONS = [
   },
   {
     type: "Melee",
-    name: "White battleaxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 20,
-        Crush: 15,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 24,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 2.721,
-      },
-    ],
-    src: "./gearcalculator/weapons/White_battleaxe.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "White dagger",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: 5,
-        Crush: -4,
-        Magic: 1,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 7,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/weapons/White_dagger.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "White longsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 13,
-        Slash: 18,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 16,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/White_longsword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "White mace",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 8,
-        Slash: -2,
-        Crush: 16,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 13,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 3,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/White_mace.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Magic",
-    name: "White magic staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 2,
-        Slash: -1,
-        Crush: 10,
-        Magic: 10,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 3,
-        Crush: 1,
-        Magic: 10,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 7,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/White_magic_staff.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "White scimitar",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 4,
-        Slash: 19,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/White_scimitar.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "White sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 14,
-        Slash: 10,
-        Crush: -2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 2,
-        Crush: 1,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 12,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/White_sword.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
-    name: "White warhammer",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 22,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 22,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/White_warhammer.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
-    type: "Melee",
     name: "Wilderness sword 1",
     defLvl: 0,
     rangedLvl: 0,
@@ -12884,7 +5406,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 6,
         Slash: 4,
@@ -12892,7 +5413,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -12900,7 +5420,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -12925,7 +5444,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 11,
         Slash: 8,
@@ -12933,7 +5451,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -12941,7 +5458,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 12,
         "Ranged strength": 0,
@@ -12966,7 +5482,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 16,
         Slash: 11,
@@ -12974,7 +5489,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -12982,7 +5496,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 17,
         "Ranged strength": 0,
@@ -13007,7 +5520,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 23,
         Slash: 18,
@@ -13015,7 +5527,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -13023,7 +5534,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 24,
         "Ranged strength": 0,
@@ -13048,7 +5558,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -13056,7 +5565,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -13064,7 +5572,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 8,
         "Ranged strength": 0,
@@ -13089,7 +5596,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -13097,7 +5603,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -13105,7 +5610,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 8,
         "Ranged strength": 0,
@@ -13130,7 +5634,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -13138,7 +5641,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -13146,7 +5648,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 8,
         "Ranged strength": 0,
@@ -13171,7 +5672,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 11,
         Slash: 5,
@@ -13179,7 +5679,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -13187,7 +5686,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 10,
         "Ranged strength": 0,
@@ -13212,7 +5710,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 4,
         Slash: 5,
@@ -13220,7 +5717,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 3,
@@ -13228,7 +5724,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -13253,7 +5748,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 4,
         Slash: 3,
@@ -13261,7 +5755,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -13269,7 +5762,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -13284,47 +5776,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
-    name: "Zamorak hasta",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 85,
-        Slash: 85,
-        Crush: 65,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 13,
-        Slash: 13,
-        Crush: 12,
-        Magic: 0,
-        Range: 13,
-      },
-      // Other
-      {
-        "Melee strength": 75,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 3,
-      },
-    ],
-    src: "./gearcalculator/weapons/Zamorakian_hasta.webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "Zaryte crossbow",
     defLvl: 0,
@@ -13335,7 +5786,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -13343,7 +5793,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 110,
       },
-      // Defence
       {
         Stab: 14,
         Slash: 14,
@@ -13351,7 +5800,6 @@ const WEAPONS = [
         Magic: 15,
         Range: 16,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -13376,7 +5824,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: -4,
@@ -13384,7 +5831,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -13392,7 +5838,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 8,
         "Ranged strength": 0,
@@ -13407,47 +5852,6 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Magic",
-    name: "Zuriel's staff",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 75,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 13,
-        Slash: -1,
-        Crush: 65,
-        Magic: 18,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 5,
-        Slash: 7,
-        Crush: 4,
-        Magic: 18,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 72,
-        "Ranged strength": 0,
-        "Magic damage": 10,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Zuriel's_staff_(bh).webp",
-    slot: "Weapon",
-    twoHanded: false,
-  },
-  {
     type: "Ranged",
     name: "3rd age bow",
     defLvl: 0,
@@ -13458,7 +5862,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -13466,7 +5869,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 80,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -13474,7 +5876,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -13490,539 +5891,6 @@ const WEAPONS = [
   },
   {
     type: "Melee",
-    name: "3rd age felling axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 65,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 38,
-        Crush: 32,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/3rd_age_felling_axe.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Abyssal bludgeon",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 70,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 102,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 85,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 6,
-      },
-    ],
-    src: "./gearcalculator/weapons/Abyssal_bludgeon.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Adamant 2h sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: 43,
-        Crush: 30,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 44,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 4.082,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_2h_sword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Adamant claws",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 18,
-        Slash: 23,
-        Crush: -4,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 6,
-        Slash: 12,
-        Crush: 3,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 24,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_claws.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Adamant felling axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 17,
-        Crush: 15,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 19,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_felling_axe.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Adamant halberd",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 28,
-        Slash: 41,
-        Crush: 0,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -1,
-        Slash: 3,
-        Crush: 4,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.628,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_halberd.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Adamant spear",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 24,
-        Slash: 24,
-        Crush: 24,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 28,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.721,
-      },
-    ],
-    src: "./gearcalculator/weapons/Adamant_spear.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Ancient godsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 132,
-        Crush: 80,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 132,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 8,
-        Weight: 10,
-      },
-    ],
-    src: "./gearcalculator/weapons/Ancient_godsword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Zamorak godsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 132,
-        Crush: 80,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 132,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 8,
-        Weight: 10,
-      },
-    ],
-    src: "./gearcalculator/weapons/Zamorak_godsword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Saradomin godsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 132,
-        Crush: 80,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 132,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 8,
-        Weight: 10,
-      },
-    ],
-    src: "./gearcalculator/weapons/Saradomin_godsword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Armadyl godsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 132,
-        Crush: 80,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 132,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 8,
-        Weight: 10,
-      },
-    ],
-    src: "./gearcalculator/weapons/Armadyl_godsword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Bandos godsword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 132,
-        Crush: 80,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 132,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 8,
-        Weight: 10,
-      },
-    ],
-    src: "./gearcalculator/weapons/Bandos_godsword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Barrelchest anchor",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 40,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 10,
-        Crush: 92,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 100,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 30,
-      },
-    ],
-    src: "./gearcalculator/weapons/Barrelchest_anchor.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
     name: "Anger spear",
     defLvl: 0,
     rangedLvl: 0,
@@ -14032,7 +5900,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: 2,
@@ -14040,7 +5907,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -14048,7 +5914,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -14063,252 +5928,6 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Melee",
-    name: "Black 2h sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 2,
-        Slash: 2,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.003,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_2h_sword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Black claws",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: 14,
-        Crush: -4,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 4,
-        Slash: 7,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_claws.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Black felling axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 10,
-        Crush: 8,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 12,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_felling_axe.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Black halberd",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 19,
-        Slash: 25,
-        Crush: 0,
-        Magic: 0,
-        Range: -4,
-      },
-      // Defence
-      {
-        Stab: -1,
-        Slash: 2,
-        Crush: 3,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 20,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_halberd.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Black salamander",
-    defLvl: 0,
-    rangedLvl: 70,
-    prayerLvl: 0,
-    magicLvl: 70,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 59,
-        Crush: 0,
-        Magic: 0,
-        Range: 69,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 71,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 4,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_salamander.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Black spear",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 15,
-        Slash: 15,
-        Crush: 15,
-        Magic: 0,
-        Range: 69,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 16,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Black_spear.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
     type: "Ranged",
     name: "Bow of faerdhinen",
     defLvl: 0,
@@ -14319,7 +5938,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -14327,7 +5945,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 128,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -14335,7 +5952,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 106,
@@ -14360,7 +5976,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: 9,
@@ -14368,7 +5983,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -14376,7 +5990,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -1,
       },
-      // Other
       {
         "Melee strength": 10,
         "Ranged strength": 0,
@@ -14401,7 +6014,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 3,
         Slash: 4,
@@ -14409,7 +6021,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 2,
@@ -14417,7 +6028,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -14442,7 +6052,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -2,
         Slash: 4,
@@ -14450,7 +6059,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -14458,7 +6066,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -14483,7 +6090,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 7,
         Slash: 8,
@@ -14491,7 +6097,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -4,
       },
-      // Defence
       {
         Stab: -1,
         Slash: 1,
@@ -14499,7 +6104,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 8,
         "Ranged strength": 0,
@@ -14524,7 +6128,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 5,
         Slash: 5,
@@ -14532,7 +6135,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -14540,7 +6142,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 6,
         "Ranged strength": 0,
@@ -14565,7 +6166,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: 98,
@@ -14573,7 +6173,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -14581,7 +6180,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -1,
       },
-      // Other
       {
         "Melee strength": 100,
         "Ranged strength": 0,
@@ -14606,7 +6204,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -14614,7 +6211,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 38,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -14622,7 +6218,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -14647,7 +6242,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -14655,7 +6249,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 75,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -14663,7 +6256,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 60,
@@ -14688,7 +6280,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -14696,7 +6287,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 100,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -14704,7 +6294,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 70,
@@ -14719,88 +6308,6 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Melee",
-    name: "Crystal felling axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -3,
-        Slash: 60,
-        Crush: 51,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 67,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.36,
-      },
-    ],
-    src: "./gearcalculator/weapons/Crystal_felling_axe.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Crystal halberd",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 85,
-        Slash: 110,
-        Crush: 5,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -1,
-        Slash: 4,
-        Crush: 5,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 118,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Crystal_halberd.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
     type: "Magic",
     name: "Crystal staff",
     defLvl: 0,
@@ -14811,7 +6318,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -14819,7 +6325,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 84,
       },
-      // Defence
       {
         Stab: -1,
         Slash: 4,
@@ -14827,7 +6332,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -14852,7 +6356,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -14860,7 +6363,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 95,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -14868,7 +6370,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -14893,7 +6394,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -14901,7 +6401,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 105,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -14909,7 +6408,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -14925,375 +6423,6 @@ const WEAPONS = [
   },
   {
     type: "Melee",
-    name: "Dharok's greataxe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: 103,
-        Crush: 95,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 105,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dharok's_greataxe.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Dinh's bulwark",
-    defLvl: 75,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 124,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 106,
-        Slash: 109,
-        Crush: 109,
-        Magic: -10,
-        Range: 148,
-      },
-      // Other
-      {
-        "Melee strength": 38,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 30,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dinh's_bulwark.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Dragon 2h sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: 92,
-        Crush: 80,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 93,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.628,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_2h_sword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Dragon claws",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 41,
-        Slash: 57,
-        Crush: -4,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 13,
-        Slash: 26,
-        Crush: 7,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 56,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_claws.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Dragon felling axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -3,
-        Slash: 60,
-        Crush: 51,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 67,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_felling_axe.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Dragon halberd",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 70,
-        Slash: 95,
-        Crush: 0,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -1,
-        Slash: 4,
-        Crush: 5,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 89,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_halberd.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Dragon spear",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 55,
-        Slash: 55,
-        Crush: 55,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 5,
-        Slash: 5,
-        Crush: 5,
-        Magic: 5,
-        Range: 5,
-      },
-      // Other
-      {
-        "Melee strength": 60,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dragon_spear.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Dual sai",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 11,
-        Slash: 8,
-        Crush: -4,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.36,
-      },
-    ],
-    src: "./gearcalculator/weapons/Dual_sai.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Elder maul",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 75,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 135,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 147,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 5.443,
-      },
-    ],
-    src: "./gearcalculator/weapons/Elder_maul.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
     name: "Gadderhammer",
     defLvl: 0,
     rangedLvl: 0,
@@ -15303,7 +6432,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: -4,
@@ -15311,7 +6439,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -15319,7 +6446,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 35,
         "Ranged strength": 0,
@@ -15335,375 +6461,6 @@ const WEAPONS = [
   },
   {
     type: "Melee",
-    name: "Gilded 2h sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: 69,
-        Crush: 50,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 70,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.628,
-      },
-    ],
-    src: "./gearcalculator/weapons/Gilded_2h_sword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Gilded spear",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 36,
-        Slash: 36,
-        Crush: 36,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Gilded_spear.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Granite maul",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 50,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 81,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 79,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 4.535,
-      },
-    ],
-    src: "./gearcalculator/weapons/Granite_maul.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Guthan's warspear",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 75,
-        Slash: 75,
-        Crush: 75,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 7,
-        Slash: 7,
-        Crush: 7,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 75,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Guthan's_warspear.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Guthix mjolnir",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 11,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Guthix_mjolnir.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Zamorak mjolnir",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 11,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Zamorak_mjolnir.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Zamorak spear",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 85,
-        Slash: 85,
-        Crush: 65,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 13,
-        Slash: 13,
-        Crush: 12,
-        Magic: 0,
-        Range: 13,
-      },
-      // Other
-      {
-        "Melee strength": 75,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 3,
-      },
-    ],
-    src: "./gearcalculator/weapons/Zamorakian_spear.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Saradomin mjolnir",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 11,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Saradomin_mjolnir.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Ranged",
-    name: "Heavy ballista",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 125,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 15,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 6,
-      },
-    ],
-    src: "./gearcalculator/weapons/Heavy_ballista.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
     name: "Heavy casket",
     defLvl: 0,
     rangedLvl: 0,
@@ -15713,7 +6470,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: -4,
@@ -15721,7 +6477,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -15729,7 +6484,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 9,
         "Ranged strength": 0,
@@ -15754,7 +6508,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: 50,
@@ -15762,7 +6515,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -15770,7 +6522,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 70,
         "Ranged strength": 0,
@@ -15786,88 +6537,6 @@ const WEAPONS = [
   },
   {
     type: "Melee",
-    name: "Holy scythe of vitur (uncharged)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 90,
-    attackLvl: 80,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 50,
-        Slash: 75,
-        Crush: 10,
-        Magic: -6,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -2,
-        Slash: 6,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Holy_scythe_of_vitur_(uncharged).webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Holy_scythe_of_vitur",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 90,
-    attackLvl: 80,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 70,
-        Slash: 110,
-        Crush: 30,
-        Magic: -6,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -2,
-        Slash: 8,
-        Crush: 10,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 75,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Holy_scythe_of_vitur.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
     name: "Iron 2h sword",
     defLvl: 0,
     rangedLvl: 0,
@@ -15877,7 +6546,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: 13,
@@ -15885,7 +6553,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -15893,7 +6560,6 @@ const WEAPONS = [
         Magic: 0,
         Range: -1,
       },
-      // Other
       {
         "Melee strength": 14,
         "Ranged strength": 0,
@@ -15918,7 +6584,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 4,
         Slash: 6,
@@ -15926,7 +6591,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -15934,7 +6598,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -15959,7 +6622,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -2,
         Slash: 5,
@@ -15967,7 +6629,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -15975,7 +6636,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -16000,7 +6660,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 9,
         Slash: 12,
@@ -16008,7 +6667,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 0,
       },
-      // Defence
       {
         Stab: -1,
         Slash: 1,
@@ -16016,7 +6674,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 12,
         "Ranged strength": 0,
@@ -16041,7 +6698,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 8,
         Slash: 8,
@@ -16049,7 +6705,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -16057,7 +6712,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 10,
         "Ranged strength": 0,
@@ -16082,7 +6736,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16090,7 +6743,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 84,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16098,7 +6750,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 10,
         "Ranged strength": 0,
@@ -16113,88 +6764,6 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Melee",
-    name: "Katana",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: 45,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 3,
-        Slash: 7,
-        Crush: 7,
-        Magic: 0,
-        Range: -3,
-      },
-      // Other
-      {
-        "Melee strength": 40,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.628,
-      },
-    ],
-    src: "./gearcalculator/weapons/Katana.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Leaf-bladed spear",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 47,
-        Slash: 42,
-        Crush: 36,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Leaf-bladed_spear.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
     type: "Ranged",
     name: "Light ballista",
     defLvl: 0,
@@ -16205,7 +6774,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16213,7 +6781,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 110,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16221,7 +6788,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -16246,7 +6812,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16254,7 +6819,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16262,7 +6826,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -16287,7 +6850,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16295,7 +6857,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 71,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16303,7 +6864,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -16328,7 +6888,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16336,7 +6895,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 69,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16344,7 +6902,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -16369,7 +6926,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16377,7 +6933,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 69,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16385,7 +6940,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -16410,7 +6964,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16418,7 +6971,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 29,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16426,7 +6978,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -16451,7 +7002,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16459,7 +7009,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 29,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16467,7 +7016,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -16492,7 +7040,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 8,
         Slash: 8,
@@ -16500,7 +7047,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -16508,7 +7054,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 4,
         "Ranged strength": 0,
@@ -16524,252 +7069,6 @@ const WEAPONS = [
   },
   {
     type: "Melee",
-    name: "Mithril 2h sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: 30,
-        Crush: 24,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 31,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_2h_sword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Mithril claws",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 11,
-        Slash: 16,
-        Crush: -4,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 4,
-        Slash: 8,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 17,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_claws.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Mithril felling axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 12,
-        Crush: 10,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 13,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_felling_axe.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Mithril halberd",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 22,
-        Slash: 28,
-        Crush: 0,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -1,
-        Slash: 2,
-        Crush: 4,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 29,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.721,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_halberd.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Mithril spear",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 17,
-        Slash: 17,
-        Crush: 17,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 18,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Mithril_spear.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Nunchaku",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 20,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 11,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.36,
-      },
-    ],
-    src: "./gearcalculator/weapons/Nunchaku.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
     name: "Oak longbow",
     defLvl: 0,
     rangedLvl: 5,
@@ -16779,7 +7078,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16787,7 +7085,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 14,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16795,7 +7092,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -16820,7 +7116,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16828,7 +7123,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 14,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16836,7 +7130,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -16861,7 +7154,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16869,7 +7161,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 38,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16877,7 +7168,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -16893,47 +7183,6 @@ const WEAPONS = [
   },
   {
     type: "Ranged",
-    name: "Orange salamander",
-    defLvl: 0,
-    rangedLvl: 50,
-    prayerLvl: 0,
-    magicLvl: 50,
-    strengthLvl: 0,
-    attackLvl: 50,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 19,
-        Crush: 0,
-        Magic: 0,
-        Range: 29,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 31,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 4,
-      },
-    ],
-    src: "./gearcalculator/weapons/Orange_salamander.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Ranged",
     name: "Rain bow",
     defLvl: 0,
     rangedLvl: 0,
@@ -16943,7 +7192,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -16951,7 +7199,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -16959,7 +7206,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -16984,7 +7230,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: -1,
@@ -16992,7 +7237,6 @@ const WEAPONS = [
         Magic: 4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -17000,7 +7244,6 @@ const WEAPONS = [
         Magic: 4,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 3,
         "Ranged strength": 0,
@@ -17015,375 +7258,6 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Ranged",
-    name: "Red salamander",
-    defLvl: 0,
-    rangedLvl: 60,
-    prayerLvl: 0,
-    magicLvl: 60,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 37,
-        Crush: 0,
-        Magic: 0,
-        Range: 47,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 49,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 4,
-      },
-    ],
-    src: "./gearcalculator/weapons/Red_salamander.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Rune 2h sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: 69,
-        Crush: 50,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 70,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.628,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_2h_sword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Rune claws",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 26,
-        Slash: 38,
-        Crush: -4,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 10,
-        Slash: 19,
-        Crush: 5,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 39,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_claws.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Rune felling axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 26,
-        Crush: 24,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 29,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_felling_axe.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Rune halberd",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 48,
-        Slash: 67,
-        Crush: 0,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -1,
-        Slash: 4,
-        Crush: 5,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 68,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_halberd.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Rune spear",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 40,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 36,
-        Slash: 36,
-        Crush: 36,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 42,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Rune_spear.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Sanguine scythe of vitur",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 90,
-    attackLvl: 80,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 50,
-        Slash: 75,
-        Crush: 10,
-        Magic: -6,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -2,
-        Slash: 6,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Sanguine_scythe_of_vitur.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Saradomin sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 82,
-        Crush: 60,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 82,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 3,
-      },
-    ],
-    src: "./gearcalculator/weapons/Saradomin_sword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Saradomin sword blessed",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 100,
-        Crush: 60,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 88,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 2,
-        Weight: 3,
-      },
-    ],
-    src: "./gearcalculator/weapons/Saradomin's_blessed_sword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
     type: "Melee",
     name: "Scythe",
     defLvl: 0,
@@ -17394,7 +7268,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 3,
         Slash: 8,
@@ -17402,7 +7275,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -17410,7 +7282,6 @@ const WEAPONS = [
         Magic: 1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 10,
         "Ranged strength": 0,
@@ -17425,88 +7296,6 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Melee",
-    name: "Scythe of vitur",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 90,
-    attackLvl: 80,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 70,
-        Slash: 110,
-        Crush: 30,
-        Magic: -6,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -2,
-        Slash: 8,
-        Crush: 10,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 75,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Scythe_of_vitur.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Scythe of vitur (uncharged)",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 90,
-    attackLvl: 80,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 50,
-        Slash: 75,
-        Crush: 10,
-        Magic: -6,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -2,
-        Slash: 6,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 50,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Scythe_of_vitur_(uncharged).webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
     type: "Ranged",
     name: "Seercull",
     defLvl: 0,
@@ -17517,7 +7306,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -17525,7 +7313,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 69,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -17533,7 +7320,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -17558,7 +7344,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: -4,
         Slash: 27,
@@ -17566,7 +7351,6 @@ const WEAPONS = [
         Magic: 4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -17574,7 +7358,6 @@ const WEAPONS = [
         Magic: 4,
         Range: -1,
       },
-      // Other
       {
         "Melee strength": 26,
         "Ranged strength": 0,
@@ -17599,7 +7382,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -17607,7 +7389,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -17615,7 +7396,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -17640,7 +7420,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -17648,7 +7427,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 14,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -17656,7 +7434,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -17671,88 +7448,6 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Melee",
-    name: "Soulreaper axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 80,
-    attackLvl: 80,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 28,
-        Slash: 134,
-        Crush: 6,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 121,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.825,
-      },
-    ],
-    src: "./gearcalculator/weapons/Soulreaper_axe.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Spatula",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: 27,
-        Crush: 21,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 26,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.628,
-      },
-    ],
-    src: "./gearcalculator/weapons/Spatula.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
     type: "Ranged",
     name: "Starter bow",
     defLvl: 0,
@@ -17763,7 +7458,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -17771,7 +7465,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 20,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -17779,7 +7472,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 7,
@@ -17794,375 +7486,6 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Melee",
-    name: "Steel 2h sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: 21,
-        Crush: 16,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 22,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.628,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_2h_sword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Steel claws",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 8,
-        Slash: 11,
-        Crush: -4,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 3,
-        Slash: 6,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 12,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_claws.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Steel felling axe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -2,
-        Slash: 8,
-        Crush: 6,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 9,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_felling_axe.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Steel halberd",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 14,
-        Slash: 19,
-        Crush: 0,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -1,
-        Slash: 1,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 20,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_halberd.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Steel spear",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 5,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 12,
-        Slash: 12,
-        Crush: 12,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 1,
-        Slash: 1,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 12,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Steel_spear.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Ranged",
-    name: "Swamp lizard",
-    defLvl: 0,
-    rangedLvl: 30,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 30,
-    attackLvl: 30,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 10,
-        Crush: 0,
-        Magic: 0,
-        Range: 20,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 22,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 4,
-      },
-    ],
-    src: "./gearcalculator/weapons/Swamp_lizard.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Magic",
-    name: "Toktz-mej-tal",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 60,
-    strengthLvl: 0,
-    attackLvl: 60,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 15,
-        Slash: -1,
-        Crush: 55,
-        Magic: 15,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 10,
-        Slash: 15,
-        Crush: 5,
-        Magic: 15,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 55,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 5,
-        Weight: 1.814,
-      },
-    ],
-    src: "./gearcalculator/weapons/Toktz-mej-tal.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Torag's hammers",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: -4,
-        Crush: 85,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 72,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.628,
-      },
-    ],
-    src: "./gearcalculator/weapons/Torag's_hammers.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Ranged",
-    name: "Toxic blowpipe",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 30,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 20,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.5,
-      },
-    ],
-    src: "./gearcalculator/weapons/Toxic_blowpipe.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
     type: "Ranged",
     name: "Training bow",
     defLvl: 0,
@@ -18173,7 +7496,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18181,7 +7503,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18189,7 +7510,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -18214,7 +7534,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18222,7 +7541,6 @@ const WEAPONS = [
         Magic: 35,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18230,7 +7548,6 @@ const WEAPONS = [
         Magic: 20,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -18255,7 +7572,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18263,7 +7579,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 70,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18271,7 +7586,6 @@ const WEAPONS = [
         Magic: 20,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 20,
@@ -18296,7 +7610,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18304,7 +7617,6 @@ const WEAPONS = [
         Magic: -4,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18312,7 +7624,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 85,
         "Ranged strength": 0,
@@ -18337,7 +7648,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18345,7 +7655,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 90,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18353,7 +7662,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 25,
@@ -18368,252 +7676,6 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Melee",
-    name: "Verac's flail",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 70,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 68,
-        Slash: -2,
-        Crush: 82,
-        Magic: 0,
-        Range: 90,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 72,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 6,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Verac's_flail.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "Vesta's spear",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 133,
-        Slash: 133,
-        Crush: 120,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 18,
-        Slash: 21,
-        Crush: 21,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 122,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 2.267,
-      },
-    ],
-    src: "./gearcalculator/weapons/Vesta's_spear_(bh).webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Ranged",
-    name: "Webweaver bow",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 75,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 85,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 65,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/Webweaver_bow.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "White 2h sword",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -4,
-        Slash: 27,
-        Crush: 21,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: -1,
-      },
-      // Other
-      {
-        "Melee strength": 26,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 3.628,
-      },
-    ],
-    src: "./gearcalculator/weapons/White_2h_sword.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "White claws",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 10,
-        Slash: 14,
-        Crush: -4,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 4,
-        Slash: 7,
-        Crush: 2,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/weapons/White_claws.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
-    type: "Melee",
-    name: "White halberd",
-    defLvl: 0,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 10,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 19,
-        Slash: 25,
-        Crush: 0,
-        Magic: -4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: -1,
-        Slash: 2,
-        Crush: 3,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 20,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 3.175,
-      },
-    ],
-    src: "./gearcalculator/weapons/White_halberd.webp",
-    slot: "Weapon",
-    twoHanded: true,
-  },
-  {
     type: "Ranged",
     name: "Willow comp bow",
     defLvl: 0,
@@ -18624,7 +7686,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18632,7 +7693,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 22,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18640,7 +7700,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -18665,7 +7724,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18673,7 +7731,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 20,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18681,7 +7738,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -18706,7 +7762,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18714,7 +7769,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 20,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18722,7 +7776,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -18747,7 +7800,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18755,7 +7807,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 49,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18763,7 +7814,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -18788,7 +7838,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18796,7 +7845,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 47,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18804,7 +7852,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -18829,7 +7876,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18837,7 +7883,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 47,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18845,7 +7890,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -18870,7 +7914,6 @@ const WEAPONS = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -18878,7 +7921,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 100,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -18886,7 +7928,6 @@ const WEAPONS = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 10,
@@ -18899,6 +7940,9582 @@ const WEAPONS = [
     src: "./gearcalculator/weapons/Zaryte_bow.webp",
     slot: "Weapon",
     twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Decorative sword (red)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 13,
+        Slash: 18,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 16,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Decorative_sword_(red).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Steel axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 8,
+        Crush: 6,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 9,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_axe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Steel battleaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 16,
+        Crush: 11,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 20,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_battleaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Steel dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 8,
+        Slash: 4,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_dagger.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Steel hasta",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 12,
+        Slash: 12,
+        Crush: 12,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: -3,
+        Slash: -3,
+        Crush: -3,
+        Magic: 0,
+        Range: -3,
+      },
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_hasta.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Steel longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 9,
+        Slash: 14,
+        Crush: -2,
+        Magic: 0,
+        Range: 8,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 16,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_longsword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Steel mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -2,
+        Crush: 13,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 11,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_mace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Steel pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 8,
+        Slash: -2,
+        Crush: 6,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 9,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_pickaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Steel scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 3,
+        Slash: 15,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_scimitar.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Steel sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 11,
+        Slash: 8,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_sword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Steel warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 18,
+        Magic: -4,
+        Range: 8,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 16,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_warhammer.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Steel 2h sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: 21,
+        Crush: 16,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 22,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_2h_sword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Steel claws",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 8,
+        Slash: 11,
+        Crush: -4,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 3,
+        Slash: 6,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_claws.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Steel felling axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 8,
+        Crush: 6,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 9,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_felling_axe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Steel halberd",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 14,
+        Slash: 19,
+        Crush: 0,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: -1,
+        Slash: 1,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 20,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_halberd.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Steel spear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 5,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 12,
+        Slash: 12,
+        Crush: 12,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steel_spear.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Black axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 10,
+        Crush: 8,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 5,
+        Range: 0,
+      },
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_axe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Black battleaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 20,
+        Crush: 15,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 24,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_battleaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Black cane",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 8,
+        Slash: -2,
+        Crush: 16,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 13,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_cane.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Black dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: 5,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_dagger.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Black longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 13,
+        Slash: 18,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 16,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_longsword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Black mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 8,
+        Slash: -2,
+        Crush: 16,
+        Magic: 0,
+        Range: 10,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 13,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_mace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Black pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -2,
+        Crush: 8,
+        Magic: 0,
+        Range: 10,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 11,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.01,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_pickaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Black scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 4,
+        Slash: 19,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_scimitar.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Black sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 14,
+        Slash: 10,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_sword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Black warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 22,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 22,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_warhammer.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: -1,
+        Crush: 7,
+        Magic: 4,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 4,
+        Range: 0,
+      },
+      {
+        "Melee strength": 3,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "White battleaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 20,
+        Crush: 15,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 24,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_battleaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "White dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: 5,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_dagger.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "White longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 13,
+        Slash: 18,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 16,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_longsword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "White mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 8,
+        Slash: -2,
+        Crush: 16,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 13,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_mace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "White magic staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 2,
+        Slash: -1,
+        Crush: 10,
+        Magic: 10,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_magic_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "White scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 4,
+        Slash: 19,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_scimitar.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "White sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 14,
+        Slash: 10,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_sword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "White warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 22,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 22,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_warhammer.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Black 2h sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 2,
+        Slash: 2,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.003,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_2h_sword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Black claws",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: 14,
+        Crush: -4,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 4,
+        Slash: 7,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_claws.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Black felling axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 10,
+        Crush: 8,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 12,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_felling_axe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Black halberd",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 19,
+        Slash: 25,
+        Crush: 0,
+        Magic: 0,
+        Range: -4,
+      },
+      {
+        Stab: -1,
+        Slash: 2,
+        Crush: 3,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 20,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_halberd.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Black spear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 15,
+        Slash: 15,
+        Crush: 15,
+        Magic: 0,
+        Range: 69,
+      },
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 16,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_spear.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Spatula",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: 27,
+        Crush: 21,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 26,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/weapons/Spatula.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "White 2h sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: 27,
+        Crush: 21,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 26,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_2h_sword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "White claws",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: 14,
+        Crush: -4,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 4,
+        Slash: 7,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_claws.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "White halberd",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 10,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 19,
+        Slash: 25,
+        Crush: 0,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: -1,
+        Slash: 2,
+        Crush: 3,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 20,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/White_halberd.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Ancient mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 25,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 15,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -2,
+        Crush: 16,
+        Magic: 10,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ancient_mace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Blessed axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 12,
+        Crush: 10,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 13,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 1.162,
+      },
+    ],
+    src: "./gearcalculator/weapons/Blessed_axe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Decorative sword (white)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 15,
+        Slash: 20,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 22,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Decorative_sword_(white).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Frying pan",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 25,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 20,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Frying_pan.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Harry's cutlass",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 3,
+        Slash: 14,
+        Crush: 0,
+        Magic: -5,
+        Range: 0,
+      },
+      {
+        Stab: 4,
+        Slash: 4,
+        Crush: 4,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 22,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Harry's_cutlass.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Mithril axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 12,
+        Crush: 10,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 13,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.133,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_axe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Mithril battleaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 22,
+        Crush: 17,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 29,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_battleaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Mithril dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 11,
+        Slash: 5,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 10,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.396,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_dagger.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Mithril hasta",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 17,
+        Slash: 17,
+        Crush: 17,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: -5,
+        Slash: -5,
+        Crush: -4,
+        Magic: 0,
+        Range: -5,
+      },
+      {
+        "Melee strength": 18,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_hasta.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Mithril longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 15,
+        Slash: 20,
+        Crush: -2,
+        Magic: 0,
+        Range: 11,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 22,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_longsword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Mithril mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 11,
+        Slash: -2,
+        Crush: 18,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 16,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_mace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Mithril pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 12,
+        Slash: -2,
+        Crush: 10,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 13,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_pickaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Mithril scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 5,
+        Slash: 21,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 20,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_scimitar.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Mithril sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 16,
+        Slash: 11,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 17,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_sword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Mithril warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 25,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 27,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_warhammer.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Mithril 2h sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: 30,
+        Crush: 24,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 31,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_2h_sword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Mithril claws",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 11,
+        Slash: 16,
+        Crush: -4,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 4,
+        Slash: 8,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 17,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_claws.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Mithril felling axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 12,
+        Crush: 10,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 13,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_felling_axe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Mithril halberd",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 22,
+        Slash: 28,
+        Crush: 0,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: -1,
+        Slash: 2,
+        Crush: 4,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 29,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_halberd.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Mithril spear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 17,
+        Slash: 17,
+        Crush: 17,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 18,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mithril_spear.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Nunchaku",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 20,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 11,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Nunchaku.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Void knight mace",
+    defLvl: 22,
+    rangedLvl: 22,
+    prayerLvl: 22,
+    magicLvl: 22,
+    strengthLvl: 22,
+    attackLvl: 22,
+    hitpointsLvl: 22,
+    stats: [
+      {
+        Stab: 22,
+        Slash: 0,
+        Crush: 41,
+        Magic: 8,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 2,
+        Crush: 2,
+        Magic: 2,
+        Range: 2,
+      },
+      {
+        "Melee strength": 38,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 6,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Void_knight_mace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 17,
+        Crush: 15,
+        Magic: 22,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 19,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_axe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant battleaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 31,
+        Crush: 26,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 41,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_battleaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant cane",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 13,
+        Slash: -2,
+        Crush: 25,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 23,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_cane.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 15,
+        Slash: 8,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.51,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_dagger.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant hasta",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 24,
+        Slash: 24,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: -6,
+        Slash: -7,
+        Crush: -5,
+        Magic: 0,
+        Range: -6,
+      },
+      {
+        "Melee strength": 28,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_hasta.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 20,
+        Slash: 29,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 31,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.041,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_longsword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 13,
+        Slash: -2,
+        Crush: 25,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 31,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.041,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_mace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 17,
+        Slash: -2,
+        Crush: 15,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 19,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_pickaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 6,
+        Slash: 29,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 28,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.041,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_scimitar.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 23,
+        Slash: 18,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 24,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.041,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_sword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 35,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 39,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.041,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_warhammer.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Air battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Air_battlestaff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Water battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Water_battlestaff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Steam battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Steam_battlestaff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mud battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mud_battlestaff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mist battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mist_battlestaff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Lava battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Lava_battlestaff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Fire battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Fire_battlestaff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 25,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 32,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Battlestaff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Bryophyta's staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Bryophyta's_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Decorative_sword_(gold)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 20,
+        Slash: 29,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 31,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Decorative_sword_(gold).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Dust battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dust_battlestaff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Smoke battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Smoke_battlestaff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Earth battlestaff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 28,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 35,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Earth_battlestaff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Lucky cutlass",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 5,
+        Slash: 20,
+        Crush: 0,
+        Magic: -5,
+        Range: 0,
+      },
+      {
+        Stab: 6,
+        Slash: 6,
+        Crush: 6,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 25,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Lucky_cutlass.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Pharaoh's sceptre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 30,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: -1,
+        Crush: 25,
+        Magic: 10,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: -1,
+        Magic: 10,
+        Range: 0,
+      },
+      {
+        "Melee strength": 32,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/weapons/Pharaoh's_sceptre_(1).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Adamant 2h sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: 43,
+        Crush: 30,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 44,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.082,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_2h_sword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Adamant claws",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 18,
+        Slash: 23,
+        Crush: -4,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 6,
+        Slash: 12,
+        Crush: 3,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 24,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_claws.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Adamant felling axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 17,
+        Crush: 15,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 19,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_felling_axe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Adamant halberd",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 28,
+        Slash: 41,
+        Crush: 0,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: -1,
+        Slash: 3,
+        Crush: 4,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_halberd.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Adamant spear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 24,
+        Slash: 24,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 28,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Adamant_spear.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Ranged",
+    name: "Swamp lizard",
+    defLvl: 0,
+    rangedLvl: 30,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 30,
+    attackLvl: 30,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 10,
+        Crush: 0,
+        Magic: 0,
+        Range: 20,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 22,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4,
+      },
+    ],
+    src: "./gearcalculator/weapons/Swamp_lizard.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Barronite mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 20,
+        Slash: -2,
+        Crush: 40,
+        Magic: 0,
+        Range: 100,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 40,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/weapons/Barronite_mace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Brine sabre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: 47,
+        Crush: -2,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 46,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Brine_sabre.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Cleaver",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: 45,
+        Crush: -2,
+        Magic: 0,
+        Range: 45,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 44,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Cleaver.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Gilded axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 26,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 29,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Gilded_axe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Gilded hasta",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 36,
+        Slash: 36,
+        Crush: 36,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: -10,
+        Slash: -10,
+        Crush: -9,
+        Magic: 0,
+        Range: -10,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Gilded_hasta.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Gilded pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 26,
+        Slash: -2,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 29,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Gilded_pickaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Gilded scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: 45,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 44,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Gilded_scimitar.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Glowing dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 5,
+        Slash: 3,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Glowing_dagger.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Ivandis flail",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 24,
+        Slash: 38,
+        Crush: 62,
+        Magic: 8,
+        Range: 0,
+      },
+      {
+        Stab: 4,
+        Slash: 4,
+        Crush: 2,
+        Magic: 8,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.001,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ivandis_flail.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Kitchen knife",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 25,
+        Slash: 12,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 24,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Kitchen_knife.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Meat tenderiser",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 40,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 53,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 48,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Meat_tenderiser.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mystic air staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_air_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mystic dust staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_dust_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mystic earth staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_earth_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mystic fire staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_fire_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mystic lava staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_lava_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mystic mist staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_mist_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mystic mud staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_mud_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mystic smoke staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_smoke_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mystic steam staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_steam_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Mystic water staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 14,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Mystic_water_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rapier",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 45,
+        Slash: 7,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 44,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rapier.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rolling pin",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 20,
+        Slash: -2,
+        Crush: 39,
+        Magic: 4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 36,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rolling_pin.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Ruby sickle (b)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 1,
+        Magic: 1,
+        Range: 1,
+      },
+      {
+        "Melee strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ruby_sickle_(b).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rune axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 26,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 29,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_axe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rune battleaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 48,
+        Crush: 43,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 64,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_battleaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rune cane",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 20,
+        Slash: -2,
+        Crush: 39,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 36,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_cane.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rune dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 25,
+        Slash: 12,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 24,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_dagger.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rune longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 38,
+        Slash: 47,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 49,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_longsword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rune mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 20,
+        Slash: -2,
+        Crush: 39,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 36,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 4,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_mace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rune pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 26,
+        Slash: -2,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 29,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_pickaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rune scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: 45,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 44,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_scimitar.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rune sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 38,
+        Slash: 26,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 39,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_sword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Ranged",
+    name: "Rune thrownaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 26,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 36,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_thrownaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Rune warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 53,
+        Magic: -4,
+        Range: 26,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 62,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_warhammer.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Gilded 2h sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: 69,
+        Crush: 50,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 70,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/weapons/Gilded_2h_sword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Gilded spear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 36,
+        Slash: 36,
+        Crush: 36,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Gilded_spear.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Katana",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: 45,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 3,
+        Slash: 7,
+        Crush: 7,
+        Magic: 0,
+        Range: -3,
+      },
+      {
+        "Melee strength": 40,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/weapons/Katana.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Rune 2h sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: 69,
+        Crush: 50,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 70,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_2h_sword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Rune claws",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 26,
+        Slash: 38,
+        Crush: -4,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 10,
+        Slash: 19,
+        Crush: 5,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 39,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_claws.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Rune felling axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 26,
+        Crush: 24,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 29,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_felling_axe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Rune halberd",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 48,
+        Slash: 67,
+        Crush: 0,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: -1,
+        Slash: 4,
+        Crush: 5,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 68,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_halberd.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Rune spear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 40,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 36,
+        Slash: 36,
+        Crush: 36,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Rune_spear.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Magic",
+    name: "Ancient sceptre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 70,
+    strengthLvl: 60,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 20,
+        Slash: -1,
+        Crush: 50,
+        Magic: 20,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        "Melee strength": 60,
+        "Ranged strength": 0,
+        "Magic damage": 5,
+        "Slayer Bonus": 0,
+        Prayer: -1,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ancient_sceptre.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Smoke ancient sceptre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 70,
+    strengthLvl: 60,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 20,
+        Slash: -1,
+        Crush: 50,
+        Magic: 20,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        "Melee strength": 60,
+        "Ranged strength": 0,
+        "Magic damage": 5,
+        "Slayer Bonus": 0,
+        Prayer: -1,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Smoke_ancient_sceptre.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Ancient staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: -1,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ancient_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Blisterwood flail",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 30,
+        Slash: 44,
+        Crush: 68,
+        Magic: 8,
+        Range: 0,
+      },
+      {
+        Stab: 4,
+        Slash: 4,
+        Crush: 2,
+        Magic: 8,
+        Range: 0,
+      },
+      {
+        "Melee strength": 46,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 0.001,
+      },
+    ],
+    src: "./gearcalculator/weapons/Blisterwood_flail.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Blisterwood sickle",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 30,
+        Slash: 38,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 1,
+        Slash: 2,
+        Crush: 2,
+        Magic: 2,
+        Range: 2,
+      },
+      {
+        "Melee strength": 32,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.587,
+      },
+    ],
+    src: "./gearcalculator/weapons/Blisterwood_sickle.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Blood ancient sceptre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 60,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 20,
+        Slash: -1,
+        Crush: 50,
+        Magic: 20,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        "Melee strength": 60,
+        "Ranged strength": 0,
+        "Magic damage": 5,
+        "Slayer Bonus": 0,
+        Prayer: -1,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Blood_ancient_sceptre.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Granite hammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 50,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 57,
+        Magic: -3,
+        Range: -1,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 56,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Granite_hammer.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Granite longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 50,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 56,
+        Slash: 65,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 62,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Granite_longsword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Iban's staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: -1,
+        Crush: 40,
+        Magic: 10,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 10,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Iban's_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Ice ancient sceptre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 60,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 20,
+        Slash: -1,
+        Crush: 50,
+        Magic: 20,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        "Melee strength": 60,
+        "Ranged strength": 0,
+        "Magic damage": 5,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ice_ancient_sceptre.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Shadow ancient sceptre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 60,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 20,
+        Slash: -1,
+        Crush: 50,
+        Magic: 20,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        "Melee strength": 60,
+        "Ranged strength": 0,
+        "Magic damage": 5,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Shadow_ancient_sceptre.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Keris",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 40,
+        Slash: 20,
+        Crush: -10,
+        Magic: 2,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 2,
+        Range: 0,
+      },
+      {
+        "Melee strength": 30,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Keris.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Leaf-bladed sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 67,
+        Slash: 62,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Leaf-bladed_sword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Granite maul",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 50,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 81,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 79,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4.535,
+      },
+    ],
+    src: "./gearcalculator/weapons/Granite_maul.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Leaf-bladed spear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 47,
+        Slash: 42,
+        Crush: 36,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 1,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Leaf-bladed_spear.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Ranged",
+    name: "Orange salamander",
+    defLvl: 0,
+    rangedLvl: 50,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 50,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 19,
+        Crush: 0,
+        Magic: 0,
+        Range: 29,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 31,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4,
+      },
+    ],
+    src: "./gearcalculator/weapons/Orange_salamander.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Dragon axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 38,
+        Crush: 32,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_axe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon battleaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 70,
+        Crush: 65,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 85,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_battleaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon cane",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 40,
+        Slash: -2,
+        Crush: 60,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 55,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_cane.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 40,
+        Slash: 25,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 40,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_dagger.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon harpoon",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 38,
+        Slash: 32,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_harpoon.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon hasta",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 55,
+        Slash: 55,
+        Crush: 55,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: -15,
+        Slash: -15,
+        Crush: -12,
+        Magic: 0,
+        Range: -15,
+      },
+      {
+        "Melee strength": 60,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_hasta.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 58,
+        Slash: 69,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 71,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_longsword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon longsword (bh)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 62,
+        Slash: 75,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 71,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_longsword_(bh).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon longsword (cr)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 58,
+        Slash: 69,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 71,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_longsword_(cr).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 40,
+        Slash: -2,
+        Crush: 60,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 55,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_mace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon mace (cr)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 40,
+        Slash: -2,
+        Crush: 60,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 55,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_mace_(cr).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon mace (bh)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 44,
+        Slash: -2,
+        Crush: 64,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 55,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_mace_(bh).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 38,
+        Slash: -2,
+        Crush: 32,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.4,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_pickaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon scimitar",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 8,
+        Slash: 67,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 66,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_scimitar.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 65,
+        Slash: 55,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 2,
+        Crush: 1,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 63,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_sword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Dragon warhammer",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 95,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 85,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_warhammer.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Infernal axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 38,
+        Crush: 32,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Infernal_axe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Infernal harpoon",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 38,
+        Slash: 32,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Infernal_harpoon.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Infernal pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 38,
+        Slash: -2,
+        Crush: 32,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.4,
+      },
+    ],
+    src: "./gearcalculator/weapons/Infernal_pickaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Inquisitor's mace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 52,
+        Slash: -4,
+        Crush: 95,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 89,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Inquisitor's_mace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Toktz-xil-ak",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 47,
+        Slash: 38,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 49,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Toktz-xil-ak.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Toktz-xil-ek",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 16,
+        Slash: 48,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 39,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Toktz-xil-ek.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Tzhaar-ket-em",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 62,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 56,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Tzhaar-ket-em.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Viggora's chainmace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 53,
+        Slash: -2,
+        Crush: 67,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 66,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/weapons/Viggora's_chainmace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Barrelchest anchor",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 40,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 10,
+        Crush: 92,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 100,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 30,
+      },
+    ],
+    src: "./gearcalculator/weapons/Barrelchest_anchor.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Dragon 2h sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: 92,
+        Crush: 80,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 93,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_2h_sword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Dragon claws",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 41,
+        Slash: 57,
+        Crush: -4,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 13,
+        Slash: 26,
+        Crush: 7,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 56,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_claws.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Dragon felling axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -3,
+        Slash: 60,
+        Crush: 51,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 67,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_felling_axe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Dragon halberd",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 70,
+        Slash: 95,
+        Crush: 0,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: -1,
+        Slash: 4,
+        Crush: 5,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 89,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_halberd.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Dragon spear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 55,
+        Slash: 55,
+        Crush: 55,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 5,
+        Slash: 5,
+        Crush: 5,
+        Magic: 5,
+        Range: 5,
+      },
+      {
+        "Melee strength": 60,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_spear.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Dual sai",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 11,
+        Slash: 8,
+        Crush: -4,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dual_sai.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Ranged",
+    name: "Red salamander",
+    defLvl: 0,
+    rangedLvl: 60,
+    prayerLvl: 0,
+    magicLvl: 60,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 37,
+        Crush: 0,
+        Magic: 0,
+        Range: 47,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 49,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4,
+      },
+    ],
+    src: "./gearcalculator/weapons/Red_salamander.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Magic",
+    name: "Toktz-mej-tal",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 60,
+    strengthLvl: 0,
+    attackLvl: 60,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 15,
+        Slash: -1,
+        Crush: 55,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        Stab: 10,
+        Slash: 15,
+        Crush: 5,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        "Melee strength": 55,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 5,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Toktz-mej-tal.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "3rd age axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 65,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 38,
+        Crush: 32,
+        Magic: 2,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 2,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/3rd_age_axe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "3rd age longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 65,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 72,
+        Crush: 60,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 75,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/weapons/3rd_age_longsword.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Keris partisan",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 65,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 58,
+        Slash: -2,
+        Crush: 57,
+        Magic: 2,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 45,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 3,
+        Weight: 3.218,
+      },
+    ],
+    src: "./gearcalculator/weapons/Keris_partisan.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Leaf-bladed battleaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 65,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 72,
+        Crush: 72,
+        Magic: 28,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 92,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.721,
+      },
+    ],
+    src: "./gearcalculator/weapons/Leaf-bladed_battleaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Sarachnis cudgel",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 65,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 30,
+        Slash: 0,
+        Crush: 70,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 70,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Sarachnis_cudgel.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "3rd age felling axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 65,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 38,
+        Crush: 32,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/3rd_age_felling_axe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Abyssal dagger (bh)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 85,
+        Slash: 40,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 75,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Abyssal_dagger_(bh).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Abyssal dagger",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 75,
+        Slash: 40,
+        Crush: -4,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 75,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Abyssal_dagger.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Abyssal tentacle",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 90,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 86,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Abyssal_tentacle.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Abyssal whip",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 82,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 82,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/weapons/Abyssal_whip.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Ahrim's staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 70,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 12,
+        Slash: -1,
+        Crush: 65,
+        Magic: 15,
+        Range: 0,
+      },
+      {
+        Stab: 2,
+        Slash: 3,
+        Crush: 1,
+        Magic: 12,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 68,
+        "Magic damage": 5,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ahrim's_staff.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Crystal axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -2,
+        Slash: 38,
+        Crush: 32,
+        Magic: 0,
+        Range: 6,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/weapons/Crystal_axe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Crystal harpoon",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 38,
+        Slash: 32,
+        Crush: 0,
+        Magic: 0,
+        Range: 6,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/weapons/Crystal_harpoon.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Crystal pickaxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 38,
+        Slash: -2,
+        Crush: 32,
+        Magic: 0,
+        Range: 6,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 42,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Crystal_pickaxe.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Crystal sceptre",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 8,
+        Slash: 10,
+        Crush: 16,
+        Magic: 0,
+        Range: 6,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 20,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.003,
+      },
+    ],
+    src: "./gearcalculator/weapons/Crystal_sceptre.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Ursine chainmace",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 53,
+        Slash: -2,
+        Crush: 71,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 74,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 2,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ursine_chainmace.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Zamorak hasta",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 85,
+        Slash: 85,
+        Crush: 65,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 13,
+        Slash: 13,
+        Crush: 12,
+        Magic: 0,
+        Range: 13,
+      },
+      {
+        "Melee strength": 75,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 3,
+      },
+    ],
+    src: "./gearcalculator/weapons/Zamorakian_hasta.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Abyssal bludgeon",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 70,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 102,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 85,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 6,
+      },
+    ],
+    src: "./gearcalculator/weapons/Abyssal_bludgeon.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Black salamander",
+    defLvl: 0,
+    rangedLvl: 70,
+    prayerLvl: 0,
+    magicLvl: 70,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 59,
+        Crush: 0,
+        Magic: 0,
+        Range: 69,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 71,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 4,
+      },
+    ],
+    src: "./gearcalculator/weapons/Black_salamander.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Crystal felling axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -3,
+        Slash: 60,
+        Crush: 51,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 67,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.36,
+      },
+    ],
+    src: "./gearcalculator/weapons/Crystal_felling_axe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Crystal halberd",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 85,
+        Slash: 110,
+        Crush: 5,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: -1,
+        Slash: 4,
+        Crush: 5,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 118,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Crystal_halberd.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Dharok's greataxe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: 103,
+        Crush: 95,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: -1,
+      },
+      {
+        "Melee strength": 105,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dharok's_greataxe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Guthan's warspear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 75,
+        Slash: 75,
+        Crush: 75,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 7,
+        Slash: 7,
+        Crush: 7,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 75,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Guthan's_warspear.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Guthix mjolnir",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 11,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Guthix_mjolnir.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Zamorak mjolnir",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 11,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Zamorak_mjolnir.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Zamorak spear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 85,
+        Slash: 85,
+        Crush: 65,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 13,
+        Slash: 13,
+        Crush: 12,
+        Magic: 0,
+        Range: 13,
+      },
+      {
+        "Melee strength": 75,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 3,
+      },
+    ],
+    src: "./gearcalculator/weapons/Zamorakian_spear.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Saradomin mjolnir",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 11,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Saradomin_mjolnir.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Ranged",
+    name: "Heavy ballista",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 125,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 15,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 6,
+      },
+    ],
+    src: "./gearcalculator/weapons/Heavy_ballista.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Saradomin sword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 82,
+        Crush: 60,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 82,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 3,
+      },
+    ],
+    src: "./gearcalculator/weapons/Saradomin_sword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Torag's hammers",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -4,
+        Slash: -4,
+        Crush: 85,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.628,
+      },
+    ],
+    src: "./gearcalculator/weapons/Torag's_hammers.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Ranged",
+    name: "Toxic blowpipe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 30,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 20,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Toxic_blowpipe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Verac's flail",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 70,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 68,
+        Slash: -2,
+        Crush: 82,
+        Magic: 0,
+        Range: 90,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 6,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Verac's_flail.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Arclight",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 10,
+        Slash: 38,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 2,
+        Magic: 2,
+        Range: 0,
+      },
+      {
+        "Melee strength": 8,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Arclight.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Staff of balance",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 55,
+        Slash: 70,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 3,
+        Magic: 17,
+        Range: 0,
+      },
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff_of_balance.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Staff of light",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 55,
+        Slash: 70,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 3,
+        Magic: 17,
+        Range: 0,
+      },
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff_of_light.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Staff of the dead",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 55,
+        Slash: 70,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 3,
+        Magic: 17,
+        Range: 0,
+      },
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Staff_of_the_dead.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Toxic staff of the dead",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 55,
+        Slash: 70,
+        Crush: 0,
+        Magic: 25,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 3,
+        Magic: 17,
+        Range: 0,
+      },
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Toxic staff (uncharged)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 55,
+        Slash: 70,
+        Crush: 0,
+        Magic: 17,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 3,
+        Magic: 17,
+        Range: 0,
+      },
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 15,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.5,
+      },
+    ],
+    src: "./gearcalculator/weapons/Toxic_staff_(uncharged).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Vesta's longsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 106,
+        Slash: 121,
+        Crush: -2,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 1,
+        Slash: 4,
+        Crush: 3,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 118,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Vesta's_longsword_(bh).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Voidwaker",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 70,
+        Slash: 80,
+        Crush: -2,
+        Magic: 5,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 1,
+        Crush: 0,
+        Magic: 2,
+        Range: 0,
+      },
+      {
+        "Melee strength": 80,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Voidwaker.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Magic",
+    name: "Zuriel's staff",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 75,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 13,
+        Slash: -1,
+        Crush: 65,
+        Magic: 18,
+        Range: 0,
+      },
+      {
+        Stab: 5,
+        Slash: 7,
+        Crush: 4,
+        Magic: 18,
+        Range: 0,
+      },
+      {
+        "Melee strength": 72,
+        "Ranged strength": 0,
+        "Magic damage": 10,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Zuriel's_staff_(bh).webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Ancient godsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 132,
+        Crush: 80,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 132,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 8,
+        Weight: 10,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ancient_godsword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Zamorak godsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 132,
+        Crush: 80,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 132,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 8,
+        Weight: 10,
+      },
+    ],
+    src: "./gearcalculator/weapons/Zamorak_godsword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Saradomin godsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 132,
+        Crush: 80,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 132,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 8,
+        Weight: 10,
+      },
+    ],
+    src: "./gearcalculator/weapons/Saradomin_godsword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Armadyl godsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 132,
+        Crush: 80,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 132,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 8,
+        Weight: 10,
+      },
+    ],
+    src: "./gearcalculator/weapons/Armadyl_godsword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Bandos godsword",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 132,
+        Crush: 80,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 132,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 8,
+        Weight: 10,
+      },
+    ],
+    src: "./gearcalculator/weapons/Bandos_godsword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Dinh's bulwark",
+    defLvl: 75,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 124,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 106,
+        Slash: 109,
+        Crush: 109,
+        Magic: -10,
+        Range: 148,
+      },
+      {
+        "Melee strength": 38,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 30,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dinh's_bulwark.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Elder maul",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 75,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 135,
+        Magic: -4,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 147,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 5.443,
+      },
+    ],
+    src: "./gearcalculator/weapons/Elder_maul.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Saradomin sword blessed",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 100,
+        Crush: 60,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 88,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 2,
+        Weight: 3,
+      },
+    ],
+    src: "./gearcalculator/weapons/Saradomin's_blessed_sword.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Vesta's spear",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 133,
+        Slash: 133,
+        Crush: 120,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 18,
+        Slash: 21,
+        Crush: 21,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 122,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.267,
+      },
+    ],
+    src: "./gearcalculator/weapons/Vesta's_spear_(bh).webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Ranged",
+    name: "Webweaver bow",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 75,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 85,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 65,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Webweaver_bow.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Dragon hunter lance",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 78,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 85,
+        Slash: 65,
+        Crush: 65,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 70,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3,
+      },
+    ],
+    src: "./gearcalculator/weapons/Dragon_hunter_lance.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Blade of saeldor",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 55,
+        Slash: 94,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 89,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Blade_of_saeldor.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Ghrazi rapier",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 95,
+        Slash: 55,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 89,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Ghrazi_rapier.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Holy ghrazi rapier",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 94,
+        Slash: 55,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 89,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Holy_ghrazi_rapier.webp",
+    slot: "Weapon",
+    twoHanded: false,
+  },
+  {
+    type: "Melee",
+    name: "Holy scythe of vitur (uncharged)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 90,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 50,
+        Slash: 75,
+        Crush: 10,
+        Magic: -6,
+        Range: 0,
+      },
+      {
+        Stab: -2,
+        Slash: 6,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Holy_scythe_of_vitur_(uncharged).webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Holy_scythe_of_vitur",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 90,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 70,
+        Slash: 110,
+        Crush: 30,
+        Magic: -6,
+        Range: 0,
+      },
+      {
+        Stab: -2,
+        Slash: 8,
+        Crush: 10,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 75,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Holy_scythe_of_vitur.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Sanguine scythe of vitur",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 90,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 50,
+        Slash: 75,
+        Crush: 10,
+        Magic: -6,
+        Range: 0,
+      },
+      {
+        Stab: -2,
+        Slash: 6,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Sanguine_scythe_of_vitur.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Scythe of vitur",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 90,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 70,
+        Slash: 110,
+        Crush: 30,
+        Magic: -6,
+        Range: 0,
+      },
+      {
+        Stab: -2,
+        Slash: 8,
+        Crush: 10,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 75,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Scythe_of_vitur.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Scythe of vitur (uncharged)",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 90,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 50,
+        Slash: 75,
+        Crush: 10,
+        Magic: -6,
+        Range: 0,
+      },
+      {
+        Stab: -2,
+        Slash: 6,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 50,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 3.175,
+      },
+    ],
+    src: "./gearcalculator/weapons/Scythe_of_vitur_(uncharged).webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Soulreaper axe",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 80,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 28,
+        Slash: 134,
+        Crush: 6,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 121,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 2.825,
+      },
+    ],
+    src: "./gearcalculator/weapons/Soulreaper_axe.webp",
+    slot: "Weapon",
+    twoHanded: true,
+  },
+  {
+    type: "Melee",
+    name: "Osmumten's fang",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 82,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 105,
+        Slash: 75,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 103,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1.814,
+      },
+    ],
+    src: "./gearcalculator/weapons/Osmumten's_fang.webp",
+    slot: "Weapon",
+    twoHanded: false,
   },
 ];
 
