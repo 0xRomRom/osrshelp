@@ -7722,7 +7722,4 @@ const BODIES = [
   },
 ];
 
-const sorter = BODIES.sort((a, b) => a.defLvl - b.defLvl);
-console.log(sorter);
-
 export default BODIES;
