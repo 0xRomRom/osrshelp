@@ -14,7 +14,7 @@ const AuthProvider = ({ children }) => {
       .select("premium")
       .eq("uid", uid)
       .single();
-    if (data.premium) {
+    if (data?.premium) {
       setPremiumUser(true);
     } else {
       setPremiumUser(false);

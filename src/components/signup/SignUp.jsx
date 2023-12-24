@@ -151,7 +151,9 @@ const SignUp = () => {
 
     setLoading(false);
     setLoggedInUser(true);
-    navigate("/");
+    setTimeout(() => {
+      navigate("/");
+    }, 4000);
   };
 
   const handleLogin = async (e) => {
@@ -302,53 +304,13 @@ const SignUp = () => {
         )}
         {registerComplete && (
           <div className={stl.registerComplete}>
-            <FaArrowRightLong
-              className={stl.backArrow}
-              onClick={handleBackToLogin}
-            />
-            <h2 className={stl.verifyHero}>Please verify your email</h2>
+            <h2 className={stl.verifyHero}>Signup successful! </h2>
 
             <div className={stl.mailProviders}>
-              <div
-                className={stl.providerWrap}
-                onClick={() => window.open("https://www.gmail.com", "_blank")}
-              >
-                <img
-                  src="/mailicons/Gmail.png"
-                  alt="Gmail logo"
-                  className={stl.mailProvider}
-                />
-                Gmail
-              </div>
-              <div
-                className={stl.providerWrap}
-                onClick={() => window.open("https://www.outlook.com", "_blank")}
-              >
-                <img
-                  src="/mailicons/Outlook.png"
-                  alt="Outlook logo"
-                  className={stl.mailProvider}
-                />
-                Outlook
-              </div>
-              <div
-                className={stl.providerWrap}
-                onClick={() => window.open("https://www.yahoo.com", "_blank")}
-              >
-                <img
-                  src="/mailicons/Yahoo.png"
-                  alt="Yahoo logo"
-                  className={stl.mailProvider}
-                />
-                Yahoo
-              </div>
-              <div
-                className={stl.providerWrap}
-                onClick={() => window.open("https://www.google.com", "_blank")}
-              >
-                <FaArrowRightLong className={stl.otherArrow} />
-                Other
-              </div>
+              <span className={stl.redirected}>
+                You're being redirected
+                <br /> back to home
+              </span>
             </div>
           </div>
         )}

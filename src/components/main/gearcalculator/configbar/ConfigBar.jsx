@@ -147,7 +147,7 @@ const ConfigBar = ({
                   onClick={() => addSelectedGear(item.slot, item.name, item)}
                 >
                   <div className={stl.microCol}>
-                    {item.rangedLvl > 0 && (
+                    {item.rangedLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
                           src={rangedIcon}
@@ -157,7 +157,7 @@ const ConfigBar = ({
                         {item.rangedLvl}
                       </span>
                     )}
-                    {item.strengthLvl > 0 && (
+                    {item.strengthLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
                           src={strengthicon}
@@ -167,7 +167,7 @@ const ConfigBar = ({
                         {item.strengthLvl}
                       </span>
                     )}
-                    {item.prayerLvl > 0 && (
+                    {item.prayerLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
                           src={prayerIcon}
@@ -177,7 +177,7 @@ const ConfigBar = ({
                         {item.prayerLvl}
                       </span>
                     )}
-                    {item.magicLvl > 0 && (
+                    {item.magicLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
                           src={magicIcon}
@@ -187,7 +187,7 @@ const ConfigBar = ({
                         {item.magicLvl}
                       </span>
                     )}
-                    {item.defLvl > 0 && (
+                    {item.defLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
                           src={defenceIcon}
@@ -197,7 +197,7 @@ const ConfigBar = ({
                         {item.defLvl}
                       </span>
                     )}
-                    {item.hitpointsLvl > 0 && (
+                    {item.hitpointsLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
                           src={hitpointsIcon}
@@ -207,7 +207,7 @@ const ConfigBar = ({
                         {item.hitpointsLvl}
                       </span>
                     )}
-                    {item.attackLvl > 0 && (
+                    {item.attackLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
                           src={attackIcon}
@@ -215,16 +215,6 @@ const ConfigBar = ({
                           className={stl.microIcon}
                         />
                         {item.attackLvl}
-                      </span>
-                    )}
-                    {item.defLvl === 0 && (
-                      <span className={stl.microSpan}>
-                        <img
-                          src={defenceIcon}
-                          alt="Defence Skill Icon"
-                          className={stl.microIcon}
-                        />
-                        {1}
                       </span>
                     )}
                   </div>
