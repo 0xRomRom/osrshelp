@@ -1,4 +1,74 @@
 .footer {
   height: 25rem;
   border-top: 1px solid rgb(42, 57, 69);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logoIcon {
+  display: block;
+  width: 30px;
+  margin: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.logoSpan {
+  color: rgb(206, 206, 206);
+  font-weight: 800;
+  margin-top: 0.4rem;
+  font-size: 20px;
+}
+
+.leftBlock {
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5rem;
+}
+.rightBlock {
+  width: 50%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-top: 7rem;
+}
+
+.footCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+  gap: 0.2rem;
+}
+
+.footTitle {
+  color: rgb(190, 190, 190);
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.footLink {
+  color: gray;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.footLink:hover {
+  color: white;
 }
