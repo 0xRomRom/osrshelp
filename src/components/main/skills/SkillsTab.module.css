@@ -4,7 +4,12 @@
   align-items: center;
   background: url("../../../assets/wallpapers/Barrows.webp");
   border-radius: 0.8rem;
-  padding: 1rem 0rem;
+  padding: 1rem 2rem;
+  min-height: 700px;
+  width: 90%;
+  left: 5%;
+  position: relative;
+  margin-bottom: 4rem;
 }
 
 .modalInner {

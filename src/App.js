@@ -12,6 +12,7 @@ import GearCalculator from "./components/main/gearcalculator/GearCalculator";
 import Checkout from "./components/checkout/Checkout";
 import PaymentSucces from "./components/paymentSuccess/PaymentSucces";
 import AuthProvider from "./utils/authprovider/AuthProvider";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("home");
@@ -25,65 +26,68 @@ const App = () => {
   return (
     <div className={stl.app}>
       <AuthProvider>
-        <Nav
-          setActiveTab={setActiveTab}
-          setMainState={setMainState}
-          setSubState={setSubState}
-          activeTab={activeTab}
-          playerName={playerName}
-        />
+        <div className={stl.mainWrap}>
+          <Nav
+            setActiveTab={setActiveTab}
+            setMainState={setMainState}
+            setSubState={setSubState}
+            activeTab={activeTab}
+            playerName={playerName}
+          />
 
-        <div className={stl.content}>
-          <Routes>
-            <Route path="/successful-payment" element={<PaymentSucces />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/login" element={<SignUp />} />
-            <Route
-              index
-              path="/"
-              element={
-                <Home
-                  setSkills={setSkills}
-                  skills={skills}
-                  setSkillsExp={setSkillsExp}
-                  skillsExp={skillsExp}
-                  setPlayerName={setPlayerName}
-                  playerName={playerName}
-                  mainState={mainState}
-                  setSubState={setSubState}
-                  subState={subState}
-                />
-              }
-            />
-            <Route
-              path="/skillcalculators/*"
-              element={
-                <SkillsTab
-                  setSkills={setSkills}
-                  skills={skills}
-                  setSkillsExp={setSkillsExp}
-                  skillsExp={skillsExp}
-                  setPlayerName={setPlayerName}
-                  playerName={playerName}
-                  mainState={mainState}
-                  setSubState={setSubState}
-                  subState={subState}
-                />
-              }
-            />
-            <Route
-              path="/gearcalculator"
-              element={
-                <GearCalculator
-                  mainState={mainState}
-                  setSubState={setSubState}
-                  subState={subState}
-                />
-              }
-            />
-            <Route path="/moneymakers" element={<MoneyMakers />} />
-          </Routes>
+          <div className={stl.content}>
+            <Routes>
+              <Route path="/successful-payment" element={<PaymentSucces />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/login" element={<SignUp />} />
+              <Route
+                index
+                path="/"
+                element={
+                  <Home
+                    setSkills={setSkills}
+                    skills={skills}
+                    setSkillsExp={setSkillsExp}
+                    skillsExp={skillsExp}
+                    setPlayerName={setPlayerName}
+                    playerName={playerName}
+                    mainState={mainState}
+                    setSubState={setSubState}
+                    subState={subState}
+                  />
+                }
+              />
+              <Route
+                path="/skillcalculators/*"
+                element={
+                  <SkillsTab
+                    setSkills={setSkills}
+                    skills={skills}
+                    setSkillsExp={setSkillsExp}
+                    skillsExp={skillsExp}
+                    setPlayerName={setPlayerName}
+                    playerName={playerName}
+                    mainState={mainState}
+                    setSubState={setSubState}
+                    subState={subState}
+                  />
+                }
+              />
+              <Route
+                path="/gearcalculator"
+                element={
+                  <GearCalculator
+                    mainState={mainState}
+                    setSubState={setSubState}
+                    subState={subState}
+                  />
+                }
+              />
+              <Route path="/moneymakers" element={<MoneyMakers />} />
+            </Routes>
+          </div>
         </div>
+        <Footer />
       </AuthProvider>
     </div>
   );
