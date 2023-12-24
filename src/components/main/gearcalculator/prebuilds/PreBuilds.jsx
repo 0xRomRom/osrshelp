@@ -7,8 +7,12 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 import PremiumBanner from "./PremiumBanner/PremiumBanner";
+import { useContext } from "react";
+import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
 const PreBuilds = ({ handlePrebuildSetup }) => {
+  const { premiumUser } = useContext(AuthContext);
+
   const [reversed, setReversed] = useState(false);
   const flipSaved = localStorage.getItem("Flipped");
 
@@ -79,7 +83,7 @@ const PreBuilds = ({ handlePrebuildSetup }) => {
         </div>
         <div className={stl.premiumBox}>
           <h3 className={stl.subHero}>Premium</h3>
-          <PremiumBanner />
+          {!premiumUser && <PremiumBanner />}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
 .footer {
-  height: 20rem;
-  background-color: red;
+  height: 25rem;
+  border-top: 1px solid rgb(42, 57, 69);
 }
