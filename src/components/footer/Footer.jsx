@@ -29,7 +29,7 @@ const Footer = () => {
         </ul>
         <ul className={stl.footCol}>
           <span className={stl.footTitle}>Sitemap</span>
-          <li className={stl.footLink} onClick={() => navTo("/home")}>
+          <li className={stl.footLink} onClick={() => navTo("/")}>
             Home
           </li>
           <li

@@ -8,27 +8,40 @@ import xptable from "../../assets/icons/Xptable.webp";
 import donate from "../../assets/icons/Donate.webp";
 import mills from "../../assets/icons/Mills.webp";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const Nav = (props) => {
+  const location = useLocation();
   const navigate = useNavigate();
 
-  const handleTabSwitch = (tab, path) => {
-    props.setActiveTab(tab);
-    props.setMainState(path);
-    props.setSubState(null);
-  };
+  useEffect(() => {
+    const path = location.pathname;
+    console.log(path);
 
-  const handleHomeRoute = () => {
-    navigate("/");
-    props.setSubState(null);
-    props.setMainState("home");
-    props.setActiveTab("home");
+    if (path === "/" || path === "/home") {
+      props.setActiveTab("/");
+      props.setMainState("Home");
+      props.setSubState(null);
+    }
+    if (path === "/skillcalculators") {
+      props.setActiveTab("skills");
+      props.setMainState("Skillcalculators");
+    }
+    if (path === "/gearcalculator") {
+      props.setActiveTab("gearcalculator");
+      props.setMainState("Gearcalculator");
+      props.setSubState(null);
+    }
+  }, [location]);
+
+  const handleTabSwitch = (path) => {
+    navigate(path);
   };
 
   return (
     <div className={stl.modal}>
-      <div className={stl.logo} onClick={handleHomeRoute}>
+      <div className={stl.logo} onClick={() => handleTabSwitch("/")}>
         <img src={logo} alt="OSRS Help logo" className={stl.logoIcon} />
         <span className={stl.logoSpan}>OSRS Help</span>
       </div>
@@ -46,9 +59,9 @@ const Nav = (props) => {
           <Link to="/" className={stl.link}>
             <li
               className={`${stl.navitem} ${
-                props.activeTab === "home" ? stl.active : ""
+                props.activeTab === "/" ? stl.active : ""
               }`}
-              onClick={() => handleTabSwitch("home", "Home")}
+              onClick={() => handleTabSwitch("/")}
             >
               <img
                 src={hometeleport}
@@ -63,7 +76,7 @@ const Nav = (props) => {
               className={`${stl.navitem} ${
                 props.activeTab === "skills" ? stl.active : ""
               }`}
-              onClick={() => handleTabSwitch("skills", "Skill Calculators")}
+              onClick={() => handleTabSwitch("/skillcalculators")}
             >
               <img src={stats} alt="Skills Icon" className={stl.icon} />
               Skill Calculators

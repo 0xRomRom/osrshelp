@@ -15,7 +15,7 @@ import AuthProvider from "./utils/authprovider/AuthProvider";
 import Footer from "./components/footer/Footer";
 
 const App = () => {
-  const [activeTab, setActiveTab] = useState("home");
+  const [activeTab, setActiveTab] = useState("/");
   const [skills, setSkills] = useState(null);
   const [skillsExp, setSkillsExp] = useState(null);
   const [playerName, setPlayerName] = useState(null);
