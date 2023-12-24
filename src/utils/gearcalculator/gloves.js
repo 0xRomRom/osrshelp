@@ -1,86 +1,6 @@
 const GLOVES = [
   {
     type: "Ranged",
-    name: "3rd age vambraces",
-    defLvl: 45,
-    rangedLvl: 65,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: -10,
-        Range: 11,
-      },
-      // Defence
-      {
-        Stab: 6,
-        Slash: 5,
-        Crush: 7,
-        Magic: 9,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1,
-      },
-    ],
-    src: "./gearcalculator/gloves/3rd_age_vambraces.webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Melee",
-    name: "Adamant gloves",
-    defLvl: 13,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 7,
-        Slash: 7,
-        Crush: 7,
-        Magic: 4,
-        Range: 7,
-      },
-      // Defence
-      {
-        Stab: 7,
-        Slash: 7,
-        Crush: 7,
-        Magic: 4,
-        Range: 7,
-      },
-      // Other
-      {
-        "Melee strength": 7,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.226,
-      },
-    ],
-    src: "./gearcalculator/gloves/Adamant_gloves.webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Ranged",
     name: "Ancient bracers",
     defLvl: 0,
     rangedLvl: 70,
@@ -90,7 +10,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -98,7 +17,6 @@ const GLOVES = [
         Magic: -10,
         Range: 11,
       },
-      // Defence
       {
         Stab: 6,
         Slash: 5,
@@ -106,7 +24,6 @@ const GLOVES = [
         Magic: 8,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -130,7 +47,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -138,7 +54,6 @@ const GLOVES = [
         Magic: -10,
         Range: 11,
       },
-      // Defence
       {
         Stab: 6,
         Slash: 5,
@@ -146,7 +61,6 @@ const GLOVES = [
         Magic: 8,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -170,7 +84,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -178,7 +91,6 @@ const GLOVES = [
         Magic: -10,
         Range: 11,
       },
-      // Defence
       {
         Stab: 6,
         Slash: 5,
@@ -186,7 +98,6 @@ const GLOVES = [
         Magic: 8,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -210,7 +121,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -218,7 +128,6 @@ const GLOVES = [
         Magic: -10,
         Range: 11,
       },
-      // Defence
       {
         Stab: 6,
         Slash: 5,
@@ -226,7 +135,6 @@ const GLOVES = [
         Magic: 8,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -241,46 +149,6 @@ const GLOVES = [
   },
   {
     type: "Ranged",
-    name: "Zaryte vambracers",
-    defLvl: 45,
-    rangedLvl: 80,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: -8,
-        Slash: -8,
-        Crush: -8,
-        Magic: 0,
-        Range: 18,
-      },
-      // Defence
-      {
-        Stab: 8,
-        Slash: 8,
-        Crush: 8,
-        Magic: 5,
-        Range: 8,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 2,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 1,
-        Weight: 1,
-      },
-    ],
-    src: "./gearcalculator/gloves/Zaryte_vambraces.webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Ranged",
     name: "Saradomin bracers",
     defLvl: 0,
     rangedLvl: 70,
@@ -290,7 +158,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -298,7 +165,6 @@ const GLOVES = [
         Magic: -10,
         Range: 11,
       },
-      // Defence
       {
         Stab: 6,
         Slash: 5,
@@ -306,7 +172,6 @@ const GLOVES = [
         Magic: 8,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -330,7 +195,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -338,7 +202,6 @@ const GLOVES = [
         Magic: -10,
         Range: 11,
       },
-      // Defence
       {
         Stab: 6,
         Slash: 5,
@@ -346,7 +209,6 @@ const GLOVES = [
         Magic: 8,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -370,7 +232,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 12,
         Slash: 12,
@@ -378,7 +239,6 @@ const GLOVES = [
         Magic: 6,
         Range: 12,
       },
-      // Defence
       {
         Stab: 12,
         Slash: 12,
@@ -386,7 +246,6 @@ const GLOVES = [
         Magic: 6,
         Range: 12,
       },
-      // Other
       {
         "Melee strength": 12,
         "Ranged strength": 0,
@@ -410,7 +269,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 9,
         Slash: 9,
@@ -418,7 +276,6 @@ const GLOVES = [
         Magic: 5,
         Range: 9,
       },
-      // Defence
       {
         Stab: 9,
         Slash: 9,
@@ -426,7 +283,6 @@ const GLOVES = [
         Magic: 5,
         Range: 9,
       },
-      // Other
       {
         "Melee strength": 9,
         "Ranged strength": 0,
@@ -441,46 +297,6 @@ const GLOVES = [
   },
   {
     type: "Melee",
-    name: "Dragonstone gauntlets",
-    defLvl: 40,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 8,
-        Slash: 8,
-        Crush: 8,
-        Magic: -4,
-        Range: -3,
-      },
-      // Defence
-      {
-        Stab: 8,
-        Slash: 8,
-        Crush: 8,
-        Magic: -4,
-        Range: 4,
-      },
-      // Other
-      {
-        "Melee strength": 4,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.226,
-      },
-    ],
-    src: "./gearcalculator/gloves/Dragonstone_gauntlets.webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Melee",
     name: "Ancient ceremonial gloves",
     defLvl: 0,
     rangedLvl: 0,
@@ -490,7 +306,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -498,7 +313,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -506,7 +320,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -530,7 +343,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 5,
         Slash: 5,
@@ -538,7 +350,6 @@ const GLOVES = [
         Magic: 3,
         Range: 5,
       },
-      // Defence
       {
         Stab: 5,
         Slash: 5,
@@ -546,7 +357,6 @@ const GLOVES = [
         Magic: 3,
         Range: 5,
       },
-      // Other
       {
         "Melee strength": 5,
         "Ranged strength": 0,
@@ -570,7 +380,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -578,7 +387,6 @@ const GLOVES = [
         Magic: -10,
         Range: 11,
       },
-      // Defence
       {
         Stab: 6,
         Slash: 5,
@@ -586,7 +394,6 @@ const GLOVES = [
         Magic: 8,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -600,46 +407,6 @@ const GLOVES = [
     slot: "Gloves",
   },
   {
-    type: "Magic",
-    name: "Bloodbark gauntlets",
-    defLvl: 60,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 60,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 4,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 5,
-        Slash: 4,
-        Crush: 6,
-        Magic: 5,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/gloves/Bloodbark_gauntlets.webp",
-    slot: "Gloves",
-  },
-  {
     type: "Ranged",
     name: "Blue_d'hide_vambraces",
     defLvl: 0,
@@ -650,7 +417,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -658,7 +424,6 @@ const GLOVES = [
         Magic: -10,
         Range: 9,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 3,
@@ -666,7 +431,6 @@ const GLOVES = [
         Magic: 4,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -690,7 +454,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -698,7 +461,6 @@ const GLOVES = [
         Magic: -10,
         Range: 9,
       },
-      // Defence
       {
         Stab: 4,
         Slash: 3,
@@ -706,7 +468,6 @@ const GLOVES = [
         Magic: 4,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -730,7 +491,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: 2,
@@ -738,7 +498,6 @@ const GLOVES = [
         Magic: 1,
         Range: 2,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 2,
@@ -746,7 +505,6 @@ const GLOVES = [
         Magic: 1,
         Range: 2,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -770,7 +528,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: 2,
@@ -778,7 +535,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 8,
         Slash: 9,
@@ -786,7 +542,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -810,7 +565,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: 2,
@@ -818,7 +572,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 8,
         Slash: 9,
@@ -826,7 +579,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -850,7 +602,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: 2,
@@ -858,7 +609,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 8,
         Slash: 9,
@@ -866,7 +616,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -890,7 +639,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 7,
         Slash: 7,
@@ -898,7 +646,6 @@ const GLOVES = [
         Magic: 3,
         Range: 7,
       },
-      // Defence
       {
         Stab: 5,
         Slash: 5,
@@ -906,7 +653,6 @@ const GLOVES = [
         Magic: 3,
         Range: 5,
       },
-      // Other
       {
         "Melee strength": 6,
         "Ranged strength": 0,
@@ -930,7 +676,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -938,7 +683,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 3,
         Slash: 4,
@@ -946,7 +690,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 1,
         "Ranged strength": 0,
@@ -970,7 +713,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -978,7 +720,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 3,
         Slash: 5,
@@ -986,7 +727,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 1,
         "Ranged strength": 0,
@@ -1001,46 +741,6 @@ const GLOVES = [
   },
   {
     type: "Melee",
-    name: "Ferocious gloves",
-    defLvl: 80,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 80,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 16,
-        Slash: 16,
-        Crush: 16,
-        Magic: -16,
-        Range: -16,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 14,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.226,
-      },
-    ],
-    src: "./gearcalculator/gloves/Ferocious_gloves.webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Melee",
     name: "Fremennik gloves",
     defLvl: 0,
     rangedLvl: 0,
@@ -1050,7 +750,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1058,7 +757,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -1066,7 +764,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1090,7 +787,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1098,7 +794,6 @@ const GLOVES = [
         Magic: 2,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -1106,7 +801,6 @@ const GLOVES = [
         Magic: 2,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1130,7 +824,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1138,7 +831,6 @@ const GLOVES = [
         Magic: -10,
         Range: 8,
       },
-      // Defence
       {
         Stab: 3,
         Slash: 2,
@@ -1146,7 +838,6 @@ const GLOVES = [
         Magic: 2,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1160,46 +851,6 @@ const GLOVES = [
     slot: "Gloves",
   },
   {
-    type: "Magic",
-    name: "Gloves of darkness",
-    defLvl: 20,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/gloves/Gloves_of_darkness.webp",
-    slot: "Gloves",
-  },
-  {
     type: "Melee",
     name: "Gloves of silence",
     defLvl: 0,
@@ -1210,7 +861,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1218,7 +868,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -1226,7 +875,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1250,7 +898,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1258,7 +905,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -1266,7 +912,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1280,46 +925,6 @@ const GLOVES = [
     slot: "Gloves",
   },
   {
-    type: "Melee",
-    name: "Granite gloves",
-    defLvl: 50,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 50,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 5,
-        Slash: 5,
-        Crush: 9,
-        Magic: -3,
-        Range: -1,
-      },
-      // Defence
-      {
-        Stab: 8,
-        Slash: 8,
-        Crush: 8,
-        Magic: -3,
-        Range: 5,
-      },
-      // Other
-      {
-        "Melee strength": 7,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 1,
-      },
-    ],
-    src: "./gearcalculator/gloves/Granite_gloves.webp",
-    slot: "Gloves",
-  },
-  {
     type: "Ranged",
     name: "Green d'hide vambraces",
     defLvl: 0,
@@ -1330,7 +935,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1338,7 +942,6 @@ const GLOVES = [
         Magic: -10,
         Range: 8,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 2,
@@ -1346,7 +949,6 @@ const GLOVES = [
         Magic: 2,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1370,7 +972,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1378,7 +979,6 @@ const GLOVES = [
         Magic: -10,
         Range: 8,
       },
-      // Defence
       {
         Stab: 3,
         Slash: 2,
@@ -1386,7 +986,6 @@ const GLOVES = [
         Magic: 2,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -1410,7 +1009,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1418,7 +1016,6 @@ const GLOVES = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -1426,7 +1023,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1450,7 +1046,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1458,7 +1053,6 @@ const GLOVES = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -1466,7 +1060,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1490,7 +1083,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1498,7 +1090,6 @@ const GLOVES = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -1506,7 +1097,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1530,7 +1120,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1538,7 +1127,6 @@ const GLOVES = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -1546,7 +1134,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1570,7 +1157,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1578,7 +1164,6 @@ const GLOVES = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -1586,7 +1171,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1610,7 +1194,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1618,7 +1201,6 @@ const GLOVES = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -1626,7 +1208,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1650,7 +1231,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1658,7 +1238,6 @@ const GLOVES = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -1666,7 +1245,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1690,7 +1268,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1698,7 +1275,6 @@ const GLOVES = [
         Magic: 0,
         Range: 8,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -1706,7 +1282,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1730,7 +1305,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1738,7 +1312,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -1746,7 +1319,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1770,7 +1342,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1778,7 +1349,6 @@ const GLOVES = [
         Magic: -10,
         Range: 11,
       },
-      // Defence
       {
         Stab: 6,
         Slash: 5,
@@ -1786,7 +1356,6 @@ const GLOVES = [
         Magic: 8,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1810,7 +1379,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1818,7 +1386,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -1826,7 +1393,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1850,7 +1416,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 1,
         Slash: 1,
@@ -1858,7 +1423,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -1866,7 +1430,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 1,
         "Ranged strength": 0,
@@ -1890,7 +1453,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1898,7 +1460,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -1906,7 +1467,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1930,7 +1490,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -1938,7 +1497,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 3,
@@ -1946,7 +1504,6 @@ const GLOVES = [
         Magic: 0,
         Range: 2,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -1960,46 +1517,6 @@ const GLOVES = [
     slot: "Gloves",
   },
   {
-    type: "Magic",
-    name: "Infinity gloves",
-    defLvl: 25,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 50,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 5,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 5,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/gloves/Infinity_gloves.webp",
-    slot: "Gloves",
-  },
-  {
     type: "Melee",
     name: "Iron gloves",
     defLvl: 0,
@@ -2010,7 +1527,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 3,
         Slash: 3,
@@ -2018,7 +1534,6 @@ const GLOVES = [
         Magic: 2,
         Range: 3,
       },
-      // Defence
       {
         Stab: 3,
         Slash: 3,
@@ -2026,7 +1541,6 @@ const GLOVES = [
         Magic: 2,
         Range: 3,
       },
-      // Other
       {
         "Melee strength": 3,
         "Ranged strength": 0,
@@ -2050,7 +1564,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 1,
         Slash: 1,
@@ -2058,7 +1571,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -2066,7 +1578,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 1,
         "Ranged strength": 0,
@@ -2090,7 +1601,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 1,
         Slash: 1,
@@ -2098,7 +1608,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -2106,7 +1615,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 1,
         "Ranged strength": 0,
@@ -2130,7 +1638,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 1,
         Slash: 1,
@@ -2138,7 +1645,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -2146,7 +1652,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 1,
         "Ranged strength": 0,
@@ -2170,7 +1675,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 1,
         Slash: 1,
@@ -2178,7 +1682,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Defence
       {
         Stab: 1,
         Slash: 1,
@@ -2186,7 +1689,6 @@ const GLOVES = [
         Magic: 1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 1,
         "Ranged strength": 0,
@@ -2210,7 +1712,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: 2,
@@ -2218,7 +1719,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 8,
         Slash: 9,
@@ -2226,7 +1726,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -2250,7 +1749,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2258,7 +1756,6 @@ const GLOVES = [
         Magic: 0,
         Range: 4,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 2,
@@ -2266,7 +1763,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -2280,46 +1776,6 @@ const GLOVES = [
     slot: "Gloves",
   },
   {
-    type: "Magic",
-    name: "Lunar gloves",
-    defLvl: 40,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 65,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 4,
-        Range: -1,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 1,
-        Crush: 1,
-        Magic: 2,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/gloves/Lunar_gloves.webp",
-    slot: "Gloves",
-  },
-  {
     type: "Melee",
     name: "Mithril gloves",
     defLvl: 0,
@@ -2330,7 +1786,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 6,
         Slash: 6,
@@ -2338,7 +1793,6 @@ const GLOVES = [
         Magic: 3,
         Range: 6,
       },
-      // Defence
       {
         Stab: 6,
         Slash: 6,
@@ -2346,7 +1800,6 @@ const GLOVES = [
         Magic: 3,
         Range: 6,
       },
-      // Other
       {
         "Melee strength": 6,
         "Ranged strength": 0,
@@ -2370,7 +1823,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2378,7 +1830,6 @@ const GLOVES = [
         Magic: 2,
         Range: -5,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 2,
@@ -2386,7 +1837,6 @@ const GLOVES = [
         Magic: 2,
         Range: -5,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -2400,246 +1850,6 @@ const GLOVES = [
     slot: "Gloves",
   },
   {
-    type: "Magic",
-    name: "Mystic gloves",
-    defLvl: 20,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/gloves/Mystic_gloves.webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Magic",
-    name: "Mystic gloves (dark)",
-    defLvl: 20,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/gloves/Mystic_gloves_(dark).webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Magic",
-    name: "Mystic gloves (dusk)",
-    defLvl: 20,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/gloves/Mystic_gloves_(dusk).webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Magic",
-    name: "Mystic gloves (light)",
-    defLvl: 20,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/gloves/Mystic_gloves_(light).webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Magic",
-    name: "Mystic gloves (or)",
-    defLvl: 20,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.453,
-      },
-    ],
-    src: "./gearcalculator/gloves/Mystic_gloves_(or).webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Melee",
-    name: "Penance gloves",
-    defLvl: 40,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 0,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 0,
-        Slash: 3,
-        Crush: 4,
-        Magic: 0,
-        Range: 2,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: -4.535,
-      },
-    ],
-    src: "./gearcalculator/gloves/Penance_gloves.webp",
-    slot: "Gloves",
-  },
-  {
     type: "Ranged",
     name: "Red spiky vambraces",
     defLvl: 0,
@@ -2650,7 +1860,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2658,7 +1867,6 @@ const GLOVES = [
         Magic: -10,
         Range: 10,
       },
-      // Defence
       {
         Stab: 5,
         Slash: 4,
@@ -2666,7 +1874,6 @@ const GLOVES = [
         Magic: 0,
         Range: 2,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -2690,7 +1897,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 8,
         Slash: 8,
@@ -2698,7 +1904,6 @@ const GLOVES = [
         Magic: 3,
         Range: 7,
       },
-      // Defence
       {
         Stab: 6,
         Slash: 6,
@@ -2706,7 +1911,6 @@ const GLOVES = [
         Magic: 3,
         Range: 6,
       },
-      // Other
       {
         "Melee strength": 7,
         "Ranged strength": 0,
@@ -2730,7 +1934,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2738,7 +1941,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -2746,7 +1948,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -2770,7 +1971,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2778,7 +1978,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 2,
@@ -2786,7 +1985,6 @@ const GLOVES = [
         Magic: 2,
         Range: 2,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -2801,46 +1999,6 @@ const GLOVES = [
   },
   {
     type: "Melee",
-    name: "Rune gloves",
-    defLvl: 13,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 8,
-        Slash: 8,
-        Crush: 8,
-        Magic: 4,
-        Range: 8,
-      },
-      // Defence
-      {
-        Stab: 8,
-        Slash: 8,
-        Crush: 8,
-        Magic: 4,
-        Range: 8,
-      },
-      // Other
-      {
-        "Melee strength": 8,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.226,
-      },
-    ],
-    src: "./gearcalculator/gloves/Rune_gloves.webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Melee",
     name: "Samurai gloves",
     defLvl: 0,
     rangedLvl: 0,
@@ -2850,7 +2008,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: 2,
@@ -2858,7 +2015,6 @@ const GLOVES = [
         Magic: 2,
         Range: 2,
       },
-      // Defence
       {
         Stab: 3,
         Slash: 3,
@@ -2866,7 +2022,6 @@ const GLOVES = [
         Magic: 3,
         Range: 3,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -2890,7 +2045,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2898,7 +2052,6 @@ const GLOVES = [
         Magic: -1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -2906,7 +2059,6 @@ const GLOVES = [
         Magic: -1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -2930,7 +2082,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2938,7 +2089,6 @@ const GLOVES = [
         Magic: -1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -2946,7 +2096,6 @@ const GLOVES = [
         Magic: -1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 1,
         "Ranged strength": 0,
@@ -2970,7 +2119,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -2978,7 +2126,6 @@ const GLOVES = [
         Magic: -1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -2986,7 +2133,6 @@ const GLOVES = [
         Magic: -1,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -3010,7 +2156,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3018,7 +2163,6 @@ const GLOVES = [
         Magic: -1,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -3026,7 +2170,6 @@ const GLOVES = [
         Magic: -1,
         Range: 1,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -3050,7 +2193,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3058,7 +2200,6 @@ const GLOVES = [
         Magic: -1,
         Range: 6,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 2,
@@ -3066,7 +2207,6 @@ const GLOVES = [
         Magic: -1,
         Range: 2,
       },
-      // Other
       {
         "Melee strength": 3,
         "Ranged strength": 0,
@@ -3090,7 +2230,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3098,7 +2237,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 4,
         Slash: 5,
@@ -3106,7 +2244,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -3121,46 +2258,6 @@ const GLOVES = [
   },
   {
     type: "Ranged",
-    name: "Snakeskin vambraces",
-    defLvl: 30,
-    rangedLvl: 30,
-    prayerLvl: 0,
-    magicLvl: 0,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: -5,
-        Range: 6,
-      },
-      // Defence
-      {
-        Stab: 2,
-        Slash: 2,
-        Crush: 2,
-        Magic: 1,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.283,
-      },
-    ],
-    src: "./gearcalculator/gloves/Snakeskin_vambraces.webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Ranged",
     name: "Spiky vambraces",
     defLvl: 0,
     rangedLvl: 0,
@@ -3170,7 +2267,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3178,7 +2274,6 @@ const GLOVES = [
         Magic: 0,
         Range: 4,
       },
-      // Defence
       {
         Stab: 2,
         Slash: 2,
@@ -3186,7 +2281,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -3210,7 +2304,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3218,7 +2311,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 1,
@@ -3226,7 +2318,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -3240,46 +2331,6 @@ const GLOVES = [
     slot: "Gloves",
   },
   {
-    type: "Magic",
-    name: "Splitbark gauntlets",
-    defLvl: 40,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 40,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 2,
-        Range: -1,
-      },
-      // Defence
-      {
-        Stab: 3,
-        Slash: 2,
-        Crush: 4,
-        Magic: 2,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/gloves/Splitbark_gauntlets.webp",
-    slot: "Gloves",
-  },
-  {
     type: "Melee",
     name: "Steel gauntlets",
     defLvl: 0,
@@ -3290,7 +2341,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 2,
         Slash: 2,
@@ -3298,7 +2348,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 8,
@@ -3306,7 +2355,6 @@ const GLOVES = [
         Magic: 7,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 2,
         "Ranged strength": 0,
@@ -3330,7 +2378,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 4,
         Slash: 4,
@@ -3338,7 +2385,6 @@ const GLOVES = [
         Magic: 2,
         Range: 4,
       },
-      // Defence
       {
         Stab: 4,
         Slash: 4,
@@ -3346,7 +2392,6 @@ const GLOVES = [
         Magic: 2,
         Range: 4,
       },
-      // Other
       {
         "Melee strength": 4,
         "Ranged strength": 0,
@@ -3361,46 +2406,6 @@ const GLOVES = [
   },
   {
     type: "Magic",
-    name: "Swampbark gauntlets",
-    defLvl: 50,
-    rangedLvl: 0,
-    prayerLvl: 0,
-    magicLvl: 50,
-    strengthLvl: 0,
-    attackLvl: 0,
-    hitpointsLvl: 0,
-    stats: [
-      // Attack
-      {
-        Stab: 0,
-        Slash: 0,
-        Crush: 0,
-        Magic: 3,
-        Range: 0,
-      },
-      // Defence
-      {
-        Stab: 4,
-        Slash: 3,
-        Crush: 5,
-        Magic: 4,
-        Range: 0,
-      },
-      // Other
-      {
-        "Melee strength": 0,
-        "Ranged strength": 0,
-        "Magic damage": 0,
-        "Slayer Bonus": 0,
-        Prayer: 0,
-        Weight: 0.907,
-      },
-    ],
-    src: "./gearcalculator/gloves/Swampbark_gauntlets.webp",
-    slot: "Gloves",
-  },
-  {
-    type: "Magic",
     name: "Tormented bracelet",
     defLvl: 0,
     rangedLvl: 0,
@@ -3410,7 +2415,6 @@ const GLOVES = [
     attackLvl: 0,
     hitpointsLvl: 75,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3418,7 +2422,6 @@ const GLOVES = [
         Magic: 10,
         Range: 0,
       },
-      // Defence
       {
         Stab: 0,
         Slash: 0,
@@ -3426,7 +2429,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -3441,6 +2443,524 @@ const GLOVES = [
   },
   {
     type: "Melee",
+    name: "Adamant gloves",
+    defLvl: 13,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 7,
+        Slash: 7,
+        Crush: 7,
+        Magic: 4,
+        Range: 7,
+      },
+      {
+        Stab: 7,
+        Slash: 7,
+        Crush: 7,
+        Magic: 4,
+        Range: 7,
+      },
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.226,
+      },
+    ],
+    src: "./gearcalculator/gloves/Adamant_gloves.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Melee",
+    name: "Rune gloves",
+    defLvl: 13,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 8,
+        Slash: 8,
+        Crush: 8,
+        Magic: 4,
+        Range: 8,
+      },
+      {
+        Stab: 8,
+        Slash: 8,
+        Crush: 8,
+        Magic: 4,
+        Range: 8,
+      },
+      {
+        "Melee strength": 8,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.226,
+      },
+    ],
+    src: "./gearcalculator/gloves/Rune_gloves.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Magic",
+    name: "Gloves of darkness",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/gloves/Gloves_of_darkness.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Magic",
+    name: "Mystic gloves",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/gloves/Mystic_gloves.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Magic",
+    name: "Mystic gloves (dark)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/gloves/Mystic_gloves_(dark).webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Magic",
+    name: "Mystic gloves (dusk)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/gloves/Mystic_gloves_(dusk).webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Magic",
+    name: "Mystic gloves (light)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/gloves/Mystic_gloves_(light).webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Magic",
+    name: "Mystic gloves (or)",
+    defLvl: 20,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/gloves/Mystic_gloves_(or).webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Magic",
+    name: "Infinity gloves",
+    defLvl: 25,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 5,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 5,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/gloves/Infinity_gloves.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Ranged",
+    name: "Snakeskin vambraces",
+    defLvl: 30,
+    rangedLvl: 30,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -5,
+        Range: 6,
+      },
+      {
+        Stab: 2,
+        Slash: 2,
+        Crush: 2,
+        Magic: 1,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.283,
+      },
+    ],
+    src: "./gearcalculator/gloves/Snakeskin_vambraces.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Melee",
+    name: "Dragonstone gauntlets",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 8,
+        Slash: 8,
+        Crush: 8,
+        Magic: -4,
+        Range: -3,
+      },
+      {
+        Stab: 8,
+        Slash: 8,
+        Crush: 8,
+        Magic: -4,
+        Range: 4,
+      },
+      {
+        "Melee strength": 4,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.226,
+      },
+    ],
+    src: "./gearcalculator/gloves/Dragonstone_gauntlets.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Magic",
+    name: "Lunar gloves",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 65,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: -1,
+      },
+      {
+        Stab: 2,
+        Slash: 1,
+        Crush: 1,
+        Magic: 2,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/gloves/Lunar_gloves.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Melee",
+    name: "Penance gloves",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 0,
+        Slash: 3,
+        Crush: 4,
+        Magic: 0,
+        Range: 2,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: -4.535,
+      },
+    ],
+    src: "./gearcalculator/gloves/Penance_gloves.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Magic",
+    name: "Splitbark gauntlets",
+    defLvl: 40,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 40,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 2,
+        Range: -1,
+      },
+      {
+        Stab: 3,
+        Slash: 2,
+        Crush: 4,
+        Magic: 2,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/gloves/Splitbark_gauntlets.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Melee",
     name: "Void knight gloves",
     defLvl: 42,
     rangedLvl: 42,
@@ -3450,7 +2970,6 @@ const GLOVES = [
     attackLvl: 42,
     hitpointsLvl: 0,
     stats: [
-      // Attack
       {
         Stab: 0,
         Slash: 0,
@@ -3458,7 +2977,6 @@ const GLOVES = [
         Magic: 0,
         Range: 0,
       },
-      // Defence
       {
         Stab: 6,
         Slash: 6,
@@ -3466,7 +2984,6 @@ const GLOVES = [
         Magic: 4,
         Range: 6,
       },
-      // Other
       {
         "Melee strength": 0,
         "Ranged strength": 0,
@@ -3479,9 +2996,228 @@ const GLOVES = [
     src: "./gearcalculator/gloves/Void_knight_gloves.webp",
     slot: "Gloves",
   },
+  {
+    type: "Ranged",
+    name: "3rd age vambraces",
+    defLvl: 45,
+    rangedLvl: 65,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: -10,
+        Range: 11,
+      },
+      {
+        Stab: 6,
+        Slash: 5,
+        Crush: 7,
+        Magic: 9,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/gloves/3rd_age_vambraces.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Ranged",
+    name: "Zaryte vambracers",
+    defLvl: 45,
+    rangedLvl: 80,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: -8,
+        Slash: -8,
+        Crush: -8,
+        Magic: 0,
+        Range: 18,
+      },
+      {
+        Stab: 8,
+        Slash: 8,
+        Crush: 8,
+        Magic: 5,
+        Range: 8,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 2,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 1,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/gloves/Zaryte_vambraces.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Melee",
+    name: "Granite gloves",
+    defLvl: 50,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 50,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 5,
+        Slash: 5,
+        Crush: 9,
+        Magic: -3,
+        Range: -1,
+      },
+      {
+        Stab: 8,
+        Slash: 8,
+        Crush: 8,
+        Magic: -3,
+        Range: 5,
+      },
+      {
+        "Melee strength": 7,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 1,
+      },
+    ],
+    src: "./gearcalculator/gloves/Granite_gloves.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Magic",
+    name: "Swampbark gauntlets",
+    defLvl: 50,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 50,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 3,
+        Range: 0,
+      },
+      {
+        Stab: 4,
+        Slash: 3,
+        Crush: 5,
+        Magic: 4,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/gloves/Swampbark_gauntlets.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Magic",
+    name: "Bloodbark gauntlets",
+    defLvl: 60,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 60,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 4,
+        Range: 0,
+      },
+      {
+        Stab: 5,
+        Slash: 4,
+        Crush: 6,
+        Magic: 5,
+        Range: 0,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.907,
+      },
+    ],
+    src: "./gearcalculator/gloves/Bloodbark_gauntlets.webp",
+    slot: "Gloves",
+  },
+  {
+    type: "Melee",
+    name: "Ferocious gloves",
+    defLvl: 80,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 80,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 16,
+        Slash: 16,
+        Crush: 16,
+        Magic: -16,
+        Range: -16,
+      },
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        "Melee strength": 14,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.226,
+      },
+    ],
+    src: "./gearcalculator/gloves/Ferocious_gloves.webp",
+    slot: "Gloves",
+  },
 ];
-
-const sorter = GLOVES.sort((a, b) => a.defLvl - b.defLvl);
-console.log(sorter);
 
 export default GLOVES;
