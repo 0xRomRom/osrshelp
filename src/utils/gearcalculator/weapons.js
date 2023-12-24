@@ -4221,11 +4221,11 @@ const WEAPONS = [
     type: "Melee",
     name: "Rune hasta",
     defLvl: 0,
-    rangedLvl: 40,
+    rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
-    attackLvl: 0,
+    attackLvl: 40,
     hitpointsLvl: 0,
     stats: [
       {
@@ -5168,7 +5168,7 @@ const WEAPONS = [
     twoHanded: false,
   },
   {
-    type: "Melee",
+    type: "Magic",
     name: "Volatile nightmare staff",
     defLvl: 0,
     rangedLvl: 0,
@@ -7068,7 +7068,7 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Melee",
+    type: "Ranged",
     name: "Oak longbow",
     defLvl: 0,
     rangedLvl: 5,
@@ -7106,7 +7106,7 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Melee",
+    type: "Ranged",
     name: "Oak shortbow",
     defLvl: 0,
     rangedLvl: 5,
@@ -7638,7 +7638,7 @@ const WEAPONS = [
     twoHanded: true,
   },
   {
-    type: "Melee",
+    type: "Ranged",
     name: "Venator bow",
     defLvl: 0,
     rangedLvl: 80,

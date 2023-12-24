@@ -408,7 +408,7 @@ const GLOVES = [
   },
   {
     type: "Ranged",
-    name: "Blue_d'hide_vambraces",
+    name: "Blue d'hide vambraces",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -1887,7 +1887,7 @@ const GLOVES = [
     slot: "Gloves",
   },
   {
-    type: "Melee",
+    type: "Magic",
     name: "Regen bracelet",
     defLvl: 0,
     rangedLvl: 0,
@@ -2368,7 +2368,7 @@ const GLOVES = [
     slot: "Gloves",
   },
   {
-    type: "Magic",
+    type: "Melee",
     name: "Steel gloves",
     defLvl: 0,
     rangedLvl: 0,

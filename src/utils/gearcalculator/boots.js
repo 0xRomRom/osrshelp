@@ -1966,7 +1966,7 @@ const BOOTS = [
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
-    magicLvl: 50,
+    magicLvl: 0,
     strengthLvl: 0,
     attackLvl: 0,
     hitpointsLvl: 0,

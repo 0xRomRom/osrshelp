@@ -4071,7 +4071,4 @@ const HELMS = [
   },
 ];
 
-const sorter = HELMS.sort((a, b) => a.defLvl - b.defLvl);
-console.log(sorter);
-
 export default HELMS;

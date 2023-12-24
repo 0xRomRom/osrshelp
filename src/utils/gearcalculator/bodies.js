@@ -960,7 +960,7 @@ const BODIES = [
     slot: "Body",
   },
   {
-    type: "Melee",
+    type: "Magic",
     name: "Shade robe top",
     defLvl: 0,
     rangedLvl: 0,
@@ -3240,7 +3240,7 @@ const BODIES = [
     slot: "Body",
   },
   {
-    type: "Melee",
+    type: "Magic",
     name: "Druid's robe top",
     defLvl: 0,
     rangedLvl: 0,
@@ -5560,8 +5560,8 @@ const BODIES = [
     slot: "Body",
   },
   {
-    type: "Melee",
-    name: "Priest gown (top)",
+    type: "Magic",
+    name: "Priest gown",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
