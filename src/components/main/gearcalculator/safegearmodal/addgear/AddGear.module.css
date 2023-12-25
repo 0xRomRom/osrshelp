@@ -13,7 +13,7 @@
 .upperBlock {
   width: 100%;
   display: flex;
-  height: 80%;
+  min-height: 480px;
   display: flex;
 }
 
@@ -47,6 +47,7 @@
 }
 
 .gearPreview {
+  max-height: 475px;
   width: 50%;
   padding: 1rem;
   padding-top: 0.75rem;
@@ -153,7 +154,6 @@
   position: relative;
   width: 90%;
   left: 5%;
-  margin-top: 1rem;
   height: 3rem;
   background-color: transparent;
   outline: none;
@@ -231,4 +231,13 @@
 
 .actSlot span {
   color: white;
+}
+
+.inputError {
+  color: red;
+  text-align: center;
+  padding-top: 1rem;
+  position: absolute;
+  bottom: 5rem;
+  padding-left: 4.5rem;
 }

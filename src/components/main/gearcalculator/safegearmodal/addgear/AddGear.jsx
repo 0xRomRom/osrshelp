@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
+import { useRef, useState } from "react";
 import stl from "./AddGear.module.css";
 import { CiSquarePlus } from "react-icons/ci";
 import blank from "../../../../../assets/gearslots/Blank.png";
 
 const AddGear = ({ bonusState, setAddingGear }) => {
+  const inputRef = useRef(null);
+  const [gearName, setGearName] = useState("");
   const [selected, setSelected] = useState(null);
-  useEffect(() => {
-    console.log(bonusState);
-  }, [bonusState]);
+  const [error, setError] = useState("");
 
   const headImg = bonusState["Headpiece"].src;
   const capeImg = bonusState["Cape"].src;
@@ -21,7 +21,18 @@ const AddGear = ({ bonusState, setAddingGear }) => {
   const bootsImg = bonusState["Boots"].src;
   const ringImg = bonusState["Ring"].src;
 
-  const handleSave = () => {};
+  const handleSave = () => {
+    if (gearName === "") {
+      setError("Add setup name");
+      inputRef.current.focus();
+      return;
+    }
+    if (gearName.length < 7) {
+      setError("Name too short");
+      return;
+    }
+  };
+
   const handleCancel = () => {
     setAddingGear(false);
   };
@@ -32,6 +43,13 @@ const AddGear = ({ bonusState, setAddingGear }) => {
       return;
     }
     setSelected(newSlot);
+  };
+
+  const updateGearName = (e) => {
+    setGearName(e.target.value);
+    if (gearName) {
+      setError("");
+    }
   };
 
   return (
@@ -250,10 +268,14 @@ const AddGear = ({ bonusState, setAddingGear }) => {
             </div>
           </div>
           <input
+            ref={inputRef}
             type="text"
             placeholder="Setup name"
             className={stl.gearInput}
+            onChange={updateGearName}
+            value={gearName}
           />
+          {error && <span className={stl.inputError}>{error}</span>}
         </div>
         <div className={stl.gearSlots}>
           <div
