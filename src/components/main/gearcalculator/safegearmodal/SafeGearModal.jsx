@@ -15,7 +15,9 @@ const SafeGearModal = ({ setAddingGear, premiumUser, bonusState }) => {
           <FaLongArrowAltLeft className={stl.closeBtn} onClick={closeModal} />
         </div>
         {!premiumUser && <UpgradeBanner />}
-        {premiumUser && <AddGear bonusState={bonusState} />}
+        {premiumUser && (
+          <AddGear bonusState={bonusState} setAddingGear={setAddingGear} />
+        )}
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import stl from "./AddGear.module.css";
 import { CiSquarePlus } from "react-icons/ci";
 import blank from "../../../../../assets/gearslots/Blank.png";
 
-const AddGear = ({ bonusState }) => {
+const AddGear = ({ bonusState, setAddingGear }) => {
+  const [selected, setSelected] = useState("");
   useEffect(() => {
     console.log(bonusState);
   }, [bonusState]);
@@ -19,6 +20,11 @@ const AddGear = ({ bonusState }) => {
   const glovesImg = bonusState["Gloves"].src;
   const bootsImg = bonusState["Boots"].src;
   const ringImg = bonusState["Ring"].src;
+
+  const handleSave = () => {};
+  const handleCancel = () => {
+    setAddingGear(false);
+  };
 
   return (
     <div className={stl.addGear}>
@@ -242,52 +248,72 @@ const AddGear = ({ bonusState }) => {
           />
         </div>
         <div className={stl.gearSlots}>
-          <div className={stl.gearSlot}>
+          <div
+            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+          >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
-          <div className={stl.gearSlot}>
+          <div
+            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+          >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
-          <div className={stl.gearSlot}>
+          <div
+            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+          >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
-          <div className={stl.gearSlot}>
+          <div
+            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+          >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
-          <div className={stl.gearSlot}>
+          <div
+            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+          >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
-          <div className={stl.gearSlot}>
+          <div
+            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+          >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
-          <div className={stl.gearSlot}>
+          <div
+            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+          >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
-          <div className={stl.gearSlot}>
+          <div
+            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+          >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
-          <div className={stl.gearSlot}>
+          <div
+            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+          >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
-          <div className={stl.gearSlot}>
+          <div
+            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+          >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
@@ -295,8 +321,12 @@ const AddGear = ({ bonusState }) => {
         </div>
       </div>
       <div className={stl.ctaBar}>
-        <button className={stl.ctaBtn}>Cancel</button>
-        <button className={stl.ctaBtn}>Save</button>
+        <button className={stl.ctaBtn} onClick={handleCancel}>
+          Cancel
+        </button>
+        <button className={stl.ctaBtn} onClick={handleSave}>
+          Save
+        </button>
       </div>
     </div>
   );
