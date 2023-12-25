@@ -2,8 +2,9 @@ import { useRef, useState } from "react";
 import stl from "./AddGear.module.css";
 import { CiSquarePlus } from "react-icons/ci";
 import blank from "../../../../../assets/gearslots/Blank.png";
+import supabase from "../../../../../utils/supabase/supabase";
 
-const AddGear = ({ bonusState, setAddingGear }) => {
+const AddGear = ({ bonusState, setAddingGear, userID }) => {
   const inputRef = useRef(null);
   const [gearName, setGearName] = useState("");
   const [selected, setSelected] = useState(null);
@@ -22,7 +23,7 @@ const AddGear = ({ bonusState, setAddingGear }) => {
   const bootsImg = bonusState["Boots"].src;
   const ringImg = bonusState["Ring"].src;
 
-  const handleSave = () => {
+  const handleSave = async () => {
     if (gearName === "") {
       setInputError("Add setup name");
       inputRef.current.focus();
@@ -35,6 +36,27 @@ const AddGear = ({ bonusState, setAddingGear }) => {
     if (!selected) {
       setSlotsError("Select slot");
       return;
+    }
+
+    const gearDetailsString = JSON.stringify(bonusState);
+
+    try {
+      const { error } = await supabase.from("saved_builds").insert([
+        {
+          Gearslot: gearDetailsString,
+        },
+      ]);
+
+      if (error) {
+        console.error("Error saving gear build:", error);
+        return { success: false, error };
+      } else {
+        console.log("Gear build saved successfully!");
+        return { success: true };
+      }
+    } catch (error) {
+      console.error("Error saving gear build:", error.message);
+      return { success: false, error: error.message };
     }
   };
 

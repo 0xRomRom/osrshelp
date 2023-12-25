@@ -16,7 +16,7 @@ import { useState, useRef, useContext } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 
 const GearCalculator = (props) => {
-  const { premiumUser } = useContext(AuthContext);
+  const { premiumUser, userID } = useContext(AuthContext);
   const targetDivRef = useRef(null);
   const [activeSlot, setActiveSlot] = useState(null);
   const [gridActive, setGridActive] = useState(false);
@@ -73,6 +73,7 @@ const GearCalculator = (props) => {
           setAddingGear={setAddingGear}
           premiumUser={premiumUser}
           bonusState={bonusState}
+          userID={userID}
         />
       )}
       <div className={stl.adBar}>[ Advertisements ]</div>
