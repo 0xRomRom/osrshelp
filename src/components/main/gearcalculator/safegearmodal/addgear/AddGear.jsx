@@ -44,6 +44,8 @@ const AddGear = ({ bonusState, setAddingGear, userID }) => {
       const { error } = await supabase.from("saved_builds").insert([
         {
           Gearslot: gearDetailsString,
+          Setupname: gearName,
+          Index: selected,
         },
       ]);
 
