@@ -12,9 +12,11 @@ import PreBuilds from "./prebuilds/PreBuilds";
 import Pagination from "../pagination/Pagination";
 import SafeGearModal from "./safegearmodal/SafeGearModal";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
+import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 
 const GearCalculator = (props) => {
+  const { premiumUser } = useContext(AuthContext);
   const targetDivRef = useRef(null);
   const [activeSlot, setActiveSlot] = useState(null);
   const [gridActive, setGridActive] = useState(false);
@@ -66,7 +68,12 @@ const GearCalculator = (props) => {
 
   return (
     <>
-      {addingGear && <SafeGearModal setAddingGear={setAddingGear} />}
+      {addingGear && (
+        <SafeGearModal
+          setAddingGear={setAddingGear}
+          premiumUser={premiumUser}
+        />
+      )}
       <div className={stl.adBar}>[ Advertisements ]</div>
       <Pagination
         mainState={props.mainState}

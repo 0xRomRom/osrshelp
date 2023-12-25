@@ -2,7 +2,7 @@ import stl from "./SafeGearModal.module.css";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import UpgradeBanner from "./upgradebanner/UpgradeBanner";
 
-const SafeGearModal = ({ setAddingGear }) => {
+const SafeGearModal = ({ setAddingGear, premiumUser }) => {
   const closeModal = () => {
     setAddingGear(false);
   };
@@ -13,7 +13,7 @@ const SafeGearModal = ({ setAddingGear }) => {
         <div className={stl.closeRow}>
           <FaLongArrowAltLeft className={stl.closeBtn} onClick={closeModal} />
         </div>
-        <UpgradeBanner />
+        {!premiumUser && <UpgradeBanner />}
       </div>
     </div>
   );
