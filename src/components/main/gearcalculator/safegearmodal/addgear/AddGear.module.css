@@ -45,3 +45,109 @@
   color: white;
   background-color: rgb(56, 56, 56);
 }
+
+.gearPreview {
+  width: 50%;
+  padding: 1rem;
+  border: 1px solid gray;
+}
+
+.innerGrid {
+  position: relative;
+  width: 100%;
+  height: 460px;
+  /* border: 1px solid red; */
+}
+
+.slotWrap {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+.rowA {
+  position: absolute;
+  top: 10px;
+}
+
+.rowB {
+  position: absolute;
+  /* background-color: red; */
+  top: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.rowC {
+  position: absolute;
+  /* background-color: red; */
+  top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.rowD {
+  position: absolute;
+  /* background-color: red; */
+  top: 294px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.rowE {
+  position: absolute;
+  /* background-color: red; */
+  top: 390px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.selected {
+  border: 2px solid #0084ff;
+  border-radius: 0.7rem;
+}
+
+.blankCover {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  opacity: 0.3;
+}
+
+.overlayItem {
+  position: absolute;
+  /* background-color: red; */
+  /* max-width: 50px; */
+  max-height: 45px;
+  transform: scale(1.8);
+}
+
+.headSlot {
+  width: 71px;
+  height: 71px;
+}
+
+.lowOpacity {
+  opacity: 0;
+}
