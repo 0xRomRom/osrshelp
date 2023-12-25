@@ -7,7 +7,8 @@ const AddGear = ({ bonusState, setAddingGear }) => {
   const inputRef = useRef(null);
   const [gearName, setGearName] = useState("");
   const [selected, setSelected] = useState(null);
-  const [error, setError] = useState("");
+  const [inputError, setInputError] = useState("");
+  const [slotsError, setSlotsError] = useState("");
 
   const headImg = bonusState["Headpiece"].src;
   const capeImg = bonusState["Cape"].src;
@@ -23,12 +24,16 @@ const AddGear = ({ bonusState, setAddingGear }) => {
 
   const handleSave = () => {
     if (gearName === "") {
-      setError("Add setup name");
+      setInputError("Add setup name");
       inputRef.current.focus();
       return;
     }
     if (gearName.length < 7) {
-      setError("Name too short");
+      setInputError("Name too short");
+      return;
+    }
+    if (!selected) {
+      setSlotsError("Select slot");
       return;
     }
   };
@@ -40,15 +45,17 @@ const AddGear = ({ bonusState, setAddingGear }) => {
   const selectedGearslot = (newSlot) => {
     if (newSlot === selected) {
       setSelected(null);
-      return;
+      setSlotsError(""); // Clear the error when deselecting the same slot
+    } else {
+      setSelected(newSlot);
+      setSlotsError(""); // Clear any previous errors
     }
-    setSelected(newSlot);
   };
 
   const updateGearName = (e) => {
     setGearName(e.target.value);
     if (gearName) {
-      setError("");
+      setInputError("");
     }
   };
 
@@ -275,9 +282,10 @@ const AddGear = ({ bonusState, setAddingGear }) => {
             onChange={updateGearName}
             value={gearName}
           />
-          {error && <span className={stl.inputError}>{error}</span>}
+          {inputError && <span className={stl.inputError}>{inputError}</span>}
         </div>
         <div className={stl.gearSlots}>
+          {slotsError && <span className={stl.slotError}>{slotsError}</span>}
           <div
             className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
             onClick={() => selectedGearslot(1)}
