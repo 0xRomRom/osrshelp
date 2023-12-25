@@ -17,7 +17,6 @@ const Nav = (props) => {
 
   useEffect(() => {
     const path = location.pathname;
-    console.log(path);
 
     if (path === "/" || path === "/home") {
       props.setActiveTab("/");
@@ -33,6 +32,7 @@ const Nav = (props) => {
       props.setMainState("Gearcalculator");
       props.setSubState(null);
     }
+    window.scrollTo(0, 0);
   }, [location]);
 
   const handleTabSwitch = (path) => {

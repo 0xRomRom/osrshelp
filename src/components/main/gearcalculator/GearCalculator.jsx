@@ -10,6 +10,7 @@ import SavedBuilds from "./savedbuilds/SavedBuilds";
 import PreBuilds from "./prebuilds/PreBuilds";
 
 import Pagination from "../pagination/Pagination";
+import SafeGearModal from "./safegearmodal/SafeGearModal";
 
 import { useState, useRef } from "react";
 
@@ -18,6 +19,7 @@ const GearCalculator = (props) => {
   const [activeSlot, setActiveSlot] = useState(null);
   const [gridActive, setGridActive] = useState(false);
   const [gearFilter, setGearFilter] = useState("All");
+  const [addingGear, setAddingGear] = useState(false);
   const [bonusState, setBonusState] = useState({
     Headpiece: {},
     Cape: {},
@@ -38,19 +40,15 @@ const GearCalculator = (props) => {
     if (targetDivRef.current && !gridActive && !activeSlot) {
       html2canvas(targetDivRef.current)
         .then((canvas) => {
-          // Convert canvas to image data URL
           const imgData = canvas.toDataURL("image/webp");
 
-          // Create a download link
           const downloadLink = document.createElement("a");
           downloadLink.href = imgData;
           downloadLink.download = "Gearsetup.webp";
 
-          // Append the link to the document and trigger a click
           document.body.appendChild(downloadLink);
           downloadLink.click();
 
-          // Remove the link from the document
           document.body.removeChild(downloadLink);
         })
         .catch((error) => {
@@ -68,6 +66,7 @@ const GearCalculator = (props) => {
 
   return (
     <>
+      {addingGear && <SafeGearModal setAddingGear={setAddingGear} />}
       <div className={stl.adBar}>[ Advertisements ]</div>
       <Pagination
         mainState={props.mainState}
@@ -79,9 +78,11 @@ const GearCalculator = (props) => {
           <div className={stl.innerWrap}>
             <CtaBar
               setBonusState={setBonusState}
+              bonusState={bonusState}
               captureScreenshot={captureScreenshot}
               setActiveSlot={setActiveSlot}
               activeSlot={activeSlot}
+              setAddingGear={setAddingGear}
             />
             <div className={stl.midBlock} ref={targetDivRef}>
               <div className={stl.rowWrap}>
