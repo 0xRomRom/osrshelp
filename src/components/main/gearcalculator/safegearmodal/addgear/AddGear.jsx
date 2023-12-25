@@ -26,6 +26,14 @@ const AddGear = ({ bonusState, setAddingGear }) => {
     setAddingGear(false);
   };
 
+  const selectedGearslot = (newSlot) => {
+    if (newSlot === selected) {
+      setSelected(null);
+      return;
+    }
+    setSelected(newSlot);
+  };
+
   return (
     <div className={stl.addGear}>
       <div className={stl.upperBlock}>
@@ -250,7 +258,7 @@ const AddGear = ({ bonusState, setAddingGear }) => {
         <div className={stl.gearSlots}>
           <div
             className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
-            onClick={() => setSelected(1)}
+            onClick={() => selectedGearslot(1)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
@@ -258,7 +266,7 @@ const AddGear = ({ bonusState, setAddingGear }) => {
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 2 ? stl.actSlot : ""}`}
-            onClick={() => setSelected(2)}
+            onClick={() => selectedGearslot(2)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
@@ -266,7 +274,7 @@ const AddGear = ({ bonusState, setAddingGear }) => {
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 3 ? stl.actSlot : ""}`}
-            onClick={() => setSelected(3)}
+            onClick={() => selectedGearslot(3)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
@@ -274,7 +282,7 @@ const AddGear = ({ bonusState, setAddingGear }) => {
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 4 ? stl.actSlot : ""}`}
-            onClick={() => setSelected(4)}
+            onClick={() => selectedGearslot(4)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
@@ -282,7 +290,7 @@ const AddGear = ({ bonusState, setAddingGear }) => {
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 5 ? stl.actSlot : ""}`}
-            onClick={() => setSelected(5)}
+            onClick={() => selectedGearslot(5)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
@@ -290,7 +298,7 @@ const AddGear = ({ bonusState, setAddingGear }) => {
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 6 ? stl.actSlot : ""}`}
-            onClick={() => setSelected(6)}
+            onClick={() => selectedGearslot(6)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
@@ -298,7 +306,7 @@ const AddGear = ({ bonusState, setAddingGear }) => {
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 7 ? stl.actSlot : ""}`}
-            onClick={() => setSelected(7)}
+            onClick={() => selectedGearslot(7)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
@@ -306,7 +314,7 @@ const AddGear = ({ bonusState, setAddingGear }) => {
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 8 ? stl.actSlot : ""}`}
-            onClick={() => setSelected(8)}
+            onClick={() => selectedGearslot(8)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
@@ -314,7 +322,7 @@ const AddGear = ({ bonusState, setAddingGear }) => {
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 9 ? stl.actSlot : ""}`}
-            onClick={() => setSelected(9)}
+            onClick={() => selectedGearslot(9)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
@@ -322,7 +330,7 @@ const AddGear = ({ bonusState, setAddingGear }) => {
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 10 ? stl.actSlot : ""}`}
-            onClick={() => setSelected(10)}
+            onClick={() => selectedGearslot(10)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
