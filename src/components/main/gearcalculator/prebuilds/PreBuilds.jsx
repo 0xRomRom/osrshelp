@@ -83,7 +83,7 @@ const PreBuilds = ({ handlePrebuildSetup }) => {
         </div>
         <div className={stl.premiumBox}>
           <h3 className={stl.subHero}>Premium</h3>
-          {!premiumUser && <PremiumBanner />}
+          {premiumUser && <PremiumBanner />}
         </div>
       </div>
     </div>
