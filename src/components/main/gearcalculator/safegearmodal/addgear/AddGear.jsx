@@ -4,7 +4,7 @@ import { CiSquarePlus } from "react-icons/ci";
 import blank from "../../../../../assets/gearslots/Blank.png";
 
 const AddGear = ({ bonusState, setAddingGear }) => {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState(null);
   useEffect(() => {
     console.log(bonusState);
   }, [bonusState]);
@@ -250,69 +250,79 @@ const AddGear = ({ bonusState, setAddingGear }) => {
         <div className={stl.gearSlots}>
           <div
             className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+            onClick={() => setSelected(1)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
           <div
-            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${selected === 2 ? stl.actSlot : ""}`}
+            onClick={() => setSelected(2)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
           <div
-            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${selected === 3 ? stl.actSlot : ""}`}
+            onClick={() => setSelected(3)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
           <div
-            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${selected === 4 ? stl.actSlot : ""}`}
+            onClick={() => setSelected(4)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
           <div
-            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${selected === 5 ? stl.actSlot : ""}`}
+            onClick={() => setSelected(5)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
           <div
-            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${selected === 6 ? stl.actSlot : ""}`}
+            onClick={() => setSelected(6)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
           <div
-            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${selected === 7 ? stl.actSlot : ""}`}
+            onClick={() => setSelected(7)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
           <div
-            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${selected === 8 ? stl.actSlot : ""}`}
+            onClick={() => setSelected(8)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
           <div
-            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${selected === 9 ? stl.actSlot : ""}`}
+            onClick={() => setSelected(9)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />
             </span>
           </div>
           <div
-            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${selected === 10 ? stl.actSlot : ""}`}
+            onClick={() => setSelected(10)}
           >
             <span className={stl.emptyGearSlot}>
               Empty <CiSquarePlus className={stl.plus} />

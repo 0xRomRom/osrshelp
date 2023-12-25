@@ -215,3 +215,18 @@
 .plus {
   font-size: 1.5rem;
 }
+
+.actSlot {
+  border: 1px solid rgb(197, 26, 197);
+  box-shadow: 0px 0px 5px rgb(197, 26, 197);
+  color: white;
+}
+.actSlot:hover {
+  border: 1px solid rgb(197, 26, 197);
+  box-shadow: 0px 0px 5px rgb(197, 26, 197);
+  color: white;
+}
+
+.actSlot span {
+  color: white;
+}
