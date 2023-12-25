@@ -53,8 +53,8 @@ const AddGear = ({ bonusState }) => {
                   </>
                 )}
                 <img
-                  src={head}
-                  className={`${stl.headSlot} ${headImg ? stl.lowOpacity : ""}`}
+                  src={blank}
+                  className={stl.headSlot}
                   alt="Head gear slot"
                 />
               </div>
@@ -75,11 +75,7 @@ const AddGear = ({ bonusState }) => {
                     />
                   </>
                 )}
-                <img
-                  src={cape}
-                  className={`${stl.headSlot} ${capeImg ? stl.lowOpacity : ""}`}
-                  alt="Cape slot"
-                />
+                <img src={blank} className={stl.headSlot} alt="Cape slot" />
               </div>
               <div className={stl.slotWrap}>
                 {neckImg && (
@@ -97,8 +93,8 @@ const AddGear = ({ bonusState }) => {
                   </>
                 )}
                 <img
-                  src={necklace}
-                  className={`${stl.headSlot} ${neckImg ? stl.lowOpacity : ""}`}
+                  src={blank}
+                  className={stl.headSlot}
                   alt="Necklace  slot"
                 />
               </div>
@@ -118,10 +114,8 @@ const AddGear = ({ bonusState }) => {
                   </>
                 )}
                 <img
-                  src={amunition}
-                  className={`${stl.headSlot} ${
-                    amunitionImg ? stl.lowOpacity : ""
-                  }`}
+                  src={blank}
+                  className={stl.headSlot}
                   alt="Amunition slot"
                 />
               </div>
@@ -142,13 +136,7 @@ const AddGear = ({ bonusState }) => {
                     />
                   </>
                 )}
-                <img
-                  src={weapon}
-                  className={`${stl.headSlot} ${
-                    weaponImg ? stl.lowOpacity : ""
-                  }`}
-                  alt="Weapon slot"
-                />
+                <img src={blank} className={stl.headSlot} alt="Weapon slot" />
               </div>
               <div className={stl.slotWrap}>
                 {bodyImg && (
@@ -165,11 +153,7 @@ const AddGear = ({ bonusState }) => {
                     />
                   </>
                 )}
-                <img
-                  src={body}
-                  className={`${stl.headSlot} ${bodyImg ? stl.lowOpacity : ""}`}
-                  alt="Body slot"
-                />
+                <img src={blank} className={stl.headSlot} alt="Body slot" />
               </div>
               <div className={stl.slotWrap}>
                 {shieldImg && (
@@ -186,13 +170,7 @@ const AddGear = ({ bonusState }) => {
                     />
                   </>
                 )}
-                <img
-                  src={shield}
-                  className={`${stl.headSlot} ${
-                    shieldImg ? stl.lowOpacity : ""
-                  }`}
-                  alt="Shield slot"
-                />
+                <img src={blank} className={stl.headSlot} alt="Shield slot" />
               </div>
             </div>
             <div className={`${stl.row} ${stl.rowD}`}>
@@ -211,11 +189,7 @@ const AddGear = ({ bonusState }) => {
                     />
                   </>
                 )}
-                <img
-                  src={legs}
-                  className={`${stl.headSlot} ${legsImg ? stl.lowOpacity : ""}`}
-                  alt="Legs slot"
-                />
+                <img src={blank} className={stl.headSlot} alt="Legs slot" />
               </div>
             </div>
             <div className={`${stl.row} ${stl.rowE}`}>
@@ -234,13 +208,7 @@ const AddGear = ({ bonusState }) => {
                     />
                   </>
                 )}
-                <img
-                  src={gloves}
-                  className={`${stl.headSlot} ${
-                    glovesImg ? stl.lowOpacity : ""
-                  }`}
-                  alt="Gloves slot"
-                />
+                <img src={blank} className={stl.headSlot} alt="Gloves slot" />
               </div>
               <div className={stl.slotWrap}>
                 {bootsImg && (
@@ -257,13 +225,7 @@ const AddGear = ({ bonusState }) => {
                     />
                   </>
                 )}
-                <img
-                  src={boots}
-                  className={`${stl.headSlot} ${
-                    bootsImg ? stl.lowOpacity : ""
-                  }`}
-                  alt="Boots slot"
-                />
+                <img src={blank} className={stl.headSlot} alt="Boots slot" />
               </div>
               <div className={stl.slotWrap}>
                 {ringImg && (
@@ -280,16 +242,16 @@ const AddGear = ({ bonusState }) => {
                     />
                   </>
                 )}
-                <img
-                  src={ring}
-                  className={`${stl.headSlot} ${ringImg ? stl.lowOpacity : ""}`}
-                  alt="Ring slot"
-                />
+                <img src={blank} className={stl.headSlot} alt="Ring slot" />
               </div>
             </div>
           </div>
+          <input
+            type="text"
+            placeholder="Setup name"
+            className={stl.gearInput}
+          />
         </div>
-        <div className={stl.currentSlots}></div>
       </div>
       <div className={stl.ctaBar}>
         <button className={stl.ctaBtn}>Cancel</button>
