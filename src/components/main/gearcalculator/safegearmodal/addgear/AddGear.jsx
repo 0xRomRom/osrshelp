@@ -4,7 +4,13 @@ import { CiSquarePlus } from "react-icons/ci";
 import blank from "../../../../../assets/gearslots/Blank.png";
 import supabase from "../../../../../utils/supabase/supabase";
 
-const AddGear = ({ bonusState, setAddingGear, userID }) => {
+const AddGear = ({
+  bonusState,
+  setAddingGear,
+  userID,
+  savedSlots,
+  setSavedSlots,
+}) => {
   const inputRef = useRef(null);
   const [gearName, setGearName] = useState("");
   const [selected, setSelected] = useState(null);
@@ -43,6 +49,7 @@ const AddGear = ({ bonusState, setAddingGear, userID }) => {
     try {
       const { error } = await supabase.from("saved_builds").insert([
         {
+          Username: userID,
           Gearslot: gearDetailsString,
           Setupname: gearName,
           Index: selected,
@@ -53,6 +60,8 @@ const AddGear = ({ bonusState, setAddingGear, userID }) => {
         console.error("Error saving gear build:", error);
         return { success: false, error };
       } else {
+        setSelected(null);
+        setGearName("");
         console.log("Gear build saved successfully!");
         return { success: true };
       }
@@ -69,10 +78,10 @@ const AddGear = ({ bonusState, setAddingGear, userID }) => {
   const selectedGearslot = (newSlot) => {
     if (newSlot === selected) {
       setSelected(null);
-      setSlotsError(""); // Clear the error when deselecting the same slot
+      setSlotsError("");
     } else {
       setSelected(newSlot);
-      setSlotsError(""); // Clear any previous errors
+      setSlotsError("");
     }
   };
 

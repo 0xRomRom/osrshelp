@@ -33,7 +33,7 @@ const Nav = (props) => {
       props.setSubState(null);
     }
     window.scrollTo(0, 0);
-  }, [location]);
+  }, [location, props]);
 
   const handleTabSwitch = (path) => {
     navigate(path);

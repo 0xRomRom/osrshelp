@@ -10,7 +10,7 @@ import PremiumBanner from "./PremiumBanner/PremiumBanner";
 import { useContext } from "react";
 import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
-const PreBuilds = ({ handlePrebuildSetup }) => {
+const PreBuilds = ({ handlePrebuildSetup, savedSlots, setSavedSlots }) => {
   const { premiumUser } = useContext(AuthContext);
 
   const [reversed, setReversed] = useState(false);

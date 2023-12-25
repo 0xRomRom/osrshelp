@@ -1,6 +1,5 @@
 import stl from "./SignUp.module.css";
 import { useState, useRef, useEffect } from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
 
 import { useNavigate } from "react-router-dom";
 import Spinner from "../../utils/loadingspinner/Spinner";
@@ -42,11 +41,6 @@ const SignUp = () => {
   const [loading, setLoading] = useState(false);
 
   const [isChecked, setIsChecked] = useState(true);
-
-  const handleBackToLogin = () => {
-    setRegisterComplete(false);
-    setSignupState(false);
-  };
 
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
