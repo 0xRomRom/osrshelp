@@ -1,17 +1,6 @@
 import { useEffect } from "react";
 import stl from "./AddGear.module.css";
-
-import head from "../../../../../assets/gearslots/Head.png";
-import cape from "../../../../../assets/gearslots/Cape.png";
-import necklace from "../../../../../assets/gearslots/Neck.png";
-import amunition from "../../../../../assets/gearslots/Amunition.png";
-import weapon from "../../../../../assets/gearslots/Weapon.png";
-import body from "../../../../../assets/gearslots/Body.png";
-import shield from "../../../../../assets/gearslots/Shield.png";
-import legs from "../../../../../assets/gearslots/Legs.png";
-import gloves from "../../../../../assets/gearslots/Gloves.png";
-import boots from "../../../../../assets/gearslots/Boots.png";
-import ring from "../../../../../assets/gearslots/Ring.png";
+import { CiSquarePlus } from "react-icons/ci";
 import blank from "../../../../../assets/gearslots/Blank.png";
 
 const AddGear = ({ bonusState }) => {
@@ -251,6 +240,58 @@ const AddGear = ({ bonusState }) => {
             placeholder="Setup name"
             className={stl.gearInput}
           />
+        </div>
+        <div className={stl.gearSlots}>
+          <div className={stl.gearSlot}>
+            <span className={stl.emptyGearSlot}>
+              Empty <CiSquarePlus className={stl.plus} />
+            </span>
+          </div>
+          <div className={stl.gearSlot}>
+            <span className={stl.emptyGearSlot}>
+              Empty <CiSquarePlus className={stl.plus} />
+            </span>
+          </div>
+          <div className={stl.gearSlot}>
+            <span className={stl.emptyGearSlot}>
+              Empty <CiSquarePlus className={stl.plus} />
+            </span>
+          </div>
+          <div className={stl.gearSlot}>
+            <span className={stl.emptyGearSlot}>
+              Empty <CiSquarePlus className={stl.plus} />
+            </span>
+          </div>
+          <div className={stl.gearSlot}>
+            <span className={stl.emptyGearSlot}>
+              Empty <CiSquarePlus className={stl.plus} />
+            </span>
+          </div>
+          <div className={stl.gearSlot}>
+            <span className={stl.emptyGearSlot}>
+              Empty <CiSquarePlus className={stl.plus} />
+            </span>
+          </div>
+          <div className={stl.gearSlot}>
+            <span className={stl.emptyGearSlot}>
+              Empty <CiSquarePlus className={stl.plus} />
+            </span>
+          </div>
+          <div className={stl.gearSlot}>
+            <span className={stl.emptyGearSlot}>
+              Empty <CiSquarePlus className={stl.plus} />
+            </span>
+          </div>
+          <div className={stl.gearSlot}>
+            <span className={stl.emptyGearSlot}>
+              Empty <CiSquarePlus className={stl.plus} />
+            </span>
+          </div>
+          <div className={stl.gearSlot}>
+            <span className={stl.emptyGearSlot}>
+              Empty <CiSquarePlus className={stl.plus} />
+            </span>
+          </div>
         </div>
       </div>
       <div className={stl.ctaBar}>
