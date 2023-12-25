@@ -72,6 +72,7 @@ const GearCalculator = (props) => {
         <SafeGearModal
           setAddingGear={setAddingGear}
           premiumUser={premiumUser}
+          bonusState={bonusState}
         />
       )}
       <div className={stl.adBar}>[ Advertisements ]</div>

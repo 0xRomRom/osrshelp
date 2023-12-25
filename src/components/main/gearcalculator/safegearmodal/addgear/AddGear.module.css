@@ -1,0 +1,10 @@
+.addGear {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
