@@ -10,6 +10,8 @@ import attLogo from "../../../../../assets/skillicons/Attack.webp";
 import rangedLogo from "../../../../../assets/skillicons/Ranged.webp";
 import magicLogo from "../../../../../assets/skillicons/Magic.webp";
 
+import { FaTrashCan } from "react-icons/fa6";
+
 import { initState } from "../../../../../utils/gearcalculator/emptyslots";
 
 const AddGear = ({
@@ -131,9 +133,7 @@ const AddGear = ({
     }
   };
   useEffect(() => {
-    console.log(copiedSlots);
     setCopiedSlots(savedSlots);
-    console.log(copiedSlots);
   }, [savedSlots]);
 
   const gearTypeCheck = (geartype) => {
@@ -439,6 +439,12 @@ const AddGear = ({
 
         <div className={stl.gearSlots}>
           {slotsError && <span className={stl.slotError}>{slotsError}</span>}
+          {selected !== null &&
+            copiedSlots[`slot${selected || 1}`]?.Geartype && (
+              <div className={stl.trashWrap}>
+                <FaTrashCan className={stl.trashIcon} />
+              </div>
+            )}
 
           <div
             className={`${stl.gearSlot} ${
