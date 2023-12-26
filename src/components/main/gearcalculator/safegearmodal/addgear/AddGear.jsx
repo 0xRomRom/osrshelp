@@ -427,65 +427,121 @@ const AddGear = ({
             className={`${stl.gearSlot} ${selected === 3 ? stl.actSlot : ""}`}
             onClick={() => selectedGearslot(3)}
           >
-            <span className={stl.emptyGearSlot}>
-              Empty <CiSquarePlus className={stl.plus} />
-            </span>
+            {savedSlots["slot3"] && (
+              <span className={stl.setupName}>
+                {savedSlots["slot3"].Setupname}
+              </span>
+            )}
+            {Object.keys(savedSlots["slot3"]).length === 0 && (
+              <span className={stl.emptyGearSlot}>
+                Empty <CiSquarePlus className={stl.plus} />
+              </span>
+            )}
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 4 ? stl.actSlot : ""}`}
             onClick={() => selectedGearslot(4)}
           >
-            <span className={stl.emptyGearSlot}>
-              Empty <CiSquarePlus className={stl.plus} />
-            </span>
+            {savedSlots["slot4"] && (
+              <span className={stl.setupName}>
+                {savedSlots["slot4"].Setupname}
+              </span>
+            )}
+            {Object.keys(savedSlots["slot4"]).length === 0 && (
+              <span className={stl.emptyGearSlot}>
+                Empty <CiSquarePlus className={stl.plus} />
+              </span>
+            )}
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 5 ? stl.actSlot : ""}`}
             onClick={() => selectedGearslot(5)}
           >
-            <span className={stl.emptyGearSlot}>
-              Empty <CiSquarePlus className={stl.plus} />
-            </span>
+            {savedSlots["slot5"] && (
+              <span className={stl.setupName}>
+                {savedSlots["slot5"].Setupname}
+              </span>
+            )}
+            {Object.keys(savedSlots["slot5"]).length === 0 && (
+              <span className={stl.emptyGearSlot}>
+                Empty <CiSquarePlus className={stl.plus} />
+              </span>
+            )}
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 6 ? stl.actSlot : ""}`}
             onClick={() => selectedGearslot(6)}
           >
-            <span className={stl.emptyGearSlot}>
-              Empty <CiSquarePlus className={stl.plus} />
-            </span>
+            {savedSlots["slot6"] && (
+              <span className={stl.setupName}>
+                {savedSlots["slot6"].Setupname}
+              </span>
+            )}
+            {Object.keys(savedSlots["slot6"]).length === 0 && (
+              <span className={stl.emptyGearSlot}>
+                Empty <CiSquarePlus className={stl.plus} />
+              </span>
+            )}
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 7 ? stl.actSlot : ""}`}
             onClick={() => selectedGearslot(7)}
           >
-            <span className={stl.emptyGearSlot}>
-              Empty <CiSquarePlus className={stl.plus} />
-            </span>
+            {savedSlots["slot7"] && (
+              <span className={stl.setupName}>
+                {savedSlots["slot7"].Setupname}
+              </span>
+            )}
+            {Object.keys(savedSlots["slot7"]).length === 0 && (
+              <span className={stl.emptyGearSlot}>
+                Empty <CiSquarePlus className={stl.plus} />
+              </span>
+            )}
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 8 ? stl.actSlot : ""}`}
             onClick={() => selectedGearslot(8)}
           >
-            <span className={stl.emptyGearSlot}>
-              Empty <CiSquarePlus className={stl.plus} />
-            </span>
+            {savedSlots["slot8"] && (
+              <span className={stl.setupName}>
+                {savedSlots["slot8"].Setupname}
+              </span>
+            )}
+            {Object.keys(savedSlots["slot8"]).length === 0 && (
+              <span className={stl.emptyGearSlot}>
+                Empty <CiSquarePlus className={stl.plus} />
+              </span>
+            )}
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 9 ? stl.actSlot : ""}`}
             onClick={() => selectedGearslot(9)}
           >
-            <span className={stl.emptyGearSlot}>
-              Empty <CiSquarePlus className={stl.plus} />
-            </span>
+            {savedSlots["slot9"] && (
+              <span className={stl.setupName}>
+                {savedSlots["slot9"].Setupname}
+              </span>
+            )}
+            {Object.keys(savedSlots["slot9"]).length === 0 && (
+              <span className={stl.emptyGearSlot}>
+                Empty <CiSquarePlus className={stl.plus} />
+              </span>
+            )}
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 10 ? stl.actSlot : ""}`}
             onClick={() => selectedGearslot(10)}
           >
-            <span className={stl.emptyGearSlot}>
-              Empty <CiSquarePlus className={stl.plus} />
-            </span>
+            {savedSlots["slot10"] && (
+              <span className={stl.setupName}>
+                {savedSlots["slot10"].Setupname}
+              </span>
+            )}
+            {Object.keys(savedSlots["slot10"]).length === 0 && (
+              <span className={stl.emptyGearSlot}>
+                Empty <CiSquarePlus className={stl.plus} />
+              </span>
+            )}
           </div>
         </div>
       </div>
