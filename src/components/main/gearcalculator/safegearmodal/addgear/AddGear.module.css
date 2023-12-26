@@ -166,8 +166,8 @@
 }
 
 .gearInput:focus {
-  border: 1px solid rgb(197, 26, 197);
-  box-shadow: 0px 0px 5px rgb(197, 26, 197);
+  border: 1px solid #0084ffa7;
+  box-shadow: 0px 0px 5px #0084ffa7;
 }
 
 .gearSlots {
@@ -222,13 +222,13 @@
 }
 
 .actSlot {
-  border: 1px solid rgb(197, 26, 197);
-  box-shadow: 0px 0px 5px rgb(197, 26, 197);
+  border: 1px solid #0084ffa7;
+  box-shadow: 0px 0px 5px #0084ffa7;
   color: white;
 }
 .actSlot:hover {
-  border: 1px solid rgb(197, 26, 197);
-  box-shadow: 0px 0px 5px rgb(197, 26, 197);
+  border: 1px solid #0084ffa7;
+  box-shadow: 0px 0px 5px #0084ffa7;
   color: white;
 }
 
@@ -256,7 +256,7 @@
 }
 
 .setupName {
-  color: white;
+  color: rgb(238, 238, 238);
 }
 
 .setupTypeBox {
@@ -314,4 +314,17 @@
 
 .ctaActive {
   background-color: #0084ffa7;
+}
+
+.allStyles {
+  background: linear-gradient(320deg, rgb(6, 9, 12), rgb(44, 5, 5));
+}
+.meleeStyle {
+  background: linear-gradient(320deg, rgb(14, 19, 23), rgb(126, 2, 2));
+}
+.rangedStyle {
+  background: linear-gradient(320deg, rgb(49, 76, 41), rgb(22, 57, 28));
+}
+.magicStyle {
+  background: linear-gradient(320deg, rgb(29, 41, 77), rgb(18, 55, 149));
 }

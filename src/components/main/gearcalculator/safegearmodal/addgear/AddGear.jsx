@@ -106,6 +106,21 @@ const AddGear = ({
     console.log(savedSlots);
   }, [savedSlots]);
 
+  const gearTypeCheck = (geartype) => {
+    switch (geartype) {
+      case "All":
+        return stl.allStyles;
+      case "Melee":
+        return stl.meleeStyle;
+      case "Ranged":
+        return stl.rangedStyle;
+      case "Magic":
+        return stl.magicStyle;
+      default:
+        return "";
+    }
+  };
+
   return (
     <div className={stl.addGear}>
       <div className={stl.upperBlock}>
@@ -391,10 +406,14 @@ const AddGear = ({
           </div>
           {inputError && <span className={stl.inputError}>{inputError}</span>}
         </div>
+
         <div className={stl.gearSlots}>
           {slotsError && <span className={stl.slotError}>{slotsError}</span>}
+
           <div
-            className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${
+              selected === 1 ? stl.actSlot : ""
+            } ${gearTypeCheck(savedSlots["slot1"].Geartype)}`}
             onClick={() => selectedGearslot(1)}
           >
             {savedSlots["slot1"] && (
@@ -408,8 +427,11 @@ const AddGear = ({
               </span>
             )}
           </div>
+
           <div
-            className={`${stl.gearSlot} ${selected === 2 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${
+              selected === 2 ? stl.actSlot : ""
+            } ${gearTypeCheck(savedSlots["slot2"].Geartype)}`}
             onClick={() => selectedGearslot(2)}
           >
             {savedSlots["slot2"] && (
@@ -423,8 +445,11 @@ const AddGear = ({
               </span>
             )}
           </div>
+
           <div
-            className={`${stl.gearSlot} ${selected === 3 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${
+              selected === 3 ? stl.actSlot : ""
+            } ${gearTypeCheck(savedSlots["slot3"].Geartype)}`}
             onClick={() => selectedGearslot(3)}
           >
             {savedSlots["slot3"] && (
@@ -438,8 +463,11 @@ const AddGear = ({
               </span>
             )}
           </div>
+
           <div
-            className={`${stl.gearSlot} ${selected === 4 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${
+              selected === 4 ? stl.actSlot : ""
+            } ${gearTypeCheck(savedSlots["slot4"].Geartype)}`}
             onClick={() => selectedGearslot(4)}
           >
             {savedSlots["slot4"] && (
@@ -453,8 +481,11 @@ const AddGear = ({
               </span>
             )}
           </div>
+
           <div
-            className={`${stl.gearSlot} ${selected === 5 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${
+              selected === 5 ? stl.actSlot : ""
+            }  ${gearTypeCheck(savedSlots["slot5"].Geartype)}`}
             onClick={() => selectedGearslot(5)}
           >
             {savedSlots["slot5"] && (
@@ -468,8 +499,11 @@ const AddGear = ({
               </span>
             )}
           </div>
+
           <div
-            className={`${stl.gearSlot} ${selected === 6 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${
+              selected === 6 ? stl.actSlot : ""
+            } ${gearTypeCheck(savedSlots["slot6"].Geartype)}`}
             onClick={() => selectedGearslot(6)}
           >
             {savedSlots["slot6"] && (
@@ -483,8 +517,11 @@ const AddGear = ({
               </span>
             )}
           </div>
+
           <div
-            className={`${stl.gearSlot} ${selected === 7 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${
+              selected === 7 ? stl.actSlot : ""
+            } ${gearTypeCheck(savedSlots["slot7"].Geartype)}`}
             onClick={() => selectedGearslot(7)}
           >
             {savedSlots["slot7"] && (
@@ -498,8 +535,11 @@ const AddGear = ({
               </span>
             )}
           </div>
+
           <div
-            className={`${stl.gearSlot} ${selected === 8 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${
+              selected === 8 ? stl.actSlot : ""
+            } ${gearTypeCheck(savedSlots["slot8"].Geartype)}`}
             onClick={() => selectedGearslot(8)}
           >
             {savedSlots["slot8"] && (
@@ -513,8 +553,11 @@ const AddGear = ({
               </span>
             )}
           </div>
+
           <div
-            className={`${stl.gearSlot} ${selected === 9 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${
+              selected === 9 ? stl.actSlot : ""
+            } ${gearTypeCheck(savedSlots["slot9"].Geartype)}`}
             onClick={() => selectedGearslot(9)}
           >
             {savedSlots["slot9"] && (
@@ -528,8 +571,11 @@ const AddGear = ({
               </span>
             )}
           </div>
+
           <div
-            className={`${stl.gearSlot} ${selected === 10 ? stl.actSlot : ""}`}
+            className={`${stl.gearSlot} ${
+              selected === 10 ? stl.actSlot : ""
+            } ${gearTypeCheck(savedSlots["slot10"].Geartype)}`}
             onClick={() => selectedGearslot(10)}
           >
             {savedSlots["slot10"] && (
