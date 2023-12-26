@@ -13,7 +13,7 @@
 .upperBlock {
   width: 100%;
   display: flex;
-  min-height: 480px;
+  min-height: 510px;
   display: flex;
 }
 
@@ -47,14 +47,14 @@
 }
 
 .gearPreview {
-  max-height: 475px;
+  max-height: 510px;
   width: 50%;
   padding: 1rem;
   padding-top: 0.75rem;
-  padding-bottom: 1.2rem;
+  padding-bottom: 0rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .innerGrid {
@@ -162,6 +162,7 @@
   font-size: 20px;
   border-radius: 0.3rem;
   color: rgb(219, 219, 219);
+  margin-top: 0.8rem;
 }
 
 .gearInput:focus {
@@ -191,6 +192,8 @@
   align-items: center;
   border-radius: 0.3rem;
   cursor: pointer;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .gearSlot:hover .emptyGearSlot {
@@ -250,4 +253,57 @@
   top: -3rem;
   left: 2.75rem;
   padding-left: 4.5rem;
+}
+
+.setupName {
+  color: white;
+}
+
+.setupTypeBox {
+  height: 55px;
+  width: 90%;
+  left: 5%;
+  position: relative;
+  border-radius: 0.4rem;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgb(17, 23, 27);
+  margin-top: 0.8rem;
+}
+
+.setupCta {
+  width: 45px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillMiniLogo {
+  width: 22.5px;
+}
+
+.stackLogo1 {
+  position: absolute;
+  z-index: 20;
+}
+.stackLogo2 {
+  position: absolute;
+  z-index: 5;
+  top: 12px;
+  left: 10px;
+}
+
+.stackLogo3 {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  z-index: 10;
 }

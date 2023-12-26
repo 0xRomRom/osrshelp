@@ -3,7 +3,13 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 import UpgradeBanner from "./upgradebanner/UpgradeBanner";
 import AddGear from "./addgear/AddGear";
 
-const SafeGearModal = ({ setAddingGear, premiumUser, bonusState, userID }) => {
+const SafeGearModal = ({
+  setAddingGear,
+  premiumUser,
+  bonusState,
+  userID,
+  savedSlots,
+}) => {
   const closeModal = () => {
     setAddingGear(false);
   };
@@ -20,6 +26,7 @@ const SafeGearModal = ({ setAddingGear, premiumUser, bonusState, userID }) => {
             bonusState={bonusState}
             setAddingGear={setAddingGear}
             userID={userID}
+            savedSlots={savedSlots}
           />
         )}
       </div>

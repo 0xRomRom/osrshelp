@@ -53,23 +53,19 @@ const GearCalculator = (props) => {
   });
 
   useEffect(() => {
-    if (userID) {
-      const getTenRowsForUserID = async () => {
+    if (premiumUser) {
+      const getStoredBuilds = async () => {
         try {
           const { data, error } = await supabase
             .from("saved_builds")
             .select()
             .eq("Username", userID)
             .limit(10);
-          console.log(data);
 
           if (error) {
             console.error("Error fetching rows for user ID:", error);
             return { success: false, error };
           } else {
-            console.log("Successfully fetched rows for user ID:", userID);
-            console.log("DATA: ", data);
-
             for (const item of data) {
               initState[`slot${item["Index"]}`] = item;
             }
@@ -82,13 +78,9 @@ const GearCalculator = (props) => {
           return { success: false, error: error.message };
         }
       };
-      getTenRowsForUserID();
+      getStoredBuilds();
     }
-  }, [userID, savedSlots]);
-
-  useEffect(() => {
-    console.log(savedSlots);
-  }, [savedSlots]);
+  }, [userID, savedSlots, premiumUser]);
 
   const captureScreenshot = () => {
     setGridActive(false);
@@ -180,7 +172,7 @@ const GearCalculator = (props) => {
               </div>
             </div>
           </div>
-          <SavedBuilds />
+          <SavedBuilds savedSlots={savedSlots} />
         </div>
         <PreBuilds
           handlePrebuildSetup={handlePrebuildSetup}

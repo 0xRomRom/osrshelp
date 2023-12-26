@@ -3,6 +3,11 @@ import stl from "./AddGear.module.css";
 import { CiSquarePlus } from "react-icons/ci";
 import blank from "../../../../../assets/gearslots/Blank.png";
 import supabase from "../../../../../utils/supabase/supabase";
+import { useEffect } from "react";
+
+import attLogo from "../../../../../assets/skillicons/Attack.webp";
+import rangedLogo from "../../../../../assets/skillicons/Ranged.webp";
+import magicLogo from "../../../../../assets/skillicons/Magic.webp";
 
 const AddGear = ({
   bonusState,
@@ -37,6 +42,10 @@ const AddGear = ({
     }
     if (gearName.length < 7) {
       setInputError("Name too short");
+      return;
+    }
+    if (gearName.length > 22) {
+      setInputError("Name too long");
       return;
     }
     if (!selected) {
@@ -91,6 +100,9 @@ const AddGear = ({
       setInputError("");
     }
   };
+  useEffect(() => {
+    console.log(savedSlots);
+  }, [savedSlots]);
 
   return (
     <div className={stl.addGear}>
@@ -315,6 +327,46 @@ const AddGear = ({
             onChange={updateGearName}
             value={gearName}
           />
+          <div className={stl.setupTypeBox}>
+            <button className={stl.setupCta}>
+              <img
+                src={attLogo}
+                alt="Attack skill"
+                className={stl.stackLogo1}
+              />
+              <img
+                src={rangedLogo}
+                alt="Ranged skill"
+                className={stl.stackLogo2}
+              />
+              <img
+                src={magicLogo}
+                alt="Magic skill"
+                className={stl.stackLogo3}
+              />
+            </button>
+            <button className={stl.setupCta}>
+              <img
+                src={attLogo}
+                alt="Attack skill"
+                className={stl.skillMiniLogo}
+              />
+            </button>
+            <button className={stl.setupCta}>
+              <img
+                src={rangedLogo}
+                alt="Ranged skill"
+                className={stl.skillMiniLogo}
+              />
+            </button>
+            <button className={stl.setupCta}>
+              <img
+                src={magicLogo}
+                alt="Magic skill"
+                className={stl.skillMiniLogo}
+              />
+            </button>
+          </div>
           {inputError && <span className={stl.inputError}>{inputError}</span>}
         </div>
         <div className={stl.gearSlots}>
@@ -323,17 +375,31 @@ const AddGear = ({
             className={`${stl.gearSlot} ${selected === 1 ? stl.actSlot : ""}`}
             onClick={() => selectedGearslot(1)}
           >
-            <span className={stl.emptyGearSlot}>
-              Empty <CiSquarePlus className={stl.plus} />
-            </span>
+            {savedSlots["slot1"] && (
+              <span className={stl.setupName}>
+                {savedSlots["slot1"].Setupname}
+              </span>
+            )}
+            {Object.keys(savedSlots["slot1"]).length === 0 && (
+              <span className={stl.emptyGearSlot}>
+                Empty <CiSquarePlus className={stl.plus} />
+              </span>
+            )}
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 2 ? stl.actSlot : ""}`}
             onClick={() => selectedGearslot(2)}
           >
-            <span className={stl.emptyGearSlot}>
-              Empty <CiSquarePlus className={stl.plus} />
-            </span>
+            {savedSlots["slot2"] && (
+              <span className={stl.setupName}>
+                {savedSlots["slot2"].Setupname}
+              </span>
+            )}
+            {Object.keys(savedSlots["slot2"]).length === 0 && (
+              <span className={stl.emptyGearSlot}>
+                Empty <CiSquarePlus className={stl.plus} />
+              </span>
+            )}
           </div>
           <div
             className={`${stl.gearSlot} ${selected === 3 ? stl.actSlot : ""}`}
