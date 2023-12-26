@@ -17,6 +17,19 @@ import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import { useEffect } from "react";
 import supabase from "../../../utils/supabase/supabase";
 
+const initState = {
+  slot1: {},
+  slot2: {},
+  slot3: {},
+  slot4: {},
+  slot5: {},
+  slot6: {},
+  slot7: {},
+  slot8: {},
+  slot9: {},
+  slot10: {},
+};
+
 const GearCalculator = (props) => {
   const { premiumUser, userID } = useContext(AuthContext);
   const targetDivRef = useRef(null);
@@ -24,18 +37,7 @@ const GearCalculator = (props) => {
   const [gridActive, setGridActive] = useState(false);
   const [gearFilter, setGearFilter] = useState("All");
   const [addingGear, setAddingGear] = useState(false);
-  const [savedSlots, setSavedSlots] = useState({
-    slot1: {},
-    slot2: {},
-    slot3: {},
-    slot4: {},
-    slot5: {},
-    slot6: {},
-    slot7: {},
-    slot8: {},
-    slot9: {},
-    slot10: {},
-  });
+  const [savedSlots, setSavedSlots] = useState({});
   const [bonusState, setBonusState] = useState({
     Headpiece: {},
     Cape: {},
@@ -52,7 +54,7 @@ const GearCalculator = (props) => {
 
   useEffect(() => {
     if (userID) {
-      async function getTenRowsForUserID() {
+      const getTenRowsForUserID = async () => {
         try {
           const { data, error } = await supabase
             .from("saved_builds")
@@ -67,16 +69,26 @@ const GearCalculator = (props) => {
           } else {
             console.log("Successfully fetched rows for user ID:", userID);
             console.log("DATA: ", data);
+
+            for (const item of data) {
+              initState[`slot${item["Index"]}`] = item;
+            }
+            setSavedSlots(initState);
+
             return { success: true, data };
           }
         } catch (error) {
           console.error("Error fetching rows for user ID:", error.message);
           return { success: false, error: error.message };
         }
-      }
+      };
       getTenRowsForUserID();
     }
-  }, [userID]);
+  }, [userID, savedSlots]);
+
+  useEffect(() => {
+    console.log(savedSlots);
+  }, [savedSlots]);
 
   const captureScreenshot = () => {
     setGridActive(false);
