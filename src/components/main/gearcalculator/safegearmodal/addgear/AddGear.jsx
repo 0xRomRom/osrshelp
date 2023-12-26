@@ -21,6 +21,7 @@ const AddGear = ({
   const [selected, setSelected] = useState(null);
   const [inputError, setInputError] = useState("");
   const [slotsError, setSlotsError] = useState("");
+  const [gearType, setGearType] = useState("All");
 
   const headImg = bonusState["Headpiece"].src;
   const capeImg = bonusState["Cape"].src;
@@ -328,7 +329,12 @@ const AddGear = ({
             value={gearName}
           />
           <div className={stl.setupTypeBox}>
-            <button className={stl.setupCta}>
+            <button
+              className={`${stl.setupCta} ${
+                gearType === "All" ? stl.ctaActive : ""
+              }`}
+              onClick={() => setGearType("All")}
+            >
               <img
                 src={attLogo}
                 alt="Attack skill"
@@ -345,21 +351,36 @@ const AddGear = ({
                 className={stl.stackLogo3}
               />
             </button>
-            <button className={stl.setupCta}>
+            <button
+              className={`${stl.setupCta} ${
+                gearType === "Melee" ? stl.ctaActive : ""
+              }`}
+              onClick={() => setGearType("Melee")}
+            >
               <img
                 src={attLogo}
                 alt="Attack skill"
                 className={stl.skillMiniLogo}
               />
             </button>
-            <button className={stl.setupCta}>
+            <button
+              className={`${stl.setupCta} ${
+                gearType === "Ranged" ? stl.ctaActive : ""
+              }`}
+              onClick={() => setGearType("Ranged")}
+            >
               <img
                 src={rangedLogo}
                 alt="Ranged skill"
                 className={stl.skillMiniLogo}
               />
             </button>
-            <button className={stl.setupCta}>
+            <button
+              className={`${stl.setupCta} ${
+                gearType === "Magic" ? stl.ctaActive : ""
+              }`}
+              onClick={() => setGearType("Magic")}
+            >
               <img
                 src={magicLogo}
                 alt="Magic skill"
