@@ -9,6 +9,7 @@ const SafeGearModal = ({
   bonusState,
   userID,
   savedSlots,
+  setSavedSlots,
 }) => {
   const closeModal = () => {
     setAddingGear(false);
@@ -27,6 +28,7 @@ const SafeGearModal = ({
             setAddingGear={setAddingGear}
             userID={userID}
             savedSlots={savedSlots}
+            setSavedSlots={setSavedSlots}
           />
         )}
       </div>

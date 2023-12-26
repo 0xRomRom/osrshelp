@@ -16,19 +16,7 @@ import { useState, useRef, useContext } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import { useEffect } from "react";
 import supabase from "../../../utils/supabase/supabase";
-
-const initState = {
-  slot1: {},
-  slot2: {},
-  slot3: {},
-  slot4: {},
-  slot5: {},
-  slot6: {},
-  slot7: {},
-  slot8: {},
-  slot9: {},
-  slot10: {},
-};
+import { initState } from "../../../utils/gearcalculator/emptyslots";
 
 const GearCalculator = (props) => {
   const { premiumUser, userID } = useContext(AuthContext);

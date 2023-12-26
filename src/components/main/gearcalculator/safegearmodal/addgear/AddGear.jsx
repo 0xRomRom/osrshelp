@@ -4,10 +4,13 @@ import { CiSquarePlus } from "react-icons/ci";
 import blank from "../../../../../assets/gearslots/Blank.png";
 import supabase from "../../../../../utils/supabase/supabase";
 import { useEffect } from "react";
+import useForceUpdate from "../../../../../utils/componentrerender";
 
 import attLogo from "../../../../../assets/skillicons/Attack.webp";
 import rangedLogo from "../../../../../assets/skillicons/Ranged.webp";
 import magicLogo from "../../../../../assets/skillicons/Magic.webp";
+
+import { initState } from "../../../../../utils/gearcalculator/emptyslots";
 
 const AddGear = ({
   bonusState,
@@ -16,12 +19,14 @@ const AddGear = ({
   savedSlots,
   setSavedSlots,
 }) => {
+  const forceUpdate = useForceUpdate();
   const inputRef = useRef(null);
   const [gearName, setGearName] = useState("");
   const [selected, setSelected] = useState(null);
   const [inputError, setInputError] = useState("");
   const [slotsError, setSlotsError] = useState("");
   const [gearType, setGearType] = useState("All");
+  const [copiedSlots, setCopiedSlots] = useState(savedSlots);
 
   const headImg = bonusState["Headpiece"].src;
   const capeImg = bonusState["Cape"].src;
@@ -74,7 +79,30 @@ const AddGear = ({
         setSelected(null);
         setGearName("");
         console.log("Gear build saved successfully!");
-        return { success: true };
+        try {
+          const { data, error } = await supabase
+            .from("saved_builds")
+            .select()
+            .eq("Username", userID)
+            .limit(10);
+
+          if (error) {
+            console.error("Error fetching rows for user ID:", error);
+            return { success: false, error };
+          } else {
+            for (const item of data) {
+              initState[`slot${item["Index"]}`] = item;
+            }
+            setSavedSlots(initState);
+            setCopiedSlots(initState);
+            forceUpdate();
+
+            return { success: true, data };
+          }
+        } catch (error) {
+          console.error("Error fetching rows for user ID:", error.message);
+          return { success: false, error: error.message };
+        }
       }
     } catch (error) {
       console.error("Error saving gear build:", error.message);
@@ -103,7 +131,9 @@ const AddGear = ({
     }
   };
   useEffect(() => {
-    console.log(savedSlots);
+    console.log(copiedSlots);
+    setCopiedSlots(savedSlots);
+    console.log(copiedSlots);
   }, [savedSlots]);
 
   const gearTypeCheck = (geartype) => {
@@ -413,15 +443,15 @@ const AddGear = ({
           <div
             className={`${stl.gearSlot} ${
               selected === 1 ? stl.actSlot : ""
-            } ${gearTypeCheck(savedSlots["slot1"].Geartype)}`}
+            } ${gearTypeCheck(copiedSlots["slot1"].Geartype)}`}
             onClick={() => selectedGearslot(1)}
           >
-            {savedSlots["slot1"] && (
+            {copiedSlots["slot1"] && (
               <span className={stl.setupName}>
-                {savedSlots["slot1"].Setupname}
+                {copiedSlots["slot1"].Setupname}
               </span>
             )}
-            {Object.keys(savedSlots["slot1"]).length === 0 && (
+            {Object.keys(copiedSlots["slot1"]).length === 0 && (
               <span className={stl.emptyGearSlot}>
                 Empty <CiSquarePlus className={stl.plus} />
               </span>
@@ -431,15 +461,15 @@ const AddGear = ({
           <div
             className={`${stl.gearSlot} ${
               selected === 2 ? stl.actSlot : ""
-            } ${gearTypeCheck(savedSlots["slot2"].Geartype)}`}
+            } ${gearTypeCheck(copiedSlots["slot2"].Geartype)}`}
             onClick={() => selectedGearslot(2)}
           >
-            {savedSlots["slot2"] && (
+            {copiedSlots["slot2"] && (
               <span className={stl.setupName}>
-                {savedSlots["slot2"].Setupname}
+                {copiedSlots["slot2"].Setupname}
               </span>
             )}
-            {Object.keys(savedSlots["slot2"]).length === 0 && (
+            {Object.keys(copiedSlots["slot2"]).length === 0 && (
               <span className={stl.emptyGearSlot}>
                 Empty <CiSquarePlus className={stl.plus} />
               </span>
@@ -449,15 +479,15 @@ const AddGear = ({
           <div
             className={`${stl.gearSlot} ${
               selected === 3 ? stl.actSlot : ""
-            } ${gearTypeCheck(savedSlots["slot3"].Geartype)}`}
+            } ${gearTypeCheck(copiedSlots["slot3"].Geartype)}`}
             onClick={() => selectedGearslot(3)}
           >
-            {savedSlots["slot3"] && (
+            {copiedSlots["slot3"] && (
               <span className={stl.setupName}>
-                {savedSlots["slot3"].Setupname}
+                {copiedSlots["slot3"].Setupname}
               </span>
             )}
-            {Object.keys(savedSlots["slot3"]).length === 0 && (
+            {Object.keys(copiedSlots["slot3"]).length === 0 && (
               <span className={stl.emptyGearSlot}>
                 Empty <CiSquarePlus className={stl.plus} />
               </span>
@@ -467,15 +497,15 @@ const AddGear = ({
           <div
             className={`${stl.gearSlot} ${
               selected === 4 ? stl.actSlot : ""
-            } ${gearTypeCheck(savedSlots["slot4"].Geartype)}`}
+            } ${gearTypeCheck(copiedSlots["slot4"].Geartype)}`}
             onClick={() => selectedGearslot(4)}
           >
-            {savedSlots["slot4"] && (
+            {copiedSlots["slot4"] && (
               <span className={stl.setupName}>
-                {savedSlots["slot4"].Setupname}
+                {copiedSlots["slot4"].Setupname}
               </span>
             )}
-            {Object.keys(savedSlots["slot4"]).length === 0 && (
+            {Object.keys(copiedSlots["slot4"]).length === 0 && (
               <span className={stl.emptyGearSlot}>
                 Empty <CiSquarePlus className={stl.plus} />
               </span>
@@ -485,15 +515,15 @@ const AddGear = ({
           <div
             className={`${stl.gearSlot} ${
               selected === 5 ? stl.actSlot : ""
-            }  ${gearTypeCheck(savedSlots["slot5"].Geartype)}`}
+            }  ${gearTypeCheck(copiedSlots["slot5"].Geartype)}`}
             onClick={() => selectedGearslot(5)}
           >
-            {savedSlots["slot5"] && (
+            {copiedSlots["slot5"] && (
               <span className={stl.setupName}>
-                {savedSlots["slot5"].Setupname}
+                {copiedSlots["slot5"].Setupname}
               </span>
             )}
-            {Object.keys(savedSlots["slot5"]).length === 0 && (
+            {Object.keys(copiedSlots["slot5"]).length === 0 && (
               <span className={stl.emptyGearSlot}>
                 Empty <CiSquarePlus className={stl.plus} />
               </span>
@@ -503,15 +533,15 @@ const AddGear = ({
           <div
             className={`${stl.gearSlot} ${
               selected === 6 ? stl.actSlot : ""
-            } ${gearTypeCheck(savedSlots["slot6"].Geartype)}`}
+            } ${gearTypeCheck(copiedSlots["slot6"].Geartype)}`}
             onClick={() => selectedGearslot(6)}
           >
-            {savedSlots["slot6"] && (
+            {copiedSlots["slot6"] && (
               <span className={stl.setupName}>
-                {savedSlots["slot6"].Setupname}
+                {copiedSlots["slot6"].Setupname}
               </span>
             )}
-            {Object.keys(savedSlots["slot6"]).length === 0 && (
+            {Object.keys(copiedSlots["slot6"]).length === 0 && (
               <span className={stl.emptyGearSlot}>
                 Empty <CiSquarePlus className={stl.plus} />
               </span>
@@ -521,15 +551,15 @@ const AddGear = ({
           <div
             className={`${stl.gearSlot} ${
               selected === 7 ? stl.actSlot : ""
-            } ${gearTypeCheck(savedSlots["slot7"].Geartype)}`}
+            } ${gearTypeCheck(copiedSlots["slot7"].Geartype)}`}
             onClick={() => selectedGearslot(7)}
           >
-            {savedSlots["slot7"] && (
+            {copiedSlots["slot7"] && (
               <span className={stl.setupName}>
-                {savedSlots["slot7"].Setupname}
+                {copiedSlots["slot7"].Setupname}
               </span>
             )}
-            {Object.keys(savedSlots["slot7"]).length === 0 && (
+            {Object.keys(copiedSlots["slot7"]).length === 0 && (
               <span className={stl.emptyGearSlot}>
                 Empty <CiSquarePlus className={stl.plus} />
               </span>
@@ -539,15 +569,15 @@ const AddGear = ({
           <div
             className={`${stl.gearSlot} ${
               selected === 8 ? stl.actSlot : ""
-            } ${gearTypeCheck(savedSlots["slot8"].Geartype)}`}
+            } ${gearTypeCheck(copiedSlots["slot8"].Geartype)}`}
             onClick={() => selectedGearslot(8)}
           >
-            {savedSlots["slot8"] && (
+            {copiedSlots["slot8"] && (
               <span className={stl.setupName}>
-                {savedSlots["slot8"].Setupname}
+                {copiedSlots["slot8"].Setupname}
               </span>
             )}
-            {Object.keys(savedSlots["slot8"]).length === 0 && (
+            {Object.keys(copiedSlots["slot8"]).length === 0 && (
               <span className={stl.emptyGearSlot}>
                 Empty <CiSquarePlus className={stl.plus} />
               </span>
@@ -557,15 +587,15 @@ const AddGear = ({
           <div
             className={`${stl.gearSlot} ${
               selected === 9 ? stl.actSlot : ""
-            } ${gearTypeCheck(savedSlots["slot9"].Geartype)}`}
+            } ${gearTypeCheck(copiedSlots["slot9"].Geartype)}`}
             onClick={() => selectedGearslot(9)}
           >
-            {savedSlots["slot9"] && (
+            {copiedSlots["slot9"] && (
               <span className={stl.setupName}>
-                {savedSlots["slot9"].Setupname}
+                {copiedSlots["slot9"].Setupname}
               </span>
             )}
-            {Object.keys(savedSlots["slot9"]).length === 0 && (
+            {Object.keys(copiedSlots["slot9"]).length === 0 && (
               <span className={stl.emptyGearSlot}>
                 Empty <CiSquarePlus className={stl.plus} />
               </span>
@@ -575,15 +605,15 @@ const AddGear = ({
           <div
             className={`${stl.gearSlot} ${
               selected === 10 ? stl.actSlot : ""
-            } ${gearTypeCheck(savedSlots["slot10"].Geartype)}`}
+            } ${gearTypeCheck(copiedSlots["slot10"].Geartype)}`}
             onClick={() => selectedGearslot(10)}
           >
-            {savedSlots["slot10"] && (
+            {copiedSlots["slot10"] && (
               <span className={stl.setupName}>
-                {savedSlots["slot10"].Setupname}
+                {copiedSlots["slot10"].Setupname}
               </span>
             )}
-            {Object.keys(savedSlots["slot10"]).length === 0 && (
+            {Object.keys(copiedSlots["slot10"]).length === 0 && (
               <span className={stl.emptyGearSlot}>
                 Empty <CiSquarePlus className={stl.plus} />
               </span>
