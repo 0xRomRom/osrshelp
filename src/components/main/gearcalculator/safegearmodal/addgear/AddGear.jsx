@@ -63,6 +63,7 @@ const AddGear = ({
           Gearslot: gearDetailsString,
           Setupname: gearName,
           Index: selected,
+          Geartype: gearType,
         },
       ]);
 

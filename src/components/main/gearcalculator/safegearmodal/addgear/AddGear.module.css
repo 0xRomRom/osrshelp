@@ -154,15 +154,15 @@
   position: relative;
   width: 90%;
   left: 5%;
-  height: 3rem;
-  background-color: transparent;
+  height: 52px;
+  background-color: rgb(17, 23, 27);
   outline: none;
-  border: 1px solid gray;
+  border: 1px solid transparent;
   padding-left: 1rem;
   font-size: 20px;
   border-radius: 0.3rem;
   color: rgb(219, 219, 219);
-  margin-top: 0.8rem;
+  margin-top: 0.6rem;
 }
 
 .gearInput:focus {
@@ -241,7 +241,7 @@
   text-align: center;
   padding-top: 1rem;
   position: absolute;
-  bottom: 5rem;
+  bottom: 5.5rem;
   padding-left: 4.5rem;
 }
 
@@ -260,7 +260,7 @@
 }
 
 .setupTypeBox {
-  height: 55px;
+  height: 52px;
   width: 90%;
   left: 5%;
   position: relative;
@@ -271,7 +271,7 @@
   align-items: center;
   gap: 1rem;
   background-color: rgb(17, 23, 27);
-  margin-top: 0.8rem;
+  margin-top: 1rem;
 }
 
 .setupCta {
