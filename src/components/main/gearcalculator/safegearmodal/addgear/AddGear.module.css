@@ -56,7 +56,7 @@
   flex-direction: column;
   justify-content: flex-start;
   user-select: none;
-  gap: 4px;
+  gap: 5px;
 }
 
 .innerGrid {
