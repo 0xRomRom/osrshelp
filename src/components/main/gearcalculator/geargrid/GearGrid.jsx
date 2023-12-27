@@ -12,6 +12,7 @@ import boots from "../../../../assets/gearslots/Boots.png";
 import ring from "../../../../assets/gearslots/Ring.png";
 import blank from "../../../../assets/gearslots/Blank.png";
 import { useEffect, useRef, useState } from "react";
+import { ImBlocked } from "react-icons/im";
 import { IoIosClose } from "react-icons/io";
 
 import WornList from "./wornlist/WornList";
@@ -28,8 +29,12 @@ const GearGrid = ({
   const [slotHovered, setSlotHovered] = useState(null);
   const timeoutRef = useRef(null);
   const firstVisit = localStorage.getItem("Visited");
+  const [twoHanderEquipped, setTwoHanderEquipped] = useState(false);
 
   const handleSlotChange = (slot) => {
+    if (slot === "") {
+      return;
+    }
     if (slot === activeSlot) {
       setActiveSlot(null);
       return;
@@ -88,6 +93,18 @@ const GearGrid = ({
   const glovesImg = bonusState["Gloves"].src;
   const bootsImg = bonusState["Boots"].src;
   const ringImg = bonusState["Ring"].src;
+
+  const twoHander = bonusState["Weapon"].twoHanded;
+
+  useEffect(() => {
+    console.log(bonusState);
+    console.log(twoHander);
+    if (twoHander) {
+      setTwoHanderEquipped(true);
+      return;
+    }
+    setTwoHanderEquipped(false);
+  }, [bonusState]);
 
   return (
     <div className={stl.gearGrid}>
@@ -256,31 +273,48 @@ const GearGrid = ({
               alt="Body slot"
             />
           </div>
+
           <div
             className={`${stl.slotWrap} ${
               activeSlot === "Shield" ? stl.selected : ""
             }`}
-            onClick={() => handleSlotChange("Shield")}
+            onClick={() => handleSlotChange(twoHanderEquipped ? "" : "Shield")}
             onMouseDown={() => handleMouseDown("Shield")}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
             onMouseOver={() => hoverStyling("Shield")}
           >
-            {shieldImg && (
-              <>
+            {twoHanderEquipped && (
+              <div className={stl.slotWrap}>
+                <ImBlocked className={stl.blocked} />
                 <img src={blank} alt="BlankCover" className={stl.blankCover} />
+              </div>
+            )}
+            {!twoHanderEquipped && (
+              <>
+                {shieldImg && (
+                  <>
+                    <img
+                      src={blank}
+                      alt="BlankCover"
+                      className={stl.blankCover}
+                    />
+                    <img
+                      src={shieldImg}
+                      alt="Shield Piece"
+                      className={stl.overlayItem}
+                    />
+                  </>
+                )}
                 <img
-                  src={shieldImg}
-                  alt="Shield Piece"
-                  className={stl.overlayItem}
+                  src={shield}
+                  className={`${stl.headSlot} ${
+                    shieldImg ? stl.lowOpacity : ""
+                  }`}
+                  alt="Shield slot"
                 />
               </>
             )}
-            <img
-              src={shield}
-              className={`${stl.headSlot} ${shieldImg ? stl.lowOpacity : ""}`}
-              alt="Shield slot"
-            />
           </div>
         </div>
         <div className={`${stl.row} ${stl.rowD}`}>
