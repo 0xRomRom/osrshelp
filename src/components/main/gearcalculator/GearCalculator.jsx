@@ -160,7 +160,11 @@ const GearCalculator = (props) => {
               </div>
             </div>
           </div>
-          <SavedBuilds savedSlots={savedSlots} />
+          <SavedBuilds
+            savedSlots={savedSlots}
+            setBonusState={setBonusState}
+            setAddingGear={setAddingGear}
+          />
         </div>
         <PreBuilds
           handlePrebuildSetup={handlePrebuildSetup}

@@ -5,7 +5,7 @@ import attLogo from "../../../../assets/skillicons/Attack.webp";
 import rangedLogo from "../../../../assets/skillicons/Ranged.webp";
 import magicLogo from "../../../../assets/skillicons/Magic.webp";
 
-const SavedBuilds = ({ savedSlots }) => {
+const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
   const gearTypeCheck = (geartype) => {
     switch (geartype) {
       case "All":
@@ -32,11 +32,21 @@ const SavedBuilds = ({ savedSlots }) => {
   const slot9 = savedSlots["slot9"] ? savedSlots["slot9"] : "";
   const slot10 = savedSlots["slot10"] ? savedSlots["slot10"] : "";
 
+  const handleGearDisplay = (slot) => {
+    if (slot.Gearslot === undefined) {
+      setAddingGear(true);
+      return;
+    }
+    const savedState = JSON.parse(slot.Gearslot);
+    setBonusState(savedState);
+  };
+
   return (
     <div className={stl.savedBuilds}>
       <h2 className={stl.savedHero}>Saved builds</h2>
       <div className={stl.buildsList}>
         <div
+          onClick={() => handleGearDisplay(slot1)}
           className={`${stl.buildSlot} ${
             slot1 ? gearTypeCheck(slot1.Geartype) : ""
           }`}
@@ -93,6 +103,7 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div
+          onClick={() => handleGearDisplay(slot2)}
           className={`${stl.buildSlot} ${
             slot2 ? gearTypeCheck(slot2.Geartype) : ""
           }`}
@@ -149,6 +160,7 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div
+          onClick={() => handleGearDisplay(slot3)}
           className={`${stl.buildSlot} ${
             slot3 ? gearTypeCheck(slot3.Geartype) : ""
           }`}
@@ -205,6 +217,7 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div
+          onClick={() => handleGearDisplay(slot4)}
           className={`${stl.buildSlot} ${
             slot4 ? gearTypeCheck(slot4.Geartype) : ""
           }`}
@@ -261,6 +274,7 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div
+          onClick={() => handleGearDisplay(slot5)}
           className={`${stl.buildSlot} ${
             slot5 ? gearTypeCheck(slot5.Geartype) : ""
           }`}
@@ -317,6 +331,7 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div
+          onClick={() => handleGearDisplay(slot6)}
           className={`${stl.buildSlot} ${
             slot6 ? gearTypeCheck(slot6.Geartype) : ""
           }`}
@@ -373,6 +388,7 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div
+          onClick={() => handleGearDisplay(slot7)}
           className={`${stl.buildSlot} ${
             slot7 ? gearTypeCheck(slot7.Geartype) : ""
           }`}
@@ -429,6 +445,7 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div
+          onClick={() => handleGearDisplay(slot8)}
           className={`${stl.buildSlot} ${
             slot8 ? gearTypeCheck(slot8.Geartype) : ""
           }`}
@@ -485,6 +502,7 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div
+          onClick={() => handleGearDisplay(slot9)}
           className={`${stl.buildSlot} ${
             slot9 ? gearTypeCheck(slot9.Geartype) : ""
           }`}
@@ -541,6 +559,7 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div
+          onClick={() => handleGearDisplay(slot10)}
           className={`${stl.buildSlot} ${
             slot10 ? gearTypeCheck(slot10.Geartype) : ""
           }`}
