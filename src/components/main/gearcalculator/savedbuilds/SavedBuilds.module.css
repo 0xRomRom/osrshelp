@@ -90,3 +90,17 @@
 .slotMiniIcon {
   width: 15px;
 }
+
+.gearIcon {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  font-size: 24px;
+  color: rgb(164, 164, 164);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.gearIcon:hover {
+  color: rgb(229, 229, 229);
+}

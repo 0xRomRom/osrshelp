@@ -1,5 +1,6 @@
 import stl from "./SavedBuilds.module.css";
 import { CiSquarePlus } from "react-icons/ci";
+import { BsGearFill } from "react-icons/bs";
 
 import attLogo from "../../../../assets/skillicons/Attack.webp";
 import rangedLogo from "../../../../assets/skillicons/Ranged.webp";
@@ -44,6 +45,10 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
   return (
     <div className={stl.savedBuilds}>
       <h2 className={stl.savedHero}>Saved builds</h2>
+      <BsGearFill
+        className={stl.gearIcon}
+        onClick={() => handleGearDisplay("Open Modal")}
+      />
       <div className={stl.buildsList}>
         <div
           onClick={() => handleGearDisplay(slot1)}
