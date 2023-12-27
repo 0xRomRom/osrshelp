@@ -132,9 +132,6 @@ const AddGear = ({
       setInputError("");
     }
   };
-  useEffect(() => {
-    setCopiedSlots(savedSlots);
-  }, [savedSlots]);
 
   const gearTypeCheck = (geartype) => {
     switch (geartype) {
@@ -148,6 +145,58 @@ const AddGear = ({
         return stl.magicStyle;
       default:
         return "";
+    }
+  };
+
+  const deleteGearSlot = async () => {
+    const gearName = savedSlots[`slot${selected}`].Setupname;
+    console.log(gearName);
+    const { data, error } = await supabase
+      .from("saved_builds")
+      .delete()
+      .eq("Username", userID)
+      .eq("Setupname", gearName);
+    console.log(data);
+
+    if (error) {
+      // Handle the error
+      console.error("Error deleting data:", error.message);
+    } else {
+      // Check if any data was deleted
+      if (data && data.length > 0) {
+        console.log("Deleted successfully:", data);
+      } else {
+        console.log("No data matching the deletion criteria found.");
+      }
+    }
+
+    try {
+      const { data, error } = await supabase
+        .from("saved_builds")
+        .select()
+        .eq("Username", userID)
+        .limit(10);
+
+      if (error) {
+        console.error("Error fetching rows for user ID:", error);
+        return { success: false, error };
+      } else {
+        for (const item of data) {
+          initState[`slot${item["Index"]}`] = item;
+        }
+        const freshState = { ...copiedSlots, [`slot${selected}`]: {} };
+        // freshState[`slot${selected}`] = {};
+        console.log(freshState);
+        setSavedSlots(freshState);
+        setCopiedSlots(freshState);
+        setSelected(null);
+        forceUpdate();
+
+        return { success: true, data };
+      }
+    } catch (error) {
+      console.error("Error fetching rows for user ID:", error.message);
+      return { success: false, error: error.message };
     }
   };
 
@@ -442,7 +491,10 @@ const AddGear = ({
           {selected !== null &&
             copiedSlots[`slot${selected || 1}`]?.Geartype && (
               <div className={stl.trashWrap}>
-                <FaTrashCan className={stl.trashIcon} />
+                <FaTrashCan
+                  className={stl.trashIcon}
+                  onClick={deleteGearSlot}
+                />
               </div>
             )}
 
