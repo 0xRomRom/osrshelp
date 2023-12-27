@@ -33,6 +33,10 @@
   cursor: pointer;
   font-size: 1.25rem;
   background-color: rgb(17, 23, 27);
+  color: rgb(225, 225, 225);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .empty {
