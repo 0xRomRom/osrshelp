@@ -192,6 +192,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-radius: 0.3rem;
   cursor: pointer;
   padding: 0.5rem;
@@ -358,4 +359,14 @@
   color: rgb(176, 176, 176);
   font-size: 35px;
   transition: all 0.3s ease-in-out;
+}
+
+.slotIconBox {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 1.5rem;
+  /* background-color: red; */
+  display: flex;
+  padding: 5px;
 }

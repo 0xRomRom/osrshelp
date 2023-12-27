@@ -68,7 +68,7 @@ const GearCalculator = (props) => {
       };
       getStoredBuilds();
     }
-  }, [userID, savedSlots, premiumUser]);
+  }, [userID, premiumUser]);
 
   const captureScreenshot = () => {
     setGridActive(false);

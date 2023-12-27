@@ -3,7 +3,6 @@ import stl from "./AddGear.module.css";
 import { CiSquarePlus } from "react-icons/ci";
 import blank from "../../../../../assets/gearslots/Blank.png";
 import supabase from "../../../../../utils/supabase/supabase";
-import { useEffect } from "react";
 import useForceUpdate from "../../../../../utils/componentrerender";
 
 import attLogo from "../../../../../assets/skillicons/Attack.webp";
@@ -150,13 +149,11 @@ const AddGear = ({
 
   const deleteGearSlot = async () => {
     const gearName = savedSlots[`slot${selected}`].Setupname;
-    console.log(gearName);
     const { data, error } = await supabase
       .from("saved_builds")
       .delete()
       .eq("Username", userID)
       .eq("Setupname", gearName);
-    console.log(data);
 
     if (error) {
       // Handle the error
@@ -184,11 +181,20 @@ const AddGear = ({
         for (const item of data) {
           initState[`slot${item["Index"]}`] = item;
         }
-        const freshState = { ...copiedSlots, [`slot${selected}`]: {} };
+
         // freshState[`slot${selected}`] = {};
-        console.log(freshState);
-        setSavedSlots(freshState);
-        setCopiedSlots(freshState);
+        setSavedSlots((prevState) => {
+          return {
+            ...prevState,
+            [`slot${selected}`]: {},
+          };
+        });
+        setCopiedSlots((prevState) => {
+          return {
+            ...prevState,
+            [`slot${selected}`]: {},
+          };
+        });
         setSelected(null);
         forceUpdate();
 
@@ -504,6 +510,48 @@ const AddGear = ({
             } ${gearTypeCheck(copiedSlots["slot1"].Geartype)}`}
             onClick={() => selectedGearslot(1)}
           >
+            <div className={stl.slotIconBox}>
+              {copiedSlots["slot1"].Geartype === "All" && (
+                <>
+                  <img
+                    src={attLogo}
+                    alt="Gear style"
+                    className={stl.slotMiniIcon}
+                  />
+                  <img
+                    src={magicLogo}
+                    alt="Gear style"
+                    className={stl.slotMiniIcon}
+                  />
+                  <img
+                    src={rangedLogo}
+                    alt="Gear style"
+                    className={stl.slotMiniIcon}
+                  />
+                </>
+              )}
+              {copiedSlots["slot1"].Geartype === "Melee" && (
+                <img
+                  src={attLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              )}
+              {copiedSlots["slot1"].Geartype === "Magic" && (
+                <img
+                  src={magicLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              )}
+              {copiedSlots["slot1"].Geartype === "Ranged" && (
+                <img
+                  src={rangedLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              )}
+            </div>
             {copiedSlots["slot1"] && (
               <span className={stl.setupName}>
                 {copiedSlots["slot1"].Setupname}
