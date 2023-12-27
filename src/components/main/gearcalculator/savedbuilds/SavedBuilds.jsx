@@ -66,9 +66,9 @@ const SavedBuilds = ({ savedSlots }) => {
           )}
         </div>
 
-        {/* <div className={stl.buildSlot}>
-          {slot3}
-          {!slot3 && (
+        <div className={stl.buildSlot}>
+          {slot3 && slot3["Setupname"]}
+          {!slot3["Setupname"] && (
             <div className={stl.empty}>
               <span>Empty</span>
               <CiSquarePlus className={stl.plus} />
@@ -77,8 +77,8 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div className={stl.buildSlot}>
-          {slot4}
-          {!slot4 && (
+          {slot4 && slot4["Setupname"]}
+          {!slot4["Setupname"] && (
             <div className={stl.empty}>
               <span>Empty</span>
               <CiSquarePlus className={stl.plus} />
@@ -87,8 +87,8 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div className={stl.buildSlot}>
-          {slot5}
-          {!slot5 && (
+          {slot5 && slot5["Setupname"]}
+          {!slot5["Setupname"] && (
             <div className={stl.empty}>
               <span>Empty</span>
               <CiSquarePlus className={stl.plus} />
@@ -97,8 +97,8 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div className={stl.buildSlot}>
-          {slot6}
-          {!slot6 && (
+          {slot6 && slot6["Setupname"]}
+          {!slot6["Setupname"] && (
             <div className={stl.empty}>
               <span>Empty</span>
               <CiSquarePlus className={stl.plus} />
@@ -107,8 +107,8 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div className={stl.buildSlot}>
-          {slot7}
-          {!slot7 && (
+          {slot7 && slot7["Setupname"]}
+          {!slot7["Setupname"] && (
             <div className={stl.empty}>
               <span>Empty</span>
               <CiSquarePlus className={stl.plus} />
@@ -117,8 +117,8 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div className={stl.buildSlot}>
-          {slot8}
-          {!slot8 && (
+          {slot8 && slot8["Setupname"]}
+          {!slot8["Setupname"] && (
             <div className={stl.empty}>
               <span>Empty</span>
               <CiSquarePlus className={stl.plus} />
@@ -127,8 +127,8 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div className={stl.buildSlot}>
-          {slot9}
-          {!slot9 && (
+          {slot9 && slot9["Setupname"]}
+          {!slot9["Setupname"] && (
             <div className={stl.empty}>
               <span>Empty</span>
               <CiSquarePlus className={stl.plus} />
@@ -137,14 +137,14 @@ const SavedBuilds = ({ savedSlots }) => {
         </div>
 
         <div className={stl.buildSlot}>
-          {slot10}
-          {!slot10 && (
+          {slot10 && slot10["Setupname"]}
+          {!slot10["Setupname"] && (
             <div className={stl.empty}>
               <span>Empty</span>
               <CiSquarePlus className={stl.plus} />
             </div>
           )}
-        </div> */}
+        </div>
       </div>
     </div>
   );
