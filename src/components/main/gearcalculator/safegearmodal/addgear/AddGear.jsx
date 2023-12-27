@@ -513,7 +513,7 @@ const AddGear = ({
           >
             <div className={stl.slotIconBox}>
               {copiedSlots["slot1"].Geartype === "All" && (
-                <>
+                <div className={stl.slotIconBox}>
                   <img
                     src={attLogo}
                     alt="Gear style"
@@ -529,7 +529,7 @@ const AddGear = ({
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
-                </>
+                </div>
               )}
               {copiedSlots["slot1"].Geartype === "Melee" && (
                 <img
@@ -571,6 +571,47 @@ const AddGear = ({
             } ${gearTypeCheck(copiedSlots["slot2"].Geartype)}`}
             onClick={() => selectedGearslot(2)}
           >
+            {copiedSlots["slot2"].Geartype === "All" && (
+              <div className={stl.slotIconBox}>
+                <img
+                  src={attLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={magicLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={rangedLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              </div>
+            )}
+            {copiedSlots["slot2"].Geartype === "Melee" && (
+              <img
+                src={attLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot2"].Geartype === "Magic" && (
+              <img
+                src={magicLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot2"].Geartype === "Ranged" && (
+              <img
+                src={rangedLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+
             {copiedSlots["slot2"] && (
               <span className={stl.setupName}>
                 {copiedSlots["slot2"].Setupname}
@@ -589,6 +630,47 @@ const AddGear = ({
             } ${gearTypeCheck(copiedSlots["slot3"].Geartype)}`}
             onClick={() => selectedGearslot(3)}
           >
+            {copiedSlots["slot3"].Geartype === "All" && (
+              <div className={stl.slotIconBox}>
+                <img
+                  src={attLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={magicLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={rangedLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              </div>
+            )}
+            {copiedSlots["slot3"].Geartype === "Melee" && (
+              <img
+                src={attLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot3"].Geartype === "Magic" && (
+              <img
+                src={magicLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot3"].Geartype === "Ranged" && (
+              <img
+                src={rangedLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+
             {copiedSlots["slot3"] && (
               <span className={stl.setupName}>
                 {copiedSlots["slot3"].Setupname}
@@ -607,6 +689,47 @@ const AddGear = ({
             } ${gearTypeCheck(copiedSlots["slot4"].Geartype)}`}
             onClick={() => selectedGearslot(4)}
           >
+            {copiedSlots["slot4"].Geartype === "All" && (
+              <div className={stl.slotIconBox}>
+                <img
+                  src={attLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={magicLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={rangedLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              </div>
+            )}
+            {copiedSlots["slot4"].Geartype === "Melee" && (
+              <img
+                src={attLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot4"].Geartype === "Magic" && (
+              <img
+                src={magicLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot4"].Geartype === "Ranged" && (
+              <img
+                src={rangedLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+
             {copiedSlots["slot4"] && (
               <span className={stl.setupName}>
                 {copiedSlots["slot4"].Setupname}
@@ -625,6 +748,47 @@ const AddGear = ({
             }  ${gearTypeCheck(copiedSlots["slot5"].Geartype)}`}
             onClick={() => selectedGearslot(5)}
           >
+            {copiedSlots["slot5"].Geartype === "All" && (
+              <div className={stl.slotIconBox}>
+                <img
+                  src={attLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={magicLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={rangedLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              </div>
+            )}
+            {copiedSlots["slot5"].Geartype === "Melee" && (
+              <img
+                src={attLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot5"].Geartype === "Magic" && (
+              <img
+                src={magicLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot5"].Geartype === "Ranged" && (
+              <img
+                src={rangedLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+
             {copiedSlots["slot5"] && (
               <span className={stl.setupName}>
                 {copiedSlots["slot5"].Setupname}
@@ -643,6 +807,47 @@ const AddGear = ({
             } ${gearTypeCheck(copiedSlots["slot6"].Geartype)}`}
             onClick={() => selectedGearslot(6)}
           >
+            {copiedSlots["slot6"].Geartype === "All" && (
+              <div className={stl.slotIconBox}>
+                <img
+                  src={attLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={magicLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={rangedLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              </div>
+            )}
+            {copiedSlots["slot6"].Geartype === "Melee" && (
+              <img
+                src={attLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot6"].Geartype === "Magic" && (
+              <img
+                src={magicLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot6"].Geartype === "Ranged" && (
+              <img
+                src={rangedLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+
             {copiedSlots["slot6"] && (
               <span className={stl.setupName}>
                 {copiedSlots["slot6"].Setupname}
@@ -661,6 +866,47 @@ const AddGear = ({
             } ${gearTypeCheck(copiedSlots["slot7"].Geartype)}`}
             onClick={() => selectedGearslot(7)}
           >
+            {copiedSlots["slot7"].Geartype === "All" && (
+              <div className={stl.slotIconBox}>
+                <img
+                  src={attLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={magicLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={rangedLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              </div>
+            )}
+            {copiedSlots["slot7"].Geartype === "Melee" && (
+              <img
+                src={attLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot7"].Geartype === "Magic" && (
+              <img
+                src={magicLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot7"].Geartype === "Ranged" && (
+              <img
+                src={rangedLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+
             {copiedSlots["slot7"] && (
               <span className={stl.setupName}>
                 {copiedSlots["slot7"].Setupname}
@@ -679,6 +925,47 @@ const AddGear = ({
             } ${gearTypeCheck(copiedSlots["slot8"].Geartype)}`}
             onClick={() => selectedGearslot(8)}
           >
+            {copiedSlots["slot8"].Geartype === "All" && (
+              <div className={stl.slotIconBox}>
+                <img
+                  src={attLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={magicLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={rangedLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              </div>
+            )}
+            {copiedSlots["slot8"].Geartype === "Melee" && (
+              <img
+                src={attLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot8"].Geartype === "Magic" && (
+              <img
+                src={magicLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot8"].Geartype === "Ranged" && (
+              <img
+                src={rangedLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+
             {copiedSlots["slot8"] && (
               <span className={stl.setupName}>
                 {copiedSlots["slot8"].Setupname}
@@ -697,6 +984,47 @@ const AddGear = ({
             } ${gearTypeCheck(copiedSlots["slot9"].Geartype)}`}
             onClick={() => selectedGearslot(9)}
           >
+            {copiedSlots["slot9"].Geartype === "All" && (
+              <div className={stl.slotIconBox}>
+                <img
+                  src={attLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={magicLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={rangedLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              </div>
+            )}
+            {copiedSlots["slot9"].Geartype === "Melee" && (
+              <img
+                src={attLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot9"].Geartype === "Magic" && (
+              <img
+                src={magicLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot9"].Geartype === "Ranged" && (
+              <img
+                src={rangedLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+
             {copiedSlots["slot9"] && (
               <span className={stl.setupName}>
                 {copiedSlots["slot9"].Setupname}
@@ -715,6 +1043,47 @@ const AddGear = ({
             } ${gearTypeCheck(copiedSlots["slot10"].Geartype)}`}
             onClick={() => selectedGearslot(10)}
           >
+            {copiedSlots["slot10"].Geartype === "All" && (
+              <div className={stl.slotIconBox}>
+                <img
+                  src={attLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={magicLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+                <img
+                  src={rangedLogo}
+                  alt="Gear style"
+                  className={stl.slotMiniIcon}
+                />
+              </div>
+            )}
+            {copiedSlots["slot10"].Geartype === "Melee" && (
+              <img
+                src={attLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot10"].Geartype === "Magic" && (
+              <img
+                src={magicLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+            {copiedSlots["slot10"].Geartype === "Ranged" && (
+              <img
+                src={rangedLogo}
+                alt="Gear style"
+                className={stl.slotMiniIcon}
+              />
+            )}
+
             {copiedSlots["slot10"] && (
               <span className={stl.setupName}>
                 {copiedSlots["slot10"].Setupname}
