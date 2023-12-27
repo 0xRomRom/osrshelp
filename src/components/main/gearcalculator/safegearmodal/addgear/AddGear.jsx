@@ -47,11 +47,11 @@ const AddGear = ({
       inputRef.current.focus();
       return;
     }
-    if (gearName.length < 7) {
+    if (gearName.length < 4) {
       setInputError("Name too short");
       return;
     }
-    if (gearName.length > 22) {
+    if (gearName.length > 15) {
       setInputError("Name too long");
       return;
     }
@@ -91,11 +91,12 @@ const AddGear = ({
             console.error("Error fetching rows for user ID:", error);
             return { success: false, error };
           } else {
+            const cached = { ...savedSlots };
             for (const item of data) {
-              initState[`slot${item["Index"]}`] = item;
+              cached[`slot${item["Index"]}`] = item;
             }
-            setSavedSlots(initState);
-            setCopiedSlots(initState);
+            setSavedSlots(cached);
+            setCopiedSlots(cached);
             forceUpdate();
 
             return { success: true, data };
