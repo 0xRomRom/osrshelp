@@ -244,9 +244,8 @@
 .inputError {
   color: red;
   text-align: center;
-  padding-top: 1rem;
   position: absolute;
-  bottom: 5.5rem;
+  bottom: 5.2rem;
   padding-left: 4.5rem;
 }
 

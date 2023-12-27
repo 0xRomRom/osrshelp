@@ -21,6 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid transparent;
 }
 
 .btnBox button:hover .ctaIcon {
@@ -49,4 +50,22 @@
   flex-direction: column;
   text-align: center;
   gap: 0.3rem;
+}
+
+.saveBtn {
+  border: 2px solid red;
+  box-shadow: 0px 0px 5px red;
+  animation: flasher 1s linear infinite;
+}
+
+@keyframes flasher {
+  0% {
+    box-shadow: 0px 0px 5px red;
+  }
+  50% {
+    box-shadow: 0px 0px 10px red;
+  }
+  100% {
+    box-shadow: 0px 0px 5px red;
+  }
 }

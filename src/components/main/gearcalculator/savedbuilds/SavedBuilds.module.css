@@ -42,6 +42,8 @@
 }
 
 .empty {
+  position: relative;
+  top: -5px;
   height: 100%;
   display: flex;
   color: gray;

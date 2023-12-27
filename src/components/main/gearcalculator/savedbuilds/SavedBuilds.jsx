@@ -1,17 +1,11 @@
 import stl from "./SavedBuilds.module.css";
 import { CiSquarePlus } from "react-icons/ci";
-import { useEffect } from "react";
 
 import attLogo from "../../../../assets/skillicons/Attack.webp";
 import rangedLogo from "../../../../assets/skillicons/Ranged.webp";
 import magicLogo from "../../../../assets/skillicons/Magic.webp";
 
 const SavedBuilds = ({ savedSlots }) => {
-  useEffect(() => {
-    console.log(savedSlots);
-    // console.log(savedSlots["slot1"].Setupname);
-  }, [savedSlots]);
-
   const gearTypeCheck = (geartype) => {
     switch (geartype) {
       case "All":

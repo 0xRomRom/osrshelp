@@ -42,6 +42,13 @@ const AddGear = ({
   const ringImg = bonusState["Ring"].src;
 
   const handleSave = async () => {
+    if (
+      Object.values(bonusState).every((obj) => Object.keys(obj).length === 0)
+    ) {
+      setInputError("No gear to save");
+      return;
+    }
+
     if (gearName === "") {
       setInputError("Add setup name");
       inputRef.current.focus();

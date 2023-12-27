@@ -25,6 +25,7 @@ const Pagination = ({ mainState, subState, setSubState, navTo }) => {
         throw new Error(error);
       }
       setLoggedInUser(false);
+      window.location.reload();
     } catch (err) {
       console.error(err);
     }
