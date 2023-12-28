@@ -41,6 +41,10 @@ const GearCalculator = (props) => {
   });
 
   useEffect(() => {
+    console.log(bonusState);
+  }, [bonusState]);
+
+  useEffect(() => {
     if (premiumUser) {
       const getStoredBuilds = async () => {
         try {
@@ -141,6 +145,7 @@ const GearCalculator = (props) => {
                 />
                 <ConfigBar
                   activeSlot={activeSlot}
+                  bonusState={bonusState}
                   setBonusState={setBonusState}
                   gridActive={gridActive}
                   setGearFilter={setGearFilter}

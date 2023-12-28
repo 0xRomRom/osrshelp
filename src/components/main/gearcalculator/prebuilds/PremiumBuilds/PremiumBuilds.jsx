@@ -1,7 +1,7 @@
 import stl from "./PremiumBuilds.module.css";
 import PremiumBanner from "../PremiumBanner/PremiumBanner";
 import { useState } from "react";
-import PREMIUMBUILDS from "../../../../../utils/gearcalculator/prebuilds/premium/premiumBuilds";
+// import PREMIUMBUILDS from "../../../../../utils/gearcalculator/prebuilds/premium/premiumBuilds";
 import PVMBUILDS from "../../../../../utils/gearcalculator/prebuilds/premium/pvmBuilds";
 import PVPBUILDS from "../../../../../utils/gearcalculator/prebuilds/premium/pvpBuilds";
 

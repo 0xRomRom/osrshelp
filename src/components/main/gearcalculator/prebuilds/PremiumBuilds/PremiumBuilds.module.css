@@ -92,7 +92,8 @@
   background-color: rgb(22, 9, 9);
   cursor: pointer;
   transition: all 0.3s ease;
-  gap: 0.5rem;
+  /* gap: 0.5rem; */
+  text-align: center;
 }
 
 .gridTile:hover {
@@ -101,6 +102,8 @@
 
 .tileGear {
   transform: scale(1.25);
+  max-width: 40px;
+  max-height: 40px;
 }
 .tileGear2 {
   transform: scale(1.25);

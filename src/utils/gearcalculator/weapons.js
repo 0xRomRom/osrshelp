@@ -15577,7 +15577,7 @@ const WEAPONS = [
     ],
     src: "./gearcalculator/weapons/Ahrim's_staff.webp",
     slot: "Weapon",
-    twoHanded: false,
+    twoHanded: true,
   },
   {
     type: "Melee",

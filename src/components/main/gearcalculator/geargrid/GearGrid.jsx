@@ -99,10 +99,15 @@ const GearGrid = ({
   useEffect(() => {
     if (twoHander) {
       setTwoHanderEquipped(true);
+      setBonusState((prevState) => {
+        let { Shield, ...rest } = prevState; // Destructure Shield and rest of the properties
+        const shieldAdded = { ...rest, Shield: {} };
+        return shieldAdded; // Return a new object without the Shield property
+      });
       return;
     }
     setTwoHanderEquipped(false);
-  }, [bonusState]);
+  }, [twoHander, setBonusState]);
 
   return (
     <div className={stl.gearGrid}>
