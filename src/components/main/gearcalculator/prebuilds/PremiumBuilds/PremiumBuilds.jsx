@@ -62,67 +62,136 @@ const PremiumBuilds = ({ premiumUser, handlePrebuildSetup }) => {
         </button>
       </div>
       <div className={stl.premiumWrapper}>
-        <div className={stl.typeBlock}>
-          <span className={stl.typeTitle}>PVM</span>
-          {PVMBUILDS.map((build) => {
-            const { itemState } = build;
-            return (
-              <div
-                className={stl.gridTile}
-                key={build.src}
-                onClick={() => handlePrebuildSetup(itemState)}
-              >
-                <div className={stl.imgCenter}>
-                  <img
-                    src={build.src}
-                    alt={build.alt}
-                    className={stl.tileGear}
-                  />
-                  {build.src2 && (
+        {activeBtn === "All" && (
+          <>
+            <div className={stl.typeBlock}>
+              <span className={stl.typeTitle}>PVM</span>
+              {PVMBUILDS.map((build) => {
+                const { itemState } = build;
+                return (
+                  <div
+                    className={stl.gridTile}
+                    key={build.src}
+                    onClick={() => handlePrebuildSetup(itemState)}
+                  >
+                    <div className={stl.imgCenter}>
+                      <img
+                        src={build.src}
+                        alt={build.alt}
+                        className={stl.tileGear}
+                      />
+                      {build.src2 && (
+                        <img
+                          src={build.src2}
+                          alt={build.alt}
+                          className={stl.tileGear2}
+                        />
+                      )}
+                    </div>
+
+                    <span className={stl.gearName}>{build.name}</span>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className={stl.typeBlock}>
+              <span className={stl.typeTitle}>PVP</span>
+              {PVPBUILDS.map((build) => {
+                const { itemState } = build;
+                return (
+                  <div
+                    className={stl.gridTile}
+                    key={build.src}
+                    onClick={() => handlePrebuildSetup(itemState)}
+                  >
+                    <div className={stl.imgCenter}>
+                      <img
+                        src={build.src}
+                        alt={build.alt}
+                        className={stl.tileGear}
+                      />
+                      {build.src2 && (
+                        <img
+                          src={build.src2}
+                          alt={build.alt}
+                          className={stl.tileGear2}
+                        />
+                      )}
+                    </div>
+
+                    <span className={stl.gearName}>{build.name}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </>
+        )}
+        {activeBtn === "PVM" && (
+          <div className={stl.typeBlock}>
+            <span className={stl.typeTitle}>PVM</span>
+            {PVMBUILDS.map((build) => {
+              const { itemState } = build;
+              return (
+                <div
+                  className={stl.gridTile}
+                  key={build.src}
+                  onClick={() => handlePrebuildSetup(itemState)}
+                >
+                  <div className={stl.imgCenter}>
                     <img
-                      src={build.src2}
+                      src={build.src}
                       alt={build.alt}
-                      className={stl.tileGear2}
+                      className={stl.tileGear}
                     />
-                  )}
+                    {build.src2 && (
+                      <img
+                        src={build.src2}
+                        alt={build.alt}
+                        className={stl.tileGear2}
+                      />
+                    )}
+                  </div>
+
+                  <span className={stl.gearName}>{build.name}</span>
                 </div>
+              );
+            })}
+          </div>
+        )}
 
-                <span className={stl.gearName}>{build.name}</span>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className={stl.typeBlock}>
-          <span className={stl.typeTitle}>PVP</span>
-          {PVPBUILDS.map((build) => {
-            const { itemState } = build;
-            return (
-              <div
-                className={stl.gridTile}
-                key={build.src}
-                onClick={() => handlePrebuildSetup(itemState)}
-              >
-                <div className={stl.imgCenter}>
-                  <img
-                    src={build.src}
-                    alt={build.alt}
-                    className={stl.tileGear}
-                  />
-                  {build.src2 && (
+        {activeBtn === "PVP" && (
+          <div className={stl.typeBlock}>
+            <span className={stl.typeTitle}>PVP</span>
+            {PVPBUILDS.map((build) => {
+              const { itemState } = build;
+              return (
+                <div
+                  className={stl.gridTile}
+                  key={build.src}
+                  onClick={() => handlePrebuildSetup(itemState)}
+                >
+                  <div className={stl.imgCenter}>
                     <img
-                      src={build.src2}
+                      src={build.src}
                       alt={build.alt}
-                      className={stl.tileGear2}
+                      className={stl.tileGear}
                     />
-                  )}
-                </div>
+                    {build.src2 && (
+                      <img
+                        src={build.src2}
+                        alt={build.alt}
+                        className={stl.tileGear2}
+                      />
+                    )}
+                  </div>
 
-                <span className={stl.gearName}>{build.name}</span>
-              </div>
-            );
-          })}
-        </div>
+                  <span className={stl.gearName}>{build.name}</span>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );
