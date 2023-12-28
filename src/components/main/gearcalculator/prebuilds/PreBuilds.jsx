@@ -7,6 +7,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 import PremiumBanner from "./PremiumBanner/PremiumBanner";
+import PremiumBuilds from "./PremiumBuilds/PremiumBuilds";
 import { useContext } from "react";
 import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
@@ -81,10 +82,8 @@ const PreBuilds = ({ handlePrebuildSetup, savedSlots, setSavedSlots }) => {
             onClick={handleReverseList}
           />
         </div>
-        <div className={stl.premiumBox}>
-          <h3 className={stl.subHero}>Premium</h3>
-          {premiumUser && <PremiumBanner />}
-        </div>
+
+        <PremiumBuilds premiumUser={premiumUser} />
       </div>
     </div>
   );

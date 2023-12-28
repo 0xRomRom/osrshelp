@@ -39,6 +39,12 @@
   align-items: center;
   padding-top: 7px;
   position: relative;
+  border: 1px solid transparent;
+}
+
+.buildSlot:active {
+  border: 1px solid#0084ff;
+  box-shadow: 0px 0px 5px #0084ff;
 }
 
 .empty {
