@@ -97,8 +97,6 @@ const GearGrid = ({
   const twoHander = bonusState["Weapon"].twoHanded;
 
   useEffect(() => {
-    console.log(bonusState);
-    console.log(twoHander);
     if (twoHander) {
       setTwoHanderEquipped(true);
       return;
