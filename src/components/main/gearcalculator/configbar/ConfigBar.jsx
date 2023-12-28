@@ -218,14 +218,16 @@ const ConfigBar = ({
                       </span>
                     )}
                   </div>
-                  <div className={stl.imgWrap}>
-                    <img
-                      src={item.src}
-                      alt="Gear item"
-                      className={stl.gearIcon}
-                    />
+                  <div className={stl.itemWrap}>
+                    <div className={stl.imgWrap}>
+                      <img
+                        src={item.src}
+                        alt="Gear item"
+                        className={stl.gearIcon}
+                      />
+                    </div>
+                    <span>{item.name}</span>
                   </div>
-                  <span>{item.name}</span>
                 </li>
               );
             })}

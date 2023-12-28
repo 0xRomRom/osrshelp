@@ -86,6 +86,7 @@
 
 .selected {
   border: 2px solid #0084ff;
+  box-shadow: 0px 0px 8px #0084ff;
   border-radius: 0.7rem;
 }
 
