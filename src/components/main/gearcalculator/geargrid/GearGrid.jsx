@@ -100,9 +100,9 @@ const GearGrid = ({
     if (twoHander) {
       setTwoHanderEquipped(true);
       setBonusState((prevState) => {
-        let { Shield, ...rest } = prevState; // Destructure Shield and rest of the properties
+        const { Shield, ...rest } = prevState;
         const shieldAdded = { ...rest, Shield: {} };
-        return shieldAdded; // Return a new object without the Shield property
+        return shieldAdded;
       });
       return;
     }

@@ -24,7 +24,6 @@ import hitpointsIcon from "../../../../assets/skillicons/Hitpoints.webp";
 const ConfigBar = ({
   activeSlot,
   setBonusState,
-  bonusState,
   gridActive,
   setGearFilter,
   gearFilter,
@@ -62,9 +61,6 @@ const ConfigBar = ({
 
   // State to add styling to the selected equipment
   const addSelectedGear = (slot, name, item) => {
-    const twoHandedWeapon = bonusState["Weapon"].twoHanded;
-    console.log(twoHandedWeapon);
-
     setActiveNames((prevState) => {
       return {
         ...prevState,
@@ -72,23 +68,12 @@ const ConfigBar = ({
       };
     });
 
-    if (twoHandedWeapon) {
-      alert("Hit!");
-      setBonusState((prevState) => {
-        return {
-          ...prevState,
-          [slot]: item,
-        };
-      });
-      return;
-    } else {
-      setBonusState((prevState) => {
-        return {
-          ...prevState,
-          [slot]: item,
-        };
-      });
-    }
+    setBonusState((prevState) => {
+      return {
+        ...prevState,
+        [slot]: item,
+      };
+    });
   };
 
   const setActiveItemList = useCallback(() => {
