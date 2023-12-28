@@ -6,7 +6,6 @@ import { HiArrowsUpDown } from "react-icons/hi2";
 import { useState } from "react";
 import { useEffect } from "react";
 
-import PremiumBanner from "./PremiumBanner/PremiumBanner";
 import PremiumBuilds from "./PremiumBuilds/PremiumBuilds";
 import { useContext } from "react";
 import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
@@ -83,7 +82,10 @@ const PreBuilds = ({ handlePrebuildSetup, savedSlots, setSavedSlots }) => {
           />
         </div>
 
-        <PremiumBuilds premiumUser={premiumUser} />
+        <PremiumBuilds
+          premiumUser={premiumUser}
+          handlePrebuildSetup={handlePrebuildSetup}
+        />
       </div>
     </div>
   );
