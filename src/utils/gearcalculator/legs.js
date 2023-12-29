@@ -6329,10 +6329,10 @@ const LEGS = [
   {
     type: "Magic",
     name: "Elder chaos robe",
-    defLvl: 40,
+    defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
-    magicLvl: 0,
+    magicLvl: 40,
     strengthLvl: 0,
     attackLvl: 0,
     hitpointsLvl: 0,

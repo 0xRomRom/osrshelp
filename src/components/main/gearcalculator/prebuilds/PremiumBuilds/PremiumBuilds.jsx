@@ -71,7 +71,7 @@ const PremiumBuilds = ({ premiumUser, handlePrebuildSetup }) => {
                 return (
                   <div
                     className={stl.gridTile}
-                    key={build.src}
+                    key={build.src + Math.random().toString()}
                     onClick={() => handlePrebuildSetup(itemState)}
                   >
                     <div className={stl.imgCenter}>
@@ -102,7 +102,7 @@ const PremiumBuilds = ({ premiumUser, handlePrebuildSetup }) => {
                 return (
                   <div
                     className={stl.gridTile}
-                    key={build.src}
+                    key={build.src + Math.random().toString()}
                     onClick={() => handlePrebuildSetup(itemState)}
                   >
                     <div className={stl.imgCenter}>
@@ -135,7 +135,7 @@ const PremiumBuilds = ({ premiumUser, handlePrebuildSetup }) => {
               return (
                 <div
                   className={stl.gridTile}
-                  key={build.src}
+                  key={build.src + Math.random().toString()}
                   onClick={() => handlePrebuildSetup(itemState)}
                 >
                   <div className={stl.imgCenter}>
@@ -168,7 +168,7 @@ const PremiumBuilds = ({ premiumUser, handlePrebuildSetup }) => {
               return (
                 <div
                   className={stl.gridTile}
-                  key={build.src}
+                  key={build.src + Math.random().toString()}
                   onClick={() => handlePrebuildSetup(itemState)}
                 >
                   <div className={stl.imgCenter}>

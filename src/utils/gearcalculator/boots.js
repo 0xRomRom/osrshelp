@@ -1595,7 +1595,7 @@ const BOOTS = [
     name: "Ranger boots",
     defLvl: 0,
     rangedLvl: 0,
-    prayerLvl: 40,
+    prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
     attackLvl: 0,

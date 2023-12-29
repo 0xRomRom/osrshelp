@@ -373,7 +373,7 @@ const GLOVES = [
     type: "Ranged",
     name: "Black spiky vambraces",
     defLvl: 0,
-    rangedLvl: 0,
+    rangedLvl: 70,
     prayerLvl: 0,
     magicLvl: 0,
     strengthLvl: 0,
