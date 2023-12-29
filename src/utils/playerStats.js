@@ -127,4 +127,502 @@ const osrsXpTable = {
   99: 13034431,
 };
 
-export { playerStats, osrsXpTable };
+const arrayXpTable = [
+  {
+    level: 1,
+    expRequired: 83,
+    expDifference: 0,
+  },
+  {
+    level: 2,
+    expRequired: 91,
+    expDifference: 83,
+  },
+  {
+    level: 3,
+    expRequired: 102,
+    expDifference: 91,
+  },
+  {
+    level: 4,
+    expRequired: 112,
+    expDifference: 102,
+  },
+  {
+    level: 5,
+    expRequired: 124,
+    expDifference: 112,
+  },
+  {
+    level: 6,
+    expRequired: 138,
+    expDifference: 124,
+  },
+  {
+    level: 7,
+    expRequired: 151,
+    expDifference: 138,
+  },
+  {
+    level: 8,
+    expRequired: 168,
+    expDifference: 151,
+  },
+  {
+    level: 9,
+    expRequired: 185,
+    expDifference: 168,
+  },
+  {
+    level: 10,
+    expRequired: 204,
+    expDifference: 185,
+  },
+  {
+    level: 11,
+    expRequired: 226,
+    expDifference: 204,
+  },
+  {
+    level: 12,
+    expRequired: 249,
+    expDifference: 226,
+  },
+  {
+    level: 13,
+    expRequired: 274,
+    expDifference: 249,
+  },
+  {
+    level: 14,
+    expRequired: 304,
+    expDifference: 274,
+  },
+  {
+    level: 15,
+    expRequired: 335,
+    expDifference: 304,
+  },
+  {
+    level: 16,
+    expRequired: 369,
+    expDifference: 335,
+  },
+  {
+    level: 17,
+    expRequired: 408,
+    expDifference: 369,
+  },
+  {
+    level: 18,
+    expRequired: 450,
+    expDifference: 408,
+  },
+  {
+    level: 19,
+    expRequired: 497,
+    expDifference: 450,
+  },
+  {
+    level: 20,
+    expRequired: 548,
+    expDifference: 497,
+  },
+  {
+    level: 21,
+    expRequired: 606,
+    expDifference: 548,
+  },
+  {
+    level: 22,
+    expRequired: 667,
+    expDifference: 606,
+  },
+  {
+    level: 23,
+    expRequired: 737,
+    expDifference: 667,
+  },
+  {
+    level: 24,
+    expRequired: 814,
+    expDifference: 737,
+  },
+  {
+    level: 25,
+    expRequired: 898,
+    expDifference: 814,
+  },
+  {
+    level: 26,
+    expRequired: 990,
+    expDifference: 898,
+  },
+  {
+    level: 27,
+    expRequired: 1094,
+    expDifference: 990,
+  },
+  {
+    level: 28,
+    expRequired: 1207,
+    expDifference: 1094,
+  },
+  {
+    level: 29,
+    expRequired: 1332,
+    expDifference: 1207,
+  },
+  {
+    level: 30,
+    expRequired: 1470,
+    expDifference: 1332,
+  },
+  {
+    level: 31,
+    expRequired: 1623,
+    expDifference: 1470,
+  },
+  {
+    level: 32,
+    expRequired: 1791,
+    expDifference: 1623,
+  },
+  {
+    level: 33,
+    expRequired: 1977,
+    expDifference: 1791,
+  },
+  {
+    level: 34,
+    expRequired: 2182,
+    expDifference: 1977,
+  },
+  {
+    level: 35,
+    expRequired: 2409,
+    expDifference: 2182,
+  },
+  {
+    level: 36,
+    expRequired: 2658,
+    expDifference: 2409,
+  },
+  {
+    level: 37,
+    expRequired: 2935,
+    expDifference: 2658,
+  },
+  {
+    level: 38,
+    expRequired: 3240,
+    expDifference: 2935,
+  },
+  {
+    level: 39,
+    expRequired: 3576,
+    expDifference: 3240,
+  },
+  {
+    level: 40,
+    expRequired: 3947,
+    expDifference: 3576,
+  },
+  {
+    level: 41,
+    expRequired: 4358,
+    expDifference: 3947,
+  },
+  {
+    level: 42,
+    expRequired: 4810,
+    expDifference: 4358,
+  },
+  {
+    level: 43,
+    expRequired: 5310,
+    expDifference: 4810,
+  },
+  {
+    level: 44,
+    expRequired: 5863,
+    expDifference: 5310,
+  },
+  {
+    level: 45,
+    expRequired: 6471,
+    expDifference: 5863,
+  },
+  {
+    level: 46,
+    expRequired: 7144,
+    expDifference: 6471,
+  },
+  {
+    level: 47,
+    expRequired: 7887,
+    expDifference: 7144,
+  },
+  {
+    level: 48,
+    expRequired: 8707,
+    expDifference: 7887,
+  },
+  {
+    level: 49,
+    expRequired: 9612,
+    expDifference: 8707,
+  },
+  {
+    level: 50,
+    expRequired: 10612,
+    expDifference: 9612,
+  },
+  {
+    level: 51,
+    expRequired: 11715,
+    expDifference: 10612,
+  },
+  {
+    level: 52,
+    expRequired: 12934,
+    expDifference: 11715,
+  },
+  {
+    level: 53,
+    expRequired: 14278,
+    expDifference: 12934,
+  },
+  {
+    level: 54,
+    expRequired: 15764,
+    expDifference: 14278,
+  },
+  {
+    level: 55,
+    expRequired: 17404,
+    expDifference: 15764,
+  },
+  {
+    level: 56,
+    expRequired: 19214,
+    expDifference: 17404,
+  },
+  {
+    level: 57,
+    expRequired: 21212,
+    expDifference: 19214,
+  },
+  {
+    level: 58,
+    expRequired: 23420,
+    expDifference: 21212,
+  },
+  {
+    level: 59,
+    expRequired: 25856,
+    expDifference: 23420,
+  },
+  {
+    level: 60,
+    expRequired: 28546,
+    expDifference: 25856,
+  },
+  {
+    level: 61,
+    expRequired: 31516,
+    expDifference: 28546,
+  },
+  {
+    level: 62,
+    expRequired: 34795,
+    expDifference: 31516,
+  },
+  {
+    level: 63,
+    expRequired: 38416,
+    expDifference: 34795,
+  },
+  {
+    level: 64,
+    expRequired: 42413,
+    expDifference: 38416,
+  },
+  {
+    level: 65,
+    expRequired: 46826,
+    expDifference: 42413,
+  },
+  {
+    level: 66,
+    expRequired: 51699,
+    expDifference: 46826,
+  },
+  {
+    level: 67,
+    expRequired: 57079,
+    expDifference: 51699,
+  },
+  {
+    level: 68,
+    expRequired: 63019,
+    expDifference: 57079,
+  },
+  {
+    level: 69,
+    expRequired: 69576,
+    expDifference: 63019,
+  },
+  {
+    level: 70,
+    expRequired: 76818,
+    expDifference: 69576,
+  },
+  {
+    level: 71,
+    expRequired: 84812,
+    expDifference: 76818,
+  },
+  {
+    level: 72,
+    expRequired: 93638,
+    expDifference: 84812,
+  },
+  {
+    level: 73,
+    expRequired: 103383,
+    expDifference: 93638,
+  },
+  {
+    level: 74,
+    expRequired: 114143,
+    expDifference: 103383,
+  },
+  {
+    level: 75,
+    expRequired: 126022,
+    expDifference: 114143,
+  },
+  {
+    level: 76,
+    expRequired: 139138,
+    expDifference: 126022,
+  },
+  {
+    level: 77,
+    expRequired: 153619,
+    expDifference: 139138,
+  },
+  {
+    level: 78,
+    expRequired: 169608,
+    expDifference: 153619,
+  },
+  {
+    level: 79,
+    expRequired: 187260,
+    expDifference: 169608,
+  },
+  {
+    level: 80,
+    expRequired: 206750,
+    expDifference: 187260,
+  },
+  {
+    level: 81,
+    expRequired: 228269,
+    expDifference: 206750,
+  },
+  {
+    level: 82,
+    expRequired: 252027,
+    expDifference: 228269,
+  },
+  {
+    level: 83,
+    expRequired: 278259,
+    expDifference: 252027,
+  },
+  {
+    level: 84,
+    expRequired: 307221,
+    expDifference: 278259,
+  },
+  {
+    level: 85,
+    expRequired: 339198,
+    expDifference: 307221,
+  },
+  {
+    level: 86,
+    expRequired: 374502,
+    expDifference: 339198,
+  },
+  {
+    level: 87,
+    expRequired: 413482,
+    expDifference: 374502,
+  },
+  {
+    level: 88,
+    expRequired: 456519,
+    expDifference: 413482,
+  },
+  {
+    level: 89,
+    expRequired: 504037,
+    expDifference: 456519,
+  },
+  {
+    level: 90,
+    expRequired: 556499,
+    expDifference: 504037,
+  },
+  {
+    level: 91,
+    expRequired: 614422,
+    expDifference: 556499,
+  },
+  {
+    level: 92,
+    expRequired: 678376,
+    expDifference: 614422,
+  },
+  {
+    level: 93,
+    expRequired: 748985,
+    expDifference: 678376,
+  },
+  {
+    level: 94,
+    expRequired: 826944,
+    expDifference: 748985,
+  },
+  {
+    level: 95,
+    expRequired: 913019,
+    expDifference: 826944,
+  },
+  {
+    level: 96,
+    expRequired: 1008052,
+    expDifference: 913019,
+  },
+  {
+    level: 97,
+    expRequired: 1112977,
+    expDifference: 1008052,
+  },
+  {
+    level: 98,
+    expRequired: 1228825,
+    expDifference: 1112977,
+  },
+  {
+    level: 99,
+    expRequired: 13034431,
+    expDifference: 1228825,
+  },
+];
+
+export { playerStats, osrsXpTable, arrayXpTable };

@@ -25,7 +25,6 @@
 .levelsWrap {
   position: relative;
   width: 100%;
-  height: 30rem;
   border-radius: 0.4rem;
   width: 95%;
   left: 2.5%;
@@ -38,4 +37,43 @@
   text-align: center;
   font-weight: bold;
   margin-top: 2rem;
+}
+
+.xpGrid {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  border-radius: 0.4rem;
+  width: 95%;
+  left: 2.5%;
+  background-color: rgb(17, 23, 27);
+  margin-top: 2rem;
+  overflow-y: scroll;
+}
+
+.configRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.configRow span {
+  width: 33%;
+  text-align: center;
+  color: gray;
+}
+
+.flexGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+  flex-direction: row;
+}
+
+.flexGrid span {
+  width: 33%;
+  text-align: center;
+  color: gray;
 }
