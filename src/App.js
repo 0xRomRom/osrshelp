@@ -85,7 +85,22 @@ const App = () => {
                 }
               />
               <Route path="/moneymakers" element={<MoneyMakers />} />
-              <Route path="/xptable" element={<XPTable />} />
+              <Route
+                path="/xptable"
+                element={
+                  <XPTable
+                    setSkills={setSkills}
+                    skills={skills}
+                    setSkillsExp={setSkillsExp}
+                    skillsExp={skillsExp}
+                    setPlayerName={setPlayerName}
+                    playerName={playerName}
+                    mainState={mainState}
+                    setSubState={setSubState}
+                    subState={subState}
+                  />
+                }
+              />
             </Routes>
           </div>
         </div>

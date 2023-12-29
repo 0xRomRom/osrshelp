@@ -1,8 +1,8 @@
-import stl from "./NoPropsTargetLevel.module.css";
-import { osrsXpTable } from "../../../../../utils/playerStats";
+import stl from "./XPCalculator.module.css";
+import { osrsXpTable } from "../../../../utils/playerStats";
 import { useCallback, useEffect, useState } from "react";
 
-const NoPropsTargetLevel = () => {
+const XPCalculator = () => {
   const [remainingExp, setRemainingExp] = useState(0);
   const [selectedLvl, setSelectedLvl] = useState(1);
   const [targetLevel, setTargetLevel] = useState(2);
@@ -127,4 +127,4 @@ const NoPropsTargetLevel = () => {
   );
 };
 
-export default NoPropsTargetLevel;
+export default XPCalculator;
