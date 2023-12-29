@@ -1,6 +1,43 @@
 const HELMS = [
   {
     type: "Melee",
+    name: "Rogue mask",
+    defLvl: 0,
+    rangedLvl: 0,
+    prayerLvl: 0,
+    magicLvl: 0,
+    strengthLvl: 0,
+    attackLvl: 0,
+    hitpointsLvl: 0,
+    stats: [
+      {
+        Stab: 0,
+        Slash: 0,
+        Crush: 0,
+        Magic: 0,
+        Range: 0,
+      },
+      {
+        Stab: 5,
+        Slash: 5,
+        Crush: 5,
+        Magic: 5,
+        Range: 5,
+      },
+      {
+        "Melee strength": 0,
+        "Ranged strength": 0,
+        "Magic damage": 0,
+        "Slayer Bonus": 0,
+        Prayer: 0,
+        Weight: 0.453,
+      },
+    ],
+    src: "./gearcalculator/helms/Rogue_mask.webp",
+    slot: "Headpiece",
+  },
+  {
+    type: "Melee",
     name: "Farmer's strawhat",
     defLvl: 0,
     rangedLvl: 0,
