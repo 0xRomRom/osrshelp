@@ -3133,8 +3133,8 @@ const BOOTS = [
         Range: 0,
       },
       {
-        "Melee strength": 0,
-        "Ranged strength": 2,
+        "Melee strength": 2,
+        "Ranged strength": 0,
         "Magic damage": 0,
         "Slayer Bonus": 0,
         Prayer: 0,
