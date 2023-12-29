@@ -1,6 +1,10 @@
 .modal {
   display: flex;
   flex-direction: row;
+
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .userDefined {
@@ -8,11 +12,12 @@
   display: flex;
   user-select: none;
   background-color: rgb(32, 46, 57);
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+  background-color: rgb(17, 23, 27);
   border-radius: 0.8rem;
   padding: 0rem 1rem;
   margin-left: 1rem;
-  width: 216px;
+  width: 16rem;
+  justify-content: center;
 }
 
 .targetlvl {
@@ -66,14 +71,13 @@
 
 .userLvlBox {
   height: 6rem;
-  /* background-color: blue; */
-  /* border-bottom: 1px solid red; */
   display: flex;
   user-select: none;
-  background-color: rgb(32, 46, 57);
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+  background-color: rgb(17, 23, 27);
   border-radius: 0.8rem;
-  padding: 0rem 1rem;
+  padding: 0rem 2rem;
+  width: 16rem;
+  justify-content: center;
 }
 
 .sliderValue {
