@@ -26,8 +26,8 @@ const XPTable = (props) => {
               return (
                 <div className={stl.flexGrid} key={index}>
                   <span>{level.level}</span>
-                  <span>{level.expRequired}</span>
-                  <span>{level.expDifference}</span>
+                  <span>{level.expRequired.toLocaleString()}</span>
+                  <span>{level.expDifference.toLocaleString()}</span>
                 </div>
               );
             })}
