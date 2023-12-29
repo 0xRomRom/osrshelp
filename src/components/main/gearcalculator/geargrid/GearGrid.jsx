@@ -288,7 +288,7 @@ const GearGrid = ({
             onMouseOver={() => hoverStyling("Shield")}
           >
             {twoHanderEquipped && (
-              <div className={stl.slotWrap}>
+              <div className={stl.slotWrapBlocked}>
                 <ImBlocked className={stl.blocked} />
                 <img src={blank} alt="BlankCover" className={stl.blankCover} />
               </div>

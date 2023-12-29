@@ -5,9 +5,18 @@
 
   background-color: rgb(17, 23, 27);
   border-radius: 0.4rem;
-  padding-bottom: 1rem;
   max-height: 700px;
   overflow-y: scroll;
+}
+.premiumBlock {
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+
+  background-color: rgb(17, 23, 27);
+  border-radius: 0.4rem;
+  padding-bottom: 1rem;
+  max-height: 700px;
 }
 
 .subHero {

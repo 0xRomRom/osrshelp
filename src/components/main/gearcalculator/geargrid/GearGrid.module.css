@@ -141,3 +141,15 @@
   box-shadow: 0px 0px 25px red;
   border-radius: 50%;
 }
+
+.slotWrapBlocked {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: not-allowed !important;
+}
