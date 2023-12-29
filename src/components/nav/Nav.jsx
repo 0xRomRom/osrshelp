@@ -32,6 +32,11 @@ const Nav = (props) => {
       props.setMainState("Gearcalculator");
       props.setSubState(null);
     }
+    if (path === "/xptable") {
+      props.setActiveTab("xptable");
+      props.setMainState("XP Table");
+      props.setSubState(null);
+    }
     window.scrollTo(0, 0);
   }, [location, props]);
 
@@ -107,9 +112,9 @@ const Nav = (props) => {
           </li>
           <li
             className={`${stl.navitem} ${
-              props.activeTab === "xp" ? stl.active : ""
+              props.activeTab === "xptable" ? stl.active : ""
             }`}
-            onClick={() => handleTabSwitch("xp", "XP Table")}
+            onClick={() => handleTabSwitch("xptable", "XP Table")}
           >
             <img src={xptable} alt="XP Icon" className={stl.icon} />
             XP Table

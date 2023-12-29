@@ -8,6 +8,7 @@ import Home from "./components/main/home/Home";
 import SkillsTab from "./components/main/skills/SkillsTab";
 import MoneyMakers from "./components/main/moneymakers/MoneyMakers";
 import GearCalculator from "./components/main/gearcalculator/GearCalculator";
+import XPTable from "./components/main/xptable/XPTable";
 
 import Checkout from "./components/checkout/Checkout";
 import PaymentSucces from "./components/paymentSuccess/PaymentSucces";
@@ -84,6 +85,7 @@ const App = () => {
                 }
               />
               <Route path="/moneymakers" element={<MoneyMakers />} />
+              <Route path="/xptable" element={<XPTable />} />
             </Routes>
           </div>
         </div>
