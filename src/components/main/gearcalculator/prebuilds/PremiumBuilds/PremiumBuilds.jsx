@@ -5,6 +5,7 @@ import { useState } from "react";
 import PVMBUILDS from "../../../../../utils/gearcalculator/prebuilds/premium/pvmBuilds";
 import PVPBUILDS from "../../../../../utils/gearcalculator/prebuilds/premium/pvpBuilds";
 import SKILLBUILDS from "../../../../../utils/gearcalculator/prebuilds/premium/skillBuilds";
+import WILDYBUILDS from "../../../../../utils/gearcalculator/prebuilds/premium/wildyBuilds";
 
 const PremiumBuilds = ({ premiumUser, handlePrebuildSetup }) => {
   const [activeBtn, setActiveBtn] = useState("All");
@@ -159,6 +160,30 @@ const PremiumBuilds = ({ premiumUser, handlePrebuildSetup }) => {
                       );
                     })}
                   </div>
+
+                  <div className={stl.typeBlock}>
+                    <span className={stl.typeTitle}>Wildy</span>
+                    {WILDYBUILDS.map((build) => {
+                      const { itemState } = build;
+                      return (
+                        <div
+                          className={stl.gridTile}
+                          key={build.src + Math.random().toString()}
+                          onClick={() => handlePrebuildSetup(itemState)}
+                        >
+                          <div className={stl.imgCenter}>
+                            <img
+                              src={build.src}
+                              alt={build.alt}
+                              className={stl.tileGear}
+                            />
+                          </div>
+
+                          <span className={stl.gearName}>{build.name}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </>
               )}
               {activeBtn === "PVM" && (
@@ -217,6 +242,32 @@ const PremiumBuilds = ({ premiumUser, handlePrebuildSetup }) => {
                 <div className={stl.typeBlock}>
                   <span className={stl.typeTitle}>Skilling</span>
                   {SKILLBUILDS.map((build) => {
+                    const { itemState } = build;
+                    return (
+                      <div
+                        className={stl.gridTile}
+                        key={build.src + Math.random().toString()}
+                        onClick={() => handlePrebuildSetup(itemState)}
+                      >
+                        <div className={stl.imgCenter}>
+                          <img
+                            src={build.src}
+                            alt={build.alt}
+                            className={stl.tileGear}
+                          />
+                        </div>
+
+                        <span className={stl.gearName}>{build.name}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+
+              {activeBtn === "Wildy" && (
+                <div className={stl.typeBlock}>
+                  <span className={stl.typeTitle}>Wildy</span>
+                  {WILDYBUILDS.map((build) => {
                     const { itemState } = build;
                     return (
                       <div
