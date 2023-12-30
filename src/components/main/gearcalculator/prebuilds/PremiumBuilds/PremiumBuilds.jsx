@@ -179,7 +179,7 @@ const PremiumBuilds = ({ premiumUser, handlePrebuildSetup }) => {
                   </div>
 
                   <div className={stl.typeBlock}>
-                    <span className={stl.typeTitle}>Wildy</span>
+                    <span className={stl.typeTitle}>Recovery</span>
                     {RECOVERYBUILDS.map((build) => {
                       const { itemState } = build;
                       return (

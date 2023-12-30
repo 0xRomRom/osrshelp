@@ -37,6 +37,11 @@ const Nav = (props) => {
       props.setMainState("XP Table");
       props.setSubState(null);
     }
+    if (path === "/moneymakers") {
+      props.setActiveTab("moneymakers");
+      props.setMainState("Money Makers");
+      props.setSubState(null);
+    }
     window.scrollTo(0, 0);
   }, [location, props]);
 

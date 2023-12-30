@@ -34,6 +34,7 @@ const XPTable = (props) => {
           </div>
         </div>
       </div>
+      <div className={stl.adBar2}>[ Advertisements ]</div>
     </div>
   );
 };
