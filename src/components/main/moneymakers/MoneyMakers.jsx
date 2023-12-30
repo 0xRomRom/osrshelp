@@ -1,6 +1,8 @@
 import stl from "./MoneyMakers.module.css";
 import Pagination from "../pagination/Pagination";
 import { useState } from "react";
+import FreeMoneyMakers from "./freemoneymakers/FreeMoneyMakers";
+import PremiumMoneyMakers from "./premiummoneymakers/PremiumMoneyMakers";
 
 const MoneyMakers = (props) => {
   const [activeModal, setActiveModal] = useState("Free");
@@ -32,6 +34,8 @@ const MoneyMakers = (props) => {
             Rune User
           </button>
         </div>
+        {activeModal === "Free" && <FreeMoneyMakers />}
+        {activeModal === "Rune" && <PremiumMoneyMakers />}
       </div>
     </div>
   );

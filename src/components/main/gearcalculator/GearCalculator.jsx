@@ -18,10 +18,7 @@ import { useEffect } from "react";
 import supabase from "../../../utils/supabase/supabase";
 import { initState } from "../../../utils/gearcalculator/emptyslots";
 
-import useForceUpdate from "../../../utils/componentrerender";
-
 const GearCalculator = (props) => {
-  const refresh = useForceUpdate();
   const { premiumUser, userID } = useContext(AuthContext);
   const targetDivRef = useRef(null);
   const [activeSlot, setActiveSlot] = useState(null);
@@ -42,11 +39,6 @@ const GearCalculator = (props) => {
     Boots: {},
     Ring: {},
   });
-
-  useEffect(() => {
-    console.log(bonusState);
-    refresh();
-  }, [bonusState]);
 
   useEffect(() => {
     if (premiumUser) {

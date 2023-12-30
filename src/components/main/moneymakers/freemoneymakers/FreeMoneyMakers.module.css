@@ -1,0 +1,32 @@
+.grid {
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+  /* border: 1px solid gray; */
+  padding: 2rem;
+  height: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.gridTile {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(17, 23, 27);
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.gridTile:hover {
+  box-shadow: 0px 0px 5px purple;
+}
+
+.gridTitle {
+  color: white;
+  font-size: 20px;
+}
