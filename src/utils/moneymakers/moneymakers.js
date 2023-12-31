@@ -3,7 +3,7 @@ const MONEYMAKERS = [
     type: "Free",
     title: "Killing Brine Rats",
     inputs: {
-      lobster: 25,
+      Lobster: 25,
     },
     outputs: {
       "Brine sabre": 0.29,
