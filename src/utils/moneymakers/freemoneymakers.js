@@ -13,7 +13,7 @@ const MONEYMAKERS = [
       "Blood rune": 9.38,
     },
     profit: 0,
-    imgSrc: "",
+    imgSrc: "./moneymakers/icons/200px-Brine_rat.webp",
   },
 ];
 

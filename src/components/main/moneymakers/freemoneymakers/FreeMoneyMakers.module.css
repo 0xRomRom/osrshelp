@@ -20,6 +20,8 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .gridTile:hover {
@@ -29,4 +31,20 @@
 .gridTitle {
   color: white;
   font-size: 20px;
+}
+
+.methodImg {
+  max-width: 100px;
+}
+
+.tileProfit {
+  color: rgb(221, 221, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mills {
+  width: 20px;
 }

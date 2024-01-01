@@ -1,7 +1,8 @@
 import stl from "./FreeMoneyMakers.module.css";
 import { useState, useEffect } from "react";
-import MONEYMAKERS from "../../../../utils/moneymakers/moneymakers";
+import MONEYMAKERS from "../../../../utils/moneymakers/freemoneymakers";
 import { useCallback } from "react";
+import mills from "../../../../assets/icons/Mills.webp";
 
 const FreeMoneyMakers = () => {
   const [itemPrices, setItemPrices] = useState({});
@@ -21,12 +22,14 @@ const FreeMoneyMakers = () => {
       const inputs = item.inputs;
       const outputs = item.outputs;
 
-      Object.entries(inputs).forEach(([key, value]) => {
-        const itemPrice = itemPrices[key].price;
-        const totalCosts = itemPrice * value;
+      if (Object.keys(inputs).length > 0) {
+        Object.entries(inputs).forEach(([key, value]) => {
+          const itemPrice = itemPrices[key].price;
+          const totalCosts = itemPrice * value;
 
-        profits -= totalCosts;
-      });
+          profits -= totalCosts;
+        });
+      }
       Object.entries(outputs).forEach(([key, value]) => {
         const itemPrice = itemPrices[key].price;
         const totalCosts = itemPrice * value;
@@ -34,9 +37,8 @@ const FreeMoneyMakers = () => {
         profits += totalCosts;
       });
 
-      return { ...item, profit: Math.floor(profits) };
+      return { ...item, profit: Math.ceil(profits / 1000) * 1000 };
     });
-    console.log(setPrices);
     setMethodsArray(setPrices);
   }, [itemPrices]);
 
@@ -55,11 +57,26 @@ const FreeMoneyMakers = () => {
 
   return (
     <div className={stl.grid}>
-      <div className={stl.gridTile}>
-        <span className={stl.gridTitle}>Picking Flax</span>
-      </div>
-      <div className={stl.gridTile}></div>
-      <div className={stl.gridTile}></div>
+      {methodsArray.map((method) => {
+        return (
+          <div className={stl.gridTile} key={method.title}>
+            <img
+              src={method.imgSrc}
+              alt={method.title}
+              className={stl.methodImg}
+            />
+            <span className={stl.gridTitle}>{method.title}</span>
+            <span className={stl.tileProfit}>
+              <img
+                src={mills}
+                alt="Oldschool Runescape gold"
+                className={stl.mills}
+              />{" "}
+              {method.profit.toLocaleString()} {"/ h"}
+            </span>
+          </div>
+        );
+      })}
     </div>
   );
 };
