@@ -226,6 +226,28 @@ const MONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/Grimy_dwarf_weed.webp",
   },
+  {
+    title: "Cooking raw anglerfish",
+    inputs: {
+      "Raw anglerfish": 1300,
+    },
+    outputs: {
+      Anglerfish: 1300,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/400px-Raw_anglerfish_detail.webp",
+  },
+  {
+    title: "Cleaning grimy lantadyme",
+    inputs: {
+      "Grimy lantadyme": 5000,
+    },
+    outputs: {
+      Lantadyme: 5000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Grimy_lantadyme.webp",
+  },
 ];
 
 export default MONEYMAKERS;
