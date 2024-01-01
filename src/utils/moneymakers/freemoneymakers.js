@@ -316,6 +316,52 @@ const MONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/Bones_to_peaches_(tablet).webp",
   },
+  {
+    title: "Cutting ruby bolt tips",
+    inputs: {
+      Ruby: 1150,
+    },
+    outputs: {
+      "Ruby bolt tips": 13800,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Ruby_bolt_tips_5.webp",
+  },
+  {
+    title: "Crafting gold bracelets",
+    inputs: {
+      "Gold bar": 1400,
+    },
+    outputs: {
+      "Gold bracelet": 1400,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/500px-Gold_bracelet_detail.webp",
+  },
+  {
+    title: "Catching raw karambwan",
+    inputs: {},
+    outputs: {
+      "Raw karambwan": 600,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/500px-Raw_karambwan_detail.webp",
+  },
+  {
+    title: "Killing aviansies",
+    inputs: {
+      Swordfish: 20,
+    },
+    outputs: {
+      "Adamantite bar": 108,
+      "Runite limbs": 0.9,
+      "Grimy ranarr weed": 1.16,
+      "Blood rune": 19.77,
+      "Nature rune": 32.34,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/400px-Aviansie_(level_148).webp",
+  },
 ];
 
 export default MONEYMAKERS;
