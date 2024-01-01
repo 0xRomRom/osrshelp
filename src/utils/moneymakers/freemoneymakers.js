@@ -44,6 +44,64 @@ const MONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/400px-Baked_potato_detail.webp",
   },
+  {
+    title: "Collecting red spiders' eggs",
+    inputs: {
+      "Iron sword": 15,
+      "Law rune": 15,
+      "Fire rune": 15,
+      "Energy potion(4)": 37.5,
+    },
+    outputs: {
+      "Red spiders' eggs": 390,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/300px-Red_spiders'_eggs_detail.webp",
+  },
+  {
+    title: "Mining adamantite ore",
+    inputs: {},
+    outputs: {
+      "Adamantite ore": 166,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/420px-Adamantite_ore_detail.webp",
+  },
+  {
+    title: "Collecting wine of zamorak",
+    inputs: {
+      "Law rune": 216,
+      Cake: 32,
+      "Restore potion(4)": 4,
+      "Water rune": 4,
+      "Ring of dueling(8)": 0.5,
+    },
+    outputs: {
+      "Wine of zamorak": 212,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Wine_of_zamorak.webp",
+  },
+  {
+    title: "Cooking raw monkfish",
+    inputs: {
+      "Raw monkfish": 1300,
+    },
+    outputs: {
+      Monkfish: 1300,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/500px-Monkfish_detail.webp",
+  },
+  {
+    title: "Killing chaos druids",
+    inputs: {},
+    outputs: {
+      "Pure essence": 165000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/260px-Chaos_druid.webp",
+  },
 ];
 
 export default MONEYMAKERS;

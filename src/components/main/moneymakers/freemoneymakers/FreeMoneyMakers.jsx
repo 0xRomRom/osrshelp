@@ -10,7 +10,7 @@ const FreeMoneyMakers = () => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Iron_bar|Iron_knife|Gold_bar|Diamond|Diamond_bracelet|Grimy_tarromin|Tarromin|Potato|Baked_potato"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Iron_bar|Iron_knife|Gold_bar|Diamond|Diamond_bracelet|Grimy_tarromin|Tarromin|Potato|Baked_potato|Iron_sword|Law_rune|Fire_rune|Energy_potion(4)|Red_spiders'_eggs|Adamantite_ore|Law_rune|Cake|Restore_potion(4)|Water_rune|Ring_of_dueling(8)|Wine_of_zamorak|Raw_monkfish|Monkfish|Pure_essence"
     );
     const result = await fetcher.json();
     setItemPrices(result);
