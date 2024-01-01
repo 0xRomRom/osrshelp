@@ -5,6 +5,7 @@ import { useCallback } from "react";
 
 const FreeMoneyMakers = () => {
   const [itemPrices, setItemPrices] = useState({});
+  const [methodsArray, setMethodsArray] = useState([]);
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
@@ -18,28 +19,25 @@ const FreeMoneyMakers = () => {
     const setPrices = MONEYMAKERS.map((item) => {
       let profits = 0;
       const inputs = item.inputs;
-      // const outputs = item.outputs;
-
-      // inputs.forEach((input) => {
-      //   console.log(input);
-      // });
+      const outputs = item.outputs;
 
       Object.entries(inputs).forEach(([key, value]) => {
         const itemPrice = itemPrices[key].price;
         const totalCosts = itemPrice * value;
-        // console.log(itemPrices);
-        // console.log(itemPrices[key].price);
-        // console.log(`${key}: ${value}`);
-        console.log(totalCosts);
+
         profits -= totalCosts;
       });
-      item.profit = profits;
-      return { ...item, profit: profits };
+      Object.entries(outputs).forEach(([key, value]) => {
+        const itemPrice = itemPrices[key].price;
+        const totalCosts = itemPrice * value;
 
-      // console.log(inputs);
-      // console.log(outputs);
+        profits += totalCosts;
+      });
+
+      return { ...item, profit: Math.floor(profits) };
     });
     console.log(setPrices);
+    setMethodsArray(setPrices);
   }, [itemPrices]);
 
   useEffect(() => {
@@ -50,6 +48,10 @@ const FreeMoneyMakers = () => {
       setMethodProfits();
     }
   }, [itemPrices, setMethodProfits]);
+
+  useEffect(() => {
+    console.log(methodsArray);
+  }, [methodsArray]);
 
   return (
     <div className={stl.grid}>
