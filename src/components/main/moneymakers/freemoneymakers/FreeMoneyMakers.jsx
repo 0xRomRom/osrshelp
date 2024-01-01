@@ -10,7 +10,7 @@ const FreeMoneyMakers = () => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Iron_bar|Iron_knife|Gold_bar|Diamond|Diamond_bracelet|Grimy_tarromin|Tarromin|Potato|Baked_potato|Iron_sword|Law_rune|Fire_rune|Energy_potion(4)|Red_spiders'_eggs|Adamantite_ore|Law_rune|Cake|Restore_potion(4)|Water_rune|Ring_of_dueling(8)|Wine_of_zamorak|Raw_monkfish|Monkfish|Pure_essence|Oak_logs|Willow_logs|Oak_plank|Pizza_base|Tomato|Cheese|Plain_pizza|Rope|Jangerberries|Fish_food|Bronze_bar"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Iron_bar|Iron_knife|Gold_bar|Diamond|Diamond_bracelet|Grimy_tarromin|Tarromin|Potato|Baked_potato|Iron_sword|Law_rune|Fire_rune|Energy_potion(4)|Red_spiders'_eggs|Adamantite_ore|Law_rune|Cake|Restore_potion(4)|Water_rune|Ring_of_dueling(8)|Wine_of_zamorak|Raw_monkfish|Monkfish|Pure_essence|Oak_logs|Willow_logs|Oak_plank|Pizza_base|Tomato|Cheese|Plain_pizza|Rope|Jangerberries|Fish_food|Bronze_bar|Iron_ore|Uncut_sapphire|Uncut_emerald|Uncut_ruby|Uncut_diamond|Jug_of_water|Pot_of_flour|Pizza_base|Jug|Pot|Basket|Ring_of_dueling(8)|Amulet_of_glory(4)|Bananas(5)|Amulet_of_glory|Team-6_cape|Grimy_dwarf_weed|Dwarf_weed"
     );
     const result = await fetcher.json();
     setItemPrices(result);

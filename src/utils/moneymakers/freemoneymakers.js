@@ -161,6 +161,71 @@ const MONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/Bronze_bar.webp",
   },
+  {
+    title: "Mining iron ore",
+    inputs: {},
+    outputs: {
+      "Iron ore": 1700,
+      "Pure essence": 19050,
+      "Uncut sapphire": 4.94,
+      "Uncut emerald": 2.47,
+      "Uncut ruby": 1.24,
+      "Uncut diamond": 0.31,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/600px-Iron_ore_detail.webp",
+  },
+  {
+    title: "Making pizza bases",
+    inputs: {
+      "Jug of water": 2400,
+      "Pot of flour": 2400,
+    },
+    outputs: {
+      "Pizza base": 2400,
+      Jug: 2400,
+      Pot: 2400,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Pizza_base.webp",
+  },
+  {
+    title: "Picking bananas",
+    inputs: {
+      Basket: 345,
+      "Ring of dueling(8)": 1.88,
+      "Amulet of glory(4)": 3.75,
+    },
+    outputs: {
+      "Bananas(5)": 345,
+      "Amulet of glory": 3.75,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Bananas(5).webp",
+  },
+  {
+    title: "Buying team capes",
+    inputs: {
+      "Pure essence": 225037,
+      "Energy potion(4)": 83,
+    },
+    outputs: {
+      "Team-6 cape": 4000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/300px-Team-46_cape_detail.webp",
+  },
+  {
+    title: "Cleaning grimy dwarf weed",
+    inputs: {
+      "Grimy dwarf weed": 5000,
+    },
+    outputs: {
+      "Dwarf weed": 5000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Grimy_dwarf_weed.webp",
+  },
 ];
 
 export default MONEYMAKERS;
