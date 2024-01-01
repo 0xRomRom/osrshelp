@@ -97,10 +97,69 @@ const MONEYMAKERS = [
     title: "Killing chaos druids",
     inputs: {},
     outputs: {
-      "Pure essence": 165000,
+      "Pure essence": 164000,
     },
     profit: 0,
     imgSrc: "./moneymakers/icons/260px-Chaos_druid.webp",
+  },
+  {
+    title: "Making oak planks",
+    inputs: {
+      "Oak logs": 2106,
+      "Willow logs": 78,
+      "Ring of dueling(8)": 9.75,
+      "Pure essence": 526500,
+    },
+    outputs: {
+      "Oak plank": 2106,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Oak_plank.webp",
+  },
+  {
+    title: "Cooking plain pizzas",
+    inputs: {
+      "Pizza base": 540,
+      Tomato: 540,
+      Cheese: 540,
+    },
+    outputs: {
+      "Plain pizza": 540,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Plain_pizza.webp",
+  },
+  {
+    title: "Collecting jangerberries",
+    inputs: {
+      Rope: 20,
+      "Ring of dueling(8)": 2.5,
+    },
+    outputs: {
+      Jangerberries: 560,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/260px-Jangerberries_detail.webp",
+  },
+  {
+    title: "Collecting fish food",
+    inputs: {},
+    outputs: {
+      "Fish food": 240,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Fish_food.webp",
+  },
+  {
+    title: "Buying bronze bars",
+    inputs: {
+      "Pure essence": 6400,
+    },
+    outputs: {
+      "Bronze bar": 800,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Bronze_bar.webp",
   },
 ];
 
