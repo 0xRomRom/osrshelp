@@ -1,4 +1,8 @@
 const MONEYMAKERS = [
+  /*
+   * Pure essence serves as placeholder for gp
+   */
+
   {
     title: "Smithing iron knives",
     inputs: {
@@ -247,6 +251,70 @@ const MONEYMAKERS = [
     },
     profit: 0,
     imgSrc: "./moneymakers/icons/Grimy_lantadyme.webp",
+  },
+  {
+    title: "Charging earth orbs",
+    inputs: {
+      "Unpowered orb": 513,
+      "Cosmic rune": 1539,
+      "Amulet of glory(4)": 4.75,
+      "Stamina potion(1)": 19,
+    },
+    outputs: {
+      "Earth orb": 513,
+      "Amulet of glory": 4.75,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Earth_orb.webp",
+  },
+  {
+    title: "Making pastry dough",
+    inputs: {
+      "Bucket of water": 2400,
+      "Pot of flour": 2400,
+    },
+    outputs: {
+      "Pastry dough": 2400,
+      Bucket: 2400,
+      Pot: 2400,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/280px-Pastry_dough_detail.webp",
+  },
+  {
+    title: "Creating teleport to house tablets",
+    inputs: {
+      "Soft clay": 1100,
+      "Law rune": 1100,
+      "Earth rune": 1100,
+    },
+    outputs: {
+      "Teleport to house (tablet)": 1100,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Teleport_to_house_(tablet).webp",
+  },
+  {
+    title: "Climbing the Agility Pyramid",
+    inputs: {},
+    outputs: {
+      "Pure essence": 200000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/500px-Agility_Pyramid.webp",
+  },
+  {
+    title: "Creating bones to peaches tablets",
+    inputs: {
+      "Pure essence": 4750,
+      "Soft clay": 750,
+      "Nature rune": 1500,
+    },
+    outputs: {
+      "Bones to peaches (tablet)": 750,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Bones_to_peaches_(tablet).webp",
   },
 ];
 
