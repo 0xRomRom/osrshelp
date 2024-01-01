@@ -31,10 +31,11 @@
 .gridTitle {
   color: white;
   font-size: 20px;
+  text-align: center;
 }
 
 .methodImg {
-  max-width: 100px;
+  max-width: 80px;
 }
 
 .tileProfit {

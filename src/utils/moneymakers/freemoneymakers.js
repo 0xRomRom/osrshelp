@@ -1,6 +1,14 @@
 const MONEYMAKERS = [
   {
-    type: "Free",
+    title: "Collecting air talismans",
+    inputs: {},
+    outputs: {
+      "Air talisman": 325,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Air_talisman.webp",
+  },
+  {
     title: "Killing Brine Rats",
     inputs: {
       Lobster: 25,

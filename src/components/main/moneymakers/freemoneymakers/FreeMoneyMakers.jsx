@@ -10,7 +10,7 @@ const FreeMoneyMakers = () => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Brine_sabre|Death_rune|Raw_shark|Raw_lobster|Blood_rune|Lobster"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Brine_sabre|Death_rune|Raw_shark|Raw_lobster|Blood_rune|Lobster|Air_talisman"
     );
     const result = await fetcher.json();
     setItemPrices(result);
