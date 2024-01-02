@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import MONEYMAKERS from "../../../../utils/moneymakers/freemoneymakers";
 import { useCallback } from "react";
 import mills from "../../../../assets/icons/Mills.webp";
+import { a } from "react-spring";
 
 const FreeMoneyMakers = () => {
   const [itemPrices, setItemPrices] = useState({});
@@ -44,7 +45,8 @@ const FreeMoneyMakers = () => {
 
       return { ...item, profit: Math.ceil(profits / 1000) * 1000 };
     });
-    setMethodsArray(setPrices);
+    const profitSorting = setPrices.sort((a, b) => a.profit - b.profit);
+    setMethodsArray(profitSorting);
   }, [itemPrices]);
 
   useEffect(() => {
