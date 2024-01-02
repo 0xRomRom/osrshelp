@@ -22,7 +22,6 @@ const FreeMoneyMakers = () => {
     );
     const result2 = await fetcher2.json();
     setItemPrices({ ...result, ...result2 });
-    console.log(result);
   };
 
   const setMethodProfits = useCallback(() => {

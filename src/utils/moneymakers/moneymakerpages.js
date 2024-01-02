@@ -1,11 +1,12 @@
 const MONEYMAKERPAGES = [
   {
     title: "Smithing iron knives",
-    headerImg: "",
-  },
-  {
-    title: "Baking potatoes",
-    headerImg: "",
+    headerImg: "./moneymakers/headerbanners/SmithingIronKnifes.webp",
+    iconSrc: "./moneymakers/icons/Iron_knife.webp",
+    skills: [{ Thieving: 44 }, { Hunter: 55 }],
+    items: [{}],
+    quests: ["Death to the Dorgeshuun", "Another Slice of H.A.M. (optional)"],
+    other: [],
   },
 ];
 

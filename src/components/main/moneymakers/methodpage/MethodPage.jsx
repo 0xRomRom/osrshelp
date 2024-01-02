@@ -24,6 +24,11 @@ const MethodPage = ({ setSubState }) => {
     navigate("/moneymakers");
   };
 
+  const skills = methodState.skills;
+
+  useEffect(() => {
+    console.log(skills);
+  }, [skills]);
   return (
     <div className={stl.methodpage}>
       <div className={stl.adBar}>[ Advertisements ]</div>
@@ -35,7 +40,51 @@ const MethodPage = ({ setSubState }) => {
       />
       <div className={stl.modal}>
         <FaLongArrowAltLeft className={stl.closeBtn} onClick={navigateBack} />
-        <span>{methodState.title}</span>
+        <div className={stl.headerBox}>
+          <h1 className={stl.heroTitle}>{methodState.title}</h1>
+          <img
+            src={methodState.iconSrc}
+            alt={methodState.title}
+            className={stl.miniIcon}
+          />
+          <img
+            src={methodState.headerImg}
+            alt="Skill training location"
+            className={stl.headerBanner}
+          />
+        </div>
+        <div className={stl.reqsBox}>
+          <div className={stl.reqBox}>
+            <span className={stl.reqTitle}>Skills</span>
+            <div className={stl.skillsList}>
+              {skills && (
+                <span>
+                  {Object.entries(skills).map(([index, skillLevel]) => {
+                    const skillNames = Object.keys(skillLevel);
+                    const skillLevels = Object.entries(skillLevel)[0][1];
+                    console.log(skillLevels);
+
+                    return (
+                      <div key={index}>
+                        <span className={stl.skillname}>{skillNames}</span>
+                        <span className={stl.reqLvl}>{skillLevels}</span>
+                      </div>
+                    );
+                  })}
+                </span>
+              )}
+            </div>
+          </div>
+          <div className={stl.reqBox}>
+            <span className={stl.reqTitle}>Items</span>
+          </div>
+          <div className={stl.reqBox}>
+            <span className={stl.reqTitle}>Quests</span>
+          </div>
+          <div className={stl.reqBox}>
+            <span className={stl.reqTitle}>Other</span>
+          </div>
+        </div>
       </div>
     </div>
   );
