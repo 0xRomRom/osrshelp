@@ -5,14 +5,17 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import supabase from "../../../utils/supabase/supabase";
+import { useState } from "react";
 
 const Pagination = ({ mainState, subState, setSubState, navTo }) => {
+  const [displayedSubstate, setDisplayedSubstate] = useState(subState);
   const { loggedInUser, setLoggedInUser, premiumUser } =
     useContext(AuthContext);
   const navigate = useNavigate();
 
   const clearSubState = () => {
     setSubState(null);
+    setDisplayedSubstate(null);
     if (navTo) {
       navigate(navTo);
     }
@@ -46,10 +49,10 @@ const Pagination = ({ mainState, subState, setSubState, navTo }) => {
         <span className={stl.mainMenu} onClick={clearSubState}>
           {mainState}
         </span>
-        {subState && (
+        {displayedSubstate && (
           <>
             <FontAwesomeIcon icon={faAngleRight} className={stl.arrowRight} />
-            <span className={stl.mainMenu}>{subState}</span>
+            <span className={stl.mainMenu}>{displayedSubstate}</span>
           </>
         )}
       </div>

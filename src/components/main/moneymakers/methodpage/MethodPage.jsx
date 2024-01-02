@@ -14,12 +14,6 @@ const MethodPage = ({ mainState, setSubState, subState }) => {
     navigate("/moneymakers");
   };
 
-  useEffect(() => {
-    console.log(location);
-    const pathName = location.pathname.replaceAll("_", " ").slice(13);
-    console.log(pathName);
-  }, [location]);
-
   return (
     <div className={stl.methodpage}>
       <div className={stl.adBar}>[ Advertisements ]</div>
@@ -27,6 +21,7 @@ const MethodPage = ({ mainState, setSubState, subState }) => {
         mainState={"Money Makers"}
         setSubState={setSubState}
         subState={location.pathname.replaceAll("_", " ").slice(13)}
+        navTo={"/moneymakers"}
       />
       <div className={stl.modal}>
         <FaLongArrowAltLeft className={stl.closeBtn} onClick={navigateBack} />
