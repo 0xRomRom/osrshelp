@@ -4,11 +4,21 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import MONEYMAKERPAGES from "../../../../utils/moneymakers/moneymakerpages";
 
-const MethodPage = ({ mainState, setSubState, subState }) => {
-  const [title, setTitle] = useState("");
+const MethodPage = ({ setSubState }) => {
+  const [methodState, setMethodState] = useState({});
   const navigate = useNavigate();
   const location = useLocation();
+  const methodName = location.pathname.replaceAll("_", " ").slice(13);
+
+  useEffect(() => {
+    MONEYMAKERPAGES.map((item) => {
+      if (item.title === methodName) {
+        setMethodState(item);
+      }
+    });
+  }, [methodName]);
 
   const navigateBack = () => {
     navigate("/moneymakers");
@@ -20,11 +30,12 @@ const MethodPage = ({ mainState, setSubState, subState }) => {
       <Pagination
         mainState={"Money Makers"}
         setSubState={setSubState}
-        subState={location.pathname.replaceAll("_", " ").slice(13)}
+        subState={methodName}
         navTo={"/moneymakers"}
       />
       <div className={stl.modal}>
         <FaLongArrowAltLeft className={stl.closeBtn} onClick={navigateBack} />
+        <span>{methodState.title}</span>
       </div>
     </div>
   );
