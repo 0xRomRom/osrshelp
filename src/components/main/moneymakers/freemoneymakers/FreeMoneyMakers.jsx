@@ -14,7 +14,7 @@ const FreeMoneyMakers = () => {
     );
     const result = await fetcher.json();
     const fetcher2 = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Arrow_shaft|Feather|Headless_arrow|Tarromin|Vial_of_Water|Tarromin_potion_(unf)|Grimy_irit_leaf|Irit_leaf|Redberry_pie|Meat_pie|Apple_pie|Garden_pie|Fish_pie|Amulet_of_glory(6)|Air_orb|Ardougne_teleport_(tablet)|Black_scimitar|Grimy_harralander|Harralander|Red_dragonhide|Red_dragon_leather|Yew_longbow_(u)|Yew_longbow|Plain_pizza|Anchovies|Anchovy_pizza|Grimy_cadantine|Cadantine|Zamorak_monk_top|Zamorak_monk_bottom|Ring_of_wealth|Super_energy(4)|Ring_of_wealth_(5)|Black_dragonhide|Black_dragon_leather|Grimy_snapdragon|Snapdragon|Green_dragonhide|Green_dragon_leather|Clay|Soft_clay"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Arrow_shaft|Feather|Headless_arrow|Tarromin|Vial_of_Water|Tarromin_potion_(unf)|Grimy_irit_leaf|Irit_leaf|Redberry_pie|Meat_pie|Apple_pie|Garden_pie|Fish_pie|Amulet_of_glory(6)|Air_orb|Ardougne_teleport_(tablet)|Black_scimitar|Grimy_harralander|Harralander|Red_dragonhide|Red_dragon_leather|Yew_longbow_(u)|Yew_longbow|Plain_pizza|Anchovies|Anchovy_pizza|Grimy_cadantine|Cadantine|Zamorak_monk_top|Zamorak_monk_bottom|Ring_of_wealth|Super_energy(4)|Ring_of_wealth_(5)|Black_dragonhide|Black_dragon_leather|Grimy_snapdragon|Snapdragon|Green_dragonhide|Green_dragon_leather|Clay|Soft_clay|Grimy_kwuarm|Kwuarm|Unicorn_horn|Unicorn_horn_dust|Mort_myre_fungus|Pineapple_ring|Pineapple_pizza|Bucket_of_sand|Seaweed|Molten_glass|Mahogany_logs|Mahogany_plank|Grimy_avantoe|Avantoe|Jug_of_wine|Cave_goblin_wire"
     );
     const result2 = await fetcher2.json();
     setItemPrices({ ...result, ...result2 });

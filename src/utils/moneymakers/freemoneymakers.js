@@ -689,6 +689,101 @@ const MONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/Soft_clay.webp",
   },
+  {
+    title: "Cleaning grimy kwuarm",
+    inputs: {
+      "Grimy kwuarm": 5000,
+    },
+    outputs: {
+      Kwuarm: 5000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Kwuarm.webp",
+  },
+  {
+    title: "Grinding unicorn horns",
+    inputs: {
+      "Unicorn horn": 9000,
+    },
+    outputs: {
+      "Unicorn horn dust": 9000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Kwuarm.webp",
+  },
+  {
+    title: "Collecting mort myre fungi",
+    inputs: {
+      "Ring of dueling(8)": 7.5,
+      "Teleport to house (tablet)": 60,
+    },
+    outputs: {
+      "Mort myre fungus": 1620,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Mort_myre_fungus.webp",
+  },
+  {
+    title: "Making pineapple pizzas",
+    inputs: {
+      "Plain pizza": 2500,
+      "Pineapple ring": 2500,
+    },
+    outputs: {
+      "Pineapple pizza": 2500,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Mort_myre_fungus.webp",
+  },
+  {
+    title: "Casting Superglass Make",
+    inputs: {
+      "Bucket of sand": 7800,
+      Seaweed: 7800,
+      "Astral rune": 1200,
+    },
+    outputs: {
+      "Molten glass": 10140,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Molten_glass.webp",
+  },
+  {
+    title: "Making mahogany planks",
+    inputs: {
+      "Mahogany logs": 2106,
+      "Willow logs": 78,
+      "Ring of dueling(8)": 9.75,
+      "Pure essence": 3159000,
+    },
+    outputs: {
+      "Mahogany plank": 2106,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Mahogany_plank.webp",
+  },
+  {
+    title: "Cleaning grimy avantoe",
+    inputs: {
+      "Grimy avantoe": 5000,
+    },
+    outputs: {
+      Avantoe: 5000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Avantoe.webp",
+  },
+  {
+    title: "Stealing cave goblin wire",
+    inputs: {
+      "Jug of wine": 42,
+    },
+    outputs: {
+      "Cave goblin wire": 420,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Cave_goblin_wire.webp",
+  },
 ];
 
 export default MONEYMAKERS;
