@@ -362,6 +362,63 @@ const MONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/400px-Aviansie_(level_148).webp",
   },
+  {
+    title: "Grinding chocolate bars",
+    inputs: {
+      "Chocolate bar": 9000,
+    },
+    outputs: {
+      "Chocolate dust": 9000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Chocolate_dust.webp",
+  },
+  {
+    title: "Smithing iron dart tips",
+    inputs: {
+      "Iron bar": 950,
+    },
+    outputs: {
+      "Iron dart tip": 9500,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Iron_dart_tip.webp",
+  },
+  {
+    title: "Smithing cannonballs",
+    inputs: {
+      "Steel bar": 1080,
+    },
+    outputs: {
+      Cannonball: 4320,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Cannonball.webp",
+  },
+  {
+    title: "Cleaning grimy guam leaves",
+    inputs: {
+      "Grimy guam leaf": 5000,
+    },
+    outputs: {
+      "Guam leaf": 5000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Grimy_guam_leaf.webp",
+  },
+  {
+    title: "Charging fire orbs",
+    inputs: {
+      "Unpowered orb": 468,
+      "Cosmic rune": 1404,
+      "Falador teleport (tablet)": 18,
+    },
+    outputs: {
+      "Fire orb": 468,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Fire_orb.webp",
+  },
 ];
 
 export default MONEYMAKERS;
