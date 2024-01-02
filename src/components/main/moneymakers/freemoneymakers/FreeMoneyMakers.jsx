@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import MONEYMAKERS from "../../../../utils/moneymakers/freemoneymakers";
 import { useCallback } from "react";
 import mills from "../../../../assets/icons/Mills.webp";
-import MethodPage from "../methodpage/MethodPage";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 

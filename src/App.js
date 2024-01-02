@@ -104,7 +104,13 @@ const App = () => {
               />
               <Route
                 path="/moneymakers/:newpath"
-                element={<MethodPage />}
+                element={
+                  <MethodPage
+                    mainState={mainState}
+                    setSubState={setSubState}
+                    subState={subState}
+                  />
+                }
               ></Route>
               <Route
                 path="/xptable"

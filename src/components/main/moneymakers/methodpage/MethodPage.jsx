@@ -2,18 +2,32 @@ import stl from "./MethodPage.module.css";
 import Pagination from "../../pagination/Pagination";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-const MethodPage = () => {
+const MethodPage = ({ mainState, setSubState, subState }) => {
+  const [title, setTitle] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
 
   const navigateBack = () => {
     navigate("/moneymakers");
   };
 
+  useEffect(() => {
+    console.log(location);
+    const pathName = location.pathname.replaceAll("_", " ").slice(13);
+    console.log(pathName);
+  }, [location]);
+
   return (
     <div className={stl.methodpage}>
       <div className={stl.adBar}>[ Advertisements ]</div>
-      <Pagination />
+      <Pagination
+        mainState={"Money Makers"}
+        setSubState={setSubState}
+        subState={location.pathname.replaceAll("_", " ").slice(13)}
+      />
       <div className={stl.modal}>
         <FaLongArrowAltLeft className={stl.closeBtn} onClick={navigateBack} />
       </div>
