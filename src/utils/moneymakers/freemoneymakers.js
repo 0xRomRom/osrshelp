@@ -481,6 +481,118 @@ const MONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/Pie_shell.webp",
   },
+  {
+    title: "Fletching headless arrows",
+    inputs: {
+      "Arrow shaft": 45000,
+      Feather: 45000,
+    },
+    outputs: {
+      "Headless arrow": 45000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Headless_arrow.webp",
+  },
+  {
+    title: "Making tarromin potions",
+    inputs: {
+      Tarromin: 4000,
+      "Vial of water": 4000,
+    },
+    outputs: {
+      "Tarromin potion (unf)": 4000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Tarromin_potion_(unf).webp",
+  },
+  {
+    title: "Cleaning grimy irit leaves",
+    inputs: {
+      "Grimy irit leaf": 5000,
+    },
+    outputs: {
+      "Irit leaf": 5000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Irit_leaf.webp",
+  },
+  {
+    title: "Buying pies",
+    inputs: {
+      "Pure essence": 85920,
+    },
+    outputs: {
+      "Redberry pie": 1200,
+      "Meat pie": 960,
+      "Apple pie": 720,
+      "Garden pie": 480,
+      "Fish pie": 240,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/200px-Romily_Weaklax.webp",
+  },
+  {
+    title: "Charging air orbs",
+    inputs: {
+      "Unpowered orb": 525,
+      "Cosmic rune": 1575,
+      "Energy potion(4)": 31.5,
+      "Amulet of glory(6)": 3.5,
+    },
+    outputs: {
+      "Air orb": 525,
+      "Amulet of glory": 3.5,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Air_orb.webp",
+  },
+  {
+    title: "Collecting black scimitars from Ardougne Castle",
+    inputs: {
+      "Ardougne teleport (tablet)": 5,
+    },
+    outputs: {
+      "Black scimitar": 135,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Black_scimitar.webp",
+  },
+  {
+    title: "Cleaning grimy harralander",
+    inputs: {
+      "Grimy harralander": 5000,
+    },
+    outputs: {
+      Harralander: 5000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Harralander.webp",
+  },
+  {
+    title: "Tanning red dragonhide",
+    inputs: {
+      "Pure essence": 70000,
+      "Red dragonhide": 3500,
+      "Energy potion(4)": 135,
+    },
+    outputs: {
+      "Red dragon leather": 3500,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Red_dragon_leather.webp",
+  },
+  {
+    title: "Stringing yew longbows",
+    inputs: {
+      "Yew longbow (u)": 2400,
+      "Bow string": 2400,
+    },
+    outputs: {
+      "Yew longbow": 2400,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Yew_longbow.webp",
+  },
 ];
 
 export default MONEYMAKERS;
