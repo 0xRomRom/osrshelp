@@ -419,6 +419,68 @@ const MONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/Fire_orb.webp",
   },
+  {
+    title: "Casting Spin Flax",
+    inputs: {
+      Flax: 5175,
+      "Astral rune": 1035,
+      "Nature rune": 2070,
+    },
+    outputs: {
+      "Bow string": 5175,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Bow_string.webp",
+  },
+  {
+    title: "Crafting opal bracelets",
+    inputs: {
+      "Silver bar": 1200,
+      Opal: 1200,
+    },
+    outputs: {
+      "Opal bracelet": 1200,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/500px-Opal_bracelet_detail.png",
+  },
+  {
+    title: "Collecting climbing boots",
+    inputs: {
+      "Pure essence": 7776,
+      "Ring of dueling(8)": 3,
+      "Games necklace(8)": 3,
+    },
+    outputs: {
+      "Climbing boots": 648,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Climbing_boots.webp",
+  },
+  {
+    title: "Enchanting sapphire rings",
+    inputs: {
+      "Sapphire ring": 1600,
+      "Cosmic rune": 1600,
+    },
+    outputs: {
+      "Ring of recoil": 1600,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Ring_of_recoil.webp",
+  },
+  {
+    title: "Making pie shells",
+    inputs: {
+      "Pastry dough": 2450,
+      "Pie dish": 2450,
+    },
+    outputs: {
+      "Pie shell": 2450,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Pie_shell.webp",
+  },
 ];
 
 export default MONEYMAKERS;
