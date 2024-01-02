@@ -1,9 +1,9 @@
 import stl from "./MethodPage.module.css";
 
-const MethodPage = ({ method }) => {
+const MethodPage = () => {
   return (
     <div className={stl.methodpage}>
-      <span>{method.title}</span>
+      <span>Hello world</span>
     </div>
   );
 };

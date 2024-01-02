@@ -15,6 +15,8 @@ import PaymentSucces from "./components/paymentSuccess/PaymentSucces";
 import AuthProvider from "./utils/authprovider/AuthProvider";
 import Footer from "./components/footer/Footer";
 
+import MethodPage from "./components/main/moneymakers/methodpage/MethodPage";
+
 const App = () => {
   const [activeTab, setActiveTab] = useState("/");
   const [skills, setSkills] = useState(null);
@@ -100,6 +102,10 @@ const App = () => {
                   />
                 }
               />
+              <Route
+                path="/moneymakers/:newpath"
+                element={<MethodPage />}
+              ></Route>
               <Route
                 path="/xptable"
                 element={
