@@ -3,11 +3,15 @@ import { useState, useEffect } from "react";
 import MONEYMAKERS from "../../../../utils/moneymakers/freemoneymakers";
 import { useCallback } from "react";
 import mills from "../../../../assets/icons/Mills.webp";
-import { a } from "react-spring";
+import MethodPage from "../methodpage/MethodPage";
+import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const FreeMoneyMakers = () => {
   const [itemPrices, setItemPrices] = useState({});
   const [methodsArray, setMethodsArray] = useState([]);
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
@@ -46,6 +50,7 @@ const FreeMoneyMakers = () => {
       return { ...item, profit: Math.ceil(profits / 1000) * 1000 };
     });
     const profitSorting = setPrices.sort((a, b) => a.profit - b.profit);
+    console.log(pathname);
     setMethodsArray(profitSorting);
   }, [itemPrices]);
 
@@ -66,7 +71,13 @@ const FreeMoneyMakers = () => {
     <div className={stl.grid}>
       {methodsArray.map((method) => {
         return (
-          <div className={stl.gridTile} key={method.title}>
+          <div
+            className={stl.gridTile}
+            key={method.title}
+            onClick={() => {
+              navigate(`${pathname}/${method.title.replaceAll(" ", "_")}`);
+            }}
+          >
             <img
               src={method.imgSrc}
               alt={method.title}
