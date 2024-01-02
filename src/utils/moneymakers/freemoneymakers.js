@@ -593,6 +593,102 @@ const MONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/Yew_longbow.webp",
   },
+  {
+    title: "Making anchovy pizzas",
+    inputs: {
+      "Plain pizza": 2500,
+      Anchovies: 2500,
+    },
+    outputs: {
+      "Anchovy pizza": 2500,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Anchovy_pizza.webp",
+  },
+  {
+    title: "Cleaning grimy cadantine",
+    inputs: {
+      "Grimy cadantine": 5000,
+    },
+    outputs: {
+      Cadantine: 5000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Cadantine.webp",
+  },
+  {
+    title: "Killing disciples of Iban",
+    inputs: {
+      "Ring of dueling(8)": 1.04,
+    },
+    outputs: {
+      "Zamorak monk top": 100,
+      "Zamorak monk bottom": 100,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Zamorak_monk_top.webp",
+  },
+  {
+    title: "Recharging rings of wealth",
+    inputs: {
+      "Ring of wealth": 216,
+      "Super energy(4)": 8,
+    },
+    outputs: {
+      "Ring of wealth (5)": 216,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Ring_of_wealth_(5).webp",
+  },
+  {
+    title: "Tanning black dragonhide",
+    inputs: {
+      "Pure essence": 70000,
+      "Black dragonhide": 3500,
+      "Energy potion(4)": 135,
+    },
+    outputs: {
+      "Black dragon leather": 3500,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Black_dragon_leather.webp",
+  },
+  {
+    title: "Cleaning grimy snapdragon",
+    inputs: {
+      "Grimy snapdragon": 5000,
+    },
+    outputs: {
+      Snapdragon: 5000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Snapdragon.webp",
+  },
+  {
+    title: "Tanning green dragonhide",
+    inputs: {
+      "Pure essence": 70000,
+      "Green dragonhide": 3500,
+      "Energy potion(4)": 135,
+    },
+    outputs: {
+      "Green dragon leather": 3500,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Green_dragon_leather.webp",
+  },
+  {
+    title: "Humidifying clay",
+    inputs: {
+      Clay: 22005,
+      "Astral rune": 815,
+    },
+    outputs: {
+      "Soft clay": 22005,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Soft_clay.webp",
+  },
 ];
 
 export default MONEYMAKERS;
