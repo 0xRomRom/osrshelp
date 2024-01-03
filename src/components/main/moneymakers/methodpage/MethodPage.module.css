@@ -58,7 +58,7 @@
   opacity: 0.8;
 }
 .headerBox:hover .heroTitle {
-  opacity: 0.8;
+  opacity: 0.3;
 }
 .headerBox:hover .miniIcon {
   opacity: 0.2;
@@ -92,19 +92,20 @@
 .reqsBox {
   position: relative;
   margin-top: 1rem;
-  width: 100%;
+  width: 50%;
 
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
   /* background-color: red; */
   gap: 0.65rem;
   padding: 1rem;
 }
 
 .reqBox {
-  width: 49.5%;
+  width: 17.5rem;
   min-height: 7.5rem;
   border-radius: 0.4rem;
   background-color: rgb(17, 23, 27);
@@ -135,7 +136,7 @@
   align-items: center;
   gap: 0.5rem;
   background-color: rgb(32, 46, 57);
-  padding: 0.25rem;
+  padding: 0.175rem 0.5rem;
   border-radius: 0.4rem;
   margin-bottom: 0.5rem;
   /* display: inline-block; */
@@ -148,4 +149,22 @@
 
 .noRequirements {
   color: rgb(217, 217, 217);
+}
+
+.skillList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgb(32, 46, 57);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.5rem;
+  /* display: inline-block; */
+  min-width: 3rem;
+}
+.columnWrap {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.5rem;
 }

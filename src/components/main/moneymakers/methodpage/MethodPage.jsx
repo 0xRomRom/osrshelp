@@ -78,33 +78,37 @@ const MethodPage = ({ setSubState }) => {
                   })}
                 </>
               )}
-              {Object.keys(methodState).length === 0 && (
-                <span className={stl.noRequirements}>No requirements</span>
-              )}
+              {Object.keys(methodState).length === 0 ||
+                (Object.keys(methodState.skills).length === 0 && (
+                  <span className={stl.noRequirements}>No requirements</span>
+                ))}
             </div>
           </div>
 
-          {/* <div className={stl.reqBox}>
+          <div className={stl.reqBox}>
             <span className={stl.reqTitle}>Items</span>
             <div className={stl.skillsList}>
-              {Object.keys(items).length > 0 && (
-                <>
+              {Object.keys(methodState).length > 0 && (
+                <div className={stl.columnWrap}>
                   {Object.entries(items).map(([index, skillLevel]) => {
                     console.log(skillLevel);
-                    // const skillNames = Object.keys(skillLevel);
-                    // const skillLevels = Object.entries(skillLevel)[0][1];
-                    // console.log(Object.entries(skillLevel));
+                    const skillNames = Object.keys(skillLevel);
+                    const skillLevels = Object.entries(skillLevel)[0][1];
+                    console.log(skillNames);
 
                     return (
-                      <div key={index} className={stl.resultRow}>
-                        <span className={stl.reqLvl}>{"hello"}</span>
+                      <div key={index} className={stl.skillList}>
+                        <span className={stl.reqLvl}>{skillNames}</span>
+                        <span className={stl.reqAmount}>
+                          {skillLevels > 0 ? skillLevels + "x" : ""}
+                        </span>
                       </div>
                     );
                   })}
-                </>
+                </div>
               )}
             </div>
-          </div> */}
+          </div>
           <div className={stl.reqBox}>
             <span className={stl.reqTitle}>Quests</span>
           </div>
