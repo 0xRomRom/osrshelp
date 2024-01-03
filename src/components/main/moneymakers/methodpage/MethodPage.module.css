@@ -106,7 +106,6 @@
 .reqBox {
   width: 17.5rem;
   min-height: 7.5rem;
-  height: 7.5rem;
   border-radius: 0.4rem;
   background-color: rgb(17, 23, 27);
   position: relative;
@@ -129,6 +128,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin: 3rem 0rem;
 }
 
 .resultRow {
