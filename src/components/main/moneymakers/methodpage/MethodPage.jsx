@@ -31,6 +31,7 @@ const MethodPage = ({ setSubState, moneyMaker }) => {
   const items = methodState.items;
   const quests = methodState.quests;
   const other = methodState.other;
+  const notes = methodState.notes;
 
   return (
     <div className={stl.methodpage}>
@@ -174,6 +175,24 @@ const MethodPage = ({ setSubState, moneyMaker }) => {
                 </>
               )}
             </div>
+            {Object.keys(methodState).length > 0 && (
+              <div className={stl.notesBox}>
+                {notes.length > 0 ? (
+                  <>
+                    <h2 className={stl.methodHero}>Notes</h2>
+                    {methodState.notes.map((story, index) => {
+                      return (
+                        <ul key={index} className={stl.mappedTaskList}>
+                          <li className={stl.storyItem}>{story}</li>
+                        </ul>
+                      );
+                    })}
+                  </>
+                ) : (
+                  ""
+                )}
+              </div>
+            )}
             <div className={stl.profitBox}>
               <h2 className={stl.methodHero}>Profit</h2>
               <div className={stl.profitCenter}>
