@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MONEYMAKERPAGES from "../../../../utils/moneymakers/moneymakerpages";
+import SKILLICONOBJECT from "../../../../utils/skilliconobject";
 
 const MethodPage = ({ setSubState }) => {
   const [methodState, setMethodState] = useState({});
@@ -63,9 +64,15 @@ const MethodPage = ({ setSubState }) => {
                     const skillNames = Object.keys(skillLevel);
                     const skillLevels = Object.entries(skillLevel)[0][1];
                     console.log(skillLevels);
+                    console.log(SKILLICONOBJECT);
 
                     return (
                       <div key={index}>
+                        <img
+                          src={SKILLICONOBJECT[skillNames]}
+                          alt="Skillicon"
+                          className={stl.miniSkillIcon}
+                        />
                         <span className={stl.skillname}>{skillNames}</span>
                         <span className={stl.reqLvl}>{skillLevels}</span>
                       </div>
