@@ -15,6 +15,7 @@ const MethodPage = ({ setSubState }) => {
 
   useEffect(() => {
     MONEYMAKERPAGES.map((item) => {
+      console.log(item.title);
       if (item.title === methodName) {
         setMethodState(item);
       }
@@ -26,10 +27,8 @@ const MethodPage = ({ setSubState }) => {
   };
 
   const skills = methodState.skills;
+  const items = methodState.items;
 
-  useEffect(() => {
-    console.log(skills);
-  }, [skills]);
   return (
     <div className={stl.methodpage}>
       <div className={stl.adBar}>[ Advertisements ]</div>
@@ -58,7 +57,7 @@ const MethodPage = ({ setSubState }) => {
           <div className={stl.reqBox}>
             <span className={stl.reqTitle}>Skills</span>
             <div className={stl.skillsList}>
-              {Object.keys(methodState.skills).length > 0 && (
+              {Object.keys(methodState).length > 0 && (
                 <>
                   {Object.entries(skills).map(([index, skillLevel]) => {
                     const skillNames = Object.keys(skillLevel);
@@ -79,14 +78,33 @@ const MethodPage = ({ setSubState }) => {
                   })}
                 </>
               )}
-              {Object.keys(methodState.skills).length === 0 && (
+              {Object.keys(methodState).length === 0 && (
                 <span className={stl.noRequirements}>No requirements</span>
               )}
             </div>
           </div>
-          <div className={stl.reqBox}>
+
+          {/* <div className={stl.reqBox}>
             <span className={stl.reqTitle}>Items</span>
-          </div>
+            <div className={stl.skillsList}>
+              {Object.keys(items).length > 0 && (
+                <>
+                  {Object.entries(items).map(([index, skillLevel]) => {
+                    console.log(skillLevel);
+                    // const skillNames = Object.keys(skillLevel);
+                    // const skillLevels = Object.entries(skillLevel)[0][1];
+                    // console.log(Object.entries(skillLevel));
+
+                    return (
+                      <div key={index} className={stl.resultRow}>
+                        <span className={stl.reqLvl}>{"hello"}</span>
+                      </div>
+                    );
+                  })}
+                </>
+              )}
+            </div>
+          </div> */}
           <div className={stl.reqBox}>
             <span className={stl.reqTitle}>Quests</span>
           </div>
