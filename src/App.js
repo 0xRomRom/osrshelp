@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import stl from "./App.module.css";
 import Nav from "./components/nav/Nav";
 import { Routes, Route } from "react-router-dom";
@@ -25,6 +25,11 @@ const App = () => {
 
   const [mainState, setMainState] = useState("Home");
   const [subState, setSubState] = useState(null);
+  const [moneyMaker, setMoneyMaker] = useState(null);
+
+  useEffect(() => {
+    console.log(moneyMaker);
+  }, [moneyMaker]);
 
   return (
     <div className={stl.app}>
@@ -99,12 +104,18 @@ const App = () => {
                     mainState={mainState}
                     setSubState={setSubState}
                     subState={subState}
+                    setMoneyMaker={setMoneyMaker}
                   />
                 }
               />
               <Route
                 path="/moneymakers/:newpath"
-                element={<MethodPage setSubState={setSubState} />}
+                element={
+                  <MethodPage
+                    setSubState={setSubState}
+                    moneyMaker={moneyMaker}
+                  />
+                }
               ></Route>
               <Route
                 path="/xptable"

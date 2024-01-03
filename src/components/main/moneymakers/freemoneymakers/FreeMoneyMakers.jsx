@@ -6,7 +6,7 @@ import mills from "../../../../assets/icons/Mills.webp";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-const FreeMoneyMakers = () => {
+const FreeMoneyMakers = ({ setMoneyMaker }) => {
   const [itemPrices, setItemPrices] = useState({});
   const [methodsArray, setMethodsArray] = useState([]);
   const { pathname } = useLocation();
@@ -71,6 +71,7 @@ const FreeMoneyMakers = () => {
             key={method.title}
             onClick={() => {
               navigate(`${pathname}/${method.title.replaceAll(" ", "_")}`);
+              setMoneyMaker(method);
             }}
           >
             <img

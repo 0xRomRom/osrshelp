@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import MONEYMAKERPAGES from "../../../../utils/moneymakers/moneymakerpages";
 import SKILLICONOBJECT from "../../../../utils/skilliconobject";
 
-const MethodPage = ({ setSubState }) => {
+const MethodPage = ({ setSubState, moneyMaker }) => {
   const [methodState, setMethodState] = useState({});
   const navigate = useNavigate();
   const location = useLocation();
@@ -172,6 +172,10 @@ const MethodPage = ({ setSubState }) => {
                   })}
                 </>
               )}
+            </div>
+            <div className={stl.profitBox}>
+              <h2 className={stl.methodHero}>Profit</h2>
+              <span>{moneyMaker.profit}</span>
             </div>
           </div>
         </div>

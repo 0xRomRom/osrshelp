@@ -197,14 +197,14 @@
 
 .locationHero {
   color: rgb(173, 173, 173);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .methodBox {
   margin-top: 2rem;
 }
 .methodHero {
   color: rgb(173, 173, 173);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .mappedTaskList {
@@ -213,4 +213,8 @@
 
 .storyItem {
   margin: 0.5rem 0rem;
+}
+
+.profitBox {
+  margin-top: 2rem;
 }

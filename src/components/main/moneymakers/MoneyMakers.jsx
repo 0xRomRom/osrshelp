@@ -34,8 +34,12 @@ const MoneyMakers = (props) => {
             Rune User
           </button>
         </div>
-        {activeModal === "Free" && <FreeMoneyMakers />}
-        {activeModal === "Rune" && <PremiumMoneyMakers />}
+        {activeModal === "Free" && (
+          <FreeMoneyMakers setMoneyMaker={props.setMoneyMaker} />
+        )}
+        {activeModal === "Rune" && (
+          <PremiumMoneyMakers setMoneyMaker={props.setMoneyMaker} />
+        )}
       </div>
     </div>
   );
