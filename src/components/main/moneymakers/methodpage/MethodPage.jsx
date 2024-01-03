@@ -29,6 +29,7 @@ const MethodPage = ({ setSubState }) => {
   const skills = methodState.skills;
   const items = methodState.items;
   const quests = methodState.quests;
+  const other = methodState.other;
 
   return (
     <div className={stl.methodpage}>
@@ -55,6 +56,7 @@ const MethodPage = ({ setSubState }) => {
           />
         </div>
         <div className={stl.reqsBox}>
+          <span className={stl.reqsTitle}>Requirements</span>
           <div className={stl.reqBox}>
             <span className={stl.reqTitle}>Skills</span>
             <div className={stl.skillsList}>
@@ -130,6 +132,23 @@ const MethodPage = ({ setSubState }) => {
           </div>
           <div className={stl.reqBox}>
             <span className={stl.reqTitle}>Other</span>
+            <div className={stl.skillsList}>
+              {Object.keys(methodState).length > 0 && (
+                <div className={stl.columnWrap}>
+                  {Object.entries(other).map(([index, skillLevel]) => {
+                    return (
+                      <div key={index} className={stl.skillList}>
+                        <span className={stl.reqAmount}>{skillLevel}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+              {Object.keys(methodState).length === 0 ||
+                (Object.keys(methodState.other).length === 0 && (
+                  <span className={stl.noRequirements}>No requirements</span>
+                ))}
+            </div>
           </div>
         </div>
       </div>

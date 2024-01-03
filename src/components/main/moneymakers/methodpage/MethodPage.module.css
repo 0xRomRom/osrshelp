@@ -171,3 +171,9 @@
 .miniSkillIcon {
   margin-top: 5px;
 }
+
+.reqsTitle {
+  text-align: center;
+  color: gray;
+  width: 17rem;
+}
