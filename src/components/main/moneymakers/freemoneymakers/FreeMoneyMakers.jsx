@@ -48,7 +48,6 @@ const FreeMoneyMakers = () => {
       return { ...item, profit: Math.ceil(profits / 1000) * 1000 };
     });
     const profitSorting = setPrices.sort((a, b) => a.profit - b.profit);
-    console.log(pathname);
     setMethodsArray(profitSorting);
   }, [itemPrices]);
 
@@ -61,9 +60,7 @@ const FreeMoneyMakers = () => {
     }
   }, [itemPrices, setMethodProfits]);
 
-  useEffect(() => {
-    console.log(methodsArray);
-  }, [methodsArray]);
+  useEffect(() => {}, [methodsArray]);
 
   return (
     <div className={stl.grid}>

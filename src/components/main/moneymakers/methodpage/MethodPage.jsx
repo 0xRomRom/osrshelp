@@ -49,11 +49,13 @@ const MethodPage = ({ setSubState }) => {
             alt={methodState.title}
             className={stl.miniIcon}
           />
-          <img
-            src={methodState.headerImg}
-            alt="Skill training location"
-            className={stl.headerBanner}
-          />
+          <div className={stl.headerBannerWrap}>
+            <img
+              src={methodState.headerImg}
+              alt="Skill training location"
+              className={stl.headerBanner}
+            />
+          </div>
         </div>
         <div className={stl.contentWrapper}>
           <div className={stl.reqsBox}>
@@ -151,7 +153,27 @@ const MethodPage = ({ setSubState }) => {
               </div>
             </div>
           </div>
-          <div className={stl.storyBox}></div>
+          <div className={stl.storyBox}>
+            <div className={stl.locationBox}>
+              <h2 className={stl.locationHero}>Location</h2>
+              <span>{methodState.location}</span>
+            </div>
+            <div className={stl.methodBox}>
+              <h2 className={stl.methodHero}>Instructions</h2>
+
+              {Object.keys(methodState).length > 0 && (
+                <>
+                  {methodState.instructions.map((story, index) => {
+                    return (
+                      <ul key={index} className={stl.mappedTaskList}>
+                        <li className={stl.storyItem}>{story}</li>
+                      </ul>
+                    );
+                  })}
+                </>
+              )}
+            </div>
+          </div>
         </div>
       </div>
     </div>
