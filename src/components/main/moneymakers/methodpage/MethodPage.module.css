@@ -218,3 +218,11 @@
 .profitBox {
   margin-top: 2rem;
 }
+
+.profitCenter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 24px;
+  gap: 0.5rem;
+}

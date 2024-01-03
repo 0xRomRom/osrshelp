@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import MONEYMAKERPAGES from "../../../../utils/moneymakers/moneymakerpages";
 import SKILLICONOBJECT from "../../../../utils/skilliconobject";
+import mills from "../../../../assets/icons/Mills.webp";
 
 const MethodPage = ({ setSubState, moneyMaker }) => {
   const [methodState, setMethodState] = useState({});
@@ -175,7 +176,14 @@ const MethodPage = ({ setSubState, moneyMaker }) => {
             </div>
             <div className={stl.profitBox}>
               <h2 className={stl.methodHero}>Profit</h2>
-              <span>{moneyMaker.profit}</span>
+              <div className={stl.profitCenter}>
+                <img
+                  src={mills}
+                  alt="Millions of Oldschool Runescape gold"
+                  className={stl.millsImg}
+                />
+                <span>{moneyMaker.profit.toLocaleString()}/h</span>
+              </div>
             </div>
           </div>
         </div>
