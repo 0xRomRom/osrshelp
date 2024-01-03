@@ -84,6 +84,7 @@
   font-size: 60px;
   color: white;
   font-weight: bold;
+  z-index: 50;
 }
 
 .miniIcon {
@@ -163,7 +164,6 @@
   padding: 0.25rem 0.5rem;
   border-radius: 0.4rem;
   min-width: 3rem;
-  text-align: center;
 }
 .columnWrap {
   display: flex;
