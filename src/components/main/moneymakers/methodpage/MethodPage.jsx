@@ -58,27 +58,29 @@ const MethodPage = ({ setSubState }) => {
           <div className={stl.reqBox}>
             <span className={stl.reqTitle}>Skills</span>
             <div className={stl.skillsList}>
-              {skills && (
-                <span>
+              {Object.keys(methodState.skills).length > 0 && (
+                <>
                   {Object.entries(skills).map(([index, skillLevel]) => {
                     const skillNames = Object.keys(skillLevel);
                     const skillLevels = Object.entries(skillLevel)[0][1];
-                    console.log(skillLevels);
-                    console.log(SKILLICONOBJECT);
 
                     return (
-                      <div key={index}>
-                        <img
-                          src={SKILLICONOBJECT[skillNames]}
-                          alt="Skillicon"
-                          className={stl.miniSkillIcon}
-                        />
-                        <span className={stl.skillname}>{skillNames}</span>
+                      <div key={index} className={stl.resultRow}>
+                        <div className={stl.imgWrapper}>
+                          <img
+                            src={SKILLICONOBJECT[skillNames]}
+                            alt="Skillicon"
+                            className={stl.miniSkillIcon}
+                          />
+                        </div>
                         <span className={stl.reqLvl}>{skillLevels}</span>
                       </div>
                     );
                   })}
-                </span>
+                </>
+              )}
+              {Object.keys(methodState.skills).length === 0 && (
+                <span className={stl.noRequirements}>No requirements</span>
               )}
             </div>
           </div>

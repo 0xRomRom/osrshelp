@@ -118,16 +118,34 @@
 }
 
 .skillsList {
+  margin-top: 1.5rem;
   position: relative;
-  background-color: red;
   width: 75%;
   left: 12.5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
-.skillname {
-  margin-right: 0.5rem;
-  position: relative;
+.resultRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgb(32, 46, 57);
+  padding: 0.25rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.5rem;
+  /* display: inline-block; */
+  min-width: 3rem;
+}
+
+.imgWrapper {
+  width: 1.75rem;
+}
+
+.noRequirements {
+  color: rgb(217, 217, 217);
 }
