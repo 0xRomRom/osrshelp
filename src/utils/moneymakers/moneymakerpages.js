@@ -5,7 +5,7 @@ const MONEYMAKERPAGES = [
     iconSrc: "./moneymakers/icons/Iron_knife.webp",
     skills: [{ Smithing: 22 }],
     items: [{ "Iron Bars": 0 }, { Hammer: 0 }],
-    quests: ["Death to the Dorgeshuun", "Another Slice of H.A.M. (optional)"],
+    quests: [],
     other: [],
   },
 ];
