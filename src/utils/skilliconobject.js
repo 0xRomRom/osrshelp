@@ -22,6 +22,7 @@ const SKILLICONOBJECT = {
   Strength: "./skillicons/Strength.webp",
   Thieving: "./skillicons/Thieving.webp",
   Woodcutting: "./skillicons/Woodcutting.webp",
+  Total: "./skillicons/Total.webp",
 };
 
 export default SKILLICONOBJECT;

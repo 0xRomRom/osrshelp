@@ -69,7 +69,7 @@ const MethodPage = ({ setSubState, moneyMaker }) => {
               <span className={stl.reqTitle}>Skills</span>
               <div className={stl.skillsList}>
                 {Object.keys(methodState).length > 0 && (
-                  <>
+                  <div className={stl.skillsBox}>
                     {Object.entries(skills).map(([index, skillLevel]) => {
                       const skillNames = Object.keys(skillLevel);
                       const skillLevels = Object.entries(skillLevel)[0][1];
@@ -87,7 +87,7 @@ const MethodPage = ({ setSubState, moneyMaker }) => {
                         </div>
                       );
                     })}
-                  </>
+                  </div>
                 )}
                 {Object.keys(methodState).length === 0 ||
                   (Object.keys(methodState.skills).length === 0 && (
@@ -108,7 +108,7 @@ const MethodPage = ({ setSubState, moneyMaker }) => {
                         <div key={index} className={stl.skillList}>
                           <span className={stl.reqLvl}>{skillNames}</span>
                           <span className={stl.reqAmount}>
-                            {skillLevels > 0 ? skillLevels + "x" : ""}
+                            {skillLevels > 0 ? "x" + skillLevels : ""}
                           </span>
                         </div>
                       );

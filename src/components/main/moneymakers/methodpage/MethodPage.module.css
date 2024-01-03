@@ -156,7 +156,7 @@
 
 .skillList {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
   background-color: rgb(32, 46, 57);
@@ -229,4 +229,13 @@
 
 .notesBox {
   margin-top: 2rem;
+}
+
+.skillsBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
 }

@@ -33,6 +33,34 @@ const MONEYMAKERPAGES = [
     ],
     notes: ["41+ Cooking recommended"],
   },
+  {
+    title: "Collecting wine of zamorak",
+    headerImg: "./moneymakers/headerbanners/CollectingWines.webp",
+    iconSrc: "./moneymakers/icons/Wine_of_zamorak.webp",
+    skills: [{ Magic: 33 }, { Hitpoints: 20 }, { Total: 500 }],
+    items: [
+      { "Law rune": 216 },
+      { Cake: 32 },
+      { "Restore potion(4)": 4 },
+      { "Water rune": 4 },
+      { "Ring of dueling(8)": 0.5 },
+    ],
+    quests: [],
+    other: [],
+    location:
+      "Chaos Temple north-west of Goblin Village, guarded by Monks of Zamorak.",
+    instructions: [
+      "Equip Zamorak robes and the staff of air.",
+      "Enter the Chaos Temple, north from Falador (members can use games necklaces for a faster route).",
+      "Climb the ladder inside the temple.",
+      "Use Telekinetic Grab on the wine on the table.",
+      "Quickly grab the other Wine of Zamorak across the room with Telekinetic Grab.",
+      "Return upstairs to wait for the first wine to respawn (25 seconds).",
+      "Repeat the process.",
+      "If using a looting bag, fill it in the Wilderness just north of the temple.",
+    ],
+    notes: ["500 total level is required."],
+  },
 ];
 
 export default MONEYMAKERPAGES;
