@@ -18,13 +18,13 @@ const MethodPage = ({ setSubState, moneyMaker }) => {
     if (!moneyMaker) {
       navigate("/moneymakers");
     }
-    MONEYMAKERPAGES.map((item) => {
+    MONEYMAKERPAGES.forEach((item) => {
       console.log(item.title);
       if (item.title === methodName) {
         setMethodState(item);
       }
     });
-  }, [methodName]);
+  }, [methodName, moneyMaker, navigate]);
 
   const navigateBack = () => {
     navigate("/moneymakers");

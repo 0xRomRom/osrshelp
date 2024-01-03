@@ -26,7 +26,7 @@
   left: 5%;
   /* height: 40rem; */
   margin-bottom: 2rem;
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+  background-color: rgb(32, 46, 57);
 }
 
 .typeSelection {

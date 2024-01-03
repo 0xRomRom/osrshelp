@@ -17,6 +17,22 @@ const MONEYMAKERPAGES = [
       "Varrock west bank should be used as it's the closest bank to an anvil in Oldschool Runescape.",
     ],
   },
+  {
+    title: "Baking potatoes",
+    headerImg: "./moneymakers/headerbanners/BakingPotatoes.webp",
+    iconSrc: "./moneymakers/icons/400px-Baked_potato_detail.webp",
+    skills: [{ Cooking: 7 }],
+    items: [{ Potato: 0 }],
+    quests: [],
+    other: [],
+    location: "Cooking guild or Myth's guild",
+    instructions: [
+      "Potatoes can only be baked on a range.",
+      "Fill your inventory with potatoes and cook on the range nearby.",
+      "A higher cooking level burns less food, which is highly recommended.",
+    ],
+    notes: ["41+ Cooking recommended"],
+  },
 ];
 
 export default MONEYMAKERPAGES;
