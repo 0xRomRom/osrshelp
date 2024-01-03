@@ -15,6 +15,9 @@ const MethodPage = ({ setSubState, moneyMaker }) => {
   const methodName = location.pathname.replaceAll("_", " ").slice(13);
 
   useEffect(() => {
+    if (!moneyMaker) {
+      navigate("/moneymakers");
+    }
     MONEYMAKERPAGES.map((item) => {
       console.log(item.title);
       if (item.title === methodName) {
@@ -201,7 +204,9 @@ const MethodPage = ({ setSubState, moneyMaker }) => {
                   alt="Millions of Oldschool Runescape gold"
                   className={stl.millsImg}
                 />
-                <span>{moneyMaker.profit.toLocaleString()}/h</span>
+                {moneyMaker && (
+                  <span>{moneyMaker.profit.toLocaleString()}/h</span>
+                )}
               </div>
             </div>
           </div>
