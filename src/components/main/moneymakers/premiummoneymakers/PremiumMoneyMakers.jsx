@@ -14,7 +14,7 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Iron_ore|Coal|Stamina_potion(4)|Onion_seed|Steel_bar"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Iron_ore|Coal|Stamina_potion(4)|Onion_seed|Steel_bar|Uncut_opal|Uncut_jade|Uncut_red_topaz|Uncut_sapphire|Uncut_emerald|Uncut_ruby|Uncut_diamond|Irit_leaf|Vial_of_water|Irit_potion_(unf)|Topaz_amulet|Cosmic_rune|Burning_amulet(5)|Prayer_potion(4)|Lobster|Stamina_potion(4)|Magic_logs|Yew_logs|Maple_logs|Willow_logs|Oak_logs|Bracelet_of_ethereum_(uncharged)|Revenant_ether|Nature_rune"
     );
     const result = await fetcher.json();
     const fetcher2 = await fetch(
