@@ -152,6 +152,117 @@ const PREMIUMMONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/Lantadyme_potion_(unf).webp",
   },
+  {
+    title: "Making raw wild pies",
+    inputs: {
+      "Pie shell": 740,
+      "Raw bear meat": 740,
+      "Raw rabbit": 740,
+      "Raw chompy": 740,
+    },
+    outputs: {
+      "Raw wild pie": 740,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Raw_wild_pie.webp",
+  },
+  {
+    title: "Making avantoe potions",
+    inputs: {
+      Avantoe: 4000,
+      "Vial of water": 4000,
+    },
+    outputs: {
+      "Avantoe potion (unf)": 4000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Avantoe_potion_(unf).webp",
+  },
+  {
+    title: "Fletching ruby bolts",
+    inputs: {
+      "Adamant bolts": 27000,
+      "Ruby bolt tips": 27000,
+    },
+    outputs: {
+      "Ruby bolts": 27000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Ruby_bolts_5.webp",
+  },
+  {
+    title: "Making ranarr potions",
+    inputs: {
+      "Ranarr weed": 4000,
+      "Vial of water": 4000,
+    },
+    outputs: {
+      "Ranarr potion (unf)": 4000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Ranarr_potion_(unf).webp",
+  },
+  {
+    title: "Making ultracompost",
+    inputs: {
+      Supercompost: 2700,
+      "Volcanic ash": 5400,
+    },
+    outputs: {
+      Ultracompost: 2700,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Ultracompost.webp",
+  },
+  {
+    title: "Casting Tan Leather",
+    inputs: {
+      "Nature rune": 1600,
+      "Astral rune": 3200,
+      "Red dragonhide": 8000,
+    },
+    outputs: {
+      "Red dragon leather": 8000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Red_dragon_leather.webp",
+  },
+  {
+    title: "Making toadflax potions",
+    inputs: {
+      Toadflax: 4000,
+      "Vial of water": 4000,
+    },
+    outputs: {
+      "Toadflax potion (unf)": 4000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Toadflax_potion_(unf).webp",
+  },
+  {
+    title: "Making kwuarm potions",
+    inputs: {
+      Kwuarm: 4000,
+      "Vial of water": 4000,
+    },
+    outputs: {
+      "Kwuarm potion (unf)": 4000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Kwuarm_potion_(unf).webp",
+  },
+  {
+    title: "Killing the Giant Mole (Dharok's)",
+    inputs: {
+      "Onion seed": 180000,
+    },
+    outputs: {
+      "Mole claw": 60,
+      "Mole skin": 110,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/500px-Giant_Mole_(Christmas).webp",
+  },
 ];
 
 export default PREMIUMMONEYMAKERS;

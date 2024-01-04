@@ -27,10 +27,6 @@ const App = () => {
   const [subState, setSubState] = useState(null);
   const [moneyMaker, setMoneyMaker] = useState(null);
 
-  useEffect(() => {
-    console.log(moneyMaker);
-  }, [moneyMaker]);
-
   return (
     <div className={stl.app}>
       <AuthProvider>

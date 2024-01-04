@@ -14,14 +14,14 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
 
   const priceFetcher = async () => {
     const query1 =
-      "Iron_ore|Coal|Stamina_potion(4)|Onion_seed|Steel_bar|Uncut_opal|Uncut_jade|Uncut_red_topaz|Uncut_sapphire|Uncut_emerald|Uncut_ruby|Uncut_diamond|Irit_leaf|Vial_of_water|Irit_potion_(unf)|Topaz_amulet|Cosmic_rune|Burning_amulet(5)|Prayer_potion(4)|Lobster|Stamina_potion(4)|Magic_logs|Yew_logs|Maple_logs|Willow_logs|Oak_logs|Bracelet_of_ethereum_(uncharged)|Revenant_ether|Nature_rune|Pure_essence|Adamant_bolts|Diamond_bolt_tips|Diamond_bolts|Poison_ivy_berries|Coconut_milk|Weapon_poison(++)|Runite_ore|Bowl_of_hot_water|Empty_cup|Guam_leaf|Marrentill|Harralander|Guthix_rest(4)|Bowl|Lantadyme|Vial_of_water|Lantadyme_potion_(unf)";
+      "Iron_ore|Coal|Stamina_potion(4)|Onion_seed|Steel_bar|Uncut_opal|Uncut_jade|Uncut_red_topaz|Uncut_sapphire|Uncut_emerald|Uncut_ruby|Uncut_diamond|Irit_leaf|Vial_of_water|Irit_potion_(unf)|Topaz_amulet|Cosmic_rune|Burning_amulet(5)|Prayer_potion(4)|Lobster|Stamina_potion(4)|Magic_logs|Yew_logs|Maple_logs|Willow_logs|Oak_logs|Bracelet_of_ethereum_(uncharged)|Revenant_ether|Nature_rune|Pure_essence|Adamant_bolts|Diamond_bolt_tips|Diamond_bolts|Poison_ivy_berries|Coconut_milk|Weapon_poison(++)|Runite_ore|Bowl_of_hot_water|Empty_cup|Guam_leaf|Marrentill|Harralander|Guthix_rest(4)|Bowl|Lantadyme|Vial_of_water|Lantadyme_potion_(unf)|Pie_shell|Raw_bear_meat|Raw_rabbit|Raw_chompy|Raw_wild_pie|Avantoe|Avantoe_potion_(unf)|Ruby_bolt_tips|Ruby_bolts|Ranarr_weed|Ranarr_potion_(unf)|Supercompost|Volcanic_ash|Ultracompost|Astral_rune|Red_dragonhide|Red_dragon_leather|Toadflax|Toadflax_potion_(unf)|Kwuarm|Kwuarm_potion_(unf)|Mole_claw|Mole_skin";
     const query1Encoded = encodeURIComponent(query1);
     const fetcher = await fetch(
       `https://api.weirdgloop.org/exchange/history/osrs/latest?name=${query1Encoded}`
     );
     const result = await fetcher.json();
     const fetcher2 = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Arrow_shaft|Feather|Headless_arrow|Tarromin|Vial_of_Water|Tarromin_potion_(unf)|Grimy_irit_leaf|Irit_leaf|Redberry_pie|Meat_pie|Apple_pie|Garden_pie|Fish_pie|Amulet_of_glory(6)|Air_orb|Ardougne_teleport_(tablet)|Black_scimitar|Grimy_harralander|Harralander|Red_dragonhide|Red_dragon_leather|Yew_longbow_(u)|Yew_longbow|Plain_pizza|Anchovies|Anchovy_pizza|Grimy_cadantine|Cadantine|Zamorak_monk_top|Zamorak_monk_bottom|Ring_of_wealth|Super_energy(4)|Ring_of_wealth_(5)|Black_dragonhide|Black_dragon_leather|Grimy_snapdragon|Snapdragon|Green_dragonhide|Green_dragon_leather|Clay|Soft_clay|Grimy_kwuarm|Kwuarm|Unicorn_horn|Unicorn_horn_dust|Mort_myre_fungus|Pineapple_ring|Pineapple_pizza|Bucket_of_sand|Seaweed|Molten_glass|Mahogany_logs|Mahogany_plank|Grimy_avantoe|Avantoe|Jug_of_wine|Cave_goblin_wire"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Arrow_shaft"
     );
     const result2 = await fetcher2.json();
     setItemPrices({ ...result, ...result2 });
