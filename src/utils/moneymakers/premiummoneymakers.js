@@ -79,6 +79,79 @@ const PREMIUMMONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/Bracelet_of_ethereum_(uncharged).webp",
   },
+  {
+    title: "Crafting cosmic runes",
+    inputs: {
+      "Pure essence": 2160,
+    },
+    outputs: {
+      "Cosmic rune": 6918,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Cosmic_rune.webp",
+  },
+  {
+    title: "Fletching diamond bolts",
+    inputs: {
+      "Adamant bolts": 27000,
+      "Diamond bolt tips": 27000,
+    },
+    outputs: {
+      "Diamond bolts": 27000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Diamond_bolts_5.webp",
+  },
+  {
+    title: "Making weapon poison(++)",
+    inputs: {
+      "Poison ivy berries": 150,
+      "Coconut milk": 150,
+    },
+    outputs: {
+      "Weapon poison(++)": 150,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Weapon_poison(++).webp",
+  },
+  {
+    title: "Mining runite ore",
+    inputs: {},
+    outputs: {
+      "Runite ore": 65,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/400px-Runite_rocks.webp",
+  },
+  {
+    title: "Making Guthix rests",
+    inputs: {
+      "Bowl of hot water": 560,
+      "Empty cup": 560,
+      "Guam leaf": 1120,
+      Marrentill: 560,
+      Harralander: 560,
+    },
+    outputs: {
+      "Guthix rest(4)": 420,
+      "Empty cup": 140,
+      Bowl: 560,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/400px-Guthix_rest(4)_detail.webp",
+  },
+  {
+    title: "Making lantadyme potions",
+    inputs: {
+      Lantadyme: 4000,
+      "Vial of water": 4000,
+    },
+    outputs: {
+      "Lantadyme potion (unf)": 4000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Lantadyme_potion_(unf).webp",
+  },
 ];
 
 export default PREMIUMMONEYMAKERS;

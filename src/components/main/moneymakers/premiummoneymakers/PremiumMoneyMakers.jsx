@@ -13,8 +13,11 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
   const navigate = useNavigate();
 
   const priceFetcher = async () => {
+    const query1 =
+      "Iron_ore|Coal|Stamina_potion(4)|Onion_seed|Steel_bar|Uncut_opal|Uncut_jade|Uncut_red_topaz|Uncut_sapphire|Uncut_emerald|Uncut_ruby|Uncut_diamond|Irit_leaf|Vial_of_water|Irit_potion_(unf)|Topaz_amulet|Cosmic_rune|Burning_amulet(5)|Prayer_potion(4)|Lobster|Stamina_potion(4)|Magic_logs|Yew_logs|Maple_logs|Willow_logs|Oak_logs|Bracelet_of_ethereum_(uncharged)|Revenant_ether|Nature_rune|Pure_essence|Adamant_bolts|Diamond_bolt_tips|Diamond_bolts|Poison_ivy_berries|Coconut_milk|Weapon_poison(++)|Runite_ore|Bowl_of_hot_water|Empty_cup|Guam_leaf|Marrentill|Harralander|Guthix_rest(4)|Bowl|Lantadyme|Vial_of_water|Lantadyme_potion_(unf)";
+    const query1Encoded = encodeURIComponent(query1);
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Iron_ore|Coal|Stamina_potion(4)|Onion_seed|Steel_bar|Uncut_opal|Uncut_jade|Uncut_red_topaz|Uncut_sapphire|Uncut_emerald|Uncut_ruby|Uncut_diamond|Irit_leaf|Vial_of_water|Irit_potion_(unf)|Topaz_amulet|Cosmic_rune|Burning_amulet(5)|Prayer_potion(4)|Lobster|Stamina_potion(4)|Magic_logs|Yew_logs|Maple_logs|Willow_logs|Oak_logs|Bracelet_of_ethereum_(uncharged)|Revenant_ether|Nature_rune"
+      `https://api.weirdgloop.org/exchange/history/osrs/latest?name=${query1Encoded}`
     );
     const result = await fetcher.json();
     const fetcher2 = await fetch(
