@@ -19,7 +19,7 @@ const SKILLICONOBJECT = {
   Runecraft: "./skillicons/Runecraft.webp",
   Slayer: "./skillicons/Slayer.png",
   Smithing: "./skillicons/Smithing.webp",
-  Strength: "./skillicons/Strength.webp",
+  Strength: "./skillicons/Strength.png",
   Thieving: "./skillicons/Thieving.webp",
   Woodcutting: "./skillicons/Woodcutting.webp",
   Total: "./skillicons/Total.webp",
