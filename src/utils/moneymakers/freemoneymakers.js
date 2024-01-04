@@ -1,6 +1,6 @@
 const MONEYMAKERS = [
   /*
-   * Pure essence serves as placeholder for gp
+   * Onion seed serves as placeholder for gp
    */
 
   {
@@ -101,7 +101,7 @@ const MONEYMAKERS = [
     title: "Killing chaos druids",
     inputs: {},
     outputs: {
-      "Pure essence": 164000,
+      "Onion seed": 164000,
     },
     profit: 0,
     imgSrc: "./moneymakers/icons/260px-Chaos_druid.webp",
@@ -112,7 +112,7 @@ const MONEYMAKERS = [
       "Oak logs": 2106,
       "Willow logs": 78,
       "Ring of dueling(8)": 9.75,
-      "Pure essence": 526500,
+      "Onion seed": 526500,
     },
     outputs: {
       "Oak plank": 2106,
@@ -157,7 +157,7 @@ const MONEYMAKERS = [
   {
     title: "Buying bronze bars",
     inputs: {
-      "Pure essence": 6400,
+      "Onion seed": 6400,
     },
     outputs: {
       "Bronze bar": 800,
@@ -170,7 +170,7 @@ const MONEYMAKERS = [
     inputs: {},
     outputs: {
       "Iron ore": 1700,
-      "Pure essence": 19050,
+      "Onion seed": 19050,
       "Uncut sapphire": 4.94,
       "Uncut emerald": 2.47,
       "Uncut ruby": 1.24,
@@ -210,7 +210,7 @@ const MONEYMAKERS = [
   {
     title: "Buying team capes",
     inputs: {
-      "Pure essence": 225037,
+      "Onion seed": 225037,
       "Energy potion(4)": 83,
     },
     outputs: {
@@ -298,7 +298,7 @@ const MONEYMAKERS = [
     title: "Climbing the Agility Pyramid",
     inputs: {},
     outputs: {
-      "Pure essence": 200000,
+      "Onion seed": 200000,
     },
     profit: 0,
     imgSrc: "./moneymakers/icons/500px-Agility_Pyramid.webp",
@@ -306,7 +306,7 @@ const MONEYMAKERS = [
   {
     title: "Creating bones to peaches tablets",
     inputs: {
-      "Pure essence": 4750,
+      "Onion seed": 4750,
       "Soft clay": 750,
       "Nature rune": 1500,
     },
@@ -447,7 +447,7 @@ const MONEYMAKERS = [
   {
     title: "Collecting climbing boots",
     inputs: {
-      "Pure essence": 7776,
+      "Onion seed": 7776,
       "Ring of dueling(8)": 3,
       "Games necklace(8)": 3,
     },
@@ -519,7 +519,7 @@ const MONEYMAKERS = [
   {
     title: "Buying pies",
     inputs: {
-      "Pure essence": 85920,
+      "Onion seed": 85920,
     },
     outputs: {
       "Redberry pie": 1200,
@@ -571,7 +571,7 @@ const MONEYMAKERS = [
   {
     title: "Tanning red dragonhide",
     inputs: {
-      "Pure essence": 70000,
+      "Onion seed": 70000,
       "Red dragonhide": 3500,
       "Energy potion(4)": 135,
     },
@@ -643,7 +643,7 @@ const MONEYMAKERS = [
   {
     title: "Tanning black dragonhide",
     inputs: {
-      "Pure essence": 70000,
+      "Onion seed": 70000,
       "Black dragonhide": 3500,
       "Energy potion(4)": 135,
     },
@@ -667,7 +667,7 @@ const MONEYMAKERS = [
   {
     title: "Tanning green dragonhide",
     inputs: {
-      "Pure essence": 70000,
+      "Onion seed": 70000,
       "Green dragonhide": 3500,
       "Energy potion(4)": 135,
     },
@@ -709,7 +709,7 @@ const MONEYMAKERS = [
       "Unicorn horn dust": 9000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Kwuarm.webp",
+    imgSrc: "./moneymakers/icons/Unicorn_horn.webp",
   },
   {
     title: "Collecting mort myre fungi",
@@ -733,7 +733,7 @@ const MONEYMAKERS = [
       "Pineapple pizza": 2500,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Mort_myre_fungus.webp",
+    imgSrc: "./moneymakers/icons/Pineapple_pizza.webp",
   },
   {
     title: "Casting Superglass Make",
@@ -754,7 +754,7 @@ const MONEYMAKERS = [
       "Mahogany logs": 2106,
       "Willow logs": 78,
       "Ring of dueling(8)": 9.75,
-      "Pure essence": 3159000,
+      "Onion seed": 3159000,
     },
     outputs: {
       "Mahogany plank": 2106,
