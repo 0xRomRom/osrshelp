@@ -1,6 +1,7 @@
 const MONEYMAKERPAGES = [
   {
     title: "Smithing iron knives",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/SmithingIronKnifes.webp",
     iconSrc: "./moneymakers/icons/Iron_knife.webp",
     skills: [{ Smithing: 22 }],
@@ -17,6 +18,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Baking potatoes",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/BakingPotatoes.webp",
     iconSrc: "./moneymakers/icons/400px-Baked_potato_detail.webp",
     skills: [{ Cooking: 7 }],
@@ -33,6 +35,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Collecting wine of zamorak",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/CollectingWines.webp",
     iconSrc: "./moneymakers/icons/Wine_of_zamorak.webp",
     skills: [{ Magic: 33 }, { Hitpoints: 20 }, { Total: 500 }],
@@ -62,6 +65,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Collecting red spiders' eggs",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/CollectingSpidersEggs.webp",
     iconSrc: "./moneymakers/icons/300px-Red_spiders'_eggs_detail.webp",
     skills: [{ Combat: 69 }],
@@ -89,6 +93,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Crafting diamond bracelets",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/CraftingDiamondBracelets.webp",
     iconSrc: "./moneymakers/icons/500px-diamond_bracelet_detail.webp",
     skills: [{ Crafting: 58 }],
@@ -110,6 +115,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Killing chaos druids",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/KillingChaosDruids.webp",
     iconSrc: "./moneymakers/icons/260px-Chaos_druid.webp",
     skills: [{ Combat: 40 }, { Prayer: 25 }],
@@ -136,6 +142,7 @@ const MONEYMAKERPAGES = [
     title: "Mining adamantite ore",
     headerImg: "./moneymakers/headerbanners/MiningGuild.webp",
     iconSrc: "./moneymakers/icons/420px-Adamantite_ore_detail.webp",
+    premium: false,
     skills: [{ Mining: 70 }],
     items: [
       { "Dragon/Crystal pickaxe": 0 },
@@ -157,6 +164,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cleaning grimy guam leaves",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Grimy_guam_leaf.webp",
     skills: [{ Herblore: 3 }],
@@ -174,6 +182,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cooking raw monkfish",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/AlkharidRange.webp",
     iconSrc: "./moneymakers/icons/500px-Monkfish_detail.webp",
     skills: [{ Cooking: 62 }],
@@ -193,6 +202,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cooking plain pizzas",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Plain_pizza.webp",
     skills: [{ Cooking: 35 }],
@@ -209,6 +219,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Collecting fish food",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/CollectingFishFood.webp",
     iconSrc: "./moneymakers/icons/Fish_food.webp",
     skills: [],
@@ -225,6 +236,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Collecting jangerberries",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/CollectingJangerberries.webp",
     iconSrc: "./moneymakers/icons/260px-Jangerberries_detail.webp",
     skills: [{ Agility: 10 }],
@@ -242,6 +254,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cleaning grimy dwarf weed",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Grimy_guam_leaf.webp",
     skills: [{ Herblore: 70 }],
@@ -259,6 +272,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Creating bones to peaches tablets",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/HousePortal.webp",
     iconSrc: "./moneymakers/icons/Bones_to_peaches_(tablet).webp",
     skills: [{ Magic: 60 }, { Attack: 30 }],
@@ -281,6 +295,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Mining iron ore",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/MiningGuild.webp",
     iconSrc: "./moneymakers/icons/600px-Iron_ore_detail.webp",
     skills: [{ Mining: 15 }],
@@ -299,6 +314,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cleaning grimy tarromin",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Grimy_tarromin.webp",
     skills: [{ Herblore: 11 }],
@@ -316,6 +332,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Picking bananas",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/PickingBananas.webp",
     iconSrc: "./moneymakers/icons/Bananas(5).webp",
     skills: [],
@@ -337,6 +354,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Making oak planks",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/MakingPlanks.webp",
     iconSrc: "./moneymakers/icons/Oak_plank.webp",
     skills: [{ Firemaking: 50 }],
@@ -366,6 +384,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Charging earth orbs",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/KillingChaosDruids.webp",
     iconSrc: "./moneymakers/icons/Earth_orb.webp",
     skills: [{ Magic: 60 }],
@@ -393,6 +412,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Buying bronze bars",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/BuyingBronzeBars.webp",
     iconSrc: "./moneymakers/icons/Bronze_bar.webp",
     skills: [],
@@ -409,6 +429,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Climbing the Agility Pyramid",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/AgilityPyramid.webp",
     iconSrc: "./moneymakers/icons/500px-Agility_Pyramid.webp",
     skills: [{ Agility: 30 }, { Hitpoints: 20 }],
@@ -425,6 +446,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Smithing iron dart tips",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/SmithingIronKnifes.webp",
     iconSrc: "./moneymakers/icons/Iron_dart_tip.webp",
     skills: [{ Smithing: 19 }],
@@ -441,6 +463,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Making pizza bases",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Pizza_base.webp",
     skills: [],
@@ -461,6 +484,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Creating teleport to house tablets",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/HousePortal.webp",
     iconSrc: "./moneymakers/icons/Teleport_to_house_(tablet).webp",
     skills: [{ Magic: 40 }, { Attack: 30 }],
@@ -485,6 +509,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Killing aviansies",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/KillingAviansies.webp",
     iconSrc: "./moneymakers/icons/400px-Aviansie_(level_148).webp",
     skills: [
@@ -521,6 +546,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cutting ruby bolt tips",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Ruby_bolt_tips_5 (1).webp",
     skills: [{ Fletching: 63 }],
@@ -537,6 +563,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Grinding chocolate bars",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Chocolate_dust.webp",
     skills: [],
@@ -552,6 +579,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cooking raw anglerfish",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/HosidiusKitchen.webp",
     iconSrc: "./moneymakers/icons/400px-Raw_anglerfish_detail.webp",
     skills: [{ Cooking: 84 }],
@@ -567,6 +595,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Catching raw karambwan",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/KarambwanFishing.webp",
     iconSrc: "./moneymakers/icons/500px-Raw_karambwan_detail.webp",
     skills: [{ Fishing: 65 }],
@@ -594,6 +623,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cleaning grimy kwuarm",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Kwuarm.webp",
     skills: [{ Herblore: 54 }],
@@ -611,6 +641,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cleaning grimy lantadyme",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Grimy_lantadyme.webp",
     skills: [{ Herblore: 67 }],
@@ -628,6 +659,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Smithing cannonballs",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/CraftingDiamondBracelets.webp",
     iconSrc: "./moneymakers/icons/Cannonball.webp",
     skills: [{ Smithing: 35 }],
@@ -643,6 +675,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Making pastry dough",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/280px-Pastry_dough_detail.webp",
     skills: [],
@@ -658,6 +691,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Casting Spin Flax",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Bow_string.webp",
     skills: [{ Magic: 76 }],
@@ -679,6 +713,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cleaning grimy cadantine",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Cadantine.webp",
     skills: [{ Herblore: 65 }],
@@ -696,6 +731,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Making pie shells",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Pie_shell.webp",
     skills: [],
@@ -717,6 +753,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Charging fire orbs",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/TaverlyDungeon.webp",
     iconSrc: "./moneymakers/icons/Fire_orb.webp",
     skills: [{ Magic: 63 }, { Agility: 70 }],
@@ -745,6 +782,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Enchanting sapphire rings",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Ring_of_recoil.webp",
     skills: [{ Magic: 7 }],
@@ -764,6 +802,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Collecting climbing boots",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/CollectingClimbingBoots.webp",
     iconSrc: "./moneymakers/icons/Climbing_boots.webp",
     skills: [],
@@ -787,6 +826,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Making tarromin potions",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Tarromin_potion_(unf).webp",
     skills: [{ Herblore: 12 }],
@@ -802,6 +842,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Fletching headless arrows",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Headless_arrow.webp",
     skills: [],
@@ -817,6 +858,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cleaning grimy harralander",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Harralander.webp",
     skills: [{ Herblore: 20 }],
@@ -834,6 +876,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Crafting opal bracelets",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/CraftingDiamondBracelets.webp",
     iconSrc: "./moneymakers/icons/500px-Opal_bracelet_detail.png",
     skills: [{ Crafting: 22 }],
@@ -855,6 +898,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Tanning green dragonhide",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/TanningLeather.webp",
     iconSrc: "./moneymakers/icons/500px-Opal_bracelet_detail.png",
     skills: [],
@@ -875,6 +919,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Buying pies",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/CookingGuild.webp",
     iconSrc: "./moneymakers/icons/200px-Romily_Weaklax.webp",
     skills: [{ Cooking: 32 }],
@@ -892,6 +937,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Charging air orbs",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/ChargingAirOrbs.webp",
     iconSrc: "./moneymakers/icons/Air_orb.webp",
     skills: [{ Magic: 66 }],
@@ -920,6 +966,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Collecting black scimitars from Ardougne Castle",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/StealingScimitars.webp",
     iconSrc: "./moneymakers/icons/Black_scimitar.webp",
     skills: [{ Thieving: 61 }],
@@ -937,6 +984,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Tanning red dragonhide",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/TanningLeather.webp",
     iconSrc: "./moneymakers/icons/Red_dragon_leather.webp",
     skills: [],
@@ -957,6 +1005,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Making anchovy pizzas",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Anchovy_pizza.webp",
     skills: [{ Cooking: 55 }],
@@ -973,6 +1022,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cleaning grimy avantoe",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Avantoe.webp",
     skills: [{ Herblore: 48 }],
@@ -990,6 +1040,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Cleaning grimy snapdragon",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Snapdragon.webp",
     skills: [{ Herblore: 59 }],
@@ -1007,6 +1058,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Humidifying clay",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Soft_clay.webp",
     skills: [{ Magic: 68 }],
@@ -1027,6 +1079,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Tanning black dragonhide",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/TanningLeather.webp",
     iconSrc: "./moneymakers/icons/Black_dragon_leather.webp",
     skills: [],
@@ -1047,6 +1100,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Stringing yew longbows",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Yew_longbow.webp",
     skills: [{ Fletching: 70 }],
@@ -1063,6 +1117,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Collecting mort myre fungi",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/MortMyreFungus.webp",
     iconSrc: "./moneymakers/icons/Mort_myre_fungus.webp",
     skills: [],
@@ -1089,6 +1144,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Killing disciples of Iban",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/KillingDisciples.webp",
     iconSrc: "./moneymakers/icons/260px-Chaos_druid.webp",
     skills: [{ Hitpoints: 50 }, { Agility: 60 }],
@@ -1110,6 +1166,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Grinding unicorn horns",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Unicorn_horn.webp",
     skills: [],
@@ -1131,6 +1188,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Making pineapple pizzas",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Pineapple_pizza.webp",
     skills: [{ Cooking: 65 }],
@@ -1152,6 +1210,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Casting Superglass Make",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
     iconSrc: "./moneymakers/icons/Molten_glass.webp",
     skills: [{ Magic: 77 }],
@@ -1175,6 +1234,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Making mahogany planks",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/MakingPlanks.webp",
     iconSrc: "./moneymakers/icons/Mahogany_plank.webp",
     skills: [{ Firemaking: 50 }],
@@ -1204,6 +1264,7 @@ const MONEYMAKERPAGES = [
   },
   {
     title: "Stealing cave goblin wire",
+    premium: false,
     headerImg: "./moneymakers/headerbanners/StealingWires.webp",
     iconSrc: "./moneymakers/icons/Cave_goblin_wire.webp",
     skills: [{ Thieving: 44 }],
@@ -1220,6 +1281,39 @@ const MONEYMAKERPAGES = [
       "Eat food to heal as necessary.",
     ],
     notes: [],
+  },
+
+  //////////////////
+  //   Premium    //
+  //////////////////
+  {
+    title: "Smelting steel bars at Blast Furnace",
+    premium: true,
+    headerImg: "./moneymakers/headerbanners/BlastFurnace.webp",
+    iconSrc: "./moneymakers/icons/Steel_bar.webp",
+    skills: [{ Smithing: 30 }],
+    items: [
+      { "Weight reducing clothing": 0 },
+      { "Coal bag": 0 },
+      { "Gloves of ice": 0 },
+      { "Stamina potion(4)": 9 },
+      { Coins: 72000 },
+      { "Iron ore": 5400 },
+      { Coal: 5400 },
+      { "Stamina potion(4)": 9 },
+    ],
+    quests: ["Started the Giant Dwarf"],
+    other: [],
+    location: "Blast Furnace (keldagrim)",
+    instructions: [
+      "Travel to Blast Furnace and visit one of many official Blast Furnace worlds.",
+      "Deposit money into the cover (72K).",
+      "Start first run by placing coal on the conveyor belt, so you don't make iron bars.",
+      "In the next runs place iron ore on the conveyor belt first, then emptying your coal bag of coal and depositing that right after.",
+      "Run to the right of the bar dispenser then retrieve your bars by clicking on it (if ice gloves are equipped) or dousing it with a bucket of water and then collecting the bars.",
+      "Repeat this process until you either run out of ore, or the coffer is empty.",
+    ],
+    notes: ["60+ Smithing is recommended."],
   },
 ];
 

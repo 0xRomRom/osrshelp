@@ -355,6 +355,100 @@ const PREMIUMMONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/300px-Caninelle_Draynar.webp",
   },
+  {
+    title: "Pickpocketing elves",
+    inputs: {
+      "Dodgy necklace": 13,
+      "Cosmic rune": 300,
+    },
+    outputs: {
+      "Enhanced crystal teleport seed": 0.88,
+      "Crystal weapon seed": 2.5,
+      "Onion seed": 232500,
+      "Death rune": 113,
+      "Nature rune": 105,
+      "Fire orb": 14.06,
+      Diamond: 7.03,
+      "Gold ore": 7.03,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/300px-Cirdan.webp",
+  },
+  {
+    title: "Enchanting opal dragon bolts at the fountain of rune",
+    inputs: {
+      "Opal dragon bolts": 54000,
+    },
+    outputs: {
+      "Opal dragon bolts (e)": 54000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/346px-Opal_dragon_bolts_(e)_detail.webp",
+  },
+  {
+    title: "Buying kegs of beer",
+    inputs: {
+      "Onion seed": 845000,
+    },
+    outputs: {
+      "Keg of beer": 2600,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/346px-Opal_dragon_bolts_(e)_detail.webp",
+  },
+  {
+    title: "Smelting adamantite bars at Blast Furnace",
+    inputs: {
+      "Onion seed": 72500,
+      "Adamantite ore": 2700,
+      Coal: 8100,
+      "Stamina potion(4)": 9,
+    },
+    outputs: {
+      "Adamantite bar": 2700,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Adamantite_bar.webp",
+  },
+  {
+    title: "Making gloves of silence",
+    inputs: {
+      "Dark kebbit fur": 1118,
+      "Onion seed": 348000,
+      "Stamina potion(4)": 7.5,
+    },
+    outputs: {
+      "Gloves of silence": 559,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Gloves_of_silence.webp",
+  },
+  {
+    title: "Smelting mithril bars at Blast Furnace",
+    inputs: {
+      "Onion seed": 72500,
+      "Mithril ore": 3600,
+      Coal: 7200,
+      "Stamina potion(4)": 9,
+    },
+    outputs: {
+      "Mithril bar": 3600,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Mithril_bar.webp",
+  },
+  {
+    title: "Enchanting topaz jewellery",
+    inputs: {
+      "Topaz amulet": 1600,
+      "Cosmic rune": 1600,
+    },
+    outputs: {
+      "Burning amulet(5)": 1600,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Burning_amulet.webp",
+  },
 ];
 
 export default PREMIUMMONEYMAKERS;

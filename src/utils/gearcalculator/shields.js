@@ -4221,7 +4221,7 @@ const SHIELDS = [
     type: "Melee",
     name: "Spectral spirit shield",
     defLvl: 75,
-    rangedLvl: 30,
+    rangedLvl: 0,
     prayerLvl: 70,
     magicLvl: 65,
     strengthLvl: 0,
