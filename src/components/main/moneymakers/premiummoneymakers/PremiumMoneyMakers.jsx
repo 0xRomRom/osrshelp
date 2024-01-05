@@ -5,8 +5,11 @@ import { useCallback } from "react";
 import mills from "../../../../assets/icons/Mills.webp";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
 const PremiumMoneyMakers = ({ setMoneyMaker }) => {
+  const { premiumUser } = useContext(AuthContext);
   const [itemPrices, setItemPrices] = useState({});
   const [methodsArray, setMethodsArray] = useState([]);
   const { pathname } = useLocation();
@@ -55,15 +58,14 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
   }, [itemPrices]);
 
   useEffect(() => {
-    if (Object.keys(itemPrices).length === 0) {
+    if (Object.keys(itemPrices).length === 0 && premiumUser) {
+      console.log(premiumUser);
       priceFetcher();
     }
     if (Object.keys(itemPrices).length > 0) {
       setMethodProfits();
     }
-  }, [itemPrices, setMethodProfits]);
-
-  useEffect(() => {}, [methodsArray]);
+  }, [itemPrices, setMethodProfits, premiumUser]);
 
   return (
     <div className={stl.grid}>

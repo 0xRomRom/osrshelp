@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import stl from "./App.module.css";
 import Nav from "./components/nav/Nav";
 import { Routes, Route } from "react-router-dom";
