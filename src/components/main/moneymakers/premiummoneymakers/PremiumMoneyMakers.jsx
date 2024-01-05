@@ -59,7 +59,6 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
 
   useEffect(() => {
     if (Object.keys(itemPrices).length === 0 && premiumUser) {
-      console.log(premiumUser);
       priceFetcher();
     }
     if (Object.keys(itemPrices).length > 0) {

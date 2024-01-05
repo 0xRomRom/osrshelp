@@ -7,19 +7,24 @@ import { useEffect, useState } from "react";
 import MONEYMAKERPAGES from "../../../../utils/moneymakers/moneymakerpages";
 import SKILLICONOBJECT from "../../../../utils/skilliconobject";
 import mills from "../../../../assets/icons/Mills.webp";
+import { useContext } from "react";
+import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
 const MethodPage = ({ setSubState, moneyMaker }) => {
+  const { premiumUser } = useContext(AuthContext);
   const [methodState, setMethodState] = useState({});
   const navigate = useNavigate();
   const location = useLocation();
   const methodName = location.pathname.replaceAll("_", " ").slice(13);
 
   useEffect(() => {
+    if (!premiumUser) {
+      navigate("/moneymakers");
+    }
     if (!moneyMaker) {
       navigate("/moneymakers");
     }
     MONEYMAKERPAGES.forEach((item) => {
-      console.log(item.title);
       if (item.title === methodName) {
         setMethodState(item);
       }
