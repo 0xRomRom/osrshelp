@@ -286,7 +286,7 @@ const PREMIUMMONEYMAKERS = [
       "Crushed nest": 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Astral_rune.webp",
+    imgSrc: "./moneymakers/icons/400px-Crushed_nest_detail.webp",
   },
   {
     title: "Making snapdragon potions",

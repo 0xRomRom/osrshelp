@@ -42,6 +42,16 @@ const Nav = (props) => {
       props.setMainState("Money Makers");
       props.setSubState(null);
     }
+    if (path === "/combatcalculator") {
+      props.setActiveTab("combatcalculator");
+      props.setMainState("Combat Calculator");
+      props.setSubState(null);
+    }
+    if (path === "/worldmap") {
+      props.setActiveTab("worldmap");
+      props.setMainState("World map");
+      props.setSubState(null);
+    }
     window.scrollTo(0, 0);
   }, [location, props]);
 
@@ -126,9 +136,11 @@ const Nav = (props) => {
           </li>
           <li
             className={`${stl.navitem} ${
-              props.activeTab === "combat" ? stl.active : ""
+              props.activeTab === "combatcalculator" ? stl.active : ""
             }`}
-            onClick={() => handleTabSwitch("combat", "Combat Calculators")}
+            onClick={() =>
+              handleTabSwitch("combatcalculator", "Combat Calculator")
+            }
           >
             <img src={combatoptions} alt="Combat Icon" className={stl.icon} />
             Combat Calculator
