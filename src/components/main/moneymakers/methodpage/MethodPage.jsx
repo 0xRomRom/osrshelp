@@ -7,11 +7,8 @@ import { useEffect, useState } from "react";
 import MONEYMAKERPAGES from "../../../../utils/moneymakers/moneymakerpages";
 import SKILLICONOBJECT from "../../../../utils/skilliconobject";
 import mills from "../../../../assets/icons/Mills.webp";
-import { useContext } from "react";
-import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
 const MethodPage = ({ setSubState, moneyMaker }) => {
-  const { premiumUser } = useContext(AuthContext);
   const [methodState, setMethodState] = useState({});
   const navigate = useNavigate();
   const location = useLocation();
