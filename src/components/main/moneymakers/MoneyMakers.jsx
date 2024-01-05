@@ -5,7 +5,7 @@ import FreeMoneyMakers from "./freemoneymakers/FreeMoneyMakers";
 import PremiumMoneyMakers from "./premiummoneymakers/PremiumMoneyMakers";
 
 const MoneyMakers = (props) => {
-  const [activeModal, setActiveModal] = useState("Rune");
+  const [activeModal, setActiveModal] = useState("Free");
 
   return (
     <div className={stl.moneymakers}>

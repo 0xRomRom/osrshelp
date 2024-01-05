@@ -1,6 +1,7 @@
 const PREMIUMMONEYMAKERS = [
   {
     title: "Smelting steel bars at Blast Furnace",
+    premium: true,
     inputs: {
       "Iron ore": 5400,
       "Onion seed": 72000,
@@ -15,6 +16,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Mining gemstones",
+    premium: true,
     inputs: {},
     outputs: {
       "Uncut opal": 445,
@@ -30,6 +32,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making irit potions",
+    premium: true,
     inputs: {
       "Irit leaf": 4000,
       "Vial of water": 4000,
@@ -42,6 +45,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Killing gargoyles",
+    premium: true,
     inputs: {},
     outputs: {
       "Onion seed": 600000,
@@ -51,6 +55,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Killing Ents",
+    premium: true,
     inputs: {
       "Prayer potion(4)": 2,
       "Stamina potion(4)": 1,
@@ -68,6 +73,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Charging and alchemising bracelets of ethereum",
+    premium: true,
     inputs: {
       "Bracelet of ethereum (uncharged)": 459,
       "Revenant ether": 459,
@@ -81,6 +87,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Crafting cosmic runes",
+    premium: true,
     inputs: {
       "Pure essence": 2160,
     },
@@ -92,6 +99,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Fletching diamond bolts",
+    premium: true,
     inputs: {
       "Adamant bolts": 27000,
       "Diamond bolt tips": 27000,
@@ -104,6 +112,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making weapon poison(++)",
+    premium: true,
     inputs: {
       "Poison ivy berries": 150,
       "Coconut milk": 150,
@@ -116,6 +125,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Mining runite ore",
+    premium: true,
     inputs: {},
     outputs: {
       "Runite ore": 65,
@@ -125,6 +135,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making Guthix rests",
+    premium: true,
     inputs: {
       "Bowl of hot water": 560,
       "Empty cup": 560,
@@ -142,6 +153,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making lantadyme potions",
+    premium: true,
     inputs: {
       Lantadyme: 4000,
       "Vial of water": 4000,
@@ -154,6 +166,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making raw wild pies",
+    premium: true,
     inputs: {
       "Pie shell": 740,
       "Raw bear meat": 740,
@@ -168,6 +181,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making avantoe potions",
+    premium: true,
     inputs: {
       Avantoe: 4000,
       "Vial of water": 4000,
@@ -180,6 +194,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Fletching ruby bolts",
+    premium: true,
     inputs: {
       "Adamant bolts": 27000,
       "Ruby bolt tips": 27000,
@@ -192,6 +207,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making ranarr potions",
+    premium: true,
     inputs: {
       "Ranarr weed": 4000,
       "Vial of water": 4000,
@@ -204,6 +220,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making ultracompost",
+    premium: true,
     inputs: {
       Supercompost: 2700,
       "Volcanic ash": 5400,
@@ -216,6 +233,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Casting Tan Leather",
+    premium: true,
     inputs: {
       "Nature rune": 1600,
       "Astral rune": 3200,
@@ -229,6 +247,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making toadflax potions",
+    premium: true,
     inputs: {
       Toadflax: 4000,
       "Vial of water": 4000,
@@ -241,6 +260,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making kwuarm potions",
+    premium: true,
     inputs: {
       Kwuarm: 4000,
       "Vial of water": 4000,
@@ -253,6 +273,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Killing the Giant Mole (Dharok's)",
+    premium: true,
     inputs: {
       "Onion seed": 180000,
     },
@@ -265,6 +286,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Crafting astral runes",
+    premium: true,
     inputs: {
       "Pure essence": 4818,
       "Law rune": 73,
@@ -279,6 +301,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Crushing bird nests",
+    premium: true,
     inputs: {
       "Bird nest (empty)": 5000,
     },
@@ -290,6 +313,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making snapdragon potions",
+    premium: true,
     inputs: {
       Snapdragon: 4000,
       "Vial of water": 4000,
@@ -302,6 +326,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Hunting black chinchompas",
+    premium: true,
     inputs: {},
     outputs: {
       "Black chinchompa": 300,
@@ -311,6 +336,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Crafting blood runes",
+    premium: true,
     inputs: {
       "Pure essence": 4620,
       "Stamina potion(4)": 4,
@@ -326,6 +352,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Crafting Xerician robes",
+    premium: true,
     inputs: {
       "Xerician fabric": 7600,
       Thread: 380,
@@ -338,6 +365,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Pickpocketing vyres",
+    premium: true,
     inputs: {
       "Dodgy necklace": 6.04,
       "Cosmic rune": 300,
@@ -357,6 +385,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Pickpocketing elves",
+    premium: true,
     inputs: {
       "Dodgy necklace": 13,
       "Cosmic rune": 300,
@@ -376,6 +405,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Enchanting opal dragon bolts at the fountain of rune",
+    premium: true,
     inputs: {
       "Opal dragon bolts": 54000,
     },
@@ -387,6 +417,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Buying kegs of beer",
+    premium: true,
     inputs: {
       "Onion seed": 845000,
     },
@@ -398,6 +429,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Smelting adamantite bars at Blast Furnace",
+    premium: true,
     inputs: {
       "Onion seed": 72500,
       "Adamantite ore": 2700,
@@ -412,6 +444,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Making gloves of silence",
+    premium: true,
     inputs: {
       "Dark kebbit fur": 1118,
       "Onion seed": 348000,
@@ -425,6 +458,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Smelting mithril bars at Blast Furnace",
+    premium: true,
     inputs: {
       "Onion seed": 72500,
       "Mithril ore": 3600,
@@ -439,6 +473,7 @@ const PREMIUMMONEYMAKERS = [
   },
   {
     title: "Enchanting topaz jewellery",
+    premium: true,
     inputs: {
       "Topaz amulet": 1600,
       "Cosmic rune": 1600,

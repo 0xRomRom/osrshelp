@@ -5,6 +5,7 @@ const MONEYMAKERS = [
 
   {
     title: "Smithing iron knives",
+    premium: false,
     inputs: {
       "Iron bar": 950,
     },
@@ -16,6 +17,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Crafting diamond bracelets",
+    premium: false,
     inputs: {
       "Gold bar": 1200,
       Diamond: 1200,
@@ -28,6 +30,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cleaning grimy tarromin",
+    premium: false,
     inputs: {
       "Grimy tarromin": 5000,
     },
@@ -39,6 +42,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Baking potatoes",
+    premium: false,
     inputs: {
       Potato: 1120,
     },
@@ -50,6 +54,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Collecting red spiders' eggs",
+    premium: false,
     inputs: {
       "Iron sword": 15,
       "Law rune": 15,
@@ -64,6 +69,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Mining adamantite ore",
+    premium: false,
     inputs: {},
     outputs: {
       "Adamantite ore": 166,
@@ -73,6 +79,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Collecting wine of zamorak",
+    premium: false,
     inputs: {
       "Law rune": 216,
       Cake: 32,
@@ -88,6 +95,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cooking raw monkfish",
+    premium: false,
     inputs: {
       "Raw monkfish": 1300,
     },
@@ -99,6 +107,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Killing chaos druids",
+    premium: false,
     inputs: {},
     outputs: {
       "Onion seed": 164000,
@@ -108,6 +117,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Making oak planks",
+    premium: false,
     inputs: {
       "Oak logs": 2106,
       "Willow logs": 78,
@@ -122,6 +132,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cooking plain pizzas",
+    premium: false,
     inputs: {
       "Pizza base": 540,
       Tomato: 540,
@@ -135,6 +146,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Collecting jangerberries",
+    premium: false,
     inputs: {
       Rope: 20,
       "Ring of dueling(8)": 2.5,
@@ -147,6 +159,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Collecting fish food",
+    premium: false,
     inputs: {},
     outputs: {
       "Fish food": 240,
@@ -156,6 +169,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Buying bronze bars",
+    premium: false,
     inputs: {
       "Onion seed": 6400,
     },
@@ -167,6 +181,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Mining iron ore",
+    premium: false,
     inputs: {},
     outputs: {
       "Iron ore": 1700,
@@ -181,6 +196,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Making pizza bases",
+    premium: false,
     inputs: {
       "Jug of water": 2400,
       "Pot of flour": 2400,
@@ -195,6 +211,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Picking bananas",
+    premium: false,
     inputs: {
       Basket: 345,
       "Ring of dueling(8)": 1.88,
@@ -209,6 +226,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Buying team capes",
+    premium: false,
     inputs: {
       "Onion seed": 225037,
       "Energy potion(4)": 83,
@@ -221,6 +239,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cleaning grimy dwarf weed",
+    premium: false,
     inputs: {
       "Grimy dwarf weed": 5000,
     },
@@ -232,6 +251,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cooking raw anglerfish",
+    premium: false,
     inputs: {
       "Raw anglerfish": 1300,
     },
@@ -243,6 +263,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cleaning grimy lantadyme",
+    premium: false,
     inputs: {
       "Grimy lantadyme": 5000,
     },
@@ -254,6 +275,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Charging earth orbs",
+    premium: false,
     inputs: {
       "Unpowered orb": 513,
       "Cosmic rune": 1539,
@@ -269,6 +291,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Making pastry dough",
+    premium: false,
     inputs: {
       "Bucket of water": 2400,
       "Pot of flour": 2400,
@@ -283,6 +306,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Creating teleport to house tablets",
+    premium: false,
     inputs: {
       "Soft clay": 1100,
       "Law rune": 1100,
@@ -296,6 +320,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Climbing the Agility Pyramid",
+    premium: false,
     inputs: {},
     outputs: {
       "Onion seed": 200000,
@@ -305,6 +330,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Creating bones to peaches tablets",
+    premium: false,
     inputs: {
       "Onion seed": 4750,
       "Soft clay": 750,
@@ -318,6 +344,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cutting ruby bolt tips",
+    premium: false,
     inputs: {
       Ruby: 1150,
     },
@@ -329,6 +356,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Crafting gold bracelets",
+    premium: false,
     inputs: {
       "Gold bar": 1400,
     },
@@ -340,6 +368,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Catching raw karambwan",
+    premium: false,
     inputs: {},
     outputs: {
       "Raw karambwan": 600,
@@ -349,6 +378,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Killing aviansies",
+    premium: false,
     inputs: {
       Swordfish: 20,
     },
@@ -364,6 +394,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Grinding chocolate bars",
+    premium: false,
     inputs: {
       "Chocolate bar": 9000,
     },
@@ -375,6 +406,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Smithing iron dart tips",
+    premium: false,
     inputs: {
       "Iron bar": 950,
     },
@@ -386,6 +418,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Smithing cannonballs",
+    premium: false,
     inputs: {
       "Steel bar": 1080,
     },
@@ -397,6 +430,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cleaning grimy guam leaves",
+    premium: false,
     inputs: {
       "Grimy guam leaf": 5000,
     },
@@ -408,6 +442,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Charging fire orbs",
+    premium: false,
     inputs: {
       "Unpowered orb": 468,
       "Cosmic rune": 1404,
@@ -421,6 +456,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Casting Spin Flax",
+    premium: false,
     inputs: {
       Flax: 5175,
       "Astral rune": 1035,
@@ -434,6 +470,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Crafting opal bracelets",
+    premium: false,
     inputs: {
       "Silver bar": 1200,
       Opal: 1200,
@@ -446,6 +483,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Collecting climbing boots",
+    premium: false,
     inputs: {
       "Onion seed": 7776,
       "Ring of dueling(8)": 3,
@@ -459,6 +497,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Enchanting sapphire rings",
+    premium: false,
     inputs: {
       "Sapphire ring": 1600,
       "Cosmic rune": 1600,
@@ -471,6 +510,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Making pie shells",
+    premium: false,
     inputs: {
       "Pastry dough": 2450,
       "Pie dish": 2450,
@@ -483,6 +523,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Fletching headless arrows",
+    premium: false,
     inputs: {
       "Arrow shaft": 45000,
       Feather: 45000,
@@ -495,6 +536,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Making tarromin potions",
+    premium: false,
     inputs: {
       Tarromin: 4000,
       "Vial of water": 4000,
@@ -507,6 +549,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cleaning grimy irit leaves",
+    premium: false,
     inputs: {
       "Grimy irit leaf": 5000,
     },
@@ -518,6 +561,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Buying pies",
+    premium: false,
     inputs: {
       "Onion seed": 85920,
     },
@@ -533,6 +577,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Charging air orbs",
+    premium: false,
     inputs: {
       "Unpowered orb": 525,
       "Cosmic rune": 1575,
@@ -548,6 +593,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Collecting black scimitars from Ardougne Castle",
+    premium: false,
     inputs: {
       "Ardougne teleport (tablet)": 5,
     },
@@ -559,6 +605,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cleaning grimy harralander",
+    premium: false,
     inputs: {
       "Grimy harralander": 5000,
     },
@@ -570,6 +617,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Tanning red dragonhide",
+    premium: false,
     inputs: {
       "Onion seed": 70000,
       "Red dragonhide": 3500,
@@ -583,6 +631,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Stringing yew longbows",
+    premium: false,
     inputs: {
       "Yew longbow (u)": 2400,
       "Bow string": 2400,
@@ -595,6 +644,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Making anchovy pizzas",
+    premium: false,
     inputs: {
       "Plain pizza": 2500,
       Anchovies: 2500,
@@ -607,6 +657,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cleaning grimy cadantine",
+    premium: false,
     inputs: {
       "Grimy cadantine": 5000,
     },
@@ -618,6 +669,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Killing disciples of Iban",
+    premium: false,
     inputs: {
       "Ring of dueling(8)": 1.04,
     },
@@ -630,6 +682,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Recharging rings of wealth",
+    premium: false,
     inputs: {
       "Ring of wealth": 216,
       "Super energy(4)": 8,
@@ -642,6 +695,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Tanning black dragonhide",
+    premium: false,
     inputs: {
       "Onion seed": 70000,
       "Black dragonhide": 3500,
@@ -655,6 +709,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cleaning grimy snapdragon",
+    premium: false,
     inputs: {
       "Grimy snapdragon": 5000,
     },
@@ -666,6 +721,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Tanning green dragonhide",
+    premium: false,
     inputs: {
       "Onion seed": 70000,
       "Green dragonhide": 3500,
@@ -679,6 +735,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Humidifying clay",
+    premium: false,
     inputs: {
       Clay: 22005,
       "Astral rune": 815,
@@ -691,6 +748,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cleaning grimy kwuarm",
+    premium: false,
     inputs: {
       "Grimy kwuarm": 5000,
     },
@@ -702,6 +760,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Grinding unicorn horns",
+    premium: false,
     inputs: {
       "Unicorn horn": 9000,
     },
@@ -713,6 +772,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Collecting mort myre fungi",
+    premium: false,
     inputs: {
       "Ring of dueling(8)": 7.5,
       "Teleport to house (tablet)": 60,
@@ -725,6 +785,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Making pineapple pizzas",
+    premium: false,
     inputs: {
       "Plain pizza": 2500,
       "Pineapple ring": 2500,
@@ -737,6 +798,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Casting Superglass Make",
+    premium: false,
     inputs: {
       "Bucket of sand": 7800,
       Seaweed: 7800,
@@ -750,6 +812,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Making mahogany planks",
+    premium: false,
     inputs: {
       "Mahogany logs": 2106,
       "Willow logs": 78,
@@ -764,6 +827,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Cleaning grimy avantoe",
+    premium: false,
     inputs: {
       "Grimy avantoe": 5000,
     },
@@ -775,6 +839,7 @@ const MONEYMAKERS = [
   },
   {
     title: "Stealing cave goblin wire",
+    premium: false,
     inputs: {
       "Jug of wine": 42,
     },

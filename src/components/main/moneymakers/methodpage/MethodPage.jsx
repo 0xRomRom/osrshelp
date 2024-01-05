@@ -18,9 +18,6 @@ const MethodPage = ({ setSubState, moneyMaker }) => {
   const methodName = location.pathname.replaceAll("_", " ").slice(13);
 
   useEffect(() => {
-    if (!premiumUser) {
-      navigate("/moneymakers");
-    }
     if (!moneyMaker) {
       navigate("/moneymakers");
     }
