@@ -2,8 +2,7 @@ import stl from "./Totalusers.module.css";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import NumberCounter from "../../../../utils/NumberCounter";
-import app from "./../../../../../src/utils/firebase";
-import { getDatabase, get, ref as refs, set } from "firebase/database";
+import supabase from "../../../../utils/supabase/supabase";
 
 const TotalUsers = () => {
   const [totalUsers, setTotalUsers] = useState(0);
@@ -73,37 +72,53 @@ const TotalUsers = () => {
   // Get initial database values
   useEffect(() => {
     if (!totalUsers) {
-      const db = getDatabase(app);
-      const dbRef = refs(db);
-      let currValue = 0;
+      const dbFetcher = async () => {
+        try {
+          const { data, error } = await supabase
+            .from("totalusers")
+            .select("totalcount")
+            .single();
 
-      get(dbRef)
-        .then((snapshot) => {
-          if (snapshot.exists()) {
-            const value = snapshot.val().totalUsers.Counter.totalUsers;
-            currValue += value;
-            currValue++;
-            setTotalUsers(currValue);
-          } else {
-            console.log("No data available");
+          if (error) {
+            throw error;
           }
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+
+          if (data) {
+            console.log(data.totalcount);
+            setTotalUsers(data.totalcount);
+          }
+        } catch (error) {
+          console.error("Error fetching total count:", error.message);
+        }
+      };
+      dbFetcher();
     }
   }, [totalUsers]);
 
   useEffect(() => {
-    if (totalUsers > 0 && incrementDB) {
-      const dbSetter = getDatabase();
+    if (incrementDB && totalUsers > 0) {
+      const updater = async () => {
+        try {
+          const { data, error } = await supabase
+            .from("totalusers")
+            .update({ totalcount: totalUsers + 1 })
+            .eq("id", 1) // Filter by id = 1
+            .single();
 
-      set(refs(dbSetter, `totalUsers/Counter`), {
-        totalUsers: totalUsers,
-      });
-      setTotalUsers(totalUsers);
+          if (error) {
+            throw error;
+          }
+
+          if (data) {
+            setTotalUsers(data.totalcount);
+          }
+        } catch (error) {
+          console.error("Error incrementing total count:", error.message);
+        }
+      };
+      updater();
     }
-  }, [totalUsers, incrementDB]);
+  }, [incrementDB, totalUsers]);
 
   return (
     <div className={stl.totalusers}>
