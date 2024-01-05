@@ -263,6 +263,98 @@ const PREMIUMMONEYMAKERS = [
     profit: 0,
     imgSrc: "./moneymakers/icons/500px-Giant_Mole_(Christmas).webp",
   },
+  {
+    title: "Crafting astral runes",
+    inputs: {
+      "Pure essence": 4818,
+      "Law rune": 73,
+      "Cosmic rune": 9.13,
+      "Stamina potion(1)": 30,
+    },
+    outputs: {
+      "Astral rune": 15272,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Astral_rune.webp",
+  },
+  {
+    title: "Crushing bird nests",
+    inputs: {
+      "Bird nest (empty)": 5000,
+    },
+    outputs: {
+      "Crushed nest": 5000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Astral_rune.webp",
+  },
+  {
+    title: "Making snapdragon potions",
+    inputs: {
+      Snapdragon: 4000,
+      "Vial of water": 4000,
+    },
+    outputs: {
+      "Snapdragon potion (unf)": 4000,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Snapdragon_potion_(unf).webp",
+  },
+  {
+    title: "Hunting black chinchompas",
+    inputs: {},
+    outputs: {
+      "Black chinchompa": 300,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/200px-Black_chinchompa_detail.webp",
+  },
+  {
+    title: "Crafting blood runes",
+    inputs: {
+      "Pure essence": 4620,
+      "Stamina potion(4)": 4,
+      "Blood essence": 2.31,
+      "Amulet of glory(6)": 11.67,
+    },
+    outputs: {
+      "Blood rune": 9709,
+      "Amulet of glory": 11.67,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/Blood_rune.webp",
+  },
+  {
+    title: "Crafting Xerician robes",
+    inputs: {
+      "Xerician fabric": 7600,
+      Thread: 380,
+    },
+    outputs: {
+      "Xerician robe": 1900,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/400px-Xerician_robe_detail.webp",
+  },
+  {
+    title: "Pickpocketing vyres",
+    inputs: {
+      "Dodgy necklace": 6.04,
+      "Cosmic rune": 300,
+    },
+    outputs: {
+      "Blood shard": 0.29,
+      "Onion seed": 300000,
+      "Death rune": 175,
+      "Blood rune": 87.27,
+      "Blood pint": 65.45,
+      "Uncut ruby": 54.55,
+      Diamond: 10.91,
+      "Cooked mystery meat": 10.91,
+    },
+    profit: 0,
+    imgSrc: "./moneymakers/icons/300px-Caninelle_Draynar.webp",
+  },
 ];
 
 export default PREMIUMMONEYMAKERS;
