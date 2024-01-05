@@ -2,8 +2,22 @@ import stl from "./PremiumBanner.module.css";
 
 import ahrim from "../../../../../assets/characters/Ahrim.webp";
 import dharok from "../../../../../assets/characters/Dharok.webp";
+import { useContext } from "react";
+import { AuthContext } from "../../../../../utils/authprovider/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 const PremiumBanner = () => {
+  const navigate = useNavigate();
+  const { userID } = useContext(AuthContext);
+
+  const handleNavigate = () => {
+    if (!userID) {
+      navigate("/login");
+      return;
+    }
+    navigate("/checkout");
+  };
+
   return (
     <div className={stl.getPremiumBanner}>
       <img src={ahrim} alt="Ahrim the blighted" className={stl.ahrimGhost} />
@@ -12,7 +26,9 @@ const PremiumBanner = () => {
           Access <span className={stl.white}>100+</span> prebuilds
           <br /> as a <span className={stl.rune}>Rune</span> user
         </h1>
-        <button className={stl.cta}>Upgrade</button>
+        <button className={stl.cta} onClick={handleNavigate}>
+          Upgrade
+        </button>
       </div>
       <div className={stl.iconRow}>
         <img

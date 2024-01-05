@@ -1,11 +1,10 @@
 import stl from "./PaymentSucces.module.css";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 import parthat from "../../assets/random/Blue_partyhat.webp";
 
 const PaymentSucces = () => {
   const navigate = useNavigate();
-  const location = useLocation();
 
   return (
     <div className={stl.paymentSucces}>

@@ -9,7 +9,6 @@ import CheckoutForm from "./checkoutForm/CheckoutForm";
 import { useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 
-import supabase from "../../utils/supabase/supabase";
 import { useContext } from "react";
 import { AuthContext } from "../../utils/authprovider/AuthProvider";
 
@@ -48,7 +47,7 @@ const Checkout = () => {
       console.log(clientSecret);
       setClientSecret(clientSecret);
     });
-  }, []);
+  }, [userID]);
 
   return (
     <div className={stl.signup}>

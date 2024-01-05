@@ -9,7 +9,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
 const PremiumMoneyMakers = ({ setMoneyMaker }) => {
-  const { premiumUser } = useContext(AuthContext);
+  const { premiumUser, userID } = useContext(AuthContext);
   const [itemPrices, setItemPrices] = useState({});
   const [methodsArray, setMethodsArray] = useState([]);
   const { pathname } = useLocation();
@@ -67,6 +67,14 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
     }
   }, [itemPrices, setMethodProfits, premiumUser]);
 
+  const handleNavigate = () => {
+    if (!userID) {
+      navigate("/login");
+      return;
+    }
+    navigate("/checkout");
+  };
+
   return (
     <>
       {!premiumUser && (
@@ -76,7 +84,9 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
               Discover methods up to 2M+ as a <br />
               <span className={stl.runeUser}>rune</span> user
             </span>
-            <button className={stl.upgradeCta}>Upgrade</button>
+            <button className={stl.upgradeCta} onClick={handleNavigate}>
+              Upgrade
+            </button>
           </div>
           <img
             src="./moneymakers/headerbanners/PremiumBG.webp"
