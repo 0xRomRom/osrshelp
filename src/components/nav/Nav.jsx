@@ -5,8 +5,8 @@ import stats from "../../assets/icons/Stats.webp";
 import combatoptions from "../../assets/icons/Combatoptions.webp";
 import gear from "../../assets/icons/Gear.webp";
 import xptable from "../../assets/icons/Xptable.webp";
-import donate from "../../assets/icons/Donate.webp";
 import mills from "../../assets/icons/Mills.webp";
+import worldicon from "../../assets/icons/World_map_icon.webp";
 import { Link } from "react-router-dom";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -135,12 +135,12 @@ const Nav = (props) => {
           </li>
           <li
             className={`${stl.navitem} ${
-              props.activeTab === "donate" ? stl.active : ""
+              props.activeTab === "worldmap" ? stl.active : ""
             }`}
-            onClick={() => handleTabSwitch("donate", "Donate")}
+            onClick={() => handleTabSwitch("worldmap", "World map")}
           >
-            <img src={donate} alt="Donate Icon" className={stl.icon} />
-            Donate
+            <img src={worldicon} alt="World map icon" className={stl.icon} />
+            World map
           </li>
         </ul>
       </nav>
