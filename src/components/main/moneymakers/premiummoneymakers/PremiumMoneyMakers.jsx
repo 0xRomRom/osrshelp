@@ -68,35 +68,56 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
   }, [itemPrices, setMethodProfits, premiumUser]);
 
   return (
-    <div className={stl.grid}>
-      {methodsArray.map((method) => {
-        return (
-          <div
-            className={stl.gridTile}
-            key={method.title}
-            onClick={() => {
-              navigate(`${pathname}/${method.title.replaceAll(" ", "_")}`);
-              setMoneyMaker(method);
-            }}
-          >
-            <img
-              src={method.imgSrc}
-              alt={method.title}
-              className={stl.methodImg}
-            />
-            <span className={stl.gridTitle}>{method.title}</span>
-            <span className={stl.tileProfit}>
-              <img
-                src={mills}
-                alt="Oldschool Runescape gold"
-                className={stl.mills}
-              />{" "}
-              {method.profit.toLocaleString()} {"/ h"}
+    <>
+      {!premiumUser && (
+        <div className={stl.premiumBanner}>
+          <div className={stl.heroCenter}>
+            <span className={stl.bannerSpan}>
+              Discover methods up to 2M+ as a <br />
+              <span className={stl.runeUser}>rune</span> user
             </span>
+            <button className={stl.upgradeCta}>Upgrade</button>
           </div>
-        );
-      })}
-    </div>
+          <img
+            src="./moneymakers/headerbanners/PremiumBG.webp"
+            alt="Nightmare zone"
+            className={stl.premiumBannerImg}
+          />
+        </div>
+      )}
+
+      {premiumUser && (
+        <div className={stl.grid}>
+          {methodsArray.map((method) => {
+            return (
+              <div
+                className={stl.gridTile}
+                key={method.title}
+                onClick={() => {
+                  navigate(`${pathname}/${method.title.replaceAll(" ", "_")}`);
+                  setMoneyMaker(method);
+                }}
+              >
+                <img
+                  src={method.imgSrc}
+                  alt={method.title}
+                  className={stl.methodImg}
+                />
+                <span className={stl.gridTitle}>{method.title}</span>
+                <span className={stl.tileProfit}>
+                  <img
+                    src={mills}
+                    alt="Oldschool Runescape gold"
+                    className={stl.mills}
+                  />{" "}
+                  {method.profit.toLocaleString()} {"/ h"}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </>
   );
 };
 
