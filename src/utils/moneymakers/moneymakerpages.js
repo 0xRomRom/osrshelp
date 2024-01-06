@@ -163,6 +163,23 @@ const MONEYMAKERPAGES = [
     notes: [],
   },
   {
+    title: "Recharging rings of wealth",
+    headerImg: "./moneymakers/headerbanners/FountainOfRune.webp",
+    iconSrc: "./moneymakers/icons/Ring_of_wealth_(5).webp",
+    premium: false,
+    skills: [],
+    items: [{ "Ring of wealth": 216 }, { "Super energy(4)": 8 }],
+    quests: [],
+    other: [],
+    location: "Fountain of rune",
+    instructions: [
+      "With an inventory of rings of wealth and a super energy potion, run to Wilderness on the east side of Varrock and hop the ditch. Restore run energy with the potion, then hop to a free-to-play world.",
+      "Run to the Fountain of Rune, switch to a members world and charge the rings. Restore run energy again, switch back to free-to-play, and run south to level 30 Wilderness.",
+      "Switch back to a members world and use one charge of a ring of wealth to teleport to the Grand Exchange.",
+    ],
+    notes: [],
+  },
+  {
     title: "Cleaning grimy guam leaves",
     premium: false,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
