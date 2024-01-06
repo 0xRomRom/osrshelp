@@ -40,7 +40,7 @@
 }
 
 .fullScreenBtn:hover {
-  color: rgb(54, 53, 53);
+  color: rgb(33, 31, 31);
   box-shadow: 0px 0px 5px black;
 }
 
@@ -48,6 +48,7 @@
   width: 105%;
   height: 100%;
   position: relative;
+  background-color: black !important;
 }
 
 .fullScreen {
