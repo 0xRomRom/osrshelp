@@ -3,9 +3,21 @@ import Pagination from "../pagination/Pagination";
 import { useState } from "react";
 import FreeMoneyMakers from "./freemoneymakers/FreeMoneyMakers";
 import PremiumMoneyMakers from "./premiummoneymakers/PremiumMoneyMakers";
+import { useEffect } from "react";
 
 const MoneyMakers = (props) => {
-  const [activeModal, setActiveModal] = useState("Rune");
+  const [activeModal, setActiveModal] = useState("Free");
+
+  const rememberedButtonState = localStorage.getItem("ModalState");
+
+  useEffect(() => {
+    setActiveModal(rememberedButtonState || "Free");
+  }, [rememberedButtonState]);
+
+  const switchModal = (newState) => {
+    setActiveModal(newState);
+    localStorage.setItem("ModalState", newState);
+  };
 
   return (
     <div className={stl.moneymakers}>
@@ -21,7 +33,7 @@ const MoneyMakers = (props) => {
             className={`${stl.typeCta} ${
               activeModal === "Free" ? stl.actBtn : ""
             }`}
-            onClick={() => setActiveModal("Free")}
+            onClick={() => switchModal("Free")}
           >
             Free User
           </button>
@@ -29,7 +41,7 @@ const MoneyMakers = (props) => {
             className={`${stl.typeCta} ${
               activeModal === "Rune" ? stl.actBtn : ""
             }`}
-            onClick={() => setActiveModal("Rune")}
+            onClick={() => switchModal("Rune")}
           >
             Rune User
           </button>
