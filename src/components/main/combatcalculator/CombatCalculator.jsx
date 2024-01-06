@@ -54,7 +54,7 @@ const CombatCalculator = ({
           />
         )}
         <div className={stl.contentWrapper}>
-          <LevelInputs />
+          <LevelInputs skills={skills} />
         </div>
       </div>
     </div>

@@ -1,15 +1,15 @@
 import stl from "./LevelInputs.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const LevelInputs = () => {
+const LevelInputs = ({ skills }) => {
   const [inputValues, setInputValues] = useState({
-    attack: "",
-    strength: "",
-    defence: "",
-    hitpoints: "",
-    ranged: "",
-    magic: "",
-    prayer: "",
+    attack: "1",
+    strength: "1",
+    defence: "1",
+    hitpoints: "1",
+    ranged: "1",
+    magic: "1",
+    prayer: "1",
   });
 
   const handleInputChange = (e, skill) => {
@@ -24,6 +24,26 @@ const LevelInputs = () => {
     }
     // If not a number or greater than 99, ignore the input
   };
+
+  const skill = skills || {};
+
+  useEffect(() => {
+    console.log("Skills:", skill);
+    if (Object.keys(skill).length > 0) {
+      console.log(skill);
+      setInputValues((prevState) => {
+        return {
+          ...prevState,
+          attack: skill.attack,
+          strength: skill.strength,
+          defence: skill.defence,
+          hitpoints: skill.hitpoints,
+          ranged: skill.ranged,
+          magic: skill.magic,
+        };
+      });
+    }
+  }, [skills]);
 
   return (
     <div className={stl.levelinputs}>
@@ -65,6 +85,8 @@ const LevelInputs = () => {
           type="number"
           className={stl.numberInput}
           placeholder="Defence level"
+          value={inputValues.defence}
+          onChange={(e) => handleInputChange(e, "defence")}
         />
       </div>
       <div className={stl.inputWrap}>
@@ -77,6 +99,8 @@ const LevelInputs = () => {
           type="number"
           className={stl.numberInput}
           placeholder="Hitpoints level"
+          value={inputValues.hitpoints}
+          onChange={(e) => handleInputChange(e, "hitpoints")}
         />
       </div>
       <div className={stl.inputWrap}>
@@ -89,6 +113,8 @@ const LevelInputs = () => {
           type="number"
           className={stl.numberInput}
           placeholder="Ranged level"
+          value={inputValues.ranged}
+          onChange={(e) => handleInputChange(e, "ranged")}
         />
       </div>
       <div className={stl.inputWrap}>
@@ -101,6 +127,8 @@ const LevelInputs = () => {
           type="number"
           className={stl.numberInput}
           placeholder="Magic level"
+          value={inputValues.magic}
+          onChange={(e) => handleInputChange(e, "magic")}
         />
       </div>
       <div className={stl.inputWrap}>
@@ -113,6 +141,8 @@ const LevelInputs = () => {
           type="number"
           className={stl.numberInput}
           placeholder="Prayer level"
+          value={inputValues.prayer}
+          onChange={(e) => handleInputChange(e, "prayer")}
         />
       </div>
     </div>
