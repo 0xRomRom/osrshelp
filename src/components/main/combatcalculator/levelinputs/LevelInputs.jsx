@@ -1,6 +1,30 @@
 import stl from "./LevelInputs.module.css";
+import { useState } from "react";
 
 const LevelInputs = () => {
+  const [inputValues, setInputValues] = useState({
+    attack: "",
+    strength: "",
+    defence: "",
+    hitpoints: "",
+    ranged: "",
+    magic: "",
+    prayer: "",
+  });
+
+  const handleInputChange = (e, skill) => {
+    const enteredValue = e.target.value;
+
+    // Check if enteredValue is a number and less than or equal to 99
+    if (
+      enteredValue === "" ||
+      (!isNaN(enteredValue) && parseInt(enteredValue) <= 99)
+    ) {
+      setInputValues({ ...inputValues, [skill]: enteredValue });
+    }
+    // If not a number or greater than 99, ignore the input
+  };
+
   return (
     <div className={stl.levelinputs}>
       <div className={stl.inputWrap}>
@@ -11,9 +35,10 @@ const LevelInputs = () => {
         />
         <input
           type="number"
-          max="99"
           className={stl.numberInput}
           placeholder="Attack level"
+          value={inputValues.attack}
+          onChange={(e) => handleInputChange(e, "attack")}
         />
       </div>
       <div className={stl.inputWrap}>
@@ -24,9 +49,10 @@ const LevelInputs = () => {
         />
         <input
           type="number"
-          max="99"
           className={stl.numberInput}
           placeholder="Strength level"
+          value={inputValues.strength}
+          onChange={(e) => handleInputChange(e, "strength")}
         />
       </div>
       <div className={stl.inputWrap}>
@@ -37,7 +63,6 @@ const LevelInputs = () => {
         />
         <input
           type="number"
-          max="99"
           className={stl.numberInput}
           placeholder="Defence level"
         />
@@ -50,7 +75,6 @@ const LevelInputs = () => {
         />
         <input
           type="number"
-          max="99"
           className={stl.numberInput}
           placeholder="Hitpoints level"
         />
@@ -63,7 +87,6 @@ const LevelInputs = () => {
         />
         <input
           type="number"
-          max="99"
           className={stl.numberInput}
           placeholder="Ranged level"
         />
@@ -76,7 +99,6 @@ const LevelInputs = () => {
         />
         <input
           type="number"
-          max="99"
           className={stl.numberInput}
           placeholder="Magic level"
         />
@@ -89,7 +111,6 @@ const LevelInputs = () => {
         />
         <input
           type="number"
-          max="99"
           className={stl.numberInput}
           placeholder="Prayer level"
         />
