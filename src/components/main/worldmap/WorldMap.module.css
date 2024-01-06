@@ -25,8 +25,34 @@
 }
 
 .leaflet-container {
+  background-color: #000000 !important; /* Replace with your desired background color */
+}
+
+.fullScreenBtn {
+  z-index: 2000 !important;
+  position: absolute;
+  /* width: 30rem; */
+  font-size: 36px;
+  left: 0.6rem;
+  top: 5rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+
+.fullScreenBtn:hover {
+  color: rgb(54, 53, 53);
+  box-shadow: 0px 0px 5px black;
+}
+
+.mapBox {
+  width: 105%;
+  height: 100%;
   position: relative;
-  height: 100% !important;
-  border: 2px solid blue !important;
-  background-color: black;
+}
+
+.fullScreen {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
 }
