@@ -425,7 +425,7 @@ const PREMIUMMONEYMAKERS = [
       "Keg of beer": 2600,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/346px-Opal_dragon_bolts_(e)_detail.webp",
+    imgSrc: "./moneymakers/icons/Keg_of_beer.webp",
   },
   {
     title: "Smelting adamantite bars at Blast Furnace",
