@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import PlayerStats from "./playerstats/PlayerStats";
 import GetStats from "./playerstats/GetStats";
 
+import LevelInputs from "./levelinputs/LevelInputs";
+
 const CombatCalculator = ({
   mainState,
   setSubState,
@@ -51,6 +53,9 @@ const CombatCalculator = ({
             setSkillsFetched={setSkillsFetched}
           />
         )}
+        <div className={stl.contentWrapper}>
+          <LevelInputs />
+        </div>
       </div>
     </div>
   );

@@ -16,7 +16,6 @@ const MoneyMakers = (props) => {
 
   useEffect(() => {
     setActiveModal(rememberedButtonState || "Free");
-    console.log(showWarning);
     if (showWarning === "false") {
       setShowWarningModal(false);
     } else {
