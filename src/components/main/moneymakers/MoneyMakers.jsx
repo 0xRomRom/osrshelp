@@ -9,16 +9,29 @@ import { IoClose } from "react-icons/io5";
 
 const MoneyMakers = (props) => {
   const [activeModal, setActiveModal] = useState("Free");
+  const [showWarningModal, setShowWarningModal] = useState(false);
 
   const rememberedButtonState = localStorage.getItem("ModalState");
+  const showWarning = localStorage.getItem("ShowWarning");
 
   useEffect(() => {
     setActiveModal(rememberedButtonState || "Free");
+    console.log(showWarning);
+    if (showWarning === "false") {
+      setShowWarningModal(false);
+    } else {
+      setShowWarningModal(true);
+    }
   }, [rememberedButtonState]);
 
   const switchModal = (newState) => {
     setActiveModal(newState);
     localStorage.setItem("ModalState", newState);
+  };
+
+  const hideWarning = () => {
+    setShowWarningModal(false);
+    localStorage.setItem("ShowWarning", false);
   };
 
   return (
@@ -48,23 +61,25 @@ const MoneyMakers = (props) => {
             Rune User
           </button>
         </div>
-        <div className={stl.disclaimerBox}>
-          <div className={stl.exclamBox}>
-            <FaExclamationTriangle className={stl.exlam} />
+        {showWarningModal && (
+          <div className={stl.disclaimerBox}>
+            <div className={stl.exclamBox}>
+              <FaExclamationTriangle className={stl.exlam} />
+            </div>
+            <div className={stl.explainWrap}>
+              <span className={stl.disclaimerTxt}>
+                All money making methods are calculated based on realtime G.E.
+                prices.
+                <br />
+                Before committing to any method, make sure trading volumes are
+                present for output items.
+              </span>
+            </div>
+            <div className={stl.closeWrapper}>
+              <IoClose className={stl.closeWarning} onClick={hideWarning} />
+            </div>
           </div>
-          <div className={stl.explainWrap}>
-            <span className={stl.disclaimerTxt}>
-              All money making methods are calculated based on realtime G.E.
-              prices.
-              <br />
-              Before committing to any method, make sure trading volumes are
-              present for output items.
-            </span>
-          </div>
-          <div className={stl.closeWrapper}>
-            <IoClose className={stl.closeWarning} />
-          </div>
-        </div>
+        )}
         {activeModal === "Free" && (
           <FreeMoneyMakers setMoneyMaker={props.setMoneyMaker} />
         )}
