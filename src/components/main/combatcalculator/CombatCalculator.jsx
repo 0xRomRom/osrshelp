@@ -1,7 +1,29 @@
 import stl from "./CombatCalculator.module.css";
 import Pagination from "../pagination/Pagination";
+import { useState, useEffect } from "react";
 
-const CombatCalculator = ({ mainState, setSubState, subState }) => {
+import PlayerStats from "./playerstats/PlayerStats";
+import GetStats from "./playerstats/GetStats";
+
+const CombatCalculator = ({
+  mainState,
+  setSubState,
+  subState,
+  skills,
+  setSkills,
+  skillsExp,
+  setSkillsExp,
+  playerName,
+  setPlayerName,
+}) => {
+  const [skillsFetched, setSkillsFetched] = useState(false);
+
+  useEffect(() => {
+    if (skills || skillsExp) {
+      setSkillsFetched(true);
+    }
+  }, [skills, skillsExp]);
+
   return (
     <div className={stl.combatcalculator}>
       <div className={stl.adBar}>[ Advertisements ]</div>
@@ -10,7 +32,23 @@ const CombatCalculator = ({ mainState, setSubState, subState }) => {
         setSubState={setSubState}
         subState={subState}
       />
-      <div className={stl.modal}></div>
+      <div className={stl.modal}>
+        {skillsFetched ? (
+          <PlayerStats
+            playerName={playerName}
+            setPlayerName={setPlayerName}
+            setSkillsFetched={setSkillsFetched}
+          />
+        ) : (
+          <GetStats
+            setSkills={setSkills}
+            skillsExp={skillsExp}
+            setPlayerName={setPlayerName}
+            setSkillsExp={setSkillsExp}
+            setSkillsFetched={setSkillsFetched}
+          />
+        )}
+      </div>
     </div>
   );
 };

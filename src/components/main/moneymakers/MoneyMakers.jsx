@@ -22,7 +22,7 @@ const MoneyMakers = (props) => {
     } else {
       setShowWarningModal(true);
     }
-  }, [rememberedButtonState]);
+  }, [rememberedButtonState, showWarning]);
 
   const switchModal = (newState) => {
     setActiveModal(newState);

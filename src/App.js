@@ -134,6 +134,12 @@ const App = () => {
                 path="/combatcalculator"
                 element={
                   <CombatCalculator
+                    setSkills={setSkills}
+                    skills={skills}
+                    setSkillsExp={setSkillsExp}
+                    skillsExp={skillsExp}
+                    setPlayerName={setPlayerName}
+                    playerName={playerName}
                     mainState={mainState}
                     setSubState={setSubState}
                     subState={subState}

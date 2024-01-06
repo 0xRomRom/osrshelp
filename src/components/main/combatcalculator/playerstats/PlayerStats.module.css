@@ -1,0 +1,51 @@
+.playerstats {
+  background-color: rgb(17, 23, 27);
+  height: 7.5rem;
+  width: 25rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  position: relative;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerGray {
+  color: gray;
+  font-size: 22px;
+  padding-left: 10px;
+}
+
+.playerRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blueDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #0084ff;
+  margin-left: 1.1rem;
+  margin-right: 0.3rem;
+}
+
+.displayName {
+  color: white;
+  margin-left: 10px;
+}
+
+.backArrow {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 18px;
+  cursor: pointer;
+  color: rgb(134, 133, 133);
+}
+
+.backArrow:hover {
+  color: rgb(206, 202, 202);
+}
