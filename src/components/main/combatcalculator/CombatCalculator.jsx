@@ -22,6 +22,9 @@ const CombatCalculator = ({
     if (skills || skillsExp) {
       setSkillsFetched(true);
     }
+    if (!playerName) {
+      setSkillsFetched(false);
+    }
   }, [skills, skillsExp]);
 
   return (

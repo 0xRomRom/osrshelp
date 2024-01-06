@@ -1,4 +1,5 @@
 import stl from "./UserBox.module.css";
+import { useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +9,13 @@ const UserBox = (props) => {
     props.switchTab(false);
     props.setPlayerName(null);
   };
+
+  useEffect(() => {
+    if (!props.playerName) {
+      props.switchTab(false);
+      props.setPlayerName(null);
+    }
+  }, [props.playerName]);
 
   return (
     <div className={stl.userbox}>
