@@ -630,7 +630,7 @@ const MONEYMAKERPAGES = [
       "Partial completion of Fairytale II - Cure a Queen for fairy rings",
     ],
     other: [],
-    location: "Hosidius kitchen",
+    location: "Karamja",
     instructions: [
       "Fishing raw karambwan requires raw karambwanji as bait, which can only be caught at the Holy Lake, south of Tai Bwo Wannai Village, next to fairy ring ckr. ",
       "With sufficient bait, go to the karambwan fishing spot in north-eastern Karamja, near fairy ring dkp. Start fishing at the spot north.",
