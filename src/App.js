@@ -14,7 +14,7 @@ import Checkout from "./components/checkout/Checkout";
 import PaymentSucces from "./components/paymentSuccess/PaymentSucces";
 import AuthProvider from "./utils/authprovider/AuthProvider";
 import Footer from "./components/footer/Footer";
-
+import WorldMap from "./components/main/worldmap/WorldMap";
 import MethodPage from "./components/main/moneymakers/methodpage/MethodPage";
 
 const App = () => {
@@ -123,6 +123,16 @@ const App = () => {
                     skillsExp={skillsExp}
                     setPlayerName={setPlayerName}
                     playerName={playerName}
+                    mainState={mainState}
+                    setSubState={setSubState}
+                    subState={subState}
+                  />
+                }
+              />
+              <Route
+                path="/worldmap"
+                element={
+                  <WorldMap
                     mainState={mainState}
                     setSubState={setSubState}
                     subState={subState}
