@@ -6,8 +6,8 @@ import { MapContainer, ImageOverlay } from "react-leaflet";
 const WorldMap = (props) => {
   // Define the bounds for your image
   const bounds = [
-    [0, 0],
-    [2000, 400],
+    [-200, -300],
+    [400, 400],
   ]; // Replace with your image's bounds
 
   return (
@@ -20,8 +20,8 @@ const WorldMap = (props) => {
       />
       <div className={stl.mapContainers}>
         <MapContainer
-          center={[50, 50]}
-          zoom={1}
+          center={[20, 190]}
+          zoom={3}
           style={{ height: "100%", width: "100%", position: "relative" }} // Adjust dimensions as needed
         >
           <ImageOverlay url="./worldmap/Worldmap.png" bounds={bounds} />
