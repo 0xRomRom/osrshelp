@@ -66,6 +66,7 @@
   object-fit: cover;
   opacity: 0.3;
   position: relative;
+  border-radius: 0.4rem;
 }
 
 .heroCenter {

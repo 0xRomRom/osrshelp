@@ -4,6 +4,8 @@ import { useState } from "react";
 import FreeMoneyMakers from "./freemoneymakers/FreeMoneyMakers";
 import PremiumMoneyMakers from "./premiummoneymakers/PremiumMoneyMakers";
 import { useEffect } from "react";
+import { FaExclamationTriangle } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
 
 const MoneyMakers = (props) => {
   const [activeModal, setActiveModal] = useState("Free");
@@ -45,6 +47,23 @@ const MoneyMakers = (props) => {
           >
             Rune User
           </button>
+        </div>
+        <div className={stl.disclaimerBox}>
+          <div className={stl.exclamBox}>
+            <FaExclamationTriangle className={stl.exlam} />
+          </div>
+          <div className={stl.explainWrap}>
+            <span className={stl.disclaimerTxt}>
+              All money making methods are calculated based on realtime G.E.
+              prices.
+              <br />
+              Before committing to any method, make sure trading volumes are
+              present for output items.
+            </span>
+          </div>
+          <div className={stl.closeWrapper}>
+            <IoClose className={stl.closeWarning} />
+          </div>
         </div>
         {activeModal === "Free" && (
           <FreeMoneyMakers setMoneyMaker={props.setMoneyMaker} />
