@@ -37,10 +37,11 @@
   top: 5rem;
   cursor: pointer;
   border-radius: 0.4rem;
+  color: rgb(209, 209, 209);
 }
 
 .fullScreenBtn:hover {
-  color: rgb(33, 31, 31);
+  color: rgb(209, 209, 209);
   box-shadow: 0px 0px 5px black;
 }
 
