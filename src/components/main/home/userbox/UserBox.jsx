@@ -15,7 +15,7 @@ const UserBox = (props) => {
       props.switchTab(false);
       props.setPlayerName(null);
     }
-  }, [props.playerName]);
+  }, [props.playerName, props]);
 
   return (
     <div className={stl.userbox}>

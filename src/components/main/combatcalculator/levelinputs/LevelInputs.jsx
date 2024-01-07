@@ -1,36 +1,21 @@
 import stl from "./LevelInputs.module.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
-const LevelInputs = ({ skills }) => {
-  const [inputValues, setInputValues] = useState({
-    attack: "1",
-    strength: "1",
-    defence: "1",
-    hitpoints: "1",
-    ranged: "1",
-    magic: "1",
-    prayer: "1",
-  });
-
+const LevelInputs = ({ skills, setInputValues, inputValues }) => {
   const handleInputChange = (e, skill) => {
     const enteredValue = e.target.value;
 
-    // Check if enteredValue is a number and less than or equal to 99
     if (
       enteredValue === "" ||
       (!isNaN(enteredValue) && parseInt(enteredValue) <= 99)
     ) {
       setInputValues({ ...inputValues, [skill]: enteredValue });
     }
-    // If not a number or greater than 99, ignore the input
   };
 
-  const skill = skills || {};
-
   useEffect(() => {
-    console.log("Skills:", skill);
+    const skill = skills || {};
     if (Object.keys(skill).length > 0) {
-      console.log(skill);
       setInputValues((prevState) => {
         return {
           ...prevState,
@@ -40,10 +25,11 @@ const LevelInputs = ({ skills }) => {
           hitpoints: skill.hitpoints,
           ranged: skill.ranged,
           magic: skill.magic,
+          prayer: skill.prayer,
         };
       });
     }
-  }, [skills]);
+  }, [skills, setInputValues]);
 
   return (
     <div className={stl.levelinputs}>

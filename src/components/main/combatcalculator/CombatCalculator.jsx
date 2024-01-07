@@ -6,6 +6,7 @@ import PlayerStats from "./playerstats/PlayerStats";
 import GetStats from "./playerstats/GetStats";
 
 import LevelInputs from "./levelinputs/LevelInputs";
+import ResultBox from "./resultbox/ResultBox";
 
 const CombatCalculator = ({
   mainState,
@@ -19,6 +20,15 @@ const CombatCalculator = ({
   setPlayerName,
 }) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
+  const [inputValues, setInputValues] = useState({
+    attack: "1",
+    strength: "1",
+    defence: "1",
+    hitpoints: "1",
+    ranged: "1",
+    magic: "1",
+    prayer: "1",
+  });
 
   useEffect(() => {
     if (skills || skillsExp) {
@@ -27,7 +37,7 @@ const CombatCalculator = ({
     if (!playerName) {
       setSkillsFetched(false);
     }
-  }, [skills, skillsExp]);
+  }, [skills, skillsExp, playerName]);
 
   return (
     <div className={stl.combatcalculator}>
@@ -54,7 +64,12 @@ const CombatCalculator = ({
           />
         )}
         <div className={stl.contentWrapper}>
-          <LevelInputs skills={skills} />
+          <LevelInputs
+            skills={skills}
+            setInputValues={setInputValues}
+            inputValues={inputValues}
+          />
+          <ResultBox inputValues={inputValues} />
         </div>
       </div>
     </div>
