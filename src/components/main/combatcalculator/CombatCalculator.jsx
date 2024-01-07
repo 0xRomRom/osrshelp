@@ -8,6 +8,7 @@ import GetStats from "./playerstats/GetStats";
 import LevelInputs from "./levelinputs/LevelInputs";
 import ResultBox from "./resultbox/ResultBox";
 import CombatLevels from "./combatlevels/CombatLevels";
+import { IoArrowDownOutline } from "react-icons/io5";
 
 const CombatCalculator = ({
   mainState,
@@ -71,7 +72,9 @@ const CombatCalculator = ({
               setInputValues={setInputValues}
               inputValues={inputValues}
             />
+            <IoArrowDownOutline className={stl.mainLeftArrow} />
             <CombatLevels inputValues={inputValues} />
+            <IoArrowDownOutline className={stl.mainRightArrow} />
             <ResultBox />
           </div>
         </div>

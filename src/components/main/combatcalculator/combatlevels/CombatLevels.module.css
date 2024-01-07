@@ -4,12 +4,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .combatLevelBox {
-  width: 5rem;
-  height: 5rem;
+  width: 5.5rem;
+  height: 5.5rem;
   background-color: var(--dark-bg);
   border-radius: 0.4rem;
   display: flex;
@@ -29,4 +29,21 @@
   color: var(--blue-main);
   font-size: 28px;
   margin-bottom: 0.5rem;
+}
+
+.combatSubSpanMain {
+  margin-top: 0.25rem;
+  color: black;
+  font-size: 28px;
+  margin-bottom: 0.5rem;
+}
+
+.arrow {
+  color: var(--blue-main);
+  font-size: 30px;
+}
+
+.activeCombat {
+  background-color: var(--blue-main);
+  color: black;
 }

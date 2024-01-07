@@ -1,5 +1,6 @@
 import stl from "./CombatLevels.module.css";
 import { useState, useEffect } from "react";
+import { IoArrowDownOutline } from "react-icons/io5";
 
 const CombatLevels = ({ inputValues }) => {
   const [combatLevel, setCombatLevel] = useState(0);
@@ -39,14 +40,15 @@ const CombatLevels = ({ inputValues }) => {
 
   return (
     <div className={stl.midRow}>
-      <div className={stl.combatLevelBox}>
+      <div className={`${stl.combatLevelBox} ${stl.activeCombat}`}>
         <img
           src="./skillicons/Combat.webp"
           alt="Combat symbol"
           className={stl.combatIcon}
         />
-        <span className={stl.combatSubSpan}>{Math.floor(combatLevel)}</span>
+        <span className={stl.combatSubSpanMain}>{Math.floor(combatLevel)}</span>
       </div>
+      <IoArrowDownOutline className={stl.arrow} />
       <div className={stl.combatLevelBox}>
         <img
           src="./skillicons/Combat.webp"
