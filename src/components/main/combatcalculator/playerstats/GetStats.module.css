@@ -1,5 +1,5 @@
 .getstats {
-  background-color: rgb(17, 23, 27);
+  background-color: #111111;
   height: 7.5rem;
   width: 25rem;
   margin: 0 auto;
@@ -34,16 +34,15 @@
   background-color: transparent;
   outline: none;
   border: none;
-  color: white;
+  color: black;
   cursor: pointer;
   position: relative;
   border-radius: 0.5rem;
-  color: white;
-  background-color: rgb(112, 176, 31);
+  background-color: #00d25b;
   margin-left: 1rem;
   margin-top: 0.5rem;
 }
 
 .cta:hover {
-  background-color: rgb(129, 208, 26);
+  background-color: #12d767;
 }

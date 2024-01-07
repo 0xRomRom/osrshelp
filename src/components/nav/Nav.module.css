@@ -57,7 +57,7 @@
 
 .active {
   background-color: rgb(16, 27, 35);
-  color: white;
+  color: #00d25b;
   /* background: linear-gradient(130deg, brown, red); */
   filter: none;
 }

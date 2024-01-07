@@ -14,26 +14,26 @@ const ResultBox = ({ inputValues }) => {
     const hpLvl = +inputValues.hitpoints;
     const rangedLvl = +inputValues.ranged;
     const magicLvl = +inputValues.magic;
-    console.log(magicLvl);
 
-    //Step 1
     const step1 = Math.floor(prayLvl / 2);
-    console.log(step1);
-
-    //Step 2
     const step2 = (hpLvl + defenceLvl + step1) / 4;
-
-    //Step 3
     const step3 = (strengthLvl + attackLvl) * 0.325;
 
     combatCounter = step2 + step3;
+    if (magicLvl > attackLvl + strengthLvl) {
+      const magicStep = Math.floor(magicLvl / 2) + magicLvl;
+      const magicCombat = magicStep * 0.325;
+      combatCounter = step2 + magicCombat;
+    } else if (rangedLvl > magicLvl) {
+      const ranged = Math.floor(rangedLvl / 2) + rangedLvl;
+      const rangedCombat = ranged * 0.325;
+      combatCounter = step2 + rangedCombat;
+    }
 
     setCombatLevel(combatCounter);
   };
 
   useEffect(() => {
-    console.log(inputValues);
-
     calculateCombatLevel();
   }, [inputValues, calculateCombatLevel]);
 

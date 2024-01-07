@@ -18,6 +18,7 @@
   width: 95%;
   left: 2.5%;
   background-color: rgb(32, 46, 57);
+
   border-radius: 0.4rem;
   margin-bottom: 2rem;
   padding-top: 1rem;
@@ -30,4 +31,12 @@
   align-items: flex-start;
   margin-top: 2rem;
   padding-bottom: 2rem;
+  /* border: 1px solid gray; */
+}
+
+.innerWrapper {
+  background-color: #111111;
+  display: flex;
+  padding: 2rem 4rem;
+  border-radius: 0.4rem;
 }

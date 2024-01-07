@@ -24,7 +24,7 @@ const CombatCalculator = ({
     attack: "1",
     strength: "1",
     defence: "1",
-    hitpoints: "1",
+    hitpoints: "10",
     ranged: "1",
     magic: "1",
     prayer: "1",
@@ -64,12 +64,14 @@ const CombatCalculator = ({
           />
         )}
         <div className={stl.contentWrapper}>
-          <LevelInputs
-            skills={skills}
-            setInputValues={setInputValues}
-            inputValues={inputValues}
-          />
-          <ResultBox inputValues={inputValues} />
+          <div className={stl.innerWrapper}>
+            <LevelInputs
+              skills={skills}
+              setInputValues={setInputValues}
+              inputValues={inputValues}
+            />
+            <ResultBox inputValues={inputValues} />
+          </div>
         </div>
       </div>
     </div>

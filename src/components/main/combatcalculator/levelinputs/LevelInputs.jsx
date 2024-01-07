@@ -7,7 +7,9 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
 
     if (
       enteredValue === "" ||
-      (!isNaN(enteredValue) && parseInt(enteredValue) <= 99)
+      (!isNaN(enteredValue) &&
+        parseInt(enteredValue) <= 99 &&
+        parseInt(enteredValue) >= 1)
     ) {
       setInputValues({ ...inputValues, [skill]: enteredValue });
     }
@@ -45,6 +47,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           placeholder="Attack level"
           value={inputValues.attack}
           onChange={(e) => handleInputChange(e, "attack")}
+          min="1"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -59,6 +62,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           placeholder="Strength level"
           value={inputValues.strength}
           onChange={(e) => handleInputChange(e, "strength")}
+          min="1"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -73,6 +77,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           placeholder="Defence level"
           value={inputValues.defence}
           onChange={(e) => handleInputChange(e, "defence")}
+          min="1"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -87,6 +92,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           placeholder="Hitpoints level"
           value={inputValues.hitpoints}
           onChange={(e) => handleInputChange(e, "hitpoints")}
+          min="10"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -101,6 +107,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           placeholder="Ranged level"
           value={inputValues.ranged}
           onChange={(e) => handleInputChange(e, "ranged")}
+          min="1"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -115,6 +122,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           placeholder="Magic level"
           value={inputValues.magic}
           onChange={(e) => handleInputChange(e, "magic")}
+          min="1"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -129,6 +137,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           placeholder="Prayer level"
           value={inputValues.prayer}
           onChange={(e) => handleInputChange(e, "prayer")}
+          min="1"
         />
       </div>
     </div>
