@@ -35,7 +35,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
 
   return (
     <div className={stl.levelinputs}>
-      <span className={stl.currentLvls}>Current levels</span>
+      <span className={stl.currentLvls}>Current stats</span>
       <div className={stl.inputWrap}>
         <img
           src="./skillicons/Attack.webp"
