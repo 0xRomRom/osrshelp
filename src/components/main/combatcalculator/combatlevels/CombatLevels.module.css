@@ -47,3 +47,7 @@
   background-color: var(--blue-main);
   color: black;
 }
+
+.combatType {
+  color: gray;
+}

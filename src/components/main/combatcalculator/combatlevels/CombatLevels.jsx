@@ -1,9 +1,10 @@
 import stl from "./CombatLevels.module.css";
 import { IoArrowDownOutline } from "react-icons/io5";
 
-const CombatLevels = ({ inputValues, combatLevel }) => {
+const CombatLevels = ({ combatType, combatLevel }) => {
   return (
     <div className={stl.midRow}>
+      <span className={stl.combatType}>{combatType} Based</span>
       <div className={`${stl.combatLevelBox} ${stl.activeCombat}`}>
         <img
           src="./skillicons/Combat.webp"
