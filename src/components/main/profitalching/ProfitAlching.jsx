@@ -10,6 +10,7 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
         setSubState={setSubState}
         subState={subState}
       />
+      <div className={stl.modalWrap}></div>
     </div>
   );
 };
