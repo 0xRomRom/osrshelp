@@ -1,12 +1,11 @@
 .getstats {
   background-color: var(--dark-bg);
   height: 5rem;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   position: relative;
   border-radius: 0.4rem;
-  box-shadow: 0px 0px 5px var(--blue-main);
 }
 
 .form {

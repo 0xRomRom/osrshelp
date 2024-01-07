@@ -116,6 +116,18 @@ const Nav = (props) => {
               Gear Calculator
             </li>
           </Link>
+
+          <li
+            className={`${stl.navitem} ${
+              props.activeTab === "combatcalculator" ? stl.active : ""
+            }`}
+            onClick={() =>
+              handleTabSwitch("combatcalculator", "Combat Calculator")
+            }
+          >
+            <img src={combatoptions} alt="Combat Icon" className={stl.icon} />
+            Combat Calculator
+          </li>
           <li
             className={`${stl.navitem} ${
               props.activeTab === "moneymakers" ? stl.active : ""
@@ -134,17 +146,7 @@ const Nav = (props) => {
             <img src={xptable} alt="XP Icon" className={stl.icon} />
             XP Table
           </li>
-          <li
-            className={`${stl.navitem} ${
-              props.activeTab === "combatcalculator" ? stl.active : ""
-            }`}
-            onClick={() =>
-              handleTabSwitch("combatcalculator", "Combat Calculator")
-            }
-          >
-            <img src={combatoptions} alt="Combat Icon" className={stl.icon} />
-            Combat Calculator
-          </li>
+
           <li
             className={`${stl.navitem} ${
               props.activeTab === "worldmap" ? stl.active : ""

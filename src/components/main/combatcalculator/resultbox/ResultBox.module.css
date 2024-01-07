@@ -16,7 +16,6 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  box-shadow: 0px 0px 5px var(--blue-main);
 }
 
 .combatSpan {
@@ -61,7 +60,6 @@
   position: relative;
   overflow: hidden;
   width: 7rem;
-  box-shadow: 0px 0px 5px var(--blue-main);
   display: flex;
   justify-content: flex-start;
   align-items: center;

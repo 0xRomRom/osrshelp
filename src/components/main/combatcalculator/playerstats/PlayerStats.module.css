@@ -1,7 +1,7 @@
 .playerstats {
   background-color: #111111;
   height: 5rem;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 2rem;
   position: relative;
@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 5px var(--blue-main);
 }
 
 .playerGray {
