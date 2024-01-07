@@ -76,7 +76,6 @@ const CombatCalculator = ({
     } else {
       combatTypeName = "Ranged";
     }
-    console.log(combatTypeName);
     setCombatType(combatTypeName);
 
     setCombatLevel(combatLevel);

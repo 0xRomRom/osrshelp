@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .combatLevelBox {
@@ -50,4 +51,19 @@
 
 .combatType {
   color: gray;
+  /* background-color: red; */
+  width: 7rem;
+  text-align: center;
+}
+
+.imgWrapper {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.typeIcon {
+  width: 2rem;
 }
