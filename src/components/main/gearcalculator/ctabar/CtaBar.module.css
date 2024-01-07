@@ -22,6 +22,8 @@
   justify-content: center;
   align-items: center;
   border: 2px solid transparent;
+  position: relative;
+  margin: 0 auto;
 }
 
 .btnBox button:hover .ctaIcon {
@@ -48,6 +50,7 @@
 .btnBox {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   gap: 0.3rem;
 }

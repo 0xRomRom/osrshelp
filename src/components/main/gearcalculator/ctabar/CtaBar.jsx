@@ -54,12 +54,12 @@ const CtaBar = ({
         <span className={stl.infoSpan}>Save</span>
       </div>
 
-      <div className={stl.btnBox}>
+      {/* <div className={stl.btnBox}>
         <button>
           <BsFillShareFill className={stl.ctaIcon} />
         </button>
         <span className={stl.infoSpan}>Share</span>
-      </div>
+      </div> */}
     </div>
   );
 };

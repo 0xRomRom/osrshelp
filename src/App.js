@@ -17,6 +17,7 @@ import Footer from "./components/footer/Footer";
 import WorldMap from "./components/main/worldmap/WorldMap";
 import MethodPage from "./components/main/moneymakers/methodpage/MethodPage";
 import CombatCalculator from "./components/main/combatcalculator/CombatCalculator";
+import ProfitAlching from "./components/main/profitalching/ProfitAlching";
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("/");
@@ -140,6 +141,16 @@ const App = () => {
                     skillsExp={skillsExp}
                     setPlayerName={setPlayerName}
                     playerName={playerName}
+                    mainState={mainState}
+                    setSubState={setSubState}
+                    subState={subState}
+                  />
+                }
+              />
+              <Route
+                path="/profitalching"
+                element={
+                  <ProfitAlching
                     mainState={mainState}
                     setSubState={setSubState}
                     subState={subState}

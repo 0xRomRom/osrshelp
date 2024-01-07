@@ -52,6 +52,11 @@ const Nav = (props) => {
       props.setMainState("World map");
       props.setSubState(null);
     }
+    if (path === "/profitalching") {
+      props.setActiveTab("profitalching");
+      props.setMainState("Profit Alching");
+      props.setSubState(null);
+    }
     window.scrollTo(0, 0);
   }, [location, props]);
 
@@ -117,45 +122,67 @@ const Nav = (props) => {
             </li>
           </Link>
 
-          <li
-            className={`${stl.navitem} ${
-              props.activeTab === "combatcalculator" ? stl.active : ""
-            }`}
-            onClick={() =>
-              handleTabSwitch("combatcalculator", "Combat Calculator")
-            }
-          >
-            <img src={combatoptions} alt="Combat Icon" className={stl.icon} />
-            Combat Calculator
-          </li>
-          <li
-            className={`${stl.navitem} ${
-              props.activeTab === "moneymakers" ? stl.active : ""
-            }`}
-            onClick={() => handleTabSwitch("moneymakers", "Money Makers")}
-          >
-            <img src={mills} alt="Millions Icon" className={stl.icon} />
-            Money Makers
-          </li>
-          <li
-            className={`${stl.navitem} ${
-              props.activeTab === "xptable" ? stl.active : ""
-            }`}
-            onClick={() => handleTabSwitch("xptable", "XP Table")}
-          >
-            <img src={xptable} alt="XP Icon" className={stl.icon} />
-            XP Table
-          </li>
+          <Link to="/combatcalculator" className={stl.link}>
+            <li
+              className={`${stl.navitem} ${
+                props.activeTab === "combatcalculator" ? stl.active : ""
+              }`}
+              onClick={() =>
+                handleTabSwitch("combatcalculator", "Combat Calculator")
+              }
+            >
+              <img src={combatoptions} alt="Combat Icon" className={stl.icon} />
+              Combat Calculator
+            </li>
+          </Link>
+          <Link to="/moneymakers" className={stl.link}>
+            <li
+              className={`${stl.navitem} ${
+                props.activeTab === "moneymakers" ? stl.active : ""
+              }`}
+              onClick={() => handleTabSwitch("moneymakers", "Money Makers")}
+            >
+              <img src={mills} alt="Millions Icon" className={stl.icon} />
+              Money Makers
+            </li>
+          </Link>
 
           <li
             className={`${stl.navitem} ${
-              props.activeTab === "worldmap" ? stl.active : ""
+              props.activeTab === "profitalching" ? stl.active : ""
             }`}
-            onClick={() => handleTabSwitch("worldmap", "World map")}
+            onClick={() => handleTabSwitch("profitalching", "Profit Alching")}
           >
-            <img src={worldicon} alt="World map icon" className={stl.icon} />
-            World map
+            <img
+              src="./staves/Staff_of_fire.webp"
+              alt="Staff of fire icon"
+              className={stl.icon}
+            />
+            Profit Alching
           </li>
+
+          <Link to="/xptable" className={stl.link}>
+            <li
+              className={`${stl.navitem} ${
+                props.activeTab === "xptable" ? stl.active : ""
+              }`}
+              onClick={() => handleTabSwitch("xptable", "XP Table")}
+            >
+              <img src={xptable} alt="XP Icon" className={stl.icon} />
+              XP Table
+            </li>
+          </Link>
+          <Link to="/worldmap" className={stl.link}>
+            <li
+              className={`${stl.navitem} ${
+                props.activeTab === "worldmap" ? stl.active : ""
+              }`}
+              onClick={() => handleTabSwitch("worldmap", "World map")}
+            >
+              <img src={worldicon} alt="World map icon" className={stl.icon} />
+              World map
+            </li>
+          </Link>
         </ul>
       </nav>
     </div>
