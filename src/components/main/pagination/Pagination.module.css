@@ -14,7 +14,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #0084ff;
+  background-color: var(--blue-main);
   margin-right: 0.3rem;
 }
 
@@ -24,6 +24,7 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   user-select: none;
+  font-weight: bold;
 }
 
 .mainMenu:hover {
@@ -45,24 +46,25 @@
 
 .loginBtn {
   width: 7rem;
-  height: 2rem;
+  height: 2.5rem;
   border-radius: 0.4rem;
-  background-color: #0084ff;
+  background-color: var(--blue-main);
   color: black;
   border: none;
   outline: none;
-  color: white;
+  color: black;
   font-weight: bold;
   cursor: pointer;
 }
 
 .loginBtn:hover {
   box-shadow: 0px 0px 5px rgb(180, 180, 180);
+  color: white;
 }
 
 .upgradeCta {
   width: 7rem;
-  height: 2rem;
+  height: 2.5rem;
   border-radius: 0.4rem;
   background-color: yellow;
   color: black;
@@ -71,8 +73,8 @@
   font-weight: bold;
   cursor: pointer;
   margin-right: 1rem;
-  transition: all 0.2s ease-in-out;
   border: 1px solid transparent;
+  opacity: 0;
 }
 
 .upgradeCta:hover {

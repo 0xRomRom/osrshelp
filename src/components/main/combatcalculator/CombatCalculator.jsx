@@ -7,6 +7,7 @@ import GetStats from "./playerstats/GetStats";
 
 import LevelInputs from "./levelinputs/LevelInputs";
 import ResultBox from "./resultbox/ResultBox";
+import CombatLevels from "./combatlevels/CombatLevels";
 
 const CombatCalculator = ({
   mainState,
@@ -70,7 +71,8 @@ const CombatCalculator = ({
               setInputValues={setInputValues}
               inputValues={inputValues}
             />
-            <ResultBox inputValues={inputValues} />
+            <CombatLevels inputValues={inputValues} />
+            <ResultBox />
           </div>
         </div>
       </div>

@@ -48,6 +48,7 @@
   user-select: none;
   filter: grayscale(0.8);
   text-decoration: none;
+  font-weight: bold;
 }
 
 .icon {
@@ -57,7 +58,7 @@
 
 .active {
   background-color: rgb(16, 27, 35);
-  color: #00d25b;
+  color: white;
   /* background: linear-gradient(130deg, brown, red); */
   filter: none;
 }

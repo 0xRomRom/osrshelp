@@ -35,6 +35,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
 
   return (
     <div className={stl.levelinputs}>
+      <span className={stl.currentLvls}>Current levels</span>
       <div className={stl.inputWrap}>
         <img
           src="./skillicons/Attack.webp"
@@ -44,7 +45,6 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
         <input
           type="number"
           className={stl.numberInput}
-          placeholder="Attack level"
           value={inputValues.attack}
           onChange={(e) => handleInputChange(e, "attack")}
           min="1"
@@ -59,7 +59,6 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
         <input
           type="number"
           className={stl.numberInput}
-          placeholder="Strength level"
           value={inputValues.strength}
           onChange={(e) => handleInputChange(e, "strength")}
           min="1"
@@ -74,7 +73,6 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
         <input
           type="number"
           className={stl.numberInput}
-          placeholder="Defence level"
           value={inputValues.defence}
           onChange={(e) => handleInputChange(e, "defence")}
           min="1"
@@ -89,7 +87,6 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
         <input
           type="number"
           className={stl.numberInput}
-          placeholder="Hitpoints level"
           value={inputValues.hitpoints}
           onChange={(e) => handleInputChange(e, "hitpoints")}
           min="10"
@@ -104,7 +101,6 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
         <input
           type="number"
           className={stl.numberInput}
-          placeholder="Ranged level"
           value={inputValues.ranged}
           onChange={(e) => handleInputChange(e, "ranged")}
           min="1"
@@ -119,7 +115,6 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
         <input
           type="number"
           className={stl.numberInput}
-          placeholder="Magic level"
           value={inputValues.magic}
           onChange={(e) => handleInputChange(e, "magic")}
           min="1"
@@ -134,7 +129,6 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
         <input
           type="number"
           className={stl.numberInput}
-          placeholder="Prayer level"
           value={inputValues.prayer}
           onChange={(e) => handleInputChange(e, "prayer")}
           min="1"

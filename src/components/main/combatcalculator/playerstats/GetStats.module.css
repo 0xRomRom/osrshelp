@@ -1,11 +1,12 @@
 .getstats {
-  background-color: #111111;
-  height: 7.5rem;
-  width: 25rem;
+  background-color: var(--dark-bg);
+  height: 5rem;
+  width: 70%;
   margin: 0 auto;
   margin-top: 2rem;
   position: relative;
   border-radius: 0.4rem;
+  box-shadow: 0px 0px 5px var(--blue-main);
 }
 
 .form {
@@ -38,11 +39,11 @@
   cursor: pointer;
   position: relative;
   border-radius: 0.5rem;
-  background-color: #00d25b;
+  background-color: var(--blue-main);
   margin-left: 1rem;
   margin-top: 0.5rem;
 }
 
 .cta:hover {
-  background-color: #12d767;
+  color: white;
 }

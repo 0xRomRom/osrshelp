@@ -15,7 +15,7 @@
 .gridTile {
   width: 200px;
   height: 200px;
-  background-color: rgb(17, 23, 27);
+  background-color: var(--dark-bg);
   border-radius: 0.4rem;
   display: flex;
   justify-content: center;
@@ -27,7 +27,7 @@
 }
 
 .gridTile:hover {
-  box-shadow: 0px 0px 15px purple;
+  box-shadow: 0px 0px 7px var(--blue-main);
 }
 
 .gridTitle {

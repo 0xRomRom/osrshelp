@@ -42,8 +42,8 @@
 }
 
 .ctaBtn:hover {
-  color: white;
-  background-color: rgb(56, 56, 56);
+  color: black;
+  background-color: #00d25b;
 }
 
 .gearPreview {
@@ -124,7 +124,7 @@
 }
 
 .selected {
-  border: 2px solid #0084ff;
+  border: 2px solid #00d25b;
   border-radius: 0.7rem;
 }
 
@@ -168,8 +168,8 @@
 }
 
 .gearInput:focus {
-  border: 1px solid #0084ffa7;
-  box-shadow: 0px 0px 5px #0084ffa7;
+  border: 1px solid #00d25b;
+  box-shadow: 0px 0px 5px #00d25b;
 }
 
 .gearSlots {
@@ -227,13 +227,13 @@
 }
 
 .actSlot {
-  border: 1px solid #0084ffa7;
-  box-shadow: 0px 0px 5px #0084ffa7;
+  border: 1px solid #00d25b;
+  box-shadow: 0px 0px 5px #00d25b;
   color: white;
 }
 .actSlot:hover {
-  border: 1px solid #0084ffa7;
-  box-shadow: 0px 0px 5px #0084ffa7;
+  border: 1px solid #00d25b;
+  box-shadow: 0px 0px 5px #00d25b;
   color: white;
 }
 
@@ -317,7 +317,7 @@
 }
 
 .ctaActive {
-  background-color: #0084ffa7;
+  background-color: #00d25b;
 }
 
 .allStyles {
@@ -347,7 +347,7 @@
 }
 
 .trashWrap:active {
-  border: 2px solid #0084ff;
+  border: 2px solid #00d25b;
 }
 
 .trashWrap:hover .trashIcon {

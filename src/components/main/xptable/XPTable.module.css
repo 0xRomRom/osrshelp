@@ -49,7 +49,7 @@
   border-radius: 0.4rem;
   width: 70%;
   left: 15%;
-  background-color: rgb(17, 23, 27);
+  background-color: var(--dark-bg);
   margin-top: 2rem;
   overflow-y: scroll;
   margin-bottom: 2rem;
@@ -62,7 +62,7 @@
   padding: 1rem 0rem;
   position: sticky;
   top: 0;
-  background-color: rgb(17, 23, 27);
+  background-color: var(--dark-bg);
 }
 
 .configRow span {

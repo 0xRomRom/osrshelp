@@ -14,7 +14,7 @@
   width: 4.25rem;
   padding: 0.9rem 0rem;
   border-radius: 0.4rem;
-  background-color: rgb(17, 23, 27);
+  background-color: var(--dark-bg);
   border: none;
   outline: none;
   cursor: pointer;
@@ -25,7 +25,7 @@
 }
 
 .btnBox button:hover .ctaIcon {
-  color: white;
+  color: #00d25b;
 }
 
 .ctaIcon {

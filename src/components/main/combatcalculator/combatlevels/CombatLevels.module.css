@@ -1,0 +1,32 @@
+.midRow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.combatLevelBox {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--dark-bg);
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0px 0px 5px var(--blue-main);
+}
+
+.combatSpan {
+  color: gray;
+  font-size: 20px;
+}
+
+.combatSubSpan {
+  margin-top: 0.25rem;
+  color: var(--blue-main);
+  font-size: 28px;
+  margin-bottom: 0.5rem;
+}

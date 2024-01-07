@@ -46,12 +46,16 @@
   outline: none;
   cursor: pointer;
   font-weight: bold;
-  border: 2px solid #0084ff;
+  border: 2px solid var(--blue-main);
   background-color: transparent;
+  color: gray;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .actBtn {
-  background-color: #0084ff;
+  background-color: var(--blue-main);
+  color: white;
 }
 
 .disclaimerBox {

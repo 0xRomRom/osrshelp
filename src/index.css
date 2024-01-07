@@ -65,3 +65,8 @@ code {
 ::-webkit-scrollbar-button {
   display: none;
 }
+
+:root {
+  --dark-bg: #111111;
+  --blue-main: #0084ff;
+}

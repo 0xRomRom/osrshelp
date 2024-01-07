@@ -71,7 +71,7 @@
 }
 
 .gridTile:hover {
-  box-shadow: 0px 0px 5px purple;
+  box-shadow: 0px 0px 5px #00d25b;
 }
 
 .tileGear {

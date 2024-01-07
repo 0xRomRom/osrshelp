@@ -44,13 +44,14 @@
   cursor: pointer;
   position: relative;
   border-radius: 0.5rem;
-  background-color: #00d25b;
+  background-color: var(--blue-main);
   margin-left: 1rem;
   margin-top: 0.5rem;
 }
 
 .cta:hover {
-  background-color: #17e671;
+  background-color: var(--blue-main);
+  color: white;
 }
 
 .notFound {
