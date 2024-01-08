@@ -1,9 +1,14 @@
 import stl from "./CalculatorBox.module.css";
 import { useState } from "react";
 import { CiSquarePlus } from "react-icons/ci";
+import { useEffect } from "react";
 
-const CalculatorBox = () => {
+const CalculatorBox = ({ selectedItem }) => {
   const [storedItems, setStoredItems] = useState({});
+
+  useEffect(() => {
+    console.log(selectedItem);
+  }, [selectedItem]);
   return (
     <div className={stl.calculatorbox}>
       {Object.keys(storedItems).length === 0 && (
