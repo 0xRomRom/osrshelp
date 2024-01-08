@@ -10,7 +10,7 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Dragon_med_helm|Torn_prayer_scroll|Dragon_halberd|Verac's_brassard_0"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Nature_rune|Dragon_med_helm|Torn_prayer_scroll|Dragon_halberd|Verac's_brassard_0|Verac's_flail_0|Dragon_plateskirt|Lava_battlestaff|Rune_halberd|Karil's_crossbow_0|Dragon_battleaxe|Dragon_platelegs|Dragon_longsword|Mystic_lava_staff|Black_d'hide_body|Light_frame"
     );
     const result = await fetcher.json();
     console.log(result);
@@ -25,8 +25,11 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
       const newPrices = PROFITALCHITEMS.map((item) => {
         return {
           ...item,
-          price: itemPrices[item.name].price || item.price,
-          profit: item.alchPrice - itemPrices[item.name].price,
+          price: itemPrices[item.name].price,
+          profit:
+            item.alchPrice -
+            itemPrices[item.name].price -
+            itemPrices["Nature rune"].price,
         };
       });
 
@@ -73,7 +76,7 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
                   <div className={stl.imgWrapper}>
                     <img
                       src={item.imgSrc}
-                      alt="Dragon med helm"
+                      alt={item.name}
                       className={stl.gridIcon}
                     />
                   </div>
@@ -106,28 +109,6 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
                 </div>
               );
             })}
-
-            {/* <div className={stl.griditem}>
-              <div className={stl.imgWrapper}>
-                <img
-                  src="./gearcalculator/helms/Dragon_med_helm.webp"
-                  alt="Dragon med helm"
-                  className={stl.gridIcon}
-                />
-              </div>
-              <span>Dragon Med helm </span>
-              <span className={stl.red}>
-                {" "}
-                <img src={mills} alt="Money pile" className={stl.millsIcon} />
-                32,433
-              </span>
-              <span className={stl.orange}>800/4h</span>
-              <span className={stl.green}>32,000</span>
-              <span className={stl.green}>
-                <img src={mills} alt="Money pile" className={stl.millsIcon} />
-                450
-              </span>
-            </div> */}
           </div>
         </div>
       </div>
