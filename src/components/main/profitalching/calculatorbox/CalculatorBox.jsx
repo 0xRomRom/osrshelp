@@ -5,9 +5,19 @@ import { useEffect } from "react";
 
 const CalculatorBox = ({ selectedItem }) => {
   const [storedItems, setStoredItems] = useState({});
+  const [amountToAdd, setAmountToAdd] = useState(0);
+
+  const handleInputChange = (e) => {
+    const enteredValue = e.target.value;
+
+    if (enteredValue === "" || !isNaN(enteredValue)) {
+      setAmountToAdd(enteredValue);
+    }
+  };
 
   useEffect(() => {
     console.log(selectedItem);
+    setAmountToAdd(selectedItem.geLimit);
   }, [selectedItem]);
   return (
     <div className={stl.calculatorbox}>
@@ -37,12 +47,24 @@ const CalculatorBox = ({ selectedItem }) => {
                 {(selectedItem.geLimit * selectedItem.profit).toLocaleString()}
               </span>
             </div>
-            <img
-              src={selectedItem.imgSrc}
-              alt={selectedItem.imgSrc}
-              className={stl.activeImg}
-            />
+            <div className={stl.imgWrapper}>
+              <img
+                src={selectedItem.imgSrc}
+                alt={selectedItem.imgSrc}
+                className={stl.activeImg}
+              />
+            </div>
             <span className={stl.itemName}>{selectedItem.name}</span>
+            <div className={stl.addBlock}>
+              <input
+                type="number"
+                className={stl.amountToAddInput}
+                placeholder="Amount"
+                value={amountToAdd}
+                onChange={(e) => handleInputChange(e)}
+              />
+              <button className={stl.addCta}>Add</button>
+            </div>
           </div>
           <div className={stl.profitBox}></div>
           <div className={stl.queueBlock}>
