@@ -11,7 +11,7 @@ const CalculatorBox = ({ selectedItem }) => {
   const handleInputChange = (e) => {
     const enteredValue = e.target.value;
 
-    if (enteredValue === "" || !isNaN(enteredValue)) {
+    if (enteredValue === "" || !isNaN(parseInt(enteredValue))) {
       setAmountToAdd(enteredValue);
     }
   };
@@ -21,7 +21,18 @@ const CalculatorBox = ({ selectedItem }) => {
     setAmountToAdd(selectedItem.geLimit);
   }, [selectedItem]);
 
-  const addItemToQueue = () => {};
+  const addItemToQueue = () => {
+    setStoredItems((prevState) => {
+      return {
+        ...prevState,
+        [selectedItem.name]: selectedItem,
+      };
+    });
+  };
+
+  useEffect(() => {
+    console.log(storedItems);
+  }, [storedItems]);
 
   return (
     <div className={stl.calculatorbox}>
@@ -64,7 +75,7 @@ const CalculatorBox = ({ selectedItem }) => {
                 type="number"
                 className={stl.amountToAddInput}
                 placeholder="Amount"
-                value={amountToAdd}
+                value={amountToAdd || ""}
                 onChange={(e) => handleInputChange(e)}
               />
               <button className={stl.addCta} onClick={addItemToQueue}>
