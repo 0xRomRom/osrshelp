@@ -10,9 +10,10 @@ const CalculatorBox = ({ selectedItem }) => {
   const [storedItems, setStoredItems] = useState({});
   const [amountToAdd, setAmountToAdd] = useState(0);
   const [totalProfit, setTotalProfit] = useState(0);
+  const [totalAlchs, setTotalAlchs] = useState(0);
 
   const handleInputChange = (e) => {
-    const enteredValue = e.target.value;
+    const enteredValue = +e.target.value;
 
     if (enteredValue === "" || !isNaN(parseInt(enteredValue))) {
       setAmountToAdd(enteredValue);
@@ -36,14 +37,18 @@ const CalculatorBox = ({ selectedItem }) => {
 
   useEffect(() => {
     const calculateTotalProfit = () => {
-      console.log(storedItems);
+      // Calculate total profit
       let totalProfit = 0;
       Object.entries(storedItems).forEach((item) => {
-        console.log(item);
-        console.log(item.profit);
         totalProfit += item[1].profit * item[1].storedAmount;
       });
       setTotalProfit(totalProfit);
+      // Calculate total alchs
+      let totalAlchs = 0;
+      Object.entries(storedItems).forEach((item) => {
+        totalAlchs += item[1].storedAmount;
+      });
+      setTotalAlchs(totalAlchs);
     };
     calculateTotalProfit();
   }, [storedItems]);
@@ -104,7 +109,7 @@ const CalculatorBox = ({ selectedItem }) => {
               <span className={stl.green}>{totalProfit.toLocaleString()}</span>
             </span>
             <div className={stl.profitBottomBox}>
-              <span className={stl.alchsCount}>Alchs: 3340</span>
+              <span className={stl.alchsCount}>Alchs: {totalAlchs}</span>
               <span className={stl.alchsCount}>Time: 5 min</span>
             </div>
           </div>
