@@ -7,6 +7,7 @@ import { FaRegEdit } from "react-icons/fa";
 import { FaRegTrashAlt } from "react-icons/fa";
 
 const CalculatorBox = ({ selectedItem }) => {
+  const [activeSelectedItem, setActiveSelectedItem] = useState(selectedItem);
   const [storedItems, setStoredItems] = useState({});
   const [amountToAdd, setAmountToAdd] = useState(0);
   const [totalProfit, setTotalProfit] = useState(0);
@@ -23,6 +24,7 @@ const CalculatorBox = ({ selectedItem }) => {
 
   useEffect(() => {
     setAmountToAdd(selectedItem.geLimit);
+    setActiveSelectedItem(selectedItem);
   }, [selectedItem]);
 
   const addItemToQueue = () => {
@@ -61,42 +63,52 @@ const CalculatorBox = ({ selectedItem }) => {
     calculateTotalProfit();
   }, [storedItems]);
 
+  const handleEditItem = (item) => {
+    setActiveSelectedItem(item[1]);
+  };
+
+  const handleDeleteItem = (item) => {};
+
   return (
     <div className={stl.calculatorbox}>
-      {Object.keys(selectedItem).length === 0 && (
+      {Object.keys(activeSelectedItem).length === 0 && (
         <span className={stl.additems}>
           Select items <CiSquarePlus className={stl.plus} />
         </span>
       )}
-      {Object.keys(selectedItem).length > 0 && (
+      {Object.keys(activeSelectedItem).length > 0 && (
         <div className={stl.calculatorModal}>
           <div className={stl.itemBlock}>
             <div className={stl.statsBlock}>
               <span className={stl.flexSpan}>
                 <span className={stl.itemPrice}>Price:</span>
-                {selectedItem.price.toLocaleString()}
+                {activeSelectedItem.price.toLocaleString()}
               </span>
               <span className={stl.flexSpan}>
                 <span className={stl.itemPrice}>G.E. Limit:</span>{" "}
-                {selectedItem.geLimit}
+                {activeSelectedItem.geLimit}
               </span>
               <span className={stl.flexSpan}>
                 <span className={stl.itemPrice}>Total Price:</span>
-                {(selectedItem.geLimit * selectedItem.price).toLocaleString()}
+                {(
+                  activeSelectedItem.geLimit * activeSelectedItem.price
+                ).toLocaleString()}
               </span>
               <span className={stl.flexSpan}>
                 <span className={stl.itemPrice}>Total Profit:</span>
-                {(selectedItem.geLimit * selectedItem.profit).toLocaleString()}
+                {(
+                  activeSelectedItem.geLimit * activeSelectedItem.profit
+                ).toLocaleString()}
               </span>
             </div>
             <div className={stl.imgWrapper}>
               <img
-                src={selectedItem.imgSrc}
-                alt={selectedItem.imgSrc}
+                src={activeSelectedItem.imgSrc}
+                alt={activeSelectedItem.imgSrc}
                 className={stl.activeImg}
               />
             </div>
-            <span className={stl.itemName}>{selectedItem.name}</span>
+            <span className={stl.itemName}>{activeSelectedItem.name}</span>
             <div className={stl.addBlock}>
               <input
                 type="number"
@@ -152,8 +164,14 @@ const CalculatorBox = ({ selectedItem }) => {
                             {item[1].storedAmount}x
                           </span>
                           <div className={stl.ctaIconWrap}>
-                            <FaRegEdit className={stl.ctaIcon} />
-                            <FaRegTrashAlt className={stl.ctaIcon} />
+                            <FaRegEdit
+                              className={stl.ctaIcon}
+                              onClick={() => handleEditItem(item)}
+                            />
+                            <FaRegTrashAlt
+                              className={stl.ctaIcon}
+                              onClick={() => handleDeleteItem(item)}
+                            />
                           </div>
                         </div>
                       );
