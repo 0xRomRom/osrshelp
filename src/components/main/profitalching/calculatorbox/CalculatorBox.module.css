@@ -23,23 +23,37 @@
 }
 
 .calculatorModal {
-  height: 15rem;
-  border: 1px solid red;
+  height: 20rem;
   display: flex;
   justify-content: space-between;
 }
 
 .itemBlock {
   width: 33%;
-  border: 1px solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+}
+
+.statsBlock {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.statsBlock span {
+  color: gray;
 }
 .queueBlock {
   width: 33%;
-  border: 1px solid blue;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -47,6 +61,17 @@
   color: gray;
   text-align: center;
   padding-top: 1rem;
+}
+.profitBox {
+  width: 33%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: gray;
+  text-align: center;
+  padding-top: 1rem;
+  background-color: #0e0d0d;
 }
 
 .activeImg {
@@ -56,4 +81,44 @@
 
 .itemName {
   color: gray;
+}
+
+.itemPrice {
+  color: var(--blue-main) !important;
+  display: block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(21, 18, 18);
+  width: 100%;
+}
+
+.geLimit {
+  background-color: orange;
+  color: white;
+  border-radius: 0.4rem;
+  padding: 0.25rem;
+  /* text-shadow: 0px 0px 30px black; */
+}
+
+.totalPrice {
+  background-color: red;
+  color: white;
+  border-radius: 0.4rem;
+  padding: 0.25rem;
+}
+.totalProfit {
+  background-color: var(--green-main);
+  color: white;
+  border-radius: 0.4rem;
+  padding: 0.25rem;
+}
+
+.flexSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
 }
