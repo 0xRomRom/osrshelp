@@ -71,6 +71,10 @@
   color: gray;
 }
 
+.flexGrid:nth-child(odd) {
+  background-color: #0e0d0d;
+}
+
 .flexGrid {
   display: flex;
   justify-content: center;

@@ -104,6 +104,62 @@ const PROFITALCHITEMS = [
     geLimit: 8,
     alchPrice: 30000,
   },
+  {
+    name: "Red d'hide body",
+    imgSrc: "./gearcalculator/bodies/Red_d'hide_body.webp",
+    price: 0,
+    geLimit: 70,
+    alchPrice: 6738,
+  },
+  {
+    name: "Shield left half",
+    imgSrc: "./profitalch/Shield_left_half.webp",
+    price: 0,
+    geLimit: 50,
+    alchPrice: 66000,
+  },
+  {
+    name: "Broken dragon hasta",
+    imgSrc: "./profitalch/Broken_dragon_hasta.webp",
+    price: 0,
+    geLimit: 70,
+    alchPrice: 37440,
+  },
+  {
+    name: "Skeletal bottoms",
+    imgSrc: "./gearcalculator/legs/Skeletal_bottoms.webp",
+    price: 0,
+    geLimit: 70,
+    alchPrice: 24000,
+  },
+  {
+    name: "Dragon dagger",
+    imgSrc: "./gearcalculator/weapons/Dragon_dagger.webp",
+    price: 0,
+    geLimit: 70,
+    alchPrice: 18000,
+  },
+  {
+    name: "Crier hat",
+    imgSrc: "./profitalch/Crier_hat.webp",
+    price: 0,
+    geLimit: 4,
+    alchPrice: 3000,
+  },
+  {
+    name: "Dragon 2h sword",
+    imgSrc: "./gearcalculator/weapons/Dragon_2h_sword.webp",
+    price: 0,
+    geLimit: 8,
+    alchPrice: 132000,
+  },
+  {
+    name: "Leaf-bladed sword",
+    imgSrc: "./gearcalculator/weapons/Leaf-bladed_sword.webp",
+    price: 0,
+    geLimit: 70,
+    alchPrice: 40800,
+  },
 ];
 
 export default PROFITALCHITEMS;

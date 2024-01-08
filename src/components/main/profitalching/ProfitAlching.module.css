@@ -85,6 +85,8 @@
 .innerGrid {
   display: flex;
   flex-direction: column;
+  height: 40rem;
+  overflow-y: scroll;
 }
 
 .griditem {
