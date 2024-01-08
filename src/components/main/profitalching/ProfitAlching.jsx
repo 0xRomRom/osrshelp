@@ -10,7 +10,7 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Dragon_med_helm"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Dragon_med_helm|Torn_prayer_scroll|Dragon_halberd"
     );
     const result = await fetcher.json();
     setItemPrices(result);
@@ -25,9 +25,12 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
         return {
           ...item,
           price: itemPrices[item.name].price || item.price,
+          profit: item.alchPrice - itemPrices[item.name].price,
         };
       });
-      setGridItems(newPrices);
+
+      const sorted = newPrices.sort((a, b) => b.profit - a.profit);
+      setGridItems(sorted);
     }
   }, [itemPrices]);
 
@@ -80,17 +83,24 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
                       alt="Money pile"
                       className={stl.millsIcon}
                     />
-                    {item.price}
+                    {item.price.toLocaleString()}
                   </span>
                   <span className={stl.orange}>{item.geLimit}</span>
-                  <span className={stl.green}>{item.alchPrice}</span>
                   <span className={stl.green}>
                     <img
                       src={mills}
                       alt="Money pile"
                       className={stl.millsIcon}
                     />
-                    {item.alchPrice - item.price}
+                    {item.alchPrice.toLocaleString()}
+                  </span>
+                  <span className={stl.green}>
+                    <img
+                      src={mills}
+                      alt="Money pile"
+                      className={stl.millsIcon}
+                    />
+                    {(item.alchPrice - item.price).toLocaleString()}
                   </span>
                 </div>
               );
