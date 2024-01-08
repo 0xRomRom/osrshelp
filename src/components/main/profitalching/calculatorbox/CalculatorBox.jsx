@@ -28,12 +28,12 @@ const CalculatorBox = ({ selectedItem }) => {
   }, [selectedItem]);
 
   const addItemToQueue = () => {
-    const newItem = selectedItem;
+    const newItem = activeSelectedItem;
     newItem.storedAmount = amountToAdd;
     setStoredItems((prevState) => {
       return {
         ...prevState,
-        [selectedItem.name]: newItem,
+        [newItem.name]: newItem,
       };
     });
   };
@@ -61,10 +61,13 @@ const CalculatorBox = ({ selectedItem }) => {
       setTotalCost(totalCost);
     };
     calculateTotalProfit();
-  }, [storedItems]);
+  }, [activeSelectedItem, storedItems]);
 
   const handleEditItem = (item) => {
+    console.log(item);
+    console.log(activeSelectedItem);
     setActiveSelectedItem(item[1]);
+    setAmountToAdd(item[1].storedAmount);
   };
 
   const handleDeleteItem = (item) => {};
@@ -146,8 +149,6 @@ const CalculatorBox = ({ selectedItem }) => {
 
                   <div className={stl.queueListWrap}>
                     {Object.entries(storedItems).map((item, index) => {
-                      console.log(item);
-
                       return (
                         <div className={stl.storedItem} key={index}>
                           <div className={stl.queueImgWrap}>
