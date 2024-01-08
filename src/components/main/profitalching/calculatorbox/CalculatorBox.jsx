@@ -149,27 +149,48 @@ const CalculatorBox = ({ selectedItem }) => {
             </div>
           </div>
           <div className={stl.profitBox}>
-            <img src={mills} alt="Millions pile" className={stl.millsLarge} />
-            <span className={stl.totalAlchProfit}>
-              Profit:{" "}
-              <span className={stl.green}>{totalProfit.toLocaleString()}</span>
-            </span>
-            <div className={stl.profitBottomBox}>
-              <span className={stl.alchsCount}>
-                Time:{" "}
-                <span className={stl.green}>
-                  {totalTime >= 60
-                    ? totalTime >= 3600
-                      ? (totalTime / 3600).toFixed(2)
-                      : (totalTime / 60).toFixed(2)
-                    : totalTime.toFixed(0)}
+            {Object.keys(storedItems).length === 0 && (
+              <div className={stl.addItemFallback}>
+                <span className={stl.fallBackSpan}>
+                  Add items <CiSquarePlus className={stl.plusLarge} />
                 </span>
-                {timeFormat}
-              </span>
-              <span className={stl.alchsCount}>
-                Alchs: <span className={stl.green}>{totalAlchs}</span>
-              </span>
-            </div>
+              </div>
+            )}
+
+            {Object.keys(storedItems).length > 0 && (
+              <>
+                <img
+                  src={mills}
+                  alt="Millions pile"
+                  className={stl.millsLarge}
+                />
+                <span className={stl.totalAlchProfit}>
+                  Profit:{" "}
+                  <span className={stl.green}>
+                    {totalProfit.toLocaleString()}
+                  </span>
+                </span>
+                <div className={stl.profitBottomBox}>
+                  <span className={stl.alchsCount}>
+                    Time:{" "}
+                    <span className={stl.green}>
+                      {totalTime >= 60
+                        ? totalTime >= 3600
+                          ? (totalTime / 3600).toFixed(2)
+                          : (totalTime / 60).toFixed(2)
+                        : totalTime.toFixed(0)}
+                    </span>
+                    {timeFormat}
+                  </span>
+                  <span className={stl.alchsCount}>
+                    Alchs:{" "}
+                    <span className={stl.green}>
+                      {totalAlchs.toLocaleString()}
+                    </span>
+                  </span>
+                </div>
+              </>
+            )}
           </div>
           <div className={stl.queueBlock}>
             <span>Queue</span>
@@ -220,12 +241,19 @@ const CalculatorBox = ({ selectedItem }) => {
                     Total Cost:{" "}
                     <span className={stl.red}>
                       {totalCost > 1000
-                        ? (totalCost / 1000).toFixed(3) + "m"
+                        ? (totalCost / 1000).toFixed(2) + "m"
                         : totalCost.toFixed(0) + "k"}
                     </span>
                   </span>
                 </div>
               </>
+            )}
+            {Object.keys(storedItems).length === 0 && (
+              <div className={stl.addItemFallback}>
+                <span className={stl.fallBackSpan}>
+                  Add items <CiSquarePlus className={stl.plusLarge} />
+                </span>
+              </div>
             )}
           </div>
         </div>

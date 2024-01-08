@@ -62,6 +62,7 @@
   color: gray;
   text-align: center;
   padding-top: 1rem;
+  position: relative;
 }
 .profitBox {
   flex: 1;
@@ -282,4 +283,28 @@
 
 .totalCostBox {
   padding-top: 0.5rem;
+}
+
+.addItemFallback {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: 20px;
+}
+
+.plusLarge {
+  font-size: 30px;
+}
+
+.fallBackSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
 }
