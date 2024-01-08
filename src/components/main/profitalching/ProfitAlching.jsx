@@ -26,11 +26,28 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
         </div>
         <div className={stl.itemsGrid}>
           <div className={stl.configRow}>
-            <span>Icon</span>
+            <div className={stl.imgWrapper}></div>
             <span>Item</span>
             <span>Price</span>
+            <span>G.E. Limit</span>
             <span>Alch Price</span>
             <span>Profit</span>
+          </div>
+          <div className={stl.innerGrid}>
+            <div className={stl.griditem}>
+              <div className={stl.imgWrapper}>
+                <img
+                  src="./gearcalculator/helms/Dragon_med_helm.webp"
+                  alt="Dragon med helm"
+                  className={stl.gridIcon}
+                />
+              </div>
+              <span>Dragon Med helm </span>
+              <span>32,433</span>
+              <span>800/4h</span>
+              <span>32,000</span>
+              <span>450</span>
+            </div>
           </div>
         </div>
       </div>
