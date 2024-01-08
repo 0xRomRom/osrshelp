@@ -1445,7 +1445,7 @@ const HELMS = [
   {
     type: "Melee",
     name: "Black med helm",
-    defLvl: 5,
+    defLvl: 10,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,
@@ -1482,7 +1482,7 @@ const HELMS = [
   {
     type: "Melee",
     name: "Black full helm",
-    defLvl: 5,
+    defLvl: 10,
     rangedLvl: 0,
     prayerLvl: 0,
     magicLvl: 0,

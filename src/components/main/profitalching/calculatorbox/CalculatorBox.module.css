@@ -1,0 +1,22 @@
+.calculatorbox {
+  background-color: var(--dark-bg);
+  padding: 3rem 0rem;
+  width: 80%;
+  border-radius: 0.4rem;
+}
+
+.additems {
+  color: gray;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 28px;
+  user-select: none;
+}
+
+.plus {
+  font-size: 28px;
+}

@@ -524,6 +524,13 @@ const PROFITALCHITEMS = [
     geLimit: 10000,
     alchPrice: 2115,
   },
+  {
+    name: "Adamant platebody (h1)",
+    imgSrc: "./profitalch/Adamant_platebody_(h1).webp",
+    price: 0,
+    geLimit: 8,
+    alchPrice: 9984,
+  },
 ];
 
 export default PROFITALCHITEMS;
