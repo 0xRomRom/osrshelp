@@ -79,6 +79,7 @@
   width: 20%;
   text-align: center;
   padding: 0.5rem 0rem;
+  /* color: var(--green-main); */
 }
 
 .innerGrid {
@@ -98,7 +99,9 @@
 }
 
 .griditem:hover {
-  background-color: var(--blue-main);
+  background-color: rgb(10, 10, 10);
+  /* background-color: var(--blue-main); */
+  cursor: pointer;
 }
 
 .imgWrapper {
@@ -113,5 +116,29 @@
 .griditem span {
   width: 20%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
   /* font-weight: bold; */
+}
+
+.green {
+  color: var(--green-main);
+}
+
+.orange {
+  color: orange;
+}
+
+.blue {
+  color: var(--blue-main);
+}
+
+.red {
+  color: red;
+}
+
+.millsIcon {
+  width: 15px;
 }

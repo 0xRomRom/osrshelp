@@ -1,7 +1,36 @@
 import stl from "./ProfitAlching.module.css";
 import Pagination from "../pagination/Pagination";
+import mills from "../../../assets/icons/Mills.webp";
+import PROFITALCHITEMS from "../../../utils/profitalchitems";
+import { useEffect, useState } from "react";
 
 const ProfitAlching = ({ mainState, subState, setSubState }) => {
+  const [itemPrices, setItemPrices] = useState({});
+  const [gridItems, setGridItems] = useState(PROFITALCHITEMS);
+
+  const priceFetcher = async () => {
+    const fetcher = await fetch(
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Dragon_med_helm"
+    );
+    const result = await fetcher.json();
+    setItemPrices(result);
+  };
+
+  useEffect(() => {
+    if (Object.keys(itemPrices).length === 0) {
+      priceFetcher();
+    }
+    if (Object.keys(itemPrices).length > 0) {
+      const newPrices = PROFITALCHITEMS.map((item) => {
+        return {
+          ...item,
+          price: itemPrices[item.name].price || item.price,
+        };
+      });
+      setGridItems(newPrices);
+    }
+  }, [itemPrices]);
+
   return (
     <div className={stl.profitalching}>
       <div className={stl.adBar}>[ Advertisements ]</div>
@@ -34,7 +63,40 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
             <span>Profit</span>
           </div>
           <div className={stl.innerGrid}>
-            <div className={stl.griditem}>
+            {gridItems.map((item) => {
+              return (
+                <div className={stl.griditem} key={item.name}>
+                  <div className={stl.imgWrapper}>
+                    <img
+                      src={item.imgSrc}
+                      alt="Dragon med helm"
+                      className={stl.gridIcon}
+                    />
+                  </div>
+                  <span>{item.name}</span>
+                  <span className={stl.red}>
+                    <img
+                      src={mills}
+                      alt="Money pile"
+                      className={stl.millsIcon}
+                    />
+                    {item.price}
+                  </span>
+                  <span className={stl.orange}>{item.geLimit}</span>
+                  <span className={stl.green}>{item.alchPrice}</span>
+                  <span className={stl.green}>
+                    <img
+                      src={mills}
+                      alt="Money pile"
+                      className={stl.millsIcon}
+                    />
+                    {item.alchPrice - item.price}
+                  </span>
+                </div>
+              );
+            })}
+
+            {/* <div className={stl.griditem}>
               <div className={stl.imgWrapper}>
                 <img
                   src="./gearcalculator/helms/Dragon_med_helm.webp"
@@ -43,11 +105,18 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
                 />
               </div>
               <span>Dragon Med helm </span>
-              <span>32,433</span>
-              <span>800/4h</span>
-              <span>32,000</span>
-              <span>450</span>
-            </div>
+              <span className={stl.red}>
+                {" "}
+                <img src={mills} alt="Money pile" className={stl.millsIcon} />
+                32,433
+              </span>
+              <span className={stl.orange}>800/4h</span>
+              <span className={stl.green}>32,000</span>
+              <span className={stl.green}>
+                <img src={mills} alt="Money pile" className={stl.millsIcon} />
+                450
+              </span>
+            </div> */}
           </div>
         </div>
       </div>

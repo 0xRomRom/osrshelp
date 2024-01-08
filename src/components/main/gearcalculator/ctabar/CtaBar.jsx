@@ -1,10 +1,8 @@
 import stl from "./CtaBar.module.css";
 import { ImBin } from "react-icons/im";
 import { FaCameraRetro, FaSave } from "react-icons/fa";
-import { BsFillShareFill } from "react-icons/bs";
 
 const CtaBar = ({
-  bonusState,
   setBonusState,
   captureScreenshot,
   setActiveSlot,

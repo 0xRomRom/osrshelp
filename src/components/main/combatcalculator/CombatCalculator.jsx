@@ -43,47 +43,47 @@ const CombatCalculator = ({
       setSkillsFetched(false);
     }
   }, [skills, skillsExp, playerName]);
-  const calculateCombatLevel = () => {
-    const prayLvl = +inputValues.prayer;
-    const attackLvl = +inputValues.attack;
-    const strengthLvl = +inputValues.strength;
-    const defenceLvl = +inputValues.defence;
-    const hpLvl = +inputValues.hitpoints;
-    const rangedLvl = +inputValues.ranged;
-    const magicLvl = +inputValues.magic;
-
-    const baseLevel = 0.25 * (defenceLvl + hpLvl + Math.floor(prayLvl / 2));
-
-    const meleeCombatLevel = 0.325 * (attackLvl + strengthLvl);
-
-    const magicCombatLevel = 0.325 * (Math.floor(magicLvl / 2) + magicLvl);
-
-    const rangedCombatLevel = 0.325 * (Math.floor(rangedLvl / 2) + rangedLvl);
-
-    const combatType = Math.max(
-      meleeCombatLevel,
-      Math.max(magicCombatLevel, rangedCombatLevel)
-    );
-
-    const combatLevelDouble = baseLevel + combatType;
-    const combatLevel = Math.floor(combatLevelDouble);
-
-    let combatTypeName;
-    if (combatType === meleeCombatLevel) {
-      combatTypeName = "Melee";
-    } else if (combatType === magicCombatLevel) {
-      combatTypeName = "Magic";
-    } else {
-      combatTypeName = "Ranged";
-    }
-    setCombatType(combatTypeName);
-
-    setCombatLevel(combatLevel);
-  };
 
   useEffect(() => {
+    const calculateCombatLevel = () => {
+      const prayLvl = +inputValues.prayer;
+      const attackLvl = +inputValues.attack;
+      const strengthLvl = +inputValues.strength;
+      const defenceLvl = +inputValues.defence;
+      const hpLvl = +inputValues.hitpoints;
+      const rangedLvl = +inputValues.ranged;
+      const magicLvl = +inputValues.magic;
+
+      const baseLevel = 0.25 * (defenceLvl + hpLvl + Math.floor(prayLvl / 2));
+
+      const meleeCombatLevel = 0.325 * (attackLvl + strengthLvl);
+
+      const magicCombatLevel = 0.325 * (Math.floor(magicLvl / 2) + magicLvl);
+
+      const rangedCombatLevel = 0.325 * (Math.floor(rangedLvl / 2) + rangedLvl);
+
+      const combatType = Math.max(
+        meleeCombatLevel,
+        Math.max(magicCombatLevel, rangedCombatLevel)
+      );
+
+      const combatLevelDouble = baseLevel + combatType;
+      const combatLevel = Math.floor(combatLevelDouble);
+
+      let combatTypeName;
+      if (combatType === meleeCombatLevel) {
+        combatTypeName = "Melee";
+      } else if (combatType === magicCombatLevel) {
+        combatTypeName = "Magic";
+      } else {
+        combatTypeName = "Ranged";
+      }
+      setCombatType(combatTypeName);
+
+      setCombatLevel(combatLevel);
+    };
     calculateCombatLevel();
-  }, [inputValues, calculateCombatLevel, playerName]);
+  }, [inputValues, playerName]);
 
   return (
     <div className={stl.combatcalculator}>
