@@ -98,12 +98,6 @@
   padding: 0.5rem 0rem;
 }
 
-.griditem:hover {
-  background-color: rgb(10, 10, 10);
-  /* background-color: var(--blue-main); */
-  cursor: pointer;
-}
-
 .imgWrapper {
   width: 40px;
   display: flex;
@@ -121,6 +115,10 @@
   align-items: center;
   gap: 0.5rem;
   /* font-weight: bold; */
+}
+
+.griditem:nth-child(odd) {
+  background-color: #0e0d0d;
 }
 
 .green {
@@ -141,4 +139,10 @@
 
 .millsIcon {
   width: 15px;
+}
+
+.griditem:hover {
+  background-color: rgb(27, 27, 27);
+  /* background-color: var(--blue-main); */
+  cursor: pointer;
 }

@@ -10,9 +10,10 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Dragon_med_helm|Torn_prayer_scroll|Dragon_halberd"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Dragon_med_helm|Torn_prayer_scroll|Dragon_halberd|Verac's_brassard_0"
     );
     const result = await fetcher.json();
+    console.log(result);
     setItemPrices(result);
   };
 

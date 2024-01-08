@@ -20,6 +20,13 @@ const PROFITALCHITEMS = [
     geLimit: 70,
     alchPrice: 150000,
   },
+  {
+    name: "Verac's brassard 0",
+    imgSrc: "./profitalch/Verac's_brassard.webp",
+    price: 0,
+    geLimit: 15,
+    alchPrice: 168000,
+  },
 ];
 
 export default PROFITALCHITEMS;
