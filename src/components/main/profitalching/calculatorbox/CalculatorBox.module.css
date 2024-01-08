@@ -1,6 +1,6 @@
 .calculatorbox {
   background-color: black;
-  padding: 3rem 0rem;
+
   width: 80%;
   border-radius: 0.4rem;
 }
@@ -15,8 +15,45 @@
   gap: 0.5rem;
   font-size: 28px;
   user-select: none;
+  padding: 2rem 0rem;
 }
 
 .plus {
   font-size: 28px;
+}
+
+.calculatorModal {
+  height: 15rem;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemBlock {
+  width: 33%;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.queueBlock {
+  width: 33%;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: gray;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.activeImg {
+  transform: scale(2);
+  margin-bottom: 2rem;
+}
+
+.itemName {
+  color: gray;
 }
