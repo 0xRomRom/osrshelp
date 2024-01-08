@@ -9,6 +9,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 const CalculatorBox = ({ selectedItem }) => {
   const [storedItems, setStoredItems] = useState({});
   const [amountToAdd, setAmountToAdd] = useState(0);
+  const [totalProfit, setTotalProfit] = useState(0);
 
   const handleInputChange = (e) => {
     const enteredValue = e.target.value;
@@ -19,21 +20,32 @@ const CalculatorBox = ({ selectedItem }) => {
   };
 
   useEffect(() => {
-    console.log(selectedItem);
     setAmountToAdd(selectedItem.geLimit);
   }, [selectedItem]);
 
   const addItemToQueue = () => {
+    const newItem = selectedItem;
+    newItem.storedAmount = amountToAdd;
     setStoredItems((prevState) => {
       return {
         ...prevState,
-        [selectedItem.name]: selectedItem,
+        [selectedItem.name]: newItem,
       };
     });
   };
 
   useEffect(() => {
-    console.log(storedItems);
+    const calculateTotalProfit = () => {
+      console.log(storedItems);
+      let totalProfit = 0;
+      Object.entries(storedItems).forEach((item) => {
+        console.log(item);
+        console.log(item.profit);
+        totalProfit += item[1].profit * item[1].storedAmount;
+      });
+      setTotalProfit(totalProfit);
+    };
+    calculateTotalProfit();
   }, [storedItems]);
 
   return (
@@ -88,7 +100,8 @@ const CalculatorBox = ({ selectedItem }) => {
           <div className={stl.profitBox}>
             <img src={mills} alt="Millions pile" className={stl.millsLarge} />
             <span className={stl.totalAlchProfit}>
-              Profit: <span className={stl.green}>32,000</span>
+              Profit:{" "}
+              <span className={stl.green}>{totalProfit.toLocaleString()}</span>
             </span>
             <div className={stl.profitBottomBox}>
               <span className={stl.alchsCount}>Alchs: 3340</span>
@@ -97,43 +110,49 @@ const CalculatorBox = ({ selectedItem }) => {
           </div>
           <div className={stl.queueBlock}>
             <span>Queue</span>
-            <div className={stl.queueList}>
-              {Object.keys(storedItems).length > 0 && (
-                <div className={stl.queueConfigRow}>
-                  <div className={stl.queueImgWrap}></div>
-                  <span className={stl.queueItem}>Item</span>
-                  <span className={stl.qty}>Qty</span>
-                </div>
-              )}
-              <div className={stl.queueListWrap}>
-                {Object.entries(storedItems).map((item, index) => {
-                  console.log(item);
+            {Object.keys(storedItems).length > 0 && (
+              <>
+                <div className={stl.queueList}>
+                  <div className={stl.queueConfigRow}>
+                    <div className={stl.queueImgWrap}></div>
+                    <span className={stl.queueItem}>Item</span>
+                    <span className={stl.qty}>Qty</span>
+                  </div>
 
-                  return (
-                    <div className={stl.storedItem} key={index}>
-                      <div className={stl.queueImgWrap}>
-                        <img
-                          src={item[1].imgSrc}
-                          alt={item[1].imgSrc}
-                          className={stl.itemImg}
-                        />
-                      </div>
-                      <span className={stl.storedItemName}>{item[1].name}</span>
-                      <span className={stl.storedAmountCount}>
-                        {item[1].storedAmount}x
-                      </span>
-                      <div className={stl.ctaIconWrap}>
-                        <FaRegEdit className={stl.ctaIcon} />
-                        <FaRegTrashAlt className={stl.ctaIcon} />
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-            <div className={stl.totalCostBox}>
-              <span>Total Cost: 4313k</span>
-            </div>
+                  <div className={stl.queueListWrap}>
+                    {Object.entries(storedItems).map((item, index) => {
+                      console.log(item);
+
+                      return (
+                        <div className={stl.storedItem} key={index}>
+                          <div className={stl.queueImgWrap}>
+                            <img
+                              src={item[1].imgSrc}
+                              alt={item[1].imgSrc}
+                              className={stl.itemImg}
+                            />
+                          </div>
+                          <span className={stl.storedItemName}>
+                            {item[1].name}
+                          </span>
+                          <span className={stl.storedAmountCount}>
+                            {item[1].storedAmount}x
+                          </span>
+                          <div className={stl.ctaIconWrap}>
+                            <FaRegEdit className={stl.ctaIcon} />
+                            <FaRegTrashAlt className={stl.ctaIcon} />
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                <div className={stl.totalCostBox}>
+                  <span>Total Cost: 4313k</span>
+                </div>
+              </>
+            )}
           </div>
         </div>
       )}
