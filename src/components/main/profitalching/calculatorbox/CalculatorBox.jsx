@@ -70,7 +70,14 @@ const CalculatorBox = ({ selectedItem }) => {
     setAmountToAdd(item[1].storedAmount);
   };
 
-  const handleDeleteItem = (item) => {};
+  const handleDeleteItem = (item) => {
+    console.log(item);
+    const itemName = item[0];
+    setStoredItems((prevState) => {
+      const { [itemName]: deletedItem, ...rest } = prevState;
+      return rest;
+    });
+  };
 
   return (
     <div className={stl.calculatorbox}>
@@ -183,9 +190,11 @@ const CalculatorBox = ({ selectedItem }) => {
                 <div className={stl.totalCostBox}>
                   <span>
                     Total Cost:{" "}
-                    {totalCost > 1000
-                      ? (totalCost / 1000).toFixed(3) + "m"
-                      : totalCost.toFixed(0) + "k"}
+                    <span className={stl.red}>
+                      {totalCost > 1000
+                        ? (totalCost / 1000).toFixed(3) + "m"
+                        : totalCost.toFixed(0) + "k"}
+                    </span>
                   </span>
                 </div>
               </>

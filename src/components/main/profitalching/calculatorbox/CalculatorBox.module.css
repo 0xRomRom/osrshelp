@@ -188,6 +188,10 @@
   color: var(--green-main);
 }
 
+.red {
+  color: red;
+}
+
 .profitBottomBox {
   width: 100%;
   position: absolute;
