@@ -5,6 +5,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 8,
     alchPrice: 60000,
+    storedAmount: 0,
   },
   {
     name: "Torn prayer scroll",
@@ -12,6 +13,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 5,
     alchPrice: 48000,
+    storedAmount: 0,
   },
   {
     name: "Dragon halberd",
@@ -19,6 +21,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 150000,
+    storedAmount: 0,
   },
   {
     name: "Verac's brassard 0",
@@ -26,6 +29,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 15,
     alchPrice: 168000,
+    storedAmount: 0,
   },
   {
     name: "Verac's flail 0",
@@ -33,6 +37,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 15,
     alchPrice: 96000,
+    storedAmount: 0,
   },
   {
     name: "Dragon plateskirt",
@@ -40,6 +45,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 162000,
+    storedAmount: 0,
   },
   {
     name: "Lava battlestaff",
@@ -47,6 +53,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 8,
     alchPrice: 10200,
+    storedAmount: 0,
   },
   {
     name: "Rune halberd",
@@ -54,6 +61,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 38400,
+    storedAmount: 0,
   },
   {
     name: "Karil's crossbow 0",
@@ -61,6 +69,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 15,
     alchPrice: 96000,
+    storedAmount: 0,
   },
   {
     name: "Dragon battleaxe",
@@ -68,6 +77,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 120000,
+    storedAmount: 0,
   },
   {
     name: "Dragon platelegs",
@@ -75,6 +85,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 162000,
+    storedAmount: 0,
   },
   {
     name: "Dragon longsword",
@@ -82,6 +93,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 60000,
+    storedAmount: 0,
   },
   {
     name: "Mystic lava staff",
@@ -89,6 +101,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 8,
     alchPrice: 27000,
+    storedAmount: 0,
   },
   {
     name: "Black d'hide body",
@@ -96,6 +109,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 8088,
+    storedAmount: 0,
   },
   {
     name: "Green d'hide body",
@@ -103,6 +117,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 125,
     alchPrice: 4680,
+    storedAmount: 0,
   },
   {
     name: "Light frame",
@@ -110,6 +125,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 8,
     alchPrice: 30000,
+    storedAmount: 0,
   },
   {
     name: "Red d'hide body",
@@ -117,6 +133,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 6738,
+    storedAmount: 0,
   },
   {
     name: "Blue d'hide body",
@@ -124,6 +141,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 125,
     alchPrice: 5616,
+    storedAmount: 0,
   },
   {
     name: "Blue d'hide body (t)",
@@ -131,6 +149,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 8,
     alchPrice: 5616,
+    storedAmount: 0,
   },
   {
     name: "Shield left half",
@@ -138,6 +157,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 50,
     alchPrice: 66000,
+    storedAmount: 0,
   },
   {
     name: "Broken dragon hasta",
@@ -145,6 +165,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 37440,
+    storedAmount: 0,
   },
   {
     name: "Skeletal bottoms",
@@ -152,6 +173,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 24000,
+    storedAmount: 0,
   },
   {
     name: "Skeletal top",
@@ -159,6 +181,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 27000,
+    storedAmount: 0,
   },
   {
     name: "Dragon dagger",
@@ -166,6 +189,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 18000,
+    storedAmount: 0,
   },
   {
     name: "Crier hat",
@@ -173,6 +197,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 4,
     alchPrice: 3000,
+    storedAmount: 0,
   },
   {
     name: "Dragon 2h sword",
@@ -180,6 +205,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 8,
     alchPrice: 132000,
+    storedAmount: 0,
   },
   {
     name: "Leaf-bladed sword",
@@ -187,6 +213,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 40800,
+    storedAmount: 0,
   },
   {
     name: "Rune kiteshield",
@@ -194,6 +221,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 32640,
+    storedAmount: 0,
   },
   {
     name: "Rune spear",
@@ -201,6 +229,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 12480,
+    storedAmount: 0,
   },
   {
     name: "Rune pickaxe",
@@ -208,6 +237,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 40,
     alchPrice: 19200,
+    storedAmount: 0,
   },
   {
     name: "Climbing boots (g)",
@@ -215,6 +245,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 4,
     alchPrice: 45000,
+    storedAmount: 0,
   },
   {
     name: "Adamant platebody",
@@ -222,6 +253,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 125,
     alchPrice: 9984,
+    storedAmount: 0,
   },
   {
     name: "Rune med helm",
@@ -229,6 +261,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 11520,
+    storedAmount: 0,
   },
   {
     name: "Rock-shell plate",
@@ -236,6 +269,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 39000,
+    storedAmount: 0,
   },
   {
     name: "Enchanted hat",
@@ -243,6 +277,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 8,
     alchPrice: 9000,
+    storedAmount: 0,
   },
   {
     name: "Rune platelegs",
@@ -250,6 +285,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 38400,
+    storedAmount: 0,
   },
   {
     name: "Rune chainbody",
@@ -257,6 +293,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 30000,
+    storedAmount: 0,
   },
   {
     name: "Rune plateskirt",
@@ -264,6 +301,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 38400,
+    storedAmount: 0,
   },
   {
     name: "Mystic robe top (light)",
@@ -271,6 +309,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 72000,
+    storedAmount: 0,
   },
   {
     name: "Flamtaer hammer",
@@ -278,6 +317,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 40,
     alchPrice: 6000,
+    storedAmount: 0,
   },
   {
     name: "Rune hasta",
@@ -285,6 +325,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 12480,
+    storedAmount: 0,
   },
   {
     name: "Mystic earth staff",
@@ -292,6 +333,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 25500,
+    storedAmount: 0,
   },
   {
     name: "Mystic air staff",
@@ -299,6 +341,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 25500,
+    storedAmount: 0,
   },
   {
     name: "Mystic water staff",
@@ -306,6 +349,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 25500,
+    storedAmount: 0,
   },
   {
     name: "Mystic fire staff",
@@ -313,6 +357,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 25500,
+    storedAmount: 0,
   },
   {
     name: "Air battlestaff",
@@ -320,6 +365,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 9300,
+    storedAmount: 0,
   },
   {
     name: "Earth battlestaff",
@@ -327,6 +373,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 9300,
+    storedAmount: 0,
   },
   {
     name: "Water battlestaff",
@@ -334,6 +381,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 9300,
+    storedAmount: 0,
   },
   {
     name: "Fire battlestaff",
@@ -341,6 +389,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 9300,
+    storedAmount: 0,
   },
   {
     name: "Magic longbow",
@@ -348,6 +397,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 1536,
+    storedAmount: 0,
   },
   {
     name: "Yew longbow",
@@ -355,6 +405,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 768,
+    storedAmount: 0,
   },
   {
     name: "Magic shortbow",
@@ -362,6 +413,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 960,
+    storedAmount: 0,
   },
   {
     name: "Yew shortbow",
@@ -369,6 +421,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 480,
+    storedAmount: 0,
   },
   {
     name: "Ruby necklace",
@@ -376,6 +429,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 1305,
+    storedAmount: 0,
   },
   {
     name: "Diamond necklace",
@@ -383,6 +437,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 18000,
     alchPrice: 2205,
+    storedAmount: 0,
   },
   {
     name: "Rune full helm",
@@ -390,6 +445,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 21120,
+    storedAmount: 0,
   },
   {
     name: "Rune platebody",
@@ -397,6 +453,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 39000,
+    storedAmount: 0,
   },
   {
     name: "Dragon mace",
@@ -404,6 +461,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 30000,
+    storedAmount: 0,
   },
   {
     name: "Rune longsword",
@@ -411,6 +469,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 19200,
+    storedAmount: 0,
   },
   {
     name: "Rune dagger",
@@ -418,6 +477,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 4800,
+    storedAmount: 0,
   },
   {
     name: "Rune sword",
@@ -425,6 +485,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 12480,
+    storedAmount: 0,
   },
   {
     name: "Dragon scimitar",
@@ -432,6 +493,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 60000,
+    storedAmount: 0,
   },
   {
     name: "Rune mace",
@@ -439,6 +501,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 8640,
+    storedAmount: 0,
   },
   {
     name: "Rune battleaxe",
@@ -446,6 +509,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 24960,
+    storedAmount: 0,
   },
   {
     name: "Mithril platebody",
@@ -453,6 +517,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 125,
     alchPrice: 3120,
+    storedAmount: 0,
   },
   {
     name: "Proselyte sallet",
@@ -460,6 +525,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 4800,
+    storedAmount: 0,
   },
   {
     name: "Proselyte hauberk",
@@ -467,6 +533,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 7200,
+    storedAmount: 0,
   },
   {
     name: "Proselyte cuisse",
@@ -474,6 +541,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 6000,
+    storedAmount: 0,
   },
   {
     name: "Splitbark gauntlets",
@@ -481,6 +549,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 3000,
+    storedAmount: 0,
   },
   {
     name: "Rune axe",
@@ -488,6 +557,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 70,
     alchPrice: 7680,
+    storedAmount: 0,
   },
   {
     name: "Onyx bolts (e)",
@@ -495,6 +565,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 11000,
     alchPrice: 9000,
+    storedAmount: 0,
   },
   {
     name: "Redwood shield",
@@ -502,6 +573,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 125,
     alchPrice: 768,
+    storedAmount: 0,
   },
   {
     name: "Dwarven helmet",
@@ -509,6 +581,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 50,
     alchPrice: 36000,
+    storedAmount: 0,
   },
   {
     name: "Adamant spear",
@@ -516,6 +589,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 125,
     alchPrice: 1248,
+    storedAmount: 0,
   },
   {
     name: "Ring of life",
@@ -523,6 +597,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 10000,
     alchPrice: 2115,
+    storedAmount: 0,
   },
   {
     name: "Adamant platebody (h1)",
@@ -530,6 +605,7 @@ const PROFITALCHITEMS = [
     price: 0,
     geLimit: 8,
     alchPrice: 9984,
+    storedAmount: 0,
   },
 ];
 

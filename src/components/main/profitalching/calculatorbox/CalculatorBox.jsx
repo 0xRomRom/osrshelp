@@ -3,6 +3,8 @@ import { useState } from "react";
 import { CiSquarePlus } from "react-icons/ci";
 import { useEffect } from "react";
 import mills from "../../../../assets/icons/Mills.webp";
+import { FaRegEdit } from "react-icons/fa";
+import { FaRegTrashAlt } from "react-icons/fa";
 
 const CalculatorBox = ({ selectedItem }) => {
   const [storedItems, setStoredItems] = useState({});
@@ -95,6 +97,38 @@ const CalculatorBox = ({ selectedItem }) => {
           </div>
           <div className={stl.queueBlock}>
             <span>Queue</span>
+            <div className={stl.queueList}>
+              {Object.keys(storedItems).length > 0 && (
+                <div className={stl.queueConfigRow}>
+                  <div className={stl.queueImgWrap}></div>
+                  <span className={stl.queueItem}>Item</span>
+                  <span className={stl.qty}>Qty</span>
+                </div>
+              )}
+              {Object.entries(storedItems).map((item, index) => {
+                console.log(item);
+
+                return (
+                  <div className={stl.storedItem} key={index}>
+                    <div className={stl.queueImgWrap}>
+                      <img
+                        src={item[1].imgSrc}
+                        alt={item[1].imgSrc}
+                        className={stl.itemImg}
+                      />
+                    </div>
+                    <span className={stl.storedItemName}>{item[1].name}</span>
+                    <span className={stl.storedAmountCount}>
+                      {item[1].storedAmount}x
+                    </span>
+                    <div className={stl.ctaIconWrap}>
+                      <FaRegEdit className={stl.ctaIcon} />
+                      <FaRegTrashAlt className={stl.ctaIcon} />
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       )}

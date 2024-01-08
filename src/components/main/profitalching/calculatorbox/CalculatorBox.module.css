@@ -25,11 +25,11 @@
 .calculatorModal {
   height: 20rem;
   display: flex;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .itemBlock {
-  width: 33%;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +54,7 @@
   color: gray;
 }
 .queueBlock {
-  width: 33%;
+  flex: 1;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -64,7 +64,7 @@
   padding-top: 1rem;
 }
 .profitBox {
-  width: 33%;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,7 +130,6 @@
   width: 80%;
   height: 3rem;
   /* background-color: blue; */
-  /* border: 1px solid blue; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,15 +141,14 @@
   background-color: transparent;
   border: none;
   outline: none;
-  border: 1px solid gray;
   height: 2rem;
   padding-left: 0.5rem;
   border-radius: 0.4rem;
-  border: 1px solid var(--blue-main);
   color: white;
   width: 6rem;
   text-align: center;
   font-size: 18px;
+  border: 1px solid var(--blue-main);
 }
 
 .addCta {
@@ -198,5 +196,68 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.storedItemName {
+  color: gray;
+}
+
+.storedItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.queueList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+  width: 95%;
+}
+
+.queueConfigRow {
+  background-color: #0e0d0d;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.queueImgWrap {
+  width: 40px;
+  height: 100%;
+}
+
+.storedItemName {
+  text-align: center;
+  width: 11rem;
+}
+
+.storedAmountCount {
+  width: 2rem;
+}
+
+.qty {
+  color: orange;
+  width: 2rem;
+}
+
+.ctaIcon {
+  cursor: pointer;
+}
+
+.ctaIcon:hover {
+  color: white;
+}
+
+.queueItem {
+  width: 11rem;
+  color: var(--blue-main);
+}
+
+.ctaIconWrap {
+  padding-left: 0.5rem;
+  display: flex;
+  gap: 0.75rem;
 }
