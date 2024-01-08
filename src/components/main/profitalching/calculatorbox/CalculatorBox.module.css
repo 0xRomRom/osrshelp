@@ -208,6 +208,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;
+  height: 35px;
 }
 
 .queueList {
@@ -215,18 +216,26 @@
   flex-direction: column;
   gap: 0.25rem;
   margin-top: 0.5rem;
-  width: 95%;
+  width: 100%;
+  overflow-y: scroll;
+  height: 15rem;
 }
 
 .queueConfigRow {
   background-color: #0e0d0d;
   display: flex;
   gap: 0.5rem;
+  position: sticky;
+  top: 0;
 }
 
 .queueImgWrap {
   width: 40px;
   height: 100%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .storedItemName {
@@ -260,4 +269,13 @@
   padding-left: 0.5rem;
   display: flex;
   gap: 0.75rem;
+}
+
+.queueListWrap {
+  /* border: 1px solid red; */
+  height: 100%;
+}
+
+.totalCostBox {
+  padding-top: 0.5rem;
 }

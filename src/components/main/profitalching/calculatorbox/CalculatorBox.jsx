@@ -105,29 +105,34 @@ const CalculatorBox = ({ selectedItem }) => {
                   <span className={stl.qty}>Qty</span>
                 </div>
               )}
-              {Object.entries(storedItems).map((item, index) => {
-                console.log(item);
+              <div className={stl.queueListWrap}>
+                {Object.entries(storedItems).map((item, index) => {
+                  console.log(item);
 
-                return (
-                  <div className={stl.storedItem} key={index}>
-                    <div className={stl.queueImgWrap}>
-                      <img
-                        src={item[1].imgSrc}
-                        alt={item[1].imgSrc}
-                        className={stl.itemImg}
-                      />
+                  return (
+                    <div className={stl.storedItem} key={index}>
+                      <div className={stl.queueImgWrap}>
+                        <img
+                          src={item[1].imgSrc}
+                          alt={item[1].imgSrc}
+                          className={stl.itemImg}
+                        />
+                      </div>
+                      <span className={stl.storedItemName}>{item[1].name}</span>
+                      <span className={stl.storedAmountCount}>
+                        {item[1].storedAmount}x
+                      </span>
+                      <div className={stl.ctaIconWrap}>
+                        <FaRegEdit className={stl.ctaIcon} />
+                        <FaRegTrashAlt className={stl.ctaIcon} />
+                      </div>
                     </div>
-                    <span className={stl.storedItemName}>{item[1].name}</span>
-                    <span className={stl.storedAmountCount}>
-                      {item[1].storedAmount}x
-                    </span>
-                    <div className={stl.ctaIconWrap}>
-                      <FaRegEdit className={stl.ctaIcon} />
-                      <FaRegTrashAlt className={stl.ctaIcon} />
-                    </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
+            </div>
+            <div className={stl.totalCostBox}>
+              <span>Total Cost: 4313k</span>
             </div>
           </div>
         </div>
