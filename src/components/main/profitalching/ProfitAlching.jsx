@@ -10,7 +10,7 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
 
   const priceFetcher = async () => {
     const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Nature_rune|Dragon_med_helm|Torn_prayer_scroll|Dragon_halberd|Verac's_brassard_0|Verac's_flail_0|Dragon_plateskirt|Lava_battlestaff|Rune_halberd|Karil's_crossbow_0|Dragon_battleaxe|Dragon_platelegs|Dragon_longsword|Mystic_lava_staff|Black_d'hide_body|Light_frame|Granite_helm|Red_d'hide_body|Shield_left_half|Broken_dragon_hasta|Skeletal_bottoms|Dragon_dagger|Crier_hat|Dragon_2h_sword|Leaf-bladed_sword"
+      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Nature_rune|Dragon_med_helm|Torn_prayer_scroll|Dragon_halberd|Verac's_brassard_0|Verac's_flail_0|Dragon_plateskirt|Lava_battlestaff|Rune_halberd|Karil's_crossbow_0|Dragon_battleaxe|Dragon_platelegs|Dragon_longsword|Mystic_lava_staff|Black_d'hide_body|Light_frame|Granite_helm|Red_d'hide_body|Shield_left_half|Broken_dragon_hasta|Skeletal_bottoms|Dragon_dagger|Crier_hat|Dragon_2h_sword|Leaf-bladed_sword|Rune_kiteshield|Rune_spear|Rune_pickaxe|Climbing_boots_(g)|Adamant_platebody|Rock-shell_plate|Enchanted_hat|Rune_platelegs|Mystic_robe_top_(light)|Flamtaer_hammer|Rune_plateskirt|Rune_hasta|Blue_d'hide_body|Mystic_earth_staff|Air_battlestaff|Mystic_air_staff|Fire_battlestaff|Water_battlestaff|Mystic_water_staff"
     );
     const result = await fetcher.json();
     console.log(result);
