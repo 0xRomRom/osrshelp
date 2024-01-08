@@ -2,6 +2,7 @@ import stl from "./CalculatorBox.module.css";
 import { useState } from "react";
 import { CiSquarePlus } from "react-icons/ci";
 import { useEffect } from "react";
+import mills from "../../../../assets/icons/Mills.webp";
 
 const CalculatorBox = ({ selectedItem }) => {
   const [storedItems, setStoredItems] = useState({});
@@ -19,6 +20,9 @@ const CalculatorBox = ({ selectedItem }) => {
     console.log(selectedItem);
     setAmountToAdd(selectedItem.geLimit);
   }, [selectedItem]);
+
+  const addItemToQueue = () => {};
+
   return (
     <div className={stl.calculatorbox}>
       {Object.keys(selectedItem).length === 0 && (
@@ -63,10 +67,21 @@ const CalculatorBox = ({ selectedItem }) => {
                 value={amountToAdd}
                 onChange={(e) => handleInputChange(e)}
               />
-              <button className={stl.addCta}>Add</button>
+              <button className={stl.addCta} onClick={addItemToQueue}>
+                Add
+              </button>
             </div>
           </div>
-          <div className={stl.profitBox}></div>
+          <div className={stl.profitBox}>
+            <img src={mills} alt="Millions pile" className={stl.millsLarge} />
+            <span className={stl.totalAlchProfit}>
+              Profit: <span className={stl.green}>32,000</span>
+            </span>
+            <div className={stl.profitBottomBox}>
+              <span className={stl.alchsCount}>Alchs: 3340</span>
+              <span className={stl.alchsCount}>Time: 5 min</span>
+            </div>
+          </div>
           <div className={stl.queueBlock}>
             <span>Queue</span>
           </div>
