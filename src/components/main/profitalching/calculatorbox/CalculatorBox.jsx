@@ -12,6 +12,8 @@ const CalculatorBox = ({ selectedItem }) => {
   const [amountToAdd, setAmountToAdd] = useState(0);
   const [totalProfit, setTotalProfit] = useState(0);
   const [totalAlchs, setTotalAlchs] = useState(0);
+  const [timeFormat, setTimeFormat] = useState("");
+  const [totalTime, setTotalTime] = useState(0);
   const [totalCost, setTotalCost] = useState(0);
 
   const handleInputChange = (e) => {
@@ -39,7 +41,7 @@ const CalculatorBox = ({ selectedItem }) => {
   };
 
   useEffect(() => {
-    const calculateTotalProfit = () => {
+    const calculateUIStats = () => {
       // Calculate total profit
       let totalProfit = 0;
       Object.entries(storedItems).forEach((item) => {
@@ -57,10 +59,24 @@ const CalculatorBox = ({ selectedItem }) => {
       Object.entries(storedItems).forEach((item) => {
         totalCost += (item[1].storedAmount * item[1].price) / 1000;
       });
-
       setTotalCost(totalCost);
+      // Calculate total time
+      const totalTime = totalAlchs * 3;
+      setTotalTime(totalTime);
+      // Format time
+      let timeFormat = "";
+      if (totalTime < 60) {
+        timeFormat = " sec";
+      }
+      if (totalTime >= 60) {
+        timeFormat = " min";
+      }
+      if (totalTime >= 3600) {
+        timeFormat = " h";
+      }
+      setTimeFormat(timeFormat);
     };
-    calculateTotalProfit();
+    calculateUIStats();
   }, [activeSelectedItem, storedItems]);
 
   const handleEditItem = (item) => {
@@ -139,8 +155,20 @@ const CalculatorBox = ({ selectedItem }) => {
               <span className={stl.green}>{totalProfit.toLocaleString()}</span>
             </span>
             <div className={stl.profitBottomBox}>
-              <span className={stl.alchsCount}>Alchs: {totalAlchs}</span>
-              <span className={stl.alchsCount}>Time: 5 min</span>
+              <span className={stl.alchsCount}>
+                Time:{" "}
+                <span className={stl.green}>
+                  {totalTime >= 60
+                    ? totalTime >= 3600
+                      ? (totalTime / 3600).toFixed(2)
+                      : (totalTime / 60).toFixed(2)
+                    : totalTime.toFixed(0)}
+                </span>
+                {timeFormat}
+              </span>
+              <span className={stl.alchsCount}>
+                Alchs: <span className={stl.green}>{totalAlchs}</span>
+              </span>
             </div>
           </div>
           <div className={stl.queueBlock}>
