@@ -11,6 +11,7 @@ const CalculatorBox = ({ selectedItem }) => {
   const [amountToAdd, setAmountToAdd] = useState(0);
   const [totalProfit, setTotalProfit] = useState(0);
   const [totalAlchs, setTotalAlchs] = useState(0);
+  const [totalCost, setTotalCost] = useState(0);
 
   const handleInputChange = (e) => {
     const enteredValue = +e.target.value;
@@ -49,6 +50,13 @@ const CalculatorBox = ({ selectedItem }) => {
         totalAlchs += item[1].storedAmount;
       });
       setTotalAlchs(totalAlchs);
+      // Calculate total cost
+      let totalCost = 0;
+      Object.entries(storedItems).forEach((item) => {
+        totalCost += (item[1].storedAmount * item[1].price) / 1000;
+      });
+
+      setTotalCost(totalCost);
     };
     calculateTotalProfit();
   }, [storedItems]);
@@ -154,7 +162,12 @@ const CalculatorBox = ({ selectedItem }) => {
                 </div>
 
                 <div className={stl.totalCostBox}>
-                  <span>Total Cost: 4313k</span>
+                  <span>
+                    Total Cost:{" "}
+                    {totalCost > 1000
+                      ? (totalCost / 1000).toFixed(3) + "m"
+                      : totalCost.toFixed(0) + "k"}
+                  </span>
                 </div>
               </>
             )}
