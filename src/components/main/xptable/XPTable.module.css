@@ -54,6 +54,7 @@
   margin-top: 2rem;
   overflow-y: scroll;
   margin-bottom: 2rem;
+  opacity: 0.9;
 }
 
 .configRow {
@@ -64,6 +65,9 @@
   position: sticky;
   top: 0;
   background-color: var(--dark-bg);
+  user-select: none;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: 0.4rem;
 }
 
 .configRow span {
