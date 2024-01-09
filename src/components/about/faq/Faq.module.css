@@ -12,4 +12,55 @@
     rgb(11, 14, 24)
   );
   background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faqModal {
+  width: 40rem;
+  height: 40rem;
+  background-color: rgb(32, 46, 57);
+  border-radius: 0.4rem;
+}
+
+.faqHero {
+  text-align: center;
+  padding-top: 1rem;
+  color: white;
+}
+
+.questionsBlock {
+  background-color: var(--dark-bg);
+  background-color: transparent;
+  height: 10rem;
+  width: 90%;
+  left: 5%;
+  position: relative;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  /* border: 1px solid red; */
+}
+
+.question {
+  color: rgb(181, 181, 181);
+  background-color: #090909;
+
+  padding: 0.5rem 0rem;
+  width: 49%;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0.4rem;
+}
+
+.question:hover {
+  background-color: var(--blue-main);
+  color: white;
 }
