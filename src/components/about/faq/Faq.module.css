@@ -64,6 +64,10 @@
   background-color: var(--blue-main);
   color: white;
 }
+.activeQuestion {
+  background-color: var(--blue-main);
+  color: white;
+}
 
 .answerBlock {
   background-color: #090909;
@@ -79,10 +83,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 0.2rem;
-  padding: 30px;
+  padding: 25px;
 }
 
 .answerPar {
   color: white;
   font-size: 18px;
+}
+
+.answerMappedSpan {
+  position: relative;
+  padding: 5px 0px;
+  display: block;
 }

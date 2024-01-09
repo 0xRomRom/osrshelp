@@ -4,15 +4,31 @@ import HomeButton from "../../../utils/homebutton/HomeButton";
 import { useState } from "react";
 
 const FAQS = {
-  0: { text: " Welcome to OSRS Help's Frequently Asked Questions." },
-  1: { text: "To make you a better player." },
+  0: {
+    text: ["Welcome to OSRS Help's Frequently Asked Questions."],
+  },
+  1: {
+    text: [
+      "OSRS Help's goal is to provide the best user interface & user experience when calculating your ingame goals.",
+      "Other utility sites are boring, old or simply ugly. Yes we said it.",
+      "While providing an intuitive experience, we did not skip over the aesthetics of our tools.",
+      "We hope you enjoy them as much as we enjoy creating them!",
+    ],
+  },
 };
 
 const FAQ = () => {
-  const [faqState, setFaqState] = useState(FAQS[0].text);
+  const [faqState, setFaqState] = useState(FAQS[0]);
 
   const updateFaqState = (newState) => {
     setFaqState(newState);
+  };
+
+  const [spanData, setSpanData] = useState(null);
+
+  const handleSwitch = (event) => {
+    const datasetValue = event.target.dataset.value;
+    setSpanData(datasetValue);
   };
 
   return (
@@ -22,8 +38,14 @@ const FAQ = () => {
         <h1 className={stl.faqHero}>FAQ</h1>
         <div className={stl.questionsBlock}>
           <span
-            className={stl.question}
-            onClick={() => updateFaqState(FAQS[1].text)}
+            data-value="1"
+            className={`${stl.question} ${
+              spanData === "1" ? stl.activeQuestion : ""
+            }`}
+            onClick={(e) => {
+              updateFaqState(FAQS[1]);
+              handleSwitch(e);
+            }}
           >
             What is OSRS Help's goal?
           </span>
@@ -37,7 +59,15 @@ const FAQ = () => {
         </div>
 
         <div className={stl.answerBlock}>
-          <p className={stl.answerPar}>{faqState}</p>
+          <p className={stl.answerPar}>
+            {faqState.text.map((textItem, index) => {
+              return (
+                <span key={index} className={stl.answerMappedSpan}>
+                  {textItem}
+                </span>
+              );
+            })}
+          </p>
         </div>
       </div>
     </div>
