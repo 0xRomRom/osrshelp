@@ -3,15 +3,16 @@ import Pagination from "../pagination/Pagination";
 import mills from "../../../assets/icons/Mills.webp";
 import PROFITALCHITEMS from "../../../utils/profitalchitems";
 import CalculatorBox from "./calculatorbox/CalculatorBox";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
-import { useContext } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import { IoClose } from "react-icons/io5";
 
 const ProfitAlching = ({ mainState, subState, setSubState }) => {
+  const navigate = useNavigate();
   const [bannerActive, setBannerActive] = useState(true);
-  const { premiumUser } = useContext(AuthContext);
+  const { premiumUser, userID } = useContext(AuthContext);
   const [itemPrices, setItemPrices] = useState({});
   const [gridItems, setGridItems] = useState(PROFITALCHITEMS);
   const [selectedItem, setSelectedItem] = useState({});
@@ -25,7 +26,6 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
   };
 
   useEffect(() => {
-    console.log(premiumUser);
     if (Object.keys(itemPrices).length === 0) {
       priceFetcher();
     }
@@ -42,15 +42,25 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
       });
 
       let sorted = newPrices.sort((a, b) => b.profit - a.profit);
+
       if (premiumUser === false) {
         sorted.splice(0, 10);
       }
+
       setGridItems(sorted);
     }
   }, [itemPrices, premiumUser]);
 
   const handleBannerHide = () => {
     setBannerActive(false);
+  };
+
+  const handleNavigate = () => {
+    if (!userID) {
+      navigate("/login");
+      return;
+    }
+    navigate("/checkout");
   };
 
   return (
@@ -100,7 +110,9 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
                       Explore the 10 most profitable alchables as a{" "}
                       <span className={stl.rune}>rune</span> user
                     </span>
-                    <button className={stl.upgradeCta}>Upgrade</button>
+                    <button className={stl.upgradeCta} onClick={handleNavigate}>
+                      Upgrade
+                    </button>
                   </div>
                 </div>
               )}
