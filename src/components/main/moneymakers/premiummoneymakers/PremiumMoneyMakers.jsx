@@ -87,11 +87,6 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
               Upgrade
             </button>
           </div>
-          <img
-            src="./moneymakers/headerbanners/PremiumBG.webp"
-            alt="Nightmare zone"
-            className={stl.premiumBannerImg}
-          />
         </div>
       )}
 
