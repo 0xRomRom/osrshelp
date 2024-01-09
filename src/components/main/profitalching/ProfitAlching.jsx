@@ -5,7 +5,11 @@ import PROFITALCHITEMS from "../../../utils/profitalchitems";
 import CalculatorBox from "./calculatorbox/CalculatorBox";
 import { useEffect, useState } from "react";
 
+import { useContext } from "react";
+import { AuthContext } from "../../../utils/authprovider/AuthProvider";
+
 const ProfitAlching = ({ mainState, subState, setSubState }) => {
+  const { premiumUser } = useContext(AuthContext);
   const [itemPrices, setItemPrices] = useState({});
   const [gridItems, setGridItems] = useState(PROFITALCHITEMS);
   const [selectedItem, setSelectedItem] = useState({});
@@ -19,6 +23,7 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
   };
 
   useEffect(() => {
+    console.log(premiumUser);
     if (Object.keys(itemPrices).length === 0) {
       priceFetcher();
     }
@@ -34,10 +39,13 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
         };
       });
 
-      const sorted = newPrices.sort((a, b) => b.profit - a.profit);
+      let sorted = newPrices.sort((a, b) => b.profit - a.profit);
+      if (premiumUser === false) {
+        sorted.splice(0, 10);
+      }
       setGridItems(sorted);
     }
-  }, [itemPrices]);
+  }, [itemPrices, premiumUser]);
 
   return (
     <div className={stl.profitalching}>

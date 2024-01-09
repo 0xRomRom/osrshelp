@@ -252,6 +252,10 @@
   width: 2rem;
 }
 
+.orange {
+  color: orange;
+}
+
 .qty {
   color: orange;
   width: 2rem;
@@ -271,7 +275,7 @@
 }
 
 .ctaIconWrap {
-  padding-left: 0.5rem;
+  padding-left: 1.75rem;
   display: flex;
   gap: 0.75rem;
 }

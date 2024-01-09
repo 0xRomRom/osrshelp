@@ -80,14 +80,11 @@ const CalculatorBox = ({ selectedItem }) => {
   }, [activeSelectedItem, storedItems]);
 
   const handleEditItem = (item) => {
-    console.log(item);
-    console.log(activeSelectedItem);
     setActiveSelectedItem(item[1]);
     setAmountToAdd(item[1].storedAmount);
   };
 
   const handleDeleteItem = (item) => {
-    console.log(item);
     const itemName = item[0];
     setStoredItems((prevState) => {
       const { [itemName]: deletedItem, ...rest } = prevState;
@@ -218,7 +215,10 @@ const CalculatorBox = ({ selectedItem }) => {
                             {item[1].name}
                           </span>
                           <span className={stl.storedAmountCount}>
-                            {item[1].storedAmount}x
+                            <span className={stl.orange}>
+                              {item[1].storedAmount}
+                            </span>
+                            x
                           </span>
                           <div className={stl.ctaIconWrap}>
                             <FaRegEdit
