@@ -148,3 +148,84 @@
   /* background-color: var(--blue-main); */
   cursor: pointer;
 }
+
+.premiumBanner {
+  position: relative;
+  background-color: var(--dark-bg);
+  background-color: black;
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: 32px;
+  color: rgb(199, 199, 199);
+  z-index: 10;
+  font-weight: bold;
+  text-align: center;
+
+  font-size: 28px;
+  background: linear-gradient(180deg, var(--dark-bg), black);
+}
+
+.bannerSpan {
+  width: 30rem;
+  font-weight: bold;
+  font-family: RSFont;
+  font-size: 45px;
+}
+
+.rune {
+  color: rgb(127, 174, 184);
+  font-family: RSFont;
+}
+
+.upgradeCta {
+  margin-top: 1rem;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.upgradeCta:hover {
+  background-color: yellow;
+  color: black;
+  border: 2px solid yellow;
+}
+
+.bannerMidBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.closeRow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.closeBannerBtn {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.closeBannerBtn:hover {
+  color: white;
+}

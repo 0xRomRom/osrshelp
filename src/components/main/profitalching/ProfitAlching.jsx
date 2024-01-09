@@ -7,8 +7,10 @@ import { useEffect, useState } from "react";
 
 import { useContext } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
+import { IoClose } from "react-icons/io5";
 
 const ProfitAlching = ({ mainState, subState, setSubState }) => {
+  const [bannerActive, setBannerActive] = useState(true);
   const { premiumUser } = useContext(AuthContext);
   const [itemPrices, setItemPrices] = useState({});
   const [gridItems, setGridItems] = useState(PROFITALCHITEMS);
@@ -80,49 +82,65 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
             <span>Profit</span>
           </div>
           <div className={stl.innerGrid}>
-            {gridItems.map((item) => {
-              return (
-                <div
-                  className={stl.griditem}
-                  key={item.name}
-                  onClick={() => setSelectedItem(item)}
-                >
-                  <div className={stl.imgWrapper}>
-                    <img
-                      src={item.imgSrc}
-                      alt={item.name}
-                      className={stl.gridIcon}
-                    />
+            <div className={stl.gridWrapper}>
+              {!premiumUser && (
+                <div className={stl.premiumBanner}>
+                  <div className={stl.closeRow}>
+                    <IoClose className={stl.closeBannerBtn} />
                   </div>
-                  <span>{item.name}</span>
-                  <span className={stl.red}>
-                    <img
-                      src={mills}
-                      alt="Money pile"
-                      className={stl.millsIcon}
-                    />
-                    {item.price.toLocaleString()}
-                  </span>
-                  <span className={stl.orange}>{item.geLimit}</span>
-                  <span className={stl.green}>
-                    <img
-                      src={mills}
-                      alt="Money pile"
-                      className={stl.millsIcon}
-                    />
-                    {item.alchPrice.toLocaleString()}
-                  </span>
-                  <span className={stl.green}>
-                    <img
-                      src={mills}
-                      alt="Money pile"
-                      className={stl.millsIcon}
-                    />
-                    {(item.alchPrice - item.price).toLocaleString()}
-                  </span>
+                  <div className={stl.bannerMidBlock}>
+                    <span className={stl.bannerSpan}>
+                      Explore the 10 most profitable alchables as a{" "}
+                      <span className={stl.rune}>rune</span> user
+                    </span>
+                    <button className={stl.upgradeCta}>Upgrade</button>
+                  </div>
                 </div>
-              );
-            })}
+              )}
+              {gridItems.map((item) => {
+                return (
+                  <div
+                    className={stl.griditem}
+                    key={item.name}
+                    onClick={() => setSelectedItem(item)}
+                  >
+                    <div className={stl.imgWrapper}>
+                      <img
+                        src={item.imgSrc}
+                        alt={item.name}
+                        className={stl.gridIcon}
+                      />
+                    </div>
+                    <span>{item.name}</span>
+                    <span className={stl.red}>
+                      <img
+                        src={mills}
+                        alt="Money pile"
+                        className={stl.millsIcon}
+                      />
+                      {item.price.toLocaleString()}
+                    </span>
+                    <span className={stl.orange}>{item.geLimit}</span>
+                    <span className={stl.green}>
+                      <img
+                        src={mills}
+                        alt="Money pile"
+                        className={stl.millsIcon}
+                      />
+                      {item.alchPrice.toLocaleString()}
+                    </span>
+                    <span className={stl.green}>
+                      <img
+                        src={mills}
+                        alt="Money pile"
+                        className={stl.millsIcon}
+                      />
+                      {(item.alchPrice - item.price).toLocaleString()}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
