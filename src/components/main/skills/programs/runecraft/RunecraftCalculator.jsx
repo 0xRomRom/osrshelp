@@ -8,16 +8,19 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import RunecraftGrid from "./runecraftgrid/RunecraftGrid";
 import RunecraftFilter from "./runecraftfilters/RunecraftFilter";
-import { useState } from "react";
-import Pagination from "../../../pagination/Pagination";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import Pagination from "../../../pagination/Pagination";
+import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 
 const RunecraftCalculator = (props) => {
+  const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
 
   const handleMenuSwitch = () => {
+    setSubState(null);
     navigate("/skillcalculators");
   };
 

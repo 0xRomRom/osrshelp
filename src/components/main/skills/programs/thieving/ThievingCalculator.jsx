@@ -7,17 +7,20 @@ import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import ThievingGrid from "./thievinggrid/ThievingGrid";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import SearchFilter from "../searchfilter/SearchFilter";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
+import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 
 const ThievingCalculator = (props) => {
+  const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
   const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
 
   const handleMenuSwitch = () => {
+    setSubState(null);
     navigate("/skillcalculators");
   };
 

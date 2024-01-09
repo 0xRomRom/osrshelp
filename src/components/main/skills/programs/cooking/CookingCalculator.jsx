@@ -8,16 +8,19 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import CookingGrid from "./cookinggrid/CookingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Pagination from "../../../pagination/Pagination";
+import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 
 const CookingCalculator = (props) => {
+  const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
   const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
 
   const handleMenuSwitch = () => {
+    setSubState(null);
     navigate("/skillcalculators");
   };
 

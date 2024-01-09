@@ -9,11 +9,13 @@ import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import MiningGrid from "./mininggrid/MiningGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import MiningFilters from "./miningfilters/MiningFilters";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
+import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 
 const MiningCalculator = (props) => {
+  const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
   const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
@@ -21,6 +23,7 @@ const MiningCalculator = (props) => {
   const [filterChanged, setFilterChanged] = useState(false);
 
   const handleMenuSwitch = () => {
+    setSubState(null);
     navigate("/skillcalculators");
   };
 

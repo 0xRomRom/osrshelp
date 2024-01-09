@@ -9,17 +9,20 @@ import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import FletchingGrid from "./fletchinggrid/FletchingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import TypeFilter from "./typegrid/TypeFilter";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
+import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 
 const FletchingCalculator = (props) => {
+  const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
   const [remainingExp, setRemainingExp] = useState(0);
   const [searchState, setSearchState] = useState("");
   const [activeFilter, setActiveFilter] = useState("All");
 
   const handleMenuSwitch = () => {
+    setSubState(null);
     navigate("/skillcalculators");
   };
 

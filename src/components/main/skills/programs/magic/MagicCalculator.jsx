@@ -12,12 +12,13 @@ import SpellBookFilter from "./spellbookfilters/SpellBookFilter";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 
-import { useState } from "react";
-
+import { useState, useContext } from "react";
+import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import MagicGrid from "./magicgrid/MagicGrid";
 import StaffFilters from "./stafffilters/StaffFilters";
 
 const MagicCalculator = (props) => {
+  const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
@@ -28,6 +29,7 @@ const MagicCalculator = (props) => {
   const [activeSpellbook, setActiveSpellbook] = useState("All");
 
   const handleMenuSwitch = () => {
+    setSubState(null);
     navigate("/skillcalculators");
   };
 

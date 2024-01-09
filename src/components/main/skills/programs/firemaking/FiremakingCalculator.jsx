@@ -8,14 +8,16 @@ import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import FiremakingFilters from "./FiremakingFilters";
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 import FiremakingGrid from "./firemakinggrid/FiremakingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
+import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 
 const FiremakingCalculator = (props) => {
+  const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
@@ -23,6 +25,7 @@ const FiremakingCalculator = (props) => {
   const [filterChanged, setFilterChanged] = useState(false);
 
   const handleMenuSwitch = () => {
+    setSubState(null);
     navigate("/skillcalculators");
   };
 
