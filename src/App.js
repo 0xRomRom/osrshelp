@@ -69,9 +69,6 @@ const App = () => {
                       skillsExp={skillsExp}
                       setPlayerName={setPlayerName}
                       playerName={playerName}
-                      mainState={mainState}
-                      setSubState={setSubState}
-                      subState={subState}
                     />
                   </MainLayout>
                 }

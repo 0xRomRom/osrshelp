@@ -18,7 +18,6 @@ const AgilityCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
 
   const handleMenuSwitch = () => {
-    props.setSubState(null);
     navigate("/skillcalculators");
   };
 
@@ -33,13 +32,7 @@ const AgilityCalculator = (props) => {
   return (
     <>
       <div className={stl.adBar}>[ Advertisements ]</div>
-      <Pagination
-        mainState={props.mainState}
-        subState={props.subState}
-        setSubState={props.setSubState}
-        premiumUser={props.premiumUser}
-        navTo="/skillcalculators"
-      />
+      <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <div className={stl.topBar}>
           <FontAwesomeIcon

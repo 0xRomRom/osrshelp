@@ -18,7 +18,6 @@ const DefenceCalculator = (props) => {
   const [remainingExp, setRemainingExp] = useState(0);
 
   const handleMenuSwitch = () => {
-    props.setSubState(null);
     navigate("/skillcalculators");
   };
 

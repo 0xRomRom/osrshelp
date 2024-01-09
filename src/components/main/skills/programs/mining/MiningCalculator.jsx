@@ -21,7 +21,6 @@ const MiningCalculator = (props) => {
   const [filterChanged, setFilterChanged] = useState(false);
 
   const handleMenuSwitch = () => {
-    props.setSubState(null);
     navigate("/skillcalculators");
   };
 
@@ -36,13 +35,7 @@ const MiningCalculator = (props) => {
   return (
     <>
       <div className={stl.adBar}>[ Advertisements ]</div>
-      <Pagination
-        mainState={props.mainState}
-        subState={props.subState}
-        setSubState={props.setSubState}
-        premiumUser={props.premiumUser}
-        navTo="/skillcalculators"
-      />
+      <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <div className={stl.topBar}>
           <FontAwesomeIcon

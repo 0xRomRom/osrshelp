@@ -54,7 +54,7 @@ import Pagination from "../pagination/Pagination";
 
 const SkillsTab = (props) => {
   const handleTabOpen = (path) => {
-    props.setSubState(path);
+    // props.setSubState(path);
   };
 
   return (
@@ -70,10 +70,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -88,10 +84,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -106,10 +98,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -124,10 +112,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -142,10 +126,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -160,10 +140,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -178,10 +154,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -196,10 +168,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -214,10 +182,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -232,10 +196,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -250,10 +210,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -268,10 +224,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -286,10 +238,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -304,10 +252,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -322,10 +266,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -340,10 +280,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -358,10 +294,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -376,10 +308,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -394,10 +322,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -412,10 +336,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -430,10 +350,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -448,10 +364,6 @@ const SkillsTab = (props) => {
               setSkills={props.setSkills}
               setSkillsExp={props.setSkillsExp}
               setPlayerName={props.setPlayerName}
-              setSubState={props.setSubState}
-              mainState={props.mainState}
-              subState={props.subState}
-              premiumUser={props.premiumUser}
             />
           }
         />
@@ -461,17 +373,12 @@ const SkillsTab = (props) => {
           element={
             <>
               <div className={stl.adBar}>[ Advertisements ]</div>
-              <Pagination
-                mainState={props.mainState}
-                subState={props.subState}
-                setSubState={props.setSubState}
-              />
+              <Pagination />
               <div className={stl.modal}>
                 <div className={stl.modalInner}>
                   <Link
                     to="/skillcalculators/attack"
                     className={`${stl.skill} ${stl.attack}`}
-                    onClick={() => handleTabOpen("Attack")}
                   >
                     <img
                       src={attackIcon}
@@ -483,7 +390,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/defence"
                     className={`${stl.skill} ${stl.defence}`}
-                    onClick={() => handleTabOpen("Defence")}
                   >
                     <img
                       src={defenceIcon}
@@ -495,7 +401,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/strength"
                     className={`${stl.skill} ${stl.strength}`}
-                    onClick={() => handleTabOpen("Strength")}
                   >
                     <img
                       src={strengthIcon}
@@ -507,7 +412,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/hitpoints"
                     className={`${stl.skill} ${stl.hitpoints}`}
-                    onClick={() => handleTabOpen("Hitpoints")}
                   >
                     <img
                       src={hitpointsIcon}
@@ -519,7 +423,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/ranged"
                     className={`${stl.skill} ${stl.ranged}`}
-                    onClick={() => handleTabOpen("Ranged")}
                   >
                     <img
                       src={rangedIcon}
@@ -531,7 +434,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/prayer"
                     className={`${stl.skill} ${stl.prayer}`}
-                    onClick={() => handleTabOpen("Prayer")}
                   >
                     <img
                       src={prayerIcon}
@@ -545,7 +447,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/magic"
                     className={`${stl.skill} ${stl.magic}`}
-                    onClick={() => handleTabOpen("Magic")}
                   >
                     <img
                       src={magicIcon}
@@ -557,7 +458,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/cooking"
                     className={`${stl.skill} ${stl.cooking}`}
-                    onClick={() => handleTabOpen("Cooking")}
                   >
                     <img
                       src={cookingIcon}
@@ -569,7 +469,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/woodcutting"
                     className={`${stl.skill} ${stl.woodcutting}`}
-                    onClick={() => handleTabOpen("Woodcutting")}
                   >
                     <img
                       src={woodcuttingIcon}
@@ -581,7 +480,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/fletching"
                     className={`${stl.skill} ${stl.fletching}`}
-                    onClick={() => handleTabOpen("Fletching")}
                   >
                     <img
                       src={fletchingIcon}
@@ -593,7 +491,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/fishing"
                     className={`${stl.skill} ${stl.fishing}`}
-                    onClick={() => handleTabOpen("Fishing")}
                   >
                     <img
                       src={fishingIcon}
@@ -605,7 +502,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/firemaking"
                     className={`${stl.skill} ${stl.firemaking}`}
-                    onClick={() => handleTabOpen("Firemaking")}
                   >
                     <img
                       src={firemakingIcon}
@@ -617,7 +513,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/crafting"
                     className={`${stl.skill} ${stl.crafting}`}
-                    onClick={() => handleTabOpen("Crafting")}
                   >
                     <img
                       src={craftingIcon}
@@ -629,7 +524,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/smithing"
                     className={`${stl.skill} ${stl.smithing}`}
-                    onClick={() => handleTabOpen("Smithing")}
                   >
                     <img
                       src={smithingIcon}
@@ -641,7 +535,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/mining"
                     className={`${stl.skill} ${stl.mining}`}
-                    onClick={() => handleTabOpen("Mining")}
                   >
                     <img
                       src={miningIcon}
@@ -653,7 +546,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/herblore"
                     className={`${stl.skill} ${stl.herblore}`}
-                    onClick={() => handleTabOpen("Herblore")}
                   >
                     <img
                       src={herbloreIcon}
@@ -665,7 +557,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/agility"
                     className={`${stl.skill} ${stl.agility}`}
-                    onClick={() => handleTabOpen("Agility")}
                   >
                     <img
                       src={agilityIcon}
@@ -677,7 +568,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/thieving"
                     className={`${stl.skill} ${stl.thieving}`}
-                    onClick={() => handleTabOpen("Thieving")}
                   >
                     <img
                       src={thievingIcon}
@@ -688,7 +578,6 @@ const SkillsTab = (props) => {
                   </Link>
                   {/* <div
               className={`${stl.skill} ${stl.slayer}`}
-              onClick={() => handleTabOpen("Slayer")}
             >
               <img src={slayerIcon} alt="Slayer Icon" className={stl.iconImg} />
               <span className={stl.skillName}>Slayer</span>
@@ -696,7 +585,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/farming"
                     className={`${stl.skill} ${stl.farming}`}
-                    onClick={() => handleTabOpen("Farming")}
                   >
                     <img
                       src={farmingIcon}
@@ -708,7 +596,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/runecraft"
                     className={`${stl.skill} ${stl.runecraft}`}
-                    onClick={() => handleTabOpen("Runecraft")}
                   >
                     <img
                       src={runecraftingIcon}
@@ -720,7 +607,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/hunter"
                     className={`${stl.skill} ${stl.hunter}`}
-                    onClick={() => handleTabOpen("Hunter")}
                   >
                     <img
                       src={hunterIcon}
@@ -732,7 +618,6 @@ const SkillsTab = (props) => {
                   <Link
                     to="/skillcalculators/construction"
                     className={`${stl.skill} ${stl.construction}`}
-                    onClick={() => handleTabOpen("Construction")}
                   >
                     <img
                       src={constructionIcon}
