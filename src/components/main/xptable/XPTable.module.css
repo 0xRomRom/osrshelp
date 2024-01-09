@@ -55,6 +55,7 @@
   overflow-y: scroll;
   margin-bottom: 2rem;
   opacity: 0.9;
+  box-shadow: 0px 0px 25px rgb(39, 31, 31);
 }
 
 .configRow {
@@ -73,7 +74,7 @@
 .configRow span {
   width: 33%;
   text-align: center;
-  color: gray;
+  color: rgb(176, 174, 174);
 }
 
 .flexGrid:nth-child(odd) {

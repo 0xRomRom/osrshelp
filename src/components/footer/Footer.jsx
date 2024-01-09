@@ -1,6 +1,7 @@
 import stl from "./Footer.module.css";
 import logo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -30,22 +31,30 @@ const Footer = () => {
         </ul>
         <ul className={stl.footCol}>
           <span className={stl.footTitle}>Sitemap</span>
-          <li className={stl.footLink} onClick={() => navTo("/")}>
-            Home
-          </li>
-          <li
-            className={stl.footLink}
-            onClick={() => navTo("/skillcalculators")}
-          >
-            Skill Calculators
-          </li>
-          <li className={stl.footLink} onClick={() => navTo("/gearcalculator")}>
-            Gear Calculator
-          </li>
-          <li className={stl.footLink}>Money Makers</li>
-          <li className={stl.footLink}>XP Table</li>
-          <li className={stl.footLink}>Combat calculator</li>
-          <li className={stl.footLink}>Donate</li>
+          <Link to="/" className={stl.link}>
+            <li className={stl.footLink}>Home</li>
+          </Link>
+          <Link to="/skillcalculators" className={stl.link}>
+            <li className={stl.footLink}>Skill Calculators</li>
+          </Link>
+          <Link to="/gearcalculator" className={stl.link}>
+            <li className={stl.footLink}>Gear Calculator</li>
+          </Link>
+          <Link to="/combatcalculator" className={stl.link}>
+            <li className={stl.footLink}>Combat Calculator</li>
+          </Link>
+          <Link to="/moneymakers" className={stl.link}>
+            <li className={stl.footLink}>Money Makers</li>
+          </Link>
+          <Link to="/profitalching" className={stl.link}>
+            <li className={stl.footLink}>Profit Alching</li>
+          </Link>
+          <Link to="/xptable" className={stl.link}>
+            <li className={stl.footLink}>XP Table</li>
+          </Link>
+          <Link to="/worldmap" className={stl.link}>
+            <li className={stl.footLink}>World map</li>
+          </Link>
         </ul>
       </div>
     </footer>
