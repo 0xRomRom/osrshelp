@@ -93,33 +93,36 @@ const CombatCalculator = ({
         setSubState={setSubState}
         subState={subState}
       />
-      <div className={stl.modal}>
-        {skillsFetched ? (
-          <PlayerStats
-            playerName={playerName}
-            setPlayerName={setPlayerName}
-            setSkillsFetched={setSkillsFetched}
-          />
-        ) : (
-          <GetStats
-            setSkills={setSkills}
-            skillsExp={skillsExp}
-            setPlayerName={setPlayerName}
-            setSkillsExp={setSkillsExp}
-            setSkillsFetched={setSkillsFetched}
-          />
-        )}
-        <div className={stl.contentWrapper}>
-          <div className={stl.innerWrapper}>
-            <LevelInputs
-              skills={skills}
-              setInputValues={setInputValues}
-              inputValues={inputValues}
+      <div className={stl.contentWrap}>
+        <div className={stl.bgDiv}></div>
+        <div className={stl.modal}>
+          {skillsFetched ? (
+            <PlayerStats
+              playerName={playerName}
+              setPlayerName={setPlayerName}
+              setSkillsFetched={setSkillsFetched}
             />
-            <IoArrowDownOutline className={stl.mainLeftArrow} />
-            <CombatLevels combatLevel={combatLevel} combatType={combatType} />
-            <IoArrowDownOutline className={stl.mainRightArrow} />
-            <ResultBox inputValues={inputValues} combatLevel={combatLevel} />
+          ) : (
+            <GetStats
+              setSkills={setSkills}
+              skillsExp={skillsExp}
+              setPlayerName={setPlayerName}
+              setSkillsExp={setSkillsExp}
+              setSkillsFetched={setSkillsFetched}
+            />
+          )}
+          <div className={stl.contentWrapper}>
+            <div className={stl.innerWrapper}>
+              <LevelInputs
+                skills={skills}
+                setInputValues={setInputValues}
+                inputValues={inputValues}
+              />
+              <IoArrowDownOutline className={stl.mainLeftArrow} />
+              <CombatLevels combatLevel={combatLevel} combatType={combatType} />
+              <IoArrowDownOutline className={stl.mainRightArrow} />
+              <ResultBox inputValues={inputValues} combatLevel={combatLevel} />
+            </div>
           </div>
         </div>
       </div>
