@@ -104,21 +104,21 @@ const CalculatorBox = ({ selectedItem }) => {
           <div className={stl.itemBlock}>
             <div className={stl.statsBlock}>
               <span className={stl.flexSpan}>
-                <span className={stl.itemPrice}>Price:</span>
+                <span className={stl.itemPrice}>Price</span>
                 {activeSelectedItem.price.toLocaleString()}
               </span>
               <span className={stl.flexSpan}>
-                <span className={stl.itemPrice}>G.E. Limit:</span>{" "}
+                <span className={stl.itemPrice}>G.E. Limit</span>{" "}
                 {activeSelectedItem.geLimit}
               </span>
               <span className={stl.flexSpan}>
-                <span className={stl.itemPrice}>Total Price:</span>
+                <span className={stl.itemPrice}>Total Price</span>
                 {(
                   activeSelectedItem.geLimit * activeSelectedItem.price
                 ).toLocaleString()}
               </span>
               <span className={stl.flexSpan}>
-                <span className={stl.itemPrice}>Total Profit:</span>
+                <span className={stl.itemPrice}>Total Profit</span>
                 {(
                   activeSelectedItem.geLimit * activeSelectedItem.profit
                 ).toLocaleString()}

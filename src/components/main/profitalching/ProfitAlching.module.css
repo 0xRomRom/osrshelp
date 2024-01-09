@@ -16,6 +16,9 @@
   position: relative;
   /* height: 30rem; */
   background-color: rgb(32, 46, 57);
+  background-image: url("../../../../public/backgrounds/TzHaar_City.webp");
+  /* background-repeat: no-repeat; */
+  background-size: contain;
   width: 95%;
   left: 2.5%;
   border-radius: 0.4rem;
