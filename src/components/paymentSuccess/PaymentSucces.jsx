@@ -2,16 +2,14 @@ import stl from "./PaymentSucces.module.css";
 import { useNavigate } from "react-router-dom";
 import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 import parthat from "../../assets/random/Blue_partyhat.webp";
+import HomeButton from "../../utils/homebutton/HomeButton";
 
 const PaymentSucces = () => {
   const navigate = useNavigate();
 
   return (
     <div className={stl.paymentSucces}>
-      <div className={stl.homeBox} onClick={() => navigate("/")}>
-        <img src={mainLogo} alt="OSRS Help logo" className={stl.osrshelpLogo} />
-        <span className={stl.navLogoSpan}>OSRS Help</span>
-      </div>
+      <HomeButton />
       <div className={stl.modal}>
         <div className={stl.innerModal}>
           <img src={parthat} alt="Blue parthat" className={stl.phat} />

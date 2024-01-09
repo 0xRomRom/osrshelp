@@ -22,7 +22,9 @@ const Footer = () => {
       <div className={stl.rightBlock}>
         <ul className={stl.footCol}>
           <span className={stl.footTitle}>About</span>
-          <li className={stl.footLink}>FAQ</li>
+          <Link to="/faq" className={stl.link}>
+            <li className={stl.footLink}>FAQ</li>
+          </Link>
           <li className={stl.footLink}>Privacy policy</li>
           <li className={stl.footLink}>Terms & Conditions</li>
           <li className={stl.footLink}>Contact</li>

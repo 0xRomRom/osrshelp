@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useContext } from "react";
 import { PaginationContext } from "../../utils/paginationstate/PaginationProvider";
+import HomeButton from "../../utils/homebutton/HomeButton";
 
 const Nav = (props) => {
   const location = useLocation();
@@ -71,10 +72,7 @@ const Nav = (props) => {
 
   return (
     <div className={stl.modal}>
-      <div className={stl.logo} onClick={() => handleTabSwitch("/")}>
-        <img src={logo} alt="OSRS Help logo" className={stl.logoIcon} />
-        <span className={stl.logoSpan}>OSRS Help</span>
-      </div>
+      <HomeButton />
 
       <div className={stl.loggedUser}>
         {props.playerName && (

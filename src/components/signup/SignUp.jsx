@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Spinner from "../../utils/loadingspinner/Spinner";
 
 import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
+import HomeButton from "../../utils/homebutton/HomeButton";
 
 import { useContext } from "react";
 import { AuthContext } from "../../utils/authprovider/AuthProvider";
@@ -187,10 +188,7 @@ const SignUp = () => {
 
   return (
     <div className={stl.signup}>
-      <div className={stl.homeBox} onClick={() => navigate("/")}>
-        <img src={mainLogo} alt="OSRS Help logo" className={stl.osrshelpLogo} />
-        <span className={stl.navLogoSpan}>OSRS Help</span>
-      </div>
+      <HomeButton />
       <div className={stl.modal}>
         {!resetPassActive && !registerComplete && (
           <>

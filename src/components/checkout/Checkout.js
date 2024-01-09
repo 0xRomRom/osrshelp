@@ -1,6 +1,4 @@
 import stl from "./Checkout.module.css";
-import { useNavigate } from "react-router-dom";
-import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 
 import { Elements } from "@stripe/react-stripe-js";
 import { useState } from "react";
@@ -11,10 +9,9 @@ import { loadStripe } from "@stripe/stripe-js";
 
 import { useContext } from "react";
 import { AuthContext } from "../../utils/authprovider/AuthProvider";
+import HomeButton from "../../utils/homebutton/HomeButton";
 
 const Checkout = () => {
-  const navigate = useNavigate();
-
   const { userID } = useContext(AuthContext);
 
   const [stripePromise, setStripePromise] = useState(null);
@@ -51,10 +48,7 @@ const Checkout = () => {
 
   return (
     <div className={stl.signup}>
-      <div className={stl.homeBox} onClick={() => navigate("/")}>
-        <img src={mainLogo} alt="OSRS Help logo" className={stl.osrshelpLogo} />
-        <span className={stl.navLogoSpan}>OSRS Help</span>
-      </div>
+      <HomeButton />
       <div className={stl.modal}>
         {clientSecret && stripePromise && (
           <Elements stripe={stripePromise} options={{ clientSecret }}>
