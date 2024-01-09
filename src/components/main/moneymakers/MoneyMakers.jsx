@@ -41,50 +41,52 @@ const MoneyMakers = (props) => {
         subState={props.subState}
         setSubState={props.setSubState}
       />
-      <div className={stl.modal}>
-        <div className={stl.typeSelection}>
-          <button
-            className={`${stl.typeCta} ${
-              activeModal === "Free" ? stl.actBtn : ""
-            }`}
-            onClick={() => switchModal("Free")}
-          >
-            Free User
-          </button>
-          <button
-            className={`${stl.typeCta} ${
-              activeModal === "Rune" ? stl.actBtn : ""
-            }`}
-            onClick={() => switchModal("Rune")}
-          >
-            Rune User
-          </button>
-        </div>
-        {showWarningModal && (
-          <div className={stl.disclaimerBox}>
-            <div className={stl.exclamBox}>
-              <FaExclamationTriangle className={stl.exlam} />
-            </div>
-            <div className={stl.explainWrap}>
-              <span className={stl.disclaimerTxt}>
-                All money making methods are calculated based on realtime G.E.
-                prices.
-                <br />
-                Before committing to any method, make sure trading volumes are
-                present for output items.
-              </span>
-            </div>
-            <div className={stl.closeWrapper}>
-              <IoClose className={stl.closeWarning} onClick={hideWarning} />
-            </div>
+      <div className={stl.overflowWrap}>
+        <div className={stl.modal}>
+          <div className={stl.typeSelection}>
+            <button
+              className={`${stl.typeCta} ${
+                activeModal === "Free" ? stl.actBtn : ""
+              }`}
+              onClick={() => switchModal("Free")}
+            >
+              Free User
+            </button>
+            <button
+              className={`${stl.typeCta} ${
+                activeModal === "Rune" ? stl.actBtn : ""
+              }`}
+              onClick={() => switchModal("Rune")}
+            >
+              Rune User
+            </button>
           </div>
-        )}
-        {activeModal === "Free" && (
-          <FreeMoneyMakers setMoneyMaker={props.setMoneyMaker} />
-        )}
-        {activeModal === "Rune" && (
-          <PremiumMoneyMakers setMoneyMaker={props.setMoneyMaker} />
-        )}
+          {showWarningModal && (
+            <div className={stl.disclaimerBox}>
+              <div className={stl.exclamBox}>
+                <FaExclamationTriangle className={stl.exlam} />
+              </div>
+              <div className={stl.explainWrap}>
+                <span className={stl.disclaimerTxt}>
+                  All money making methods are calculated based on realtime G.E.
+                  prices.
+                  <br />
+                  Before committing to any method, make sure trading volumes are
+                  present for output items.
+                </span>
+              </div>
+              <div className={stl.closeWrapper}>
+                <IoClose className={stl.closeWarning} onClick={hideWarning} />
+              </div>
+            </div>
+          )}
+          {activeModal === "Free" && (
+            <FreeMoneyMakers setMoneyMaker={props.setMoneyMaker} />
+          )}
+          {activeModal === "Rune" && (
+            <PremiumMoneyMakers setMoneyMaker={props.setMoneyMaker} />
+          )}
+        </div>
       </div>
     </div>
   );

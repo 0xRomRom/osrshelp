@@ -22,11 +22,18 @@
 .modal {
   position: relative;
   border-radius: 0.4rem;
-  width: 95%;
-  left: 2.5%;
-  min-height: 40rem;
+  /* width: 95%;
+  left: 2.5%; */
+  width: 105%;
+  height: 50rem;
   margin-bottom: 2rem;
   background-color: rgb(32, 46, 57);
+  background-image: url("../../../../public/backgrounds/Morytania.webp");
+  background-size: 150%;
+  background-repeat: repeat-y;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 0.4rem;
 }
 
 .typeSelection {
@@ -48,9 +55,9 @@
   font-weight: bold;
   border: 2px solid var(--blue-main);
   background-color: transparent;
-  color: gray;
   font-weight: bold;
   font-size: 16px;
+  user-select: none;
 }
 
 .actBtn {
@@ -115,4 +122,14 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
+}
+
+.overflowWrap {
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+  /* overflow-y: scroll; */
+  overflow: hidden;
+  padding-right: 3rem;
+  border-radius: 0.4rem;
 }

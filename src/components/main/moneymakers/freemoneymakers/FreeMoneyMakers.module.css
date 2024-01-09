@@ -9,7 +9,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem;
-  /* overflow-y: scroll; */
 }
 
 .gridTile {
@@ -24,6 +23,7 @@
   flex-direction: column;
   gap: 1rem;
   box-shadow: 0px 0px 15px rgb(13, 17, 20);
+  user-select: none;
 }
 
 .gridTile:hover {
