@@ -51,13 +51,26 @@
   font-weight: bold;
 }
 
+.navitem:hover {
+  background-color: rgb(21, 38, 49);
+  filter: initial;
+  color: rgb(184, 191, 197);
+}
+
 .icon {
   width: 25px;
   margin-left: 0.25rem;
 }
 
 .active {
-  background-color: rgb(16, 27, 35);
+  background-color: rgb(25, 46, 60);
+  color: white;
+  /* background: linear-gradient(130deg, brown, red); */
+  filter: none;
+}
+
+.active:hover {
+  background-color: rgb(25, 46, 60);
   color: white;
   /* background: linear-gradient(130deg, brown, red); */
   filter: none;
