@@ -19,6 +19,10 @@ import MethodPage from "./components/main/moneymakers/methodpage/MethodPage";
 import CombatCalculator from "./components/main/combatcalculator/CombatCalculator";
 import ProfitAlching from "./components/main/profitalching/ProfitAlching";
 
+import FAQ from "./components/about/faq/Faq";
+
+import MainLayout from "./components/mainlayout/MainLayout";
+
 const App = () => {
   const [activeTab, setActiveTab] = useState("/");
   const [skills, setSkills] = useState(null);
@@ -32,24 +36,31 @@ const App = () => {
   return (
     <div className={stl.app}>
       <AuthProvider>
-        <div className={stl.mainWrap}>
-          <Nav
+        {/* <Nav
             setActiveTab={setActiveTab}
             setMainState={setMainState}
             setSubState={setSubState}
             activeTab={activeTab}
             playerName={playerName}
-          />
+          /> */}
 
-          <div className={stl.content}>
-            <Routes>
-              <Route path="/successful-payment" element={<PaymentSucces />} />
-              <Route path="/checkout" element={<Checkout />} />
-              <Route path="/login" element={<SignUp />} />
-              <Route
-                index
-                path="/"
-                element={
+        <div className={stl.content}>
+          <Routes>
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/successful-payment" element={<PaymentSucces />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/login" element={<SignUp />} />
+            <Route
+              index
+              path="/"
+              element={
+                <MainLayout
+                  setActiveTab={setActiveTab}
+                  setMainState={setMainState}
+                  setSubState={setSubState}
+                  activeTab={activeTab}
+                  playerName={playerName}
+                >
                   <Home
                     setSkills={setSkills}
                     skills={skills}
@@ -61,11 +72,19 @@ const App = () => {
                     setSubState={setSubState}
                     subState={subState}
                   />
-                }
-              />
-              <Route
-                path="/skillcalculators/*"
-                element={
+                </MainLayout>
+              }
+            />
+            <Route
+              path="/skillcalculators/*"
+              element={
+                <MainLayout
+                  setActiveTab={setActiveTab}
+                  setMainState={setMainState}
+                  setSubState={setSubState}
+                  activeTab={activeTab}
+                  playerName={playerName}
+                >
                   <SkillsTab
                     setSkills={setSkills}
                     skills={skills}
@@ -77,21 +96,37 @@ const App = () => {
                     setSubState={setSubState}
                     subState={subState}
                   />
-                }
-              />
-              <Route
-                path="/gearcalculator"
-                element={
+                </MainLayout>
+              }
+            />
+            <Route
+              path="/gearcalculator"
+              element={
+                <MainLayout
+                  setActiveTab={setActiveTab}
+                  setMainState={setMainState}
+                  setSubState={setSubState}
+                  activeTab={activeTab}
+                  playerName={playerName}
+                >
                   <GearCalculator
                     mainState={mainState}
                     setSubState={setSubState}
                     subState={subState}
                   />
-                }
-              />
-              <Route
-                path="/moneymakers"
-                element={
+                </MainLayout>
+              }
+            />
+            <Route
+              path="/moneymakers"
+              element={
+                <MainLayout
+                  setActiveTab={setActiveTab}
+                  setMainState={setMainState}
+                  setSubState={setSubState}
+                  activeTab={activeTab}
+                  playerName={playerName}
+                >
                   <MoneyMakers
                     setSkills={setSkills}
                     skills={skills}
@@ -104,20 +139,36 @@ const App = () => {
                     subState={subState}
                     setMoneyMaker={setMoneyMaker}
                   />
-                }
-              />
-              <Route
-                path="/moneymakers/:newpath"
-                element={
+                </MainLayout>
+              }
+            />
+            <Route
+              path="/moneymakers/:newpath"
+              element={
+                <MainLayout
+                  setActiveTab={setActiveTab}
+                  setMainState={setMainState}
+                  setSubState={setSubState}
+                  activeTab={activeTab}
+                  playerName={playerName}
+                >
                   <MethodPage
                     setSubState={setSubState}
                     moneyMaker={moneyMaker}
                   />
-                }
-              ></Route>
-              <Route
-                path="/xptable"
-                element={
+                </MainLayout>
+              }
+            ></Route>
+            <Route
+              path="/xptable"
+              element={
+                <MainLayout
+                  setActiveTab={setActiveTab}
+                  setMainState={setMainState}
+                  setSubState={setSubState}
+                  activeTab={activeTab}
+                  playerName={playerName}
+                >
                   <XPTable
                     setSkills={setSkills}
                     skills={skills}
@@ -129,11 +180,19 @@ const App = () => {
                     setSubState={setSubState}
                     subState={subState}
                   />
-                }
-              />
-              <Route
-                path="/combatcalculator"
-                element={
+                </MainLayout>
+              }
+            />
+            <Route
+              path="/combatcalculator"
+              element={
+                <MainLayout
+                  setActiveTab={setActiveTab}
+                  setMainState={setMainState}
+                  setSubState={setSubState}
+                  activeTab={activeTab}
+                  playerName={playerName}
+                >
                   <CombatCalculator
                     setSkills={setSkills}
                     skills={skills}
@@ -145,32 +204,48 @@ const App = () => {
                     setSubState={setSubState}
                     subState={subState}
                   />
-                }
-              />
-              <Route
-                path="/profitalching"
-                element={
+                </MainLayout>
+              }
+            />
+            <Route
+              path="/profitalching"
+              element={
+                <MainLayout
+                  setActiveTab={setActiveTab}
+                  setMainState={setMainState}
+                  setSubState={setSubState}
+                  activeTab={activeTab}
+                  playerName={playerName}
+                >
                   <ProfitAlching
                     mainState={mainState}
                     setSubState={setSubState}
                     subState={subState}
                   />
-                }
-              />
-              <Route
-                path="/worldmap"
-                element={
+                </MainLayout>
+              }
+            />
+            <Route
+              path="/worldmap"
+              element={
+                <MainLayout
+                  setActiveTab={setActiveTab}
+                  setMainState={setMainState}
+                  setSubState={setSubState}
+                  activeTab={activeTab}
+                  playerName={playerName}
+                >
                   <WorldMap
                     mainState={mainState}
                     setSubState={setSubState}
                     subState={subState}
                   />
-                }
-              />
-            </Routes>
-          </div>
+                </MainLayout>
+              }
+            />
+          </Routes>
+          {/* <Footer /> */}
         </div>
-        <Footer />
       </AuthProvider>
     </div>
   );

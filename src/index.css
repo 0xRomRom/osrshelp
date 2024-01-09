@@ -23,7 +23,7 @@ body {
     rgb(8, 12, 20),
     rgb(11, 14, 24)
   );
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 code {

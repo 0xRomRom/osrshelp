@@ -146,20 +146,21 @@ const Nav = (props) => {
               Money Makers
             </li>
           </Link>
-
-          <li
-            className={`${stl.navitem} ${
-              props.activeTab === "profitalching" ? stl.active : ""
-            }`}
-            onClick={() => handleTabSwitch("profitalching", "Profit Alching")}
-          >
-            <img
-              src="./staves/Staff_of_fire.webp"
-              alt="Staff of fire icon"
-              className={stl.icon}
-            />
-            Profit Alching
-          </li>
+          <Link to="/profitalching" className={stl.link}>
+            <li
+              className={`${stl.navitem} ${
+                props.activeTab === "profitalching" ? stl.active : ""
+              }`}
+              onClick={() => handleTabSwitch("profitalching", "Profit Alching")}
+            >
+              <img
+                src="./staves/Staff_of_fire.webp"
+                alt="Staff of fire icon"
+                className={stl.icon}
+              />
+              Profit Alching
+            </li>
+          </Link>
 
           <Link to="/xptable" className={stl.link}>
             <li
