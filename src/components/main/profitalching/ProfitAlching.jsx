@@ -49,6 +49,10 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
     }
   }, [itemPrices, premiumUser]);
 
+  const handleBannerHide = () => {
+    setBannerActive(false);
+  };
+
   return (
     <div className={stl.profitalching}>
       <div className={stl.adBar}>[ Advertisements ]</div>
@@ -83,10 +87,13 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
           </div>
           <div className={stl.innerGrid}>
             <div className={stl.gridWrapper}>
-              {!premiumUser && (
+              {!premiumUser && bannerActive && (
                 <div className={stl.premiumBanner}>
                   <div className={stl.closeRow}>
-                    <IoClose className={stl.closeBannerBtn} />
+                    <IoClose
+                      className={stl.closeBannerBtn}
+                      onClick={handleBannerHide}
+                    />
                   </div>
                   <div className={stl.bannerMidBlock}>
                     <span className={stl.bannerSpan}>
