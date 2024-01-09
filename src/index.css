@@ -44,13 +44,12 @@ code {
 /* Define the scrollbar track */
 ::-webkit-scrollbar {
   width: 12px;
-  background-color: rgb(155, 151, 151);
-  border-radius: 6px;
+  background-color: var(--dark-bg);
 }
 
 /* Define the scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-  background: rgb(32, 46, 57);
+  background: rgb(19, 26, 31);
   border-radius: 6px; /* Adjust this value for more or less rounding */
 }
 

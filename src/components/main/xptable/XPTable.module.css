@@ -29,6 +29,7 @@
   width: 95%;
   left: 2.5%;
   background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+  background-image: url("../../../../public/backgrounds/Runealtar.jpeg");
   display: flex;
   justify-content: center;
   align-items: center;
