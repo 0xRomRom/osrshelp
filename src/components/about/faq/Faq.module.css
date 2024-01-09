@@ -64,3 +64,25 @@
   background-color: var(--blue-main);
   color: white;
 }
+
+.answerBlock {
+  background-color: #090909;
+  height: 22.5rem;
+  width: 90%;
+  left: 5%;
+  position: relative;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  padding: 30px;
+}
+
+.answerPar {
+  color: white;
+  font-size: 18px;
+}
