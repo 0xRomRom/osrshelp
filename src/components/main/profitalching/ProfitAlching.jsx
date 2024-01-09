@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import { IoClose } from "react-icons/io5";
 
-const ProfitAlching = ({ mainState, subState, setSubState }) => {
+const ProfitAlching = () => {
   const navigate = useNavigate();
   const [bannerActive, setBannerActive] = useState(true);
   const { premiumUser, userID } = useContext(AuthContext);
@@ -66,11 +66,7 @@ const ProfitAlching = ({ mainState, subState, setSubState }) => {
   return (
     <div className={stl.profitalching}>
       <div className={stl.adBar}>[ Advertisements ]</div>
-      <Pagination
-        mainState={mainState}
-        setSubState={setSubState}
-        subState={subState}
-      />
+      <Pagination />
       <div className={stl.modalWrap}>
         <div className={stl.heroBlock}>
           <h1 className={stl.hero}>

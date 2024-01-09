@@ -8,7 +8,7 @@ import MONEYMAKERPAGES from "../../../../utils/moneymakers/moneymakerpages";
 import SKILLICONOBJECT from "../../../../utils/skilliconobject";
 import mills from "../../../../assets/icons/Mills.webp";
 
-const MethodPage = ({ setSubState, moneyMaker }) => {
+const MethodPage = ({ moneyMaker }) => {
   const [methodState, setMethodState] = useState({});
   const navigate = useNavigate();
   const location = useLocation();
@@ -38,12 +38,7 @@ const MethodPage = ({ setSubState, moneyMaker }) => {
   return (
     <div className={stl.methodpage}>
       <div className={stl.adBar}>[ Advertisements ]</div>
-      <Pagination
-        mainState={"Money Makers"}
-        setSubState={setSubState}
-        subState={methodName}
-        navTo={"/moneymakers"}
-      />
+      <Pagination navTo={"/moneymakers"} />
       <div className={stl.modal}>
         <FaLongArrowAltLeft className={stl.closeBtn} onClick={navigateBack} />
         <div className={stl.headerBox}>

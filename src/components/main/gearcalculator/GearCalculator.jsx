@@ -18,7 +18,7 @@ import { useEffect } from "react";
 import supabase from "../../../utils/supabase/supabase";
 import { initState } from "../../../utils/gearcalculator/emptyslots";
 
-const GearCalculator = (props) => {
+const GearCalculator = () => {
   const { premiumUser, userID } = useContext(AuthContext);
   const targetDivRef = useRef(null);
   const [activeSlot, setActiveSlot] = useState(null);
@@ -113,11 +113,7 @@ const GearCalculator = (props) => {
         />
       )}
       <div className={stl.adBar}>[ Advertisements ]</div>
-      <Pagination
-        mainState={props.mainState}
-        subState={props.subState}
-        setSubState={props.setSubState}
-      />
+      <Pagination />
       <div className={stl.gearcalculator}>
         <div className={stl.topWrap}>
           <div className={stl.innerWrap}>

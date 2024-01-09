@@ -7,10 +7,8 @@ const MainLayout = ({ children, ...props }) => {
     <div className={stl.colWrap}>
       <div className={stl.flexWrap}>
         <Nav
-          setActiveTab={props.setActiveTab}
           setMainState={props.setMainState}
           setSubState={props.setSubState}
-          activeTab={props.ctiveTab}
           playerName={props.playerName}
         />
         <div className={stl.app}>{children}</div>

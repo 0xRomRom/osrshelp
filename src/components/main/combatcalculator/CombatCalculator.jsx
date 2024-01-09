@@ -11,9 +11,6 @@ import CombatLevels from "./combatlevels/CombatLevels";
 import { IoArrowDownOutline } from "react-icons/io5";
 
 const CombatCalculator = ({
-  mainState,
-  setSubState,
-  subState,
   skills,
   setSkills,
   skillsExp,
@@ -88,11 +85,7 @@ const CombatCalculator = ({
   return (
     <div className={stl.combatcalculator}>
       <div className={stl.adBar}>[ Advertisements ]</div>
-      <Pagination
-        mainState={mainState}
-        setSubState={setSubState}
-        subState={subState}
-      />
+      <Pagination />
       <div className={stl.contentWrap}>
         <div className={stl.bgDiv}></div>
         <div className={stl.modal}>

@@ -5,7 +5,7 @@ import { MapContainer, ImageOverlay } from "react-leaflet";
 import { RiFullscreenFill } from "react-icons/ri";
 import { useState } from "react";
 
-const WorldMap = (props) => {
+const WorldMap = () => {
   const [fullScreen, setFullScreen] = useState(false);
   // Define the bounds for your image
   const bounds = [
@@ -20,11 +20,7 @@ const WorldMap = (props) => {
   return (
     <div className={stl.worldmap}>
       <div className={stl.adBar}>[ Advertisements ]</div>
-      <Pagination
-        mainState={props.mainState}
-        subState={props.subState}
-        setSubState={props.setSubState}
-      />
+      <Pagination />
       <div
         className={`${stl.mapContainers} ${fullScreen ? stl.fullScreen : ""}`}
       >

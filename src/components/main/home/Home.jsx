@@ -21,11 +21,7 @@ const Home = (props) => {
   return (
     <>
       <div className={stl.adBar}>[ Advertisements ]</div>
-      <Pagination
-        mainState={props.mainState}
-        subState={props.subState}
-        setSubState={props.setSubState}
-      />
+      <Pagination />
       <div className={stl.modal}>
         <div className={stl.imageBox}>
           <img src={welcometxt} alt="Welcome Text" className={stl.welcometxt} />

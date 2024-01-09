@@ -11,54 +11,56 @@ import { Link } from "react-router-dom";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useContext } from "react";
+import { PaginationContext } from "../../utils/paginationstate/PaginationProvider";
 
 const Nav = (props) => {
   const location = useLocation();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("/");
+  const { setMainState, setSubState } = useContext(PaginationContext);
 
   useEffect(() => {
     const path = location.pathname;
-    console.log(path);
 
     if (path === "/" || path === "/home") {
       setActiveTab("/");
-      props.setMainState("Home");
-      props.setSubState(null);
+      setMainState("Home");
+      setSubState(null);
     }
     if (path === "/skillcalculators") {
       setActiveTab("skills");
-      props.setMainState("Skillcalculators");
+      setMainState("Skillcalculators");
     }
     if (path === "/gearcalculator") {
       setActiveTab("gearcalculator");
-      props.setMainState("Gearcalculator");
-      props.setSubState(null);
+      setMainState("Gearcalculator");
+      setSubState(null);
     }
     if (path === "/xptable") {
       setActiveTab("xptable");
-      props.setMainState("XP Table");
-      props.setSubState(null);
+      setMainState("XP Table");
+      setSubState(null);
     }
     if (path === "/moneymakers") {
       setActiveTab("moneymakers");
-      props.setMainState("Money Makers");
-      props.setSubState(null);
+      setMainState("Money Makers");
+      setSubState(null);
     }
     if (path === "/combatcalculator") {
       setActiveTab("combatcalculator");
-      props.setMainState("Combat Calculator");
-      props.setSubState(null);
+      setMainState("Combat Calculator");
+      setSubState(null);
     }
     if (path === "/worldmap") {
       setActiveTab("worldmap");
-      props.setMainState("World map");
-      props.setSubState(null);
+      setMainState("World map");
+      setSubState(null);
     }
     if (path === "/profitalching") {
       setActiveTab("profitalching");
-      props.setMainState("Profit Alching");
-      props.setSubState(null);
+      setMainState("Profit Alching");
+      setSubState(null);
     }
     window.scrollTo(0, 0);
   }, [location, props]);

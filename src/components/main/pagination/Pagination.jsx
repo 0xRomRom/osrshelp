@@ -6,11 +6,14 @@ import { useContext } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import supabase from "../../../utils/supabase/supabase";
 import { useState } from "react";
+import { PaginationContext } from "../../../utils/paginationstate/PaginationProvider";
 
-const Pagination = ({ mainState, subState, setSubState, navTo }) => {
-  const [displayedSubstate, setDisplayedSubstate] = useState(subState);
+const Pagination = ({ navTo }) => {
   const { loggedInUser, setLoggedInUser, premiumUser } =
     useContext(AuthContext);
+  const { mainState, setMainState, subState, setSubState } =
+    useContext(PaginationContext);
+  const [displayedSubstate, setDisplayedSubstate] = useState(subState);
   const navigate = useNavigate();
 
   const clearSubState = () => {

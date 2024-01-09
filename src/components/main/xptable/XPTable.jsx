@@ -3,15 +3,11 @@ import Pagination from "../pagination/Pagination";
 import XPCalculator from "./xpcalculator/XPCalculator";
 import { arrayXpTable } from "../../../utils/playerStats";
 
-const XPTable = (props) => {
+const XPTable = () => {
   return (
     <div className={stl.xptable}>
       <div className={stl.adBar}>[ Advertisements ]</div>
-      <Pagination
-        mainState={props.mainState}
-        subState={props.subState}
-        setSubState={props.setSubState}
-      />
+      <Pagination />
       <div className={stl.levelsWrap}>
         <h1 className={stl.modalTitle}>OSRS XP Table</h1>
         <XPCalculator />

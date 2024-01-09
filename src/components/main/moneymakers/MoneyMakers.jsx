@@ -36,11 +36,7 @@ const MoneyMakers = (props) => {
   return (
     <div className={stl.moneymakers}>
       <div className={stl.adBar}>[ Advertisements ]</div>
-      <Pagination
-        mainState={props.mainState}
-        subState={props.subState}
-        setSubState={props.setSubState}
-      />
+      <Pagination />
       <div className={stl.overflowWrap}>
         <div className={stl.modal}>
           <div className={stl.typeSelection}>
