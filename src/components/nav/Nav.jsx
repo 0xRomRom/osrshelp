@@ -10,50 +10,53 @@ import worldicon from "../../assets/icons/World_map_icon.webp";
 import { Link } from "react-router-dom";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { useState } from "react";
 
 const Nav = (props) => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState("/");
 
   useEffect(() => {
     const path = location.pathname;
+    console.log(path);
 
     if (path === "/" || path === "/home") {
-      props.setActiveTab("/");
+      setActiveTab("/");
       props.setMainState("Home");
       props.setSubState(null);
     }
     if (path === "/skillcalculators") {
-      props.setActiveTab("skills");
+      setActiveTab("skills");
       props.setMainState("Skillcalculators");
     }
     if (path === "/gearcalculator") {
-      props.setActiveTab("gearcalculator");
+      setActiveTab("gearcalculator");
       props.setMainState("Gearcalculator");
       props.setSubState(null);
     }
     if (path === "/xptable") {
-      props.setActiveTab("xptable");
+      setActiveTab("xptable");
       props.setMainState("XP Table");
       props.setSubState(null);
     }
     if (path === "/moneymakers") {
-      props.setActiveTab("moneymakers");
+      setActiveTab("moneymakers");
       props.setMainState("Money Makers");
       props.setSubState(null);
     }
     if (path === "/combatcalculator") {
-      props.setActiveTab("combatcalculator");
+      setActiveTab("combatcalculator");
       props.setMainState("Combat Calculator");
       props.setSubState(null);
     }
     if (path === "/worldmap") {
-      props.setActiveTab("worldmap");
+      setActiveTab("worldmap");
       props.setMainState("World map");
       props.setSubState(null);
     }
     if (path === "/profitalching") {
-      props.setActiveTab("profitalching");
+      setActiveTab("profitalching");
       props.setMainState("Profit Alching");
       props.setSubState(null);
     }
@@ -84,7 +87,7 @@ const Nav = (props) => {
           <Link to="/" className={stl.link}>
             <li
               className={`${stl.navitem} ${
-                props.activeTab === "/" ? stl.active : ""
+                activeTab === "/" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("/")}
             >
@@ -99,7 +102,7 @@ const Nav = (props) => {
           <Link to="/skillcalculators" className={stl.link}>
             <li
               className={`${stl.navitem} ${
-                props.activeTab === "skills" ? stl.active : ""
+                activeTab === "skills" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("/skillcalculators")}
             >
@@ -111,7 +114,7 @@ const Nav = (props) => {
           <Link to="/gearcalculator" className={stl.link}>
             <li
               className={`${stl.navitem} ${
-                props.activeTab === "gearcalculator" ? stl.active : ""
+                activeTab === "gearcalculator" ? stl.active : ""
               }`}
               onClick={() =>
                 handleTabSwitch("gearcalculator", "Gear Calculator")
@@ -125,7 +128,7 @@ const Nav = (props) => {
           <Link to="/combatcalculator" className={stl.link}>
             <li
               className={`${stl.navitem} ${
-                props.activeTab === "combatcalculator" ? stl.active : ""
+                activeTab === "combatcalculator" ? stl.active : ""
               }`}
               onClick={() =>
                 handleTabSwitch("combatcalculator", "Combat Calculator")
@@ -138,7 +141,7 @@ const Nav = (props) => {
           <Link to="/moneymakers" className={stl.link}>
             <li
               className={`${stl.navitem} ${
-                props.activeTab === "moneymakers" ? stl.active : ""
+                activeTab === "moneymakers" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("moneymakers", "Money Makers")}
             >
@@ -149,7 +152,7 @@ const Nav = (props) => {
           <Link to="/profitalching" className={stl.link}>
             <li
               className={`${stl.navitem} ${
-                props.activeTab === "profitalching" ? stl.active : ""
+                activeTab === "profitalching" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("profitalching", "Profit Alching")}
             >
@@ -165,7 +168,7 @@ const Nav = (props) => {
           <Link to="/xptable" className={stl.link}>
             <li
               className={`${stl.navitem} ${
-                props.activeTab === "xptable" ? stl.active : ""
+                activeTab === "xptable" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("xptable", "XP Table")}
             >
@@ -176,7 +179,7 @@ const Nav = (props) => {
           <Link to="/worldmap" className={stl.link}>
             <li
               className={`${stl.navitem} ${
-                props.activeTab === "worldmap" ? stl.active : ""
+                activeTab === "worldmap" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("worldmap", "World map")}
             >
