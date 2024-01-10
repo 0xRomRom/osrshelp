@@ -27,12 +27,14 @@ const EtherDonateForm = ({ setEtherModal }) => {
     setFormSubmitted(true);
   };
 
+  const resetModals = () => {
+    setEtherModal(false);
+    setFormSubmitted(false);
+  };
+
   return (
     <div className={stl.etherModal}>
-      <FaLongArrowAltLeft
-        className={stl.homeArrow}
-        onClick={() => setEtherModal(false)}
-      />
+      <FaLongArrowAltLeft className={stl.homeArrow} onClick={resetModals} />
       {!formSubmitted && (
         <div className={stl.etherInfoBox}>
           <span className={stl.addressSpan}>Donation address</span>

@@ -7,7 +7,7 @@ import OptionTiles from "./optiontiles/OptionTiles";
 import EtherDonateForm from "./etherdonateform/EtherDonateForm";
 
 const SupportOSRSHelp = () => {
-  const [etherModal, setEtherModal] = useState(true);
+  const [etherModal, setEtherModal] = useState(false);
 
   return (
     <div className={stl.supportOsrsHelp}>
