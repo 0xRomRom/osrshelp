@@ -3,4 +3,48 @@
   height: 40rem;
   background-color: rgba(0, 0, 0, 0.95);
   border-radius: 0.4rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.supportersHero {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.supportersList {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.supporter {
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+  background-color: var(--dark-bg);
+}
+
+.userName {
+  color: gray;
+  width: 60%;
+  color: var(--blue-main);
+}
+
+.amount {
+  color: orange;
+  width: 15%;
+}
+
+.modCrown {
+  margin-right: 0.5rem;
 }
