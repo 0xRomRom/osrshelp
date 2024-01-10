@@ -3,6 +3,7 @@ import Pagination from "../pagination/Pagination";
 
 import { useState } from "react";
 import OptionTiles from "./optiontiles/OptionTiles";
+import SupportersModal from "./supportersmodal/SupportersModal";
 
 import EtherDonateForm from "./etherdonateform/EtherDonateForm";
 
@@ -24,6 +25,7 @@ const SupportOSRSHelp = () => {
           {!etherModal && <OptionTiles setEtherModal={setEtherModal} />}
           {etherModal && <EtherDonateForm setEtherModal={setEtherModal} />}
         </div>
+        <SupportersModal />
       </div>
     </div>
   );

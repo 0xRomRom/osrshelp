@@ -9,7 +9,7 @@
   flex-wrap: wrap;
   height: 100%;
   gap: 10px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .option {
