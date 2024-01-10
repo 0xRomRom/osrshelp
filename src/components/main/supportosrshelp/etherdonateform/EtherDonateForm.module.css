@@ -72,8 +72,9 @@
 }
 
 .copied {
-  color: green;
+  color: var(--blue-main);
   margin-top: 5px;
+  font-weight: bold;
 }
 
 .userInputs {

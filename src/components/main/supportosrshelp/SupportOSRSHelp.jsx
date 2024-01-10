@@ -78,7 +78,9 @@ const SupportOSRSHelp = () => {
                   alt="Ethereum"
                   className={stl.runeHelm}
                 />
-                <span className={stl.optionSpan}>Become a Rune user</span>
+                <span className={stl.optionSpan}>
+                  Become a <span className={stl.rune}>Rune</span> user
+                </span>
               </div>
             </div>
           )}
