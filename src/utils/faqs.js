@@ -30,7 +30,7 @@ const FAQS = {
   4: {
     text: [
       "Certainly!",
-      "Head over to our contact page and submit the form with your suggestion.",
+      "Head over to our Contact Page and submit the form with your suggestion.",
       "User feedback is highly appreciated and every submission will be treated as such.",
     ],
   },

@@ -4,6 +4,7 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 import HomeButton from "../../../utils/homebutton/HomeButton";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import CtaBar from "./ctabar/CtaBar";
 
 const FAQ = () => {
   const navigate = useNavigate();
@@ -138,6 +139,7 @@ const FAQ = () => {
               );
             })}
           </p>
+          <CtaBar spanData={spanData} />
         </div>
       </div>
     </div>
