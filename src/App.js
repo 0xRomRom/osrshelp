@@ -20,6 +20,7 @@ import CombatCalculator from "./components/main/combatcalculator/CombatCalculato
 import ProfitAlching from "./components/main/profitalching/ProfitAlching";
 
 import FAQ from "./components/about/faq/Faq";
+import PrivacyPolicy from "./components/about/privacypolicy/PrivacyPolicy";
 
 import MainLayout from "./components/mainlayout/MainLayout";
 
@@ -38,6 +39,7 @@ const App = () => {
         <PaginationProvider>
           <div className={stl.content}>
             <Routes>
+              <Route path="/privacypolicy" element={<PrivacyPolicy />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/successful-payment" element={<PaymentSucces />} />
               <Route path="/checkout" element={<Checkout />} />

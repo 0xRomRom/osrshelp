@@ -25,7 +25,9 @@ const Footer = () => {
           <Link to="/faq" className={stl.link}>
             <li className={stl.footLink}>FAQ</li>
           </Link>
-          <li className={stl.footLink}>Privacy policy</li>
+          <Link to="/privacypolicy" className={stl.link}>
+            <li className={stl.footLink}>Privacy policy</li>
+          </Link>
           <li className={stl.footLink}>Terms & Conditions</li>
           <li className={stl.footLink}>Contact</li>
           <li className={stl.footLink}>Help</li>

@@ -4,7 +4,7 @@ const FAQS = {
   },
   1: {
     text: [
-      "OSRS Help's goal is to provide the best user interface/experience when calculating your ingame goals.",
+      "OSRS Help's goal is to provide the best user interface/experience when calculating your in-game goals.",
       "Other utility sites are boring, old or simply ugly. Yes I said it.",
       "While providing an intuitive experience, we did not skip over the aesthetics of our tools.",
       "We hope you enjoy them as much as we enjoy creating them!",
