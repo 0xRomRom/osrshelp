@@ -1,11 +1,19 @@
 import stl from "./PrivacyPolicy.module.css";
 import HomeButton from "../../../utils/homebutton/HomeButton";
+import { FaLongArrowAltLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { IoHomeSharp } from "react-icons/io5";
 
 const PrivacyPolicy = () => {
+  const navigate = useNavigate();
   return (
     <div className={stl.privacyPolicy}>
       <HomeButton />
       <div className={stl.mainWrapper}>
+        <span className={stl.homeSpan} onClick={() => navigate("/")}>
+          <FaLongArrowAltLeft className={stl.homeArrow} />
+          <span className={stl.homeTxt}>Home</span>
+        </span>
         <h1 className={stl.hero}>OSRS HELP Privacy Policy</h1>
         <div className={stl.policyWrap}>
           <p>Last updated: January 10, 2024</p>
@@ -574,9 +582,10 @@ const PrivacyPolicy = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <div>
-            <br />
+        <div className={stl.homeWrap}>
+          <div className={stl.centerWrap} onClick={() => navigate("/")}>
+            <IoHomeSharp className={stl.homeBtn} />
+            <span className={stl.homeCtaTxt}>Home</span>
           </div>
         </div>
       </div>

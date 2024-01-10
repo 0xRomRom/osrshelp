@@ -25,6 +25,7 @@
   padding: 0rem 2rem;
   padding-top: 4rem;
   overflow-y: scroll;
+  position: relative;
 }
 
 .hero {
@@ -63,4 +64,73 @@
 .policyWrap h4 {
   font-size: 20px;
   /* margin: 1rem 0rem; */
+}
+
+.homeArrow {
+  font-size: 32px;
+  color: rgb(207, 207, 207);
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.homeSpan {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+}
+
+.homeSpan:hover .homeArrow {
+  color: white;
+}
+.homeSpan:hover .homeTxt {
+  opacity: 1;
+}
+
+.homeTxt {
+  opacity: 0;
+  color: rgb(226, 226, 226);
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.homeWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0rem;
+  padding-top: 4rem;
+  font-size: 20px;
+}
+
+.homeBtn {
+  font-size: 40px;
+  color: gray;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.homeCtaTxt {
+  opacity: 0;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.homeBtn:hover {
+  color: white;
+}
+
+.centerWrap:hover .homeCtaTxt {
+  opacity: 1;
+}
+
+.centerWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
