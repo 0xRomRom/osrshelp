@@ -1,16 +1,13 @@
-import { useEffect, useContext } from "react";
+import { useContext } from "react";
 import stl from "./CtaBar.module.css";
 import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import { FaXTwitter } from "react-icons/fa6";
+import mainlogo from "../../../../assets/characters/Ancient_staff_equipped_male.webp";
 
 const CtaBar = ({ spanData }) => {
   const { userID, premiumUser } = useContext(AuthContext);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    console.log(premiumUser);
-  }, [spanData]);
 
   const handleSignUp = () => {
     if (!userID) {
@@ -43,6 +40,9 @@ const CtaBar = ({ spanData }) => {
 
   return (
     <div className={stl.ctaBar}>
+      {!spanData && (
+        <img src={mainlogo} alt="OSRS Help logo" className={stl.mainLogo} />
+      )}
       {spanData === "3" && !premiumUser && (
         <button className={stl.signUpCta} onClick={handleSignUp}>
           Sign Up
