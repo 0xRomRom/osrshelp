@@ -18,6 +18,7 @@
 }
 
 .faqModal {
+  position: relative;
   width: 40rem;
   height: 40rem;
   background-color: rgb(32, 46, 57);
@@ -95,4 +96,35 @@
   position: relative;
   padding: 5px 0px;
   display: block;
+}
+
+.homeArrow {
+  font-size: 32px;
+  color: gray;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.homeSpan {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0.5rem;
+  left: 0.5rem;
+  cursor: pointer;
+}
+
+.homeSpan:hover .homeArrow {
+  color: white;
+}
+.homeSpan:hover .homeTxt {
+  opacity: 1;
+}
+
+.homeTxt {
+  opacity: 0;
+  color: rgb(226, 226, 226);
+  transition: all 0.2s ease-in-out;
 }
