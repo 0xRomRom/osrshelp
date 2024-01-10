@@ -14,3 +14,23 @@
   color: gray;
   font-size: 2rem;
 }
+
+.modalWrap {
+  position: relative;
+  width: 95%;
+  left: 2.5%;
+  background-color: red;
+  padding: 1rem 0rem;
+  border-radius: 0.4rem;
+  background-image: url("../../../../public/backgrounds/Elven.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+.supportModal {
+  width: 40rem;
+  height: 40rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  margin: 0 auto;
+}

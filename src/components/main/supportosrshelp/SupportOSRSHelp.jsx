@@ -6,6 +6,9 @@ const SupportOSRSHelp = () => {
     <div className={stl.supportOsrsHelp}>
       <div className={stl.adBar}>[ Advertisements ]</div>
       <Pagination />
+      <div className={stl.modalWrap}>
+        <div className={stl.supportModal}></div>
+      </div>
     </div>
   );
 };
