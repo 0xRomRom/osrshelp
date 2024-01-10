@@ -21,6 +21,7 @@ import ProfitAlching from "./components/main/profitalching/ProfitAlching";
 
 import FAQ from "./components/about/faq/Faq";
 import PrivacyPolicy from "./components/about/privacypolicy/PrivacyPolicy";
+import TermsConditions from "./components/about/termsconditions/TermsConditions";
 
 import MainLayout from "./components/mainlayout/MainLayout";
 
@@ -39,6 +40,7 @@ const App = () => {
         <PaginationProvider>
           <div className={stl.content}>
             <Routes>
+              <Route path="/terms&conditions" element={<TermsConditions />} />
               <Route path="/privacypolicy" element={<PrivacyPolicy />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/successful-payment" element={<PaymentSucces />} />

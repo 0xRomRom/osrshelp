@@ -28,7 +28,9 @@ const Footer = () => {
           <Link to="/privacypolicy" className={stl.link}>
             <li className={stl.footLink}>Privacy policy</li>
           </Link>
-          <li className={stl.footLink}>Terms & Conditions</li>
+          <Link to="/terms&conditions" className={stl.link}>
+            <li className={stl.footLink}>Terms & Conditions</li>
+          </Link>
           <li className={stl.footLink}>Contact</li>
           <li className={stl.footLink}>Help</li>
           <li className={stl.footLink}>Report issue</li>

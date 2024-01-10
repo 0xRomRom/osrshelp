@@ -1,0 +1,136 @@
+.privacyPolicy {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    100deg,
+    rgb(10, 14, 24),
+    rgb(13, 20, 31),
+    rgb(10, 14, 24),
+    rgb(9, 13, 20),
+    rgb(8, 12, 20),
+    rgb(11, 14, 24)
+  );
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mainWrapper {
+  height: 100%;
+  width: 70%;
+  background-color: rgb(32, 46, 57);
+  padding: 0rem 2rem;
+  padding-top: 4rem;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 4rem;
+}
+
+.policyWrap {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.policyWrap p {
+  margin: 10px 0px;
+}
+
+.policyWrap li {
+  list-style-type: none;
+}
+.policyWrap a {
+  color: var(--main-blue);
+}
+
+.policyWrap h2 {
+  font-size: 34px;
+  margin: 1rem 0rem;
+}
+
+.policyWrap h3 {
+  font-size: 30px;
+  margin: 1rem 0rem;
+}
+.policyWrap h4 {
+  font-size: 20px;
+  /* margin: 1rem 0rem; */
+}
+
+.homeArrow {
+  font-size: 32px;
+  color: rgb(207, 207, 207);
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.homeSpan {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
+}
+
+.homeSpan:hover .homeArrow {
+  color: white;
+}
+.homeSpan:hover .homeTxt {
+  opacity: 1;
+}
+
+.homeTxt {
+  opacity: 0;
+  color: rgb(226, 226, 226);
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.homeWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0rem;
+  padding-top: 4rem;
+  font-size: 20px;
+}
+
+.homeBtn {
+  font-size: 40px;
+  color: gray;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.homeCtaTxt {
+  opacity: 0;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.homeBtn:hover {
+  color: white;
+}
+
+.centerWrap:hover .homeCtaTxt {
+  opacity: 1;
+}
+
+.centerWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
