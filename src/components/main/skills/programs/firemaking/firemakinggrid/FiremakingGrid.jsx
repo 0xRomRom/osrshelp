@@ -143,12 +143,12 @@ const FiremakingGrid = (props) => {
           return (
             <div className={stl.row} key={logs.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
-                <span className={stl.lvlSpan}>Lvl {logs.level}</span>
                 <img
                   src={logs.src}
                   alt="Runescape Logs"
                   className={stl.boneMiniImg}
                 />
+                <span className={stl.lvlSpan}>Lvl {logs.level}</span>
                 <span className={stl.bonename}>
                   {logs.name === "Bucket" ? "Blisterwood logs" : logs.name}
                 </span>
