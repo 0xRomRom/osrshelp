@@ -15,4 +15,52 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.mainWrapper {
+  height: 100%;
+  width: 70%;
+  background-color: rgb(32, 46, 57);
+  padding: 0rem 2rem;
+  padding-top: 4rem;
+  overflow-y: scroll;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 4rem;
+}
+
+.policyWrap {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.policyWrap p {
+  margin: 10px 0px;
+}
+
+.policyWrap li {
+  list-style-type: none;
+}
+.policyWrap a {
+  color: var(--main-blue);
+}
+
+.policyWrap h2 {
+  font-size: 34px;
+  margin: 1rem 0rem;
+}
+
+.policyWrap h3 {
+  font-size: 30px;
+  margin: 1rem 0rem;
+}
+.policyWrap h4 {
+  font-size: 20px;
+  /* margin: 1rem 0rem; */
 }
