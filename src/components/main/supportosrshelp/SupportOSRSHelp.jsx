@@ -5,8 +5,8 @@ import { useContext } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { FaLongArrowAltLeft } from "react-icons/fa";
-import { BsCopy } from "react-icons/bs";
+
+import EtherDonateForm from "./etherdonateform/EtherDonateForm";
 
 const SupportOSRSHelp = () => {
   const navigate = useNavigate();
@@ -36,15 +36,6 @@ const SupportOSRSHelp = () => {
 
   const openEtherModal = () => {
     setEtherModal(true);
-  };
-
-  const handleCopyClick = () => {
-    const textarea = document.createElement("textarea");
-    textarea.value = "0x53a227b9f5B95ca870F5b3cec30c378aEa59Cb09";
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
   };
 
   return (
@@ -91,20 +82,7 @@ const SupportOSRSHelp = () => {
               </div>
             </div>
           )}
-          {etherModal && (
-            <div className={stl.etherModal}>
-              <FaLongArrowAltLeft
-                className={stl.homeArrow}
-                onClick={() => setEtherModal(false)}
-              />
-              <div className={stl.etherInfoBox}>
-                <span className={stl.addressSpan}>Donation address</span>
-                <span className={stl.donateAddy} onClick={handleCopyClick}>
-                  0x53a227b9f5B95ca870F5b3cec30c378aEa59Cb09 <BsCopy />
-                </span>
-              </div>
-            </div>
-          )}
+          {etherModal && <EtherDonateForm setEtherModal={setEtherModal} />}
         </div>
         <div className={stl.supportersList}></div>
       </div>
