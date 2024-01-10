@@ -126,3 +126,66 @@
 .submitCta:active {
   border: 2px solid rgb(6, 175, 51);
 }
+
+.thanksBox {
+  position: relative;
+  width: 100%;
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thanksHero {
+  color: white;
+}
+
+.supportersList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.thanksHeart {
+  width: 80px;
+  z-index: 10;
+}
+
+.heartWrapper {
+  /* border: 1px solid red; */
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sphere {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2rem);
+  animation: heartLoop 1s forwards infinite;
+}
+
+@keyframes heartLoop {
+  0% {
+    width: 100%;
+    height: 100%;
+  }
+  50% {
+    width: 75%;
+    height: 75%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}

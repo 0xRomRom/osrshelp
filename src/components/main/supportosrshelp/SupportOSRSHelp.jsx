@@ -24,7 +24,6 @@ const SupportOSRSHelp = () => {
           {!etherModal && <OptionTiles setEtherModal={setEtherModal} />}
           {etherModal && <EtherDonateForm setEtherModal={setEtherModal} />}
         </div>
-        <div className={stl.supportersList}></div>
       </div>
     </div>
   );
