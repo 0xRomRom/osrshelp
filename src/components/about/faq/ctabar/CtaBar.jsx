@@ -72,7 +72,7 @@ const CtaBar = ({ spanData }) => {
           <button className={stl.buyLobsterCta} onClick={handleBuyMeALobster}>
             <img
               src="./foods/Lobster.webp"
-              alt="Lobster image"
+              alt="Lobster"
               className={stl.lobsterIcon}
             />
             Buy me a lobster

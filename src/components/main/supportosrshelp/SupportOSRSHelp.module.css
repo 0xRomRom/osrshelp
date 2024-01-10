@@ -20,17 +20,127 @@
   width: 95%;
   left: 2.5%;
   background-color: red;
-  padding: 1rem 0rem;
+  padding: 2rem 0rem;
   border-radius: 0.4rem;
   background-image: url("../../../../public/backgrounds/Elven.webp");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .supportModal {
   width: 40rem;
   height: 40rem;
-  background-color: rgba(0, 0, 0, 0.85);
-  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.supportersList {
+  width: 20rem;
+  height: 40rem;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius: 0.4rem;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.supportPar {
+  color: rgb(209, 209, 209);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.optionsBlock {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 10px;
+  background-color: black;
+}
+
+.option {
+  position: relative;
+  width: 49%;
+  height: 49%;
+  background-color: rgba(128, 128, 128, 0.135);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.option:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+.option:hover .lobsterImg {
+  transform: scale(1.2);
+}
+.option:hover .optionSpan {
+  color: white;
+}
+.option:hover .xIcon {
+  transform: scale(1.2);
+  color: white;
+}
+
+.option:hover .etherIcon {
+  transform: scale(1.2);
+  color: white;
+}
+.option:hover .runeHelm {
+  transform: scale(1.15);
+  color: white;
+}
+
+.lobsterImg {
+  /* transform: scale(2); */
+  padding-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+  width: 50px;
+}
+
+.optionSpan {
+  transition: all 0.2s ease-in-out;
+  color: gray;
+}
+
+.xIcon {
+  transition: all 0.2s ease-in-out;
+  font-size: 45px;
+  color: gray;
+  margin-bottom: 1rem;
+}
+
+.etherIcon {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 1rem;
+  /* background-color: gray; */
+  transition: all 0.2s ease-in-out;
+}
+
+.runeHelm {
+  width: 35px;
+  padding-bottom: 0.6rem;
+  transition: all 0.2s ease-in-out;
 }

@@ -11,8 +11,7 @@ import { PaginationContext } from "../../../utils/paginationstate/PaginationProv
 const Pagination = ({ navTo }) => {
   const { loggedInUser, setLoggedInUser, premiumUser } =
     useContext(AuthContext);
-  const { mainState, setMainState, subState, setSubState } =
-    useContext(PaginationContext);
+  const { mainState, subState, setSubState } = useContext(PaginationContext);
   const [displayedSubstate, setDisplayedSubstate] = useState(subState);
   const navigate = useNavigate();
 

@@ -1,5 +1,4 @@
 import stl from "./Nav.module.css";
-import logo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 import hometeleport from "../../assets/icons/Hometeleport.webp";
 import stats from "../../assets/icons/Stats.webp";
 import combatoptions from "../../assets/icons/Combatoptions.webp";
@@ -69,7 +68,7 @@ const Nav = (props) => {
       setSubState(null);
     }
     window.scrollTo(0, 0);
-  }, [location, props]);
+  }, [location, props, setMainState, setSubState]);
 
   const handleTabSwitch = (path) => {
     navigate(path);

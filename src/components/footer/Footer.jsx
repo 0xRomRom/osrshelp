@@ -1,16 +1,8 @@
 import stl from "./Footer.module.css";
 import logo from "../../assets/characters/Ancient_staff_equipped_male.webp";
-import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const navigate = useNavigate();
-
-  const navTo = (path) => {
-    navigate(path);
-    window.scrollTo(0, 0);
-  };
-
   return (
     <footer className={stl.footer}>
       <div className={stl.leftBlock}>

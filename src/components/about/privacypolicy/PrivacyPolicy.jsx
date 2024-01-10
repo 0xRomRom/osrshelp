@@ -118,7 +118,7 @@ const PrivacyPolicy = () => {
                 <u>
                   <a
                     href="https://www.osrshelp.com/"
-                    rel="external nofollow noopener"
+                    rel="external nofollow noopener noreferrer"
                     target="_blank"
                   >
                     https://www.osrshelp.com
@@ -221,6 +221,7 @@ const PrivacyPolicy = () => {
             <a
               href="https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking"
               target="_blank"
+              rel="noreferrer"
             >
               Free Privacy Policy website
             </a>{" "}
@@ -572,7 +573,7 @@ const PrivacyPolicy = () => {
                 <u>
                   <a
                     href="https://www.osrshelp.com/#/contact"
-                    rel="external nofollow noopener"
+                    rel="external nofollow noopener noreferrer"
                     target="_blank"
                   >
                     https://www.osrshelp.com/#/contact

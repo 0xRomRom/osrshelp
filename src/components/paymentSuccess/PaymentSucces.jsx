@@ -1,6 +1,5 @@
 import stl from "./PaymentSucces.module.css";
 import { useNavigate } from "react-router-dom";
-import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 import parthat from "../../assets/random/Blue_partyhat.webp";
 import HomeButton from "../../utils/homebutton/HomeButton";
 

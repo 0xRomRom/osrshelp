@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Spinner from "../../utils/loadingspinner/Spinner";
 
-import mainLogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 import HomeButton from "../../utils/homebutton/HomeButton";
 
 import { useContext } from "react";

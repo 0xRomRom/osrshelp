@@ -1,6 +1,5 @@
-import { useEffect, useState, useCallback } from "react";
+import { useState } from "react";
 import { createContext } from "react";
-import supabase from "../supabase/supabase";
 
 export const PaginationContext = createContext();
 const PaginationProvider = ({ children }) => {

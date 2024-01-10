@@ -62,7 +62,6 @@
   flex-direction: column;
   color: gray;
   text-align: center;
-  padding-top: 1rem;
   position: relative;
 }
 .profitBox {
@@ -313,4 +312,8 @@
   align-items: center;
   gap: 0.5rem;
   user-select: none;
+}
+
+.queueSpan {
+  padding: 0.5rem 0rem;
 }
