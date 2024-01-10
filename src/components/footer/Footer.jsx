@@ -32,7 +32,6 @@ const Footer = () => {
             <li className={stl.footLink}>Terms & Conditions</li>
           </Link>
           <li className={stl.footLink}>Contact</li>
-          <li className={stl.footLink}>Help</li>
           <li className={stl.footLink}>Report issue</li>
         </ul>
         <ul className={stl.footCol}>

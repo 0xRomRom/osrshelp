@@ -16,12 +16,6 @@ const TermsConditions = () => {
         </span>
         <h1 className={stl.hero}>OSRS Help Terms & Conditions</h1>
         <div className={stl.policyWrap}>
-          <h2>
-            <strong>Terms and Conditions</strong>
-          </h2>
-
-          <p>Welcome to OSRS Help!</p>
-
           <p>
             These terms and conditions outline the rules and regulations for the
             use of OSRS Help's Website, located at https://www.osrshelp.com.

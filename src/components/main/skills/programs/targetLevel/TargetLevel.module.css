@@ -40,8 +40,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: rgb(32, 46, 57);
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+  background-color: VAR(--dark-bg);
+  box-shadow: 0px 0px 5px #282727;
   border-radius: 0.8rem;
   padding-right: 1rem;
   margin-right: 1rem;
@@ -75,8 +75,8 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 0.5rem;
-  background-color: rgb(32, 46, 57);
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+  background-color: var(--dark-bg);
+  box-shadow: 0px 0px 5px #282727;
   padding: 1rem 1rem;
   height: 6rem;
   border-radius: 0.8rem;
