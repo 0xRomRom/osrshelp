@@ -63,6 +63,11 @@ const Nav = (props) => {
       setMainState("Profit Alching");
       setSubState(null);
     }
+    if (path === "/supportosrshelp") {
+      setActiveTab("supportosrshelp");
+      setMainState("Support OSRS Help");
+      setSubState(null);
+    }
     window.scrollTo(0, 0);
   }, [location, props]);
 
@@ -185,6 +190,23 @@ const Nav = (props) => {
             >
               <img src={worldicon} alt="World map icon" className={stl.icon} />
               World map
+            </li>
+          </Link>
+          <Link to="/supportosrshelp" className={stl.link}>
+            <li
+              className={`${stl.navitem} ${
+                activeTab === "supportosrshelp" ? stl.active : ""
+              }`}
+              onClick={() =>
+                handleTabSwitch("supportosrshelp", "Support OSRS Help")
+              }
+            >
+              <img
+                src="./skillicons/Hitpoints.webp"
+                alt="World map icon"
+                className={stl.icon}
+              />
+              Support OSRS Help
             </li>
           </Link>
         </ul>

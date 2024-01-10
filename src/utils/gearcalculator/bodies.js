@@ -1370,7 +1370,7 @@ const BODIES = [
   },
   {
     type: "Magic",
-    name: "Decorative armour (Magic top)",
+    name: "Decorative armour",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -1407,7 +1407,7 @@ const BODIES = [
   },
   {
     type: "Ranged",
-    name: "Decorative armour (Ranged top)",
+    name: "Decorative armour",
     defLvl: 0,
     rangedLvl: 30,
     prayerLvl: 0,
@@ -1444,7 +1444,7 @@ const BODIES = [
   },
   {
     type: "Melee",
-    name: "Decorative armour (Red platebody)",
+    name: "Decorative armour",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -1481,7 +1481,7 @@ const BODIES = [
   },
   {
     type: "Melee",
-    name: "Decorative armour (White platebody)",
+    name: "Decorative armour",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -4737,7 +4737,7 @@ const BODIES = [
   },
   {
     type: "Melee",
-    name: "Decorative armour (Gold platebody)",
+    name: "Decorative armour",
     defLvl: 30,
     rangedLvl: 0,
     prayerLvl: 0,

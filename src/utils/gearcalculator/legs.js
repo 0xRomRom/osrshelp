@@ -1407,7 +1407,7 @@ const LEGS = [
   },
   {
     type: "Magic",
-    name: "Decorative armour (magic legs)",
+    name: "Decorative armour",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -1444,7 +1444,7 @@ const LEGS = [
   },
   {
     type: "Ranged",
-    name: "Decorative armour (ranged legs)",
+    name: "Decorative armour",
     defLvl: 0,
     rangedLvl: 30,
     prayerLvl: 0,
@@ -3294,7 +3294,7 @@ const LEGS = [
   },
   {
     type: "Melee",
-    name: "Decorative armour (red platelegs)",
+    name: "Decorative armour",
     defLvl: 5,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -3331,7 +3331,7 @@ const LEGS = [
   },
   {
     type: "Melee",
-    name: "Decorative armour (red plateskirt)",
+    name: "Decorative armour",
     defLvl: 5,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -4071,7 +4071,7 @@ const LEGS = [
   },
   {
     type: "Melee",
-    name: "Decorative armour (white platelegs)",
+    name: "Decorative armour",
     defLvl: 20,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -4108,7 +4108,7 @@ const LEGS = [
   },
   {
     type: "Melee",
-    name: "Decorative armour (white plateskirt)",
+    name: "Decorative armour",
     defLvl: 20,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -5292,7 +5292,7 @@ const LEGS = [
   },
   {
     type: "Melee",
-    name: "Decorative armour (gold platelegs)",
+    name: "Decorative armour",
     defLvl: 30,
     rangedLvl: 0,
     prayerLvl: 0,
@@ -5329,7 +5329,7 @@ const LEGS = [
   },
   {
     type: "Melee",
-    name: "Decorative armour (gold plateskirt)",
+    name: "Decorative armour",
     defLvl: 30,
     rangedLvl: 0,
     prayerLvl: 0,

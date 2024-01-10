@@ -18,6 +18,7 @@ import WorldMap from "./components/main/worldmap/WorldMap";
 import MethodPage from "./components/main/moneymakers/methodpage/MethodPage";
 import CombatCalculator from "./components/main/combatcalculator/CombatCalculator";
 import ProfitAlching from "./components/main/profitalching/ProfitAlching";
+import SupportOSRSHelp from "./components/main/supportosrshelp/SupportOSRSHelp";
 
 import FAQ from "./components/about/faq/Faq";
 import PrivacyPolicy from "./components/about/privacypolicy/PrivacyPolicy";
@@ -29,9 +30,6 @@ const App = () => {
   const [skills, setSkills] = useState(null);
   const [skillsExp, setSkillsExp] = useState(null);
   const [playerName, setPlayerName] = useState(null);
-
-  const [mainState, setMainState] = useState("Home");
-  const [subState, setSubState] = useState(null);
   const [moneyMaker, setMoneyMaker] = useState(null);
 
   return (
@@ -145,6 +143,14 @@ const App = () => {
                 element={
                   <MainLayout playerName={playerName}>
                     <WorldMap />
+                  </MainLayout>
+                }
+              />
+              <Route
+                path="/supportosrshelp"
+                element={
+                  <MainLayout playerName={playerName}>
+                    <SupportOSRSHelp />
                   </MainLayout>
                 }
               />

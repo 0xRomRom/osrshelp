@@ -45,20 +45,22 @@
 }
 
 .loginBtn {
-  width: 7rem;
+  width: 6rem;
   height: 2.5rem;
   border-radius: 0.4rem;
   background-color: var(--blue-main);
   color: black;
   border: none;
   outline: none;
-  color: black;
+  color: white;
   font-weight: bold;
   cursor: pointer;
+  /* font-size: 16px; */
 }
 
 .loginBtn:hover {
-  color: white;
+  /* color: black; */
+  background: linear-gradient(90deg, var(--blue-main), #0c61b0);
 }
 
 .upgradeCta {
