@@ -1,0 +1,21 @@
+.modal {
+  color: rgb(205, 205, 205);
+  font-size: 18px;
+  padding: 2rem;
+  min-height: 500px;
+  max-height: 500px;
+  background-color: rgb(32, 46, 57);
+  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+  /* width: 350px; */
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
+
+.runechat {
+  color: gray;
+  text-align: center;
+}

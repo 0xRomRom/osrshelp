@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import stl from "./Home.module.css";
-
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import welcometxt from "../../../assets/Welcometxt.png";
 
 import LoginBox from "./loginbox/LoginBox";
@@ -8,6 +8,8 @@ import UserBox from "./userbox/UserBox";
 import TotalUsers from "./totalUsersBox/TotalUsers";
 import OSRSRadio from "./radio/OSRSRadio";
 import Pagination from "../pagination/Pagination";
+import RuneChat from "./runechat/RuneChat";
+import LatestUpdates from "./latestupdates/LatestUpdates";
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
@@ -27,23 +29,32 @@ const Home = (props) => {
           <img src={welcometxt} alt="Welcome Text" className={stl.welcometxt} />
         </div>
         <div className={stl.modalbottom}>
-          {skillsFetched ? (
-            <UserBox
-              skills={props.skills}
-              skillsExp={props.skillsExp}
-              playerName={props.playerName}
-              setPlayerName={props.setPlayerName}
-              switchTab={setSkillsFetched}
-            />
-          ) : (
-            <LoginBox
-              setSkills={props.setSkills}
-              setSkillsExp={props.setSkillsExp}
-              setPlayerName={props.setPlayerName}
-            />
-          )}
-          <TotalUsers />
-          <OSRSRadio />
+          <ResponsiveMasonry
+            className={stl.masonry}
+            columnsCountBreakPoints={{ 350: 1, 750: 2, 1200: 3 }}
+          >
+            <Masonry className={stl.masonGap}>
+              {skillsFetched ? (
+                <UserBox
+                  skills={props.skills}
+                  skillsExp={props.skillsExp}
+                  playerName={props.playerName}
+                  setPlayerName={props.setPlayerName}
+                  switchTab={setSkillsFetched}
+                />
+              ) : (
+                <LoginBox
+                  setSkills={props.setSkills}
+                  setSkillsExp={props.setSkillsExp}
+                  setPlayerName={props.setPlayerName}
+                />
+              )}
+              <LatestUpdates />
+              <TotalUsers />
+              <RuneChat />
+              <OSRSRadio />
+            </Masonry>
+          </ResponsiveMasonry>
         </div>
       </div>
     </>

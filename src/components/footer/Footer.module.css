@@ -50,14 +50,42 @@
 .footCol {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   list-style: none;
   gap: 0.2rem;
+  height: 100%;
 }
 
 .footTitle {
   color: rgb(190, 190, 190);
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(30, 29, 29);
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+  border-radius: 0.4rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+.footTitleSitemap {
+  color: rgb(190, 190, 190);
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  background-color: rgb(30, 29, 29);
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0px;
+  border-radius: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+.footTitleHidden {
+  opacity: 0;
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 1rem;
@@ -75,4 +103,18 @@
 
 .link {
   text-decoration: none;
+}
+
+.siteMapWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.linksRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.5rem;
 }

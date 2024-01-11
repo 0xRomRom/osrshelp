@@ -3,7 +3,9 @@
   font-size: 18px;
   padding: 2rem;
   width: 350px;
-  height: 254px;
+  min-height: 250px;
+  max-height: 250px;
+
   background-color: rgb(32, 46, 57);
   background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
   margin: 1rem;

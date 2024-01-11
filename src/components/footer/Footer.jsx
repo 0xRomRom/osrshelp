@@ -30,33 +30,42 @@ const Footer = () => {
             <li className={stl.footLink}>Report issue</li>
           </Link>
         </ul>
-        <ul className={stl.footCol}>
-          <span className={stl.footTitle}>Sitemap</span>
-          <Link to="/" className={stl.link}>
-            <li className={stl.footLink}>Home</li>
-          </Link>
-          <Link to="/skillcalculators" className={stl.link}>
-            <li className={stl.footLink}>Skill Calculators</li>
-          </Link>
-          <Link to="/gearcalculator" className={stl.link}>
-            <li className={stl.footLink}>Gear Calculator</li>
-          </Link>
-          <Link to="/combatcalculator" className={stl.link}>
-            <li className={stl.footLink}>Combat Calculator</li>
-          </Link>
-          <Link to="/moneymakers" className={stl.link}>
-            <li className={stl.footLink}>Money Makers</li>
-          </Link>
-          <Link to="/profitalching" className={stl.link}>
-            <li className={stl.footLink}>Profit Alching</li>
-          </Link>
-          <Link to="/xptable" className={stl.link}>
-            <li className={stl.footLink}>XP Table</li>
-          </Link>
-          <Link to="/worldmap" className={stl.link}>
-            <li className={stl.footLink}>World map</li>
-          </Link>
-        </ul>
+        <div className={stl.siteMapWrapper}>
+          <span className={stl.footTitleSitemap}>Sitemap</span>
+          <div className={stl.linksRow}>
+            <ul className={stl.footCol}>
+              <Link to="/" className={stl.link}>
+                <li className={stl.footLink}>Home</li>
+              </Link>
+              <Link to="/skillcalculators" className={stl.link}>
+                <li className={stl.footLink}>Skill Calculators</li>
+              </Link>
+              <Link to="/gearcalculator" className={stl.link}>
+                <li className={stl.footLink}>Gear Calculator</li>
+              </Link>
+              <Link to="/combatcalculator" className={stl.link}>
+                <li className={stl.footLink}>Combat Calculator</li>
+              </Link>
+              <Link to="/moneymakers" className={stl.link}>
+                <li className={stl.footLink}>Money Makers</li>
+              </Link>
+              <Link to="/profitalching" className={stl.link}>
+                <li className={stl.footLink}>Profit Alching</li>
+              </Link>
+              <Link to="/xptable" className={stl.link}>
+                <li className={stl.footLink}>XP Table</li>
+              </Link>
+              <Link to="/worldmap" className={stl.link}>
+                <li className={stl.footLink}>World map</li>
+              </Link>
+            </ul>
+            <ul className={stl.footCol}>
+              <Link to="/supportosrshelp" className={stl.link}>
+                <li className={stl.footLink}>Support OSRS Help</li>
+              </Link>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   );
