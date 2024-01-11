@@ -44,6 +44,20 @@
   color: orange;
   width: 15%;
   text-shadow: 0px 0px 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.etherAmount {
+  color: orange;
+  width: 15%;
+  text-shadow: 0px 0px 10px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  padding-left: 2.4rem;
 }
 
 .modCrown {
@@ -65,7 +79,7 @@
   width: 6rem;
   /* border: 1px solid #733089; */
   border-radius: 0.4rem;
-  box-shadow: 0px 0px 5px #733089;
+  user-select: none;
 }
 
 .filterCta {

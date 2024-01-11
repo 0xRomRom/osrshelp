@@ -1,5 +1,6 @@
 import { useState } from "react";
 import stl from "./SupportersModal.module.css";
+import { LOBSTERSUPPORTERS, ETHEREUMSUPPORTERS } from "./supporterslist";
 
 const SupportersModal = () => {
   const [activeList, setActiveList] = useState("Lobster");
@@ -32,38 +33,52 @@ const SupportersModal = () => {
           />
         </button>
       </div>
-      <div className={stl.supportersList}>
-        <div className={stl.supporter}>
-          <img src="./random/Mod.webp" alt="Mod" className={stl.modCrown} />
-          <span className={stl.userName}>King Rom II</span>
-          <span className={stl.amount}>x12</span>
-          <img
-            src="./foods/Lobster.webp"
-            alt="Lobster"
-            className={stl.lobsterImg}
-          />
+      {activeList === "Lobster" && (
+        <div className={stl.supportersList}>
+          {LOBSTERSUPPORTERS.map((item) => {
+            return (
+              <div className={stl.supporter} key={item.name}>
+                <img
+                  src="./random/Mod.webp"
+                  alt="Mod"
+                  className={stl.modCrown}
+                />
+                <span className={stl.userName}>{item.name}</span>
+                <span className={stl.amount}>x{item.amount}</span>
+                <img
+                  src="./foods/Lobster.webp"
+                  alt="Lobster"
+                  className={stl.lobsterImg}
+                />
+              </div>
+            );
+          })}
         </div>
-        <div className={stl.supporter}>
-          <img src="./random/Mod.webp" alt="Mod" className={stl.modCrown} />
-          <span className={stl.userName}>Adnres M</span>
-          <span className={stl.amount}>x9</span>
-          <img
-            src="./foods/Lobster.webp"
-            alt="Lobster"
-            className={stl.lobsterImg}
-          />
+      )}
+      {activeList === "Ethereum" && (
+        <div className={stl.supportersList}>
+          {ETHEREUMSUPPORTERS.map((item) => {
+            return (
+              <div className={stl.supporter} key={item.name}>
+                <img
+                  src="./random/Mod.webp"
+                  alt="Mod"
+                  className={stl.modCrown}
+                />
+                <span className={stl.userName}>{item.name}</span>
+                <span className={stl.etherAmount}>
+                  {item.amount}
+                  <img
+                    src="./random/Ethereum.svg"
+                    alt="Ethereum"
+                    className={stl.etherCta}
+                  />
+                </span>
+              </div>
+            );
+          })}
         </div>
-        <div className={stl.supporter}>
-          <img src="./random/Mod.webp" alt="Mod" className={stl.modCrown} />
-          <span className={stl.userName}>DarkCharger55</span>
-          <span className={stl.amount}>x0</span>
-          <img
-            src="./foods/Lobster.webp"
-            alt="Lobster"
-            className={stl.lobsterImg}
-          />
-        </div>
-      </div>
+      )}
     </div>
   );
 };
