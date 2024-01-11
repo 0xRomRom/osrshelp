@@ -1,12 +1,171 @@
 .contact {
-  width: 100vw;
+  position: relative;
   height: 100vh;
+  width: 100vw;
   background: linear-gradient(
     100deg,
     rgb(10, 14, 24),
     rgb(13, 20, 31),
-    rgb(13, 20, 31),
     rgb(10, 14, 24),
+    rgb(9, 13, 20),
+    rgb(8, 12, 20),
     rgb(11, 14, 24)
   );
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactModal {
+  position: relative;
+  width: 40rem;
+  height: 40rem;
+  background-color: rgb(32, 46, 57);
+  border-radius: 0.4rem;
+  background-image: url("../../../public/backgrounds/Grass.webp");
+  background-position: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+.contactHero {
+  text-align: center;
+  font-size: 48px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+  font-weight: bold;
+}
+
+.innerModal {
+  position: relative;
+  width: 97%;
+  left: 1.5%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  flex: 1;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.homeArrow {
+  font-size: 32px;
+  color: white;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.homeSpan {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0.5rem;
+  left: 0.5rem;
+  cursor: pointer;
+}
+
+.homeSpan:hover .homeArrow {
+  color: white;
+}
+.homeSpan:hover .homeTxt {
+  opacity: 1;
+}
+
+.homeTxt {
+  position: relative;
+  top: -0.3rem;
+  opacity: 0;
+  color: rgb(226, 226, 226);
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.subjectBar {
+  /* background-color: blue; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.inputSpan {
+  color: rgb(200, 200, 200);
+  margin-bottom: 0.5rem;
+}
+
+.inputStl {
+  min-height: 3rem;
+  width: 100%;
+  background-color: var(--dark-bg);
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  color: rgb(218, 218, 218);
+  padding-left: 1rem;
+  font-size: 24px;
+  box-shadow: 0px 0px 5px rgb(58, 51, 51);
+}
+
+.inputStl:focus {
+  box-shadow: 0px 0px 5px var(--blue-main);
+}
+
+.inputWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anonBtn {
+  height: 2.9rem;
+  width: 3rem;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  border: none;
+  outline: none;
+  background-color: #0d73d2;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.anonBtn:hover {
+  background-color: var(--blue-main);
+}
+
+.textAreaWrap {
+  position: relative;
+  /* background-color: red; */
+  width: 100%;
+  height: 100%;
+}
+
+.textAreaInput {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: var(--dark-bg);
+  border-radius: 0.4rem;
+  padding: 10px;
+  color: rgb(218, 218, 218);
+  font-size: 24px;
+}
+
+.textAreaInput:focus {
+  box-shadow: 0px 0px 5px var(--blue-main);
 }
