@@ -26,7 +26,6 @@ const Nav = (props) => {
     if (path === "/" || path === "/home") {
       setActiveTab("/");
       setMainState("Home");
-      setSubState(null);
     }
     if (path === "/skillcalculators") {
       setActiveTab("skills");
@@ -35,38 +34,33 @@ const Nav = (props) => {
     if (path === "/gearcalculator") {
       setActiveTab("gearcalculator");
       setMainState("Gearcalculator");
-      setSubState(null);
     }
     if (path === "/xptable") {
       setActiveTab("xptable");
       setMainState("XP Table");
-      setSubState(null);
     }
     if (path === "/moneymakers") {
       setActiveTab("moneymakers");
       setMainState("Money Makers");
-      setSubState(null);
     }
     if (path === "/combatcalculator") {
       setActiveTab("combatcalculator");
       setMainState("Combat Calculator");
-      setSubState(null);
     }
     if (path === "/worldmap") {
       setActiveTab("worldmap");
       setMainState("World map");
-      setSubState(null);
     }
     if (path === "/profitalching") {
       setActiveTab("profitalching");
       setMainState("Profit Alching");
-      setSubState(null);
     }
     if (path === "/supportosrshelp") {
       setActiveTab("supportosrshelp");
       setMainState("Support OSRS Help");
-      setSubState(null);
     }
+
+    setSubState(null);
     window.scrollTo(0, 0);
   }, [location, props, setMainState, setSubState]);
 
