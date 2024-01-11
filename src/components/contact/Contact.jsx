@@ -18,6 +18,7 @@ const Contact = () => {
     subject: "",
     email: "",
     message: "",
+    time: "",
   });
 
   const updateFormState = (key, val) => {
@@ -30,6 +31,8 @@ const Contact = () => {
   };
 
   const submitForm = () => {
+    const now = new Date().toLocaleString();
+
     setError("");
     if (formState.subject.length === 0) {
       setError(subjectError);
@@ -44,9 +47,15 @@ const Contact = () => {
       setError(messageError);
       return;
     }
-    console.log("submitting");
+
+    setFormState((prevState) => {
+      return {
+        ...prevState,
+        time: now,
+      };
+    });
+
     setFormSubmitted(true);
-    console.log(formState);
   };
 
   const toggleAnonForm = () => {
@@ -59,6 +68,10 @@ const Contact = () => {
   useEffect(() => {
     setFormSubmitted(false);
   }, []);
+
+  useEffect(() => {
+    console.log(formState);
+  }, [formSubmitted]);
 
   const navigate = useNavigate();
   return (
