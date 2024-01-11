@@ -1,18 +1,18 @@
 .modal {
   color: rgb(205, 205, 205);
   font-size: 18px;
-  padding: 2rem;
   padding-top: 1rem;
   min-height: 500px;
   max-height: 500px;
   background-color: rgb(32, 46, 57);
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+  /* background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27)); */
+  background-color: rgb(32, 46, 57);
   /* width: 350px; */
   border-radius: 0.8rem;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
   position: relative;
 }
 
@@ -20,4 +20,22 @@
   color: gray;
   text-align: center;
   font-size: 20px;
+}
+
+.chatOutput {
+  width: 95%;
+  left: 2.5%;
+  height: 87.5%;
+  background-color: var(--dark-bg);
+  /* margin: 0 !important; */
+  border-radius: 0.4rem;
+}
+
+.chatInput {
+  width: 95%;
+  left: 2.5%;
+  height: 12.5%;
+  background-color: var(--dark-bg);
+  margin-top: 0px !important;
+  border-radius: 0.4rem;
 }
