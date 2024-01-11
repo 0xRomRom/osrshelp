@@ -43,58 +43,72 @@ const SupportersModal = () => {
         </button>
       </div>
       {activeList === "Lobster" && (
-        <div className={stl.supportersList}>
-          {LOBSTERSUPPORTERS.map((item) => {
-            const randomColor = getRandomColor();
-            const userNameStyle = { color: randomColor };
-            return (
-              <div className={stl.supporter} key={item.name}>
-                <img
-                  src="./random/Mod.webp"
-                  alt="Mod"
-                  className={stl.modCrown}
-                />
-                <span className={stl.userName} style={userNameStyle}>
-                  {item.name}
-                </span>
-                <span className={stl.amount}>x{item.amount}</span>
-                <img
-                  src="./foods/Lobster.webp"
-                  alt="Lobster"
-                  className={stl.lobsterImg}
-                />
-              </div>
-            );
-          })}
-        </div>
+        <>
+          <div className={stl.supportersList}>
+            {LOBSTERSUPPORTERS.map((item) => {
+              const randomColor = getRandomColor();
+              const userNameStyle = { color: randomColor };
+              return (
+                <div className={stl.supporter} key={item.name}>
+                  <img
+                    src="./random/Mod.webp"
+                    alt="Mod"
+                    className={stl.modCrown}
+                  />
+                  <span className={stl.userName} style={userNameStyle}>
+                    {item.name}
+                  </span>
+                  <span className={stl.amount}>x{item.amount}</span>
+                  <img
+                    src="./foods/Lobster.webp"
+                    alt="Lobster"
+                    className={stl.lobsterImg}
+                  />
+                </div>
+              );
+            })}
+          </div>
+          <div className={stl.becomeFirstSupporter}>
+            <span className={stl.firstSupporter}>
+              Become the first Lobster supporter!
+            </span>
+          </div>
+        </>
       )}
       {activeList === "Ethereum" && (
-        <div className={stl.supportersList}>
-          {ETHEREUMSUPPORTERS.map((item) => {
-            const randomColor = getRandomColor();
-            const userNameStyle = { color: randomColor };
-            return (
-              <div className={stl.supporter} key={item.name}>
-                <img
-                  src="./random/Mod.webp"
-                  alt="Mod"
-                  className={stl.modCrown}
-                />
-                <span className={stl.userName} style={userNameStyle}>
-                  {item.name}
-                </span>
-                <span className={stl.etherAmount}>
-                  {item.amount}
+        <>
+          <div className={stl.supportersList}>
+            {ETHEREUMSUPPORTERS.map((item) => {
+              const randomColor = getRandomColor();
+              const userNameStyle = { color: randomColor };
+              return (
+                <div className={stl.supporter} key={item.name}>
                   <img
-                    src="./random/Ethereum.svg"
-                    alt="Ethereum"
-                    className={stl.etherCta}
+                    src="./random/Mod.webp"
+                    alt="Mod"
+                    className={stl.modCrown}
                   />
-                </span>
-              </div>
-            );
-          })}
-        </div>
+                  <span className={stl.userName} style={userNameStyle}>
+                    {item.name}
+                  </span>
+                  <span className={stl.etherAmount}>
+                    {item.amount}
+                    <img
+                      src="./random/Ethereum.svg"
+                      alt="Ethereum"
+                      className={stl.etherCta}
+                    />
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+          <div className={stl.becomeFirstSupporter}>
+            <span className={stl.firstSupporter}>
+              Become the first Ethereum supporter!
+            </span>
+          </div>
+        </>
       )}
     </div>
   );

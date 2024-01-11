@@ -1,6 +1,5 @@
 import stl from "./RunecraftGrid.module.css";
 import RUNECRAFTLIST from "../../../../../../utils/runecraftList";
-import woodcuttingIcon from "../../../../../../assets/skillicons/Woodcutting.webp";
 import coinsLogo from "../../../../../../assets/icons/Donate.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
@@ -179,7 +178,7 @@ const RunecraftGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortTree}>
-          <img src={woodcuttingIcon} alt="Tree Logo" className={stl.miniLogo} />{" "}
+          <img src={runecraftIcon} alt="Tree Logo" className={stl.miniLogo} />{" "}
           Rune
         </span>
         <span onClick={sortMembers}>

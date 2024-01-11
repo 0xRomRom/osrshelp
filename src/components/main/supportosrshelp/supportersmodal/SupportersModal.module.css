@@ -122,3 +122,18 @@
 .actBtn {
   background-color: #411a71;
 }
+
+.becomeFirstSupporter {
+  position: relative;
+  height: 100%;
+  width: 96%;
+  left: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstSupporter {
+  color: gray;
+  padding-bottom: 7rem;
+}
