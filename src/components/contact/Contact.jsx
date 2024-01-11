@@ -7,6 +7,11 @@ import { useState } from "react";
 const Contact = () => {
   const [anonForm, setAnonForm] = useState(false);
   const [error, setError] = useState("");
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  const emailError = "Please enter your email or submit as anon";
+  const subjectError = "Please enter a subject";
+  const messageError = "Please enter a message";
 
   const [formState, setFormState] = useState({
     subject: "",
@@ -26,14 +31,24 @@ const Contact = () => {
   const submitForm = () => {
     setError("");
     if (anonForm && formState.email.length === 0) {
-      setError("Please enter your email or submit as anon");
+      setError(emailError);
       return;
     }
+    if (formState.subject.length === 0) {
+      setError(subjectError);
+      return;
+    }
+    if (formState.message.length < 10) {
+      setError(messageError);
+      return;
+    }
+    setFormSubmitted(true);
+    console.log(formState);
   };
 
   const toggleAnonForm = () => {
     setAnonForm(!anonForm);
-    if (error === "Please enter your email or submit as anon") {
+    if (error === emailError) {
       setError("");
     }
   };
@@ -48,56 +63,62 @@ const Contact = () => {
           <span className={stl.homeTxt}>Home</span>
         </span>
         <h1 className={stl.contactHero}>Contact</h1>
-        <form className={stl.innerModal}>
-          <div className={stl.subjectBar}>
-            <span className={stl.inputSpan}>Subject</span>
-            <input
-              type="text"
-              className={stl.inputStl}
-              placeholder="What do you want to let us know?"
-              onChange={(e) => updateFormState("subject", e.target.value)}
-            />
-          </div>
-          <div className={stl.subjectBar}>
-            <span className={stl.inputSpan}>Email</span>
-            <div className={stl.inputWrapper}>
-              {anonForm && (
-                <input
-                  type="email"
-                  className={stl.inputStl}
-                  placeholder="osrsuser@email.com"
-                  onChange={(e) => updateFormState("email", e.target.value)}
-                  style={{
-                    border:
-                      error === "Please enter your email or submit as anon"
-                        ? "2px solid red"
-                        : "",
-                  }}
-                />
-              )}
-              <button
-                className={stl.anonBtn}
-                onClick={toggleAnonForm}
-                style={{ left: anonForm ? "initial" : "0" }}
-              >
-                Anon
+        {!formSubmitted && (
+          <form className={stl.innerModal}>
+            <div className={stl.subjectBar}>
+              <span className={stl.inputSpan}>Subject</span>
+              <input
+                type="text"
+                className={stl.inputStl}
+                placeholder="What do you want to let us know?"
+                onChange={(e) => updateFormState("subject", e.target.value)}
+                style={{
+                  border: error === subjectError ? "2px solid red" : "",
+                }}
+              />
+            </div>
+            <div className={stl.subjectBar}>
+              <span className={stl.inputSpan}>Email</span>
+              <div className={stl.inputWrapper}>
+                {anonForm && (
+                  <input
+                    type="email"
+                    className={stl.inputStl}
+                    placeholder="osrsuser@email.com"
+                    onChange={(e) => updateFormState("email", e.target.value)}
+                    style={{
+                      border: error === emailError ? "2px solid red" : "",
+                    }}
+                  />
+                )}
+                <button
+                  className={stl.anonBtn}
+                  onClick={toggleAnonForm}
+                  style={{ left: anonForm ? "initial" : "0" }}
+                >
+                  Anon
+                </button>
+              </div>
+            </div>
+            <span className={stl.inputSpan}>Message</span>
+            <div className={stl.textAreaWrap}>
+              <textarea
+                maxLength="500"
+                className={stl.textAreaInput}
+                placeholder="Leave your message here"
+                onChange={(e) => updateFormState("message", e.target.value)}
+                style={{
+                  border: error === messageError ? "2px solid red" : "",
+                }}
+              ></textarea>
+            </div>
+            <div className={stl.submitBox}>
+              <button className={stl.submitCta} onClick={submitForm}>
+                Submit
               </button>
             </div>
-          </div>
-          <span className={stl.inputSpan}>Message</span>
-          <div className={stl.textAreaWrap}>
-            <textarea
-              className={stl.textAreaInput}
-              placeholder="Leave your message here"
-              onChange={(e) => updateFormState("message", e.target.value)}
-            ></textarea>
-          </div>
-          <div className={stl.submitBox}>
-            <button className={stl.submitCta} onClick={submitForm}>
-              Submit
-            </button>
-          </div>
-        </form>
+          </form>
+        )}
       </div>
     </div>
   );
