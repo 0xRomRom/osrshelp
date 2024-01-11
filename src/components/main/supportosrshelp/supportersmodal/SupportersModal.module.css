@@ -22,16 +22,32 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  overflow-y: scroll;
 }
 
 .supporter {
-  height: 2.5rem;
+  min-height: 2.5rem;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 1rem;
   background-color: var(--dark-bg);
+}
+
+.supporter:hover {
+  background-color: var(--blue-main);
+}
+.supporter:hover:nth-child(odd) {
+  background-color: var(--blue-main);
+}
+
+.supportersList .supporter:nth-child(even):hover {
+  background-color: var(--blue-main);
+}
+
+.supporter:hover .userName {
+  color: white !important;
 }
 
 .userName {
@@ -43,7 +59,7 @@
 .amount {
   color: orange;
   width: 15%;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 5px black;
   display: flex;
   justify-content: center;
   align-items: center;

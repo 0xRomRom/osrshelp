@@ -2,6 +2,15 @@ import { useState } from "react";
 import stl from "./SupportersModal.module.css";
 import { LOBSTERSUPPORTERS, ETHEREUMSUPPORTERS } from "./supporterslist";
 
+const getRandomColor = () => {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
 const SupportersModal = () => {
   const [activeList, setActiveList] = useState("Lobster");
   return (
@@ -36,6 +45,8 @@ const SupportersModal = () => {
       {activeList === "Lobster" && (
         <div className={stl.supportersList}>
           {LOBSTERSUPPORTERS.map((item) => {
+            const randomColor = getRandomColor();
+            const userNameStyle = { color: randomColor };
             return (
               <div className={stl.supporter} key={item.name}>
                 <img
@@ -43,7 +54,9 @@ const SupportersModal = () => {
                   alt="Mod"
                   className={stl.modCrown}
                 />
-                <span className={stl.userName}>{item.name}</span>
+                <span className={stl.userName} style={userNameStyle}>
+                  {item.name}
+                </span>
                 <span className={stl.amount}>x{item.amount}</span>
                 <img
                   src="./foods/Lobster.webp"
@@ -58,6 +71,8 @@ const SupportersModal = () => {
       {activeList === "Ethereum" && (
         <div className={stl.supportersList}>
           {ETHEREUMSUPPORTERS.map((item) => {
+            const randomColor = getRandomColor();
+            const userNameStyle = { color: randomColor };
             return (
               <div className={stl.supporter} key={item.name}>
                 <img
@@ -65,7 +80,9 @@ const SupportersModal = () => {
                   alt="Mod"
                   className={stl.modCrown}
                 />
-                <span className={stl.userName}>{item.name}</span>
+                <span className={stl.userName} style={userNameStyle}>
+                  {item.name}
+                </span>
                 <span className={stl.etherAmount}>
                   {item.amount}
                   <img
