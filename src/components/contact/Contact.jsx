@@ -3,11 +3,12 @@ import HomeButton from "../../utils/homebutton/HomeButton";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const Contact = () => {
   const [anonForm, setAnonForm] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(true);
   const [error, setError] = useState("");
-  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const emailError = "Please enter your email or submit as anon";
   const subjectError = "Please enter a subject";
@@ -30,18 +31,20 @@ const Contact = () => {
 
   const submitForm = () => {
     setError("");
-    if (anonForm && formState.email.length === 0) {
-      setError(emailError);
-      return;
-    }
     if (formState.subject.length === 0) {
       setError(subjectError);
       return;
     }
+    if (!anonForm && formState.email.length === 0) {
+      setError(emailError);
+      return;
+    }
+
     if (formState.message.length < 10) {
       setError(messageError);
       return;
     }
+    console.log("submitting");
     setFormSubmitted(true);
     console.log(formState);
   };
@@ -52,6 +55,10 @@ const Contact = () => {
       setError("");
     }
   };
+
+  useEffect(() => {
+    setFormSubmitted(false);
+  }, []);
 
   const navigate = useNavigate();
   return (
@@ -80,7 +87,7 @@ const Contact = () => {
             <div className={stl.subjectBar}>
               <span className={stl.inputSpan}>Email</span>
               <div className={stl.inputWrapper}>
-                {anonForm && (
+                {!anonForm && (
                   <input
                     type="email"
                     className={stl.inputStl}
@@ -94,7 +101,7 @@ const Contact = () => {
                 <button
                   className={stl.anonBtn}
                   onClick={toggleAnonForm}
-                  style={{ left: anonForm ? "initial" : "0" }}
+                  style={{ left: !anonForm ? "initial" : "0" }}
                 >
                   Anon
                 </button>
@@ -118,6 +125,16 @@ const Contact = () => {
               </button>
             </div>
           </form>
+        )}
+        {formSubmitted && (
+          <div className={stl.thanksBox}>
+            <h2 className={stl.msgReceived}>Your message was received!</h2>
+            <img
+              src="./random/Squid2.png"
+              alt="Gnome child Squid"
+              className={stl.squid}
+            />
+          </div>
         )}
       </div>
     </div>
