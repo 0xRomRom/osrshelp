@@ -740,7 +740,7 @@ const MONEYMAKERPAGES = [
     location: "1 click bank (castlewars)",
     instructions: [
       "Fill your inventory with grimy cadantines.",
-      "Click on every guam leave to clean it.",
+      "Click on every cadantine to clean it.",
       "Once all herbs are cleaned, bank for new grimy leaves.",
       "An inventory should take around 10-15 seconds.",
     ],

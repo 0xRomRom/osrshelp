@@ -68,10 +68,6 @@ const Contact = () => {
     setFormSubmitted(false);
   }, []);
 
-  useEffect(() => {
-    console.log(formState);
-  }, [formSubmitted]);
-
   const navigate = useNavigate();
   return (
     <div className={stl.contact}>

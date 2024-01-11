@@ -6,12 +6,11 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const ReportIssue = () => {
-  const [anonForm, setAnonForm] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(true);
   const [error, setError] = useState("");
 
-  const emailError = "Please enter your email or submit as anon";
-  const subjectError = "Please enter a subject";
+  const issueError = "Please enter your email or submit as anon";
+  const urlError = "Please enter a subject";
   const messageError = "Please enter a message";
 
   const [formState, setFormState] = useState({
@@ -33,11 +32,11 @@ const ReportIssue = () => {
   const submitForm = () => {
     setError("");
     if (formState.subject.length === 0) {
-      setError(subjectError);
+      setError(urlError);
       return;
     }
-    if (!anonForm && formState.email.length === 0) {
-      setError(emailError);
+    if (formState.email.length === 0) {
+      setError(issueError);
       return;
     }
 
@@ -57,20 +56,9 @@ const ReportIssue = () => {
     setFormSubmitted(true);
   };
 
-  const toggleAnonForm = () => {
-    setAnonForm(!anonForm);
-    if (error === emailError) {
-      setError("");
-    }
-  };
-
   useEffect(() => {
     setFormSubmitted(false);
   }, []);
-
-  useEffect(() => {
-    console.log(formState);
-  }, [formSubmitted]);
 
   const navigate = useNavigate();
   return (
@@ -81,50 +69,41 @@ const ReportIssue = () => {
           <FaLongArrowAltLeft className={stl.homeArrow} />
           <span className={stl.homeTxt}>Home</span>
         </span>
-        <h1 className={stl.contactHero}>Contact</h1>
+        <h1 className={stl.contactHero}>Report Issue</h1>
         {!formSubmitted && (
           <form className={stl.innerModal}>
             <div className={stl.subjectBar}>
-              <span className={stl.inputSpan}>Subject</span>
+              <span className={stl.inputSpan}>URL</span>
               <input
                 type="text"
                 className={stl.inputStl}
-                placeholder="What do you want to let us know?"
+                placeholder="https://www.osrshelp/#/profitalching"
                 onChange={(e) => updateFormState("subject", e.target.value)}
                 style={{
-                  border: error === subjectError ? "2px solid red" : "",
+                  border: error === urlError ? "2px solid red" : "",
                 }}
               />
             </div>
             <div className={stl.subjectBar}>
-              <span className={stl.inputSpan}>Email</span>
+              <span className={stl.inputSpan}>Issue</span>
               <div className={stl.inputWrapper}>
-                {!anonForm && (
-                  <input
-                    type="email"
-                    className={stl.inputStl}
-                    placeholder="osrsuser@email.com"
-                    onChange={(e) => updateFormState("email", e.target.value)}
-                    style={{
-                      border: error === emailError ? "2px solid red" : "",
-                    }}
-                  />
-                )}
-                <button
-                  className={stl.anonBtn}
-                  onClick={toggleAnonForm}
-                  style={{ left: !anonForm ? "initial" : "0" }}
-                >
-                  Anon
-                </button>
+                <input
+                  type="text"
+                  className={stl.inputStl}
+                  placeholder="Incorrect calculation"
+                  onChange={(e) => updateFormState("email", e.target.value)}
+                  style={{
+                    border: error === issueError ? "2px solid red" : "",
+                  }}
+                />
               </div>
             </div>
-            <span className={stl.inputSpan}>Message</span>
+            <span className={stl.inputSpan}>Steps to reproduce</span>
             <div className={stl.textAreaWrap}>
               <textarea
                 maxLength="500"
                 className={stl.textAreaInput}
-                placeholder="Leave your message here"
+                placeholder="How can we reproduce the issue?"
                 onChange={(e) => updateFormState("message", e.target.value)}
                 style={{
                   border: error === messageError ? "2px solid red" : "",
@@ -140,12 +119,10 @@ const ReportIssue = () => {
         )}
         {formSubmitted && (
           <div className={stl.thanksBox}>
-            <h2 className={stl.msgReceived}>Your message was received!</h2>
-            <img
-              src="./random/Squid2.png"
-              alt="Gnome child Squid"
-              className={stl.squid}
-            />
+            <h2 className={stl.msgReceived}>
+              Our engineers are sent off to work!
+            </h2>
+            <img src="./random/Dwarf.webp" alt="Dwarf" className={stl.dwarf} />
           </div>
         )}
       </div>
