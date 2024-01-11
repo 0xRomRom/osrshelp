@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const Contact = () => {
   const [anonForm, setAnonForm] = useState(false);
+  const [error, setError] = useState("");
 
   const [formState, setFormState] = useState({
     subject: "",
@@ -23,7 +24,18 @@ const Contact = () => {
   };
 
   const submitForm = () => {
-    console.log(formState);
+    setError("");
+    if (anonForm && formState.email.length === 0) {
+      setError("Please enter your email or submit as anon");
+      return;
+    }
+  };
+
+  const toggleAnonForm = () => {
+    setAnonForm(!anonForm);
+    if (error === "Please enter your email or submit as anon") {
+      setError("");
+    }
   };
 
   const navigate = useNavigate();
@@ -54,11 +66,18 @@ const Contact = () => {
                   type="email"
                   className={stl.inputStl}
                   placeholder="osrsuser@email.com"
+                  onChange={(e) => updateFormState("email", e.target.value)}
+                  style={{
+                    border:
+                      error === "Please enter your email or submit as anon"
+                        ? "2px solid red"
+                        : "",
+                  }}
                 />
               )}
               <button
                 className={stl.anonBtn}
-                onClick={() => setAnonForm(!anonForm)}
+                onClick={toggleAnonForm}
                 style={{ left: anonForm ? "initial" : "0" }}
               >
                 Anon
@@ -70,6 +89,7 @@ const Contact = () => {
             <textarea
               className={stl.textAreaInput}
               placeholder="Leave your message here"
+              onChange={(e) => updateFormState("message", e.target.value)}
             ></textarea>
           </div>
           <div className={stl.submitBox}>
