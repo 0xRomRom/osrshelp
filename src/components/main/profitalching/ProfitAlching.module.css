@@ -15,7 +15,7 @@
 .modalWrap {
   position: relative;
   /* height: 30rem; */
-  background-color: rgb(32, 46, 57);
+  background-color: rgb(0, 0, 0);
   background-image: url("../../../../public/backgrounds/TzHaar_City.webp");
   /* background-repeat: no-repeat; */
   background-size: contain;

@@ -1,11 +1,11 @@
-import stl from "./Contact.module.css";
+import stl from "./ReportIssue.module.css";
 import HomeButton from "../../utils/homebutton/HomeButton";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const Contact = () => {
+const ReportIssue = () => {
   const [anonForm, setAnonForm] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(true);
   const [error, setError] = useState("");
@@ -153,4 +153,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ReportIssue;

@@ -26,7 +26,9 @@ const Footer = () => {
           <Link to="/contact" className={stl.link}>
             <li className={stl.footLink}>Contact</li>
           </Link>
-          <li className={stl.footLink}>Report issue</li>
+          <Link to="/reportissue" className={stl.link}>
+            <li className={stl.footLink}>Report issue</li>
+          </Link>
         </ul>
         <ul className={stl.footCol}>
           <span className={stl.footTitle}>Sitemap</span>
