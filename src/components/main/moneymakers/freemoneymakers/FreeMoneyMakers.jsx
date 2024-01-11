@@ -5,8 +5,11 @@ import { useCallback } from "react";
 import mills from "../../../../assets/icons/Mills.webp";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { PaginationContext } from "../../../../utils/paginationstate/PaginationProvider";
 
 const FreeMoneyMakers = ({ setMoneyMaker }) => {
+  const { setSubState } = useContext(PaginationContext);
   const [itemPrices, setItemPrices] = useState({});
   const [methodsArray, setMethodsArray] = useState([]);
   const { pathname } = useLocation();
@@ -72,6 +75,7 @@ const FreeMoneyMakers = ({ setMoneyMaker }) => {
             onClick={() => {
               navigate(`${pathname}/${method.title.replaceAll(" ", "_")}`);
               setMoneyMaker(method);
+              setSubState(method.title);
             }}
           >
             <img

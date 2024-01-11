@@ -3,12 +3,14 @@ import Pagination from "../../pagination/Pagination";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import MONEYMAKERPAGES from "../../../../utils/moneymakers/moneymakerpages";
 import SKILLICONOBJECT from "../../../../utils/skilliconobject";
 import mills from "../../../../assets/icons/Mills.webp";
+import { PaginationContext } from "../../../../utils/paginationstate/PaginationProvider";
 
 const MethodPage = ({ moneyMaker }) => {
+  const { setSubState } = useContext(PaginationContext);
   const [methodState, setMethodState] = useState({});
   const navigate = useNavigate();
   const location = useLocation();
@@ -27,6 +29,7 @@ const MethodPage = ({ moneyMaker }) => {
 
   const navigateBack = () => {
     navigate("/moneymakers");
+    setSubState(null);
   };
 
   const skills = methodState.skills;

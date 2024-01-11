@@ -19,7 +19,7 @@
   position: relative;
   width: 95%;
   left: 2.5%;
-  background-color: red;
+  background-color: var(--dark-bg);
   padding: 2rem 0rem;
   border-radius: 0.4rem;
   background-image: url("../../../../public/backgrounds/Elven.webp");
