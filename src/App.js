@@ -23,6 +23,7 @@ import SupportOSRSHelp from "./components/main/supportosrshelp/SupportOSRSHelp";
 import FAQ from "./components/about/faq/Faq";
 import PrivacyPolicy from "./components/about/privacypolicy/PrivacyPolicy";
 import TermsConditions from "./components/about/termsconditions/TermsConditions";
+import Contact from "./components/contact/Contact";
 
 import MainLayout from "./components/mainlayout/MainLayout";
 
@@ -38,6 +39,7 @@ const App = () => {
         <PaginationProvider>
           <div className={stl.content}>
             <Routes>
+              <Route path="/contact" element={<Contact />} />
               <Route path="/terms&conditions" element={<TermsConditions />} />
               <Route path="/privacypolicy" element={<PrivacyPolicy />} />
               <Route path="/faq" element={<FAQ />} />
@@ -155,7 +157,6 @@ const App = () => {
                 }
               />
             </Routes>
-            {/* <Footer /> */}
           </div>
         </PaginationProvider>
       </AuthProvider>
