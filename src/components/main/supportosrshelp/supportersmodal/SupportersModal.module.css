@@ -43,8 +43,52 @@
 .amount {
   color: orange;
   width: 15%;
+  text-shadow: 0px 0px 10px black;
 }
 
 .modCrown {
   margin-right: 0.5rem;
+}
+
+.supportersList .supporter:nth-child(even) {
+  background-color: black;
+}
+
+.typeFilter {
+  height: 3rem;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  gap: 0.5rem;
+  width: 6rem;
+  /* border: 1px solid #733089; */
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 5px #733089;
+}
+
+.filterCta {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  /* border: 1px solid #733089; */
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.etherCta {
+  width: 25px;
+  height: 25px;
+}
+
+.lobsterCta {
+  width: 25px;
+  height: 25px;
+}
+
+.actBtn {
+  background-color: #411a71;
 }
