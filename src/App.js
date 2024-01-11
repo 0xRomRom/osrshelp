@@ -23,8 +23,8 @@ import SupportOSRSHelp from "./components/main/supportosrshelp/SupportOSRSHelp";
 import FAQ from "./components/about/faq/Faq";
 import PrivacyPolicy from "./components/about/privacypolicy/PrivacyPolicy";
 import TermsConditions from "./components/about/termsconditions/TermsConditions";
-import Contact from "./components/contact/Contact";
-import ReportIssue from "./components/reportissue/ReportIssue";
+import Contact from "./components/about/contact/Contact";
+import ReportIssue from "./components/about/reportissue/ReportIssue";
 
 import MainLayout from "./components/mainlayout/MainLayout";
 

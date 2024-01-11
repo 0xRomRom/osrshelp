@@ -23,7 +23,7 @@
   height: 40rem;
   background-color: rgb(32, 46, 57);
   border-radius: 0.4rem;
-  background-image: url("../../../public/backgrounds/Grass.webp");
+  background-image: url("../../../../public/backgrounds/Workshop.webp");
   background-position: 40%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -236,20 +236,7 @@ input:-webkit-autofill:active {
   font-size: 32px;
 }
 
-.squid {
-  margin-top: 1rem;
-  width: 200px;
-}
-
-.squid:hover {
-  animation: rotate 1s infinite linear;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dwarf {
+  margin-top: 2rem;
+  width: 125px;
 }

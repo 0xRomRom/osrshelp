@@ -1,16 +1,17 @@
-import stl from "./ReportIssue.module.css";
-import HomeButton from "../../utils/homebutton/HomeButton";
+import stl from "./Contact.module.css";
+import HomeButton from "../../../utils/homebutton/HomeButton";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const ReportIssue = () => {
+const Contact = () => {
+  const [anonForm, setAnonForm] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(true);
   const [error, setError] = useState("");
 
-  const issueError = "Please enter your email or submit as anon";
-  const urlError = "Please enter a subject";
+  const emailError = "Please enter your email or submit as anon";
+  const subjectError = "Please enter a subject";
   const messageError = "Please enter a message";
 
   const [formState, setFormState] = useState({
@@ -32,11 +33,11 @@ const ReportIssue = () => {
   const submitForm = () => {
     setError("");
     if (formState.subject.length === 0) {
-      setError(urlError);
+      setError(subjectError);
       return;
     }
-    if (formState.email.length === 0) {
-      setError(issueError);
+    if (!anonForm && formState.email.length === 0) {
+      setError(emailError);
       return;
     }
 
@@ -56,6 +57,13 @@ const ReportIssue = () => {
     setFormSubmitted(true);
   };
 
+  const toggleAnonForm = () => {
+    setAnonForm(!anonForm);
+    if (error === emailError) {
+      setError("");
+    }
+  };
+
   useEffect(() => {
     setFormSubmitted(false);
   }, []);
@@ -69,41 +77,50 @@ const ReportIssue = () => {
           <FaLongArrowAltLeft className={stl.homeArrow} />
           <span className={stl.homeTxt}>Home</span>
         </span>
-        <h1 className={stl.contactHero}>Report Issue</h1>
+        <h1 className={stl.contactHero}>Contact</h1>
         {!formSubmitted && (
           <form className={stl.innerModal}>
             <div className={stl.subjectBar}>
-              <span className={stl.inputSpan}>URL</span>
+              <span className={stl.inputSpan}>Subject</span>
               <input
                 type="text"
                 className={stl.inputStl}
-                placeholder="https://www.osrshelp/#/profitalching"
+                placeholder="What do you want to let us know?"
                 onChange={(e) => updateFormState("subject", e.target.value)}
                 style={{
-                  border: error === urlError ? "2px solid red" : "",
+                  border: error === subjectError ? "2px solid red" : "",
                 }}
               />
             </div>
             <div className={stl.subjectBar}>
-              <span className={stl.inputSpan}>Issue</span>
+              <span className={stl.inputSpan}>Email</span>
               <div className={stl.inputWrapper}>
-                <input
-                  type="text"
-                  className={stl.inputStl}
-                  placeholder="Incorrect calculation"
-                  onChange={(e) => updateFormState("email", e.target.value)}
-                  style={{
-                    border: error === issueError ? "2px solid red" : "",
-                  }}
-                />
+                {!anonForm && (
+                  <input
+                    type="email"
+                    className={stl.inputStl}
+                    placeholder="osrsuser@email.com"
+                    onChange={(e) => updateFormState("email", e.target.value)}
+                    style={{
+                      border: error === emailError ? "2px solid red" : "",
+                    }}
+                  />
+                )}
+                <button
+                  className={stl.anonBtn}
+                  onClick={toggleAnonForm}
+                  style={{ left: !anonForm ? "initial" : "0" }}
+                >
+                  Anon
+                </button>
               </div>
             </div>
-            <span className={stl.inputSpan}>Steps to reproduce</span>
+            <span className={stl.inputSpan}>Message</span>
             <div className={stl.textAreaWrap}>
               <textarea
                 maxLength="500"
                 className={stl.textAreaInput}
-                placeholder="How can we reproduce the issue?"
+                placeholder="Leave your message here"
                 onChange={(e) => updateFormState("message", e.target.value)}
                 style={{
                   border: error === messageError ? "2px solid red" : "",
@@ -119,10 +136,12 @@ const ReportIssue = () => {
         )}
         {formSubmitted && (
           <div className={stl.thanksBox}>
-            <h2 className={stl.msgReceived}>
-              Our engineers are sent off to work!
-            </h2>
-            <img src="./random/Dwarf.webp" alt="Dwarf" className={stl.dwarf} />
+            <h2 className={stl.msgReceived}>Your message was received!</h2>
+            <img
+              src="./random/Squid2.png"
+              alt="Gnome child Squid"
+              className={stl.squid}
+            />
           </div>
         )}
       </div>
@@ -130,4 +149,4 @@ const ReportIssue = () => {
   );
 };
 
-export default ReportIssue;
+export default Contact;
