@@ -10,6 +10,7 @@ import OSRSRadio from "./radio/OSRSRadio";
 import Pagination from "../pagination/Pagination";
 import RuneChat from "./runechat/RuneChat";
 import LatestUpdates from "./latestupdates/LatestUpdates";
+import UpdatePoll from "./latestupdates/updatepoll/UpdatePoll";
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
@@ -49,9 +50,10 @@ const Home = (props) => {
                   setPlayerName={props.setPlayerName}
                 />
               )}
-              <LatestUpdates />
               <TotalUsers />
               <RuneChat />
+              <LatestUpdates />
+              <UpdatePoll />
               <OSRSRadio />
             </Masonry>
           </ResponsiveMasonry>
