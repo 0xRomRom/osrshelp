@@ -1,7 +1,30 @@
 import stl from "./RuneChat.module.css";
 import { LuSendHorizonal } from "react-icons/lu";
+import supabase from "../../../../utils/supabase/supabase";
+import { useContext } from "react";
+import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
 const RuneChat = () => {
+  const { userID } = useContext(AuthContext);
+
+  const addMessageToChat = async () => {
+    try {
+      const { error } = await supabase.from("runechat").insert([
+        {
+          uid: userID,
+          username: "Rom",
+          chatmsg: "Hi",
+        },
+      ]);
+
+      if (error) {
+        throw new Error(error);
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <div className={stl.modal}>
       <h2 className={stl.runechat}>Runechat</h2>
@@ -77,7 +100,7 @@ const RuneChat = () => {
       </div>
       <form className={stl.chatInputWrap}>
         <input type="text" className={stl.chatInput} />
-        <button className={stl.sendCta}>
+        <button className={stl.sendCta} onClick={addMessageToChat}>
           <LuSendHorizonal className={stl.sendIcon} />
         </button>
       </form>
