@@ -98,12 +98,12 @@
   flex-direction: column-reverse;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   overflow-y: scroll;
   overflow-x: hidden;
   overflow-wrap: break-word;
-  gap: 10px;
+  gap: 7px;
 }
 
 .chatMsg {
@@ -115,7 +115,7 @@
   margin: 0 !important;
   word-wrap: break-word;
   flex: 1;
-  /* background-color: #1098fc26; */
+  background-color: #109afc18;
   width: 98%;
   left: 1%;
   border-radius: 0.4rem;
@@ -145,6 +145,7 @@
   flex: 1;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  padding: 2px 5px;
 }
 
 .message {

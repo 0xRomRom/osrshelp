@@ -33,7 +33,7 @@ const RuneChat = () => {
           timestamp: now,
         },
       ]);
-      outputBottom.current.scrollTop = outputBottom.current.scrollHeight - 10;
+
       setInserted(true);
 
       if (error) {
@@ -81,6 +81,7 @@ const RuneChat = () => {
       };
       fetchMessages();
     }
+    outputBottom.current.scrollTop = outputBottom.current.scrollHeight - 10;
   }, [inserted, currentChat.length]);
 
   useEffect(() => {
@@ -94,13 +95,7 @@ const RuneChat = () => {
           table: "runechat",
         },
         (payload) => {
-          // console.log(payload);
-          // const newMessage = payload.new;
-          // setCurrentChat([...currentChat, newMessage]);
-
           setInserted(true);
-
-          // console.log(newMessage);
         }
       )
       .subscribe();
