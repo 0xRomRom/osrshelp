@@ -22,6 +22,71 @@
   font-size: 20px;
 }
 
+.chatInputWrap {
+  width: 95%;
+  left: 2.5%;
+  height: 3rem;
+  background-color: var(--dark-bg);
+  margin-top: 0px !important;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.chatInput {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(208, 208, 208);
+  padding-left: 1rem;
+  display: inline;
+  font-size: 18px;
+}
+
+.chatInputWrap:focus-within {
+  box-shadow: 0px 0px 2px var(--blue-main);
+  outline: none; /* Remove default focus outline */
+}
+
+.sendCta {
+  background-color: transparent;
+  width: 3rem;
+  height: 2.5rem;
+  margin-right: 0.1rem;
+  border-radius: 0.4rem;
+  border: none;
+  outline: none;
+  background-color: var(--blue-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgb(203, 203, 203);
+  display: inline;
+}
+
+.sendCta:hover {
+  background-color: #0084ff;
+}
+
+.sendIcon {
+  font-size: 20px;
+}
+
+.sendCta:active {
+  width: 2.9rem;
+  height: 2.4rem;
+}
+.sendCta:active .sendIcon {
+  color: white;
+}
+
 .chatOutput {
   width: 95%;
   left: 2.5%;
@@ -29,13 +94,45 @@
   background-color: var(--dark-bg);
   /* margin: 0 !important; */
   border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  overflow-y: scroll;
 }
 
-.chatInput {
-  width: 95%;
-  left: 2.5%;
-  height: 12.5%;
-  background-color: var(--dark-bg);
-  margin-top: 0px !important;
-  border-radius: 0.4rem;
+.chatMsg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* background-color: rgba(128, 128, 128, 0.207); */
+  position: relative;
+  margin: 3px 5px !important;
+}
+
+.time {
+  color: gray;
+  font-size: 10px;
+  position: absolute;
+  top: 27px;
+}
+
+.userName {
+  color: var(--blue-main);
+  font-size: 16px;
+  /* background-color: gray; */
+  padding-right: 0.5rem;
+}
+
+.nameFlex {
+  display: flex;
+  flex-direction: column;
+  margin: 0 !important;
+  height: 100%;
+}
+
+.message {
+  color: rgb(202, 202, 202);
 }
