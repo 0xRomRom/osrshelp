@@ -28,7 +28,7 @@ const RuneChat = () => {
       const { error } = await supabase.from("runechat").insert([
         {
           uid: userID,
-          username: "KKKKKKKKKKKK",
+          username: "King Rom II",
           chatmsg: userMessage,
           timestamp: now,
         },
@@ -115,10 +115,11 @@ const RuneChat = () => {
             return (
               <div className={stl.chatMsg} key={index}>
                 <div className={stl.nameFlex}>
-                  <span className={stl.userName}>{chat.username}:</span>
-                  <span className={stl.time}>{chat.timestamp}</span>
+                  <span className={stl.userName}>{chat.username}</span>
+                  {/* <span className={stl.time}>{chat.timestamp}</span> */}
+                  <span className={stl.message}>{chat.chatmsg}</span>
                 </div>
-                <span className={stl.message}>{chat.chatmsg}</span>
+                {/* <span class */}
               </div>
             );
           })

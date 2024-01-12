@@ -103,6 +103,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
   overflow-wrap: break-word;
+  gap: 10px;
 }
 
 .chatMsg {
@@ -111,13 +112,15 @@
   align-items: flex-start;
   position: relative;
   margin: 3px 5px !important;
+  margin: 0 !important;
   word-wrap: break-word;
   flex: 1;
-  background-color: #1098fc26;
-  width: 97%;
+  /* background-color: #1098fc26; */
+  width: 98%;
+  left: 1%;
   border-radius: 0.4rem;
-  padding: 10px 0px;
   overflow-wrap: break-word;
+  /* background-color: red; */
 }
 
 .time {
@@ -138,12 +141,15 @@
   justify-content: center;
   margin: 0 !important;
   height: 100%;
-  /* width: 30%; */
+  width: 100%;
   flex: 1;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .message {
   color: rgb(202, 202, 202);
   /* background-color: red; */
-  width: 70%;
+  /* width: 70%; */
+  flex: 1;
 }
