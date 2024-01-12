@@ -89,50 +89,61 @@
 
 .chatOutput {
   width: 95%;
+  max-width: 95%;
   left: 2.5%;
   height: 87.5%;
   background-color: var(--dark-bg);
-  /* margin: 0 !important; */
   border-radius: 0.4rem;
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   padding-top: 0.5rem;
   overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 
 .chatMsg {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
-  /* background-color: rgba(128, 128, 128, 0.207); */
   position: relative;
   margin: 3px 5px !important;
+  word-wrap: break-word;
+  flex: 1;
+  background-color: #1098fc26;
+  width: 97%;
+  border-radius: 0.4rem;
+  padding: 10px 0px;
+  overflow-wrap: break-word;
 }
 
 .time {
   color: gray;
   font-size: 10px;
-  position: absolute;
-  top: 17px;
+  position: relative;
 }
 
 .userName {
   color: var(--blue-main);
   font-size: 16px;
-  /* background-color: gray; */
   padding-right: 0.5rem;
 }
 
 .nameFlex {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin: 0 !important;
   height: 100%;
+  /* width: 30%; */
+  flex: 1;
 }
 
 .message {
   color: rgb(202, 202, 202);
+  /* background-color: red; */
+  width: 70%;
 }
