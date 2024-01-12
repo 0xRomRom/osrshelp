@@ -55,25 +55,25 @@ const RuneChat = () => {
         if (error) {
           console.error("Error fetching messages:", error);
         } else {
-          data.sort((a, b) => {
-            // Convert timestamps to seconds for comparison
-            let timeA = a.timestamp
-              .split(":")
-              .reduce(
-                (acc, time, index) =>
-                  acc + parseInt(time) * Math.pow(60, 2 - index),
-                0
-              );
-            let timeB = b.timestamp
-              .split(":")
-              .reduce(
-                (acc, time, index) =>
-                  acc + parseInt(time) * Math.pow(60, 2 - index),
-                0
-              );
+          // data.sort((a, b) => {
+          //   // Convert timestamps to seconds for comparison
+          //   let timeA = a.timestamp
+          //     .split(":")
+          //     .reduce(
+          //       (acc, time, index) =>
+          //         acc + parseInt(time) * Math.pow(60, 2 - index),
+          //       0
+          //     );
+          //   let timeB = b.timestamp
+          //     .split(":")
+          //     .reduce(
+          //       (acc, time, index) =>
+          //         acc + parseInt(time) * Math.pow(60, 2 - index),
+          //       0
+          //     );
 
-            return timeA - timeB;
-          });
+          //   return timeA - timeB;
+          // });
 
           setCurrentChat(data);
           setInserted(false);
@@ -112,27 +112,25 @@ const RuneChat = () => {
         <FaCog className={stl.configCog} />
       </div>
       <div className={stl.chatOutput} ref={outputBottom}>
-        {currentChat
-          .map((chat, index) => {
-            return (
-              <div className={stl.chatMsg} key={index}>
-                <div className={stl.nameFlex}>
-                  <div className={stl.nameTop}>
-                    <span
-                      className={stl.userName}
-                      style={{ color: chat.playercolor }}
-                    >
-                      {chat.username}
-                    </span>
-                    <span className={stl.time}>{chat.timestamp}</span>
-                  </div>
-                  <span className={stl.message}>{chat.chatmsg}</span>
+        {currentChat.map((chat, index) => {
+          return (
+            <div className={stl.chatMsg} key={index}>
+              <div className={stl.nameFlex}>
+                <div className={stl.nameTop}>
+                  <span
+                    className={stl.userName}
+                    style={{ color: chat.playercolor }}
+                  >
+                    {chat.username}
+                  </span>
+                  <span className={stl.time}>{chat.timestamp}</span>
                 </div>
-                {/* <span class */}
+                <span className={stl.message}>{chat.chatmsg}</span>
               </div>
-            );
-          })
-          .reverse()}
+              {/* <span class */}
+            </div>
+          );
+        })}
       </div>
       <form className={stl.chatInputWrap}>
         <input
