@@ -32,6 +32,7 @@ const RuneChat = () => {
           username: "King Rom II",
           chatmsg: userMessage,
           timestamp: now,
+          playercolor: "#ab4",
         },
       ]);
 
@@ -117,7 +118,12 @@ const RuneChat = () => {
               <div className={stl.chatMsg} key={index}>
                 <div className={stl.nameFlex}>
                   <div className={stl.nameTop}>
-                    <span className={stl.userName}>{chat.username}</span>
+                    <span
+                      className={stl.userName}
+                      style={{ color: chat.playercolor }}
+                    >
+                      {chat.username}
+                    </span>
                     <span className={stl.time}>{chat.timestamp}</span>
                   </div>
                   <span className={stl.message}>{chat.chatmsg}</span>
