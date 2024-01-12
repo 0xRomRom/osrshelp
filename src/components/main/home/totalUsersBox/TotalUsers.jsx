@@ -84,7 +84,6 @@ const TotalUsers = () => {
           }
 
           if (data) {
-            console.log(data.totalcount);
             setTotalUsers(data.totalcount);
           }
         } catch (error) {
