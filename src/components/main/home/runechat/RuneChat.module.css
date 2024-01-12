@@ -154,3 +154,32 @@
   /* width: 70%; */
   flex: 1;
 }
+
+.nameTop {
+  margin: 0 !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.configRow {
+  /* background-color: red; */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin: 0 !important;
+  display: flex;
+  justify-content: flex-end;
+  padding: 18px 0px;
+  padding-right: 15px;
+}
+
+.configCog {
+  color: gray;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.configCog:hover {
+  color: rgb(176, 176, 176);
+}

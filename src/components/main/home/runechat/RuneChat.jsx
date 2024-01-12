@@ -3,10 +3,11 @@ import { LuSendHorizonal } from "react-icons/lu";
 import supabase from "../../../../utils/supabase/supabase";
 import { useContext, useState, useEffect, useRef } from "react";
 import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
+import { FaCog } from "react-icons/fa";
 
 const RuneChat = () => {
   const outputBottom = useRef(null);
-  const { userID } = useContext(AuthContext);
+  const { userID, premiumUser } = useContext(AuthContext);
   const [userMessage, setUserMessage] = useState("");
   const [inserted, setInserted] = useState(false);
   const [currentChat, setCurrentChat] = useState([]);
@@ -33,8 +34,6 @@ const RuneChat = () => {
           timestamp: now,
         },
       ]);
-
-      setInserted(true);
 
       if (error) {
         throw new Error(error);
@@ -101,17 +100,26 @@ const RuneChat = () => {
       .subscribe();
   }, [currentChat]);
 
+  useEffect(() => {
+    console.log(premiumUser);
+  }, [premiumUser]);
+
   return (
     <div className={stl.modal}>
       <h2 className={stl.runechat}>Runechat</h2>
+      <div className={stl.configRow}>
+        <FaCog className={stl.configCog} />
+      </div>
       <div className={stl.chatOutput} ref={outputBottom}>
         {currentChat
           .map((chat, index) => {
             return (
               <div className={stl.chatMsg} key={index}>
                 <div className={stl.nameFlex}>
-                  <span className={stl.userName}>{chat.username}</span>
-                  {/* <span className={stl.time}>{chat.timestamp}</span> */}
+                  <div className={stl.nameTop}>
+                    <span className={stl.userName}>{chat.username}</span>
+                    <span className={stl.time}>{chat.timestamp}</span>
+                  </div>
                   <span className={stl.message}>{chat.chatmsg}</span>
                 </div>
                 {/* <span class */}
@@ -126,6 +134,8 @@ const RuneChat = () => {
           className={stl.chatInput}
           onChange={updateMessageState}
           value={userMessage || ""}
+          disabled={premiumUser ? false : true}
+          placeholder={premiumUser ? "" : "Sign in as rune user"}
         />
         <button className={stl.sendCta} onClick={addMessageToChat}>
           <LuSendHorizonal className={stl.sendIcon} />
