@@ -74,7 +74,6 @@
   cursor: pointer;
   margin-right: 1rem;
   border: 1px solid transparent;
-  opacity: 0;
 }
 
 .upgradeCta:hover {

@@ -55,26 +55,6 @@ const RuneChat = () => {
         if (error) {
           console.error("Error fetching messages:", error);
         } else {
-          // data.sort((a, b) => {
-          //   // Convert timestamps to seconds for comparison
-          //   let timeA = a.timestamp
-          //     .split(":")
-          //     .reduce(
-          //       (acc, time, index) =>
-          //         acc + parseInt(time) * Math.pow(60, 2 - index),
-          //       0
-          //     );
-          //   let timeB = b.timestamp
-          //     .split(":")
-          //     .reduce(
-          //       (acc, time, index) =>
-          //         acc + parseInt(time) * Math.pow(60, 2 - index),
-          //       0
-          //     );
-
-          //   return timeA - timeB;
-          // });
-
           setCurrentChat(data);
           setInserted(false);
         }
@@ -100,10 +80,6 @@ const RuneChat = () => {
       )
       .subscribe();
   }, [currentChat]);
-
-  useEffect(() => {
-    console.log(premiumUser);
-  }, [premiumUser]);
 
   return (
     <div className={stl.modal}>

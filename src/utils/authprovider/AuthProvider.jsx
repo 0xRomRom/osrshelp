@@ -5,7 +5,7 @@ import supabase from "../supabase/supabase";
 export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [loggedInUser, setLoggedInUser] = useState(false);
-  const [premiumUser, setPremiumUser] = useState(false);
+  const [premiumUser, setPremiumUser] = useState(null);
   const [userID, setUserID] = useState(false);
 
   const getPremium = useCallback(async (uid) => {

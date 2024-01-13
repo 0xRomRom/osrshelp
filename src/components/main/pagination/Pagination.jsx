@@ -2,7 +2,7 @@ import stl from "./Pagination.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import supabase from "../../../utils/supabase/supabase";
 import { useState } from "react";
@@ -14,6 +14,7 @@ const Pagination = ({ navTo }) => {
   const { mainState, subState, setSubState } = useContext(PaginationContext);
   const [displayedSubstate, setDisplayedSubstate] = useState(subState);
   const navigate = useNavigate();
+  const [showSignup, setShowSignup] = useState(false);
 
   const clearSubState = () => {
     setSubState(null);
@@ -44,6 +45,12 @@ const Pagination = ({ navTo }) => {
     navigate("/login");
   };
 
+  useEffect(() => {
+    if (premiumUser === false) {
+      setShowSignup(true);
+    }
+  }, [premiumUser]);
+
   return (
     <div className={stl.paginationBar}>
       <div className={stl.leftBar}>
@@ -59,12 +66,8 @@ const Pagination = ({ navTo }) => {
         )}
       </div>
       <div className={stl.rightBar}>
-        {!premiumUser && loggedInUser && (
-          <button
-            className={stl.upgradeCta}
-            onClick={handleCheckout}
-            style={{ display: !premiumUser ? "inline" : "none" }}
-          >
+        {showSignup && loggedInUser && (
+          <button className={stl.upgradeCta} onClick={handleCheckout}>
             Upgrade
           </button>
         )}
