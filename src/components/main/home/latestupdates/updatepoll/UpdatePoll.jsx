@@ -1,7 +1,7 @@
 import stl from "./UpdatePoll.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import NumberCounter from "../../../../../utils/NumberCounter";
-import { useInView } from "react-intersection-observer";
+import { motion as m } from "framer-motion";
 
 const pollQuestions = [
   { question: 1, questionValue: "Bird House calculator" },
@@ -11,12 +11,19 @@ const pollQuestions = [
   { question: 5, questionValue: "Pyramid plunder calculator" },
 ];
 
+const pollResults = [
+  { question: 1, questionValue: "Bird House calculator", voteCount: 15 },
+  { question: 2, questionValue: "Hydra calculator", voteCount: 28 },
+  { question: 3, questionValue: "Herbiboar calculator", voteCount: 34 },
+  { question: 4, questionValue: "Blast Furnace calculator", voteCount: 98 },
+  { question: 5, questionValue: "Pyramid plunder calculator", voteCount: 62 },
+];
+
 const UpdatePoll = () => {
   const [checkedQuestion, setCheckedQuestion] = useState(null);
-  const [voted, setVoted] = useState(false);
-  const [ref, inView] = useInView({
-    triggerOnce: false,
-  });
+  const [voted, setVoted] = useState(true);
+
+  const totalVotes = 220;
 
   return (
     <div className={stl.modal}>
@@ -24,13 +31,13 @@ const UpdatePoll = () => {
       {!voted && (
         <>
           <div className={stl.questionsList}>
-            {pollQuestions.map((item, index) => {
+            {pollQuestions.map((item) => {
               return (
                 <div
                   className={`${stl.questionWrapper} ${
                     checkedQuestion === item.question ? stl.questionChecked : ""
                   }`}
-                  key={index}
+                  key={item.question}
                   onClick={() => setCheckedQuestion(item.question)}
                 >
                   <div className={stl.checkBox}>
@@ -50,24 +57,25 @@ const UpdatePoll = () => {
 
       {voted && (
         <div className={stl.voteResults}>
-          {pollQuestions.map((item, index) => {
+          {pollResults.map((item) => {
+            const percentage = (item.voteCount / totalVotes) * 100;
             return (
-              <div
-                className={`${stl.questionWrapper} ${
-                  checkedQuestion === item.question ? stl.questionChecked : ""
-                }`}
-                key={index}
-              >
+              <div className={stl.questionWrapper} key={item.question}>
                 <div className={stl.votesWrap}>
-                  <span className={stl.votes} ref={ref}>
-                    {inView && <NumberCounter n={50} />}x
+                  <span className={stl.votes}>
+                    <NumberCounter n={item.voteCount} time="3000" />x
                   </span>
+                </div>
+                <div className={stl.percentageBox}>
+                  <m.div
+                    className={stl.resultPercentage}
+                    initial={{ width: 0 }}
+                    transition={{ duration: 3 }}
+                    animate={{ width: `${percentage}%` }}
+                  ></m.div>
                 </div>
                 <div className={stl.questionValueWrap}>
                   <span className={stl.questionTxt}>{item.questionValue}</span>
-                </div>
-                <div className={stl.percentageBox}>
-                  <div className={stl.resultPercentage}></div>
                 </div>
               </div>
             );
@@ -87,6 +95,7 @@ const UpdatePoll = () => {
             cursor: voted ? "initial" : "pointer",
           }}
           disabled={voted ? true : false}
+          onClick={() => setVoted(!voted)}
         >
           Vote
         </button>
