@@ -2,28 +2,25 @@ import stl from "./UpdatePoll.module.css";
 import { useEffect, useState } from "react";
 
 const pollQuestions = [
-  { question: 1, questionValue: "Bird Houses" },
+  { question: 1, questionValue: "Bird House calculator" },
   { question: 2, questionValue: "Hydra calculator" },
+  { question: 3, questionValue: "Herbiboar calculator" },
+  { question: 4, questionValue: "Blast Furnace calculator" },
+  { question: 5, questionValue: "Pyramid plunder calculator" },
 ];
 
 const UpdatePoll = () => {
   const [checkedQuestion, setCheckedQuestion] = useState(null);
-
-  useEffect(() => {
-    console.log(checkedQuestion);
-  }, [checkedQuestion]);
 
   return (
     <div className={stl.modal}>
       <h2 className={stl.runechat}>Update poll</h2>
       <div className={stl.questionsList}>
         {pollQuestions.map((item, index) => {
-          console.log(item.question);
           return (
             <div className={stl.questionWrapper} key={index}>
               <div
                 className={stl.checkBox}
-                data-index={item.question}
                 onClick={() => setCheckedQuestion(item.question)}
               >
                 <div
@@ -36,26 +33,10 @@ const UpdatePoll = () => {
             </div>
           );
         })}
-        {/* <div className={stl.questionWrapper}>
-          <div className={stl.checkBox}>
-            <div className={stl.innerCheck}></div>
-          </div>
-          <span className={stl.questionTxt}>Bird houses</span>
-        </div>
-        <div className={stl.questionWrapper}>
-          <div className={stl.checkBox}>
-            <div className={stl.innerCheck}></div>
-          </div>
-          <span className={stl.questionTxt}>Bird houses</span>
-        </div>
-        <div className={stl.questionWrapper}>
-          <div className={stl.checkBox}>
-            <div className={stl.innerCheck}></div>
-          </div>
-          <span className={stl.questionTxt}>Bird houses</span>
-        </div> */}
       </div>
-      <div className={stl.ctaBox}></div>
+      <div className={stl.ctaBox}>
+        <button className={stl.voteBtn}>Vote</button>
+      </div>
       <div className={stl.seeResultsBox}></div>
     </div>
   );
