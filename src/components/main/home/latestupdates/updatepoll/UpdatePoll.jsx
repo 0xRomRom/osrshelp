@@ -26,11 +26,9 @@ const UpdatePoll = () => {
                     checkedQuestion === item.question ? stl.questionChecked : ""
                   }`}
                   key={index}
+                  onClick={() => setCheckedQuestion(item.question)}
                 >
-                  <div
-                    className={stl.checkBox}
-                    onClick={() => setCheckedQuestion(item.question)}
-                  >
+                  <div className={stl.checkBox}>
                     <div
                       className={`${stl.innerCheck} ${
                         checkedQuestion === item.question ? stl.checked : ""
@@ -58,7 +56,12 @@ const UpdatePoll = () => {
                 <div className={stl.votesWrap}>
                   <span className={stl.votes}>50x</span>
                 </div>
-                <span className={stl.questionTxt}>{item.questionValue}</span>
+                <div className={stl.questionValueWrap}>
+                  <span className={stl.questionTxt}>{item.questionValue}</span>
+                </div>
+                <div className={stl.percentageBox}>
+                  <div className={stl.resultPercentage}></div>
+                </div>
               </div>
             );
           })}
