@@ -1,0 +1,88 @@
+.modal {
+  color: rgb(205, 205, 205);
+  font-size: 18px;
+  padding: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  min-height: 500px;
+  background-color: rgb(32, 46, 57);
+  /* background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27)); */
+  background-color: rgb(32, 46, 57);
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.title {
+  color: gray;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+}
+
+.questionChecked:hover {
+  background-color: var(--blue-bg);
+}
+
+.ctaBox {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.seeResultsBox {
+  width: 100%;
+  padding-bottom: 1.7rem;
+  /* background-color: rgb(38, 191, 0); */
+  text-align: center;
+}
+
+.ctaBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.voteBtn {
+  background-color: var(--blue-main);
+  padding: 0.5rem 2rem;
+  border-radius: 0.4rem;
+  outline: none;
+  border: none;
+  /* font-size: 18px; */
+  color: black;
+  cursor: pointer;
+}
+
+.voteBtn:hover {
+  color: white;
+}
+
+.seeResults {
+  color: gray;
+  text-align: center;
+  /* display: block; */
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.seeResults:hover {
+  color: white;
+}
+
+.questionMark {
+  color: gray;
+  position: absolute;
+  right: 32px;
+  font-size: 22.5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.questionMark:hover {
+  color: rgb(176, 176, 176);
+}

@@ -1,0 +1,72 @@
+.questionWrapper {
+  position: relative;
+  padding: 10px;
+
+  width: 100%;
+
+  background-color: #109afc11;
+  background-color: var(--dark-bg);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.questionsList {
+  padding: 15px 0px;
+  padding-bottom: 0px;
+  position: relative;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  /* gap: 15px; */
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.questionWrapper:hover {
+  background-color: #109afc0f;
+}
+
+.questionChecked {
+  background-color: var(--blue-bg);
+}
+.checkBox {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checked {
+  background-color: var(--blue-main);
+}
+
+.totalVotes {
+  position: relative;
+  color: gray;
+  font-size: 14px;
+  user-select: none;
+  text-align: center;
+  width: 100%;
+}
+
+.whiteVotes {
+  color: rgb(213, 213, 213);
+  font-size: 14px;
+}
+
+.innerCheck {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  /* background-color: rgb(204, 204, 204); */
+  border: 2px solid var(--blue-main);
+}

@@ -41,7 +41,7 @@
   content: "";
   position: absolute;
   left: 0px;
-  z-index: 300;
+  z-index: 10;
 }
 
 .phaseActive {
@@ -58,6 +58,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white !important;
 }
 .phaseActive:after {
   color: rgba(0, 0, 255, 1);
@@ -74,4 +75,6 @@
   font-size: 12px;
   user-select: none;
   font-weight: bold;
+  padding-left: 7px;
+  position: relative;
 }
