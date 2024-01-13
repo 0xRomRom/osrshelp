@@ -201,3 +201,17 @@
 .questionValueWrap {
   z-index: 10;
 }
+
+.totalVotes {
+  position: relative;
+  color: gray;
+  font-size: 14px;
+  user-select: none;
+  text-align: center;
+  width: 100%;
+}
+
+.whiteVotes {
+  color: rgb(213, 213, 213);
+  font-size: 14px;
+}

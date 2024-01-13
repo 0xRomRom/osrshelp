@@ -65,7 +65,7 @@ const RuneChat = () => {
   }, [inserted, currentChat.length]);
 
   useEffect(() => {
-    supabase
+    const subscription = supabase
       .channel("runechat")
       .on(
         "postgres_changes",
@@ -79,6 +79,10 @@ const RuneChat = () => {
         }
       )
       .subscribe();
+
+    return () => {
+      subscription.unsubscribe();
+    };
   }, [currentChat]);
 
   return (

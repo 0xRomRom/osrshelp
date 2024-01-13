@@ -55,36 +55,46 @@ const UpdatePoll = () => {
                 </div>
               );
             })}
+            <span className={stl.totalVotes}>
+              Total votes: <span className={stl.whiteVotes}>{totalVotes}</span>
+            </span>
           </div>
         </>
       )}
 
       {voted && (
-        <div className={stl.voteResults}>
-          {pollResults.map((item) => {
-            const percentage = (item.voteCount / totalVotes) * 100;
-            return (
-              <div className={stl.resultWrapper} key={item.question}>
-                <div className={stl.votesWrap}>
-                  <span className={stl.votes}>
-                    <NumberCounter n={item.voteCount} time="3000" />x
-                  </span>
+        <>
+          <div className={stl.voteResults}>
+            {pollResults.map((item) => {
+              const percentage = (item.voteCount / totalVotes) * 100;
+              return (
+                <div className={stl.resultWrapper} key={item.question}>
+                  <div className={stl.votesWrap}>
+                    <span className={stl.votes}>
+                      <NumberCounter n={item.voteCount} time="3000" />x
+                    </span>
+                  </div>
+                  <div className={stl.percentageBox}>
+                    <m.div
+                      className={stl.resultPercentage}
+                      initial={{ width: 0 }}
+                      transition={{ duration: 3 }}
+                      animate={{ width: `${percentage}%` }}
+                    ></m.div>
+                  </div>
+                  <div className={stl.questionValueWrap}>
+                    <span className={stl.questionTxt}>
+                      {item.questionValue}
+                    </span>
+                  </div>
                 </div>
-                <div className={stl.percentageBox}>
-                  <m.div
-                    className={stl.resultPercentage}
-                    initial={{ width: 0 }}
-                    transition={{ duration: 3 }}
-                    animate={{ width: `${percentage}%` }}
-                  ></m.div>
-                </div>
-                <div className={stl.questionValueWrap}>
-                  <span className={stl.questionTxt}>{item.questionValue}</span>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+            <span className={stl.totalVotes}>
+              Total votes: <span className={stl.whiteVotes}>{totalVotes}</span>
+            </span>
+          </div>
+        </>
       )}
       <div className={stl.seeResultsBox}>
         <span className={stl.seeResults} onClick={() => setVoted(!voted)}>
