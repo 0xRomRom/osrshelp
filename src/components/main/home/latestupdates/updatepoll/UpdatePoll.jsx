@@ -42,16 +42,45 @@ const UpdatePoll = () => {
               );
             })}
           </div>
-          <div className={stl.ctaBox}>
-            <button className={stl.voteBtn}>Vote</button>
-          </div>
         </>
       )}
-      {voted && <div className={stl.voteResults}></div>}
+
+      {voted && (
+        <div className={stl.voteResults}>
+          {pollQuestions.map((item, index) => {
+            return (
+              <div
+                className={`${stl.questionWrapper} ${
+                  checkedQuestion === item.question ? stl.questionChecked : ""
+                }`}
+                key={index}
+              >
+                <div className={stl.votesWrap}>
+                  <span className={stl.percentage}></span>
+                </div>
+                <span className={stl.questionTxt}>{item.questionValue}</span>
+              </div>
+            );
+          })}
+        </div>
+      )}
       <div className={stl.seeResultsBox}>
         <span className={stl.seeResults} onClick={() => setVoted(!voted)}>
           {voted ? "Vote" : "See results"}
         </span>
+      </div>
+      <div className={stl.ctaBox}>
+        <button
+          className={stl.voteBtn}
+          style={{
+            opacity: !voted ? "1" : "0",
+            cursor: !voted ? "pointer" : "initial",
+          }}
+          disabled={voted ? true : false}
+          onClick={() => alert("hi")}
+        >
+          Vote
+        </button>
       </div>
     </div>
   );

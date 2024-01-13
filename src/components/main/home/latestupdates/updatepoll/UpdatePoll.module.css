@@ -3,14 +3,14 @@
   font-size: 18px;
   padding: 2rem;
   padding-top: 1rem;
+  padding-bottom: 0rem;
   min-height: 500px;
-  max-height: 500px;
   background-color: rgb(32, 46, 57);
   background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
   /* width: 350px; */
   border-radius: 0.8rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   flex-direction: column;
@@ -24,13 +24,15 @@
 
 .questionsList {
   padding: 15px 0px;
+  padding-bottom: 0px;
   position: relative;
   width: 100%;
   height: 100%;
-  height: 370px;
+  min-height: 370px;
   /* border: 1px solid red; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 15px;
   align-items: flex-start;
   flex-direction: column;
 }
@@ -51,14 +53,15 @@
 }
 
 .ctaBox {
-  height: 5rem;
+  height: 3rem;
   width: 100%;
+  padding-bottom: 1.5rem;
   /* background-color: blue; */
 }
 
 .seeResultsBox {
-  height: 2rem;
   width: 100%;
+  padding-bottom: 1rem;
   /* background-color: rgb(38, 191, 0); */
 }
 
@@ -112,7 +115,7 @@
   color: gray;
   text-align: center;
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   user-select: none;
@@ -124,12 +127,20 @@
 
 .voteResults {
   padding: 15px 0px;
+  padding-bottom: 0px;
   position: relative;
   width: 100%;
   height: 100%;
   /* border: 1px solid red; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 15px;
   align-items: flex-start;
   flex-direction: column;
+  min-height: 370px;
+}
+
+.votesWrap {
+  height: 30px;
+  width: 30px;
 }
