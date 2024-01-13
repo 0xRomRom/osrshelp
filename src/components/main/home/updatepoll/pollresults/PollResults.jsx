@@ -9,11 +9,12 @@ const pollResults = [
   { question: 4, questionValue: "Blast Furnace calculator", voteCount: 98 },
   { question: 5, questionValue: "Pyramid plunder calculator", voteCount: 62 },
 ];
-const PollResults = ({ totalVotes }) => {
+const PollResults = ({ totalVotes, voteResults }) => {
   return (
     <div className={stl.voteResults}>
       {pollResults.map((item) => {
-        const percentage = (item.voteCount / totalVotes) * 100;
+        const percentage = item.voteCount / totalVotes;
+        console.log(percentage);
         return (
           <div className={stl.resultWrapper} key={item.question}>
             <div className={stl.votesWrap}>
