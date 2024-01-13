@@ -29,7 +29,12 @@ const UpdatePoll = () => {
 
   return (
     <div className={stl.modal}>
-      {showInfoOverlay && <InfoOverlay />}
+      {showInfoOverlay && (
+        <InfoOverlay
+          showInfoOverlay={showInfoOverlay}
+          setShowInfoOverlay={setShowInfoOverlay}
+        />
+      )}
       <HiOutlineQuestionMarkCircle
         className={stl.questionMark}
         onClick={() => setShowInfoOverlay(!showInfoOverlay)}
