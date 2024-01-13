@@ -34,7 +34,7 @@ const Home = (props) => {
             className={stl.masonry}
             columnsCountBreakPoints={{ 350: 1, 750: 2, 1200: 3 }}
           >
-            <Masonry className={stl.masonGap}>
+            <Masonry className={stl.masonGap} gutter="15px">
               {skillsFetched ? (
                 <UserBox
                   skills={props.skills}

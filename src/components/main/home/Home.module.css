@@ -39,10 +39,7 @@
 
 .modalbottom {
   position: relative;
-  /* display: flex; */
-  /* justify-content: flex-start; */
-  /* align-items: flex-start; */
-  /* flex-wrap: wrap; */
+  padding-top: 1rem;
 }
 
 .userbox {
@@ -128,7 +125,6 @@ label {
 }
 
 .masonry div {
-  margin: 10px 5px;
 }
 
 .masonGap {
