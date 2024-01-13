@@ -56,7 +56,7 @@ const UpdatePoll = () => {
                 key={index}
               >
                 <div className={stl.votesWrap}>
-                  <span className={stl.percentage}></span>
+                  <span className={stl.votes}>50x</span>
                 </div>
                 <span className={stl.questionTxt}>{item.questionValue}</span>
               </div>
@@ -73,11 +73,10 @@ const UpdatePoll = () => {
         <button
           className={stl.voteBtn}
           style={{
-            opacity: !voted ? "1" : "0",
-            cursor: !voted ? "pointer" : "initial",
+            opacity: voted ? "0" : "1",
+            cursor: voted ? "initial" : "pointer",
           }}
           disabled={voted ? true : false}
-          onClick={() => alert("hi")}
         >
           Vote
         </button>

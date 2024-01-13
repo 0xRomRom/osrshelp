@@ -143,4 +143,8 @@
 .votesWrap {
   height: 30px;
   width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue-main);
 }
