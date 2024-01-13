@@ -171,6 +171,7 @@
     rgba(0, 0, 255, 0.038)
   );
   border-radius: 0.4rem;
+  color: white;
 }
 
 .questionTxt {

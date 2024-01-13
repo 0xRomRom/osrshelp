@@ -1,5 +1,7 @@
 import stl from "./UpdatePoll.module.css";
 import { useEffect, useState } from "react";
+import NumberCounter from "../../../../../utils/NumberCounter";
+import { useInView } from "react-intersection-observer";
 
 const pollQuestions = [
   { question: 1, questionValue: "Bird House calculator" },
@@ -12,6 +14,9 @@ const pollQuestions = [
 const UpdatePoll = () => {
   const [checkedQuestion, setCheckedQuestion] = useState(null);
   const [voted, setVoted] = useState(false);
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+  });
 
   return (
     <div className={stl.modal}>
@@ -54,7 +59,9 @@ const UpdatePoll = () => {
                 key={index}
               >
                 <div className={stl.votesWrap}>
-                  <span className={stl.votes}>50x</span>
+                  <span className={stl.votes} ref={ref}>
+                    {inView && <NumberCounter n={50} />}x
+                  </span>
                 </div>
                 <div className={stl.questionValueWrap}>
                   <span className={stl.questionTxt}>{item.questionValue}</span>
