@@ -11,39 +11,47 @@ const pollQuestions = [
 
 const UpdatePoll = () => {
   const [checkedQuestion, setCheckedQuestion] = useState(null);
+  const [voted, setVoted] = useState(false);
 
   return (
     <div className={stl.modal}>
       <h2 className={stl.runechat}>Update poll</h2>
-      <div className={stl.questionsList}>
-        {pollQuestions.map((item, index) => {
-          return (
-            <div
-              className={`${stl.questionWrapper} ${
-                checkedQuestion === item.question ? stl.questionChecked : ""
-              }`}
-              key={index}
-            >
-              <div
-                className={stl.checkBox}
-                onClick={() => setCheckedQuestion(item.question)}
-              >
+      {!voted && (
+        <>
+          <div className={stl.questionsList}>
+            {pollQuestions.map((item, index) => {
+              return (
                 <div
-                  className={`${stl.innerCheck} ${
-                    checkedQuestion === item.question ? stl.checked : ""
+                  className={`${stl.questionWrapper} ${
+                    checkedQuestion === item.question ? stl.questionChecked : ""
                   }`}
-                ></div>
-              </div>
-              <span className={stl.questionTxt}>{item.questionValue}</span>
-            </div>
-          );
-        })}
-      </div>
-      <div className={stl.ctaBox}>
-        <button className={stl.voteBtn}>Vote</button>
-      </div>
+                  key={index}
+                >
+                  <div
+                    className={stl.checkBox}
+                    onClick={() => setCheckedQuestion(item.question)}
+                  >
+                    <div
+                      className={`${stl.innerCheck} ${
+                        checkedQuestion === item.question ? stl.checked : ""
+                      }`}
+                    ></div>
+                  </div>
+                  <span className={stl.questionTxt}>{item.questionValue}</span>
+                </div>
+              );
+            })}
+          </div>
+          <div className={stl.ctaBox}>
+            <button className={stl.voteBtn}>Vote</button>
+          </div>
+        </>
+      )}
+      {voted && <div className={stl.voteResults}></div>}
       <div className={stl.seeResultsBox}>
-        <span className={stl.seeResults}>See results</span>
+        <span className={stl.seeResults} onClick={() => setVoted(!voted)}>
+          {voted ? "Vote" : "See results"}
+        </span>
       </div>
     </div>
   );
