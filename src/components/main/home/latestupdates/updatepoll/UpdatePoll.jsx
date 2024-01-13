@@ -18,7 +18,12 @@ const UpdatePoll = () => {
       <div className={stl.questionsList}>
         {pollQuestions.map((item, index) => {
           return (
-            <div className={stl.questionWrapper} key={index}>
+            <div
+              className={`${stl.questionWrapper} ${
+                checkedQuestion === item.question ? stl.questionChecked : ""
+              }`}
+              key={index}
+            >
               <div
                 className={stl.checkBox}
                 onClick={() => setCheckedQuestion(item.question)}
@@ -37,7 +42,9 @@ const UpdatePoll = () => {
       <div className={stl.ctaBox}>
         <button className={stl.voteBtn}>Vote</button>
       </div>
-      <div className={stl.seeResultsBox}></div>
+      <div className={stl.seeResultsBox}>
+        <span className={stl.seeResults}>See results</span>
+      </div>
     </div>
   );
 };
