@@ -2,6 +2,7 @@ import stl from "./UpdatePoll.module.css";
 import { useEffect, useState } from "react";
 import NumberCounter from "../../../../../utils/NumberCounter";
 import { motion as m } from "framer-motion";
+import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
 
 const pollQuestions = [
   { question: 1, questionValue: "Bird House calculator" },
@@ -23,6 +24,7 @@ const UpdatePoll = () => {
   const [checkedQuestion, setCheckedQuestion] = useState(null);
   const [voted, setVoted] = useState(false);
   const [totalVotes, setTotalVotes] = useState(200);
+  const [activePhase, setActivePhase] = useState("Poll");
 
   useEffect(() => {
     setCheckedQuestion(null);
@@ -38,6 +40,7 @@ const UpdatePoll = () => {
 
   return (
     <div className={stl.modal}>
+      <HiOutlineQuestionMarkCircle className={stl.questionMark} />
       <h2 className={stl.title}>Update poll</h2>
       {!voted && (
         <>
@@ -123,10 +126,42 @@ const UpdatePoll = () => {
         </span>
       </div>
       <div className={stl.phasesBox}>
-        <div className={stl.phase}></div>
-        <div className={stl.phase}></div>
-        <div className={stl.phase}></div>
-        <div className={stl.phase}></div>
+        <div className={stl.phase}>
+          <span
+            className={`${stl.phaseSpan} ${
+              activePhase === "Idle" ? stl.phaseActive : ""
+            }`}
+          >
+            Idle
+          </span>
+        </div>
+        <div className={stl.phase}>
+          <span
+            className={`${stl.phaseSpan} ${
+              activePhase === "Submissions" ? stl.phaseActive : ""
+            }`}
+          >
+            Submissions
+          </span>
+        </div>
+        <div className={stl.phase}>
+          <span
+            className={`${stl.phaseSpan} ${
+              activePhase === "Poll" ? stl.phaseActive : ""
+            }`}
+          >
+            Poll
+          </span>
+        </div>
+        <div className={stl.phase}>
+          <span
+            className={`${stl.phaseSpan} ${
+              activePhase === "Construction" ? stl.phaseActive : ""
+            }`}
+          >
+            Construction
+          </span>
+        </div>
       </div>
     </div>
   );

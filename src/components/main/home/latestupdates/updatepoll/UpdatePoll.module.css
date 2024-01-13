@@ -99,7 +99,7 @@
 
 .seeResultsBox {
   width: 100%;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.7rem;
   /* background-color: rgb(38, 191, 0); */
   text-align: center;
 }
@@ -233,12 +233,15 @@
 .phase {
   width: 25%;
   height: 100%;
-  background-color: blue;
+  background-color: rgba(0, 0, 255, 0.3);
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .phase:after {
-  color: blue;
+  color: rgba(0, 0, 255, 0.3);
   border-left: 10px solid;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -257,4 +260,43 @@
   position: absolute;
   left: 0px;
   z-index: 300;
+}
+
+.phaseActive {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 1);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phaseActive:after {
+  color: rgba(0, 0, 255, 1);
+  border-left: 10px solid;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  right: -10px;
+}
+
+.phaseSpan {
+  font-size: 12px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.questionMark {
+  color: gray;
+  position: absolute;
+  right: 32px;
+  font-size: 22.5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.questionMark:hover {
+  color: rgb(176, 176, 176);
 }
