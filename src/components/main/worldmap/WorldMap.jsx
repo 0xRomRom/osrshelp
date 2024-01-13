@@ -25,7 +25,11 @@ const WorldMap = () => {
         className={`${stl.mapContainers} ${fullScreen ? stl.fullScreen : ""}`}
       >
         <MapContainer center={[70, 250]} zoom={4} className={stl.mapBox}>
-          <ImageOverlay url="./worldmap/Worldmap.png" bounds={bounds} />
+          <ImageOverlay
+            url="./worldmap/Worldmap.png"
+            bounds={bounds}
+            loading="lazy"
+          />
         </MapContainer>
         <RiFullscreenFill
           className={stl.fullScreenBtn}

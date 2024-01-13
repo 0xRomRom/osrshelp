@@ -32,7 +32,7 @@ const RuneChat = () => {
           username: "King Rom II",
           chatmsg: userMessage,
           timestamp: now,
-          playercolor: "#ab4",
+          playercolor: "#0084ff",
         },
       ]);
 

@@ -11,13 +11,69 @@
   border-radius: 0.8rem;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 1rem;
+  align-items: center;
   position: relative;
+  flex-direction: column;
 }
 
 .runechat {
   color: gray;
   text-align: center;
   font-size: 20px;
+}
+
+.questionsList {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.questionWrapper {
+  position: relative;
+  padding: 5px;
+
+  width: 100%;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ctaBox {
+  height: 5rem;
+  width: 100%;
+  /* background-color: blue; */
+}
+
+.seeResultsBox {
+  height: 2rem;
+  width: 100%;
+  /* background-color: rgb(38, 191, 0); */
+}
+
+.checkBox {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.innerCheck {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  /* background-color: rgb(204, 204, 204); */
+  border: 2px solid var(--blue-main);
+}
+
+.checked {
+  background-color: var(--blue-main);
 }
