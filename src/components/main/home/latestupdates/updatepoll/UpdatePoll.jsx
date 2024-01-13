@@ -103,11 +103,7 @@ const UpdatePoll = () => {
           </div>
         </>
       )}
-      <div className={stl.seeResultsBox}>
-        <span className={stl.seeResults} onClick={() => setVoted(!voted)}>
-          {voted ? "Vote" : "See results"}
-        </span>
-      </div>
+
       <div className={stl.ctaBox}>
         <button
           className={stl.voteBtn}
@@ -120,6 +116,11 @@ const UpdatePoll = () => {
         >
           Vote
         </button>
+      </div>
+      <div className={stl.seeResultsBox}>
+        <span className={stl.seeResults} onClick={() => setVoted(!voted)}>
+          {voted ? "Vote" : "See results"}
+        </span>
       </div>
       <div className={stl.phasesBox}>
         <div className={stl.phase}></div>
