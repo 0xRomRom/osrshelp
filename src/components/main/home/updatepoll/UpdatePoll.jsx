@@ -1,17 +1,20 @@
 import stl from "./UpdatePoll.module.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
 import { HiOutlineQuestionMarkCircle } from "react-icons/hi2";
 import CurrentPollState from "./currentpollstate/CurrentPollState";
 
 import InfoOverlay from "./infooverlay/InfoOverlay";
 import PollQuestions from "./pollquestions/PollQuestions";
-
+import supabase from "../../../../utils/supabase/supabase";
 import PollResults from "./pollresults/PollResults";
 
 const UpdatePoll = () => {
+  const { userID } = useContext(AuthContext);
   const [voted, setVoted] = useState(false);
-  const [totalVotes, setTotalVotes] = useState(200);
+  const [voteResults, setVoteResults] = useState({});
+  const [totalVotes, setTotalVotes] = useState(0);
   const [showInfoOverlay, setShowInfoOverlay] = useState(false);
   const [checkedQuestion, setCheckedQuestion] = useState(null);
 
@@ -19,13 +22,62 @@ const UpdatePoll = () => {
     setCheckedQuestion(null);
   }, [voted]);
 
-  const handleVote = () => {
+  const handleVote = async () => {
     if (!checkedQuestion) {
       return;
     }
+    try {
+      const { error } = await supabase.from("poll_votes").insert([
+        {
+          uid: userID,
+          uservote: checkedQuestion,
+        },
+      ]);
+
+      if (error) {
+        throw new Error(error);
+      }
+    } catch (err) {
+      console.log(err);
+    }
+
     setVoted(!voted);
-    setTotalVotes((votes) => votes + 1);
   };
+
+  useEffect(() => {
+    const initialFetch = async () => {
+      const voteResult = {
+        question1: 0,
+        question2: 0,
+        question3: 0,
+        question4: 0,
+        question5: 0,
+      };
+      try {
+        const { data, error } = await supabase.from("poll_votes").select("*");
+
+        if (error) {
+          throw new Error(error);
+        }
+        if (data) {
+          //Total votes
+          setTotalVotes(Object.entries(data).length);
+          //Vote results
+          data.forEach((item) => {
+            console.log(item);
+            voteResult[`question${item.uservote}`] += 1;
+          });
+          setVoteResults(voteResult);
+          console.log(voteResult);
+          console.log(data);
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    initialFetch();
+  }, []);
 
   return (
     <div className={stl.modal}>
@@ -49,7 +101,9 @@ const UpdatePoll = () => {
         />
       )}
 
-      {voted && <PollResults totalVotes={totalVotes} />}
+      {voted && (
+        <PollResults totalVotes={totalVotes} voteResults={voteResults} />
+      )}
 
       <div className={stl.ctaBox}>
         <button
