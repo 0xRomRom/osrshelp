@@ -50,7 +50,30 @@
   gap: 0.5rem;
   border-radius: 0.4rem;
   transition: all 0.2s ease-in-out;
+  user-select: none;
   cursor: pointer;
+}
+
+.questionWrapper:hover {
+  background-color: #109afc1b;
+}
+.questionChecked:hover {
+  background-color: var(--blue-bg);
+}
+.resultWrapper {
+  position: relative;
+  padding: 10px;
+
+  width: 100%;
+
+  background-color: #109afc11;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
 }
 
 .ctaBox {
@@ -168,7 +191,7 @@
   background: linear-gradient(
     90deg,
     rgba(0, 0, 255, 0.549),
-    rgba(0, 0, 255, 0.178)
+    rgba(77, 7, 142, 0.178)
   );
   /* background-color: red; */
   border-radius: 0.4rem;

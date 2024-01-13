@@ -1,5 +1,5 @@
 import stl from "./UpdatePoll.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NumberCounter from "../../../../../utils/NumberCounter";
 import { motion as m } from "framer-motion";
 
@@ -24,6 +24,10 @@ const UpdatePoll = () => {
   const [voted, setVoted] = useState(true);
 
   const totalVotes = 220;
+
+  useEffect(() => {
+    setCheckedQuestion(null);
+  }, [voted]);
 
   return (
     <div className={stl.modal}>
@@ -60,7 +64,7 @@ const UpdatePoll = () => {
           {pollResults.map((item) => {
             const percentage = (item.voteCount / totalVotes) * 100;
             return (
-              <div className={stl.questionWrapper} key={item.question}>
+              <div className={stl.resultWrapper} key={item.question}>
                 <div className={stl.votesWrap}>
                   <span className={stl.votes}>
                     <NumberCounter n={item.voteCount} time="3000" />x
