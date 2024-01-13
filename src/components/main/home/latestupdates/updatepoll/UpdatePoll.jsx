@@ -21,17 +21,24 @@ const pollResults = [
 
 const UpdatePoll = () => {
   const [checkedQuestion, setCheckedQuestion] = useState(null);
-  const [voted, setVoted] = useState(true);
-
-  const totalVotes = 220;
+  const [voted, setVoted] = useState(false);
+  const [totalVotes, setTotalVotes] = useState(200);
 
   useEffect(() => {
     setCheckedQuestion(null);
   }, [voted]);
 
+  const handleVote = () => {
+    if (!checkedQuestion) {
+      return;
+    }
+    setVoted(!voted);
+    setTotalVotes((votes) => votes + 1);
+  };
+
   return (
     <div className={stl.modal}>
-      <h2 className={stl.runechat}>Update poll</h2>
+      <h2 className={stl.title}>Update poll</h2>
       {!voted && (
         <>
           <div className={stl.questionsList}>
@@ -109,10 +116,16 @@ const UpdatePoll = () => {
             cursor: voted ? "initial" : "pointer",
           }}
           disabled={voted ? true : false}
-          onClick={() => setVoted(!voted)}
+          onClick={handleVote}
         >
           Vote
         </button>
+      </div>
+      <div className={stl.phasesBox}>
+        <div className={stl.phase}></div>
+        <div className={stl.phase}></div>
+        <div className={stl.phase}></div>
+        <div className={stl.phase}></div>
       </div>
     </div>
   );

@@ -13,10 +13,12 @@
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
+  position: relative;
 }
 
-.runechat {
+.title {
   color: gray;
+  font-size: 16px;
+  position: relative;
   text-align: center;
-  font-size: 20px;
 }

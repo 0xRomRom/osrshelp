@@ -6,9 +6,8 @@
   padding-bottom: 0rem;
   min-height: 500px;
   background-color: rgb(32, 46, 57);
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
-  /* background-color: var(--dark-bg); */
-  /* width: 350px; */
+  /* background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27)); */
+  background-color: rgb(32, 46, 57);
   border-radius: 0.8rem;
   display: flex;
   justify-content: flex-start;
@@ -17,10 +16,11 @@
   flex-direction: column;
 }
 
-.runechat {
+.title {
   color: gray;
+  font-size: 16px;
+  position: relative;
   text-align: center;
-  font-size: 20px;
 }
 
 .questionsList {
@@ -80,10 +80,8 @@
 }
 
 .ctaBox {
-  height: 3rem;
   width: 100%;
   padding-bottom: 1.5rem;
-  /* background-color: blue; */
 }
 
 .seeResultsBox {
@@ -184,6 +182,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 5;
 }
 
 .resultPercentage {
@@ -219,3 +218,52 @@
   color: rgb(213, 213, 213);
   font-size: 14px;
 }
+
+.phasesBox {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  /* background-color: red; */
+  bottom: 0px;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.phase {
+  width: 25%;
+  height: 100%;
+  background-color: blue;
+  position: relative;
+}
+
+.phase:after {
+  color: blue;
+  border-left: 10px solid;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  right: -10px;
+}
+.phase:before {
+  color: rgb(32, 46, 57);
+  border-left: 10px solid;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: 0px;
+  z-index: 300;
+}
+
+/* .seperator {
+  width: 5px;
+  height: 100%;
+  background-color: gray;
+  border-radius: 5px 30px 30px 5px;
+} */
