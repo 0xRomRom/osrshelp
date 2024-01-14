@@ -1,14 +1,11 @@
 import stl from "./PollQuestions.module.css";
 
-const pollQuestions = [
-  { question: 1, questionValue: "Bird House calculator" },
-  { question: 2, questionValue: "Hydra calculator" },
-  { question: 3, questionValue: "Herbiboar calculator" },
-  { question: 4, questionValue: "Blast Furnace calculator" },
-  { question: 5, questionValue: "Pyramid plunder calculator" },
-];
-
-const PollQuestions = ({ totalVotes, checkedQuestion, setCheckedQuestion }) => {
+const PollQuestions = ({
+  totalVotes,
+  checkedQuestion,
+  setCheckedQuestion,
+  pollQuestions,
+}) => {
   return (
     <div className={stl.questionsList}>
       {pollQuestions.map((item) => {

@@ -17,6 +17,7 @@ const UpdatePoll = () => {
   const [totalVotes, setTotalVotes] = useState(0);
   const [showInfoOverlay, setShowInfoOverlay] = useState(false);
   const [checkedQuestion, setCheckedQuestion] = useState(null);
+  const [pollQuestions, setPollQuestions] = useState([]);
 
   useEffect(() => {
     setCheckedQuestion(null);
@@ -81,36 +82,77 @@ const UpdatePoll = () => {
   };
 
   useEffect(() => {
-    const initialFetch = async () => {
-      const voteResult = {
-        question1: 0,
-        question2: 0,
-        question3: 0,
-        question4: 0,
-        question5: 0,
-      };
+    const initFetcher = async () => {
+      let parsedQuestions = null;
       try {
-        const { data, error } = await supabase.from("poll_votes").select("*");
+        const { data, error } = await supabase
+          .from("poll_questions")
+          .select("pollobject")
+          .eq("uid", "dbbc33b0-9a71-4172-9abd-979ef8ea3c14")
+          .single();
 
+        parsedQuestions = JSON.parse(data.pollobject);
+        setPollQuestions(parsedQuestions);
         if (error) {
+          console.log(error);
           throw new Error(error);
-        }
-        if (data) {
-          //Total votes
-          setTotalVotes(Object.entries(data).length);
-          //Vote results
-          data.forEach((item) => {
-            voteResult[`question${item.uservote}`] += 1;
-          });
-          setVoteResults(voteResult);
         }
       } catch (err) {
         console.error(err);
       }
     };
+    initFetcher();
+  }, []);
 
-    initialFetch();
-  }, [voted]);
+  useEffect(() => {
+    if (pollQuestions.length > 0) {
+      const questions = [...pollQuestions];
+      const updateVoteCount = async () => {
+        try {
+          const { data, error } = await supabase.from("poll_votes").select("*");
+          setTotalVotes(data.length);
+          let q1 = 0;
+          let q2 = 0;
+          let q3 = 0;
+          let q4 = 0;
+          let q5 = 0;
+
+          data.forEach((item) => {
+            if (item.uservote === 1) {
+              q1++;
+            }
+            if (item.uservote === 2) {
+              q2++;
+            }
+            if (item.uservote === 3) {
+              q3++;
+            }
+            if (item.uservote === 4) {
+              q4++;
+            }
+            if (item.uservote === 5) {
+              q5++;
+            }
+          });
+          questions[0].voteCount += q1;
+          questions[1].voteCount += q2;
+          questions[2].voteCount += q3;
+          questions[3].voteCount += q4;
+          questions[4].voteCount += q5;
+          console.log(questions);
+          setVoteResults(questions);
+
+          if (error) {
+            console.log(error);
+            throw new Error(error);
+          }
+        } catch (err) {
+          console.error(err);
+        }
+      };
+      updateVoteCount();
+    }
+  }, [pollQuestions]);
 
   return (
     <div className={stl.modal}>
@@ -131,6 +173,7 @@ const UpdatePoll = () => {
           totalVotes={totalVotes}
           checkedQuestion={checkedQuestion}
           setCheckedQuestion={setCheckedQuestion}
+          pollQuestions={pollQuestions}
         />
       )}
 
