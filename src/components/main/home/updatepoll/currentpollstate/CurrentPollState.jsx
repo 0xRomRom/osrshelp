@@ -1,9 +1,10 @@
 import stl from "./CurrentPollState.module.css";
-import { useState } from "react";
 
-const CurrentPollState = ({ showInfoOverlay, setShowInfoOverlay }) => {
-  const [activePhase, setActivePhase] = useState("Poll");
-
+const CurrentPollState = ({
+  showInfoOverlay,
+  setShowInfoOverlay,
+  activePhase,
+}) => {
   const openOverlayModal = () => {
     setShowInfoOverlay(!showInfoOverlay);
   };

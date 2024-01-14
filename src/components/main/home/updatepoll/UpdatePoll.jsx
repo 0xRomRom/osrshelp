@@ -21,6 +21,7 @@ const UpdatePoll = () => {
   const [checkedQuestion, setCheckedQuestion] = useState(null);
   const [pollQuestions, setPollQuestions] = useState([]);
   const [alreadyVoted, setAlreadyVoted] = useState(false);
+  const [activePhase, setActivePhase] = useState(null);
 
   useEffect(() => {
     if (!userID) {
@@ -87,12 +88,13 @@ const UpdatePoll = () => {
       try {
         const { data, error } = await supabase
           .from("poll_questions")
-          .select("pollobject")
+          .select("*")
           .eq("uid", "dbbc33b0-9a71-4172-9abd-979ef8ea3c14")
           .single();
-
+        console.log(data);
         parsedQuestions = JSON.parse(data.pollobject);
         setPollQuestions(parsedQuestions);
+        setActivePhase(data.pollstate);
         if (error) {
           console.log(error);
           throw new Error(error);
@@ -202,6 +204,7 @@ const UpdatePoll = () => {
       <CurrentPollState
         showInfoOverlay={showInfoOverlay}
         setShowInfoOverlay={setShowInfoOverlay}
+        activePhase={activePhase}
       />
     </div>
   );
