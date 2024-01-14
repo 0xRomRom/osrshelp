@@ -36,6 +36,9 @@
 .questionChecked {
   background-color: var(--blue-bg);
 }
+.questionChecked:hover {
+  background-color: var(--blue-bg);
+}
 
 .votedQuestion {
   background-color: var(--blue-bg);

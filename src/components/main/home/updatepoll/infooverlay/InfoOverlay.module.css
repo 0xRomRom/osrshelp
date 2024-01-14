@@ -34,6 +34,7 @@
   border: 2px solid rgba(128, 128, 128, 0.181); */
   border-radius: 0.8rem;
   padding: 5px;
+  padding: 0px 30px;
 }
 .copy {
   user-select: none;
