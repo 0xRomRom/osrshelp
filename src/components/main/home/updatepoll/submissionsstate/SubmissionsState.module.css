@@ -5,7 +5,72 @@
   margin-bottom: 2rem;
   margin-top: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+}
+
+.hero {
+  color: var(--blue-main);
+  font-size: 32px;
+  user-select: none;
+}
+
+.submitForm {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.formInput {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 2.5rem;
+  color: #1098fc;
+  background-color: #1098fc26;
+  background-color: var(--dark-bg);
+  border-radius: 0.4rem;
+  /* padding-left: 1rem; */
+  padding: 0rem 1rem;
+  font-size: 16px;
+  margin-bottom: 2rem;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+.formInput:focus {
+  border: 1px solid var(--blue-main);
+  box-shadow: 0px 0px 4px var(--blue-main);
+}
+
+.submitCta {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 2.5rem;
+  color: #1098fc;
+  color: black;
+  background-color: var(--blue-main);
+  border-radius: 0.4rem;
+  padding: 0rem 2rem;
+  font-size: 16px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin-top: 2.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.submitCta:hover {
+  background-color: #0084ffc9;
+  box-shadow: 0px 0px 5px #0084ffc9;
+  color: white;
+}
+
+.submitCta:active {
+  border: 1px solid var(--blue-main);
+
+  background-color: #109afc;
 }
