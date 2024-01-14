@@ -9,11 +9,13 @@ import InfoOverlay from "./infooverlay/InfoOverlay";
 import PollQuestions from "./pollquestions/PollQuestions";
 import supabase from "../../../../utils/supabase/supabase";
 import PollResults from "./pollresults/PollResults";
+import { useNavigate } from "react-router-dom";
 
 const UpdatePoll = () => {
+  const navigate = useNavigate();
   const { userID } = useContext(AuthContext);
-  const [voted, setVoted] = useState(false);
-  const [voteResults, setVoteResults] = useState({});
+  const [voted, setVoted] = useState(true);
+  const [voteResults, setVoteResults] = useState(null);
   const [totalVotes, setTotalVotes] = useState(0);
   const [showInfoOverlay, setShowInfoOverlay] = useState(false);
   const [checkedQuestion, setCheckedQuestion] = useState(null);
@@ -53,6 +55,9 @@ const UpdatePoll = () => {
   }, [voted]);
 
   const handleVote = async () => {
+    if (!userID) {
+      navigate("/login");
+    }
     if (!checkedQuestion) {
       return;
     }
@@ -72,6 +77,7 @@ const UpdatePoll = () => {
     }
 
     setVoted(!voted);
+    setAlreadyVoted(true);
     setTotalVotes(() => totalVotes + 1);
   };
 
@@ -158,12 +164,12 @@ const UpdatePoll = () => {
         />
       )}
 
-      {voted && (
+      {voted && voteResults && (
         <PollResults totalVotes={totalVotes} voteResults={voteResults} />
       )}
 
       <div className={stl.ctaBox}>
-        {!alreadyVoted && (
+        {!alreadyVoted && !voted && (
           <button
             className={stl.voteBtn}
             style={{
@@ -173,7 +179,18 @@ const UpdatePoll = () => {
             disabled={voted ? true : false}
             onClick={handleVote}
           >
-            Vote
+            {!userID ? "Sign in to vote" : "Vote"}
+          </button>
+        )}
+        {alreadyVoted && !voted && (
+          <button
+            className={stl.alreadyVotedBtn}
+            disabled={true}
+            style={{
+              opacity: voted ? "0" : "1",
+            }}
+          >
+            Already voted
           </button>
         )}
       </div>
