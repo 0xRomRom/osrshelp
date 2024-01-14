@@ -6,9 +6,9 @@
   background-color: var(--dark-bg);
   border-radius: 0.8rem;
   z-index: 20;
-  padding: 2rem;
+  /* padding: 2rem; */
   padding-top: 1rem;
-  padding-bottom: 0rem;
+  /* padding-bottom: 0rem; */
 }
 
 .close {
@@ -50,6 +50,7 @@
   border: 2px solid rgba(128, 128, 128, 0.181); */
   border-radius: 0.8rem;
   padding: 5px;
+  padding: 0rem 2rem;
 }
 
 .phaseActive {
