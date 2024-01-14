@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 2rem;
 }
 
 .idleHero {
@@ -20,6 +21,19 @@
   position: relative;
   width: 100px;
   z-index: 10 !important;
+  animation: scaler 2s infinite linear;
+}
+
+@keyframes scaler {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .copy {
@@ -38,7 +52,7 @@
   width: 100px;
   height: 95px;
   inset: 0;
-  top: 20px;
+  top: 30px;
   border-radius: 50%;
   background-color: var(--blue-main);
   filter: blur(2rem);

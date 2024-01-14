@@ -1,5 +1,7 @@
 import stl from "./SubmissionsState.module.css";
 
-const SubmissionsState = () => {};
+const SubmissionsState = () => {
+  return <div className={stl.submissionsstate}></div>;
+};
 
 export default SubmissionsState;

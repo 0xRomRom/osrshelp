@@ -15,7 +15,7 @@ const IdleState = () => {
       <p className={stl.copy}>
         Poll is in idle state.
         <br />
-        Wait for a new submissions round!
+        New submissions round soon!
       </p>
     </div>
   );
