@@ -37,13 +37,13 @@ const UpdatePoll = () => {
           .from("poll_votes")
           .select("uservote")
           .eq("uid", userID);
-        setUserVoteIndex(data[0].uservote);
+        setUserVoteIndex(data[0]?.uservote);
         const len = Object.entries(data).length;
         if (len > 0) {
           setAlreadyVoted(true);
         }
         if (error) {
-          throw new Error(error);
+          // throw new Error("No vote recorded.");
         }
       } catch (err) {
         console.error(err);

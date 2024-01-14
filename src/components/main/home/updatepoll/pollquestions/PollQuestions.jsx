@@ -11,8 +11,6 @@ const PollQuestions = ({
   return (
     <div className={stl.questionsList}>
       {pollQuestions.map((item) => {
-        console.log(item.question);
-        console.log(userVoteIndex);
         return (
           <div
             className={`${stl.questionWrapper} ${

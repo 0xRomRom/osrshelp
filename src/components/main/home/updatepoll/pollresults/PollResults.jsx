@@ -6,7 +6,7 @@ const PollResults = ({ totalVotes, voteResults }) => {
   return (
     <div className={stl.voteResults}>
       {voteResults.map((item) => {
-        const percentage = (item.voteCount / totalVotes) * 100;
+        const percentage = (item.voteCount / totalVotes) * 100 || 0;
         return (
           <div className={stl.resultWrapper} key={item.question}>
             <div className={stl.votesWrap}>
