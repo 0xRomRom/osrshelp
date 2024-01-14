@@ -12,6 +12,7 @@ import PollResults from "./pollresults/PollResults";
 import { useNavigate } from "react-router-dom";
 
 import IdleState from "./idlestate/IdleState";
+import SubmissionsState from "./submissionsstate/SubmissionsState";
 
 const UpdatePoll = () => {
   const navigate = useNavigate();
@@ -157,6 +158,7 @@ const UpdatePoll = () => {
         onClick={() => setShowInfoOverlay(!showInfoOverlay)}
       />
       <h2 className={stl.title}>Update poll</h2>
+      {activePhase === "Submissions" && <SubmissionsState />}
       {activePhase === "Idle" && <IdleState />}
       {activePhase === "Poll" && (
         <>

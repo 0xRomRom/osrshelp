@@ -3,11 +3,14 @@ import stl from "./IdleState.module.css";
 const IdleState = () => {
   return (
     <div className={stl.idlestate}>
-      <img
-        src="./random/Wiseoldman.webp"
-        alt="Wise old man"
-        className={stl.wiseoldman}
-      />
+      <div className={stl.wiseOldManWrap}>
+        <div className={stl.sphere}></div>
+        <img
+          src="./random/Wiseoldman.webp"
+          alt="Wise old man"
+          className={stl.wiseoldman}
+        />
+      </div>
       <h2 className={stl.idleHero}>Idle</h2>
       <p className={stl.copy}>
         Poll is in idle state.
