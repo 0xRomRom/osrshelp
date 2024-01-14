@@ -11,6 +11,8 @@ import supabase from "../../../../utils/supabase/supabase";
 import PollResults from "./pollresults/PollResults";
 import { useNavigate } from "react-router-dom";
 
+import IdleState from "./idlestate/IdleState";
+
 const UpdatePoll = () => {
   const navigate = useNavigate();
   const { userID } = useContext(AuthContext);
@@ -155,55 +157,56 @@ const UpdatePoll = () => {
         onClick={() => setShowInfoOverlay(!showInfoOverlay)}
       />
       <h2 className={stl.title}>Update poll</h2>
+      {activePhase === "Poll" && (
+        <>
+          {!voted && (
+            <PollQuestions
+              totalVotes={totalVotes}
+              checkedQuestion={checkedQuestion}
+              setCheckedQuestion={setCheckedQuestion}
+              pollQuestions={pollQuestions}
+              alreadyVoted={alreadyVoted}
+              userVoteIndex={userVoteIndex}
+            />
+          )}
 
-      {}
+          {voted && voteResults && (
+            <PollResults totalVotes={totalVotes} voteResults={voteResults} />
+          )}
 
-      {!voted && (
-        <PollQuestions
-          totalVotes={totalVotes}
-          checkedQuestion={checkedQuestion}
-          setCheckedQuestion={setCheckedQuestion}
-          pollQuestions={pollQuestions}
-          alreadyVoted={alreadyVoted}
-          userVoteIndex={userVoteIndex}
-        />
+          <div className={stl.ctaBox}>
+            {!alreadyVoted && !voted && (
+              <button
+                className={stl.voteBtn}
+                style={{
+                  opacity: voted ? "0" : "1",
+                  cursor: voted ? "initial" : "pointer",
+                }}
+                disabled={voted ? true : false}
+                onClick={handleVote}
+              >
+                {!userID ? "Sign in to vote" : "Vote"}
+              </button>
+            )}
+            {alreadyVoted && !voted && (
+              <button
+                className={stl.alreadyVotedBtn}
+                disabled={true}
+                style={{
+                  opacity: voted ? "0" : "1",
+                }}
+              >
+                Already voted
+              </button>
+            )}
+          </div>
+          <div className={stl.seeResultsBox}>
+            <span className={stl.seeResults} onClick={() => setVoted(!voted)}>
+              {voted ? "Vote" : "See results"}
+            </span>
+          </div>
+        </>
       )}
-
-      {voted && voteResults && (
-        <PollResults totalVotes={totalVotes} voteResults={voteResults} />
-      )}
-
-      <div className={stl.ctaBox}>
-        {!alreadyVoted && !voted && (
-          <button
-            className={stl.voteBtn}
-            style={{
-              opacity: voted ? "0" : "1",
-              cursor: voted ? "initial" : "pointer",
-            }}
-            disabled={voted ? true : false}
-            onClick={handleVote}
-          >
-            {!userID ? "Sign in to vote" : "Vote"}
-          </button>
-        )}
-        {alreadyVoted && !voted && (
-          <button
-            className={stl.alreadyVotedBtn}
-            disabled={true}
-            style={{
-              opacity: voted ? "0" : "1",
-            }}
-          >
-            Already voted
-          </button>
-        )}
-      </div>
-      <div className={stl.seeResultsBox}>
-        <span className={stl.seeResults} onClick={() => setVoted(!voted)}>
-          {voted ? "Vote" : "See results"}
-        </span>
-      </div>
       <CurrentPollState
         showInfoOverlay={showInfoOverlay}
         setShowInfoOverlay={setShowInfoOverlay}
