@@ -199,7 +199,10 @@ const UpdatePoll = () => {
           {voted ? "Vote" : "See results"}
         </span>
       </div>
-      <CurrentPollState />
+      <CurrentPollState
+        showInfoOverlay={showInfoOverlay}
+        setShowInfoOverlay={setShowInfoOverlay}
+      />
     </div>
   );
 };
