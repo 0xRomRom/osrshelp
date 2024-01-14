@@ -14,7 +14,7 @@ const AuthProvider = ({ children }) => {
       .select("premium")
       .eq("uid", uid)
       .single();
-    if (data.premium) {
+    if (data?.premium) {
       setPremiumUser(true);
     } else {
       setPremiumUser(false);
@@ -24,6 +24,7 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     supabase.auth.onAuthStateChange(async (event, session) => {
       if (session) {
+        console.log(session);
         if (event === "INITIAL_SESSION") {
           setLoggedInUser(true);
           getPremium(session.user["id"]);

@@ -42,6 +42,42 @@ const UpdatePoll = () => {
     }
 
     setVoted(!voted);
+
+    if (5 > 6) {
+      updateCurrentPoll();
+    }
+  };
+
+  const updateCurrentPoll = async () => {
+    const data = [
+      { question: 1, questionValue: "Bird House calculator", voteCount: 0 },
+      { question: 2, questionValue: "Hydra calculator", voteCount: 0 },
+      { question: 3, questionValue: "Herbiboar calculator", voteCount: 0 },
+      { question: 4, questionValue: "Blast Furnace calculator", voteCount: 0 },
+      {
+        question: 5,
+        questionValue: "Pyramid plunder calculator",
+        voteCount: 0,
+      },
+    ];
+
+    const stringData = JSON.stringify(data);
+
+    try {
+      const { data, error } = await supabase
+        .from("poll_questions")
+        .update({ pollobject: stringData })
+        .eq("uid", userID);
+
+      console.log(data);
+
+      if (error) {
+        console.log(error);
+        throw new Error(error);
+      }
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {
@@ -64,12 +100,9 @@ const UpdatePoll = () => {
           setTotalVotes(Object.entries(data).length);
           //Vote results
           data.forEach((item) => {
-            console.log(item);
             voteResult[`question${item.uservote}`] += 1;
           });
           setVoteResults(voteResult);
-          console.log(voteResult);
-          console.log(data);
         }
       } catch (err) {
         console.error(err);

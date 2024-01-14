@@ -1,20 +1,48 @@
 import stl from "./PollResults.module.css";
 import NumberCounter from "../../../../../utils/NumberCounter";
 import { motion as m } from "framer-motion";
+import { useEffect, useState } from "react";
+import supabase from "../../../../../utils/supabase/supabase";
 
-const pollResults = [
-  { question: 1, questionValue: "Bird House calculator", voteCount: 15 },
-  { question: 2, questionValue: "Hydra calculator", voteCount: 28 },
-  { question: 3, questionValue: "Herbiboar calculator", voteCount: 34 },
-  { question: 4, questionValue: "Blast Furnace calculator", voteCount: 98 },
-  { question: 5, questionValue: "Pyramid plunder calculator", voteCount: 62 },
-];
 const PollResults = ({ totalVotes, voteResults }) => {
+  const [pollResults, setPollResults] = useState([]);
+
+  useEffect(() => {
+    const initFetcher = async () => {
+      try {
+        const { data, error } = await supabase
+          .from("poll_questions")
+          .select("pollobject")
+          .eq("uid", "dbbc33b0-9a71-4172-9abd-979ef8ea3c14")
+          .single();
+
+        const parsedData = JSON.parse(data.pollobject);
+
+        // setPollResults(parsedData);
+
+        const updatedPollResults = parsedData.map((result, index) => ({
+          ...result,
+          voteCount: voteResults[`question${index + 1}`],
+        }));
+
+        console.log(updatedPollResults);
+        setPollResults(updatedPollResults);
+
+        if (error) {
+          console.log(error);
+          throw new Error(error);
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    initFetcher();
+  }, [voteResults]);
+
   return (
     <div className={stl.voteResults}>
       {pollResults.map((item) => {
-        const percentage = item.voteCount / totalVotes;
-        console.log(percentage);
+        const percentage = (item.voteCount / totalVotes) * 100;
         return (
           <div className={stl.resultWrapper} key={item.question}>
             <div className={stl.votesWrap}>
