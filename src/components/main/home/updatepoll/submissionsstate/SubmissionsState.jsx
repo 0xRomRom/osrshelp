@@ -4,13 +4,37 @@ import supabase from "../../../../../utils/supabase/supabase";
 
 const SubmissionsState = ({ userID }) => {
   const [submission, setSubmission] = useState(null);
+  const [alreadySubmitted, setAlreadySubmitted] = useState(null);
 
   const updateSubmissionState = (e) => {
-    e.preventDefault();
     setSubmission(e.target.value);
   };
 
-  const handleFormSubmission = async () => {
+  useEffect(() => {
+    const initialFetch = async () => {
+      try {
+        const { data, error } = await supabase
+          .from("poll_submissions")
+          .select()
+          .eq("uid", userID)
+          .single();
+        console.log(data);
+        if (data) {
+          setAlreadySubmitted(data.submission);
+        }
+
+        if (error) {
+          throw new Error(error);
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    initialFetch();
+  }, []);
+
+  const handleFormSubmission = async (e) => {
+    e.preventDefault();
     try {
       const { data, error } = await supabase.from("poll_submissions").insert([
         {
@@ -25,24 +49,27 @@ const SubmissionsState = ({ userID }) => {
 
   useEffect(() => {
     console.log(submission);
-  }, [submission]);
+    console.log(alreadySubmitted);
+  }, [submission, alreadySubmitted]);
   return (
     <div className={stl.submissionsstate}>
       <h2 className={stl.hero}>Submissions</h2>
-      <form className={stl.submitForm}>
-        <span className={stl.inputSpan}>
-          What feature does OSRS Help need next?
-        </span>
-        <input
-          type="text"
-          className={stl.formInput}
-          placeholder="Ex. Pyramid Plunder calculator"
-          onChange={updateSubmissionState}
-        />
-        <button className={stl.submitCta} onClick={handleFormSubmission}>
-          Vote
-        </button>
-      </form>
+      {!alreadySubmitted && (
+        <form className={stl.submitForm}>
+          <span className={stl.inputSpan}>
+            What feature does OSRS Help need next?
+          </span>
+          <input
+            type="text"
+            className={stl.formInput}
+            placeholder="Ex. Pyramid Plunder calculator"
+            onChange={updateSubmissionState}
+          />
+          <button className={stl.submitCta} onClick={handleFormSubmission}>
+            Vote
+          </button>
+        </form>
+      )}
     </div>
   );
 };
