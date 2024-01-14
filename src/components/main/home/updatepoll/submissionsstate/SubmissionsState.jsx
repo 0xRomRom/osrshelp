@@ -1,11 +1,26 @@
 import { useEffect, useState } from "react";
 import stl from "./SubmissionsState.module.css";
+import supabase from "../../../../../utils/supabase/supabase";
 
-const SubmissionsState = () => {
+const SubmissionsState = ({ userID }) => {
   const [submission, setSubmission] = useState(null);
 
   const updateSubmissionState = (e) => {
+    e.preventDefault();
     setSubmission(e.target.value);
+  };
+
+  const handleFormSubmission = async () => {
+    try {
+      const { data, error } = await supabase.from("poll_submissions").insert([
+        {
+          uid: userID,
+          submission: submission,
+        },
+      ]);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {
@@ -24,7 +39,9 @@ const SubmissionsState = () => {
           placeholder="Ex. Pyramid Plunder calculator"
           onChange={updateSubmissionState}
         />
-        <button className={stl.submitCta}>Vote</button>
+        <button className={stl.submitCta} onClick={handleFormSubmission}>
+          Vote
+        </button>
       </form>
     </div>
   );
