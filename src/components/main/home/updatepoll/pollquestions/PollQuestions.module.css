@@ -36,6 +36,10 @@
 .questionChecked {
   background-color: var(--blue-bg);
 }
+
+.votedQuestion {
+  background-color: var(--blue-bg);
+}
 .checkBox {
   width: 30px;
   height: 30px;

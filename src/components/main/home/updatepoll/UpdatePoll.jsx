@@ -22,6 +22,7 @@ const UpdatePoll = () => {
   const [pollQuestions, setPollQuestions] = useState([]);
   const [alreadyVoted, setAlreadyVoted] = useState(false);
   const [activePhase, setActivePhase] = useState(null);
+  const [userVoteIndex, setUserVoteIndex] = useState(null);
 
   useEffect(() => {
     if (!userID) {
@@ -36,7 +37,7 @@ const UpdatePoll = () => {
           .from("poll_votes")
           .select("uservote")
           .eq("uid", userID);
-
+        setUserVoteIndex(data[0].uservote);
         const len = Object.entries(data).length;
         if (len > 0) {
           setAlreadyVoted(true);
@@ -84,17 +85,17 @@ const UpdatePoll = () => {
 
   useEffect(() => {
     const initFetcher = async () => {
-      let parsedQuestions = null;
       try {
         const { data, error } = await supabase
           .from("poll_questions")
           .select("*")
           .eq("uid", "dbbc33b0-9a71-4172-9abd-979ef8ea3c14")
           .single();
-        console.log(data);
-        parsedQuestions = JSON.parse(data.pollobject);
+
+        const parsedQuestions = JSON.parse(data.pollobject);
         setPollQuestions(parsedQuestions);
         setActivePhase(data.pollstate);
+
         if (error) {
           console.log(error);
           throw new Error(error);
@@ -118,7 +119,7 @@ const UpdatePoll = () => {
         const questionVoteCounts = Array(pollQuestions.length).fill(0);
 
         data.forEach((item) => {
-          const index = item.uservote - 1; // Assuming uservote is 1-indexed
+          const index = item.uservote - 1;
           if (index >= 0 && index < pollQuestions.length) {
             questionVoteCounts[index]++;
           }
@@ -163,6 +164,8 @@ const UpdatePoll = () => {
           checkedQuestion={checkedQuestion}
           setCheckedQuestion={setCheckedQuestion}
           pollQuestions={pollQuestions}
+          alreadyVoted={alreadyVoted}
+          userVoteIndex={userVoteIndex}
         />
       )}
 

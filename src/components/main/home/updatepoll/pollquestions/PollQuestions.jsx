@@ -5,20 +5,26 @@ const PollQuestions = ({
   checkedQuestion,
   setCheckedQuestion,
   pollQuestions,
+  alreadyVoted,
+  userVoteIndex,
 }) => {
   return (
     <div className={stl.questionsList}>
       {pollQuestions.map((item) => {
+        console.log(item.question);
+        console.log(userVoteIndex);
         return (
           <div
             className={`${stl.questionWrapper} ${
               checkedQuestion === item.question ? stl.questionChecked : ""
-            }`}
+            } ${userVoteIndex === item.question ? stl.votedQuestion : ""}`}
             key={item.question}
             onClick={() => setCheckedQuestion(item.question)}
+            style={{ pointerEvents: alreadyVoted ? "none" : "initial" }}
           >
             <div className={stl.checkBox}>
               <div
+                style={{ opacity: alreadyVoted ? "0" : "1" }}
                 className={`${stl.innerCheck} ${
                   checkedQuestion === item.question ? stl.checked : ""
                 }`}

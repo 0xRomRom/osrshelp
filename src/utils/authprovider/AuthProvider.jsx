@@ -24,7 +24,6 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     supabase.auth.onAuthStateChange(async (event, session) => {
       if (session) {
-        console.log(session);
         if (event === "INITIAL_SESSION") {
           setLoggedInUser(true);
           getPremium(session.user["id"]);
