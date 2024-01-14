@@ -43,6 +43,7 @@ const UpdatePoll = () => {
     }
 
     setVoted(!voted);
+    setTotalVotes(() => totalVotes + 1);
 
     if (5 > 6) {
       updateCurrentPoll();
