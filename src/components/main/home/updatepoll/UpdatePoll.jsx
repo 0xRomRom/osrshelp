@@ -110,7 +110,7 @@ const UpdatePoll = () => {
     };
 
     initialFetch();
-  }, []);
+  }, [voted]);
 
   return (
     <div className={stl.modal}>
