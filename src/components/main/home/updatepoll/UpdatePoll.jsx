@@ -44,42 +44,6 @@ const UpdatePoll = () => {
 
     setVoted(!voted);
     setTotalVotes(() => totalVotes + 1);
-
-    if (5 > 6) {
-      updateCurrentPoll();
-    }
-  };
-
-  const updateCurrentPoll = async () => {
-    const data = [
-      { question: 1, questionValue: "Bird House calculator", voteCount: 0 },
-      { question: 2, questionValue: "Hydra calculator", voteCount: 0 },
-      { question: 3, questionValue: "Herbiboar calculator", voteCount: 0 },
-      { question: 4, questionValue: "Blast Furnace calculator", voteCount: 0 },
-      {
-        question: 5,
-        questionValue: "Pyramid plunder calculator",
-        voteCount: 0,
-      },
-    ];
-
-    const stringData = JSON.stringify(data);
-
-    try {
-      const { data, error } = await supabase
-        .from("poll_questions")
-        .update({ pollobject: stringData })
-        .eq("uid", userID);
-
-      console.log(data);
-
-      if (error) {
-        console.log(error);
-        throw new Error(error);
-      }
-    } catch (err) {
-      console.error(err);
-    }
   };
 
   useEffect(() => {
@@ -106,54 +70,39 @@ const UpdatePoll = () => {
   }, []);
 
   useEffect(() => {
-    if (pollQuestions.length > 0) {
-      const questions = [...pollQuestions];
-      const updateVoteCount = async () => {
-        try {
-          const { data, error } = await supabase.from("poll_votes").select("*");
-          setTotalVotes(data.length);
-          let q1 = 0;
-          let q2 = 0;
-          let q3 = 0;
-          let q4 = 0;
-          let q5 = 0;
-
-          data.forEach((item) => {
-            if (item.uservote === 1) {
-              q1++;
-            }
-            if (item.uservote === 2) {
-              q2++;
-            }
-            if (item.uservote === 3) {
-              q3++;
-            }
-            if (item.uservote === 4) {
-              q4++;
-            }
-            if (item.uservote === 5) {
-              q5++;
-            }
-          });
-          questions[0].voteCount += q1;
-          questions[1].voteCount += q2;
-          questions[2].voteCount += q3;
-          questions[3].voteCount += q4;
-          questions[4].voteCount += q5;
-          console.log(questions);
-          setVoteResults(questions);
-
-          if (error) {
-            console.log(error);
-            throw new Error(error);
-          }
-        } catch (err) {
-          console.error(err);
+    const updateVoteCount = async () => {
+      try {
+        const { data, error } = await supabase.from("poll_votes").select("*");
+        if (error) {
+          console.log(error);
+          throw new Error(error);
         }
-      };
+
+        const questionVoteCounts = Array(pollQuestions.length).fill(0);
+
+        data.forEach((item) => {
+          const index = item.uservote - 1; // Assuming uservote is 1-indexed
+          if (index >= 0 && index < pollQuestions.length) {
+            questionVoteCounts[index]++;
+          }
+        });
+
+        const updatedQuestions = pollQuestions.map((question, index) => ({
+          ...question,
+          voteCount: question.voteCount + questionVoteCounts[index],
+        }));
+
+        setTotalVotes(data.length);
+        setVoteResults(updatedQuestions);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    if (pollQuestions.length > 0) {
       updateVoteCount();
     }
-  }, [pollQuestions]);
+  }, [pollQuestions, voted]);
 
   return (
     <div className={stl.modal}>
