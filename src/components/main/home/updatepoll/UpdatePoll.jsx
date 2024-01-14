@@ -18,6 +18,35 @@ const UpdatePoll = () => {
   const [showInfoOverlay, setShowInfoOverlay] = useState(false);
   const [checkedQuestion, setCheckedQuestion] = useState(null);
   const [pollQuestions, setPollQuestions] = useState([]);
+  const [alreadyVoted, setAlreadyVoted] = useState(false);
+
+  useEffect(() => {
+    if (!userID) {
+      setAlreadyVoted(false);
+      return;
+    }
+
+    const checkIfAlreadyVoted = async () => {
+      //Gaurd if user has already voted
+      try {
+        const { data, error } = await supabase
+          .from("poll_votes")
+          .select("uservote")
+          .eq("uid", userID);
+
+        const len = Object.entries(data).length;
+        if (len > 0) {
+          setAlreadyVoted(true);
+        }
+        if (error) {
+          throw new Error(error);
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    checkIfAlreadyVoted();
+  }, [alreadyVoted, userID]);
 
   useEffect(() => {
     setCheckedQuestion(null);
@@ -118,6 +147,8 @@ const UpdatePoll = () => {
       />
       <h2 className={stl.title}>Update poll</h2>
 
+      {}
+
       {!voted && (
         <PollQuestions
           totalVotes={totalVotes}
@@ -132,17 +163,19 @@ const UpdatePoll = () => {
       )}
 
       <div className={stl.ctaBox}>
-        <button
-          className={stl.voteBtn}
-          style={{
-            opacity: voted ? "0" : "1",
-            cursor: voted ? "initial" : "pointer",
-          }}
-          disabled={voted ? true : false}
-          onClick={handleVote}
-        >
-          Vote
-        </button>
+        {!alreadyVoted && (
+          <button
+            className={stl.voteBtn}
+            style={{
+              opacity: voted ? "0" : "1",
+              cursor: voted ? "initial" : "pointer",
+            }}
+            disabled={voted ? true : false}
+            onClick={handleVote}
+          >
+            Vote
+          </button>
+        )}
       </div>
       <div className={stl.seeResultsBox}>
         <span className={stl.seeResults} onClick={() => setVoted(!voted)}>

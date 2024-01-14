@@ -6,7 +6,7 @@ export const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [loggedInUser, setLoggedInUser] = useState(false);
   const [premiumUser, setPremiumUser] = useState(null);
-  const [userID, setUserID] = useState(false);
+  const [userID, setUserID] = useState(null);
 
   const getPremium = useCallback(async (uid) => {
     const { data } = await supabase
