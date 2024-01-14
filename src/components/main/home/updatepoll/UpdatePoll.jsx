@@ -157,6 +157,7 @@ const UpdatePoll = () => {
         onClick={() => setShowInfoOverlay(!showInfoOverlay)}
       />
       <h2 className={stl.title}>Update poll</h2>
+      {activePhase === "Idle" && <IdleState />}
       {activePhase === "Poll" && (
         <>
           {!voted && (
