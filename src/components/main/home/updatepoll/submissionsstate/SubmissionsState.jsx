@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import stl from "./SubmissionsState.module.css";
 import supabase from "../../../../../utils/supabase/supabase";
+import { FaArrowDownLong } from "react-icons/fa6";
 
 const SubmissionsState = ({ userID }) => {
   const [submission, setSubmission] = useState(null);
@@ -18,30 +19,33 @@ const SubmissionsState = ({ userID }) => {
           .select()
           .eq("uid", userID)
           .single();
-        console.log(data);
-        if (data) {
+        if (!data) {
+          return;
+        }
+        if (data.submission) {
           setAlreadySubmitted(data.submission);
         }
 
         if (error) {
           throw new Error(error);
         }
-      } catch (err) {
-        console.error(err);
-      }
+      } catch (err) {}
     };
     initialFetch();
-  }, []);
+  }, [userID]);
 
   const handleFormSubmission = async (e) => {
     e.preventDefault();
     try {
-      const { data, error } = await supabase.from("poll_submissions").insert([
+      const { error } = await supabase.from("poll_submissions").insert([
         {
           uid: userID,
           submission: submission,
         },
       ]);
+      if (error) {
+        throw new Error(error);
+      }
     } catch (err) {
       console.error(err);
     }
@@ -69,6 +73,16 @@ const SubmissionsState = ({ userID }) => {
             Vote
           </button>
         </form>
+      )}
+      {alreadySubmitted && (
+        <div className={stl.alreadySubmittedBox}>
+          <h2 className={stl.thanksHero}>Thanks for submitting</h2>
+          <FaArrowDownLong className={stl.downArrow} />
+          <span className={stl.submissionSpan}>{alreadySubmitted}</span>
+          <p className={stl.submitCopy}>
+            Most popular entries will be polled soon!
+          </p>
+        </div>
       )}
     </div>
   );
