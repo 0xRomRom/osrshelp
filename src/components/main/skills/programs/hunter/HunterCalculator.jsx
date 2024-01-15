@@ -1,7 +1,6 @@
 import stl from "./HunterCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import hunterIcon from "../../../../../assets/skillicons/Hunter.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -43,7 +42,11 @@ const HunterCalculator = (props) => {
             className={stl.backArrow}
             onClick={handleMenuSwitch}
           />
-          <img src={hunterIcon} alt="Hunter Level" className={stl.skillImg} />
+          <img
+            src="./skillicons/Hunter.webp"
+            alt="Hunter Level"
+            className={stl.skillImg}
+          />
           <span className={stl.skillTitle}>Hunter</span>
           {arePropsDefined ? (
             <div className={stl.userStatsBox}>

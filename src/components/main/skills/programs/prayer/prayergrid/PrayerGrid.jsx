@@ -1,6 +1,5 @@
 import stl from "./PrayerGrid.module.css";
 import prayerList from "../../../../../../utils/prayerList";
-import prayerLogo from "../../../../../../assets/skillicons/Prayer.webp";
 import expLogo from "../../../../../../assets/random/Stats_icon.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
@@ -126,7 +125,11 @@ const PrayerGrid = (props) => {
           Exp
         </span>
         <span onClick={sortAmount}>
-          <img src={prayerLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Prayer.webp"
+            alt="Amount Logo"
+            className={stl.miniLogo}
+          />{" "}
           Amount
         </span>
         <span onClick={sortCost}>

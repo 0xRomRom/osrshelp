@@ -1,7 +1,6 @@
 import stl from "./HerbloreCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import herbloreIcon from "../../../../../assets/skillicons/Herblore.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -46,7 +45,7 @@ const HerbloreCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src={herbloreIcon}
+            src="./skillicons/Herblore.webp"
             alt="Herblore Level"
             className={stl.skillImg}
           />

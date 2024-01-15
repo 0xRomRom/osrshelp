@@ -1,7 +1,6 @@
 import stl from "./ThievingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import thievingIcon from "../../../../../assets/skillicons/Thieving.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -44,7 +43,7 @@ const ThievingCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src={thievingIcon}
+            src="./skillicons/Thieving.webp"
             alt="Thieving Level"
             className={stl.skillImg}
           />

@@ -1,7 +1,6 @@
 import stl from "./FiremakingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import firemakingIcon from "../../../../../assets/skillicons/Firemaking.png";
 
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
@@ -49,7 +48,7 @@ const FiremakingCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src={firemakingIcon}
+            src="./skillicons/Firemaking.webp"
             alt="Firemaking Level"
             className={stl.skillImg}
           />

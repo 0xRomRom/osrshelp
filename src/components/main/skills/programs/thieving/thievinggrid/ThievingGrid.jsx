@@ -1,6 +1,5 @@
 import stl from "./ThievingGrid.module.css";
 import THIEVINGLIST from "../../../../../../utils/thievingList";
-import thievingIcon from "../../../../../../assets/skillicons/Thieving.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
 import { useState, useCallback, useEffect } from "react";
@@ -60,7 +59,7 @@ const ThievingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortNPC}>
           <img
-            src={thievingIcon}
+            src="./skillicons/Thieving.webp"
             alt="Thieving Logo"
             className={stl.miniLogo}
           />{" "}
@@ -71,7 +70,7 @@ const ThievingGrid = (props) => {
         </span>
         <span onClick={sortToGo}>
           <img
-            src={thievingIcon}
+            src="./skillicons/Thieving.webp"
             alt="Thieving Logo"
             className={stl.miniLogo}
           />{" "}

@@ -1,7 +1,6 @@
 import stl from "./StrengthCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import strengthIcon from "../../../../../assets/skillicons/Strength.png";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -44,7 +43,7 @@ const StrengthCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src={strengthIcon}
+            src="./skillicons/Strength.webp"
             alt="Strength Level"
             className={stl.skillImg}
           />

@@ -1,7 +1,6 @@
 import stl from "./PrayerCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import prayerIcon from "../../../../../assets/skillicons/Prayer.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -44,7 +43,11 @@ const PrayerCalculator = (props) => {
             className={stl.backArrow}
             onClick={handleMenuSwitch}
           />
-          <img src={prayerIcon} alt="Prayer Level" className={stl.skillImg} />
+          <img
+            src="./skillicons/Prayer.webp"
+            alt="Prayer Level"
+            className={stl.skillImg}
+          />
           <span className={stl.skillTitle}>Prayer</span>
           {arePropsDefined ? (
             <div className={stl.userStatsBox}>

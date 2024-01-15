@@ -1,7 +1,6 @@
 import stl from "./SmithingGrid.module.css";
 import SMITHINGLIST from "../../../../../../utils/smithingList";
 import SMITHINGLISTITEMS from "../../../../../../utils/smithingItemList";
-import smithingLogo from "../../../../../../assets/skillicons/Smithing.webp";
 
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
@@ -189,7 +188,11 @@ const SmithingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
-          <img src={smithingLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Smithing.webp"
+            alt="Smithing skill"
+            className={stl.miniLogo}
+          />{" "}
           Item
         </span>
         <span onClick={sortExp}>
@@ -201,7 +204,11 @@ const SmithingGrid = (props) => {
           Exp
         </span>
         <span onClick={sortAmount}>
-          <img src={smithingLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Smithing.webp"
+            alt="Amount Logo"
+            className={stl.miniLogo}
+          />{" "}
           Actions
         </span>
         <span onClick={sortCost}>

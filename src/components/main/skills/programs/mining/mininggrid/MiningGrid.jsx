@@ -1,7 +1,6 @@
 import stl from "./MiningGrid.module.css";
 import ORESLIST from "../../../../../../utils/oresList";
 import moneyLogo from "../../../../../../assets/icons/Donate.webp";
-import miningLogo from "../../../../../../assets/skillicons/Mining.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
@@ -115,11 +114,15 @@ const MiningGrid = (props) => {
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
         </span>
         <span onClick={sortToGo}>
-          <img src={miningLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Mining.webp"
+            alt="Mining skill"
+            className={stl.miniLogo}
+          />{" "}
           Mine
         </span>
         <span onClick={sortToGo}>
-          <img src={moneyLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          <img src={moneyLogo} alt="Profits Logo" className={stl.miniLogo} />{" "}
           Profit
         </span>
       </div>

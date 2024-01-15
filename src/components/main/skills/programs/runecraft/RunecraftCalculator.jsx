@@ -1,7 +1,6 @@
 import stl from "./RunecraftCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import runecraftIcon from "../../../../../assets/skillicons/Runecraft.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -44,7 +43,7 @@ const RunecraftCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src={runecraftIcon}
+            src="./skillicons/Runecraft.webp"
             alt="Runecraft Level"
             className={stl.skillImg}
           />

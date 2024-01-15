@@ -4,7 +4,11 @@ const SKILLSGRIDLIST = [
     icon: "./skillicons/Attack.webp",
     path: "/skillcalculators/attack",
   },
-  //   { name: "Defence", icon: defenceIcon, path: "/skillcalculators/defence" },
+  {
+    name: "Defence",
+    icon: "./skillicons/Defence.webp",
+    path: "/skillcalculators/defence",
+  },
   //   { name: "Strength", icon: strengthIcon, path: "/skillcalculators/strength" },
   //   {
   //     name: "Hitpoints",

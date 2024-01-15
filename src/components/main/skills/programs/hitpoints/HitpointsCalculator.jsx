@@ -1,7 +1,6 @@
 import stl from "./HitpointsCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import hitpointsIcon from "../../../../../assets/skillicons/Hitpoints.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -44,7 +43,7 @@ const HitpointsCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src={hitpointsIcon}
+            src="./skillicons/Hitpoints.webp"
             alt="Hitpoints Level"
             className={stl.skillImg}
           />

@@ -1,7 +1,6 @@
 import stl from "./RangedCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import rangedIcon from "../../../../../assets/skillicons/Ranged.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -43,7 +42,11 @@ const RangedCalculator = (props) => {
             className={stl.backArrow}
             onClick={handleMenuSwitch}
           />
-          <img src={rangedIcon} alt="Ranged Level" className={stl.skillImg} />
+          <img
+            src="./skillicons/Ranged.webp"
+            alt="Ranged Level"
+            className={stl.skillImg}
+          />
           <span className={stl.skillTitle}>Ranged</span>
           {arePropsDefined ? (
             <div className={stl.userStatsBox}>

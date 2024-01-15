@@ -1,7 +1,6 @@
 import stl from "./WoodcuttingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import woodcuttingIcon from "../../../../../assets/skillicons/Woodcutting.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -45,7 +44,7 @@ const WoodcuttingCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src={woodcuttingIcon}
+            src="./skillicons/Woodcutting.webp"
             alt="Woodcutting Level"
             className={stl.skillImg}
           />

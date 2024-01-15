@@ -1,7 +1,6 @@
 import stl from "./FarmingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import farmingIcon from "../../../../../assets/skillicons/Farming.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -45,7 +44,11 @@ const FarmingCalculator = (props) => {
             className={stl.backArrow}
             onClick={handleMenuSwitch}
           />
-          <img src={farmingIcon} alt="Farming Level" className={stl.skillImg} />
+          <img
+            src="./skillicons/Farming.webp"
+            alt="Farming Level"
+            className={stl.skillImg}
+          />
           <span className={stl.skillTitle}>Farming</span>
           {arePropsDefined ? (
             <div className={stl.userStatsBox}>

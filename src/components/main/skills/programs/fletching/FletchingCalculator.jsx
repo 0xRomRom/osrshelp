@@ -1,7 +1,6 @@
 import stl from "./FletchingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import fletchingIcon from "../../../../../assets/skillicons/Fletching.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -46,7 +45,7 @@ const FletchingCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src={fletchingIcon}
+            src="./skillicons/Fletching.webp"
             alt="Fletching Level"
             className={stl.skillImg}
           />

@@ -1,7 +1,6 @@
 import stl from "./FarmingGrid.module.css";
 import FARMINGLIST from "../../../../../../utils/farmingList";
 import FARMINGITEMLIST from "../../../../../../utils/farmingItemList";
-import farmingLogo from "../../../../../../assets/skillicons/Farming.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
@@ -291,7 +290,11 @@ const FarmingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
-          <img src={farmingLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Farming.webp"
+            alt="Bones Logo"
+            className={stl.miniLogo}
+          />{" "}
           Harvest
         </span>
         <span onClick={sortExp}>

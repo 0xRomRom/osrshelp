@@ -1,7 +1,6 @@
 import stl from "./MagicCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import magicIcon from "../../../../../assets/skillicons/Magic.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -52,7 +51,11 @@ const MagicCalculator = (props) => {
             className={stl.backArrow}
             onClick={handleMenuSwitch}
           />
-          <img src={magicIcon} alt="Magic Level" className={stl.skillImg} />
+          <img
+            src="./skillicons/Magic.webp"
+            alt="Magic Level"
+            className={stl.skillImg}
+          />
           <span className={stl.skillTitle}>Magic</span>
           {arePropsDefined ? (
             <div className={stl.userStatsBox}>

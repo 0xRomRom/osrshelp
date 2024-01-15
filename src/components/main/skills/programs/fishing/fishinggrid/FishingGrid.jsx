@@ -2,7 +2,6 @@ import stl from "./FishingGrid.module.css";
 import FISHLIST from "../../../../../../utils/fishlist";
 import harpoonLogo from "../../../../../../assets/random/Harpoon.webp";
 import moneyLogo from "../../../../../../assets/icons/Donate.webp";
-import fishingLogo from "../../../../../../assets/skillicons/Fishing.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
@@ -99,7 +98,11 @@ const FishingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortFood}>
-          <img src={fishingLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Fishing.webp"
+            alt="Fishing skill"
+            className={stl.miniLogo}
+          />{" "}
           Fish
         </span>
         <span onClick={sortMembers}>
@@ -107,14 +110,15 @@ const FishingGrid = (props) => {
           Member
         </span>
         <span onClick={sortExp}>
-          <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
+          <img src={statsLogo} alt="Experience Logo" className={stl.miniLogo} />{" "}
+          Exp
         </span>
         <span onClick={sortToGo}>
-          <img src={harpoonLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          <img src={harpoonLogo} alt="Catch Logo" className={stl.miniLogo} />{" "}
           Catch
         </span>
         <span onClick={sortToGo}>
-          <img src={moneyLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          <img src={moneyLogo} alt="Profit Logo" className={stl.miniLogo} />{" "}
           Profit
         </span>
       </div>

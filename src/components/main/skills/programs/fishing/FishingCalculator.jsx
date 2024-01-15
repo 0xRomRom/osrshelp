@@ -1,7 +1,6 @@
 import stl from "./FishingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import fishingIcon from "../../../../../assets/skillicons/Fishing.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -46,7 +45,11 @@ const FishingCalculator = (props) => {
             className={stl.backArrow}
             onClick={handleMenuSwitch}
           />
-          <img src={fishingIcon} alt="Fishing Level" className={stl.skillImg} />
+          <img
+            src="./skillicons/Fishing.webp"
+            alt="Fishing Level"
+            className={stl.skillImg}
+          />
           <span className={stl.skillTitle}>Fishing</span>
           {arePropsDefined ? (
             <div className={stl.userStatsBox}>

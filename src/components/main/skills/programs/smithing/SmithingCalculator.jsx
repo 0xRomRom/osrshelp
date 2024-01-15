@@ -1,7 +1,6 @@
 import stl from "./SmithingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import smithingIcon from "../../../../../assets/skillicons/Smithing.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -45,7 +44,7 @@ const SmithingCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src={smithingIcon}
+            src="./skillicons/Smithing.webp"
             alt="Smithing Level"
             className={stl.skillImg}
           />

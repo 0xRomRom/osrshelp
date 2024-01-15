@@ -1,8 +1,6 @@
 import stl from "./HunterGrid.module.css";
 import HUNTERLIST from "../../../../../../utils/hunterList";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
-import hunterLogo from "../../../../../../assets/skillicons/Hunter.webp";
-import worldMap from "../../../../../../assets/skillicons/Worldmap.webp";
 import birdSnare from "../../../../../../assets/icons/Birdsnare.webp";
 
 import { useState, useCallback, useEffect } from "react";
@@ -77,11 +75,20 @@ const HunterGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortLevel}>
-          <img src={hunterLogo} alt="Tree Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Hunter.webp"
+            alt="Hunter skill"
+            className={stl.miniLogo}
+          />{" "}
           Catch
         </span>
         <span onClick={sortArea}>
-          <img src={worldMap} alt="Member Logo" className={stl.miniLogo} /> Area
+          <img
+            src="./skillicons/Worldmap.webp"
+            alt="Member Logo"
+            className={stl.miniLogo}
+          />{" "}
+          Area
         </span>
         <span onClick={sortExp}>
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp

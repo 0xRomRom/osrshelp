@@ -1,7 +1,6 @@
 import stl from "./FletchingGrid.module.css";
 import FLETCHLIST from "../../../../../../utils/fletchlist";
 import FLETCHITEMLIST from "../../../../../../utils/fletchItemlist";
-import fletchingLogo from "../../../../../../assets/skillicons/Fletching.webp";
 import donate from "../../../../../../assets/icons/Donate.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
@@ -219,7 +218,11 @@ const FletchingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortItem}>
-          <img src={fletchingLogo} alt="Tree Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Fletching.webp"
+            alt="Fletching skill"
+            className={stl.miniLogo}
+          />{" "}
           Item
         </span>
         <span onClick={sortExp}>

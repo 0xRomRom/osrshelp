@@ -3,7 +3,6 @@ import RUNECRAFTLIST from "../../../../../../utils/runecraftList";
 import coinsLogo from "../../../../../../assets/icons/Donate.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
-import runecraftIcon from "../../../../../../assets/skillicons/Runecraft.webp";
 
 import { useState, useEffect, useCallback } from "react";
 
@@ -178,7 +177,11 @@ const RunecraftGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortTree}>
-          <img src={runecraftIcon} alt="Tree Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Runecraft.webp"
+            alt="Runecraft skill"
+            className={stl.miniLogo}
+          />{" "}
           Rune
         </span>
         <span onClick={sortMembers}>
@@ -189,11 +192,15 @@ const RunecraftGrid = (props) => {
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
         </span>
         <span onClick={sortToGo}>
-          <img src={runecraftIcon} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Runecraft.webp"
+            alt="Runecraft skill"
+            className={stl.miniLogo}
+          />{" "}
           To Go
         </span>
         <span onClick={sortProfit}>
-          <img src={coinsLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          <img src={coinsLogo} alt="Profits Logo" className={stl.miniLogo} />{" "}
           Profit
         </span>
       </div>

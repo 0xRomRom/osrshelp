@@ -1,7 +1,6 @@
 import stl from "./MagidGrid.module.css";
 import spellbookList from "../../../../../../utils/spellbookList";
 import SPELLBOOKRUNESLIST from "../../../../../../utils/spellbookRunesList";
-import magicLogo from "../../../../../../assets/skillicons/Magic.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 import STAVESLIST from "../../../../../../utils/stavesList";
@@ -226,7 +225,11 @@ const MagicGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
-          <img src={magicLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Magic.webp"
+            alt="Bones Logo"
+            className={stl.miniLogo}
+          />{" "}
           Spell
         </span>
         <span onClick={sortExp}>
@@ -238,7 +241,11 @@ const MagicGrid = (props) => {
           Exp
         </span>
         <span onClick={sortAmount}>
-          <img src={magicLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Magic.webp"
+            alt="Amount Logo"
+            className={stl.miniLogo}
+          />{" "}
           Casts
         </span>
         <span onClick={sortCost}>

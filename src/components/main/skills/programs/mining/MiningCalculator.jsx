@@ -1,7 +1,6 @@
 import stl from "./MiningCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import miningIcon from "../../../../../assets/skillicons/Mining.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -46,7 +45,11 @@ const MiningCalculator = (props) => {
             className={stl.backArrow}
             onClick={handleMenuSwitch}
           />
-          <img src={miningIcon} alt="Mining Level" className={stl.skillImg} />
+          <img
+            src="./skillicons/Mining.webp"
+            alt="Mining Level"
+            className={stl.skillImg}
+          />
           <span className={stl.skillTitle}>Mining</span>
           {arePropsDefined ? (
             <div className={stl.userStatsBox}>
