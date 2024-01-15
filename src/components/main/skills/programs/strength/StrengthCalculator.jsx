@@ -43,7 +43,7 @@ const StrengthCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src="./skillicons/Strength.webp"
+            src="./skillicons/Strength.png"
             alt="Strength Level"
             className={stl.skillImg}
           />
