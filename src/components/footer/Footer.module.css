@@ -1,9 +1,10 @@
 .footer {
   height: 25rem;
-  border-top: 1px solid rgb(42, 57, 69);
+  border-top: 1px solid var(--border);
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-image: var(--gradient2); */
 }
 
 .logo {

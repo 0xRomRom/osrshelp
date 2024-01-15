@@ -88,4 +88,9 @@ code {
     rgba(37, 99, 235, 0.07),
     rgba(37, 99, 235, 0) 60%
   );
+  --gradient2: radial-gradient(
+    ellipse 100% 100% at 20% 55%,
+    rgba(23, 87, 226, 0.07),
+    rgba(23, 60, 138, 0) 90%
+  );
 }
