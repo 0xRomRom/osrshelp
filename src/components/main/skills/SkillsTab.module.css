@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../../../assets/wallpapers/Barrows.webp");
+  /* background: url("../../../assets/wallpapers/Barrows.webp"); */
   border-radius: 0.8rem;
   padding: 1rem 2rem;
   min-height: 700px;
@@ -18,32 +18,40 @@
   align-items: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 800px;
-  background-color: rgba(32, 46, 57, 0.671);
+  flex-direction: row;
+  max-width: 400px;
+  /* background-color: rgba(32, 46, 57, 0.671); */
   border-radius: 0.8rem;
   padding: 1rem 0rem;
 }
 
 .skill {
-  width: 47%;
+  max-width: 15rem;
   height: 2.5rem;
   border-radius: 0.4rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   user-select: none;
   text-decoration: none;
+  background-color: var(--main-bg);
+  border: 1px solid var(--border);
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 5px;
+  padding-left: 10px;
 }
-
-.skill:hover img {
-  margin-left: 1.5rem;
+.skill:hover {
+  background-color: rgb(38, 36, 36);
 }
 
 .iconImg {
-  position: absolute;
-  margin-left: 1rem;
+  position: relative;
   height: 22px;
-  margin-top: 7px;
+  width: 22px;
   transition: all 0.15s ease-in-out;
 }
 
@@ -52,14 +60,14 @@
   text-shadow: 0px 0px 5px gray;
   font-size: 30px;
   font-family: RSFont;
-  margin-left: 4rem;
   height: 100%;
   position: relative;
   display: block;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding-left: 3.5rem;
+  width: 100%;
+  text-align: center;
 }
 
 .black {
@@ -68,7 +76,9 @@
 }
 
 .attack {
-  background: linear-gradient(110deg, white, red, rgba(255, 0, 0, 0.747));
+  /* background: linear-gradient(110deg, white, red, rgba(255, 0, 0, 0.747)); */
+  background-color: var(--main-bg);
+  border: 1px solid var(--border);
 }
 
 .defence {

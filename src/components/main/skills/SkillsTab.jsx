@@ -383,7 +383,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Attack")}
                     to="/skillcalculators/attack"
-                    className={`${stl.skill} ${stl.attack}`}
+                    className={stl.skill}
                   >
                     <img
                       src={attackIcon}
@@ -395,7 +395,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Defence")}
                     to="/skillcalculators/defence"
-                    className={`${stl.skill} ${stl.defence}`}
+                    className={stl.skill}
                   >
                     <img
                       src={defenceIcon}
@@ -407,7 +407,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Strength")}
                     to="/skillcalculators/strength"
-                    className={`${stl.skill} ${stl.strength}`}
+                    className={stl.skill}
                   >
                     <img
                       src={strengthIcon}
@@ -419,7 +419,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Hitpoints")}
                     to="/skillcalculators/hitpoints"
-                    className={`${stl.skill} ${stl.hitpoints}`}
+                    className={stl.skill}
                   >
                     <img
                       src={hitpointsIcon}
@@ -431,7 +431,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Ranged")}
                     to="/skillcalculators/ranged"
-                    className={`${stl.skill} ${stl.ranged}`}
+                    className={stl.skill}
                   >
                     <img
                       src={rangedIcon}
@@ -443,21 +443,19 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Prayer")}
                     to="/skillcalculators/prayer"
-                    className={`${stl.skill} ${stl.prayer}`}
+                    className={stl.skill}
                   >
                     <img
                       src={prayerIcon}
                       alt="Prayer Icon"
                       className={stl.iconImg}
                     />
-                    <span className={`${stl.skillName} ${stl.black}`}>
-                      Prayer
-                    </span>
+                    <span className={stl.skillName}>Prayer</span>
                   </Link>
                   <Link
                     onClick={() => handleTabOpen("Magic")}
                     to="/skillcalculators/magic"
-                    className={`${stl.skill} ${stl.magic}`}
+                    className={stl.skill}
                   >
                     <img
                       src={magicIcon}
@@ -469,7 +467,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Cooking")}
                     to="/skillcalculators/cooking"
-                    className={`${stl.skill} ${stl.cooking}`}
+                    className={stl.skill}
                   >
                     <img
                       src={cookingIcon}
@@ -481,7 +479,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Woodcutting")}
                     to="/skillcalculators/woodcutting"
-                    className={`${stl.skill} ${stl.woodcutting}`}
+                    className={stl.skill}
                   >
                     <img
                       src={woodcuttingIcon}
@@ -493,7 +491,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Fletching")}
                     to="/skillcalculators/fletching"
-                    className={`${stl.skill} ${stl.fletching}`}
+                    className={stl.skill}
                   >
                     <img
                       src={fletchingIcon}
@@ -505,7 +503,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Fishing")}
                     to="/skillcalculators/fishing"
-                    className={`${stl.skill} ${stl.fishing}`}
+                    className={stl.skill}
                   >
                     <img
                       src={fishingIcon}
@@ -517,7 +515,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Firemaking")}
                     to="/skillcalculators/firemaking"
-                    className={`${stl.skill} ${stl.firemaking}`}
+                    className={stl.skill}
                   >
                     <img
                       src={firemakingIcon}
@@ -529,7 +527,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Crafting")}
                     to="/skillcalculators/crafting"
-                    className={`${stl.skill} ${stl.crafting}`}
+                    className={stl.skill}
                   >
                     <img
                       src={craftingIcon}
@@ -541,7 +539,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Smithing")}
                     to="/skillcalculators/smithing"
-                    className={`${stl.skill} ${stl.smithing}`}
+                    className={stl.skill}
                   >
                     <img
                       src={smithingIcon}
@@ -553,7 +551,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Mining")}
                     to="/skillcalculators/mining"
-                    className={`${stl.skill} ${stl.mining}`}
+                    className={stl.skill}
                   >
                     <img
                       src={miningIcon}
@@ -565,7 +563,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Herblore")}
                     to="/skillcalculators/herblore"
-                    className={`${stl.skill} ${stl.herblore}`}
+                    className={stl.skill}
                   >
                     <img
                       src={herbloreIcon}
@@ -577,7 +575,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Agility")}
                     to="/skillcalculators/agility"
-                    className={`${stl.skill} ${stl.agility}`}
+                    className={stl.skill}
                   >
                     <img
                       src={agilityIcon}
@@ -589,7 +587,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Thieving")}
                     to="/skillcalculators/thieving"
-                    className={`${stl.skill} ${stl.thieving}`}
+                    className={stl.skill}
                   >
                     <img
                       src={thievingIcon}
@@ -599,7 +597,7 @@ const SkillsTab = (props) => {
                     <span className={stl.skillName}>Thieving</span>
                   </Link>
                   {/* <div
-              className={`${stl.skill} ${stl.slayer}`}
+              className={stl.skill}
             >
               <img src={slayerIcon} alt="Slayer Icon" className={stl.iconImg} />
               <span className={stl.skillName}>Slayer</span>
@@ -607,7 +605,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Farming")}
                     to="/skillcalculators/farming"
-                    className={`${stl.skill} ${stl.farming}`}
+                    className={stl.skill}
                   >
                     <img
                       src={farmingIcon}
@@ -619,7 +617,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Runecraft")}
                     to="/skillcalculators/runecraft"
-                    className={`${stl.skill} ${stl.runecraft}`}
+                    className={stl.skill}
                   >
                     <img
                       src={runecraftingIcon}
@@ -631,7 +629,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Hunter")}
                     to="/skillcalculators/hunter"
-                    className={`${stl.skill} ${stl.hunter}`}
+                    className={stl.skill}
                   >
                     <img
                       src={hunterIcon}
@@ -643,7 +641,7 @@ const SkillsTab = (props) => {
                   <Link
                     onClick={() => handleTabOpen("Construction")}
                     to="/skillcalculators/construction"
-                    className={`${stl.skill} ${stl.construction}`}
+                    className={stl.skill}
                   >
                     <img
                       src={constructionIcon}

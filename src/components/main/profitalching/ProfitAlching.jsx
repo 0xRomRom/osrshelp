@@ -68,6 +68,12 @@ const ProfitAlching = () => {
       <div className={stl.adBar}>[ Advertisements ]</div>
       <Pagination />
       <div className={stl.modalWrap}>
+        <img
+          src="./backgrounds/TzHaar_City.webp"
+          alt="Tzhaar city"
+          className={stl.tzhaarBg}
+          loading="lazy"
+        />
         <div className={stl.heroBlock}>
           <h1 className={stl.hero}>
             <img
@@ -124,6 +130,7 @@ const ProfitAlching = () => {
                         src={item.imgSrc}
                         alt={item.name}
                         className={stl.gridIcon}
+                        loading="lazy"
                       />
                     </div>
                     <span>{item.name}</span>
@@ -132,6 +139,7 @@ const ProfitAlching = () => {
                         src={mills}
                         alt="Money pile"
                         className={stl.millsIcon}
+                        loading="lazy"
                       />
                       {item.price.toLocaleString()}
                     </span>
