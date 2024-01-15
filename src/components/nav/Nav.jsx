@@ -13,6 +13,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { PaginationContext } from "../../utils/paginationstate/PaginationProvider";
 import HomeButton from "../../utils/homebutton/HomeButton";
+import mainlogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 
 const Nav = (props) => {
   const location = useLocation();
@@ -70,7 +71,16 @@ const Nav = (props) => {
 
   return (
     <div className={stl.modal}>
-      <HomeButton />
+      <div className={stl.homeBox} onClick={() => navigate("/")}>
+        <div className={stl.logoWrapper}>
+          <img
+            src={mainlogo}
+            alt="OSRS Help logo"
+            className={stl.osrshelpLogo}
+          />
+          <span className={stl.navLogoSpan}>OSRS Help</span>
+        </div>
+      </div>
 
       <div className={stl.loggedUser}>
         {props.playerName && (
