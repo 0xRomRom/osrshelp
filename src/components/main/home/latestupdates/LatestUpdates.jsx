@@ -8,7 +8,7 @@ const LatestUpdates = () => {
 
   return (
     <div className={stl.modal}>
-      <h2 className={stl.title}>Latest updates</h2>
+      <h2 className={stl.title}>Blog</h2>
       <div className={stl.filterBox}>
         {btnStates.map((btn) => (
           <button
