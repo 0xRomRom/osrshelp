@@ -10,8 +10,9 @@
   /* width: 350px; */
   border-radius: 0.8rem;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
   gap: 1rem;
   position: relative;
 }
@@ -21,4 +22,25 @@
   font-size: 16px;
   position: relative;
   text-align: center;
+}
+
+.filterBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filterBtn {
+  width: 5rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  background-color: var(--blue-main);
+  border-radius: 0.2rem;
+  padding: 2px 0px;
+}
+
+.activeBtn {
+  color: white;
 }
