@@ -1,7 +1,6 @@
 import stl from "./AgilityCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import agilityIcon from "../../../../../assets/skillicons/Agility.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -42,7 +41,11 @@ const AgilityCalculator = (props) => {
             className={stl.backArrow}
             onClick={handleMenuSwitch}
           />
-          <img src={agilityIcon} alt="Agility Level" className={stl.skillImg} />
+          <img
+            src="./skillicons/Agility.webp"
+            alt="Agility Level"
+            className={stl.skillImg}
+          />
           <span className={stl.skillTitle}>Agility</span>
           {arePropsDefined ? (
             <div className={stl.userStatsBox}>

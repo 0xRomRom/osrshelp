@@ -1,7 +1,6 @@
 import stl from "./AttackCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import attackIcon from "../../../../../assets/skillicons/Attack.webp";
 import CalculateRemainderExp from "./../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -43,7 +42,11 @@ const AttackCalculator = (props) => {
             className={stl.backArrow}
             onClick={handleMenuSwitch}
           />
-          <img src={attackIcon} alt="Attack Level" className={stl.skillImg} />
+          <img
+            src="./skillicons/Attack.webp"
+            alt="Attack Level"
+            className={stl.skillImg}
+          />
           <span className={stl.skillTitle}>Attack</span>
           {arePropsDefined ? (
             <div className={stl.userStatsBox}>

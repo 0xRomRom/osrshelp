@@ -3,30 +3,6 @@ import stl from "./SkillsTab.module.css";
 import { Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-import attackIcon from "../../../assets/skillicons/Attack.webp";
-import hitpointsIcon from "../../../assets/skillicons/Hitpoints.webp";
-import miningIcon from "../../../assets/skillicons/Mining.webp";
-import strengthIcon from "../../../assets/skillicons/Strength.png";
-import agilityIcon from "../../../assets/skillicons/Agility.webp";
-import smithingIcon from "../../../assets/skillicons/Smithing.webp";
-import defenceIcon from "../../../assets/skillicons/Defence.webp";
-import herbloreIcon from "../../../assets/skillicons/Herblore.webp";
-import fishingIcon from "../../../assets/skillicons/Fishing.webp";
-import rangedIcon from "../../../assets/skillicons/Ranged.webp";
-import thievingIcon from "../../../assets/skillicons/Thieving.webp";
-import cookingIcon from "../../../assets/skillicons/Cooking.webp";
-import prayerIcon from "../../../assets/skillicons/Prayer.webp";
-import craftingIcon from "../../../assets/skillicons/Crafting.webp";
-import firemakingIcon from "../../../assets/skillicons/Firemaking.png";
-import magicIcon from "../../../assets/skillicons/Magic.webp";
-import fletchingIcon from "../../../assets/skillicons/Fletching.webp";
-import woodcuttingIcon from "../../../assets/skillicons/Woodcutting.webp";
-import runecraftingIcon from "../../../assets/skillicons/Runecraft.webp";
-// import slayerIcon from "../../../assets/skillicons/Slayer.png";
-import farmingIcon from "../../../assets/skillicons/Farming.webp";
-import constructionIcon from "../../../assets/skillicons/Construction.webp";
-import hunterIcon from "../../../assets/skillicons/Hunter.webp";
-
 import AttackCalculator from "../skills/programs/attack/AttackCalculator";
 import DefenceCalculator from "../skills/programs/defence/DefenceCalculator";
 import StrengthCalculator from "./programs/strength/StrengthCalculator";
@@ -49,6 +25,7 @@ import FarmingCalculator from "./programs/farming/FarmingCalculator";
 import RunecraftCalculator from "./programs/runecraft/RunecraftCalculator";
 import HunterCalculator from "./programs/hunter/HunterCalculator";
 import ConstructionCalculator from "./programs/construction/ConstructionCalculator";
+import SKILLSGRIDLIST from "../../../utils/skillsgridlist";
 
 import Pagination from "../pagination/Pagination";
 
@@ -379,7 +356,7 @@ const SkillsTab = (props) => {
               <div className={stl.adBar}>[ Advertisements ]</div>
               <Pagination />
               <div className={stl.modal}>
-                <div className={stl.modalInner}>
+                {/* <div className={stl.modalInner}>
                   <Link
                     onClick={() => handleTabOpen("Attack")}
                     to="/skillcalculators/attack"
@@ -596,12 +573,7 @@ const SkillsTab = (props) => {
                     />
                     <span className={stl.skillName}>Thieving</span>
                   </Link>
-                  {/* <div
-              className={stl.skill}
-            >
-              <img src={slayerIcon} alt="Slayer Icon" className={stl.iconImg} />
-              <span className={stl.skillName}>Slayer</span>
-            </div> */}
+      
                   <Link
                     onClick={() => handleTabOpen("Farming")}
                     to="/skillcalculators/farming"
@@ -650,6 +622,23 @@ const SkillsTab = (props) => {
                     />
                     <span className={stl.skillName}>Construction</span>
                   </Link>
+                </div> */}
+                <div className={stl.modalInner}>
+                  {SKILLSGRIDLIST.map((skill) => (
+                    <Link
+                      key={skill.name}
+                      onClick={() => handleTabOpen(skill.name)}
+                      to={skill.path}
+                      className={stl.skill}
+                    >
+                      <img
+                        src={skill.icon}
+                        alt={`${skill.name} Icon`}
+                        className={stl.iconImg}
+                      />
+                      <span className={stl.skillName}>{skill.name}</span>
+                    </Link>
+                  ))}
                 </div>
               </div>
             </>

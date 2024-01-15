@@ -1,7 +1,6 @@
 import stl from "./AgilityGrid.module.css";
 import COURSESLIST from "../../../../../../utils/coursesList";
 import moneyLogo from "../../../../../../assets/icons/Donate.webp";
-import agilityLogo from "../../../../../../assets/skillicons/Agility.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
@@ -141,23 +140,39 @@ const AgilityGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortOre}>
-          <img src={agilityLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Agility.webp"
+            alt="Agility"
+            className={stl.miniLogo}
+          />{" "}
           Course
         </span>
         <span onClick={sortExpLap}>
-          <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
+          <img
+            src={memberLogo}
+            alt="Experience per lap"
+            className={stl.miniLogo}
+          />{" "}
           Exp/lap
         </span>
         <span onClick={sortExp}>
-          <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} />{" "}
+          <img
+            src={statsLogo}
+            alt="Experience per hour"
+            className={stl.miniLogo}
+          />{" "}
           Exp/hour
         </span>
         <span onClick={sortLapsGoal}>
-          <img src={agilityLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Agility.webp"
+            alt="Agility"
+            className={stl.miniLogo}
+          />{" "}
           Laps/goal
         </span>
         <span onClick={sortProfits}>
-          <img src={moneyLogo} alt="Slayer Logo" className={stl.miniLogo} />{" "}
+          <img src={moneyLogo} alt="Moneypile" className={stl.miniLogo} />{" "}
           Profit
         </span>
       </div>

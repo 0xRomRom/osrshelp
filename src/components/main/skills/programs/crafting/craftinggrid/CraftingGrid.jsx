@@ -1,7 +1,6 @@
 import stl from "./CraftingGrid.module.css";
 import CRAFTINGLIST from "../../../../../../utils/craftingList";
 import CRAFTINGITEMLIST from "../../../../../../utils/craftingItemList";
-import craftingLogo from "../../../../../../assets/skillicons/Crafting.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import rsgp from "../../../../../../assets/icons/Donate.webp";
 
@@ -190,7 +189,11 @@ const CraftingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
-          <img src={craftingLogo} alt="Bones Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Crafting"
+            alt="Crafting item"
+            className={stl.miniLogo}
+          />{" "}
           Item
         </span>
         <span onClick={sortExp}>
@@ -202,7 +205,11 @@ const CraftingGrid = (props) => {
           Exp
         </span>
         <span onClick={sortAmount}>
-          <img src={craftingLogo} alt="Amount Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Crafting"
+            alt="Amount Logo"
+            className={stl.miniLogo}
+          />{" "}
           Actions
         </span>
         <span onClick={sortCost}>

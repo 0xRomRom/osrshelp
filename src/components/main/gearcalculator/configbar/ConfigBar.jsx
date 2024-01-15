@@ -13,14 +13,6 @@ import BOOTS from "../../../../utils/gearcalculator/boots";
 import RINGS from "../../../../utils/gearcalculator/rings";
 import TypeFilter from "./typefilter/TypeFilter";
 
-import defenceIcon from "../../../../assets/skillicons/Defence.webp";
-import strengthicon from "../../../../assets/skillicons/Strength.png";
-import magicIcon from "../../../../assets/skillicons/Magic.webp";
-import rangedIcon from "../../../../assets/skillicons/Ranged.webp";
-import prayerIcon from "../../../../assets/skillicons/Prayer.webp";
-import attackIcon from "../../../../assets/skillicons/Attack.webp";
-import hitpointsIcon from "../../../../assets/skillicons/Hitpoints.webp";
-
 const ConfigBar = ({
   activeSlot,
   setBonusState,
@@ -150,7 +142,7 @@ const ConfigBar = ({
                     {item.rangedLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
-                          src={rangedIcon}
+                          src="./skillicons/Ranged.webp"
                           alt="Ranged Skill Icon"
                           className={stl.microIcon}
                         />
@@ -160,7 +152,7 @@ const ConfigBar = ({
                     {item.strengthLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
-                          src={strengthicon}
+                          src="./skillicons/Strength.png"
                           alt="Strength Skill Icon"
                           className={stl.microIcon}
                         />
@@ -170,7 +162,7 @@ const ConfigBar = ({
                     {item.prayerLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
-                          src={prayerIcon}
+                          src="./skillicons/Prayer.webp"
                           alt="Prayer Skill Icon"
                           className={stl.microIcon}
                         />
@@ -180,7 +172,7 @@ const ConfigBar = ({
                     {item.magicLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
-                          src={magicIcon}
+                          src="./skillicons/Magic.webp"
                           alt="Magic Skill Icon"
                           className={stl.microIcon}
                         />
@@ -190,7 +182,7 @@ const ConfigBar = ({
                     {item.defLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
-                          src={defenceIcon}
+                          src="./skillicons/Defence.webp"
                           alt="Defence Skill Icon"
                           className={stl.microIcon}
                         />
@@ -200,7 +192,7 @@ const ConfigBar = ({
                     {item.hitpointsLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
-                          src={hitpointsIcon}
+                          src="./skillicons/Hitpoints.webp"
                           alt="Hitpoints Skill Icon"
                           className={stl.microIcon}
                         />
@@ -210,7 +202,7 @@ const ConfigBar = ({
                     {item.attackLvl > 1 && (
                       <span className={stl.microSpan}>
                         <img
-                          src={attackIcon}
+                          src="./skillicons/Attack.webp"
                           alt="Attack Skill Icon"
                           className={stl.microIcon}
                         />

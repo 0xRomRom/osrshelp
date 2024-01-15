@@ -1,5 +1,4 @@
 import stl from "./ResultBox.module.css";
-import slayerIcon from "../../../../assets/skillicons/Slayer.png";
 import { useEffect, useState } from "react";
 import { INITIALSTATE as emptyState } from "../../../../utils/gearcalculator/initialState";
 
@@ -201,7 +200,11 @@ const ResultBox = ({ bonusState }) => {
             {Math.abs(resultState.prayer)}
           </span>
           <span className={stl.statValue}>
-            <img src={slayerIcon} alt="Slayer Icon" className={stl.miniIcon} />
+            <img
+              src="./skillicons/Slayer.png"
+              alt="Slayer Icon"
+              className={stl.miniIcon}
+            />
             Slayer: {resultState.slayer >= 0 ? "+" : "-"}
             {Math.abs(resultState.slayer)}
           </span>

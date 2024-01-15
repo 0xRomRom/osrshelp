@@ -1,7 +1,6 @@
 import stl from "./ConstructionCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import constructionIcon from "../../../../../assets/skillicons/Construction.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -47,7 +46,7 @@ const ConstructionCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src={constructionIcon}
+            src="./skillicons/Construction.webp"
             alt="Construction Level"
             className={stl.skillImg}
           />

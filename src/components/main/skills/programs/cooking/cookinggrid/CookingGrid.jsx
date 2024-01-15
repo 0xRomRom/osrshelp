@@ -1,6 +1,5 @@
 import stl from "./CookingGrid.module.css";
 import FOODLIST from "../../../../../../utils/foodList";
-import cookingLogo from "../../../../../../assets/skillicons/Cooking.webp";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 import fireLogo from "../../../../../../assets/random/Frying_pan.webp";
@@ -70,7 +69,11 @@ const CookingGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortFood}>
-          <img src={cookingLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Cooking.webp"
+            alt="Cooking skill"
+            className={stl.miniLogo}
+          />{" "}
           Food
         </span>
         <span onClick={sortMembers}>

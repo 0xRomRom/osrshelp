@@ -6,10 +6,10 @@
   border-radius: 0.8rem;
   padding: 1rem 2rem;
   min-height: 700px;
-  width: 95%;
-  left: 2.5%;
   position: relative;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
+  padding-bottom: 4rem;
+  background-image: var(--gradient);
 }
 
 .modalInner {
@@ -19,7 +19,7 @@
   gap: 1rem;
   flex-wrap: wrap;
   flex-direction: row;
-  max-width: 400px;
+  max-width: 600px;
   /* background-color: rgba(32, 46, 57, 0.671); */
   border-radius: 0.8rem;
   padding: 1rem 0rem;
@@ -27,10 +27,10 @@
 
 .skill {
   max-width: 15rem;
-  height: 2.5rem;
+  height: 5rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   user-select: none;
   text-decoration: none;
   background-color: var(--main-bg);
@@ -45,19 +45,20 @@
   padding-left: 10px;
 }
 .skill:hover {
-  background-color: rgb(38, 36, 36);
+  background-color: rgba(33, 40, 54, 0.547);
+}
+
+.skill:hover .skillName {
+  color: white;
 }
 
 .iconImg {
   position: relative;
-  height: 22px;
-  width: 22px;
   transition: all 0.15s ease-in-out;
 }
 
 .skillName {
-  color: white;
-  text-shadow: 0px 0px 5px gray;
+  color: rgb(170, 170, 170);
   font-size: 30px;
   font-family: RSFont;
   height: 100%;
@@ -68,6 +69,7 @@
   align-items: center;
   width: 100%;
   text-align: center;
+  transition: all 0.2s ease-in-out;
 }
 
 .black {

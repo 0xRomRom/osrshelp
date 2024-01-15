@@ -1,8 +1,5 @@
 import stl from "./NPCGrid.module.css";
 import monsterList from "../../../../../../utils/monsterList";
-import attackLogo from "../../../../../../assets/skillicons/Attack.webp";
-import healthLogo from "../../../../../../assets/skillicons/Hitpoints.webp";
-import slayerLogo from "../../../../../../assets/skillicons/Slayer.png";
 import memberLogo from "../../../../../../assets/icons/Member.webp";
 
 import { useState, useEffect, useCallback } from "react";
@@ -75,7 +72,11 @@ const NPCGrid = (props) => {
     <div className={stl.grid}>
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortMonsters}>
-          <img src={attackLogo} alt="Attack Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Attack.webp"
+            alt="Attack Logo"
+            className={stl.miniLogo}
+          />{" "}
           Monster
         </span>
         <span onClick={sortMembers}>
@@ -83,12 +84,20 @@ const NPCGrid = (props) => {
           Member
         </span>
         <span onClick={sortCombat}>
-          <img src={healthLogo} alt="Health Logo" className={stl.miniLogo} />{" "}
+          <img
+            src="./skillicons/Hitpoints.webp"
+            alt="Health Logo"
+            className={stl.miniLogo}
+          />{" "}
           Combat
         </span>
         <span onClick={sortToGo}>
-          <img src={slayerLogo} alt="Slayer Logo" className={stl.miniLogo} /> To
-          Go
+          <img
+            src="./skillicons/Slayer.png"
+            alt="Slayer Logo"
+            className={stl.miniLogo}
+          />{" "}
+          To Go
         </span>
       </div>
       <div className={stl.resultGrid}>

@@ -2,10 +2,6 @@ import stl from "./SavedBuilds.module.css";
 import { CiSquarePlus } from "react-icons/ci";
 import { BsGearFill } from "react-icons/bs";
 
-import attLogo from "../../../../assets/skillicons/Attack.webp";
-import rangedLogo from "../../../../assets/skillicons/Ranged.webp";
-import magicLogo from "../../../../assets/skillicons/Magic.webp";
-
 const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
   const gearTypeCheck = (geartype) => {
     switch (geartype) {
@@ -60,17 +56,17 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             {slot1 && savedSlots["slot1"].Geartype === "All" && (
               <>
                 <img
-                  src={attLogo}
+                  src="./skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={magicLogo}
+                  src="./skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={rangedLogo}
+                  src="./skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -78,21 +74,21 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             )}
             {slot1 && savedSlots["slot1"].Geartype === "Melee" && (
               <img
-                src={attLogo}
+                src="./skillicons/Attack.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot1 && savedSlots["slot1"].Geartype === "Magic" && (
               <img
-                src={magicLogo}
+                src="./skillicons/Magic.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot1 && savedSlots["slot1"].Geartype === "Ranged" && (
               <img
-                src={rangedLogo}
+                src="./skillicons/Ranged.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
@@ -117,17 +113,17 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             {slot2 && savedSlots["slot2"].Geartype === "All" && (
               <>
                 <img
-                  src={attLogo}
+                  src="./skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={magicLogo}
+                  src="./skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={rangedLogo}
+                  src="./skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -135,21 +131,21 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             )}
             {slot2 && savedSlots["slot2"].Geartype === "Melee" && (
               <img
-                src={attLogo}
+                src="./skillicons/Attack.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot2 && savedSlots["slot2"].Geartype === "Magic" && (
               <img
-                src={magicLogo}
+                src="./skillicons/Magic.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot2 && savedSlots["slot2"].Geartype === "Ranged" && (
               <img
-                src={rangedLogo}
+                src="./skillicons/Ranged.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
@@ -174,17 +170,17 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             {slot3 && savedSlots["slot3"].Geartype === "All" && (
               <>
                 <img
-                  src={attLogo}
+                  src="./skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={magicLogo}
+                  src="./skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={rangedLogo}
+                  src="./skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -192,21 +188,21 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             )}
             {slot3 && savedSlots["slot3"].Geartype === "Melee" && (
               <img
-                src={attLogo}
+                src="./skillicons/Attack.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot3 && savedSlots["slot3"].Geartype === "Magic" && (
               <img
-                src={magicLogo}
+                src="./skillicons/Magic.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot3 && savedSlots["slot3"].Geartype === "Ranged" && (
               <img
-                src={rangedLogo}
+                src="./skillicons/Ranged.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
@@ -231,17 +227,17 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             {slot4 && savedSlots["slot4"].Geartype === "All" && (
               <>
                 <img
-                  src={attLogo}
+                  src="./skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={magicLogo}
+                  src="./skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={rangedLogo}
+                  src="./skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -249,21 +245,21 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             )}
             {slot4 && savedSlots["slot4"].Geartype === "Melee" && (
               <img
-                src={attLogo}
+                src="./skillicons/Attack.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot4 && savedSlots["slot4"].Geartype === "Magic" && (
               <img
-                src={magicLogo}
+                src="./skillicons/Magic.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot4 && savedSlots["slot4"].Geartype === "Ranged" && (
               <img
-                src={rangedLogo}
+                src="./skillicons/Ranged.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
@@ -288,17 +284,17 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             {slot5 && savedSlots["slot5"].Geartype === "All" && (
               <>
                 <img
-                  src={attLogo}
+                  src="./skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={magicLogo}
+                  src="./skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={rangedLogo}
+                  src="./skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -306,21 +302,21 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             )}
             {slot5 && savedSlots["slot5"].Geartype === "Melee" && (
               <img
-                src={attLogo}
+                src="./skillicons/Attack.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot5 && savedSlots["slot5"].Geartype === "Magic" && (
               <img
-                src={magicLogo}
+                src="./skillicons/Magic.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot5 && savedSlots["slot5"].Geartype === "Ranged" && (
               <img
-                src={rangedLogo}
+                src="./skillicons/Ranged.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
@@ -345,17 +341,17 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             {slot6 && savedSlots["slot6"].Geartype === "All" && (
               <>
                 <img
-                  src={attLogo}
+                  src="./skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={magicLogo}
+                  src="./skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={rangedLogo}
+                  src="./skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -363,21 +359,21 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             )}
             {slot6 && savedSlots["slot6"].Geartype === "Melee" && (
               <img
-                src={attLogo}
+                src="./skillicons/Attack.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot6 && savedSlots["slot6"].Geartype === "Magic" && (
               <img
-                src={magicLogo}
+                src="./skillicons/Magic.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot6 && savedSlots["slot6"].Geartype === "Ranged" && (
               <img
-                src={rangedLogo}
+                src="./skillicons/Ranged.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
@@ -402,17 +398,17 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             {slot7 && savedSlots["slot7"].Geartype === "All" && (
               <>
                 <img
-                  src={attLogo}
+                  src="./skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={magicLogo}
+                  src="./skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={rangedLogo}
+                  src="./skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -420,21 +416,21 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             )}
             {slot7 && savedSlots["slot7"].Geartype === "Melee" && (
               <img
-                src={attLogo}
+                src="./skillicons/Attack.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot7 && savedSlots["slot7"].Geartype === "Magic" && (
               <img
-                src={magicLogo}
+                src="./skillicons/Magic.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot7 && savedSlots["slot7"].Geartype === "Ranged" && (
               <img
-                src={rangedLogo}
+                src="./skillicons/Ranged.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
@@ -459,17 +455,17 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             {slot8 && savedSlots["slot8"].Geartype === "All" && (
               <>
                 <img
-                  src={attLogo}
+                  src="./skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={magicLogo}
+                  src="./skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={rangedLogo}
+                  src="./skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -477,21 +473,21 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             )}
             {slot8 && savedSlots["slot8"].Geartype === "Melee" && (
               <img
-                src={attLogo}
+                src="./skillicons/Attack.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot8 && savedSlots["slot8"].Geartype === "Magic" && (
               <img
-                src={magicLogo}
+                src="./skillicons/Magic.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot8 && savedSlots["slot8"].Geartype === "Ranged" && (
               <img
-                src={rangedLogo}
+                src="./skillicons/Ranged.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
@@ -516,17 +512,17 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             {slot9 && savedSlots["slot9"].Geartype === "All" && (
               <>
                 <img
-                  src={attLogo}
+                  src="./skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={magicLogo}
+                  src="./skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={rangedLogo}
+                  src="./skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -534,21 +530,21 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             )}
             {slot9 && savedSlots["slot9"].Geartype === "Melee" && (
               <img
-                src={attLogo}
+                src="./skillicons/Attack.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot9 && savedSlots["slot9"].Geartype === "Magic" && (
               <img
-                src={magicLogo}
+                src="./skillicons/Magic.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot9 && savedSlots["slot9"].Geartype === "Ranged" && (
               <img
-                src={rangedLogo}
+                src="./skillicons/Ranged.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
@@ -573,17 +569,17 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             {slot10 && savedSlots["slot10"].Geartype === "All" && (
               <>
                 <img
-                  src={attLogo}
+                  src="./skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={magicLogo}
+                  src="./skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
                 <img
-                  src={rangedLogo}
+                  src="./skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -591,21 +587,21 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
             )}
             {slot10 && savedSlots["slot10"].Geartype === "Melee" && (
               <img
-                src={attLogo}
+                src="./skillicons/Attack.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot10 && savedSlots["slot10"].Geartype === "Magic" && (
               <img
-                src={magicLogo}
+                src="./skillicons/Magic.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />
             )}
             {slot10 && savedSlots["slot10"].Geartype === "Ranged" && (
               <img
-                src={rangedLogo}
+                src="./skillicons/Ranged.webp"
                 alt="Gear style"
                 className={stl.slotMiniIcon}
               />

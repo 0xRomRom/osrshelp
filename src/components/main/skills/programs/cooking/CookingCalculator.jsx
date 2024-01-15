@@ -1,7 +1,6 @@
 import stl from "./CookingCalculator.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import cookingIcon from "../../../../../assets/skillicons/Cooking.webp";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
@@ -43,7 +42,11 @@ const CookingCalculator = (props) => {
             className={stl.backArrow}
             onClick={handleMenuSwitch}
           />
-          <img src={cookingIcon} alt="Cooking Level" className={stl.skillImg} />
+          <img
+            src="./skillicons/Cooking.webp"
+            alt="Cooking Level"
+            className={stl.skillImg}
+          />
           <span className={stl.skillTitle}>Cooking</span>
           {arePropsDefined ? (
             <div className={stl.userStatsBox}>

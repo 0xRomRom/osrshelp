@@ -1,7 +1,4 @@
 import stl from "./TypeFilter.module.css";
-import magic from "../../../../../assets/skillicons/Magic.webp";
-import ranged from "../../../../../assets/skillicons/Ranged.webp";
-import attack from "../../../../../assets/skillicons/Attack.webp";
 
 const TypeFilter = ({ gearFilter, setGearFilter }) => {
   const toggleActiveButton = (selected) => {
@@ -21,7 +18,7 @@ const TypeFilter = ({ gearFilter, setGearFilter }) => {
         className={`${stl.cta} ${gearFilter === "Melee" ? stl.active : ""}`}
       >
         <img
-          src={attack}
+          src="./skillicons/Attack.webp"
           className={stl.skillIcon}
           alt="Oldschool Runescape Attack Skill Icon"
         />
@@ -32,7 +29,7 @@ const TypeFilter = ({ gearFilter, setGearFilter }) => {
         className={`${stl.cta} ${gearFilter === "Ranged" ? stl.active : ""}`}
       >
         <img
-          src={ranged}
+          src="./skillicons/Ranged.webp"
           className={stl.skillIcon}
           alt="Oldschool Runescape Ranged Skill Icon"
         />
@@ -43,7 +40,7 @@ const TypeFilter = ({ gearFilter, setGearFilter }) => {
         className={`${stl.cta} ${gearFilter === "Magic" ? stl.active : ""}`}
       >
         <img
-          src={magic}
+          src="./skillicons/Magic.webp"
           className={stl.skillIcon}
           alt="Oldschool Runescape Magic Skill Icon"
         />

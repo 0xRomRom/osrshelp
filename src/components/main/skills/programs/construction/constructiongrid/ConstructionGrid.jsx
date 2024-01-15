@@ -1,7 +1,6 @@
 import stl from "./ConstructionGrid.module.css";
 import CONSTRUCTIONLIST from "../../../../../../utils/constructionList";
 import CONSTRUCTIONITEMLIST from "../../../../../../utils/constructionItemList";
-import constructionLogo from "../../../../../../assets/skillicons/Construction.webp";
 import donate from "../../../../../../assets/icons/Donate.webp";
 import statsLogo from "../../../../../../assets/random/Stats_icon.webp";
 
@@ -164,7 +163,7 @@ const ConstructionGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortItem}>
           <img
-            src={constructionLogo}
+            src="./skillicons/Construction.webp"
             alt="Tree Logo"
             className={stl.miniLogo}
           />{" "}
