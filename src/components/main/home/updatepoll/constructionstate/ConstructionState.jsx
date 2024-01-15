@@ -7,7 +7,7 @@ const ConstructionState = () => {
       {/* <h2 className={stl.hero}>Submissions</h2> */}
       <span className={stl.pollWinner}>Poll winner</span>
       <FaArrowDownLong className={stl.downArrow} />
-      <span className={stl.winner}>Pyramid Plunder</span>
+      <span className={stl.winner}>Herbiboar calculator</span>
       <span className={stl.underconstruction}>is under construction!</span>
       <img
         src="./random/Dwarfs.webp"
