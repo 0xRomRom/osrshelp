@@ -23,6 +23,7 @@
   transition: all 0.2s ease-in-out;
   user-select: none;
   margin-bottom: 10px;
+  background-color: var(--main-bg);
 }
 
 .votesWrap {
