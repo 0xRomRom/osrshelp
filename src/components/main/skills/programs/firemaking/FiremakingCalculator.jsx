@@ -48,7 +48,7 @@ const FiremakingCalculator = (props) => {
             onClick={handleMenuSwitch}
           />
           <img
-            src="./skillicons/Firemaking.webp"
+            src="./skillicons/Firemaking.png"
             alt="Firemaking Level"
             className={stl.skillImg}
           />
