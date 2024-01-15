@@ -55,6 +55,10 @@ const SubmissionsState = ({ userID }) => {
     console.log(submission);
     console.log(alreadySubmitted);
   }, [submission, alreadySubmitted]);
+
+  const formattedName =
+    alreadySubmitted &&
+    alreadySubmitted.charAt(0).toUpperCase() + alreadySubmitted.slice(1);
   return (
     <div className={stl.submissionsstate}>
       <h2 className={stl.hero}>Submissions</h2>
@@ -78,7 +82,7 @@ const SubmissionsState = ({ userID }) => {
         <div className={stl.alreadySubmittedBox}>
           <h2 className={stl.thanksHero}>Thanks for submitting</h2>
           <FaArrowDownLong className={stl.downArrow} />
-          <span className={stl.submissionSpan}>{alreadySubmitted}</span>
+          <span className={stl.submissionSpan}>{formattedName}</span>
           <p className={stl.submitCopy}>
             Most popular entries will be polled soon!
           </p>
