@@ -6,8 +6,8 @@
   padding: 1rem;
   border-radius: 0.8rem;
   padding-bottom: 2.5rem;
-  background-color: var(--dark-bg);
-  box-shadow: 0px 0px 5px #282727;
+  background-color: var(--main-bg);
+  border: 1px solid var(--border);
 }
 
 .typeRow {
@@ -38,11 +38,11 @@
 .row {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 4px;
-  padding-bottom: 5px;
   user-select: none;
+  background-color: black;
+  min-height: 2.5rem;
 }
 
 .row:hover {
