@@ -1,6 +1,6 @@
 .modal {
-  background-color: VAR(--dark-bg);
-  box-shadow: 0px 0px 5px #282727;
+  background-color: var(--main-bg);
+  border: 1px solid var(--border);
   height: 6rem;
   display: flex;
   justify-content: flex-start;
