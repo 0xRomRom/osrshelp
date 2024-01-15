@@ -9,7 +9,7 @@ import TotalUsers from "./totalUsersBox/TotalUsers";
 import OSRSRadio from "./radio/OSRSRadio";
 import Pagination from "../pagination/Pagination";
 import RuneChat from "./runechat/RuneChat";
-import LatestUpdates from "./latestupdates/LatestUpdates";
+import Blog from "./blog/Blog";
 import UpdatePoll from "./updatepoll/UpdatePoll";
 
 const Home = (props) => {
@@ -52,7 +52,7 @@ const Home = (props) => {
               )}
               <TotalUsers />
               <RuneChat />
-              <LatestUpdates />
+              <Blog />
               <UpdatePoll />
               <OSRSRadio />
             </Masonry>

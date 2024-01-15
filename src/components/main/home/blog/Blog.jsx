@@ -1,9 +1,9 @@
 import { useState } from "react";
-import stl from "./LatestUpdates.module.css";
+import stl from "./Blog.module.css";
 import { FaArrowDownLong } from "react-icons/fa6";
 
 const btnStates = ["All", "Features", "Misc"];
-const LatestUpdates = () => {
+const Blog = () => {
   const [activeFilter, setActiveFilter] = useState("All");
 
   return (
@@ -53,4 +53,4 @@ const LatestUpdates = () => {
   );
 };
 
-export default LatestUpdates;
+export default Blog;
