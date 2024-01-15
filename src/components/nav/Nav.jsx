@@ -12,8 +12,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useContext } from "react";
 import { PaginationContext } from "../../utils/paginationstate/PaginationProvider";
-import HomeButton from "../../utils/homebutton/HomeButton";
 import mainlogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
+import { IoIosArrowBack } from "react-icons/io";
 
 const Nav = (props) => {
   const location = useLocation();
@@ -30,11 +30,11 @@ const Nav = (props) => {
     }
     if (path === "/skillcalculators") {
       setActiveTab("skills");
-      setMainState("Skillcalculators");
+      setMainState("Skill Calculators");
     }
     if (path === "/gearcalculator") {
       setActiveTab("gearcalculator");
-      setMainState("Gearcalculator");
+      setMainState("Gear Calculator");
     }
     if (path === "/xptable") {
       setActiveTab("xptable");
@@ -82,15 +82,23 @@ const Nav = (props) => {
         </div>
       </div>
 
-      <div className={stl.loggedUser}>
-        {props.playerName && (
-          <>
-            <div className={stl.blueDot}></div>
-            <span className={stl.loggedInUser}>{props.playerName}</span>
-          </>
-        )}
+      <div
+        className={stl.loggedUser}
+        style={{
+          opacity: props.playerName ? "1" : "0",
+        }}
+      >
+        <>
+          <div className={stl.blueDot}></div>
+          <span className={stl.loggedInUser}>{props.playerName}</span>
+        </>
       </div>
       <nav className={stl.nav}>
+        <div className={stl.borderHugger}>
+          <div className={stl.foldNavBtn}>
+            <IoIosArrowBack className={stl.foldNav} />
+          </div>
+        </div>
         <ul className={stl.navlist}>
           <Link to="/" className={stl.link}>
             <li

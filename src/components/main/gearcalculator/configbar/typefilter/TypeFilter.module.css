@@ -19,13 +19,13 @@
   border: none;
   outline: none;
   color: white;
-  border: 1px solid rgb(17, 23, 27);
   border-radius: 0.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40px;
   cursor: pointer;
+  user-select: none;
 }
 
 .active {
