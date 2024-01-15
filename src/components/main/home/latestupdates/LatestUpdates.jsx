@@ -1,5 +1,6 @@
 import { useState } from "react";
 import stl from "./LatestUpdates.module.css";
+import { FaArrowDownLong } from "react-icons/fa6";
 
 const btnStates = ["All", "Features", "Misc"];
 const LatestUpdates = () => {
@@ -19,6 +20,34 @@ const LatestUpdates = () => {
             {btn}
           </button>
         ))}
+      </div>
+      <div className={stl.updatesBox}>
+        <div className={stl.feature}>
+          <h2 className={stl.featureTitle}>OSRS Help Release</h2>
+          <p className={stl.featureCopy}>
+            The official release of OSRS Help is here! Join us as we delve into
+            the wealth of features that OSRSHelp brings to the table. From skill
+            calculators and gear guides to money making methods and community
+            driven updates, OSRSHelp is not merely a website but a vibrant hub
+            where you get ahead of your competition!
+          </p>
+          <span className={stl.readMore}>
+            Read more <FaArrowDownLong className={stl.readArrow} />
+          </span>
+        </div>
+        <div className={stl.feature}>
+          <h2 className={stl.featureTitle}>OSRS Help Release</h2>
+          <p className={stl.featureCopy}>
+            The official release of OSRS Help is here! Join us as we delve into
+            the wealth of features that OSRSHelp brings to the table. From skill
+            calculators and gear guides to money making methods and community
+            driven updates, OSRSHelp is not merely a website but a vibrant hub
+            where you get ahead of your competition!
+          </p>
+          <span className={stl.readMore}>
+            Read more <FaArrowDownLong className={stl.readArrow} />
+          </span>
+        </div>
       </div>
     </div>
   );
