@@ -5,6 +5,7 @@
   /* background-color: red; */
   bottom: 4px;
   padding: 0px 15px;
+  padding-left: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -72,9 +73,9 @@
 }
 
 .phaseSpan {
-  font-size: 12px;
+  font-size: 11px;
   user-select: none;
   font-weight: bold;
-  padding-left: 7px;
+  padding-left: 9px;
   position: relative;
 }

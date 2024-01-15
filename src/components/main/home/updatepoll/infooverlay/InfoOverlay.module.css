@@ -26,7 +26,7 @@
 }
 
 .copyWrapper {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   position: relative;
   width: 100%;
   /* background-color: #109afc6a;
@@ -36,6 +36,8 @@
   border-radius: 0.8rem;
   padding: 5px;
   padding: 0px 30px;
+  padding-bottom: 15px;
+  font-size: 16px;
 }
 .copy {
   user-select: none;

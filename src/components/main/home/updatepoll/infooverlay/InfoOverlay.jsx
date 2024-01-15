@@ -11,8 +11,8 @@ const InfoOverlay = ({ showInfoOverlay, setShowInfoOverlay }) => {
       />
       <div className={stl.copyWrapper}>
         <p className={stl.copy}>
-          Community driven polls dictate the future of OSRS Help. <br />
-          Here is how it works:
+          Community driven polls dictate the future of OSRS Help. Here is how it
+          works:
         </p>
       </div>
       <div className={stl.explainationWrapper}>
