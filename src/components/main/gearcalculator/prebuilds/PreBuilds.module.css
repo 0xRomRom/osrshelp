@@ -1,10 +1,10 @@
 .prebuilds {
   width: 1130px;
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(21, 31, 37));
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(21, 31, 37));
   border-radius: 0.4rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
+  background-color: var(--main-bg);
+  /* background-image: var(--gradient); */
 }
 
 .hero {

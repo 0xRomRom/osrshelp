@@ -36,7 +36,7 @@ body {
     rgb(10, 14, 24) 5.2%,
     rgb(15, 23, 35) 75.3%
   ); */
-  background-color: rgb(14, 17, 23);
+  background-color: var(--page-bg);
   overflow-x: hidden;
 }
 
@@ -64,14 +64,9 @@ code {
 /* Define the scrollbar thumb */
 ::-webkit-scrollbar-thumb {
   background: rgb(19, 26, 31);
-  border-radius: 6px; /* Adjust this value for more or less rounding */
+  border-radius: 6px;
 }
 
-/* Define the scrollbar track on Firefox */
-/* scrollbar-width: thin; */
-/* scrollbar-color: rgb(32, 46, 57) transparent; */
-
-/* Optionally, you can style the scrollbar track and arrows */
 ::-webkit-scrollbar-track {
   background: transparent;
 }
@@ -87,4 +82,10 @@ code {
   --blue-bg: #1098fc26;
   --border: rgb(33, 40, 54);
   --main-bg: rgb(21, 26, 35);
+  --page-bg: rgb(14, 17, 23);
+  --gradient: radial-gradient(
+    ellipse 100% 100% at 50% 75%,
+    rgba(37, 99, 235, 0.07),
+    rgba(37, 99, 235, 0) 60%
+  );
 }

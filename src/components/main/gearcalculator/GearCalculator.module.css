@@ -17,7 +17,8 @@
   width: 54rem;
   /* left: 2.5%; */
   height: 100%;
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+  background-color: var(--main-bg);
+
   border-radius: 0.4rem;
 }
 
@@ -28,7 +29,8 @@
   align-items: center;
 
   /* min-height: 580px; */
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
+  background-color: var(--main-bg);
+  background-image: var(--gradient);
   border: 1px solid rgb(17, 23, 27);
   padding-bottom: 1rem;
   border-top: none;

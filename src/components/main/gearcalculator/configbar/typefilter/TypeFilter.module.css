@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background-color: rgb(17, 23, 27);
+  background-color: var(--dark-bg);
 }
 
 .cta {

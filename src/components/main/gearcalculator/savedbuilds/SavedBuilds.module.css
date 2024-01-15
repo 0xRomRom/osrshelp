@@ -4,7 +4,8 @@
   /* height: 590px; */
   max-height: 730px;
   border-radius: 0.4rem;
-  background: rgb(32, 46, 57);
+  background: var(--main-bg);
+  background-image: var(--gradient);
 }
 
 .savedHero {

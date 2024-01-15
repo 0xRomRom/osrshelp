@@ -2,6 +2,7 @@
   position: relative;
   min-width: 250px;
   border-right: 1px solid rgb(42, 57, 69);
+  background-image: var(--gradient);
 }
 
 .logo {
