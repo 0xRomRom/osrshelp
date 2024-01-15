@@ -13,7 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
-
+  /* 
   background: linear-gradient(
     100deg,
     rgb(10, 14, 24),
@@ -30,12 +30,13 @@ body {
     rgb(13, 20, 31),
     rgb(13, 20, 31),
     rgb(13, 20, 31)
-  );
+  ); */
   /* background: radial-gradient(
     circle at 74.2% 50.9%,
     rgb(10, 14, 24) 5.2%,
     rgb(15, 23, 35) 75.3%
   ); */
+  background-color: rgb(14, 17, 23);
   overflow-x: hidden;
 }
 
