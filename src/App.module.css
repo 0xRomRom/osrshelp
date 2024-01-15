@@ -1,10 +1,4 @@
-.main {
-  position: relative;
-  border-radius: 0.5rem;
-  width: 100%;
-}
-
-.content {
+.app {
   position: relative;
   width: 100vw;
   display: flex;
@@ -22,9 +16,4 @@
   align-items: center;
   color: gray;
   font-size: 2rem;
-}
-
-.mainWrap {
-  display: flex;
-  width: 100vw;
 }

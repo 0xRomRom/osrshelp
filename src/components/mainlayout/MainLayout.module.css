@@ -3,12 +3,17 @@
 }
 
 .flexWrap {
-  display: flex;
+  /* display: flex; */
   width: 100%;
+  /* flex-direction: column; */
 }
 
 .colWrap {
   width: 100%;
   display: flex;
+  flex-direction: row;
   flex-direction: column;
+  /* justify-content: flex-start; */
+
+  /* align-items: flex-start; */
 }

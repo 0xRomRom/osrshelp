@@ -4,17 +4,17 @@ import stl from "./MainLayout.module.css";
 
 const MainLayout = ({ children, ...props }) => {
   return (
-    <div className={stl.colWrap}>
-      <div className={stl.flexWrap}>
-        <Nav
-          setMainState={props.setMainState}
-          setSubState={props.setSubState}
-          playerName={props.playerName}
-        />
+    <>
+      <Nav
+        setMainState={props.setMainState}
+        setSubState={props.setSubState}
+        playerName={props.playerName}
+      />
+      <div className={stl.colWrap}>
         <div className={stl.app}>{children}</div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 

@@ -35,10 +35,10 @@ const App = () => {
   const [moneyMaker, setMoneyMaker] = useState(null);
 
   return (
-    <div className={stl.app}>
+    <>
       <AuthProvider>
         <PaginationProvider>
-          <div className={stl.content}>
+          <div className={stl.app}>
             <Routes>
               <Route path="/reportissue" element={<ReportIssue />} />
               <Route path="/contact" element={<Contact />} />
@@ -162,7 +162,7 @@ const App = () => {
           </div>
         </PaginationProvider>
       </AuthProvider>
-    </div>
+    </>
   );
 };
 export default App;
