@@ -9,18 +9,7 @@ const Blog = () => {
   return (
     <div className={stl.modal}>
       <h2 className={stl.title}>Blog</h2>
-      <div className={stl.filterBox}>
-        {btnStates.map((btn) => (
-          <button
-            onClick={() => setActiveFilter(btn)}
-            className={`${stl.filterBtn} ${
-              activeFilter == btn ? stl.activeBtn : ""
-            }`}
-          >
-            {btn}
-          </button>
-        ))}
-      </div>
+
       <div className={stl.updatesBox}>
         <div className={stl.feature}>
           <h2 className={stl.featureTitle}>OSRS Help Release</h2>
@@ -48,6 +37,18 @@ const Blog = () => {
             Read more <FaArrowDownLong className={stl.readArrow} />
           </span>
         </div>
+      </div>
+      <div className={stl.filterBox}>
+        {btnStates.map((btn) => (
+          <button
+            onClick={() => setActiveFilter(btn)}
+            className={`${stl.filterBtn} ${
+              activeFilter == btn ? stl.activeBtn : ""
+            }`}
+          >
+            {btn}
+          </button>
+        ))}
       </div>
     </div>
   );
