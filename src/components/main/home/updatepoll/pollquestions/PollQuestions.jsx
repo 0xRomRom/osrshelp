@@ -1,4 +1,5 @@
 import stl from "./PollQuestions.module.css";
+import { FaArrowDownLong } from "react-icons/fa6";
 
 const PollQuestions = ({
   totalVotes,
@@ -28,6 +29,11 @@ const PollQuestions = ({
                 }`}
               ></div>
             </div>
+            {userVoteIndex === item.question ? (
+              <FaArrowDownLong className={stl.votedArrow} />
+            ) : (
+              ""
+            )}
             <span className={stl.questionTxt}>{item.questionValue}</span>
           </div>
         );

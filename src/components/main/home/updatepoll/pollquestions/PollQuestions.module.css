@@ -77,3 +77,10 @@
   /* background-color: rgb(204, 204, 204); */
   border: 2px solid var(--blue-main);
 }
+
+.votedArrow {
+  position: absolute;
+  transform: rotate(270deg);
+  color: var(--blue-main);
+  left: 1rem;
+}

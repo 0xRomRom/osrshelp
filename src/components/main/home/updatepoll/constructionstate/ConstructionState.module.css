@@ -28,7 +28,6 @@
   color: white;
   color: var(--blue-main);
   font-size: 24px;
-  padding-bottom: 10px;
   z-index: 10;
 }
 
