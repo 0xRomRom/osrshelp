@@ -33,7 +33,7 @@ const Blog = () => {
       <div className={stl.updatesBox}>
         {blogEntries.map((blog) => {
           return (
-            <div className={stl.feature}>
+            <div className={stl.feature} key={blog.title}>
               <h2 className={stl.featureTitle}>{blog.title}</h2>
               <span className={stl.date}>{blog.date}</span>
               <p className={stl.featureCopy}>{blog.copy}</p>
