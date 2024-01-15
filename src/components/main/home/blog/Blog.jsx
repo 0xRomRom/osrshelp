@@ -1,19 +1,23 @@
 import { useState } from "react";
 import stl from "./Blog.module.css";
 import { FaArrowDownLong } from "react-icons/fa6";
-
+import { useNavigate } from "react-router-dom";
 const blogEntries = [
   {
     title: "OSRS Help Release",
     copy: "The official release of OSRS Help is here! Join us as we delve into the wealth of features that OSRSHelp brings to the table. From skill calculators and gear guides to money making methods and community driven updates, OSRSHelp is not merely a website but a vibrant hub where you get ahead of your competition!",
+    path: "/osrshelp_release",
   },
+
   {
     title: "Agility Pyramid Calculator",
     copy: "By high demand, development of the Agility Pyramid Calculator just finished! Profit calculation based on average exp rate is included, along with expected XP rates per agility level.",
+    path: "/agility_pyramid_calculator",
   },
 ];
 const btnStates = ["All", "Features", "Misc"];
 const Blog = () => {
+  const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState("All");
 
   return (
@@ -26,7 +30,10 @@ const Blog = () => {
             <div className={stl.feature}>
               <h2 className={stl.featureTitle}>{blog.title}</h2>
               <p className={stl.featureCopy}>{blog.copy}</p>
-              <span className={stl.readMore}>
+              <span
+                className={stl.readMore}
+                onClick={() => navigate(`/blog/${blog.path}`)}
+              >
                 Read more <FaArrowDownLong className={stl.readArrow} />
               </span>
             </div>
