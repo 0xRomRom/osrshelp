@@ -5,10 +5,11 @@ import { useNavigate } from "react-router-dom";
 const blogEntries = [
   {
     title: "OSRS Help Release",
-    copy: "The official release of OSRS Help is here! Join us as we delve into the wealth of features that OSRSHelp brings to the table. From skill calculators and gear guides to money making methods and community driven updates, OSRSHelp is not merely a website but a vibrant hub where you get ahead of your competition!",
+    copy: "The official release of OSRS Help is here! Join us as we delve into the wealth of features that OSRS Help brings to the table. From skill calculators and gear guides to money making methods and community driven updates, OSRS Help is not merely a website but a vibrant hub where you get ahead of your competition!",
     path: "/osrshelp_release",
     index: 1,
     blogType: "Misc",
+    date: "August 24",
   },
 
   {
@@ -17,6 +18,7 @@ const blogEntries = [
     path: "/agility_pyramid_calculator",
     index: 2,
     blogType: "Features",
+    date: "September 29",
   },
 ];
 const btnStates = ["All", "Features", "Misc"];
@@ -33,6 +35,7 @@ const Blog = () => {
           return (
             <div className={stl.feature}>
               <h2 className={stl.featureTitle}>{blog.title}</h2>
+              <span className={stl.date}>{blog.date}</span>
               <p className={stl.featureCopy}>{blog.copy}</p>
               <span
                 className={stl.readMore}

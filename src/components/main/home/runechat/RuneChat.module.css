@@ -4,9 +4,11 @@
   padding-top: 1rem;
   min-height: 500px;
   max-height: 500px;
-  background-color: rgb(32, 46, 57);
-  /* background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27)); */
-  background-color: rgb(32, 46, 57);
+  background-image: radial-gradient(
+    ellipse 100% 100% at 50% 75%,
+    rgba(37, 99, 235, 0.07),
+    rgba(37, 99, 235, 0) 60%
+  );
   /* width: 350px; */
   border-radius: 0.8rem;
   display: flex;
@@ -14,6 +16,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  border: 1px solid var(--border);
 }
 
 .runechat {

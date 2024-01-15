@@ -4,15 +4,15 @@
   padding-top: 1rem;
   padding-bottom: 0rem;
   min-height: 500px;
-  background-color: rgb(32, 46, 57);
-  /* background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27)); */
-  background-color: rgb(32, 46, 57);
+
   border-radius: 0.8rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
   flex-direction: column;
+
+  border: 1px solid var(--border);
 }
 
 .title {
