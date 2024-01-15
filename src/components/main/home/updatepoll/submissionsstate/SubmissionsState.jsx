@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import stl from "./SubmissionsState.module.css";
 import supabase from "../../../../../utils/supabase/supabase";
 import { FaArrowDownLong } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const SubmissionsState = ({ userID }) => {
+  const navigate = useNavigate();
   const [submission, setSubmission] = useState(null);
   const [alreadySubmitted, setAlreadySubmitted] = useState(null);
 
@@ -36,6 +38,12 @@ const SubmissionsState = ({ userID }) => {
 
   const handleFormSubmission = async (e) => {
     e.preventDefault();
+    if (!userID) {
+      navigate("/login");
+    }
+    if (!submission) {
+      return;
+    }
     try {
       const { error } = await supabase.from("poll_submissions").insert([
         {
@@ -76,7 +84,7 @@ const SubmissionsState = ({ userID }) => {
             onChange={updateSubmissionState}
           />
           <button className={stl.submitCta} onClick={handleFormSubmission}>
-            Vote
+            {userID ? "Vote" : "Sign in to vote"}
           </button>
         </form>
       )}
