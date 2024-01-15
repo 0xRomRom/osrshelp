@@ -36,11 +36,14 @@
   background-color: transparent;
   outline: none;
   border: none;
-  background-color: var(--blue-main);
   border-radius: 0.2rem;
   padding: 2px 0px;
+  cursor: pointer;
+  background-color: #0084ffd7;
+  user-select: none;
 }
 
 .activeBtn {
   color: white;
+  background-color: #0084ff;
 }
