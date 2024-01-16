@@ -3,65 +3,45 @@ import stl from "./MainCanvas.module.css";
 
 const MainCanvas = () => {
   const canvasRef = useRef(null);
-  const imageRef = useRef(null);
-  const speed = 2;
-  const initialDirection = Math.random() < 0.5 ? 1 : -115; // Randomize initial direction
+  const speed = 0.25;
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    const loadImage = async () => {
-      const image = new Image();
-      image.src = "/skillicons/Attack.webp";
-      image.className = "canvasImg";
-      await image.decode();
-
-      imageRef.current = image;
-      animate();
-    };
-
-    loadImage();
-
-    let x = initialDirection === 1 ? 0 : canvas.width; // Set initial x position based on direction
+    let x = 0;
     let y = 0;
-
-    const draw = () => {
+    const image = new Image();
+    image.src = "./skillicons/Firemaking.png";
+    image.onload = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(imageRef.current, x, y);
-    };
-
-    const updatePosition = () => {
-      x += speed * initialDirection;
-
-      if (initialDirection === 1 && x > canvas.width) {
-        x = -imageRef.current.width;
-        y += 3 * speed;
-      } else if (initialDirection === -1 && x < -imageRef.current.width) {
-        x = canvas.width;
-      }
-
-      draw();
+      ctx.drawImage(image, x, y, 20, 20); // Set the image dimensions here
     };
 
     const animate = () => {
-      updatePosition();
-      requestAnimationFrame(animate);
+      y += speed;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(image, x, y, 20, 20);
+
+      // Define a break condition
+      if (y < canvas.height) {
+        console.log(y);
+        requestAnimationFrame(animate);
+      }
+      if (y > 148) {
+        y = 0;
+      }
     };
 
-    // Cleanup function
-    return () => {
-      cancelAnimationFrame(animate);
-    };
-  }, [initialDirection]);
+    animate();
+  }, []);
 
   return (
-    <div className={`${stl.canvasWrapper} ${stl.canvasImg}`}>
+    <div className={stl.canvasWrapper}>
       <canvas
         ref={canvasRef}
-        width={400}
-        height={200}
         className={stl.mainCanvas}
+        style={{ width: "100%" }}
       >
         Your browser does not support the canvas element.
       </canvas>
