@@ -131,7 +131,6 @@
   font-weight: 800;
   margin-top: 0.4rem;
   font-size: 16px;
-  transition: opacity 0.2s ease;
 }
 
 .logoWrapper {
@@ -170,6 +169,7 @@
 
 .foldNav {
   border-radius: 50%;
+  transition: all 0.4s ease-in-out;
 }
 
 .borderHugger {
@@ -186,7 +186,6 @@
 .foldedNav {
   min-width: none;
   max-width: 6rem !important;
-  transition: all 0.3s ease-in-out;
 }
 
 .foldedList {

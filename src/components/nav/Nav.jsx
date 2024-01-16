@@ -102,15 +102,22 @@ const Nav = (props) => {
           opacity: props.playerName ? "1" : "0",
         }}
       >
-        <>
-          <div className={stl.blueDot}></div>
-          <span className={stl.loggedInUser}>{props.playerName}</span>
-        </>
+        {!navFolded && (
+          <>
+            <div className={stl.blueDot}></div>
+            <span className={stl.loggedInUser}>{props.playerName}</span>
+          </>
+        )}
       </div>
       <nav className={stl.nav}>
         <div className={stl.borderHugger}>
           <div className={stl.foldNavBtn} onClick={toggleNavFold}>
-            <IoIosArrowBack className={stl.foldNav} />
+            <IoIosArrowBack
+              className={stl.foldNav}
+              style={{
+                transform: navFolded ? "rotate(0deg)" : "rotate(180deg)",
+              }}
+            />
           </div>
         </div>
         <ul className={`${stl.navlist} ${navFolded ? stl.foldedList : ""}`}>
