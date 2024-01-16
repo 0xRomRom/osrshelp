@@ -6,8 +6,10 @@ const HomeButton = () => {
   const navigate = useNavigate();
   return (
     <div className={stl.homeBox} onClick={() => navigate("/")}>
-      <img src={mainLogo} alt="OSRS Help logo" className={stl.osrshelpLogo} />
-      <span className={stl.navLogoSpan}>OSRS Help</span>
+      <div className={stl.logoWrapper}>
+        <img src={mainLogo} alt="OSRS Help logo" className={stl.osrshelpLogo} />
+        <span className={stl.navLogoSpan}>OSRS Help</span>
+      </div>
     </div>
   );
 };
