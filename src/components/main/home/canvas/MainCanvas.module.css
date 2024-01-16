@@ -13,5 +13,20 @@
   /* border: 1px solid var(--border); */
   /* background-color: red; */
   position: absolute;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+.hero {
+  background-image: linear-gradient(180deg, var(--blue-main), #0015ff);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  z-index: 100;
+  /* text-transform: uppercase; */
+  font-weight: bold;
+  font-size: 90px;
+  /* opacity: 0.95; */
+  user-select: none;
+  font-family: RSFont;
+  letter-spacing: 10px;
 }

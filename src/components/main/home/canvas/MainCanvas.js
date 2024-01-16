@@ -35,13 +35,14 @@ const MainCanvas = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    const randomizer = () => Math.floor(Math.random() * imageState.length);
+    const randomImgSrc = () => Math.floor(Math.random() * imageState.length);
+    const randomImgXPosition = () => Math.floor(Math.random() * 240);
 
     // Img 1 init
-    let x1 = Math.floor(Math.random() * 200);
+    let x1 = randomImgXPosition();
     let y1 = -10;
     const image1 = new Image();
-    image1.src = imageState[randomizer()];
+    image1.src = imageState[randomImgSrc()];
 
     image1.onload = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -49,20 +50,20 @@ const MainCanvas = () => {
     };
 
     // Img 2 init
-    let x2 = Math.floor(Math.random() * 200);
+    let x2 = randomImgXPosition();
     let y2 = -10;
     const image2 = new Image();
-    image2.src = imageState[randomizer()];
+    image2.src = imageState[randomImgSrc()];
     image2.onload = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.drawImage(image2, x2, y2, 20, 20); // Set the image dimensions here
     };
 
     // Img 2 init
-    let x3 = Math.floor(Math.random() * 200);
+    let x3 = randomImgXPosition();
     let y3 = -10;
     const image3 = new Image();
-    image3.src = imageState[randomizer()];
+    image3.src = imageState[randomImgSrc()];
     image3.onload = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.drawImage(image3, x3, y3, 20, 20); // Set the image dimensions here
@@ -88,18 +89,18 @@ const MainCanvas = () => {
 
       if (y1 > 110) {
         y1 = 0;
-        x1 = Math.floor(Math.random() * 200);
-        image1.src = imageState[randomizer()];
+        x1 = randomImgXPosition();
+        image1.src = imageState[randomImgSrc()];
       }
       if (y2 > 110) {
         y2 = 0;
-        x2 = Math.floor(Math.random() * 200);
-        image2.src = imageState[randomizer()];
+        x2 = randomImgXPosition();
+        image2.src = imageState[randomImgSrc()];
       }
       if (y3 > 110) {
         y3 = 0;
-        x3 = Math.floor(Math.random() * 200);
-        image3.src = imageState[randomizer()];
+        x3 = randomImgXPosition();
+        image3.src = imageState[randomImgSrc()];
       }
     };
 
@@ -108,6 +109,7 @@ const MainCanvas = () => {
 
   return (
     <div className={stl.canvasWrapper}>
+      <h1 className={stl.hero}>Welcome to OSRS Help</h1>
       <canvas
         ref={canvasRef}
         className={stl.mainCanvas}
