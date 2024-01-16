@@ -10,15 +10,10 @@
   width: 100%;
   height: 12.5rem;
   overflow: hidden;
-  /* background: url("../../../assets/wallpapers/Barrows.webp");
-  background-size: cover;
-  background-position: 20% 29%;
-  background-repeat: no-repeat; */
   border: 1px solid var(--border);
-  background-color: var(--main-bg);
+  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
   background-image: var(--gradient);
   border-radius: 0.8rem;
-  filter: brightness(0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,15 +117,13 @@ label {
   color: gray;
   font-size: 2rem;
 }
-.masonry {
-  /* width: 100%; */
-  /* background-color: red; */
-}
-
-.masonry div {
-}
 
 .masonGap {
   position: relative;
   margin: 0;
+}
+
+.mainCanvas {
+  position: relative;
+  width: 100%;
 }

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import stl from "./Home.module.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import welcometxt from "../../../assets/Welcometxt.png";
 
 import LoginBox from "./loginbox/LoginBox";
 import UserBox from "./userbox/UserBox";
@@ -11,7 +10,7 @@ import Pagination from "../pagination/Pagination";
 import RuneChat from "./runechat/RuneChat";
 import Blog from "./blog/Blog";
 import UpdatePoll from "./updatepoll/UpdatePoll";
-import MovingImageCanvas from "./canvas";
+import MainCanvas from "./canvas/MainCanvas";
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
@@ -28,8 +27,7 @@ const Home = (props) => {
       <Pagination />
       <div className={stl.modal}>
         <div className={stl.imageBox}>
-          <img src={welcometxt} alt="Welcome Text" className={stl.welcometxt} />
-          <MovingImageCanvas />
+          <MainCanvas />
         </div>
         <div className={stl.modalbottom}>
           <ResponsiveMasonry
