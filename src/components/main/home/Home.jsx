@@ -11,6 +11,7 @@ import Pagination from "../pagination/Pagination";
 import RuneChat from "./runechat/RuneChat";
 import Blog from "./blog/Blog";
 import UpdatePoll from "./updatepoll/UpdatePoll";
+import MovingImageCanvas from "./canvas";
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
@@ -28,6 +29,7 @@ const Home = (props) => {
       <div className={stl.modal}>
         <div className={stl.imageBox}>
           <img src={welcometxt} alt="Welcome Text" className={stl.welcometxt} />
+          <MovingImageCanvas />
         </div>
         <div className={stl.modalbottom}>
           <ResponsiveMasonry
