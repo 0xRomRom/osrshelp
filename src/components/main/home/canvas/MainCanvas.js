@@ -39,6 +39,8 @@ const MainCanvas = () => {
 
     const animate = () => {
       // Update position for the first image
+      console.log(y1);
+      // console.log(y2);
 
       y1 += speed;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -50,23 +52,23 @@ const MainCanvas = () => {
 
       // Define a break condition
       if (y1 < canvas.height && y2 < canvas.height) {
-        // console.log(y1, y2);
+        console.log(y1, y2);
         requestAnimationFrame(animate);
       }
 
       // Reset position for the first image
-      if (y1 > 50) {
-        y1 = -30;
-        x1 = Math.floor(Math.random() * canvasWidth);
+      if (y1 > 110) {
+        y1 = 0;
+        x1 = Math.floor(Math.random() * 200);
         const randomgImg = Math.floor(Math.random() * imageState.length);
         console.log(randomgImg);
         image1.src = imageState[randomgImg];
       }
 
       // Reset position for the second image
-      if (y2 > 50) {
-        y2 = -30;
-        x2 = Math.floor(Math.random() * canvasWidth);
+      if (y2 > 110) {
+        y2 = 0;
+        x2 = Math.floor(Math.random() * 200);
         const randomgImg = Math.floor(Math.random() * imageState.length);
         image2.src = imageState[randomgImg];
       }
@@ -80,7 +82,7 @@ const MainCanvas = () => {
       <canvas
         ref={canvasRef}
         className={stl.mainCanvas}
-        style={{ width: "95%" }}
+        style={{ width: "95%", height: "250%" }}
       >
         Your browser does not support the canvas element.
       </canvas>
