@@ -1,7 +1,8 @@
 .signup {
   height: 100vh;
   width: 100vw;
-  background-color: var(--page-bg);
+  background: var(--page-bg);
+  background-image: var(--gradient);
   color: white;
   font-size: 10rem;
   position: fixed;
@@ -23,6 +24,8 @@
   background: var(--main-bg);
   border-radius: 0.4rem;
   max-width: 396.5px;
+  border: 1px solid var(--border);
+  box-shadow: 0px 0px 35px rgb(14, 17, 23);
 }
 
 .hero {
@@ -144,7 +147,6 @@
 
 .login {
   color: rgb(164, 6, 164);
-  text-shadow: 0px 0px 2px black;
   font-weight: bold;
   cursor: pointer;
 }
