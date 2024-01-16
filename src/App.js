@@ -27,6 +27,7 @@ import Contact from "./components/about/contact/Contact";
 import ReportIssue from "./components/about/reportissue/ReportIssue";
 
 import MainLayout from "./components/mainlayout/MainLayout";
+import BlogPage from "./components/main/blog/BlogPage";
 
 const App = () => {
   const [skills, setSkills] = useState(null);
@@ -155,6 +156,14 @@ const App = () => {
                 element={
                   <MainLayout playerName={playerName}>
                     <SupportOSRSHelp />
+                  </MainLayout>
+                }
+              />
+              <Route
+                path="/blog/:newpaths"
+                element={
+                  <MainLayout playerName={playerName}>
+                    <BlogPage />
                   </MainLayout>
                 }
               />

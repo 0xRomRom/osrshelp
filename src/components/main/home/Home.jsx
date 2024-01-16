@@ -8,7 +8,7 @@ import TotalUsers from "./totalUsersBox/TotalUsers";
 import OSRSRadio from "./radio/OSRSRadio";
 import Pagination from "../pagination/Pagination";
 import RuneChat from "./runechat/RuneChat";
-import Blog from "./blog/Blog";
+import BlogModal from "./blog/BlogModal";
 import UpdatePoll from "./updatepoll/UpdatePoll";
 import MainCanvas from "./canvas/MainCanvas";
 
@@ -52,7 +52,7 @@ const Home = (props) => {
               )}
               <TotalUsers />
               <RuneChat />
-              <Blog />
+              <BlogModal />
               <UpdatePoll />
               <OSRSRadio />
             </Masonry>

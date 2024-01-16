@@ -37,8 +37,8 @@ const MainCanvas = () => {
     const ctx = canvas.getContext("2d");
     const randomImgSrc = () => Math.floor(Math.random() * imageState.length);
     const randomImgXPosition = () => Math.floor(Math.random() * 280);
-    const imgWidth = 15;
-    const imgHeight = 15;
+    const imgWidth = 18;
+    const imgHeight = 18;
 
     // Img 1 init
     let x1 = randomImgXPosition();

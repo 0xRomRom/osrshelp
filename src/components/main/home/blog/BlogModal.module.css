@@ -24,6 +24,7 @@
   font-size: 16px;
   position: relative;
   text-align: center;
+  user-select: none;
 }
 
 .filterBox {
@@ -131,4 +132,5 @@
   padding-left: 10px;
   top: 10px;
   font-size: 14px;
+  user-select: none;
 }
