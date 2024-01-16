@@ -190,6 +190,16 @@
   width: 85px;
 }
 
-.textHidden {
+.navFold {
   color: transparent !important;
+  width: 3.25rem;
+  height: 41px;
+}
+
+.navTxt {
+  font-weight: bold;
+}
+
+.textHidden {
+  display: none;
 }
