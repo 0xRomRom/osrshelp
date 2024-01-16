@@ -75,7 +75,11 @@ const Nav = (props) => {
   };
 
   return (
-    <div className={`${stl.modal}  ${navFolded ? stl.foldedNav : ""}`}>
+    // <div className={`${stl.modal}  ${navFolded ? stl.foldedNav : ""}`}>
+    <div
+      className={stl.modal}
+      style={{ width: navFolded ? "6.2rem" : "initial" }}
+    >
       <div className={stl.homeBox} onClick={() => navigate("/")}>
         <div className={stl.logoWrapper}>
           <img
@@ -83,7 +87,12 @@ const Nav = (props) => {
             alt="OSRS Help logo"
             className={stl.osrshelpLogo}
           />
-          <span className={stl.navLogoSpan}>OSRS Help</span>
+          <span
+            className={stl.navLogoSpan}
+            style={{ opacity: navFolded ? "0" : "1" }}
+          >
+            OSRS Help
+          </span>
         </div>
       </div>
 
@@ -105,6 +114,10 @@ const Nav = (props) => {
           </div>
         </div>
         <ul className={`${stl.navlist} ${navFolded ? stl.foldedList : ""}`}>
+          {/* <ul
+          className={stl.navList}
+          // style={{ width: navFolded ? "85px" : "250px" }}
+        > */}
           <Link to="/" className={stl.link}>
             <li
               className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
