@@ -75,11 +75,7 @@ const Nav = (props) => {
   };
 
   return (
-    // <div className={`${stl.modal}  ${navFolded ? stl.foldedNav : ""}`}>
-    <div
-      className={stl.modal}
-      style={{ width: navFolded ? "6.2rem" : "initial" }}
-    >
+    <div className={`${stl.modal}  ${navFolded ? stl.foldedNav : ""}`}>
       <div className={stl.homeBox} onClick={() => navigate("/")}>
         <div className={stl.logoWrapper}>
           <img
@@ -110,21 +106,20 @@ const Nav = (props) => {
         )}
       </div>
       <nav className={stl.nav}>
-        <div className={stl.borderHugger}>
+        <div
+          className={stl.borderHugger}
+          style={{ right: navFolded ? "-34px" : "-31px" }}
+        >
           <div className={stl.foldNavBtn} onClick={toggleNavFold}>
             <IoIosArrowBack
               className={stl.foldNav}
               style={{
-                transform: navFolded ? "rotate(0deg)" : "rotate(180deg)",
+                transform: navFolded ? "rotate(180deg)" : "rotate(0deg)",
               }}
             />
           </div>
         </div>
         <ul className={`${stl.navlist} ${navFolded ? stl.foldedList : ""}`}>
-          {/* <ul
-          className={stl.navList}
-          // style={{ width: navFolded ? "85px" : "250px" }}
-        > */}
           <Link to="/" className={stl.link}>
             <li
               className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${

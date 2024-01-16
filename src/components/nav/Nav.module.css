@@ -4,6 +4,7 @@
   border-right: 1px solid var(--border);
   /* height: calc(100% - 200px); */
   z-index: 50;
+  padding-right: 1rem;
 }
 
 .logo {
@@ -34,14 +35,13 @@
   /* margin-top: 2rem; */
   position: sticky;
   top: 0;
-  padding: 1rem 1rem;
-  padding-right: 1.35rem;
+  padding: 1.55rem 0 1rem;
+  padding-left: 12px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  padding-top: 1.55rem;
-  width: 250px;
+  width: 200px;
 }
 
 .navitem {
@@ -59,6 +59,8 @@
   filter: grayscale(0.8);
   text-decoration: none;
   font-weight: bold;
+  min-height: 41px;
+  max-height: 41px;
 }
 
 .navitem:hover {
@@ -69,7 +71,6 @@
 
 .icon {
   width: 25px;
-  margin-left: 0.25rem;
 }
 
 .active {
@@ -112,6 +113,13 @@
 }
 .link {
   text-decoration: none;
+  min-height: 41px;
+  max-height: 41px;
+  overflow: hidden;
+}
+
+.maxWidth {
+  width: 43px;
 }
 
 .homeBox {
@@ -123,7 +131,7 @@
 }
 .osrshelpLogo {
   width: 20px;
-  margin: 0.5rem 1rem;
+  margin: 0.5rem 1.1rem;
 }
 
 .navLogoSpan {
@@ -137,18 +145,17 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* background-color: red; */
+  cursor: pointer;
   width: 100%;
   position: sticky;
   top: 0;
-  padding-left: 1rem;
+  padding-left: 0.2rem;
 }
 
 .foldNavBtn {
   border: 2px solid var(--border);
   box-shadow: 0px 0x 10px var(--border);
-  background-color: var(--main-bg);
-  background-color: transparent;
+  background-color: var(--page-bg);
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -156,7 +163,7 @@
   align-items: center;
   cursor: pointer;
   color: gray;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
   width: 25px;
   height: 25px;
   z-index: 20;
@@ -177,7 +184,7 @@
   position: absolute;
   width: 30px;
   height: 100%;
-  right: -15px;
+  right: -33px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,17 +192,15 @@
 
 .foldedNav {
   min-width: none;
-  max-width: 6rem !important;
+  max-width: 4.2rem !important;
 }
 
 .foldedList {
-  width: 85px;
+  width: 55px;
 }
 
 .navFold {
   color: transparent !important;
-  width: 3.25rem;
-  /* height: 41px; */
 }
 
 .navTxt {
