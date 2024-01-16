@@ -36,7 +36,9 @@ const MainCanvas = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     const randomImgSrc = () => Math.floor(Math.random() * imageState.length);
-    const randomImgXPosition = () => Math.floor(Math.random() * 240);
+    const randomImgXPosition = () => Math.floor(Math.random() * 280);
+    const imgWidth = 15;
+    const imgHeight = 15;
 
     // Img 1 init
     let x1 = randomImgXPosition();
@@ -46,7 +48,7 @@ const MainCanvas = () => {
 
     image1.onload = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(image1, x1, y1, 20, 20);
+      ctx.drawImage(image1, x1, y1, imgWidth, imgHeight);
     };
 
     // Img 2 init
@@ -56,7 +58,7 @@ const MainCanvas = () => {
     image2.src = imageState[randomImgSrc()];
     image2.onload = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(image2, x2, y2, 20, 20); // Set the image dimensions here
+      ctx.drawImage(image2, x2, y2, imgWidth, imgHeight); // Set the image dimensions here
     };
 
     // Img 2 init
@@ -66,20 +68,20 @@ const MainCanvas = () => {
     image3.src = imageState[randomImgSrc()];
     image3.onload = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(image3, x3, y3, 20, 20); // Set the image dimensions here
+      ctx.drawImage(image3, x3, y3, imgWidth, imgHeight); // Set the image dimensions here
     };
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       y1 += speed;
-      ctx.drawImage(image1, x1, y1, 20, 20);
+      ctx.drawImage(image1, x1, y1, imgWidth, imgHeight);
 
       y2 += speed - 0.05;
-      ctx.drawImage(image2, x2, y2, 20, 20);
+      ctx.drawImage(image2, x2, y2, imgWidth, imgHeight);
 
       y3 += speed - 0.1;
-      ctx.drawImage(image3, x3, y3, 20, 20);
+      ctx.drawImage(image3, x3, y3, imgWidth, imgHeight);
 
       // Define a break condition
       if (y1 < canvas.height && y2 < canvas.height) {
