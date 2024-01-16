@@ -20,6 +20,7 @@ const Nav = (props) => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("/");
   const { setMainState, setSubState } = useContext(PaginationContext);
+  const [navFolded, setNavFolded] = useState(false);
 
   useEffect(() => {
     const path = location.pathname;
@@ -69,8 +70,12 @@ const Nav = (props) => {
     navigate(path);
   };
 
+  const toggleNavFold = () => {
+    setNavFolded(!navFolded);
+  };
+
   return (
-    <div className={stl.modal}>
+    <div className={`${stl.modal}  ${navFolded ? stl.foldedNav : ""}`}>
       <div className={stl.homeBox} onClick={() => navigate("/")}>
         <div className={stl.logoWrapper}>
           <img
@@ -95,14 +100,14 @@ const Nav = (props) => {
       </div>
       <nav className={stl.nav}>
         <div className={stl.borderHugger}>
-          <div className={stl.foldNavBtn}>
+          <div className={stl.foldNavBtn} onClick={toggleNavFold}>
             <IoIosArrowBack className={stl.foldNav} />
           </div>
         </div>
-        <ul className={stl.navlist}>
+        <ul className={`${stl.navlist} ${navFolded ? stl.foldedList : ""}`}>
           <Link to="/" className={stl.link}>
             <li
-              className={`${stl.navitem} ${
+              className={`${stl.navitem} ${navFolded ? stl.textHidden : ""} ${
                 activeTab === "/" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("/")}
@@ -117,7 +122,7 @@ const Nav = (props) => {
           </Link>
           <Link to="/skillcalculators" className={stl.link}>
             <li
-              className={`${stl.navitem} ${
+              className={`${stl.navitem} ${navFolded ? stl.textHidden : ""} ${
                 activeTab === "skills" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("/skillcalculators")}
@@ -129,7 +134,7 @@ const Nav = (props) => {
 
           <Link to="/gearcalculator" className={stl.link}>
             <li
-              className={`${stl.navitem} ${
+              className={`${stl.navitem} ${navFolded ? stl.textHidden : ""} ${
                 activeTab === "gearcalculator" ? stl.active : ""
               }`}
               onClick={() =>
@@ -143,7 +148,7 @@ const Nav = (props) => {
 
           <Link to="/combatcalculator" className={stl.link}>
             <li
-              className={`${stl.navitem} ${
+              className={`${stl.navitem} ${navFolded ? stl.textHidden : ""} ${
                 activeTab === "combatcalculator" ? stl.active : ""
               }`}
               onClick={() =>
@@ -156,7 +161,7 @@ const Nav = (props) => {
           </Link>
           <Link to="/moneymakers" className={stl.link}>
             <li
-              className={`${stl.navitem} ${
+              className={`${stl.navitem} ${navFolded ? stl.textHidden : ""} ${
                 activeTab === "moneymakers" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("moneymakers", "Money Makers")}
@@ -167,7 +172,7 @@ const Nav = (props) => {
           </Link>
           <Link to="/profitalching" className={stl.link}>
             <li
-              className={`${stl.navitem} ${
+              className={`${stl.navitem} ${navFolded ? stl.textHidden : ""} ${
                 activeTab === "profitalching" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("profitalching", "Profit Alching")}
@@ -183,7 +188,7 @@ const Nav = (props) => {
 
           <Link to="/xptable" className={stl.link}>
             <li
-              className={`${stl.navitem} ${
+              className={`${stl.navitem} ${navFolded ? stl.textHidden : ""} ${
                 activeTab === "xptable" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("xptable", "XP Table")}
@@ -194,7 +199,7 @@ const Nav = (props) => {
           </Link>
           <Link to="/worldmap" className={stl.link}>
             <li
-              className={`${stl.navitem} ${
+              className={`${stl.navitem} ${navFolded ? stl.textHidden : ""} ${
                 activeTab === "worldmap" ? stl.active : ""
               }`}
               onClick={() => handleTabSwitch("worldmap", "World map")}
@@ -205,7 +210,7 @@ const Nav = (props) => {
           </Link>
           <Link to="/supportosrshelp" className={stl.link}>
             <li
-              className={`${stl.navitem} ${
+              className={`${stl.navitem} ${navFolded ? stl.textHidden : ""} ${
                 activeTab === "supportosrshelp" ? stl.active : ""
               }`}
               onClick={() =>
