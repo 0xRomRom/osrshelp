@@ -11,6 +11,7 @@
     rgb(8, 12, 20),
     rgb(11, 14, 24)
   );
+  background-color: var(--page-bg);
   background: transparent;
   display: flex;
   justify-content: center;

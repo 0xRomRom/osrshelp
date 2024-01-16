@@ -62,7 +62,7 @@ const ReportIssue = () => {
 
   const navigate = useNavigate();
   return (
-    <div className={stl.contact}>
+    <div className={stl.reportissue}>
       <HomeButton />
       <div className={stl.contactModal}>
         <span className={stl.homeSpan} onClick={() => navigate("/")}>
@@ -98,17 +98,19 @@ const ReportIssue = () => {
                 />
               </div>
             </div>
-            <span className={stl.inputSpan}>Steps to reproduce</span>
-            <div className={stl.textAreaWrap}>
-              <textarea
-                maxLength="500"
-                className={stl.textAreaInput}
-                placeholder="How can we reproduce the issue?"
-                onChange={(e) => updateFormState("message", e.target.value)}
-                style={{
-                  border: error === messageError ? "2px solid red" : "",
-                }}
-              ></textarea>
+            <div className={stl.bottombox}>
+              <span className={stl.inputSpan}>Steps to reproduce</span>
+              <div className={stl.textAreaWrap}>
+                <textarea
+                  maxLength="500"
+                  className={stl.textAreaInput}
+                  placeholder="How can we reproduce the issue?"
+                  onChange={(e) => updateFormState("message", e.target.value)}
+                  style={{
+                    border: error === messageError ? "2px solid red" : "",
+                  }}
+                ></textarea>
+              </div>
             </div>
             <div className={stl.submitBox}>
               <button className={stl.submitCta} onClick={submitForm}>

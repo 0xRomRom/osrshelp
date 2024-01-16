@@ -22,7 +22,9 @@ const WorldMap = () => {
       <div className={stl.adBar}>[ Advertisements ]</div>
       <Pagination />
       <div
-        className={`${stl.mapContainers} ${fullScreen ? stl.fullScreen : ""}`}
+        className={`${stl.mapContainers} ${fullScreen ? stl.fullScreen : ""} ${
+          fullScreen ? stl.mapFull : ""
+        }`}
       >
         <MapContainer center={[70, 250]} zoom={4} className={stl.mapBox}>
           <ImageOverlay
@@ -30,11 +32,11 @@ const WorldMap = () => {
             bounds={bounds}
             loading="lazy"
           />
+          <RiFullscreenFill
+            className={stl.fullScreenBtn}
+            onClick={handleFullScreen}
+          />
         </MapContainer>
-        <RiFullscreenFill
-          className={stl.fullScreenBtn}
-          onClick={handleFullScreen}
-        />
       </div>
     </div>
   );
