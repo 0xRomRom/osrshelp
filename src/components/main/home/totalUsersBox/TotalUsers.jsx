@@ -121,14 +121,20 @@ const TotalUsers = () => {
   }, [incrementDB, totalUsers]);
 
   return (
-    <div className={stl.totalusers}>
-      <h2 className={stl.userCount} ref={ref}>
-        {" "}
-        {inView && <NumberCounter n={totalUsers} />}
-      </h2>
-      <Spinner />
-      <span className={stl.visitorsSpan}>Total users</span>
-    </div>
+    <>
+      <div className={stl.totalusers}>
+        {totalUsers === 0 && <Spinner />}
+        {totalUsers > 0 && (
+          <>
+            <h2 className={stl.userCount} ref={ref}>
+              {" "}
+              {inView && <NumberCounter n={totalUsers} />}
+            </h2>
+            <span className={stl.visitorsSpan}>Total users</span>
+          </>
+        )}
+      </div>
+    </>
   );
 };
 
