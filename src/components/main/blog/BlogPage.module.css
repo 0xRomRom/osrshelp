@@ -29,18 +29,18 @@
   width: 95%;
   /* background-color: var(--dark-bg); */
   /* background-color: rgb(21, 26, 35); */
-  border: 1px solid gray;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 2rem;
 }
 
 .blogTitle {
   text-align: center;
   color: var(--blue-main);
   font-size: 44px;
-  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   background-image: linear-gradient(180deg, var(--blue-main), #0015ff);
   color: transparent;
@@ -50,7 +50,6 @@
 
 .blogWrapper {
   /* width: 50rem; */
-  border: 1px solid red;
   padding-top: 2rem;
   padding-left: 17.5rem;
   padding-right: 17.5rem;
@@ -58,15 +57,15 @@
 
 .date {
   color: gray;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   display: block;
 }
 
 .copy {
   color: rgba(230, 230, 230, 0.772);
   font-weight: bold;
-  font-size: 24px;
-  padding-bottom: 2rem;
+  font-size: 22px;
+  padding-bottom: 1.5rem;
 }
 
 .blogImg {

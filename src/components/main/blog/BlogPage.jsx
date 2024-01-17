@@ -26,6 +26,7 @@ const BlogPage = ({ blogPost }) => {
             className={stl.blogImg}
           />
           <p className={stl.copy}>{blogPost.copy}</p>
+          {blogPost.copy2 && <p className={stl.copy}>{blogPost.copy2}</p>}
         </div>
       </div>
     </div>
