@@ -24,7 +24,6 @@ const Nav = (props) => {
 
   const path = location.pathname;
   useEffect(() => {
-    console.log(path.split("/")[1]);
     setSubState(null);
 
     if (path === "/" || path === "/home") {
