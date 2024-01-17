@@ -105,11 +105,13 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
                   setSubState(method.title);
                 }}
               >
-                <img
-                  src={method.imgSrc}
-                  alt={method.title}
-                  className={stl.methodImg}
-                />
+                <div className={stl.imgWrapper}>
+                  <img
+                    src={method.imgSrc}
+                    alt={method.title}
+                    className={stl.methodImg}
+                  />
+                </div>
                 <span className={stl.gridTitle}>{method.title}</span>
                 <span
                   className={`${stl.tileProfit} ${

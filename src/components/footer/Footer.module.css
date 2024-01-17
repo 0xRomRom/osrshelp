@@ -6,6 +6,7 @@
   align-items: center;
   /* background-image: var(--gradient2); */
   /* padding-right: 10rem; */
+  user-select: none;
 }
 
 .logo {

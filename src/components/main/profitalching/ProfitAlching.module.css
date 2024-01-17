@@ -162,7 +162,8 @@
   text-align: center;
 
   font-size: 28px;
-  background: linear-gradient(180deg, var(--dark-bg), black);
+  /* background: linear-gradient(180deg, var(--dark-bg), black); */
+  background-color: black;
 }
 
 .bannerSpan {

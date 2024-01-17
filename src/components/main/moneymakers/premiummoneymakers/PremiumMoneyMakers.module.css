@@ -24,7 +24,7 @@
   flex: 1 1;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   padding: 10px;
@@ -56,7 +56,6 @@
   /* background-color: red; */
   position: relative;
   margin-top: 2rem;
-  background-image: var(--gradient);
 }
 
 .premiumBannerImg {
@@ -144,4 +143,11 @@
 
 .mills {
   width: 20px;
+}
+
+.imgWrapper {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,5 +1,6 @@
 .calculatorbox {
-  background-color: black;
+  background-color: var(--main-bg);
+  border: 1px solid var(--border);
   width: 80%;
   border-radius: 0.4rem;
   z-index: 100;
