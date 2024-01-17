@@ -52,7 +52,7 @@
 }
 
 .statsBlock span {
-  color: gray;
+  color: rgb(222, 222, 222);
 }
 .queueBlock {
   flex: 1;
@@ -75,6 +75,9 @@
   padding-top: 1rem;
   background-color: #0e0d0d;
   position: relative;
+  height: 98%;
+  top: 1%;
+  border-radius: 0.4rem;
 }
 
 .activeImg {
@@ -205,7 +208,7 @@
 }
 
 .storedItemName {
-  color: gray;
+  color: rgb(222, 222, 222);
 }
 
 .storedItem {

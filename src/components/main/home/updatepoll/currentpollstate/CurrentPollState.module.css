@@ -24,6 +24,7 @@
 }
 
 .phase:after {
+  color: var(--blue-main);
   color: #0084ff7b;
   border-left: 10px solid;
   border-top: 10px solid transparent;
@@ -34,7 +35,7 @@
   right: -10px;
 }
 .phase:before {
-  color: black;
+  color: rgb(21, 19, 28);
   border-left: 10px solid;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -53,10 +54,11 @@
   justify-content: center;
   align-items: center;
   color: white !important;
-  background-color: var(--blue-main);
+  background-color: rgb(52 112 242);
 }
 .phaseActive:after {
   color: var(--blue-main);
+
   border-left: 10px solid;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -64,6 +66,18 @@
   content: "";
   position: absolute;
   right: -10px;
+}
+
+.phase:before {
+  color: rgb(21, 19, 28);
+  border-left: 10px solid;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: 0px;
+  z-index: 10;
 }
 
 .phaseSpan {
