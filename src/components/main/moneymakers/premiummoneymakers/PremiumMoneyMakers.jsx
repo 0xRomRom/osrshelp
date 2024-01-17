@@ -117,8 +117,11 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
                     alt="Oldschool Runescape gold"
                     className={stl.mills}
                   />{" "}
-                  {method.profit.toLocaleString()}
-                  {"/h"}
+                  {method.profit > 1000
+                    ? (method.profit / 1000).toLocaleString()
+                    : (method.profit / 1000000).toFixed(2)}
+                  {method.profit > 1000 ? "K" : "M"}
+                  {"/H"}
                 </span>
               </div>
             );
