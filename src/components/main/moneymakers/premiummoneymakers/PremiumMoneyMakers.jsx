@@ -97,7 +97,9 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
           {methodsArray.map((method) => {
             return (
               <div
-                className={stl.gridTile}
+                className={`${stl.gridTile} ${
+                  method.profit < 0 ? stl.redBorder : ""
+                }`}
                 key={method.title}
                 onClick={() => {
                   navigate(`${pathname}/${method.title.replaceAll(" ", "_")}`);

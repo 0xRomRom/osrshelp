@@ -152,7 +152,12 @@
   width: 6rem;
   text-align: center;
   font-size: 18px;
-  border: 1px solid var(--blue-main);
+  background-color: var(--input);
+  border: 1px solid var(--border);
+}
+
+.amountToAddInput:focus {
+  border: 2px solid var(--border);
 }
 
 .addCta {
@@ -225,13 +230,11 @@
   flex-direction: column;
   gap: 0.25rem;
   margin-top: 0.5rem;
-  width: 100%;
-  overflow-y: scroll;
   height: 15rem;
 }
 
 .queueConfigRow {
-  background-color: #0e0d0d;
+  background-color: rgb(21, 18, 18);
   display: flex;
   gap: 0.5rem;
   position: sticky;
@@ -315,8 +318,4 @@
   align-items: center;
   gap: 0.5rem;
   user-select: none;
-}
-
-.queueSpan {
-  padding: 0.5rem 0rem;
 }

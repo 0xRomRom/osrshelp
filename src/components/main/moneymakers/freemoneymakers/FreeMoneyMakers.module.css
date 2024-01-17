@@ -68,6 +68,13 @@
   width: 20px;
 }
 
+.imgWrapper {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .red {
   color: var(--red-main);
 }
@@ -75,11 +82,4 @@
 .redBorder {
   border: 1px solid rgba(255, 0, 0, 0.232);
   box-shadow: 0px 0px 3px rgba(255, 0, 0, 0.232);
-}
-
-.imgWrapper {
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

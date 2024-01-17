@@ -190,7 +190,6 @@ const CalculatorBox = ({ selectedItem }) => {
             )}
           </div>
           <div className={stl.queueBlock}>
-            <span className={stl.queueSpan}>Queue</span>
             {Object.keys(storedItems).length > 0 && (
               <>
                 <div className={stl.queueList}>
