@@ -19,22 +19,19 @@
 
 .mainMenu {
   color: rgb(199, 194, 194);
-  padding-left: 0.7rem;
-  transition: all 0.2s ease-in-out;
+  padding-left: 0.5rem;
   cursor: pointer;
-  user-select: none;
-  font-weight: bold;
 }
 
 .mainMenu:hover {
   color: white;
-  padding-left: 0.7rem;
 }
 
 .arrowRight {
   color: rgb(199, 194, 194);
   margin-left: 0.8rem;
   margin-top: 0.2rem;
+  padding-right: 0.5rem;
 }
 
 .leftBar {
@@ -80,4 +77,18 @@
   background-color: black;
   color: yellow;
   border: 1px solid yellow;
+}
+
+.mainStateWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subStateWrap {
+  color: white;
+  color: rgb(199, 194, 194);
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  font-weight: bold;
 }

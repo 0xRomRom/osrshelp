@@ -2,23 +2,28 @@ import stl from "./Pagination.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import supabase from "../../../utils/supabase/supabase";
-import { useState } from "react";
 import { PaginationContext } from "../../../utils/paginationstate/PaginationProvider";
 
 const Pagination = ({ navTo }) => {
   const { loggedInUser, setLoggedInUser, premiumUser } =
     useContext(AuthContext);
   const { mainState, subState, setSubState } = useContext(PaginationContext);
-  const [displayedSubstate, setDisplayedSubstate] = useState(subState);
+  const [cachedSubstate, setCachedSubstate] = useState(null);
   const navigate = useNavigate();
   const [showSignup, setShowSignup] = useState(false);
 
+  // Update cachedSubstate only when subState is initially set
+  useEffect(() => {
+    if (subState && !cachedSubstate) {
+      setCachedSubstate(subState);
+    }
+  }, [subState, cachedSubstate]);
+
   const clearSubState = () => {
     setSubState(null);
-    setDisplayedSubstate(null);
     if (navTo) {
       navigate(navTo);
     }
@@ -54,16 +59,20 @@ const Pagination = ({ navTo }) => {
   return (
     <div className={stl.paginationBar}>
       <div className={stl.leftBar}>
-        <div className={stl.blueDot}></div>
-        <span className={stl.mainMenu} onClick={clearSubState}>
-          {mainState}
-        </span>
-        {displayedSubstate && (
-          <>
-            <FontAwesomeIcon icon={faAngleRight} className={stl.arrowRight} />
-            <span className={stl.mainMenu}>{displayedSubstate}</span>
-          </>
-        )}
+        <div className={stl.mainStateWrap}>
+          <div className={stl.blueDot}></div>
+          <span className={stl.mainMenu} onClick={clearSubState}>
+            {mainState}
+          </span>
+        </div>
+        <div className={stl.subStateWrap}>
+          {cachedSubstate && (
+            <>
+              <FontAwesomeIcon icon={faAngleRight} className={stl.arrowRight} />
+              <span className={stl.mainMenu}>{cachedSubstate}</span>
+            </>
+          )}
+        </div>
       </div>
       <div className={stl.rightBar}>
         {showSignup && loggedInUser && (
