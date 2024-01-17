@@ -52,7 +52,7 @@ const Home = (props) => {
               )}
               <TotalUsers />
               <RuneChat />
-              <BlogModal />
+              <BlogModal setBlogPost={props.setBlogPost} />
               <UpdatePoll />
               <OSRSRadio />
             </Masonry>

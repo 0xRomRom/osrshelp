@@ -3,12 +3,12 @@ import Pagination from "../pagination/Pagination";
 import { useContext, useEffect } from "react";
 import { PaginationContext } from "../../../utils/paginationstate/PaginationProvider";
 
-const BlogPage = () => {
+const BlogPage = ({ blogPost }) => {
   const { setMainState, setSubState } = useContext(PaginationContext);
 
   useEffect(() => {
     setMainState("Blog");
-    setSubState("OSRS Help release");
+    setSubState(blogPost.title);
   }, [setMainState, setSubState]);
 
   return (

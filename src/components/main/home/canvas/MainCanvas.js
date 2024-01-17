@@ -30,7 +30,7 @@ const imageState = [
 
 const MainCanvas = () => {
   const canvasRef = useRef(null);
-  const speed = 0.8;
+  const speed = 0.3;
 
   useEffect(() => {
     const canvas = canvasRef.current;

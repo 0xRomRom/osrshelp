@@ -21,10 +21,15 @@ const blogEntries = [
     date: "September 29",
   },
 ];
-const btnStates = ["All", "Features", "Misc"];
-const BlogModal = () => {
+const btnStates = ["All", "Features", "Patchnotes", "Other"];
+const BlogModal = ({ setBlogPost }) => {
   const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState("All");
+
+  const handleBlogPost = (blog) => {
+    setBlogPost(blog);
+    navigate(`/blog/${blog.path}`);
+  };
 
   return (
     <div className={stl.modal}>
@@ -39,7 +44,7 @@ const BlogModal = () => {
               <p className={stl.featureCopy}>{blog.copy}</p>
               <span
                 className={stl.readMore}
-                onClick={() => navigate(`/blog/${blog.path}`)}
+                onClick={() => handleBlogPost(blog)}
               >
                 Read more <FaArrowDownLong className={stl.readArrow} />
               </span>

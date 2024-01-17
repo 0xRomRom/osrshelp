@@ -34,6 +34,7 @@ const App = () => {
   const [skillsExp, setSkillsExp] = useState(null);
   const [playerName, setPlayerName] = useState(null);
   const [moneyMaker, setMoneyMaker] = useState(null);
+  const [blogPost, setBlogPost] = useState(null);
 
   return (
     <>
@@ -61,6 +62,7 @@ const App = () => {
                       skillsExp={skillsExp}
                       setPlayerName={setPlayerName}
                       playerName={playerName}
+                      setBlogPost={setBlogPost}
                     />
                   </MainLayout>
                 }
@@ -160,10 +162,10 @@ const App = () => {
                 }
               />
               <Route
-                path="/blog/:newpaths"
+                path="/blog/:newpath"
                 element={
                   <MainLayout playerName={playerName}>
-                    <BlogPage />
+                    <BlogPage blogPost={blogPost} />
                   </MainLayout>
                 }
               />
