@@ -1,6 +1,7 @@
 .moneymakers {
   width: 100%;
   border-radius: 0.8rem;
+  background-image: var(--gradient);
 }
 
 .adBar {

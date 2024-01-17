@@ -68,12 +68,6 @@ const ProfitAlching = () => {
       <div className={stl.adBar}>[ Advertisements ]</div>
       <Pagination />
       <div className={stl.modalWrap}>
-        <img
-          src="./backgrounds/TzHaar_City.webp"
-          alt="Tzhaar city"
-          className={stl.tzhaarBg}
-          loading="lazy"
-        />
         <div className={stl.heroBlock}>
           <h1 className={stl.hero}>
             <img
