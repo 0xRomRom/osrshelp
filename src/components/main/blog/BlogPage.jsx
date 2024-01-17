@@ -20,6 +20,12 @@ const BlogPage = ({ blogPost }) => {
         <div className={stl.blogWrapper}>
           <span className={stl.date}>{blogPost.date}</span>
           <p className={stl.copy}>{blogPost.teaser}</p>
+          <img
+            src={blogPost.img}
+            alt={blogPost.imgAlt}
+            className={stl.blogImg}
+          />
+          <p className={stl.copy}>{blogPost.copy}</p>
         </div>
       </div>
     </div>

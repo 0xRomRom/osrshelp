@@ -7,22 +7,25 @@ const blogEntries = [
     title: "OSRS Help Release",
     teaser:
       "The official release of OSRS Help is here! Join us as we delve into the wealth of features that OSRS Help brings to the table. From skill calculators and gear guides to money making methods and community driven updates, OSRS Help is not merely a website but a vibrant hub where you get ahead of your competition!",
-    copy: "We start off with a variety if different tools.",
+    copy: "It's finally here – the much-anticipated official release of OSRS Help! Brace yourselves as we take you on a tour of the myriad features that make OSRS Help an indispensable companion on your Old School RuneScape journey. From dynamic skill calculators and comprehensive gear guides to invaluable money-making methods and community-driven updates, OSRS Help transcends the ordinary; it's not just a website but a thriving hub where you gain the competitive edge!",
     path: "osrshelp_release",
     index: 1,
     blogType: "Misc",
     date: "August 24",
+    img: "./blog/BlogImg1.webp",
+    imgAlt: "OSRS Help release page",
   },
 
   {
     title: "Agility Pyramid Calculator",
     teaser:
       "By high demand, development of the Agility Pyramid Calculator just finished! Profit calculation based on average exp rate is included, along with expected XP rates per agility level.",
-    copy: "Profit is calculated every level.",
+    copy: "In response to overwhelming demand, we are thrilled to announce the completion of the highly-anticipated Agility Pyramid Calculator! This cutting-edge tool not only calculates your profits but also provides a comprehensive breakdown based on your average experience rate. What's more, we've included expected XP rates for every agility level, empowering you to strategize and optimize your training like never before.",
     path: "agility_pyramid_calculator",
     index: 2,
     blogType: "Features",
     date: "September 29",
+    img: "./blog/BlogImg1.webp",
   },
 ];
 const btnStates = ["All", "Features", "Patchnotes", "Other"];
@@ -45,7 +48,7 @@ const BlogModal = ({ setBlogPost }) => {
             <div className={stl.feature} key={blog.title}>
               <h2 className={stl.featureTitle}>{blog.title}</h2>
               <span className={stl.date}>{blog.date}</span>
-              <p className={stl.featureCopy}>{blog.copy}</p>
+              <p className={stl.featureCopy}>{blog.teaser}</p>
               <span
                 className={stl.readMore}
                 onClick={() => handleBlogPost(blog)}

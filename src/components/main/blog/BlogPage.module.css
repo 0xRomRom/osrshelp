@@ -29,7 +29,6 @@
   width: 95%;
   /* background-color: var(--dark-bg); */
   /* background-color: rgb(21, 26, 35); */
-  border-radius: 0.4rem;
   border: 1px solid gray;
   display: flex;
   justify-content: center;
@@ -50,10 +49,11 @@
 }
 
 .blogWrapper {
-  width: 50rem;
-  /* border: 1px solid red; */
-  height: 20rem;
+  /* width: 50rem; */
+  border: 1px solid red;
   padding-top: 2rem;
+  padding-left: 17.5rem;
+  padding-right: 17.5rem;
 }
 
 .date {
@@ -63,7 +63,16 @@
 }
 
 .copy {
-  color: rgb(230, 230, 230);
+  color: rgba(230, 230, 230, 0.772);
   font-weight: bold;
   font-size: 24px;
+  padding-bottom: 2rem;
+}
+
+.blogImg {
+  width: 100%;
+  position: relative;
+  object-fit: contain;
+  border-radius: 0.2rem;
+  padding-bottom: 2rem;
 }
