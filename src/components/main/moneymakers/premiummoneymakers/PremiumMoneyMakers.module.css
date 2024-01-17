@@ -55,6 +55,7 @@
   /* background-color: red; */
   position: relative;
   margin-top: 2rem;
+  background-image: var(--gradient);
 }
 
 .premiumBannerImg {

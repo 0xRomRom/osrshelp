@@ -107,6 +107,10 @@ const MainCanvas = () => {
     };
 
     animate();
+
+    return () => {
+      cancelAnimationFrame(animate);
+    };
   }, []);
 
   return (
