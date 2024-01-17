@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import NumberCounter from "../../../../utils/NumberCounter";
 import supabase from "../../../../utils/supabase/supabase";
+import Spinner from "../../../../utils/loadingspinner/Spinner";
 
 const TotalUsers = () => {
   const [totalUsers, setTotalUsers] = useState(0);
@@ -125,6 +126,7 @@ const TotalUsers = () => {
         {" "}
         {inView && <NumberCounter n={totalUsers} />}
       </h2>
+      <Spinner />
       <span className={stl.visitorsSpan}>Total users</span>
     </div>
   );

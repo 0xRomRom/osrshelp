@@ -45,12 +45,14 @@
 }
 
 .hero {
-  color: white;
+  color: rgb(231, 231, 231);
   font-size: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .heroImg {
@@ -99,6 +101,7 @@
 }
 
 .imgWrapper {
+  margin-left: 10px;
   width: 40px;
   display: flex;
   justify-content: center;
