@@ -1,9 +1,3 @@
-.blogpage {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
 .adBar {
   position: relative;
   width: 100%;
@@ -16,4 +10,60 @@
   align-items: center;
   color: gray;
   font-size: 2rem;
+}
+
+.blogpage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: var(--gradient);
+}
+
+.blogModal {
+  position: relative;
+  width: 95%;
+  /* background-color: var(--dark-bg); */
+  /* background-color: rgb(21, 26, 35); */
+  border-radius: 0.4rem;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blogTitle {
+  text-align: center;
+  color: var(--blue-main);
+  font-size: 44px;
+  padding-top: 2rem;
+
+  background-image: linear-gradient(180deg, var(--blue-main), #0015ff);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.blogWrapper {
+  width: 50rem;
+  /* border: 1px solid red; */
+  height: 20rem;
+  padding-top: 2rem;
+}
+
+.date {
+  color: gray;
+  padding-bottom: 1rem;
+  display: block;
+}
+
+.copy {
+  color: rgb(230, 230, 230);
+  font-weight: bold;
+  font-size: 24px;
 }

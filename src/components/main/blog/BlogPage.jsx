@@ -15,6 +15,13 @@ const BlogPage = ({ blogPost }) => {
     <div className={stl.blogpage}>
       <div className={stl.adBar}>[ Advertisements ]</div>
       <Pagination />
+      <div className={stl.blogModal}>
+        <h1 className={stl.blogTitle}>{blogPost.title}</h1>
+        <div className={stl.blogWrapper}>
+          <span className={stl.date}>{blogPost.date}</span>
+          <p className={stl.copy}>{blogPost.teaser}</p>
+        </div>
+      </div>
     </div>
   );
 };

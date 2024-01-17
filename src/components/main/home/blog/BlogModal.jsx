@@ -5,7 +5,9 @@ import { useNavigate } from "react-router-dom";
 const blogEntries = [
   {
     title: "OSRS Help Release",
-    copy: "The official release of OSRS Help is here! Join us as we delve into the wealth of features that OSRS Help brings to the table. From skill calculators and gear guides to money making methods and community driven updates, OSRS Help is not merely a website but a vibrant hub where you get ahead of your competition!",
+    teaser:
+      "The official release of OSRS Help is here! Join us as we delve into the wealth of features that OSRS Help brings to the table. From skill calculators and gear guides to money making methods and community driven updates, OSRS Help is not merely a website but a vibrant hub where you get ahead of your competition!",
+    copy: "We start off with a variety if different tools.",
     path: "osrshelp_release",
     index: 1,
     blogType: "Misc",
@@ -14,7 +16,9 @@ const blogEntries = [
 
   {
     title: "Agility Pyramid Calculator",
-    copy: "By high demand, development of the Agility Pyramid Calculator just finished! Profit calculation based on average exp rate is included, along with expected XP rates per agility level.",
+    teaser:
+      "By high demand, development of the Agility Pyramid Calculator just finished! Profit calculation based on average exp rate is included, along with expected XP rates per agility level.",
+    copy: "Profit is calculated every level.",
     path: "agility_pyramid_calculator",
     index: 2,
     blogType: "Features",
