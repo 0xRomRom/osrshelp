@@ -28,6 +28,7 @@ const Nav = (props) => {
     if (path === "/" || path === "/home") {
       setActiveTab("/");
       setMainState("Home");
+      setSubState(null);
     }
     if (path === "/skillcalculators") {
       setActiveTab("skills");

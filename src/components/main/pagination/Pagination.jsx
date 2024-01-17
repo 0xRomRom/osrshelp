@@ -17,7 +17,7 @@ const Pagination = ({ navTo }) => {
 
   // Update cachedSubstate only when subState is initially set
   useEffect(() => {
-    if (subState && !cachedSubstate) {
+    if (subState) {
       setCachedSubstate(subState);
     }
   }, [subState, cachedSubstate]);

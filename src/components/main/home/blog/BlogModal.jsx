@@ -16,6 +16,7 @@ const blogEntries = [
     date: "August 24",
     img: "./blog/BlogImg1.webp",
     imgAlt: "OSRS Help release page",
+    exploreCtaPath: "",
   },
 
   {
@@ -28,6 +29,7 @@ const blogEntries = [
     blogType: "Features",
     date: "September 29",
     img: "./blog/BlogImg1.webp",
+    exploreCtaPath: "/agility_pyramid_calculator",
   },
 ];
 const btnStates = ["All", "Features", "Patchnotes", "Other"];

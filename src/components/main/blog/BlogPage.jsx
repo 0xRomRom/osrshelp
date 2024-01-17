@@ -28,6 +28,10 @@ const BlogPage = ({ blogPost }) => {
           <p className={stl.copy}>{blogPost.copy}</p>
           {blogPost.copy2 && <p className={stl.copy}>{blogPost.copy2}</p>}
         </div>
+        <div className={stl.nextBlog}>
+          <span className={stl.nextBlogSpan}>Next blog</span>
+          <h2 className={stl.nextBlogTitle}>Tombs of Amascut Calculator</h2>
+        </div>
       </div>
     </div>
   );
