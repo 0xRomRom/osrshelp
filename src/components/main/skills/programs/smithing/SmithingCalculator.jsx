@@ -8,7 +8,7 @@ import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import SearchFilter from "../searchfilter/SearchFilter";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 
 import SmithingGrid from "./smithinggrid/SmithingGrid";
@@ -31,6 +31,10 @@ const SmithingCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+
+  useEffect(() => {
+    setSubState("Smithing");
+  }, [setSubState]);
 
   return (
     <>

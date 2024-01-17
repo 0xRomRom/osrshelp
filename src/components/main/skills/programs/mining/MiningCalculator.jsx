@@ -8,7 +8,7 @@ import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import MiningGrid from "./mininggrid/MiningGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import MiningFilters from "./miningfilters/MiningFilters";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
@@ -33,6 +33,10 @@ const MiningCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+
+  useEffect(() => {
+    setSubState("Mining");
+  }, [setSubState]);
 
   return (
     <>

@@ -7,7 +7,7 @@ import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import FiremakingFilters from "./FiremakingFilters";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 
 import FiremakingGrid from "./firemakinggrid/FiremakingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
@@ -35,6 +35,10 @@ const FiremakingCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+
+  useEffect(() => {
+    setSubState("Firemaking");
+  }, [setSubState]);
 
   return (
     <>

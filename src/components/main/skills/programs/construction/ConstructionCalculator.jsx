@@ -7,7 +7,7 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import ConstructionGrid from "./constructiongrid/ConstructionGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import ConstructionFilters from "./constructionfilters/ConstructionFilters";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
@@ -33,6 +33,9 @@ const ConstructionCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+  useEffect(() => {
+    setSubState("Construction");
+  }, [setSubState]);
 
   return (
     <>

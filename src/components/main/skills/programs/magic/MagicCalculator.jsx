@@ -11,7 +11,7 @@ import SpellBookFilter from "./spellbookfilters/SpellBookFilter";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import MagicGrid from "./magicgrid/MagicGrid";
 import StaffFilters from "./stafffilters/StaffFilters";
@@ -39,6 +39,10 @@ const MagicCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+
+  useEffect(() => {
+    setSubState("Magic");
+  }, [setSubState]);
 
   return (
     <>

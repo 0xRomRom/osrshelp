@@ -6,7 +6,7 @@ import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import PrayerFilters from "./PrayerFilters";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
@@ -31,6 +31,10 @@ const PrayerCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+
+  useEffect(() => {
+    setSubState("Prayer");
+  }, [setSubState]);
 
   return (
     <>

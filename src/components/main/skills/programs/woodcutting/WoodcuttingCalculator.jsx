@@ -7,7 +7,7 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import WoodcuttingGrid from "./woodcuttinggrid/WoodcuttingGrid";
 import WoodcuttingFilter from "./woodcuttingfilters/WoodcuttingFilter";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Pagination from "../../../pagination/Pagination";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import { useNavigate } from "react-router-dom";
@@ -31,6 +31,10 @@ const WoodcuttingCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+
+  useEffect(() => {
+    setSubState("Woodcutting");
+  }, [setSubState]);
 
   return (
     <>

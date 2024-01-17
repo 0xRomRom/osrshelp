@@ -9,7 +9,7 @@ import SearchFilter from "../searchfilter/SearchFilter";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 
 import HerbloreGrid from "./herbloregrid/HerbloreGrid";
@@ -32,6 +32,10 @@ const HerbloreCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+
+  useEffect(() => {
+    setSubState("Herblore");
+  }, [setSubState]);
 
   return (
     <>

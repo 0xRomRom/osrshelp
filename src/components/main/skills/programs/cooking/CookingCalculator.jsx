@@ -7,7 +7,7 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import CookingGrid from "./cookinggrid/CookingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Pagination from "../../../pagination/Pagination";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
@@ -30,6 +30,9 @@ const CookingCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+  useEffect(() => {
+    setSubState("Cooking");
+  }, [setSubState]);
 
   return (
     <>

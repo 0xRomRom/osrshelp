@@ -6,7 +6,7 @@ import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import HunterGrid from "./huntergrid/HunterGrid";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import SearchFilter from "../searchfilter/SearchFilter";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
@@ -30,6 +30,9 @@ const HunterCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+  useEffect(() => {
+    setSubState("Hunter");
+  }, [setSubState]);
 
   return (
     <>

@@ -7,7 +7,7 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import RunecraftGrid from "./runecraftgrid/RunecraftGrid";
 import RunecraftFilter from "./runecraftfilters/RunecraftFilter";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Pagination from "../../../pagination/Pagination";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
@@ -30,6 +30,10 @@ const RunecraftCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+
+  useEffect(() => {
+    setSubState("Runecraft");
+  }, [setSubState]);
 
   return (
     <>

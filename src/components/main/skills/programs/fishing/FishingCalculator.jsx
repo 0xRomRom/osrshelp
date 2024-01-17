@@ -8,7 +8,7 @@ import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import FishingGrid from "./fishinggrid/FishingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import FishingFilter from "./fishingfilters/FishingFilters";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
@@ -33,6 +33,10 @@ const FishingCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+
+  useEffect(() => {
+    setSubState("Fishing");
+  }, [setSubState]);
 
   return (
     <>

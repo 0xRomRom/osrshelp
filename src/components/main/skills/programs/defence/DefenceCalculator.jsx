@@ -7,7 +7,7 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import NPCGrid from "../attack/npcgrid/NPCGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
@@ -30,6 +30,9 @@ const DefenceCalculator = (props) => {
   };
 
   const arePropsDefined = props.skills;
+  useEffect(() => {
+    setSubState("Defence");
+  }, [setSubState]);
 
   return (
     <>
