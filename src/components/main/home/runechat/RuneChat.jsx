@@ -4,6 +4,7 @@ import supabase from "../../../../utils/supabase/supabase";
 import { useContext, useState, useEffect, useRef } from "react";
 import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 import { FaCog } from "react-icons/fa";
+import Spinner from "../../../../utils/loadingspinner/Spinner";
 
 const RuneChat = () => {
   const outputBottom = useRef(null);
@@ -92,25 +93,34 @@ const RuneChat = () => {
         <FaCog className={stl.configCog} />
       </div>
       <div className={stl.chatOutput} ref={outputBottom}>
-        {currentChat.map((chat, index) => {
-          return (
-            <div className={stl.chatMsg} key={index}>
-              <div className={stl.nameFlex}>
-                <div className={stl.nameTop}>
-                  <span
-                    className={stl.userName}
-                    style={{ color: chat.playercolor }}
-                  >
-                    {chat.username}
-                  </span>
-                  <span className={stl.time}>{chat.timestamp}</span>
+        {currentChat.length === 0 && (
+          <div className={stl.centerSpinner}>
+            <Spinner />
+          </div>
+        )}
+        {currentChat.length > 0 && (
+          <>
+            {currentChat.map((chat, index) => {
+              return (
+                <div className={stl.chatMsg} key={index}>
+                  <div className={stl.nameFlex}>
+                    <div className={stl.nameTop}>
+                      <span
+                        className={stl.userName}
+                        style={{ color: chat.playercolor }}
+                      >
+                        {chat.username}
+                      </span>
+                      <span className={stl.time}>{chat.timestamp}</span>
+                    </div>
+                    <span className={stl.message}>{chat.chatmsg}</span>
+                  </div>
+                  {/* <span class */}
                 </div>
-                <span className={stl.message}>{chat.chatmsg}</span>
-              </div>
-              {/* <span class */}
-            </div>
-          );
-        })}
+              );
+            })}
+          </>
+        )}
       </div>
       <form className={stl.chatInputWrap}>
         <input
