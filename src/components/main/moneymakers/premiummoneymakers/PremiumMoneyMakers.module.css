@@ -29,6 +29,7 @@
   gap: 1rem;
   padding: 10px;
   box-shadow: 0px 0px 25px rgb(15, 18, 22);
+  min-height: 7rem;
 }
 
 .gridTile:hover {
