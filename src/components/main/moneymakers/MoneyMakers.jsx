@@ -3,13 +3,15 @@ import Pagination from "../pagination/Pagination";
 import { useState } from "react";
 import FreeMoneyMakers from "./freemoneymakers/FreeMoneyMakers";
 import PremiumMoneyMakers from "./premiummoneymakers/PremiumMoneyMakers";
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
+import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 
 const MoneyMakers = (props) => {
   const [activeModal, setActiveModal] = useState("Free");
   const [showWarningModal, setShowWarningModal] = useState(false);
+  const { premiumUser } = useContext(AuthContext);
 
   const rememberedButtonState = localStorage.getItem("ModalState");
   const showWarning = localStorage.getItem("ShowWarning");
@@ -57,7 +59,7 @@ const MoneyMakers = (props) => {
               Rune User
             </button>
           </div>
-          {showWarningModal && (
+          {showWarningModal && !premiumUser && activeModal === "Free" && (
             <div className={stl.disclaimerBox}>
               <div className={stl.exclamBox}>
                 <FaExclamationTriangle className={stl.exlam} />

@@ -111,7 +111,11 @@ const PremiumMoneyMakers = ({ setMoneyMaker }) => {
                   className={stl.methodImg}
                 />
                 <span className={stl.gridTitle}>{method.title}</span>
-                <span className={stl.tileProfit}>
+                <span
+                  className={`${stl.tileProfit} ${
+                    method.profit < 0 ? stl.red : ""
+                  }`}
+                >
                   <img
                     src={mills}
                     alt="Oldschool Runescape gold"

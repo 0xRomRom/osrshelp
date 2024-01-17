@@ -58,7 +58,7 @@
 }
 
 .actBtn {
-  background-color: rgba(33, 40, 54, 0.714);
+  background-color: rgba(33, 40, 54, 0.85);
   color: white;
   font-weight: bold;
   font-size: 16px;
@@ -83,6 +83,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid var(--border);
 }
 
 .disclaimerTxt {

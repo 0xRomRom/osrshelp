@@ -10,6 +10,7 @@ import { PaginationContext } from "../../../../utils/paginationstate/PaginationP
 
 const FreeMoneyMakers = ({ setMoneyMaker }) => {
   const { setSubState } = useContext(PaginationContext);
+
   const [itemPrices, setItemPrices] = useState({});
   const [methodsArray, setMethodsArray] = useState([]);
   const { pathname } = useLocation();
@@ -70,7 +71,9 @@ const FreeMoneyMakers = ({ setMoneyMaker }) => {
       {methodsArray.map((method) => {
         return (
           <div
-            className={stl.gridTile}
+            className={`${stl.gridTile} ${
+              method.profit < 0 ? stl.redBorder : ""
+            }`}
             key={method.title}
             onClick={() => {
               navigate(`${pathname}/${method.title.replaceAll(" ", "_")}`);
@@ -84,7 +87,11 @@ const FreeMoneyMakers = ({ setMoneyMaker }) => {
               className={stl.methodImg}
             />
             <span className={stl.gridTitle}>{method.title}</span>
-            <span className={stl.tileProfit}>
+            <span
+              className={`${stl.tileProfit} ${
+                method.profit < 0 ? stl.red : ""
+              }`}
+            >
               <img
                 src={mills}
                 alt="Oldschool Runescape gold"

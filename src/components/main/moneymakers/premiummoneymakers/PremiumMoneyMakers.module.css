@@ -9,14 +9,13 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem;
+  /* overflow-y: scroll; */
 }
 
 .gridTile {
-  /* max-width: 15rem; */
-  /* height: 5rem; */
   border-radius: 0.4rem;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-user-select: none;
   user-select: none;
   text-decoration: none;
@@ -29,7 +28,7 @@
   align-items: center;
   gap: 1rem;
   padding: 10px;
-  box-shadow: 0px 0px 35px rgb(14, 17, 23);
+  box-shadow: 0px 0px 25px rgb(15, 18, 22);
 }
 
 .gridTile:hover {
@@ -44,6 +43,84 @@
   color: rgb(170, 170, 170);
   font-size: 18px;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.mills {
+  width: 20px;
+}
+
+.premiumBanner {
+  height: 22.5rem;
+  /* background-color: red; */
+  position: relative;
+  margin-top: 2rem;
+}
+
+.premiumBannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  position: relative;
+  border-radius: 0.4rem;
+}
+
+.heroCenter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.bannerSpan {
+  font-size: 32px;
+  color: white;
+  z-index: 10;
+  font-weight: bold;
+  text-align: center;
+  font-family: RSFont;
+  font-size: 56px;
+}
+
+.upgradeCta {
+  margin-top: 1rem;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 0.4rem;
+  background-color: yellow;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.upgradeCta:hover {
+  background-color: black;
+  color: yellow;
+}
+
+.runeUser {
+  color: rgb(127, 174, 184);
+  font-weight: bold;
+  font-family: RSFont;
+  font-size: 56px;
+}
+
+.red {
+  color: var(--red-main);
+}
+
+.redBorder {
+  border: 1px solid rgba(255, 0, 0, 0.232);
+  box-shadow: 0px 0px 3px rgba(255, 0, 0, 0.232);
 }
 
 .methodImg {

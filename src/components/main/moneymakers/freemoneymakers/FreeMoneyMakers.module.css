@@ -12,8 +12,6 @@
 }
 
 .gridTile {
-  /* max-width: 15rem; */
-  /* height: 5rem; */
   border-radius: 0.4rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -45,6 +43,7 @@
   font-size: 18px;
   text-align: center;
   transition: all 0.3s ease-in-out;
+  padding: 0px 20px;
 }
 
 .methodImg {
@@ -66,4 +65,13 @@
 
 .mills {
   width: 20px;
+}
+
+.red {
+  color: var(--red-main);
+}
+
+.redBorder {
+  border: 1px solid rgba(255, 0, 0, 0.232);
+  box-shadow: 0px 0px 3px rgba(255, 0, 0, 0.232);
 }
