@@ -82,7 +82,7 @@ code {
 :root {
   --dark-bg: #111111;
   --blue-main: #0084ff;
-  --green-main: #00d25b;
+  --green-main: rgb(34 197 94/1);
   --blue-bg: #1098fc26;
   --border: rgb(33, 40, 54);
   --main-bg: rgb(21, 26, 35);

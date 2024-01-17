@@ -90,7 +90,8 @@ const FreeMoneyMakers = ({ setMoneyMaker }) => {
                 alt="Oldschool Runescape gold"
                 className={stl.mills}
               />{" "}
-              {method.profit.toLocaleString()} {"/ h"}
+              {method.profit.toLocaleString()}
+              {"/h"}
             </span>
           </div>
         );

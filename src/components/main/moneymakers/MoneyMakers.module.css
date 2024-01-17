@@ -1,7 +1,5 @@
 .moneymakers {
   width: 100%;
-  /* height: 600px; */
-  /* background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27)); */
   border-radius: 0.8rem;
 }
 
@@ -22,13 +20,10 @@
 .modal {
   position: relative;
   border-radius: 0.4rem;
-  /* width: 95%;
-  left: 2.5%; */
   width: 105%;
   height: 50rem;
   margin-bottom: 2rem;
-  background-color: rgb(32, 46, 57);
-  background-image: url("../../../../public/backgrounds/Morytania.webp");
+  /* background-color: rgb(32, 46, 57); */
   background-size: 150%;
   background-repeat: repeat-y;
   overflow-y: scroll;
