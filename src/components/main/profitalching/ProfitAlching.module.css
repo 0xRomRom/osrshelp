@@ -38,8 +38,10 @@
   position: relative;
   width: 80%;
   background-color: var(--dark-bg);
-  border-top-left-radius: 0.4rem;
-  border-top-right-radius: 0.4rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.4rem;
+  overflow: hidden;
 }
 
 .hero {
