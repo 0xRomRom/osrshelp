@@ -9,7 +9,7 @@ const BlogPage = ({ blogPost }) => {
   useEffect(() => {
     setMainState("Blog");
     setSubState(blogPost.title);
-  }, [setMainState, setSubState]);
+  }, [setMainState, setSubState, blogPost.title]);
 
   return (
     <div className={stl.blogpage}>

@@ -22,8 +22,10 @@ const Nav = (props) => {
   const { setMainState, setSubState } = useContext(PaginationContext);
   const [navFolded, setNavFolded] = useState(false);
 
+  const path = location.pathname;
   useEffect(() => {
-    const path = location.pathname;
+    console.log(path.split("/")[1]);
+    setSubState(null);
 
     if (path === "/" || path === "/home") {
       setActiveTab("/");
@@ -63,9 +65,8 @@ const Nav = (props) => {
       setMainState("Support OSRS Help");
     }
 
-    setSubState(null);
     window.scrollTo(0, 0);
-  }, [location, props, setMainState, setSubState]);
+  }, [path, props, setMainState, setSubState]);
 
   const handleTabSwitch = (path) => {
     navigate(path);

@@ -31,7 +31,7 @@ const AttackCalculator = (props) => {
 
   const arePropsDefined = props.skills;
   useEffect(() => {
-    // setSubState("Attack");
+    setSubState("Attack");
   }, [setSubState]);
 
   return (
