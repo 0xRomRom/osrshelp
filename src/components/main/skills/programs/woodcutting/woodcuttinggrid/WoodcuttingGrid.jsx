@@ -84,22 +84,30 @@ const WoodcuttingGrid = (props) => {
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <span className={stl.innerSpan}>
-                  <img
-                    src={tree.src}
-                    alt="Oldschool Runescape Trees"
-                    className={stl.minifood}
-                  />
+                  <div className={stl.imgWrapper}>
+                    <img
+                      src={tree.src}
+                      alt="Oldschool Runescape Trees"
+                      className={stl.minifood}
+                    />
+                  </div>
                   <span className={stl.lvlSpan}>Lvl {tree.level}</span>
                   {tree.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{tree.members ? "Yes" : "No"}</span>
-              <span className={stl.rowItem}>
+              <span
+                className={`${stl.rowItem} ${
+                  tree.members ? stl.red : stl.green
+                }`}
+              >
+                {tree.members ? "Yes" : "No"}
+              </span>
+              <span className={`${stl.rowItem} ${stl.green}`}>
                 {+props.multiplier > 0 &&
                   (tree.exp * (1 + 2.5 / 100)).toFixed(1)}
                 {+props.multiplier === 0 && tree.exp}
               </span>
-              <span className={stl.rowItem}>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
                 {+props.multiplier > 0 &&
                   Math.round(treePrice / (1 + 2.5 / 100)).toLocaleString()}
                 {+props.multiplier === 0 && treePrice.toLocaleString()}
