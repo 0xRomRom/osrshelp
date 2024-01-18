@@ -247,11 +247,13 @@ const FletchingGrid = (props) => {
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <span className={stl.innerSpan}>
-                  <img
-                    src={fletch.src}
-                    alt="Oldschool Runescape Trees"
-                    className={stl.minifood}
-                  />
+                  <div className={stl.imgWrapper}>
+                    <img
+                      src={fletch.src}
+                      alt="Oldschool Runescape Trees"
+                      className={stl.minifood}
+                    />
+                  </div>
                   <span className={stl.lvlSpan}>Lvl {fletch.level}</span>
                   {fletch.name}
                 </span>
@@ -265,7 +267,7 @@ const FletchingGrid = (props) => {
                   gp/exp
                 </span>
               </span>
-              <span className={stl.rowItem}>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
                 {fletchAmount.toLocaleString()}
               </span>
               <span
@@ -273,7 +275,6 @@ const FletchingGrid = (props) => {
                   fletch.cost > 0 ? stl.red : stl.green
                 }`}
               >
-                {fletch.cost * fletchAmount > 0 ? "-" : "+"}
                 {fletch.cost * fletchAmount
                   ? Math.abs(fletch.cost * fletchAmount).toLocaleString()
                   : "?"}
