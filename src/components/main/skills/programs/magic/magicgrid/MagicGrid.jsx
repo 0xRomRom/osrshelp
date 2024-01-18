@@ -329,7 +329,7 @@ const MagicGrid = (props) => {
                     ? "?"
                     : `${Math.abs(mage.toGo * mage.price).toLocaleString()}`)}
 
-                {!isNaN(mage.toGo * mage.price) && (
+                {mage.toGo * mage.price && (
                   <span className={stl.gpcost}>gp</span>
                 )}
               </span>

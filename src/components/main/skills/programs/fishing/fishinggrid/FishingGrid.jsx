@@ -88,10 +88,16 @@ const FishingGrid = (props) => {
   const sortToGo = () => {
     setToGoSorted(!toGoSorted);
     let sorter = [...foodDB];
-    sorter.sort((a, b) =>
-      toGoSorted ? a.profit - b.profit : b.profit - a.profit
-    );
-    setFoodDB(sorter);
+    sorter.sort((a, b) => {
+      const aToGo = calculateFishToCatch(a);
+      const bToGo = calculateFishToCatch(b);
+      console.log(aToGo);
+      const aSortValue = a.profit * aToGo;
+      const bSortValue = b.profit * bToGo;
+
+      return toGoSorted ? aSortValue - bSortValue : bSortValue - aSortValue;
+    });
+    setFoodDB([...sorter]);
   };
 
   return (

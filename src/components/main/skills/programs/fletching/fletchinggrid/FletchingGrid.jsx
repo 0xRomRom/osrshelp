@@ -278,7 +278,7 @@ const FletchingGrid = (props) => {
                 {fletch.cost * fletchAmount
                   ? Math.abs(fletch.cost * fletchAmount).toLocaleString()
                   : "?"}
-                {fletch.cost * fletchAmount > 0 && (
+                {fletch.cost * fletchAmount && (
                   <span className={stl.gpcost}>gp</span>
                 )}
               </span>
