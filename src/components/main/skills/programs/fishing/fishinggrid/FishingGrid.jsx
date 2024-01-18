@@ -91,7 +91,6 @@ const FishingGrid = (props) => {
     sorter.sort((a, b) => {
       const aToGo = calculateFishToCatch(a);
       const bToGo = calculateFishToCatch(b);
-      console.log(aToGo);
       const aSortValue = a.profit * aToGo;
       const bSortValue = b.profit * bToGo;
 

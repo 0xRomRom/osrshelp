@@ -190,7 +190,7 @@ const CraftingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
           <img
-            src="./skillicons/Crafting"
+            src="./skillicons/Crafting.webp"
             alt="Crafting item"
             className={stl.miniLogo}
           />{" "}
@@ -206,7 +206,7 @@ const CraftingGrid = (props) => {
         </span>
         <span onClick={sortAmount}>
           <img
-            src="./skillicons/Crafting"
+            src="./skillicons/Crafting.webp"
             alt="Amount Logo"
             className={stl.miniLogo}
           />{" "}
@@ -223,18 +223,20 @@ const CraftingGrid = (props) => {
           return (
             <div className={stl.row} key={craft.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
-                <img
-                  src={craft.src}
-                  alt="Runescape Bones"
-                  className={stl.boneMiniImg}
-                />
+                <div className={stl.imgWrapper}>
+                  <img
+                    src={craft.src}
+                    alt="Runescape Bones"
+                    className={stl.boneMiniImg}
+                  />
+                </div>
                 <span className={stl.bonename}>
                   <span className={stl.magelvl}>Lvl {craft.level}</span>{" "}
                   {craft.name}
                 </span>
               </span>
 
-              <span className={`${stl.rowItem} ${stl.prayerRow}`}>
+              <span className={`${stl.rowItem} ${stl.green}`}>
                 {+props.multiplier > 0
                   ? craft.exp * (+props.multiplier / 100)
                   : craft.exp}
@@ -245,9 +247,10 @@ const CraftingGrid = (props) => {
                   gp/exp
                 </span>
               </span>
-
-              <span className={`${stl.rowItem} ${stl.amountRow}`}>
-                {Math.ceil(+props.remainingExp / craft.exp)}
+              <span className={`${stl.rowItem} ${stl.orange}`}>
+                {isNaN(Math.ceil(+props.remainingExp / craft.exp))
+                  ? "?"
+                  : Math.ceil(+props.remainingExp / craft.exp)}
               </span>
 
               <span
@@ -255,11 +258,12 @@ const CraftingGrid = (props) => {
                   craft.price > 0 ? stl.red : stl.green
                 }`}
               >
-                {craft.price * craftAmount > 0 ? "-" : "+"}
                 {craft.price * craftAmount
                   ? Math.abs(craft.price * craftAmount).toLocaleString()
                   : "?"}
-                <span className={stl.gpcost}>gp</span>
+                {craft.price * craftAmount > 0 && (
+                  <span className={stl.gpcost}>gp</span>
+                )}
               </span>
             </div>
           );
