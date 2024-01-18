@@ -40,6 +40,7 @@
   background-color: var(--dark-bg);
   border: 1px solid var(--border);
   box-shadow: var(--box-shadow);
+
   border-radius: 0.4rem;
   overflow: hidden;
 }
@@ -73,6 +74,7 @@
   background-color: rgb(10, 10, 10);
   border-top-left-radius: 0.4rem;
   border-top-right-radius: 0.4rem;
+  background-color: var(--main-bg);
 }
 
 .configRow span {

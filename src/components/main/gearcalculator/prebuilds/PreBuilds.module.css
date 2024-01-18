@@ -22,7 +22,7 @@
   width: 95%;
   left: 2.5%;
 
-  background-color: rgb(17, 23, 27);
+  background-color: var(--input);
   border-radius: 0.4rem;
   padding-bottom: 1rem;
 }
@@ -51,22 +51,21 @@
   margin-top: 1rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 0.5rem;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
 .gridTile {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 0.4rem;
   background-color: var(--main-bg);
-  /* background-image: var(--gradient); */
   border: 1px solid var(--border);
   cursor: pointer;
   transition: all 0.3s ease;

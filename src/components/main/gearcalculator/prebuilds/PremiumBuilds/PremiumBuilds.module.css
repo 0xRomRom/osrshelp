@@ -3,7 +3,7 @@
   width: 95%;
   left: 2.5%;
 
-  background-color: rgb(17, 23, 27);
+  background-color: var(--input);
   border-radius: 0.4rem;
   max-height: 700px;
   overflow-y: scroll;
@@ -48,7 +48,7 @@
   margin-top: 1rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 0.5rem;
   flex-direction: row;
   flex-wrap: wrap;
@@ -94,18 +94,20 @@
 }
 
 .gridTile {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   border-radius: 0.4rem;
-  background-color: rgb(22, 9, 9);
+  background-color: var(--main-bg);
+  border: 1px solid var(--border);
   cursor: pointer;
   transition: all 0.3s ease;
-  /* gap: 0.5rem; */
-  text-align: center;
+  gap: 0.5rem;
+  box-shadow: var(--box-shadow-sm);
+  padding: 5px;
 }
 
 .gridTile:hover {
@@ -114,8 +116,8 @@
 
 .tileGear {
   transform: scale(1.25);
-  max-width: 40px;
-  max-height: 40px;
+  /* max-width: 40px; */
+  max-height: 35px;
 }
 .tileGear2 {
   transform: scale(1.25);
@@ -128,7 +130,7 @@
 .gearName {
   color: rgb(202, 202, 202);
   position: relative;
-  /* bottom: 10px; */
   font-size: 14px;
   padding: 0px 5px;
+  text-align: center;
 }

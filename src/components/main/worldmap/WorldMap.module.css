@@ -28,17 +28,19 @@
   z-index: 100;
   width: 95%;
   left: 2.5%;
+  border-radius: 0.4rem;
 }
 
 .leaflet-container {
   position: relative;
-  background-color: #000000 !important; /* Replace with your desired background color */
+  background-color: #000000 !important;
 }
 .mapBox {
   height: 100%;
   position: relative;
   background-color: black !important;
   border-radius: 0.4rem;
+  width: 108%;
 }
 
 .fullScreenBtn {

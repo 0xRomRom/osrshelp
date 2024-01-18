@@ -130,6 +130,7 @@ const ResultBox = ({ inputValues, combatLevel }) => {
             className={stl.inputIcon}
             alt="Attack skill"
           />
+
           <span className={stl.amountToGo}>{skillsToGo.attack}</span>
         </div>
         <div className={stl.togoSkill}>
