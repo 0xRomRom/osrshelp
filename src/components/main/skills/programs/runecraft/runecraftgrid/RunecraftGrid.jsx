@@ -219,20 +219,28 @@ const RunecraftGrid = (props) => {
                   {tree.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{tree.members ? "Yes" : "No"}</span>
-              <span className={stl.rowItem}>{tree.exp}</span>
-              <span className={stl.rowItem}>
+              <span
+                className={`${stl.rowItem} ${
+                  tree.members ? stl.red : stl.green
+                }`}
+              >
+                {tree.members ? "Yes" : "No"}
+              </span>
+              <span className={`${stl.rowItem} ${stl.green}`}>{tree.exp}</span>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
                 {calcCraftAmount(tree).toLocaleString()}
               </span>
               <span
-                className={`${stl.rowItem} ${stl.costRow} ${
+                className={`${`${stl.rowItem} `} ${stl.costRow} ${
                   tree.profit > 0 ? stl.green : stl.red
                 }`}
               >
-                {tree.profit > 0 ? "+" : ""}
-                {Math.round(
-                  calcCraftAmount(tree) * calcPrice(tree)
-                ).toLocaleString()}
+                {!tree.profit || (tree.profit === 0 && "?")}
+                {calcCraftAmount(tree) * calcPrice(tree) > 0
+                  ? Math.abs(
+                      calcCraftAmount(tree) * calcPrice(tree)
+                    ).toLocaleString()
+                  : 0}
               </span>
             </div>
           );
