@@ -52,11 +52,15 @@
   font-weight: bold;
   cursor: pointer;
   /* font-size: 16px; */
+  transition: all 0.2s ease-in-out;
 }
 
 .loginBtn:hover {
-  /* color: black; */
-  background: linear-gradient(90deg, var(--blue-main), #0c61b0);
+  background-color: var(--blue-focus);
+}
+
+.loginBtn:active {
+  background-color: var(--blue-active);
 }
 
 .upgradeCta {

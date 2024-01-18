@@ -6,6 +6,8 @@
   margin-top: 1rem;
   position: relative;
   border-radius: 0.4rem;
+  background-color: var(--input);
+  border: 1px solid var(--border);
 }
 
 .form {
@@ -21,7 +23,7 @@
   background-color: transparent;
   outline: none;
   border: none;
-  height: 3rem;
+  height: 2.4rem;
   width: 13rem;
   font-size: 16px;
   padding-left: 0.5rem;
@@ -34,15 +36,20 @@
   background-color: transparent;
   outline: none;
   border: none;
-  color: black;
   cursor: pointer;
   position: relative;
   border-radius: 0.5rem;
   background-color: var(--blue-main);
   margin-left: 1rem;
   margin-top: 0.5rem;
+  color: white;
+  transition: all 0.2s ease-in-out;
 }
 
 .cta:hover {
-  color: white;
+  background-color: var(--blue-focus);
+}
+
+.cta:active {
+  background-color: var(--blue-active);
 }

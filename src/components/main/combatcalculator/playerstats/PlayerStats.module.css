@@ -1,14 +1,16 @@
 .playerstats {
-  background-color: #111111;
   height: 5rem;
   width: 90%;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   position: relative;
   border-radius: 0.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--input);
+  border: 1px solid var(--border);
+  user-select: none;
 }
 
 .playerGray {
@@ -44,6 +46,7 @@
   font-size: 18px;
   cursor: pointer;
   color: rgb(134, 133, 133);
+  transition: all 0.2s ease-in-out;
 }
 
 .backArrow:hover {
