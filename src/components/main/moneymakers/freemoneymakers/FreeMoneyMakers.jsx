@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { PaginationContext } from "../../../../utils/paginationstate/PaginationProvider";
+import Spinner from "../../../../utils/loadingspinner/Spinner";
 
 const FreeMoneyMakers = ({ setMoneyMaker }) => {
   const { setSubState } = useContext(PaginationContext);
@@ -68,46 +69,56 @@ const FreeMoneyMakers = ({ setMoneyMaker }) => {
 
   return (
     <div className={stl.grid}>
-      {methodsArray.map((method) => {
-        return (
-          <div
-            className={`${stl.gridTile} ${
-              method.profit < 0 ? stl.redBorder : ""
-            }`}
-            key={method.title}
-            onClick={() => {
-              navigate(`${pathname}/${method.title.replaceAll(" ", "_")}`);
-              setMoneyMaker(method);
-              setSubState(method.title);
-            }}
-          >
-            <div className={stl.imgWrapper}>
-              <img
-                src={method.imgSrc}
-                alt={method.title}
-                className={stl.methodImg}
-              />
-            </div>
-            <span className={stl.gridTitle}>{method.title}</span>
-            <span
-              className={`${stl.tileProfit} ${
-                method.profit < 0 ? stl.red : ""
-              }`}
-            >
-              <img
-                src={mills}
-                alt="Oldschool Runescape gold"
-                className={stl.mills}
-              />{" "}
-              {method.profit > 1000
-                ? (method.profit / 1000).toLocaleString()
-                : (method.profit / 1000000).toFixed(2)}
-              {method.profit > 1000 ? "K" : "M"}
-              {"/H"}
-            </span>
-          </div>
-        );
-      })}
+      {methodsArray.length === 0 && (
+        <div className={stl.centerSpinner}>
+          <Spinner />
+        </div>
+      )}
+
+      {methodsArray.length > 0 && (
+        <>
+          {methodsArray.map((method) => {
+            return (
+              <div
+                className={`${stl.gridTile} ${
+                  method.profit < 0 ? stl.redBorder : ""
+                }`}
+                key={method.title}
+                onClick={() => {
+                  navigate(`${pathname}/${method.title.replaceAll(" ", "_")}`);
+                  setMoneyMaker(method);
+                  setSubState(method.title);
+                }}
+              >
+                <div className={stl.imgWrapper}>
+                  <img
+                    src={method.imgSrc}
+                    alt={method.title}
+                    className={stl.methodImg}
+                  />
+                </div>
+                <span className={stl.gridTitle}>{method.title}</span>
+                <span
+                  className={`${stl.tileProfit} ${
+                    method.profit < 0 ? stl.red : ""
+                  }`}
+                >
+                  <img
+                    src={mills}
+                    alt="Oldschool Runescape gold"
+                    className={stl.mills}
+                  />{" "}
+                  {method.profit > 1000
+                    ? (method.profit / 1000).toLocaleString()
+                    : (method.profit / 1000000).toFixed(2)}
+                  {method.profit > 1000 ? "K" : "M"}
+                  {"/H"}
+                </span>
+              </div>
+            );
+          })}
+        </>
+      )}
     </div>
   );
 };

@@ -55,6 +55,7 @@
   padding: 1rem 3rem;
   color: gray;
   font-size: 16px;
+  box-shadow: var(--box-shadow-sm);
 }
 
 .actBtn {
