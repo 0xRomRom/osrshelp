@@ -83,17 +83,19 @@ const ThievingGrid = (props) => {
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <span className={stl.innerSpan}>
-                  <img
-                    src={tree.src}
-                    alt="Oldschool Runescape Trees"
-                    className={stl.minifood}
-                  />
+                  <div className={stl.imgWrapper}>
+                    <img
+                      src={tree.src}
+                      alt="Oldschool Runescape Trees"
+                      className={stl.minifood}
+                    />
+                  </div>
                   <span className={stl.lvlSpan}>Lvl {tree.level}</span>
                   {tree.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{tree.exp}</span>
-              <span className={stl.rowItem}>
+              <span className={`${stl.rowItem} ${stl.green}`}>{tree.exp}</span>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
                 {calcThievAmount(tree).toLocaleString()}
               </span>
             </div>

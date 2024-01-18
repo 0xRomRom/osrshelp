@@ -118,7 +118,11 @@ const AgilityGrid = (props) => {
     setToGoSorted(!toGoSorted);
     let sorter = [...coursesDB];
     sorter.sort((a, b) =>
-      toGoSorted ? a["exp/hour"] - b["exp/hour"] : b["exp/hour"] - a["exp/hour"]
+      toGoSorted
+        ? +props.remainingExp / a["exp/lap"] -
+          +props.remainingExp / b["exp/lap"]
+        : +props.remainingExp / b["exp/lap"] -
+          +props.remainingExp / a["exp/lap"]
     );
     setCoursesDB(sorter);
   };
