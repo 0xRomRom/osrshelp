@@ -108,11 +108,17 @@ const NPCGrid = (props) => {
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 {monster.monster}
               </span>
-              <span className={stl.rowItem}>
+              <span
+                className={`${stl.rowItem} ${
+                  monster.member ? stl.red : stl.green
+                }`}
+              >
                 {monster.member ? "Yes" : "No"}
               </span>
-              <span className={stl.rowItem}>{monster.combat}</span>
-              <span className={stl.rowItem}>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
+                {monster.combat}
+              </span>
+              <span className={`${stl.rowItem} ${stl.green}`}>
                 {calculateMonstersToKill(monster.hp).toLocaleString()}
               </span>
             </div>

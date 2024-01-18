@@ -126,3 +126,8 @@
   justify-content: flex-start !important;
   align-items: center;
 }
+
+.amountRow {
+  color: var(--orange-main);
+  font-weight: bold;
+}

@@ -66,3 +66,17 @@
 .monsterTitleRow {
   text-align: left !important;
 }
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+.green {
+  color: var(--green-main);
+  font-weight: bold;
+}
+
+.orange {
+  color: var(--orange-main);
+  font-weight: bold;
+}

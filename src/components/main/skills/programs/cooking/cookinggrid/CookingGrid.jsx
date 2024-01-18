@@ -94,14 +94,22 @@ const CookingGrid = (props) => {
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <span className={stl.innerSpan}>
-                  <img src={food.src} alt="Food" className={stl.minifood} />
+                  <div className={stl.imgWrapper}>
+                    <img src={food.src} alt="Food" className={stl.minifood} />
+                  </div>
                   <span className={stl.lvlSpan}>Lvl {food.level}</span>
                   {food.food}
                 </span>
               </span>
-              <span className={stl.rowItem}>{food.member ? "Yes" : "No"}</span>
-              <span className={stl.rowItem}>{food.exp}</span>
-              <span className={stl.rowItem}>
+              <span
+                className={`${stl.rowItem} ${
+                  food.member ? stl.red : stl.green
+                }`}
+              >
+                {food.member ? "Yes" : "No"}
+              </span>
+              <span className={`${stl.rowItem} ${stl.green}`}>{food.exp}</span>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
                 {calculateFoodToCook(food).toLocaleString()}
               </span>
             </div>
