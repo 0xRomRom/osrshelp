@@ -163,19 +163,27 @@ const PrayerGrid = (props) => {
               </span>
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
                 {+props.multiplier > 0 &&
-                  Math.ceil(
-                    bone.toGo / (+props.multiplier / 100)
-                  ).toLocaleString()}
-                {+props.multiplier === 0 && bone.toGo.toLocaleString()}
+                !isNaN(bone.toGo / (+props.multiplier / 100))
+                  ? Math.ceil(
+                      bone.toGo / (+props.multiplier / 100)
+                    ).toLocaleString()
+                  : +props.multiplier === 0 && !isNaN(bone.toGo)
+                  ? bone.toGo.toLocaleString()
+                  : "?"}
               </span>
               <span className={`${stl.rowItem} ${stl.costRow}`}>
-                {bone.toGo * bone.price > 1000
+                {isNaN(bone.toGo * bone.price) ||
+                isNaN(bone.toGo * bone.price > 1000)
+                  ? "?"
+                  : bone.toGo * bone.price > 1000
                   ? (bone.toGo * bone.price).toLocaleString(undefined, {
                       minimumFractionDigits: 0,
                       maximumFractionDigits: 0,
                     })
                   : (bone.toGo * bone.price).toFixed(0)}
-                <span className={stl.gpcost}>gp</span>
+                {!isNaN(bone.toGo * bone.price) && (
+                  <span className={stl.gpcost}>gp</span>
+                )}
               </span>
             </div>
           );
