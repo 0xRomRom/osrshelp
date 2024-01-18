@@ -17,6 +17,7 @@
   flex-direction: column;
   position: relative;
   border: 1px solid var(--border);
+  box-shadow: var(--box-shadow);
 }
 
 .runechat {

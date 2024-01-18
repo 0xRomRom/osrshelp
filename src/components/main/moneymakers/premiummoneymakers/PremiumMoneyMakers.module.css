@@ -28,8 +28,8 @@
   align-items: center;
   gap: 1rem;
   padding: 10px;
-  box-shadow: 0px 0px 25px rgb(15, 18, 22);
   min-height: 7rem;
+  box-shadow: var(--box-shadow-sm);
 }
 
 .gridTile:hover {

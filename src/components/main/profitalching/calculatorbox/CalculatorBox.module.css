@@ -4,7 +4,7 @@
   width: 80%;
   border-radius: 0.4rem;
   z-index: 100;
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-sm);
 }
 
 .additems {

@@ -48,6 +48,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           value={inputValues.attack}
           onChange={(e) => handleInputChange(e, "attack")}
           min="1"
+          placeholder="Attack"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -62,6 +63,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           value={inputValues.strength}
           onChange={(e) => handleInputChange(e, "strength")}
           min="1"
+          placeholder="Strength"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -76,6 +78,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           value={inputValues.defence}
           onChange={(e) => handleInputChange(e, "defence")}
           min="1"
+          placeholder="Defence"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -90,6 +93,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           value={inputValues.hitpoints}
           onChange={(e) => handleInputChange(e, "hitpoints")}
           min="10"
+          placeholder="Hitpoints"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -104,6 +108,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           value={inputValues.ranged}
           onChange={(e) => handleInputChange(e, "ranged")}
           min="1"
+          placeholder="Strength"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -118,6 +123,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           value={inputValues.magic}
           onChange={(e) => handleInputChange(e, "magic")}
           min="1"
+          placeholder="Magic"
         />
       </div>
       <div className={stl.inputWrap}>
@@ -132,6 +138,7 @@ const LevelInputs = ({ skills, setInputValues, inputValues }) => {
           value={inputValues.prayer}
           onChange={(e) => handleInputChange(e, "prayer")}
           min="1"
+          placeholder="Prayer"
         />
       </div>
     </div>
