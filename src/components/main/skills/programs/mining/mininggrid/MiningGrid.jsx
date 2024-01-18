@@ -89,9 +89,32 @@ const MiningGrid = (props) => {
   const sortToGo = () => {
     setToGoSorted(!toGoSorted);
     let sorter = [...oresDB];
-    sorter.sort((a, b) =>
-      toGoSorted ? a.profit - b.profit : b.profit - a.profit
-    );
+
+    sorter.sort((a, b) => {
+      const aToGo = calcOresToMine(a);
+      console.log(aToGo);
+      const bToGo = calcOresToMine(b);
+      const aSortValue = aToGo;
+      const bSortValue = bToGo;
+
+      return toGoSorted ? aSortValue - bSortValue : bSortValue - aSortValue;
+    });
+    setOresDB(sorter);
+  };
+
+  const sortProfit = () => {
+    setToGoSorted(!toGoSorted);
+    let sorter = [...oresDB];
+
+    sorter.sort((a, b) => {
+      const aToGo = calcOresToMine(a);
+      console.log(aToGo);
+      const bToGo = calcOresToMine(b);
+      const aSortValue = a.profit * aToGo;
+      const bSortValue = b.profit * bToGo;
+
+      return toGoSorted ? aSortValue - bSortValue : bSortValue - aSortValue;
+    });
     setOresDB(sorter);
   };
 
@@ -121,7 +144,7 @@ const MiningGrid = (props) => {
           />{" "}
           Mine
         </span>
-        <span onClick={sortToGo}>
+        <span onClick={sortProfit}>
           <img src={moneyLogo} alt="Profits Logo" className={stl.miniLogo} />{" "}
           Profit
         </span>
@@ -133,31 +156,50 @@ const MiningGrid = (props) => {
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <span className={stl.innerSpan}>
-                  <img src={ore.src} alt="Ore" className={stl.minifood} />
+                  <div className={stl.imgWrapper}>
+                    <img src={ore.src} alt="Ore" className={stl.minifood} />
+                  </div>
                   <span className={stl.lvlSpan}>Lvl {ore.level}</span>
                   {ore.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{ore.members ? "Yes" : "No"}</span>
-              <span className={stl.rowItem}>
+              <span
+                className={`${stl.rowItem} ${
+                  ore.members ? stl.red : stl.green
+                }`}
+              >
+                {ore.members ? "Yes" : "No"}
+              </span>
+              <span className={`${stl.rowItem} ${stl.green}`}>
                 {+props.multiplier > 0 &&
                   (ore.exp * (1 + 2.5 / 100)).toFixed(2)}
                 {+props.multiplier === 0 && ore.exp}
               </span>
 
-              <span className={stl.rowItem}>
-                {+props.multiplier > 0 &&
-                  Math.round(oreAmount / (1 + 2.5 / 100)).toLocaleString()}
-                {+props.multiplier === 0 && oreAmount.toLocaleString()}
+              <span className={`${stl.rowItem} ${stl.orange}`}>
+                {(+props.multiplier > 0 &&
+                  oreAmount > 0 &&
+                  Math.round(oreAmount / (1 + 2.5 / 100)).toLocaleString()) ||
+                  (+props.multiplier === 0 &&
+                    oreAmount > 0 &&
+                    oreAmount.toLocaleString()) ||
+                  (oreAmount === 0 && "?") ||
+                  "?"}
               </span>
 
-              <span className={stl.rowItem}>
-                {+props.multiplier === 0 &&
-                  Math.round(ore.profit * oreAmount).toLocaleString()}
-                {+props.multiplier > 0 &&
-                  Math.round(
-                    (ore.profit * oreAmount) / (1 + 2.5 / 100)
-                  ).toLocaleString()}
+              <span className={`${stl.rowItem} ${stl.green}`}>
+                {isNaN(Math.round(ore.profit * oreAmount)) ||
+                +props.remainingexp === 0 ||
+                isNaN(+props.remainingExp)
+                  ? "?"
+                  : (+props.multiplier === 0 || props.multiplier === null) &&
+                    Math.round(ore.profit * oreAmount) === 0
+                  ? "0"
+                  : +props.multiplier === 0
+                  ? Math.round(ore.profit * oreAmount).toLocaleString()
+                  : Math.round(
+                      (ore.profit * oreAmount) / (1 + 2.5 / 100)
+                    ).toLocaleString()}
               </span>
             </div>
           );

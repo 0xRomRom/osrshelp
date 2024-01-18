@@ -121,12 +121,9 @@
 .red {
   color: red;
   font-weight: bold;
-  .red {
-    color: red;
-  }
-  .green {
-    color: green;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .green {
   color: var(--green-main);
