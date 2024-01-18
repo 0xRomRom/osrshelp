@@ -143,17 +143,19 @@ const FiremakingGrid = (props) => {
           return (
             <div className={stl.row} key={logs.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
-                <img
-                  src={logs.src}
-                  alt="Runescape Logs"
-                  className={stl.boneMiniImg}
-                />
+                <div className={stl.imgWrapper}>
+                  <img
+                    src={logs.src}
+                    alt="Runescape Logs"
+                    className={stl.boneMiniImg}
+                  />
+                </div>
                 <span className={stl.lvlSpan}>Lvl {logs.level}</span>
                 <span className={stl.bonename}>
                   {logs.name === "Bucket" ? "Blisterwood logs" : logs.name}
                 </span>
               </span>
-              <span className={`${stl.rowItem} ${stl.prayerRow}`}>
+              <span className={`${stl.rowItem} ${stl.green}`}>
                 {+props.multiplier === 0 && logs.exp}
                 {+props.multiplier > 0 &&
                   (logs.exp / (1 + 2.5 / 100)).toFixed(1)}
@@ -166,22 +168,31 @@ const FiremakingGrid = (props) => {
                   gp/exp
                 </span>
               </span>
-              <span className={`${stl.rowItem} ${stl.amountRow}`}>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
                 {+props.multiplier === 0 &&
+                  !isNaN(props.remainingExp) &&
                   Math.ceil(+props.remainingExp / logs.exp).toLocaleString()}
                 {+props.multiplier > 0 &&
+                  !isNaN(props.remainingExp) &&
                   Math.ceil(
                     +props.remainingExp / logs.exp / (1 + 2.5 / 100)
                   ).toLocaleString()}
+                {isNaN(props.remainingExp) && " ? "}
               </span>
-              <span className={`${stl.rowItem} ${stl.costRow}`}>
+
+              <span className={`${stl.rowItem} ${stl.red}`}>
                 {+props.multiplier > 0 &&
+                  !isNaN(logsAmount) &&
                   Math.round(
                     ((logsAmount * logs.price) / (1 + 2.5 / 100)).toFixed(0)
                   ).toLocaleString()}
                 {+props.multiplier === 0 &&
+                  !isNaN(logsAmount) &&
                   (logsAmount * logs.price).toLocaleString()}
-                <span className={stl.gpcost}>gp</span>
+                {isNaN(logsAmount) && " ? "}
+                {logsAmount * logs.price > 0 && (
+                  <span className={stl.gpcost}>gp</span>
+                )}
               </span>
             </div>
           );
