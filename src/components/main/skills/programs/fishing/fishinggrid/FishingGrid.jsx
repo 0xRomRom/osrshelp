@@ -157,11 +157,19 @@ const FishingGrid = (props) => {
 
               <span className={`${stl.rowItem} ${stl.green}`}>
                 {+props.multiplier === 0 &&
+                  !isNaN(food.profit) &&
+                  !isNaN(fishAmount) &&
                   Math.round(food.profit * fishAmount).toLocaleString()}
                 {+props.multiplier > 0 &&
+                  !isNaN(food.profit) &&
+                  !isNaN(fishAmount) &&
                   Math.round(
                     (food.profit * fishAmount) / (1 + 2.5 / 100)
                   ).toLocaleString()}
+                {(isNaN(food.profit) || isNaN(fishAmount)) && " ? "}
+                {!isNaN(food.profit * fishAmount) && (
+                  <span className={stl.gpcost}>gp</span>
+                )}
               </span>
             </div>
           );

@@ -158,7 +158,7 @@ const FiremakingGrid = (props) => {
               <span className={`${stl.rowItem} ${stl.green}`}>
                 {+props.multiplier === 0 && logs.exp}
                 {+props.multiplier > 0 &&
-                  (logs.exp / (1 + 2.5 / 100)).toFixed(1)}
+                  (logs.exp * (1 + 2.5 / 100)).toFixed(1)}
 
                 <span className={stl.gpperxp}>
                   {+props.multiplier === 0 &&

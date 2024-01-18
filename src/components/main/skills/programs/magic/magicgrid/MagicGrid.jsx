@@ -292,7 +292,7 @@ const MagicGrid = (props) => {
                 </span>
               </span>
 
-              <span className={`${stl.rowItem} ${stl.amountRow}`}>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
                 {+props.multiplier === 0 && !isNaN(mage.toGo)
                   ? mage.toGo.toLocaleString()
                   : "?"}

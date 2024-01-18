@@ -104,7 +104,7 @@
   color: rgb(139, 138, 138);
   font-size: 12px;
   margin-right: 0.2rem;
-  min-width: 2.2rem;
+  min-width: 2.1rem;
 }
 
 .red {
@@ -116,6 +116,10 @@
   font-weight: bold;
 }
 
+.orange {
+  color: var(--orange-main);
+  font-weight: bold;
+}
 .imgWrapper {
   display: flex;
   justify-content: center;
