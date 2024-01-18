@@ -115,7 +115,7 @@ const MainCanvas = () => {
 
   return (
     <div className={stl.canvasWrapper}>
-      <h1 className={stl.hero}>Welcome to OSRS Help</h1>
+      <h1 className={stl.hero}>OSRS Help</h1>
       <canvas
         ref={canvasRef}
         className={stl.mainCanvas}

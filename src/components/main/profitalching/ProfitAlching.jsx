@@ -139,7 +139,6 @@ const ProfitAlching = () => {
                             src={item.imgSrc}
                             alt={item.name}
                             className={stl.gridIcon}
-                            loading="lazy"
                           />
                         </div>
                         <span>{item.name}</span>
@@ -148,7 +147,6 @@ const ProfitAlching = () => {
                             src={mills}
                             alt="Money pile"
                             className={stl.millsIcon}
-                            loading="lazy"
                           />
                           {item.price.toLocaleString()}
                         </span>

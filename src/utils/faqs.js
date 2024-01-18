@@ -21,9 +21,11 @@ const FAQS = {
     text: [
       "Lifetime for only $9.99:",
       "~ Ad free experience",
-      "~ Access to premium features",
+      "~ Access to storage slots",
+      "~ Access to premium money makers",
+      "~ Access to most profitable alchables",
+      "~ Access to rune chat",
       "~ Access to future premium features",
-      "~ Access to hidden content",
       "~ Supports the upkeep of OSRS Help",
     ],
   },
