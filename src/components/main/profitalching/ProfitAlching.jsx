@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import { IoClose } from "react-icons/io5";
+import Spinner from "../../../utils/loadingspinner/Spinner";
 
 const ProfitAlching = () => {
   const navigate = useNavigate();
@@ -93,70 +94,86 @@ const ProfitAlching = () => {
           </div>
           <div className={stl.innerGrid}>
             <div className={stl.gridWrapper}>
-              {!premiumUser && bannerActive && (
-                <div className={stl.premiumBanner}>
-                  <div className={stl.closeRow}>
-                    <IoClose
-                      className={stl.closeBannerBtn}
-                      onClick={handleBannerHide}
-                    />
-                  </div>
-                  <div className={stl.bannerMidBlock}>
-                    <span className={stl.bannerSpan}>
-                      Explore the 10 most profitable alchables as a{" "}
-                      <span className={stl.rune}>rune</span> user
-                    </span>
-                    <button className={stl.upgradeCta} onClick={handleNavigate}>
-                      Upgrade
-                    </button>
-                  </div>
-                </div>
-              )}
-              {gridItems.map((item) => {
-                return (
-                  <div
-                    className={stl.griditem}
-                    key={item.name}
-                    onClick={() => setSelectedItem(item)}
-                  >
-                    <div className={stl.imgWrapper}>
-                      <img
-                        src={item.imgSrc}
-                        alt={item.name}
-                        className={stl.gridIcon}
-                        loading="lazy"
+              {!premiumUser &&
+                bannerActive &&
+                Object.keys(itemPrices).length !== 0 && (
+                  <div className={stl.premiumBanner}>
+                    <div className={stl.closeRow}>
+                      <IoClose
+                        className={stl.closeBannerBtn}
+                        onClick={handleBannerHide}
                       />
                     </div>
-                    <span>{item.name}</span>
-                    <span className={stl.red}>
-                      <img
-                        src={mills}
-                        alt="Money pile"
-                        className={stl.millsIcon}
-                        loading="lazy"
-                      />
-                      {item.price.toLocaleString()}
-                    </span>
-                    <span className={stl.orange}>{item.geLimit}</span>
-                    <span className={stl.green}>
-                      <img
-                        src={mills}
-                        alt="Money pile"
-                        className={stl.millsIcon}
-                      />
-                      {item.alchPrice.toLocaleString()}
-                    </span>
-                    <span className={stl.green}>
-                      <img
-                        src={mills}
-                        alt="Money pile"
-                        className={stl.millsIcon}
-                      />
-                      {(item.alchPrice - item.price).toLocaleString()}
-                    </span>
+                    <div className={stl.bannerMidBlock}>
+                      <span className={stl.bannerSpan}>
+                        Explore the 10 most profitable alchables as a{" "}
+                        <span className={stl.rune}>rune</span> user
+                      </span>
+                      <button
+                        className={stl.upgradeCta}
+                        onClick={handleNavigate}
+                      >
+                        Upgrade
+                      </button>
+                    </div>
                   </div>
-                );
-              })}
+                )}
+
+              {Object.keys(itemPrices).length === 0 && (
+                <div className={stl.centerSpinner}>
+                  <Spinner />
+                </div>
+              )}
+
+              {Object.keys(itemPrices).length > 0 && (
+                <>
+                  {gridItems.map((item) => {
+                    return (
+                      <div
+                        className={stl.griditem}
+                        key={item.name}
+                        onClick={() => setSelectedItem(item)}
+                      >
+                        <div className={stl.imgWrapper}>
+                          <img
+                            src={item.imgSrc}
+                            alt={item.name}
+                            className={stl.gridIcon}
+                            loading="lazy"
+                          />
+                        </div>
+                        <span>{item.name}</span>
+                        <span className={stl.red}>
+                          <img
+                            src={mills}
+                            alt="Money pile"
+                            className={stl.millsIcon}
+                            loading="lazy"
+                          />
+                          {item.price.toLocaleString()}
+                        </span>
+                        <span className={stl.orange}>{item.geLimit}</span>
+                        <span className={stl.green}>
+                          <img
+                            src={mills}
+                            alt="Money pile"
+                            className={stl.millsIcon}
+                          />
+                          {item.alchPrice.toLocaleString()}
+                        </span>
+                        <span className={stl.green}>
+                          <img
+                            src={mills}
+                            alt="Money pile"
+                            className={stl.millsIcon}
+                          />
+                          {(item.alchPrice - item.price).toLocaleString()}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </>
+              )}
             </div>
           </div>
         </div>
