@@ -190,17 +190,32 @@ const AgilityGrid = (props) => {
                   {ore.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{ore["exp/lap"]}</span>
-              <span className={stl.rowItem}>
+              <span className={`${stl.rowItem} ${stl.green}`}>
+                {ore["exp/lap"]}
+              </span>
+              <span className={`${stl.rowItem} ${stl.green}`}>
                 {ore["exp/hour"].toLocaleString()}
               </span>
 
-              <span className={stl.rowItem}>
-                {Math.ceil(propsExp / ore["exp/lap"]).toLocaleString()}
+              <span className={`${stl.rowItem} ${stl.orange}`}>
+                {isNaN(Math.ceil(propsExp / ore["exp/lap"])) ||
+                Math.ceil(propsExp / ore["exp/lap"]) < 0 ||
+                Math.ceil(propsExp / ore["exp/lap"]) === 0 ||
+                Math.ceil(propsExp / ore["exp/lap"]) === Infinity
+                  ? "?"
+                  : Math.ceil(propsExp / ore["exp/lap"]).toLocaleString()}
               </span>
 
-              <span className={stl.rowItem}>
-                {totalProfit ? totalProfit.toLocaleString() : 0}
+              <span className={`${stl.rowItem} ${stl.green}`}>
+                {+props.remainingexp
+                  ? isNaN(totalProfit)
+                    ? "?"
+                    : totalProfit > 0
+                    ? "?"
+                    : 0
+                  : isNaN(totalProfit)
+                  ? "?"
+                  : totalProfit.toLocaleString()}
               </span>
             </div>
           );
