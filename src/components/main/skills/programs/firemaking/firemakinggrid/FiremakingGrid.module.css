@@ -132,13 +132,6 @@
   text-align: left !important;
 }
 
-.imgWrapper {
-  min-width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .red {
   color: red;
   font-weight: bold;
