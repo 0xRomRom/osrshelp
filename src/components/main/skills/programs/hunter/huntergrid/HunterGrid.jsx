@@ -105,18 +105,24 @@ const HunterGrid = (props) => {
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <span className={stl.innerSpan}>
-                  <img
-                    src={tree.src}
-                    alt="Oldschool Runescape Trees"
-                    className={stl.minifood}
-                  />
+                  <div className={stl.imgWrapper}>
+                    <img
+                      src={tree.src}
+                      alt="Oldschool Runescape Trees"
+                      className={stl.minifood}
+                    />
+                  </div>
                   <span className={stl.lvlSpan}>Lvl {tree.level}</span>
                   {tree.name}
                 </span>
               </span>
-              <span className={stl.rowItem}>{tree.area}</span>
-              <span className={stl.rowItem}>{tree.exp}</span>
-              <span className={stl.rowItem}>{treePrice.toLocaleString()}</span>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
+                {tree.area}
+              </span>
+              <span className={`${stl.rowItem} ${stl.green}`}>{tree.exp}</span>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
+                {treePrice.toLocaleString()}
+              </span>
             </div>
           );
         })}
