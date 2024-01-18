@@ -6,6 +6,7 @@
   border-radius: 0.4rem;
   background: var(--main-bg);
   background-image: var(--gradient);
+  border: 1px solid var(--border);
 }
 
 .savedHero {
@@ -41,6 +42,8 @@
   padding-top: 7px;
   position: relative;
   border: 1px solid transparent;
+  background-color: var(--input);
+  border: 1px solid var(--border);
 }
 
 .buildSlot:active {

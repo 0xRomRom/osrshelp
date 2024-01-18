@@ -19,6 +19,7 @@
   /* left: 2.5%; */
   height: 100%;
   background-color: var(--main-bg);
+  border: 1px solid var(--border);
 
   border-radius: 0.4rem;
 }

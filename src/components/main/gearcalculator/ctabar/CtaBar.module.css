@@ -24,6 +24,8 @@
   border: 2px solid transparent;
   position: relative;
   margin: 0 auto;
+  background-color: var(--input);
+  border: 1px solid var(--border);
 }
 
 .btnBox button:hover .ctaIcon {

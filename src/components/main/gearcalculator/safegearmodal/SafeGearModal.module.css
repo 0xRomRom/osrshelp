@@ -18,6 +18,7 @@
   border-radius: 0.4rem;
   background-color: var(--main-bg);
   background-image: var(--gradient);
+  border: 1px solid var(--border);
   padding: 1rem;
   display: flex;
   justify-content: center;
