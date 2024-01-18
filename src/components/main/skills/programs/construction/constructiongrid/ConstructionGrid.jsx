@@ -191,16 +191,18 @@ const ConstructionGrid = (props) => {
             <div className={stl.row} key={Math.random()}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
                 <span className={stl.innerSpan}>
-                  <img
-                    src={fletch.src}
-                    alt="Oldschool Runescape Trees"
-                    className={stl.minifood}
-                  />
+                  <div className={stl.imgWrapper}>
+                    <img
+                      src={fletch.src}
+                      alt="Oldschool Runescape Trees"
+                      className={stl.minifood}
+                    />
+                  </div>
                   <span className={stl.lvlSpan}>Lvl {fletch.level}</span>
                   {fletch.name}
                 </span>
               </span>
-              <span className={`${stl.rowItem} ${stl.expRow}`}>
+              <span className={`${stl.rowItem} ${stl.expRow} ${stl.green}`}>
                 {+props.multiplier > 0 &&
                   (fletch.exp * (1 + 2.5 / 100)).toFixed(1).toLocaleString()}
                 {+props.multiplier === 0 && fletch.exp}
@@ -219,7 +221,7 @@ const ConstructionGrid = (props) => {
                   gp/exp
                 </span>
               </span>
-              <span className={stl.rowItem}>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
                 {+props.multiplier > 0 &&
                   Math.round(fletchAmount / (1 + 2.5 / 100)).toLocaleString()}
                 {+props.multiplier === 0 && fletchAmount.toLocaleString()}
@@ -229,15 +231,19 @@ const ConstructionGrid = (props) => {
                   fletch.cost > 0 ? stl.red : stl.green
                 }`}
               >
-                {fletch.cost * fletchAmount > 0 ? "-" : "+"}
-                {+props.multiplier === 0 &&
-                  Math.abs(fletch.cost * fletchAmount).toLocaleString()}
-                {+props.multiplier > 0 &&
-                  Math.round(
-                    (fletch.cost * fletchAmount) / (1 + 2.5 / 100)
-                  ).toLocaleString()}
-
-                <span className={stl.gpcost}>gp</span>
+                {!isNaN(fletch.cost * fletchAmount) ? (
+                  <>
+                    {+props.multiplier === 0 &&
+                      Math.abs(fletch.cost * fletchAmount).toLocaleString()}
+                    {+props.multiplier > 0 &&
+                      Math.round(
+                        (fletch.cost * fletchAmount) / (1 + 2.5 / 100)
+                      ).toLocaleString()}
+                    <span className={stl.gpcost}>gp</span>
+                  </>
+                ) : (
+                  "?"
+                )}
               </span>
             </div>
           );
