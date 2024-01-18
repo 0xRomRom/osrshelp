@@ -45,6 +45,7 @@
 .wiseOldManWrap {
   position: relative;
   padding: 10px 0px;
+  min-height: 151px;
 }
 
 .sphere {
