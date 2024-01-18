@@ -324,18 +324,20 @@ const FarmingGrid = (props) => {
           return (
             <div className={stl.row} key={craft.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
-                <img
-                  src={craft.src}
-                  alt="Runescape Bones"
-                  className={stl.boneMiniImg}
-                />
+                <div className={stl.imgWrapper}>
+                  <img
+                    src={craft.src}
+                    alt="Runescape Bones"
+                    className={stl.boneMiniImg}
+                  />
+                </div>
                 <span className={stl.bonename}>
                   <span className={stl.magelvl}>Lvl {craft.level}</span>{" "}
                   {craft.displayName}
                 </span>
               </span>
 
-              <span className={`${stl.rowItem} ${stl.prayerRow}`}>
+              <span className={`${stl.rowItem} ${stl.green}`}>
                 {craft.exp.toLocaleString()}
                 <span className={stl.gpperxp}>
                   {craft.profit / craft.exp > 0
@@ -345,7 +347,7 @@ const FarmingGrid = (props) => {
                 </span>
               </span>
 
-              <span className={`${stl.rowItem} ${stl.amountRow}`}>
+              <span className={`${stl.rowItem} ${stl.orange}`}>
                 {Math.ceil(+props.remainingExp / craft.exp).toLocaleString()}
               </span>
 
@@ -355,8 +357,8 @@ const FarmingGrid = (props) => {
                 }`}
               >
                 {craft.profit * craftAmount > 0
-                  ? "-" + (craft.profit * craftAmount).toLocaleString()
-                  : "+" + Math.abs(craft.profit * craftAmount).toLocaleString()}
+                  ? (craft.profit * craftAmount).toLocaleString()
+                  : Math.abs(craft.profit * craftAmount).toLocaleString()}
                 <span className={stl.gpcost}>gp</span>
               </span>
             </div>
