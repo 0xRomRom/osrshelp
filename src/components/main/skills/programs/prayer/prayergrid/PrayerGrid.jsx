@@ -112,7 +112,7 @@ const PrayerGrid = (props) => {
   return (
     <div className={stl.grid}>
       <div className={stl.typeRow}>
-        <span className={stl.monsterTitleRow} onClick={sortBones}>
+        <span className={stl.boneTitleRow} onClick={sortBones}>
           <img
             src="/bones/Bones.webp"
             alt="Bones Logo"
@@ -141,14 +141,16 @@ const PrayerGrid = (props) => {
           return (
             <div className={stl.row} key={bone.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
-                <img
-                  src={bone.src}
-                  alt="Runescape Bones"
-                  className={stl.boneMiniImg}
-                />
+                <div className={stl.imgWrapper}>
+                  <img
+                    src={bone.src}
+                    alt="Runescape Bones"
+                    className={stl.boneMiniImg}
+                  />
+                </div>
                 <span className={stl.bonename}>{bone.name}</span>
               </span>
-              <span className={`${stl.rowItem} ${stl.prayerRow}`}>
+              <span className={`${stl.rowItem} ${stl.greenSpan}`}>
                 {bone.exp}
                 <span className={stl.gpperxp}>
                   {+props.multiplier === 0 &&
@@ -171,7 +173,7 @@ const PrayerGrid = (props) => {
                   ? bone.toGo.toLocaleString()
                   : "?"}
               </span>
-              <span className={`${stl.rowItem} ${stl.costRow}`}>
+              <span className={`${stl.rowItem} ${stl.redSpan}`}>
                 {isNaN(bone.toGo * bone.price) ||
                 isNaN(bone.toGo * bone.price > 1000)
                   ? "?"

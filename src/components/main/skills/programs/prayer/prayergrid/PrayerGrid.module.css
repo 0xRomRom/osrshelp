@@ -1,7 +1,7 @@
 .grid {
   position: relative;
   width: 100%;
-  height: 31rem;
+  height: 40rem;
   background-color: rgb(32, 46, 57);
   padding: 1rem 0.5rem;
   border-radius: 0.8rem;
@@ -18,11 +18,16 @@
   padding-bottom: 10px;
   cursor: pointer;
   user-select: none;
+  padding-left: 0.5rem;
 }
 
 .typeRow > span {
   width: 25%;
   text-align: center;
+  gap: 0.35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .resultGrid {
@@ -51,8 +56,6 @@
 
 .rowItem {
   width: 25%;
-  height: 100%;
-  /* background-color: red; */
   color: white;
   text-align: center;
   display: flex;
@@ -73,16 +76,16 @@
   width: 15px;
 }
 
-.monsterTitleRow {
-  text-align: left !important;
-  padding-left: 1.25rem;
-}
-
 .boneMiniImg {
-  margin-right: 10px;
-  margin-top: 10px;
-  max-width: 22px;
-  max-height: 22px;
+  max-width: 33px;
+  object-fit: contain;
+}
+.imgWrapper {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40px;
 }
 
 .gpcost {
@@ -103,14 +106,25 @@
   align-items: center;
 }
 
-.bonename {
-  padding-top: 0.7rem;
+.greenSpan {
+  color: var(--green-main);
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
-.amountRow {
-  padding-top: 0.5rem;
+.redSpan {
+  color: var(--red-main);
 }
 
-.costRow {
-  padding-top: 0.45rem;
+.boneTitleRow {
+  text-align: left;
+  width: 25%;
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: center;
 }
