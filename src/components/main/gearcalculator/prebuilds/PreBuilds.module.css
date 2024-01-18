@@ -38,7 +38,7 @@
   width: 95%;
   left: 2.5%;
 
-  background-color: rgb(17, 23, 27);
+  background-color: var(--dark-bg);
   border-radius: 0.4rem;
   padding-bottom: 1rem;
 }
@@ -65,14 +65,17 @@
   align-items: center;
   flex-direction: column;
   border-radius: 0.4rem;
-  background-color: rgb(22, 9, 9);
+  background-color: var(--main-bg);
+  /* background-image: var(--gradient); */
+  border: 1px solid var(--border);
   cursor: pointer;
   transition: all 0.3s ease;
   gap: 0.5rem;
+  box-shadow: var(--box-shadow-sm);
 }
 
 .gridTile:hover {
-  box-shadow: 0px 0px 5px #00d25b;
+  box-shadow: 0px 0px 5px var(--blue-main);
 }
 
 .tileGear {

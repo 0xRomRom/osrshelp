@@ -96,6 +96,13 @@ const SignUp = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
 
+    if (!signupEmail.current) {
+      return;
+    }
+    if (!signupPassword.current) {
+      return;
+    }
+
     setError("");
 
     setLoading(true);
@@ -109,18 +116,27 @@ const SignUp = () => {
       const message = error.message;
       console.log(message);
 
+      setLoading(false);
       switch (message) {
+        case "To signup, please provide your email":
+          setError("To signup, please provide your email");
+          loginEmail.current?.focus();
+          return;
         case "Unable to validate email address: invalid format":
           setError("Invalid email");
           loginEmail.current?.focus();
-          break;
+          return;
         case "Password should be at least 6 characters.":
-          setError("Password should be at least 6 characters.");
+          setError("Password should be at least 6 characters");
           loginPassword.current?.focus();
-          break;
+          return;
+        case "Signup requires a valid password":
+          setError("Signup requires a valid password");
+          loginPassword.current?.focus();
+          return;
         default:
           setError("An unexpected error occurred. Please try again.");
-          break;
+          return;
       }
     }
 
@@ -169,6 +185,11 @@ const SignUp = () => {
       console.error(error.details);
       setError("Invalid email or password");
       setLoading(false);
+      if (!loginEmail.current.value.length) {
+        loginEmail.current?.focus();
+        return;
+      }
+      loginPassword.current?.focus();
       return;
     }
 
@@ -213,7 +234,13 @@ const SignUp = () => {
                 />
                 {error && <span className={stl.errorMsg}>{error}</span>}
                 <button className={stl.createCta} onClick={handleRegister}>
-                  {loading ? <Spinner /> : "Create account"}
+                  {loading ? (
+                    <div className={stl.centerSpinner}>
+                      <Spinner />
+                    </div>
+                  ) : (
+                    "Create account"
+                  )}
                 </button>
               </form>
             )}
@@ -251,7 +278,13 @@ const SignUp = () => {
                 </div>
                 {error && <span className={stl.errorMsg}>{error}</span>}
                 <button className={stl.loginCta} onClick={handleLogin}>
-                  {loading ? <Spinner /> : "Login"}
+                  {loading ? (
+                    <div className={stl.centerSpinner}>
+                      <Spinner />
+                    </div>
+                  ) : (
+                    "Login"
+                  )}
                 </button>
                 <span
                   className={stl.resetPassword}
