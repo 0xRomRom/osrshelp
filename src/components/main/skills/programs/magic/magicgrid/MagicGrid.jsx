@@ -258,23 +258,24 @@ const MagicGrid = (props) => {
           return (
             <div className={stl.row} key={mage.name}>
               <span className={`${stl.rowItem} ${stl.monsterRow}`}>
-                <img
-                  src={mage.src}
-                  alt="Runescape Bones"
-                  className={stl.boneMiniImg}
-                />
+                <div className={stl.imgWrapper}>
+                  <img
+                    src={mage.src}
+                    alt="Runescape Bones"
+                    className={stl.boneMiniImg}
+                  />
+                </div>
                 <span className={stl.bonename}>
                   <span className={stl.magelvl}>Lvl {mage.level}</span>{" "}
                   {mage.name}
                 </span>
               </span>
 
-              <span className={`${stl.rowItem} ${stl.prayerRow}`}>
+              <span className={`${stl.rowItem} ${stl.expRow}`}>
                 {+props.multiplier > 0
                   ? mage.exp * (+props.multiplier / 100)
                   : mage.exp}
                 <span className={stl.gpperxp}>
-                  {mage.price / mage.exp > 0 ? "-" : "+"}
                   {+props.multiplier === 0 &&
                     (mage.price / mage.exp > 0
                       ? Math.abs(mage.price / mage.exp)
@@ -292,11 +293,9 @@ const MagicGrid = (props) => {
               </span>
 
               <span className={`${stl.rowItem} ${stl.amountRow}`}>
-                {+props.multiplier > 0 &&
-                  Math.ceil(
-                    mage.toGo / (+props.multiplier / 100)
-                  ).toLocaleString()}
-                {+props.multiplier === 0 && mage.toGo.toLocaleString()}
+                {+props.multiplier === 0 && !isNaN(mage.toGo)
+                  ? mage.toGo.toLocaleString()
+                  : "?"}
               </span>
 
               <span
@@ -304,23 +303,35 @@ const MagicGrid = (props) => {
                   mage.toGo * mage.price > 0 ? stl.red : stl.green
                 }`}
               >
-                {mage.price > 0 ? "-" : "+"}
-
                 {+props.multiplier > 0 &&
                   (mage.toGo * mage.price > 0
-                    ? Math.abs(
-                        Math.ceil(mage.toGo * mage.price) /
-                          (+props.multiplier / 100)
-                      ).toLocaleString()
-                    : -(mage.toGo * mage.price)
-                  ).toLocaleString()}
+                    ? isNaN(
+                        Math.abs(
+                          Math.ceil(mage.toGo * mage.price) /
+                            (+props.multiplier / 100)
+                        )
+                      )
+                      ? "?"
+                      : `${Math.abs(
+                          Math.ceil(mage.toGo * mage.price) /
+                            (+props.multiplier / 100)
+                        ).toLocaleString()}`
+                    : isNaN(-(mage.toGo * mage.price))
+                    ? "?"
+                    : `${(mage.toGo * mage.price).toLocaleString()}`)}
 
                 {+props.multiplier === 0 &&
                   (mage.toGo * mage.price > 0
-                    ? Math.abs(mage.toGo * mage.price)
-                    : -(mage.toGo * mage.price)
-                  ).toLocaleString()}
-                <span className={stl.gpcost}>gp</span>
+                    ? isNaN(Math.abs(mage.toGo * mage.price))
+                      ? "?"
+                      : `${Math.abs(mage.toGo * mage.price).toLocaleString()}`
+                    : isNaN(-(mage.toGo * mage.price))
+                    ? "?"
+                    : `${Math.abs(mage.toGo * mage.price).toLocaleString()}`)}
+
+                {!isNaN(mage.toGo * mage.price) && (
+                  <span className={stl.gpcost}>gp</span>
+                )}
               </span>
             </div>
           );
