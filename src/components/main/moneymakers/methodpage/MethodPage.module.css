@@ -1,6 +1,8 @@
 .methodpage {
   width: 100%;
   color: white;
+  background-image: var(--gradient);
+  padding-bottom: 7rem;
 }
 
 .adBar {
@@ -20,14 +22,17 @@
 .modal {
   position: relative;
   border-radius: 0.4rem;
-  width: 95%;
-  left: 2.5%;
+  width: 50rem;
   min-height: 40rem;
-  margin-bottom: 2rem;
+  margin: auto;
 
   /* background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27)); */
   background-color: var(--main-bg);
   padding-bottom: 1.5rem;
+
+  background-color: var(--main-bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--box-shadow-sm);
 }
 
 .closeBtn {

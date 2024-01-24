@@ -3,16 +3,7 @@ import { FaPlay } from "react-icons/fa";
 import { MdSkipPrevious, MdSkipNext } from "react-icons/md";
 import { IoMdPause } from "react-icons/io";
 import { useEffect, useMemo, useRef, useState } from "react";
-import song1 from "../../../../assets/tracks/Track1.mp3";
-import song2 from "../../../../assets/tracks/Track2.mp3";
-import song3 from "../../../../assets/tracks/Track3.mp3";
-import song4 from "../../../../assets/tracks/Track4.mp3";
-import song5 from "../../../../assets/tracks/Track5.mp3";
-import song6 from "../../../../assets/tracks/Track6.mp3";
-import song7 from "../../../../assets/tracks/Track7.mp3";
-import song8 from "../../../../assets/tracks/Track8.mp3";
-import song9 from "../../../../assets/tracks/Track9.mp3";
-import song10 from "../../../../assets/tracks/Track10.mp3";
+import song1 from "../../../../assets/tracks/7th_realm.mp3";
 
 const OSRSRadio = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -22,18 +13,7 @@ const OSRSRadio = () => {
   const playStorage = localStorage.getItem("radio");
 
   const memoizedSongs = useMemo(() => {
-    const songs = [
-      song1,
-      song2,
-      song3,
-      song4,
-      song5,
-      song6,
-      song7,
-      song8,
-      song9,
-      song10,
-    ];
+    const songs = [song1];
     return songs;
   }, []);
 

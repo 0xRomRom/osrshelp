@@ -20,19 +20,18 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
   background-image: var(--gradient);
 }
 
 .heroBlock {
   position: relative;
   width: 80%;
-  height: 10rem;
-  /* background-color: var(--dark-bg); */
+  min-height: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-image: var(--gradient);
 }
 .itemsGrid {
   position: relative;
@@ -43,11 +42,11 @@
 
   border-radius: 0.4rem;
   overflow: hidden;
+  padding-bottom: 1rem;
 }
 
 .hero {
   color: rgb(231, 231, 231);
-  font-size: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +61,7 @@
 
 .descPar {
   margin-top: 0.25rem;
-  color: rgb(215, 215, 215);
+  color: rgb(173, 173, 173);
   font-size: 18px;
 }
 
