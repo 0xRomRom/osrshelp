@@ -129,6 +129,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  border: 1px solid red;
+  width: 100%;
 }
 
 .resultRow {
@@ -192,7 +194,7 @@
   left: 5px;
   font-size: 14px;
 }
-.methodBox {
+.instructionsBox {
   padding: 5px;
 }
 .methodHero {
@@ -303,4 +305,5 @@
 
 .locationSpan {
   color: gray;
+  user-select: none;
 }

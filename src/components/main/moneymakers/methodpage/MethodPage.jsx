@@ -19,6 +19,13 @@ const MethodPage = ({ moneyMaker }) => {
   const [activeTab, setActiveTab] = useState("Skills");
 
   useEffect(() => {
+    if (Object.entries(methodState).length > 0) {
+      console.log(methodState);
+    }
+  }, [methodState]);
+
+  useEffect(() => {
+    console.log(methodState);
     if (!moneyMaker) {
       navigate("/moneymakers");
     }
@@ -34,7 +41,7 @@ const MethodPage = ({ moneyMaker }) => {
     setSubState(null);
   };
 
-  const skills = methodState.skills;
+  // const skills = methodState.skills;
   const items = methodState.items;
   const quests = methodState.quests;
   const other = methodState.other;
@@ -82,35 +89,38 @@ const MethodPage = ({ moneyMaker }) => {
                   <div className={stl.skillsList}>
                     {Object.keys(methodState).length > 0 && (
                       <div className={stl.skillsBox}>
-                        {Object.entries(skills).map(([index, skillLevel]) => {
-                          const skillNames = Object.keys(skillLevel);
-                          const skillLevels = Object.entries(skillLevel)[0][1];
+                        {Object.entries(methodState.skills).map(
+                          (skill, index) => {
+                            const skillNames = Object.keys(skill[1])[0];
+                            const skillLevels = Object.values(skill[1])[0];
 
-                          return (
-                            <div key={index} className={stl.resultRow}>
-                              <div className={stl.imgWrapper}>
-                                <img
-                                  src={SKILLICONOBJECT[skillNames]}
-                                  alt="Skillicon"
-                                  className={stl.miniSkillIcon}
-                                />
+                            return (
+                              <div key={index} className={stl.resultRow}>
+                                <div className={stl.imgWrapper}>
+                                  <img
+                                    src={SKILLICONOBJECT[skillNames]}
+                                    alt="Skillicon"
+                                    className={stl.miniSkillIcon}
+                                  />
+                                </div>
+                                <span className={stl.reqLvl}>
+                                  {skillLevels}
+                                </span>
                               </div>
-                              <span className={stl.reqLvl}>{skillLevels}</span>
-                            </div>
-                          );
-                        })}
+                            );
+                          }
+                        )}
                       </div>
                     )}
-                    {Object.keys(methodState).length === 0 ||
-                      (Object.keys(methodState.skills).length === 0 && (
-                        <span className={stl.noRequirements}>
-                          No requirements
-                        </span>
-                      ))}
+                    {Object.keys(methodState).length === 0 && (
+                      <span className={stl.noRequirements}>
+                        No requirements
+                      </span>
+                    )}
                   </div>
                 </div>
               )}
-              {activeTab === "Items" && (
+              {/* {activeTab === "Items" && (
                 <div className={stl.reqBox}>
                   <div className={stl.skillsList}>
                     {Object.keys(methodState).length > 0 && (
@@ -182,7 +192,7 @@ const MethodPage = ({ moneyMaker }) => {
                       ))}
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
             <div className={stl.profitBox}>
               <h2 className={stl.methodHero}>Profit</h2>
@@ -202,7 +212,7 @@ const MethodPage = ({ moneyMaker }) => {
             <div className={stl.locationBox}>
               <span className={stl.locationSpan}>{methodState.location}</span>
             </div>
-            <div className={stl.methodBox}>
+            <div className={stl.instructionsBox}>
               <h2 className={stl.methodHero}>Instructions</h2>
 
               {Object.keys(methodState).length > 0 && (
