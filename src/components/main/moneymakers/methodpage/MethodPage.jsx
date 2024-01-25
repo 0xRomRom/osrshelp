@@ -19,7 +19,6 @@ const MethodPage = ({ moneyMaker }) => {
   const [activeTab, setActiveTab] = useState("Skills");
 
   useEffect(() => {
-    console.log(methodState);
     if (!moneyMaker) {
       navigate("/moneymakers");
     }
@@ -193,7 +192,7 @@ const MethodPage = ({ moneyMaker }) => {
               )}
             </div>
             <div className={stl.profitBox}>
-              <h2 className={stl.methodHero}>Profit</h2>
+              <h2 className={stl.profitSpan}>Profit</h2>
               <div className={stl.profitCenter}>
                 <img
                   src={mills}
@@ -207,42 +206,44 @@ const MethodPage = ({ moneyMaker }) => {
             </div>
           </div>
           <div className={stl.storyBox}>
-            <div className={stl.locationBox}>
-              <span className={stl.locationSpan}>{methodState.location}</span>
-            </div>
-            <div className={stl.instructionsBox}>
-              <h2 className={stl.methodHero}>Instructions</h2>
-
-              {Object.keys(methodState).length > 0 && (
-                <>
-                  {methodState.instructions.map((story, index) => {
-                    return (
-                      <ul key={index} className={stl.mappedTaskList}>
-                        <li className={stl.storyItem}>{story}</li>
-                      </ul>
-                    );
-                  })}
-                </>
-              )}
-            </div>
-            {Object.keys(methodState).length > 0 && (
-              <div className={stl.notesBox}>
-                {notes.length > 0 ? (
-                  <>
-                    <h2 className={stl.methodHero}>Notes</h2>
-                    {methodState.notes.map((story, index) => {
-                      return (
-                        <ul key={index} className={stl.mappedTaskList}>
-                          <li className={stl.storyItem}>{story}</li>
-                        </ul>
-                      );
-                    })}
-                  </>
-                ) : (
-                  ""
-                )}
+            <div className={stl.topWrap}>
+              <div className={stl.locationBox}>
+                <span className={stl.locationSpan}>{methodState.location}</span>
               </div>
-            )}
+              <div className={stl.instructionsBox}>
+                {methodState &&
+                  methodState.notes &&
+                  Object.keys(methodState.instructions).length > 0 && (
+                    <>
+                      {methodState.instructions.map((story, index) => {
+                        return (
+                          <ul key={index} className={stl.mappedTaskList}>
+                            <li className={stl.storyItem}>{story}</li>
+                          </ul>
+                        );
+                      })}
+                    </>
+                  )}
+              </div>
+            </div>
+            {methodState &&
+              methodState.notes &&
+              Object.keys(methodState.notes).length > 0 && (
+                <div className={stl.notesBox}>
+                  {notes.length > 0 && (
+                    <>
+                      <h2 className={stl.methodHero}>Notes</h2>
+                      {methodState.notes.map((story, index) => {
+                        return (
+                          <ul key={index} className={stl.mappedTaskList}>
+                            <li className={stl.storyItem}>{story}</li>
+                          </ul>
+                        );
+                      })}
+                    </>
+                  )}
+                </div>
+              )}
           </div>
         </div>
       </div>
