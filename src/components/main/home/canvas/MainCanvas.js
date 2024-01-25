@@ -8,6 +8,7 @@ const MainCanvas = ({ sourceImgs }) => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
+    canvas.width = "100";
     const randomImgSrc = () => Math.floor(Math.random() * sourceImgs.length);
     const randomImgXPosition = () => Math.floor(Math.random() * 280);
     const imgWidth = 18;
@@ -89,11 +90,7 @@ const MainCanvas = ({ sourceImgs }) => {
   return (
     <div className={stl.canvasWrapper}>
       <h1 className={stl.hero}>OSRS Help</h1>
-      <canvas
-        ref={canvasRef}
-        className={stl.mainCanvas}
-        style={{ width: "98%", height: "250%" }}
-      >
+      <canvas ref={canvasRef} className={stl.mainCanvas}>
         Your browser does not support the canvas element.
       </canvas>
     </div>
