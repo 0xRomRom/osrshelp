@@ -9,12 +9,14 @@ import SKILLICONOBJECT from "../../../../utils/skilliconobject";
 import mills from "../../../../assets/icons/Mills.webp";
 import { PaginationContext } from "../../../../utils/paginationstate/PaginationProvider";
 
+const ctaButtons = ["Skills", "Items", "Quests", "Other"];
 const MethodPage = ({ moneyMaker }) => {
   const { setSubState } = useContext(PaginationContext);
   const [methodState, setMethodState] = useState({});
   const navigate = useNavigate();
   const location = useLocation();
   const methodName = location.pathname.replaceAll("_", " ").slice(13);
+  const [activeTab, setActiveTab] = useState("Skills");
 
   useEffect(() => {
     if (!moneyMaker) {
@@ -61,7 +63,19 @@ const MethodPage = ({ moneyMaker }) => {
         </div>
         <div className={stl.contentWrapper}>
           <div className={stl.reqsBox}>
-            <span className={stl.reqsTitle}>Requirements</span>
+            <div className={stl.toggleBox}>
+              {ctaButtons.map((btn) => (
+                <button
+                  className={`${stl.toggleCta} ${
+                    activeTab === btn ? stl.ctaActive : ""
+                  }`}
+                  key={btn}
+                  onClick={() => setActiveTab(btn)}
+                >
+                  {btn}
+                </button>
+              ))}
+            </div>
             <div className={stl.reqBox}>
               <span className={stl.reqTitle}>Skills</span>
               <div className={stl.skillsList}>

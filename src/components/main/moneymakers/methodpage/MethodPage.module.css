@@ -177,12 +177,6 @@
   margin-top: 5px;
 }
 
-.reqsTitle {
-  text-align: center;
-  color: gray;
-  width: 17rem;
-}
-
 .contentWrapper {
   display: flex;
 }
@@ -238,4 +232,27 @@
   justify-content: center;
   align-items: center;
   margin: 2rem 0rem;
+}
+
+.toggleBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.toggleCta {
+  width: 25%;
+  background-color: transparent;
+  border: 1px solid var(--border);
+  color: gray;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ctaActive {
+  background-color: var(--border);
+  color: white;
 }
