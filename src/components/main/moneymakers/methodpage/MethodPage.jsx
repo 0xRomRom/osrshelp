@@ -200,8 +200,7 @@ const MethodPage = ({ moneyMaker }) => {
           </div>
           <div className={stl.storyBox}>
             <div className={stl.locationBox}>
-              <h2 className={stl.locationHero}>Location</h2>
-              <span>{methodState.location}</span>
+              <span className={stl.locationSpan}>{methodState.location}</span>
             </div>
             <div className={stl.methodBox}>
               <h2 className={stl.methodHero}>Instructions</h2>
