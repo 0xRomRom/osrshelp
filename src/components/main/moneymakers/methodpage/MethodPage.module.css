@@ -77,12 +77,10 @@
 }
 
 .heroTitle {
-  position: absolute;
   color: rgb(232, 232, 232);
   font-weight: bold;
   padding: 0rem 1rem;
   text-align: center;
-  top: 1rem;
   user-select: none;
 }
 
@@ -217,7 +215,6 @@
 .methodHero {
   color: rgb(173, 173, 173);
   font-size: 14px;
-  margin-bottom: 0.5rem;
   left: 7.5px;
   top: 5px;
   font-weight: bold;
@@ -352,4 +349,8 @@
 }
 .otherReqsSpan {
   color: white;
+}
+
+.topWrap {
+  width: 100%;
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import stl from "./Home.module.css";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import SKILLLINKS from "../../../utils/canvasimglinks";
 
 import LoginBox from "./loginbox/LoginBox";
 import UserBox from "./userbox/UserBox";
@@ -27,7 +28,7 @@ const Home = (props) => {
       <Pagination />
       <div className={stl.modal}>
         <div className={stl.imageBox}>
-          <MainCanvas />
+          <MainCanvas sourceImgs={SKILLLINKS} />
         </div>
         <div className={stl.modalbottom}>
           <ResponsiveMasonry

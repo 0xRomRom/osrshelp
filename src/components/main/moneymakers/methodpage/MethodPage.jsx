@@ -8,6 +8,8 @@ import MONEYMAKERPAGES from "../../../../utils/moneymakers/moneymakerpages";
 import SKILLICONOBJECT from "../../../../utils/skilliconobject";
 import mills from "../../../../assets/icons/Mills.webp";
 import { PaginationContext } from "../../../../utils/paginationstate/PaginationProvider";
+import MainCanvas from "../../home/canvas/MainCanvas";
+import MONEYMAKERIMGS from "../../../../utils/canvasmoneymakerimgs";
 
 const ctaButtons = ["Skills", "Items", "Quests", "Other"];
 const MethodPage = ({ moneyMaker }) => {
@@ -16,7 +18,14 @@ const MethodPage = ({ moneyMaker }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const methodName = location.pathname.replaceAll("_", " ").slice(13);
+  const methodUnsplit = location.pathname.slice(13);
   const [activeTab, setActiveTab] = useState("Skills");
+  const [canvasSources, setCanvasSources] = useState([]);
+
+  useEffect(() => {
+    const currentSources = MONEYMAKERIMGS[0][methodUnsplit];
+    setCanvasSources(currentSources);
+  }, [methodUnsplit]);
 
   useEffect(() => {
     if (!moneyMaker) {
@@ -47,17 +56,20 @@ const MethodPage = ({ moneyMaker }) => {
         <FaLongArrowAltLeft className={stl.closeBtn} onClick={navigateBack} />
         <div className={stl.headerBox}>
           <h1 className={stl.heroTitle}>{methodState.title}</h1>
-          <img
+          {/* <img
             src={methodState.iconSrc}
             alt={methodState.title}
             className={stl.miniIcon}
-          />
+          /> */}
           <div className={stl.headerBannerWrap}>
-            <img
+            {canvasSources.length > 0 && (
+              <MainCanvas sourceImgs={canvasSources} />
+            )}
+            {/* <img
               src={methodState.headerImg}
               alt="Skill training location"
               className={stl.headerBanner}
-            />
+            /> */}
           </div>
         </div>
         <div className={stl.contentWrapper}>
