@@ -1561,7 +1561,7 @@ const MONEYMAKERPAGES = [
     title: "Making Guthix rests",
     premium: true,
     headerImg: "./moneymakers/headerbanners/OneClickBank.webp",
-    iconSrc: "./moneymakers/icons/400px-Runite_rocks.webp",
+    iconSrc: "./moneymakers/icons/400px-Guthix_rest(4)_detail.webp",
     skills: [{ Herblore: 18 }],
     items: [
       { "Bowl of hot water": 560 },

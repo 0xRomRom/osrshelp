@@ -21,6 +21,7 @@
   color: rgb(199, 194, 194);
   padding-left: 0.5rem;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .mainMenu:hover {
@@ -41,9 +42,9 @@
 }
 
 .loginBtn {
-  width: 6rem;
-  height: 2.5rem;
-  border-radius: 0.4rem;
+  width: 89px;
+  height: 36px;
+  border-radius: 0.375rem;
   background-color: var(--blue-main);
   color: black;
   border: none;
@@ -53,6 +54,8 @@
   cursor: pointer;
   /* font-size: 16px; */
   transition: all 0.2s ease-in-out;
+  /* font-size: 14px; */
+  font-family: Inter;
 }
 
 .loginBtn:hover {
@@ -64,8 +67,8 @@
 }
 
 .upgradeCta {
-  width: 7rem;
-  height: 2.5rem;
+  width: 89px;
+  height: 36px;
   border-radius: 0.4rem;
   background-color: yellow;
   color: black;
