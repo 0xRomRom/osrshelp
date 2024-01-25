@@ -150,7 +150,7 @@
 }
 
 .noRequirements {
-  color: rgb(217, 217, 217);
+  color: gray;
 }
 
 .skillList {
@@ -319,4 +319,11 @@
 
 .reqAmount {
   color: gray;
+}
+
+.questName {
+  color: white;
+}
+.otherReqsSpan {
+  color: white;
 }
