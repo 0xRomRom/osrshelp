@@ -41,7 +41,6 @@ const MethodPage = ({ moneyMaker }) => {
     setSubState(null);
   };
 
-  // const skills = methodState.skills;
   const items = methodState.items;
   const quests = methodState.quests;
   const other = methodState.other;
@@ -120,7 +119,7 @@ const MethodPage = ({ moneyMaker }) => {
                   </div>
                 </div>
               )}
-              {/* {activeTab === "Items" && (
+              {activeTab === "Items" && (
                 <div className={stl.reqBox}>
                   <div className={stl.skillsList}>
                     {Object.keys(methodState).length > 0 && (
@@ -143,7 +142,7 @@ const MethodPage = ({ moneyMaker }) => {
                   </div>
                 </div>
               )}
-              {activeTab === "Quests" && (
+              {/* {activeTab === "Quests" && (
                 <div className={stl.reqBox}>
                   <div className={stl.skillsList}>
                     {Object.keys(methodState).length > 0 && (
