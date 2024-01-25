@@ -25,10 +25,8 @@
   width: 50rem;
   margin: auto;
 
-  /* background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27)); */
   background-color: var(--main-bg);
 
-  background-color: var(--main-bg);
   border: 1px solid var(--border);
   box-shadow: var(--box-shadow-sm);
 }
@@ -81,7 +79,7 @@
   font-weight: bold;
   padding: 0rem 1rem;
   text-align: center;
-  top: 2.75rem;
+  top: 1rem;
   user-select: none;
 }
 
@@ -114,6 +112,7 @@
 .reqBox {
   width: 17.5rem;
   position: relative;
+  padding-top: 10px;
 }
 
 .reqTitle {
@@ -137,11 +136,12 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  width: 35%;
   background-color: rgb(32, 46, 57);
+  background: linear-gradient(90deg, rgb(32, 46, 57), rgb(21, 26, 35));
   padding: 0.175rem 0.5rem;
   border-radius: 0.4rem;
   /* display: inline-block; */
-  min-width: 3rem;
 }
 
 .imgWrapper {
@@ -206,7 +206,6 @@
 }
 
 .profitBox {
-  margin-top: 2rem;
 }
 
 .profitCenter {
@@ -223,10 +222,11 @@
 
 .skillsBox {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  flex-direction: column;
 }
 
 .toggleBox {
