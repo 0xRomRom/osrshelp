@@ -63,125 +63,127 @@ const MethodPage = ({ moneyMaker }) => {
         </div>
         <div className={stl.contentWrapper}>
           <div className={stl.reqsBox}>
-            <div className={stl.toggleBox}>
-              {ctaButtons.map((btn) => (
-                <button
-                  className={`${stl.toggleCta} ${
-                    activeTab === btn ? stl.ctaActive : ""
-                  }`}
-                  key={btn}
-                  onClick={() => setActiveTab(btn)}
-                >
-                  {btn}
-                </button>
-              ))}
-            </div>
-            {activeTab === "Skills" && (
-              <div className={stl.reqBox}>
-                <span className={stl.reqTitle}>Skills</span>
-                <div className={stl.skillsList}>
-                  {Object.keys(methodState).length > 0 && (
-                    <div className={stl.skillsBox}>
-                      {Object.entries(skills).map(([index, skillLevel]) => {
-                        const skillNames = Object.keys(skillLevel);
-                        const skillLevels = Object.entries(skillLevel)[0][1];
+            <div className={stl.topWrapper}>
+              <div className={stl.toggleBox}>
+                {ctaButtons.map((btn) => (
+                  <button
+                    className={`${stl.toggleCta} ${
+                      activeTab === btn ? stl.ctaActive : ""
+                    }`}
+                    key={btn}
+                    onClick={() => setActiveTab(btn)}
+                  >
+                    {btn}
+                  </button>
+                ))}
+              </div>
+              {activeTab === "Skills" && (
+                <div className={stl.reqBox}>
+                  <div className={stl.skillsList}>
+                    {Object.keys(methodState).length > 0 && (
+                      <div className={stl.skillsBox}>
+                        {Object.entries(skills).map(([index, skillLevel]) => {
+                          const skillNames = Object.keys(skillLevel);
+                          const skillLevels = Object.entries(skillLevel)[0][1];
 
-                        return (
-                          <div key={index} className={stl.resultRow}>
-                            <div className={stl.imgWrapper}>
-                              <img
-                                src={SKILLICONOBJECT[skillNames]}
-                                alt="Skillicon"
-                                className={stl.miniSkillIcon}
-                              />
+                          return (
+                            <div key={index} className={stl.resultRow}>
+                              <div className={stl.imgWrapper}>
+                                <img
+                                  src={SKILLICONOBJECT[skillNames]}
+                                  alt="Skillicon"
+                                  className={stl.miniSkillIcon}
+                                />
+                              </div>
+                              <span className={stl.reqLvl}>{skillLevels}</span>
                             </div>
-                            <span className={stl.reqLvl}>{skillLevels}</span>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  )}
-                  {Object.keys(methodState).length === 0 ||
-                    (Object.keys(methodState.skills).length === 0 && (
-                      <span className={stl.noRequirements}>
-                        No requirements
-                      </span>
-                    ))}
+                          );
+                        })}
+                      </div>
+                    )}
+                    {Object.keys(methodState).length === 0 ||
+                      (Object.keys(methodState.skills).length === 0 && (
+                        <span className={stl.noRequirements}>
+                          No requirements
+                        </span>
+                      ))}
+                  </div>
                 </div>
-              </div>
-            )}
-            {activeTab === "Items" && (
-              <div className={stl.reqBox}>
-                <span className={stl.reqTitle}>Items</span>
-                <div className={stl.skillsList}>
-                  {Object.keys(methodState).length > 0 && (
-                    <div className={stl.columnWrap}>
-                      {Object.entries(items).map(([index, skillLevel]) => {
-                        const skillNames = Object.keys(skillLevel);
-                        const skillLevels = Object.entries(skillLevel)[0][1];
+              )}
+              {activeTab === "Items" && (
+                <div className={stl.reqBox}>
+                  <div className={stl.skillsList}>
+                    {Object.keys(methodState).length > 0 && (
+                      <div className={stl.columnWrap}>
+                        {Object.entries(items).map(([index, skillLevel]) => {
+                          const skillNames = Object.keys(skillLevel);
+                          const skillLevels = Object.entries(skillLevel)[0][1];
 
-                        return (
-                          <div key={index} className={stl.skillList}>
-                            <span className={stl.reqLvl}>{skillNames}</span>
-                            <span className={stl.reqAmount}>
-                              {skillLevels > 0 ? "x" + skillLevels : ""}
-                            </span>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  )}
+                          return (
+                            <div key={index} className={stl.skillList}>
+                              <span className={stl.reqLvl}>{skillNames}</span>
+                              <span className={stl.reqAmount}>
+                                {skillLevels > 0 ? "x" + skillLevels : ""}
+                              </span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            )}
-            {activeTab === "Quests" && (
-              <div className={stl.reqBox}>
-                <span className={stl.reqTitle}>Quests</span>
-                <div className={stl.skillsList}>
-                  {Object.keys(methodState).length > 0 && (
-                    <div className={stl.columnWrap}>
-                      {Object.entries(quests).map(([index, skillLevel]) => {
-                        return (
-                          <div key={index} className={stl.skillList}>
-                            <span className={stl.reqAmount}>{skillLevel}</span>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  )}
-                  {Object.keys(methodState).length === 0 ||
-                    (Object.keys(methodState.quests).length === 0 && (
-                      <span className={stl.noRequirements}>
-                        No requirements
-                      </span>
-                    ))}
+              )}
+              {activeTab === "Quests" && (
+                <div className={stl.reqBox}>
+                  <div className={stl.skillsList}>
+                    {Object.keys(methodState).length > 0 && (
+                      <div className={stl.columnWrap}>
+                        {Object.entries(quests).map(([index, skillLevel]) => {
+                          return (
+                            <div key={index} className={stl.skillList}>
+                              <span className={stl.reqAmount}>
+                                {skillLevel}
+                              </span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+                    {Object.keys(methodState).length === 0 ||
+                      (Object.keys(methodState.quests).length === 0 && (
+                        <span className={stl.noRequirements}>
+                          No requirements
+                        </span>
+                      ))}
+                  </div>
                 </div>
-              </div>
-            )}
-            {activeTab === "Other" && (
-              <div className={stl.reqBox}>
-                <span className={stl.reqTitle}>Other</span>
-                <div className={stl.skillsList}>
-                  {Object.keys(methodState).length > 0 && (
-                    <div className={stl.columnWrap}>
-                      {Object.entries(other).map(([index, skillLevel]) => {
-                        return (
-                          <div key={index} className={stl.skillList}>
-                            <span className={stl.reqAmount}>{skillLevel}</span>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  )}
-                  {Object.keys(methodState).length === 0 ||
-                    (Object.keys(methodState.other).length === 0 && (
-                      <span className={stl.noRequirements}>
-                        No requirements
-                      </span>
-                    ))}
+              )}
+              {activeTab === "Other" && (
+                <div className={stl.reqBox}>
+                  <div className={stl.skillsList}>
+                    {Object.keys(methodState).length > 0 && (
+                      <div className={stl.columnWrap}>
+                        {Object.entries(other).map(([index, skillLevel]) => {
+                          return (
+                            <div key={index} className={stl.skillList}>
+                              <span className={stl.reqAmount}>
+                                {skillLevel}
+                              </span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+                    {Object.keys(methodState).length === 0 ||
+                      (Object.keys(methodState.other).length === 0 && (
+                        <span className={stl.noRequirements}>
+                          No requirements
+                        </span>
+                      ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
+            </div>
             <div className={stl.profitBox}>
               <h2 className={stl.methodHero}>Profit</h2>
               <div className={stl.profitCenter}>
