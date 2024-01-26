@@ -6,6 +6,7 @@ import gear from "../../assets/icons/Gear.webp";
 import xptable from "../../assets/icons/Xptable.webp";
 import mills from "../../assets/icons/Mills.webp";
 import worldicon from "../../assets/icons/World_map_icon.webp";
+import inventory from "../../assets/icons/Inventory.webp";
 import { Link } from "react-router-dom";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -170,6 +171,24 @@ const Nav = (props) => {
                 className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
               >
                 Gear Calculator
+              </span>
+            </li>
+          </Link>
+
+          <Link to="/inventorybuilder" className={stl.link}>
+            <li
+              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
+                activeTab === "inventorybuilder" ? stl.active : ""
+              }`}
+              onClick={() =>
+                handleTabSwitch("inventorybuilder", "Inventory Builder")
+              }
+            >
+              <img src={inventory} alt="Inventory Icon" className={stl.icon} />
+              <span
+                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
+              >
+                Inventory Builder
               </span>
             </li>
           </Link>
