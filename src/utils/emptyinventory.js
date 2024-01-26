@@ -2,21 +2,21 @@ const EMPTYGRID = [
   {
     1: "https://oldschool.runescape.wiki/images/Rune_full_helm.png",
   },
-  // {
-  //   2: "",
-  // },
-  // {
-  //   3: "",
-  // },
-  // {
-  //   4: "",
-  // },
-  // {
-  //   5: "",
-  // },
-  // {
-  //   6: "",
-  // },
+  {
+    2: "https://oldschool.runescape.wiki/images/Rune_full_helm.png",
+  },
+  {
+    3: "https://oldschool.runescape.wiki/images/Rune_full_helm.png",
+  },
+  {
+    4: "https://oldschool.runescape.wiki/images/Rune_full_helm.png",
+  },
+  {
+    5: "https://oldschool.runescape.wiki/images/Rune_full_helm.png",
+  },
+  {
+    6: "https://oldschool.runescape.wiki/images/Rune_full_helm.png",
+  },
   // {
   //   7: "",
   // },
