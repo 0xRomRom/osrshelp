@@ -23,7 +23,6 @@ const MethodPage = ({ moneyMaker }) => {
     if (!moneyMaker) {
       navigate("/moneymakers");
     }
-    console.log(moneyMaker);
     MONEYMAKERPAGES.forEach((item) => {
       if (item.title === methodName) {
         setMethodState(item);
