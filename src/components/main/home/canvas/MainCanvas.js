@@ -1,15 +1,14 @@
 import React, { useRef, useEffect } from "react";
 import stl from "./MainCanvas.module.css";
 
-const MainCanvas = ({ sourceImgs }) => {
+const MainCanvas = ({ sourceImgs, minSpeed = 0.15, maxSpeed = 0.7 }) => {
   const canvasRef = useRef(null);
-  const speed = 0.3;
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    const imgWidth = 23;
-    const imgHeight = 23;
+    const imgWidth = 92;
+    const imgHeight = 92;
 
     const yBegin = -50;
     const yEnd = 220;
@@ -25,7 +24,7 @@ const MainCanvas = ({ sourceImgs }) => {
     const images = [];
 
     const initializeImage = async () => {
-      for (let i = 0; i < 8; i++) {
+      for (let i = 0; i < 6; i++) {
         const x = Math.floor(Math.random() * 280);
         const y = yBegin;
 
@@ -33,7 +32,7 @@ const MainCanvas = ({ sourceImgs }) => {
           sourceImgs[Math.floor(Math.random() * sourceImgs.length)]
         );
 
-        const speed = 0.3 + Math.random() * 0.7;
+        const speed = minSpeed + Math.random() * maxSpeed;
         images.push({ image, x, y, speed });
       }
 
@@ -45,12 +44,20 @@ const MainCanvas = ({ sourceImgs }) => {
 
       images.forEach((imageObj) => {
         imageObj.y += imageObj.speed;
+
+        // Calculate the scaling factor based on canvas size
+        const scaleFactor = canvas.width / imgWidth;
+
+        // Adjust drawing dimensions
+        const scaledWidth = (imgWidth / scaleFactor) * 0.75;
+        const scaledHeight = imgHeight / scaleFactor;
+
         ctx.drawImage(
           imageObj.image,
           imageObj.x,
           imageObj.y,
-          imgWidth,
-          imgHeight
+          scaledWidth,
+          scaledHeight
         );
 
         if (imageObj.y >= yEnd) {
@@ -73,7 +80,6 @@ const MainCanvas = ({ sourceImgs }) => {
 
   return (
     <div className={stl.canvasWrapper}>
-      <h1 className={stl.hero}>OSRS Help</h1>
       <canvas ref={canvasRef} className={stl.mainCanvas}>
         Your browser does not support the canvas element.
       </canvas>

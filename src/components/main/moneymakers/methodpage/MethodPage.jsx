@@ -56,20 +56,14 @@ const MethodPage = ({ moneyMaker }) => {
         <FaLongArrowAltLeft className={stl.closeBtn} onClick={navigateBack} />
         <div className={stl.headerBox}>
           <h1 className={stl.heroTitle}>{methodState.title}</h1>
-          {/* <img
-            src={methodState.iconSrc}
-            alt={methodState.title}
-            className={stl.miniIcon}
-          /> */}
           <div className={stl.headerBannerWrap}>
             {canvasSources.length > 0 && (
-              <MainCanvas sourceImgs={canvasSources} />
+              <MainCanvas
+                sourceImgs={canvasSources}
+                minSpeed={0.2}
+                maxSpeed={0.3}
+              />
             )}
-            {/* <img
-              src={methodState.headerImg}
-              alt="Skill training location"
-              className={stl.headerBanner}
-            /> */}
           </div>
         </div>
         <div className={stl.contentWrapper}>

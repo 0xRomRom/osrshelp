@@ -28,6 +28,7 @@ const Home = (props) => {
       <Pagination />
       <div className={stl.modal}>
         <div className={stl.imageBox}>
+          <h1 className={stl.hero}>OSRS Help</h1>
           <MainCanvas sourceImgs={SKILLLINKS} />
         </div>
         <div className={stl.modalbottom}>

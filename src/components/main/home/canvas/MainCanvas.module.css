@@ -11,18 +11,3 @@
   width: 100%;
   height: 100%;
 }
-
-.hero {
-  background-image: linear-gradient(180deg, var(--blue-main), #0015ff);
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  z-index: 100;
-  font-weight: bold;
-  font-size: 90px;
-  user-select: none;
-  font-family: RSFont;
-  letter-spacing: 10px;
-  text-align: center;
-  position: absolute;
-}
