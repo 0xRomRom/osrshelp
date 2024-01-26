@@ -1,0 +1,119 @@
+.imgSearchBox {
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-bg);
+  border-radius: 0.375rem;
+  flex-direction: column;
+  padding: 1rem 0rem;
+  gap: 2rem;
+}
+
+.magnify {
+  color: gray;
+  transition: all 0.3s ease-in-out;
+  font-size: 35px;
+  margin-right: 0.5rem;
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput {
+  height: 2.5rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  padding-left: 0.5rem;
+  font-size: 18px;
+}
+
+.inputWrapper {
+  border: 1px solid var(--border);
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 5px;
+  border-radius: 0.625rem;
+}
+
+.errorText {
+  color: red;
+}
+
+.rotate {
+  animation: rotater 2s ease-in-out forwards infinite;
+}
+
+@keyframes rotater {
+  0% {
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0px 0px 10px rgb(79, 79, 79);
+  }
+  25% {
+    transform: translate3d(0.15rem, 0, 0);
+  }
+  50% {
+    transform: translate3d(0.15rem, 0.15rem, 0);
+  }
+  75% {
+    transform: translate3d(0, 0.15rem, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.searchCta {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  color: gray;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.searchCta:hover {
+  background-color: var(--main-bg);
+}
+
+.imgWrapper {
+  width: 75px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.downArrow {
+  font-size: 20px;
+}
+
+.rightArrow {
+  transform: rotate(270deg);
+  font-size: 20px;
+}
