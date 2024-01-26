@@ -8,79 +8,61 @@ const MainCanvas = ({ sourceImgs }) => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    canvas.width = "100";
-    const randomImgSrc = () => Math.floor(Math.random() * sourceImgs.length);
-    const randomImgXPosition = () => Math.floor(Math.random() * 280);
-    const imgWidth = 18;
-    const imgHeight = 18;
+    const imgWidth = 23;
+    const imgHeight = 23;
 
-    // Img 1 init
-    let x1 = randomImgXPosition();
-    let y1 = -10;
-    const image1 = new Image();
-    image1.src = sourceImgs[randomImgSrc()];
+    const yBegin = -50;
+    const yEnd = 220;
 
-    image1.onload = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(image1, x1, y1, imgWidth, imgHeight);
+    const loadImage = (src) => {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.src = src;
+      });
     };
 
-    // Img 2 init
-    let x2 = randomImgXPosition();
-    let y2 = -10;
-    const image2 = new Image();
-    image2.src = sourceImgs[randomImgSrc()];
-    image2.onload = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(image2, x2, y2, imgWidth, imgHeight); // Set the image dimensions here
-    };
+    const images = [];
 
-    // Img 2 init
-    let x3 = randomImgXPosition();
-    let y3 = -10;
-    const image3 = new Image();
-    image3.src = sourceImgs[randomImgSrc()];
-    image3.onload = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(image3, x3, y3, imgWidth, imgHeight); // Set the image dimensions here
+    const initializeImage = async () => {
+      for (let i = 0; i < 3; i++) {
+        const x = Math.floor(Math.random() * 280);
+        const y = yBegin;
+
+        const image = await loadImage(
+          sourceImgs[Math.floor(Math.random() * sourceImgs.length)]
+        );
+        images.push({ image, x, y });
+      }
+
+      animate();
     };
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      y1 += speed;
-      ctx.drawImage(image1, x1, y1, imgWidth, imgHeight);
+      images.forEach((imageObj) => {
+        imageObj.y += speed;
+        ctx.drawImage(
+          imageObj.image,
+          imageObj.x,
+          imageObj.y,
+          imgWidth,
+          imgHeight
+        );
 
-      y2 += speed - 0.05;
-      ctx.drawImage(image2, x2, y2, imgWidth, imgHeight);
+        if (imageObj.y >= yEnd) {
+          imageObj.y = yBegin;
+          imageObj.x = Math.floor(Math.random() * 280);
+          imageObj.image.src =
+            sourceImgs[Math.floor(Math.random() * sourceImgs.length)];
+        }
+      });
 
-      y3 += speed - 0.1;
-      ctx.drawImage(image3, x3, y3, imgWidth, imgHeight);
-
-      // Define a break condition
-      if (y1 < canvas.height && y2 < canvas.height) {
-        // console.log(y1, y2);
-        requestAnimationFrame(animate);
-      }
-
-      if (y1 > 110) {
-        y1 = 0;
-        x1 = randomImgXPosition();
-        image1.src = sourceImgs[randomImgSrc()];
-      }
-      if (y2 > 110) {
-        y2 = 0;
-        x2 = randomImgXPosition();
-        image2.src = sourceImgs[randomImgSrc()];
-      }
-      if (y3 > 110) {
-        y3 = 0;
-        x3 = randomImgXPosition();
-        image3.src = sourceImgs[randomImgSrc()];
-      }
+      requestAnimationFrame(animate);
     };
 
-    animate();
+    initializeImage();
 
     return () => {
       cancelAnimationFrame(animate);
