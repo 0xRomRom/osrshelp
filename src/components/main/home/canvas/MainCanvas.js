@@ -1,7 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import stl from "./MainCanvas.module.css";
 
-const MainCanvas = ({ sourceImgs, minSpeed = 0.15, maxSpeed = 0.7 }) => {
+const MainCanvas = ({
+  sourceImgs,
+  minSpeed = 0.15,
+  maxSpeed = 0.7,
+  renderCount,
+}) => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -24,7 +29,7 @@ const MainCanvas = ({ sourceImgs, minSpeed = 0.15, maxSpeed = 0.7 }) => {
     const images = [];
 
     const initializeImage = async () => {
-      for (let i = 0; i < 6; i++) {
+      for (let i = 0; i < renderCount; i++) {
         const x = Math.floor(Math.random() * 280);
         const y = yBegin;
 

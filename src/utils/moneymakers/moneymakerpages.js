@@ -188,7 +188,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Grimy guam leaves": 5000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy guam leaves.",
       "Click on every guam leave to clean it.",
@@ -226,7 +226,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Pizza base": 540 }, { Tomato: 540 }, { Cheese: 540 }],
     quests: [],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with 14 pizza bases and 14 tomato's.",
       "Use the pizza base on the tomato to create 14 tomato bases.",
@@ -278,7 +278,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Grimy dwarf weed": 5000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with dwarf weed.",
       "Click on every guam leave to clean it.",
@@ -338,7 +338,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Grimy tarromin": 5000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy tarromin leaves.",
       "Click on every guam leave to clean it.",
@@ -487,7 +487,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Jug of water": 2400 }, { "Pot of flour": 2400 }],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Left click (use) the jug of water",
       "Left click the pot of flour",
@@ -587,7 +587,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Pestle & Mortar/Knife": 0 }, { "Chocolate bar": 9000 }],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "To grind bars, use them with your pestle & mortar or knife.",
       "Make sure to always select your pestle & mortar or knife first.",
@@ -647,7 +647,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Grimy kwuarm": 5000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy kwuarms.",
       "Click on every guam leave to clean it.",
@@ -665,7 +665,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Grimy lantadyme": 5000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy lantadymes.",
       "Click on every guam leave to clean it.",
@@ -699,7 +699,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Bucket of water": 2400 }, { "Pot of flour": 2400 }],
     quests: [],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Withdraw 9 Buckets of water and pots of flour from the bank. Use one item on the other, and a menu will pop up to make all of the dough.",
       "Each inventory of 9 dough can be made in ~15 seconds, and up to 2,400 pastry dough can be made in a single hour.",
@@ -720,7 +720,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: ["Lunar Diplomacy"],
     other: ["Lunar spellbook"],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Equip your staff of air and have astral and nature runes in your inventory.",
       "Fill your inventory with flax and cast Spin Flax spell.",
@@ -737,7 +737,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Grimy cadantine": 5000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy cadantines.",
       "Click on every cadantine to clean it.",
@@ -755,7 +755,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Pastry dough": 2450 }, { "Pie dish": 2450 }],
     quests: [],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Withdraw 14 pastry dough and 14 pie dishes",
       "Hold down spacebar",
@@ -810,7 +810,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Equip your staff of water and fill your inventory with cosmic runes and sapphire rings.",
       "(Auto)cast enchant sapphire on all rings and rebank.",
@@ -850,7 +850,7 @@ const MONEYMAKERPAGES = [
     items: [{ Tarromin: 4000 }, { "Vial of water": 4000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Withdraw 14 tarromins and 14 vials of water, and use one on another.",
       "Wait until all potions are finished, and bank for new supplies.",
@@ -882,7 +882,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Grimy harralander": 5000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy harralanders.",
       "Click on every guam leave to clean it.",
@@ -1029,7 +1029,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Plain pizza": 2500 }, { Anchovies: 2500 }],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Withdraw 14 anchovies and plain pizzas from your bank.",
       "Use one on the other, be careful not to eat them.",
@@ -1046,7 +1046,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Grimy avantoe": 5000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy avantoes.",
       "Click on every guam leave to clean it.",
@@ -1064,10 +1064,10 @@ const MONEYMAKERPAGES = [
     items: [{ "Grimy snapdragon": 5000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy snapdragons.",
-      "Click on every guam leave to clean it.",
+      "Click on every snapdragon leave to clean it.",
       "Once all herbs are cleaned, bank for new grimy leaves.",
       "An inventory should take around 10-15 seconds.",
     ],
@@ -1086,7 +1086,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: ["Dream mentor"],
     other: ["Lunar spellbook"],
-    location: "1 click bank (castlewars)",
+    location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Withdraw 27 clay, astral runes and your steam battlestaff from the bank.",
       "Cast humidify.",
@@ -1124,7 +1124,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Yew longbow (u)": 2400 }, { "Bow string": 2400 }],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Fill your inventory with 14 yew longbow (u)'s and 14 bow strings.",
       "Use on on another and wait for your inventory to finish.",
@@ -1149,7 +1149,7 @@ const MONEYMAKERPAGES = [
       "Fairytale II - Cure a Queen (partially)",
     ],
     other: ["Decent prayer recommended."],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Run west from canafis bank and go through the southern gate.",
       "Locate a spot with a few branches near eachother.",
@@ -1172,7 +1172,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: ["Underground pass"],
     other: ["Decent prayer recommended."],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Enter underground pass and walk until the fourth area.",
       "The disciples are found on the stone paths just before Iban's throne room.",
@@ -1195,7 +1195,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Place your pestle & mortar in your last inventory slot and fill the rest with unicorn horns.",
       "To grind unicorn horns, use them with the pestle & mortar.",
@@ -1217,7 +1217,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Fill your inventory with 14 plain pizzas and 14 pineapple rings.",
       "Use your pizzas with the rings to create pineapple pizzas.",
@@ -1241,7 +1241,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: ["Lunar diplomacy"],
     other: ["Lunar spellbook"],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Get 13 buckets of sand and 13 seaweed from your bank.",
       "The Superglass Make lunar spell can instantly turn an inventory full of sand and seaweed into molten glass. ",
@@ -1364,7 +1364,7 @@ const MONEYMAKERPAGES = [
     items: [{ Irit: 4000 }, { "Vial of water": 4000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Withdraw 14 irit leaves and 14 vials of water, and use one on another.",
       "Wait until all potions are finished, and bank for new supplies.",
@@ -1450,7 +1450,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Begin by withdrawing 27 uncharged bracelets and 1 ether.",
       "Use the ether on one of the bracelets.",
@@ -1525,7 +1525,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: ["Watchtower"],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Weapon poison(++) is made by using cave nightshade on a vial of coconut milk and poison ivy berries. Cave nightshade only spawns inside the Skavid caves and is not tradeable, so the spawn time of the nightshade is the limiting factor in how fast weapon poison++ can be made.",
       "Cave nightshade can be found in the caves under Gu'Tanoth, east of Castle Wars. The easiest way to get there is by teleporting to Castle Wars with a ring of dueling and walking to the most northern cave entrance.A skavid map and a light source are required to enter. One cave nightshade can be found there, and it will respawn every 30 to 60 seconds depending on the population of the world, resulting in about 70-75 an hour on an average populated world.",
@@ -1572,7 +1572,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: ["One small favour"],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Use a Bowl of hot water on an Empty cup to create a Cup of hot water.",
       "Use 2 Guam leaves, 1 Marrentill, and 1 Harralander on the Cup of hot water, in any order, to create a 3-dose Guthix rest.",
@@ -1589,7 +1589,7 @@ const MONEYMAKERPAGES = [
     items: [{ Lantadyme: 4000 }, { "Vial of water": 4000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Withdraw 14 lantadymes and 14 vials of water, and use one on another.",
       "Wait until all potions are finished, and bank for new supplies.",
@@ -1610,7 +1610,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Withdraw 14 pie shells and 14 raw bear meat, and use one on the other. This will bring up a menu to make part wild pies, so click to make-all.",
       "Once you've made 14, bank them and repeat. When all of your raw bear meat and pie shells are gone, use the raw chompy on the part wild pies in the same fashion, and then use the raw rabbit on the part wild pies 2 to create raw wild pies.",
@@ -1627,7 +1627,7 @@ const MONEYMAKERPAGES = [
     items: [{ Avantoe: 4000 }, { "Vial of water": 4000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Withdraw 14 avantoes and 14 vials of water, and use one on another.",
       "Wait until all potions are finished, and bank for new supplies.",
@@ -1660,7 +1660,7 @@ const MONEYMAKERPAGES = [
     items: [{ Ranarr: 4000 }, { "Vial of water": 4000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Withdraw 14 ranarrs and 14 vials of water, and use one on another.",
       "Wait until all potions are finished, and bank for new supplies.",
@@ -1676,7 +1676,7 @@ const MONEYMAKERPAGES = [
     items: [{ Supercompost: 2700 }, { "Volcanic ash": 5400 }],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "This method involves creating ultracompost by using volcanic ash on supercompost.",
       "Each ultracompost takes 2 volcanic ash and 1 supercompost to create.",
@@ -1697,7 +1697,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: ["Lunar Diplomacy"],
     other: ["Lunar Spellbook", "Completion of the hard Fremennik Diary"],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Fill your inventory with runes and Black dragonhides.",
       "Cast Tan Leather to create tanned leater.",
@@ -1714,7 +1714,7 @@ const MONEYMAKERPAGES = [
     items: [{ Toadflax: 4000 }, { "Vial of water": 4000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Withdraw 14 toadflaxes and 14 vials of water, and use one on another.",
       "Wait until all potions are finished, and bank for new supplies.",
@@ -1730,7 +1730,7 @@ const MONEYMAKERPAGES = [
     items: [{ Kwuarm: 4000 }, { "Vial of water": 4000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Withdraw 14 kwuarms and 14 vials of water, and use one on another.",
       "Wait until all potions are finished, and bank for new supplies.",
@@ -1811,7 +1811,7 @@ const MONEYMAKERPAGES = [
     items: [{ "Pestle & mortar": 0 }, { "Bird nest (empty)": 5000 }],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "To crush the nests, use them together with a pestle and mortar. It will slowly grind the bird nests one by one, so the speed can be significantly increased by crushing each nest manually.",
       "Doing this may be easier by placing the pestle and mortar next to the last bird nest in your inventory, reducing the distance you need to move your mouse.",
@@ -1827,7 +1827,7 @@ const MONEYMAKERPAGES = [
     items: [{ Snapdragon: 4000 }, { "Vial of water": 4000 }],
     quests: ["Druidic ritual"],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Withdraw 14 snapdragons and 14 vials of water, and use one on another.",
       "Wait until all potions are finished, and bank for new supplies.",
@@ -1894,7 +1894,7 @@ const MONEYMAKERPAGES = [
     items: [{ Needle: 0 }, { Thread: 380 }, { "Xerician fabric": 7600 }],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Fill your inventory with a needle, thread and xerician fabric.",
       "Use the needle on the fabric to craft Xerician robes.",
@@ -2094,7 +2094,7 @@ const MONEYMAKERPAGES = [
     ],
     quests: [],
     other: [],
-    location: "1 Click Bank (Castle Wars)",
+    location: "1 Click Bank (Castle Wars)ars)",
     instructions: [
       "Cast Lvl-3 enchant on the topaz amulets to turn them into Burning Amulet(5)'s.",
     ],

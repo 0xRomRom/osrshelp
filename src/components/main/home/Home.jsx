@@ -29,7 +29,7 @@ const Home = (props) => {
       <div className={stl.modal}>
         <div className={stl.imageBox}>
           <h1 className={stl.hero}>OSRS Help</h1>
-          <MainCanvas sourceImgs={SKILLLINKS} />
+          <MainCanvas sourceImgs={SKILLLINKS} renderCount={6} />
         </div>
         <div className={stl.modalbottom}>
           <ResponsiveMasonry

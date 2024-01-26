@@ -12,7 +12,7 @@ const PREMIUMMONEYMAKERS = [
       "Steel bar": 5400,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Steel_bar.webp",
+    imgSrc: ["./moneymakers/icons/Steel_bar.webp"],
   },
   {
     title: "Mining gemstones",
@@ -28,7 +28,7 @@ const PREMIUMMONEYMAKERS = [
       "Uncut diamond": 29.93,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Uncut_diamond.webp",
+    imgSrc: ["./moneymakers/icons/Uncut_diamond.webp"],
   },
   {
     title: "Making irit potions",
@@ -41,7 +41,7 @@ const PREMIUMMONEYMAKERS = [
       "Irit potion (unf)": 4000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Irit_potion_(unf).webp",
+    imgSrc: ["./moneymakers/icons/Irit_potion_(unf).webp"],
   },
   {
     title: "Killing gargoyles",
@@ -51,7 +51,7 @@ const PREMIUMMONEYMAKERS = [
       "Onion seed": 600000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/500px-Gargoyle.webp",
+    imgSrc: ["./moneymakers/icons/500px-Gargoyle.webp"],
   },
   {
     title: "Killing Ents",
@@ -69,7 +69,7 @@ const PREMIUMMONEYMAKERS = [
       "Oak logs": 81.2,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/360px-Ent_(lv_86).webp",
+    imgSrc: ["./moneymakers/icons/360px-Ent_(lv_86).webp"],
   },
   {
     title: "Charging and alchemising bracelets of ethereum",
@@ -83,7 +83,7 @@ const PREMIUMMONEYMAKERS = [
       "Onion seed": 20655000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Bracelet_of_ethereum_(uncharged).webp",
+    imgSrc: ["./moneymakers/icons/Bracelet_of_ethereum_(uncharged).webp"],
   },
   {
     title: "Crafting cosmic runes",
@@ -95,7 +95,7 @@ const PREMIUMMONEYMAKERS = [
       "Cosmic rune": 6918,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Cosmic_rune.webp",
+    imgSrc: ["./moneymakers/icons/Cosmic_rune.webp"],
   },
   {
     title: "Fletching diamond bolts",
@@ -108,7 +108,7 @@ const PREMIUMMONEYMAKERS = [
       "Diamond bolts": 27000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Diamond_bolts_5.webp",
+    imgSrc: ["./moneymakers/icons/Diamond_bolts_5.webp"],
   },
   {
     title: "Making weapon poison(++)",
@@ -121,7 +121,7 @@ const PREMIUMMONEYMAKERS = [
       "Weapon poison(++)": 150,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Weapon_poison(++).webp",
+    imgSrc: ["./moneymakers/icons/Weapon_poison(++).webp"],
   },
   {
     title: "Mining runite ore",
@@ -131,7 +131,7 @@ const PREMIUMMONEYMAKERS = [
       "Runite ore": 65,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/400px-Runite_rocks.webp",
+    imgSrc: ["./moneymakers/icons/400px-Runite_rocks.webp"],
   },
   {
     title: "Making Guthix rests",
@@ -149,7 +149,7 @@ const PREMIUMMONEYMAKERS = [
       Bowl: 560,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/400px-Guthix_rest(4)_detail.webp",
+    imgSrc: ["./moneymakers/icons/400px-Guthix_rest(4)_detail.webp"],
   },
   {
     title: "Making lantadyme potions",
@@ -162,7 +162,7 @@ const PREMIUMMONEYMAKERS = [
       "Lantadyme potion (unf)": 4000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Lantadyme_potion_(unf).webp",
+    imgSrc: ["./moneymakers/icons/Lantadyme_potion_(unf).webp"],
   },
   {
     title: "Making raw wild pies",
@@ -177,7 +177,7 @@ const PREMIUMMONEYMAKERS = [
       "Raw wild pie": 740,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Raw_wild_pie.webp",
+    imgSrc: ["./moneymakers/icons/Raw_wild_pie.webp"],
   },
   {
     title: "Making avantoe potions",
@@ -190,7 +190,7 @@ const PREMIUMMONEYMAKERS = [
       "Avantoe potion (unf)": 4000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Avantoe_potion_(unf).webp",
+    imgSrc: ["./moneymakers/icons/Avantoe_potion_(unf).webp"],
   },
   {
     title: "Fletching ruby bolts",
@@ -203,7 +203,7 @@ const PREMIUMMONEYMAKERS = [
       "Ruby bolts": 27000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Ruby_bolts_5.webp",
+    imgSrc: ["./moneymakers/icons/Ruby_bolts_5.webp"],
   },
   {
     title: "Making ranarr potions",
@@ -216,7 +216,7 @@ const PREMIUMMONEYMAKERS = [
       "Ranarr potion (unf)": 4000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Ranarr_potion_(unf).webp",
+    imgSrc: ["./moneymakers/icons/Ranarr_potion_(unf).webp"],
   },
   {
     title: "Making ultracompost",
@@ -229,7 +229,7 @@ const PREMIUMMONEYMAKERS = [
       Ultracompost: 2700,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Ultracompost.webp",
+    imgSrc: ["./moneymakers/icons/Ultracompost.webp"],
   },
   {
     title: "Casting Tan Leather",
@@ -243,7 +243,7 @@ const PREMIUMMONEYMAKERS = [
       "Red dragon leather": 8000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Red_dragon_leather.webp",
+    imgSrc: ["./moneymakers/icons/Red_dragon_leather.webp"],
   },
   {
     title: "Making toadflax potions",
@@ -256,7 +256,7 @@ const PREMIUMMONEYMAKERS = [
       "Toadflax potion (unf)": 4000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Toadflax_potion_(unf).webp",
+    imgSrc: ["./moneymakers/icons/Toadflax_potion_(unf).webp"],
   },
   {
     title: "Making kwuarm potions",
@@ -269,7 +269,7 @@ const PREMIUMMONEYMAKERS = [
       "Kwuarm potion (unf)": 4000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Kwuarm_potion_(unf).webp",
+    imgSrc: ["./moneymakers/icons/Kwuarm_potion_(unf).webp"],
   },
   {
     title: "Killing the Giant Mole (Dharok's)",
@@ -282,7 +282,7 @@ const PREMIUMMONEYMAKERS = [
       "Mole skin": 110,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/500px-Giant_Mole_(Christmas).webp",
+    imgSrc: ["./moneymakers/icons/500px-Giant_Mole_(Christmas).webp"],
   },
   {
     title: "Crafting astral runes",
@@ -297,7 +297,7 @@ const PREMIUMMONEYMAKERS = [
       "Astral rune": 15272,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Astral_rune.webp",
+    imgSrc: ["./moneymakers/icons/Astral_rune.webp"],
   },
   {
     title: "Crushing bird nests",
@@ -309,7 +309,7 @@ const PREMIUMMONEYMAKERS = [
       "Crushed nest": 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/400px-Crushed_nest_detail.webp",
+    imgSrc: ["./moneymakers/icons/400px-Crushed_nest_detail.webp"],
   },
   {
     title: "Making snapdragon potions",
@@ -322,7 +322,7 @@ const PREMIUMMONEYMAKERS = [
       "Snapdragon potion (unf)": 4000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Snapdragon_potion_(unf).webp",
+    imgSrc: ["./moneymakers/icons/Snapdragon_potion_(unf).webp"],
   },
   {
     title: "Hunting black chinchompas",
@@ -332,7 +332,7 @@ const PREMIUMMONEYMAKERS = [
       "Black chinchompa": 300,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/200px-Black_chinchompa_detail.webp",
+    imgSrc: ["./moneymakers/icons/200px-Black_chinchompa_detail.webp"],
   },
   {
     title: "Crafting blood runes",
@@ -348,7 +348,7 @@ const PREMIUMMONEYMAKERS = [
       "Amulet of glory": 11.67,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Blood_rune.webp",
+    imgSrc: ["./moneymakers/icons/Blood_rune.webp"],
   },
   {
     title: "Crafting Xerician robes",
@@ -361,7 +361,7 @@ const PREMIUMMONEYMAKERS = [
       "Xerician robe": 1900,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/400px-Xerician_robe_detail.webp",
+    imgSrc: ["./moneymakers/icons/400px-Xerician_robe_detail.webp"],
   },
   {
     title: "Pickpocketing vyres",
@@ -381,7 +381,7 @@ const PREMIUMMONEYMAKERS = [
       "Cooked mystery meat": 10.91,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/300px-Caninelle_Draynar.webp",
+    imgSrc: ["./moneymakers/icons/300px-Caninelle_Draynar.webp"],
   },
   {
     title: "Pickpocketing elves",
@@ -401,7 +401,7 @@ const PREMIUMMONEYMAKERS = [
       "Gold ore": 7.03,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/300px-Cirdan.webp",
+    imgSrc: ["./moneymakers/icons/300px-Cirdan.webp"],
   },
   {
     title: "Enchanting opal dragon bolts at the fountain of rune",
@@ -413,7 +413,7 @@ const PREMIUMMONEYMAKERS = [
       "Opal dragon bolts (e)": 54000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/346px-Opal_dragon_bolts_(e)_detail.webp",
+    imgSrc: ["./moneymakers/icons/346px-Opal_dragon_bolts_(e)_detail.webp"],
   },
   {
     title: "Buying kegs of beer",
@@ -425,7 +425,7 @@ const PREMIUMMONEYMAKERS = [
       "Keg of beer": 2600,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Keg_of_beer.webp",
+    imgSrc: ["./moneymakers/icons/Keg_of_beer.webp"],
   },
   {
     title: "Smelting adamantite bars at Blast Furnace",
@@ -440,7 +440,7 @@ const PREMIUMMONEYMAKERS = [
       "Adamantite bar": 2700,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Adamantite_bar.webp",
+    imgSrc: ["./moneymakers/icons/Adamantite_bar.webp"],
   },
   {
     title: "Making gloves of silence",
@@ -454,7 +454,7 @@ const PREMIUMMONEYMAKERS = [
       "Gloves of silence": 559,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Gloves_of_silence.webp",
+    imgSrc: ["./moneymakers/icons/Gloves_of_silence.webp"],
   },
   {
     title: "Smelting mithril bars at Blast Furnace",
@@ -469,7 +469,7 @@ const PREMIUMMONEYMAKERS = [
       "Mithril bar": 3600,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Mithril_bar.webp",
+    imgSrc: ["./moneymakers/icons/Mithril_bar.webp"],
   },
   {
     title: "Enchanting topaz jewellery",
@@ -482,7 +482,7 @@ const PREMIUMMONEYMAKERS = [
       "Burning amulet(5)": 1600,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Burning_amulet.webp",
+    imgSrc: ["./moneymakers/icons/Burning_amulet.webp"],
   },
 ];
 

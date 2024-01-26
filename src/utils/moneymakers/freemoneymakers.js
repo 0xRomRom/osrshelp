@@ -13,7 +13,7 @@ const MONEYMAKERS = [
       "Iron knife": 4750,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Iron_knife.webp",
+    imgSrc: ["./moneymakers/icons/Iron_knife.webp"],
   },
   {
     title: "Crafting diamond bracelets",
@@ -26,7 +26,7 @@ const MONEYMAKERS = [
       "Diamond bracelet": 1200,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/500px-Diamond_bracelet_detail.webp",
+    imgSrc: ["./moneymakers/icons/500px-Diamond_bracelet_detail.webp"],
   },
   {
     title: "Cleaning grimy tarromin",
@@ -38,7 +38,7 @@ const MONEYMAKERS = [
       Tarromin: 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Grimy_tarromin.webp",
+    imgSrc: ["./moneymakers/icons/Grimy_tarromin.webp"],
   },
   {
     title: "Baking potatoes",
@@ -50,7 +50,7 @@ const MONEYMAKERS = [
       "Baked potato": 1120,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/400px-Baked_potato_detail.webp",
+    imgSrc: ["./moneymakers/icons/400px-Baked_potato_detail.webp"],
   },
   {
     title: "Collecting red spiders' eggs",
@@ -65,7 +65,7 @@ const MONEYMAKERS = [
       "Red spiders' eggs": 390,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/300px-Red_spiders'_eggs_detail.webp",
+    imgSrc: ["./moneymakers/icons/300px-Red_spiders'_eggs_detail.webp"],
   },
   {
     title: "Mining adamantite ore",
@@ -75,7 +75,7 @@ const MONEYMAKERS = [
       "Adamantite ore": 166,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/420px-Adamantite_ore_detail.webp",
+    imgSrc: ["./moneymakers/icons/420px-Adamantite_ore_detail.webp"],
   },
   {
     title: "Collecting wine of zamorak",
@@ -91,7 +91,7 @@ const MONEYMAKERS = [
       "Wine of zamorak": 212,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Wine_of_zamorak.webp",
+    imgSrc: ["./moneymakers/icons/Wine_of_zamorak.webp"],
   },
   {
     title: "Cooking raw monkfish",
@@ -103,7 +103,7 @@ const MONEYMAKERS = [
       Monkfish: 1300,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/500px-Monkfish_detail.webp",
+    imgSrc: ["./moneymakers/icons/500px-Monkfish_detail.webp"],
   },
   {
     title: "Killing chaos druids",
@@ -113,7 +113,7 @@ const MONEYMAKERS = [
       "Onion seed": 164000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/260px-Chaos_druid.webp",
+    imgSrc: ["./moneymakers/icons/260px-Chaos_druid.webp"],
   },
   {
     title: "Making oak planks",
@@ -128,7 +128,7 @@ const MONEYMAKERS = [
       "Oak plank": 2106,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Oak_plank.webp",
+    imgSrc: ["./moneymakers/icons/Oak_plank.webp"],
   },
   {
     title: "Cooking plain pizzas",
@@ -142,7 +142,7 @@ const MONEYMAKERS = [
       "Plain pizza": 540,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Plain_pizza.webp",
+    imgSrc: ["./moneymakers/icons/Plain_pizza.webp"],
   },
   {
     title: "Collecting jangerberries",
@@ -155,7 +155,7 @@ const MONEYMAKERS = [
       Jangerberries: 560,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/260px-Jangerberries_detail.webp",
+    imgSrc: ["./moneymakers/icons/260px-Jangerberries_detail.webp"],
   },
   {
     title: "Collecting fish food",
@@ -165,7 +165,7 @@ const MONEYMAKERS = [
       "Fish food": 240,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Fish_food.webp",
+    imgSrc: ["./moneymakers/icons/Fish_food.webp"],
   },
   {
     title: "Buying bronze bars",
@@ -177,7 +177,7 @@ const MONEYMAKERS = [
       "Bronze bar": 800,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Bronze_bar.webp",
+    imgSrc: ["./moneymakers/icons/Bronze_bar.webp"],
   },
   {
     title: "Mining iron ore",
@@ -192,7 +192,7 @@ const MONEYMAKERS = [
       "Uncut diamond": 0.31,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/600px-Iron_ore_detail.webp",
+    imgSrc: ["./moneymakers/icons/600px-Iron_ore_detail.webp"],
   },
   {
     title: "Making pizza bases",
@@ -207,7 +207,7 @@ const MONEYMAKERS = [
       Pot: 2400,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Pizza_base.webp",
+    imgSrc: ["./moneymakers/icons/Pizza_base.webp"],
   },
   {
     title: "Picking bananas",
@@ -222,7 +222,7 @@ const MONEYMAKERS = [
       "Amulet of glory": 3.75,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Bananas(5).webp",
+    imgSrc: ["./moneymakers/icons/Bananas(5).webp"],
   },
   {
     title: "Buying team capes",
@@ -235,7 +235,7 @@ const MONEYMAKERS = [
       "Team-6 cape": 4000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/300px-Team-46_cape_detail.webp",
+    imgSrc: ["./moneymakers/icons/300px-Team-46_cape_detail.webp"],
   },
   {
     title: "Cleaning grimy dwarf weed",
@@ -247,7 +247,7 @@ const MONEYMAKERS = [
       "Dwarf weed": 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Grimy_dwarf_weed.webp",
+    imgSrc: ["./moneymakers/icons/Grimy_dwarf_weed.webp"],
   },
   {
     title: "Cooking raw anglerfish",
@@ -259,7 +259,7 @@ const MONEYMAKERS = [
       Anglerfish: 1300,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/400px-Raw_anglerfish_detail.webp",
+    imgSrc: ["./moneymakers/icons/400px-Raw_anglerfish_detail.webp"],
   },
   {
     title: "Cleaning grimy lantadyme",
@@ -271,7 +271,7 @@ const MONEYMAKERS = [
       Lantadyme: 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Grimy_lantadyme.webp",
+    imgSrc: ["./moneymakers/icons/Grimy_lantadyme.webp"],
   },
   {
     title: "Charging earth orbs",
@@ -287,7 +287,7 @@ const MONEYMAKERS = [
       "Amulet of glory": 4.75,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Earth_orb.webp",
+    imgSrc: ["./moneymakers/icons/Earth_orb.webp"],
   },
   {
     title: "Making pastry dough",
@@ -302,7 +302,7 @@ const MONEYMAKERS = [
       Pot: 2400,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/280px-Pastry_dough_detail.webp",
+    imgSrc: ["./moneymakers/icons/280px-Pastry_dough_detail.webp"],
   },
   {
     title: "Creating teleport to house tablets",
@@ -316,7 +316,7 @@ const MONEYMAKERS = [
       "Teleport to house (tablet)": 1100,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Teleport_to_house_(tablet).webp",
+    imgSrc: ["./moneymakers/icons/Teleport_to_house_(tablet).webp"],
   },
   {
     title: "Climbing the Agility Pyramid",
@@ -326,7 +326,7 @@ const MONEYMAKERS = [
       "Onion seed": 200000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/500px-Agility_Pyramid.webp",
+    imgSrc: ["./moneymakers/icons/500px-Agility_Pyramid.webp"],
   },
   {
     title: "Creating bones to peaches tablets",
@@ -340,7 +340,7 @@ const MONEYMAKERS = [
       "Bones to peaches (tablet)": 750,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Bones_to_peaches_(tablet).webp",
+    imgSrc: ["./moneymakers/icons/Bones_to_peaches_(tablet).webp"],
   },
   {
     title: "Cutting ruby bolt tips",
@@ -352,7 +352,7 @@ const MONEYMAKERS = [
       "Ruby bolt tips": 13800,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Ruby_bolt_tips_5.webp",
+    imgSrc: ["./moneymakers/icons/Ruby_bolt_tips_5.webp"],
   },
   {
     title: "Crafting gold bracelets",
@@ -364,7 +364,7 @@ const MONEYMAKERS = [
       "Gold bracelet": 1400,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/500px-Gold_bracelet_detail.webp",
+    imgSrc: ["./moneymakers/icons/500px-Gold_bracelet_detail.webp"],
   },
   {
     title: "Catching raw karambwan",
@@ -374,7 +374,7 @@ const MONEYMAKERS = [
       "Raw karambwan": 600,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/500px-Raw_karambwan_detail.webp",
+    imgSrc: ["./moneymakers/icons/500px-Raw_karambwan_detail.webp"],
   },
   {
     title: "Killing aviansies",
@@ -390,7 +390,7 @@ const MONEYMAKERS = [
       "Nature rune": 32.34,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/400px-Aviansie_(level_148).webp",
+    imgSrc: ["./moneymakers/icons/400px-Aviansie_(level_148).webp"],
   },
   {
     title: "Grinding chocolate bars",
@@ -402,7 +402,7 @@ const MONEYMAKERS = [
       "Chocolate dust": 9000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Chocolate_dust.webp",
+    imgSrc: ["./moneymakers/icons/Chocolate_dust.webp"],
   },
   {
     title: "Smithing iron dart tips",
@@ -414,7 +414,7 @@ const MONEYMAKERS = [
       "Iron dart tip": 9500,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Iron_dart_tip.webp",
+    imgSrc: ["./moneymakers/icons/Iron_dart_tip.webp"],
   },
   {
     title: "Smithing cannonballs",
@@ -426,7 +426,7 @@ const MONEYMAKERS = [
       Cannonball: 4320,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Cannonball.webp",
+    imgSrc: ["./moneymakers/icons/Cannonball.webp"],
   },
   {
     title: "Cleaning grimy guam leaves",
@@ -438,7 +438,7 @@ const MONEYMAKERS = [
       "Guam leaf": 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Grimy_guam_leaf.webp",
+    imgSrc: ["./moneymakers/icons/Grimy_guam_leaf.webp"],
   },
   {
     title: "Charging fire orbs",
@@ -452,7 +452,7 @@ const MONEYMAKERS = [
       "Fire orb": 468,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Fire_orb.webp",
+    imgSrc: ["./moneymakers/icons/Fire_orb.webp"],
   },
   {
     title: "Casting Spin Flax",
@@ -466,7 +466,7 @@ const MONEYMAKERS = [
       "Bow string": 5175,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Bow_string.webp",
+    imgSrc: ["./moneymakers/icons/Bow_string.webp"],
   },
   {
     title: "Crafting opal bracelets",
@@ -479,7 +479,7 @@ const MONEYMAKERS = [
       "Opal bracelet": 1200,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/500px-Opal_bracelet_detail.png",
+    imgSrc: ["./moneymakers/icons/500px-Opal_bracelet_detail.png"],
   },
   {
     title: "Collecting climbing boots",
@@ -493,7 +493,7 @@ const MONEYMAKERS = [
       "Climbing boots": 648,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Climbing_boots.webp",
+    imgSrc: ["./moneymakers/icons/Climbing_boots.webp"],
   },
   {
     title: "Enchanting sapphire rings",
@@ -506,7 +506,7 @@ const MONEYMAKERS = [
       "Ring of recoil": 1600,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Ring_of_recoil.webp",
+    imgSrc: ["./moneymakers/icons/Ring_of_recoil.webp"],
   },
   {
     title: "Making pie shells",
@@ -519,7 +519,7 @@ const MONEYMAKERS = [
       "Pie shell": 2450,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Pie_shell.webp",
+    imgSrc: ["./moneymakers/icons/Pie_shell.webp"],
   },
   {
     title: "Fletching headless arrows",
@@ -532,7 +532,7 @@ const MONEYMAKERS = [
       "Headless arrow": 45000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Headless_arrow.webp",
+    imgSrc: ["./moneymakers/icons/Headless_arrow.webp"],
   },
   {
     title: "Making tarromin potions",
@@ -545,7 +545,7 @@ const MONEYMAKERS = [
       "Tarromin potion (unf)": 4000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Tarromin_potion_(unf).webp",
+    imgSrc: ["./moneymakers/icons/Tarromin_potion_(unf).webp"],
   },
   {
     title: "Cleaning grimy irit leaves",
@@ -557,7 +557,7 @@ const MONEYMAKERS = [
       "Irit leaf": 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Irit_leaf.webp",
+    imgSrc: ["./moneymakers/icons/Irit_leaf.webp"],
   },
   {
     title: "Buying pies",
@@ -573,7 +573,7 @@ const MONEYMAKERS = [
       "Fish pie": 240,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/200px-Romily_Weaklax.webp",
+    imgSrc: ["./moneymakers/icons/200px-Romily_Weaklax.webp"],
   },
   {
     title: "Charging air orbs",
@@ -589,7 +589,7 @@ const MONEYMAKERS = [
       "Amulet of glory": 3.5,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Air_orb.webp",
+    imgSrc: ["./moneymakers/icons/Air_orb.webp"],
   },
   {
     title: "Collecting black scimitars from Ardougne Castle",
@@ -601,7 +601,7 @@ const MONEYMAKERS = [
       "Black scimitar": 135,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Black_scimitar.webp",
+    imgSrc: ["./moneymakers/icons/Black_scimitar.webp"],
   },
   {
     title: "Cleaning grimy harralander",
@@ -613,7 +613,7 @@ const MONEYMAKERS = [
       Harralander: 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Harralander.webp",
+    imgSrc: ["./moneymakers/icons/Harralander.webp"],
   },
   {
     title: "Tanning red dragonhide",
@@ -627,7 +627,7 @@ const MONEYMAKERS = [
       "Red dragon leather": 3500,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Red_dragon_leather.webp",
+    imgSrc: ["./moneymakers/icons/Red_dragon_leather.webp"],
   },
   {
     title: "Stringing yew longbows",
@@ -640,7 +640,7 @@ const MONEYMAKERS = [
       "Yew longbow": 2400,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Yew_longbow.webp",
+    imgSrc: ["./moneymakers/icons/Yew_longbow.webp"],
   },
   {
     title: "Making anchovy pizzas",
@@ -653,7 +653,7 @@ const MONEYMAKERS = [
       "Anchovy pizza": 2500,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Anchovy_pizza.webp",
+    imgSrc: ["./moneymakers/icons/Anchovy_pizza.webp"],
   },
   {
     title: "Cleaning grimy cadantine",
@@ -665,7 +665,7 @@ const MONEYMAKERS = [
       Cadantine: 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Cadantine.webp",
+    imgSrc: ["./moneymakers/icons/Cadantine.webp"],
   },
   {
     title: "Killing disciples of Iban",
@@ -678,7 +678,7 @@ const MONEYMAKERS = [
       "Zamorak monk bottom": 100,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Zamorak_monk_top.webp",
+    imgSrc: ["./moneymakers/icons/Zamorak_monk_top.webp"],
   },
   {
     title: "Recharging rings of wealth",
@@ -691,7 +691,7 @@ const MONEYMAKERS = [
       "Ring of wealth (5)": 216,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Ring_of_wealth_(5).webp",
+    imgSrc: ["./moneymakers/icons/Ring_of_wealth_(5).webp"],
   },
   {
     title: "Tanning black dragonhide",
@@ -705,7 +705,7 @@ const MONEYMAKERS = [
       "Black dragon leather": 3500,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Black_dragon_leather.webp",
+    imgSrc: ["./moneymakers/icons/Black_dragon_leather.webp"],
   },
   {
     title: "Cleaning grimy snapdragon",
@@ -717,7 +717,7 @@ const MONEYMAKERS = [
       Snapdragon: 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Snapdragon.webp",
+    imgSrc: ["./moneymakers/icons/Snapdragon.webp"],
   },
   {
     title: "Tanning green dragonhide",
@@ -731,7 +731,7 @@ const MONEYMAKERS = [
       "Green dragon leather": 3500,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Green_dragon_leather.webp",
+    imgSrc: ["./moneymakers/icons/Green_dragon_leather.webp"],
   },
   {
     title: "Humidifying clay",
@@ -744,7 +744,7 @@ const MONEYMAKERS = [
       "Soft clay": 22005,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Soft_clay.webp",
+    imgSrc: ["./moneymakers/icons/Soft_clay.webp"],
   },
   {
     title: "Cleaning grimy kwuarm",
@@ -756,7 +756,7 @@ const MONEYMAKERS = [
       Kwuarm: 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Kwuarm.webp",
+    imgSrc: ["./moneymakers/icons/Kwuarm.webp"],
   },
   {
     title: "Grinding unicorn horns",
@@ -768,7 +768,7 @@ const MONEYMAKERS = [
       "Unicorn horn dust": 9000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Unicorn_horn.webp",
+    imgSrc: ["./moneymakers/icons/Unicorn_horn.webp"],
   },
   {
     title: "Collecting mort myre fungi",
@@ -781,7 +781,7 @@ const MONEYMAKERS = [
       "Mort myre fungus": 1620,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Mort_myre_fungus.webp",
+    imgSrc: ["./moneymakers/icons/Mort_myre_fungus.webp"],
   },
   {
     title: "Making pineapple pizzas",
@@ -794,7 +794,7 @@ const MONEYMAKERS = [
       "Pineapple pizza": 2500,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Pineapple_pizza.webp",
+    imgSrc: ["./moneymakers/icons/Pineapple_pizza.webp"],
   },
   {
     title: "Casting Superglass Make",
@@ -808,7 +808,7 @@ const MONEYMAKERS = [
       "Molten glass": 10140,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Molten_glass.webp",
+    imgSrc: ["./moneymakers/icons/Molten_glass.webp"],
   },
   {
     title: "Making mahogany planks",
@@ -823,7 +823,7 @@ const MONEYMAKERS = [
       "Mahogany plank": 2106,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Mahogany_plank.webp",
+    imgSrc: ["./moneymakers/icons/Mahogany_plank.webp"],
   },
   {
     title: "Cleaning grimy avantoe",
@@ -835,7 +835,7 @@ const MONEYMAKERS = [
       Avantoe: 5000,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Avantoe.webp",
+    imgSrc: ["./moneymakers/icons/Avantoe.webp"],
   },
   {
     title: "Stealing cave goblin wire",
@@ -847,7 +847,7 @@ const MONEYMAKERS = [
       "Cave goblin wire": 420,
     },
     profit: 0,
-    imgSrc: "./moneymakers/icons/Cave_goblin_wire.webp",
+    imgSrc: ["./moneymakers/icons/Cave_goblin_wire.webp"],
   },
 ];
 
