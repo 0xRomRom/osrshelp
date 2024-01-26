@@ -43,23 +43,27 @@ const Footer = () => {
               <Link to="/gearcalculator" className={stl.link}>
                 <li className={stl.footLink}>Gear Calculator</li>
               </Link>
+              <Link to="/inventorybuilder" className={stl.link}>
+                <li className={stl.footLink}>Inventory Builder</li>
+              </Link>
               <Link to="/combatcalculator" className={stl.link}>
                 <li className={stl.footLink}>Combat Calculator</li>
               </Link>
+            </ul>
+            <ul className={stl.footCol}>
               <Link to="/moneymakers" className={stl.link}>
                 <li className={stl.footLink}>Money Makers</li>
               </Link>
               <Link to="/profitalching" className={stl.link}>
                 <li className={stl.footLink}>Profit Alching</li>
               </Link>
+
               <Link to="/xptable" className={stl.link}>
                 <li className={stl.footLink}>XP Table</li>
               </Link>
               <Link to="/worldmap" className={stl.link}>
                 <li className={stl.footLink}>World map</li>
               </Link>
-            </ul>
-            <ul className={stl.footCol}>
               <Link to="/supportosrshelp" className={stl.link}>
                 <li className={stl.footLink}>Support OSRS Help</li>
               </Link>

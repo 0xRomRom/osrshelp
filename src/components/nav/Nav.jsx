@@ -36,6 +36,10 @@ const Nav = (props) => {
       setActiveTab("skills");
       setMainState("Skill Calculators");
     }
+    if (path === "/inventorybuilder") {
+      setActiveTab("inventorybuilder");
+      setMainState("Inventory Builder");
+    }
     if (path === "/gearcalculator") {
       setActiveTab("gearcalculator");
       setMainState("Gear Calculator");
