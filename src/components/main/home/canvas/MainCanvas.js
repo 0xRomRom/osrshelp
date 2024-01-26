@@ -81,7 +81,7 @@ const MainCanvas = ({
     return () => {
       cancelAnimationFrame(animate);
     };
-  }, [sourceImgs]);
+  }, [sourceImgs, maxSpeed, minSpeed, renderCount]);
 
   return (
     <div className={stl.canvasWrapper}>

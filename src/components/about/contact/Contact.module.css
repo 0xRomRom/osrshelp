@@ -14,7 +14,7 @@
   width: 40rem;
   height: 40rem;
   background-color: rgb(32, 46, 57);
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   background-image: url("../../../../public/backgrounds/Grass.webp");
   background-position: 40%;
   background-size: cover;
@@ -41,7 +41,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
   flex: 1;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -57,7 +57,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.85);
   flex: 1;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,7 +125,7 @@
   background-color: var(--dark-bg) !important;
   outline: none;
   border: none;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   color: rgb(218, 218, 218);
   padding-left: 1rem;
   font-size: 24px;
@@ -167,7 +167,7 @@ input:-webkit-autofill:active {
   border: none;
   outline: none;
   background-color: #0d73d2;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   cursor: pointer;
   color: white;
   transition: all 0.2s ease-in-out;
@@ -191,7 +191,7 @@ input:-webkit-autofill:active {
   outline: none;
   background-color: var(--dark-bg);
   background-image: var(--gradient);
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   padding: 10px;
   color: rgb(218, 218, 218);
   font-size: 24px;
@@ -213,7 +213,7 @@ input:-webkit-autofill:active {
 }
 
 .submitCta {
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   color: white;
   width: 7rem;
   height: 3rem;

@@ -33,7 +33,7 @@
 .playerImg {
   height: calc(100% - 20px);
   position: relative;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   margin-bottom: 0.4rem;
   margin-top: 3rem;
 }

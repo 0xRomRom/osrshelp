@@ -23,7 +23,7 @@
   left: 2.5%;
   background-color: var(--dark-bg);
   padding: 2rem 0rem;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   background-image: url("../../../../public/backgrounds/Elven.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,7 @@
   width: 40rem;
   height: 40rem;
   background-color: rgba(0, 0, 0, 0.95);
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
 }

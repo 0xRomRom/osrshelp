@@ -37,7 +37,6 @@ const AgilityGrid = (props) => {
           pricePerMarkOfGrace * ore.marksPerHour
         ).toFixed(0);
 
-        // ore.price =
         const price = Number(profitPerCourseHour) ? profitPerCourseHour : 0;
         ore.hourlyProfit = price;
         if (ore.name === "Brimhaven Agility Arena") {

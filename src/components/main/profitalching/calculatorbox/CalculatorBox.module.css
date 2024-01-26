@@ -2,7 +2,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid var(--border);
   width: 80%;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   z-index: 100;
   box-shadow: var(--box-shadow-sm);
   margin-bottom: 1rem;
@@ -79,7 +79,7 @@
   position: relative;
   height: 98%;
   top: 1%;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
 }
 
 .activeImg {
@@ -105,7 +105,7 @@
 .geLimit {
   background-color: orange;
   color: white;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   padding: 0.25rem;
   /* text-shadow: 0px 0px 30px black; */
 }
@@ -113,13 +113,13 @@
 .totalPrice {
   background-color: red;
   color: white;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   padding: 0.25rem;
 }
 .totalProfit {
   background-color: var(--green-main);
   color: white;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   padding: 0.25rem;
 }
 
@@ -149,7 +149,7 @@
   outline: none;
   height: 2.2rem;
   padding-left: 0.5rem;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   color: white;
   width: 6rem;
   text-align: center;

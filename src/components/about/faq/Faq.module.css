@@ -14,7 +14,7 @@
   width: 40rem;
   height: 40rem;
   background-color: rgb(32, 46, 57);
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   background-image: url("../../../../public/backgrounds/Tzhaar.webp");
   background-position: 40%;
   background-size: contain;
@@ -36,7 +36,7 @@
   left: 5%;
   position: relative;
   margin-top: 1rem;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -55,7 +55,7 @@
   text-align: center;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   box-shadow: 0px 0px 5px rgb(7, 7, 7);
 }
 
@@ -75,7 +75,7 @@
   left: 5%;
   position: relative;
   margin-top: 1rem;
-  border-radius: 0.4rem;
+  border-radius: 0.375rem;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
