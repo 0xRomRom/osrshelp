@@ -56,6 +56,12 @@
   align-items: center;
   flex-direction: column;
   overflow: hidden;
+  border: 1px solid var(--border);
+  margin: 5px;
+  margin-bottom: 0px;
+  border-radius: 0.375rem;
+  background-image: var(--gradient);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
 }
 
 .headerBannerWrap {
@@ -106,6 +112,7 @@
   margin: 5px 0px;
   margin-left: 5px;
   border-radius: 0.375rem;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
 }
 
 .reqBox {
@@ -115,6 +122,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: var(--gradient);
 }
 
 .reqTitle {
@@ -146,6 +154,7 @@
   /* display: inline-block; */
   border: 1px solid var(--border);
   min-height: 40.5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
 }
 
 .imgWrapper {
@@ -169,9 +178,9 @@
   background: linear-gradient(90deg, rgb(32, 46, 57), rgb(21, 26, 35));
   padding: 0.175rem 1rem;
   border-radius: 0.4rem;
-  /* display: inline-block; */
   border: 1px solid var(--border);
   min-height: 40.5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
 }
 .columnWrap {
   display: flex;
@@ -192,16 +201,17 @@
 
 .storyBox {
   width: 100%;
-  padding: 5px;
+
   border: 1px solid var(--border);
   margin: 5px;
-  margin-bottom: 0px;
   border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 0px;
+  background-image: var(--gradient);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
 }
 
 .locationHero {
@@ -212,18 +222,18 @@
   font-size: 14px;
 }
 .instructionsBox {
-  padding: 5px;
+  padding: 5px 10px;
 }
 .methodHero {
-  color: rgb(173, 173, 173);
+  color: gray;
   font-size: 14px;
   left: 7.5px;
-  top: 5px;
   font-weight: bold;
   user-select: none;
+  padding-top: 2.5px;
 }
 .profitSpan {
-  color: rgb(173, 173, 173);
+  color: gray;
   font-size: 14px;
   margin-bottom: 0.5rem;
   left: 7.5px;
@@ -238,7 +248,8 @@
 }
 
 .storyItem {
-  margin: 0.25rem 0rem;
+  margin-bottom: 0.25rem;
+  color: #c9c9c9;
 }
 
 .profitBox {
@@ -254,6 +265,7 @@
   height: 4rem;
   background: linear-gradient(20deg, rgba(0, 255, 0, 0.1), #111111);
   margin-top: 5px;
+  box-shadow: 0px -3px 1px rgba(0, 0, 0, 0.15);
 }
 
 .profitCenter {
@@ -273,13 +285,19 @@
 }
 
 .notesBox {
-  padding: 5px;
+  padding: 0px 5px;
   border-radius: 0.375rem;
   border: 1px solid var(--border);
   background-color: var(--border);
   position: relative;
-  bottom: 5px;
   width: 100%;
+  margin-top: 5px;
+  height: 51.72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: 0px -3px 1px rgba(0, 0, 0, 0.15);
 }
 
 .skillsBox {
@@ -309,6 +327,7 @@
   padding: 3px 0px;
   border-radius: 0.375rem;
   user-select: none;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
 }
 
 .ctaActive {
@@ -331,11 +350,17 @@
   position: relative;
   padding: 3px 0px;
   background-color: var(--border);
+  margin: 5px;
+  border: 1px solid var(--border);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  background-color: rgb(16, 21, 28);
 }
 
 .locationSpan {
-  color: rgb(188, 188, 188);
+  color: #c9c9c9;
+  -webkit-user-select: none;
   user-select: none;
+  font-weight: 600;
 }
 
 .reqLvl {
