@@ -25,14 +25,16 @@ const MainCanvas = ({ sourceImgs }) => {
     const images = [];
 
     const initializeImage = async () => {
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 8; i++) {
         const x = Math.floor(Math.random() * 280);
         const y = yBegin;
 
         const image = await loadImage(
           sourceImgs[Math.floor(Math.random() * sourceImgs.length)]
         );
-        images.push({ image, x, y });
+
+        const speed = 0.3 + Math.random() * 0.7;
+        images.push({ image, x, y, speed });
       }
 
       animate();
@@ -42,7 +44,7 @@ const MainCanvas = ({ sourceImgs }) => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       images.forEach((imageObj) => {
-        imageObj.y += speed;
+        imageObj.y += imageObj.speed;
         ctx.drawImage(
           imageObj.image,
           imageObj.x,
