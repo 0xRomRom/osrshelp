@@ -1,0 +1,10 @@
+.inventorygrid {
+  width: 400px;
+  border: 1px solid red;
+}
+
+.inventory {
+  width: 400px;
+
+  position: relative;
+}

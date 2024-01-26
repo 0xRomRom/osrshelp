@@ -20,12 +20,6 @@
   flex-direction: column;
 }
 
-.inventory {
-  width: 400px;
-
-  position: relative;
-}
-
 .inventoryWrapper {
   position: relative;
 }

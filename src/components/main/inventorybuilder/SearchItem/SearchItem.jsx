@@ -4,10 +4,15 @@ import inventory from "../../../../assets/icons/Inventory.webp";
 import member from "../../../../assets/icons/Member.webp";
 import { useState, useEffect } from "react";
 
-const SearchItem = ({ setImgSrc, imgSrc }) => {
+const SearchItem = ({ setCurrentGrid, currentGrid }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [imageError, setImageError] = useState(false);
   const [typing, setTyping] = useState(false);
+  const [imgSrc, setImgSrc] = useState(
+    "https://oldschool.runescape.wiki/images/Lobster.png"
+  );
+
+  useEffect(() => {}, []);
 
   useEffect(() => {
     if (searchTerm.length > 0) {
@@ -23,7 +28,20 @@ const SearchItem = ({ setImgSrc, imgSrc }) => {
     const imgSrc = `https://oldschool.runescape.wiki/images/${formattedSearch}.png`;
 
     setImgSrc(imgSrc);
-  }, [searchTerm]);
+  }, [searchTerm, setImgSrc]);
+
+  const saveToInv = () => {
+    console.log(currentGrid);
+    for (let i = 0; i < currentGrid.length; i++) {
+      const keys = +Object.keys(currentGrid[i]);
+      if (Object.values(currentGrid[i])[0].length === 0) {
+        currentGrid[i][keys] = imgSrc;
+        break;
+      }
+    }
+
+    console.log(currentGrid);
+  };
 
   return (
     <div className={stl.imgSearchBox}>
@@ -42,13 +60,15 @@ const SearchItem = ({ setImgSrc, imgSrc }) => {
       <div className={stl.searchResult}>
         {imgSrc && (
           <div className={stl.resultFlex}>
-            <button className={stl.searchCta}>
-              <img
-                src={inventory}
-                alt="Inventory"
-                className={stl.inventoryImg}
-              />
-            </button>
+            {!imageError && (
+              <button className={stl.searchCta} onClick={saveToInv}>
+                <img
+                  src={inventory}
+                  alt="Inventory"
+                  className={stl.inventoryImg}
+                />
+              </button>
+            )}
             <div className={stl.imgWrapper}>
               <img
                 src={imgSrc}
@@ -62,9 +82,15 @@ const SearchItem = ({ setImgSrc, imgSrc }) => {
                 style={{ opacity: imageError ? "0" : "1" }}
               />
             </div>
-            <button className={stl.searchCta}>
-              <img src={member} alt="Member star" className={stl.memberStar} />
-            </button>
+            {!imageError && (
+              <button className={stl.searchCta}>
+                <img
+                  src={member}
+                  alt="Member star"
+                  className={stl.memberStar}
+                />
+              </button>
+            )}
           </div>
         )}
       </div>
