@@ -29,6 +29,8 @@ import ReportIssue from "./components/about/reportissue/ReportIssue";
 import MainLayout from "./components/mainlayout/MainLayout";
 import BlogPage from "./components/main/blog/BlogPage";
 
+import InventoryBuilder from "./components/main/inventorybuilder/InventoryBuilder";
+
 const App = () => {
   const [skills, setSkills] = useState(null);
   const [skillsExp, setSkillsExp] = useState(null);
@@ -87,6 +89,14 @@ const App = () => {
                 element={
                   <MainLayout playerName={playerName}>
                     <GearCalculator />
+                  </MainLayout>
+                }
+              />
+              <Route
+                path="/inventorybuilder"
+                element={
+                  <MainLayout playerName={playerName}>
+                    <InventoryBuilder />
                   </MainLayout>
                 }
               />
