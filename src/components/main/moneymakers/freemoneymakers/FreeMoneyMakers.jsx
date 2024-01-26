@@ -77,46 +77,50 @@ const FreeMoneyMakers = ({ setMoneyMaker }) => {
 
       {methodsArray.length > 0 && (
         <>
-          {methodsArray.map((method) => {
-            return (
-              <div
-                className={`${stl.gridTile} ${
-                  method.profit < 0 ? stl.redBorder : ""
-                }`}
-                key={method.title}
-                onClick={() => {
-                  navigate(`${pathname}/${method.title.replaceAll(" ", "_")}`);
-                  setMoneyMaker(method);
-                  setSubState(method.title);
-                }}
-              >
-                <div className={stl.imgWrapper}>
-                  <img
-                    src={method.imgSrc}
-                    alt={method.title}
-                    className={stl.methodImg}
-                  />
-                </div>
-                <span className={stl.gridTitle}>{method.title}</span>
-                <span
-                  className={`${stl.tileProfit} ${
-                    method.profit < 0 ? stl.red : ""
+          {methodsArray
+            .filter((method) => method.profit > 0)
+            .map((method) => {
+              return (
+                <div
+                  className={`${stl.gridTile} ${
+                    method.profit < 0 ? stl.redBorder : ""
                   }`}
+                  key={method.title}
+                  onClick={() => {
+                    navigate(
+                      `${pathname}/${method.title.replaceAll(" ", "_")}`
+                    );
+                    setMoneyMaker(method);
+                    setSubState(method.title);
+                  }}
                 >
-                  <img
-                    src={mills}
-                    alt="Oldschool Runescape gold"
-                    className={stl.mills}
-                  />{" "}
-                  {method.profit > 1000
-                    ? (method.profit / 1000).toLocaleString()
-                    : (method.profit / 1000000).toFixed(2)}
-                  {method.profit > 1000 ? "K" : "M"}
-                  {"/H"}
-                </span>
-              </div>
-            );
-          })}
+                  <div className={stl.imgWrapper}>
+                    <img
+                      src={method.imgSrc}
+                      alt={method.title}
+                      className={stl.methodImg}
+                    />
+                  </div>
+                  <span className={stl.gridTitle}>{method.title}</span>
+                  <span
+                    className={`${stl.tileProfit} ${
+                      method.profit < 0 ? stl.red : ""
+                    }`}
+                  >
+                    <img
+                      src={mills}
+                      alt="Oldschool Runescape gold"
+                      className={stl.mills}
+                    />{" "}
+                    {method.profit > 1000
+                      ? (method.profit / 1000).toLocaleString()
+                      : (method.profit / 1000000).toFixed(2)}
+                    {method.profit > 1000 ? "K" : "M"}
+                    {"/H"}
+                  </span>
+                </div>
+              );
+            })}
         </>
       )}
     </div>
