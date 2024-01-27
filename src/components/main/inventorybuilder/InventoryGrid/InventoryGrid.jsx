@@ -5,7 +5,6 @@ const InventoryGrid = ({ currentGrid }) => {
     <div className={stl.inventorygrid}>
       <div className={stl.innerWrap}>
         {currentGrid.map((item, index) => {
-          console.log(item[index + 1]);
           return (
             <div className={stl.itemSlot} key={index}>
               {item[index + 1] && (

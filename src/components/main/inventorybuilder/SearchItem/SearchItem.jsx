@@ -12,8 +12,6 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
     "https://oldschool.runescape.wiki/images/Lobster.png"
   );
 
-  useEffect(() => {}, []);
-
   useEffect(() => {
     if (searchTerm.length > 0) {
       setTyping(true);
@@ -31,17 +29,17 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
   }, [searchTerm, setImgSrc]);
 
   const saveToInv = () => {
-    setCurrentGrid((prevGrid) => {
-      let newGrid = [...prevGrid];
-      for (let i = 0; i < newGrid.length; i++) {
-        const keys = +Object.keys(newGrid[i]);
-        if (Object.values(newGrid[i])[0].length === 0) {
-          newGrid[i][keys] = imgSrc;
-          break;
-        }
+    let newGrid = [...currentGrid];
+    for (let i = 0; i < newGrid.length; i++) {
+      const keys = Object.keys(newGrid[i]);
+      console.log(keys);
+      if (Object.values(newGrid[i])[0].length === 0) {
+        newGrid[i][keys[0]] = imgSrc;
+        break;
       }
-      return newGrid;
-    });
+    }
+
+    setCurrentGrid(newGrid);
   };
 
   return (

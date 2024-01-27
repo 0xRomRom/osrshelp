@@ -1,16 +1,12 @@
 import stl from "./InventoryBuilder.module.css";
 import Pagination from "../pagination/Pagination";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SearchItem from "./SearchItem/SearchItem";
 import InventoryGrid from "./InventoryGrid/InventoryGrid";
 import EMPTYGRID from "../../../utils/emptyinventory";
 
 const InventoryBuilder = () => {
   const [currentGrid, setCurrentGrid] = useState(EMPTYGRID);
-
-  useEffect(() => {
-    console.log(currentGrid);
-  }, [currentGrid]);
 
   return (
     <>
