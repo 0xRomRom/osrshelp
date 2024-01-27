@@ -11,11 +11,13 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
     console.log(currentGrid);
     if (cachedGrid.length > 0) {
       setCurrentGrid(cachedGrid);
+      setCurrentDragitem(null);
     }
   }, [cachedGrid, setCurrentGrid, currentGrid]);
 
   const deleteGridItem = (item) => {
     const deleteIndex = +Object.keys(item)[0];
+    console.log(deleteIndex);
     console.log("Delete Index: ", deleteIndex);
 
     let newGrid = [...currentGrid];
@@ -30,7 +32,7 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
     setCurrentDragitem(starterIndex);
   };
 
-  const handleItemSwitch = (e, data) => {
+  const handleItemSwitch = (e) => {
     e.preventDefault();
     const startIndex = currentDragItem;
 
@@ -48,74 +50,56 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
     console.log("Start grid item: ", startGridItem);
     console.log("Target grid item: ", targetGridItem);
     if (!isNaN(newGrid[targetIndex][targetIndex])) {
-      //   alert("Empty");
       targetGridItem = startIndex;
     }
-    console.log(newGrid);
 
     newGrid[startIndex] = { [startIndex]: targetGridItem };
     newGrid[targetIndex] = { [targetIndex]: startGridItem };
 
-    console.log(newGrid);
+    console.log("Updated grid: ", newGrid);
+
     setCurrentGrid([]);
     setCachedGrid(newGrid);
     setCurrentDragitem(null);
   };
 
-  const logParentNode = (index, e) => {
-    console.log("Parent node index: ", index);
-    console.log(
-      "Inner node index: ",
-      +e.target.firstChild.parentNode.dataset.index
-    );
-  };
-
   return (
     <div className={stl.inventorygrid}>
       <div className={stl.innerWrap}>
-        {currentGrid.map((item, index) => {
-          return (
-            <div
-              key={index}
-              className={stl.itemSlot}
-              data-parent={index}
-              style={
-                {
-                  // border: "1px solid blue",
+        {currentGrid.length > 0 &&
+          currentGrid.map((item, index) => {
+            return (
+              <div
+                key={index}
+                className={stl.itemSlot}
+                data-parent={index}
+                style={
+                  {
+                    // border: "1px solid blue",
+                  }
                 }
-              }
-              onClick={(e) => logParentNode(index, e)}
-            >
-              <Draggable
-                nodeRef={nodeRef}
-                grid={[68, 60]}
-                allowAnyClick={true}
-                onMouseDown={setDragTarget}
-                onStop={handleItemSwitch}
+                onClick={() => deleteGridItem(item)}
               >
-                <div
-                  className={stl.innerDiv}
-                  ref={nodeRef}
-                  onDoubleClick={() => deleteGridItem(item)}
-                  data-index={+Object.keys(item)[0]}
-                  style={{
-                    // border: "1px solid red",
-                    backgroundImage: `url(${item[index]})`,
-                  }}
+                <Draggable
+                  nodeRef={nodeRef}
+                  grid={[68, 60]}
+                  allowAnyClick={true}
+                  onMouseDown={setDragTarget}
+                  onStop={handleItemSwitch}
                 >
-                  <span className={stl.whiteIndex}>{index}</span>
-                </div>
-                {/* {item[index + 1] && (
-                  <img
-                    src={item[index + 1]}
-                    alt="Item"
-                    className={stl.tileImg}
-                  />
-                )} */}
-              </Draggable>
-            </div>
-          );
-        })}
+                  <div
+                    className={stl.innerDiv}
+                    ref={nodeRef}
+                    data-index={+Object.keys(item)[0]}
+                    style={{
+                      // border: "1px solid red",
+                      backgroundImage: `url(${item[index]})`,
+                    }}
+                  ></div>
+                </Draggable>
+              </div>
+            );
+          })}
       </div>
       <img
         src="./backgrounds/Inventory.png"

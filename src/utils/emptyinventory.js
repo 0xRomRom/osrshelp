@@ -1,9 +1,9 @@
 const EMPTYGRID = [
   {
-    0: "https://oldschool.runescape.wiki/images/Rune_full_helm.png",
+    0: 0,
   },
   {
-    1: "https://oldschool.runescape.wiki/images/Steel_dagger.png",
+    1: 1,
   },
   {
     2: "https://oldschool.runescape.wiki/images/Spade.png",
@@ -18,10 +18,10 @@ const EMPTYGRID = [
     5: "https://oldschool.runescape.wiki/images/Dragon_dagger.png",
   },
   {
-    6: 6,
+    6: "https://oldschool.runescape.wiki/images/Rune_full_helm.png",
   },
   {
-    7: 7,
+    7: "https://oldschool.runescape.wiki/images/Steel_dagger.png",
   },
   {
     8: 8,

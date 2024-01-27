@@ -61,18 +61,10 @@
   position: relative;
 }
 
-.whiteIndex {
-  color: white;
-  user-select: none;
-  font-size: 10px;
-  display: none;
-}
-
 .innerDiv {
-  /* border: 1px solid blue; */
-  width: 75%;
-  height: 75%;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
-  background-size: auto 90%;
+  background-size: auto 70%;
   background-position: center;
 }
