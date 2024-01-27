@@ -41,6 +41,13 @@
   position: relative;
 }
 
+.itemSlot:hover {
+  /* border: 1px solid var(--border); */
+  background-color: rgba(128, 128, 128, 0.102);
+  cursor: pointer;
+  border-radius: 0.375rem;
+}
+
 .tileImg {
   /* object-fit: contain; */
   transform: scale(1.55);

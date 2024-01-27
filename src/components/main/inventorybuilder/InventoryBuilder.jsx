@@ -15,7 +15,10 @@ const InventoryBuilder = () => {
       <div className={stl.mainContainer}>
         <SearchItem setCurrentGrid={setCurrentGrid} currentGrid={currentGrid} />
         <div className={stl.inventoryWrapper}>
-          <InventoryGrid currentGrid={currentGrid} />
+          <InventoryGrid
+            currentGrid={currentGrid}
+            setCurrentGrid={setCurrentGrid}
+          />
         </div>
       </div>
     </>

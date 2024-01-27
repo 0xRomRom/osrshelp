@@ -32,7 +32,6 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
     let newGrid = [...currentGrid];
     for (let i = 0; i < newGrid.length; i++) {
       const keys = Object.keys(newGrid[i]);
-      console.log(keys);
       if (Object.values(newGrid[i])[0].length === 0) {
         newGrid[i][keys[0]] = imgSrc;
         break;
