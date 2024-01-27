@@ -4,6 +4,7 @@ import { useRef } from "react";
 
 const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
   const nodeRef = useRef(null);
+
   const deleteGridItem = (item) => {
     const deleteIndex = +Object.keys(item)[0];
 
@@ -13,47 +14,38 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
     setCurrentGrid(newGrid);
   };
 
-  const eventLogger = (e, data) => {
-    console.log("Event: ", e);
-    console.log("Data: ", data);
-  };
-
-  const handleStart = () => {
-    // Handle start logic
-  };
-
-  const handleDrag = () => {
-    // Handle drag logic
-  };
-
-  const handleStop = () => {
-    // Handle stop logic
+  const eventHandler = (e, data) => {
+    console.log("Event Type", e.type);
+    console.log({ e, data });
   };
 
   return (
     <div className={stl.inventorygrid}>
-      <div className={stl.innerWrap}>
+      <div className={stl.innerWrap} ref={nodeRef}>
         {currentGrid.map((item, index) => {
           return (
             <Draggable
               key={index}
               nodeRef={nodeRef}
               grid={[68, 60]}
-              //   allowAnyClick={Boolean}
+              allowAnyClick={true}
+              onDrag={eventHandler}
             >
               <div
                 className={stl.itemSlot}
                 onDoubleClick={() => deleteGridItem(item)}
-                ref={nodeRef}
-                style={{ backgroundImage: `url(${item[index + 1]})` }}
+                style={{
+                  backgroundImage: `url(${item[index + 1]})`,
+                  border: "1px solid red",
+                }}
               >
                 {/* {item[index + 1] && (
-                  <img
-                    src={item[index + 1]}
-                    alt="Item"
-                    className={stl.tileImg}
-                  />
-                )} */}
+                    <img
+                      src={item[index + 1]}
+                      alt="Item"
+                      className={stl.tileImg}
+                    />
+                  )} */}
               </div>
             </Draggable>
           );

@@ -37,11 +37,11 @@
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding: 3px;
   position: relative;
   background-repeat: no-repeat;
   background-size: auto 70%;
   background-position: center;
+  background-color: rgba(0, 0, 255, 0.158);
 }
 
 .itemSlot:hover {
