@@ -17,7 +17,7 @@
 
 .innerWrap {
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   z-index: 10;
   position: relative;
   display: flex;
@@ -53,10 +53,26 @@
 
 .tileImg {
   /* object-fit: contain; */
-  transform: scale(1.55);
+  /* transform: scale(1.55); */
   /* background-color: red; */
   max-width: 45px;
   max-height: 45px;
   /* user-select: none; */
   position: relative;
+}
+
+.whiteIndex {
+  color: white;
+  user-select: none;
+  font-size: 10px;
+  display: none;
+}
+
+.innerDiv {
+  /* border: 1px solid blue; */
+  width: 75%;
+  height: 75%;
+  background-repeat: no-repeat;
+  background-size: auto 90%;
+  background-position: center;
 }

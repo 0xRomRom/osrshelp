@@ -24,19 +24,25 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
       .split(" ")
       .join("_");
     const imgSrc = `https://oldschool.runescape.wiki/images/${formattedSearch}.png`;
-
     setImgSrc(imgSrc);
   }, [searchTerm, setImgSrc]);
 
   const saveToInv = () => {
+    console.log("Img to add: ", imgSrc);
+
     let newGrid = [...currentGrid];
     for (let i = 0; i < newGrid.length; i++) {
       const keys = Object.keys(newGrid[i]);
-      if (Object.values(newGrid[i])[0].length === 0) {
+      if (
+        Object.values(newGrid[i])[0].length === 0 ||
+        !isNaN(Object.values(newGrid[i])[0])
+      ) {
         newGrid[i][keys[0]] = imgSrc;
         break;
       }
     }
+
+    console.log("Updated grid", newGrid);
 
     setCurrentGrid(newGrid);
   };
