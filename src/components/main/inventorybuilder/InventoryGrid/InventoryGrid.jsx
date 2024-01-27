@@ -1,18 +1,23 @@
 import stl from "./InventoryGrid.module.css";
+import { useEffect, useState } from "react";
 
 const InventoryGrid = ({ currentGrid }) => {
+  const [activeGrid, setActiveGrid] = useState(currentGrid);
+
+  useEffect(() => {
+    console.log("CHANGED");
+    setActiveGrid(currentGrid);
+  }, [currentGrid]);
   return (
     <div className={stl.inventorygrid}>
       <div className={stl.innerWrap}>
-        {currentGrid.map((item, index) => {
+        {activeGrid.map((item, index) => {
           console.log(item[index + 1]);
           return (
             <div className={stl.itemSlot} key={index}>
-              <img
-                src={item[index + 1] || "./bones/Bones.webp"}
-                alt="Item"
-                className={stl.tileImg}
-              />
+              {item[index + 1] && (
+                <img src={item[index + 1]} alt="Item" className={stl.tileImg} />
+              )}
             </div>
           );
         })}

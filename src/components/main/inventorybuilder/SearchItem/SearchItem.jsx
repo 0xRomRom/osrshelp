@@ -31,15 +31,17 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
   }, [searchTerm, setImgSrc]);
 
   const saveToInv = () => {
-    let newGrid = currentGrid;
-    for (let i = 0; i < newGrid.length; i++) {
-      const keys = +Object.keys(currentGrid[i]);
-      if (Object.values(currentGrid[i])[0].length === 0) {
-        newGrid[i][keys] = imgSrc;
-        break;
+    setCurrentGrid((prevGrid) => {
+      let newGrid = [...prevGrid];
+      for (let i = 0; i < newGrid.length; i++) {
+        const keys = +Object.keys(newGrid[i]);
+        if (Object.values(newGrid[i])[0].length === 0) {
+          newGrid[i][keys] = imgSrc;
+          break;
+        }
       }
-    }
-    setCurrentGrid(newGrid);
+      return newGrid;
+    });
   };
 
   return (
