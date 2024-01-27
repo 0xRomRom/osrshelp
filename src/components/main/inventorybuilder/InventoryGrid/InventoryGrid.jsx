@@ -38,24 +38,22 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
             <Draggable
               key={index}
               nodeRef={nodeRef}
-              onDragStart={handleStart}
-              onDrag={eventLogger}
-              onDragEnd={handleStop}
               grid={[68, 60]}
-              allowAnyClick={Boolean}
+              //   allowAnyClick={Boolean}
             >
               <div
                 className={stl.itemSlot}
                 onDoubleClick={() => deleteGridItem(item)}
                 ref={nodeRef}
+                style={{ backgroundImage: `url(${item[index + 1]})` }}
               >
-                {item[index + 1] && (
+                {/* {item[index + 1] && (
                   <img
                     src={item[index + 1]}
                     alt="Item"
                     className={stl.tileImg}
                   />
-                )}
+                )} */}
               </div>
             </Draggable>
           );

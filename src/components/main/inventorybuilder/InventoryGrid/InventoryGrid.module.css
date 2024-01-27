@@ -17,14 +17,14 @@
 
 .innerWrap {
   width: 100%;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   z-index: 10;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-
+  overflow: hidden;
   position: relative;
 }
 
@@ -39,6 +39,9 @@
   flex: 1;
   padding: 3px;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: auto 70%;
+  background-position: center;
 }
 
 .itemSlot:hover {
@@ -54,5 +57,6 @@
   /* background-color: red; */
   max-width: 45px;
   max-height: 45px;
+  /* user-select: none; */
   position: relative;
 }
