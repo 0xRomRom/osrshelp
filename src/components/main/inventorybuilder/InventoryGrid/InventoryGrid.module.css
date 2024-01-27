@@ -17,7 +17,7 @@
 
 .innerWrap {
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   z-index: 10;
   position: relative;
   display: flex;
@@ -27,10 +27,10 @@
 }
 
 .itemSlot {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   min-width: 25%;
   max-width: 25%;
-  height: 4rem;
+  height: 3.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,5 +43,5 @@
   /* height: 100%; */
   object-fit: contain;
   transform: scale(1.5);
-  background-color: red;
+  /* background-color: red; */
 }
