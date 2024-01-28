@@ -24,7 +24,7 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
   };
 
   const swapTiles = (e, newItem) => {
-    if (newItem === "") return;
+    // if (newItem === "") return;
 
     const currentTarget = +e.target.dataset.index;
     const newGrid = { ...currentGrid };
