@@ -1,95 +1,64 @@
 import stl from "./InventoryGrid.module.css";
-import Draggable from "react-draggable";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
-  const nodeRef = useRef(null);
-  const [currentDragItem, setCurrentDragitem] = useState(null);
-  const [cachedGrid, setCachedGrid] = useState([]);
+  const [selectedTile, setSelectedTile] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
-  useEffect(() => {
-    if (cachedGrid.length > 0) {
-      setCurrentGrid(cachedGrid);
-      setCurrentDragitem(null);
-      setCachedGrid([]);
-    }
-  }, [cachedGrid, setCurrentGrid, currentGrid]);
-
-  const deleteGridItem = (item) => {
-    const deleteIndex = +Object.keys(item)[0];
-
-    let newGrid = [...currentGrid];
-    newGrid[deleteIndex] = { [deleteIndex]: "" };
-
-    setCurrentGrid(newGrid);
+  const deleteGridItem = (e) => {
+    const deleteIndex = +e.target.dataset.index;
+    let newGrid = { ...currentGrid };
+    newGrid[deleteIndex] = "";
+    setCurrentGrid({ ...newGrid }); // Ensure you are using a new object to trigger re-render
   };
 
-  const setDragTarget = (e) => {
-    // Mark starter tile index to start dragging from
-    const starterIndex = +e.target.parentNode.dataset.parent;
-    setCurrentDragitem(starterIndex);
+  const selectTile = (e, newItem) => {
+    const currentTarget = +e.target.dataset.index;
+    setSelectedTile(newItem);
+    setSelectedIndex(currentTarget);
   };
 
-  const handleItemSwitch = (e) => {
-    // e.preventDefault();
-    console.log(currentGrid);
-    const startIndex = currentDragItem;
+  const unselectTile = () => {
+    setSelectedTile(null);
+    setSelectedIndex(null);
+  };
 
-    const targetIndex = +e.target.dataset.index;
-    console.log("Target Index:", targetIndex);
+  const swapTiles = (e, newItem) => {
+    if (newItem === "") return;
 
-    if (!targetIndex) return;
+    const currentTarget = +e.target.dataset.index;
+    const newGrid = { ...currentGrid };
 
-    let newGrid = [...currentGrid];
-    let startGridItem = newGrid[startIndex][startIndex];
-    let targetGridItem = newGrid[targetIndex][targetIndex];
-
-    if (!isNaN(newGrid[targetIndex][targetIndex])) {
-      targetGridItem = startIndex;
+    if (newItem === selectedTile) {
+      unselectTile();
+      return;
     }
-
-    newGrid[startIndex] = { [startIndex]: targetGridItem };
-    newGrid[targetIndex] = { [targetIndex]: startGridItem };
-    console.log(newGrid);
-
-    setCurrentGrid([]);
-    setCachedGrid(newGrid);
-    setCurrentDragitem(null);
+    console.log("First item: ", selectedTile);
+    console.log("Second item: ", newItem);
+    newGrid[selectedIndex] = newGrid[currentTarget];
+    newGrid[currentTarget] = selectedTile;
+    setCurrentGrid({ ...newGrid }); // Ensure you are using a new object to trigger re-render
+    setSelectedTile(null);
   };
 
   return (
     <div className={stl.inventorygrid}>
       <div className={stl.innerWrap}>
-        {currentGrid.length > 0 &&
-          currentGrid.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className={stl.itemSlot}
-                data-parent={index}
-                onClick={() => deleteGridItem(item)}
-              >
-                <Draggable
-                  nodeRef={nodeRef}
-                  //   grid={[68, 60]}
-                  onMouseDown={setDragTarget}
-                  onStop={handleItemSwitch}
-                  onStart={(e) => console.log("onStart", e)}
-                  onDrag={(e) => console.log("onDrag", e)}
-                >
-                  <div
-                    className={stl.innerDiv}
-                    ref={nodeRef}
-                    data-index={+Object.keys(item)[0]}
-                    style={{
-                      border: "1px solid red",
-                      backgroundImage: `url(${item[index]})`,
-                    }}
-                  ></div>
-                </Draggable>
-              </div>
-            );
-          })}
+        {Object.values(currentGrid).map((item, index) => (
+          <div
+            key={index}
+            data-index={index}
+            className={stl.itemSlot}
+            onDoubleClick={(e) => deleteGridItem(e)}
+            onClick={(e) =>
+              selectedTile ? swapTiles(e, item) : selectTile(e, item)
+            }
+            style={{
+              border: selectedTile === item ? "1px solid blue" : "",
+              backgroundImage: `url(${item})`,
+            }}
+          ></div>
+        ))}
       </div>
       <img
         src="./backgrounds/Inventory.png"

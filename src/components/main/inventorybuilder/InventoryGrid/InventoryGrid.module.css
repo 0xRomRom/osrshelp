@@ -25,7 +25,6 @@
 }
 
 .itemSlot {
-  border: 1px solid blue;
   min-width: 25%;
   max-width: 25%;
   height: 3.75rem;
@@ -38,6 +37,7 @@
   background-size: auto 70%;
   background-position: center;
   /* background-color: rgba(0, 0, 255, 0.158); */
+  border: 1px solid transparent;
 }
 
 .itemSlot:hover {
