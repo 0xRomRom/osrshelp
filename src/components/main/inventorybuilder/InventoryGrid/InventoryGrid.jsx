@@ -54,7 +54,10 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
               selectedTile ? swapTiles(e, item) : selectTile(e, item)
             }
             style={{
-              border: selectedTile === item ? "1px solid blue" : "",
+              border:
+                selectedTile === item && selectedIndex === index
+                  ? "1px solid blue"
+                  : "",
               backgroundImage: `url(${item})`,
             }}
           ></div>
