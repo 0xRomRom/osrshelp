@@ -8,17 +8,15 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
   const [cachedGrid, setCachedGrid] = useState([]);
 
   useEffect(() => {
-    console.log(currentGrid);
     if (cachedGrid.length > 0) {
       setCurrentGrid(cachedGrid);
       setCurrentDragitem(null);
+      setCachedGrid([]);
     }
   }, [cachedGrid, setCurrentGrid, currentGrid]);
 
   const deleteGridItem = (item) => {
     const deleteIndex = +Object.keys(item)[0];
-    console.log(deleteIndex);
-    console.log("Delete Index: ", deleteIndex);
 
     let newGrid = [...currentGrid];
     newGrid[deleteIndex] = { [deleteIndex]: "" };
@@ -33,13 +31,12 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
   };
 
   const handleItemSwitch = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
+    console.log(currentGrid);
     const startIndex = currentDragItem;
 
     const targetIndex = +e.target.dataset.index;
-
-    console.log("Start index: ", startIndex);
-    console.log("Target index: ", targetIndex);
+    console.log("Target Index:", targetIndex);
 
     if (!targetIndex) return;
 
@@ -47,16 +44,13 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
     let startGridItem = newGrid[startIndex][startIndex];
     let targetGridItem = newGrid[targetIndex][targetIndex];
 
-    console.log("Start grid item: ", startGridItem);
-    console.log("Target grid item: ", targetGridItem);
     if (!isNaN(newGrid[targetIndex][targetIndex])) {
       targetGridItem = startIndex;
     }
 
     newGrid[startIndex] = { [startIndex]: targetGridItem };
     newGrid[targetIndex] = { [targetIndex]: startGridItem };
-
-    console.log("Updated grid: ", newGrid);
+    console.log(newGrid);
 
     setCurrentGrid([]);
     setCachedGrid(newGrid);
@@ -73,26 +67,22 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
                 key={index}
                 className={stl.itemSlot}
                 data-parent={index}
-                style={
-                  {
-                    // border: "1px solid blue",
-                  }
-                }
                 onClick={() => deleteGridItem(item)}
               >
                 <Draggable
                   nodeRef={nodeRef}
-                  grid={[68, 60]}
-                  allowAnyClick={true}
+                  //   grid={[68, 60]}
                   onMouseDown={setDragTarget}
                   onStop={handleItemSwitch}
+                  onStart={(e) => console.log("onStart", e)}
+                  onDrag={(e) => console.log("onDrag", e)}
                 >
                   <div
                     className={stl.innerDiv}
                     ref={nodeRef}
                     data-index={+Object.keys(item)[0]}
                     style={{
-                      // border: "1px solid red",
+                      border: "1px solid red",
                       backgroundImage: `url(${item[index]})`,
                     }}
                   ></div>

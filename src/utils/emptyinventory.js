@@ -1,27 +1,27 @@
 const EMPTYGRID = [
   {
-    0: 0,
+    0: "https://oldschool.runescape.wiki/images/Spade.png",
   },
   {
-    1: 1,
+    1: "https://oldschool.runescape.wiki/images/Armadyl_godsword.png",
   },
   {
-    2: "https://oldschool.runescape.wiki/images/Spade.png",
+    2: "https://oldschool.runescape.wiki/images/Potato_seed_5.png",
   },
   {
-    3: "https://oldschool.runescape.wiki/images/Armadyl_godsword.png",
+    3: "https://oldschool.runescape.wiki/images/Dragon_dagger.png",
   },
   {
-    4: "https://oldschool.runescape.wiki/images/Potato_seed_5.png",
+    4: "https://oldschool.runescape.wiki/images/Rune_full_helm.png",
   },
   {
-    5: "https://oldschool.runescape.wiki/images/Dragon_dagger.png",
+    5: "https://oldschool.runescape.wiki/images/Steel_dagger.png",
   },
   {
-    6: "https://oldschool.runescape.wiki/images/Rune_full_helm.png",
+    6: 6,
   },
   {
-    7: "https://oldschool.runescape.wiki/images/Steel_dagger.png",
+    7: 7,
   },
   {
     8: 8,

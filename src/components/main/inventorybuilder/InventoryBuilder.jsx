@@ -8,10 +8,6 @@ import EMPTYGRID from "../../../utils/emptyinventory";
 const InventoryBuilder = () => {
   const [currentGrid, setCurrentGrid] = useState(EMPTYGRID);
 
-  useEffect(() => {
-    // console.log(currentGrid);
-  }, [currentGrid]);
-
   return (
     <>
       <div className={stl.adBar}>[ Advertisements ]</div>

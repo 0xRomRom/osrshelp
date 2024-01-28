@@ -2,10 +2,6 @@
   width: 400px;
   height: 556px;
   padding: 4.5rem 4rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .inventory {
@@ -17,19 +13,19 @@
 
 .innerWrap {
   width: 100%;
-  /* border: 1px solid red; */
+  height: 100%;
   z-index: 10;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  overflow: hidden;
+
   position: relative;
 }
 
 .itemSlot {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   min-width: 25%;
   max-width: 25%;
   height: 3.75rem;
@@ -67,4 +63,5 @@
   background-repeat: no-repeat;
   background-size: auto 70%;
   background-position: center;
+  position: relative;
 }
