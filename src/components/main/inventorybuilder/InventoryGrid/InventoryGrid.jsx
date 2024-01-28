@@ -9,7 +9,7 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
     const deleteIndex = +e.target.dataset.index;
     let newGrid = { ...currentGrid };
     newGrid[deleteIndex] = "";
-    setCurrentGrid({ ...newGrid }); // Ensure you are using a new object to trigger re-render
+    setCurrentGrid({ ...newGrid });
   };
 
   const selectTile = (e, newItem) => {
@@ -37,7 +37,7 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
     console.log("Second item: ", newItem);
     newGrid[selectedIndex] = newGrid[currentTarget];
     newGrid[currentTarget] = selectedTile;
-    setCurrentGrid({ ...newGrid }); // Ensure you are using a new object to trigger re-render
+    setCurrentGrid({ ...newGrid });
     setSelectedTile(null);
   };
 

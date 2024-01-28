@@ -8,9 +8,7 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [imageError, setImageError] = useState(false);
   const [typing, setTyping] = useState(false);
-  const [imgSrc, setImgSrc] = useState(
-    "https://oldschool.runescape.wiki/images/Lobster.png"
-  );
+  const [imgSrc, setImgSrc] = useState(null);
 
   useEffect(() => {
     if (searchTerm.length > 0) {
@@ -30,21 +28,19 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
   const saveToInv = () => {
     console.log("Img to add: ", imgSrc);
 
-    let newGrid = [...currentGrid];
-    for (let i = 0; i < newGrid.length; i++) {
-      const keys = Object.keys(newGrid[i]);
-      if (
-        Object.values(newGrid[i])[0].length === 0 ||
-        !isNaN(Object.values(newGrid[i])[0])
-      ) {
-        newGrid[i][keys[0]] = imgSrc;
+    for (let i = 0; i < Object.keys(currentGrid).length; i++) {
+      console.log(currentGrid[i]);
+      const gridValue = currentGrid[i];
+      console.log(gridValue);
+      if (gridValue.length === 0) {
+        console.log(i);
+        const newGrid = { ...currentGrid };
+        newGrid[i] = imgSrc;
+        console.log("Updated currentGrid:", newGrid);
+        setCurrentGrid(newGrid);
         break;
       }
     }
-
-    console.log("Updated grid", newGrid);
-
-    setCurrentGrid(newGrid);
   };
 
   return (
