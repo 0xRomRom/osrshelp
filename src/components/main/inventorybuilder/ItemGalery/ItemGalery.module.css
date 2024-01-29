@@ -5,30 +5,8 @@
   background-color: rgba(0, 0, 0, 0.15);
   border-radius: 0.375rem;
   border: 1px solid var(--border);
-}
-
-.toggleBar {
-  height: 3rem;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.toggleCta {
-  width: 20%;
-  height: 100%;
-  background-color: transparent;
-  outline: none;
-  border: 1px solid var(--border);
-  cursor: pointer;
-  border-left: 1px solid transparent;
-  border-top: 1px solid transparent;
-}
-
-.lastCta {
-  border-right: 1px solid transparent;
-}
-
-.activeCta {
-  background-color: var(--border);
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
 }
