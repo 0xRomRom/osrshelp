@@ -3,9 +3,13 @@ import { ImBin } from "react-icons/im";
 import { FaCameraRetro, FaSave } from "react-icons/fa";
 import EMPTYGRID from "../../../../utils/emptyinventory";
 
-const CtaBar = ({ setCurrentGrid }) => {
+const CtaBar = ({ setCurrentGrid, setScreenshotting }) => {
   const clearInventory = () => {
     setCurrentGrid(EMPTYGRID);
+  };
+
+  const makeScreenshot = () => {
+    setScreenshotting(true);
   };
 
   return (
@@ -16,7 +20,7 @@ const CtaBar = ({ setCurrentGrid }) => {
       <button className={stl.cta}>
         <FaSave className={stl.icon} />
       </button>
-      <button className={stl.cta}>
+      <button className={stl.cta} onClick={makeScreenshot}>
         <FaCameraRetro className={stl.icon} />
       </button>
     </div>

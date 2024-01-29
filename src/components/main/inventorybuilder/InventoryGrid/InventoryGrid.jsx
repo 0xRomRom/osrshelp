@@ -1,9 +1,16 @@
 import stl from "./InventoryGrid.module.css";
-import { useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import html2canvas from "html2canvas";
 
-const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
+const InventoryGrid = ({
+  currentGrid,
+  setCurrentGrid,
+  screenshotting,
+  setScreenshotting,
+}) => {
   const [selectedTile, setSelectedTile] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(null);
+  const targetDivRef = useRef(null);
 
   const deleteGridItem = (e) => {
     const deleteIndex = +e.target.dataset.index;
@@ -39,8 +46,40 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
     setSelectedTile(null);
   };
 
+  useEffect(() => {
+    if (screenshotting) {
+      const captureScreenshot = () => {
+        if (targetDivRef.current) {
+          html2canvas(targetDivRef.current, {
+            logging: true,
+            letterRendering: 1,
+            allowTaint: false,
+            useCORS: true,
+          })
+            .then((canvas) => {
+              const imgData = canvas.toDataURL("image/webp");
+
+              const downloadLink = document.createElement("a");
+              downloadLink.href = imgData;
+              downloadLink.download = "Inventory.webp";
+
+              document.body.appendChild(downloadLink);
+              downloadLink.click();
+
+              document.body.removeChild(downloadLink);
+            })
+            .catch((error) => {
+              console.error("Error capturing screenshot:", error);
+            });
+          setScreenshotting(false);
+        }
+      };
+      captureScreenshot();
+    }
+  }, [screenshotting, setScreenshotting]);
+
   return (
-    <div className={stl.inventorygrid}>
+    <div className={stl.inventorygrid} ref={targetDivRef}>
       <div className={stl.innerWrap}>
         {Object.values(currentGrid).map((item, index) => (
           <div

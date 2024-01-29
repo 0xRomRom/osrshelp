@@ -37,11 +37,9 @@
   background-repeat: no-repeat;
   background-size: auto 70%;
   background-position: center;
-  /* background-color: rgba(0, 0, 255, 0.158); */
   border: 1px solid transparent;
   border-radius: 0.375rem;
-  /* transform: scale(1.5); */
-  /* background-color: rgba(55, 47, 42, 0.342); */
+  z-index: 50;
 }
 
 .itemSlot:hover {

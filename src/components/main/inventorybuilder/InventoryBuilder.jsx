@@ -8,6 +8,7 @@ import CtaBar from "./CtaBar/CtaBar";
 
 const InventoryBuilder = () => {
   const [currentGrid, setCurrentGrid] = useState(EMPTYGRID);
+  const [screenshotting, setScreenshotting] = useState(false);
 
   return (
     <>
@@ -19,9 +20,14 @@ const InventoryBuilder = () => {
           <InventoryGrid
             currentGrid={currentGrid}
             setCurrentGrid={setCurrentGrid}
+            screenshotting={screenshotting}
+            setScreenshotting={setScreenshotting}
           />
         </div>
-        <CtaBar setCurrentGrid={setCurrentGrid} />
+        <CtaBar
+          setCurrentGrid={setCurrentGrid}
+          setScreenshotting={setScreenshotting}
+        />
       </div>
     </>
   );
