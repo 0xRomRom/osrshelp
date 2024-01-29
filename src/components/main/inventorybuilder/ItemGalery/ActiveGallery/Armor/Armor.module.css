@@ -13,7 +13,6 @@
   flex-direction: column;
   height: 100%;
   max-height: 412.3px;
-  overflow-y: scroll;
 }
 
 .selectBar {
@@ -81,12 +80,13 @@
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll;
-  /* margin-right: -5px; */
+  padding: 10px 0px;
+  justify-content: center;
 }
 
 .gridItem {
-  width: 25%;
-  height: 75px;
+  width: 24%;
+  min-height: 65px;
   /* border: 1px solid gray; */
   display: flex;
   flex-direction: column;
@@ -94,12 +94,15 @@
   align-items: center;
   cursor: pointer;
   position: relative;
+  border-radius: 0.2rem;
 }
 
 .gridIcon {
+  position: relative;
   width: 36px;
   height: 36px;
   object-fit: contain;
+  top: -12px;
 }
 
 .gridItem:hover {
@@ -119,5 +122,5 @@
   text-align: center;
   opacity: 0;
   transition: all 0.1s ease-in-out;
-  padding: 0px 2px;
+  padding: 0px 3px;
 }

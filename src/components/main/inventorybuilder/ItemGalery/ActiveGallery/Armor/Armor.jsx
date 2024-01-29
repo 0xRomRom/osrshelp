@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import stl from "./Armor.module.css";
 import ARMORITEMS from "../../../../../../utils/inventorybuilder/armoritems";
+import HELMS from "../../../../../../utils/gearcalculator/helms";
 
 import Head from "../../../../../../assets/gearslots/Head.png";
 import Cape from "../../../../../../assets/gearslots/Cape.png";
@@ -38,6 +39,30 @@ const Armor = () => {
     { style: "Ranged", icon: "./skillicons/Ranged.webp" },
   ];
 
+  useEffect(() => {
+    const newArr = HELMS.map((item) => {
+      const formattedSearch =
+        item.name.charAt(0).toUpperCase() + item.name.slice(1);
+
+      const encoded = formattedSearch
+        .replace(/\(/g, "%28")
+        .replace(/\)/g, "%29")
+        .replace(/'/g, "%27")
+        .replaceAll(" ", "_");
+
+      const imgSrc = `https://oldschool.runescape.wiki/images/${encoded}.png`;
+
+      return {
+        type: item.type,
+        name: item.name,
+        slot: "Helm",
+        src: imgSrc,
+      };
+    });
+
+    console.log(newArr);
+  }, [HELMS]);
+
   return (
     <div className={stl.armor}>
       <div className={stl.itemGrid}>
@@ -59,7 +84,7 @@ const Armor = () => {
           ))}
         </div>
         <div className={stl.iconGrid}>
-          {ARMORITEMS.filter((slot) => slot.style === activeStyle).map(
+          {ARMORITEMS.filter((slot) => slot.type === activeStyle).map(
             (item) => (
               <div
                 key={item.name + Math.random().toString()}
