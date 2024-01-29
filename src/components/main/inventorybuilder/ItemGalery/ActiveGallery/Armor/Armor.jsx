@@ -1,5 +1,6 @@
 import { useState } from "react";
 import stl from "./Armor.module.css";
+import ARMORITEMS from "../../../../../../utils/inventorybuilder/armoritems";
 
 import Head from "../../../../../../assets/gearslots/Head.png";
 import Cape from "../../../../../../assets/gearslots/Cape.png";
@@ -15,6 +16,7 @@ import Ring from "../../../../../../assets/gearslots/Ring.png";
 
 const Armor = () => {
   const [slotState, setSlotState] = useState("Head");
+  const [activeStyle, setActiveStyle] = useState("Melee");
 
   const gearSlotIcons = {
     Head,
@@ -30,9 +32,41 @@ const Armor = () => {
     Ring,
   };
 
+  const combatStyles = [
+    { style: "Melee", icon: "./skillicons/Attack.webp" },
+    { style: "Magic", icon: "./skillicons/Magic.webp" },
+    { style: "Ranged", icon: "./skillicons/Ranged.webp" },
+  ];
+
   return (
     <div className={stl.armor}>
-      <div className={stl.itemGrid}></div>
+      <div className={stl.itemGrid}>
+        <div className={stl.combatStyle}>
+          {combatStyles.map(({ style, icon }) => (
+            <button
+              key={style}
+              className={`${stl.combatCta} ${
+                activeStyle === style ? stl.activeCombat : ""
+              }`}
+              onClick={() => setActiveStyle(style)}
+            >
+              <img
+                src={icon}
+                alt={`${style} style`}
+                className={stl.slotMiniIcon}
+              />
+            </button>
+          ))}
+        </div>
+        <div className={stl.iconGrid}>
+          {ARMORITEMS.map((item) => (
+            <div key={item.name} className={stl.gridItem}>
+              <img src={item.src} alt={item.name} className={stl.gridIcon} />
+              <span className={stl.gridItemTitle}>{item.name}</span>
+            </div>
+          ))}
+        </div>
+      </div>
       <div className={stl.selectBar}>
         {Object.keys(gearSlotIcons).map((slot) => (
           <button

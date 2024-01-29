@@ -8,6 +8,8 @@
 .itemGrid {
   flex: 1;
   /* background-color: red; */
+  display: flex;
+  flex-direction: column;
 }
 
 .selectBar {
@@ -17,7 +19,7 @@
   flex-direction: column;
   /* flex-wrap: wrap; */
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 100%;
 }
 
@@ -28,6 +30,7 @@
   outline: none;
   border: none;
   cursor: pointer;
+  transition: all 0.1s ease-in-out;
 }
 
 .gearCta img {
@@ -38,4 +41,43 @@
 
 .activeCta {
   background-color: var(--border);
+}
+
+.combatStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.combatCta {
+  width: calc(100% / 3);
+  height: 35px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.activeCombat {
+  background-color: var(--border);
+}
+
+.centerCta {
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.iconGrid {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gridItem {
+  width: 25%;
+  height: 50px;
+  border: 1px solid gray;
 }
