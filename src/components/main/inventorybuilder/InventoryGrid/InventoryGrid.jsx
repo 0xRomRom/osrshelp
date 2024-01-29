@@ -24,8 +24,6 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
   };
 
   const swapTiles = (e, newItem) => {
-    // if (newItem === "") return;
-
     const currentTarget = +e.target.dataset.index;
     const newGrid = { ...currentGrid };
 
@@ -58,9 +56,21 @@ const InventoryGrid = ({ currentGrid, setCurrentGrid }) => {
                 selectedTile === item &&
                 selectedIndex === index &&
                 selectedTile !== ""
-                  ? "1px solid blue"
+                  ? "1px solid rgb(33, 40, 54)"
                   : "",
               backgroundImage: `url(${item})`,
+              backgroundColor:
+                selectedTile === item &&
+                selectedIndex === index &&
+                selectedTile !== ""
+                  ? "rgba(55, 47, 42, 0.342)"
+                  : "",
+              boxShadow:
+                selectedTile === item &&
+                selectedIndex === index &&
+                selectedTile !== ""
+                  ? "0px 0px 3px rgba(55, 47, 42, 0.92)"
+                  : "",
             }}
           ></div>
         ))}

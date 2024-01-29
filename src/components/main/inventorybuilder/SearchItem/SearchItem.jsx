@@ -16,12 +16,15 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
     } else {
       setTyping(false);
     }
-    const formattedSearch = (
-      searchTerm.charAt(0).toUpperCase() + searchTerm.slice(1)
-    )
-      .split(" ")
-      .join("_");
-    const imgSrc = `https://oldschool.runescape.wiki/images/${formattedSearch}.png`;
+    const formattedSearch =
+      searchTerm.charAt(0).toUpperCase() + searchTerm.slice(1);
+
+    const encoded = formattedSearch.replace(/\(/g, "%28").replace(/\)/g, "%29");
+
+    console.log(encoded);
+    const finalString = encoded.replaceAll(" ", "_");
+    console.log(finalString);
+    const imgSrc = `https://oldschool.runescape.wiki/images/${finalString}.png`;
     setImgSrc(imgSrc);
   }, [searchTerm, setImgSrc]);
 

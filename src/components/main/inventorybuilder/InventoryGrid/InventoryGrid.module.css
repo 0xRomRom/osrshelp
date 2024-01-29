@@ -27,17 +27,21 @@
 .itemSlot {
   min-width: 25%;
   max-width: 25%;
-  height: 3.75rem;
+  min-height: 3.75rem;
+  max-height: 3.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
   position: relative;
   background-repeat: no-repeat;
-  background-size: auto 70%;
+  background-size: auto 75%;
   background-position: center;
   /* background-color: rgba(0, 0, 255, 0.158); */
   border: 1px solid transparent;
+  border-radius: 0.375rem;
+  /* transform: scale(1.5); */
+  /* background-color: rgba(55, 47, 42, 0.342); */
 }
 
 .itemSlot:hover {
@@ -48,8 +52,8 @@
 }
 
 .tileImg {
-  /* object-fit: contain; */
-  /* transform: scale(1.55); */
+  object-fit: contain;
+  transform: scale(1.55);
   /* background-color: red; */
   max-width: 45px;
   max-height: 45px;
