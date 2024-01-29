@@ -3,7 +3,7 @@ import stl from "./Armor.module.css";
 import ARMORITEMS from "../../../../../../utils/inventorybuilder/armoritems";
 import HELMS from "../../../../../../utils/gearcalculator/helms";
 
-import Head from "../../../../../../assets/gearslots/Head.png";
+import Helm from "../../../../../../assets/gearslots/Head.png";
 import Cape from "../../../../../../assets/gearslots/Cape.png";
 import Necklace from "../../../../../../assets/gearslots/Neck.png";
 import Amunition from "../../../../../../assets/gearslots/Amunition.png";
@@ -16,11 +16,11 @@ import Boots from "../../../../../../assets/gearslots/Boots.png";
 import Ring from "../../../../../../assets/gearslots/Ring.png";
 
 const Armor = () => {
-  const [slotState, setSlotState] = useState("Head");
+  const [slotState, setSlotState] = useState("Helm");
   const [activeStyle, setActiveStyle] = useState("Melee");
 
   const gearSlotIcons = {
-    Head,
+    Helm,
     Cape,
     Necklace,
     Amunition,
@@ -84,17 +84,14 @@ const Armor = () => {
           ))}
         </div>
         <div className={stl.iconGrid}>
-          {ARMORITEMS.filter((slot) => slot.type === activeStyle).map(
-            (item) => (
-              <div
-                key={item.name + Math.random().toString()}
-                className={stl.gridItem}
-              >
+          {ARMORITEMS.filter((slot) => slot.type === activeStyle)
+            .filter((slot) => slot.slot === slotState)
+            .map((item) => (
+              <div key={item.name} className={stl.gridItem}>
                 <img src={item.src} alt={item.name} className={stl.gridIcon} />
                 <span className={stl.gridItemTitle}>{item.name}</span>
               </div>
-            )
-          )}
+            ))}
         </div>
       </div>
       <div className={stl.selectBar}>
