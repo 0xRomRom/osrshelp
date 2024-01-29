@@ -1,0 +1,16 @@
+.armor {
+  width: 100%;
+  height: 100%;
+  /* background-color: gray; */
+  display: flex;
+}
+
+.itemGrid {
+  flex: 1;
+  /* background-color: red; */
+}
+
+.selectBar {
+  width: calc(20% + 1px);
+  border-left: 1px solid var(--border);
+}

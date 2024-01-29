@@ -1,5 +1,5 @@
 .toggleBar {
-  height: 3rem;
+  min-height: 3rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

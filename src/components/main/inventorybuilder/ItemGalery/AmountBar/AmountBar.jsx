@@ -25,12 +25,18 @@ const AmountBar = () => {
         10
       </button>
       <button
-        className={`${stl.amountCta} ${stl.lastCta} ${
-          amount === "Fill" ? stl.activeCta : ""
-        }`}
+        className={`${stl.amountCta} ${amount === "Fill" ? stl.activeCta : ""}`}
         onClick={() => setAmount("Fill")}
       >
         Fill
+      </button>
+      <button
+        className={`${stl.amountCta} ${stl.lastCta} ${
+          amount === "Noted" ? stl.activeCta : ""
+        }`}
+        onClick={() => setAmount("Noted")}
+      >
+        Noted
       </button>
     </div>
   );
