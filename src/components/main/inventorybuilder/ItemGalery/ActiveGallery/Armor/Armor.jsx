@@ -59,15 +59,17 @@ const Armor = () => {
           ))}
         </div>
         <div className={stl.iconGrid}>
-          {ARMORITEMS.map((item) => (
-            <div
-              key={item.name + Math.random().toString()}
-              className={stl.gridItem}
-            >
-              <img src={item.src} alt={item.name} className={stl.gridIcon} />
-              {/* <span className={stl.gridItemTitle}>{item.name}</span> */}
-            </div>
-          ))}
+          {ARMORITEMS.filter((slot) => slot.style === activeStyle).map(
+            (item) => (
+              <div
+                key={item.name + Math.random().toString()}
+                className={stl.gridItem}
+              >
+                <img src={item.src} alt={item.name} className={stl.gridIcon} />
+                {/* <span className={stl.gridItemTitle}>{item.name}</span> */}
+              </div>
+            )
+          )}
         </div>
       </div>
       <div className={stl.selectBar}>
