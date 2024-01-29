@@ -66,7 +66,7 @@ const Armor = () => {
                 className={stl.gridItem}
               >
                 <img src={item.src} alt={item.name} className={stl.gridIcon} />
-                {/* <span className={stl.gridItemTitle}>{item.name}</span> */}
+                <span className={stl.gridItemTitle}>{item.name}</span>
               </div>
             )
           )}
