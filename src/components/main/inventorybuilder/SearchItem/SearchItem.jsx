@@ -19,27 +19,21 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
     const formattedSearch =
       searchTerm.charAt(0).toUpperCase() + searchTerm.slice(1);
 
-    const encoded = formattedSearch.replace(/\(/g, "%28").replace(/\)/g, "%29");
+    const encoded = formattedSearch
+      .replace(/\(/g, "%28")
+      .replace(/\)/g, "%29")
+      .replaceAll(" ", "_");
 
-    console.log(encoded);
-    const finalString = encoded.replaceAll(" ", "_");
-    console.log(finalString);
-    const imgSrc = `https://oldschool.runescape.wiki/images/${finalString}.png`;
+    const imgSrc = `https://oldschool.runescape.wiki/images/${encoded}.png`;
     setImgSrc(imgSrc);
   }, [searchTerm, setImgSrc]);
 
   const saveToInv = () => {
-    console.log("Img to add: ", imgSrc);
-
     for (let i = 0; i < Object.keys(currentGrid).length; i++) {
-      console.log(currentGrid[i]);
       const gridValue = currentGrid[i];
-      console.log(gridValue);
       if (gridValue.length === 0) {
-        console.log(i);
         const newGrid = { ...currentGrid };
         newGrid[i] = imgSrc;
-        console.log("Updated currentGrid:", newGrid);
         setCurrentGrid(newGrid);
         break;
       }
