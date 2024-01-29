@@ -22,7 +22,7 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
     const encoded = formattedSearch
       .replace(/\(/g, "%28")
       .replace(/\)/g, "%29")
-      .replace(/\'/g, "%27")
+      .replace(/'/g, "%27")
       .replaceAll(" ", "_");
 
     const imgSrc = `https://oldschool.runescape.wiki/images/${encoded}.png`;

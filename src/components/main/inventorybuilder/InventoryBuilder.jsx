@@ -5,6 +5,7 @@ import SearchItem from "./SearchItem/SearchItem";
 import InventoryGrid from "./InventoryGrid/InventoryGrid";
 import EMPTYGRID from "../../../utils/emptyinventory";
 import CtaBar from "./CtaBar/CtaBar";
+import ItemGalery from "./ItemGalery/ItemGalery";
 
 const InventoryBuilder = () => {
   const [currentGrid, setCurrentGrid] = useState(EMPTYGRID);
@@ -34,7 +35,9 @@ const InventoryBuilder = () => {
               setScreenshotting={setScreenshotting}
             />
           </div>
-          <div className={stl.rightBar}></div>
+          <div className={stl.rightBar}>
+            <ItemGalery />
+          </div>
         </div>
       </div>
     </>
