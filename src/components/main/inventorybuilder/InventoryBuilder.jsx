@@ -15,19 +15,27 @@ const InventoryBuilder = () => {
       <div className={stl.adBar}>[ Advertisements ]</div>
       <Pagination />
       <div className={stl.mainContainer}>
-        <SearchItem setCurrentGrid={setCurrentGrid} currentGrid={currentGrid} />
-        <div className={stl.inventoryWrapper}>
-          <InventoryGrid
-            currentGrid={currentGrid}
-            setCurrentGrid={setCurrentGrid}
-            screenshotting={screenshotting}
-            setScreenshotting={setScreenshotting}
-          />
+        <div className={stl.innerWrapper}>
+          <div className={stl.leftBar}>
+            <SearchItem
+              setCurrentGrid={setCurrentGrid}
+              currentGrid={currentGrid}
+            />
+            <div className={stl.inventoryWrapper}>
+              <InventoryGrid
+                currentGrid={currentGrid}
+                setCurrentGrid={setCurrentGrid}
+                screenshotting={screenshotting}
+                setScreenshotting={setScreenshotting}
+              />
+            </div>
+            <CtaBar
+              setCurrentGrid={setCurrentGrid}
+              setScreenshotting={setScreenshotting}
+            />
+          </div>
+          <div className={stl.rightBar}></div>
         </div>
-        <CtaBar
-          setCurrentGrid={setCurrentGrid}
-          setScreenshotting={setScreenshotting}
-        />
       </div>
     </>
   );
