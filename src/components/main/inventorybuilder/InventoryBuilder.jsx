@@ -6,6 +6,7 @@ import InventoryGrid from "./InventoryGrid/InventoryGrid";
 import EMPTYGRID from "../../../utils/emptyinventory";
 import CtaBar from "./CtaBar/CtaBar";
 import ItemGalery from "./ItemGalery/ItemGalery";
+import SavedInventorys from "./SavedInventorys/SavedInventorys";
 
 const InventoryBuilder = () => {
   const [currentGrid, setCurrentGrid] = useState(EMPTYGRID);
@@ -37,6 +38,7 @@ const InventoryBuilder = () => {
           </div>
           <div className={stl.rightBar}>
             <ItemGalery />
+            <SavedInventorys />
           </div>
         </div>
       </div>
