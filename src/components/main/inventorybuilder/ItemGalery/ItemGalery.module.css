@@ -28,3 +28,7 @@
 .lastCta {
   border-right: 1px solid transparent;
 }
+
+.activeCta {
+  background-color: var(--border);
+}
