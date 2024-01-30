@@ -14,9 +14,11 @@ const InventoryGrid = ({
 
   const deleteGridItem = (e) => {
     const deleteIndex = +e.target.dataset.index;
-    let newGrid = { ...currentGrid };
-    newGrid[deleteIndex] = "";
-    setCurrentGrid({ ...newGrid });
+    let newGrid = [...currentGrid];
+    newGrid[deleteIndex][deleteIndex] = "";
+    newGrid[deleteIndex].noted = false;
+    newGrid[deleteIndex].amount = 0;
+    setCurrentGrid(newGrid);
   };
 
   const selectTile = (e, newItem) => {
