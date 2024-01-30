@@ -1,10 +1,9 @@
 import stl from "./Food.module.css";
-import POTIONS from "../../../../../../utils/inventorybuilder/potions";
+import FOOD from "../../../../../../utils/inventorybuilder/food";
 
 const Food = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
   const addToInventory = (imgSrc) => {
     let updatedGrid = { ...currentGrid };
-    console.log(amountToAdd);
 
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i];
@@ -36,7 +35,7 @@ const Food = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
   return (
     <div className={stl.potions}>
       <div className={stl.potionsgrid}>
-        {POTIONS.map((item) => (
+        {FOOD.map((item) => (
           <div
             key={item.name}
             className={stl.gridItem}

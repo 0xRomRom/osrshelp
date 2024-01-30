@@ -4,7 +4,6 @@ import POTIONS from "../../../../../../utils/inventorybuilder/potions";
 const Potions = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
   const addToInventory = (imgSrc) => {
     let updatedGrid = { ...currentGrid };
-    console.log(amountToAdd);
 
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i];

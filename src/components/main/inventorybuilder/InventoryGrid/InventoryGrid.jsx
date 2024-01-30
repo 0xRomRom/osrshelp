@@ -111,7 +111,9 @@ const InventoryGrid = ({
                   ? "0px 0px 3px rgba(55, 47, 42, 0.92)"
                   : "",
             }}
-          ></div>
+          >
+            <img src={item} alt={item} className={stl.tileImg} />
+          </div>
         ))}
       </div>
       <img

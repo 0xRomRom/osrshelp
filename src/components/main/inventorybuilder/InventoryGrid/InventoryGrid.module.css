@@ -35,11 +35,11 @@
   flex: 1;
   position: relative;
   background-repeat: no-repeat;
-  background-size: auto 70%;
   background-position: center;
   border: 1px solid transparent;
   border-radius: 0.375rem;
   z-index: 50;
+  /* transform: scale(1.5); */
 }
 
 .itemSlot:hover {

@@ -37,7 +37,7 @@ const ItemGalery = ({
         />
       )}
       {activeGallery === "Food" && (
-        <Potions
+        <Food
           amountToAdd={amountToAdd}
           setCurrentGrid={setCurrentGrid}
           currentGrid={currentGrid}
