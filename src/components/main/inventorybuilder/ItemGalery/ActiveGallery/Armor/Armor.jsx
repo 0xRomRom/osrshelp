@@ -43,11 +43,16 @@ const Armor = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
     console.log(currentGrid);
 
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      console.log(i);
       const gridValue = updatedGrid[i];
       if (gridValue.length === 0) {
         console.log(i);
         const cacheIndex = i;
         for (let j = cacheIndex; j < cacheIndex + +amountToAdd; j++) {
+          if (j >= 28) {
+            setCurrentGrid(updatedGrid);
+            break;
+          }
           updatedGrid[j] = imgSrc;
         }
         setCurrentGrid(updatedGrid);
