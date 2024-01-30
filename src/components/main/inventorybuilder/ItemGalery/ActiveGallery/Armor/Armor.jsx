@@ -21,6 +21,7 @@ const Armor = ({
   setAmountToAdd,
   notedState,
   notedAmount,
+  setNotedAmount,
 }) => {
   const [slotState, setSlotState] = useState("Helm");
   const [activeStyle, setActiveStyle] = useState("Melee");
@@ -94,20 +95,26 @@ const Armor = ({
   };
 
   const addNotedItems = (imgSrc) => {
+    console.log(notedAmount);
+    if (!notedAmount) {
+      return;
+    }
     let updatedGrid = [...currentGrid];
 
     // Check for existing item to increment rather than duplicate
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i][i];
       console.log(gridValue);
-      if (gridValue === imgSrc) {
+      if (gridValue === imgSrc && updatedGrid[i].noted) {
         updatedGrid[i].amount += +notedAmount;
 
         setCurrentGrid(updatedGrid);
+        setNotedAmount(null);
         return;
       }
     }
 
+    // If no existing item, create new item
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i][i];
 
@@ -119,6 +126,7 @@ const Armor = ({
         updatedGrid[cacheIndex].amount += +notedAmount;
 
         setCurrentGrid(updatedGrid);
+        setNotedAmount(null);
         break;
       }
     }

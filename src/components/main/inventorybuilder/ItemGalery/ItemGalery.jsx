@@ -34,6 +34,7 @@ const ItemGalery = ({
           setAmountToAdd={setAmountToAdd}
           notedState={notedState}
           notedAmount={notedAmount}
+          setNotedAmount={setNotedAmount}
         />
       )}
       {activeGallery === "Potions" && (
@@ -67,6 +68,7 @@ const ItemGalery = ({
         currentGrid={currentGrid}
         notedState={notedState}
         setNotedState={setNotedState}
+        notedAmount={notedAmount}
       />
     </div>
   );

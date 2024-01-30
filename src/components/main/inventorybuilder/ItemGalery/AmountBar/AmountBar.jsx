@@ -9,6 +9,7 @@ const AmountBar = ({
   currentGrid,
   notedState,
   setNotedState,
+  notedAmount,
 }) => {
   const inputRef = useRef(null);
   const runesInputRef = useRef(null);
@@ -78,6 +79,7 @@ const AmountBar = ({
                 className={stl.noteAmountInput}
                 placeholder="Amount"
                 ref={inputRef}
+                value={notedAmount || ""}
                 onChange={(e) => setNotedAmount(+e.target.value)}
               />
             </div>

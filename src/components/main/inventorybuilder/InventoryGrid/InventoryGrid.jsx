@@ -153,8 +153,35 @@ const InventoryGrid = ({
                 />
               )}
               {imageSource.length > 0 && item.noted && (
-                <div className={stl.imgTile}>
-                  <span className={stl.noteAmount}>{item.amount}</span>
+                <div
+                  className={stl.imgTile}
+                  style={{
+                    border:
+                      selectedTile === item &&
+                      selectedIndex === index &&
+                      selectedTile !== ""
+                        ? "1px solid rgb(33, 40, 54)"
+                        : "",
+                    backgroundColor:
+                      selectedTile === item &&
+                      selectedIndex === index &&
+                      selectedTile !== ""
+                        ? "rgba(55, 47, 42, 0.342)"
+                        : "",
+                    boxShadow:
+                      selectedTile === item &&
+                      selectedIndex === index &&
+                      selectedTile !== ""
+                        ? "0px 0px 3px rgba(55, 47, 42, 0.92)"
+                        : "",
+                  }}
+                  onClick={(e) =>
+                    selectedTile
+                      ? swapTiles(e, item[index][index])
+                      : selectTile(e, item[index])
+                  }
+                >
+                  <span className={stl.noteAmount}>{+item.amount}</span>
                   <img
                     src={imageSource}
                     alt={imageSource}
