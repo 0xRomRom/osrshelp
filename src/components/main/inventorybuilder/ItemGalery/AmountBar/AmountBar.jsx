@@ -1,7 +1,12 @@
 import stl from "./AmountBar.module.css";
 import { useState, useRef, useEffect } from "react";
 
-const AmountBar = ({ setNotedAmount, amountToAdd, setAmountToAdd }) => {
+const AmountBar = ({
+  setNotedAmount,
+  amountToAdd,
+  setAmountToAdd,
+  activeGallery,
+}) => {
   const [notedState, setNotedState] = useState(false);
   const inputRef = useRef(null);
 
@@ -12,6 +17,10 @@ const AmountBar = ({ setNotedAmount, amountToAdd, setAmountToAdd }) => {
     }
     setAmountToAdd("1");
   }, [notedState]);
+
+  useEffect(() => {
+    setAmountToAdd("1");
+  }, [activeGallery]);
 
   return (
     <div className={stl.amountbar}>

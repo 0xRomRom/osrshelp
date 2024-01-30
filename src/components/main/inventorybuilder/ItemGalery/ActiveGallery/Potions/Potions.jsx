@@ -12,6 +12,9 @@ const Potions = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
 
         if (amountToAdd === "Fill") {
           for (let j = cacheIndex; j < 28; j++) {
+            if (updatedGrid[j] !== "") {
+              continue;
+            }
             updatedGrid[j] = imgSrc;
           }
 
@@ -23,6 +26,9 @@ const Potions = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
           if (j >= 28) {
             setCurrentGrid(updatedGrid);
             break;
+          }
+          if (updatedGrid[j] !== "") {
+            continue;
           }
           updatedGrid[j] = imgSrc;
         }

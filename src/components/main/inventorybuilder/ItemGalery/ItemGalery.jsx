@@ -47,6 +47,7 @@ const ItemGalery = ({
         setNotedAmount={setNotedAmount}
         setAmountToAdd={setAmountToAdd}
         amountToAdd={amountToAdd}
+        activeGallery={activeGallery}
       />
     </div>
   );
