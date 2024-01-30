@@ -1,7 +1,7 @@
 const LEGS = [
   {
     type: "Melee",
-    name: "Farmer's boro trouserss",
+    name: "Farmer's boro trousers",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,
