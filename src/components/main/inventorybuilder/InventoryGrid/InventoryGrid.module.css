@@ -57,6 +57,7 @@
   max-height: 45px;
   /* user-select: none; */
   position: relative;
+  pointer-events: none;
 }
 
 .innerDiv {

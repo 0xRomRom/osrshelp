@@ -97,7 +97,7 @@ const InventoryGrid = ({
                 selectedTile !== ""
                   ? "1px solid rgb(33, 40, 54)"
                   : "",
-              backgroundImage: `url(${item})`,
+              // backgroundImage: `url(${item})`,
               backgroundColor:
                 selectedTile === item &&
                 selectedIndex === index &&
@@ -112,7 +112,14 @@ const InventoryGrid = ({
                   : "",
             }}
           >
-            <img src={item} alt={item} className={stl.tileImg} />
+            <img
+              src={item}
+              alt={item}
+              className={stl.tileImg}
+              onClick={(e) =>
+                selectedTile ? swapTiles(e, item) : selectTile(e, item)
+              }
+            />
           </div>
         ))}
       </div>
