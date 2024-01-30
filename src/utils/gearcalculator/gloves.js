@@ -3072,7 +3072,7 @@ const GLOVES = [
   },
   {
     type: "Ranged",
-    name: "Zaryte vambracers",
+    name: "Zaryte vambraces",
     defLvl: 45,
     rangedLvl: 80,
     prayerLvl: 0,
