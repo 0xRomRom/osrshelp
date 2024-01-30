@@ -16,11 +16,12 @@ const AmountBar = ({
       return;
     }
     setAmountToAdd("1");
-  }, [notedState]);
+  }, [notedState, setAmountToAdd]);
 
   useEffect(() => {
     setAmountToAdd("1");
-  }, [activeGallery]);
+    setNotedState(false);
+  }, [activeGallery, setAmountToAdd, setNotedState]);
 
   return (
     <div className={stl.amountbar}>

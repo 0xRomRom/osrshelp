@@ -6,7 +6,6 @@ const FOOD = [
   {
     name: "Chicken",
     src: "/foods/Cooked_chicken.webp",
-    // src: "https://oldschool.runescape.wiki/images/Cooked_chicken.png?2aac1",
   },
   {
     name: "Shrimp",

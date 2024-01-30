@@ -7,6 +7,7 @@ import AmountBar from "./AmountBar/AmountBar";
 import Armor from "./ActiveGallery/Armor/Armor";
 import Potions from "./ActiveGallery/Potions/Potions";
 import Food from "./ActiveGallery/Food/Food";
+import Runes from "./ActiveGallery/Runes/Runes";
 
 const ItemGalery = ({
   setNotedAmount,
@@ -38,6 +39,13 @@ const ItemGalery = ({
       )}
       {activeGallery === "Food" && (
         <Food
+          amountToAdd={amountToAdd}
+          setCurrentGrid={setCurrentGrid}
+          currentGrid={currentGrid}
+        />
+      )}
+      {activeGallery === "Runes" && (
+        <Runes
           amountToAdd={amountToAdd}
           setCurrentGrid={setCurrentGrid}
           currentGrid={currentGrid}
