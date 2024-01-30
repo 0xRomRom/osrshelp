@@ -5,6 +5,7 @@ import { useState } from "react";
 import AmountBar from "./AmountBar/AmountBar";
 
 import Armor from "./ActiveGallery/Armor/Armor";
+import Potions from "./ActiveGallery/Potions/Potions";
 
 const ItemGalery = ({
   setNotedAmount,
@@ -22,6 +23,13 @@ const ItemGalery = ({
       />
       {activeGallery === "Armor" && (
         <Armor
+          amountToAdd={amountToAdd}
+          setCurrentGrid={setCurrentGrid}
+          currentGrid={currentGrid}
+        />
+      )}
+      {activeGallery === "Potions" && (
+        <Potions
           amountToAdd={amountToAdd}
           setCurrentGrid={setCurrentGrid}
           currentGrid={currentGrid}

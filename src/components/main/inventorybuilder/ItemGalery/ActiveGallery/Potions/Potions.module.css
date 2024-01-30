@@ -1,0 +1,61 @@
+.potions {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.gridItem {
+  min-width: 70px;
+  max-width: 70px;
+  min-height: 65px;
+  max-height: 65px;
+  flex: 1 50px;
+  flex-basis: 24%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.2rem;
+  transition: all 0.1s ease-in-out;
+}
+
+.gridIcon {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  top: -12px;
+}
+
+.gridItem:hover {
+  background-color: rgba(128, 128, 128, 0.102);
+}
+
+.gridItem:hover .gridItemTitle {
+  opacity: 1;
+}
+
+.gridItemTitle {
+  position: absolute;
+  color: gray;
+  font-size: 10px;
+  bottom: 3px;
+  line-height: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+  padding: 0px 3px;
+}
+
+.potionsgrid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 10px 0px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}

@@ -35,7 +35,6 @@
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.1s ease-in-out;
 }
 
 .gearCta img {
@@ -62,7 +61,6 @@
   outline: none;
   border: none;
   cursor: pointer;
-  transition: all 0.1s ease-in-out;
 }
 
 .activeCombat {
@@ -91,7 +89,6 @@
   max-height: 65px;
   flex: 1 50px;
   flex-basis: 24%;
-  /* border: 1px solid gray; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,6 +96,7 @@
   cursor: pointer;
   position: relative;
   border-radius: 0.2rem;
+  transition: all 0.1s ease-in-out;
 }
 
 .gridIcon {

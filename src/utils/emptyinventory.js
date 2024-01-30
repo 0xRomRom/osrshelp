@@ -1,7 +1,7 @@
 const EMPTYGRID = {
-  0: "https://oldschool.runescape.wiki/images/Rune_med_helm.png",
-  1: "https://oldschool.runescape.wiki/images/Rune_dagger.png",
-  2: "https://oldschool.runescape.wiki/images/Rune_mace.png",
+  0: "",
+  1: "",
+  2: "",
   3: "",
   4: "",
   5: "",
