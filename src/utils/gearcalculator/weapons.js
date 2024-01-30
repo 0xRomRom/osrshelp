@@ -17291,7 +17291,7 @@ const WEAPONS = [
   },
   {
     type: "Melee",
-    name: "Holy_scythe_of_vitur",
+    name: "Holy scythe of vitur",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,

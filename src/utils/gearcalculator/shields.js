@@ -3923,7 +3923,7 @@ const SHIELDS = [
   },
   {
     type: "Melee",
-    name: "Ghommal's avernic_defender",
+    name: "Ghommal's avernic defender",
     defLvl: 70,
     rangedLvl: 0,
     prayerLvl: 0,
