@@ -155,6 +155,118 @@ const RUNES = [
     name: "Arceuus library teleport (tablet)",
     src: "https://oldschool.runescape.wiki/images/Arceuus_library_teleport_%28tablet%29.png?1f712",
   },
+  {
+    name: "Draynor manor teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Draynor_manor_teleport_%28tablet%29.png?5eb13",
+  },
+  {
+    name: "Battlefront teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Battlefront_teleport_%28tablet%29.png?3be33",
+  },
+  {
+    name: "Mind altar teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Mind_altar_teleport_%28tablet%29.png?ccf02",
+  },
+  {
+    name: "Salve graveyard teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Salve_graveyard_teleport_%28tablet%29.png?a8fa6",
+  },
+  {
+    name: "Fenkenstrain's castle teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Fenkenstrain%27s_castle_teleport_%28tablet%29.png?97fe8",
+  },
+  {
+    name: "West ardougne teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/West_ardougne_teleport_%28tablet%29.png?07b10",
+  },
+  {
+    name: "Harmony island teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Harmony_island_teleport_%28tablet%29.png?bfea5",
+  },
+  {
+    name: "Cemetery teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Cemetery_teleport_%28tablet%29.png?273ca",
+  },
+  {
+    name: "Barrows teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Barrows_teleport_%28tablet%29.png?273ca",
+  },
+  {
+    name: "Ape atoll teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Ape_atoll_teleport_%28tablet%29.png?1f712",
+  },
+  {
+    name: "Paddewwa teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Paddewwa_teleport_%28tablet%29.png?f976b",
+  },
+  {
+    name: "Senntisten teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Senntisten_teleport_%28tablet%29.png?f976b",
+  },
+  {
+    name: "Kharyrll teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Kharyrll_teleport_%28tablet%29.png?f976b",
+  },
+  {
+    name: "Lassar teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Lassar_teleport_%28tablet%29.png?f976b",
+  },
+  {
+    name: "Dareeyak teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Dareeyak_teleport_%28tablet%29.png?f976b",
+  },
+  {
+    name: "Carrallanger teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Carrallanger_teleport_%28tablet%29.png?f976b",
+  },
+  {
+    name: "Annakarl teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Annakarl_teleport_%28tablet%29.png?f976b",
+  },
+  {
+    name: "Ghorrock teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Ghorrock_teleport_%28tablet%29.png?f976b",
+  },
+  {
+    name: "Moonclan teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Moonclan_teleport_%28tablet%29.png?7027d",
+  },
+  {
+    name: "Ourania teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Ourania_teleport_%28tablet%29.png?7027d",
+  },
+  {
+    name: "Waterbirth teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Waterbirth_teleport_%28tablet%29.png?7027d",
+  },
+  {
+    name: "Barbarian teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Barbarian_teleport_%28tablet%29.png?7027d",
+  },
+  {
+    name: "Khazard teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Khazard_teleport_%28tablet%29.png?7027d",
+  },
+  {
+    name: "Fishing guild teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Fishing_guild_teleport_%28tablet%29.png?7027d",
+  },
+  {
+    name: "Catherby teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Catherby_teleport_%28tablet%29.png?7027d",
+  },
+  {
+    name: "Ice plateau teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Ice_plateau_teleport_%28tablet%29.png?7027d",
+  },
+  {
+    name: "Target teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Target_teleport.png?c1b34",
+  },
+  {
+    name: "Wilderness crabs teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Wilderness_crabs_teleport.png?b56cf",
+  },
 ];
 
 export default RUNES;
