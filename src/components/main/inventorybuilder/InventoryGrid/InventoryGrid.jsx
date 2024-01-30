@@ -45,14 +45,24 @@ const InventoryGrid = ({
       return;
     }
 
-    console.log("Start index: ", selectedIndex);
-    console.log("Target index:", +e.target.dataset.index);
+    const temp = newGrid[selectedIndex];
+    newGrid[selectedIndex] = newGrid[currentTarget];
+    newGrid[currentTarget] = temp;
 
-    console.log("First item: ", selectedTile);
-    console.log("Second item: ", newItem);
+    const tempKey = Object.keys(newGrid[selectedIndex])[0];
+    newGrid[selectedIndex] = {
+      [Object.keys(newGrid[currentTarget])[0]]: Object.values(
+        newGrid[selectedIndex]
+      )[0],
+      noted: Object.values(newGrid[currentTarget])[1],
+      amount: Object.values(newGrid[currentTarget])[2],
+    };
 
-    newGrid[selectedIndex] = newItem;
-    newGrid[currentTarget] = selectedTile;
+    newGrid[currentTarget] = {
+      [tempKey]: Object.values(newGrid[currentTarget])[0],
+      noted: Object.values(newGrid[currentTarget])[1],
+      amount: Object.values(newGrid[currentTarget])[2],
+    };
 
     console.log(newGrid);
 
