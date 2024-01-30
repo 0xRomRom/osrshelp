@@ -40,14 +40,22 @@ const Armor = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
 
   const addToInventory = (imgSrc) => {
     let updatedGrid = { ...currentGrid };
-    console.log(currentGrid);
+    console.log(amountToAdd);
 
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
-      console.log(i);
       const gridValue = updatedGrid[i];
       if (gridValue.length === 0) {
-        console.log(i);
         const cacheIndex = i;
+
+        if (amountToAdd === "Fill") {
+          for (let j = cacheIndex; j < 28; j++) {
+            updatedGrid[j] = imgSrc;
+          }
+
+          setCurrentGrid(updatedGrid);
+          break;
+        }
+
         for (let j = cacheIndex; j < cacheIndex + +amountToAdd; j++) {
           if (j >= 28) {
             setCurrentGrid(updatedGrid);
@@ -59,8 +67,6 @@ const Armor = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
         break;
       }
     }
-
-    // setCurrentGrid();
   };
 
   return (
