@@ -5,6 +5,7 @@ import EMPTYGRID from "../../../../utils/emptyinventory";
 
 const CtaBar = ({ setCurrentGrid, setScreenshotting }) => {
   const clearInventory = () => {
+    console.log(EMPTYGRID);
     setCurrentGrid(EMPTYGRID);
   };
 

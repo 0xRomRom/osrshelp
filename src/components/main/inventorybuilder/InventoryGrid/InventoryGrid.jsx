@@ -31,18 +31,40 @@ const InventoryGrid = ({
   };
 
   const swapTiles = (e, newItem) => {
+    console.log(Object.values(newItem)[0]);
+    console.log(Object.values(selectedTile)[0]);
     const currentTarget = +e.target.dataset.index;
-    const newGrid = { ...currentGrid };
+    const newGrid = [...currentGrid];
 
-    if (newItem === selectedTile) {
+    if (Object.values(newItem)[0] === Object.values(selectedTile)[0]) {
       unselectTile();
       return;
     }
+
+    console.log("Start index: ", selectedIndex);
+    console.log("Target index:", +e.target.dataset.index);
+
     console.log("First item: ", selectedTile);
     console.log("Second item: ", newItem);
+
+    const temp = newGrid[selectedIndex];
     newGrid[selectedIndex] = newGrid[currentTarget];
-    newGrid[currentTarget] = selectedTile;
-    setCurrentGrid({ ...newGrid });
+    newGrid[currentTarget] = temp;
+
+    // Swap keys inside the objects
+    const tempKey = Object.keys(newGrid[selectedIndex])[0];
+    newGrid[selectedIndex] = {
+      [Object.keys(newGrid[currentTarget])[0]]: Object.values(
+        newGrid[selectedIndex]
+      )[0],
+    };
+    newGrid[currentTarget] = {
+      [tempKey]: Object.values(newGrid[currentTarget])[0],
+    };
+
+    console.log(newGrid);
+
+    setCurrentGrid(newGrid);
     setSelectedTile(null);
   };
 
@@ -82,7 +104,8 @@ const InventoryGrid = ({
     <div className={stl.inventorygrid} ref={targetDivRef}>
       <div className={stl.innerWrap}>
         {currentGrid.map((item, index) => {
-          console.log(item[index]);
+          const imageSource = Object.values(item)[0];
+
           return (
             <div
               key={index}
@@ -113,14 +136,14 @@ const InventoryGrid = ({
                     : "",
               }}
             >
-              {item[index].length > 0 && (
+              {imageSource.length > 0 && (
                 <img
-                  src={item[index]}
-                  alt={item[index]}
+                  src={imageSource}
+                  alt={imageSource}
                   className={stl.tileImg}
                   onClick={(e) =>
                     selectedTile
-                      ? swapTiles(e, item[index])
+                      ? swapTiles(e, item[index][index])
                       : selectTile(e, item[index])
                   }
                 />
