@@ -5328,7 +5328,7 @@ const BODIES = [
     slot: "Body",
   },
   {
-    type: "Melee",
+    type: "Ranged",
     name: "Black d'hide body",
     defLvl: 40,
     rangedLvl: 70,
@@ -5365,7 +5365,7 @@ const BODIES = [
     slot: "Body",
   },
   {
-    type: "Melee",
+    type: "Ranged",
     name: "Black d'hide body (g)",
     defLvl: 40,
     rangedLvl: 70,
@@ -5402,7 +5402,7 @@ const BODIES = [
     slot: "Body",
   },
   {
-    type: "Melee",
+    type: "Ranged",
     name: "Black d'hide body (t)",
     defLvl: 40,
     rangedLvl: 70,
