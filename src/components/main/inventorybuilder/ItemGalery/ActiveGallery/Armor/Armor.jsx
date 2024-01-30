@@ -73,7 +73,6 @@ const Armor = ({
             continue;
           }
           if (added >= +amountToAdd) {
-            alert("Reached");
             setCurrentGrid(updatedGrid);
             break;
           }

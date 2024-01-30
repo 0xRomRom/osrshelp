@@ -140,7 +140,7 @@ const InventoryGrid = ({
                     : "",
               }}
             >
-              {imageSource.length > 0 && (
+              {imageSource.length > 0 && !item.noted && (
                 <img
                   src={imageSource}
                   alt={imageSource}
@@ -151,6 +151,25 @@ const InventoryGrid = ({
                       : selectTile(e, item[index])
                   }
                 />
+              )}
+              {imageSource.length > 0 && item.noted && (
+                <div className={stl.imgTile}>
+                  <img
+                    src={imageSource}
+                    alt={imageSource}
+                    className={stl.tileImgNoted}
+                    onClick={(e) =>
+                      selectedTile
+                        ? swapTiles(e, item[index][index])
+                        : selectTile(e, item[index])
+                    }
+                  />
+                  <img
+                    src="https://oldschool.runescape.wiki/images/Bank_note.png?b3d96"
+                    alt="Banknote"
+                    className={stl.tileImg}
+                  />
+                </div>
               )}
             </div>
           );
