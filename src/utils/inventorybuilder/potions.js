@@ -80,6 +80,22 @@ const POTIONS = [
     src: "https://oldschool.runescape.wiki/images/Energy_potion%284%29.png?c82f9",
   },
   {
+    name: "Antidote++ (1)",
+    src: "https://oldschool.runescape.wiki/images/Antidote%2B%2B%281%29.png?78f79",
+  },
+  {
+    name: "Antidote++ (2)",
+    src: "https://oldschool.runescape.wiki/images/Antidote%2B%2B%282%29.png?78f79",
+  },
+  {
+    name: "Antidote++ (3)",
+    src: "https://oldschool.runescape.wiki/images/Antidote%2B%2B%283%29.png?78f79",
+  },
+  {
+    name: "Antidote++ (4)",
+    src: "https://oldschool.runescape.wiki/images/Antidote%2B%2B%284%29.png?78f79",
+  },
+  {
     name: "Anti-venom+ (1)",
     src: "https://oldschool.runescape.wiki/images/Anti-venom%2B%281%29.png?38864",
   },
@@ -319,22 +335,6 @@ const POTIONS = [
   {
     name: "Divine super attack potion (4)",
     src: "https://oldschool.runescape.wiki/images/Divine_super_attack_potion%284%29.png?c82f9",
-  },
-  {
-    name: "Antidote++ (1)",
-    src: "https://oldschool.runescape.wiki/images/Antidote%2B%2B%281%29.png?78f79",
-  },
-  {
-    name: "Antidote++ (2)",
-    src: "https://oldschool.runescape.wiki/images/Antidote%2B%2B%282%29.png?78f79",
-  },
-  {
-    name: "Antidote++ (3)",
-    src: "https://oldschool.runescape.wiki/images/Antidote%2B%2B%283%29.png?78f79",
-  },
-  {
-    name: "Antidote++ (4)",
-    src: "https://oldschool.runescape.wiki/images/Antidote%2B%2B%284%29.png?78f79",
   },
 ];
 
