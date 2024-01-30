@@ -1,16 +1,18 @@
 import stl from "./AmountBar.module.css";
 import { useState, useRef, useEffect } from "react";
 
-const AmountBar = () => {
+const AmountBar = ({ setNotedAmount }) => {
   const [amount, setAmount] = useState("1");
   const [notedState, setNotedState] = useState(false);
-  const [notedAmount, setNotedAmount] = useState(null);
+
   const inputRef = useRef(null);
 
   useEffect(() => {
     if (notedState) {
       inputRef.current?.focus();
+      return;
     }
+    setAmount("1");
   }, [notedState]);
 
   return (
@@ -58,6 +60,7 @@ const AmountBar = () => {
             className={stl.noteAmountInput}
             placeholder="Amount"
             ref={inputRef}
+            onChange={(e) => setNotedAmount(+e.target.value)}
           />
         </div>
       )}

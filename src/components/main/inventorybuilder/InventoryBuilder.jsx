@@ -11,6 +11,7 @@ import SavedInventorys from "./SavedInventorys/SavedInventorys";
 const InventoryBuilder = () => {
   const [currentGrid, setCurrentGrid] = useState(EMPTYGRID);
   const [screenshotting, setScreenshotting] = useState(false);
+  const [notedAmount, setNotedAmount] = useState(null);
 
   return (
     <>
@@ -37,7 +38,7 @@ const InventoryBuilder = () => {
             />
           </div>
           <div className={stl.rightBar}>
-            <ItemGalery />
+            <ItemGalery setNotedAmount={setNotedAmount} />
             <SavedInventorys />
           </div>
         </div>
