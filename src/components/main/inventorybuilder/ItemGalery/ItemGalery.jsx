@@ -15,8 +15,11 @@ const ItemGalery = ({
   amountToAdd,
   setCurrentGrid,
   currentGrid,
+  notedAmount,
 }) => {
   const [activeGallery, setActiveGallery] = useState("Armor");
+  const [notedState, setNotedState] = useState(false);
+
   return (
     <div className={stl.itemGalery}>
       <SelectBar
@@ -29,6 +32,8 @@ const ItemGalery = ({
           setCurrentGrid={setCurrentGrid}
           currentGrid={currentGrid}
           setAmountToAdd={setAmountToAdd}
+          notedState={notedState}
+          notedAmount={notedAmount}
         />
       )}
       {activeGallery === "Potions" && (
@@ -60,6 +65,8 @@ const ItemGalery = ({
         amountToAdd={amountToAdd}
         activeGallery={activeGallery}
         currentGrid={currentGrid}
+        notedState={notedState}
+        setNotedState={setNotedState}
       />
     </div>
   );

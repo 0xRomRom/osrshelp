@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import stl from "./Armor.module.css";
 import ARMORITEMS from "../../../../../../utils/inventorybuilder/armoritems";
 
@@ -19,6 +19,8 @@ const Armor = ({
   setCurrentGrid,
   currentGrid,
   setAmountToAdd,
+  notedState,
+  notedAmount,
 }) => {
   const [slotState, setSlotState] = useState("Helm");
   const [activeStyle, setActiveStyle] = useState("Melee");
@@ -44,6 +46,11 @@ const Armor = ({
   ];
 
   const addToInventory = (imgSrc) => {
+    if (notedState) {
+      addNotedItems(imgSrc);
+      return;
+    }
+
     let updatedGrid = [...currentGrid];
 
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
@@ -85,6 +92,50 @@ const Armor = ({
     }
     setAmountToAdd("1");
   };
+
+  const addNotedItems = (imgSrc) => {
+    let updatedGrid = [...currentGrid];
+
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i][i];
+
+      if (gridValue.length === 0) {
+        const cacheIndex = i;
+
+        updatedGrid[cacheIndex][cacheIndex] = imgSrc;
+        updatedGrid[cacheIndex].noted = true;
+        updatedGrid[cacheIndex].amount += +notedAmount;
+
+        setCurrentGrid(updatedGrid);
+        break;
+        // let added = 0;
+        // for (let j = cacheIndex; j < 28; j++) {
+        //   if (j >= 28) {
+        //     setCurrentGrid(updatedGrid);
+        //     break;
+        //   }
+        //   if (updatedGrid[j][j] !== "") {
+        //     continue;
+        //   }
+        //   if (added >= +amountToAdd) {
+        //     setCurrentGrid(updatedGrid);
+        //     break;
+        //   }
+        //   console.log(+notedAmount);
+        //   added++;
+        //   updatedGrid[j][j] = imgSrc;
+        //   updatedGrid[j].noted = true;
+        //   updatedGrid[j].amount += +notedAmount;
+        // }
+        // setCurrentGrid(updatedGrid);
+        // break;
+      }
+    }
+  };
+
+  useEffect(() => {
+    console.log(notedState);
+  }, [notedState]);
 
   return (
     <div className={stl.armor}>

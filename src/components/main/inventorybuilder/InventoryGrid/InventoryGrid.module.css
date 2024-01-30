@@ -83,3 +83,14 @@
   z-index: 10;
   transform: scale(0.9);
 }
+
+.noteAmount {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: yellow;
+  z-index: 20;
+  font-size: 21px;
+  font-family: RSFont;
+  text-shadow: 0px 0px 5px black;
+}

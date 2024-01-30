@@ -1,12 +1,12 @@
 const EMPTYGRID = [
   {
-    0: "https://oldschool.runescape.wiki/images/Shark.png?4b960",
-    noted: true,
-    amount: 20,
+    0: "",
+    noted: false,
+    amount: 0,
   },
   {
-    1: "https://oldschool.runescape.wiki/images/Yew_logs.png",
-    noted: true,
+    1: "",
+    noted: false,
     amount: 0,
   },
   { 2: "", noted: false, amount: 0 },

@@ -7,8 +7,9 @@ const AmountBar = ({
   setAmountToAdd,
   activeGallery,
   currentGrid,
+  notedState,
+  setNotedState,
 }) => {
-  const [notedState, setNotedState] = useState(false);
   const inputRef = useRef(null);
   const runesInputRef = useRef(null);
 

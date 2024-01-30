@@ -45,6 +45,7 @@ const InventoryBuilder = () => {
               amountToAdd={amountToAdd}
               currentGrid={currentGrid}
               setCurrentGrid={setCurrentGrid}
+              notedAmount={notedAmount}
             />
             <SavedInventorys />
           </div>

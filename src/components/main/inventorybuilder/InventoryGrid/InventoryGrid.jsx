@@ -154,6 +154,7 @@ const InventoryGrid = ({
               )}
               {imageSource.length > 0 && item.noted && (
                 <div className={stl.imgTile}>
+                  <span className={stl.noteAmount}>{item.amount}</span>
                   <img
                     src={imageSource}
                     alt={imageSource}

@@ -8,34 +8,40 @@ const Potions = ({
   setAmountToAdd,
 }) => {
   const addToInventory = (imgSrc) => {
-    let updatedGrid = { ...currentGrid };
+    let updatedGrid = [...currentGrid];
 
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
-      const gridValue = updatedGrid[i];
+      const gridValue = updatedGrid[i][i];
+
       if (gridValue.length === 0) {
         const cacheIndex = i;
 
         if (amountToAdd === "Fill") {
           for (let j = cacheIndex; j < 28; j++) {
-            if (updatedGrid[j] !== "") {
+            if (updatedGrid[j][j] !== "") {
               continue;
             }
-            updatedGrid[j] = imgSrc;
+            updatedGrid[j][j] = imgSrc;
           }
-
           setCurrentGrid(updatedGrid);
           break;
         }
 
-        for (let j = cacheIndex; j < cacheIndex + +amountToAdd; j++) {
+        let added = 0;
+        for (let j = cacheIndex; j < 28; j++) {
           if (j >= 28) {
             setCurrentGrid(updatedGrid);
             break;
           }
-          if (updatedGrid[j] !== "") {
+          if (updatedGrid[j][j] !== "") {
             continue;
           }
-          updatedGrid[j] = imgSrc;
+          if (added >= +amountToAdd) {
+            setCurrentGrid(updatedGrid);
+            break;
+          }
+          added++;
+          updatedGrid[j][j] = imgSrc;
         }
         setCurrentGrid(updatedGrid);
         break;
@@ -43,7 +49,6 @@ const Potions = ({
     }
     setAmountToAdd("1");
   };
-
   return (
     <div className={stl.potions}>
       <div className={stl.potionsgrid}>
