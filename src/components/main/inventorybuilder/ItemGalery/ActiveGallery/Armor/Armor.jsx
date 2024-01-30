@@ -53,14 +53,12 @@ const Armor = ({
         const cacheIndex = i;
 
         if (amountToAdd === "Fill") {
-          console.log(updatedGrid);
           for (let j = cacheIndex; j < 28; j++) {
             if (updatedGrid[j][j] !== "") {
               continue;
             }
             updatedGrid[j][j] = imgSrc;
           }
-          console.log(updatedGrid);
           setCurrentGrid(updatedGrid);
           break;
         }
@@ -74,7 +72,8 @@ const Armor = ({
           if (updatedGrid[j][j] !== "") {
             continue;
           }
-          if (added === +amountToAdd) {
+          if (added >= +amountToAdd) {
+            alert("Reached");
             setCurrentGrid(updatedGrid);
             break;
           }
