@@ -1,5 +1,5 @@
 import stl from "./Potions.module.css";
-import ARMORITEMS from "../../../../../../utils/inventorybuilder/armoritems";
+import POTIONS from "../../../../../../utils/inventorybuilder/potions";
 
 const Potions = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
   const addToInventory = (imgSrc) => {
@@ -36,7 +36,7 @@ const Potions = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
   return (
     <div className={stl.potions}>
       <div className={stl.potionsgrid}>
-        {ARMORITEMS.map((item) => (
+        {POTIONS.map((item) => (
           <div
             key={item.name}
             className={stl.gridItem}

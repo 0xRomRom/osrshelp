@@ -6,8 +6,8 @@
 }
 
 .gridItem {
-  min-width: 70px;
-  max-width: 70px;
+  min-width: 25%;
+  max-width: 25%;
   min-height: 65px;
   max-height: 65px;
   flex: 1 50px;
@@ -55,7 +55,6 @@
   display: flex;
   flex-wrap: wrap;
 
-  padding: 10px 0px;
   justify-content: flex-start;
   align-items: flex-start;
 }
