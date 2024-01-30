@@ -51,20 +51,8 @@ const InventoryGrid = ({
     console.log("First item: ", selectedTile);
     console.log("Second item: ", newItem);
 
-    const temp = newGrid[selectedIndex];
-    newGrid[selectedIndex] = newGrid[currentTarget];
-    newGrid[currentTarget] = temp;
-
-    // Swap keys inside the objects
-    const tempKey = Object.keys(newGrid[selectedIndex])[0];
-    newGrid[selectedIndex] = {
-      [Object.keys(newGrid[currentTarget])[0]]: Object.values(
-        newGrid[selectedIndex]
-      )[0],
-    };
-    newGrid[currentTarget] = {
-      [tempKey]: Object.values(newGrid[currentTarget])[0],
-    };
+    newGrid[selectedIndex] = newItem;
+    newGrid[currentTarget] = selectedTile;
 
     console.log(newGrid);
 
