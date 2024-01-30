@@ -1,6 +1,6 @@
 import stl from "./InventoryBuilder.module.css";
 import Pagination from "../pagination/Pagination";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SearchItem from "./SearchItem/SearchItem";
 import InventoryGrid from "./InventoryGrid/InventoryGrid";
 import EMPTYGRID from "../../../utils/emptyinventory";
@@ -12,6 +12,11 @@ const InventoryBuilder = () => {
   const [currentGrid, setCurrentGrid] = useState(EMPTYGRID);
   const [screenshotting, setScreenshotting] = useState(false);
   const [notedAmount, setNotedAmount] = useState(null);
+  const [amountToAdd, setAmountToAdd] = useState("1");
+
+  useEffect(() => {
+    console.log(notedAmount);
+  }, [notedAmount]);
 
   return (
     <>
@@ -38,7 +43,13 @@ const InventoryBuilder = () => {
             />
           </div>
           <div className={stl.rightBar}>
-            <ItemGalery setNotedAmount={setNotedAmount} />
+            <ItemGalery
+              setNotedAmount={setNotedAmount}
+              setAmountToAdd={setAmountToAdd}
+              amountToAdd={amountToAdd}
+              currentGrid={currentGrid}
+              setCurrentGrid={setCurrentGrid}
+            />
             <SavedInventorys />
           </div>
         </div>

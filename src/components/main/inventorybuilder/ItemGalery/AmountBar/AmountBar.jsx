@@ -1,10 +1,8 @@
 import stl from "./AmountBar.module.css";
 import { useState, useRef, useEffect } from "react";
 
-const AmountBar = ({ setNotedAmount }) => {
-  const [amount, setAmount] = useState("1");
+const AmountBar = ({ setNotedAmount, amountToAdd, setAmountToAdd }) => {
   const [notedState, setNotedState] = useState(false);
-
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -12,7 +10,7 @@ const AmountBar = ({ setNotedAmount }) => {
       inputRef.current?.focus();
       return;
     }
-    setAmount("1");
+    setAmountToAdd("1");
   }, [notedState]);
 
   return (
@@ -21,33 +19,33 @@ const AmountBar = ({ setNotedAmount }) => {
         <div className={stl.amountButtonWrap}>
           <button
             className={`${stl.amountCta} ${
-              amount === "1" ? stl.activeCta : ""
+              amountToAdd === "1" ? stl.activeCta : ""
             }`}
-            onClick={() => setAmount("1")}
+            onClick={() => setAmountToAdd("1")}
           >
             1
           </button>
           <button
             className={`${stl.amountCta} ${
-              amount === "5" ? stl.activeCta : ""
+              amountToAdd === "5" ? stl.activeCta : ""
             }`}
-            onClick={() => setAmount("5")}
+            onClick={() => setAmountToAdd("5")}
           >
             5
           </button>
           <button
             className={`${stl.amountCta} ${
-              amount === "10" ? stl.activeCta : ""
+              amountToAdd === "10" ? stl.activeCta : ""
             }`}
-            onClick={() => setAmount("10")}
+            onClick={() => setAmountToAdd("10")}
           >
             10
           </button>
           <button
             className={`${stl.amountCta} ${
-              amount === "Fill" ? stl.activeCta : ""
+              amountToAdd === "Fill" ? stl.activeCta : ""
             }`}
-            onClick={() => setAmount("Fill")}
+            onClick={() => setAmountToAdd("Fill")}
           >
             Fill
           </button>
@@ -66,10 +64,10 @@ const AmountBar = ({ setNotedAmount }) => {
       )}
       <button
         className={`${stl.amountCta} ${stl.lastCta} ${
-          amount === "Noted" ? stl.activeCta : ""
+          amountToAdd === "Noted" ? stl.activeCta : ""
         }`}
         onClick={() => {
-          setAmount("Noted");
+          setAmountToAdd("Noted");
           setNotedState(!notedState);
         }}
       >

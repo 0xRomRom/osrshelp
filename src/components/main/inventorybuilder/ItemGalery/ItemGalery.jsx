@@ -6,7 +6,13 @@ import AmountBar from "./AmountBar/AmountBar";
 
 import Armor from "./ActiveGallery/Armor/Armor";
 
-const ItemGalery = ({ setNotedAmount }) => {
+const ItemGalery = ({
+  setNotedAmount,
+  setAmountToAdd,
+  amountToAdd,
+  setCurrentGrid,
+  currentGrid,
+}) => {
   const [activeGallery, setActiveGallery] = useState("Armor");
   return (
     <div className={stl.itemGalery}>
@@ -14,8 +20,18 @@ const ItemGalery = ({ setNotedAmount }) => {
         activeGallery={activeGallery}
         setActiveGallery={setActiveGallery}
       />
-      {activeGallery === "Armor" && <Armor />}
-      <AmountBar setNotedAmount={setNotedAmount} />
+      {activeGallery === "Armor" && (
+        <Armor
+          amountToAdd={amountToAdd}
+          setCurrentGrid={setCurrentGrid}
+          currentGrid={currentGrid}
+        />
+      )}
+      <AmountBar
+        setNotedAmount={setNotedAmount}
+        setAmountToAdd={setAmountToAdd}
+        amountToAdd={amountToAdd}
+      />
     </div>
   );
 };

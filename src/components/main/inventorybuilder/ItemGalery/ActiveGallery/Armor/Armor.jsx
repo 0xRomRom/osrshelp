@@ -14,7 +14,7 @@ import Gloves from "../../../../../../assets/gearslots/Gloves.png";
 import Boots from "../../../../../../assets/gearslots/Boots.png";
 import Ring from "../../../../../../assets/gearslots/Ring.png";
 
-const Armor = () => {
+const Armor = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
   const [slotState, setSlotState] = useState("Helm");
   const [activeStyle, setActiveStyle] = useState("Melee");
 
@@ -37,6 +37,26 @@ const Armor = () => {
     { style: "Magic", icon: "./skillicons/Magic.webp" },
     { style: "Ranged", icon: "./skillicons/Ranged.webp" },
   ];
+
+  const addToInventory = (imgSrc) => {
+    let updatedGrid = { ...currentGrid };
+    console.log(currentGrid);
+
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i];
+      if (gridValue.length === 0) {
+        console.log(i);
+        const cacheIndex = i;
+        for (let j = cacheIndex; j < cacheIndex + +amountToAdd; j++) {
+          updatedGrid[j] = imgSrc;
+        }
+        setCurrentGrid(updatedGrid);
+        break;
+      }
+    }
+
+    // setCurrentGrid();
+  };
 
   return (
     <div className={stl.armor}>
@@ -62,7 +82,11 @@ const Armor = () => {
           {ARMORITEMS.filter((slot) => slot.type === activeStyle)
             .filter((slot) => slot.slot === slotState)
             .map((item) => (
-              <div key={item.name} className={stl.gridItem}>
+              <div
+                key={item.name}
+                className={stl.gridItem}
+                onClick={() => addToInventory(item.src)}
+              >
                 <img src={item.src} alt={item.name} className={stl.gridIcon} />
                 <span className={stl.gridItemTitle}>{item.name}</span>
               </div>
