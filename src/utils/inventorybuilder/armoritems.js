@@ -724,6 +724,9 @@ const ARMORITEMS = [
   ////////////////////////////////////
   ////////////////////////////////////
   //////////////Capes/////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
 
   {
     type: "Melee",
@@ -1348,6 +1351,279 @@ const ARMORITEMS = [
     name: "Zamorak max cape",
     slot: "Cape",
     src: "https://oldschool.runescape.wiki/images/Zamorak_max_cape.png",
+  },
+
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  //////////////Amulets///////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+
+  {
+    type: "Magic",
+    name: "3rd age amulet",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/3rd_age_amulet.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of accuracy",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_accuracy.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of avarice",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_avarice.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of blood fury",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_blood_fury.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of defence",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_defence.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of defence (t)",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_defence_%28t%29.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of eternal glory",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_eternal_glory.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of fury",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_fury.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of glory",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_glory.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of glory(t)",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_glory_%28t4%29.png?4470c",
+  },
+  {
+    type: "Magic",
+    name: "Amulet of magic",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_magic.png",
+  },
+  {
+    type: "Magic",
+    name: "Amulet of magic(t)",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_magic_%28t%29.png?ec289",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of power",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_power.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of strength",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_strength.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of the damned",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_the_damned.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of torture",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_torture.png",
+  },
+  {
+    type: "Melee",
+    name: "Amulet of torture(or)",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Amulet_of_torture_%28or%29.png?ec289",
+  },
+  {
+    type: "Magic",
+    name: "Ancient stole",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Ancient_stole.png",
+  },
+  {
+    type: "Magic",
+    name: "Armadyl stole",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Armadyl_stole.png",
+  },
+  {
+    type: "Magic",
+    name: "Bandos stole",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Bandos_stole.png",
+  },
+  {
+    type: "Melee",
+    name: "Beads of the dead",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Beads_of_the_dead.png",
+  },
+  {
+    type: "Melee",
+    name: "Berserker necklace",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Berserker_necklace.png",
+  },
+  {
+    type: "Melee",
+    name: "Berserker necklace(or)",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Berserker_necklace_%28or%29.png?356fd",
+  },
+  {
+    type: "Melee",
+    name: "Bonecrusher necklace",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Bonecrusher_necklace.png",
+  },
+  {
+    type: "Melee",
+    name: "Dragonbone necklace",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Dragonbone_necklace.png",
+  },
+  {
+    type: "Melee",
+    name: "Dodgy necklace",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Dodgy_necklace.png",
+  },
+  {
+    type: "Melee",
+    name: "Gnome amulet",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Gnome_amulet.png",
+  },
+  {
+    type: "Magic",
+    name: "Guthix stole",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Guthix_stole.png",
+  },
+  {
+    type: "Melee",
+    name: "Holy symbol",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Holy_symbol.png",
+  },
+  {
+    type: "Magic",
+    name: "Lunar amulet",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Lunar_amulet.png",
+  },
+  {
+    type: "Ranged",
+    name: "Necklace of anguish",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Necklace_of_anguish.png",
+  },
+  {
+    type: "Ranged",
+    name: "Necklace of anguish (or)",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Necklace_of_anguish_%28or%29.png",
+  },
+  {
+    type: "Magic",
+    name: "Occult necklace",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Occult_necklace.png",
+  },
+  {
+    type: "Magic",
+    name: "Occult necklace (or)",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Occult_necklace_%28or%29.png",
+  },
+  {
+    type: "Melee",
+    name: "Salve amulet",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Salve_amulet.png",
+  },
+  {
+    type: "Melee",
+    name: "Salve amulet (e)",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Salve_amulet_%28e%29.png",
+  },
+  {
+    type: "Magic",
+    name: "Saradomin stole",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Saradomin_stole.png",
+  },
+  {
+    type: "Melee",
+    name: "Strength amulet(t)",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Strength_amulet_%28t%29.png?e42b7",
+  },
+  {
+    type: "Melee",
+    name: "Unholy symbol",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Unholy_symbol.png",
+  },
+  {
+    type: "Melee",
+    name: "Void seal",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Void_seal.png",
+  },
+  {
+    type: "Magic",
+    name: "Witchwood icon",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Witchwood_icon.png",
+  },
+  {
+    type: "Magic",
+    name: "Xeric's talisman",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Xeric%27s_talisman.png",
+  },
+  {
+    type: "Magic",
+    name: "Xeric's talisman (inert)",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Xeric%27s_talisman_%28inert%29.png",
+  },
+  {
+    type: "Magic",
+    name: "Zamorak stole",
+    slot: "Necklace",
+    src: "https://oldschool.runescape.wiki/images/Zamorak_stole.png",
   },
 ];
 

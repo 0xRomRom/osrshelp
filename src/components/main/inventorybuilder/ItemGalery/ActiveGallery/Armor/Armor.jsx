@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import stl from "./Armor.module.css";
 import ARMORITEMS from "../../../../../../utils/inventorybuilder/armoritems";
-import CAPES from "../../../../../../utils/gearcalculator/capes";
+import NECKLACE from "../../../../../../utils/gearcalculator/necklace";
 
 import Helm from "../../../../../../assets/gearslots/Head.png";
 import Cape from "../../../../../../assets/gearslots/Cape.png";
@@ -40,7 +40,7 @@ const Armor = () => {
   ];
 
   useEffect(() => {
-    const newArr = CAPES.map((item) => {
+    const newArr = NECKLACE.map((item) => {
       const formattedSearch =
         item.name.charAt(0).toUpperCase() + item.name.slice(1);
 
@@ -55,13 +55,13 @@ const Armor = () => {
       return {
         type: item.type,
         name: item.name,
-        slot: "Cape",
+        slot: "Necklace",
         src: imgSrc,
       };
     });
 
     console.log(newArr);
-  }, [CAPES]);
+  }, [NECKLACE]);
 
   return (
     <div className={stl.armor}>
