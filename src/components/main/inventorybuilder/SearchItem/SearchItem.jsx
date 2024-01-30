@@ -31,10 +31,12 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
 
   const saveToInv = () => {
     for (let i = 0; i < Object.keys(currentGrid).length; i++) {
-      const gridValue = currentGrid[i];
+      const gridValue = currentGrid[i][i];
+      console.log(gridValue);
       if (gridValue.length === 0) {
-        const newGrid = { ...currentGrid };
-        newGrid[i] = imgSrc;
+        const newGrid = [...currentGrid];
+        newGrid[i][i] = imgSrc;
+        console.log(newGrid);
         setCurrentGrid(newGrid);
         break;
       }

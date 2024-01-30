@@ -1,6 +1,6 @@
 import stl from "./InventoryBuilder.module.css";
 import Pagination from "../pagination/Pagination";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SearchItem from "./SearchItem/SearchItem";
 import InventoryGrid from "./InventoryGrid/InventoryGrid";
 import EMPTYGRID from "../../../utils/emptyinventory";
@@ -13,10 +13,6 @@ const InventoryBuilder = () => {
   const [screenshotting, setScreenshotting] = useState(false);
   const [notedAmount, setNotedAmount] = useState(null);
   const [amountToAdd, setAmountToAdd] = useState("1");
-
-  useEffect(() => {
-    console.log(notedAmount);
-  }, [notedAmount]);
 
   return (
     <>
