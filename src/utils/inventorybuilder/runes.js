@@ -83,6 +83,78 @@ const RUNES = [
     name: "Lava rune",
     src: "https://oldschool.runescape.wiki/images/Lava_rune.png?0b998",
   },
+  {
+    name: "Varrock teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Varrock_teleport_%28tablet%29.png?35dd5",
+  },
+  {
+    name: "Lumbridge teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Lumbridge_teleport_%28tablet%29.png?35dd5",
+  },
+  {
+    name: "Falador teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Falador_teleport_%28tablet%29.png?35dd5",
+  },
+  {
+    name: "Camelot teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Camelot_teleport_%28tablet%29.png?35dd5",
+  },
+  {
+    name: "Kourend castle teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Kourend_castle_teleport_%28tablet%29.png?35dd5",
+  },
+  {
+    name: "Ardougne teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Ardougne_teleport_%28tablet%29.png?35dd5",
+  },
+  {
+    name: "Watchtower teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Watchtower_teleport_%28tablet%29.png?35dd5",
+  },
+  {
+    name: "Teleport to house (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Teleport_to_house_%28tablet%29.png?b3f03",
+  },
+  {
+    name: "Rimmington teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Rimmington_teleport.png?4e1b1",
+  },
+  {
+    name: "Taverley teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Taverley_teleport.png?4e1b1",
+  },
+  {
+    name: "Pollnivneach teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Pollnivneach_teleport.png?4e1b1",
+  },
+  {
+    name: "Hosidius teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Hosidius_teleport.png?4e1b1",
+  },
+  {
+    name: "Relekka teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Rellekka_teleport.png?b11fe",
+  },
+  {
+    name: "Brimhaven teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Brimhaven_teleport.png?4e1b1",
+  },
+  {
+    name: "Yanille teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Yanille_teleport.png?4e1b1",
+  },
+  {
+    name: "Prifddinas teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Prifddinas_teleport.png?4e1b1",
+  },
+  {
+    name: "Trollheim teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Trollheim_teleport_%28tablet%29.png?5c5a6",
+  },
+  {
+    name: "Arceuus library teleport (tablet)",
+    src: "https://oldschool.runescape.wiki/images/Arceuus_library_teleport_%28tablet%29.png?1f712",
+  },
 ];
 
 export default RUNES;
