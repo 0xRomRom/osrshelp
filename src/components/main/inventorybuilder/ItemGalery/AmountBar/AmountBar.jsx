@@ -1,42 +1,76 @@
 import stl from "./AmountBar.module.css";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const AmountBar = () => {
   const [amount, setAmount] = useState("1");
+  const [notedState, setNotedState] = useState(false);
+  const [notedAmount, setNotedAmount] = useState(null);
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    if (notedState) {
+      inputRef.current?.focus();
+    }
+  }, [notedState]);
 
   return (
     <div className={stl.amountbar}>
-      <button
-        className={`${stl.amountCta} ${amount === "1" ? stl.activeCta : ""}`}
-        onClick={() => setAmount("1")}
-      >
-        1
-      </button>
-      <button
-        className={`${stl.amountCta} ${amount === "5" ? stl.activeCta : ""}`}
-        onClick={() => setAmount("5")}
-      >
-        5
-      </button>
-      <button
-        className={`${stl.amountCta} ${amount === "10" ? stl.activeCta : ""}`}
-        onClick={() => setAmount("10")}
-      >
-        10
-      </button>
-      <button
-        className={`${stl.amountCta} ${amount === "Fill" ? stl.activeCta : ""}`}
-        onClick={() => setAmount("Fill")}
-      >
-        Fill
-      </button>
+      {!notedState && (
+        <div className={stl.amountButtonWrap}>
+          <button
+            className={`${stl.amountCta} ${
+              amount === "1" ? stl.activeCta : ""
+            }`}
+            onClick={() => setAmount("1")}
+          >
+            1
+          </button>
+          <button
+            className={`${stl.amountCta} ${
+              amount === "5" ? stl.activeCta : ""
+            }`}
+            onClick={() => setAmount("5")}
+          >
+            5
+          </button>
+          <button
+            className={`${stl.amountCta} ${
+              amount === "10" ? stl.activeCta : ""
+            }`}
+            onClick={() => setAmount("10")}
+          >
+            10
+          </button>
+          <button
+            className={`${stl.amountCta} ${
+              amount === "Fill" ? stl.activeCta : ""
+            }`}
+            onClick={() => setAmount("Fill")}
+          >
+            Fill
+          </button>
+        </div>
+      )}
+      {notedState && (
+        <div className={stl.inputWrapper}>
+          <input
+            type="number"
+            className={stl.noteAmountInput}
+            placeholder="Amount"
+            ref={inputRef}
+          />
+        </div>
+      )}
       <button
         className={`${stl.amountCta} ${stl.lastCta} ${
           amount === "Noted" ? stl.activeCta : ""
         }`}
-        onClick={() => setAmount("Noted")}
+        onClick={() => {
+          setAmount("Noted");
+          setNotedState(!notedState);
+        }}
       >
-        Noted
+        {notedState ? "Unnoted" : "Noted"}
       </button>
     </div>
   );

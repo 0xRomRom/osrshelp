@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import stl from "./Armor.module.css";
 import ARMORITEMS from "../../../../../../utils/inventorybuilder/armoritems";
-import RINGS from "../../../../../../utils/gearcalculator/rings";
 
 import Helm from "../../../../../../assets/gearslots/Head.png";
 import Cape from "../../../../../../assets/gearslots/Cape.png";
@@ -38,30 +37,6 @@ const Armor = () => {
     { style: "Magic", icon: "./skillicons/Magic.webp" },
     { style: "Ranged", icon: "./skillicons/Ranged.webp" },
   ];
-
-  useEffect(() => {
-    const newArr = RINGS.map((item) => {
-      const formattedSearch =
-        item.name.charAt(0).toUpperCase() + item.name.slice(1);
-
-      const encoded = formattedSearch
-        .replace(/\(/g, "%28")
-        .replace(/\)/g, "%29")
-        .replace(/'/g, "%27")
-        .replaceAll(" ", "_");
-
-      const imgSrc = `https://oldschool.runescape.wiki/images/${encoded}.png`;
-
-      return {
-        type: item.type,
-        name: item.name,
-        slot: "Ring",
-        src: imgSrc,
-      };
-    });
-
-    console.log(newArr);
-  }, [RINGS]);
 
   return (
     <div className={stl.armor}>
