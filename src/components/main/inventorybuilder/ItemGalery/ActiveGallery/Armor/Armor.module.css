@@ -75,18 +75,22 @@
 }
 
 .iconGrid {
-  height: 100%;
-  flex: 1;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   overflow-y: scroll;
   padding: 10px 0px;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .gridItem {
-  width: 24%;
+  min-width: 70px;
+  max-width: 70px;
   min-height: 65px;
+  max-height: 65px;
+  flex: 1 50px;
+  flex-basis: 24%;
   /* border: 1px solid gray; */
   display: flex;
   flex-direction: column;
