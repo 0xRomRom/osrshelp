@@ -1,7 +1,7 @@
 import stl from "./Food.module.css";
 import FOOD from "../../../../../../utils/inventorybuilder/food";
 
-const Food = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
+const Food = ({ amountToAdd, setCurrentGrid, currentGrid, setAmountToAdd }) => {
   const addToInventory = (imgSrc) => {
     let updatedGrid = { ...currentGrid };
 
@@ -36,6 +36,7 @@ const Food = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
         break;
       }
     }
+    setAmountToAdd("1");
   };
 
   return (

@@ -97,7 +97,6 @@ const InventoryGrid = ({
                 selectedTile !== ""
                   ? "1px solid rgb(33, 40, 54)"
                   : "",
-              // backgroundImage: `url(${item})`,
               backgroundColor:
                 selectedTile === item &&
                 selectedIndex === index &&

@@ -1,7 +1,12 @@
 import stl from "./Potions.module.css";
 import POTIONS from "../../../../../../utils/inventorybuilder/potions";
 
-const Potions = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
+const Potions = ({
+  amountToAdd,
+  setCurrentGrid,
+  currentGrid,
+  setAmountToAdd,
+}) => {
   const addToInventory = (imgSrc) => {
     let updatedGrid = { ...currentGrid };
 
@@ -36,6 +41,7 @@ const Potions = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
         break;
       }
     }
+    setAmountToAdd("1");
   };
 
   return (

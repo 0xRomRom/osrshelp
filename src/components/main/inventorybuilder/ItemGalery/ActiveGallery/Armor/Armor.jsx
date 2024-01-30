@@ -14,7 +14,12 @@ import Gloves from "../../../../../../assets/gearslots/Gloves.png";
 import Boots from "../../../../../../assets/gearslots/Boots.png";
 import Ring from "../../../../../../assets/gearslots/Ring.png";
 
-const Armor = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
+const Armor = ({
+  amountToAdd,
+  setCurrentGrid,
+  currentGrid,
+  setAmountToAdd,
+}) => {
   const [slotState, setSlotState] = useState("Helm");
   const [activeStyle, setActiveStyle] = useState("Melee");
 
@@ -72,6 +77,7 @@ const Armor = ({ amountToAdd, setCurrentGrid, currentGrid }) => {
         break;
       }
     }
+    setAmountToAdd("1");
   };
 
   return (

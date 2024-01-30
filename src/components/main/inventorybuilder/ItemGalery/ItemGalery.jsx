@@ -28,6 +28,7 @@ const ItemGalery = ({
           amountToAdd={amountToAdd}
           setCurrentGrid={setCurrentGrid}
           currentGrid={currentGrid}
+          setAmountToAdd={setAmountToAdd}
         />
       )}
       {activeGallery === "Potions" && (
@@ -35,6 +36,7 @@ const ItemGalery = ({
           amountToAdd={amountToAdd}
           setCurrentGrid={setCurrentGrid}
           currentGrid={currentGrid}
+          setAmountToAdd={setAmountToAdd}
         />
       )}
       {activeGallery === "Food" && (
@@ -42,6 +44,7 @@ const ItemGalery = ({
           amountToAdd={amountToAdd}
           setCurrentGrid={setCurrentGrid}
           currentGrid={currentGrid}
+          setAmountToAdd={setAmountToAdd}
         />
       )}
       {activeGallery === "Runes" && (
