@@ -9781,6 +9781,213 @@ const ARMORITEMS = [
     slot: "Gloves",
     src: "https://oldschool.runescape.wiki/images/Ferocious_gloves.png",
   },
+
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  //////////////Rings/////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+  ////////////////////////////////////
+
+  {
+    type: "Ranged",
+    name: "Archers ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Archers_ring.png",
+  },
+  {
+    type: "Ranged",
+    name: "Archers ring (i)",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Archers_ring_%28i%29.png",
+  },
+  {
+    type: "Magic",
+    name: "Beacon ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Beacon_ring.png",
+  },
+  {
+    type: "Melee",
+    name: "Bellator ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Bellator_ring.png",
+  },
+  {
+    type: "Melee",
+    name: "Berserker ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Berserker_ring.png",
+  },
+  {
+    type: "Melee",
+    name: "Berserker ring (i)",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Berserker_ring_%28i%29.png",
+  },
+  {
+    type: "Magic",
+    name: "Brimstone ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Brimstone_ring.png",
+  },
+  {
+    type: "Melee",
+    name: "Explorer's ring 1",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Explorer%27s_ring_1.png",
+  },
+  {
+    type: "Melee",
+    name: "Explorer's ring 2",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Explorer%27s_ring_2.png",
+  },
+  {
+    type: "Melee",
+    name: "Explorer's ring 3",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Explorer%27s_ring_3.png",
+  },
+  {
+    type: "Melee",
+    name: "Explorer's ring 4",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Explorer%27s_ring_4.png",
+  },
+  {
+    type: "Melee",
+    name: "Ring of life",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Ring_of_life.png",
+  },
+  {
+    type: "Melee",
+    name: "Ring of recoil",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Ring_of_recoil.png",
+  },
+  {
+    type: "Melee",
+    name: "Ring of Dueling",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Ring_of_dueling%288%29.png?3f71e",
+  },
+  {
+    type: "Melee",
+    name: "Granite ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Granite_ring.png",
+  },
+  {
+    type: "Melee",
+    name: "Granite ring (i)",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Granite_ring_%28i%29.png",
+  },
+  {
+    type: "Magic",
+    name: "Lunar ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Lunar_ring.png",
+  },
+  {
+    type: "Magic",
+    name: "Magus ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Magus_ring.png",
+  },
+  {
+    type: "Melee",
+    name: "Ring of shadows",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Ring_of_shadows.png",
+  },
+  {
+    type: "Melee",
+    name: "Ring of suffering",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Ring_of_suffering.png",
+  },
+  {
+    type: "Melee",
+    name: "Ring of suffering (i)",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Ring_of_suffering_%28i%29.png",
+  },
+  {
+    type: "Melee",
+    name: "Ring of the gods",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Ring_of_the_gods.png",
+  },
+  {
+    type: "Melee",
+    name: "Ring of the gods (i)",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Ring_of_the_gods_%28i%29.png",
+  },
+  {
+    type: "Magic",
+    name: "Seers ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Seers_ring.png",
+  },
+  {
+    type: "Magic",
+    name: "Seers ring (i)",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Seers_ring_%28i%29.png",
+  },
+  {
+    type: "Melee",
+    name: "Treasonous ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Treasonous_ring.png",
+  },
+  {
+    type: "Melee",
+    name: "Treasonous ring (i)",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Treasonous_ring_%28i%29.png",
+  },
+  {
+    type: "Melee",
+    name: "Tyrannical ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Tyrannical_ring.png",
+  },
+  {
+    type: "Melee",
+    name: "Tyrannical ring (i)",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Tyrannical_ring_%28i%29.png",
+  },
+  {
+    type: "Melee",
+    name: "Ultor ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Ultor_ring.png",
+  },
+  {
+    type: "Ranged",
+    name: "Venator ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Venator_ring.png",
+  },
+  {
+    type: "Melee",
+    name: "Warrior ring",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Warrior_ring.png",
+  },
+  {
+    type: "Melee",
+    name: "Warrior ring (i)",
+    slot: "Ring",
+    src: "https://oldschool.runescape.wiki/images/Warrior_ring_%28i%29.png",
+  },
 ];
 
 export default ARMORITEMS;
