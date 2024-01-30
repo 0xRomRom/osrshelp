@@ -96,6 +96,18 @@ const Armor = ({
   const addNotedItems = (imgSrc) => {
     let updatedGrid = [...currentGrid];
 
+    // Check for existing item to increment rather than duplicate
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i][i];
+      console.log(gridValue);
+      if (gridValue === imgSrc) {
+        updatedGrid[i].amount += +notedAmount;
+
+        setCurrentGrid(updatedGrid);
+        return;
+      }
+    }
+
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i][i];
 
@@ -108,27 +120,6 @@ const Armor = ({
 
         setCurrentGrid(updatedGrid);
         break;
-        // let added = 0;
-        // for (let j = cacheIndex; j < 28; j++) {
-        //   if (j >= 28) {
-        //     setCurrentGrid(updatedGrid);
-        //     break;
-        //   }
-        //   if (updatedGrid[j][j] !== "") {
-        //     continue;
-        //   }
-        //   if (added >= +amountToAdd) {
-        //     setCurrentGrid(updatedGrid);
-        //     break;
-        //   }
-        //   console.log(+notedAmount);
-        //   added++;
-        //   updatedGrid[j][j] = imgSrc;
-        //   updatedGrid[j].noted = true;
-        //   updatedGrid[j].amount += +notedAmount;
-        // }
-        // setCurrentGrid(updatedGrid);
-        // break;
       }
     }
   };
