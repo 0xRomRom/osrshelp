@@ -6,6 +6,7 @@ const AmountBar = ({
   amountToAdd,
   setAmountToAdd,
   activeGallery,
+  currentGrid,
 }) => {
   const [notedState, setNotedState] = useState(false);
   const inputRef = useRef(null);
@@ -24,6 +25,10 @@ const AmountBar = ({
     setNotedState(false);
     runesInputRef.current?.focus();
   }, [activeGallery, setAmountToAdd, setNotedState]);
+
+  useEffect(() => {
+    runesInputRef.current?.focus();
+  }, [currentGrid]);
 
   return (
     <div className={stl.amountbar}>

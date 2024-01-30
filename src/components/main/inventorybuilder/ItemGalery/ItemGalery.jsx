@@ -59,6 +59,7 @@ const ItemGalery = ({
         setAmountToAdd={setAmountToAdd}
         amountToAdd={amountToAdd}
         activeGallery={activeGallery}
+        currentGrid={currentGrid}
       />
     </div>
   );
