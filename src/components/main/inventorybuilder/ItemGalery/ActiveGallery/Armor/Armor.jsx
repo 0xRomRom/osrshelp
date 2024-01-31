@@ -62,15 +62,24 @@ const Armor = ({
 
     if (slotState === "Amunition" && activeGallery === "Armor") {
       if (!runesAmount) return;
+
+      let cachedAmount = runesAmount;
+      console.log(cachedAmount);
       for (let j = 0; j < 28; j++) {
         const gridValue = updatedGrid[j][j];
+        const blessing = imgSrc.slice(-12, -4);
+        console.log(blessing);
 
         if (j >= 28) {
           setCurrentGrid(updatedGrid);
           return;
         }
         if (gridValue === imgSrc) {
-          updatedGrid[j].amount += +runesAmount;
+          if (blessing === "blessing") {
+            updatedGrid[j].amount = 0;
+          } else {
+            updatedGrid[j].amount += +cachedAmount;
+          }
           setCurrentGrid(updatedGrid);
           setNotedState(false);
           setNotedAmount(null);
@@ -80,11 +89,18 @@ const Armor = ({
       }
       for (let j = 0; j < 28; j++) {
         const gridValue = updatedGrid[j][j];
+        const blessing = imgSrc.slice(-12, -4);
+
         if (updatedGrid[j][j] !== imgSrc) {
           if (gridValue.length !== 0) {
             continue;
           }
-          updatedGrid[j].amount += +runesAmount;
+
+          if (blessing === "blessing") {
+            updatedGrid[j].amount = 0;
+          } else {
+            updatedGrid[j].amount += +cachedAmount;
+          }
           updatedGrid[j][j] = imgSrc;
           setCurrentGrid(updatedGrid);
           setNotedState(false);
@@ -93,6 +109,7 @@ const Armor = ({
           return;
         }
       }
+      return;
     }
 
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {

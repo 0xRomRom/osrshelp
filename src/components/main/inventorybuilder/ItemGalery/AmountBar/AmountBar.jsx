@@ -33,7 +33,7 @@ const AmountBar = ({
 
   useEffect(() => {
     runesInputRef.current?.focus();
-  }, [currentGrid]);
+  }, [currentGrid, slotState]);
 
   return (
     <div className={stl.amountbar}>
