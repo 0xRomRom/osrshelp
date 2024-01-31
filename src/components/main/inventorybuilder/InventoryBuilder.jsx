@@ -13,6 +13,7 @@ const InventoryBuilder = () => {
   const [screenshotting, setScreenshotting] = useState(false);
   const [notedAmount, setNotedAmount] = useState(null);
   const [amountToAdd, setAmountToAdd] = useState("1");
+  const [notedState, setNotedState] = useState(false);
 
   return (
     <>
@@ -24,6 +25,7 @@ const InventoryBuilder = () => {
             <SearchItem
               setCurrentGrid={setCurrentGrid}
               currentGrid={currentGrid}
+              setNotedState={setNotedState}
             />
             <div className={stl.inventoryWrapper}>
               <InventoryGrid
@@ -46,6 +48,8 @@ const InventoryBuilder = () => {
               currentGrid={currentGrid}
               setCurrentGrid={setCurrentGrid}
               notedAmount={notedAmount}
+              setNotedState={setNotedState}
+              notedState={notedState}
             />
             <SavedInventorys />
           </div>

@@ -22,6 +22,7 @@ const Armor = ({
   notedState,
   notedAmount,
   setNotedAmount,
+  setNotedState,
 }) => {
   const [slotState, setSlotState] = useState("Helm");
   const [activeStyle, setActiveStyle] = useState("Melee");
@@ -67,6 +68,7 @@ const Armor = ({
             }
             updatedGrid[j][j] = imgSrc;
           }
+          setNotedState(false);
           setCurrentGrid(updatedGrid);
           break;
         }
@@ -74,6 +76,7 @@ const Armor = ({
         let added = 0;
         for (let j = cacheIndex; j < 28; j++) {
           if (j >= 28) {
+            setNotedState(false);
             setCurrentGrid(updatedGrid);
             break;
           }
@@ -81,16 +84,19 @@ const Armor = ({
             continue;
           }
           if (added >= +amountToAdd) {
+            setNotedState(false);
             setCurrentGrid(updatedGrid);
             break;
           }
           added++;
           updatedGrid[j][j] = imgSrc;
         }
+        setNotedState(false);
         setCurrentGrid(updatedGrid);
         break;
       }
     }
+    setNotedState(false);
     setAmountToAdd("1");
   };
 
@@ -105,7 +111,6 @@ const Armor = ({
     // Check for existing item to increment rather than duplicate
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i][i];
-      console.log(gridValue);
       if (gridValue === imgSrc && updatedGrid[i].noted) {
         updatedGrid[i].amount += +notedAmount;
 

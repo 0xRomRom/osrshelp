@@ -4,7 +4,7 @@ import inventory from "../../../../assets/icons/Inventory.webp";
 import member from "../../../../assets/icons/Member.webp";
 import { useState, useEffect } from "react";
 
-const SearchItem = ({ setCurrentGrid, currentGrid }) => {
+const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [imageError, setImageError] = useState(false);
   const [typing, setTyping] = useState(false);
@@ -37,6 +37,7 @@ const SearchItem = ({ setCurrentGrid, currentGrid }) => {
         const newGrid = [...currentGrid];
         newGrid[i][i] = imgSrc;
         console.log(newGrid);
+        setNotedState(false);
         setCurrentGrid(newGrid);
         break;
       }

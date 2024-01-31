@@ -16,9 +16,10 @@ const ItemGalery = ({
   setCurrentGrid,
   currentGrid,
   notedAmount,
+  notedState,
+  setNotedState,
 }) => {
   const [activeGallery, setActiveGallery] = useState("Armor");
-  const [notedState, setNotedState] = useState(false);
 
   return (
     <div className={stl.itemGalery}>
@@ -35,6 +36,7 @@ const ItemGalery = ({
           notedState={notedState}
           notedAmount={notedAmount}
           setNotedAmount={setNotedAmount}
+          setNotedState={setNotedState}
         />
       )}
       {activeGallery === "Potions" && (

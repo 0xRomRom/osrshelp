@@ -25,6 +25,7 @@ const InventoryGrid = ({
 
   const selectTile = (e, newItem) => {
     const currentTarget = +e.target.dataset.index;
+    console.log(currentTarget);
     setSelectedTile(newItem);
     setSelectedIndex(currentTarget);
   };
@@ -35,8 +36,6 @@ const InventoryGrid = ({
   };
 
   const swapTiles = (e, newItem) => {
-    console.log(Object.values(newItem)[0]);
-    console.log(Object.values(selectedTile)[0]);
     const currentTarget = +e.target.dataset.index;
     const newGrid = [...currentGrid];
 
@@ -50,6 +49,7 @@ const InventoryGrid = ({
     newGrid[currentTarget] = temp;
 
     const tempKey = Object.keys(newGrid[selectedIndex])[0];
+
     newGrid[selectedIndex] = {
       [Object.keys(newGrid[currentTarget])[0]]: Object.values(
         newGrid[selectedIndex]
@@ -107,33 +107,35 @@ const InventoryGrid = ({
       <div className={stl.innerWrap}>
         {currentGrid.map((item, index) => {
           const imageSource = Object.values(item)[0];
-
+          console.log(item);
+          console.log(selectedTile);
+          console.log(selectedIndex);
           return (
             <div
               key={index}
               data-index={index}
               className={stl.itemSlot}
-              onDoubleClick={(e) => deleteGridItem(e)}
               onClick={(e) =>
                 selectedTile ? swapTiles(e, item) : selectTile(e, item)
               }
+              onDoubleClick={(e) => deleteGridItem(e)}
               style={{
                 border:
                   selectedTile === item &&
                   selectedIndex === index &&
-                  selectedTile !== ""
+                  selectedTile
                     ? "1px solid rgb(33, 40, 54)"
                     : "",
                 backgroundColor:
                   selectedTile === item &&
                   selectedIndex === index &&
-                  selectedTile !== ""
+                  selectedTile
                     ? "rgba(55, 47, 42, 0.342)"
                     : "",
                 boxShadow:
                   selectedTile === item &&
                   selectedIndex === index &&
-                  selectedTile !== ""
+                  selectedTile
                     ? "0px 0px 3px rgba(55, 47, 42, 0.92)"
                     : "",
               }}
@@ -143,57 +145,25 @@ const InventoryGrid = ({
                   src={imageSource}
                   alt={imageSource}
                   className={stl.tileImg}
-                  onClick={(e) =>
-                    selectedTile
-                      ? swapTiles(e, item[index][index])
-                      : selectTile(e, item[index])
-                  }
+                  data-index={index}
                 />
               )}
               {imageSource.length > 0 && item.noted && (
-                <div
-                  className={stl.imgTile}
-                  style={{
-                    border:
-                      selectedTile === item &&
-                      selectedIndex === index &&
-                      selectedTile !== ""
-                        ? "1px solid rgb(33, 40, 54)"
-                        : "",
-                    backgroundColor:
-                      selectedTile === item &&
-                      selectedIndex === index &&
-                      selectedTile !== ""
-                        ? "rgba(55, 47, 42, 0.342)"
-                        : "",
-                    boxShadow:
-                      selectedTile === item &&
-                      selectedIndex === index &&
-                      selectedTile !== ""
-                        ? "0px 0px 3px rgba(55, 47, 42, 0.92)"
-                        : "",
-                  }}
-                  onClick={(e) =>
-                    selectedTile
-                      ? swapTiles(e, item[index][index])
-                      : selectTile(e, item[index])
-                  }
-                >
-                  <span className={stl.noteAmount}>{+item.amount}</span>
+                <div className={stl.imgTile} data-index={index}>
+                  <span className={stl.noteAmount} data-index={index}>
+                    {item.amount}
+                  </span>
                   <img
                     src={imageSource}
                     alt={imageSource}
                     className={stl.tileImgNoted}
-                    onClick={(e) =>
-                      selectedTile
-                        ? swapTiles(e, item[index][index])
-                        : selectTile(e, item[index])
-                    }
+                    data-index={index}
                   />
                   <img
                     src="https://oldschool.runescape.wiki/images/Bank_note.png?b3d96"
                     alt="Banknote"
                     className={stl.tileImg}
+                    data-index={index}
                   />
                 </div>
               )}
