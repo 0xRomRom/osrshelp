@@ -52,9 +52,6 @@ const InventoryGrid = ({
     // Target item
     newGrid[currentTarget] = temp;
 
-    console.log("Start item: ", newGrid[selectedIndex]);
-    console.log("Targegt item: ", newGrid[currentTarget]);
-
     const tempKey = Object.keys(newGrid[selectedIndex])[0];
 
     //Start item

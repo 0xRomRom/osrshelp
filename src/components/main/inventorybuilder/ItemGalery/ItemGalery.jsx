@@ -8,6 +8,7 @@ import Armor from "./ActiveGallery/Armor/Armor";
 import Potions from "./ActiveGallery/Potions/Potions";
 import Food from "./ActiveGallery/Food/Food";
 import Runes from "./ActiveGallery/Runes/Runes";
+import Favorites from "./ActiveGallery/Favorites/Favorites";
 
 const ItemGalery = ({
   setNotedAmount,
@@ -79,6 +80,7 @@ const ItemGalery = ({
           setRunesAmount={setRunesAmount}
         />
       )}
+      {activeGallery === "Favorites" && <Favorites />}
       <AmountBar
         setNotedAmount={setNotedAmount}
         setAmountToAdd={setAmountToAdd}
