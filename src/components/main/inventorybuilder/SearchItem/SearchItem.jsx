@@ -36,6 +36,8 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
       if (gridValue.length === 0) {
         const newGrid = [...currentGrid];
         newGrid[i][i] = imgSrc;
+        newGrid[i].noted = false;
+        newGrid[i].amount = 0;
         console.log(newGrid);
         setNotedState(false);
         setCurrentGrid(newGrid);

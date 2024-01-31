@@ -51,20 +51,23 @@ const InventoryGrid = ({
 
     const tempKey = Object.keys(newGrid[selectedIndex])[0];
 
+    console.log(Object.values(newGrid[currentTarget])[1]);
+    console.log(Object.values(newGrid[selectedIndex])[1]);
+
     //Start item
     newGrid[selectedIndex] = {
       [Object.keys(newGrid[currentTarget])[0]]: Object.values(
         newGrid[selectedIndex]
       )[0],
-      noted: Object.values(newGrid[currentTarget])[1],
+      noted: Object.values(newGrid[selectedIndex])[1],
       amount: Object.values(newGrid[selectedIndex])[2],
     };
 
     // Target item
     newGrid[currentTarget] = {
       [tempKey]: Object.values(newGrid[currentTarget])[0],
-      noted: Object.values(newGrid[selectedIndex])[1], // Swap with the amount value
-      amount: Object.values(newGrid[currentTarget])[2], // Swap with the noted value
+      noted: Object.values(newGrid[currentTarget])[1],
+      amount: Object.values(newGrid[currentTarget])[2],
     };
 
     setCurrentGrid(newGrid);
