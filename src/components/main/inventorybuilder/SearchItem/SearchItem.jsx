@@ -67,12 +67,10 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
       for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
         const gridValue = updatedGrid[i][i];
         if (gridValue.length === 0) {
-          console.log(updatedGrid[i].amount);
           updatedGrid[i].amount += amountToAdd;
           updatedGrid[i].noted = true;
           updatedGrid[i][i] = imgSrc;
 
-          console.log(updatedGrid);
           setCurrentGrid(updatedGrid);
           setAddNoted(false);
           setAmountToAdd(1);
@@ -94,7 +92,6 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
           if (updatedGrid[j][j] !== "") {
             continue;
           }
-          console.log(updatedGrid[j]);
           updatedGrid[j][j] = imgSrc;
         }
         setCurrentGrid(updatedGrid);

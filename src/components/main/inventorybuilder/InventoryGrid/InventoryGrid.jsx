@@ -37,7 +37,10 @@ const InventoryGrid = ({
     const currentTarget = +e.target.dataset.index;
     const newGrid = [...currentGrid];
 
-    if (Object.values(newItem)[0] === Object.values(selectedTile)[0]) {
+    if (
+      Object.values(newItem)[0] === Object.values(selectedTile)[0] &&
+      Object.values(newItem)[1] === Object.values(selectedTile)[1]
+    ) {
       unselectTile();
       return;
     }
@@ -49,10 +52,10 @@ const InventoryGrid = ({
     // Target item
     newGrid[currentTarget] = temp;
 
-    const tempKey = Object.keys(newGrid[selectedIndex])[0];
+    console.log("Start item: ", newGrid[selectedIndex]);
+    console.log("Targegt item: ", newGrid[currentTarget]);
 
-    console.log(Object.values(newGrid[currentTarget])[1]);
-    console.log(Object.values(newGrid[selectedIndex])[1]);
+    const tempKey = Object.keys(newGrid[selectedIndex])[0];
 
     //Start item
     newGrid[selectedIndex] = {

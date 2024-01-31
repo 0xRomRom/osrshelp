@@ -64,11 +64,9 @@ const Armor = ({
       if (!runesAmount) return;
 
       let cachedAmount = runesAmount;
-      console.log(cachedAmount);
       for (let j = 0; j < 28; j++) {
         const gridValue = updatedGrid[j][j];
         const blessing = imgSrc.slice(-12, -4);
-        console.log(blessing);
 
         if (j >= 28) {
           setCurrentGrid(updatedGrid);
@@ -163,12 +161,10 @@ const Armor = ({
   };
 
   const addNotedItems = (imgSrc) => {
-    console.log(notedAmount);
     if (!notedAmount) {
       return;
     }
     let updatedGrid = [...currentGrid];
-    console.log(updatedGrid);
 
     // Check for existing item to increment rather than duplicate
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
