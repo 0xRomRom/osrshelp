@@ -150,7 +150,7 @@ const InventoryGrid = ({
                   data-index={index}
                 />
               )}
-              {imageSource.length > 0 && item.noted && item.amount === 0 && (
+              {imageSource.length > 0 && item.noted && (
                 <div className={stl.imgTile} data-index={index}>
                   <span className={stl.noteAmount} data-index={index}>
                     {item.amount}

@@ -18,8 +18,10 @@ const Runes = ({
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i][i];
       if (gridValue === imgSrc) {
-        alert("exists");
+        console.log(updatedGrid[i].amount);
         updatedGrid[i].amount += runesAmount;
+        setCurrentGrid(updatedGrid);
+        setRunesAmount(null);
         return;
       }
     }
