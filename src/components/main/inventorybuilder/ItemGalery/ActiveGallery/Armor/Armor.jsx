@@ -32,6 +32,8 @@ const Armor = ({
   slotState,
   setSlotState,
   activeGallery,
+  runesAmount,
+  setRunesAmount,
 }) => {
   const [activeStyle, setActiveStyle] = useState("Melee");
   const [currentCombatStyles, setCurrentCombatStyles] = useState(combatStyles);
@@ -57,6 +59,41 @@ const Armor = ({
     }
 
     let updatedGrid = [...currentGrid];
+
+    if (slotState === "Amunition" && activeGallery === "Armor") {
+      if (!runesAmount) return;
+      for (let j = 0; j < 28; j++) {
+        const gridValue = updatedGrid[j][j];
+
+        if (j >= 28) {
+          setCurrentGrid(updatedGrid);
+          return;
+        }
+        if (gridValue === imgSrc) {
+          updatedGrid[j].amount += +runesAmount;
+          setCurrentGrid(updatedGrid);
+          setNotedState(false);
+          setNotedAmount(null);
+          setRunesAmount(null);
+          return;
+        }
+      }
+      for (let j = 0; j < 28; j++) {
+        const gridValue = updatedGrid[j][j];
+        if (updatedGrid[j][j] !== imgSrc) {
+          if (gridValue.length !== 0) {
+            continue;
+          }
+          updatedGrid[j].amount += +runesAmount;
+          updatedGrid[j][j] = imgSrc;
+          setCurrentGrid(updatedGrid);
+          setNotedState(false);
+          setNotedAmount(null);
+          setRunesAmount(null);
+          return;
+        }
+      }
+    }
 
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i][i];

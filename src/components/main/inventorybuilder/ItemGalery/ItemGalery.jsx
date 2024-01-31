@@ -42,6 +42,8 @@ const ItemGalery = ({
           setSlotState={setSlotState}
           slotState={slotState}
           activeGallery={activeGallery}
+          runesAmount={runesAmount}
+          setRunesAmount={setRunesAmount}
         />
       )}
       {activeGallery === "Potions" && (
