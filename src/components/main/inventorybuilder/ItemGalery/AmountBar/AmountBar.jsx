@@ -11,6 +11,7 @@ const AmountBar = ({
   setNotedState,
   notedAmount,
   setRunesAmount,
+  runesAmount,
 }) => {
   const inputRef = useRef(null);
   const runesInputRef = useRef(null);
@@ -106,6 +107,7 @@ const AmountBar = ({
             placeholder="Amount"
             ref={runesInputRef}
             onChange={(e) => setRunesAmount(+e.target.value)}
+            value={runesAmount || ""}
           />
         </div>
       )}

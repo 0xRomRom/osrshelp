@@ -1,7 +1,13 @@
 import stl from "./Runes.module.css";
 import RUNES from "../../../../../../utils/inventorybuilder/runes";
 
-const Runes = ({ amountToAdd, setCurrentGrid, currentGrid, runesAmount }) => {
+const Runes = ({
+  amountToAdd,
+  setCurrentGrid,
+  currentGrid,
+  runesAmount,
+  setRunesAmount,
+}) => {
   const addToInventory = (imgSrc) => {
     let updatedGrid = [...currentGrid];
     console.log(imgSrc);
@@ -24,6 +30,7 @@ const Runes = ({ amountToAdd, setCurrentGrid, currentGrid, runesAmount }) => {
           updatedGrid[j].amount = runesAmount;
         }
         setCurrentGrid(updatedGrid);
+        setRunesAmount(null);
         break;
       }
     }

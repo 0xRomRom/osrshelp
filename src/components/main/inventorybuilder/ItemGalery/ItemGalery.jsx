@@ -70,6 +70,7 @@ const ItemGalery = ({
           setCurrentGrid={setCurrentGrid}
           currentGrid={currentGrid}
           runesAmount={runesAmount}
+          setRunesAmount={setRunesAmount}
         />
       )}
       <AmountBar
@@ -82,6 +83,7 @@ const ItemGalery = ({
         setNotedState={setNotedState}
         notedAmount={notedAmount}
         setRunesAmount={setRunesAmount}
+        runesAmount={runesAmount}
       />
     </div>
   );
