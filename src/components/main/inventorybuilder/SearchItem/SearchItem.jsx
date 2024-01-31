@@ -53,7 +53,7 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
       // Check if entry exists and increment
       for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
         const gridValue = updatedGrid[i][i];
-        if (gridValue === imgSrc) {
+        if (gridValue === imgSrc && updatedGrid[i].noted) {
           updatedGrid[i].amount += amountToAdd;
           setCurrentGrid(updatedGrid);
           setAddNoted(false);
@@ -81,17 +81,7 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
       }
     }
 
-    // for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
-    //   const gridValue = updatedGrid[i][i];
-    //   if (gridValue === imgSrc) {
-    //     console.log(updatedGrid[i].amount);
-    //     setCurrentGrid(updatedGrid);
-    //     setNotedState(false);
-    //     return;
-    //   }
-    // }
-
-    // Create new entry
+    // Add unnoted amount
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i][i];
       if (gridValue.length === 0) {
@@ -109,6 +99,7 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
         }
         setCurrentGrid(updatedGrid);
         setNotedState(false);
+        setAmountToAdd(1);
         break;
       }
     }

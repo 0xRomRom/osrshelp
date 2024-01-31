@@ -20,6 +20,7 @@ const ItemGalery = ({
   setNotedState,
 }) => {
   const [activeGallery, setActiveGallery] = useState("Armor");
+  const [slotState, setSlotState] = useState("Helm");
   const [runesAmount, setRunesAmount] = useState(null);
 
   return (
@@ -38,6 +39,9 @@ const ItemGalery = ({
           notedAmount={notedAmount}
           setNotedAmount={setNotedAmount}
           setNotedState={setNotedState}
+          setSlotState={setSlotState}
+          slotState={slotState}
+          activeGallery={activeGallery}
         />
       )}
       {activeGallery === "Potions" && (
@@ -78,6 +82,7 @@ const ItemGalery = ({
         setAmountToAdd={setAmountToAdd}
         amountToAdd={amountToAdd}
         activeGallery={activeGallery}
+        slotState={slotState}
         currentGrid={currentGrid}
         notedState={notedState}
         setNotedState={setNotedState}

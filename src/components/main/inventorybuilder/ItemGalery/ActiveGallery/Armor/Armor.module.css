@@ -125,3 +125,11 @@
   transition: all 0.1s ease-in-out;
   padding: 0px 3px;
 }
+
+.maxWidth {
+  width: 100%;
+}
+
+.baseWidth {
+  width: calc(100% / 3);
+}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import stl from "./Armor.module.css";
 import ARMORITEMS from "../../../../../../utils/inventorybuilder/armoritems";
 
@@ -14,6 +14,12 @@ import Gloves from "../../../../../../assets/gearslots/Gloves.png";
 import Boots from "../../../../../../assets/gearslots/Boots.png";
 import Ring from "../../../../../../assets/gearslots/Ring.png";
 
+const combatStyles = [
+  { style: "Melee", icon: "./skillicons/Attack.webp" },
+  { style: "Magic", icon: "./skillicons/Magic.webp" },
+  { style: "Ranged", icon: "./skillicons/Ranged.webp" },
+];
+
 const Armor = ({
   amountToAdd,
   setCurrentGrid,
@@ -23,9 +29,12 @@ const Armor = ({
   notedAmount,
   setNotedAmount,
   setNotedState,
+  slotState,
+  setSlotState,
+  activeGallery,
 }) => {
-  const [slotState, setSlotState] = useState("Helm");
   const [activeStyle, setActiveStyle] = useState("Melee");
+  const [currentCombatStyles, setCurrentCombatStyles] = useState(combatStyles);
 
   const gearSlotIcons = {
     Helm,
@@ -40,12 +49,6 @@ const Armor = ({
     Gloves,
     Ring,
   };
-
-  const combatStyles = [
-    { style: "Melee", icon: "./skillicons/Attack.webp" },
-    { style: "Magic", icon: "./skillicons/Magic.webp" },
-    { style: "Ranged", icon: "./skillicons/Ranged.webp" },
-  ];
 
   const addToInventory = (imgSrc) => {
     if (notedState) {
@@ -146,15 +149,32 @@ const Armor = ({
     }
   };
 
+  useEffect(() => {
+    if (slotState === "Amunition" && activeGallery === "Armor") {
+      const newArray = [];
+      newArray.push(combatStyles[2]);
+      setCurrentCombatStyles(newArray);
+      setActiveStyle("Ranged");
+    } else {
+      const baseStyles = [...combatStyles];
+      setCurrentCombatStyles(baseStyles);
+      setActiveStyle("Melee");
+    }
+  }, [slotState, activeGallery]);
+
   return (
     <div className={stl.armor}>
       <div className={stl.itemGrid}>
         <div className={stl.combatStyle}>
-          {combatStyles.map(({ style, icon }) => (
+          {currentCombatStyles.map(({ style, icon }) => (
             <button
               key={style}
               className={`${stl.combatCta} ${
                 activeStyle === style ? stl.activeCombat : ""
+              } ${
+                slotState === "Amunition" && activeGallery === "Armor"
+                  ? stl.maxWidth
+                  : stl.baseWidth
               }`}
               onClick={() => setActiveStyle(style)}
             >
