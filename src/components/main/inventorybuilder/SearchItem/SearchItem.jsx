@@ -10,6 +10,8 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
   const [typing, setTyping] = useState(false);
   const [imgSrc, setImgSrc] = useState(null);
 
+  const [addNoted, setAddNoted] = useState(false);
+
   useEffect(() => {
     if (searchTerm.length > 0) {
       setTyping(true);
@@ -62,13 +64,25 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
         {imgSrc && (
           <div className={stl.resultFlex}>
             {!imageError && (
-              <button className={stl.searchCta} onClick={saveToInv}>
-                <img
-                  src={inventory}
-                  alt="Inventory"
-                  className={stl.inventoryImg}
-                />
-              </button>
+              <div className={stl.leftWrapper}>
+                <button className={stl.searchCta} onClick={saveToInv}>
+                  <img
+                    src={inventory}
+                    alt="Inventory"
+                    className={stl.inventoryImg}
+                  />
+                </button>
+                <div className={stl.addConfig}>
+                  <button
+                    className={`${stl.notedBtn} ${
+                      addNoted ? stl.notedActive : ""
+                    }`}
+                    onClick={() => setAddNoted(!addNoted)}
+                  >
+                    Noted
+                  </button>
+                </div>
+              </div>
             )}
             <div className={stl.imgWrapper}>
               <img
