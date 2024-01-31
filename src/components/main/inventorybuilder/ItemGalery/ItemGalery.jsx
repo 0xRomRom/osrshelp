@@ -20,6 +20,7 @@ const ItemGalery = ({
   setNotedState,
 }) => {
   const [activeGallery, setActiveGallery] = useState("Armor");
+  const [runesAmount, setRunesAmount] = useState(null);
 
   return (
     <div className={stl.itemGalery}>
@@ -68,6 +69,7 @@ const ItemGalery = ({
           amountToAdd={amountToAdd}
           setCurrentGrid={setCurrentGrid}
           currentGrid={currentGrid}
+          runesAmount={runesAmount}
         />
       )}
       <AmountBar
@@ -79,6 +81,7 @@ const ItemGalery = ({
         notedState={notedState}
         setNotedState={setNotedState}
         notedAmount={notedAmount}
+        setRunesAmount={setRunesAmount}
       />
     </div>
   );

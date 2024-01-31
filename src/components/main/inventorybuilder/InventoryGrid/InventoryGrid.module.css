@@ -70,7 +70,7 @@
 }
 
 .imgTile {
-  /* background-color: red; */
+  background-color: red;
   height: 100%;
   width: 100%;
   display: flex;
@@ -94,4 +94,23 @@
   font-size: 21px;
   font-family: RSFont;
   text-shadow: 0px 0px 5px black;
+}
+
+.runeAmount {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: yellow;
+  z-index: 20;
+  font-size: 21px;
+  font-family: RSFont;
+  text-shadow: 0px 0px 5px black;
+}
+
+.tileImg {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
 }

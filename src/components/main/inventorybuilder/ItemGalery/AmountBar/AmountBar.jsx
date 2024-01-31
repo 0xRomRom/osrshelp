@@ -1,5 +1,5 @@
 import stl from "./AmountBar.module.css";
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 const AmountBar = ({
   setNotedAmount,
@@ -10,6 +10,7 @@ const AmountBar = ({
   notedState,
   setNotedState,
   notedAmount,
+  setRunesAmount,
 }) => {
   const inputRef = useRef(null);
   const runesInputRef = useRef(null);
@@ -104,6 +105,7 @@ const AmountBar = ({
             className={stl.runesAmountInput}
             placeholder="Amount"
             ref={runesInputRef}
+            onChange={(e) => setRunesAmount(+e.target.value)}
           />
         </div>
       )}
