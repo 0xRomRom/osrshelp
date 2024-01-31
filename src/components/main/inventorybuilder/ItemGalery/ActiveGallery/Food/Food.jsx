@@ -1,8 +1,22 @@
 import stl from "./Food.module.css";
 import FOOD from "../../../../../../utils/inventorybuilder/food";
 
-const Food = ({ amountToAdd, setCurrentGrid, currentGrid, setAmountToAdd }) => {
+const Food = ({
+  amountToAdd,
+  setCurrentGrid,
+  currentGrid,
+  setAmountToAdd,
+  notedState,
+  notedAmount,
+  setNotedAmount,
+  setNotedState,
+}) => {
   const addToInventory = (imgSrc) => {
+    if (notedState) {
+      addNotedItems(imgSrc);
+      return;
+    }
+
     let updatedGrid = [...currentGrid];
 
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
@@ -18,6 +32,8 @@ const Food = ({ amountToAdd, setCurrentGrid, currentGrid, setAmountToAdd }) => {
             }
             updatedGrid[j][j] = imgSrc;
           }
+          setNotedState(false);
+          setNotedAmount(null);
           setCurrentGrid(updatedGrid);
           break;
         }
@@ -25,6 +41,8 @@ const Food = ({ amountToAdd, setCurrentGrid, currentGrid, setAmountToAdd }) => {
         let added = 0;
         for (let j = cacheIndex; j < 28; j++) {
           if (j >= 28) {
+            setNotedState(false);
+            setNotedAmount(null);
             setCurrentGrid(updatedGrid);
             break;
           }
@@ -32,17 +50,64 @@ const Food = ({ amountToAdd, setCurrentGrid, currentGrid, setAmountToAdd }) => {
             continue;
           }
           if (added >= +amountToAdd) {
+            setNotedState(false);
+            setNotedAmount(null);
             setCurrentGrid(updatedGrid);
             break;
           }
           added++;
           updatedGrid[j][j] = imgSrc;
         }
+        setNotedState(false);
+        setNotedAmount(null);
         setCurrentGrid(updatedGrid);
         break;
       }
     }
+    setNotedState(false);
+    setNotedAmount(null);
     setAmountToAdd("1");
+  };
+
+  const addNotedItems = (imgSrc) => {
+    console.log(notedAmount);
+    if (!notedAmount) {
+      return;
+    }
+    let updatedGrid = [...currentGrid];
+    console.log(updatedGrid);
+
+    // Check for existing item to increment rather than duplicate
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i][i];
+      if (gridValue === imgSrc && updatedGrid[i].noted) {
+        updatedGrid[i].amount += +notedAmount;
+
+        setCurrentGrid(updatedGrid);
+        setNotedAmount(null);
+        setNotedState(false);
+
+        return;
+      }
+    }
+
+    // If no existing item, create new item
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i][i];
+
+      if (gridValue.length === 0) {
+        const cacheIndex = i;
+
+        updatedGrid[cacheIndex][cacheIndex] = imgSrc;
+        updatedGrid[cacheIndex].noted = true;
+        updatedGrid[cacheIndex].amount += +notedAmount;
+
+        setCurrentGrid(updatedGrid);
+        setNotedAmount(null);
+        setNotedState(false);
+        break;
+      }
+    }
   };
 
   return (

@@ -45,6 +45,10 @@ const ItemGalery = ({
           setCurrentGrid={setCurrentGrid}
           currentGrid={currentGrid}
           setAmountToAdd={setAmountToAdd}
+          notedState={notedState}
+          notedAmount={notedAmount}
+          setNotedAmount={setNotedAmount}
+          setNotedState={setNotedState}
         />
       )}
       {activeGallery === "Food" && (
@@ -53,6 +57,10 @@ const ItemGalery = ({
           setCurrentGrid={setCurrentGrid}
           currentGrid={currentGrid}
           setAmountToAdd={setAmountToAdd}
+          notedState={notedState}
+          notedAmount={notedAmount}
+          setNotedAmount={setNotedAmount}
+          setNotedState={setNotedState}
         />
       )}
       {activeGallery === "Runes" && (

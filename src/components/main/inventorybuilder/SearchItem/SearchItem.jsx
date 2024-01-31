@@ -32,13 +32,11 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
   const saveToInv = () => {
     for (let i = 0; i < Object.keys(currentGrid).length; i++) {
       const gridValue = currentGrid[i][i];
-      console.log(gridValue);
       if (gridValue.length === 0) {
         const newGrid = [...currentGrid];
         newGrid[i][i] = imgSrc;
         newGrid[i].noted = false;
         newGrid[i].amount = 0;
-        console.log(newGrid);
         setNotedState(false);
         setCurrentGrid(newGrid);
         break;

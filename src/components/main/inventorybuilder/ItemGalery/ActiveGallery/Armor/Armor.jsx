@@ -146,10 +146,6 @@ const Armor = ({
     }
   };
 
-  useEffect(() => {
-    console.log(notedState);
-  }, [notedState]);
-
   return (
     <div className={stl.armor}>
       <div className={stl.itemGrid}>
