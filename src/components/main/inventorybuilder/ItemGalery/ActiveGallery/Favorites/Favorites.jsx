@@ -8,6 +8,8 @@ const tabs = {
   1: [
     "https://oldschool.runescape.wiki/images/Shark.png?4b960",
     "https://oldschool.runescape.wiki/images/Dragon_spear.png?cc5f3",
+    "https://oldschool.runescape.wiki/images/Dragon_spear.png?cc5f3",
+    "https://oldschool.runescape.wiki/images/Dragon_spear.png?cc5f3",
   ],
   2: [],
   3: [],
@@ -40,7 +42,7 @@ const Favorites = () => {
               ))}
             </div>
             <div className={stl.iconGrid}>
-              {Object.values(tabs)[0].map((item, index) => {
+              {tabs[activeTab].map((item, index) => {
                 console.log(item);
                 return (
                   <div className={stl.gridItem} key={index}>
