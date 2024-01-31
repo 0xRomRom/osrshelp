@@ -12,7 +12,19 @@ const Runes = ({
     let updatedGrid = [...currentGrid];
     console.log(imgSrc);
     console.log(runesAmount);
+    if (!runesAmount) return;
 
+    // Check if rune already exists and increment
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i][i];
+      if (gridValue === imgSrc) {
+        alert("exists");
+        updatedGrid[i].amount += runesAmount;
+        return;
+      }
+    }
+
+    // Create new entry
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i][i];
       if (gridValue.length === 0) {
