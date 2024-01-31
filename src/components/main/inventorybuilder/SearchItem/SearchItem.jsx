@@ -20,7 +20,7 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
       return;
     }
     if (!isNaN(input) && parseInt(input) <= 2147483647) {
-      setAmountToAdd(input);
+      setAmountToAdd(parseInt(input));
     }
   };
 
@@ -44,18 +44,59 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
   }, [searchTerm, setImgSrc]);
 
   const saveToInv = () => {
-    for (let i = 0; i < Object.keys(currentGrid).length; i++) {
-      const gridValue = currentGrid[i][i];
-      if (gridValue.length === 0) {
-        const newGrid = [...currentGrid];
-        newGrid[i][i] = imgSrc;
-        newGrid[i].noted = false;
-        newGrid[i].amount = 0;
-        setNotedState(false);
-        setCurrentGrid(newGrid);
-        break;
+    if (!amountToAdd) {
+      return;
+    }
+    let updatedGrid = [...currentGrid];
+
+    if (addNoted) {
+      for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+        const gridValue = updatedGrid[i][i];
+        if (gridValue.length === 0) {
+          console.log(updatedGrid[i].amount);
+          updatedGrid[i].amount += amountToAdd;
+          updatedGrid[i].noted = true;
+          updatedGrid[i][i] = imgSrc;
+
+          console.log(updatedGrid);
+          setCurrentGrid(updatedGrid);
+          setNotedState(false);
+          return;
+        }
       }
     }
+
+    // for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+    //   const gridValue = updatedGrid[i][i];
+    //   if (gridValue === imgSrc) {
+    //     console.log(updatedGrid[i].amount);
+    //     setCurrentGrid(updatedGrid);
+    //     setNotedState(false);
+    //     return;
+    //   }
+    // }
+
+    // // Create new entry
+    // for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+    //   const gridValue = updatedGrid[i][i];
+    //   if (gridValue.length === 0) {
+    //     const cacheIndex = i;
+    //     for (let j = cacheIndex; j < cacheIndex + +amountToAdd; j++) {
+    //       if (j >= 28) {
+    //         setCurrentGrid(updatedGrid);
+    //         break;
+    //       }
+    //       if (updatedGrid[j][j] !== "") {
+    //         continue;
+    //       }
+    //       console.log(updatedGrid[j]);
+    //       updatedGrid[j][j] = imgSrc;
+    //     }
+    //     setCurrentGrid(updatedGrid);
+    //     setNotedState(false);
+    //     break;
+    //   }
+    // }
   };
 
   return (
