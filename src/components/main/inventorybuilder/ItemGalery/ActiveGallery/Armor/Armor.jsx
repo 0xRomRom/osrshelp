@@ -69,6 +69,7 @@ const Armor = ({
             updatedGrid[j][j] = imgSrc;
           }
           setNotedState(false);
+          setNotedAmount(null);
           setCurrentGrid(updatedGrid);
           break;
         }
@@ -77,6 +78,7 @@ const Armor = ({
         for (let j = cacheIndex; j < 28; j++) {
           if (j >= 28) {
             setNotedState(false);
+            setNotedAmount(null);
             setCurrentGrid(updatedGrid);
             break;
           }
@@ -85,6 +87,7 @@ const Armor = ({
           }
           if (added >= +amountToAdd) {
             setNotedState(false);
+            setNotedAmount(null);
             setCurrentGrid(updatedGrid);
             break;
           }
@@ -92,11 +95,13 @@ const Armor = ({
           updatedGrid[j][j] = imgSrc;
         }
         setNotedState(false);
+        setNotedAmount(null);
         setCurrentGrid(updatedGrid);
         break;
       }
     }
     setNotedState(false);
+    setNotedAmount(null);
     setAmountToAdd("1");
   };
 
@@ -116,6 +121,8 @@ const Armor = ({
 
         setCurrentGrid(updatedGrid);
         setNotedAmount(null);
+        setNotedState(false);
+
         return;
       }
     }
@@ -133,6 +140,7 @@ const Armor = ({
 
         setCurrentGrid(updatedGrid);
         setNotedAmount(null);
+        setNotedState(false);
         break;
       }
     }

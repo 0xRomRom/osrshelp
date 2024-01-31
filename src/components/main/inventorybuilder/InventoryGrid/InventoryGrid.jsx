@@ -19,13 +19,11 @@ const InventoryGrid = ({
     newGrid[deleteIndex][deleteIndex] = "";
     newGrid[deleteIndex].noted = false;
     newGrid[deleteIndex].amount = 0;
-    console.log(newGrid);
     setCurrentGrid(newGrid);
   };
 
   const selectTile = (e, newItem) => {
     const currentTarget = +e.target.dataset.index;
-    console.log(currentTarget);
     setSelectedTile(newItem);
     setSelectedIndex(currentTarget);
   };
@@ -63,8 +61,6 @@ const InventoryGrid = ({
       noted: Object.values(newGrid[currentTarget])[1],
       amount: Object.values(newGrid[currentTarget])[2],
     };
-
-    console.log(newGrid);
 
     setCurrentGrid(newGrid);
     setSelectedTile(null);
@@ -107,9 +103,7 @@ const InventoryGrid = ({
       <div className={stl.innerWrap}>
         {currentGrid.map((item, index) => {
           const imageSource = Object.values(item)[0];
-          console.log(item);
-          console.log(selectedTile);
-          console.log(selectedIndex);
+
           return (
             <div
               key={index}
