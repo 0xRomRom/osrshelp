@@ -91,27 +91,27 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
     //   }
     // }
 
-    // // Create new entry
-    // for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
-    //   const gridValue = updatedGrid[i][i];
-    //   if (gridValue.length === 0) {
-    //     const cacheIndex = i;
-    //     for (let j = cacheIndex; j < cacheIndex + +amountToAdd; j++) {
-    //       if (j >= 28) {
-    //         setCurrentGrid(updatedGrid);
-    //         break;
-    //       }
-    //       if (updatedGrid[j][j] !== "") {
-    //         continue;
-    //       }
-    //       console.log(updatedGrid[j]);
-    //       updatedGrid[j][j] = imgSrc;
-    //     }
-    //     setCurrentGrid(updatedGrid);
-    //     setNotedState(false);
-    //     break;
-    //   }
-    // }
+    // Create new entry
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i][i];
+      if (gridValue.length === 0) {
+        const cacheIndex = i;
+        for (let j = cacheIndex; j < cacheIndex + +amountToAdd; j++) {
+          if (j >= 28) {
+            setCurrentGrid(updatedGrid);
+            break;
+          }
+          if (updatedGrid[j][j] !== "") {
+            continue;
+          }
+          console.log(updatedGrid[j]);
+          updatedGrid[j][j] = imgSrc;
+        }
+        setCurrentGrid(updatedGrid);
+        setNotedState(false);
+        break;
+      }
+    }
   };
 
   return (
