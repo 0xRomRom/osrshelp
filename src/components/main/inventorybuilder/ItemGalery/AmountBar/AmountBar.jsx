@@ -28,6 +28,7 @@ const AmountBar = ({
   useEffect(() => {
     setAmountToAdd("1");
     setNotedState(false);
+    setRunesAmount(null);
     runesInputRef.current?.focus();
   }, [activeGallery, setAmountToAdd, setNotedState]);
 
@@ -100,7 +101,7 @@ const AmountBar = ({
           </button>
         </>
       )}
-      {activeGallery === "Runes" && slotState !== "Amunition" && (
+      {activeGallery === "Runes" && (
         <div className={stl.amountBox}>
           <input
             type="number"
