@@ -16,7 +16,7 @@
 }
 
 .selectBar {
-  width: 20%;
+  width: calc(20% + 1px);
   border-left: 1px solid var(--border);
   display: flex;
   flex-direction: column;

@@ -11,6 +11,18 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
   const [imgSrc, setImgSrc] = useState(null);
 
   const [addNoted, setAddNoted] = useState(false);
+  const [amountToAdd, setAmountToAdd] = useState(1);
+
+  const amountHandler = (e) => {
+    const input = e.target.value;
+    if (input <= 1) {
+      setAmountToAdd(null);
+      return;
+    }
+    if (!isNaN(input) && parseInt(input) <= 2147483647) {
+      setAmountToAdd(input);
+    }
+  };
 
   useEffect(() => {
     if (searchTerm.length > 0) {
@@ -81,6 +93,12 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
                   >
                     Noted
                   </button>
+                  <input
+                    type="number"
+                    className={stl.searchAmountInput}
+                    value={amountToAdd || ""}
+                    onChange={amountHandler}
+                  />
                 </div>
               </div>
             )}
