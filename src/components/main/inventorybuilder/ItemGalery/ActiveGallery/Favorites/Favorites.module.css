@@ -2,3 +2,30 @@
   height: 100%;
   width: 100%;
 }
+
+.favoritesWrap {
+  width: 100%;
+  height: 100%;
+}
+
+.tabBar {
+  height: 40px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabCta {
+  width: 25%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: gray;
+  cursor: pointer;
+}
+
+.activeCta {
+  background-color: var(--border);
+}
