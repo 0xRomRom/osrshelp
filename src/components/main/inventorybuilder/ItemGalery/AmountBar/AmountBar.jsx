@@ -30,7 +30,7 @@ const AmountBar = ({
     setNotedState(false);
     setRunesAmount(null);
     runesInputRef.current?.focus();
-  }, [activeGallery, setAmountToAdd, setNotedState]);
+  }, [activeGallery, setAmountToAdd, setNotedState, setRunesAmount]);
 
   useEffect(() => {
     runesInputRef.current?.focus();
