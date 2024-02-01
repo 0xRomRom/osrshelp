@@ -17,6 +17,7 @@ const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
   const { premiumUser, userID } = useContext(AuthContext);
   const [activeTab, setActiveTab] = useState(1);
   const [fetchedTabs, setFetchedTabs] = useState({});
+  const [error, setError] = useState("");
 
   useEffect(() => {
     if (Object.entries(fetchedTabs).length === 0) {
@@ -32,7 +33,7 @@ const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
             setFetchedTabs(tabs);
           } else {
             console.log(data[0].favitems);
-            setFetchedTabs(data[0].favitems);
+            setFetchedTabs(JSON.parse(data[0].favitems));
           }
         } catch (err) {
           console.error("Fetch error:", err);
@@ -46,17 +47,45 @@ const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
     console.log(addingFavorite);
   }, [addingFavorite]);
 
-  const addToFavoriteTab = (tab = 1) => {
+  const addToFavoriteTab = async (tab) => {
+    setError("");
     const cachedState = { ...fetchedTabs };
+
+    let exists = false;
     cachedState[tab].forEach((item) => {
-      let dotPngIndex = item.indexOf(".png");
-      let result = item.substring(0, dotPngIndex + 4);
-      console.log(result);
+      const dotPngIndex = item.indexOf(".png");
+      const result = item.substring(0, dotPngIndex + 4);
 
       if (result === favoritesImgSrc) {
-        // alert("exists");
+        exists = true;
       }
     });
+    if (exists) {
+      setError("Item is already in tab");
+      return;
+    }
+
+    cachedState[tab].push(favoritesImgSrc);
+    console.log(JSON.stringify(cachedState));
+    try {
+      const { error } = await supabase
+        .from("item_favorites")
+        .update({
+          favitems: JSON.stringify(cachedState),
+        })
+        .eq("uid", userID);
+
+      if (error) {
+        setError("Failed to add item");
+        return;
+      }
+    } catch (err) {
+      console.error(err);
+    }
+
+    setFetchedTabs(cachedState);
+    setAddingFavorite(false);
+    console.log(cachedState);
   };
 
   return (
@@ -116,6 +145,7 @@ const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
                 Tab 4
               </div>
             </div>
+            <span className={stl.error}>{error}</span>
           </div>
         )}
       </div>

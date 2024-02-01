@@ -134,3 +134,10 @@
   color: gray;
   padding-bottom: 1rem;
 }
+
+.error {
+  color: red;
+  padding-top: 0.5rem;
+  position: absolute;
+  bottom: 4rem;
+}
