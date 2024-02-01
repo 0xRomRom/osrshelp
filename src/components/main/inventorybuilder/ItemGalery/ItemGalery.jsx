@@ -30,9 +30,9 @@ const ItemGalery = ({
     if (addingFavorite) {
       setActiveGallery("Favorites");
     }
-    if (activeGallery !== "Favorites") {
-      setAddingFavorite(false);
-    }
+    // if (activeGallery !== "Favorites") {
+    //   setAddingFavorite(false);
+    // }
   }, [addingFavorite, setAddingFavorite, activeGallery]);
 
   return (

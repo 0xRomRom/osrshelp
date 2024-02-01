@@ -43,8 +43,8 @@ const Favorites = ({ addingFavorite }) => {
   }, [fetchedTabs, userID]);
 
   useEffect(() => {
-    console.log(fetchedTabs[1]);
-  }, [fetchedTabs]);
+    console.log(addingFavorite);
+  }, [addingFavorite]);
 
   return (
     <div className={stl.favorites}>
