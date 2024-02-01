@@ -30,9 +30,6 @@ const ItemGalery = ({
     if (addingFavorite) {
       setActiveGallery("Favorites");
     }
-    // if (activeGallery !== "Favorites") {
-    //   setAddingFavorite(false);
-    // }
   }, [addingFavorite, setAddingFavorite, activeGallery]);
 
   return (
@@ -92,7 +89,10 @@ const ItemGalery = ({
         />
       )}
       {activeGallery === "Favorites" && (
-        <Favorites addingFavorite={addingFavorite} />
+        <Favorites
+          addingFavorite={addingFavorite}
+          setAddingFavorite={setAddingFavorite}
+        />
       )}
       <AmountBar
         setNotedAmount={setNotedAmount}

@@ -3,6 +3,7 @@ import PremiumBanner from "./premiumbanner/PremiumBanner";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../../../../utils/authprovider/AuthProvider";
 import supabase from "../../../../../../utils/supabase/supabase";
+import { FaLongArrowAltLeft } from "react-icons/fa";
 
 const tabNames = ["Tab 1", "Tab 2", "Tab 3", "Tab 4"];
 const tabs = {
@@ -12,7 +13,7 @@ const tabs = {
   4: [],
 };
 
-const Favorites = ({ addingFavorite }) => {
+const Favorites = ({ addingFavorite, setAddingFavorite }) => {
   const { premiumUser, userID } = useContext(AuthContext);
   const [activeTab, setActiveTab] = useState(1);
   const [fetchedTabs, setFetchedTabs] = useState({});
@@ -83,7 +84,12 @@ const Favorites = ({ addingFavorite }) => {
           </>
         )}
         {premiumUser && addingFavorite && (
-          <div className={stl.addOverlay}></div>
+          <div
+            className={stl.addOverlay}
+            onClick={() => setAddingFavorite(false)}
+          >
+            <FaLongArrowAltLeft className={stl.closeAddModal} />
+          </div>
         )}
       </div>
     </div>
