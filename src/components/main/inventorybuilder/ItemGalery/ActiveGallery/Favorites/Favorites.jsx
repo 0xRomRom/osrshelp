@@ -84,11 +84,18 @@ const Favorites = ({ addingFavorite, setAddingFavorite }) => {
           </>
         )}
         {premiumUser && addingFavorite && (
-          <div
-            className={stl.addOverlay}
-            onClick={() => setAddingFavorite(false)}
-          >
-            <FaLongArrowAltLeft className={stl.closeAddModal} />
+          <div className={stl.addOverlay}>
+            <FaLongArrowAltLeft
+              className={stl.closeAddModal}
+              onClick={() => setAddingFavorite(false)}
+            />
+            <span className={stl.chooseTab}>Choose tab</span>
+            <div className={stl.tabWrapper}>
+              <div className={stl.tabBox}>Tab 1</div>
+              <div className={stl.tabBox}>Tab 2</div>
+              <div className={stl.tabBox}>Tab 3</div>
+              <div className={stl.tabBox}>Tab 4</div>
+            </div>
           </div>
         )}
       </div>
