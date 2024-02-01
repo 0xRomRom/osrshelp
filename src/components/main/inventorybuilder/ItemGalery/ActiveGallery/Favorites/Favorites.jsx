@@ -13,7 +13,13 @@ const tabs = {
   4: [],
 };
 
-const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
+const Favorites = ({
+  addingFavorite,
+  setAddingFavorite,
+  favoritesImgSrc,
+  box4Disabled,
+  setBox4Disabled,
+}) => {
   const { premiumUser, userID } = useContext(AuthContext);
   const [activeTab, setActiveTab] = useState(1);
   const [fetchedTabs, setFetchedTabs] = useState({});
@@ -32,7 +38,6 @@ const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
             console.error("Supabase error:", error.message);
             setFetchedTabs(tabs);
           } else {
-            console.log(data[0].favitems);
             setFetchedTabs(JSON.parse(data[0].favitems));
           }
         } catch (err) {
@@ -43,21 +48,15 @@ const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
     }
   }, [fetchedTabs, userID]);
 
-  useEffect(() => {
-    console.log(addingFavorite);
-  }, [addingFavorite]);
-
   const addToFavoriteTab = async (tab) => {
     setError("");
 
     const cachedState = { ...fetchedTabs };
-    let cachedResult = "";
     let exists = false;
 
     cachedState[tab].forEach((item) => {
       const dotPngIndex = item.indexOf(".png");
       const result = item.substring(0, dotPngIndex + 4);
-      cachedResult = result;
 
       if (result === favoritesImgSrc) {
         exists = true;
@@ -85,7 +84,9 @@ const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
       res[res.length - 1] === "tar" ||
       res[res.length - 1] === "bolts"
     ) {
-      alert("BOLTS!");
+      setBox4Disabled(true);
+    } else {
+      setBox4Disabled(false);
     }
 
     cachedState[tab].push(favoritesImgSrc);
@@ -156,18 +157,31 @@ const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
             />
             <span className={stl.chooseTab}>Choose tab</span>
             <div className={stl.tabWrapper}>
-              <div className={stl.tabBox} onClick={() => addToFavoriteTab(1)}>
+              <button
+                className={stl.tabBox}
+                onClick={() => addToFavoriteTab(1)}
+              >
                 Tab 1
-              </div>
-              <div className={stl.tabBox} onClick={() => addToFavoriteTab(2)}>
+              </button>
+              <button
+                className={stl.tabBox}
+                onClick={() => addToFavoriteTab(2)}
+              >
                 Tab 2
-              </div>
-              <div className={stl.tabBox} onClick={() => addToFavoriteTab(3)}>
+              </button>
+              <button
+                className={stl.tabBox}
+                onClick={() => addToFavoriteTab(3)}
+              >
                 Tab 3
-              </div>
-              <div className={stl.tabBox} onClick={() => addToFavoriteTab(4)}>
+              </button>
+              <button
+                className={stl.tabBox}
+                onClick={() => addToFavoriteTab(4)}
+                disabled={box4Disabled ? true : false}
+              >
                 Tab 4
-              </div>
+              </button>
             </div>
             <span className={stl.error}>{error}</span>
           </div>

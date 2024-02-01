@@ -10,6 +10,7 @@ const SearchItem = ({
   setNotedState,
   setAddingFavorite,
   setFavoritesImgSrc,
+  setBox4Disabled,
 }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [imageError, setImageError] = useState(false);
@@ -46,8 +47,28 @@ const SearchItem = ({
       .replaceAll(" ", "_");
 
     const imgSrc = `https://oldschool.runescape.wiki/images/${encoded}.png`;
+
+    const res = encoded.split("_");
+    console.log(res);
+
+    if (
+      res[1] === "bolts" ||
+      res[1] === "arrow" ||
+      res[res.length - 1] === "knife" ||
+      res[res.length - 1] === "rune" ||
+      res[res.length - 1] === "dart" ||
+      res[res.length - 1] === "javelin" ||
+      res[1] === "rack" ||
+      res[res.length - 1] === "tar" ||
+      res[res.length - 1] === "bolts"
+    ) {
+      setBox4Disabled(true);
+    } else {
+      setBox4Disabled(false);
+    }
+
     setImgSrc(imgSrc);
-  }, [searchTerm, setImgSrc]);
+  }, [searchTerm, setImgSrc, setBox4Disabled]);
 
   const saveToInv = () => {
     if (!amountToAdd) {

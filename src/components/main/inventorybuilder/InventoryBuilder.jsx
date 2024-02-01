@@ -16,6 +16,7 @@ const InventoryBuilder = () => {
   const [notedState, setNotedState] = useState(false);
   const [addingFavorite, setAddingFavorite] = useState(false);
   const [favoritesImgSrc, setFavoritesImgSrc] = useState(null);
+  const [box4Disabled, setBox4Disabled] = useState(false);
 
   return (
     <>
@@ -30,6 +31,7 @@ const InventoryBuilder = () => {
               setNotedState={setNotedState}
               setAddingFavorite={setAddingFavorite}
               setFavoritesImgSrc={setFavoritesImgSrc}
+              setBox4Disabled={setBox4Disabled}
             />
             <div className={stl.inventoryWrapper}>
               <InventoryGrid
@@ -57,6 +59,8 @@ const InventoryBuilder = () => {
               addingFavorite={addingFavorite}
               setAddingFavorite={setAddingFavorite}
               favoritesImgSrc={favoritesImgSrc}
+              setBox4Disabled={setBox4Disabled}
+              box4Disabled={box4Disabled}
             />
             <SavedInventorys />
           </div>

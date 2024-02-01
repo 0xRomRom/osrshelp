@@ -22,6 +22,8 @@ const ItemGalery = ({
   addingFavorite,
   setAddingFavorite,
   favoritesImgSrc,
+  box4Disabled,
+  setBox4Disabled,
 }) => {
   const [activeGallery, setActiveGallery] = useState("Armor");
   const [slotState, setSlotState] = useState("Helm");
@@ -94,6 +96,8 @@ const ItemGalery = ({
           addingFavorite={addingFavorite}
           setAddingFavorite={setAddingFavorite}
           favoritesImgSrc={favoritesImgSrc}
+          setBox4Disabled={setBox4Disabled}
+          box4Disabled={box4Disabled}
         />
       )}
       <AmountBar
