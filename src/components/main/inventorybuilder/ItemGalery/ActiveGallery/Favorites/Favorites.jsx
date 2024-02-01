@@ -12,7 +12,7 @@ const tabs = {
   4: [],
 };
 
-const Favorites = () => {
+const Favorites = ({ addingFavorite }) => {
   const { premiumUser, userID } = useContext(AuthContext);
   const [activeTab, setActiveTab] = useState(1);
   const [fetchedTabs, setFetchedTabs] = useState({});
@@ -50,7 +50,7 @@ const Favorites = () => {
     <div className={stl.favorites}>
       {!premiumUser && <PremiumBanner />}
       <div className={stl.favoritesWrap}>
-        {premiumUser && (
+        {premiumUser && !addingFavorite && (
           <>
             <div className={stl.tabBar}>
               {tabNames.map((tab, index) => (
@@ -81,6 +81,9 @@ const Favorites = () => {
               )}
             </div>
           </>
+        )}
+        {premiumUser && addingFavorite && (
+          <div className={stl.addOverlay}></div>
         )}
       </div>
     </div>

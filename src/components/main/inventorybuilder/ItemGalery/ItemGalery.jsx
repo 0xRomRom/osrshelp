@@ -33,7 +33,7 @@ const ItemGalery = ({
     if (activeGallery !== "Favorites") {
       setAddingFavorite(false);
     }
-  }, [addingFavorite]);
+  }, [addingFavorite, setAddingFavorite, activeGallery]);
 
   return (
     <div className={stl.itemGalery}>
@@ -91,7 +91,9 @@ const ItemGalery = ({
           setRunesAmount={setRunesAmount}
         />
       )}
-      {activeGallery === "Favorites" && <Favorites />}
+      {activeGallery === "Favorites" && (
+        <Favorites addingFavorite={addingFavorite} />
+      )}
       <AmountBar
         setNotedAmount={setNotedAmount}
         setAmountToAdd={setAmountToAdd}
