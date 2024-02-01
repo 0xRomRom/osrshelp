@@ -62,9 +62,9 @@ const SearchItem = ({
       res[res.length - 1] === "tar" ||
       res[res.length - 1] === "bolts"
     ) {
-      setBox4Disabled(true);
-    } else {
       setBox4Disabled(false);
+    } else {
+      setBox4Disabled(true);
     }
 
     setImgSrc(imgSrc);

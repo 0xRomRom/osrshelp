@@ -143,3 +143,8 @@
   position: absolute;
   bottom: 4rem;
 }
+
+.grayed {
+  background-color: rgba(128, 128, 128, 0.094);
+  pointer-events: none;
+}

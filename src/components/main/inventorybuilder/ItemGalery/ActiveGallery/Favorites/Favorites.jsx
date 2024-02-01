@@ -158,25 +158,28 @@ const Favorites = ({
             <span className={stl.chooseTab}>Choose tab</span>
             <div className={stl.tabWrapper}>
               <button
-                className={stl.tabBox}
+                className={`${stl.tabBox} ${box4Disabled ? "" : stl.grayed}`}
                 onClick={() => addToFavoriteTab(1)}
+                disabled={box4Disabled ? false : true}
               >
                 Tab 1
               </button>
               <button
-                className={stl.tabBox}
+                className={`${stl.tabBox} ${box4Disabled ? "" : stl.grayed}`}
                 onClick={() => addToFavoriteTab(2)}
+                disabled={box4Disabled ? false : true}
               >
                 Tab 2
               </button>
               <button
-                className={stl.tabBox}
+                className={`${stl.tabBox} ${box4Disabled ? "" : stl.grayed}`}
                 onClick={() => addToFavoriteTab(3)}
+                disabled={box4Disabled ? false : true}
               >
                 Tab 3
               </button>
               <button
-                className={stl.tabBox}
+                className={`${stl.tabBox} ${box4Disabled ? stl.grayed : ""}`}
                 onClick={() => addToFavoriteTab(4)}
                 disabled={box4Disabled ? true : false}
               >
