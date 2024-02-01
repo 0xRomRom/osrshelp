@@ -14,6 +14,7 @@ const InventoryBuilder = () => {
   const [notedAmount, setNotedAmount] = useState(null);
   const [amountToAdd, setAmountToAdd] = useState("1");
   const [notedState, setNotedState] = useState(false);
+  const [addingFavorite, setAddingFavorite] = useState(false);
 
   return (
     <>
@@ -26,6 +27,7 @@ const InventoryBuilder = () => {
               setCurrentGrid={setCurrentGrid}
               currentGrid={currentGrid}
               setNotedState={setNotedState}
+              setAddingFavorite={setAddingFavorite}
             />
             <div className={stl.inventoryWrapper}>
               <InventoryGrid
@@ -50,6 +52,8 @@ const InventoryBuilder = () => {
               notedAmount={notedAmount}
               setNotedState={setNotedState}
               notedState={notedState}
+              addingFavorite={addingFavorite}
+              setAddingFavorite={setAddingFavorite}
             />
             <SavedInventorys />
           </div>

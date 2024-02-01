@@ -4,7 +4,12 @@ import inventory from "../../../../assets/icons/Inventory.webp";
 import member from "../../../../assets/icons/Member.webp";
 import { useState, useEffect } from "react";
 
-const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
+const SearchItem = ({
+  setCurrentGrid,
+  currentGrid,
+  setNotedState,
+  setAddingFavorite,
+}) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [imageError, setImageError] = useState(false);
   const [typing, setTyping] = useState(false);
@@ -102,6 +107,10 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
     }
   };
 
+  const addToFavorites = () => {
+    setAddingFavorite(true);
+  };
+
   return (
     <div className={stl.imgSearchBox}>
       <div className={stl.inputWrapper}>
@@ -160,7 +169,7 @@ const SearchItem = ({ setCurrentGrid, currentGrid, setNotedState }) => {
               />
             </div>
             {!imageError && (
-              <button className={stl.searchCta}>
+              <button className={stl.searchCta} onClick={addToFavorites}>
                 <img
                   src={member}
                   alt="Member star"

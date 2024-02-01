@@ -1,7 +1,7 @@
 import stl from "./ItemGalery.module.css";
 import SelectBar from "./SelectBar/SelectBar";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AmountBar from "./AmountBar/AmountBar";
 
 import Armor from "./ActiveGallery/Armor/Armor";
@@ -19,10 +19,21 @@ const ItemGalery = ({
   notedAmount,
   notedState,
   setNotedState,
+  addingFavorite,
+  setAddingFavorite,
 }) => {
   const [activeGallery, setActiveGallery] = useState("Armor");
   const [slotState, setSlotState] = useState("Helm");
   const [runesAmount, setRunesAmount] = useState(null);
+
+  useEffect(() => {
+    if (addingFavorite) {
+      setActiveGallery("Favorites");
+    }
+    if (activeGallery !== "Favorites") {
+      setAddingFavorite(false);
+    }
+  }, [addingFavorite]);
 
   return (
     <div className={stl.itemGalery}>
