@@ -9,6 +9,7 @@ const SearchItem = ({
   currentGrid,
   setNotedState,
   setAddingFavorite,
+  setFavoritesImgSrc,
 }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [imageError, setImageError] = useState(false);
@@ -109,6 +110,7 @@ const SearchItem = ({
 
   const addToFavorites = () => {
     setAddingFavorite(true);
+    setFavoritesImgSrc(imgSrc);
   };
 
   return (

@@ -13,7 +13,7 @@ const tabs = {
   4: [],
 };
 
-const Favorites = ({ addingFavorite, setAddingFavorite }) => {
+const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
   const { premiumUser, userID } = useContext(AuthContext);
   const [activeTab, setActiveTab] = useState(1);
   const [fetchedTabs, setFetchedTabs] = useState({});
@@ -31,7 +31,6 @@ const Favorites = ({ addingFavorite, setAddingFavorite }) => {
             console.error("Supabase error:", error.message);
             setFetchedTabs(tabs);
           } else {
-            console.log("Fetched data:", data[0]);
             console.log(data[0].favitems);
             setFetchedTabs(data[0].favitems);
           }
@@ -46,6 +45,19 @@ const Favorites = ({ addingFavorite, setAddingFavorite }) => {
   useEffect(() => {
     console.log(addingFavorite);
   }, [addingFavorite]);
+
+  const addToFavoriteTab = (tab = 1) => {
+    const cachedState = { ...fetchedTabs };
+    cachedState[tab].forEach((item) => {
+      let dotPngIndex = item.indexOf(".png");
+      let result = item.substring(0, dotPngIndex + 4);
+      console.log(result);
+
+      if (result === favoritesImgSrc) {
+        // alert("exists");
+      }
+    });
+  };
 
   return (
     <div className={stl.favorites}>
@@ -77,7 +89,7 @@ const Favorites = ({ addingFavorite, setAddingFavorite }) => {
                         <img src={item} alt={item} className={stl.tileImg} />
                       </div>
                     );
-                  })}{" "}
+                  })}
                 </>
               )}
             </div>
@@ -91,10 +103,18 @@ const Favorites = ({ addingFavorite, setAddingFavorite }) => {
             />
             <span className={stl.chooseTab}>Choose tab</span>
             <div className={stl.tabWrapper}>
-              <div className={stl.tabBox}>Tab 1</div>
-              <div className={stl.tabBox}>Tab 2</div>
-              <div className={stl.tabBox}>Tab 3</div>
-              <div className={stl.tabBox}>Tab 4</div>
+              <div className={stl.tabBox} onClick={() => addToFavoriteTab(1)}>
+                Tab 1
+              </div>
+              <div className={stl.tabBox} onClick={() => addToFavoriteTab(2)}>
+                Tab 2
+              </div>
+              <div className={stl.tabBox} onClick={() => addToFavoriteTab(3)}>
+                Tab 3
+              </div>
+              <div className={stl.tabBox} onClick={() => addToFavoriteTab(4)}>
+                Tab 4
+              </div>
             </div>
           </div>
         )}

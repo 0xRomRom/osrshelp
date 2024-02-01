@@ -21,6 +21,7 @@ const ItemGalery = ({
   setNotedState,
   addingFavorite,
   setAddingFavorite,
+  favoritesImgSrc,
 }) => {
   const [activeGallery, setActiveGallery] = useState("Armor");
   const [slotState, setSlotState] = useState("Helm");
@@ -92,6 +93,7 @@ const ItemGalery = ({
         <Favorites
           addingFavorite={addingFavorite}
           setAddingFavorite={setAddingFavorite}
+          favoritesImgSrc={favoritesImgSrc}
         />
       )}
       <AmountBar
