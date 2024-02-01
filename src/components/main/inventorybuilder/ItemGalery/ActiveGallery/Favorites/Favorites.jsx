@@ -84,6 +84,7 @@ const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
     }
 
     setFetchedTabs(cachedState);
+    setActiveTab(tab);
     setAddingFavorite(false);
     console.log(cachedState);
   };
