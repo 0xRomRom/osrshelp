@@ -2628,7 +2628,7 @@ const CAPES = [
   },
   {
     type: "Melee",
-    name: "Mining_cape(t)",
+    name: "Mining cape(t)",
     defLvl: 0,
     rangedLvl: 0,
     prayerLvl: 0,

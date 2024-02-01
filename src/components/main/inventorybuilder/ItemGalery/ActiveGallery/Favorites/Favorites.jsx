@@ -49,12 +49,15 @@ const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
 
   const addToFavoriteTab = async (tab) => {
     setError("");
-    const cachedState = { ...fetchedTabs };
 
+    const cachedState = { ...fetchedTabs };
+    let cachedResult = "";
     let exists = false;
+
     cachedState[tab].forEach((item) => {
       const dotPngIndex = item.indexOf(".png");
       const result = item.substring(0, dotPngIndex + 4);
+      cachedResult = result;
 
       if (result === favoritesImgSrc) {
         exists = true;
@@ -63,6 +66,26 @@ const Favorites = ({ addingFavorite, setAddingFavorite, favoritesImgSrc }) => {
     if (exists) {
       setError("Item is already in tab");
       return;
+    }
+
+    //Filter image source down to name
+    const dotPngIndex = favoritesImgSrc.indexOf(".png");
+    const filteredString = favoritesImgSrc.substring(0, dotPngIndex).slice(40);
+    const res = filteredString.split("_");
+    console.log(res);
+
+    if (
+      res[1] === "bolts" ||
+      res[1] === "arrow" ||
+      res[res.length - 1] === "knife" ||
+      res[res.length - 1] === "rune" ||
+      res[res.length - 1] === "dart" ||
+      res[res.length - 1] === "javelin" ||
+      res[1] === "rack" ||
+      res[res.length - 1] === "tar" ||
+      res[res.length - 1] === "bolts"
+    ) {
+      alert("BOLTS!");
     }
 
     cachedState[tab].push(favoritesImgSrc);
