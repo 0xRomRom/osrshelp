@@ -51,8 +51,6 @@ const SearchItem = ({
     const imgSrc = `https://oldschool.runescape.wiki/images/${encoded}.png`;
 
     const res = encoded.split("_");
-    console.log(res);
-    console.log(encoded);
     if (
       res[1] === "bolts" ||
       res[1] === "arrow" ||
@@ -85,7 +83,6 @@ const SearchItem = ({
       return;
     }
     let updatedGrid = [...currentGrid];
-    console.log(box4Disabled);
     if (!box4Disabled && !addNoted) {
       // Check if entry exists and increment
       for (let i = 0; i < Object.keys(updatedGrid).length; i++) {

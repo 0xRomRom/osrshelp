@@ -10,15 +10,12 @@ const Runes = ({
 }) => {
   const addToInventory = (imgSrc) => {
     let updatedGrid = [...currentGrid];
-    console.log(imgSrc);
-    console.log(runesAmount);
     if (!runesAmount) return;
 
     // Check if rune already exists and increment
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i][i];
       if (gridValue === imgSrc) {
-        console.log(updatedGrid[i].amount);
         updatedGrid[i].amount += runesAmount;
         setCurrentGrid(updatedGrid);
         setRunesAmount(null);
@@ -39,7 +36,6 @@ const Runes = ({
           if (updatedGrid[j][j] !== "") {
             continue;
           }
-          console.log(updatedGrid[j]);
           updatedGrid[j][j] = imgSrc;
           updatedGrid[j].amount = runesAmount;
         }

@@ -36,6 +36,10 @@ const ItemGalery = ({
     }
   }, [addingFavorite, setAddingFavorite, activeGallery]);
 
+  useEffect(() => {
+    setActiveTab(1);
+  }, [activeGallery]);
+
   return (
     <div className={stl.itemGalery}>
       <SelectBar

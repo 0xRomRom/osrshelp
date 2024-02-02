@@ -330,9 +330,6 @@ const Favorites = ({
   };
 
   const addStackedItems = (newItem) => {
-    console.log(newItem);
-    console.log(runesAmount);
-
     let updatedGrid = [...currentGrid];
 
     // Check for existing item to increment rather than duplicate
