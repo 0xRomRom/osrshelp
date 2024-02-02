@@ -112,6 +112,7 @@ const ItemGalery = ({
         notedAmount={notedAmount}
         setRunesAmount={setRunesAmount}
         runesAmount={runesAmount}
+        setSlotState={setSlotState}
       />
     </div>
   );

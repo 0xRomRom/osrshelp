@@ -13,6 +13,7 @@ const AmountBar = ({
   setRunesAmount,
   runesAmount,
   slotState,
+  setSlotState,
 }) => {
   const inputRef = useRef(null);
   const runesInputRef = useRef(null);
@@ -29,6 +30,7 @@ const AmountBar = ({
     setAmountToAdd("1");
     setNotedState(false);
     setRunesAmount(null);
+    setSlotState("Helm");
     runesInputRef.current?.focus();
   }, [activeGallery, setAmountToAdd, setNotedState, setRunesAmount]);
 
@@ -38,7 +40,7 @@ const AmountBar = ({
 
   return (
     <div className={stl.amountbar}>
-      {activeGallery !== "Runes" && slotState !== "Amunition" && (
+      {slotState !== "Amunition" && activeGallery !== "Runes" && (
         <>
           {!notedState && (
             <div className={stl.amountButtonWrap}>
