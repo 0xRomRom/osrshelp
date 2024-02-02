@@ -230,6 +230,10 @@ const Favorites = ({
 
   const addToInv = (newItem) => {
     let updatedGrid = [...currentGrid];
+    if (activeTab === 4) {
+      addStackedItems(newItem);
+      return;
+    }
 
     if (notedState) {
       addNotedItems(newItem);
@@ -320,6 +324,47 @@ const Favorites = ({
         setCurrentGrid(updatedGrid);
         setNotedAmount(null);
         setNotedState(false);
+        break;
+      }
+    }
+  };
+
+  const addStackedItems = (newItem) => {
+    console.log(newItem);
+    console.log(runesAmount);
+
+    let updatedGrid = [...currentGrid];
+
+    // Check for existing item to increment rather than duplicate
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i][i];
+      if (gridValue === newItem.src && updatedGrid[i].amount > 0) {
+        updatedGrid[i].amount += +runesAmount;
+
+        setCurrentGrid(updatedGrid);
+        setNotedAmount(null);
+        setNotedState(false);
+        setRunesAmount(null);
+
+        return;
+      }
+    }
+
+    // If no existing item, create new item
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i][i];
+
+      if (gridValue.length === 0) {
+        const cacheIndex = i;
+
+        updatedGrid[cacheIndex][cacheIndex] = newItem.src;
+        updatedGrid[cacheIndex].noted = false;
+        updatedGrid[cacheIndex].amount += +runesAmount;
+
+        setCurrentGrid(updatedGrid);
+        setNotedAmount(null);
+        setNotedState(false);
+        setRunesAmount(null);
         break;
       }
     }
