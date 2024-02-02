@@ -30,6 +30,7 @@ const Favorites = ({
   runesAmount,
   setRunesAmount,
   amountToAdd,
+  notedAmount,
 }) => {
   const { premiumUser, userID } = useContext(AuthContext);
 
@@ -230,7 +231,11 @@ const Favorites = ({
   const addToInv = (newItem) => {
     let updatedGrid = [...currentGrid];
 
-    console.log(updatedGrid);
+    if (notedState) {
+      addNotedItems(newItem);
+      return;
+    }
+
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
       const gridValue = updatedGrid[i][i];
 
@@ -279,6 +284,45 @@ const Favorites = ({
     setNotedState(false);
     setNotedAmount(null);
     setAmountToAdd("1");
+  };
+
+  const addNotedItems = (newItem) => {
+    if (!notedAmount) {
+      return;
+    }
+    let updatedGrid = [...currentGrid];
+
+    // Check for existing item to increment rather than duplicate
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i][i];
+      if (gridValue === newItem.src && updatedGrid[i].noted) {
+        updatedGrid[i].amount += +notedAmount;
+
+        setCurrentGrid(updatedGrid);
+        setNotedAmount(null);
+        setNotedState(false);
+
+        return;
+      }
+    }
+
+    // If no existing item, create new item
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i][i];
+
+      if (gridValue.length === 0) {
+        const cacheIndex = i;
+
+        updatedGrid[cacheIndex][cacheIndex] = newItem.src;
+        updatedGrid[cacheIndex].noted = true;
+        updatedGrid[cacheIndex].amount += +notedAmount;
+
+        setCurrentGrid(updatedGrid);
+        setNotedAmount(null);
+        setNotedState(false);
+        break;
+      }
+    }
   };
 
   return (

@@ -110,6 +110,7 @@ const ItemGalery = ({
           runesAmount={runesAmount}
           setRunesAmount={setRunesAmount}
           amountToAdd={amountToAdd}
+          notedAmount={notedAmount}
         />
       )}
       <AmountBar
