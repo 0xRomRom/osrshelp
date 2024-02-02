@@ -123,7 +123,33 @@ const Favorites = ({
     setAddingFavorite(false);
   };
 
-  const deleteGridItem = (e) => {};
+  const deleteGridItem = async (deleteItem) => {
+    const currentTabs = { ...fetchedTabs };
+    const itemSrc = deleteItem.src;
+    for (let i = 0; i < currentTabs[activeTab].length; i++) {
+      if (currentTabs[activeTab][i].src === itemSrc) {
+        currentTabs[activeTab].splice(i, 1);
+      }
+    }
+    console.log(currentTabs[activeTab]);
+
+    try {
+      const { error } = await supabase
+        .from("item_favorites")
+        .update({
+          favitems: JSON.stringify(currentTabs),
+        })
+        .eq("uid", userID);
+
+      if (error) {
+        alert("Failed to delete item");
+        return;
+      }
+    } catch (err) {
+      console.error(err);
+    }
+    setFetchedTabs(currentTabs);
+  };
 
   const selectTile = (e, newItem) => {
     const currentTarget = +e.target.dataset.index;
@@ -209,7 +235,7 @@ const Favorites = ({
                             ? swapTiles(e, item)
                             : selectTile(e, item)
                         }
-                        onDoubleClick={(e) => deleteGridItem(e)}
+                        onDoubleClick={() => deleteGridItem(item)}
                         data-index={index}
                         style={{
                           border:
