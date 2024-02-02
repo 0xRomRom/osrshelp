@@ -11,6 +11,7 @@ const SearchItem = ({
   setAddingFavorite,
   setFavoritesImgSrc,
   setBox4Disabled,
+  box4Disabled,
 }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [imageError, setImageError] = useState(false);
@@ -19,6 +20,7 @@ const SearchItem = ({
 
   const [addNoted, setAddNoted] = useState(false);
   const [amountToAdd, setAmountToAdd] = useState(1);
+  const [noteDisabled, setNoteDisabled] = useState(null);
 
   const amountHandler = (e) => {
     const input = e.target.value;
@@ -64,12 +66,15 @@ const SearchItem = ({
       res[2] === "bolts"
     ) {
       setBox4Disabled(false);
+      setNoteDisabled(true);
     } else {
       setBox4Disabled(true);
+      setNoteDisabled(false);
     }
 
     if (!isNaN(res[res.length - 1])) {
       setBox4Disabled(false);
+      setNoteDisabled(true);
     }
 
     setImgSrc(imgSrc);
@@ -80,6 +85,36 @@ const SearchItem = ({
       return;
     }
     let updatedGrid = [...currentGrid];
+    console.log(box4Disabled);
+    if (!box4Disabled && !addNoted) {
+      // Check if entry exists and increment
+      for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+        const gridValue = updatedGrid[i][i];
+        if (gridValue === imgSrc && updatedGrid[i].amount > 0) {
+          updatedGrid[i].amount += amountToAdd;
+          setCurrentGrid(updatedGrid);
+          setAddNoted(false);
+          setAmountToAdd(1);
+
+          return;
+        }
+      }
+
+      // Create new entry
+      for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+        const gridValue = updatedGrid[i][i];
+        if (gridValue.length === 0) {
+          updatedGrid[i].amount += amountToAdd;
+          updatedGrid[i].noted = false;
+          updatedGrid[i][i] = imgSrc;
+
+          setCurrentGrid(updatedGrid);
+          setAddNoted(false);
+          setAmountToAdd(1);
+          return;
+        }
+      }
+    }
 
     if (addNoted) {
       // Check if entry exists and increment
@@ -171,6 +206,7 @@ const SearchItem = ({
                       addNoted ? stl.notedActive : ""
                     }`}
                     onClick={() => setAddNoted(!addNoted)}
+                    disabled={noteDisabled ? true : false}
                   >
                     Noted
                   </button>

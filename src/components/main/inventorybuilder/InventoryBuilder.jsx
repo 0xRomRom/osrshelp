@@ -32,6 +32,7 @@ const InventoryBuilder = () => {
               setAddingFavorite={setAddingFavorite}
               setFavoritesImgSrc={setFavoritesImgSrc}
               setBox4Disabled={setBox4Disabled}
+              box4Disabled={box4Disabled}
             />
             <div className={stl.inventoryWrapper}>
               <InventoryGrid
