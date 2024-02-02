@@ -69,11 +69,16 @@
   background-color: rgba(128, 128, 128, 0.102);
 }
 
+.gridItem:hover span {
+  opacity: 1;
+}
+
 .tileImg {
   position: relative;
   width: 36px;
   height: 36px;
   object-fit: contain;
+  top: -12px;
 }
 
 .addOverlay {
@@ -147,4 +152,16 @@
 .grayed {
   background-color: rgba(128, 128, 128, 0.094);
   pointer-events: none;
+}
+
+.itemName {
+  position: absolute;
+  color: gray;
+  font-size: 10px;
+  bottom: 3px;
+  line-height: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+  padding: 0px 3px;
 }

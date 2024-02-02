@@ -40,7 +40,6 @@ const Favorites = ({
           setFetchedTabs(tabs);
         } else {
           if (data.length === 0) {
-            // Insert a new row if no data is found
             await supabase.from("item_favorites").insert([
               {
                 uid: userID,
@@ -49,7 +48,6 @@ const Favorites = ({
             ]);
             setFetchedTabs(tabs);
           } else {
-            // Data found, update the state
             setFetchedTabs(JSON.parse(data[0].favitems));
           }
         }
@@ -58,7 +56,6 @@ const Favorites = ({
       }
     };
 
-    // Fetch data only if fetchedTabs is empty
     if (Object.entries(fetchedTabs).length === 0) {
       fetchTables();
     }
@@ -103,8 +100,9 @@ const Favorites = ({
     } else {
       setBox4Disabled(false);
     }
-
-    cachedState[tab].push(favoritesImgSrc);
+    const itemName = filteredString.replaceAll("_", " ");
+    console.log(filteredString.replaceAll("_", " "));
+    cachedState[tab].push({ src: favoritesImgSrc, name: itemName });
     try {
       const { error } = await supabase
         .from("item_favorites")
@@ -133,9 +131,7 @@ const Favorites = ({
 
   const selectTile = (e, newItem) => {
     const currentTarget = +e.target.dataset.index;
-    console.log(newItem);
-    console.log(selectedTile);
-    console.log(e.target.dataset);
+
     if (newItem === selectedTile) {
       unselectTile();
       return;
@@ -143,11 +139,6 @@ const Favorites = ({
     setSelectedTile(newItem);
     setSelectedIndex(currentTarget);
   };
-
-  useEffect(() => {
-    // console.log(selectedTile);
-    // console.log(selectedIndex);
-  }, [selectedTile, selectedIndex]);
 
   return (
     <div className={stl.favorites}>
@@ -174,6 +165,7 @@ const Favorites = ({
               {Object.entries(fetchedTabs).length > 0 && (
                 <>
                   {fetchedTabs[activeTab].map((item, index) => {
+                    console.log(item);
                     return (
                       <div
                         className={stl.gridItem}
@@ -201,7 +193,12 @@ const Favorites = ({
                               : "",
                         }}
                       >
-                        <img src={item} alt={item} className={stl.tileImg} />
+                        <img
+                          src={item.src}
+                          alt={item.name}
+                          className={stl.tileImg}
+                        />
+                        <span className={stl.itemName}>{item.name}</span>
                       </div>
                     );
                   })}
