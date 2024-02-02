@@ -67,7 +67,7 @@
 }
 
 .gridItem:hover {
-  background-color: rgba(128, 128, 128, 0.102);
+  background-color: rgba(128, 128, 128, 0.06);
 }
 
 .gridItem:hover span {

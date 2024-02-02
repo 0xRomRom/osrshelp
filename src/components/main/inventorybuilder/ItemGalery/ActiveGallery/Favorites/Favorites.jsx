@@ -124,22 +124,35 @@ const Favorites = ({
     setAddingFavorite(false);
   };
 
+  const deleteGridItem = (e) => {};
+
+  const selectTile = (e, newItem) => {
+    const currentTarget = +e.target.dataset.index;
+    setSelectedTile(newItem);
+    setSelectedIndex(currentTarget);
+  };
+
   const unselectTile = () => {
     setSelectedTile(null);
     setSelectedIndex(null);
   };
 
-  const selectTile = (e, newItem) => {
+  const swapTiles = (e, newItem) => {
     const currentTarget = +e.target.dataset.index;
-    console.log(newItem);
+    const newGrid = { ...fetchedTabs };
     console.log(selectedTile);
+    console.log(newItem);
 
-    if (newItem?.src === selectedTile?.src) {
+    if (
+      selectedTile.src === newItem.src &&
+      selectedTile.name === newItem.name
+    ) {
       unselectTile();
       return;
     }
-    setSelectedTile(newItem);
-    setSelectedIndex(currentTarget);
+
+    setFetchedTabs(newGrid);
+    setSelectedTile(null);
   };
 
   return (
@@ -172,7 +185,12 @@ const Favorites = ({
                       <div
                         className={stl.gridItem}
                         key={index}
-                        onClick={(e) => selectTile(e, item)}
+                        onClick={(e) =>
+                          selectedTile
+                            ? swapTiles(e, item)
+                            : selectTile(e, item)
+                        }
+                        onDoubleClick={(e) => deleteGridItem(e)}
                         data-index={index}
                         style={{
                           border:
