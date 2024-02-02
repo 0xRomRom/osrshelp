@@ -136,8 +136,7 @@ const Favorites = ({
     setSelectedIndex(null);
   };
 
-  const swapTiles = (e, newItem) => {
-    const currentTarget = +e.target.dataset.index;
+  const swapTiles = async (e, newItem) => {
     const newGrid = { ...fetchedTabs };
     const currentArray = newGrid[activeTab];
     const startImg = selectedTile.src;
@@ -153,12 +152,8 @@ const Favorites = ({
         endIndex = index;
       }
     });
-    console.log(currentArray);
     currentArray[startIndex] = { src: newItem.src, name: newItem.name };
     currentArray[endIndex] = { src: selectedTile.src, name: selectedTile.name };
-    console.log(startIndex);
-    console.log(endIndex);
-    console.log(currentArray);
 
     if (
       selectedTile.src === newItem.src &&
@@ -167,6 +162,15 @@ const Favorites = ({
       unselectTile();
       return;
     }
+
+    await supabase
+      .from("item_favorites")
+      .update({
+        uid: userID,
+        favitems: JSON.stringify(newGrid),
+      })
+      .eq("uid", userID);
+
     setFetchedTabs(newGrid);
     setSelectedTile(null);
   };
