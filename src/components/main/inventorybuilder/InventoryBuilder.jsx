@@ -7,6 +7,7 @@ import EMPTYGRID from "../../../utils/emptyinventory";
 import CtaBar from "./CtaBar/CtaBar";
 import ItemGalery from "./ItemGalery/ItemGalery";
 import SavedInventorys from "./SavedInventorys/SavedInventorys";
+import SaveOverlay from "./SaveOverlay/SaveOverlay";
 
 const InventoryBuilder = () => {
   const [currentGrid, setCurrentGrid] = useState(EMPTYGRID);
@@ -17,12 +18,14 @@ const InventoryBuilder = () => {
   const [addingFavorite, setAddingFavorite] = useState(false);
   const [favoritesImgSrc, setFavoritesImgSrc] = useState(null);
   const [box4Disabled, setBox4Disabled] = useState(false);
+  const [savingInventory, setSavingInventory] = useState(false);
 
   return (
     <>
       <div className={stl.adBar}>[ Advertisements ]</div>
       <Pagination />
       <div className={stl.mainContainer}>
+        {savingInventory && <SaveOverlay />}
         <div className={stl.innerWrapper}>
           <div className={stl.leftBar}>
             <SearchItem
@@ -45,6 +48,7 @@ const InventoryBuilder = () => {
             <CtaBar
               setCurrentGrid={setCurrentGrid}
               setScreenshotting={setScreenshotting}
+              setSavingInventory={setSavingInventory}
             />
           </div>
           <div className={stl.rightBar}>
