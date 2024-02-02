@@ -66,10 +66,10 @@ const Favorites = ({
 
     const cachedState = { ...fetchedTabs };
     let exists = false;
-
+    console.log(cachedState);
     cachedState[tab].forEach((item) => {
-      const dotPngIndex = item.indexOf(".png");
-      const result = item.substring(0, dotPngIndex + 4);
+      const dotPngIndex = item.src.indexOf(".png");
+      const result = item.src.substring(0, dotPngIndex + 4);
 
       if (result === favoritesImgSrc) {
         exists = true;
