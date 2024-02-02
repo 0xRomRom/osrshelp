@@ -19,9 +19,20 @@ const Favorites = ({
   favoritesImgSrc,
   box4Disabled,
   setBox4Disabled,
+  activeTab,
+  setActiveTab,
+  setNotedAmount,
+  setNotedState,
+  setAmountToAdd,
+  currentGrid,
+  setCurrentGrid,
+  notedState,
+  runesAmount,
+  setRunesAmount,
+  amountToAdd,
 }) => {
   const { premiumUser, userID } = useContext(AuthContext);
-  const [activeTab, setActiveTab] = useState(1);
+
   const [fetchedTabs, setFetchedTabs] = useState({});
   const [error, setError] = useState("");
   const [selectedTile, setSelectedTile] = useState(null);
@@ -66,14 +77,11 @@ const Favorites = ({
 
     const cachedState = { ...fetchedTabs };
     let exists = false;
-    console.log(cachedState);
     cachedState[tab].forEach((item) => {
       const dotPngIndex = item.src.indexOf(".png");
       const result = item.src.substring(0, dotPngIndex + 4);
 
       if (result === favoritesImgSrc) {
-        console.log(result);
-        console.log(favoritesImgSrc);
         exists = true;
       }
     });
@@ -114,7 +122,6 @@ const Favorites = ({
         res.push("(e)");
       }
 
-      console.log(filteredString);
       setBox4Disabled(true);
     } else {
       setBox4Disabled(false);
@@ -150,7 +157,6 @@ const Favorites = ({
         currentTabs[activeTab].splice(i, 1);
       }
     }
-    console.log(currentTabs[activeTab]);
 
     try {
       const { error } = await supabase
@@ -204,6 +210,7 @@ const Favorites = ({
       selectedTile.src === newItem.src &&
       selectedTile.name === newItem.name
     ) {
+      addToInv(newItem);
       unselectTile();
       return;
     }
@@ -218,6 +225,60 @@ const Favorites = ({
 
     setFetchedTabs(newGrid);
     setSelectedTile(null);
+  };
+
+  const addToInv = (newItem) => {
+    let updatedGrid = [...currentGrid];
+
+    console.log(updatedGrid);
+    for (let i = 0; i < Object.keys(updatedGrid).length; i++) {
+      const gridValue = updatedGrid[i][i];
+
+      if (gridValue.length === 0) {
+        const cacheIndex = i;
+
+        if (amountToAdd === "Fill") {
+          for (let j = cacheIndex; j < 28; j++) {
+            if (updatedGrid[j][j] !== "") {
+              continue;
+            }
+            updatedGrid[j][j] = newItem.src;
+          }
+          setNotedState(false);
+          setNotedAmount(null);
+          setCurrentGrid(updatedGrid);
+          break;
+        }
+
+        let added = 0;
+        for (let j = cacheIndex; j < 28; j++) {
+          if (j >= 28) {
+            setNotedState(false);
+            setNotedAmount(null);
+            setCurrentGrid(updatedGrid);
+            break;
+          }
+          if (updatedGrid[j][j] !== "") {
+            continue;
+          }
+          if (added >= +amountToAdd) {
+            setNotedState(false);
+            setNotedAmount(null);
+            setCurrentGrid(updatedGrid);
+            break;
+          }
+          added++;
+          updatedGrid[j][j] = newItem.src;
+        }
+        setNotedState(false);
+        setNotedAmount(null);
+        setCurrentGrid(updatedGrid);
+        break;
+      }
+    }
+    setNotedState(false);
+    setNotedAmount(null);
+    setAmountToAdd("1");
   };
 
   return (

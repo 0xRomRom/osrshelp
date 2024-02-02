@@ -28,6 +28,7 @@ const ItemGalery = ({
   const [activeGallery, setActiveGallery] = useState("Armor");
   const [slotState, setSlotState] = useState("Helm");
   const [runesAmount, setRunesAmount] = useState(null);
+  const [activeTab, setActiveTab] = useState(1);
 
   useEffect(() => {
     if (addingFavorite) {
@@ -97,7 +98,18 @@ const ItemGalery = ({
           setAddingFavorite={setAddingFavorite}
           favoritesImgSrc={favoritesImgSrc}
           setBox4Disabled={setBox4Disabled}
+          setNotedAmount={setNotedAmount}
+          setNotedState={setNotedState}
           box4Disabled={box4Disabled}
+          setActiveTab={setActiveTab}
+          activeTab={activeTab}
+          setAmountToAdd={setAmountToAdd}
+          setCurrentGrid={setCurrentGrid}
+          currentGrid={currentGrid}
+          notedState={notedState}
+          runesAmount={runesAmount}
+          setRunesAmount={setRunesAmount}
+          amountToAdd={amountToAdd}
         />
       )}
       <AmountBar
@@ -113,6 +125,7 @@ const ItemGalery = ({
         setRunesAmount={setRunesAmount}
         runesAmount={runesAmount}
         setSlotState={setSlotState}
+        activeTab={activeTab}
       />
     </div>
   );
