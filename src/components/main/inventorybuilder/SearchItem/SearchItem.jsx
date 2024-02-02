@@ -49,7 +49,8 @@ const SearchItem = ({
     const imgSrc = `https://oldschool.runescape.wiki/images/${encoded}.png`;
 
     const res = encoded.split("_");
-
+    console.log(res);
+    console.log(encoded);
     if (
       res[1] === "bolts" ||
       res[1] === "arrow" ||
@@ -59,11 +60,16 @@ const SearchItem = ({
       res[res.length - 1] === "javelin" ||
       res[1] === "rack" ||
       res[res.length - 1] === "tar" ||
-      res[res.length - 1] === "bolts"
+      res[res.length - 1] === "bolts" ||
+      res[2] === "bolts"
     ) {
       setBox4Disabled(false);
     } else {
       setBox4Disabled(true);
+    }
+
+    if (!isNaN(res[res.length - 1])) {
+      setBox4Disabled(false);
     }
 
     setImgSrc(imgSrc);

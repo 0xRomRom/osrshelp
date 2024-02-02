@@ -72,6 +72,8 @@ const Favorites = ({
       const result = item.src.substring(0, dotPngIndex + 4);
 
       if (result === favoritesImgSrc) {
+        console.log(result);
+        console.log(favoritesImgSrc);
         exists = true;
       }
     });
@@ -83,7 +85,7 @@ const Favorites = ({
     //Filter image source down to name
     const dotPngIndex = favoritesImgSrc.indexOf(".png");
     const filteredString = favoritesImgSrc.substring(0, dotPngIndex).slice(40);
-    const res = filteredString.split("_");
+    let res = filteredString.split("_");
 
     if (
       res[1] === "bolts" ||
@@ -94,13 +96,30 @@ const Favorites = ({
       res[res.length - 1] === "javelin" ||
       res[1] === "rack" ||
       res[res.length - 1] === "tar" ||
-      res[res.length - 1] === "bolts"
+      res[res.length - 1] === "bolts" ||
+      res[2] === "bolts" ||
+      !isNaN(res[res.length - 1])
     ) {
+      if (res.length === 3) {
+        if (!isNaN(res[res.length - 1])) {
+          res.pop();
+        }
+      }
+      if (res.length === 4) {
+        res.pop();
+      }
+      if (res.length === 5) {
+        res.pop();
+        res.pop();
+        res.push("(e)");
+      }
+
+      console.log(filteredString);
       setBox4Disabled(true);
     } else {
       setBox4Disabled(false);
     }
-    const itemName = filteredString.replaceAll("_", " ");
+    const itemName = res.join(" ");
     cachedState[tab].push({ src: favoritesImgSrc, name: itemName });
     try {
       const { error } = await supabase
