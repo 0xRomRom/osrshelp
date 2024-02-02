@@ -63,6 +63,7 @@
   position: relative;
   border-radius: 0.2rem;
   transition: all 0.1s ease-in-out;
+  border: 1px solid transparent;
 }
 
 .gridItem:hover {

@@ -131,8 +131,10 @@ const Favorites = ({
 
   const selectTile = (e, newItem) => {
     const currentTarget = +e.target.dataset.index;
+    console.log(newItem);
+    console.log(selectedTile);
 
-    if (newItem === selectedTile) {
+    if (newItem?.src === selectedTile?.src) {
       unselectTile();
       return;
     }
@@ -197,8 +199,11 @@ const Favorites = ({
                           src={item.src}
                           alt={item.name}
                           className={stl.tileImg}
+                          data-index={index}
                         />
-                        <span className={stl.itemName}>{item.name}</span>
+                        <span className={stl.itemName} data-index={index}>
+                          {item.name}
+                        </span>
                       </div>
                     );
                   })}
