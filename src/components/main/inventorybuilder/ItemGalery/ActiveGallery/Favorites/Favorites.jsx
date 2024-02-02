@@ -101,7 +101,6 @@ const Favorites = ({
       setBox4Disabled(false);
     }
     const itemName = filteredString.replaceAll("_", " ");
-    console.log(filteredString.replaceAll("_", " "));
     cachedState[tab].push({ src: favoritesImgSrc, name: itemName });
     try {
       const { error } = await supabase
@@ -140,8 +139,26 @@ const Favorites = ({
   const swapTiles = (e, newItem) => {
     const currentTarget = +e.target.dataset.index;
     const newGrid = { ...fetchedTabs };
-    console.log(selectedTile);
-    console.log(newItem);
+    const currentArray = newGrid[activeTab];
+    const startImg = selectedTile.src;
+    const endImg = newItem.src;
+    let startIndex = 0;
+    let endIndex = 0;
+
+    currentArray.forEach((item, index) => {
+      if (item.src === startImg) {
+        startIndex = index;
+      }
+      if (item.src === endImg) {
+        endIndex = index;
+      }
+    });
+    console.log(currentArray);
+    currentArray[startIndex] = { src: newItem.src, name: newItem.name };
+    currentArray[endIndex] = { src: selectedTile.src, name: selectedTile.name };
+    console.log(startIndex);
+    console.log(endIndex);
+    console.log(currentArray);
 
     if (
       selectedTile.src === newItem.src &&
@@ -150,7 +167,6 @@ const Favorites = ({
       unselectTile();
       return;
     }
-
     setFetchedTabs(newGrid);
     setSelectedTile(null);
   };
@@ -180,7 +196,6 @@ const Favorites = ({
               {Object.entries(fetchedTabs).length > 0 && (
                 <>
                   {fetchedTabs[activeTab].map((item, index) => {
-                    console.log(item);
                     return (
                       <div
                         className={stl.gridItem}
