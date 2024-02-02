@@ -49,7 +49,6 @@ const SearchItem = ({
     const imgSrc = `https://oldschool.runescape.wiki/images/${encoded}.png`;
 
     const res = encoded.split("_");
-    console.log(res);
 
     if (
       res[1] === "bolts" ||

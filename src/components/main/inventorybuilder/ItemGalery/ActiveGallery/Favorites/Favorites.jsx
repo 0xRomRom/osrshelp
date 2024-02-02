@@ -24,29 +24,45 @@ const Favorites = ({
   const [activeTab, setActiveTab] = useState(1);
   const [fetchedTabs, setFetchedTabs] = useState({});
   const [error, setError] = useState("");
+  const [selectedTile, setSelectedTile] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
   useEffect(() => {
-    if (Object.entries(fetchedTabs).length === 0) {
-      const fetchTables = async () => {
-        try {
-          const { data, error } = await supabase
-            .from("item_favorites")
-            .select("*")
-            .eq("uid", userID);
-          console.log(data);
-          if (error) {
-            console.error("Supabase error:", error.message);
+    const fetchTables = async () => {
+      try {
+        const { data, error } = await supabase
+          .from("item_favorites")
+          .select("*")
+          .eq("uid", userID);
+
+        if (error) {
+          console.error("Supabase error:", error.message);
+          setFetchedTabs(tabs);
+        } else {
+          if (data.length === 0) {
+            // Insert a new row if no data is found
+            await supabase.from("item_favorites").insert([
+              {
+                uid: userID,
+                favitems: JSON.stringify(tabs),
+              },
+            ]);
             setFetchedTabs(tabs);
           } else {
+            // Data found, update the state
             setFetchedTabs(JSON.parse(data[0].favitems));
           }
-        } catch (err) {
-          console.error("Fetch error:", err);
         }
-      };
+      } catch (err) {
+        console.error("Fetch error:", err);
+      }
+    };
+
+    // Fetch data only if fetchedTabs is empty
+    if (Object.entries(fetchedTabs).length === 0) {
       fetchTables();
     }
-  }, [fetchedTabs, userID]);
+  }, [userID, fetchedTabs]);
 
   const addToFavoriteTab = async (tab) => {
     setError("");
@@ -71,7 +87,6 @@ const Favorites = ({
     const dotPngIndex = favoritesImgSrc.indexOf(".png");
     const filteredString = favoritesImgSrc.substring(0, dotPngIndex).slice(40);
     const res = filteredString.split("_");
-    console.log(res);
 
     if (
       res[1] === "bolts" ||
@@ -90,7 +105,6 @@ const Favorites = ({
     }
 
     cachedState[tab].push(favoritesImgSrc);
-    console.log(JSON.stringify(cachedState));
     try {
       const { error } = await supabase
         .from("item_favorites")
@@ -110,8 +124,30 @@ const Favorites = ({
     setFetchedTabs(cachedState);
     setActiveTab(tab);
     setAddingFavorite(false);
-    console.log(cachedState);
   };
+
+  const unselectTile = () => {
+    setSelectedTile(null);
+    setSelectedIndex(null);
+  };
+
+  const selectTile = (e, newItem) => {
+    const currentTarget = +e.target.dataset.index;
+    console.log(newItem);
+    console.log(selectedTile);
+    console.log(e.target.dataset);
+    if (newItem === selectedTile) {
+      unselectTile();
+      return;
+    }
+    setSelectedTile(newItem);
+    setSelectedIndex(currentTarget);
+  };
+
+  useEffect(() => {
+    // console.log(selectedTile);
+    // console.log(selectedIndex);
+  }, [selectedTile, selectedIndex]);
 
   return (
     <div className={stl.favorites}>
@@ -139,7 +175,32 @@ const Favorites = ({
                 <>
                   {fetchedTabs[activeTab].map((item, index) => {
                     return (
-                      <div className={stl.gridItem} key={index}>
+                      <div
+                        className={stl.gridItem}
+                        key={index}
+                        onClick={(e) => selectTile(e, item)}
+                        data-index={index}
+                        style={{
+                          border:
+                            selectedTile === item &&
+                            selectedIndex === index &&
+                            selectedTile
+                              ? "1px solid rgb(33, 40, 54)"
+                              : "",
+                          backgroundColor:
+                            selectedTile === item &&
+                            selectedIndex === index &&
+                            selectedTile
+                              ? "rgba(55, 47, 42, 0.342)"
+                              : "",
+                          boxShadow:
+                            selectedTile === item &&
+                            selectedIndex === index &&
+                            selectedTile
+                              ? "0px 0px 3px rgba(55, 47, 42, 0.92)"
+                              : "",
+                        }}
+                      >
                         <img src={item} alt={item} className={stl.tileImg} />
                       </div>
                     );
