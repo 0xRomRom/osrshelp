@@ -153,7 +153,10 @@ const InventoryGrid = ({
               {imageSource.length > 0 && item.noted && (
                 <div className={stl.imgTile} data-index={index}>
                   <span className={stl.noteAmount} data-index={index}>
-                    {item.amount}
+                    {item.amount > 100000
+                      ? Math.round(item.amount / 1000)
+                      : item.amount}
+                    {item.amount > 100000 ? "K" : ""}
                   </span>
                   <img
                     src={imageSource}
@@ -171,7 +174,10 @@ const InventoryGrid = ({
               )}
               {imageSource.length > 0 && !item.noted && item.amount > 0 && (
                 <span className={stl.runeAmount} data-index={index}>
-                  {item.amount}
+                  {item.amount > 100000
+                    ? Math.round(item.amount / 1000)
+                    : item.amount}
+                  {item.amount > 100000 ? "K" : ""}
                 </span>
               )}
             </div>

@@ -15,21 +15,14 @@ const SavedInventorys = ({
 
   useEffect(() => {
     const listFetcher = async () => {
-      try {
-        const { data, error } = await supabase
-          .from("saved_inventories")
-          .select("*")
-          .eq("uid", userID);
+      const { data, error } = await supabase
+        .from("saved_inventories")
+        .select("*")
+        .eq("uid", userID);
 
-        if (error) {
-          throw new Error(error);
-        }
-        if (data) {
-          const result = JSON.parse(data[0].saved_invs);
-          setInvList(result);
-        }
-      } catch (err) {
-        console.error(err);
+      if (data) {
+        const result = JSON.parse(data[0].saved_invs);
+        setInvList(result);
       }
     };
 
