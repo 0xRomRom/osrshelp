@@ -1,5 +1,7 @@
 import stl from "./SaveOverlay.module.css";
 import { FaLongArrowAltLeft } from "react-icons/fa";
+import { CiSquarePlus } from "react-icons/ci";
+import { useState } from "react";
 
 const grid = [
   {
@@ -242,9 +244,18 @@ const grid = [
 ];
 
 const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
+  const [selected, setSelected] = useState(null);
   const closeModal = () => {
     setSavingInventory(false);
     console.log(currentGrid);
+  };
+
+  const handleSelect = (index) => {
+    if (index === selected) {
+      setSelected(null);
+      return;
+    }
+    setSelected(index);
   };
 
   return (
@@ -254,15 +265,20 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
         <div className={stl.upperBlock}>
           <div className={stl.inventoryGrid}>
             {grid.map((item, index) => {
+              console.log(item[index].length);
               return (
                 <div
-                  className={stl.gridTile}
+                  className={`${stl.gridTile} ${
+                    item[index].length > 0 ? stl.filled : ""
+                  } ${selected === index ? stl.active : ""}`}
                   key={index}
-                  style={{
-                    backgroundColor: item[index].length > 0 ? stl.filled : "",
-                  }}
+                  onClick={() => handleSelect(index)}
                 >
-                  {item[index]}
+                  {item[index].length > 0 ? (
+                    item[index]
+                  ) : (
+                    <CiSquarePlus className={stl.squareIcon} />
+                  )}
                 </div>
               );
             })}
