@@ -120,8 +120,6 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
   };
 
   const handleSelect = (index) => {
-    console.log(selected);
-    console.log(index);
     if (index === selected) {
       setSelected(null);
       return;
@@ -180,11 +178,18 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
       setError("Name too long");
       return;
     }
-
-    if (!selected) {
+    console.log(selected);
+    if (selected === null) {
       setError("Select a slot");
       return;
     }
+    const cachedBuilds = [...savedBuilds];
+    console.log(currentGrid);
+    console.log(selected);
+    console.log(savedBuilds);
+    cachedBuilds[selected].data = currentGrid;
+
+    console.log(cachedBuilds);
   };
 
   const setInventoryName = (e) => {
