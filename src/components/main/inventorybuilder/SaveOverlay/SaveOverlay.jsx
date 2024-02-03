@@ -163,11 +163,23 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
   }, [userID, savedBuilds.length]);
 
   const saveInventory = () => {
+    setError("");
+    if (!newGearName) {
+      setError("Enter a name");
+      return;
+    }
     if (newGearName.length < 4) {
       setError("Name too short");
+      return;
     }
     if (newGearName.length > 19) {
       setError("Name too long");
+      return;
+    }
+
+    if (!selected) {
+      setError("Select a slot");
+      return;
     }
   };
 
@@ -195,7 +207,7 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
         )}
         <div className={stl.upperBlock}>
           <span className={stl.noTileError}>
-            {error === "Select slot" ? error : ""}
+            {error === "Select a slot" ? error : ""}
           </span>
           <div className={stl.inventoryGrid}>
             {savedBuilds.map((item, index) => {
@@ -218,7 +230,9 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
           </div>
           <div className={stl.addBar}>
             <span className={stl.inputError}>
-              {error === "Name too short" || error === "Name too long"
+              {error === "Name too short" ||
+              error === "Name too long" ||
+              error === "Enter a name"
                 ? error
                 : ""}
             </span>

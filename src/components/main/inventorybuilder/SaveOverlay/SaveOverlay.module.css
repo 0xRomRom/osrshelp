@@ -179,3 +179,10 @@
   color: red;
   bottom: 8.5rem;
 }
+
+.noTileError {
+  color: red;
+  bottom: 8.5rem;
+  position: absolute;
+  top: -1.5rem;
+}
