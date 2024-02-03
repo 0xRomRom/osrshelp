@@ -51,15 +51,21 @@ const SavedInventorys = ({ setSavingInventory }) => {
             />
           </div>
           <div className={stl.storedInvsList}>
-            {invList.length > 0 && (
-              <>
-                {invList.map((item, index) => (
-                  <div className={stl.listItem} key={index}>
-                    {item[index]}
-                  </div>
-                ))}
-              </>
-            )}
+            {invList.map((item, index) => {
+              console.log(item);
+              console.log(index);
+              return (
+                <div
+                  className={stl.listItem}
+                  key={index}
+                  style={{
+                    display: item[index].length === 0 ? "none" : "flex",
+                  }}
+                >
+                  {item[index]}
+                </div>
+              );
+            })}
           </div>
         </div>
       )}
