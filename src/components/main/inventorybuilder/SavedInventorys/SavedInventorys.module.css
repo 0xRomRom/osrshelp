@@ -5,6 +5,7 @@
   background-color: rgba(0, 0, 0, 0.15);
   border-radius: 0.375rem;
   border: 1px solid var(--border);
+  overflow-y: scroll;
 }
 
 .configRow {
@@ -53,4 +54,9 @@
 .listItem:hover {
   box-shadow: 0px 0px 5px rgba(32, 46, 57, 0.604);
   color: white;
+}
+
+.storedInvs {
+  display: flex;
+  flex-direction: column;
 }

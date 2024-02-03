@@ -5,7 +5,7 @@ import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 import { BsGearFill } from "react-icons/bs";
 import supabase from "../../../../utils/supabase/supabase";
 
-const SavedInventorys = ({ setSavingInventory }) => {
+const SavedInventorys = ({ setSavingInventory, savingInventory }) => {
   const { premiumUser, userID } = useContext(AuthContext);
   const [invList, setInvList] = useState([]);
 
@@ -30,14 +30,10 @@ const SavedInventorys = ({ setSavingInventory }) => {
       }
     };
 
-    if (invList.length === 0) {
+    if (invList.length === 0 || savingInventory === false) {
       listFetcher();
     }
-  });
-
-  useEffect(() => {
-    console.log(invList);
-  }, [invList]);
+  }, [invList.length, userID, savingInventory]);
 
   return (
     <div className={stl.savedinventorys}>
