@@ -24,7 +24,6 @@ const CtaBar = ({
   };
 
   const handleInventorySave = () => {
-    console.log(currentGrid);
     let pass = false;
     for (let i = 0; i < currentGrid.length; i++) {
       if (currentGrid[i][i].length > 0) {

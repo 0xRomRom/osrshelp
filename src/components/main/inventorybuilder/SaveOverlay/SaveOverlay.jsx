@@ -152,7 +152,6 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
         } else {
           const parsed = JSON.parse(data[0].saved_invs);
           console.log(parsed);
-
           setSavedBuilds(parsed);
           setLoading(false);
         }
@@ -213,8 +212,6 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
     } catch (err) {
       console.error(err);
     }
-
-    console.log(cachedBuilds);
   };
 
   const setInventoryName = (e) => {
@@ -232,12 +229,45 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
     setNewGearName(name);
   };
 
+  const deleteItemSlot = async () => {
+    const cachedBuilds = [...savedBuilds];
+
+    cachedBuilds[selected][selected] = "";
+    cachedBuilds[selected].data = [];
+
+    try {
+      await supabase
+        .from("saved_inventories")
+        .update({
+          uid: userID,
+          saved_invs: JSON.stringify(cachedBuilds),
+        })
+        .eq("uid", userID);
+
+      if (error) {
+        throw new Error(error);
+      }
+
+      const { data } = await supabase
+        .from("saved_inventories")
+        .select("*")
+        .eq("uid", userID);
+      const parsed = JSON.parse(data[0].saved_invs);
+
+      setSavedBuilds(parsed);
+      setNewGearName(null);
+      setSelected(null);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   return (
     <div className={stl.saveoverlay}>
       <div className={stl.modal}>
         <FaLongArrowAltLeft className={stl.closeBtn} onClick={closeModal} />
         {selected !== null && savedBuilds[selected][selected].length > 0 && (
-          <ImBin className={stl.bin} />
+          <ImBin className={stl.bin} onClick={deleteItemSlot} />
         )}
         <div className={stl.upperBlock}>
           <span className={stl.noTileError}>
