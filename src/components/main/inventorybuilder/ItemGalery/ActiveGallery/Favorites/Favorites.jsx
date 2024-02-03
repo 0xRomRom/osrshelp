@@ -149,6 +149,7 @@ const Favorites = ({
     setActiveTab(tab);
     setAddingFavorite(false);
     setBox4Disabled(true);
+    setError("");
   };
 
   const deleteGridItem = async (deleteItem) => {

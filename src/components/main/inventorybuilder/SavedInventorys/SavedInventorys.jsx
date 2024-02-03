@@ -15,7 +15,7 @@ const SavedInventorys = ({
 
   useEffect(() => {
     const listFetcher = async () => {
-      const { data, error } = await supabase
+      const { data } = await supabase
         .from("saved_inventories")
         .select("*")
         .eq("uid", userID);
@@ -26,7 +26,10 @@ const SavedInventorys = ({
       }
     };
 
-    if (invList.length === 0 || savingInventory === false) {
+    if (
+      (invList.length === 0 && userID) ||
+      (savingInventory === false && userID)
+    ) {
       listFetcher();
     }
   }, [invList.length, userID, savingInventory]);

@@ -89,6 +89,7 @@ const InventoryGrid = ({
 
               const downloadLink = document.createElement("a");
               downloadLink.href = imgData;
+              downloadLink.style.backgroundColor = "black";
               downloadLink.download = "Inventory.webp";
 
               document.body.appendChild(downloadLink);
@@ -107,7 +108,13 @@ const InventoryGrid = ({
   }, [screenshotting, setScreenshotting]);
 
   return (
-    <div className={stl.inventorygrid} ref={targetDivRef}>
+    <div
+      className={stl.inventorygrid}
+      ref={targetDivRef}
+      style={{
+        backgroundColor: screenshotting ? " rgba(14, 17, 23, 1)" : "",
+      }}
+    >
       <div className={stl.innerWrap}>
         {currentGrid.map((item, index) => {
           const imageSource = Object.values(item)[0];

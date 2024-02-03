@@ -122,11 +122,12 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
   const handleSelect = (index) => {
     if (index === selected) {
       setSelected(null);
-      setNewGearName("");
+      // if (newGearName.length !== 0) {
+      //   setNewGearName("");
+      // }
       return;
     }
-    setNewGearName(savedBuilds[index][index]);
-    console.log(savedBuilds[index][index]);
+    // setNewGearName(savedBuilds[index][index]);
     setSelected(index);
   };
 
@@ -163,7 +164,7 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
       }
     };
 
-    if (savedBuilds.length === 0) {
+    if (savedBuilds.length === 0 && userID) {
       gridFetcher();
     }
   }, [userID, savedBuilds.length]);
