@@ -1,154 +1,16 @@
 import stl from "./SaveOverlay.module.css";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { CiSquarePlus } from "react-icons/ci";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ImBin } from "react-icons/im";
+import supabase from "../../../../utils/supabase/supabase";
+import { useContext } from "react";
+import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
 const grid = [
   {
-    0: "Agility runs",
-    data: [
-      {
-        0: "https://oldschool.runescape.wiki/images/Shark.png",
-        noted: false,
-        amount: 0,
-      },
-      {
-        1: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        2: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        3: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        4: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        5: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        6: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        7: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        8: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        9: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        10: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        11: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        12: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        13: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        14: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        15: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        16: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        17: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        18: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        19: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        20: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        21: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        22: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        23: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        24: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        25: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        26: "",
-        noted: false,
-        amount: 0,
-      },
-      {
-        27: "",
-        noted: false,
-        amount: 0,
-      },
-    ],
+    0: "",
+    data: [],
   },
   {
     1: "",
@@ -245,8 +107,9 @@ const grid = [
 ];
 
 const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
+  const { userID } = useContext(AuthContext);
   const [selected, setSelected] = useState(null);
-  const [savedBuilds, setSavedBuilds] = useState(grid);
+  const [savedBuilds, setSavedBuilds] = useState([]);
   const closeModal = () => {
     setSavingInventory(false);
   };
@@ -260,6 +123,38 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
     }
     setSelected(index);
   };
+
+  useEffect(() => {
+    const gridFetcher = async () => {
+      try {
+        const { data, error } = await supabase
+          .from("saved_inventories")
+          .select("*")
+          .eq("uid", userID);
+
+        if (error) {
+          throw new Error(error);
+        }
+
+        if (data.length === 0) {
+          await supabase.from("saved_inventories").insert([
+            {
+              uid: userID,
+              saved_invs: JSON.stringify(grid),
+            },
+          ]);
+        }
+
+        console.log(data);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    if (savedBuilds.length === 0) {
+      gridFetcher();
+    }
+  }, []);
 
   return (
     <div className={stl.saveoverlay}>
