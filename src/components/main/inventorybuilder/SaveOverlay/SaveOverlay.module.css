@@ -80,11 +80,34 @@
 }
 
 .inventoryGrid {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 425px;
   width: 100%;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .addBar {
   width: 100%;
+}
+
+.gridTile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgb(32, 46, 57);
+  /* background: linear-gradient(90deg, rgb(32, 46, 57), rgb(21, 26, 35)); */
+  background-color: var(--input);
+  padding: 0.175rem 1rem;
+  border-radius: 0.375rem;
+  /* display: inline-block; */
+  border: 1px solid var(--border);
+  min-height: 40.5px;
+  max-width: 48%;
+  box-shadow: 0px 0px 4px rgba(22, 21, 21, 0.55);
+  cursor: pointer;
 }

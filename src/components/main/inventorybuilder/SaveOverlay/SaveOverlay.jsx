@@ -13,6 +13,29 @@ const SaveOverlay = ({ setSavingInventory }) => {
         <div className={stl.upperBlock}>
           <div className={stl.inventoryGrid}>
             <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
+            <div className={stl.gridTile}></div>
           </div>
           <div className={stl.addBar}>
             <input
