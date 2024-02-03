@@ -19,14 +19,10 @@ const Pagination = ({ navTo }) => {
   useEffect(() => {
     if (subState) {
       setCachedSubstate(subState);
+      return;
     }
+    setCachedSubstate(null);
   }, [subState, cachedSubstate]);
-
-  useEffect(() => {
-    if (!subState) {
-      setCachedSubstate(null);
-    }
-  }, [subState]);
 
   const clearSubState = () => {
     setSubState(null);

@@ -46,16 +46,19 @@
   height: 2.5rem;
   border-radius: 0.375rem;
   background-color: yellow;
+  background-color: black;
   border: none;
   outline: none;
+  border: 2px solid yellow;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   position: relative;
   top: 1.5rem;
+  color: yellow;
 }
 
 .upgradecta:hover {
-  color: yellow;
-  background-color: black;
+  color: black;
+  background-color: yellow;
 }

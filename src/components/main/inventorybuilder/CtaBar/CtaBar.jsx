@@ -2,8 +2,11 @@ import stl from "./CtaBar.module.css";
 import { ImBin } from "react-icons/im";
 import { FaCameraRetro, FaSave } from "react-icons/fa";
 import EMPTYGRID from "../../../../utils/emptyinventory";
+import { useContext } from "react";
+import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
 const CtaBar = ({ setCurrentGrid, setScreenshotting, setSavingInventory }) => {
+  const { premiumUser } = useContext(AuthContext);
   const clearInventory = () => {
     const cachedGrid = [...EMPTYGRID];
     for (let i = 0; i < 28; i++) {
@@ -19,6 +22,7 @@ const CtaBar = ({ setCurrentGrid, setScreenshotting, setSavingInventory }) => {
   };
 
   const handleInventorySave = () => {
+    if (!premiumUser) return;
     setSavingInventory(true);
   };
 
@@ -30,7 +34,7 @@ const CtaBar = ({ setCurrentGrid, setScreenshotting, setSavingInventory }) => {
       <button className={stl.cta} onClick={makeScreenshot}>
         <FaCameraRetro className={stl.icon} />
       </button>
-      <button className={stl.cta} onClick={() => handleInventorySave(true)}>
+      <button className={stl.cta} onClick={() => handleInventorySave()}>
         <FaSave className={stl.icon} />
       </button>
     </div>

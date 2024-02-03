@@ -33,6 +33,7 @@ const ItemGalery = ({
   useEffect(() => {
     if (addingFavorite) {
       setActiveGallery("Favorites");
+      setAddingFavorite(false);
     }
   }, [addingFavorite, setAddingFavorite, activeGallery]);
 

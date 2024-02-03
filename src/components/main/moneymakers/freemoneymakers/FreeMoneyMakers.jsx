@@ -87,11 +87,11 @@ const FreeMoneyMakers = ({ setMoneyMaker }) => {
                   }`}
                   key={method.title}
                   onClick={() => {
+                    setMoneyMaker(method);
+                    setSubState(method.title);
                     navigate(
                       `${pathname}/${method.title.replaceAll(" ", "_")}`
                     );
-                    setMoneyMaker(method);
-                    setSubState(method.title);
                   }}
                 >
                   <div className={stl.imgWrapper}>

@@ -35,6 +35,10 @@ const MethodPage = ({ moneyMaker }) => {
     setSubState(null);
   };
 
+  useEffect(() => {
+    setSubState(methodName);
+  }, [setSubState]);
+
   const items = methodState.items;
   const quests = methodState.quests;
   const other = methodState.other;
