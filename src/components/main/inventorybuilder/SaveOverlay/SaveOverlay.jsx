@@ -148,10 +148,7 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
         } else {
           const parsed = JSON.parse(data[0].saved_invs);
           setSavedBuilds(parsed);
-          console.log(data[0].saved_invs);
         }
-
-        console.log(data);
       } catch (err) {
         console.error(err);
       }
@@ -196,7 +193,10 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
               placeholder="New inventory name"
             />
           </div>
-          <div className={stl.savedBar}></div>
+          <div className={stl.savedBar}>
+            <button className={stl.modalCta}>Cancel</button>
+            <button className={stl.modalCta}>Save</button>
+          </div>
         </div>
       </div>
     </div>
