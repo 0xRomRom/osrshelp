@@ -110,6 +110,8 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
   const { userID } = useContext(AuthContext);
   const [selected, setSelected] = useState(null);
   const [savedBuilds, setSavedBuilds] = useState([]);
+  const [newGearName, setNewGearName] = useState("");
+  const [error, setError] = useState("");
   const closeModal = () => {
     setSavingInventory(false);
   };
@@ -157,7 +159,21 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
     if (savedBuilds.length === 0) {
       gridFetcher();
     }
-  }, []);
+  }, [userID, savedBuilds.length]);
+
+  const saveInventory = () => {
+    if (newGearName.length < 4) {
+      setError("Name too short");
+    }
+  };
+
+  const setInventoryName = (e) => {
+    const name = e.target.value;
+
+    if (name.length > 3 && error === "Name too short") {
+      setError("");
+    }
+  };
 
   return (
     <div className={stl.saveoverlay}>
@@ -187,15 +203,21 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
             })}
           </div>
           <div className={stl.addBar}>
+            <span className={stl.inputError}>{error}</span>
             <input
               type="text"
               className={stl.nameInput}
               placeholder="New inventory name"
+              onChange={(e) => setInventoryName(e)}
             />
           </div>
           <div className={stl.savedBar}>
-            <button className={stl.modalCta}>Cancel</button>
-            <button className={stl.modalCta}>Save</button>
+            <button className={stl.modalCta} onClick={closeModal}>
+              Cancel
+            </button>
+            <button className={stl.modalCta} onClick={saveInventory}>
+              Save
+            </button>
           </div>
         </div>
       </div>

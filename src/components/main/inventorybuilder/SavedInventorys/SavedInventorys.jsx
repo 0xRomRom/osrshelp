@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 
 const SavedInventorys = () => {
-  const { premiumUser, userID } = useContext(AuthContext);
+  const { premiumUser } = useContext(AuthContext);
 
   return (
     <div className={stl.savedinventorys}>
