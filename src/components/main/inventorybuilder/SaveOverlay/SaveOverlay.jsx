@@ -180,7 +180,6 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
       setError("Name too long");
       return;
     }
-    console.log(selected);
     if (selected === null) {
       setError("Select a slot");
       return;
@@ -201,19 +200,16 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
       if (error) {
         throw new Error(error);
       }
-      try {
-        const { data } = await supabase
-          .from("saved_inventories")
-          .select("*")
-          .eq("uid", userID);
-        const parsed = JSON.parse(data[0].saved_invs);
 
-        setSavedBuilds(parsed);
-        setNewGearName(null);
-        setSelected(null);
-      } catch (err) {
-        console.error(err);
-      }
+      const { data } = await supabase
+        .from("saved_inventories")
+        .select("*")
+        .eq("uid", userID);
+      const parsed = JSON.parse(data[0].saved_invs);
+
+      setSavedBuilds(parsed);
+      setNewGearName(null);
+      setSelected(null);
     } catch (err) {
       console.error(err);
     }
