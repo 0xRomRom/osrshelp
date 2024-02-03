@@ -148,6 +148,7 @@ const Favorites = ({
     setFetchedTabs(cachedState);
     setActiveTab(tab);
     setAddingFavorite(false);
+    setBox4Disabled(true);
   };
 
   const deleteGridItem = async (deleteItem) => {
