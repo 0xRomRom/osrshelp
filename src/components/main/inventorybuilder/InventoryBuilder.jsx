@@ -54,6 +54,7 @@ const InventoryBuilder = () => {
               setCurrentGrid={setCurrentGrid}
               setScreenshotting={setScreenshotting}
               setSavingInventory={setSavingInventory}
+              currentGrid={currentGrid}
             />
           </div>
           <div className={stl.rightBar}>

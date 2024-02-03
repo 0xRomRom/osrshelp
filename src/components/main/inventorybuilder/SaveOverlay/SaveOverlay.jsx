@@ -284,7 +284,7 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
               className={stl.nameInput}
               placeholder="New inventory name"
               onChange={(e) => setInventoryName(e)}
-              value={newGearName}
+              value={newGearName || ""}
             />
           </div>
           <div className={stl.savedBar}>
