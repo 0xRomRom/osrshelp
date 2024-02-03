@@ -24,15 +24,7 @@ const CtaBar = ({
   };
 
   const handleInventorySave = () => {
-    let pass = false;
-    for (let i = 0; i < currentGrid.length; i++) {
-      if (currentGrid[i][i].length > 0) {
-        pass = true;
-      }
-    }
-    if (pass) {
-      setSavingInventory(true);
-    }
+    setSavingInventory(true);
   };
 
   return (

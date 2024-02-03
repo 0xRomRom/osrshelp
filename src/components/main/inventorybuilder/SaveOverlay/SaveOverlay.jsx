@@ -122,8 +122,11 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
   const handleSelect = (index) => {
     if (index === selected) {
       setSelected(null);
+      setNewGearName("");
       return;
     }
+    setNewGearName(savedBuilds[index][index]);
+    console.log(savedBuilds[index][index]);
     setSelected(index);
   };
 
@@ -167,6 +170,18 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
 
   const saveInventory = async () => {
     setError("");
+
+    let pass = false;
+    for (let i = 0; i < currentGrid.length; i++) {
+      if (currentGrid[i][i].length > 0) {
+        pass = true;
+      }
+    }
+
+    if (!pass) {
+      setError("Can't safe empty inventory");
+      return;
+    }
     if (!newGearName) {
       setError("Enter a name");
       return;
@@ -293,7 +308,8 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
             <span className={stl.inputError}>
               {error === "Name too short" ||
               error === "Name too long" ||
-              error === "Enter a name"
+              error === "Enter a name" ||
+              error === "Can't safe empty inventory"
                 ? error
                 : ""}
             </span>

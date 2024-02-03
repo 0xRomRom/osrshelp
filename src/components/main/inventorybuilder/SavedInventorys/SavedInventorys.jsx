@@ -26,7 +26,6 @@ const SavedInventorys = ({
         }
         if (data) {
           const result = JSON.parse(data[0].saved_invs);
-          console.log(result);
           setInvList(result);
         }
       } catch (err) {
@@ -56,8 +55,6 @@ const SavedInventorys = ({
           </div>
           <div className={stl.storedInvsList}>
             {invList.map((item, index) => {
-              console.log(item);
-              console.log(index);
               return (
                 <div
                   className={stl.listItem}
