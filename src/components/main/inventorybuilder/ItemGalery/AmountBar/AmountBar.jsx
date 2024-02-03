@@ -33,7 +33,13 @@ const AmountBar = ({
     setRunesAmount(null);
     setSlotState("Helm");
     runesInputRef.current?.focus();
-  }, [activeGallery, setAmountToAdd, setNotedState, setRunesAmount]);
+  }, [
+    activeGallery,
+    setAmountToAdd,
+    setNotedState,
+    setRunesAmount,
+    setSlotState,
+  ]);
 
   useEffect(() => {
     runesInputRef.current?.focus();

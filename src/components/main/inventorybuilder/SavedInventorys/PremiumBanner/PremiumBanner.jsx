@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const PremiumBanner = () => {
   const navigate = useNavigate();
 
-  const { premiumUser, userID } = useContext(AuthContext);
+  const { userID } = useContext(AuthContext);
 
   const handleNavigate = () => {
     console.log("clicked");

@@ -2,6 +2,7 @@ import stl from "./SaveOverlay.module.css";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { CiSquarePlus } from "react-icons/ci";
 import { useState } from "react";
+import { ImBin } from "react-icons/im";
 
 const grid = [
   {
@@ -245,12 +246,14 @@ const grid = [
 
 const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
   const [selected, setSelected] = useState(null);
+  const [savedBuilds, setSavedBuilds] = useState(grid);
   const closeModal = () => {
     setSavingInventory(false);
-    console.log(currentGrid);
   };
 
   const handleSelect = (index) => {
+    console.log(selected);
+    console.log(index);
     if (index === selected) {
       setSelected(null);
       return;
@@ -262,10 +265,12 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
     <div className={stl.saveoverlay}>
       <div className={stl.modal}>
         <FaLongArrowAltLeft className={stl.closeBtn} onClick={closeModal} />
+        {selected !== null && savedBuilds[selected][selected].length > 0 && (
+          <ImBin className={stl.bin} />
+        )}
         <div className={stl.upperBlock}>
           <div className={stl.inventoryGrid}>
-            {grid.map((item, index) => {
-              console.log(item[index].length);
+            {savedBuilds.map((item, index) => {
               return (
                 <div
                   className={`${stl.gridTile} ${

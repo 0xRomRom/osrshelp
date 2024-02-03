@@ -126,3 +126,16 @@
 .active {
   box-shadow: 0px 0px 5px blue;
 }
+
+.bin {
+  position: absolute;
+  left: 50%;
+  font-size: 28px;
+  color: gray;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.bin:hover {
+  color: rgb(219, 219, 219);
+}
