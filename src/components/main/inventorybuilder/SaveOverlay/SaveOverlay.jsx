@@ -6,6 +6,7 @@ import { ImBin } from "react-icons/im";
 import supabase from "../../../../utils/supabase/supabase";
 import { useContext } from "react";
 import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
+import Spinner from "../../../../utils/loadingspinner/Spinner";
 
 const grid = [
   {
@@ -112,6 +113,7 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
   const [savedBuilds, setSavedBuilds] = useState([]);
   const [newGearName, setNewGearName] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
 
   const closeModal = () => {
     setSavingInventory(false);
@@ -147,10 +149,12 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
             },
           ]);
           setSavedBuilds(grid);
+          setLoading(false);
           return;
         } else {
           const parsed = JSON.parse(data[0].saved_invs);
           setSavedBuilds(parsed);
+          setLoading(false);
         }
       } catch (err) {
         console.error(err);
@@ -210,23 +214,28 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
             {error === "Select a slot" ? error : ""}
           </span>
           <div className={stl.inventoryGrid}>
-            {savedBuilds.map((item, index) => {
-              return (
-                <div
-                  className={`${stl.gridTile} ${
-                    item[index].length > 0 ? stl.filled : ""
-                  } ${selected === index ? stl.active : ""}`}
-                  key={index}
-                  onClick={() => handleSelect(index)}
-                >
-                  {item[index].length > 0 ? (
-                    item[index]
-                  ) : (
-                    <CiSquarePlus className={stl.squareIcon} />
-                  )}
-                </div>
-              );
-            })}
+            {loading && <Spinner />}
+            {!loading && (
+              <>
+                {savedBuilds.map((item, index) => {
+                  return (
+                    <div
+                      className={`${stl.gridTile} ${
+                        item[index].length > 0 ? stl.filled : ""
+                      } ${selected === index ? stl.active : ""}`}
+                      key={index}
+                      onClick={() => handleSelect(index)}
+                    >
+                      {item[index].length > 0 ? (
+                        item[index]
+                      ) : (
+                        <CiSquarePlus className={stl.squareIcon} />
+                      )}
+                    </div>
+                  );
+                })}
+              </>
+            )}
           </div>
           <div className={stl.addBar}>
             <span className={stl.inputError}>
