@@ -76,6 +76,7 @@ const InventoryBuilder = () => {
             <SavedInventorys
               setSavingInventory={setSavingInventory}
               savingInventory={savingInventory}
+              setCurrentGrid={setCurrentGrid}
             />
           </div>
         </div>

@@ -5,7 +5,11 @@ import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 import { BsGearFill } from "react-icons/bs";
 import supabase from "../../../../utils/supabase/supabase";
 
-const SavedInventorys = ({ setSavingInventory, savingInventory }) => {
+const SavedInventorys = ({
+  setSavingInventory,
+  savingInventory,
+  setCurrentGrid,
+}) => {
   const { premiumUser, userID } = useContext(AuthContext);
   const [invList, setInvList] = useState([]);
 
@@ -35,6 +39,10 @@ const SavedInventorys = ({ setSavingInventory, savingInventory }) => {
     }
   }, [invList.length, userID, savingInventory]);
 
+  const displayInventory = (item) => {
+    setCurrentGrid(item.data);
+  };
+
   return (
     <div className={stl.savedinventorys}>
       {!premiumUser && <PremiumBanner />}
@@ -57,6 +65,7 @@ const SavedInventorys = ({ setSavingInventory, savingInventory }) => {
                   style={{
                     display: item[index].length === 0 ? "none" : "flex",
                   }}
+                  onClick={() => displayInventory(item)}
                 >
                   {item[index]}
                 </div>
