@@ -26,7 +26,10 @@ const InventoryBuilder = () => {
       <Pagination />
       <div className={stl.mainContainer}>
         {savingInventory && (
-          <SaveOverlay setSavingInventory={setSavingInventory} />
+          <SaveOverlay
+            setSavingInventory={setSavingInventory}
+            currentGrid={currentGrid}
+          />
         )}
         <div className={stl.innerWrapper}>
           <div className={stl.leftBar}>
