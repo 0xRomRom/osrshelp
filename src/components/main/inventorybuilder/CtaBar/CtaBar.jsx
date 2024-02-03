@@ -23,8 +23,8 @@ const CtaBar = ({ setCurrentGrid, setScreenshotting, setSavingInventory }) => {
       <button className={stl.cta} onClick={clearInventory}>
         <ImBin className={stl.icon} />
       </button>
-      <button className={stl.cta}>
-        <FaSave className={stl.icon} onClick={() => setSavingInventory(true)} />
+      <button className={stl.cta} onClick={() => setSavingInventory(true)}>
+        <FaSave className={stl.icon} />
       </button>
       <button className={stl.cta} onClick={makeScreenshot}>
         <FaCameraRetro className={stl.icon} />

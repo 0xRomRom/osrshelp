@@ -25,7 +25,9 @@ const InventoryBuilder = () => {
       <div className={stl.adBar}>[ Advertisements ]</div>
       <Pagination />
       <div className={stl.mainContainer}>
-        {savingInventory && <SaveOverlay />}
+        {savingInventory && (
+          <SaveOverlay setSavingInventory={setSavingInventory} />
+        )}
         <div className={stl.innerWrapper}>
           <div className={stl.leftBar}>
             <SearchItem
