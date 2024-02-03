@@ -12,6 +12,8 @@ import RuneChat from "./runechat/RuneChat";
 import BlogModal from "./blog/BlogModal";
 import UpdatePoll from "./updatepoll/UpdatePoll";
 import MainCanvas from "./canvas/MainCanvas";
+import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
@@ -24,7 +26,7 @@ const Home = (props) => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination />
       <div className={stl.modal}>
         <div className={stl.imageBox}>
@@ -61,6 +63,7 @@ const Home = (props) => {
           </ResponsiveMasonry>
         </div>
       </div>
+      <BottomAdBar />
     </>
   );
 };
