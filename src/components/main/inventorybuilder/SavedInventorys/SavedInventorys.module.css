@@ -6,3 +6,22 @@
   border-radius: 0.375rem;
   border: 1px solid var(--border);
 }
+
+.configRow {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.gearicon {
+  color: rgb(164, 164, 164);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.gearicon:hover {
+  color: rgb(226, 226, 226);
+}

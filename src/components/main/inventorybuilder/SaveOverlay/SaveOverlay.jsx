@@ -175,7 +175,7 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
       setError("Name too short");
       return;
     }
-    if (newGearName.length > 19) {
+    if (newGearName.length > 24) {
       setError("Name too long");
       return;
     }
@@ -187,31 +187,23 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
     cachedBuilds[selected].data = currentGrid;
     cachedBuilds[selected][selected] = newGearName;
 
-    try {
-      await supabase
-        .from("saved_inventories")
-        .update({
-          uid: userID,
-          saved_invs: JSON.stringify(cachedBuilds),
-        })
-        .eq("uid", userID);
+    await supabase
+      .from("saved_inventories")
+      .update({
+        uid: userID,
+        saved_invs: JSON.stringify(cachedBuilds),
+      })
+      .eq("uid", userID);
 
-      if (error) {
-        throw new Error(error);
-      }
+    const { data } = await supabase
+      .from("saved_inventories")
+      .select("*")
+      .eq("uid", userID);
+    const parsed = JSON.parse(data[0].saved_invs);
 
-      const { data } = await supabase
-        .from("saved_inventories")
-        .select("*")
-        .eq("uid", userID);
-      const parsed = JSON.parse(data[0].saved_invs);
-
-      setSavedBuilds(parsed);
-      setNewGearName(null);
-      setSelected(null);
-    } catch (err) {
-      console.error(err);
-    }
+    setSavedBuilds(parsed);
+    setNewGearName(null);
+    setSelected(null);
   };
 
   const setInventoryName = (e) => {
@@ -221,7 +213,7 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
       setError("");
       return;
     }
-    if (name.length < 20 && error === "Name too long") {
+    if (name.length < 25 && error === "Name too long") {
       setError("");
       return;
     }

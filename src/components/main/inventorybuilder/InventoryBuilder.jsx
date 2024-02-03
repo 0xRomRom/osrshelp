@@ -73,7 +73,7 @@ const InventoryBuilder = () => {
               setBox4Disabled={setBox4Disabled}
               box4Disabled={box4Disabled}
             />
-            <SavedInventorys />
+            <SavedInventorys setSavingInventory={setSavingInventory} />
           </div>
         </div>
       </div>
