@@ -151,6 +151,8 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
           return;
         } else {
           const parsed = JSON.parse(data[0].saved_invs);
+          console.log(parsed);
+
           setSavedBuilds(parsed);
           setLoading(false);
         }
@@ -164,7 +166,7 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
     }
   }, [userID, savedBuilds.length]);
 
-  const saveInventory = () => {
+  const saveInventory = async () => {
     setError("");
     if (!newGearName) {
       setError("Enter a name");
@@ -184,10 +186,37 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
       return;
     }
     const cachedBuilds = [...savedBuilds];
-    console.log(currentGrid);
-    console.log(selected);
-    console.log(savedBuilds);
     cachedBuilds[selected].data = currentGrid;
+    cachedBuilds[selected][selected] = newGearName;
+
+    try {
+      await supabase
+        .from("saved_inventories")
+        .update({
+          uid: userID,
+          saved_invs: JSON.stringify(cachedBuilds),
+        })
+        .eq("uid", userID);
+
+      if (error) {
+        throw new Error(error);
+      }
+      try {
+        const { data } = await supabase
+          .from("saved_inventories")
+          .select("*")
+          .eq("uid", userID);
+        const parsed = JSON.parse(data[0].saved_invs);
+
+        setSavedBuilds(parsed);
+        setNewGearName(null);
+        setSelected(null);
+      } catch (err) {
+        console.error(err);
+      }
+    } catch (err) {
+      console.error(err);
+    }
 
     console.log(cachedBuilds);
   };
@@ -255,6 +284,7 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
               className={stl.nameInput}
               placeholder="New inventory name"
               onChange={(e) => setInventoryName(e)}
+              value={newGearName}
             />
           </div>
           <div className={stl.savedBar}>
