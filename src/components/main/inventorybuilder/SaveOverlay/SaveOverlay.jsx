@@ -112,6 +112,7 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
   const [savedBuilds, setSavedBuilds] = useState([]);
   const [newGearName, setNewGearName] = useState("");
   const [error, setError] = useState("");
+
   const closeModal = () => {
     setSavingInventory(false);
   };
@@ -165,6 +166,9 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
     if (newGearName.length < 4) {
       setError("Name too short");
     }
+    if (newGearName.length > 19) {
+      setError("Name too long");
+    }
   };
 
   const setInventoryName = (e) => {
@@ -172,7 +176,14 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
 
     if (name.length > 3 && error === "Name too short") {
       setError("");
+      return;
     }
+    if (name.length < 20 && error === "Name too long") {
+      setError("");
+      return;
+    }
+
+    setNewGearName(name);
   };
 
   return (
@@ -183,6 +194,9 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
           <ImBin className={stl.bin} />
         )}
         <div className={stl.upperBlock}>
+          <span className={stl.noTileError}>
+            {error === "Select slot" ? error : ""}
+          </span>
           <div className={stl.inventoryGrid}>
             {savedBuilds.map((item, index) => {
               return (
@@ -203,7 +217,11 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
             })}
           </div>
           <div className={stl.addBar}>
-            <span className={stl.inputError}>{error}</span>
+            <span className={stl.inputError}>
+              {error === "Name too short" || error === "Name too long"
+                ? error
+                : ""}
+            </span>
             <input
               type="text"
               className={stl.nameInput}
