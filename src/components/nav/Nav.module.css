@@ -246,3 +246,9 @@
 .lobsterIcon {
   width: 20px;
 }
+
+.colCtas {
+  width: 4.2rem;
+  flex-direction: column;
+  bottom: 3rem;
+}

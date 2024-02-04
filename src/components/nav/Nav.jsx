@@ -303,7 +303,7 @@ const Nav = (props) => {
           </Link>
         </ul>
       </nav>
-      <div className={stl.fixedBox}>
+      <div className={`${stl.fixedBox} ${navFolded ? stl.colCtas : ""}`}>
         <a href="https://twitter.com/osrshelp" target="_blank" rel="noreferrer">
           <button className={stl.fixedCta}>
             <RiTwitterXLine className={stl.twitter} />
