@@ -210,3 +210,39 @@
 .textHidden {
   display: none;
 }
+
+.fixedBox {
+  width: 222px;
+  height: 3rem;
+  bottom: 20px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fixedCta {
+  background-color: var(--main-bg);
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 0px 3px black;
+}
+
+.fixedCta:hover {
+  background-color: rgb(25, 31, 41);
+}
+
+.twitter {
+  color: white;
+  font-size: 16px;
+}
+
+.lobsterIcon {
+  width: 20px;
+}

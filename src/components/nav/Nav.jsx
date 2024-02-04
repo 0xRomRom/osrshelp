@@ -15,6 +15,7 @@ import { useContext } from "react";
 import { PaginationContext } from "../../utils/paginationstate/PaginationProvider";
 import mainlogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 import { IoIosArrowBack } from "react-icons/io";
+import { RiTwitterXLine } from "react-icons/ri";
 
 const Nav = (props) => {
   const location = useLocation();
@@ -302,6 +303,27 @@ const Nav = (props) => {
           </Link>
         </ul>
       </nav>
+      <div className={stl.fixedBox}>
+        <a href="https://twitter.com/osrshelp" target="_blank" rel="noreferrer">
+          <button className={stl.fixedCta}>
+            <RiTwitterXLine className={stl.twitter} />
+          </button>
+        </a>
+
+        <a
+          href="https://www.buymeacoffee.com/osrshelp"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className={stl.fixedCta}>
+            <img
+              src="./foods/Lobster.webp"
+              alt="Lobster"
+              className={stl.lobsterIcon}
+            />
+          </button>
+        </a>
+      </div>
     </div>
   );
 };
