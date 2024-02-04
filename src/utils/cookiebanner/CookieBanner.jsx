@@ -16,8 +16,6 @@ const CookieBanner = () => {
     setShowBanner(false);
   };
 
-  const handleShowPreferences = () => {};
-
   useEffect(() => {
     const hasCookieConsent = document.cookie
       .split(";")
@@ -36,8 +34,32 @@ const CookieBanner = () => {
         >
           <div className={stl.bannerWrap}>
             <div className={stl.cookiebanner}>
-              <div className={stl.prefsBox}></div>
-              <div className={stl.mainBanner}>
+              {showPreferences && (
+                <div className={stl.prefsBox}>
+                  <div className={stl.prefItem}>
+                    <div className={stl.prefTextBlock}>
+                      <span className={stl.prefTitle}>Essential Cookies</span>
+                      <span className={stl.prefDesc}>
+                        These cookies improve user experience by storing user
+                        configurations. Think of closed pop-ups and preferred
+                        list orders.
+                      </span>
+                    </div>
+                    <div className={stl.toggleBox}>
+                      <div className={stl.toggleWrap}>
+                        <div className={stl.toggleDot}></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              <div
+                className={stl.mainBanner}
+                style={{
+                  borderTop: showPreferences ? "1px solid var(--border)" : "",
+                }}
+              >
                 <button className={stl.declineCta} onClick={declineCookies}>
                   Decline
                 </button>
@@ -50,7 +72,12 @@ const CookieBanner = () => {
                 <button className={stl.acceptCta} onClick={acceptCookies}>
                   Accept
                 </button>
-                <button className={stl.prefCta}>Preferences</button>
+                <button
+                  className={stl.prefCta}
+                  onClick={() => setShowPreferences(!showPreferences)}
+                >
+                  Preferences
+                </button>
               </div>
             </div>
           </div>
