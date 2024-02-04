@@ -13,6 +13,7 @@ import Pagination from "../../../pagination/Pagination";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
+import TopBar from "../topbar/TopBar";
 
 const RangedCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
@@ -42,52 +43,19 @@ const RangedCalculator = (props) => {
       <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
-        <div className={stl.topBar}>
-          <FontAwesomeIcon
-            icon={faArrowLeft}
-            className={stl.backArrow}
-            onClick={handleMenuSwitch}
-          />
-          <img
-            src="./skillicons/Ranged.webp"
-            alt="Ranged Level"
-            className={stl.skillImg}
-          />
-          <span className={stl.skillTitle}>Ranged</span>
-          {arePropsDefined ? (
-            <div className={stl.userStatsBox}>
-              <div className={stl.userBlock}>
-                <span className={stl.playerName}>{props.playerName}</span>
-                <span className={stl.playerLvl}>
-                  Level {props.skills["ranged"]}
-                </span>
-              </div>
+        <TopBar
+          iconSrc="./skillicons/Ranged.webp"
+          title="Ranged"
+          skillname="ranged"
+          skills={props.skills && props.skills}
+          setSkills={props.setSkills}
+          setPlayerName={props.setPlayerName}
+          setSkillsExp={props.setSkillsExp}
+          playerName={props.playerName}
+          currentLvl={props.skills && props.skills["ranged"]}
+          currentExp={props.skillsExp && props.skillsExp}
+        />
 
-              <div className={stl.remainderBlock}>
-                <span className={stl.expToGo}>Xp till level</span>
-                <span className={stl.remaining}>
-                  <CalculateRemainderExp
-                    skillname={"ranged"}
-                    currentLvl={props.skills["ranged"]}
-                    currentExp={props.skillsExp}
-                    className={stl.remainder}
-                  />
-                </span>
-              </div>
-              <FontAwesomeIcon
-                icon={faTrashCan}
-                className={stl.trashcan}
-                onClick={handleUserReset}
-              />
-            </div>
-          ) : (
-            <FetchUsername
-              setSkills={props.setSkills}
-              setSkillsExp={props.setSkillsExp}
-              setPlayerName={props.setPlayerName}
-            />
-          )}
-        </div>
         <div className={stl.configRow}>
           {arePropsDefined ? (
             <TargetLevel
