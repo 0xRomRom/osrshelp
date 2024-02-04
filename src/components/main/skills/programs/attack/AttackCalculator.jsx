@@ -45,10 +45,14 @@ const AttackCalculator = (props) => {
         <TopBar
           iconSrc="./skillicons/Attack.webp"
           title="Attack"
-          skill="attack"
+          skillname="attack"
+          skills={props.skills}
           setSkills={props.setSkills}
           setPlayerName={props.setPlayerName}
           setSkillsExp={props.setSkillsExp}
+          playerName={props?.playerName}
+          currentLvl={props.skills && props.skills["attack"]}
+          currentExp={props.skillsExp}
         />
         {/* <div className={stl.topBar}>
           <FontAwesomeIcon

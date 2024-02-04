@@ -2,10 +2,11 @@ import stl from "./TopBar.module.css";
 import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
 import FetchUsername from "../fetchUsername/FetchUsername";
+import { osrsXpTable } from "../../../../../utils/playerStats";
 
 const TopBar = (props) => {
   const { setSubState } = useContext(PaginationContext);
@@ -23,6 +24,28 @@ const TopBar = (props) => {
   };
 
   const arePropsDefined = props.skills;
+  useEffect(() => {
+    setSubState("Attack");
+  }, [setSubState]);
+
+  useEffect(() => {
+    console.log(props.skills);
+  }, [props.skills]);
+
+  const calculateExpUntilNextLevel = () => {
+    const skill = props.skillname;
+
+    const currentLvl = +props.currentLvl;
+    const currentExp = +props.currentExp[skill];
+    console.log(osrsXpTable);
+    console.log(currentLvl);
+    const nextLevelStartExp = osrsXpTable[currentLvl + 1];
+    console.log(nextLevelStartExp);
+
+    const remainder = nextLevelStartExp - currentExp;
+    const result = isNaN(+remainder) ? "?" : remainder.toLocaleString();
+    return result;
+  };
 
   return (
     <div className={stl.topBar}>
@@ -42,19 +65,20 @@ const TopBar = (props) => {
           <div className={stl.userBlock}>
             <span className={stl.playerName}>{props?.playerName}</span>
             <span className={stl.playerLvl}>
-              Level {props.skills[props.skill]}
+              Level {props?.skills && props?.skills[props.skillname]}
             </span>
           </div>
 
           <div className={stl.remainderBlock}>
-            <span className={stl.expToGo}>Xp till level</span>
+            <span className={stl.expToGo}>Xp / level</span>
             <span className={stl.remaining}>
-              <CalculateRemainderExp
-                skillname={props.skill}
-                currentLvl={props.skills[props.skill]}
+              {/* <CalculateRemainderExp
+                skillname={props.skillname}
+                currentLvl={props.skills[props.skillname]}
                 currentExp={props.skillsExp}
                 className={stl.remainder}
-              />
+              /> */}
+              {props.skills && calculateExpUntilNextLevel()}
             </span>
           </div>
           <FontAwesomeIcon

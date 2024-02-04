@@ -19,7 +19,6 @@ const FetchUsername = (props) => {
     for (let i = 0; i < playerStats.length; i++) {
       currentStats[playerStats[i]] = filteredSkills[i];
     }
-
     props.setSkills(currentStats);
   };
 
@@ -36,7 +35,6 @@ const FetchUsername = (props) => {
     for (let i = 0; i < playerStats.length; i++) {
       currentStats[playerStats[i]] = filteredSkills[i];
     }
-
     props.setSkillsExp(currentStats);
   };
 
@@ -61,7 +59,6 @@ const FetchUsername = (props) => {
         }
       );
       const data = await fetcher.json();
-
       updateSkills(data.result);
       updateSkillsExp(data.result);
     } catch (err) {
