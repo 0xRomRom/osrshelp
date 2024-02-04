@@ -10,7 +10,10 @@ const CookieBanner = () => {
     setShowBanner(false);
   };
 
-  const declineCookies = () => {};
+  const declineCookies = () => {
+    document.cookie = "cookieConsent=false; max-age=31536000";
+    setShowBanner(false);
+  };
 
   const showPreferences = () => {};
 
@@ -27,18 +30,22 @@ const CookieBanner = () => {
     <>
       {showBanner && (
         <div className={stl.cookieBackdrop}>
-          <div className={stl.cookiebanner}>
-            <button className={stl.declineCta}>Decline</button>
-            <span className={stl.bannerSpan}>
-              We use cookies to <span className={stl.white}>improve</span> your
-              user experience.
-              <br />
-              <span className={stl.readMore}> Read more</span>
-            </span>
-            <button className={stl.acceptCta} onClick={acceptCookies}>
-              Accept
-            </button>
-            <button className={stl.prefCta}>Preferences</button>
+          <div className={stl.bannerWrap}>
+            <div className={stl.cookiebanner}>
+              <button className={stl.declineCta} onClick={declineCookies}>
+                Decline
+              </button>
+              <span className={stl.bannerSpan}>
+                We use cookies to <span className={stl.white}>improve</span>{" "}
+                your user experience.
+                <br />
+                <span className={stl.readMore}> Read more</span>
+              </span>
+              <button className={stl.acceptCta} onClick={acceptCookies}>
+                Accept
+              </button>
+              <button className={stl.prefCta}>Preferences</button>
+            </div>
           </div>
         </div>
       )}

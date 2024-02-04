@@ -8,10 +8,8 @@
 }
 
 .cookiebanner {
-  position: fixed;
+  position: relative;
   width: 49.5rem;
-  left: 25%;
-  bottom: 0.25rem;
   height: 6rem;
   background-color: var(--main-bg);
   z-index: 100;
@@ -106,4 +104,14 @@
 
 .readMore:hover {
   color: rgb(104, 104, 254);
+}
+
+.bannerWrap {
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
