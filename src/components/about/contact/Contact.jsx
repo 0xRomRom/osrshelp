@@ -4,6 +4,7 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
+import supabase from "../../../utils/supabase/supabase";
 
 const Contact = () => {
   const [anonForm, setAnonForm] = useState(false);
@@ -18,7 +19,6 @@ const Contact = () => {
     subject: "",
     email: "",
     message: "",
-    time: "",
   });
 
   const updateFormState = (key, val) => {
@@ -30,7 +30,7 @@ const Contact = () => {
     });
   };
 
-  const submitForm = () => {
+  const submitForm = async () => {
     setError("");
     if (formState.subject.length === 0) {
       setError(subjectError);
@@ -47,14 +47,30 @@ const Contact = () => {
     }
 
     const now = new Date().toLocaleString();
-    setFormState((prevState) => {
-      return {
-        ...prevState,
-        time: now,
-      };
-    });
 
-    setFormSubmitted(true);
+    try {
+      console.log(formState.email);
+      console.log(formState.subject);
+      console.log(formState.message);
+      const { error } = await supabase.from("contact_form").insert([
+        {
+          email: formState.email,
+          subject: formState.subject,
+          message: formState.message,
+          time: now.toString(),
+        },
+      ]);
+
+      if (error) {
+        throw new Error(error);
+      }
+    } catch (err) {
+      console.error(err.message);
+    }
+
+    console.log(formState);
+
+    // setFormSubmitted(true);
   };
 
   const toggleAnonForm = () => {
