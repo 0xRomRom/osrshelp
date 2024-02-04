@@ -2,7 +2,6 @@
   width: 100%;
   color: white;
   background-image: var(--gradient);
-  padding-bottom: 7rem;
 }
 
 .adBar {
@@ -30,6 +29,8 @@
   min-height: 550px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 7rem;
+  margin-top: 4rem;
 }
 
 .closeBtn {

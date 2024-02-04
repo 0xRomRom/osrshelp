@@ -2,6 +2,8 @@ import stl from "./BlogPage.module.css";
 import Pagination from "../pagination/Pagination";
 import { useContext, useEffect } from "react";
 import { PaginationContext } from "../../../utils/paginationstate/PaginationProvider";
+import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const BlogPage = ({ blogPost }) => {
   const { setMainState, setSubState } = useContext(PaginationContext);
@@ -13,7 +15,7 @@ const BlogPage = ({ blogPost }) => {
 
   return (
     <div className={stl.blogpage}>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination />
       <div className={stl.blogModal}>
         <h1 className={stl.blogTitle}>{blogPost.title}</h1>
@@ -33,6 +35,7 @@ const BlogPage = ({ blogPost }) => {
           <h2 className={stl.nextBlogTitle}>Tombs of Amascut Calculator</h2>
         </div>
       </div>
+      <BottomAdBar />
     </div>
   );
 };

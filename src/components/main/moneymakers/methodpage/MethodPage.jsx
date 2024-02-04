@@ -10,6 +10,9 @@ import mills from "../../../../assets/icons/Mills.webp";
 import { PaginationContext } from "../../../../utils/paginationstate/PaginationProvider";
 import MainCanvas from "../../home/canvas/MainCanvas";
 
+import TopAdBar from "../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../utils/adbars/bottomadbar/BottomAdBar";
+
 const ctaButtons = ["Skills", "Items", "Quests", "Other"];
 const MethodPage = ({ moneyMaker }) => {
   const { setSubState } = useContext(PaginationContext);
@@ -46,7 +49,7 @@ const MethodPage = ({ moneyMaker }) => {
 
   return (
     <div className={stl.methodpage}>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination navTo={"/moneymakers"} />
       <div className={stl.modal}>
         <FaLongArrowAltLeft className={stl.closeBtn} onClick={navigateBack} />
@@ -250,6 +253,7 @@ const MethodPage = ({ moneyMaker }) => {
           </div>
         </div>
       </div>
+      <BottomAdBar />
     </div>
   );
 };
