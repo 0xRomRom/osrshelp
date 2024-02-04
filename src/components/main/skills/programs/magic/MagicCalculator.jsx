@@ -5,10 +5,8 @@ import MagicFilters from "./magicfilters/MagicFilters";
 import SearchFilter from "../searchfilter/SearchFilter";
 import SpellBookFilter from "./spellbookfilters/SpellBookFilter";
 import Pagination from "../../../pagination/Pagination";
-import { useNavigate } from "react-router-dom";
 
-import { useState, useContext, useEffect } from "react";
-import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
+import { useState } from "react";
 import MagicGrid from "./magicgrid/MagicGrid";
 import StaffFilters from "./stafffilters/StaffFilters";
 import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
@@ -16,8 +14,6 @@ import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
 import TopBar from "../topbar/TopBar";
 
 const MagicCalculator = (props) => {
-  const { setSubState } = useContext(PaginationContext);
-  const navigate = useNavigate();
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
   const [filterChanged, setFilterChanged] = useState(false);

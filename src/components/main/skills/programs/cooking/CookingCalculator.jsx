@@ -1,41 +1,19 @@
 import stl from "./CookingCalculator.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
-import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import CookingGrid from "./cookinggrid/CookingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
-import { useState, useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import Pagination from "../../../pagination/Pagination";
-import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
 import TopBar from "../topbar/TopBar";
 
 const CookingCalculator = (props) => {
-  const { setSubState } = useContext(PaginationContext);
-  const navigate = useNavigate();
   const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
 
-  const handleMenuSwitch = () => {
-    setSubState(null);
-    navigate("/skillcalculators");
-  };
-
-  const handleUserReset = () => {
-    props.setSkills(null);
-    props.setPlayerName(null);
-    props.setSkillsExp(null);
-  };
-
   const arePropsDefined = props.skills;
-  useEffect(() => {
-    setSubState("Cooking");
-  }, [setSubState]);
 
   return (
     <>

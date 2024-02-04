@@ -1,8 +1,4 @@
 import stl from "./FishingCalculator.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
-import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import FishingGrid from "./fishinggrid/FishingGrid";
@@ -10,36 +6,17 @@ import SearchFilter from "../searchfilter/SearchFilter";
 import FishingFilter from "./fishingfilters/FishingFilters";
 import { useState, useContext, useEffect } from "react";
 import Pagination from "../../../pagination/Pagination";
-import { useNavigate } from "react-router-dom";
-import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
 import TopBar from "../topbar/TopBar";
 
 const FishingCalculator = (props) => {
-  const { setSubState } = useContext(PaginationContext);
-  const navigate = useNavigate();
   const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
   const [filterChanged, setFilterChanged] = useState(false);
 
-  const handleMenuSwitch = () => {
-    setSubState(null);
-    navigate("/skillcalculators");
-  };
-
-  const handleUserReset = () => {
-    props.setSkills(null);
-    props.setPlayerName(null);
-    props.setSkillsExp(null);
-  };
-
   const arePropsDefined = props.skills;
-
-  useEffect(() => {
-    setSubState("Fishing");
-  }, [setSubState]);
 
   return (
     <>

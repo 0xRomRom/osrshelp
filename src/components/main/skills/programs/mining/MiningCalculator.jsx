@@ -1,96 +1,41 @@
 import stl from "./MiningCalculator.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
-import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import MiningGrid from "./mininggrid/MiningGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import MiningFilters from "./miningfilters/MiningFilters";
-import { useState, useContext, useEffect } from "react";
+import { useState } from "react";
 import Pagination from "../../../pagination/Pagination";
-import { useNavigate } from "react-router-dom";
-import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
+import TopBar from "../topbar/TopBar";
 
 const MiningCalculator = (props) => {
-  const { setSubState } = useContext(PaginationContext);
-  const navigate = useNavigate();
   const [searchState, setSearchState] = useState("");
   const [remainingExp, setRemainingExp] = useState(0);
   const [multiplier, setMultiplier] = useState(0);
   const [filterChanged, setFilterChanged] = useState(false);
 
-  const handleMenuSwitch = () => {
-    setSubState(null);
-    navigate("/skillcalculators");
-  };
-
-  const handleUserReset = () => {
-    props.setSkills(null);
-    props.setPlayerName(null);
-    props.setSkillsExp(null);
-  };
-
   const arePropsDefined = props.skills;
-
-  useEffect(() => {
-    setSubState("Mining");
-  }, [setSubState]);
 
   return (
     <>
       <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
-        <div className={stl.topBar}>
-          <FontAwesomeIcon
-            icon={faArrowLeft}
-            className={stl.backArrow}
-            onClick={handleMenuSwitch}
-          />
-          <img
-            src="./skillicons/Mining.webp"
-            alt="Mining Level"
-            className={stl.skillImg}
-          />
-          <span className={stl.skillTitle}>Mining</span>
-          {arePropsDefined ? (
-            <div className={stl.userStatsBox}>
-              <div className={stl.userBlock}>
-                <span className={stl.playerName}>{props.playerName}</span>
-                <span className={stl.playerLvl}>
-                  Level {props.skills["mining"]}
-                </span>
-              </div>
+        <TopBar
+          iconSrc="./skillicons/Mining.webp"
+          title="Mining"
+          skillname="mining"
+          skills={props.skills && props.skills}
+          setSkills={props.setSkills}
+          setPlayerName={props.setPlayerName}
+          setSkillsExp={props.setSkillsExp}
+          playerName={props.playerName}
+          currentLvl={props.skills && props.skills["mining"]}
+          currentExp={props.skillsExp && props.skillsExp}
+        />
 
-              <div className={stl.remainderBlock}>
-                <span className={stl.expToGo}>Xp till level</span>
-                <span className={stl.remaining}>
-                  <CalculateRemainderExp
-                    skillname={"mining"}
-                    currentLvl={props.skills["mining"]}
-                    currentExp={props.skillsExp}
-                    className={stl.remainder}
-                  />
-                </span>
-              </div>
-              <FontAwesomeIcon
-                icon={faTrashCan}
-                className={stl.trashcan}
-                onClick={handleUserReset}
-              />
-            </div>
-          ) : (
-            <FetchUsername
-              setSkills={props.setSkills}
-              setSkillsExp={props.setSkillsExp}
-              setPlayerName={props.setPlayerName}
-            />
-          )}
-        </div>
         <div className={stl.configRow}>
           {arePropsDefined ? (
             <TargetLevel
