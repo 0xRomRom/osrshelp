@@ -9,6 +9,7 @@
   background-color: rgb(32, 46, 57);
   background-color: var(--main-bg);
   border: 1px solid var(--border);
+  margin-bottom: 7rem;
 }
 
 .typeRow {

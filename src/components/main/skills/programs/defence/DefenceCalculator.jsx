@@ -11,6 +11,8 @@ import { useState, useContext, useEffect } from "react";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
+import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const DefenceCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
@@ -36,7 +38,7 @@ const DefenceCalculator = (props) => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination
         mainState={props.mainState}
         subState={props.subState}
@@ -115,6 +117,7 @@ const DefenceCalculator = (props) => {
         </div>
         <NPCGrid searchState={searchState} remainingExp={remainingExp} />
       </div>
+      <BottomAdBar />
     </>
   );
 };
