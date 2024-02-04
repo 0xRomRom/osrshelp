@@ -25,7 +25,7 @@ const TopBar = (props) => {
   const arePropsDefined = props.skills;
   useEffect(() => {
     setSubState(props.title);
-  }, [setSubState, props.title]);
+  }, [setSubState, props.title, props]);
 
   const calculateExpUntilNextLevel = () => {
     const skill = props.skillname;

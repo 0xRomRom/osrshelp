@@ -1,8 +1,4 @@
 import stl from "./MagicCalculator.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import CalculateRemainderExp from "../../../../../utils/calculateRemainderExp";
-import FetchUsername from "../fetchUsername/FetchUsername";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import MagicFilters from "./magicfilters/MagicFilters";
@@ -30,22 +26,7 @@ const MagicCalculator = (props) => {
   const [selectedStaff, setSelectedStaff] = useState("");
   const [activeSpellbook, setActiveSpellbook] = useState("All");
 
-  const handleMenuSwitch = () => {
-    setSubState(null);
-    navigate("/skillcalculators");
-  };
-
-  const handleUserReset = () => {
-    props.setSkills(null);
-    props.setPlayerName(null);
-    props.setSkillsExp(null);
-  };
-
   const arePropsDefined = props.skills;
-
-  useEffect(() => {
-    setSubState("Magic");
-  }, [setSubState]);
 
   return (
     <>
