@@ -1,0 +1,109 @@
+.cookieBackdrop {
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.cookiebanner {
+  position: fixed;
+  width: 49.5rem;
+  left: 25%;
+  bottom: 0.25rem;
+  height: 6rem;
+  background-color: var(--main-bg);
+  z-index: 100;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border);
+  background-image: var(--gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  box-shadow: 0px 0px 5px black;
+}
+
+.bannerSpan {
+  color: gray;
+  padding: 0px 1.5rem;
+  font-size: 18px;
+  padding-top: 0.5rem;
+}
+
+.prefCta {
+  border: none;
+  outline: none;
+  color: gray;
+  border-radius: 0.375rem;
+  background-color: var(--main-bg);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  user-select: none;
+}
+
+.prefCta:hover {
+  background-color: rgb(18, 18, 18);
+  color: rgb(203, 203, 203);
+}
+
+.white {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+.acceptCta {
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 0.375rem;
+  background-color: var(--blue-main);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  margin-right: 1rem;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+.acceptCta:hover {
+  background-color: rgb(58, 58, 194);
+}
+
+.declineCta {
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 0.375rem;
+
+  background-color: var(--border);
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+
+.declineCta:hover {
+  background-color: var(--input);
+}
+
+.readMore {
+  font-size: 14px;
+  position: relative;
+  bottom: 0.5rem;
+  user-select: none;
+  cursor: pointer;
+  color: var(--blue-main);
+  transition: all 0.2s ease-in-out;
+}
+
+.readMore:hover {
+  color: rgb(104, 104, 254);
+}

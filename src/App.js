@@ -31,6 +31,8 @@ import BlogPage from "./components/main/blog/BlogPage";
 
 import InventoryBuilder from "./components/main/inventorybuilder/InventoryBuilder";
 
+import CookieBanner from "./utils/cookiebanner/CookieBanner";
+
 const App = () => {
   const [skills, setSkills] = useState(null);
   const [skillsExp, setSkillsExp] = useState(null);
@@ -43,6 +45,7 @@ const App = () => {
       <AuthProvider>
         <PaginationProvider>
           <div className={stl.app}>
+            <CookieBanner />
             <Routes>
               <Route path="/reportissue" element={<ReportIssue />} />
               <Route path="/contact" element={<Contact />} />
