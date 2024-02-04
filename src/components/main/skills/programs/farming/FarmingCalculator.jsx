@@ -14,6 +14,9 @@ import { PaginationContext } from "../../../../../utils/paginationstate/Paginati
 
 import FarmingGrid from "./farminggrid/FarmingGrid";
 
+import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
+
 const FarmingCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
@@ -39,7 +42,7 @@ const FarmingCalculator = (props) => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <div className={stl.topBar}>
@@ -117,6 +120,7 @@ const FarmingCalculator = (props) => {
           searchState={searchState}
         />
       </div>
+      <BottomAdBar />
     </>
   );
 };

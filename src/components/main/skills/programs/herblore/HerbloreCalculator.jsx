@@ -14,6 +14,9 @@ import { PaginationContext } from "../../../../../utils/paginationstate/Paginati
 
 import HerbloreGrid from "./herbloregrid/HerbloreGrid";
 
+import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
+
 const HerbloreCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
@@ -39,7 +42,7 @@ const HerbloreCalculator = (props) => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <div className={stl.topBar}>
@@ -117,6 +120,7 @@ const HerbloreCalculator = (props) => {
           searchState={searchState}
         />
       </div>
+      <BottomAdBar />
     </>
   );
 };

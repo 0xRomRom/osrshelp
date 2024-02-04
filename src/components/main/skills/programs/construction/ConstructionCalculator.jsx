@@ -12,6 +12,8 @@ import ConstructionFilters from "./constructionfilters/ConstructionFilters";
 import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
+import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const ConstructionCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
@@ -39,7 +41,7 @@ const ConstructionCalculator = (props) => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <div className={stl.topBar}>
@@ -121,6 +123,7 @@ const ConstructionCalculator = (props) => {
           multiplier={multiplier}
         />
       </div>
+      <BottomAdBar />
     </>
   );
 };

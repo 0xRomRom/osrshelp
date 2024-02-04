@@ -12,6 +12,9 @@ import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 
+import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
+
 const ThievingCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
@@ -37,7 +40,7 @@ const ThievingCalculator = (props) => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <div className={stl.topBar}>
@@ -111,6 +114,7 @@ const ThievingCalculator = (props) => {
         </div>
         <ThievingGrid remainingExp={remainingExp} searchState={searchState} />
       </div>
+      <BottomAdBar />
     </>
   );
 };
