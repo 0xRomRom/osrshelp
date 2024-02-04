@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
+import TopBar from "../topbar/TopBar";
 
 const AttackCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
@@ -41,7 +42,15 @@ const AttackCalculator = (props) => {
       <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
-        <div className={stl.topBar}>
+        <TopBar
+          iconSrc="./skillicons/Attack.webp"
+          title="Attack"
+          skill="attack"
+          setSkills={props.setSkills}
+          setPlayerName={props.setPlayerName}
+          setSkillsExp={props.setSkillsExp}
+        />
+        {/* <div className={stl.topBar}>
           <FontAwesomeIcon
             icon={faArrowLeft}
             className={stl.backArrow}
@@ -86,7 +95,7 @@ const AttackCalculator = (props) => {
               setPlayerName={props.setPlayerName}
             />
           )}
-        </div>
+        </div> */}
         <div className={stl.configRow}>
           {arePropsDefined ? (
             <TargetLevel

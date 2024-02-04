@@ -1,12 +1,7 @@
-.modal {
-  width: 100%;
-  padding: 0rem 2rem;
-  padding-bottom: 7rem;
-}
-
 .topBar {
-  background-color: var(--main-bg);
-  border: 1px solid var(--border);
+  /* background: linear-gradient(110deg, white, red, red, rgba(255, 0, 0, 0.747)); */
+  background-color: rgb(32, 46, 57);
+
   width: 100%;
   height: 6rem;
   padding-left: 1rem;
@@ -16,6 +11,8 @@
   border-radius: 0.8rem;
   user-select: none;
   color: rgb(224, 214, 214);
+  background-color: var(--main-bg);
+  border: 1px solid var(--border);
 }
 
 .backArrow {
@@ -151,18 +148,4 @@
   display: flex;
   justify-content: flex-start;
   margin: 1rem 0rem;
-}
-
-.adBar {
-  position: relative;
-  width: 100%;
-  height: 105px;
-  background-color: rgba(255, 0, 0, 0.123);
-  margin-bottom: 2rem;
-  margin-left: 0rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: gray;
-  font-size: 2rem;
 }

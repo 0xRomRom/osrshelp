@@ -11,6 +11,8 @@ import Pagination from "../../../pagination/Pagination";
 import { useNavigate } from "react-router-dom";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import PrayerGrid from "./prayergrid/PrayerGrid";
+import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const PrayerCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
@@ -38,7 +40,7 @@ const PrayerCalculator = (props) => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <div className={stl.topBar}>
@@ -117,6 +119,7 @@ const PrayerCalculator = (props) => {
           filterChanged={filterChanged}
         />
       </div>
+      <BottomAdBar />
     </>
   );
 };

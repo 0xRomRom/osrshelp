@@ -190,8 +190,15 @@ const SearchItem = ({
         <div className={stl.searchResult}>
           <div className={stl.resultFlex}>
             {!imageError && (
-              <div className={stl.leftWrapper}>
-                <button className={stl.searchCta} onClick={saveToInv}>
+              <div
+                className={stl.leftWrapper}
+                style={{ display: !imageError ? "flex" : "none" }}
+              >
+                <button
+                  className={stl.searchCta}
+                  onClick={saveToInv}
+                  style={{ display: !imageError ? "flex" : "none" }}
+                >
                   <img
                     src={inventory}
                     alt="Inventory"
@@ -217,7 +224,10 @@ const SearchItem = ({
                 </div>
               </div>
             )}
-            <div className={stl.imgWrapper}>
+            <div
+              className={stl.imgWrapper}
+              style={{ display: !imageError ? "flex" : "none" }}
+            >
               <img
                 src={imgSrc}
                 className={stl.smallImg}
@@ -227,11 +237,15 @@ const SearchItem = ({
                   setTyping(false);
                 }}
                 alt=""
-                style={{ opacity: imageError ? "0" : "1" }}
+                style={{ display: !imageError ? "flex" : "none" }}
               />
             </div>
             {!imageError && (
-              <button className={stl.searchCta} onClick={addToFavorites}>
+              <button
+                className={stl.searchCta}
+                onClick={addToFavorites}
+                style={{ display: !imageError ? "flex" : "none" }}
+              >
                 <img
                   src={member}
                   alt="Member star"
