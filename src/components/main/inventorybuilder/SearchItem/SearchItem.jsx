@@ -82,6 +82,7 @@ const SearchItem = ({
     if (!amountToAdd) {
       return;
     }
+
     let updatedGrid = [...currentGrid];
     if (!box4Disabled && !addNoted) {
       // Check if entry exists and increment
@@ -185,8 +186,8 @@ const SearchItem = ({
           className={`${stl.magnify} ${typing ? stl.rotate : ""}`}
         />
       </div>
-      <div className={stl.searchResult}>
-        {imgSrc && (
+      {imgSrc && (
+        <div className={stl.searchResult}>
           <div className={stl.resultFlex}>
             {!imageError && (
               <div className={stl.leftWrapper}>
@@ -239,8 +240,8 @@ const SearchItem = ({
               </button>
             )}
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };
