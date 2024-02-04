@@ -49,9 +49,6 @@ const Contact = () => {
     const now = new Date().toLocaleString();
 
     try {
-      console.log(formState.email);
-      console.log(formState.subject);
-      console.log(formState.message);
       const { error } = await supabase.from("contact_form").insert([
         {
           email: formState.email,
@@ -68,9 +65,7 @@ const Contact = () => {
       console.error(err.message);
     }
 
-    console.log(formState);
-
-    // setFormSubmitted(true);
+    setFormSubmitted(true);
   };
 
   const toggleAnonForm = () => {

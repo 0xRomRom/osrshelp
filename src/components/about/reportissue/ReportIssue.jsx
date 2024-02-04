@@ -4,6 +4,7 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
+import supabase from "../../../utils/supabase/supabase";
 
 const ReportIssue = () => {
   const [formSubmitted, setFormSubmitted] = useState(true);
@@ -14,10 +15,9 @@ const ReportIssue = () => {
   const messageError = "Please enter a message";
 
   const [formState, setFormState] = useState({
-    subject: "",
-    email: "",
-    message: "",
-    time: "",
+    url: "",
+    issue: "",
+    steps: "",
   });
 
   const updateFormState = (key, val) => {
@@ -29,29 +29,31 @@ const ReportIssue = () => {
     });
   };
 
-  const submitForm = () => {
+  const submitForm = async () => {
     setError("");
-    if (formState.subject.length === 0) {
+    if (formState.url.length === 0) {
       setError(urlError);
       return;
     }
-    if (formState.email.length === 0) {
+    if (formState.issue.length === 0) {
       setError(issueError);
       return;
     }
 
-    if (formState.message.length < 10) {
+    if (formState.steps.length < 10) {
       setError(messageError);
       return;
     }
 
-    const now = new Date().toLocaleString();
-    setFormState((prevState) => {
-      return {
-        ...prevState,
-        time: now,
-      };
-    });
+    try {
+      const { error } = await supabase.from("issues_form").insert([formState]);
+
+      if (error) {
+        throw new Error(error);
+      }
+    } catch (err) {
+      console.error(err.message);
+    }
 
     setFormSubmitted(true);
   };
@@ -78,7 +80,7 @@ const ReportIssue = () => {
                 type="text"
                 className={stl.inputStl}
                 placeholder="https://www.osrshelp/#/profitalching"
-                onChange={(e) => updateFormState("subject", e.target.value)}
+                onChange={(e) => updateFormState("url", e.target.value)}
                 style={{
                   border: error === urlError ? "2px solid red" : "",
                 }}
@@ -91,7 +93,7 @@ const ReportIssue = () => {
                   type="text"
                   className={stl.inputStl}
                   placeholder="Incorrect calculation"
-                  onChange={(e) => updateFormState("email", e.target.value)}
+                  onChange={(e) => updateFormState("issue", e.target.value)}
                   style={{
                     border: error === issueError ? "2px solid red" : "",
                   }}
@@ -105,7 +107,7 @@ const ReportIssue = () => {
                   maxLength="500"
                   className={stl.textAreaInput}
                   placeholder="How can we reproduce the issue?"
-                  onChange={(e) => updateFormState("message", e.target.value)}
+                  onChange={(e) => updateFormState("steps", e.target.value)}
                   style={{
                     border: error === messageError ? "2px solid red" : "",
                   }}
