@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import stl from "./CookieBanner.module.css";
 
 const CookieBanner = () => {
-  const [cookieSettings, setCookieSettings] = useState({});
+  const [cookieSettings, setCookieSettings] = useState({
+    essential: false,
+    analytics: false,
+  });
   const [showBanner, setShowBanner] = useState(false);
   const [showPreferences, setShowPreferences] = useState(false);
 
@@ -25,6 +28,15 @@ const CookieBanner = () => {
     setShowBanner(!hasCookieConsent);
   }, []);
 
+  const toggleCookieSettings = (setting) => {
+    setCookieSettings((prevState) => {
+      return {
+        ...prevState,
+        [setting]: !cookieSettings[setting],
+      };
+    });
+  };
+
   return (
     <>
       {showBanner && (
@@ -46,7 +58,12 @@ const CookieBanner = () => {
                       </span>
                     </div>
                     <div className={stl.toggleBox}>
-                      <div className={stl.toggleWrap}>
+                      <div
+                        className={`${stl.toggleWrap} ${
+                          cookieSettings.essential ? stl.flipped : ""
+                        }`}
+                        onClick={() => toggleCookieSettings("essential")}
+                      >
                         <div className={stl.toggleDot}></div>
                       </div>
                     </div>

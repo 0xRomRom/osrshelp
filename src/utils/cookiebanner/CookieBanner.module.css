@@ -185,6 +185,22 @@
   background-color: var(--input);
   padding: 5px;
   cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+}
+
+.flipped {
+  justify-content: flex-end;
+}
+
+.toggleWrap:hover {
+  box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.608);
+}
+
+.toggleWrap:hover .toggleDot {
+  background-color: rgb(42, 51, 69);
 }
 
 .toggleDot {
