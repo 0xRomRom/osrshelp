@@ -2,11 +2,13 @@ import stl from "./XPTable.module.css";
 import Pagination from "../pagination/Pagination";
 import XPCalculator from "./xpcalculator/XPCalculator";
 import { arrayXpTable } from "../../../utils/playerStats";
+import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const XPTable = () => {
   return (
     <div className={stl.xptable}>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination />
       <div className={stl.levelsWrap}>
         <h1 className={stl.modalTitle}>OSRS XP Table</h1>
@@ -32,7 +34,7 @@ const XPTable = () => {
           </div>
         </div>
       </div>
-      <div className={stl.adBar2}>[ Advertisements ]</div>
+      <BottomAdBar />
     </div>
   );
 };

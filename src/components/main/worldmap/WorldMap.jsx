@@ -4,6 +4,8 @@ import Pagination from "../pagination/Pagination";
 import { MapContainer, ImageOverlay } from "react-leaflet";
 import { RiFullscreenFill } from "react-icons/ri";
 import { useState } from "react";
+import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const WorldMap = () => {
   const [fullScreen, setFullScreen] = useState(false);
@@ -19,7 +21,7 @@ const WorldMap = () => {
 
   return (
     <div className={stl.worldmap}>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination />
       <div
         className={`${stl.mapContainers} ${fullScreen ? stl.fullScreen : ""} ${
@@ -38,6 +40,7 @@ const WorldMap = () => {
           />
         </MapContainer>
       </div>
+      <BottomAdBar />
     </div>
   );
 };

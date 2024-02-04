@@ -9,6 +9,8 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import { IoClose } from "react-icons/io5";
 import Spinner from "../../../utils/loadingspinner/Spinner";
+import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const ProfitAlching = () => {
   const navigate = useNavigate();
@@ -66,7 +68,7 @@ const ProfitAlching = () => {
 
   return (
     <div className={stl.profitalching}>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination />
       <div className={stl.modalWrap}>
         <div className={stl.heroBlock}>
@@ -176,6 +178,7 @@ const ProfitAlching = () => {
           </div>
         </div>
       </div>
+      <BottomAdBar />
     </div>
   );
 };

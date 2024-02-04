@@ -17,6 +17,8 @@ import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import { useEffect } from "react";
 import supabase from "../../../utils/supabase/supabase";
 import { initState } from "../../../utils/gearcalculator/emptyslots";
+import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const GearCalculator = () => {
   const { premiumUser, userID } = useContext(AuthContext);
@@ -112,7 +114,7 @@ const GearCalculator = () => {
           savedSlots={savedSlots}
         />
       )}
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination />
       <div className={stl.gearcalculator}>
         <div className={stl.topWrap}>
@@ -169,6 +171,7 @@ const GearCalculator = () => {
           savedSlots={savedSlots}
         />
       </div>
+      <BottomAdBar />
     </>
   );
 };

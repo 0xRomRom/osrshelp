@@ -9,6 +9,8 @@ import LevelInputs from "./levelinputs/LevelInputs";
 import ResultBox from "./resultbox/ResultBox";
 import CombatLevels from "./combatlevels/CombatLevels";
 import { IoArrowDownOutline } from "react-icons/io5";
+import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const CombatCalculator = ({
   skills,
@@ -84,7 +86,7 @@ const CombatCalculator = ({
 
   return (
     <div className={stl.combatcalculator}>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination />
       <div className={stl.contentWrap}>
         <div className={stl.bgDiv}></div>
@@ -119,6 +121,7 @@ const CombatCalculator = ({
           </div>
         </div>
       </div>
+      <BottomAdBar />
     </div>
   );
 };

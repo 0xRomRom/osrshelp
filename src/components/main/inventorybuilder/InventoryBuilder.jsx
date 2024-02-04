@@ -8,6 +8,8 @@ import CtaBar from "./CtaBar/CtaBar";
 import ItemGalery from "./ItemGalery/ItemGalery";
 import SavedInventorys from "./SavedInventorys/SavedInventorys";
 import SaveOverlay from "./SaveOverlay/SaveOverlay";
+import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const InventoryBuilder = () => {
   const [currentGrid, setCurrentGrid] = useState(EMPTYGRID);
@@ -22,7 +24,7 @@ const InventoryBuilder = () => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination />
       <div className={stl.mainContainer}>
         {savingInventory && (
@@ -81,6 +83,7 @@ const InventoryBuilder = () => {
           </div>
         </div>
       </div>
+      <BottomAdBar />
     </>
   );
 };

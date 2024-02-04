@@ -6,6 +6,8 @@ import stl from "./SkillsTab.module.css";
 import SKILLSGRIDLIST from "../../../utils/skillsgridlist";
 import Pagination from "../pagination/Pagination";
 import SKILLSROUTELIST from "../../../utils/skillsroutelist";
+import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const SkillsTab = (props) => {
   const { setSubState } = useContext(PaginationContext);
@@ -38,7 +40,7 @@ const SkillsTab = (props) => {
           path="/*"
           element={
             <>
-              <div className={stl.adBar}>[ Advertisements ]</div>
+              <TopAdBar />
               <Pagination />
               <div className={stl.modal}>
                 <div className={stl.modalInner}>
@@ -59,6 +61,7 @@ const SkillsTab = (props) => {
                   ))}
                 </div>
               </div>
+              <BottomAdBar />
             </>
           }
         />

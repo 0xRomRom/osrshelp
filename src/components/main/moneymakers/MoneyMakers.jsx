@@ -7,6 +7,8 @@ import { useEffect, useContext } from "react";
 import { FaExclamationTriangle } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
+import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const MoneyMakers = (props) => {
   const [activeModal, setActiveModal] = useState("Free");
@@ -37,7 +39,7 @@ const MoneyMakers = (props) => {
 
   return (
     <div className={stl.moneymakers}>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination />
       <div className={stl.overflowWrap}>
         <div className={stl.modal}>
@@ -86,6 +88,7 @@ const MoneyMakers = (props) => {
           )}
         </div>
       </div>
+      <BottomAdBar />
     </div>
   );
 };
