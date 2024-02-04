@@ -15,6 +15,8 @@ import { useState, useContext, useEffect } from "react";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import MagicGrid from "./magicgrid/MagicGrid";
 import StaffFilters from "./stafffilters/StaffFilters";
+import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const MagicCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
@@ -46,7 +48,7 @@ const MagicCalculator = (props) => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <div className={stl.topBar}>
@@ -142,6 +144,7 @@ const MagicCalculator = (props) => {
           activeSpellbook={activeSpellbook}
         />
       </div>
+      <BottomAdBar />
     </>
   );
 };

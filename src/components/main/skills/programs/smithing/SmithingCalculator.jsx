@@ -13,6 +13,9 @@ import { PaginationContext } from "../../../../../utils/paginationstate/Paginati
 
 import SmithingGrid from "./smithinggrid/SmithingGrid";
 
+import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
+
 const SmithingCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
@@ -38,7 +41,7 @@ const SmithingCalculator = (props) => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <div className={stl.topBar}>
@@ -116,6 +119,7 @@ const SmithingCalculator = (props) => {
           searchState={searchState}
         />
       </div>
+      <BottomAdBar />
     </>
   );
 };

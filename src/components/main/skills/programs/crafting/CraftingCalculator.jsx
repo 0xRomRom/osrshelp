@@ -14,6 +14,9 @@ import { PaginationContext } from "../../../../../utils/paginationstate/Paginati
 
 import CraftingGrid from "./craftinggrid/CraftingGrid";
 
+import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
+
 const CraftingCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
@@ -38,7 +41,7 @@ const CraftingCalculator = (props) => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <div className={stl.topBar}>
@@ -116,6 +119,7 @@ const CraftingCalculator = (props) => {
           searchState={searchState}
         />
       </div>
+      <BottomAdBar />
     </>
   );
 };

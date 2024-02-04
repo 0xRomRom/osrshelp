@@ -12,6 +12,9 @@ import Pagination from "../../../pagination/Pagination";
 import { PaginationContext } from "../../../../../utils/paginationstate/PaginationProvider";
 import { useNavigate } from "react-router-dom";
 
+import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
+
 const WoodcuttingCalculator = (props) => {
   const { setSubState } = useContext(PaginationContext);
   const navigate = useNavigate();
@@ -38,7 +41,7 @@ const WoodcuttingCalculator = (props) => {
 
   return (
     <>
-      <div className={stl.adBar}>[ Advertisements ]</div>
+      <TopAdBar />
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <div className={stl.topBar}>
@@ -112,6 +115,7 @@ const WoodcuttingCalculator = (props) => {
         </div>
         <WoodcuttingGrid remainingExp={remainingExp} multiplier={multiplier} />
       </div>
+      <BottomAdBar />
     </>
   );
 };
