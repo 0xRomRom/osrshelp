@@ -2,7 +2,7 @@ import stl from "./PrayerCalculator.module.css";
 import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import PrayerFilters from "./PrayerFilters";
-import { useState, useContext, useEffect } from "react";
+import { useState } from "react";
 import Pagination from "../../../pagination/Pagination";
 import PrayerGrid from "./prayergrid/PrayerGrid";
 import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";

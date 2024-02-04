@@ -30,7 +30,7 @@ const WorldMap = () => {
       >
         <MapContainer center={[70, 250]} zoom={4} className={stl.mapBox}>
           <ImageOverlay
-            url="./worldmap/Worldmap.png"
+            url="./worldmap/Worldmap.webp"
             bounds={bounds}
             loading="lazy"
           />

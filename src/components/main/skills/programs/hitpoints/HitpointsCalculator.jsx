@@ -3,7 +3,7 @@ import TargetLevel from "../targetLevel/TargetLevel";
 import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import NPCGrid from "../attack/npcgrid/NPCGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
-import { useState, useContext, useEffect } from "react";
+import { useState } from "react";
 import Pagination from "../../../pagination/Pagination";
 import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";

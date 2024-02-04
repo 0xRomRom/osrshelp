@@ -4,7 +4,7 @@ import NoPropsTargetLevel from "../targetLevel/NoPropsTargetLevel";
 import FishingGrid from "./fishinggrid/FishingGrid";
 import SearchFilter from "../searchfilter/SearchFilter";
 import FishingFilter from "./fishingfilters/FishingFilters";
-import { useState, useContext, useEffect } from "react";
+import { useState } from "react";
 import Pagination from "../../../pagination/Pagination";
 import TopAdBar from "../../../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../../../utils/adbars/bottomadbar/BottomAdBar";
