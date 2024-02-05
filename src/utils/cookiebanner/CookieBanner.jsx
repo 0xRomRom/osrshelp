@@ -15,7 +15,7 @@ const CookieBanner = () => {
   const [navigated, setNavigated] = useState(false);
 
   const acceptCookies = () => {
-    document.cookie = "cookieConsent=true; max-age=31536000"; // Expires in 1 year
+    document.cookie = "cookieConsent=true; max-age=31536000";
     setShowBanner(false);
   };
 
@@ -28,7 +28,6 @@ const CookieBanner = () => {
     const hasCookieConsent = document.cookie
       .split(";")
       .some((cookie) => cookie.trim().startsWith("cookieConsent="));
-    console.log(hasCookieConsent);
     // Update the state based on the presence of the cookie
     setShowBanner(!hasCookieConsent);
   }, []);

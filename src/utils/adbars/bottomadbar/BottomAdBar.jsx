@@ -1,13 +1,10 @@
 import stl from "./BottomAdBar.module.css";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../authprovider/AuthProvider";
 
 const BottomAdBar = () => {
   const { premiumUser } = useContext(AuthContext);
 
-  useEffect(() => {
-    console.log(premiumUser);
-  }, [premiumUser]);
   return (
     <>
       <div
