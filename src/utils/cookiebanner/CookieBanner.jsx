@@ -3,6 +3,7 @@ import stl from "./CookieBanner.module.css";
 import { GrConfigure } from "react-icons/gr";
 import { FaFlaskVial } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import ReactGA from "react-ga";
 
 const CookieBanner = () => {
   const navigate = useNavigate();
@@ -10,27 +11,62 @@ const CookieBanner = () => {
     essential: false,
     analytics: false,
   });
-  const [showBanner, setShowBanner] = useState(false);
+  const [showBanner, setShowBanner] = useState(true);
   const [showPreferences, setShowPreferences] = useState(false);
+  const [allowAnalytics, setAllowAnalytics] = useState(null);
   const [navigated, setNavigated] = useState(false);
 
   const acceptCookies = () => {
     document.cookie = "cookieConsent=true; max-age=31536000";
     setShowBanner(false);
+    setAllowAnalytics(true);
   };
 
   const declineCookies = () => {
     document.cookie = "cookieConsent=false; max-age=31536000";
     setShowBanner(false);
+    setAllowAnalytics(false);
   };
 
   useEffect(() => {
     const hasCookieConsent = document.cookie
       .split(";")
-      .some((cookie) => cookie.trim().startsWith("cookieConsent="));
-    // Update the state based on the presence of the cookie
-    setShowBanner(!hasCookieConsent);
+      .map((cookie) => cookie.trim().split("="))
+      .find(
+        ([key, value]) =>
+          (key === "cookieConsent" && value === "true") || value === "false"
+      );
+    console.log(hasCookieConsent);
+
+    console.log(hasCookieConsent);
+    if (
+      hasCookieConsent &&
+      hasCookieConsent[0].length > 0 &&
+      hasCookieConsent[1] === "true"
+    ) {
+      setAllowAnalytics(true);
+      setShowBanner(false);
+      return;
+    }
+    if (
+      hasCookieConsent &&
+      hasCookieConsent[0].length > 0 &&
+      hasCookieConsent[1] === "false"
+    ) {
+      setAllowAnalytics(false);
+      setShowBanner(false);
+      return;
+    }
   }, []);
+
+  useEffect(() => {
+    if (allowAnalytics === true) {
+      console.log("ANALYRICS");
+      // alert("ads");
+      ReactGA.initialize("G-WRT7FJW5PZ", { siteSpeedSampleRate: 100 });
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    }
+  }, [allowAnalytics]);
 
   const toggleCookieSettings = (setting) => {
     setCookieSettings((prevState) => {
@@ -53,7 +89,7 @@ const CookieBanner = () => {
 
   return (
     <>
-      {showBanner && (
+      {showBanner === true && (
         <div
           className={`${stl.cookieBackdrop} ${navigated ? stl.visible : ""}`}
           style={{
