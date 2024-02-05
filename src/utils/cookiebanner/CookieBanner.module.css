@@ -231,3 +231,10 @@
 .saveConfig:hover {
   background-color: black;
 }
+
+.visible {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  height: 7vh;
+  bottom: 0;
+  position: fixed;
+}

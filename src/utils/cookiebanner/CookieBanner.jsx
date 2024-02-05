@@ -2,14 +2,17 @@ import { useEffect, useState } from "react";
 import stl from "./CookieBanner.module.css";
 import { GrConfigure } from "react-icons/gr";
 import { FaFlaskVial } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const CookieBanner = () => {
+  const navigate = useNavigate();
   const [cookieSettings, setCookieSettings] = useState({
     essential: false,
     analytics: false,
   });
   const [showBanner, setShowBanner] = useState(false);
   const [showPreferences, setShowPreferences] = useState(false);
+  const [navigated, setNavigated] = useState(false);
 
   const acceptCookies = () => {
     document.cookie = "cookieConsent=true; max-age=31536000"; // Expires in 1 year
@@ -39,12 +42,24 @@ const CookieBanner = () => {
     });
   };
 
+  const readMoreCta = () => {
+    if (!navigated) {
+      navigate("/privacypolicy");
+      setNavigated(true);
+      return;
+    }
+    setNavigated(false);
+    navigate("/");
+  };
+
   return (
     <>
       {showBanner && (
         <div
-          className={stl.cookieBackdrop}
-          style={{ display: showBanner ? "flex" : "none" }}
+          className={`${stl.cookieBackdrop} ${navigated ? stl.visible : ""}`}
+          style={{
+            display: showBanner ? "flex" : "none",
+          }}
         >
           <div className={stl.bannerWrap}>
             <div className={stl.cookiebanner}>
@@ -123,7 +138,9 @@ const CookieBanner = () => {
 
                   <button
                     className={stl.saveConfig}
-                    onClick={() => setShowPreferences(false)}
+                    onClick={() => {
+                      setShowPreferences(false);
+                    }}
                   >
                     Save
                   </button>
@@ -143,7 +160,11 @@ const CookieBanner = () => {
                   We use cookies to <span className={stl.white}>improve</span>{" "}
                   your user experience.
                   <br />
-                  <span className={stl.readMore}> Read more</span>
+                  <span className={stl.readMore} onClick={readMoreCta}>
+                    {" "}
+                    {!navigated && "Read more"}
+                    {navigated && "Go home"}
+                  </span>
                 </span>
                 <button className={stl.acceptCta} onClick={acceptCookies}>
                   Accept
