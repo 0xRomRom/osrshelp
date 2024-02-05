@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import stl from "./CookieBanner.module.css";
+import { GrConfigure } from "react-icons/gr";
+import { FaFlaskVial } from "react-icons/fa6";
 
 const CookieBanner = () => {
   const [cookieSettings, setCookieSettings] = useState({
@@ -49,6 +51,14 @@ const CookieBanner = () => {
               {showPreferences && (
                 <div className={stl.prefsBox}>
                   <div className={stl.prefItem}>
+                    <GrConfigure
+                      className={stl.reactIcon}
+                      style={{
+                        color: cookieSettings.essential
+                          ? "rgb(74, 222, 128)"
+                          : "rgb(142, 142, 142)",
+                      }}
+                    />
                     <div className={stl.prefTextBlock}>
                       <span className={stl.prefTitle}>Essential Cookies</span>
                       <span className={stl.prefDesc}>
@@ -59,12 +69,54 @@ const CookieBanner = () => {
                     </div>
                     <div className={stl.toggleBox}>
                       <div
-                        className={`${stl.toggleWrap} ${
-                          cookieSettings.essential ? stl.flipped : ""
-                        }`}
+                        className={stl.toggleWrap}
                         onClick={() => toggleCookieSettings("essential")}
+                        style={{
+                          border: cookieSettings.essential
+                            ? "1px solid rgb(74, 222, 128)"
+                            : "1px solid rgb(33, 40, 54)",
+                        }}
                       >
-                        <div className={stl.toggleDot}></div>
+                        <div
+                          className={`${stl.toggleDot} ${
+                            cookieSettings.essential ? stl.flipped : ""
+                          }`}
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className={stl.prefItem}>
+                    <FaFlaskVial
+                      className={stl.reactIcon}
+                      style={{
+                        color: cookieSettings.analytics
+                          ? "rgb(74, 222, 128)"
+                          : "rgb(142, 142, 142)",
+                      }}
+                    />
+                    <div className={stl.prefTextBlock}>
+                      <span className={stl.prefTitle}>Analytics Cookies</span>
+                      <span className={stl.prefDesc}>
+                        These cookies keep track of page visits, interactions
+                        and more. They're used to improve our services.
+                      </span>
+                    </div>
+                    <div className={stl.toggleBox}>
+                      <div
+                        className={stl.toggleWrap}
+                        onClick={() => toggleCookieSettings("analytics")}
+                        style={{
+                          border: cookieSettings.analytics
+                            ? "1px solid rgb(74, 222, 128)"
+                            : "1px solid rgb(33, 40, 54)",
+                        }}
+                      >
+                        <div
+                          className={`${stl.toggleDot} ${
+                            cookieSettings.analytics ? stl.flipped : ""
+                          }`}
+                        ></div>
                       </div>
                     </div>
                   </div>
