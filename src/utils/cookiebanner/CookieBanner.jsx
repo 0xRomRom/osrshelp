@@ -120,6 +120,13 @@ const CookieBanner = () => {
                       </div>
                     </div>
                   </div>
+
+                  <button
+                    className={stl.saveConfig}
+                    onClick={() => setShowPreferences(false)}
+                  >
+                    Save
+                  </button>
                 </div>
               )}
 
