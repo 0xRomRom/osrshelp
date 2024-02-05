@@ -218,7 +218,8 @@ const AgilityGrid = (props) => {
                     : 0
                   : isNaN(totalProfit)
                   ? "?"
-                  : totalProfit.toLocaleString()}
+                  : totalProfit.toLocaleString()}{" "}
+                {"gp"}
               </span>
             </div>
           );

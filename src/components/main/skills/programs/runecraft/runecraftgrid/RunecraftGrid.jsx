@@ -240,7 +240,8 @@ const RunecraftGrid = (props) => {
                   ? Math.abs(
                       calcCraftAmount(tree) * calcPrice(tree)
                     ).toLocaleString()
-                  : 0}
+                  : 0}{" "}
+                {"gp"}
               </span>
             </div>
           );

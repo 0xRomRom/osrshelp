@@ -199,7 +199,8 @@ const MiningGrid = (props) => {
                   ? Math.round(ore.profit * oreAmount).toLocaleString()
                   : Math.round(
                       (ore.profit * oreAmount) / (1 + 2.5 / 100)
-                    ).toLocaleString()}
+                    ).toLocaleString()}{" "}
+                {"gp"}
               </span>
             </div>
           );
