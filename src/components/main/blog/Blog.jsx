@@ -36,7 +36,6 @@ const Blog = ({ setBlogPost }) => {
     const blogsFetcher = async () => {
       try {
         const { data } = await supabase.from("blog_posts").select("*");
-        console.log(data);
         setCurrentBlogs(data);
         setLoading(false);
       } catch (err) {
@@ -66,33 +65,29 @@ const Blog = ({ setBlogPost }) => {
           {!loading && (
             <>
               {currentBlogs.length > 0 &&
-                currentBlogs.map((blog, index) => {
-                  console.log(blog);
-                  return (
-                    <div
-                      key={index}
-                      className={stl.blogItem}
-                      onClick={() => handleBlogPost(blog)}
-                    >
-                      <div className={stl.imgWrapper}>
-                        <span className={stl.blogIndex}>{blog.date}</span>
-                        <img
-                          src={blog.imgsrc}
-                          alt={blog.imgalt}
-                          className={stl.blogTileImg}
-                        />
-                      </div>
-                      <div className={stl.textWrapper}>
-                        <h2 className={stl.blogItemHero}>{blog.title}</h2>
-                        <p className={stl.blogTeaser}>{blog.teaser}</p>
-                        <span className={stl.readMore}>
-                          Read more{" "}
-                          <FaArrowDownLong className={stl.readArrow} />
-                        </span>
-                      </div>
+                currentBlogs.map((blog, index) => (
+                  <div
+                    key={index}
+                    className={stl.blogItem}
+                    onClick={() => handleBlogPost(blog)}
+                  >
+                    <div className={stl.imgWrapper}>
+                      <span className={stl.blogIndex}>{blog.date}</span>
+                      <img
+                        src={blog.imgsrc}
+                        alt={blog.imgalt}
+                        className={stl.blogTileImg}
+                      />
                     </div>
-                  );
-                })}
+                    <div className={stl.textWrapper}>
+                      <h2 className={stl.blogItemHero}>{blog.title}</h2>
+                      <p className={stl.blogTeaser}>{blog.teaser}</p>
+                      <span className={stl.readMore}>
+                        Read more <FaArrowDownLong className={stl.readArrow} />
+                      </span>
+                    </div>
+                  </div>
+                ))}
             </>
           )}
         </div>

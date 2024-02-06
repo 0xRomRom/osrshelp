@@ -46,7 +46,6 @@ const BlogModal = ({ setBlogPost }) => {
     const blogsFetcher = async () => {
       try {
         const { data } = await supabase.from("blog_posts").select("*");
-        console.log(data);
         setCurrentBlogs(data);
         setLoading(false);
       } catch (err) {
