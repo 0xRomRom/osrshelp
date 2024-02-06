@@ -7,6 +7,7 @@ import xptable from "../../assets/icons/Xptable.webp";
 import mills from "../../assets/icons/Mills.webp";
 import worldicon from "../../assets/icons/World_map_icon.webp";
 import inventory from "../../assets/icons/Inventory.webp";
+import scroll from "../../assets/icons/Scroll.webp";
 import { Link } from "react-router-dom";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -36,6 +37,10 @@ const Nav = (props) => {
     if (path === "/skillcalculators") {
       setActiveTab("skills");
       setMainState("Skill Calculators");
+    }
+    if (path === "/blod") {
+      setActiveTab("blod");
+      setMainState("Blog");
     }
     if (path === "/inventorybuilder") {
       setActiveTab("inventorybuilder");
@@ -277,6 +282,21 @@ const Nav = (props) => {
                 className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
               >
                 World map
+              </span>
+            </li>
+          </Link>
+          <Link to="/blog" className={stl.link}>
+            <li
+              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
+                activeTab === "blog" ? stl.active : ""
+              }`}
+              onClick={() => handleTabSwitch("blog", "Blog")}
+            >
+              <img src={scroll} alt="Blog icon" className={stl.icon} />
+              <span
+                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
+              >
+                Blog
               </span>
             </li>
           </Link>

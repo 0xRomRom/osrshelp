@@ -32,6 +32,7 @@ import BlogPage from "./components/main/blog/blogpage/BlogPage";
 import InventoryBuilder from "./components/main/inventorybuilder/InventoryBuilder";
 
 import CookieBanner from "./utils/cookiebanner/CookieBanner";
+import Blog from "./components/main/blog/Blog";
 
 const App = () => {
   const [skills, setSkills] = useState(null);
@@ -163,6 +164,14 @@ const App = () => {
                 element={
                   <MainLayout playerName={playerName}>
                     <WorldMap />
+                  </MainLayout>
+                }
+              />
+              <Route
+                path="/blog"
+                element={
+                  <MainLayout playerName={playerName}>
+                    <Blog />
                   </MainLayout>
                 }
               />
