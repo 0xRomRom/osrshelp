@@ -38,8 +38,8 @@ const Nav = (props) => {
       setActiveTab("skills");
       setMainState("Skill Calculators");
     }
-    if (path === "/blod") {
-      setActiveTab("blod");
+    if (path === "/blog") {
+      setActiveTab("blog");
       setMainState("Blog");
     }
     if (path === "/inventorybuilder") {

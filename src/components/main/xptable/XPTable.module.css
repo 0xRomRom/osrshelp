@@ -36,10 +36,11 @@
 
 .modalTitle {
   position: relative;
-  color: rgb(214, 214, 214);
+  color: gray;
   text-align: center;
   font-weight: bold;
   margin-top: 2rem;
+  user-select: none;
 }
 
 .xpGrid {

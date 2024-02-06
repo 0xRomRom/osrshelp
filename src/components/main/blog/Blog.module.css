@@ -1,5 +1,53 @@
 .blog {
   width: 100%;
-  height: 40rem;
-  background-color: red;
+  background-image: var(--gradient);
+}
+
+.blogWrapper {
+  min-height: 50rem;
+}
+
+.hero {
+  text-align: center;
+  color: gray;
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.subHero {
+  text-align: center;
+  color: rgb(198, 198, 198);
+  display: block;
+}
+
+.blogList {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blogItem {
+  width: 70%;
+  height: 20rem;
+  background-color: var(--main-bg);
+  border-radius: 0.375rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(90deg, rgb(24, 29, 39), rgba(21, 26, 35, 0.853));
+  padding: 5px;
+}
+
+.blogTileImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.375rem;
+}
+
+.imgWrapper {
+  width: 35%;
+  height: 100%;
+  border-radius: 0.375rem;
 }

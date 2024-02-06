@@ -46,13 +46,14 @@
 }
 
 .hero {
-  color: rgb(231, 231, 231);
+  color: gray;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  text-transform: uppercase;
   font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
 }
 
 .heroImg {
@@ -61,7 +62,7 @@
 
 .descPar {
   margin-top: 0.25rem;
-  color: rgb(173, 173, 173);
+  color: rgb(198, 198, 198);
   font-size: 18px;
 }
 
