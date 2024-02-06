@@ -3,6 +3,8 @@ import stl from "./BlogModal.module.css";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import supabase from "../../../../utils/supabase/supabase";
+import Spinner from "../../../../utils/loadingspinner/Spinner";
+
 const blogEntries = [
   {
     title: "OSRS Help Release",
@@ -38,13 +40,15 @@ const BlogModal = ({ setBlogPost }) => {
   const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState("All");
   const [currentBlogs, setCurrentBlogs] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const blogsFetcher = async () => {
       try {
-        const { data, error } = await supabase.from("blog_posts").select("*");
+        const { data } = await supabase.from("blog_posts").select("*");
         console.log(data);
         setCurrentBlogs(data);
+        setLoading(false);
       } catch (err) {
         console.error(err);
       }
@@ -65,21 +69,24 @@ const BlogModal = ({ setBlogPost }) => {
       <h2 className={stl.title}>Blog</h2>
 
       <div className={stl.updatesBox}>
-        {currentBlogs.map((blog) => {
-          return (
-            <div className={stl.feature} key={blog.title}>
-              <h2 className={stl.featureTitle}>{blog.title}</h2>
-              <span className={stl.date}>{blog.date}</span>
-              <p className={stl.featureCopy}>{blog.teaser}</p>
-              <span
-                className={stl.readMore}
-                onClick={() => handleBlogPost(blog)}
-              >
-                Read more <FaArrowDownLong className={stl.readArrow} />
-              </span>
-            </div>
-          );
-        })}
+        {loading && <Spinner />}
+
+        {!loading &&
+          currentBlogs.map((blog) => {
+            return (
+              <div className={stl.feature} key={blog.title}>
+                <h2 className={stl.featureTitle}>{blog.title}</h2>
+                <span className={stl.date}>{blog.date}</span>
+                <p className={stl.featureCopy}>{blog.teaser}</p>
+                <span
+                  className={stl.readMore}
+                  onClick={() => handleBlogPost(blog)}
+                >
+                  Read more <FaArrowDownLong className={stl.readArrow} />
+                </span>
+              </div>
+            );
+          })}
       </div>
       <div className={stl.filterBox}>
         {btnStates.map((btn) => (
