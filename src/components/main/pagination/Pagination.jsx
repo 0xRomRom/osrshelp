@@ -26,6 +26,7 @@ const Pagination = ({ navTo }) => {
 
   const clearSubState = () => {
     setSubState(null);
+    console.log(navTo);
     if (navTo) {
       navigate(navTo);
     }

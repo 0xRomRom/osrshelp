@@ -27,7 +27,6 @@ const Blog = ({ setBlogPost }) => {
   const navigate = useNavigate();
 
   const handleBlogPost = (blog) => {
-    console.log(blog);
     setBlogPost(blog);
     navigate(`/blog/${blog.path}`);
   };
@@ -35,7 +34,7 @@ const Blog = ({ setBlogPost }) => {
   return (
     <div className={stl.blog}>
       <TopAdBar />
-      <Pagination />
+      <Pagination navTo="/blog" />
       <div className={stl.blogWrapper}>
         <h1 className={stl.hero}>Blog</h1>
         <span className={stl.subHero}>News, site updates and more</span>

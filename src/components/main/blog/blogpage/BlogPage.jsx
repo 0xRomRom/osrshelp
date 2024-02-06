@@ -16,7 +16,7 @@ const BlogPage = ({ blogPost }) => {
   return (
     <div className={stl.blogpage}>
       <TopAdBar />
-      <Pagination />
+      <Pagination navTo="/blog" />
       <div className={stl.blogModal}>
         <h1 className={stl.blogTitle}>{blogPost.title}</h1>
         <div className={stl.blogWrapper}>
