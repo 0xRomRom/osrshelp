@@ -19,7 +19,6 @@ const SavedInventorys = ({
         .from("saved_inventories")
         .select("*")
         .eq("uid", userID);
-      console.log(data);
       if (data.length > 0) {
         const result = JSON.parse(data[0].saved_invs);
         setInvList(result);

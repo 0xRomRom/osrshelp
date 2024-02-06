@@ -3,7 +3,7 @@ import stl from "./CookieBanner.module.css";
 import { GrConfigure } from "react-icons/gr";
 import { FaFlaskVial } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const CookieBanner = () => {
   const navigate = useNavigate();
@@ -29,6 +29,7 @@ const CookieBanner = () => {
   };
 
   useEffect(() => {
+    console.log("Tracking");
     const hasCookieConsent = document.cookie
       .split(";")
       .map((cookie) => cookie.trim().split("="))
@@ -36,9 +37,6 @@ const CookieBanner = () => {
         ([key, value]) =>
           (key === "cookieConsent" && value === "true") || value === "false"
       );
-    console.log(hasCookieConsent);
-
-    console.log(hasCookieConsent);
     if (
       hasCookieConsent &&
       hasCookieConsent[0].length > 0 &&
@@ -57,16 +55,18 @@ const CookieBanner = () => {
       setShowBanner(false);
       return;
     }
-  }, []);
+  }, [window.location.pathname]);
 
   useEffect(() => {
     if (allowAnalytics === true) {
-      console.log("ANALYRICS");
-      // alert("ads");
-      ReactGA.initialize("G-WRT7FJW5PZ", { siteSpeedSampleRate: 100 });
-      ReactGA.pageview(window.location.pathname + window.location.search);
+      ReactGA.initialize("G-WRT7FJW5PZ");
+      ReactGA.send({
+        hitType: "pageview",
+        page: "/" + window.location.hash,
+        title: window.location.hash.slice(1),
+      });
     }
-  }, [allowAnalytics]);
+  }, [allowAnalytics, window.location.hash]);
 
   const toggleCookieSettings = (setting) => {
     setCookieSettings((prevState) => {
