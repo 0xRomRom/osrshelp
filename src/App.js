@@ -187,7 +187,7 @@ const App = () => {
                 path="/blog/:newpath"
                 element={
                   <MainLayout playerName={playerName}>
-                    <BlogPage blogPost={blogPost} />
+                    <BlogPage blogPost={blogPost} setBlogPost={setBlogPost} />
                   </MainLayout>
                 }
               />

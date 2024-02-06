@@ -65,7 +65,7 @@ const CookieBanner = () => {
         title: window.location.hash.slice(2) || "home",
       });
     }
-  }, [allowAnalytics, window.location.hash]);
+  }, [allowAnalytics]);
 
   const toggleCookieSettings = (setting) => {
     setCookieSettings((prevState) => {

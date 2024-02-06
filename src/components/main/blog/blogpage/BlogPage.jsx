@@ -7,7 +7,7 @@ import BottomAdBar from "../../../../utils/adbars/bottomadbar/BottomAdBar";
 import supabase from "../../../../utils/supabase/supabase";
 import { useNavigate } from "react-router-dom";
 
-const BlogPage = ({ blogPost }) => {
+const BlogPage = ({ blogPost, setBlogPost }) => {
   const navigate = useNavigate();
   const { setMainState, setSubState } = useContext(PaginationContext);
   const [prevBlog, setPrevBlog] = useState({});
@@ -15,10 +15,16 @@ const BlogPage = ({ blogPost }) => {
 
   useEffect(() => {
     setMainState("Blog");
-    setSubState(blogPost.title || currentBlogPost.title);
+    setSubState(currentBlogPost.title);
     setCurrentBlogPost(blogPost);
-    console.log(blogPost);
-  }, [setMainState, setSubState, blogPost.title]);
+  }, [
+    setMainState,
+    setSubState,
+    blogPost.title,
+    blogPost.title,
+    blogPost,
+    currentBlogPost.title,
+  ]);
 
   useEffect(() => {
     const prevBlogFetcher = async () => {
@@ -27,7 +33,6 @@ const BlogPage = ({ blogPost }) => {
           .from("blog_posts")
           .select()
           .eq("index", blogPost.index - 1);
-        console.log(data);
         setPrevBlog(data);
       } catch (err) {
         console.error(err);
@@ -40,12 +45,13 @@ const BlogPage = ({ blogPost }) => {
     ) {
       prevBlogFetcher();
     }
-  }, [currentBlogPost]);
+  }, [currentBlogPost, blogPost.index, prevBlog]);
 
   const handlePrevBlog = (newBlog) => {
     console.log(newBlog);
-    setCurrentBlogPost(newBlog);
+    setBlogPost(newBlog);
     navigate(`/blog/${newBlog.path}`);
+    // setCurrentBlogPost(newBlog);
   };
 
   return (
