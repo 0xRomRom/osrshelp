@@ -60,11 +60,6 @@ const SubmissionsState = ({ userID }) => {
     }
   };
 
-  useEffect(() => {
-    console.log(submission);
-    console.log(alreadySubmitted);
-  }, [submission, alreadySubmitted]);
-
   const formattedName =
     alreadySubmitted &&
     alreadySubmitted.charAt(0).toUpperCase() + alreadySubmitted.slice(1);

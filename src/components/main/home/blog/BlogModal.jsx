@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import stl from "./BlogModal.module.css";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import supabase from "../../../../utils/supabase/supabase";
 const blogEntries = [
   {
     title: "OSRS Help Release",
@@ -32,10 +33,27 @@ const blogEntries = [
     exploreCtaPath: "/agility_pyramid_calculator",
   },
 ];
-const btnStates = ["All", "Features", "Patchnotes", "Other"];
+const btnStates = ["All", "Updates", "Patchnotes", "Other"];
 const BlogModal = ({ setBlogPost }) => {
   const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState("All");
+  const [currentBlogs, setCurrentBlogs] = useState([]);
+
+  useEffect(() => {
+    const blogsFetcher = async () => {
+      try {
+        const { data, error } = await supabase.from("blog_posts").select("*");
+        console.log(data);
+        setCurrentBlogs(data);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    if (currentBlogs.length === 0) {
+      blogsFetcher();
+    }
+  }, []);
 
   const handleBlogPost = (blog) => {
     setBlogPost(blog);
@@ -47,7 +65,7 @@ const BlogModal = ({ setBlogPost }) => {
       <h2 className={stl.title}>Blog</h2>
 
       <div className={stl.updatesBox}>
-        {blogEntries.map((blog) => {
+        {currentBlogs.map((blog) => {
           return (
             <div className={stl.feature} key={blog.title}>
               <h2 className={stl.featureTitle}>{blog.title}</h2>
