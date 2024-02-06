@@ -1,9 +1,9 @@
 import stl from "./BlogPage.module.css";
-import Pagination from "../pagination/Pagination";
+import Pagination from "../../pagination/Pagination";
 import { useContext, useEffect } from "react";
-import { PaginationContext } from "../../../utils/paginationstate/PaginationProvider";
-import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
-import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
+import { PaginationContext } from "../../../../utils/paginationstate/PaginationProvider";
+import TopAdBar from "../../../../utils/adbars/topadbar/TopAdBar";
+import BottomAdBar from "../../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const BlogPage = ({ blogPost }) => {
   const { setMainState, setSubState } = useContext(PaginationContext);

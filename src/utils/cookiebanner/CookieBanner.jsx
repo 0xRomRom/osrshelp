@@ -29,7 +29,6 @@ const CookieBanner = () => {
   };
 
   useEffect(() => {
-    console.log("Tracking");
     const hasCookieConsent = document.cookie
       .split(";")
       .map((cookie) => cookie.trim().split("="))
@@ -55,7 +54,7 @@ const CookieBanner = () => {
       setShowBanner(false);
       return;
     }
-  }, [window.location.pathname]);
+  }, []);
 
   useEffect(() => {
     if (allowAnalytics === true) {
@@ -63,7 +62,7 @@ const CookieBanner = () => {
       ReactGA.send({
         hitType: "pageview",
         page: "/" + window.location.hash,
-        title: window.location.hash.slice(1),
+        title: window.location.hash.slice(2) || "home",
       });
     }
   }, [allowAnalytics, window.location.hash]);

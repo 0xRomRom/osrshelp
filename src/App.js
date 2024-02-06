@@ -27,7 +27,7 @@ import Contact from "./components/about/contact/Contact";
 import ReportIssue from "./components/about/reportissue/ReportIssue";
 
 import MainLayout from "./components/mainlayout/MainLayout";
-import BlogPage from "./components/main/blog/BlogPage";
+import BlogPage from "./components/main/blog/blogpage/BlogPage";
 
 import InventoryBuilder from "./components/main/inventorybuilder/InventoryBuilder";
 
