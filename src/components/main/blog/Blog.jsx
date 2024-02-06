@@ -16,7 +16,7 @@ const blogs = [
     path: "osrshelp_release",
     index: 1,
     blogType: "Misc",
-    date: "August 24",
+    date: "March 10",
     imgSrc: "./blog/BlogImg1.webp",
     imgAlt: "OSRS Help release page",
     exploreCtaPath: "",
