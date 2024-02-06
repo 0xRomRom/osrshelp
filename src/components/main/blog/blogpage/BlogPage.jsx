@@ -23,7 +23,7 @@ const BlogPage = ({ blogPost }) => {
           <span className={stl.date}>{blogPost.date}</span>
           <p className={stl.copy}>{blogPost.teaser}</p>
           <img
-            src={blogPost.img}
+            src={blogPost.imgSrc}
             alt={blogPost.imgAlt}
             className={stl.blogImg}
           />
