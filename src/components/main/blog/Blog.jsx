@@ -15,6 +15,7 @@ const Blog = () => {
         <div className={stl.blogList}>
           <div className={stl.blogItem}>
             <div className={stl.imgWrapper}>
+              <span className={stl.blogIndex}>Blog #1</span>
               <img
                 src="./blog/BlogImg1.webp"
                 alt="Blog banner"

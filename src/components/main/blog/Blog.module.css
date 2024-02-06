@@ -62,6 +62,7 @@
 .imgWrapper {
   border-radius: 0.375rem;
   max-width: 35%;
+  position: relative;
 }
 
 .blogItemHero {
@@ -103,4 +104,13 @@
   padding-top: 1rem;
   position: absolute;
   bottom: 1rem;
+}
+
+.blogIndex {
+  position: absolute;
+  color: gray;
+  left: 0.25rem;
+  top: 0.25rem;
+  font-size: 14px;
+  font-weight: 1000;
 }

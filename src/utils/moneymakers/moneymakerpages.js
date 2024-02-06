@@ -281,7 +281,7 @@ const MONEYMAKERPAGES = [
     location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with dwarf weed.",
-      "Click on every guam leave to clean it.",
+      "Click on every dwarf weed to clean it.",
       "Once all herbs are cleaned, bank for new grimy leaves.",
       "An inventory should take around 10-15 seconds.",
     ],
@@ -341,7 +341,7 @@ const MONEYMAKERPAGES = [
     location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy tarromin leaves.",
-      "Click on every guam leave to clean it.",
+      "Click on every tarromin to clean it.",
       "Once all herbs are cleaned, bank for new grimy leaves.",
       "An inventory should take around 10-15 seconds.",
     ],
@@ -650,7 +650,7 @@ const MONEYMAKERPAGES = [
     location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy kwuarms.",
-      "Click on every guam leave to clean it.",
+      "Click on every kwuarm to clean it.",
       "Once all herbs are cleaned, bank for new grimy leaves.",
       "An inventory should take around 10-15 seconds.",
     ],
@@ -668,7 +668,7 @@ const MONEYMAKERPAGES = [
     location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy lantadymes.",
-      "Click on every guam leave to clean it.",
+      "Click on every lantadyme to clean it.",
       "Once all herbs are cleaned, bank for new grimy leaves.",
       "An inventory should take around 10-15 seconds.",
     ],
@@ -885,7 +885,7 @@ const MONEYMAKERPAGES = [
     location: "1 Click Bank (Castle Wars)",
     instructions: [
       "Fill your inventory with grimy harralanders.",
-      "Click on every guam leave to clean it.",
+      "Click on every harralander to clean it.",
       "Once all herbs are cleaned, bank for new grimy leaves.",
       "An inventory should take around 10-15 seconds.",
     ],
