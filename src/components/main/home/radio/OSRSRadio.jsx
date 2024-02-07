@@ -14,6 +14,7 @@ const OSRSRadio = () => {
   const [songIndex, setSongIndex] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
   const [progress, setProgress] = useState(0);
+  const [percentage, setPercentage] = useState(0);
 
   const memoizedSongs = useMemo(() => [song1], []);
 
@@ -24,9 +25,6 @@ const OSRSRadio = () => {
       setDuration(audio.duration);
     };
 
-    setTimeout(() => {
-      audio.currentTime = 60;
-    }, 5000);
     const handleTimeUpdate = () => {
       setCurrentTime(audio.currentTime); // Update current time as the audio progresses
     };
@@ -59,6 +57,15 @@ const OSRSRadio = () => {
     );
   };
 
+  const handleClick = (event) => {
+    const rect = event.target.getBoundingClientRect();
+    const offsetX = event.clientX - rect.left;
+    const width = rect.width;
+    const clickedPercentage = (offsetX / width) * 100;
+    console.log(clickedPercentage);
+    setPercentage(clickedPercentage);
+  };
+
   return (
     <div className={stl.radio}>
       <div className={stl.titleRow}>Track 2</div>
@@ -80,10 +87,10 @@ const OSRSRadio = () => {
           <MdSkipNext className={stl.enlarge} />
         </button>
       </div>
-      <div className={stl.durationbar}>
+      <div className={stl.durationbar} onClick={handleClick}>
         <div
           className={stl.innerBar}
-          style={{ width: `${(currentTime / duration) * 100}%` }} // Use progress instead of currentTime
+          style={{ width: `${(currentTime / duration) * 100}%` }}
         ></div>
       </div>
     </div>
