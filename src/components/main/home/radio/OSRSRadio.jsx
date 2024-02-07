@@ -3,51 +3,47 @@ import { FaPlay } from "react-icons/fa";
 import { MdSkipPrevious, MdSkipNext } from "react-icons/md";
 import { IoMdPause } from "react-icons/io";
 import { useEffect, useMemo, useRef, useState } from "react";
+
+import "react-h5-audio-player/lib/styles.css";
 import song1 from "../../../../assets/tracks/7th_realm.mp3";
 
 const OSRSRadio = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(new Audio());
+  const [duration, setDuration] = useState(null);
+  const audioRef = useRef(new Audio(song1));
   const [songIndex, setSongIndex] = useState(0);
+  const [currentTime, setCurrentTime] = useState(0);
 
-  const playStorage = localStorage.getItem("radio");
-
-  const memoizedSongs = useMemo(() => {
-    const songs = [song1];
-    return songs;
-  }, []);
+  const memoizedSongs = useMemo(() => [song1], []);
 
   useEffect(() => {
-    // console.log(playStorage);
     const audio = audioRef.current;
 
-    const handlePlaying = () => {
-      console.log("Audio is playing");
+    const handleLoadedMetadata = () => {
+      setDuration(audio.duration);
     };
 
-    const handlePause = () => {
-      console.log("Audio is paused");
+    const handleTimeUpdate = () => {
+      console.log(audio.currentTime);
+      setCurrentTime(audio.currentTime); // Update current time as the audio progresses
     };
 
-    audio.addEventListener("play", handlePlaying);
-    audio.addEventListener("pause", handlePause);
+    audio.addEventListener("loadedmetadata", handleLoadedMetadata);
+    audio.addEventListener("timeupdate", handleTimeUpdate); // Add time update listener
 
-    // Set the audio source when the song index changes
+    return () => {
+      audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
+      audio.removeEventListener("timeupdate", handleTimeUpdate); // Remove time update listener
+    };
+  }, [audioRef]);
+
+  useEffect(() => {
     if (isPlaying) {
-      audioRef.current.src = memoizedSongs[songIndex];
       audioRef.current.play();
-      // Play the audio if isPlaying is true
+    } else {
+      audioRef.current.pause();
     }
-  }, [songIndex, memoizedSongs, isPlaying, playStorage]);
-
-  const togglePlay = () => {
-    setIsPlaying(true);
-    audioRef.current.play();
-  };
-  const togglePause = () => {
-    setIsPlaying(false);
-    audioRef.current.pause();
-  };
+  }, [isPlaying]);
 
   const handleNext = () => {
     setSongIndex((prevIndex) => (prevIndex + 1) % memoizedSongs.length);
@@ -62,16 +58,17 @@ const OSRSRadio = () => {
 
   return (
     <div className={stl.radio}>
+      <div className={stl.titleRow}>Track 2</div>
       <div className={stl.btnRow}>
         <button className={stl.cta} onClick={handlePrev}>
           <MdSkipPrevious className={stl.enlarge} />
         </button>
         {!isPlaying ? (
-          <button className={stl.cta} onClick={togglePlay}>
+          <button className={stl.cta} onClick={() => setIsPlaying(true)}>
             <FaPlay />
           </button>
         ) : (
-          <button className={stl.cta} onClick={togglePause}>
+          <button className={stl.cta} onClick={() => setIsPlaying(false)}>
             <IoMdPause />
           </button>
         )}
@@ -79,6 +76,12 @@ const OSRSRadio = () => {
         <button className={stl.cta} onClick={handleNext}>
           <MdSkipNext className={stl.enlarge} />
         </button>
+      </div>
+      <div className={stl.durationbar}>
+        <div
+          className={stl.innerBar}
+          style={{ width: `${currentTime / duration}%` }}
+        ></div>
       </div>
     </div>
   );
