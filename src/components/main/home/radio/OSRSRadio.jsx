@@ -13,8 +13,15 @@ const OSRSRadio = () => {
   const audioRef = useRef(new Audio(song1));
   const [songIndex, setSongIndex] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
+  const [progress, setProgress] = useState(0);
 
   const memoizedSongs = useMemo(() => [song1], []);
+
+  useEffect(() => {
+    const onePerc = duration / 100;
+    const calcTime = currentTime / onePerc;
+    setProgress(calcTime);
+  }, [currentTime, duration]);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -24,7 +31,6 @@ const OSRSRadio = () => {
     };
 
     const handleTimeUpdate = () => {
-      console.log(audio.currentTime);
       setCurrentTime(audio.currentTime); // Update current time as the audio progresses
     };
 
@@ -80,7 +86,7 @@ const OSRSRadio = () => {
       <div className={stl.durationbar}>
         <div
           className={stl.innerBar}
-          style={{ width: `${currentTime / duration}%` }}
+          style={{ width: `${progress}%` }} // Use progress instead of currentTime
         ></div>
       </div>
     </div>
