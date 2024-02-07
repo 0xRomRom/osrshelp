@@ -38,7 +38,7 @@ const Nav = (props) => {
       setActiveTab("skills");
       setMainState("Skill Calculators");
     }
-    if (path === "/blog") {
+    if (path.includes("/blog")) {
       setActiveTab("blog");
       setMainState("Blog");
     }
