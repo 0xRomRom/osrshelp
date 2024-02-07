@@ -11,20 +11,17 @@ const BlogPage = ({ blogPost, setBlogPost }) => {
   const navigate = useNavigate();
   const { setMainState, setSubState } = useContext(PaginationContext);
   const [prevBlog, setPrevBlog] = useState({});
-  const [currentBlogPost, setCurrentBlogPost] = useState({});
+  const [currentBlogPost, setCurrentBlogPost] = useState(blogPost);
 
   useEffect(() => {
+    if (!blogPost || Object.entries(blogPost).length === 0) {
+      navigate("/blog");
+      return;
+    }
     setMainState("Blog");
-    setSubState(currentBlogPost.title);
+    setSubState(blogPost.title);
     setCurrentBlogPost(blogPost);
-  }, [
-    setMainState,
-    setSubState,
-    blogPost.title,
-    blogPost.title,
-    blogPost,
-    currentBlogPost.title,
-  ]);
+  }, [navigate, setMainState, setSubState, blogPost]);
 
   useEffect(() => {
     const prevBlogFetcher = async () => {
@@ -36,6 +33,7 @@ const BlogPage = ({ blogPost, setBlogPost }) => {
         setPrevBlog(data);
       } catch (err) {
         console.error(err);
+        navigate("/blog");
       }
     };
 
@@ -45,13 +43,11 @@ const BlogPage = ({ blogPost, setBlogPost }) => {
     ) {
       prevBlogFetcher();
     }
-  }, [currentBlogPost, blogPost.index, prevBlog]);
+  }, [currentBlogPost, blogPost.index, prevBlog, navigate]);
 
   const handlePrevBlog = (newBlog) => {
-    console.log(newBlog);
     setBlogPost(newBlog);
     navigate(`/blog/${newBlog.path}`);
-    // setCurrentBlogPost(newBlog);
   };
 
   return (
