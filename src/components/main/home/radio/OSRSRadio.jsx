@@ -24,6 +24,9 @@ const OSRSRadio = () => {
       setDuration(audio.duration);
     };
 
+    setTimeout(() => {
+      audio.currentTime = 60;
+    }, 5000);
     const handleTimeUpdate = () => {
       setCurrentTime(audio.currentTime); // Update current time as the audio progresses
     };
