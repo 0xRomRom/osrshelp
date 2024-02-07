@@ -18,12 +18,6 @@ const OSRSRadio = () => {
   const memoizedSongs = useMemo(() => [song1], []);
 
   useEffect(() => {
-    const onePerc = duration / 100;
-    const calcTime = currentTime / onePerc;
-    setProgress(calcTime);
-  }, [currentTime, duration]);
-
-  useEffect(() => {
     const audio = audioRef.current;
 
     const handleLoadedMetadata = () => {
@@ -86,7 +80,7 @@ const OSRSRadio = () => {
       <div className={stl.durationbar}>
         <div
           className={stl.innerBar}
-          style={{ width: `${progress}%` }} // Use progress instead of currentTime
+          style={{ width: `${(currentTime / duration) * 100}%` }} // Use progress instead of currentTime
         ></div>
       </div>
     </div>

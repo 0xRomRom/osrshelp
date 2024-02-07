@@ -64,4 +64,5 @@
 .innerBar {
   height: 75%;
   background-color: var(--blue-main);
+  transition: all 0.2s ease-in-out;
 }
