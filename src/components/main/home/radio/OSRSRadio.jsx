@@ -4,8 +4,9 @@ import { MdSkipPrevious, MdSkipNext } from "react-icons/md";
 import { IoMdPause } from "react-icons/io";
 import { useEffect, useMemo, useRef, useState } from "react";
 
-import "react-h5-audio-player/lib/styles.css";
 import song1 from "../../../../assets/tracks/7th_realm.mp3";
+import song2 from "../../../../assets/tracks/Adventure.mp3";
+import song3 from "../../../../assets/tracks/Al_kharid.mp3";
 
 const OSRSRadio = () => {
   const audioRef = useRef(new Audio(song1));
@@ -14,27 +15,29 @@ const OSRSRadio = () => {
   const [songIndex, setSongIndex] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
 
-  const memoizedSongs = useMemo(() => [song1], []);
+  const memoizedSongs = useMemo(() => [song1, song2, song3], []);
 
   useEffect(() => {
     const audio = audioRef.current;
+
+    const fileName = audio.src.substring(audio.src.lastIndexOf("/") + 1);
+    console.log(fileName);
+    const clearName = fileName.split(".")[0].replaceAll("_", " ");
+    console.log(clearName);
+
+    const handleTimeUpdate = () => {
+      setCurrentTime(audio.currentTime);
+    };
+
     const handleLoadedMetadata = () => {
       setDuration(audio.duration);
     };
+
+    audio.addEventListener("timeupdate", handleTimeUpdate);
     audio.addEventListener("loadedmetadata", handleLoadedMetadata);
-  }, [audioRef.current]);
-
-  useEffect(() => {
-    const audio = audioRef.current;
-
-    const handleTimeUpdate = () => {
-      setCurrentTime(audio.currentTime); // Update current time as the audio progresses
-    };
-
-    audio.addEventListener("timeupdate", handleTimeUpdate); // Add time update listener
 
     return () => {
-      audio.removeEventListener("timeupdate", handleTimeUpdate); // Remove time update listener
+      audio.removeEventListener("timeupdate", handleTimeUpdate);
     };
   }, [audioRef]);
 
@@ -51,6 +54,8 @@ const OSRSRadio = () => {
 
   const handleNext = () => {
     setSongIndex((prevIndex) => (prevIndex + 1) % memoizedSongs.length);
+    audioRef.current.src = memoizedSongs[songIndex];
+    audioRef.current.play();
   };
 
   const handlePrev = () => {
@@ -58,17 +63,15 @@ const OSRSRadio = () => {
       (prevIndex) =>
         (prevIndex - 1 + memoizedSongs.length) % memoizedSongs.length
     );
+    audioRef.current.src = memoizedSongs[songIndex];
+    audioRef.current.play();
   };
 
   const handleClick = (event) => {
     const rect = event.target.getBoundingClientRect();
-    console.log(event.target);
-    console.log(rect);
     const offsetX = event.clientX - rect.left;
-    console.log("Offset X", offsetX);
-    const width = rect.width;
-    const clickedPercentage = (offsetX / 184) * 100;
-    console.log(clickedPercentage);
+    const width = 184; // Hardcoded to current container width
+    const clickedPercentage = (offsetX / width) * 100;
     const newTime = (clickedPercentage / 100) * duration;
     audioRef.current.currentTime = newTime;
   };
