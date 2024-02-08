@@ -77,6 +77,7 @@ const Pagination = ({ navTo }) => {
         </div>
       </div>
       <div className={stl.rightBar}>
+        <button className={stl.config}>Config</button>
         {showSignup && loggedInUser && (
           <button className={stl.upgradeCta} onClick={handleCheckout}>
             Upgrade

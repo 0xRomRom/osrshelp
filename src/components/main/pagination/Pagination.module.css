@@ -86,6 +86,26 @@
   border: 1px solid yellow;
 }
 
+.config {
+  width: 89px;
+  height: 36px;
+  border-radius: 0.375rem;
+  background-color: rgb(63, 252, 0);
+  color: black;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 1rem;
+  border: 1px solid transparent;
+}
+
+.config:hover {
+  color: rgb(63, 252, 0);
+  background-color: black;
+  border: 1px solid rgb(63, 252, 0);
+}
+
 .mainStateWrap {
   display: flex;
   justify-content: center;

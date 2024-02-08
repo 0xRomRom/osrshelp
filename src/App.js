@@ -33,6 +33,7 @@ import InventoryBuilder from "./components/main/inventorybuilder/InventoryBuilde
 
 import CookieBanner from "./utils/cookiebanner/CookieBanner";
 import Blog from "./components/main/blog/Blog";
+import Admin from "./utils/admin/Admin";
 
 const App = () => {
   const [skills, setSkills] = useState(null);
@@ -46,6 +47,7 @@ const App = () => {
       <AuthProvider>
         <PaginationProvider>
           <div className={stl.app}>
+            <Admin />
             <CookieBanner />
             <Routes>
               <Route path="/reportissue" element={<ReportIssue />} />
