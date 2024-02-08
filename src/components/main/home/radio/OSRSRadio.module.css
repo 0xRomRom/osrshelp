@@ -54,6 +54,7 @@
 .durationbar {
   width: 184px;
   height: 0.75rem;
+  height: 1rem;
   border: 1px solid var(--border);
   border-radius: 0.25rem;
   display: flex;

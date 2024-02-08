@@ -62,9 +62,13 @@ const OSRSRadio = () => {
 
   const handleClick = (event) => {
     const rect = event.target.getBoundingClientRect();
+    console.log(event.target);
+    console.log(rect);
     const offsetX = event.clientX - rect.left;
+    console.log("Offset X", offsetX);
     const width = rect.width;
-    const clickedPercentage = (offsetX / width) * 100;
+    const clickedPercentage = (offsetX / 184) * 100;
+    console.log(clickedPercentage);
     const newTime = (clickedPercentage / 100) * duration;
     audioRef.current.currentTime = newTime;
   };
@@ -76,6 +80,7 @@ const OSRSRadio = () => {
         <button className={stl.cta} onClick={handlePrev}>
           <MdSkipPrevious className={stl.enlarge} />
         </button>
+
         {!isPlaying ? (
           <button className={stl.cta} onClick={handlePlayPause}>
             <FaPlay />
