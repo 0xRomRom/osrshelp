@@ -8,43 +8,46 @@ import "react-h5-audio-player/lib/styles.css";
 import song1 from "../../../../assets/tracks/7th_realm.mp3";
 
 const OSRSRadio = () => {
+  const audioRef = useRef(new Audio(song1));
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(null);
-  const audioRef = useRef(new Audio(song1));
   const [songIndex, setSongIndex] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
-  const [progress, setProgress] = useState(0);
-  const [percentage, setPercentage] = useState(0);
 
   const memoizedSongs = useMemo(() => [song1], []);
 
   useEffect(() => {
     const audio = audioRef.current;
-
     const handleLoadedMetadata = () => {
       setDuration(audio.duration);
     };
+    audio.addEventListener("loadedmetadata", handleLoadedMetadata);
+  }, [audioRef.current]);
+
+  useEffect(() => {
+    const audio = audioRef.current;
 
     const handleTimeUpdate = () => {
       setCurrentTime(audio.currentTime); // Update current time as the audio progresses
     };
 
-    audio.addEventListener("loadedmetadata", handleLoadedMetadata);
     audio.addEventListener("timeupdate", handleTimeUpdate); // Add time update listener
 
     return () => {
-      audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
       audio.removeEventListener("timeupdate", handleTimeUpdate); // Remove time update listener
     };
   }, [audioRef]);
 
-  useEffect(() => {
-    if (isPlaying) {
-      audioRef.current.play();
-    } else {
-      audioRef.current.pause();
-    }
-  }, [isPlaying]);
+  const handlePlayPause = () => {
+    setIsPlaying((prevState) => {
+      if (prevState) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      return !prevState;
+    });
+  };
 
   const handleNext = () => {
     setSongIndex((prevIndex) => (prevIndex + 1) % memoizedSongs.length);
@@ -62,8 +65,8 @@ const OSRSRadio = () => {
     const offsetX = event.clientX - rect.left;
     const width = rect.width;
     const clickedPercentage = (offsetX / width) * 100;
-    console.log(clickedPercentage);
-    setPercentage(clickedPercentage);
+    const newTime = (clickedPercentage / 100) * duration;
+    audioRef.current.currentTime = newTime;
   };
 
   return (
@@ -74,11 +77,11 @@ const OSRSRadio = () => {
           <MdSkipPrevious className={stl.enlarge} />
         </button>
         {!isPlaying ? (
-          <button className={stl.cta} onClick={() => setIsPlaying(true)}>
+          <button className={stl.cta} onClick={handlePlayPause}>
             <FaPlay />
           </button>
         ) : (
-          <button className={stl.cta} onClick={() => setIsPlaying(false)}>
+          <button className={stl.cta} onClick={handlePlayPause}>
             <IoMdPause />
           </button>
         )}
