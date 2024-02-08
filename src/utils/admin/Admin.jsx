@@ -1,5 +1,7 @@
 import stl from "./Admin.module.css";
 import { useState } from "react";
+import Home from "./Home/Home";
+import Users from "./users/Users";
 
 const ctaS = [
   {
@@ -30,6 +32,8 @@ const Admin = () => {
             );
           })}
         </div>
+        {activeBtn === "Home" && <Home />}
+        {activeBtn === "Users" && <Users />}
       </div>
     </div>
   );

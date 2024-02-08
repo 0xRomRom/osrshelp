@@ -17,11 +17,16 @@
   border: 1px solid var(--border);
 
   background-color: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .toggleBar {
   height: 3rem;
   overflow: hidden;
+  width: 100%;
 }
 
 .toggleCta {
