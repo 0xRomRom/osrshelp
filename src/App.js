@@ -41,13 +41,14 @@ const App = () => {
   const [playerName, setPlayerName] = useState(null);
   const [moneyMaker, setMoneyMaker] = useState(null);
   const [blogPost, setBlogPost] = useState(null);
+  const [showAdmin, setShowAdmin] = useState(false);
 
   return (
     <>
       <AuthProvider>
         <PaginationProvider>
           <div className={stl.app}>
-            <Admin />
+            {showAdmin && <Admin />}
             <CookieBanner />
             <Routes>
               <Route path="/reportissue" element={<ReportIssue />} />
@@ -71,6 +72,7 @@ const App = () => {
                       setPlayerName={setPlayerName}
                       playerName={playerName}
                       setBlogPost={setBlogPost}
+                      setShowAdmin={setShowAdmin}
                     />
                   </MainLayout>
                 }

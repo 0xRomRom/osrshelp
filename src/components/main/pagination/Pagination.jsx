@@ -7,7 +7,7 @@ import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import supabase from "../../../utils/supabase/supabase";
 import { PaginationContext } from "../../../utils/paginationstate/PaginationProvider";
 
-const Pagination = ({ navTo }) => {
+const Pagination = ({ navTo, setShowAdmin }) => {
   const { loggedInUser, setLoggedInUser, premiumUser } =
     useContext(AuthContext);
   const { mainState, subState, setSubState } = useContext(PaginationContext);
@@ -52,6 +52,10 @@ const Pagination = ({ navTo }) => {
     navigate("/login");
   };
 
+  const handleAdminModal = () => {
+    setShowAdmin(true);
+  };
+
   useEffect(() => {
     if (premiumUser === false) {
       setShowSignup(true);
@@ -77,7 +81,9 @@ const Pagination = ({ navTo }) => {
         </div>
       </div>
       <div className={stl.rightBar}>
-        <button className={stl.config}>Config</button>
+        <button className={stl.config} onClick={handleAdminModal}>
+          Config
+        </button>
         {showSignup && loggedInUser && (
           <button className={stl.upgradeCta} onClick={handleCheckout}>
             Upgrade
