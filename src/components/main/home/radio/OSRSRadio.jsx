@@ -14,6 +14,7 @@ const OSRSRadio = () => {
   const [duration, setDuration] = useState(null);
   const [songIndex, setSongIndex] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
+  const [songName, setSongName] = useState(null);
 
   const memoizedSongs = useMemo(() => [song1, song2, song3], []);
 
@@ -24,6 +25,7 @@ const OSRSRadio = () => {
     console.log(fileName);
     const clearName = fileName.split(".")[0].replaceAll("_", " ");
     console.log(clearName);
+    setSongName(clearName);
 
     const handleTimeUpdate = () => {
       setCurrentTime(audio.currentTime);
@@ -39,7 +41,7 @@ const OSRSRadio = () => {
     return () => {
       audio.removeEventListener("timeupdate", handleTimeUpdate);
     };
-  }, [audioRef]);
+  }, [audioRef, songIndex]);
 
   const handlePlayPause = () => {
     setIsPlaying((prevState) => {
@@ -78,7 +80,7 @@ const OSRSRadio = () => {
 
   return (
     <div className={stl.radio}>
-      <div className={stl.titleRow}>Track 2</div>
+      <div className={stl.titleRow}>{songName}</div>
       <div className={stl.btnRow}>
         <button className={stl.cta} onClick={handlePrev}>
           <MdSkipPrevious className={stl.enlarge} />
