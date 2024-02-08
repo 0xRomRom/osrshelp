@@ -21,6 +21,7 @@
 
 .toggleBar {
   height: 3rem;
+  overflow: hidden;
 }
 
 .toggleCta {
