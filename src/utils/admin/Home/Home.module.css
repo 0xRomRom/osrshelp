@@ -1,4 +1,5 @@
 .home {
   width: 100%;
   flex: 1;
+  background-image: var(--gradient);
 }

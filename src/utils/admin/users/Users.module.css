@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: flex-start;
   height: calc(100% - 3rem);
+  background-image: var(--gradient);
 }
 
 .userList {

@@ -4,6 +4,8 @@ import Home from "./home/Home";
 import Users from "./users/Users";
 import Contact from "./contact/Contact";
 import Issues from "./issues/Issues";
+import AdminBlog from "./blog/AdminBlox";
+import Poll from "./poll/Poll";
 
 const ctaS = [
   {
@@ -13,10 +15,11 @@ const ctaS = [
   { path: "Contact" },
   { path: "Issues" },
   { path: "Blog" },
+  { path: "Poll" },
 ];
 
-const Admin = () => {
-  const [activeBtn, setActiveBtn] = useState("Contact");
+const Admin = ({ setShowAdmin }) => {
+  const [activeBtn, setActiveBtn] = useState("Poll");
   return (
     <div className={stl.admin}>
       <div className={stl.modal}>
@@ -34,11 +37,16 @@ const Admin = () => {
               </button>
             );
           })}
+          <button className={stl.close} onClick={() => setShowAdmin(false)}>
+            Close
+          </button>
         </div>
         {activeBtn === "Home" && <Home />}
         {activeBtn === "Users" && <Users />}
         {activeBtn === "Contact" && <Contact />}
         {activeBtn === "Issues" && <Issues />}
+        {activeBtn === "Blog" && <AdminBlog />}
+        {activeBtn === "Poll" && <Poll />}
       </div>
     </div>
   );

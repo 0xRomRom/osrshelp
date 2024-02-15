@@ -16,11 +16,15 @@ const FishingGrid = (props) => {
   const [toGoSorted, setToGoSorted] = useState(false);
 
   const priceFetcher = async () => {
-    const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Raw_shrimps|Raw_sardine|Raw_herring|Raw_anchovies|Raw_mackerel|Raw_trout|Raw_cod|Raw_pike|Raw_slimy_eel|Raw_salmon|Raw_tuna|Raw_rainbow_fish|Raw_cave_eel|Raw_lobster|Raw_bass|Raw_swordfish|Raw_monkfish|Raw_karambwan|Raw_shark|Raw_sea_turtle|Raw_manta_ray|Raw_anglerfish|Raw_dark_crab"
-    );
-    const result = await fetcher.json();
-    setFetchedFishPrices(result);
+    try {
+      const fetcher = await fetch(
+        "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Raw_shrimps|Raw_sardine|Raw_herring|Raw_anchovies|Raw_mackerel|Raw_trout|Raw_cod|Raw_pike|Raw_slimy_eel|Raw_salmon|Raw_tuna|Raw_rainbow_fish|Raw_cave_eel|Raw_lobster|Raw_bass|Raw_swordfish|Raw_monkfish|Raw_karambwan|Raw_shark|Raw_sea_turtle|Raw_manta_ray|Raw_anglerfish|Raw_dark_crab"
+      );
+      const result = await fetcher.json();
+      setFetchedFishPrices(result);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {

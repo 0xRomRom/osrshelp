@@ -83,7 +83,7 @@ const Issues = () => {
   useEffect(() => {
     const messageFetcher = async () => {
       try {
-        const { data, error } = await supabase.from("contact_form").select("*");
+        const { data, error } = await supabase.from("issues").select("*");
 
         if (error) {
           throw new Error(error);
@@ -98,7 +98,7 @@ const Issues = () => {
     if (messageList.length === 0) {
       messageFetcher();
     }
-  }, []);
+  }, [messageList.length]);
 
   return (
     <div className={stl.issues}>
@@ -120,13 +120,12 @@ const Issues = () => {
           <span className={stl.blobValue}>romrom@gmail.com</span>
         </div>
         <div className={stl.blob}>
-          <span className={stl.title}>Subject</span>
-          <span className={stl.blobValue}>Request for new calculator</span>
+          <span className={stl.title}>URL</span>
+          <span className={stl.blobValue}>
+            https://www.osrshelp.com/#/gearcalculator
+          </span>
         </div>
-        <div className={stl.blob}>
-          <span className={stl.title}>Time</span>
-          <span className={stl.blobValue}>25 Aug 2024</span>
-        </div>
+
         <div className={`${stl.blob} ${stl.messageBlob}`}>
           <span className={stl.title}>Message</span>
           <span className={stl.blobValue}>

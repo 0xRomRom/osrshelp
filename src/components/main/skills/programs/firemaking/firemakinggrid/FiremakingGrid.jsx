@@ -15,11 +15,15 @@ const FiremakingGrid = (props) => {
   const [costSorted, setCostSorted] = useState(false);
 
   const priceFetcher = async () => {
-    const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Logs|Bucket|Achey_tree_logs|Oak_logs|Willow_logs|Teak_logs|Arctic_pine_logs|Maple_logs|Mahogany_logs|Yew_logs|Magic_logs|Redwood_logs|Pyre_logs|Oak_pyre_logs|Willow_pyre_logs|Teak_pyre_logs|Arctic_pyre_logs|Maple_pyre_logs|Mahogany_pyre_logs|Yew_pyre_logs|Magic_pyre_logs|Redwood_pyre_logs"
-    );
-    const result = await fetcher.json();
-    setLogPrices(result);
+    try {
+      const fetcher = await fetch(
+        "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Logs|Bucket|Achey_tree_logs|Oak_logs|Willow_logs|Teak_logs|Arctic_pine_logs|Maple_logs|Mahogany_logs|Yew_logs|Magic_logs|Redwood_logs|Pyre_logs|Oak_pyre_logs|Willow_pyre_logs|Teak_pyre_logs|Arctic_pyre_logs|Maple_pyre_logs|Mahogany_pyre_logs|Yew_pyre_logs|Magic_pyre_logs|Redwood_pyre_logs"
+      );
+      const result = await fetcher.json();
+      setLogPrices(result);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {
@@ -190,9 +194,7 @@ const FiremakingGrid = (props) => {
                   !isNaN(logsAmount) &&
                   (logsAmount * logs.price).toLocaleString()}
                 {isNaN(logsAmount) && " ? "}
-                {logsAmount * logs.price > 0 && (
-                  <span className={stl.gpcost}>gp</span>
-                )}
+                <span className={stl.gpcost}>gp</span>
               </span>
             </div>
           );
