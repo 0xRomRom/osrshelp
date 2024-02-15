@@ -54,11 +54,11 @@ const Home = (props) => {
                   setPlayerName={props.setPlayerName}
                 />
               )}
-              <TotalUsers />
+              {/* <TotalUsers />
               <RuneChat />
               <BlogModal setBlogPost={props.setBlogPost} />
               <UpdatePoll />
-              <OSRSRadio />
+              <OSRSRadio /> */}
             </Masonry>
           </ResponsiveMasonry>
         </div>
