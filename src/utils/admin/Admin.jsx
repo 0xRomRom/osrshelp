@@ -19,7 +19,7 @@ const ctaS = [
 ];
 
 const Admin = ({ setShowAdmin }) => {
-  const [activeBtn, setActiveBtn] = useState("Poll");
+  const [activeBtn, setActiveBtn] = useState("Users");
   return (
     <div className={stl.admin}>
       <div className={stl.modal}>

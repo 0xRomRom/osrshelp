@@ -1,6 +1,7 @@
 import stl from "./Users.module.css";
 import supabase from "../../supabase/supabase";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const Users = () => {
   const [currentUserList, setCurrentUserList] = useState([]);
@@ -85,21 +86,26 @@ const Users = () => {
     setSelectedUser(user);
   };
 
+  useEffect(() => {
+    const usersFetcher = async () => {
+      try {
+        const { data, error } = await supabase.from("users").select("*");
+        if (error) {
+          throw new Error(error);
+        }
+        setCurrentUserList(data);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    if (currentUserList.length === 0) {
+      usersFetcher();
+    }
+  }, []);
+
   const muteUser = async () => {
-    const updatedUser = { ...selectedUser, muted: "true" };
-
-    // try {
-    //   const { data, error } = await supabase
-    //     .from("users")
-    //     .update([updatedUser])
-    //     .eq("uid", userID);
-
-    //   if (error) {
-    //     throw new Error(error);
-    //   }
-    // } catch (err) {
-    //   console.error(err);
-    // }
+    // const updatedUser = { ...selectedUser, muted: "true" };
   };
 
   const handleUserDelete = () => {};
@@ -109,14 +115,14 @@ const Users = () => {
       <div className={stl.userList}>
         <span className={stl.currentUsers}>Registered</span>
         <div className={stl.usersList}>
-          {activeUserList.map((user, index) => {
+          {currentUserList.map((user, index) => {
             return (
               <li
                 className={stl.userItem}
                 key={index}
                 onClick={() => handleUserSelect(user)}
               >
-                {user.user}
+                {user.email}
               </li>
             );
           })}

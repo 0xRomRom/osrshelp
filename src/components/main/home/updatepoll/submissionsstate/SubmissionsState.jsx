@@ -33,7 +33,7 @@ const SubmissionsState = ({ userID }) => {
         }
       } catch (err) {}
     };
-    initialFetch();
+    // initialFetch();
   }, [userID]);
 
   const handleFormSubmission = async (e) => {
