@@ -34,6 +34,25 @@ const Users = () => {
     // const updatedUser = { ...selectedUser, muted: "true" };
   };
 
+  const upgradeUser = async () => {
+    const username = selectedUser.email;
+
+    try {
+      const { error } = await supabase
+        .from("users")
+        .update([{ premium: true }])
+        .eq("email", username);
+
+      if (error) {
+        console.log(error);
+        throw new Error(error);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+    console.log(selectedUser);
+  };
+
   const handleUserDelete = () => {};
 
   return (
@@ -42,14 +61,14 @@ const Users = () => {
         <span className={stl.currentUsers}>Registered</span>
         <div className={stl.usersList}>
           {currentUserList.map((user, index) => {
-            console.log(user.premium);
             return (
               <li
                 className={stl.userItem}
                 key={index}
                 onClick={() => handleUserSelect(user)}
               >
-                {user.email} {user.premium.toString()}
+                <span>{user.email}</span>
+                <span>Premium: {user.premium.toString()}</span>
               </li>
             );
           })}
@@ -61,11 +80,19 @@ const Users = () => {
           <div className={stl.innerList}>
             <div className={stl.blob}>
               <span className={stl.userName}>Username</span>
-              <span className={stl.displayedUser}>{selectedUser.username}</span>
+              <span className={stl.displayedUser}>
+                {selectedUser.username || "None"}
+              </span>
             </div>
             <div className={stl.blob}>
               <span className={stl.userName}>E-Mail</span>
               <span className={stl.displayedUser}>{selectedUser.email}</span>
+            </div>
+            <div className={stl.blob}>
+              <span className={stl.userName}>Premium</span>
+              <span className={stl.displayedUser}>
+                {selectedUser.premium.toString()}
+              </span>
             </div>
             <div className={stl.blob}>
               <span className={stl.userName}>UID</span>
@@ -83,6 +110,9 @@ const Users = () => {
         <div className={stl.ctaBox}>
           <button className={stl.userCta} onClick={muteUser}>
             Mute user
+          </button>
+          <button className={stl.userCta} onClick={upgradeUser}>
+            Upgrade
           </button>
           <button className={stl.userCta} onClick={handleUserDelete}>
             Delete user
