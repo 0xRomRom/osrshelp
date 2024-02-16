@@ -7,81 +7,6 @@ const Users = () => {
   const [currentUserList, setCurrentUserList] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null);
 
-  const activeUserList = [
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-    {
-      user: "King Rom II",
-      email: "kingrom@gmail.com",
-      muted: "false",
-      uid: "fcec112",
-    },
-  ];
-
   const handleUserSelect = (user) => {
     setSelectedUser(user);
   };
@@ -93,6 +18,7 @@ const Users = () => {
         if (error) {
           throw new Error(error);
         }
+        console.log(data);
         setCurrentUserList(data);
       } catch (err) {
         console.error(err);
@@ -102,7 +28,7 @@ const Users = () => {
     if (currentUserList.length === 0) {
       usersFetcher();
     }
-  }, []);
+  }, [currentUserList.length]);
 
   const muteUser = async () => {
     // const updatedUser = { ...selectedUser, muted: "true" };
@@ -116,13 +42,14 @@ const Users = () => {
         <span className={stl.currentUsers}>Registered</span>
         <div className={stl.usersList}>
           {currentUserList.map((user, index) => {
+            console.log(user.premium);
             return (
               <li
                 className={stl.userItem}
                 key={index}
                 onClick={() => handleUserSelect(user)}
               >
-                {user.email}
+                {user.email} {user.premium.toString()}
               </li>
             );
           })}
@@ -134,7 +61,7 @@ const Users = () => {
           <div className={stl.innerList}>
             <div className={stl.blob}>
               <span className={stl.userName}>Username</span>
-              <span className={stl.displayedUser}>{selectedUser.user}</span>
+              <span className={stl.displayedUser}>{selectedUser.username}</span>
             </div>
             <div className={stl.blob}>
               <span className={stl.userName}>E-Mail</span>
@@ -142,11 +69,13 @@ const Users = () => {
             </div>
             <div className={stl.blob}>
               <span className={stl.userName}>UID</span>
-              <span className={stl.displayedUser}>{selectedUser.email}</span>
+              <span className={stl.displayedUser}>{selectedUser.uid}</span>
             </div>
             <div className={stl.blob}>
               <span className={stl.userName}>Muted</span>
-              <span className={stl.displayedUser}>{selectedUser.muted}</span>
+              <span className={stl.displayedUser}>
+                {selectedUser.muted.toString()}
+              </span>
             </div>
           </div>
         )}

@@ -36,12 +36,12 @@ const Overview = () => {
       }
     };
 
-    // if (submissionsList.length === 0) {
-    //   submissionsFetcher();
-    // }
-    // if (Object.entries(voteResults).length === 0) {
-    //   voteResultsFetcher();
-    // }
+    if (submissionsList.length > 0) {
+      submissionsFetcher();
+    }
+    if (Object.entries(voteResults).length > 0) {
+      voteResultsFetcher();
+    }
   }, [submissionsList.length, voteResults]);
 
   return (
