@@ -18,12 +18,16 @@ const ConstructionGrid = (props) => {
   const [toGoSorted, setToGoSorted] = useState(false);
 
   const priceFetcher = async () => {
-    const constructionPrices = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Iron_bar|Plank|Steel_nails|Oak_plank|Teak_plank|Mahogany_plank|Soft_clay|Bolt_of_cloth|Steel_bar|Limestone_brick|Gold_leaf|Marble_block|Magic_stone|Bagged_plant_1|Bagged_dead_tree|Bagged_plant_2|Bagged_nice_tree|Bagged_plant_3|Cider|Bagged_oak_tree|Asgarnian_ale|Molten_glass|Clockwork|Greenman's_ale|Rope|Bagged_willow_tree|Wool|Teak_plank|Dragon_bitter|Mahogany_plank|Unpowered_orb|Bagged_maple_tree|Chef's_delight|Gold_leaf|Bagged_yew_tree|Marble_block|Bagged_magic_tree"
-    );
-    const resultPrices = await constructionPrices.json();
+    try {
+      const constructionPrices = await fetch(
+        "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Iron_bar|Plank|Steel_nails|Oak_plank|Teak_plank|Mahogany_plank|Soft_clay|Bolt_of_cloth|Steel_bar|Limestone_brick|Gold_leaf|Marble_block|Magic_stone|Bagged_plant_1|Bagged_dead_tree|Bagged_plant_2|Bagged_nice_tree|Bagged_plant_3|Cider|Bagged_oak_tree|Asgarnian_ale|Molten_glass|Clockwork|Greenman's_ale|Rope|Bagged_willow_tree|Wool|Teak_plank|Dragon_bitter|Mahogany_plank|Unpowered_orb|Bagged_maple_tree|Chef's_delight|Gold_leaf|Bagged_yew_tree|Marble_block|Bagged_magic_tree"
+      );
+      const resultPrices = await constructionPrices.json();
 
-    setGlobalPrices(resultPrices);
+      setGlobalPrices(resultPrices);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {
@@ -229,7 +233,7 @@ const ConstructionGrid = (props) => {
               <span
                 className={`${stl.rowItem}  ${
                   fletch.cost > 0 ? stl.red : stl.green
-                }`}
+                } ${stl.lastFlex}`}
               >
                 {!isNaN(fletch.cost * fletchAmount) ? (
                   <>

@@ -117,3 +117,8 @@
   justify-content: flex-start !important;
   align-items: center;
 }
+
+.gpcost {
+  color: rgb(175, 175, 175);
+  margin-left: 3px;
+}

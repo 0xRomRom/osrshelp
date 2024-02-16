@@ -24,11 +24,10 @@ const Blog = ({ setBlogPost }) => {
         console.error(err);
       }
     };
-
     if (currentBlogs.length === 0) {
       blogsFetcher();
     }
-  }, [currentBlogs.length]);
+  }, []);
 
   const handleBlogPost = (blog) => {
     setBlogPost(blog);
@@ -46,7 +45,8 @@ const Blog = ({ setBlogPost }) => {
           {loading && <Spinner />}
           {!loading && (
             <>
-              {currentBlogs.length > 0 &&
+              {currentBlogs &&
+                currentBlogs.length > 0 &&
                 currentBlogs.map((blog, index) => (
                   <div
                     key={index}

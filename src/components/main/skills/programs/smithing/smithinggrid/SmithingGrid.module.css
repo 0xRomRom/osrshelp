@@ -139,3 +139,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.gpcost {
+  color: rgb(175, 175, 175);
+  margin-left: 3px;
+}
+
+.lastFlex {
+  display: flex;
+  flex-direction: row;
+}

@@ -15,11 +15,15 @@ const MiningGrid = (props) => {
   const [toGoSorted, setToGoSorted] = useState(false);
 
   const priceFetcher = async () => {
-    const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Clay|Rune_essence|Copper_ore|Tin_ore|Limestone|Stardust|Blurite_ore|Barronite_shards|Iron_ore|Daeyalt_ore|Silver_ore|Volcanic_ash|Pure_essence|Coal|Pay-dirt|Sandstone|Dense_essence_block|Uncut_red_topaz|Gold_ore|Volcanic_sulphur|Blasted_ore|Granite|Mithril_ore|Lunar_ore|Daeyalt_shard|Lovakite_ore|Adamantite_ore|Soft_clay|Efh_salt|Ancient_essence|Runite_ore|Amethyst"
-    );
-    const result = await fetcher.json();
-    setFetchedOrePrices(result);
+    try {
+      const fetcher = await fetch(
+        "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Clay|Rune_essence|Copper_ore|Tin_ore|Limestone|Stardust|Blurite_ore|Barronite_shards|Iron_ore|Daeyalt_ore|Silver_ore|Volcanic_ash|Pure_essence|Coal|Pay-dirt|Sandstone|Dense_essence_block|Uncut_red_topaz|Gold_ore|Volcanic_sulphur|Blasted_ore|Granite|Mithril_ore|Lunar_ore|Daeyalt_shard|Lovakite_ore|Adamantite_ore|Soft_clay|Efh_salt|Ancient_essence|Runite_ore|Amethyst"
+      );
+      const result = await fetcher.json();
+      setFetchedOrePrices(result);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {
@@ -187,7 +191,7 @@ const MiningGrid = (props) => {
                   "?"}
               </span>
 
-              <span className={`${stl.rowItem} ${stl.green}`}>
+              <span className={`${stl.rowItem} ${stl.green} ${stl.lastFlex}`}>
                 {isNaN(Math.round(ore.profit * oreAmount)) ||
                 +props.remainingexp === 0 ||
                 isNaN(+props.remainingExp)
@@ -199,8 +203,8 @@ const MiningGrid = (props) => {
                   ? Math.round(ore.profit * oreAmount).toLocaleString()
                   : Math.round(
                       (ore.profit * oreAmount) / (1 + 2.5 / 100)
-                    ).toLocaleString()}{" "}
-                {"gp"}
+                    ).toLocaleString()}
+                <span className={stl.gpcost}>gp</span>
               </span>
             </div>
           );

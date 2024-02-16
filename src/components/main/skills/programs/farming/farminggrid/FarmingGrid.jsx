@@ -21,123 +21,121 @@ const FarmingGrid = (props) => {
   const [costSorted, setCostSorted] = useState(false);
 
   const priceFetcher = async () => {
-    // const debuggers = await fetch(
-    //   "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Bird_house"
-    // );
-    // const res = await debuggers.json();
-    // console.log("Res 1", res);
+    try {
+      let result1 = {};
+      const fetcherA = await fetch(
+        "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato|Onion|Cabbage|Tomato|Sweetcorn|Strawberry|Watermelon|Snape_grass|Marigolds|Rosemary|Nasturtiums|Woad_leaf|Limpwurt_root|White_lily|Barley|Hammerstone_hops|Asgarnian_hops|Jute_fibre|Yanillian_hops|Krandorian_hops|Wildblood_hops|Redberries|Cadava_berries|Dwellberries|Jangerberries|White_berries|Poison_ivy_berries"
+      );
+      const resultA = await fetcherA.json();
+      const fetcherB = await fetch(
+        "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Grimy_guam_leaf|Grimy_marrentill|Grimy_tarromin|Grimy_harralander|Grimy_ranarr_weed|Grimy_toadflax|Grimy_irit_leaf|Grimy_avantoe|Grimy_kwuarm|Grimy_snapdragon|Grimy_cadantine|Grimy_lantadyme|Grimy_dwarf_weed|Grimy_torstol|Yew_seed|Magic_seed|Apple_tree_seed|Banana_tree_seed|Orange_tree_seed|Curry_tree_seed|Pineapple_seed|Papaya_tree_seed|Palm_tree_seed|Dragonfruit_tree_seed|Celastrus_seed|Potato_cactus"
+      );
+      const resultB = await fetcherB.json();
+      result1 = { ...resultA, ...resultB };
 
-    let result1 = {};
-    const fetcherA = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato|Onion|Cabbage|Tomato|Sweetcorn|Strawberry|Watermelon|Snape_grass|Marigolds|Rosemary|Nasturtiums|Woad_leaf|Limpwurt_root|White_lily|Barley|Hammerstone_hops|Asgarnian_hops|Jute_fibre|Yanillian_hops|Krandorian_hops|Wildblood_hops|Redberries|Cadava_berries|Dwellberries|Jangerberries|White_berries|Poison_ivy_berries"
-    );
-    const resultA = await fetcherA.json();
-    const fetcherB = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Grimy_guam_leaf|Grimy_marrentill|Grimy_tarromin|Grimy_harralander|Grimy_ranarr_weed|Grimy_toadflax|Grimy_irit_leaf|Grimy_avantoe|Grimy_kwuarm|Grimy_snapdragon|Grimy_cadantine|Grimy_lantadyme|Grimy_dwarf_weed|Grimy_torstol|Yew_seed|Magic_seed|Apple_tree_seed|Banana_tree_seed|Orange_tree_seed|Curry_tree_seed|Pineapple_seed|Papaya_tree_seed|Palm_tree_seed|Dragonfruit_tree_seed|Celastrus_seed|Potato_cactus"
-    );
-    const resultB = await fetcherB.json();
-    result1 = { ...resultA, ...resultB };
+      setCraftingPrices(result1);
 
-    setCraftingPrices(result1);
+      let result2 = {};
+      const fetcherC = await fetch(
+        "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato_seed|Onion_seed|Cabbage_seed|Tomato_seed|Sweetcorn_seed|Strawberry_seed|Watermelon_seed|Snape_grass_seed|Marigold_seed|Nasturtium_seed|Rosemary_seed|Woad_seed|Limpwurt_seed|White_lily_seed|Barley_seed|Hammerstone_seed|Asgarnian_seed|Jute_seed|Yanillian_seed|Krandorian_seed|Wildblood_seed|Maple_seed|Oranges(5)|Yew_tree|Cactus_spine|Coconut|Bananas(5)|Mahogany_seed|Monkey_nuts|Monkey_bar"
+      );
+      const resultC = await fetcherC.json();
 
-    let result2 = {};
-    const fetcherC = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Potato_seed|Onion_seed|Cabbage_seed|Tomato_seed|Sweetcorn_seed|Strawberry_seed|Watermelon_seed|Snape_grass_seed|Marigold_seed|Nasturtium_seed|Rosemary_seed|Woad_seed|Limpwurt_seed|White_lily_seed|Barley_seed|Hammerstone_seed|Asgarnian_seed|Jute_seed|Yanillian_seed|Krandorian_seed|Wildblood_seed|Maple_seed|Oranges(5)|Yew_tree|Cactus_spine|Coconut|Bananas(5)|Mahogany_seed|Monkey_nuts|Monkey_bar"
-    );
-    const resultC = await fetcherC.json();
+      const fetcherD = await fetch(
+        "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Guam_seed|Marrentill_seed|Tarromin_seed|Harralander_seed|Ranarr_seed|Toadflax_seed|Irit_seed|Avantoe_seed|Kwuarm_seed|Snapdragon_seed|Cadantine_seed|Lantadyme_seed|Dwarf_weed_seed|Torstol_seed|Redberry_seed|Cadavaberry_seed|Dwellberry_seed|Jangerberry_seed|Whiteberry_seed|Poison_ivy_seed|Acorn|Tomatoes(5)|Willow_seed|Apples(5)|Sweetcorn|Strawberries(5)|Wateremelon|Pineapple|Papaya_fruit|Teak_seed|Calquat_tree_seed|Poison_ivy_berries|Redwood_tree_seed|Dragonfruit"
+      );
+      const resultD = await fetcherD.json();
 
-    const fetcherD = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Guam_seed|Marrentill_seed|Tarromin_seed|Harralander_seed|Ranarr_seed|Toadflax_seed|Irit_seed|Avantoe_seed|Kwuarm_seed|Snapdragon_seed|Cadantine_seed|Lantadyme_seed|Dwarf_weed_seed|Torstol_seed|Redberry_seed|Cadavaberry_seed|Dwellberry_seed|Jangerberry_seed|Whiteberry_seed|Poison_ivy_seed|Acorn|Tomatoes(5)|Willow_seed|Apples(5)|Sweetcorn|Strawberries(5)|Wateremelon|Pineapple|Papaya_fruit|Teak_seed|Calquat_tree_seed|Poison_ivy_berries|Redwood_tree_seed|Dragonfruit"
-    );
-    const resultD = await fetcherD.json();
-
-    result2 = { ...resultC, ...resultD };
-    result2["Oak tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Willow tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Maple tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Yew tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Magic tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Apple tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Banana tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Orange tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Curry tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Pineapple tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Papaya tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Palm tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Dragonfruit tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Hespori"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Teak tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Mahogany tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Calquat tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Crystal tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Spirit tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Celastrus tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    result2["Redwood tree"] = {
-      price: 0,
-      profit: 0,
-    };
-    setCraftingItemPrices(result2);
-    setGlobalPrices({ ...result1, ...result2 });
+      result2 = { ...resultC, ...resultD };
+      result2["Oak tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Willow tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Maple tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Yew tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Magic tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Apple tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Banana tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Orange tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Curry tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Pineapple tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Papaya tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Palm tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Dragonfruit tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Hespori"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Teak tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Mahogany tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Calquat tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Crystal tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Spirit tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Celastrus tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      result2["Redwood tree"] = {
+        price: 0,
+        profit: 0,
+      };
+      setCraftingItemPrices(result2);
+      setGlobalPrices({ ...result1, ...result2 });
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {

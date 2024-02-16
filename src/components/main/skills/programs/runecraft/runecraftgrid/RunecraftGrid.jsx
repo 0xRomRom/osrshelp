@@ -16,13 +16,17 @@ const RunecraftGrid = (props) => {
   const [profitSorted, setProfitSorted] = useState(false);
 
   const initFetch = useCallback(async () => {
-    const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Air_rune|Mind_rune|Water_rune|Mist_rune|Earth_rune|Dust_rune|Mud_rune|Fire_rune|Smoke_rune|Steam_rune|Body_rune|Lava_rune|Cosmic_rune|Chaos_rune|Astral_rune|Nature_rune|Law_rune|Death_rune|Blood_rune|Soul_rune|Wrath_rune|Pure_essence"
-    );
-    let result = await fetcher.json();
+    try {
+      const fetcher = await fetch(
+        "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Air_rune|Mind_rune|Water_rune|Mist_rune|Earth_rune|Dust_rune|Mud_rune|Fire_rune|Smoke_rune|Steam_rune|Body_rune|Lava_rune|Cosmic_rune|Chaos_rune|Astral_rune|Nature_rune|Law_rune|Death_rune|Blood_rune|Soul_rune|Wrath_rune|Pure_essence"
+      );
+      let result = await fetcher.json();
 
-    result["Blood rune (Kourend)"] = { price: 0 };
-    setGlobalPrices(result);
+      result["Blood rune (Kourend)"] = { price: 0 };
+      setGlobalPrices(result);
+    } catch (err) {
+      console.error(err);
+    }
   }, []);
 
   const calcPrice = useCallback(
@@ -240,8 +244,8 @@ const RunecraftGrid = (props) => {
                   ? Math.abs(
                       calcCraftAmount(tree) * calcPrice(tree)
                     ).toLocaleString()
-                  : 0}{" "}
-                {"gp"}
+                  : 0}
+                <span className={stl.gpcost}>gp</span>
               </span>
             </div>
           );

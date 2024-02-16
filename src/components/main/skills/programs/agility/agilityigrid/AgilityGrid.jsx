@@ -16,11 +16,15 @@ const AgilityGrid = (props) => {
   const [priceSorted, setPriceSorted] = useState(false);
 
   const priceFetcher = async () => {
-    const fetcher = await fetch(
-      "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Amylase_crystal|Toadflax"
-    );
-    const result = await fetcher.json();
-    setFetchedOrePrices(result);
+    try {
+      const fetcher = await fetch(
+        "https://api.weirdgloop.org/exchange/history/osrs/latest?name=Amylase_crystal|Toadflax"
+      );
+      const result = await fetcher.json();
+      setFetchedOrePrices(result);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   useEffect(() => {
@@ -209,7 +213,7 @@ const AgilityGrid = (props) => {
                   : Math.ceil(propsExp / ore["exp/lap"]).toLocaleString()}
               </span>
 
-              <span className={`${stl.rowItem} ${stl.green}`}>
+              <span className={`${stl.rowItem} ${stl.green} ${stl.lastFlex}`}>
                 {+props.remainingexp
                   ? isNaN(totalProfit)
                     ? "?"
@@ -219,7 +223,7 @@ const AgilityGrid = (props) => {
                   : isNaN(totalProfit)
                   ? "?"
                   : totalProfit.toLocaleString()}{" "}
-                {"gp"}
+                <span className={stl.gpcost}>gp</span>
               </span>
             </div>
           );
