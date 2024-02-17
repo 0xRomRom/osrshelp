@@ -10,13 +10,17 @@ const Overview = () => {
   useEffect(() => {
     const submissionsFetcher = async () => {
       try {
-        const { data, error } = await supabase.from("submissions").select("*");
+        const { data, error } = await supabase
+          .from("poll_submissions")
+          .select("*");
+
+        console.log(data);
 
         if (error) {
           throw new Error(error);
         }
 
-        setSubmissionsList(data[0]);
+        setSubmissionsList(data);
       } catch (err) {
         console.error(err);
       }
@@ -24,22 +28,22 @@ const Overview = () => {
 
     const voteResultsFetcher = async () => {
       try {
-        const { data, error } = await supabase.from("poll_results").select("*");
+        const { data, error } = await supabase.from("poll_votes").select("*");
 
         if (error) {
           throw new Error(error);
         }
 
-        setVoteResults(data[0]);
+        setVoteResults(data);
       } catch (err) {
         console.error(err);
       }
     };
 
-    if (submissionsList.length > 0) {
+    if (submissionsList.length === 0) {
       submissionsFetcher();
     }
-    if (Object.entries(voteResults).length > 0) {
+    if (Object.entries(voteResults).length === 0) {
       voteResultsFetcher();
     }
   }, [submissionsList.length, voteResults]);
@@ -49,14 +53,14 @@ const Overview = () => {
       <div className={stl.submissions}>
         <span className={stl.herospan}>Poll Submissions</span>
         {submissionsList.map((item) => {
-          return <span className={stl.submission}>{item}</span>;
+          return <span className={stl.submission}>{item.submission}</span>;
         })}
       </div>
       <div className={stl.voteresults}>
         <span className={stl.herospan}>Vote Results</span>
-        {Object.entries(submissionsList).map((item) => {
+        {/* {Object.entries(submissionsList).map((item) => {
           return <span className={stl.submission}>{item}</span>;
-        })}
+        })} */}
       </div>
     </div>
   );

@@ -18,7 +18,6 @@ const AdminBlog = () => {
     const fetchBlogs = async () => {
       try {
         const { data, error } = await supabase.from("blog_posts").select("*");
-        console.log(data);
         if (error) {
           throw new Error(error);
         }

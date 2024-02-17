@@ -41,6 +41,7 @@
 .admincontainers {
   width: 100%;
   flex: 1;
+  padding-bottom: 1rem;
 }
 
 .currentBlog {

@@ -14,7 +14,6 @@ const Issues = () => {
         if (error) {
           throw new Error(error);
         }
-        console.log(data);
         setMessageList(data);
       } catch (err) {
         console.error(err);

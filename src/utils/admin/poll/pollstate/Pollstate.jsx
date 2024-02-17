@@ -9,7 +9,9 @@ const Pollstate = () => {
   useEffect(() => {
     const stateFetcher = async () => {
       try {
-        const { data, error } = await supabase.from("pollstate").select("*");
+        const { data, error } = await supabase
+          .from("poll_questions")
+          .select("*");
 
         if (error) {
           throw new Error(error);
