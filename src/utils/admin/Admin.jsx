@@ -6,6 +6,9 @@ import Contact from "./contact/Contact";
 import Issues from "./issues/Issues";
 import AdminBlog from "./blog/AdminBlox";
 import Poll from "./poll/Poll";
+import { AuthContext } from "../authprovider/AuthProvider";
+import { useContext } from "react";
+import { useEffect } from "react";
 
 const ctaS = [
   {
@@ -19,6 +22,15 @@ const ctaS = [
 ];
 
 const Admin = ({ setShowAdmin }) => {
+  const { userEmail } = useContext(AuthContext);
+
+  useEffect(() => {
+    console.log(userEmail);
+    if (userEmail !== "vandersarroman@gmail.com") {
+      setShowAdmin(false);
+    }
+  }, [userEmail]);
+
   const [activeBtn, setActiveBtn] = useState("Users");
   return (
     <div className={stl.admin}>

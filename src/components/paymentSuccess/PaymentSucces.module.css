@@ -111,3 +111,15 @@
   display: inline-block;
   height: 3rem;
 }
+
+.upgrading {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+.upgrading:hover {
+  background-color: rgb(189, 41, 189);
+  color: white;
+}

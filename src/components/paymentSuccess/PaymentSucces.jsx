@@ -18,12 +18,11 @@ const PaymentSucces = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoadingDone(true);
-    }, 10000);
+    }, 12500);
   }, [setLoadingDone]);
 
   return (
     <div className={stl.paymentSucces}>
-      <HomeButton />
       <div className={stl.modal}>
         <div className={stl.innerModal}>
           <img src={parthat} alt="Blue parthat" className={stl.phat} />
@@ -40,6 +39,7 @@ const PaymentSucces = () => {
               }}
             >
               <Spinner />
+              <span className={stl.upgrading}> Upgrading</span>
             </button>
           )}
 
