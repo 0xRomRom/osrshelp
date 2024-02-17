@@ -73,6 +73,28 @@ const Overview = () => {
     }
   }, [submissionsList.length, voteResults]);
 
+  const handleClearSubmissionsTable = async () => {
+    try {
+      const { error } = await supabase
+        .from("poll_submissions")
+        .delete()
+        .select("*")
+        .eq("Entry", "Entry");
+
+      console.log(error);
+
+      if (error) {
+        throw new Error(error);
+      }
+
+      alert("Table cleared!");
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  // UUID => 34d7a88e-bc5c-42c9-b260-e042adad3055
+
   return (
     <div className={stl.overview}>
       <div className={stl.submissions}>
@@ -86,7 +108,12 @@ const Overview = () => {
             );
           })}
         </div>
-        <button className={stl.clearSubmissions}>Clear All Submissions</button>
+        <button
+          className={stl.clearSubmissions}
+          onClick={handleClearSubmissionsTable}
+        >
+          Clear All Submissions
+        </button>
       </div>
       <div className={stl.voteresults}>
         <span className={stl.herospan}>Vote Results</span>

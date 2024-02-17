@@ -17,8 +17,6 @@ const Pollstate = () => {
           throw new Error(error);
         }
 
-        console.log(data[0].pollstate);
-
         //Set result as state
         setActiveState(data[0].pollstate);
       } catch (err) {
