@@ -18,7 +18,6 @@ const Users = () => {
         if (error) {
           throw new Error(error);
         }
-        console.log(data);
         setCurrentUserList(data);
       } catch (err) {
         console.error(err);
