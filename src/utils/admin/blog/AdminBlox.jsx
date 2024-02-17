@@ -10,7 +10,7 @@ const AdminBlog = () => {
   const [imageBase64, setImageBase64] = useState(null);
   const uploadRef = useRef(null);
   const [newBlogObject, setNewBlogObject] = useState({
-    date: new Date().toString(),
+    date: new Date().toLocaleString().toString().slice(0, 10),
     blogtype: "Updates",
   });
 
@@ -218,18 +218,19 @@ const AdminBlog = () => {
               placeholder="Teaser"
               onChange={(e) => blogObjectUpdater("teaser", e.target.value)}
             />
-            <input
-              type="text"
+
+            <textarea
               className={stl.inputStl}
               placeholder="Copy1"
               onChange={(e) => blogObjectUpdater("copy", e.target.value)}
-            />
-            <input
-              type="text"
+            ></textarea>
+
+            <textarea
               className={stl.inputStl}
               placeholder="Copy2"
               onChange={(e) => blogObjectUpdater("copy2", e.target.value)}
-            />
+            ></textarea>
+
             <button className={stl.submitBlog} onClick={handleNewBlogEntry}>
               Submit
             </button>
