@@ -14,8 +14,6 @@ const Overview = () => {
           .from("poll_submissions")
           .select("*");
 
-        console.log(data);
-
         if (error) {
           throw new Error(error);
         }
@@ -43,7 +41,6 @@ const Overview = () => {
         };
         data.forEach((item) => {
           const vote = item.uservote;
-          console.log(item);
 
           if (vote === 1) {
             tempObj[1] = tempObj[1] + 1;

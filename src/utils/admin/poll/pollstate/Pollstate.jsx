@@ -4,7 +4,7 @@ import supabase from "../../../supabase/supabase";
 import { useEffect } from "react";
 
 const Pollstate = () => {
-  const [activeState, setActiveState] = useState("Idle");
+  const [activeState, setActiveState] = useState("");
 
   useEffect(() => {
     const stateFetcher = async () => {
@@ -17,10 +17,10 @@ const Pollstate = () => {
           throw new Error(error);
         }
 
-        console.log(data);
+        console.log(data[0].pollstate);
 
         //Set result as state
-        //   setActiveState(data[0])
+        setActiveState(data[0].pollstate);
       } catch (err) {
         console.error(err);
       }
@@ -32,12 +32,13 @@ const Pollstate = () => {
   const updatePollstate = async (newState) => {
     try {
       await supabase
-        .from("pollstate")
-        .update({
-          pollstate: newState,
-          uid: "123",
-        })
-        .eq("uid", "123");
+        .from("poll_questions")
+        .update([
+          {
+            pollstate: newState,
+          },
+        ])
+        .eq("uid", "dbbc33b0-9a71-4172-9abd-979ef8ea3c14");
 
       setActiveState(newState);
     } catch (err) {
