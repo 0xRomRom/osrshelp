@@ -10,7 +10,8 @@ const AdminBlog = () => {
   const [imageBase64, setImageBase64] = useState(null);
   const uploadRef = useRef(null);
   const [newBlogObject, setNewBlogObject] = useState({
-    date: new Date(),
+    date: new Date().toString(),
+    blogtype: "Updates",
   });
 
   useEffect(() => {
@@ -215,7 +216,7 @@ const AdminBlog = () => {
               type="text"
               className={stl.inputStl}
               placeholder="Copy1"
-              onChange={(e) => blogObjectUpdater("copy1", e.target.value)}
+              onChange={(e) => blogObjectUpdater("copy", e.target.value)}
             />
             <input
               type="text"
