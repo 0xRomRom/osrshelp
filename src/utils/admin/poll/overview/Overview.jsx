@@ -93,6 +93,26 @@ const Overview = () => {
     }
   };
 
+  const handleClearVoteResultsTable = async () => {
+    try {
+      const { error } = await supabase
+        .from("poll_votes")
+        .delete()
+        .select("*")
+        .eq("Entry", "Entry");
+
+      console.log(error);
+
+      if (error) {
+        throw new Error(error);
+      }
+
+      alert("Table cleared!");
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   // UUID => 34d7a88e-bc5c-42c9-b260-e042adad3055
 
   return (
@@ -116,23 +136,30 @@ const Overview = () => {
         </button>
       </div>
       <div className={stl.voteresults}>
-        <span className={stl.herospan}>Vote Results</span>
-
-        <span className={stl.submission}>
-          Q1 : {voteResults && voteResults[1]}
-        </span>
-        <span className={stl.submission}>
-          Q2 : {voteResults && voteResults[2]}
-        </span>
-        <span className={stl.submission}>
-          Q3 : {voteResults && voteResults[3]}
-        </span>
-        <span className={stl.submission}>
-          Q4 : {voteResults && voteResults[4]}
-        </span>
-        <span className={stl.submission}>
-          Q5 : {voteResults && voteResults[5]}
-        </span>
+        <div className={stl.colWrapper}>
+          <span className={stl.herospan}>Vote Results</span>
+          <span className={stl.submission}>
+            Q1 : {voteResults && voteResults[1]}
+          </span>
+          <span className={stl.submission}>
+            Q2 : {voteResults && voteResults[2]}
+          </span>
+          <span className={stl.submission}>
+            Q3 : {voteResults && voteResults[3]}
+          </span>
+          <span className={stl.submission}>
+            Q4 : {voteResults && voteResults[4]}
+          </span>
+          <span className={stl.submission}>
+            Q5 : {voteResults && voteResults[5]}
+          </span>
+        </div>
+        <button
+          className={stl.clearSubmissions}
+          onClick={handleClearVoteResultsTable}
+        >
+          Clear Vote Results
+        </button>
       </div>
     </div>
   );
