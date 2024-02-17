@@ -76,14 +76,17 @@ const Overview = () => {
   return (
     <div className={stl.overview}>
       <div className={stl.submissions}>
-        <span className={stl.herospan}>Poll Submissions</span>
-        {submissionsList.map((item, index) => {
-          return (
-            <span className={stl.submission} key={index}>
-              {item.submission}
-            </span>
-          );
-        })}
+        <div className={stl.colWrapper}>
+          <span className={stl.herospan}>Poll Submissions</span>
+          {submissionsList.map((item, index) => {
+            return (
+              <span className={stl.submission} key={index}>
+                {item.submission}
+              </span>
+            );
+          })}
+        </div>
+        <button className={stl.clearSubmissions}>Clear All Submissions</button>
       </div>
       <div className={stl.voteresults}>
         <span className={stl.herospan}>Vote Results</span>
