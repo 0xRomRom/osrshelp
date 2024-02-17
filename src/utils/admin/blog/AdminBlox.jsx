@@ -9,7 +9,9 @@ const AdminBlog = () => {
   const [selectedBlog, setSelectedBlog] = useState({});
   const [imageBase64, setImageBase64] = useState(null);
   const uploadRef = useRef(null);
-  const [newBlogObject, setNewBlogObject] = useState({});
+  const [newBlogObject, setNewBlogObject] = useState({
+    date: new Date(),
+  });
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -42,6 +44,7 @@ const AdminBlog = () => {
     reader.onloadend = () => {
       // Once the file is read, set it to the state
       setImageBase64(reader.result);
+      blogObjectUpdater("imgsrc", reader.result);
       console.log(imageBase64);
     };
 
@@ -60,9 +63,19 @@ const AdminBlog = () => {
     });
   };
 
-  useEffect(() => {
-    console.log(newBlogObject);
-  }, [newBlogObject]);
+  const handleNewBlogEntry = async () => {
+    try {
+      const { error } = await supabase
+        .from("blog_posts")
+        .insert([newBlogObject]);
+
+      if (error) {
+        throw new Error(error);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  };
 
   return (
     <div className={stl.adminblog}>
@@ -155,12 +168,25 @@ const AdminBlog = () => {
               <option value="Patchnotes">Patchnotes</option>
               <option value="Other">Other</option>
             </select>
-            <input type="text" className={stl.inputStl} placeholder="Index" />
-            <input type="text" className={stl.inputStl} placeholder="Path" />
+            <input
+              type="text"
+              className={stl.inputStl}
+              placeholder="Index"
+              onChange={(e) => blogObjectUpdater("index", e.target.value)}
+            />
+            <input
+              type="text"
+              className={stl.inputStl}
+              placeholder="Path"
+              onChange={(e) => blogObjectUpdater("path", e.target.value)}
+            />
             <input
               type="text"
               className={stl.inputStl}
               placeholder="ExplorectaPath"
+              onChange={(e) =>
+                blogObjectUpdater("explorectapath", e.target.value)
+              }
             />
             <input
               type="file"
@@ -173,11 +199,33 @@ const AdminBlog = () => {
             <button className={stl.uploadImg} onClick={handleClickUpload}>
               {!imageBase64 ? "Upload Image" : "Image Uploaded"}
             </button>
-            <input type="text" className={stl.inputStl} placeholder="ImgAlt" />
-            <input type="text" className={stl.inputStl} placeholder="Teaser" />
-            <input type="text" className={stl.inputStl} placeholder="Copy1" />
-            <input type="text" className={stl.inputStl} placeholder="Copy2" />
-            <button className={stl.submitBlog}>Submit</button>
+            <input
+              type="text"
+              className={stl.inputStl}
+              placeholder="ImgAlt"
+              onChange={(e) => blogObjectUpdater("imgalt", e.target.value)}
+            />
+            <input
+              type="text"
+              className={stl.inputStl}
+              placeholder="Teaser"
+              onChange={(e) => blogObjectUpdater("teaser", e.target.value)}
+            />
+            <input
+              type="text"
+              className={stl.inputStl}
+              placeholder="Copy1"
+              onChange={(e) => blogObjectUpdater("copy1", e.target.value)}
+            />
+            <input
+              type="text"
+              className={stl.inputStl}
+              placeholder="Copy2"
+              onChange={(e) => blogObjectUpdater("copy2", e.target.value)}
+            />
+            <button className={stl.submitBlog} onClick={handleNewBlogEntry}>
+              Submit
+            </button>
           </div>
         )}
       </div>
