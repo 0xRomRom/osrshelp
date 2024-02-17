@@ -1,13 +1,15 @@
 import stl from "./AdminBlog.module.css";
 import { useState } from "react";
 import supabase from "../../../utils/supabase/supabase";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const AdminBlog = () => {
   const [openTab, setOpenTab] = useState("Current");
   const [blogList, setBlogList] = useState([]);
   const [selectedBlog, setSelectedBlog] = useState({});
   const [imageBase64, setImageBase64] = useState(null);
+  const uploadRef = useRef(null);
+  const [newBlogObject, setNewBlogObject] = useState({});
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -29,6 +31,10 @@ const AdminBlog = () => {
     }
   }, [blogList.length]);
 
+  const handleClickUpload = () => {
+    uploadRef.current.click();
+  };
+
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
@@ -43,6 +49,14 @@ const AdminBlog = () => {
       // Read the file as a data URL
       reader.readAsDataURL(file);
     }
+  };
+
+  const blogObjectUpdater = (key, value) => {
+    setNewBlogObject(() => {
+      return {
+        [key]: value,
+      };
+    });
   };
 
   return (
@@ -126,6 +140,7 @@ const AdminBlog = () => {
               type="text"
               className={stl.inputStl}
               placeholder="New blog title"
+              onChange={() => blogObjectUpdater("title", e.target.value)}
             />
             <select className={stl.inputStl}>
               <option value="Updates">Updates</option>
@@ -144,7 +159,17 @@ const AdminBlog = () => {
               accept="image/*"
               onChange={handleImageUpload}
               className={stl.inputUpload}
+              ref={uploadRef}
+              style={{ display: "none" }}
             />
+            <button className={stl.uploadImg} onClick={handleClickUpload}>
+              {!imageBase64 ? "Upload Image" : "Image Uploaded"}
+            </button>
+            <input type="text" className={stl.inputStl} placeholder="ImgAlt" />
+            <input type="text" className={stl.inputStl} placeholder="Teaser" />
+            <input type="text" className={stl.inputStl} placeholder="Copy1" />
+            <input type="text" className={stl.inputStl} placeholder="Copy2" />
+            <button className={stl.submitBlog}>Submit</button>
           </div>
         )}
       </div>
