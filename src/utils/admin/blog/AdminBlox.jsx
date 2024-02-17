@@ -52,12 +52,17 @@ const AdminBlog = () => {
   };
 
   const blogObjectUpdater = (key, value) => {
-    setNewBlogObject(() => {
+    setNewBlogObject((prevState) => {
       return {
+        ...prevState,
         [key]: value,
       };
     });
   };
+
+  useEffect(() => {
+    console.log(newBlogObject);
+  }, [newBlogObject]);
 
   return (
     <div className={stl.adminblog}>
@@ -140,9 +145,12 @@ const AdminBlog = () => {
               type="text"
               className={stl.inputStl}
               placeholder="New blog title"
-              onChange={() => blogObjectUpdater("title", e.target.value)}
+              onChange={(e) => blogObjectUpdater("title", e.target.value)}
             />
-            <select className={stl.inputStl}>
+            <select
+              className={stl.inputStl}
+              onChange={(e) => blogObjectUpdater("blogtype", e.target.value)}
+            >
               <option value="Updates">Updates</option>
               <option value="Patchnotes">Patchnotes</option>
               <option value="Other">Other</option>
