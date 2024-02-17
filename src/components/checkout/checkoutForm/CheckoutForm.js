@@ -48,8 +48,8 @@ const CheckoutForm = () => {
     <form id="payment-form" onSubmit={handleSubmit} className={stl.payform}>
       <span className={stl.lifetime}>
         Lifetime for only <span className={stl.purple}>$9.99</span>
+        <img src={partyhat} alt="Blue partyhat" className={stl.phat} />
       </span>
-      <img src={partyhat} alt="Blue partyhat" className={stl.phat} />
       <PaymentElement id="payment-element" />
       <button
         disabled={isProcessing || !stripe || !elements}

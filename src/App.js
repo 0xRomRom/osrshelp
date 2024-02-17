@@ -41,7 +41,7 @@ const App = () => {
   const [playerName, setPlayerName] = useState(null);
   const [moneyMaker, setMoneyMaker] = useState(null);
   const [blogPost, setBlogPost] = useState(null);
-  const [showAdmin, setShowAdmin] = useState(true);
+  const [showAdmin, setShowAdmin] = useState(false);
 
   return (
     <>
