@@ -73,6 +73,7 @@ const AdminBlog = () => {
       if (error) {
         throw new Error(error);
       }
+      setOpenTab("Current");
     } catch (err) {
       console.error(err);
     }
@@ -136,8 +137,13 @@ const AdminBlog = () => {
                 <span className={stl.itemSpan}>
                   Explore path: {selectedBlog.explorepathcta}
                 </span>
-                <span className={stl.itemSpan}>
-                  ImgSrc: {selectedBlog.imgsrc}
+                <span
+                  className={`${stl.itemSpan} ${stl.pointer}`}
+                  onClick={() =>
+                    navigator.clipboard.writeText(selectedBlog.imgsrc)
+                  }
+                >
+                  ImgSrc: {selectedBlog.imgsrc.slice(0, 25) + "..."}
                 </span>
                 <span className={stl.itemSpan}>
                   ImgAlt: {selectedBlog.imgalt}

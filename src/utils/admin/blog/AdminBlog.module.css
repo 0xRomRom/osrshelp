@@ -150,3 +150,7 @@
 .submitBlog:hover {
   background-color: black;
 }
+
+.pointer {
+  cursor: pointer;
+}
