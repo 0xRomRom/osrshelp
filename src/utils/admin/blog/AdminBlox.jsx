@@ -6,6 +6,7 @@ import { useEffect } from "react";
 const AdminBlog = () => {
   const [openTab, setOpenTab] = useState("Current");
   const [blogList, setBlogList] = useState([]);
+  const [selectedBlog, setSelectedBlog] = useState({});
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -51,11 +52,24 @@ const AdminBlog = () => {
       <div className={stl.admincontainers}>
         {openTab === "Current" && (
           <div className={stl.currentBlog}>
-            <div className={stl.blogstate}>
-              {blogList.map((blog) => {
-                return <div className={stl.blogItem}>{blog.title}</div>;
-              })}
-            </div>
+            {Object.entries(selectedBlog).length === 0 && (
+              <div className={stl.blogstate}>
+                {blogList.map((blog) => {
+                  return (
+                    <div
+                      key={blog.title}
+                      className={stl.blogItem}
+                      onClick={() => setSelectedBlog(blog)}
+                    >
+                      {blog.title}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+            {Object.entries(selectedBlog).length > 0 && (
+              <div className={stl.selectedBlogModal}>{selectedBlog.title}</div>
+            )}
           </div>
         )}
       </div>
