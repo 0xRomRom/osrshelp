@@ -1,11 +1,10 @@
 .adminblog {
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: var(--gradient);
+  padding-top: 1rem;
 }
 
 .togglebar {
@@ -41,7 +40,7 @@
 
 .admincontainers {
   width: 100%;
-  height: 100%;
+  flex: 1;
 }
 
 .currentBlog {
@@ -71,4 +70,24 @@
 
 .blogItem:hover {
   color: white;
+}
+
+.selectedBlogModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0rem;
+  overflow-y: scroll;
+}
+
+.itemSpan {
+  background-color: var(--dark-bg);
+  color: rgb(213, 213, 213);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }

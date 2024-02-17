@@ -35,7 +35,10 @@ const AdminBlog = () => {
           className={`${stl.toggleCta} ${
             openTab === "Current" ? stl.activeCta : ""
           }`}
-          onClick={() => setOpenTab("Current")}
+          onClick={() => {
+            setOpenTab("Current");
+            setSelectedBlog({});
+          }}
         >
           Current blogs
         </button>
@@ -54,10 +57,10 @@ const AdminBlog = () => {
           <div className={stl.currentBlog}>
             {Object.entries(selectedBlog).length === 0 && (
               <div className={stl.blogstate}>
-                {blogList.map((blog) => {
+                {blogList.map((blog, index) => {
                   return (
                     <div
-                      key={blog.title}
+                      key={index}
                       className={stl.blogItem}
                       onClick={() => setSelectedBlog(blog)}
                     >
@@ -68,7 +71,35 @@ const AdminBlog = () => {
               </div>
             )}
             {Object.entries(selectedBlog).length > 0 && (
-              <div className={stl.selectedBlogModal}>{selectedBlog.title}</div>
+              <div className={stl.selectedBlogModal}>
+                <span className={stl.itemSpan}>
+                  Title: {selectedBlog.title}
+                </span>
+                <span className={stl.itemSpan}>
+                  Blogtype: {selectedBlog.blogtype}
+                </span>
+                <span className={stl.itemSpan}>Date: {selectedBlog.date}</span>
+                <span className={stl.itemSpan}>
+                  Index: {selectedBlog.index}
+                </span>
+                <span className={stl.itemSpan}>Path: {selectedBlog.path}</span>
+                <span className={stl.itemSpan}>
+                  Explore path: {selectedBlog.explorepathcta}
+                </span>
+                <span className={stl.itemSpan}>
+                  ImgSrc: {selectedBlog.imgsrc}
+                </span>
+                <span className={stl.itemSpan}>
+                  ImgAlt: {selectedBlog.imgalt}
+                </span>
+                <span className={stl.itemSpan}>
+                  Teaser: {selectedBlog.teaser}
+                </span>
+                <span className={stl.itemSpan}>Copy1: {selectedBlog.copy}</span>
+                <span className={stl.itemSpan}>
+                  Copy2: {selectedBlog.copy2}
+                </span>
+              </div>
             )}
           </div>
         )}

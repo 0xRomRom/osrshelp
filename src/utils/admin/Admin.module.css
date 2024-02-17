@@ -8,6 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
+  background-image: var(--gradient);
 }
 
 .modal {
@@ -21,6 +23,7 @@
   justify-content: flex-start;
   align-items: center;
   background-image: var(--gradient);
+  overflow-y: scroll;
 }
 
 .toggleBar {
