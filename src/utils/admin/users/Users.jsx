@@ -68,7 +68,24 @@ const Users = () => {
     console.log(selectedUser);
   };
 
-  const handleUserDelete = () => {};
+  const handleUserDelete = async () => {
+    const username = selectedUser.email;
+
+    try {
+      const { error } = await supabase
+        .from("users")
+        .delete()
+        .eq("email", username);
+
+      if (error) {
+        console.log(error);
+        throw new Error(error);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+    console.log(selectedUser);
+  };
 
   return (
     <div className={stl.users}>
