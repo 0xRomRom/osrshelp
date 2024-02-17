@@ -25,7 +25,7 @@ const Contact = () => {
     if (messageList.length === 0) {
       messageFetcher();
     }
-  }, []);
+  }, [messageList.length]);
 
   return (
     <div className={stl.contact}>

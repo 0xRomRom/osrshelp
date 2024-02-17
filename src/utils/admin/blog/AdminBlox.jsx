@@ -7,6 +7,7 @@ const AdminBlog = () => {
   const [openTab, setOpenTab] = useState("Current");
   const [blogList, setBlogList] = useState([]);
   const [selectedBlog, setSelectedBlog] = useState({});
+  const [imageBase64, setImageBase64] = useState(null);
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -26,7 +27,23 @@ const AdminBlog = () => {
     if (blogList.length === 0) {
       fetchBlogs();
     }
-  }, []);
+  }, [blogList.length]);
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+
+    reader.onloadend = () => {
+      // Once the file is read, set it to the state
+      setImageBase64(reader.result);
+      console.log(imageBase64);
+    };
+
+    if (file) {
+      // Read the file as a data URL
+      reader.readAsDataURL(file);
+    }
+  };
 
   return (
     <div className={stl.adminblog}>
@@ -101,6 +118,33 @@ const AdminBlog = () => {
                 </span>
               </div>
             )}
+          </div>
+        )}
+        {openTab === "New" && (
+          <div className={stl.newBlogModal}>
+            <input
+              type="text"
+              className={stl.inputStl}
+              placeholder="New blog title"
+            />
+            <select className={stl.inputStl}>
+              <option value="Updates">Updates</option>
+              <option value="Patchnotes">Patchnotes</option>
+              <option value="Other">Other</option>
+            </select>
+            <input type="text" className={stl.inputStl} placeholder="Index" />
+            <input type="text" className={stl.inputStl} placeholder="Path" />
+            <input
+              type="text"
+              className={stl.inputStl}
+              placeholder="ExplorectaPath"
+            />
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              className={stl.inputUpload}
+            />
           </div>
         )}
       </div>
