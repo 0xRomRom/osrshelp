@@ -2,81 +2,6 @@ import stl from "./Contact.module.css";
 import { useState, useEffect } from "react";
 import supabase from "../../supabase/supabase";
 
-const mockList = [
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-];
-
 const Contact = () => {
   const [messageList, setMessageList] = useState([]);
   const [selectedItem, setSelectedItem] = useState({});
@@ -136,12 +61,14 @@ const Contact = () => {
         </div>
         <div className={stl.blob}>
           <span className={stl.title}>Time</span>
-          <span className={stl.blobValue}>25 Aug 2024</span>
+          <span className={stl.blobValue}>
+            {selectedItem && selectedItem.time}
+          </span>
         </div>
         <div className={`${stl.blob} ${stl.messageBlob}`}>
           <span className={stl.title}>Message</span>
           <span className={stl.blobValue}>
-            Hello there, this is a message send just to display some content.
+            {selectedItem && selectedItem.message}
           </span>
         </div>
       </div>

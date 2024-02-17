@@ -2,94 +2,20 @@ import stl from "./Issues.module.css";
 import { useState, useEffect } from "react";
 import supabase from "../../supabase/supabase";
 
-const mockList = [
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-  {
-    subject: "hello world",
-  },
-];
-
 const Issues = () => {
   const [messageList, setMessageList] = useState([]);
+  const [selectedItem, setSelectedItem] = useState({});
 
   useEffect(() => {
     const messageFetcher = async () => {
       try {
-        const { data, error } = await supabase.from("issues").select("*");
+        const { data, error } = await supabase.from("issues_form").select("*");
 
         if (error) {
           throw new Error(error);
         }
-
-        setMessageList(data[0]);
+        console.log(data);
+        setMessageList(data);
       } catch (err) {
         console.error(err);
       }
@@ -105,10 +31,14 @@ const Issues = () => {
       <div className={stl.leftBlock}>
         <span className={stl.messagesHero}>Messages</span>
         <ul className={stl.innerList}>
-          {mockList.map((item, index) => {
+          {messageList.map((item, index) => {
             return (
-              <li key={index} className={stl.contactItem}>
-                {item.subject}
+              <li
+                key={index}
+                className={stl.contactItem}
+                onClick={() => setSelectedItem(item)}
+              >
+                {item.issue}
               </li>
             );
           })}
@@ -116,20 +46,22 @@ const Issues = () => {
       </div>
       <div className={stl.rightBlock}>
         <div className={stl.blob}>
-          <span className={stl.title}>Email</span>
-          <span className={stl.blobValue}>romrom@gmail.com</span>
+          <span className={stl.title}>Issue</span>
+          <span className={stl.blobValue}>
+            {selectedItem && selectedItem.issue}
+          </span>
         </div>
         <div className={stl.blob}>
           <span className={stl.title}>URL</span>
           <span className={stl.blobValue}>
-            https://www.osrshelp.com/#/gearcalculator
+            {selectedItem && selectedItem.url}
           </span>
         </div>
 
         <div className={`${stl.blob} ${stl.messageBlob}`}>
-          <span className={stl.title}>Message</span>
+          <span className={stl.title}>Reproduce</span>
           <span className={stl.blobValue}>
-            Hello there, this is a message send just to display some content.
+            {selectedItem && selectedItem.steps}
           </span>
         </div>
       </div>
