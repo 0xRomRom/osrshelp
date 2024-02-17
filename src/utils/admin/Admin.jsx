@@ -25,7 +25,6 @@ const Admin = ({ setShowAdmin }) => {
   const { userEmail } = useContext(AuthContext);
 
   useEffect(() => {
-    console.log(userEmail);
     if (userEmail !== "vandersarroman@gmail.com") {
       setShowAdmin(false);
     }

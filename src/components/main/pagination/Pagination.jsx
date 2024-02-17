@@ -8,12 +8,13 @@ import supabase from "../../../utils/supabase/supabase";
 import { PaginationContext } from "../../../utils/paginationstate/PaginationProvider";
 
 const Pagination = ({ navTo, setShowAdmin }) => {
-  const { loggedInUser, setLoggedInUser, premiumUser } =
+  const { loggedInUser, setLoggedInUser, premiumUser, userEmail } =
     useContext(AuthContext);
   const { mainState, subState, setSubState } = useContext(PaginationContext);
   const [cachedSubstate, setCachedSubstate] = useState(null);
   const navigate = useNavigate();
   const [showSignup, setShowSignup] = useState(false);
+  const [toggleConfig, setToggleConfig] = useState(false);
 
   // Update cachedSubstate only when subState is initially set
   useEffect(() => {
@@ -57,6 +58,9 @@ const Pagination = ({ navTo, setShowAdmin }) => {
   };
 
   useEffect(() => {
+    if (userEmail === "vandersarroman@gmail.com") {
+      setToggleConfig(true);
+    }
     if (premiumUser === false) {
       setShowSignup(true);
     }
@@ -81,7 +85,10 @@ const Pagination = ({ navTo, setShowAdmin }) => {
         </div>
       </div>
       <div className={stl.rightBar}>
-        <button className={stl.config} onClick={handleAdminModal}>
+        <button
+          className={`${stl.config} ${toggleConfig ? stl.showConfig : ""}`}
+          onClick={handleAdminModal}
+        >
           Config
         </button>
         {showSignup && loggedInUser && (

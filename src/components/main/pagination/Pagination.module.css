@@ -98,6 +98,7 @@
   cursor: pointer;
   margin-right: 1rem;
   border: 1px solid transparent;
+  display: none;
 }
 
 .config:hover {
@@ -119,4 +120,12 @@
   transition: all 0.2s ease-in-out;
   user-select: none;
   font-weight: bold;
+}
+
+.showConfig {
+  display: block;
+}
+
+.rightBar {
+  display: flex;
 }
