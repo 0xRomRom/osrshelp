@@ -31,7 +31,22 @@ const Users = () => {
   }, [currentUserList.length]);
 
   const muteUser = async () => {
-    // const updatedUser = { ...selectedUser, muted: "true" };
+    const username = selectedUser.email;
+
+    try {
+      const { error } = await supabase
+        .from("users")
+        .update([{ muted: true }])
+        .eq("email", username);
+
+      if (error) {
+        console.log(error);
+        throw new Error(error);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+    console.log(selectedUser);
   };
 
   const upgradeUser = async () => {
