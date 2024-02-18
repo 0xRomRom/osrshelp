@@ -1,13 +1,18 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import stl from "./ChatColor.module.css";
+import { ChromePicker } from "react-color";
 
 const ChatColor = ({ userColor }) => {
-  const [savedColor, setSavedColor] = useState(userColor);
+  const [color, setColor] = useState("");
 
-  useEffect(() => {
-    console.log(userColor);
-  }, [userColor]);
+  const handleChangeComplete = (color) => {
+    console.log(color.hex);
+  };
+
+  const onChangeMethod = (color) => {
+    setColor(color.hex);
+  };
 
   return (
     <div className={stl.tile}>
@@ -23,7 +28,22 @@ const ChatColor = ({ userColor }) => {
             {userColor}
           </div>
         </div>
-        <div className={stl.newColor}></div>
+        <div className={stl.newColor}>
+          <span className={stl.currColor}>New Color</span>
+          <div className={stl.pickerWrapper}>
+            <div
+              className={stl.previewColor}
+              style={{ backgroundColor: color ? color : "" }}
+            ></div>
+            <ChromePicker
+              onChangeComplete={handleChangeComplete}
+              className={stl.sketchpicker}
+              onChange={onChangeMethod}
+              color={color}
+            />
+            <button className={stl.saveColor}>Save</button>
+          </div>
+        </div>
       </div>
     </div>
   );
