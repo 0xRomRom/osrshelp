@@ -77,15 +77,15 @@ const TotalUsers = () => {
         try {
           const { data, error } = await supabase
             .from("totalusers")
-            .select("totalcount")
-            .single();
+            .select("*")
+            .eq("id", 1);
 
           if (error) {
             throw error;
           }
 
           if (data) {
-            setTotalUsers(data.totalcount);
+            setTotalUsers(data[0].totalcount);
           }
         } catch (error) {
           console.error("Error fetching total count:", error.message);
@@ -98,19 +98,19 @@ const TotalUsers = () => {
   useEffect(() => {
     if (incrementDB && totalUsers > 0) {
       const updater = async () => {
+        const incremented = totalUsers + 1;
         try {
           const { data, error } = await supabase
             .from("totalusers")
-            .update({ totalcount: totalUsers + 1 })
-            .eq("id", 1) // Filter by id = 1
-            .single();
+            .update([{ totalcount: incremented }])
+            .eq("id", 1); // Filter by id = 1
 
           if (error) {
             throw error;
           }
 
           if (data) {
-            setTotalUsers(data.totalcount);
+            setTotalUsers(incremented);
           }
         } catch (error) {
           console.error("Error incrementing total count:", error.message);

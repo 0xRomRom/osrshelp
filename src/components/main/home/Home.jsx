@@ -22,11 +22,10 @@ const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
   const { storedUsername } = useContext(AuthContext);
   useEffect(() => {
-    console.log(storedUsername);
     if (storedUsername) {
       props.setPlayerName(storedUsername);
     }
-  }, [storedUsername]);
+  }, [storedUsername, props]);
 
   useEffect(() => {
     if (props.skills || props.skillsExp) {
