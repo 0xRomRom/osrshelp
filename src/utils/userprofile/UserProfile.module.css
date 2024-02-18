@@ -32,6 +32,9 @@
 
 .configGrid {
   padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
 }
 .graySpan {
   display: inline-block;

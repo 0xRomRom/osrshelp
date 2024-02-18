@@ -15,6 +15,7 @@ const Username = ({ setPlayerName }) => {
   const handleUpdateStoredName = async () => {
     setUpdated(false);
     setTyping(false);
+    if (storedName === storedUsername) return;
     try {
       const { error } = await supabase
         .from("users")
