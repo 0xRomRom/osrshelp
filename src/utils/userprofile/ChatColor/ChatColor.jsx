@@ -6,6 +6,7 @@ import supabase from "../../supabase/supabase";
 import { useEffect } from "react";
 import { AuthContext } from "../../authprovider/AuthProvider";
 import { useContext } from "react";
+import Spinner from "../../loadingspinner/Spinner";
 
 const ChatColor = ({ userColor, userEmail, setUpdatedColor, updatedColor }) => {
   const { setStoredColor } = useContext(AuthContext);
@@ -44,13 +45,20 @@ const ChatColor = ({ userColor, userEmail, setUpdatedColor, updatedColor }) => {
       <div className={stl.colorsWrapper}>
         <div className={stl.currentColor}>
           <span className={stl.currColor}>Current Color</span>
-          <div
-            className={stl.filledColor}
-            style={{ backgroundColor: userColor ? userColor : "" }}
-            onClick={() => navigator.clipboard.writeText(userColor)}
-          >
-            {userColor}
-          </div>
+          {!userColor && (
+            <div className={stl.smolSpinner}>
+              <Spinner />
+            </div>
+          )}
+          {userColor && (
+            <div
+              className={stl.filledColor}
+              style={{ backgroundColor: userColor ? userColor : "" }}
+              onClick={() => navigator.clipboard.writeText(userColor)}
+            >
+              {userColor}
+            </div>
+          )}
         </div>
         <div className={stl.newColor}>
           <span className={stl.currColor}>New Color</span>

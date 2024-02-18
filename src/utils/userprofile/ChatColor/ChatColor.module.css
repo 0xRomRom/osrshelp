@@ -128,3 +128,7 @@
 .showColorPicker:hover {
   color: white;
 }
+
+.smolSpinner {
+  transform: scale(0.7) !important;
+}
