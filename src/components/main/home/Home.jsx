@@ -68,6 +68,7 @@ const Home = (props) => {
     if (storedUsername && !fetched) {
       try {
         const fetchers = async () => {
+          props.setPlayerName(storedUsername);
           const filteredUser = storedUsername?.replaceAll(" ", "_");
           const obj = { user: filteredUser };
           const fetcher = await fetch(
