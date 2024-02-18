@@ -4,7 +4,7 @@ import { ChromePicker } from "react-color";
 import { FaCog } from "react-icons/fa";
 import supabase from "../../supabase/supabase";
 
-const ChatColor = ({ userColor, userEmail }) => {
+const ChatColor = ({ userColor, userEmail, setUpdatedColor }) => {
   const [color, setColor] = useState("");
   const [pickingColor, setPickingColor] = useState(false);
 
@@ -23,6 +23,7 @@ const ChatColor = ({ userColor, userEmail }) => {
         throw new Error(error);
       }
       setPickingColor(false);
+      setUpdatedColor(true);
     } catch (err) {
       console.error(err);
     }

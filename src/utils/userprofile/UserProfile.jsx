@@ -14,6 +14,7 @@ import { useContext } from "react";
 const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
   const { userEmail } = useContext(AuthContext);
   const [userStoredProfile, setUserStoredProfile] = useState({});
+  const [updatedColor, setUpdatedColor] = useState(false);
 
   const fetchUserData = async () => {
     try {
@@ -26,6 +27,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
         throw new Error(error);
       }
       const res = data[0];
+      console.log(res);
 
       setUserStoredProfile(res);
     } catch (err) {
@@ -34,8 +36,11 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
   };
 
   useEffect(() => {
-    fetchUserData();
-  }, [userStoredProfile]);
+    if (Object.entries(userStoredProfile).length === 0 || updatedColor) {
+      fetchUserData();
+      setUpdatedColor(false);
+    }
+  }, [userStoredProfile, updatedColor]);
 
   return (
     <div className={stl.userprofile} onClick={() => setShowUserProfile(false)}>
@@ -51,8 +56,9 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
               <ChatColor
                 userColor={userStoredProfile.usercolor}
                 userEmail={userEmail}
+                setUpdatedColor={setUpdatedColor}
               />
-              <AccountStatus />
+              <AccountStatus isRuneUser={userStoredProfile} />
             </Masonry>
           </ResponsiveMasonry>
         </div>

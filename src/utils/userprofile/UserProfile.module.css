@@ -27,11 +27,12 @@
   width: 100%;
   display: block;
   font-size: 14px;
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
 }
 
 .configGrid {
   padding: 1rem;
+  padding-top: 0.5rem;
   display: flex;
   gap: 1rem;
   width: 100%;
