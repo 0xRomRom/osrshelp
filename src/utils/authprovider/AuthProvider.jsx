@@ -9,6 +9,7 @@ const AuthProvider = ({ children }) => {
   const [userID, setUserID] = useState(null);
   const [userEmail, setUserEmail] = useState(null);
   const [storedUsername, setStoredUsername] = useState(null);
+  const [storedColor, setStoredColor] = useState("#808080");
 
   const getPremium = useCallback(async (uid) => {
     const { data } = await supabase
@@ -16,8 +17,10 @@ const AuthProvider = ({ children }) => {
       .select("*")
       .eq("uid", uid)
       .single();
+
     if (data) {
       setStoredUsername(data.username);
+      setStoredColor(data.usercolor);
     }
     if (data?.premium) {
       setPremiumUser(true);
@@ -59,6 +62,8 @@ const AuthProvider = ({ children }) => {
         userEmail,
         storedUsername,
         setStoredUsername,
+        storedColor,
+        setStoredColor,
       }}
     >
       {children}

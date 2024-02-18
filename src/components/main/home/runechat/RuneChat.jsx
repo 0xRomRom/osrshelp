@@ -8,7 +8,8 @@ import Spinner from "../../../../utils/loadingspinner/Spinner";
 
 const RuneChat = () => {
   const outputBottom = useRef(null);
-  const { userID, premiumUser } = useContext(AuthContext);
+  const { userID, premiumUser, storedColor, storedUsername } =
+    useContext(AuthContext);
   const [userMessage, setUserMessage] = useState("");
   const [inserted, setInserted] = useState(false);
   const [currentChat, setCurrentChat] = useState([]);
@@ -30,10 +31,10 @@ const RuneChat = () => {
       const { error } = await supabase.from("runechat").insert([
         {
           uid: userID,
-          username: "King Rom II",
+          username: storedUsername,
           chatmsg: userMessage,
           timestamp: now,
-          playercolor: "#0084ff",
+          playercolor: storedColor,
         },
       ]);
 
