@@ -1,11 +1,29 @@
 import stl from "./AccountStatus.module.css";
+import { useNavigate } from "react-router-dom";
 
-const AccountStatus = ({ isRuneUser }) => {
+const AccountStatus = ({ isRuneUser, setShowUserProfile }) => {
+  const navigate = useNavigate();
+
+  const toCheckout = () => {
+    setShowUserProfile(false);
+    navigate("/checkout");
+  };
+
   return (
     <div className={stl.tile}>
       <span className={stl.status}>Account Status</span>
 
-      <span>{isRuneUser ? "Rune User" : "Upgrade"}</span>
+      <div className={stl.statusBlock}>
+        {isRuneUser && <span className={stl.runeUserSpan}>Rune User</span>}
+        {!isRuneUser && (
+          <div className={stl.upgradeBox}>
+            <span className={stl.freeUserSpan}>Free user</span>
+            <button className={stl.upgradeCta} onClick={toCheckout}>
+              Upgrade
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

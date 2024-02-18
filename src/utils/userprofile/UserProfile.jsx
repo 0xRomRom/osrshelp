@@ -60,7 +60,10 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
                 setUpdatedColor={setUpdatedColor}
                 updatedColor={updatedColor}
               />
-              <AccountStatus isRuneUser={userStoredProfile.premium} />
+              <AccountStatus
+                isRuneUser={userStoredProfile.premium}
+                setShowUserProfile={setShowUserProfile}
+              />
             </Masonry>
           </ResponsiveMasonry>
         </div>
