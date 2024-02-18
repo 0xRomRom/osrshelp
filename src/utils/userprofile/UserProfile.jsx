@@ -28,7 +28,6 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
         throw new Error(error);
       }
       const res = data[0];
-      console.log(res);
 
       setUserStoredProfile(res);
     } catch (err) {
