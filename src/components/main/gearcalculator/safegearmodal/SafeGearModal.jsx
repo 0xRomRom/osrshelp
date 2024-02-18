@@ -16,8 +16,8 @@ const SafeGearModal = ({
   };
 
   return (
-    <div className={stl.gearBackdrop}>
-      <div className={stl.modal}>
+    <div className={stl.gearBackdrop} onClick={() => setAddingGear(false)}>
+      <div className={stl.modal} onClick={(e) => e.stopPropagation()}>
         <div className={stl.closeRow}>
           <FaLongArrowAltLeft className={stl.closeBtn} onClick={closeModal} />
         </div>

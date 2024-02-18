@@ -3,16 +3,18 @@ import { FaLock } from "react-icons/fa";
 import { AuthContext } from "../authprovider/AuthProvider";
 import { useContext } from "react";
 import { useEffect } from "react";
+import { useState } from "react";
 
 const UserProfile = ({ setShowUserProfile }) => {
   const { storedUsername } = useContext(AuthContext);
+  const [storedName, setStoredName] = useState(storedUsername);
   useEffect(() => {
     console.log(storedUsername);
   }, [storedUsername]);
 
   return (
-    <div className={stl.userprofile}>
-      <div className={stl.modal}>
+    <div className={stl.userprofile} onClick={() => setShowUserProfile(false)}>
+      <div className={stl.modal} onClick={(e) => e.stopPropagation()}>
         <span className={stl.hero}>User Profile</span>
         <div className={stl.configGrid}>
           <div className={stl.tile}>
@@ -22,6 +24,8 @@ const UserProfile = ({ setShowUserProfile }) => {
                 type="text"
                 className={stl.playerInput}
                 placeholder="WWWWWWWWWWWW"
+                value={storedName}
+                onChange={(e) => setStoredName(e.target.value)}
               />
               <button className={stl.saveCta}>
                 <FaLock />
