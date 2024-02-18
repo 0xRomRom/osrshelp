@@ -2,6 +2,7 @@ import stl from "./UserProfile.module.css";
 import Username from "./Username/Username";
 import ChatColor from "./ChatColor/ChatColor";
 import AccountStatus from "./acountstatus/AccountStatus";
+import Donations from "./donations/Donations";
 import { ResponsiveMasonry } from "react-responsive-masonry";
 import Masonry from "react-responsive-masonry";
 
@@ -63,6 +64,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
                 isRuneUser={userStoredProfile.premium}
                 setShowUserProfile={setShowUserProfile}
               />
+              <Donations setShowUserProfile={setShowUserProfile} />
             </Masonry>
           </ResponsiveMasonry>
         </div>
