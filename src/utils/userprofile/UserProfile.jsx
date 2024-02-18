@@ -10,13 +10,14 @@ import { useState } from "react";
 import supabase from "../supabase/supabase";
 import { AuthContext } from "../authprovider/AuthProvider";
 import { useContext } from "react";
+import { useCallback } from "react";
 
 const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
   const { userEmail } = useContext(AuthContext);
   const [userStoredProfile, setUserStoredProfile] = useState({});
   const [updatedColor, setUpdatedColor] = useState(false);
 
-  const fetchUserData = async () => {
+  const fetchUserData = useCallback(async () => {
     try {
       const { data, error } = await supabase
         .from("users")
@@ -33,14 +34,14 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
     } catch (err) {
       console.error(err);
     }
-  };
+  }, [userEmail]);
 
   useEffect(() => {
     if (Object.entries(userStoredProfile).length === 0 || updatedColor) {
       fetchUserData();
       setUpdatedColor(false);
     }
-  }, [userStoredProfile, updatedColor]);
+  }, [userStoredProfile, updatedColor, fetchUserData]);
 
   return (
     <div className={stl.userprofile} onClick={() => setShowUserProfile(false)}>
@@ -57,8 +58,9 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
                 userColor={userStoredProfile.usercolor}
                 userEmail={userEmail}
                 setUpdatedColor={setUpdatedColor}
+                updatedColor={updatedColor}
               />
-              <AccountStatus isRuneUser={userStoredProfile} />
+              <AccountStatus isRuneUser={userStoredProfile.premium} />
             </Masonry>
           </ResponsiveMasonry>
         </div>

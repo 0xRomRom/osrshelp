@@ -3,14 +3,19 @@ import stl from "./ChatColor.module.css";
 import { ChromePicker } from "react-color";
 import { FaCog } from "react-icons/fa";
 import supabase from "../../supabase/supabase";
+import { useEffect } from "react";
 
-const ChatColor = ({ userColor, userEmail, setUpdatedColor }) => {
-  const [color, setColor] = useState("");
+const ChatColor = ({ userColor, userEmail, setUpdatedColor, updatedColor }) => {
+  const [color, setColor] = useState(null);
   const [pickingColor, setPickingColor] = useState(false);
 
   const onChangeMethod = (color) => {
     setColor(color.hex);
   };
+
+  useEffect(() => {
+    setColor(userColor);
+  }, [updatedColor, userColor]);
 
   const handleSaveColor = async () => {
     try {
@@ -53,7 +58,7 @@ const ChatColor = ({ userColor, userEmail, setUpdatedColor }) => {
             <FaCog />
           </button>
 
-          {pickingColor && (
+          {pickingColor && userColor && (
             <div className={stl.pickerWrapper}>
               <div
                 className={stl.previewColor}
@@ -64,14 +69,14 @@ const ChatColor = ({ userColor, userEmail, setUpdatedColor }) => {
                 onChange={onChangeMethod}
                 color={color}
               />
+              <button className={stl.saveColor} onClick={handleSaveColor}>
+                Save
+              </button>
               <button
                 className={stl.saveColor}
                 onClick={() => setPickingColor(false)}
               >
                 Cancel
-              </button>
-              <button className={stl.saveColor} onClick={handleSaveColor}>
-                Save
               </button>
             </div>
           )}
