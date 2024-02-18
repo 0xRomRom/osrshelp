@@ -27,7 +27,7 @@ const Blog = ({ setBlogPost }) => {
     if (currentBlogs.length === 0) {
       blogsFetcher();
     }
-  }, []);
+  }, [currentBlogs.length]);
 
   const handleBlogPost = (blog) => {
     setBlogPost(blog);

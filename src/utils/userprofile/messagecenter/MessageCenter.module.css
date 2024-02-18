@@ -1,0 +1,17 @@
+.tile {
+  background-color: var(--dark-bg);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border);
+  color: gray;
+  height: 9rem;
+}
+
+.graySpan {
+  padding-bottom: 0.5rem;
+  text-align: center;
+  user-select: none;
+}

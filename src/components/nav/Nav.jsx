@@ -17,14 +17,12 @@ import { PaginationContext } from "../../utils/paginationstate/PaginationProvide
 import mainlogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
 import { IoIosArrowBack } from "react-icons/io";
 import { RiTwitterXLine } from "react-icons/ri";
-import { AuthContext } from "../../utils/authprovider/AuthProvider";
 
 const Nav = (props) => {
   const location = useLocation();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("/");
   const { setMainState, setSubState } = useContext(PaginationContext);
-  const { storedUsername } = useContext(AuthContext);
   const [navFolded, setNavFolded] = useState(false);
 
   const path = location.pathname;

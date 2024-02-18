@@ -1,13 +1,21 @@
 import stl from "./Donations.module.css";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../authprovider/AuthProvider";
+import { useContext } from "react";
+import { useEffect } from "react";
 
 const Donations = ({ setShowUserProfile }) => {
+  const { lobsterDonateCount, ethereumDonateCount } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleDonateEther = () => {
     setShowUserProfile(false);
     navigate("/supportosrshelp");
   };
+
+  useEffect(() => {
+    console.log(lobsterDonateCount);
+  }, [lobsterDonateCount]);
 
   return (
     <div className={stl.tile}>
@@ -24,7 +32,8 @@ const Donations = ({ setShowUserProfile }) => {
             alt="Lobster"
             className={stl.lobstericon}
           />
-          <span className={stl.donateCount}>x 0</span>
+
+          <span className={stl.donateCount}>x {lobsterDonateCount}</span>
         </div>
 
         <div
@@ -36,7 +45,7 @@ const Donations = ({ setShowUserProfile }) => {
             alt="Ethereum"
             className={stl.ethericon}
           />
-          <span className={stl.ethCount}>0 ETH</span>
+          <span className={stl.ethCount}>{ethereumDonateCount} ETH</span>
         </div>
       </div>
     </div>
