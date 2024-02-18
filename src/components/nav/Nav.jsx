@@ -24,7 +24,7 @@ const Nav = (props) => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("/");
   const { setMainState, setSubState } = useContext(PaginationContext);
-  const { storedUsername, userID } = useContext(AuthContext);
+  const { storedUsername } = useContext(AuthContext);
   const [navFolded, setNavFolded] = useState(false);
 
   const path = location.pathname;
@@ -109,13 +109,13 @@ const Nav = (props) => {
       <div
         className={stl.loggedUser}
         style={{
-          opacity: props.playerName ? "1" : "0",
+          opacity: storedUsername ? "1" : "0",
         }}
       >
         {!navFolded && (
           <>
             <div className={stl.blueDot}></div>
-            <span className={stl.storedUsername}>{props.playerName}</span>
+            <span className={stl.loggedInUser}>{storedUsername}</span>
           </>
         )}
       </div>

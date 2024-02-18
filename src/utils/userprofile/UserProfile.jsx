@@ -11,6 +11,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
   const [updated, setUpdated] = useState(false);
 
   const handleUpdateStoredName = async () => {
+    setUpdated(false);
     try {
       const { error } = await supabase
         .from("users")
