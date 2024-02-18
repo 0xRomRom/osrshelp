@@ -109,13 +109,13 @@ const Nav = (props) => {
       <div
         className={stl.loggedUser}
         style={{
-          opacity: storedUsername ? "1" : "0",
+          opacity: props.playerName ? "1" : "0",
         }}
       >
         {!navFolded && (
           <>
             <div className={stl.blueDot}></div>
-            <span className={stl.loggedInUser}>{storedUsername}</span>
+            <span className={stl.loggedInUser}>{props.playerName}</span>
           </>
         )}
       </div>
