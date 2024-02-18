@@ -5,11 +5,14 @@ import { useContext } from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 
-const UserProfile = ({ setShowUserProfile }) => {
+const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
   const { storedUsername } = useContext(AuthContext);
   const [storedName, setStoredName] = useState(storedUsername);
   useEffect(() => {
     console.log(storedUsername);
+    if (storedUsername) {
+      setPlayerName(storedUsername);
+    }
   }, [storedUsername]);
 
   return (

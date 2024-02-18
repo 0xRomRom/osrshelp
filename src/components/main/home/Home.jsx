@@ -15,8 +15,18 @@ import MainCanvas from "./canvas/MainCanvas";
 import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
+import { AuthContext } from "../../../utils/authprovider/AuthProvider";
+import { useContext } from "react";
+
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
+  const { storedUsername } = useContext(AuthContext);
+  useEffect(() => {
+    console.log(storedUsername);
+    if (storedUsername) {
+      props.setPlayerName(storedUsername);
+    }
+  }, [storedUsername]);
 
   useEffect(() => {
     if (props.skills || props.skillsExp) {

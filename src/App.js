@@ -52,7 +52,10 @@ const App = () => {
           <div className={stl.app}>
             {showAdmin && <Admin setShowAdmin={setShowAdmin} />}
             {showUserProfile && (
-              <UserProfile setShowUserProfile={setShowUserProfile} />
+              <UserProfile
+                setShowUserProfile={setShowUserProfile}
+                setPlayerName={setPlayerName}
+              />
             )}
             <CookieBanner />
             <Routes>
