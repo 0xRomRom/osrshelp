@@ -1,6 +1,10 @@
 import stl from "./UserProfile.module.css";
 import Username from "./Username/Username";
 import ChatColor from "./ChatColor/ChatColor";
+import AccountStatus from "./acountstatus/AccountStatus";
+import { ResponsiveMasonry } from "react-responsive-masonry";
+import Masonry from "react-responsive-masonry";
+
 import { useEffect } from "react";
 import { useState } from "react";
 import supabase from "../supabase/supabase";
@@ -30,9 +34,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
   };
 
   useEffect(() => {
-    if (Object.entries(userStoredProfile).length === 0) {
-      fetchUserData();
-    }
+    fetchUserData();
   }, [userStoredProfile]);
 
   return (
@@ -40,11 +42,19 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
       <div className={stl.modal} onClick={(e) => e.stopPropagation()}>
         <span className={stl.hero}>User Profile</span>
         <div className={stl.configGrid}>
-          <Username setPlayerName={setPlayerName} />
-          <ChatColor
-            userColor={userStoredProfile.usercolor}
-            userEmail={userEmail}
-          />
+          <ResponsiveMasonry
+            className={stl.masonry}
+            columnsCountBreakPoints={{ 500: 2 }}
+          >
+            <Masonry className={stl.masonGap} gutter="15px">
+              <Username setPlayerName={setPlayerName} />
+              <ChatColor
+                userColor={userStoredProfile.usercolor}
+                userEmail={userEmail}
+              />
+              <AccountStatus />
+            </Masonry>
+          </ResponsiveMasonry>
         </div>
       </div>
     </div>

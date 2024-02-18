@@ -22,6 +22,7 @@ const ChatColor = ({ userColor, userEmail }) => {
       if (error) {
         throw new Error(error);
       }
+      setPickingColor(false);
     } catch (err) {
       console.error(err);
     }
@@ -29,7 +30,7 @@ const ChatColor = ({ userColor, userEmail }) => {
 
   return (
     <div className={stl.tile}>
-      <span className={stl.graySpan}>Chatcolor</span>
+      <span className={stl.graySpan}>Chat color</span>
       <div className={stl.colorsWrapper}>
         <div className={stl.currentColor}>
           <span className={stl.currColor}>Current Color</span>

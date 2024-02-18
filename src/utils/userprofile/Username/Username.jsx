@@ -43,7 +43,7 @@ const Username = ({ setPlayerName }) => {
 
   return (
     <div className={stl.tile}>
-      <span className={stl.graySpan}>Playername</span>
+      <span className={stl.graySpan}>Player name</span>
       <div className={stl.wrapper}>
         <input
           type="text"

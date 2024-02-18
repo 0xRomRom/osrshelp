@@ -35,7 +35,19 @@
   display: flex;
   gap: 1rem;
   width: 100%;
+  height: 100%;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
 }
 .graySpan {
   display: inline-block;
+}
+
+.masonGap {
+  position: relative;
+  margin: 0;
+}
+
+.masonry {
+  width: 100%;
 }
