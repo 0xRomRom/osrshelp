@@ -22,8 +22,6 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
         throw new Error(error);
       }
       const res = data[0];
-      const sliced = res.usercolor.slice(1, -1);
-      res.usercolor = sliced;
 
       setUserStoredProfile(res);
     } catch (err) {
@@ -43,7 +41,10 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
         <span className={stl.hero}>User Profile</span>
         <div className={stl.configGrid}>
           <Username setPlayerName={setPlayerName} />
-          <ChatColor userColor={userStoredProfile.usercolor} />
+          <ChatColor
+            userColor={userStoredProfile.usercolor}
+            userEmail={userEmail}
+          />
         </div>
       </div>
     </div>
