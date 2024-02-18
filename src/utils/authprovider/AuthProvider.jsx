@@ -58,6 +58,7 @@ const AuthProvider = ({ children }) => {
         userID,
         userEmail,
         storedUsername,
+        setStoredUsername,
       }}
     >
       {children}

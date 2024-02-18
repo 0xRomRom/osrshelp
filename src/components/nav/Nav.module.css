@@ -252,3 +252,10 @@
   flex-direction: column;
   bottom: 3rem;
 }
+
+.storedUsername {
+  color: rgb(208, 208, 208);
+  padding-left: 0.5rem;
+  font-weight: bold;
+  user-select: none;
+}

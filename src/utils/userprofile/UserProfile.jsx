@@ -6,7 +6,7 @@ import { useState } from "react";
 import supabase from "../supabase/supabase";
 
 const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
-  const { storedUsername, userID } = useContext(AuthContext);
+  const { setStoredUsername, storedUsername, userID } = useContext(AuthContext);
   const [storedName, setStoredName] = useState(storedUsername);
   const [updated, setUpdated] = useState(false);
 
@@ -18,6 +18,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
         .eq("uid", userID);
       if (!error) {
         setPlayerName(storedName);
+        setStoredUsername(storedName);
         setUpdated(true);
       }
     } catch (err) {
