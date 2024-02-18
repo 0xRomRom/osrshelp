@@ -28,7 +28,7 @@ const Admin = ({ setShowAdmin }) => {
     if (userEmail !== "vandersarroman@gmail.com") {
       setShowAdmin(false);
     }
-  }, [userEmail]);
+  }, [userEmail, setShowAdmin]);
 
   const [activeBtn, setActiveBtn] = useState("Users");
   return (

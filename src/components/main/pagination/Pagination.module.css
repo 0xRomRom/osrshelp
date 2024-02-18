@@ -129,3 +129,30 @@
 .rightBar {
   display: flex;
 }
+
+.cogBtn {
+  /* width: 89px; */
+  height: 36px;
+  border-radius: 0.375rem;
+  background-color: var(--blue-main);
+  color: black;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: Inter;
+  padding: 0px 20px;
+  background-color: rgb(31, 38, 53);
+  border: 1px solid rgb(67, 67, 67);
+  margin-right: 1rem;
+}
+
+.cogBtn:hover {
+  background-color: var(--blue-focus);
+}
+
+.cogBtn:active {
+  background-color: var(--blue-active);
+}

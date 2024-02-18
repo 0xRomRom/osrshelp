@@ -29,7 +29,7 @@ const CheckoutForm = () => {
         confirmParams: {
           // Make sure to change this to your payment completion page
           // return_url: `https://osrshelp.netlify.app/#/successful-payment`,
-          return_url: `http://localhost:3000/#/successful-payment`,
+          return_url: `${window.location.origin}#/successful-payment`,
         },
       });
       console.log(error);

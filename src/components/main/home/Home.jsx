@@ -27,7 +27,10 @@ const Home = (props) => {
   return (
     <>
       <TopAdBar />
-      <Pagination setShowAdmin={props.setShowAdmin} />
+      <Pagination
+        setShowAdmin={props.setShowAdmin}
+        setShowUserProfile={props.setShowUserProfile}
+      />
       <div className={stl.modal}>
         <div className={stl.imageBox}>
           <h1 className={stl.hero}>OSRS Help</h1>

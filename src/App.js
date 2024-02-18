@@ -34,6 +34,7 @@ import InventoryBuilder from "./components/main/inventorybuilder/InventoryBuilde
 import CookieBanner from "./utils/cookiebanner/CookieBanner";
 import Blog from "./components/main/blog/Blog";
 import Admin from "./utils/admin/Admin";
+import UserProfile from "./utils/userprofile/UserProfile";
 
 const App = () => {
   const [skills, setSkills] = useState(null);
@@ -42,6 +43,7 @@ const App = () => {
   const [moneyMaker, setMoneyMaker] = useState(null);
   const [blogPost, setBlogPost] = useState(null);
   const [showAdmin, setShowAdmin] = useState(false);
+  const [showUserProfile, setShowUserProfile] = useState(false);
 
   return (
     <>
@@ -49,6 +51,9 @@ const App = () => {
         <PaginationProvider>
           <div className={stl.app}>
             {showAdmin && <Admin setShowAdmin={setShowAdmin} />}
+            {showUserProfile && (
+              <UserProfile setShowUserProfile={setShowUserProfile} />
+            )}
             <CookieBanner />
             <Routes>
               <Route path="/reportissue" element={<ReportIssue />} />
@@ -73,6 +78,7 @@ const App = () => {
                       playerName={playerName}
                       setBlogPost={setBlogPost}
                       setShowAdmin={setShowAdmin}
+                      setShowUserProfile={setShowUserProfile}
                     />
                   </MainLayout>
                 }

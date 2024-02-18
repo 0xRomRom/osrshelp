@@ -6,8 +6,9 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import supabase from "../../../utils/supabase/supabase";
 import { PaginationContext } from "../../../utils/paginationstate/PaginationProvider";
+import { FaCog } from "react-icons/fa";
 
-const Pagination = ({ navTo, setShowAdmin }) => {
+const Pagination = ({ navTo, setShowAdmin, setShowUserProfile }) => {
   const { loggedInUser, setLoggedInUser, premiumUser, userEmail } =
     useContext(AuthContext);
   const { mainState, subState, setSubState } = useContext(PaginationContext);
@@ -64,7 +65,11 @@ const Pagination = ({ navTo, setShowAdmin }) => {
     if (premiumUser === false) {
       setShowSignup(true);
     }
-  }, [premiumUser]);
+  }, [premiumUser, userEmail]);
+
+  const handleUserProfile = () => {
+    setShowUserProfile(true);
+  };
 
   return (
     <div className={stl.paginationBar}>
@@ -91,6 +96,12 @@ const Pagination = ({ navTo, setShowAdmin }) => {
         >
           Config
         </button>
+        {loggedInUser && (
+          <button className={stl.cogBtn} onClick={handleUserProfile}>
+            <FaCog />
+          </button>
+        )}
+
         {showSignup && loggedInUser && (
           <button className={stl.upgradeCta} onClick={handleCheckout}>
             Upgrade
