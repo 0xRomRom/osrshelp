@@ -8,13 +8,17 @@ const AuthProvider = ({ children }) => {
   const [premiumUser, setPremiumUser] = useState(null);
   const [userID, setUserID] = useState(null);
   const [userEmail, setUserEmail] = useState(null);
+  const [storedUsername, setStoredUsername] = useState(null);
 
   const getPremium = useCallback(async (uid) => {
     const { data } = await supabase
       .from("users")
-      .select("premium")
+      .select("*")
       .eq("uid", uid)
       .single();
+    if (data) {
+      setStoredUsername(data.username);
+    }
     if (data?.premium) {
       setPremiumUser(true);
     } else {
@@ -47,7 +51,14 @@ const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ loggedInUser, setLoggedInUser, premiumUser, userID, userEmail }}
+      value={{
+        loggedInUser,
+        setLoggedInUser,
+        premiumUser,
+        userID,
+        userEmail,
+        storedUsername,
+      }}
     >
       {children}
     </AuthContext.Provider>
