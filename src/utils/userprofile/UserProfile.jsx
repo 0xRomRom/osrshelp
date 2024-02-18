@@ -21,16 +21,21 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
       if (error) {
         throw new Error(error);
       }
+      const res = data[0];
+      const sliced = res.usercolor.slice(1, -1);
+      res.usercolor = sliced;
 
-      console.log(data[0]);
+      setUserStoredProfile(res);
     } catch (err) {
       console.error(err);
     }
   };
 
   useEffect(() => {
-    fetchUserData();
-  }, []);
+    if (Object.entries(userStoredProfile).length === 0) {
+      fetchUserData();
+    }
+  }, [userStoredProfile]);
 
   return (
     <div className={stl.userprofile} onClick={() => setShowUserProfile(false)}>
@@ -38,7 +43,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
         <span className={stl.hero}>User Profile</span>
         <div className={stl.configGrid}>
           <Username setPlayerName={setPlayerName} />
-          <ChatColor />
+          <ChatColor userColor={userStoredProfile.usercolor} />
         </div>
       </div>
     </div>
