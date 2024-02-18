@@ -17,10 +17,6 @@ const UserBox = (props) => {
     }
   }, [props.playerName, props]);
 
-  useEffect(() => {
-    console.log(props);
-  }, [props]);
-
   return (
     <div className={stl.userbox}>
       <div className={stl.rightblock}>

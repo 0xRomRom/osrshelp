@@ -1,5 +1,6 @@
 import stl from "./UserProfile.module.css";
 import { FaLock } from "react-icons/fa";
+import { FaUnlock } from "react-icons/fa";
 import { AuthContext } from "../authprovider/AuthProvider";
 import { useContext } from "react";
 import { useState } from "react";
@@ -9,9 +10,11 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
   const { setStoredUsername, storedUsername, userID } = useContext(AuthContext);
   const [storedName, setStoredName] = useState(storedUsername);
   const [updated, setUpdated] = useState(false);
+  const [typing, setTyping] = useState(false);
 
   const handleUpdateStoredName = async () => {
     setUpdated(false);
+    setTyping(false);
     try {
       const { error } = await supabase
         .from("users")
@@ -31,6 +34,12 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
     }, 5000);
   };
 
+  const updatingStoredName = (e) => {
+    setStoredName(e.target.value);
+    setTyping(true);
+    setUpdated(false);
+  };
+
   return (
     <div className={stl.userprofile} onClick={() => setShowUserProfile(false)}>
       <div className={stl.modal} onClick={(e) => e.stopPropagation()}>
@@ -42,15 +51,15 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
               <input
                 type="text"
                 className={stl.playerInput}
-                placeholder="WWWWWWWWWWWW"
                 value={storedName}
-                onChange={(e) => setStoredName(e.target.value)}
+                onChange={(e) => updatingStoredName(e)}
               />
               <button
                 className={`${stl.saveCta} ${updated ? stl.glow : ""}`}
                 onClick={handleUpdateStoredName}
               >
-                <FaLock />
+                {!typing && <FaLock />}
+                {typing && <FaUnlock />}
               </button>
             </div>
           </div>
