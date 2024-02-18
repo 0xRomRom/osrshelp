@@ -3,10 +3,31 @@ import { FaLock } from "react-icons/fa";
 import { AuthContext } from "../authprovider/AuthProvider";
 import { useContext } from "react";
 import { useState } from "react";
+import supabase from "../supabase/supabase";
 
 const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
-  const { storedUsername } = useContext(AuthContext);
+  const { storedUsername, userID } = useContext(AuthContext);
   const [storedName, setStoredName] = useState(storedUsername);
+  const [updated, setUpdated] = useState(false);
+
+  const handleUpdateStoredName = async () => {
+    try {
+      const { error } = await supabase
+        .from("users")
+        .update([{ username: storedName }])
+        .eq("uid", userID);
+      if (!error) {
+        setPlayerName(storedName);
+        setUpdated(true);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+
+    setTimeout(() => {
+      setUpdated(false);
+    }, 5000);
+  };
 
   return (
     <div className={stl.userprofile} onClick={() => setShowUserProfile(false)}>
@@ -23,7 +44,10 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
                 value={storedName}
                 onChange={(e) => setStoredName(e.target.value)}
               />
-              <button className={stl.saveCta}>
+              <button
+                className={`${stl.saveCta} ${updated ? stl.glow : ""}`}
+                onClick={handleUpdateStoredName}
+              >
                 <FaLock />
               </button>
             </div>
