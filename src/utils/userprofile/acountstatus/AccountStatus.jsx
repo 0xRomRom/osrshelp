@@ -15,7 +15,7 @@ const AccountStatus = ({ isRuneUser, setShowUserProfile }) => {
       <span className={stl.status}>Account Status</span>
 
       <div className={stl.statusBlock}>
-        {!isRuneUser && <Spinner />}
+        {!isRuneUser && isRuneUser !== false && <Spinner />}
         {isRuneUser === true && (
           <span className={stl.runeUserSpan}>Rune User</span>
         )}
