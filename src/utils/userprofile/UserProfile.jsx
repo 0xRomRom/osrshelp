@@ -3,7 +3,7 @@ import Username from "./Username/Username";
 import ChatColor from "./ChatColor/ChatColor";
 import AccountStatus from "./acountstatus/AccountStatus";
 import Donations from "./donations/Donations";
-import MessageCenter from "./messagecenter/MessageCenter";
+import RuneCredits from "./runecredits/RuneCredits";
 
 import { ResponsiveMasonry } from "react-responsive-masonry";
 import Masonry from "react-responsive-masonry";
@@ -67,7 +67,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
                 setShowUserProfile={setShowUserProfile}
               />
               <Donations setShowUserProfile={setShowUserProfile} />
-              <MessageCenter />
+              <RuneCredits />
             </Masonry>
           </ResponsiveMasonry>
         </div>
