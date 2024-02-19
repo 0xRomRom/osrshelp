@@ -12,6 +12,7 @@ const AuthProvider = ({ children }) => {
   const [storedColor, setStoredColor] = useState("#808080");
   const [lobsterDonateCount, setLobsterDonateCount] = useState(null);
   const [ethereumDonateCount, setEthereumDonateCount] = useState(null);
+  const [runeCredits, setRuneCredits] = useState(null);
 
   const getPremium = useCallback(async (uid) => {
     const { data } = await supabase
@@ -26,6 +27,7 @@ const AuthProvider = ({ children }) => {
       console.log(data);
       setEthereumDonateCount(data.etherdonate);
       setLobsterDonateCount(data.lobsterdonate);
+      setRuneCredits(data.runecredits);
     }
     if (data?.premium) {
       setPremiumUser(true);
@@ -71,6 +73,7 @@ const AuthProvider = ({ children }) => {
         setStoredColor,
         lobsterDonateCount,
         ethereumDonateCount,
+        runeCredits,
       }}
     >
       {children}
