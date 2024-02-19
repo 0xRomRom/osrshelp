@@ -29,6 +29,8 @@ const Home = (props) => {
   const updateSkills = useCallback(
     (data) => {
       let currentStats = {};
+      console.log(data);
+
       const skillsArray = data.split(/\n/);
 
       let filteredSkills = [];
@@ -66,9 +68,8 @@ const Home = (props) => {
 
   useEffect(() => {
     if (storedUsername && !fetched) {
-      try {
-        const fetchers = async () => {
-          props.setPlayerName(storedUsername);
+      const fetchers = async () => {
+        try {
           const filteredUser = storedUsername?.replaceAll(" ", "_");
           const obj = { user: filteredUser };
           const fetcher = await fetch(
@@ -83,15 +84,21 @@ const Home = (props) => {
           );
           const data = await fetcher.json();
 
+          if (data.error) {
+            throw new Error(data.error);
+          }
+
+          console.log(data);
+          props.setPlayerName(storedUsername);
           updateSkills(data.result);
           updateSkillsExp(data.result);
           setSkillsFetched(true);
           setFetched(true);
-        };
-        fetchers();
-      } catch (err) {
-        console.error(err);
-      }
+        } catch (err) {
+          console.error(err);
+        }
+      };
+      fetchers();
     }
   }, [storedUsername, props, fetched, updateSkills, updateSkillsExp]);
 

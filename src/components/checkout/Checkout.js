@@ -29,12 +29,13 @@ const Checkout = () => {
 
   useEffect(() => {
     const uid = userID;
+    const amount = 999;
     console.log(uid);
     fetch(
       "https://osrshelpstripe.netlify.app/.netlify/functions/server/create-payment-intent",
       {
         method: "POST",
-        body: JSON.stringify({ uid: uid }),
+        body: JSON.stringify({ uid: uid, amount: amount }),
         headers: {
           "Content-Type": "application/json",
         },

@@ -24,7 +24,7 @@ const ChatColor = ({ userColor, userEmail, setUpdatedColor, updatedColor }) => {
   const handleSaveColor = async () => {
     try {
       const { error } = await supabase
-        .from("users")
+        .from("users_meta")
         .update([{ usercolor: color }])
         .eq("email", userEmail);
 

@@ -15,24 +15,38 @@ const AuthProvider = ({ children }) => {
   const [runeCredits, setRuneCredits] = useState(null);
 
   const getPremium = useCallback(async (uid) => {
+    console.log(uid);
+    try {
+      const { data } = await supabase
+        .from("users")
+        .select("*")
+        .eq("uid", uid)
+        .single();
+
+      if (data) {
+        setEthereumDonateCount(data.etherdonate);
+        setLobsterDonateCount(data.lobsterdonate);
+        setRuneCredits(data.runecredits);
+      }
+      if (data?.premium) {
+        setPremiumUser(true);
+      } else {
+        setPremiumUser(false);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+
     const { data } = await supabase
-      .from("users")
+      .from("users_meta")
       .select("*")
       .eq("uid", uid)
       .single();
+    console.log(data);
 
     if (data) {
       setStoredUsername(data.username);
       setStoredColor(data.usercolor);
-      console.log(data);
-      setEthereumDonateCount(data.etherdonate);
-      setLobsterDonateCount(data.lobsterdonate);
-      setRuneCredits(data.runecredits);
-    }
-    if (data?.premium) {
-      setPremiumUser(true);
-    } else {
-      setPremiumUser(false);
     }
   }, []);
 

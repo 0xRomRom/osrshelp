@@ -16,14 +16,14 @@ import { useContext } from "react";
 import { useCallback } from "react";
 
 const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
-  const { userEmail } = useContext(AuthContext);
+  const { userEmail, premiumUser } = useContext(AuthContext);
   const [userStoredProfile, setUserStoredProfile] = useState({});
   const [updatedColor, setUpdatedColor] = useState(false);
 
   const fetchUserData = useCallback(async () => {
     try {
       const { data, error } = await supabase
-        .from("users")
+        .from("users_meta")
         .select("*")
         .eq("email", userEmail);
 
@@ -31,6 +31,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
         throw new Error(error);
       }
       const res = data[0];
+      console.log(res);
 
       setUserStoredProfile(res);
     } catch (err) {
@@ -55,7 +56,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
             columnsCountBreakPoints={{ 500: 2 }}
           >
             <Masonry className={stl.masonGap} gutter="15px">
-              <Username setPlayerName={setPlayerName} />
+              <Username setPlayerName={setPlayerName} userEmail={userEmail} />
               <ChatColor
                 userColor={userStoredProfile.usercolor}
                 userEmail={userEmail}
@@ -63,7 +64,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
                 updatedColor={updatedColor}
               />
               <AccountStatus
-                isRuneUser={userStoredProfile.premium}
+                isRuneUser={premiumUser}
                 setShowUserProfile={setShowUserProfile}
               />
               <Donations setShowUserProfile={setShowUserProfile} />

@@ -6,8 +6,8 @@ import { useState } from "react";
 import supabase from "../../supabase/supabase";
 import { AuthContext } from "../../authprovider/AuthProvider";
 
-const Username = ({ setPlayerName }) => {
-  const { setStoredUsername, storedUsername, userID } = useContext(AuthContext);
+const Username = ({ setPlayerName, userEmail }) => {
+  const { setStoredUsername, storedUsername } = useContext(AuthContext);
   const [storedName, setStoredName] = useState(storedUsername);
   const [updated, setUpdated] = useState(false);
   const [typing, setTyping] = useState(false);
@@ -18,9 +18,10 @@ const Username = ({ setPlayerName }) => {
     if (storedName === storedUsername) return;
     try {
       const { error } = await supabase
-        .from("users")
+        .from("users_meta")
         .update([{ username: storedName }])
-        .eq("uid", userID);
+        .eq("email", userEmail);
+
       if (!error) {
         setPlayerName(storedName);
         setStoredUsername(storedName);
