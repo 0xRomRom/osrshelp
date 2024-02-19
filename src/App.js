@@ -47,7 +47,7 @@ const App = () => {
 
   return (
     <>
-      <AuthProvider>
+      <AuthProvider setPlayerName={setPlayerName}>
         <PaginationProvider>
           <div className={stl.app}>
             {showAdmin && <Admin setShowAdmin={setShowAdmin} />}

@@ -146,6 +146,12 @@ const SignUp = () => {
         .from("users")
         .insert([{ uid: uid, premium: false, email: data.session.user.email }]);
 
+      ////
+      ////
+      //// Create new row upon acount creation users_meta table
+      ////
+      ////
+
       if (error) {
         if (error.details) {
           console.error("Supabase Error Details:", error.details);

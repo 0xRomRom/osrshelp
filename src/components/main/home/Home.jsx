@@ -88,7 +88,6 @@ const Home = (props) => {
             throw new Error(data.error);
           }
 
-          console.log(data);
           props.setPlayerName(storedUsername);
           updateSkills(data.result);
           updateSkillsExp(data.result);

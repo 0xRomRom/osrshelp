@@ -3,7 +3,7 @@ import { createContext } from "react";
 import supabase from "../supabase/supabase";
 
 export const AuthContext = createContext();
-const AuthProvider = ({ children }) => {
+const AuthProvider = ({ children, ...props }) => {
   const [loggedInUser, setLoggedInUser] = useState(false);
   const [premiumUser, setPremiumUser] = useState(null);
   const [userID, setUserID] = useState(null);
@@ -45,6 +45,7 @@ const AuthProvider = ({ children }) => {
     console.log(data);
 
     if (data) {
+      props.setPlayerName(data.username);
       setStoredUsername(data.username);
       setStoredColor(data.usercolor);
     }
