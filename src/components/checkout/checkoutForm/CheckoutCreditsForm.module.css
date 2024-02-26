@@ -1,6 +1,7 @@
 .cta {
   height: 3rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  width: 18.5rem;
   border-radius: 0.375rem;
   border: none;
   outline: none;
@@ -18,7 +19,11 @@
   width: 25rem;
   height: 25rem;
   height: initial;
-  color: white !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
 }
 
 .lifetime {
@@ -26,29 +31,30 @@
   color: black;
   font-size: 28px;
   text-align: center;
-  top: -1rem;
   position: relative;
   font-weight: bold;
   z-index: 10;
-  margin-top: 1rem;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .purple {
   color: rgb(189, 41, 189);
   font-weight: bold;
   font-size: 28px;
+  padding-top: 3px;
 }
 
 .errorMsg {
   font-size: 16px !important;
 }
 
-.phat {
-  width: 25px;
-  position: absolute;
-  top: -0.65rem;
-  left: 3.45rem;
-  transform: rotate(-8deg);
-  z-index: 0;
+.totalPrice {
+  color: gray;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
 }

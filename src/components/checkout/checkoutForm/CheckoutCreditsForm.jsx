@@ -47,9 +47,10 @@ const CheckoutCreditsForm = () => {
   return (
     <form id="payment-form" onSubmit={handleSubmit} className={stl.payform}>
       <span className={stl.lifetime}>
-        Lifetime for only <span className={stl.purple}>$9.99</span>
+        Purchase <span className={stl.purple}>1000</span> Credits
       </span>
-      <PaymentElement id="payment-element" />
+      <span className={stl.totalPrice}>For $9.99</span>
+      <PaymentElement id="payment-element" className={stl.payElement} />
       <button
         disabled={isProcessing || !stripe || !elements}
         id="submit"
