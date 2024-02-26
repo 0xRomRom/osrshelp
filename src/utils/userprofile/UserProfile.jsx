@@ -27,9 +27,6 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
         .select("*")
         .eq("email", userEmail);
 
-      if (error) {
-        throw new Error(error);
-      }
       const res = data[0];
       console.log(res);
 
@@ -58,7 +55,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
             <Masonry className={stl.masonGap} gutter="15px">
               <Username setPlayerName={setPlayerName} userEmail={userEmail} />
               <ChatColor
-                userColor={userStoredProfile.usercolor}
+                userColor={userStoredProfile.usercolor || "#808080"}
                 userEmail={userEmail}
                 setUpdatedColor={setUpdatedColor}
                 updatedColor={updatedColor}

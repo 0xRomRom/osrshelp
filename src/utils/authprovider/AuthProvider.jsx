@@ -37,17 +37,24 @@ const AuthProvider = ({ children, ...props }) => {
       console.error(err);
     }
 
-    const { data } = await supabase
-      .from("users_meta")
-      .select("*")
-      .eq("uid", uid)
-      .single();
-    console.log(data);
+    try {
+      const { data } = await supabase
+        .from("users_meta")
+        .select("*")
+        .eq("uid", uid)
+        .single();
+      console.log(data);
 
-    if (data) {
-      props.setPlayerName(data.username);
-      setStoredUsername(data.username);
-      setStoredColor(data.usercolor);
+      if (data) {
+        props.setPlayerName(data.username);
+        setStoredUsername(data.username);
+        setStoredColor(data.usercolor);
+      }
+    } catch (err) {
+      console.error(err);
+      props.setPlayerName("");
+      setStoredUsername("");
+      setStoredColor("#808080");
     }
   }, []);
 

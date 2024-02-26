@@ -146,6 +146,17 @@ const SignUp = () => {
         .from("users")
         .insert([{ uid: uid, premium: false, email: data.session.user.email }]);
 
+      await supabase
+        .from("users_meta")
+        .insert([
+          {
+            uid: uid,
+            usercolor: "#808080",
+            username: null,
+            email: data.session.user.email,
+          },
+        ]);
+
       ////
       ////
       //// Create new row upon acount creation users_meta table
