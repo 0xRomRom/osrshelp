@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 
-const RuneCredits = () => {
+const RuneCredits = ({ setPurchasingCredits }) => {
   const { runeCredits } = useContext(AuthContext);
 
   return (
@@ -20,7 +20,7 @@ const RuneCredits = () => {
       </div>
       <div className={stl.bottomCtas}>
         <button className={stl.bottCta}>
-          <FaShoppingCart />
+          <FaShoppingCart onClick={() => setPurchasingCredits(true)} />
         </button>
         <button className={stl.bottCta}>
           <IoSend />
