@@ -47,7 +47,10 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
   return (
     <div className={stl.userprofile} onClick={() => setShowUserProfile(false)}>
       <div className={stl.modal} onClick={(e) => e.stopPropagation()}>
-        <span className={stl.hero}>User Profile</span>
+        <span className={stl.hero}>
+          {!purchasingCredits ? "User Profile" : "Purchase Credits"}
+        </span>
+
         {!purchasingCredits && (
           <div className={stl.configGrid}>
             <ResponsiveMasonry
@@ -72,7 +75,9 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
             </ResponsiveMasonry>
           </div>
         )}
-        {purchasingCredits && <PurchaseCredits />}
+        {purchasingCredits && (
+          <PurchaseCredits setPurchasingCredits={setPurchasingCredits} />
+        )}
       </div>
     </div>
   );
