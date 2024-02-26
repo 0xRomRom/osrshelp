@@ -29,7 +29,6 @@ const Home = (props) => {
   const updateSkills = useCallback(
     (data) => {
       let currentStats = {};
-      console.log(data);
 
       const skillsArray = data.split(/\n/);
 

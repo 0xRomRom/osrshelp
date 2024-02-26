@@ -22,13 +22,12 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
 
   const fetchUserData = useCallback(async () => {
     try {
-      const { data, error } = await supabase
+      const { data } = await supabase
         .from("users_meta")
         .select("*")
         .eq("email", userEmail);
 
       const res = data[0];
-      console.log(res);
 
       setUserStoredProfile(res);
     } catch (err) {
@@ -55,7 +54,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
             <Masonry className={stl.masonGap} gutter="15px">
               <Username setPlayerName={setPlayerName} userEmail={userEmail} />
               <ChatColor
-                userColor={userStoredProfile.usercolor || "#808080"}
+                userColor={userStoredProfile.usercolor}
                 userEmail={userEmail}
                 setUpdatedColor={setUpdatedColor}
                 updatedColor={updatedColor}
