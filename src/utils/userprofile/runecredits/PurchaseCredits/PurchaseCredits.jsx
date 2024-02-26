@@ -75,7 +75,7 @@ const PurchaseCredits = ({ setPurchasingCredits }) => {
           </div>
         </div>
       )}
-      {purchaseAmount && <PaymentModal />}
+      {purchaseAmount && <PaymentModal purchaseAmount={purchaseAmount} />}
     </div>
   );
 };

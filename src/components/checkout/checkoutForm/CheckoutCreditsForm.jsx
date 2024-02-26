@@ -2,8 +2,13 @@ import { PaymentElement } from "@stripe/react-stripe-js";
 import { useState, useEffect } from "react";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
 import stl from "./CheckoutCreditsForm.module.css";
+const paymentPlans = {
+  1000: "9.99",
+  3000: "24.99",
+  7000: "49.99",
+};
 
-const CheckoutCreditsForm = () => {
+const CheckoutCreditsForm = ({ purchaseAmount }) => {
   useEffect(() => {}, []);
 
   const stripe = useStripe();
@@ -28,7 +33,7 @@ const CheckoutCreditsForm = () => {
         confirmParams: {
           // Make sure to change this to your payment completion page
           // return_url: `https://osrshelp.netlify.app/#/successful-payment`,
-          return_url: `${window.location.origin}#/successful-payment`,
+          return_url: `${window.location.origin}`,
         },
       });
       console.log(error);
@@ -47,9 +52,11 @@ const CheckoutCreditsForm = () => {
   return (
     <form id="payment-form" onSubmit={handleSubmit} className={stl.payform}>
       <span className={stl.lifetime}>
-        Purchase <span className={stl.purple}>1000</span> Credits
+        Purchase <span className={stl.purple}>{purchaseAmount}</span> Credits
       </span>
-      <span className={stl.totalPrice}>For $9.99</span>
+      <span className={stl.totalPrice}>
+        For ${paymentPlans[purchaseAmount]}
+      </span>
       <PaymentElement id="payment-element" className={stl.payElement} />
       <button
         disabled={isProcessing || !stripe || !elements}
@@ -60,7 +67,6 @@ const CheckoutCreditsForm = () => {
           {isProcessing ? "Processing ... " : "Pay now"}
         </span>
       </button>
-      {/* Show any error or success messages */}
       {message && (
         <div id="payment-message" className={stl.errorMsg}>
           {message}

@@ -6,7 +6,7 @@ import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import CheckoutCreditsForm from "../../../../../components/checkout/checkoutForm/CheckoutCreditsForm";
 
-const PaymentModal = () => {
+const PaymentModal = ({ purchaseAmount }) => {
   const { userID } = useContext(AuthContext);
 
   const [stripePromise, setStripePromise] = useState(null);
@@ -17,15 +17,13 @@ const PaymentModal = () => {
       "https://osrshelpstripe.netlify.app/.netlify/functions/server/config"
     ).then(async (r) => {
       const { publishableKey } = await r.json();
-      console.log(publishableKey);
       setStripePromise(loadStripe(publishableKey));
     });
   }, []);
 
   useEffect(() => {
     const uid = userID;
-    const amount = 999;
-    console.log(uid);
+    const amount = purchaseAmount;
     fetch(
       "https://osrshelpstripe.netlify.app/.netlify/functions/server/create-payment-intent",
       {
@@ -37,7 +35,6 @@ const PaymentModal = () => {
       }
     ).then(async (result) => {
       const { clientSecret } = await result.json();
-      console.log(clientSecret);
       setClientSecret(clientSecret);
     });
   }, [userID]);
@@ -47,7 +44,7 @@ const PaymentModal = () => {
       <div className={stl.modal}>
         {clientSecret && stripePromise && (
           <Elements stripe={stripePromise} options={{ clientSecret }}>
-            <CheckoutCreditsForm />
+            <CheckoutCreditsForm purchaseAmount={purchaseAmount} />
           </Elements>
         )}
       </div>

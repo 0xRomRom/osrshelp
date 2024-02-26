@@ -40,7 +40,6 @@ const Checkout = () => {
       }
     ).then(async (result) => {
       const { clientSecret } = await result.json();
-      console.log(clientSecret);
       setClientSecret(clientSecret);
     });
   }, [userID]);
