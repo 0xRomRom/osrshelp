@@ -2,6 +2,7 @@ import { PaymentElement } from "@stripe/react-stripe-js";
 import { useState, useEffect } from "react";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
 import stl from "./CheckoutCreditsForm.module.css";
+
 const paymentPlans = {
   1000: "9.99",
   3000: "24.99",
@@ -33,9 +34,10 @@ const CheckoutCreditsForm = ({ purchaseAmount }) => {
         confirmParams: {
           // Make sure to change this to your payment completion page
           // return_url: `https://osrshelp.netlify.app/#/successful-payment`,
-          return_url: `${window.location.origin}`,
+          return_url: `${window.location.origin}#/`,
         },
       });
+
       console.log(error);
     } catch (err) {
       console.error(err);
