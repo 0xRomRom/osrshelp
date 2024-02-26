@@ -2,6 +2,8 @@
   position: relative;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .closeRow {
@@ -17,4 +19,83 @@
 
 .closeArrow:hover {
   color: rgb(201, 201, 201);
+}
+
+.plansRow {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.card {
+  width: 80%;
+  height: 28%;
+
+  background-color: var(--input);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 5px rgb(24, 24, 24);
+  border: 1px solid rgb(10, 53, 2);
+}
+
+.card1 {
+  background: linear-gradient(130deg, black, rgb(3, 24, 0));
+}
+.card2 {
+  background: linear-gradient(130deg, black, rgb(4, 33, 0));
+}
+.card3 {
+  background: linear-gradient(130deg, black, rgb(5, 45, 0));
+}
+
+.amountBox {
+  /* border: 1px solid blue; */
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.amountHero {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--green-main);
+  font-size: 32px;
+}
+
+.creditsSpan {
+  color: gray;
+  font-size: 14px;
+}
+
+.cost {
+  position: relative;
+  padding-right: 4.5rem;
+  color: rgb(171, 171, 171);
+  font-weight: bold;
+}
+
+.moneyPile {
+  padding-right: 3rem;
+  width: 100px;
 }

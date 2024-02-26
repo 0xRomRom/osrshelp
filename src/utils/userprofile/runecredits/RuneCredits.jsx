@@ -19,8 +19,11 @@ const RuneCredits = ({ setPurchasingCredits }) => {
         <span>Credits</span>
       </div>
       <div className={stl.bottomCtas}>
-        <button className={stl.bottCta}>
-          <FaShoppingCart onClick={() => setPurchasingCredits(true)} />
+        <button
+          className={stl.bottCta}
+          onClick={() => setPurchasingCredits(true)}
+        >
+          <FaShoppingCart />
         </button>
         <button className={stl.bottCta}>
           <IoSend />
