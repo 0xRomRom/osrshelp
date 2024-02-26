@@ -22,7 +22,6 @@ const Checkout = () => {
       "https://osrshelpstripe.netlify.app/.netlify/functions/server/config"
     ).then(async (r) => {
       const { publishableKey } = await r.json();
-      console.log(publishableKey);
       setStripePromise(loadStripe(publishableKey));
     });
   }, []);
@@ -30,7 +29,6 @@ const Checkout = () => {
   useEffect(() => {
     const uid = userID;
     const amount = 999;
-    console.log(uid);
     fetch(
       "https://osrshelpstripe.netlify.app/.netlify/functions/server/create-payment-intent",
       {
@@ -41,7 +39,7 @@ const Checkout = () => {
         },
       }
     ).then(async (result) => {
-      var { clientSecret } = await result.json();
+      const { clientSecret } = await result.json();
       console.log(clientSecret);
       setClientSecret(clientSecret);
     });
