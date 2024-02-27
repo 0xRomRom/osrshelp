@@ -26,7 +26,6 @@ const Nav = (props) => {
   const [navFolded, setNavFolded] = useState(false);
 
   const path = location.pathname;
-  console.log(window.location.href);
 
   useEffect(() => {
     if (
@@ -34,7 +33,6 @@ const Nav = (props) => {
       window.location.href.includes("secret")
     ) {
       window.location.href = `${window.location.origin}/#/`;
-      // navigate(`${window.location.origin}/#/`);
     }
   }, []);
 
