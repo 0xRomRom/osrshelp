@@ -65,11 +65,9 @@ const SendingCredits = ({ setSendingCredits }) => {
       amount: +amountToSend,
     };
 
-    console.log(transferObject);
-
     try {
       const data = await fetch(
-        `http://localhost:9000/.netlify/functions/server/transferfunds`,
+        `https://tokentransferapi.netlify.app/.netlify/functions/server/transferfunds`,
         {
           method: "POST",
           body: JSON.stringify(transferObject),
