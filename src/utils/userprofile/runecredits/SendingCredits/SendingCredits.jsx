@@ -15,36 +15,38 @@ const SendingCredits = ({ setSendingCredits }) => {
       setError("Both");
       return;
     }
+
     if (amountToSend === "") {
       setError("No amount");
       return;
     }
 
+    let recipientUID = "";
+
     try {
       //Check if user exists before sending credits
-      const { data, error } = await supabase
-        .from("users_meta")
-        .select("username");
-      console.log(data);
+      const { data, error } = await supabase.from("users_meta").select("*");
 
       if (error) {
         throw new Error(error);
       }
 
-      let recipientUserName = "";
-
       data.forEach((addy) => {
         if (addy.username.toLowerCase() === receiverName.toLowerCase()) {
-          recipientUserName = addy.username;
+          recipientUID = addy.uid;
         }
       });
 
-      if (!recipientUserName) {
+      if (!recipientUID) {
         setError("No username");
         return;
       }
+      console.log(recipientUID);
+
+      //User exists, continue
     } catch (error) {
       console.error(error);
+      alert("Error fetching username");
     }
   };
 
