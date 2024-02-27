@@ -48,6 +48,24 @@ const SendingCredits = ({ setSendingCredits }) => {
       console.error(error);
       alert("Error fetching username");
     }
+
+    const transferObject = {
+      sender: userID,
+      recipient: recipientUID,
+      amount: +amountToSend,
+    };
+
+    try {
+      fetch(`netlifyurl`, {
+        method: "POST",
+        body: JSON.stringify(transferObject),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (

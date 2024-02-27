@@ -9,7 +9,7 @@ import SendingCredits from "./SendingCredits/SendingCredits";
 
 const RuneCredits = ({ setPurchasingCredits }) => {
   const { runeCredits } = useContext(AuthContext);
-  const [sendingCredits, setSendingCredits] = useState(true);
+  const [sendingCredits, setSendingCredits] = useState(false);
 
   return (
     <div className={stl.tile}>
