@@ -50,6 +50,7 @@ const SendingCredits = ({ setSendingCredits, setCachedCredits }) => {
 
       if (!recipientUID) {
         setError("No username");
+        setLoading(false);
         return;
       }
 
