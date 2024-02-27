@@ -5,6 +5,7 @@ import AccountStatus from "./acountstatus/AccountStatus";
 import Donations from "./donations/Donations";
 import RuneCredits from "./runecredits/RuneCredits";
 import PurchaseCredits from "./runecredits/PurchaseCredits/PurchaseCredits";
+import ResetCookies from "./resetcookies/ResetCookies";
 
 import { ResponsiveMasonry } from "react-responsive-masonry";
 import Masonry from "react-responsive-masonry";
@@ -71,6 +72,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
                 />
                 <Donations setShowUserProfile={setShowUserProfile} />
                 <RuneCredits setPurchasingCredits={setPurchasingCredits} />
+                <ResetCookies />
               </Masonry>
             </ResponsiveMasonry>
           </div>

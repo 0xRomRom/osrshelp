@@ -13,10 +13,7 @@ const RuneCredits = ({ setPurchasingCredits }) => {
   const [sendingCredits, setSendingCredits] = useState(false);
 
   return (
-    <div
-      className={stl.tile}
-      onClick={() => (document.cookie = "cookieConsent=false; max-age=0")}
-    >
+    <div className={stl.tile}>
       {!sendingCredits && (
         <>
           <span className={stl.graySpan}>Rune Credits</span>
