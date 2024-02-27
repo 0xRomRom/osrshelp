@@ -9,7 +9,7 @@ import SendingCredits from "./SendingCredits/SendingCredits";
 
 const RuneCredits = ({ setPurchasingCredits }) => {
   const { runeCredits } = useContext(AuthContext);
-  const [sendingCredits, setSendingCredits] = useState(false);
+  const [sendingCredits, setSendingCredits] = useState(true);
 
   return (
     <div className={stl.tile}>
@@ -39,7 +39,9 @@ const RuneCredits = ({ setPurchasingCredits }) => {
           </div>
         </>
       )}
-      {sendingCredits && <SendingCredits />}
+      {sendingCredits && (
+        <SendingCredits setSendingCredits={setSendingCredits} />
+      )}
     </div>
   );
 };
