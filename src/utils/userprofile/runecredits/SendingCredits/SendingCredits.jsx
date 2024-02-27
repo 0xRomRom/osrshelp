@@ -5,7 +5,7 @@ import supabase from "../../../supabase/supabase";
 import { AuthContext } from "../../../authprovider/AuthProvider";
 
 const SendingCredits = ({ setSendingCredits }) => {
-  const { userID } = useContext(AuthContext);
+  const { userID, runeCredits } = useContext(AuthContext);
   const [amountToSend, setAmountToSend] = useState("");
   const [receiverName, setReceiverName] = useState("");
   const [error, setError] = useState("");
@@ -20,6 +20,12 @@ const SendingCredits = ({ setSendingCredits }) => {
       setError("No amount");
       return;
     }
+
+    if (runeCredits < +amountToSend) {
+      setError("No amount");
+      return;
+    }
+    setError("");
 
     let recipientUID = "";
 
@@ -41,7 +47,6 @@ const SendingCredits = ({ setSendingCredits }) => {
         setError("No username");
         return;
       }
-      console.log(recipientUID);
 
       //User exists, continue
     } catch (error) {
@@ -56,7 +61,7 @@ const SendingCredits = ({ setSendingCredits }) => {
     };
 
     try {
-      fetch(`netlifyurl`, {
+      await fetch(`netlifyurl`, {
         method: "POST",
         body: JSON.stringify(transferObject),
         headers: {
