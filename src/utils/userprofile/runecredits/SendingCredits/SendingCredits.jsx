@@ -3,13 +3,14 @@ import { IoSend } from "react-icons/io5";
 import { useState, useContext } from "react";
 import supabase from "../../../supabase/supabase";
 import { AuthContext } from "../../../authprovider/AuthProvider";
-
-const SendingCredits = ({ setSendingCredits }) => {
+import Spinner from "../../../loadingspinner/Spinner";
+const SendingCredits = ({ setSendingCredits, setCachedCredits }) => {
   const { userID, runeCredits } = useContext(AuthContext);
   const [amountToSend, setAmountToSend] = useState("");
   const [receiverName, setReceiverName] = useState("");
   const [error, setError] = useState("");
   const [transferSuccess, setTransferSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleCreditTransfer = async () => {
     if (amountToSend === "" && receiverName === "") {
@@ -29,7 +30,7 @@ const SendingCredits = ({ setSendingCredits }) => {
     setError("");
 
     let recipientUID = "";
-
+    setLoading(true);
     try {
       //Check if user exists before sending credits
       const { data, error } = await supabase.from("users_meta").select("*");
@@ -38,7 +39,6 @@ const SendingCredits = ({ setSendingCredits }) => {
         throw new Error(error);
       }
 
-      console.log(data);
       data.forEach((addy) => {
         if (
           addy.username &&
@@ -57,6 +57,7 @@ const SendingCredits = ({ setSendingCredits }) => {
     } catch (error) {
       console.error(error);
       alert("Error fetching username");
+      setLoading(false);
     }
 
     const transferObject = {
@@ -66,7 +67,7 @@ const SendingCredits = ({ setSendingCredits }) => {
     };
 
     try {
-      const data = await fetch(
+      await fetch(
         `https://tokentransferapi.netlify.app/.netlify/functions/server/transferfunds`,
         {
           method: "POST",
@@ -76,9 +77,8 @@ const SendingCredits = ({ setSendingCredits }) => {
           },
         }
       );
-
-      console.log(data);
-
+      setCachedCredits((prevState) => prevState - +amountToSend);
+      setLoading(false);
       setTransferSuccess(true);
       setTimeout(() => {
         setTransferSuccess(true);
@@ -86,6 +86,7 @@ const SendingCredits = ({ setSendingCredits }) => {
       }, 2500);
     } catch (error) {
       console.error(error);
+      setLoading(false);
     }
   };
 
@@ -132,11 +133,19 @@ const SendingCredits = ({ setSendingCredits }) => {
             <button
               className={`${stl.bottCta} ${stl.cancelCta}`}
               onClick={() => setSendingCredits(false)}
+              disabled={loading ? true : false}
             >
               Cancel
             </button>
+
             <button className={stl.bottCta} onClick={handleCreditTransfer}>
-              <IoSend />
+              {loading ? (
+                <div className={stl.spinnerWrapper}>
+                  <Spinner className={stl.loadSpinner} />
+                </div>
+              ) : (
+                <IoSend />
+              )}
             </button>
           </div>
         </>

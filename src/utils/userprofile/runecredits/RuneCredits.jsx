@@ -9,7 +9,8 @@ import SendingCredits from "./SendingCredits/SendingCredits";
 
 const RuneCredits = ({ setPurchasingCredits }) => {
   const { runeCredits } = useContext(AuthContext);
-  const [sendingCredits, setSendingCredits] = useState(true);
+  const [cachedCredits, setCachedCredits] = useState(runeCredits);
+  const [sendingCredits, setSendingCredits] = useState(false);
 
   return (
     <div className={stl.tile}>
@@ -19,7 +20,7 @@ const RuneCredits = ({ setPurchasingCredits }) => {
           <div className={stl.creditsBox}>
             <span className={stl.creditsCount}>
               <img src={mills} alt="Money pile" className={stl.moneyPile} />
-              {runeCredits || 0}
+              {cachedCredits || 0}
             </span>
             <span>Credits</span>
           </div>
@@ -40,7 +41,10 @@ const RuneCredits = ({ setPurchasingCredits }) => {
         </>
       )}
       {sendingCredits && (
-        <SendingCredits setSendingCredits={setSendingCredits} />
+        <SendingCredits
+          setSendingCredits={setSendingCredits}
+          setCachedCredits={setCachedCredits}
+        />
       )}
     </div>
   );

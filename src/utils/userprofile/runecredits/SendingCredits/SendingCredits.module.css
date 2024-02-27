@@ -53,8 +53,9 @@
   align-items: center;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  padding: 0rem 0.8rem;
+
   margin-left: 1rem;
+  min-width: 40px;
 }
 
 .bottCta:hover {
@@ -64,6 +65,7 @@
 }
 
 .cancelCta {
+  padding: 0rem 0.8rem;
   margin-left: 2rem;
 }
 
@@ -72,4 +74,10 @@
   justify-content: center;
   align-items: center;
   color: gray;
+}
+
+.spinnerWrapper {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
 }
