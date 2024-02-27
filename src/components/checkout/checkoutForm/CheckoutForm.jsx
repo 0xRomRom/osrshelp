@@ -48,7 +48,7 @@ const CheckoutForm = () => {
   return (
     <form id="payment-form" onSubmit={handleSubmit} className={stl.payform}>
       <span className={stl.lifetime}>
-        Lifetime for only <span className={stl.purple}>$9.99</span>
+        Lifetime for only <span className={stl.purple}>$14.99</span>
         <img src={partyhat} alt="Blue partyhat" className={stl.phat} />
       </span>
       <PaymentElement id="payment-element" />

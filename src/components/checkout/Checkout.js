@@ -28,7 +28,7 @@ const Checkout = () => {
 
   useEffect(() => {
     const uid = userID;
-    const amount = 999;
+    const amount = 1499;
     fetch(
       "https://osrshelpstripe.netlify.app/.netlify/functions/server/create-payment-intent",
       {
