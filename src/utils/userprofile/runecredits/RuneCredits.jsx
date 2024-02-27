@@ -9,7 +9,7 @@ import SendingCredits from "./SendingCredits/SendingCredits";
 
 const RuneCredits = ({ setPurchasingCredits }) => {
   const { runeCredits } = useContext(AuthContext);
-  const [sendingCredits, setSendingCredits] = useState(false);
+  const [sendingCredits, setSendingCredits] = useState(true);
 
   return (
     <div className={stl.tile}>
@@ -19,7 +19,7 @@ const RuneCredits = ({ setPurchasingCredits }) => {
           <div className={stl.creditsBox}>
             <span className={stl.creditsCount}>
               <img src={mills} alt="Money pile" className={stl.moneyPile} />
-              {runeCredits}
+              {runeCredits || 0}
             </span>
             <span>Credits</span>
           </div>

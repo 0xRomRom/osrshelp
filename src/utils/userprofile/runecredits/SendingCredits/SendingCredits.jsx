@@ -9,6 +9,7 @@ const SendingCredits = ({ setSendingCredits }) => {
   const [amountToSend, setAmountToSend] = useState("");
   const [receiverName, setReceiverName] = useState("");
   const [error, setError] = useState("");
+  const [transferSuccess, setTransferSuccess] = useState(false);
 
   const handleCreditTransfer = async () => {
     if (amountToSend === "" && receiverName === "") {
@@ -37,8 +38,12 @@ const SendingCredits = ({ setSendingCredits }) => {
         throw new Error(error);
       }
 
+      console.log(data);
       data.forEach((addy) => {
-        if (addy.username.toLowerCase() === receiverName.toLowerCase()) {
+        if (
+          addy.username &&
+          addy.username.toLowerCase() === receiverName.toLowerCase()
+        ) {
           recipientUID = addy.uid;
         }
       });
@@ -60,14 +65,27 @@ const SendingCredits = ({ setSendingCredits }) => {
       amount: +amountToSend,
     };
 
+    console.log(transferObject);
+
     try {
-      await fetch(`netlifyurl`, {
-        method: "POST",
-        body: JSON.stringify(transferObject),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const data = await fetch(
+        `http://localhost:9000/.netlify/functions/server/transferfunds`,
+        {
+          method: "POST",
+          body: JSON.stringify(transferObject),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      console.log(data);
+
+      setTransferSuccess(true);
+      setTimeout(() => {
+        setTransferSuccess(true);
+        setSendingCredits(false);
+      }, 2500);
     } catch (error) {
       console.error(error);
     }
@@ -75,50 +93,61 @@ const SendingCredits = ({ setSendingCredits }) => {
 
   return (
     <div className={stl.sendingcredits}>
-      <div className={stl.sendWrap}>
-        <span className={stl.graySpan}>Send </span>
-        <input
-          type="number"
-          placeholder="100"
-          className={stl.inputStl}
-          value={amountToSend}
-          onChange={(e) => setAmountToSend(e.target.value)}
-          style={{
-            borderBottom:
-              error === "No amount" || error === "Both" ? "1px solid red" : "",
-          }}
-        />
-      </div>
-      <div className={stl.sendWrap}>
-        <span className={stl.graySpan}>To</span>
-        <input
-          type="text"
-          className={stl.inputStl}
-          placeholder="King Rom II"
-          value={receiverName}
-          onChange={(e) => {
-            setReceiverName(e.target.value);
-            setError("");
-          }}
-          style={{
-            borderBottom:
-              error === "No username" || error === "Both"
-                ? "1px solid red"
-                : "",
-          }}
-        />
-      </div>
-      <div className={stl.sendWrap}>
-        <button
-          className={`${stl.bottCta} ${stl.cancelCta}`}
-          onClick={() => setSendingCredits(false)}
-        >
-          Cancel
-        </button>
-        <button className={stl.bottCta} onClick={handleCreditTransfer}>
-          <IoSend />
-        </button>
-      </div>
+      {!transferSuccess && (
+        <>
+          <div className={stl.sendWrap}>
+            <span className={stl.graySpan}>Send </span>
+            <input
+              type="number"
+              placeholder="100"
+              className={stl.inputStl}
+              value={amountToSend}
+              onChange={(e) => setAmountToSend(e.target.value)}
+              style={{
+                borderBottom:
+                  error === "No amount" || error === "Both"
+                    ? "1px solid red"
+                    : "",
+              }}
+            />
+          </div>
+          <div className={stl.sendWrap}>
+            <span className={stl.graySpan}>To</span>
+            <input
+              type="text"
+              className={stl.inputStl}
+              placeholder="King Rom II"
+              value={receiverName}
+              onChange={(e) => {
+                setReceiverName(e.target.value);
+                setError("");
+              }}
+              style={{
+                borderBottom:
+                  error === "No username" || error === "Both"
+                    ? "1px solid red"
+                    : "",
+              }}
+            />
+          </div>
+          <div className={stl.sendWrap}>
+            <button
+              className={`${stl.bottCta} ${stl.cancelCta}`}
+              onClick={() => setSendingCredits(false)}
+            >
+              Cancel
+            </button>
+            <button className={stl.bottCta} onClick={handleCreditTransfer}>
+              <IoSend />
+            </button>
+          </div>
+        </>
+      )}
+      {transferSuccess && (
+        <div className={stl.success}>
+          <span className={stl.credits}>Credits Transfered</span>
+        </div>
+      )}
     </div>
   );
 };
