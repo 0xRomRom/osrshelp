@@ -19,21 +19,30 @@ const ConfirmDeletion = () => {
   }, [confirmText, setApproved]);
 
   const handleAccountDeletion = async () => {
-    await fetch("https://netlify.app/.netlify/functions/server/deleteuser", {
-      method: "POST",
-      body: JSON.stringify({ userID: userID }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-
-    await supabase.from("users_meta").delete().eq("uid", userID);
-    await supabase.from("users").delete().eq("uid", userID);
-    await supabase.from("saved_inventories").delete().eq("uid", userID);
-    await supabase.from("saved_builds").delete().eq("uid", userID);
-    await supabase.from("runechat").delete().eq("uid", userID);
-    await supabase.from("poll_votes").delete().eq("uid", userID);
-    await supabase.from("item_favorites").delete().eq("uid", userID);
+    const usersID = userID;
+    await supabase.from("users_meta").delete().eq("uid", usersID);
+    await supabase.from("users").delete().eq("uid", usersID);
+    await supabase.from("saved_inventories").delete().eq("uid", usersID);
+    await supabase.from("saved_builds").delete().eq("Username", usersID);
+    await supabase.from("runechat").delete().eq("uid", usersID);
+    await supabase.from("poll_votes").delete().eq("uid", usersID);
+    await supabase.from("item_favorites").delete().eq("uid", usersID);
+    try {
+      await fetch(
+        "https://tokentransferapi.netlify.app/.netlify/functions/server/deleteuser",
+        {
+          method: "POST",
+          body: JSON.stringify({ userID: usersID }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+    } catch (error) {
+      console.error(error);
+    }
+    await supabase.auth.signOut();
+    window.location.reload();
   };
 
   return (
