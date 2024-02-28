@@ -1,9 +1,14 @@
 import stl from "./DeleteAccount.module.css";
 
-const DeleteAccount = ({ setDeletingAccount }) => {
+const DeleteAccount = ({ deletingAccount, setDeletingAccount }) => {
   return (
-    <div className={stl.deletetile} onClick={() => setDeletingAccount(true)}>
-      <span className={stl.delete}>Delete Account</span>
+    <div
+      className={stl.deletetile}
+      onClick={() => setDeletingAccount((prevState) => !prevState)}
+    >
+      <span className={stl.delete}>
+        {!deletingAccount ? "Delete Account" : "Cancel"}
+      </span>
     </div>
   );
 };

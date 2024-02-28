@@ -84,7 +84,10 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
               </ResponsiveMasonry>
             )}
             {deletingAccount && <ConfirmDeletion />}
-            <DeleteAccount setDeletingAccount={setDeletingAccount} />
+            <DeleteAccount
+              deletingAccount={deletingAccount}
+              setDeletingAccount={setDeletingAccount}
+            />
           </div>
         )}
         {purchasingCredits && (
