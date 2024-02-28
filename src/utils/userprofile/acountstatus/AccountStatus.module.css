@@ -10,6 +10,7 @@
   height: 8rem;
   text-align: center;
   background-image: var(--gradient);
+  user-select: none;
 }
 
 .statusBlock {

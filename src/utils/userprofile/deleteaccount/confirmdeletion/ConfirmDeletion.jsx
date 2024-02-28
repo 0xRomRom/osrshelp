@@ -1,16 +1,26 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import stl from "./ConfirmDeletion.module.css";
+import { useContext } from "react";
+import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
+import supabase from "../../../supabase/supabase";
 
 const ConfirmDeletion = () => {
+  const { userID } = useContext(AuthContext);
   const [approved, setApproved] = useState(false);
   const [confirmText, setConfirmText] = useState("");
 
   useEffect(() => {
     if (confirmText.toLowerCase() === "confirm") {
       setApproved(true);
+      return;
     }
+    setApproved(false);
   }, [confirmText, setApproved]);
+
+  const handleAccountDeletion = async () => {
+    await supabase.from("users_meta").delete().eq("uid", userID);
+  };
 
   return (
     <div className={stl.tile}>
@@ -29,7 +39,8 @@ const ConfirmDeletion = () => {
       </div>
       <button
         className={`${stl.deleteCta} ${approved ? stl.activeCta : ""}`}
-        disabled={!approved ? false : true}
+        disabled={approved ? false : true}
+        onClick={handleAccountDeletion}
       >
         Delete
       </button>
