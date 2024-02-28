@@ -1,13 +1,20 @@
 .deletetile {
   background-color: var(--dark-bg);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
-  height: 4rem;
-  padding-top: 0.5rem;
+  height: 3.5rem;
   border-radius: 0.375rem;
   border: 1px solid var(--border);
-  color: gray;
+  color: rgb(139, 0, 0);
   margin-top: 15px;
   background-image: var(--gradient);
+  user-select: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.deletetile:hover {
+  color: rgb(255, 0, 0);
 }

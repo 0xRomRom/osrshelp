@@ -14,7 +14,7 @@ const ResetCookies = () => {
       <div className={stl.cookiesBox}>
         <span>Clear</span>
         <FaArrowRightLong className={stl.arrow} />
-        <FaDatabase class={stl.cache} />
+        <FaDatabase className={stl.cache} />
       </div>
     </div>
   );

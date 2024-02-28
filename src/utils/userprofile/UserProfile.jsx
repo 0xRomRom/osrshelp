@@ -7,6 +7,7 @@ import RuneCredits from "./runecredits/RuneCredits";
 import PurchaseCredits from "./runecredits/PurchaseCredits/PurchaseCredits";
 import ResetCookies from "./resetcookies/ResetCookies";
 import DeleteAccount from "./deleteaccount/DeleteAccount";
+import ConfirmDeletion from "./deleteaccount/confirmdeletion/ConfirmDeletion";
 
 import { ResponsiveMasonry } from "react-responsive-masonry";
 import Masonry from "react-responsive-masonry";
@@ -23,6 +24,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
   const [userStoredProfile, setUserStoredProfile] = useState({});
   const [updatedColor, setUpdatedColor] = useState(false);
   const [purchasingCredits, setPurchasingCredits] = useState(false);
+  const [deletingAccount, setDeletingAccount] = useState(false);
 
   const fetchUserData = useCallback(async () => {
     try {
@@ -55,28 +57,34 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
 
         {!purchasingCredits && (
           <div className={stl.configGrid}>
-            <ResponsiveMasonry
-              className={stl.masonry}
-              columnsCountBreakPoints={{ 500: 2 }}
-            >
-              <Masonry className={stl.masonGap} gutter="15px">
-                <Username setPlayerName={setPlayerName} userEmail={userEmail} />
-                <ChatColor
-                  userColor={userStoredProfile.usercolor}
-                  userEmail={userEmail}
-                  setUpdatedColor={setUpdatedColor}
-                  updatedColor={updatedColor}
-                />
-                <AccountStatus
-                  isRuneUser={premiumUser}
-                  setShowUserProfile={setShowUserProfile}
-                />
-                <Donations setShowUserProfile={setShowUserProfile} />
-                <RuneCredits setPurchasingCredits={setPurchasingCredits} />
-                <ResetCookies />
-              </Masonry>
-              <DeleteAccount />
-            </ResponsiveMasonry>
+            {!deletingAccount && (
+              <ResponsiveMasonry
+                className={stl.masonry}
+                columnsCountBreakPoints={{ 500: 2 }}
+              >
+                <Masonry className={stl.masonGap} gutter="15px">
+                  <Username
+                    setPlayerName={setPlayerName}
+                    userEmail={userEmail}
+                  />
+                  <ChatColor
+                    userColor={userStoredProfile.usercolor}
+                    userEmail={userEmail}
+                    setUpdatedColor={setUpdatedColor}
+                    updatedColor={updatedColor}
+                  />
+                  <AccountStatus
+                    isRuneUser={premiumUser}
+                    setShowUserProfile={setShowUserProfile}
+                  />
+                  <Donations setShowUserProfile={setShowUserProfile} />
+                  <RuneCredits setPurchasingCredits={setPurchasingCredits} />
+                  <ResetCookies />
+                </Masonry>
+              </ResponsiveMasonry>
+            )}
+            {deletingAccount && <ConfirmDeletion />}
+            <DeleteAccount setDeletingAccount={setDeletingAccount} />
           </div>
         )}
         {purchasingCredits && (
