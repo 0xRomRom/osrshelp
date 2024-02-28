@@ -223,6 +223,9 @@
   color: white;
   max-height: 53px;
   user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .resetPassCta:hover {
