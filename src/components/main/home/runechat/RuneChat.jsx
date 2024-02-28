@@ -24,7 +24,7 @@ const RuneChat = () => {
     setUserMessage("");
     const now = new Date().toLocaleString("en-US").split(",")[1].slice(1, -3);
 
-    if (userMessage === "" || userMessage === " ") {
+    if (userMessage === "" || userMessage === " " || !premiumUser) {
       return;
     }
     try {

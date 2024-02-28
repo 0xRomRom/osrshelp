@@ -62,3 +62,8 @@
   background-color: red;
   color: white;
 }
+
+.deleting {
+  width: initial;
+  padding: 0rem 1rem;
+}

@@ -9,6 +9,7 @@ const ConfirmDeletion = () => {
   const { userID } = useContext(AuthContext);
   const [approved, setApproved] = useState(false);
   const [confirmText, setConfirmText] = useState("");
+  const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
     if (confirmText.toLowerCase() === "confirm") {
@@ -19,6 +20,7 @@ const ConfirmDeletion = () => {
   }, [confirmText, setApproved]);
 
   const handleAccountDeletion = async () => {
+    setDeleting(true);
     const usersID = userID;
     await supabase.from("users_meta").delete().eq("uid", usersID);
     await supabase.from("users").delete().eq("uid", usersID);
@@ -60,13 +62,20 @@ const ConfirmDeletion = () => {
           onChange={(e) => setConfirmText(e.target.value)}
         />
       </div>
-      <button
-        className={`${stl.deleteCta} ${approved ? stl.activeCta : ""}`}
-        disabled={approved ? false : true}
-        onClick={handleAccountDeletion}
-      >
-        Delete
-      </button>
+      {deleting && (
+        <button className={`${stl.deleteCta} ${approved ? stl.deleting : ""}`}>
+          Deleting Account
+        </button>
+      )}
+      {!deleting && (
+        <button
+          className={`${stl.deleteCta} ${approved ? stl.activeCta : ""}`}
+          disabled={approved ? false : true}
+          onClick={handleAccountDeletion}
+        >
+          Delete
+        </button>
+      )}
     </div>
   );
 };
