@@ -1,4 +1,4 @@
-import stl from "./SignUp.module.css";
+import stl from "./RecoverPassword.module.css";
 import { useState, useRef, useEffect } from "react";
 
 import { useNavigate } from "react-router-dom";
@@ -16,7 +16,7 @@ import supabase from "../../utils/supabase/supabase";
 
 /////////
 
-const SignUp = () => {
+const RecoverPassword = () => {
   const { setLoggedInUser } = useContext(AuthContext);
   const prefersLoginScreen = localStorage.getItem("PrefersLoginScreen");
   const savedUsername = localStorage.getItem("SaveUsername");
@@ -41,7 +41,6 @@ const SignUp = () => {
   const [loading, setLoading] = useState(false);
 
   const [isChecked, setIsChecked] = useState(true);
-  const [passResetRequest, setPassResetRequest] = useState(true);
 
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
@@ -214,17 +213,12 @@ const SignUp = () => {
   };
   const handlePasswordReset = async (e) => {
     e.preventDefault();
-
-    const { error } = await supabase.auth.resetPasswordForEmail(
+    const { data, error } = await supabase.auth.resetPasswordForEmail(
       recoverMail.current.value,
       {
-        redirectTo: `${window.location.origin}/#/recoverpassword`,
+        redirectTo: "http://localhost:3000/#/",
       }
     );
-    if (error) {
-      throw new Error(error);
-    }
-    setPassResetRequest(true);
   };
 
   return (
@@ -352,22 +346,7 @@ const SignUp = () => {
                 </span>
               </form>
             )}
-            {passResetRequest && (
-              <div className={stl.requestCompleted}>
-                <span className={stl.requestSucces}>
-                  We've send you an E-Mail to recover your password
-                </span>
-                <span
-                  className={stl.backtologin}
-                  onClick={() => {
-                    setPassResetRequest(false);
-                    setResetPassActive(false);
-                  }}
-                >
-                  Back to login
-                </span>
-              </div>
-            )}
+            {passResetRequest && <div className={stl.requestCompleted}></div>}
           </>
         )}
         {registerComplete && (
@@ -387,4 +366,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default RecoverPassword;
