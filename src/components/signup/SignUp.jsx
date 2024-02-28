@@ -215,18 +215,22 @@ const SignUp = () => {
   const handlePasswordReset = async (e) => {
     e.preventDefault();
     setLoading(true);
-    const { error } = await supabase.auth.resetPasswordForEmail(
-      recoverMail.current.value,
-      {
-        redirectTo: `${window.location.origin}/#/recoverpassword`,
+    try {
+      const { error } = await supabase.auth.resetPasswordForEmail(
+        recoverMail.current.value,
+        {
+          redirectTo: `${window.location.origin}/#/recoverpassword`,
+        }
+      );
+      if (error) {
+        setLoading(false);
+        throw new Error(error);
       }
-    );
-    if (error) {
+      setPassResetRequest(true);
       setLoading(false);
-      throw new Error(error);
+    } catch (err) {
+      console.error(err);
     }
-    setPassResetRequest(true);
-    setLoading(false);
   };
 
   return (
@@ -336,7 +340,7 @@ const SignUp = () => {
                 </h2>
                 <input
                   type="email"
-                  className={`${stl.input} ${stl.focused}`}
+                  className={stl.input}
                   placeholder="Email"
                   ref={recoverMail}
                 />

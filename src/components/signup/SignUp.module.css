@@ -183,23 +183,11 @@
   color: white;
   max-height: 53px;
   position: relative;
+  transition: all 0.2s ease-in-out;
 }
 
 .loginCta:hover {
-  background: linear-gradient(
-    120deg,
-    rgb(142, 5, 142),
-    rgb(189, 7, 189),
-    rgb(160, 6, 160)
-  );
-}
-.loginCta:focus {
-  background: linear-gradient(
-    120deg,
-    rgb(142, 5, 142),
-    rgb(189, 7, 189),
-    rgb(160, 6, 160)
-  );
+  background-color: rgb(205, 0, 205);
 }
 
 .resetHero {
@@ -207,6 +195,7 @@
   color: rgb(220, 220, 220);
   text-align: center;
   padding-bottom: 2rem;
+  user-select: none;
 }
 
 .resetPassModal {
@@ -221,7 +210,6 @@
 }
 
 .resetPassCta {
-  margin-top: 1.5rem;
   width: 100%;
   padding: 1rem 0rem;
   border: none;
@@ -234,23 +222,11 @@
   background-color: rgb(164, 6, 164);
   color: white;
   max-height: 53px;
+  user-select: none;
 }
 
 .resetPassCta:hover {
-  background: linear-gradient(
-    120deg,
-    rgb(142, 5, 142),
-    rgb(189, 7, 189),
-    rgb(160, 6, 160)
-  );
-}
-.resetPassCta:focus {
-  background: linear-gradient(
-    120deg,
-    rgb(142, 5, 142),
-    rgb(189, 7, 189),
-    rgb(160, 6, 160)
-  );
+  background-color: rgb(205, 0, 205);
 }
 
 .cancelSpan {
