@@ -41,7 +41,7 @@ const SignUp = () => {
   const [loading, setLoading] = useState(false);
 
   const [isChecked, setIsChecked] = useState(true);
-  const [passResetRequest, setPassResetRequest] = useState(true);
+  const [passResetRequest, setPassResetRequest] = useState(false);
 
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
@@ -214,7 +214,7 @@ const SignUp = () => {
   };
   const handlePasswordReset = async (e) => {
     e.preventDefault();
-
+    setLoading(true);
     const { error } = await supabase.auth.resetPasswordForEmail(
       recoverMail.current.value,
       {
@@ -222,9 +222,11 @@ const SignUp = () => {
       }
     );
     if (error) {
+      setLoading(false);
       throw new Error(error);
     }
     setPassResetRequest(true);
+    setLoading(false);
   };
 
   return (
@@ -342,7 +344,7 @@ const SignUp = () => {
                   className={stl.resetPassCta}
                   onClick={handlePasswordReset}
                 >
-                  Reset password
+                  {!loading ? "Reset Password" : <Spinner />}
                 </button>
                 <span
                   className={stl.cancelSpan}

@@ -35,6 +35,7 @@ import CookieBanner from "./utils/cookiebanner/CookieBanner";
 import Blog from "./components/main/blog/Blog";
 import Admin from "./utils/admin/Admin";
 import UserProfile from "./utils/userprofile/UserProfile";
+import RecoverPassword from "./components/signup/reocoverpassword/RecoverPassword";
 
 const App = () => {
   const [skills, setSkills] = useState(null);
@@ -67,6 +68,7 @@ const App = () => {
               <Route path="/successful-payment" element={<PaymentSucces />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/login" element={<SignUp />} />
+              <Route path="/recoverpassword" element={<RecoverPassword />} />
               <Route
                 index
                 path="/"
