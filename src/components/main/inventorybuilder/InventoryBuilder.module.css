@@ -20,7 +20,6 @@
   flex-direction: column;
   user-select: none;
   padding-bottom: 7rem;
-  background-image: var(--gradient);
 }
 
 .inventoryWrapper {
