@@ -20,7 +20,7 @@
 
 .subHero {
   color: gray;
-  padding-top: 1rem;
+  padding-top: 0.5rem;
   text-align: center;
 }
 
@@ -57,7 +57,6 @@
 
 .typeTitle {
   top: 0rem;
-  left: 2.3rem;
   position: absolute;
   color: gray;
 }
@@ -75,16 +74,21 @@
 
 .btn {
   width: 5rem;
-  border-radius: 0.375rem;
-  outline: none;
-  border: none;
   height: 2.25rem;
-  background-color: transparent;
-  border: 2px solid var(--blue-main);
+  outline: none;
   color: gray;
   font-weight: bold;
-  transition: all 0.2s ease-in-out;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: Inter;
+  padding: 0px 20px;
+  background-color: rgb(31, 38, 53);
+  border: 1px solid rgb(67, 67, 67);
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.375rem;
 }
 
 .active {
@@ -132,4 +136,13 @@
   font-size: 14px;
   padding: 0px 5px;
   text-align: center;
+}
+
+.topBar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: var(--main-bg);
+  padding-bottom: 1rem;
+  user-select: none;
 }

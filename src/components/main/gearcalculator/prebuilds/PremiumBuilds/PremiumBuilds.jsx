@@ -27,57 +27,59 @@ const PremiumBuilds = ({ premiumUser, handlePrebuildSetup }) => {
       <div className={stl.premiumBox}>
         {premiumUser && (
           <>
-            <h3 className={stl.subHero}>Premium</h3>
-            <div className={stl.filterBar}>
-              <button
-                className={`${stl.btn} ${
-                  activeBtn === "All" ? stl.active : ""
-                }`}
-                onClick={() => switchButton("All")}
-              >
-                All
-              </button>
-              <button
-                className={`${stl.btn} ${
-                  activeBtn === "PVM" ? stl.active : ""
-                }`}
-                onClick={() => switchButton("PVM")}
-              >
-                PVM
-              </button>
-              <button
-                className={`${stl.btn} ${
-                  activeBtn === "PVP" ? stl.active : ""
-                }`}
-                onClick={() => switchButton("PVP")}
-              >
-                PVP
-              </button>
-              <button
-                className={`${stl.btn} ${
-                  activeBtn === "Skilling" ? stl.active : ""
-                }`}
-                onClick={() => switchButton("Skilling")}
-              >
-                Skilling
-              </button>
+            <div className={stl.topBar}>
+              <h3 className={stl.subHero}>Premium</h3>
+              <div className={stl.filterBar}>
+                <button
+                  className={`${stl.btn} ${
+                    activeBtn === "All" ? stl.active : ""
+                  }`}
+                  onClick={() => switchButton("All")}
+                >
+                  All
+                </button>
+                <button
+                  className={`${stl.btn} ${
+                    activeBtn === "PVM" ? stl.active : ""
+                  }`}
+                  onClick={() => switchButton("PVM")}
+                >
+                  PVM
+                </button>
+                <button
+                  className={`${stl.btn} ${
+                    activeBtn === "PVP" ? stl.active : ""
+                  }`}
+                  onClick={() => switchButton("PVP")}
+                >
+                  PVP
+                </button>
+                <button
+                  className={`${stl.btn} ${
+                    activeBtn === "Skilling" ? stl.active : ""
+                  }`}
+                  onClick={() => switchButton("Skilling")}
+                >
+                  Skilling
+                </button>
 
-              <button
-                className={`${stl.btn} ${
-                  activeBtn === "Wildy" ? stl.active : ""
-                }`}
-                onClick={() => switchButton("Wildy")}
-              >
-                Wildy
-              </button>
-              <button
-                className={`${stl.btn} ${
-                  activeBtn === "Recovery" ? stl.active : ""
-                }`}
-                onClick={() => switchButton("Recovery")}
-              >
-                Recovery
-              </button>
+                <button
+                  className={`${stl.btn} ${
+                    activeBtn === "Wildy" ? stl.active : ""
+                  }`}
+                  onClick={() => switchButton("Wildy")}
+                >
+                  Wildy
+                </button>
+                <button
+                  className={`${stl.btn} ${
+                    activeBtn === "Recovery" ? stl.active : ""
+                  }`}
+                  onClick={() => switchButton("Recovery")}
+                >
+                  Recovery
+                </button>
+              </div>
             </div>
             <div className={stl.premiumWrapper}>
               {activeBtn === "All" && (
