@@ -20,6 +20,7 @@ import { useContext } from "react";
 
 import { playerStats } from "../../../utils/playerStats";
 import { useCallback } from "react";
+import Spinner from "../../../utils/loadingspinner/Spinner";
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
@@ -125,21 +126,28 @@ const Home = (props) => {
             columnsCountBreakPoints={{ 350: 1, 750: 2, 1200: 3 }}
           >
             <Masonry className={stl.masonGap} gutter="15px">
-              {skillsFetched ? (
-                <UserBox
-                  skills={props.skills}
-                  skillsExp={props.skillsExp}
-                  playerName={props.playerName}
-                  setPlayerName={props.setPlayerName}
-                  switchTab={setSkillsFetched}
-                />
-              ) : (
-                <LoginBox
-                  setSkills={props.setSkills}
-                  setSkillsExp={props.setSkillsExp}
-                  setPlayerName={props.setPlayerName}
-                />
-              )}
+              <>
+                {!skillsFetched && (
+                  <div className={stl.spinnerCard}>
+                    <Spinner />
+                  </div>
+                )}
+                {skillsFetched ? (
+                  <UserBox
+                    skills={props.skills}
+                    skillsExp={props.skillsExp}
+                    playerName={props.playerName}
+                    setPlayerName={props.setPlayerName}
+                    switchTab={setSkillsFetched}
+                  />
+                ) : (
+                  <LoginBox
+                    setSkills={props.setSkills}
+                    setSkillsExp={props.setSkillsExp}
+                    setPlayerName={props.setPlayerName}
+                  />
+                )}
+              </>
               <TotalUsers />
               <RuneChat />
               <BlogModal setBlogPost={props.setBlogPost} />
