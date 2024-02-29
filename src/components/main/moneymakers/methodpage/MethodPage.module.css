@@ -1,7 +1,6 @@
 .methodpage {
   width: 100%;
   color: white;
-  background-image: var(--gradient);
   min-height: 52rem;
 }
 

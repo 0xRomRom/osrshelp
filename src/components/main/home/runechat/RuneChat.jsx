@@ -5,6 +5,7 @@ import { useContext, useState, useEffect, useRef } from "react";
 import { AuthContext } from "../../../../utils/authprovider/AuthProvider";
 import { FaCog } from "react-icons/fa";
 import Spinner from "../../../../utils/loadingspinner/Spinner";
+import ChatConfig from "./chatconfig/ChatConfig";
 
 const RuneChat = () => {
   const outputBottom = useRef(null);
@@ -13,6 +14,7 @@ const RuneChat = () => {
   const [userMessage, setUserMessage] = useState("");
   const [inserted, setInserted] = useState(false);
   const [currentChat, setCurrentChat] = useState([]);
+  const [chatConfigurations, setChatConfigurations] = useState(false);
 
   const updateMessageState = (e) => {
     const message = e.target.value;
@@ -87,55 +89,62 @@ const RuneChat = () => {
     };
   }, [currentChat]);
 
+  const handleToggleShowConfigs = () => {
+    setChatConfigurations(!chatConfigurations);
+  };
+
   return (
     <div className={stl.modal}>
-      <h2 className={stl.runechat}>Runechat</h2>
+      {!chatConfigurations && <h2 className={stl.runechat}>Runechat</h2>}
       <div className={stl.configRow}>
-        <FaCog className={stl.configCog} />
+        <FaCog className={stl.configCog} onClick={handleToggleShowConfigs} />
       </div>
-      <div className={stl.chatOutput} ref={outputBottom}>
-        {currentChat.length === 0 && (
-          <div className={stl.centerSpinner}>
-            <Spinner />
-          </div>
-        )}
-        {currentChat.length > 0 && (
-          <>
-            {currentChat.map((chat, index) => {
-              return (
-                <div className={stl.chatMsg} key={index}>
-                  <div className={stl.nameFlex}>
-                    <div className={stl.nameTop}>
-                      <span
-                        className={stl.userName}
-                        style={{ color: chat.playercolor }}
-                      >
-                        {chat.username}
-                      </span>
-                      <span className={stl.time}>{chat.timestamp}</span>
+      {!chatConfigurations && (
+        <>
+          <div className={stl.chatOutput} ref={outputBottom}>
+            {currentChat.length === 0 && (
+              <div className={stl.centerSpinner}>
+                <Spinner />
+              </div>
+            )}
+            {currentChat.length > 0 && (
+              <>
+                {currentChat.map((chat, index) => {
+                  return (
+                    <div className={stl.chatMsg} key={index}>
+                      <div className={stl.nameFlex}>
+                        <div className={stl.nameTop}>
+                          <span
+                            className={stl.userName}
+                            style={{ color: chat.playercolor }}
+                          >
+                            {chat.username}
+                          </span>
+                          <span className={stl.time}>{chat.timestamp}</span>
+                        </div>
+                        <span className={stl.message}>{chat.chatmsg}</span>
+                      </div>
                     </div>
-                    <span className={stl.message}>{chat.chatmsg}</span>
-                  </div>
-                  {/* <span class */}
-                </div>
-              );
-            })}
-          </>
-        )}
-      </div>
-      <form className={stl.chatInputWrap}>
-        <input
-          type="text"
-          className={stl.chatInput}
-          onChange={updateMessageState}
-          value={userMessage || ""}
-          disabled={premiumUser ? false : true}
-          placeholder={premiumUser ? "" : "Sign in as rune user"}
-        />
-        <button className={stl.sendCta} onClick={addMessageToChat}>
-          <LuSendHorizonal className={stl.sendIcon} />
-        </button>
-      </form>
+                  );
+                })}
+              </>
+            )}
+          </div>
+          <form className={stl.chatInputWrap}>
+            <input
+              type="text"
+              className={stl.chatInput}
+              onChange={updateMessageState}
+              value={userMessage || ""}
+              disabled={premiumUser ? false : true}
+              placeholder={premiumUser ? "" : "Sign in as rune user"}
+            />
+            <button className={stl.sendCta} onClick={addMessageToChat}>
+              <LuSendHorizonal className={stl.sendIcon} />
+            </button>
+          </form>
+        </>
+      )}
     </div>
   );
 };

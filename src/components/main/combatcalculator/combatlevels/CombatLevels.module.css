@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  flex-direction: column-reverse;
   background-color: var(--input);
   border: 1px solid var(--border);
 }
@@ -49,6 +49,8 @@
 .activeCombat {
   background-color: var(--blue-main);
   color: black;
+  flex-direction: column-reverse;
+  gap: 0;
 }
 
 .combatType {
