@@ -9,12 +9,7 @@ import HomeButton from "../../utils/homebutton/HomeButton";
 import { useContext } from "react";
 import { AuthContext } from "../../utils/authprovider/AuthProvider";
 
-////////////
-//Supabase//
-////////////
 import supabase from "../../utils/supabase/supabase";
-
-/////////
 
 const SignUp = () => {
   const { setLoggedInUser } = useContext(AuthContext);

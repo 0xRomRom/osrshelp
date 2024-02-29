@@ -30,8 +30,8 @@ const Nav = (props) => {
   useEffect(() => {
     if (
       window.location.href.includes("payment_intent") ||
-      window.location.href.includes("secret") ||
-      window.location.href.includes("access_token")
+      window.location.href.includes("secret")
+      // || window.location.href.includes("access_token")
     ) {
       window.location.href = `${window.location.origin}/#/`;
     }

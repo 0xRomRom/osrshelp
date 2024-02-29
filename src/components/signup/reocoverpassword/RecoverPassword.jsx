@@ -25,6 +25,7 @@ const RecoverPassword = () => {
   };
 
   const handleNewPassRegistration = async (e) => {
+    setPasswordError(false);
     e.preventDefault();
     if (
       newPassword.length === 0 ||
@@ -32,6 +33,7 @@ const RecoverPassword = () => {
       newPassword.length <= 6
     ) {
       setPasswordError(true);
+      return;
     }
 
     try {
@@ -48,31 +50,14 @@ const RecoverPassword = () => {
     }
   };
 
-  useEffect(() => {
-    supabase.auth.onAuthStateChange(async (event, session) => {
-      console.log(event);
-      if (event == "PASSWORD_RECOVERY") {
-        const newPassword = prompt(
-          "What would you like your new password to be?"
-        );
-        const { data, error } = await supabase.auth.updateUser({
-          password: newPassword,
-        });
-
-        if (data) alert("Password updated successfully!");
-        if (error) alert("There was an error updating your password.");
-      }
-    });
-  }, []);
-
   return (
     <div className={stl.recover} onClick={() => setEyeClicked(false)}>
       <HomeButton />
       <form className={stl.modal}>
         <span className={stl.setPassSpan}>Enter new password</span>
         <div className={stl.inputWrapper} onClick={(e) => e.stopPropagation()}>
-          <label htmlFor="password" style={{ display: "none" }}>
-            Password:
+          <label htmlFor="username" style={{ display: "none" }}>
+            <input type="text" id="username" autoComplete="username" />
           </label>
           <input
             type={showPassword ? "text" : "password"}
