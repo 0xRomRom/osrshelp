@@ -145,6 +145,7 @@ const RuneChat = () => {
           </form>
         </>
       )}
+      {chatConfigurations && <ChatConfig />}
     </div>
   );
 };
