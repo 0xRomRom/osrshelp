@@ -1,17 +1,38 @@
 import { useEffect } from "react";
 import stl from "./OnlineUsers.module.css";
 import supabase from "../../../../../utils/supabase/supabase";
+import { useState } from "react";
 
 const OnlineUsers = () => {
+  const [onlineUsers, setOnlineUsers] = useState(null);
+
   useEffect(() => {
     const userID = navigator.userAgent;
-    const timestamp = new Date().toISOString().toLocaleString("nl-NL");
+    const timestamp = {
+      hours: new Date().getHours(),
+      minutes: new Date().getMinutes(),
+    };
+
+    const { hours, minutes } = timestamp;
+    console.log(hours);
+    console.log(minutes);
+
     const updateActivity = async () => {
+      const activeUsers = {};
+
+      try {
+      } catch (err) {
+        console.error(err);
+      }
+
+      const userState = {};
       try {
         const { data, error } = await supabase
           .from("onlineusers")
-          .upsert({ uid: userID, time: timestamp }, { returning: "minimal" });
-
+          .update({
+            activeusers: JSON.stringify(userState),
+          })
+          .eq("id", 12);
         if (error) {
           throw error;
         }
@@ -20,12 +41,11 @@ const OnlineUsers = () => {
       }
     };
 
-    // Update activity on component mount and unmount
     updateActivity();
 
-    const interval = setInterval(updateActivity, 60 * 1000); // Update every minute
+    // const interval = setInterval(updateActivity, 60 * 1000); // Update every minute
 
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, []);
 
   return (
