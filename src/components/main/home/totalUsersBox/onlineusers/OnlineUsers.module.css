@@ -1,0 +1,8 @@
+.onlineusers {
+  height: 4rem;
+  border: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

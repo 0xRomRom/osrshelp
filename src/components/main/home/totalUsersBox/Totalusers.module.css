@@ -15,9 +15,8 @@
   border-radius: 0.8rem;
   padding-bottom: 2.75rem;
   display: flex;
-  /* gap: 0.1rem; */
   flex-direction: column;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   border: 1px solid var(--border);
   box-shadow: var(--box-shadow);
@@ -35,4 +34,15 @@
   color: gray;
   font-size: 20px;
   user-select: none;
+}
+
+.totalUsersCount {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--main-bg);
+  padding: 10px;
+  border-radius: 0.375rem;
 }

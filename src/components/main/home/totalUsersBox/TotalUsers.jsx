@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import NumberCounter from "../../../../utils/NumberCounter";
 import supabase from "../../../../utils/supabase/supabase";
 import Spinner from "../../../../utils/loadingspinner/Spinner";
+import OnlineUsers from "./onlineusers/OnlineUsers";
 
 const TotalUsers = () => {
   const [totalUsers, setTotalUsers] = useState(0);
@@ -126,11 +127,14 @@ const TotalUsers = () => {
         {totalUsers === 0 && <Spinner />}
         {totalUsers > 0 && (
           <>
-            <h2 className={stl.userCount} ref={ref}>
-              {" "}
-              {inView && <NumberCounter n={totalUsers} />}
-            </h2>
-            <span className={stl.visitorsSpan}>Total users</span>
+            <div className={stl.totalUsersCount}>
+              <h2 className={stl.userCount} ref={ref}>
+                {" "}
+                {inView && <NumberCounter n={totalUsers} />}
+              </h2>
+              <span className={stl.visitorsSpan}>Total users</span>
+            </div>
+            <OnlineUsers />
           </>
         )}
       </div>
