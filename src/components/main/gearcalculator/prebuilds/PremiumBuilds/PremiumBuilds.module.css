@@ -5,7 +5,6 @@
   max-height: 700px;
   overflow-y: scroll;
   background-color: var(--main-bg);
-  background-image: var(--gradient);
 }
 .premiumBlock {
   position: relative;

@@ -18,7 +18,7 @@
   padding-left: 10px;
   font-size: 17px;
   margin-bottom: 5px;
-  border: 1px solid transparent;
+  border: 1px solid var(--border);
 }
 
 .miniSlotIcon {
