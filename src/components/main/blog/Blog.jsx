@@ -1,6 +1,6 @@
 import stl from "./Blog.module.css";
-import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
-import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
+// import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+// import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 import Pagination from "../pagination/Pagination";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
@@ -36,7 +36,7 @@ const Blog = ({ setBlogPost }) => {
 
   return (
     <div className={stl.blog}>
-      <TopAdBar />
+      {/* <TopAdBar /> */}
       <Pagination navTo="/blog" />
       <div className={stl.blogWrapper}>
         <h1 className={stl.hero}>Blog</h1>
@@ -74,7 +74,7 @@ const Blog = ({ setBlogPost }) => {
           )}
         </div>
       </div>
-      <BottomAdBar />
+      {/* <BottomAdBar /> */}
     </div>
   );
 };

@@ -2,7 +2,7 @@ import HomeButton from "../../../utils/homebutton/HomeButton";
 import stl from "./RecoverPassword.module.css";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa6";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import supabase from "../../../utils/supabase/supabase";
 import { useNavigate } from "react-router-dom";
 

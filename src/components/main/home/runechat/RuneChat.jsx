@@ -90,6 +90,7 @@ const RuneChat = () => {
   }, [currentChat]);
 
   const handleToggleShowConfigs = () => {
+    if (!premiumUser) return;
     setChatConfigurations(!chatConfigurations);
   };
 

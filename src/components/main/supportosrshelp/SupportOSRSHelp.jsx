@@ -7,15 +7,15 @@ import SupportersModal from "./supportersmodal/SupportersModal";
 
 import EtherDonateForm from "./etherdonateform/EtherDonateForm";
 
-import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
-import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
+// import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
+// import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const SupportOSRSHelp = () => {
   const [etherModal, setEtherModal] = useState(false);
 
   return (
     <div className={stl.supportOsrsHelp}>
-      <TopAdBar />
+      {/* <TopAdBar /> */}
       <Pagination />
       <div className={stl.modalWrap}>
         <div className={stl.supportModal}>
@@ -28,7 +28,7 @@ const SupportOSRSHelp = () => {
         </div>
         <SupportersModal />
       </div>
-      <BottomAdBar />
+      {/* <BottomAdBar /> */}
     </div>
   );
 };
