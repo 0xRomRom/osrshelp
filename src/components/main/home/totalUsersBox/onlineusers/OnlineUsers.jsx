@@ -13,7 +13,6 @@ const OnlineUsers = () => {
       timestamp: currentStamp,
     };
 
-    console.log(currentUser.id);
     const updateActivity = async () => {
       let currentUsers = [];
 
@@ -31,18 +30,10 @@ const OnlineUsers = () => {
       } catch (err) {
         console.error(err);
       }
-
       //Remove inactive users
-      let filteredUsers = [];
-      if (currentUsers.length > 0) {
-        filteredUsers = currentUsers.filter((user) => {
-          console.log(user);
-          if (user.timestamp > currentStamp - 3000) {
-            return true;
-          }
-          return false;
-        });
-      }
+      const filteredUsers = currentUsers.filter(
+        (user) => user.timestamp + 3000 > currentStamp
+      );
 
       //Handle new entry
       let addUserToArray = false;
