@@ -24,7 +24,7 @@ import Spinner from "../../../utils/loadingspinner/Spinner";
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
-  const { storedUsername } = useContext(AuthContext);
+  const { storedUsername, userID } = useContext(AuthContext);
   const [fetched, setFetched] = useState(false);
 
   const updateSkills = useCallback(
@@ -127,7 +127,7 @@ const Home = (props) => {
           >
             <Masonry className={stl.masonGap} gutter="15px">
               <>
-                {!skillsFetched && !fetched && (
+                {!skillsFetched && !fetched && userID && (
                   <div className={stl.spinnerCard}>
                     <Spinner />
                   </div>
