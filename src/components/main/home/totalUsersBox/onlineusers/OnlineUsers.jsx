@@ -7,31 +7,47 @@ const OnlineUsers = () => {
   const [onlineUsers, setOnlineUsers] = useState(null);
 
   useEffect(() => {
-    const userID = navigator.userAgent;
-    const timestamp = {
-      hours: new Date().getHours(),
-      minutes: new Date().getMinutes(),
+    const currentStamp = Math.floor(new Date().getTime() / 1000);
+
+    const currentUser = {
+      id: navigator.userAgent,
+      timestamp: currentStamp,
     };
-
-    const { hours, minutes } = timestamp;
-    console.log(hours);
-    console.log(minutes);
-
     const updateActivity = async () => {
-      const activeUsers = {};
+      let currentUsers = [];
 
+      //Get current active users
       try {
+        const { data, error } = await supabase
+          .from("onlineusers")
+          .select("*")
+          .eq("id", 12);
+
+        if (error) {
+          throw new Error(error);
+        }
+        currentUsers = JSON.parse(data[0].activeusers);
       } catch (err) {
         console.error(err);
       }
 
-      const userState = {};
+      const filteredUsers = currentUsers.filter((user) => {
+        if (currentStamp - 6000 > user.timestamp) {
+          return true;
+        }
+        return false;
+      });
+      console.log(filteredUsers);
+
+      const activeUsers = [currentUser, currentUser];
       try {
         const { data, error } = await supabase
           .from("onlineusers")
-          .update({
-            activeusers: JSON.stringify(userState),
-          })
+          .update([
+            {
+              activeusers: JSON.stringify(activeUsers),
+            },
+          ])
           .eq("id", 12);
         if (error) {
           throw error;
