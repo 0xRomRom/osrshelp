@@ -13,6 +13,7 @@ const OnlineUsers = () => {
       timestamp: currentStamp,
     };
 
+    console.log(currentUser.id);
     const updateActivity = async () => {
       let currentUsers = [];
 
@@ -35,7 +36,8 @@ const OnlineUsers = () => {
       let filteredUsers = [];
       if (currentUsers.length > 0) {
         filteredUsers = currentUsers.filter((user) => {
-          if (currentStamp - 3000 > user.timestamp) {
+          console.log(user);
+          if (user.timestamp > currentStamp - 3000) {
             return true;
           }
           return false;
@@ -44,22 +46,26 @@ const OnlineUsers = () => {
 
       //Handle new entry
       let addUserToArray = false;
+      let exists = false;
       if (filteredUsers.length > 0) {
         filteredUsers.forEach((user) => {
           if (user.id !== currentUser.id) {
             addUserToArray = true;
           }
+          if (user.id === currentUser.id) {
+            exists = true;
+          }
         });
       } else {
         addUserToArray = true;
       }
-      if (addUserToArray) {
+      if (addUserToArray && !exists) {
         filteredUsers.push(currentUser);
       }
       setOnlineUsers(filteredUsers.length);
 
       try {
-        const { data, error } = await supabase
+        const { error } = await supabase
           .from("onlineusers")
           .update([
             {
@@ -68,7 +74,7 @@ const OnlineUsers = () => {
           ])
           .eq("id", 12);
         if (error) {
-          throw error;
+          throw new Error(error);
         }
       } catch (error) {
         console.error("Error updating user activity:", error.message);
