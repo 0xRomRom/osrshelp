@@ -4,13 +4,6 @@
   padding: 2rem;
   min-height: 250px;
   max-height: 250px;
-  background-color: rgb(32, 46, 57);
-  background: linear-gradient(130deg, rgb(32, 46, 57), rgb(17, 23, 27));
-  background-image: radial-gradient(
-    ellipse 100% 100% at 50% 75%,
-    rgba(37, 99, 235, 0.07),
-    rgba(37, 99, 235, 0) 60%
-  );
   margin-left: 0rem;
   border-radius: 0.8rem;
   display: flex;

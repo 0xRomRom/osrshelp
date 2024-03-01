@@ -80,8 +80,11 @@ const OnlineUsers = () => {
 
   return (
     <div className={stl.onlineusers}>
-      <span>Online</span>
-      <span> {onlineUsers}</span>
+      <div className={stl.flexSpan}>
+        <span className={stl.greendot}></span>
+        <span className={stl.userCount}> {onlineUsers}</span>
+        <span className={stl.onlineSpan}>Online</span>
+      </div>
     </div>
   );
 };

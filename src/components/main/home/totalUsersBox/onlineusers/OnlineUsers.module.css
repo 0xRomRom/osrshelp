@@ -1,8 +1,38 @@
 .onlineusers {
-  height: 4rem;
-  border: 1px solid var(--border);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 0.375rem;
+  position: absolute;
+  bottom: 0px;
+}
+
+.userCount {
+  font-size: 20px;
+  color: #00d25b;
+  color: var(--blue-main);
+  line-height: 35px;
+  user-select: none;
+}
+
+.onlineSpan {
+  color: gray;
+  font-size: 18px;
+  user-select: none;
+}
+
+.greendot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--green-main);
+}
+
+.flexSpan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
