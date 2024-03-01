@@ -8,11 +8,11 @@ const OnlineUsers = () => {
 
   useEffect(() => {
     const currentStamp = Math.floor(new Date().getTime() / 1000);
-
     const currentUser = {
       id: navigator.userAgent,
       timestamp: currentStamp,
     };
+
     const updateActivity = async () => {
       let currentUsers = [];
 
@@ -31,21 +31,39 @@ const OnlineUsers = () => {
         console.error(err);
       }
 
-      const filteredUsers = currentUsers.filter((user) => {
-        if (currentStamp - 6000 > user.timestamp) {
-          return true;
-        }
-        return false;
-      });
-      console.log(filteredUsers);
+      //Remove inactive users
+      let filteredUsers = [];
+      if (currentUsers.length > 0) {
+        filteredUsers = currentUsers.filter((user) => {
+          if (currentStamp - 3000 > user.timestamp) {
+            return true;
+          }
+          return false;
+        });
+      }
 
-      const activeUsers = [currentUser, currentUser];
+      //Handle new entry
+      let addUserToArray = false;
+      if (filteredUsers.length > 0) {
+        filteredUsers.forEach((user) => {
+          if (user.id !== currentUser.id) {
+            addUserToArray = true;
+          }
+        });
+      } else {
+        addUserToArray = true;
+      }
+      if (addUserToArray) {
+        filteredUsers.push(currentUser);
+      }
+      setOnlineUsers(filteredUsers.length);
+
       try {
         const { data, error } = await supabase
           .from("onlineusers")
           .update([
             {
-              activeusers: JSON.stringify(activeUsers),
+              activeusers: JSON.stringify(filteredUsers),
             },
           ])
           .eq("id", 12);
@@ -58,16 +76,12 @@ const OnlineUsers = () => {
     };
 
     updateActivity();
-
-    // const interval = setInterval(updateActivity, 60 * 1000); // Update every minute
-
-    // return () => clearInterval(interval);
   }, []);
 
   return (
     <div className={stl.onlineusers}>
       <span>Online</span>
-      <span> 32</span>
+      <span> {onlineUsers}</span>
     </div>
   );
 };
