@@ -26,7 +26,6 @@ const UserBox = (props) => {
           onClick={handleMenuSwitch}
         />
         <div className={stl.content}>
-          <h2>Stats loaded for</h2>
           <div className={stl.row}>
             <span className={stl.gray}>Player</span>
             <div className={stl.blueDot}></div>
