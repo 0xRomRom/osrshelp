@@ -131,7 +131,10 @@ const ResultBox = ({ inputValues, combatLevel }) => {
             alt="Attack skill"
           />
 
-          <span className={stl.amountToGo}>{skillsToGo.attack}</span>
+          {skillsToGo.attack && (
+            <span className={stl.amountToGo}>{skillsToGo.attack}</span>
+          )}
+          {!skillsToGo.attack && <span className={stl.none}>None</span>}
         </div>
         <div className={stl.togoSkill}>
           <img
@@ -139,7 +142,10 @@ const ResultBox = ({ inputValues, combatLevel }) => {
             className={stl.inputIcon}
             alt="Strength skill"
           />
-          <span className={stl.amountToGo}>{skillsToGo.strength}</span>
+          {skillsToGo.strength && (
+            <span className={stl.amountToGo}>{skillsToGo.strength}</span>
+          )}
+          {!skillsToGo.strength && <span className={stl.none}>None</span>}
         </div>
         <div className={stl.togoSkill}>
           <img
@@ -147,7 +153,10 @@ const ResultBox = ({ inputValues, combatLevel }) => {
             className={stl.inputIcon}
             alt="Defence skill"
           />
-          <span className={stl.amountToGo}>{skillsToGo.defence}</span>
+          {skillsToGo.defence && (
+            <span className={stl.amountToGo}>{skillsToGo.defence}</span>
+          )}
+          {!skillsToGo.defence && <span className={stl.none}>None</span>}
         </div>
         <div className={stl.togoSkill}>
           <img
@@ -155,7 +164,10 @@ const ResultBox = ({ inputValues, combatLevel }) => {
             className={stl.inputIcon}
             alt="Hitpoints skill"
           />
-          <span className={stl.amountToGo}>{skillsToGo.hitpoints}</span>
+          {skillsToGo.hitpoints && (
+            <span className={stl.amountToGo}>{skillsToGo.hitpoints}</span>
+          )}
+          {!skillsToGo.hitpoints && <span className={stl.none}>None</span>}
         </div>
         <div className={stl.togoSkill}>
           <img
@@ -163,7 +175,10 @@ const ResultBox = ({ inputValues, combatLevel }) => {
             className={stl.inputIcon}
             alt="Ranged skill"
           />
-          <span className={stl.amountToGo}>{skillsToGo.ranged}</span>
+          {skillsToGo.ranged && (
+            <span className={stl.amountToGo}>{skillsToGo.ranged}</span>
+          )}
+          {!skillsToGo.ranged && <span className={stl.none}>None</span>}
         </div>
         <div className={stl.togoSkill}>
           <img
@@ -171,7 +186,10 @@ const ResultBox = ({ inputValues, combatLevel }) => {
             className={stl.inputIcon}
             alt="Magic skill"
           />
-          <span className={stl.amountToGo}>{skillsToGo.magic}</span>
+          {skillsToGo.magic && (
+            <span className={stl.amountToGo}>{skillsToGo.magic}</span>
+          )}
+          {!skillsToGo.magic && <span className={stl.none}>None</span>}
         </div>
         <div className={stl.togoSkill}>
           <img
@@ -179,7 +197,11 @@ const ResultBox = ({ inputValues, combatLevel }) => {
             className={stl.inputIcon}
             alt="Prayer skill"
           />
-          <span className={stl.amountToGo}>{skillsToGo.prayer}</span>
+          {skillsToGo.prayer && (
+            <span className={stl.amountToGo}>{skillsToGo.prayer}</span>
+          )}
+
+          {!skillsToGo.prayer && <span className={stl.none}>None</span>}
         </div>
       </div>
     </div>

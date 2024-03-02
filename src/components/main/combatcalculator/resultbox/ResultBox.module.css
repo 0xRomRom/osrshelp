@@ -82,3 +82,9 @@
 .inputIcon {
   width: 20px;
 }
+
+.none {
+  color: gray;
+  left: -0.5rem;
+  position: relative;
+}
