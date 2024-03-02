@@ -98,7 +98,9 @@ const RuneChat = () => {
     <div className={stl.modal}>
       {!chatConfigurations && <h2 className={stl.runechat}>Runechat</h2>}
       <div className={stl.configRow}>
-        <FaCog className={stl.configCog} onClick={handleToggleShowConfigs} />
+        {userID && (
+          <FaCog className={stl.configCog} onClick={handleToggleShowConfigs} />
+        )}
       </div>
       {!chatConfigurations && (
         <>
