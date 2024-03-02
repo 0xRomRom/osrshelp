@@ -14,7 +14,7 @@ const SearchItem = ({
   box4Disabled,
 }) => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [imageError, setImageError] = useState(false);
+  const [imageError, setImageError] = useState(true);
   const [typing, setTyping] = useState(false);
   const [imgSrc, setImgSrc] = useState(null);
 
@@ -172,6 +172,10 @@ const SearchItem = ({
     setFavoritesImgSrc(imgSrc);
   };
 
+  useEffect(() => {
+    console.log(imageError);
+  }, [imageError]);
+
   return (
     <div className={stl.imgSearchBox}>
       <div className={stl.inputWrapper}>
@@ -186,76 +190,50 @@ const SearchItem = ({
           className={`${stl.magnify} ${typing ? stl.rotate : ""}`}
         />
       </div>
-      {imgSrc && (
-        <div className={stl.searchResult}>
-          <div className={stl.resultFlex}>
-            {!imageError && (
-              <div
-                className={stl.leftWrapper}
-                style={{ display: !imageError ? "flex" : "none" }}
-              >
-                <button
-                  className={stl.searchCta}
-                  onClick={saveToInv}
-                  style={{ display: !imageError ? "flex" : "none" }}
-                >
-                  <img
-                    src={inventory}
-                    alt="Inventory"
-                    className={stl.inventoryImg}
-                  />
-                </button>
-                <div className={stl.addConfig}>
-                  <button
-                    className={`${stl.notedBtn} ${
-                      addNoted ? stl.notedActive : ""
-                    }`}
-                    onClick={() => setAddNoted(!addNoted)}
-                    disabled={noteDisabled ? true : false}
-                  >
-                    Noted
-                  </button>
-                  <input
-                    type="number"
-                    className={stl.searchAmountInput}
-                    value={amountToAdd || ""}
-                    onChange={amountHandler}
-                  />
-                </div>
-              </div>
-            )}
-            <div
-              className={stl.imgWrapper}
-              style={{ display: !imageError ? "flex" : "none" }}
-            >
+
+      <div className={stl.searchResult} style={{ opacity: imageError ? 0 : 1 }}>
+        <div className={stl.resultFlex}>
+          <div className={stl.leftWrapper}>
+            <button className={stl.searchCta} onClick={saveToInv}>
               <img
-                src={imgSrc}
-                className={stl.smallImg}
-                onError={() => setImageError(true)}
-                onLoad={() => {
-                  setImageError(false);
-                  setTyping(false);
-                }}
-                alt=""
-                style={{ display: !imageError ? "flex" : "none" }}
+                src={inventory}
+                alt="Inventory"
+                className={stl.inventoryImg}
+              />
+            </button>
+            <div className={stl.addConfig}>
+              <button
+                className={`${stl.notedBtn} ${addNoted ? stl.notedActive : ""}`}
+                onClick={() => setAddNoted(!addNoted)}
+                disabled={noteDisabled ? true : false}
+              >
+                Noted
+              </button>
+              <input
+                type="number"
+                className={stl.searchAmountInput}
+                value={amountToAdd || ""}
+                onChange={amountHandler}
               />
             </div>
-            {!imageError && (
-              <button
-                className={stl.searchCta}
-                onClick={addToFavorites}
-                style={{ display: !imageError ? "flex" : "none" }}
-              >
-                <img
-                  src={member}
-                  alt="Member star"
-                  className={stl.memberStar}
-                />
-              </button>
-            )}
           </div>
+          <div className={stl.imgWrapper}>
+            <img
+              src={imgSrc}
+              className={stl.smallImg}
+              onError={() => setImageError(true)}
+              onLoad={() => {
+                setImageError(false);
+                setTyping(false);
+              }}
+              alt=""
+            />
+          </div>
+          <button className={stl.searchCta} onClick={addToFavorites}>
+            <img src={member} alt="Member star" className={stl.memberStar} />
+          </button>
         </div>
-      )}
+      </div>
     </div>
   );
 };

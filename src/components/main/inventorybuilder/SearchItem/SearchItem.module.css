@@ -95,7 +95,6 @@
   color: gray;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
-  display: none;
 }
 
 .searchCta:hover {
@@ -144,7 +143,6 @@
 .leftWrapper {
   display: flex;
   gap: 5px;
-  display: none;
 }
 
 .imgWrapper {
@@ -153,7 +151,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 
 .imgWrapper img {
