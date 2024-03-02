@@ -44,7 +44,7 @@ const ChatColor = ({ userColor, userEmail, setUpdatedColor, updatedColor }) => {
       <span className={stl.graySpan}>Chat color</span>
       <div className={stl.colorsWrapper}>
         <div className={stl.currentColor}>
-          <span className={stl.currColor}>Current Color</span>
+          {userColor && <span className={stl.currColor}>Current Color</span>}
           {!userColor && (
             <div className={stl.smolSpinner}>
               <Spinner />
