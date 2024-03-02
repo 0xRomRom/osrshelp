@@ -11,7 +11,6 @@ const XPTable = () => {
       {/* <TopAdBar /> */}
       <Pagination />
       <div className={stl.levelsWrap}>
-        <h1 className={stl.modalTitle}>OSRS XP Table</h1>
         <XPCalculator />
         <div className={stl.xpGridWrapper}>
           <div className={stl.xpGrid}>

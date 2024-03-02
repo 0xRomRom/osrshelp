@@ -19,8 +19,8 @@ const CombatLevels = ({ combatType, combatLevel }) => {
 
   return (
     <div className={stl.midRow}>
-      <span className={stl.combatType}>{combatType} Based</span>
       <div className={stl.imgWrapper}>
+        <span className={stl.combatType}>{combatType} Based</span>
         <img src={imgSrc} alt="Skilltype" className={stl.typeIcon} />
       </div>
       <div className={`${stl.combatLevelBox} ${stl.activeCombat}`}>

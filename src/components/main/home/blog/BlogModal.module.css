@@ -47,13 +47,15 @@
   border-radius: 0.2rem;
   padding: 2px 0px;
   cursor: pointer;
-  background-color: #0084ffd7;
+  background-color: var(--blue-main);
   user-select: none;
+  opacity: 0.8;
 }
 
 .activeBtn {
   color: white;
-  background-color: #0084ff;
+  background-color: var(--blue-main);
+  opacity: 1;
 }
 
 .updatesBox {

@@ -61,7 +61,7 @@ code {
 
 :root {
   --dark-bg: #111111;
-  --blue-main: rgb(37, 99, 235);
+  --blue-main: #0084ff;
   --blue-focus: rgba(37, 106, 235, 0.858);
   --blue-active: rgb(37, 77, 235);
   --orange-main: orange;

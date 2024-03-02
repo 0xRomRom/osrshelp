@@ -30,9 +30,10 @@ const OnlineUsers = () => {
       } catch (err) {
         console.error(err);
       }
+
       //Remove inactive users
       const filteredUsers = currentUsers.filter(
-        (user) => user.timestamp + 3000 > currentStamp
+        (user) => user.timestamp + 300 > currentStamp
       );
 
       //Handle new entry
@@ -71,6 +72,7 @@ const OnlineUsers = () => {
         console.error("Error updating user activity:", error.message);
       }
     };
+    updateActivity();
 
     const updater = setInterval(updateActivity, 10000);
     return () => {
