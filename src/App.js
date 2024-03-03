@@ -36,6 +36,7 @@ import Blog from "./components/main/blog/Blog";
 import Admin from "./utils/admin/Admin";
 import UserProfile from "./utils/userprofile/UserProfile";
 import RecoverPassword from "./components/signup/reocoverpassword/RecoverPassword";
+import { Helmet } from "react-helmet";
 
 const App = () => {
   const [skills, setSkills] = useState(null);
@@ -60,20 +61,132 @@ const App = () => {
             )}
             <CookieBanner />
             <Routes>
-              <Route path="/reportissue" element={<ReportIssue />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/terms&conditions" element={<TermsConditions />} />
-              <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/successful-payment" element={<PaymentSucces />} />
-              <Route path="/checkout" element={<Checkout />} />
-              <Route path="/login" element={<SignUp />} />
-              <Route path="/recoverpassword" element={<RecoverPassword />} />
+              <Route
+                path="/reportissue"
+                element={
+                  <>
+                    <Helmet>
+                      <title>Report Issue</title>
+                      <meta
+                        name="description"
+                        content="Repost technical issues found on OSRS Help"
+                      />
+                    </Helmet>
+                    <ReportIssue />
+                  </>
+                }
+              />
+              <Route
+                path="/contact"
+                element={
+                  <>
+                    <Helmet>
+                      <title>Contact Page</title>
+                      <meta
+                        name="description"
+                        content="Get in contact with the OSRS Help team"
+                      />
+                    </Helmet>
+                    <Contact />
+                  </>
+                }
+              />
+              <Route
+                path="/terms&conditions"
+                element={
+                  <>
+                    <Helmet>
+                      <title>Terms & Conditions</title>
+                      <meta name="description" content="Terms & Conditions" />
+                    </Helmet>
+                    <TermsConditions />
+                  </>
+                }
+              />
+              <Route
+                path="/privacypolicy"
+                element={
+                  <>
+                    <Helmet>
+                      <title>Privacy Policy</title>
+                      <meta name="description" content="Privacy Policy" />
+                    </Helmet>
+                    <PrivacyPolicy />
+                  </>
+                }
+              />
+              <Route
+                path="/faq"
+                element={
+                  <>
+                    <Helmet>
+                      <title>Frequently Asked Questions</title>
+                      <meta
+                        name="description"
+                        content="Frequently Asked Questions"
+                      />
+                    </Helmet>
+                    <FAQ />
+                  </>
+                }
+              />
+              <Route
+                path="/successful-payment"
+                element={
+                  <>
+                    <Helmet>
+                      <title>Payment Successful</title>
+                      <meta name="description" content="Payment Successful" />
+                    </Helmet>
+                    <PaymentSucces />
+                  </>
+                }
+              />
+              <Route
+                path="/checkout"
+                element={
+                  <>
+                    <Helmet>
+                      <title>Checkout</title>
+                      <meta name="description" content="Checkout" />
+                    </Helmet>
+                    <Checkout />
+                  </>
+                }
+              />
+              <Route
+                path="/login"
+                element={
+                  <>
+                    <Helmet>
+                      <title>Login or Sign Up</title>
+                      <meta name="description" content="Login or Sign Up" />
+                    </Helmet>
+                    <SignUp />
+                  </>
+                }
+              />
+              <Route
+                path="/recoverpassword"
+                element={
+                  <>
+                    <Helmet>
+                      <title>Recover Password</title>
+                      <meta name="description" content="Recover Password" />
+                    </Helmet>
+                    <RecoverPassword />
+                  </>
+                }
+              />
               <Route
                 index
                 path="/"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>OSRS Help</title>
+                      <meta name="description" content="OSRS Help" />
+                    </Helmet>
                     <Home
                       setSkills={setSkills}
                       skills={skills}
