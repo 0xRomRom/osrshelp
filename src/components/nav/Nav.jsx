@@ -40,7 +40,7 @@ const Nav = (props) => {
   useEffect(() => {
     setSubState(null);
 
-    if (path === "/" || path === "/home") {
+    if (path === "/") {
       setActiveTab("/");
       setMainState("Home");
       setSubState(null);
