@@ -21,7 +21,7 @@ const StrengthCalculator = (props) => {
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Strength.png"
+          iconSrc="/skillicons/Strength.png"
           title="Strength"
           skillname="strength"
           skills={props.skills && props.skills}

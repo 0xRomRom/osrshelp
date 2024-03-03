@@ -167,7 +167,7 @@ const ConstructionGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortItem}>
           <img
-            src="./skillicons/Construction.webp"
+            src="/skillicons/Construction.webp"
             alt="Tree Logo"
             className={stl.miniLogo}
           />{" "}

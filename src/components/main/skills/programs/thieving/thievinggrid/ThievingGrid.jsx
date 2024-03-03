@@ -59,7 +59,7 @@ const ThievingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortNPC}>
           <img
-            src="./skillicons/Thieving.webp"
+            src="/skillicons/Thieving.webp"
             alt="Thieving Logo"
             className={stl.miniLogo}
           />{" "}
@@ -70,7 +70,7 @@ const ThievingGrid = (props) => {
         </span>
         <span onClick={sortToGo}>
           <img
-            src="./skillicons/Thieving.webp"
+            src="/skillicons/Thieving.webp"
             alt="Thieving Logo"
             className={stl.miniLogo}
           />{" "}

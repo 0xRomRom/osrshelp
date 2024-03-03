@@ -30,7 +30,7 @@ const MagicCalculator = (props) => {
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Magic.webp"
+          iconSrc="/skillicons/Magic.webp"
           title="Magic"
           skillname="magic"
           skills={props.skills && props.skills}

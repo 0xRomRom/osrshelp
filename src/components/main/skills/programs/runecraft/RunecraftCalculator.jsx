@@ -22,7 +22,7 @@ const RunecraftCalculator = (props) => {
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Runecraft.webp"
+          iconSrc="/skillicons/Runecraft.webp"
           title="Runecraft"
           skillname="runecraft"
           skills={props.skills && props.skills}

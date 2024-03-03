@@ -126,7 +126,7 @@ const ResultBox = ({ inputValues, combatLevel }) => {
       <div className={stl.togoRow}>
         <div className={stl.togoSkill}>
           <img
-            src="./skillicons/Attack.webp"
+            src="/skillicons/Attack.webp"
             className={stl.inputIcon}
             alt="Attack skill"
           />
@@ -138,7 +138,7 @@ const ResultBox = ({ inputValues, combatLevel }) => {
         </div>
         <div className={stl.togoSkill}>
           <img
-            src="./skillicons/Strength.png"
+            src="/skillicons/Strength.png"
             className={stl.inputIcon}
             alt="Strength skill"
           />
@@ -149,7 +149,7 @@ const ResultBox = ({ inputValues, combatLevel }) => {
         </div>
         <div className={stl.togoSkill}>
           <img
-            src="./skillicons/Defence.webp"
+            src="/skillicons/Defence.webp"
             className={stl.inputIcon}
             alt="Defence skill"
           />
@@ -160,7 +160,7 @@ const ResultBox = ({ inputValues, combatLevel }) => {
         </div>
         <div className={stl.togoSkill}>
           <img
-            src="./skillicons/Hitpoints.webp"
+            src="/skillicons/Hitpoints.webp"
             className={stl.inputIcon}
             alt="Hitpoints skill"
           />
@@ -171,7 +171,7 @@ const ResultBox = ({ inputValues, combatLevel }) => {
         </div>
         <div className={stl.togoSkill}>
           <img
-            src="./skillicons/Ranged.webp"
+            src="/skillicons/Ranged.webp"
             className={stl.inputIcon}
             alt="Ranged skill"
           />
@@ -182,7 +182,7 @@ const ResultBox = ({ inputValues, combatLevel }) => {
         </div>
         <div className={stl.togoSkill}>
           <img
-            src="./skillicons/Magic.webp"
+            src="/skillicons/Magic.webp"
             className={stl.inputIcon}
             alt="Magic skill"
           />
@@ -193,7 +193,7 @@ const ResultBox = ({ inputValues, combatLevel }) => {
         </div>
         <div className={stl.togoSkill}>
           <img
-            src="./skillicons/Prayer.webp"
+            src="/skillicons/Prayer.webp"
             className={stl.inputIcon}
             alt="Prayer skill"
           />

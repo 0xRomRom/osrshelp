@@ -182,7 +182,7 @@ const RunecraftGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortTree}>
           <img
-            src="./skillicons/Runecraft.webp"
+            src="/skillicons/Runecraft.webp"
             alt="Runecraft skill"
             className={stl.miniLogo}
           />{" "}
@@ -197,7 +197,7 @@ const RunecraftGrid = (props) => {
         </span>
         <span onClick={sortToGo}>
           <img
-            src="./skillicons/Runecraft.webp"
+            src="/skillicons/Runecraft.webp"
             alt="Runecraft skill"
             className={stl.miniLogo}
           />{" "}

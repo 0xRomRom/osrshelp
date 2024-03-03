@@ -289,7 +289,7 @@ const FarmingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
           <img
-            src="./skillicons/Farming.webp"
+            src="/skillicons/Farming.webp"
             alt="Bones Logo"
             className={stl.miniLogo}
           />{" "}

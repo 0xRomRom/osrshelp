@@ -21,7 +21,7 @@ const HitpointsCalculator = (props) => {
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Hitpoints.webp"
+          iconSrc="/skillicons/Hitpoints.webp"
           title="Hitpoints"
           skillname="hitpoints"
           skills={props.skills && props.skills}

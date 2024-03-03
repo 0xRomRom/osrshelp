@@ -130,7 +130,7 @@ const PrayerGrid = (props) => {
         </span>
         <span onClick={sortAmount}>
           <img
-            src="./skillicons/Prayer.webp"
+            src="/skillicons/Prayer.webp"
             alt="Amount Logo"
             className={stl.miniLogo}
           />{" "}

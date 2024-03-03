@@ -21,7 +21,7 @@ const RangedCalculator = (props) => {
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Ranged.webp"
+          iconSrc="/skillicons/Ranged.webp"
           title="Ranged"
           skillname="ranged"
           skills={props.skills && props.skills}

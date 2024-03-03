@@ -73,7 +73,7 @@ const NPCGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortMonsters}>
           <img
-            src="./skillicons/Attack.webp"
+            src="/skillicons/Attack.webp"
             alt="Attack Logo"
             className={stl.miniLogo}
           />{" "}
@@ -85,7 +85,7 @@ const NPCGrid = (props) => {
         </span>
         <span onClick={sortCombat}>
           <img
-            src="./skillicons/Hitpoints.webp"
+            src="/skillicons/Hitpoints.webp"
             alt="Health Logo"
             className={stl.miniLogo}
           />{" "}
@@ -93,7 +93,7 @@ const NPCGrid = (props) => {
         </span>
         <span onClick={sortToGo}>
           <img
-            src="./skillicons/Slayer.png"
+            src="/skillicons/Slayer.png"
             alt="Slayer Logo"
             className={stl.miniLogo}
           />{" "}

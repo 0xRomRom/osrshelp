@@ -60,7 +60,7 @@ const WoodcuttingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortTree}>
           <img
-            src="./skillicons/Woodcutting.webp"
+            src="/skillicons/Woodcutting.webp"
             alt="Tree Logo"
             className={stl.miniLogo}
           />{" "}

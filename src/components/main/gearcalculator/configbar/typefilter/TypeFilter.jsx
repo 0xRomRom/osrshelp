@@ -18,7 +18,7 @@ const TypeFilter = ({ gearFilter, setGearFilter }) => {
         className={`${stl.cta} ${gearFilter === "Melee" ? stl.active : ""}`}
       >
         <img
-          src="./skillicons/Attack.webp"
+          src="/skillicons/Attack.webp"
           className={stl.skillIcon}
           alt="Oldschool Runescape Attack Skill Icon"
         />
@@ -29,7 +29,7 @@ const TypeFilter = ({ gearFilter, setGearFilter }) => {
         className={`${stl.cta} ${gearFilter === "Ranged" ? stl.active : ""}`}
       >
         <img
-          src="./skillicons/Ranged.webp"
+          src="/skillicons/Ranged.webp"
           className={stl.skillIcon}
           alt="Oldschool Runescape Ranged Skill Icon"
         />
@@ -40,7 +40,7 @@ const TypeFilter = ({ gearFilter, setGearFilter }) => {
         className={`${stl.cta} ${gearFilter === "Magic" ? stl.active : ""}`}
       >
         <img
-          src="./skillicons/Magic.webp"
+          src="/skillicons/Magic.webp"
           className={stl.skillIcon}
           alt="Oldschool Runescape Magic Skill Icon"
         />

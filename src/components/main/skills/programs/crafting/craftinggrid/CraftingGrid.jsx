@@ -188,7 +188,7 @@ const CraftingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
           <img
-            src="./skillicons/Crafting.webp"
+            src="/skillicons/Crafting.webp"
             alt="Crafting item"
             className={stl.miniLogo}
           />{" "}
@@ -204,7 +204,7 @@ const CraftingGrid = (props) => {
         </span>
         <span onClick={sortAmount}>
           <img
-            src="./skillicons/Crafting.webp"
+            src="/skillicons/Crafting.webp"
             alt="Amount Logo"
             className={stl.miniLogo}
           />{" "}

@@ -70,7 +70,7 @@ const CookingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortFood}>
           <img
-            src="./skillicons/Cooking.webp"
+            src="/skillicons/Cooking.webp"
             alt="Cooking skill"
             className={stl.miniLogo}
           />{" "}

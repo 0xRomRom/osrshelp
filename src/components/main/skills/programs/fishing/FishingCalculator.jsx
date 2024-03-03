@@ -24,7 +24,7 @@ const FishingCalculator = (props) => {
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Fishing.webp"
+          iconSrc="/skillicons/Fishing.webp"
           title="Fishing"
           skillname="fishing"
           skills={props.skills && props.skills}

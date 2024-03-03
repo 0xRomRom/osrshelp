@@ -187,7 +187,7 @@ const SmithingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
           <img
-            src="./skillicons/Smithing.webp"
+            src="/skillicons/Smithing.webp"
             alt="Smithing skill"
             className={stl.miniLogo}
           />
@@ -203,7 +203,7 @@ const SmithingGrid = (props) => {
         </span>
         <span onClick={sortAmount}>
           <img
-            src="./skillicons/Smithing.webp"
+            src="/skillicons/Smithing.webp"
             alt="Amount Logo"
             className={stl.miniLogo}
           />{" "}

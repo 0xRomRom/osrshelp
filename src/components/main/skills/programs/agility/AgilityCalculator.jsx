@@ -22,7 +22,7 @@ const AgilityCalculator = (props) => {
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Agility.webp"
+          iconSrc="/skillicons/Agility.webp"
           title="Agility"
           skillname="agility"
           skills={props.skills && props.skills}

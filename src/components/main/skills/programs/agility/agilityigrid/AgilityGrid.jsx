@@ -148,7 +148,7 @@ const AgilityGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortOre}>
           <img
-            src="./skillicons/Agility.webp"
+            src="/skillicons/Agility.webp"
             alt="Agility"
             className={stl.miniLogo}
           />{" "}
@@ -172,7 +172,7 @@ const AgilityGrid = (props) => {
         </span>
         <span onClick={sortLapsGoal}>
           <img
-            src="./skillicons/Agility.webp"
+            src="/skillicons/Agility.webp"
             alt="Agility"
             className={stl.miniLogo}
           />{" "}

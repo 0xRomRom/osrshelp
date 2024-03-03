@@ -23,7 +23,7 @@ const FletchingCalculator = (props) => {
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Fletching.webp"
+          iconSrc="/skillicons/Fletching.webp"
           title="Fletching"
           skillname="fletching"
           skills={props.skills && props.skills}
