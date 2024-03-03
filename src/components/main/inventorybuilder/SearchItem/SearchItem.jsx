@@ -172,10 +172,6 @@ const SearchItem = ({
     setFavoritesImgSrc(imgSrc);
   };
 
-  useEffect(() => {
-    console.log(imageError);
-  }, [imageError]);
-
   return (
     <div className={stl.imgSearchBox}>
       <div className={stl.inputWrapper}>

@@ -216,7 +216,7 @@ const ResultBox = ({ bonusState }) => {
               className={stl.miniIcon}
             />
             Weight: {resultState.weight >= 0 ? "+" : "-"}
-            {Math.abs(resultState.weight).toFixed(2)}
+            {Math.abs(resultState.weight).toFixed(2)} KG
           </span>
         </div>
       </ul>
