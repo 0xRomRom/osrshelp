@@ -45,7 +45,7 @@ const Nav = (props) => {
       setMainState("Home");
       setSubState(null);
     }
-    if (path === "/skillcalculators") {
+    if (path.includes("/skillcalculators")) {
       setActiveTab("skills");
       setMainState("Skill Calculators");
     }
@@ -53,35 +53,35 @@ const Nav = (props) => {
       setActiveTab("blog");
       setMainState("Blog");
     }
-    if (path === "/inventorybuilder") {
+    if (path.includes("/inventorybuilder")) {
       setActiveTab("inventorybuilder");
       setMainState("Inventory Builder");
     }
-    if (path === "/gearcalculator") {
+    if (path.includes("/gearcalculator")) {
       setActiveTab("gearcalculator");
       setMainState("Gear Calculator");
     }
-    if (path === "/xptable") {
+    if (path.includes("/xptable")) {
       setActiveTab("xptable");
       setMainState("XP Table");
     }
-    if (path === "/moneymakers") {
+    if (path.includes("/moneymakers")) {
       setActiveTab("moneymakers");
       setMainState("Money Makers");
     }
-    if (path === "/combatcalculator") {
+    if (path.includes("/combatcalculator")) {
       setActiveTab("combatcalculator");
       setMainState("Combat Calculator");
     }
-    if (path === "/worldmap") {
+    if (path.includes("/worldmap")) {
       setActiveTab("worldmap");
       setMainState("World map");
     }
-    if (path === "/profitalching") {
+    if (path.includes("/profitalching")) {
       setActiveTab("profitalching");
       setMainState("Profit Alching");
     }
-    if (path === "/supportosrshelp") {
+    if (path.includes("/supportosrshelp")) {
       setActiveTab("supportosrshelp");
       setMainState("Support OSRS Help");
     }
