@@ -23,7 +23,7 @@ const Donations = ({ setShowUserProfile }) => {
           }
         >
           <img
-            src="./foods/Lobster.webp"
+            src="/foods/Lobster.webp"
             alt="Lobster"
             className={stl.lobstericon}
           />

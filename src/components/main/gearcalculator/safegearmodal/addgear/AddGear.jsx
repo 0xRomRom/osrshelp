@@ -441,17 +441,17 @@ const AddGear = ({
               onClick={() => setGearType("All")}
             >
               <img
-                src="./skillicons/Attack.webp"
+                src="/skillicons/Attack.webp"
                 alt="Attack skill"
                 className={stl.stackLogo1}
               />
               <img
-                src="./skillicons/Ranged.webp"
+                src="/skillicons/Ranged.webp"
                 alt="Ranged skill"
                 className={stl.stackLogo2}
               />
               <img
-                src="./skillicons/Magic.webp"
+                src="/skillicons/Magic.webp"
                 alt="Magic skill"
                 className={stl.stackLogo3}
               />
@@ -463,7 +463,7 @@ const AddGear = ({
               onClick={() => setGearType("Melee")}
             >
               <img
-                src="./skillicons/Attack.webp"
+                src="/skillicons/Attack.webp"
                 alt="Attack skill"
                 className={stl.skillMiniLogo}
               />
@@ -475,7 +475,7 @@ const AddGear = ({
               onClick={() => setGearType("Ranged")}
             >
               <img
-                src="./skillicons/Ranged.webp"
+                src="/skillicons/Ranged.webp"
                 alt="Ranged skill"
                 className={stl.skillMiniLogo}
               />
@@ -487,7 +487,7 @@ const AddGear = ({
               onClick={() => setGearType("Magic")}
             >
               <img
-                src="./skillicons/Magic.webp"
+                src="/skillicons/Magic.webp"
                 alt="Magic skill"
                 className={stl.skillMiniLogo}
               />
@@ -518,17 +518,17 @@ const AddGear = ({
               {copiedSlots["slot1"].Geartype === "All" && (
                 <>
                   <img
-                    src="./skillicons/Attack.webp"
+                    src="/skillicons/Attack.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Magic.webp"
+                    src="/skillicons/Magic.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Ranged.webp"
+                    src="/skillicons/Ranged.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
@@ -536,21 +536,21 @@ const AddGear = ({
               )}
               {copiedSlots["slot1"].Geartype === "Melee" && (
                 <img
-                  src="./skillicons/Attack.webp"
+                  src="/skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot1"].Geartype === "Magic" && (
                 <img
-                  src="./skillicons/Magic.webp"
+                  src="/skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot1"].Geartype === "Ranged" && (
                 <img
-                  src="./skillicons/Ranged.webp"
+                  src="/skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -578,17 +578,17 @@ const AddGear = ({
               {copiedSlots["slot2"].Geartype === "All" && (
                 <>
                   <img
-                    src="./skillicons/Attack.webp"
+                    src="/skillicons/Attack.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Magic.webp"
+                    src="/skillicons/Magic.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Ranged.webp"
+                    src="/skillicons/Ranged.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
@@ -596,21 +596,21 @@ const AddGear = ({
               )}
               {copiedSlots["slot2"].Geartype === "Melee" && (
                 <img
-                  src="./skillicons/Attack.webp"
+                  src="/skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot2"].Geartype === "Magic" && (
                 <img
-                  src="./skillicons/Magic.webp"
+                  src="/skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot2"].Geartype === "Ranged" && (
                 <img
-                  src="./skillicons/Ranged.webp"
+                  src="/skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -638,17 +638,17 @@ const AddGear = ({
               {copiedSlots["slot3"].Geartype === "All" && (
                 <>
                   <img
-                    src="./skillicons/Attack.webp"
+                    src="/skillicons/Attack.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Magic.webp"
+                    src="/skillicons/Magic.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Ranged.webp"
+                    src="/skillicons/Ranged.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
@@ -656,21 +656,21 @@ const AddGear = ({
               )}
               {copiedSlots["slot3"].Geartype === "Melee" && (
                 <img
-                  src="./skillicons/Attack.webp"
+                  src="/skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot3"].Geartype === "Magic" && (
                 <img
-                  src="./skillicons/Magic.webp"
+                  src="/skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot3"].Geartype === "Ranged" && (
                 <img
-                  src="./skillicons/Ranged.webp"
+                  src="/skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -699,17 +699,17 @@ const AddGear = ({
               {copiedSlots["slot4"].Geartype === "All" && (
                 <>
                   <img
-                    src="./skillicons/Attack.webp"
+                    src="/skillicons/Attack.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Magic.webp"
+                    src="/skillicons/Magic.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Ranged.webp"
+                    src="/skillicons/Ranged.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
@@ -717,21 +717,21 @@ const AddGear = ({
               )}
               {copiedSlots["slot4"].Geartype === "Melee" && (
                 <img
-                  src="./skillicons/Attack.webp"
+                  src="/skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot4"].Geartype === "Magic" && (
                 <img
-                  src="./skillicons/Magic.webp"
+                  src="/skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot4"].Geartype === "Ranged" && (
                 <img
-                  src="./skillicons/Ranged.webp"
+                  src="/skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -760,17 +760,17 @@ const AddGear = ({
               {copiedSlots["slot5"].Geartype === "All" && (
                 <>
                   <img
-                    src="./skillicons/Attack.webp"
+                    src="/skillicons/Attack.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Magic.webp"
+                    src="/skillicons/Magic.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Ranged.webp"
+                    src="/skillicons/Ranged.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
@@ -778,21 +778,21 @@ const AddGear = ({
               )}
               {copiedSlots["slot5"].Geartype === "Melee" && (
                 <img
-                  src="./skillicons/Attack.webp"
+                  src="/skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot5"].Geartype === "Magic" && (
                 <img
-                  src="./skillicons/Magic.webp"
+                  src="/skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot5"].Geartype === "Ranged" && (
                 <img
-                  src="./skillicons/Ranged.webp"
+                  src="/skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -821,17 +821,17 @@ const AddGear = ({
               {copiedSlots["slot6"].Geartype === "All" && (
                 <>
                   <img
-                    src="./skillicons/Attack.webp"
+                    src="/skillicons/Attack.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Magic.webp"
+                    src="/skillicons/Magic.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Ranged.webp"
+                    src="/skillicons/Ranged.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
@@ -839,21 +839,21 @@ const AddGear = ({
               )}
               {copiedSlots["slot6"].Geartype === "Melee" && (
                 <img
-                  src="./skillicons/Attack.webp"
+                  src="/skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot6"].Geartype === "Magic" && (
                 <img
-                  src="./skillicons/Magic.webp"
+                  src="/skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot6"].Geartype === "Ranged" && (
                 <img
-                  src="./skillicons/Ranged.webp"
+                  src="/skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -882,17 +882,17 @@ const AddGear = ({
               {copiedSlots["slot7"].Geartype === "All" && (
                 <>
                   <img
-                    src="./skillicons/Attack.webp"
+                    src="/skillicons/Attack.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Magic.webp"
+                    src="/skillicons/Magic.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Ranged.webp"
+                    src="/skillicons/Ranged.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
@@ -900,21 +900,21 @@ const AddGear = ({
               )}
               {copiedSlots["slot7"].Geartype === "Melee" && (
                 <img
-                  src="./skillicons/Attack.webp"
+                  src="/skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot7"].Geartype === "Magic" && (
                 <img
-                  src="./skillicons/Magic.webp"
+                  src="/skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot7"].Geartype === "Ranged" && (
                 <img
-                  src="./skillicons/Ranged.webp"
+                  src="/skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -942,17 +942,17 @@ const AddGear = ({
               {copiedSlots["slot8"].Geartype === "All" && (
                 <>
                   <img
-                    src="./skillicons/Attack.webp"
+                    src="/skillicons/Attack.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Magic.webp"
+                    src="/skillicons/Magic.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Ranged.webp"
+                    src="/skillicons/Ranged.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
@@ -960,21 +960,21 @@ const AddGear = ({
               )}
               {copiedSlots["slot8"].Geartype === "Melee" && (
                 <img
-                  src="./skillicons/Attack.webp"
+                  src="/skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot8"].Geartype === "Magic" && (
                 <img
-                  src="./skillicons/Magic.webp"
+                  src="/skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot8"].Geartype === "Ranged" && (
                 <img
-                  src="./skillicons/Ranged.webp"
+                  src="/skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -1003,17 +1003,17 @@ const AddGear = ({
               {copiedSlots["slot9"].Geartype === "All" && (
                 <>
                   <img
-                    src="./skillicons/Attack.webp"
+                    src="/skillicons/Attack.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Magic.webp"
+                    src="/skillicons/Magic.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Ranged.webp"
+                    src="/skillicons/Ranged.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
@@ -1021,21 +1021,21 @@ const AddGear = ({
               )}
               {copiedSlots["slot9"].Geartype === "Melee" && (
                 <img
-                  src="./skillicons/Attack.webp"
+                  src="/skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot9"].Geartype === "Magic" && (
                 <img
-                  src="./skillicons/Magic.webp"
+                  src="/skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot9"].Geartype === "Ranged" && (
                 <img
-                  src="./skillicons/Ranged.webp"
+                  src="/skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
@@ -1064,17 +1064,17 @@ const AddGear = ({
               {copiedSlots["slot10"].Geartype === "All" && (
                 <>
                   <img
-                    src="./skillicons/Attack.webp"
+                    src="/skillicons/Attack.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Magic.webp"
+                    src="/skillicons/Magic.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
                   <img
-                    src="./skillicons/Ranged.webp"
+                    src="/skillicons/Ranged.webp"
                     alt="Gear style"
                     className={stl.slotMiniIcon}
                   />
@@ -1082,21 +1082,21 @@ const AddGear = ({
               )}
               {copiedSlots["slot10"].Geartype === "Melee" && (
                 <img
-                  src="./skillicons/Attack.webp"
+                  src="/skillicons/Attack.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot10"].Geartype === "Magic" && (
                 <img
-                  src="./skillicons/Magic.webp"
+                  src="/skillicons/Magic.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />
               )}
               {copiedSlots["slot10"].Geartype === "Ranged" && (
                 <img
-                  src="./skillicons/Ranged.webp"
+                  src="/skillicons/Ranged.webp"
                   alt="Gear style"
                   className={stl.slotMiniIcon}
                 />

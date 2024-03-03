@@ -352,7 +352,7 @@ const Nav = (props) => {
         >
           <button className={stl.fixedCta}>
             <img
-              src="./foods/Lobster.webp"
+              src="/foods/Lobster.webp"
               alt="Lobster"
               className={stl.lobsterIcon}
             />

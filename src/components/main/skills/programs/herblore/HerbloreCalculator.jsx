@@ -24,7 +24,7 @@ const HerbloreCalculator = (props) => {
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Herblore.webp"
+          iconSrc="/skillicons/Herblore.webp"
           title="Herblore"
           skillname="herblore"
           skills={props.skills && props.skills}

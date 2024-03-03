@@ -76,7 +76,7 @@ const HunterGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortLevel}>
           <img
-            src="./skillicons/Hunter.webp"
+            src="/skillicons/Hunter.webp"
             alt="Hunter skill"
             className={stl.miniLogo}
           />{" "}
@@ -84,7 +84,7 @@ const HunterGrid = (props) => {
         </span>
         <span onClick={sortArea}>
           <img
-            src="./skillicons/Worldmap.webp"
+            src="/skillicons/Worldmap.webp"
             alt="Member Logo"
             className={stl.miniLogo}
           />{" "}

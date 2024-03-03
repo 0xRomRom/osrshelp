@@ -23,7 +23,7 @@ const SmithingCalculator = (props) => {
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Smithing.webp"
+          iconSrc="/skillicons/Smithing.webp"
           title="Smithing"
           skillname="smithing"
           skills={props.skills && props.skills}

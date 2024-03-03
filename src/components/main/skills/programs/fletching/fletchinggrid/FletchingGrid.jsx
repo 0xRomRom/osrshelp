@@ -223,7 +223,7 @@ const FletchingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortItem}>
           <img
-            src="./skillicons/Fletching.webp"
+            src="/skillicons/Fletching.webp"
             alt="Fletching skill"
             className={stl.miniLogo}
           />{" "}

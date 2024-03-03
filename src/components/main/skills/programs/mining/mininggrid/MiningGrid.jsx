@@ -142,7 +142,7 @@ const MiningGrid = (props) => {
         </span>
         <span onClick={sortToGo}>
           <img
-            src="./skillicons/Mining.webp"
+            src="/skillicons/Mining.webp"
             alt="Mining skill"
             className={stl.miniLogo}
           />{" "}

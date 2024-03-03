@@ -37,7 +37,7 @@ const OptionTiles = ({ setEtherModal }) => {
     <div className={stl.optionsBlock}>
       <div className={stl.option} onClick={handleBuyMeALobster}>
         <img
-          src="./foods/Lobster.webp"
+          src="/foods/Lobster.webp"
           alt="Lobster"
           className={stl.lobsterImg}
         />

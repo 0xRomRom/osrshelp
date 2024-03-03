@@ -27,7 +27,7 @@ const DefenceCalculator = (props) => {
       />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Defence.webp"
+          iconSrc="/skillicons/Defence.webp"
           title="Defence"
           skillname="defence"
           skills={props.skills && props.skills}

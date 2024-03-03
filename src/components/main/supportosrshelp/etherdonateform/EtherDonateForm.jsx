@@ -69,7 +69,7 @@ const EtherDonateForm = ({ setEtherModal }) => {
             <h1 className={stl.thanksHero}>Thanks for supporting OSRS Help!</h1>
             <div className={stl.heartWrapper}>
               <img
-                src="./skillicons/Hitpoints.webp"
+                src="/skillicons/Hitpoints.webp"
                 alt="Hitpoints"
                 className={stl.thanksHeart}
               />

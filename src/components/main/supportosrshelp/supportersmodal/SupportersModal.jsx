@@ -24,7 +24,7 @@ const SupportersModal = () => {
           onClick={() => setActiveList("Lobster")}
         >
           <img
-            src="./foods/Lobster.webp"
+            src="/foods/Lobster.webp"
             alt="Lobster"
             className={stl.lobsterCta}
           />
@@ -60,7 +60,7 @@ const SupportersModal = () => {
                   </span>
                   <span className={stl.amount}>x{item.amount}</span>
                   <img
-                    src="./foods/Lobster.webp"
+                    src="/foods/Lobster.webp"
                     alt="Lobster"
                     className={stl.lobsterImg}
                   />

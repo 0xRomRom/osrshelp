@@ -230,7 +230,7 @@ const MagicGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortBones}>
           <img
-            src="./skillicons/Magic.webp"
+            src="/skillicons/Magic.webp"
             alt="Bones Logo"
             className={stl.miniLogo}
           />{" "}
@@ -246,7 +246,7 @@ const MagicGrid = (props) => {
         </span>
         <span onClick={sortAmount}>
           <img
-            src="./skillicons/Magic.webp"
+            src="/skillicons/Magic.webp"
             alt="Amount Logo"
             className={stl.miniLogo}
           />{" "}

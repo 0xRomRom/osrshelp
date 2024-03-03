@@ -201,7 +201,7 @@ const ResultBox = ({ bonusState }) => {
           </span>
           <span className={stl.statValue}>
             <img
-              src="./skillicons/Slayer.png"
+              src="/skillicons/Slayer.png"
               alt="Slayer Icon"
               className={stl.miniIcon}
             />

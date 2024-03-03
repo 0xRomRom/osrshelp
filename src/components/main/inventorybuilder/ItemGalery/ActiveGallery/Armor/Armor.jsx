@@ -15,9 +15,9 @@ import Boots from "../../../../../../assets/gearslots/Boots.png";
 import Ring from "../../../../../../assets/gearslots/Ring.png";
 
 const combatStyles = [
-  { style: "Melee", icon: "./skillicons/Attack.webp" },
-  { style: "Magic", icon: "./skillicons/Magic.webp" },
-  { style: "Ranged", icon: "./skillicons/Ranged.webp" },
+  { style: "Melee", icon: "/skillicons/Attack.webp" },
+  { style: "Magic", icon: "/skillicons/Magic.webp" },
+  { style: "Ranged", icon: "/skillicons/Ranged.webp" },
 ];
 
 const Armor = ({

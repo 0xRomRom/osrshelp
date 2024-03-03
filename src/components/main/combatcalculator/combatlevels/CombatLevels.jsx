@@ -4,16 +4,16 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 const CombatLevels = ({ combatType, combatLevel }) => {
-  const [imgSrc, setImgSrc] = useState("./skillicons/Attack.webp");
+  const [imgSrc, setImgSrc] = useState("/skillicons/Attack.webp");
   useEffect(() => {
     if (combatType === "Melee") {
-      setImgSrc("./skillicons/Attack.webp");
+      setImgSrc("/skillicons/Attack.webp");
     }
     if (combatType === "Magic") {
-      setImgSrc("./skillicons/Magic.webp");
+      setImgSrc("/skillicons/Magic.webp");
     }
     if (combatType === "Ranged") {
-      setImgSrc("./skillicons/Ranged.webp");
+      setImgSrc("/skillicons/Ranged.webp");
     }
   }, [combatType]);
 
@@ -25,7 +25,7 @@ const CombatLevels = ({ combatType, combatLevel }) => {
       </div>
       <div className={`${stl.combatLevelBox} ${stl.activeCombat}`}>
         <img
-          src="./skillicons/Combat.webp"
+          src="/skillicons/Combat.webp"
           alt="Combat symbol"
           className={stl.combatIcon}
         />
@@ -34,7 +34,7 @@ const CombatLevels = ({ combatType, combatLevel }) => {
       <IoArrowDownOutline className={stl.arrow} />
       <div className={stl.combatLevelBox}>
         <img
-          src="./skillicons/Combat.webp"
+          src="/skillicons/Combat.webp"
           alt="Combat symbol"
           className={stl.combatIcon}
         />

@@ -26,7 +26,7 @@ const FiremakingCalculator = (props) => {
       <Pagination navTo="/skillcalculators" />
       <div className={stl.modal}>
         <TopBar
-          iconSrc="./skillicons/Firemaking.png"
+          iconSrc="/skillicons/Firemaking.png"
           title="Firemaking"
           skillname="firemaking"
           skills={props.skills && props.skills}

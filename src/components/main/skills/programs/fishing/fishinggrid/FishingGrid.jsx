@@ -108,7 +108,7 @@ const FishingGrid = (props) => {
       <div className={stl.typeRow}>
         <span className={stl.monsterTitleRow} onClick={sortFood}>
           <img
-            src="./skillicons/Fishing.webp"
+            src="/skillicons/Fishing.webp"
             alt="Fishing skill"
             className={stl.miniLogo}
           />{" "}
