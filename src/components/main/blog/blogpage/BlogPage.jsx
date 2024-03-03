@@ -30,6 +30,9 @@ const BlogPage = ({ blogPost, setBlogPost }) => {
           .from("blog_posts")
           .select()
           .eq("index", blogPost.index - 1);
+        if (data.length === 0) {
+          return;
+        }
         setPrevBlog(data);
       } catch (err) {
         console.error(err);
@@ -37,10 +40,7 @@ const BlogPage = ({ blogPost, setBlogPost }) => {
       }
     };
 
-    if (
-      Object.entries(prevBlog).length === 0 &&
-      Object.entries(currentBlogPost).length > 0
-    ) {
+    if (Object.entries(prevBlog).length === 0) {
       prevBlogFetcher();
     }
   }, [currentBlogPost, blogPost.index, prevBlog, navigate]);

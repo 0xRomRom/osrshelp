@@ -254,7 +254,7 @@ const Nav = (props) => {
               onClick={() => handleTabSwitch("profitalching", "Profit Alching")}
             >
               <img
-                src="./staves/Staff_of_fire.webp"
+                src="/staves/Staff_of_fire.webp"
                 alt="Staff of fire icon"
                 className={stl.icon}
               />
@@ -321,7 +321,7 @@ const Nav = (props) => {
               }
             >
               <img
-                src="./skillicons/Hitpoints.webp"
+                src="/skillicons/Hitpoints.webp"
                 alt="World map icon"
                 className={stl.icon}
               />
