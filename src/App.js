@@ -185,7 +185,10 @@ const App = () => {
                   <MainLayout playerName={playerName}>
                     <Helmet>
                       <title>OSRS Help</title>
-                      <meta name="description" content="OSRS Help" />
+                      <meta
+                        name="description"
+                        content="Oldschool Runescape Utility Website"
+                      />
                     </Helmet>
                     <Home
                       setSkills={setSkills}
@@ -205,6 +208,13 @@ const App = () => {
                 path="/skillcalculators/*"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>Skill Calculators</title>
+                      <meta
+                        name="description"
+                        content="Calculate OSRS skill progress"
+                      />
+                    </Helmet>
                     <SkillsTab
                       setSkills={setSkills}
                       skills={skills}
@@ -220,6 +230,13 @@ const App = () => {
                 path="/gearcalculator"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>Gear Calculator</title>
+                      <meta
+                        name="description"
+                        content="Build & save custom gear builds"
+                      />
+                    </Helmet>
                     <GearCalculator />
                   </MainLayout>
                 }
@@ -228,6 +245,13 @@ const App = () => {
                 path="/inventorybuilder"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>Inventory Builder</title>
+                      <meta
+                        name="description"
+                        content="Build & save custom inventories"
+                      />
+                    </Helmet>
                     <InventoryBuilder />
                   </MainLayout>
                 }
@@ -236,6 +260,13 @@ const App = () => {
                 path="/moneymakers"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>Money Makers</title>
+                      <meta
+                        name="description"
+                        content="OSRS Money making methods from 100K/h up to 2M+/h"
+                      />
+                    </Helmet>
                     <MoneyMakers
                       setSkills={setSkills}
                       skills={skills}
@@ -252,6 +283,13 @@ const App = () => {
                 path="/moneymakers/:newpath"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>Money Makers</title>
+                      <meta
+                        name="description"
+                        content="OSRS Money making methods from 100K/h up to 2M+/h"
+                      />
+                    </Helmet>
                     <MethodPage moneyMaker={moneyMaker} />
                   </MainLayout>
                 }
@@ -260,6 +298,13 @@ const App = () => {
                 path="/xptable"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>XP Table</title>
+                      <meta
+                        name="description"
+                        content="OSRS 1-99 skill experience table"
+                      />
+                    </Helmet>
                     <XPTable />
                   </MainLayout>
                 }
@@ -268,6 +313,13 @@ const App = () => {
                 path="/combatcalculator"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>Combat Calculator</title>
+                      <meta
+                        name="description"
+                        content="OSRS combat calculator - Quickly check remainder levels "
+                      />
+                    </Helmet>
                     <CombatCalculator
                       setSkills={setSkills}
                       skills={skills}
@@ -283,6 +335,13 @@ const App = () => {
                 path="/profitalching"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>Profit Alching</title>
+                      <meta
+                        name="description"
+                        content="High alchemy for profit using OSRS Help's Profit Alching table"
+                      />
+                    </Helmet>
                     <ProfitAlching />
                   </MainLayout>
                 }
@@ -291,6 +350,10 @@ const App = () => {
                 path="/worldmap"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>World Map</title>
+                      <meta name="description" content="OSRS World Map" />
+                    </Helmet>
                     <WorldMap />
                   </MainLayout>
                 }
@@ -299,6 +362,10 @@ const App = () => {
                 path="/blog"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>OSRS Help Blog</title>
+                      <meta name="description" content="OSRS Help Blog" />
+                    </Helmet>
                     <Blog setBlogPost={setBlogPost} />
                   </MainLayout>
                 }
@@ -307,6 +374,10 @@ const App = () => {
                 path="/supportosrshelp"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>Support OSRS Help</title>
+                      <meta name="description" content="Support OSRS Help" />
+                    </Helmet>
                     <SupportOSRSHelp />
                   </MainLayout>
                 }
@@ -315,6 +386,10 @@ const App = () => {
                 path="/blog/:newpath"
                 element={
                   <MainLayout playerName={playerName}>
+                    <Helmet>
+                      <title>OSRS Help Blog</title>
+                      <meta name="description" content="OSRS Help Blog" />
+                    </Helmet>
                     <BlogPage
                       blogPost={blogPost || {}}
                       setBlogPost={setBlogPost}
