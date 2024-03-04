@@ -187,7 +187,7 @@ const App = () => {
                       <title>OSRS Help</title>
                       <meta
                         name="description"
-                        content="Oldschool Runescape Utility Website"
+                        content="OSRS Help - OldSchool RuneScape Utility Website"
                       />
                     </Helmet>
                     <Home
