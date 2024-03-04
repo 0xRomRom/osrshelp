@@ -1,8 +1,6 @@
 .modal {
   position: relative;
-
   border-right: 1px solid var(--border);
-  /* height: calc(100% - 200px); */
   z-index: 50;
   padding-right: 1rem;
 }
@@ -162,10 +160,14 @@
   align-items: center;
   cursor: pointer;
   color: gray;
-  transition: all 0.4s ease-in-out;
+  /* transition: all 0.2s ease-in-out; */
   width: 25px;
   height: 25px;
+  right: -15px;
   z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 1.2rem;
 }
 
 .foldNavBtn:hover {
@@ -179,11 +181,11 @@
 }
 
 .borderHugger {
-  /* background-color: green; */
   position: absolute;
+  top: 0;
+  right: 0;
   width: 30px;
-  height: 100%;
-  right: -33px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,5 +275,43 @@
   }
   .imgHidden {
     display: none;
+  }
+  .modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-bg);
+    z-index: 300;
+    padding: 0;
+  }
+  .navlist {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .link {
+    width: 30%;
+  }
+  .logoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fixedBox {
+    width: 100%;
+  }
+  .borderHugger {
+    position: absolute;
+    top: 0;
+    /* right: 3rem; */
+    /* height: 100vh; */
+  }
+
+  .foldedRight {
+    right: 1.5rem;
   }
 }

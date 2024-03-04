@@ -128,20 +128,24 @@ const Nav = (props) => {
           </>
         )}
       </div>
-      <nav className={stl.nav}>
+      <div
+        className={`${stl.borderHugger} ${!navFolded ? stl.foldedRight : ""}`}
+      >
         <div
-          className={stl.borderHugger}
-          style={{ right: navFolded ? "-34px" : "-31px" }}
+          className={`${stl.foldNavBtn} ${
+            navFolded ? stl.ctaLeft : stl.ctaRight
+          }`}
+          onClick={toggleNavFold}
         >
-          <div className={stl.foldNavBtn} onClick={toggleNavFold}>
-            <IoIosArrowBack
-              className={stl.foldNav}
-              style={{
-                transform: navFolded ? "rotate(180deg)" : "rotate(0deg)",
-              }}
-            />
-          </div>
+          <IoIosArrowBack
+            className={stl.foldNav}
+            style={{
+              transform: navFolded ? "rotate(180deg)" : "rotate(0deg)",
+            }}
+          />
         </div>
+      </div>
+      <nav className={stl.nav}>
         <ul className={`${stl.navlist} ${navFolded ? stl.foldedList : ""}`}>
           <Link to="/" className={stl.link}>
             <li
