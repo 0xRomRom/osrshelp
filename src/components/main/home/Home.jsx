@@ -123,7 +123,7 @@ const Home = (props) => {
         <div className={stl.modalbottom}>
           <ResponsiveMasonry
             className={stl.masonry}
-            columnsCountBreakPoints={{ 350: 1, 750: 2, 1200: 3 }}
+            columnsCountBreakPoints={{ 350: 1, 750: 2, 1300: 3 }}
           >
             <Masonry className={stl.masonGap} gutter="15px">
               <>
