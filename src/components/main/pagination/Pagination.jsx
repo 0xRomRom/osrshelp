@@ -84,7 +84,7 @@ const Pagination = ({ navTo, setShowAdmin, setShowUserProfile }) => {
           {cachedSubstate && (
             <>
               <FontAwesomeIcon icon={faAngleRight} className={stl.arrowRight} />
-              <span className={stl.mainMenu}>{cachedSubstate}</span>
+              <span className={stl.subMenu}>{cachedSubstate}</span>
             </>
           )}
         </div>

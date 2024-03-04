@@ -160,3 +160,35 @@
 .cogBtn:active {
   background-color: var(--blue-active);
 }
+
+@media (max-width: 800px) {
+  .paginationBar {
+    padding-right: 1rem;
+  }
+
+  .loginBtn {
+    width: 73px;
+  }
+  .upgradeCta {
+    width: 73px;
+    margin-right: 0.5rem;
+  }
+  .cogBtn {
+    padding: 0px 15px;
+    margin-right: 0.5rem;
+  }
+  .config {
+    margin-right: 0.5rem;
+  }
+  .leftBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .arrowRight {
+    margin-left: 0rem;
+    visibility: hidden;
+  }
+  .subMenu {
+    padding-left: 0.3rem;
+  }
+}

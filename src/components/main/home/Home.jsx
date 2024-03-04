@@ -127,11 +127,6 @@ const Home = (props) => {
           >
             <Masonry className={stl.masonGap} gutter="15px">
               <>
-                {!skillsFetched && !fetched && userID && (
-                  <div className={stl.spinnerCard}>
-                    <Spinner />
-                  </div>
-                )}
                 {skillsFetched ? (
                   <UserBox
                     skills={props.skills}
