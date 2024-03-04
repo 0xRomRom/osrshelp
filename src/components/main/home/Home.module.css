@@ -166,4 +166,7 @@ label {
     font-size: 15vw;
     letter-spacing: 5px;
   }
+  .modal {
+    padding-bottom: 2rem;
+  }
 }

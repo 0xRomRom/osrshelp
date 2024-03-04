@@ -106,9 +106,19 @@ const Nav = (props) => {
     setNavFolded(!navFolded);
   };
 
+  const handleMenuHide = () => {
+    if (width > 1000) return;
+    setNavFolded(true);
+  };
+
   const renderNavItems = () => {
     return navItems.map((item, index) => (
-      <Link to={item.path} className={stl.link} key={index}>
+      <Link
+        to={item.path}
+        className={stl.link}
+        key={index}
+        onClick={handleMenuHide}
+      >
         <li
           className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
             activeTab === item.path ? stl.active : ""
