@@ -161,6 +161,13 @@ label {
   box-shadow: var(--box-shadow);
 }
 
+@media (max-width: 1200px) {
+  .modalbottom {
+    padding: 0rem 2rem;
+    padding-right: calc(2rem - 15px);
+  }
+}
+
 @media (max-width: 800px) {
   .hero {
     font-size: 15vw;

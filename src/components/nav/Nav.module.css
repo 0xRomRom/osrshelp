@@ -170,11 +170,6 @@
   left: 1.2rem;
 }
 
-.foldNavBtn:hover {
-  color: rgb(220, 220, 220);
-  border: 2px solid rgb(220, 220, 220);
-}
-
 .foldNav {
   border-radius: 50%;
   transition: all 0.4s ease-in-out;
