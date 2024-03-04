@@ -1,6 +1,6 @@
 import stl from "./Admin.module.css";
 import { useState } from "react";
-import Home from "./home/Home";
+import Home from "./Home/Home";
 import Users from "./users/Users";
 import Contact from "./contact/Contact";
 import Issues from "./issues/Issues";

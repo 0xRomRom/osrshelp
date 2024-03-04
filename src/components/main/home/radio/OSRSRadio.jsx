@@ -4,9 +4,9 @@ import { MdSkipPrevious, MdSkipNext } from "react-icons/md";
 import { IoMdPause } from "react-icons/io";
 import { useEffect, useMemo, useRef, useState } from "react";
 
-import song1 from "../../../../assets/tracks/7th_Realm.mp3";
+import song1 from "../../../../assets/tracks/7th_realm.mp3";
 import song2 from "../../../../assets/tracks/Adventure.mp3";
-import song3 from "../../../../assets/tracks/Al_Kharid.mp3";
+import song3 from "../../../../assets/tracks/Al_kharid.mp3";
 
 const OSRSRadio = () => {
   const audioRef = useRef(new Audio(song1));
