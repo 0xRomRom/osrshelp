@@ -4,23 +4,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-image: var(--gradient2); */
-  /* padding-right: 10rem; */
   user-select: none;
+  position: relative;
 }
 
 .logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  cursor: pointer;
 }
 
 .logoIcon {
   display: block;
   width: 30px;
   margin: 0.5rem 1rem;
-  cursor: pointer;
 }
 
 .logoSpan {
@@ -28,6 +25,7 @@
   font-weight: 800;
   margin-top: 0.4rem;
   font-size: 20px;
+  user-select: none;
 }
 
 .leftBlock {
@@ -120,4 +118,26 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .rightBlock {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer {
+    height: auto;
+  }
+  .rightBlock {
+    flex-direction: column-reverse;
+    padding: 2rem 0rem;
+  }
+  .leftBlock {
+    display: none;
+  }
 }
