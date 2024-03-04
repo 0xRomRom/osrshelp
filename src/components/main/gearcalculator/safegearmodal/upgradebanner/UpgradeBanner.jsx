@@ -18,7 +18,7 @@ const UpgradeBanner = () => {
     <div className={stl.upgradeBanner}>
       <div className={stl.bannerBG}>
         <img
-          src="./premiummodal/PremiumBG.webp"
+          src="/premiummodal/PremiumBG.webp"
           alt="Oldschool Runescape background"
           className={stl.modalBgImg}
         />

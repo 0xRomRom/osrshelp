@@ -20,9 +20,7 @@ const SupportOSRSHelp = () => {
       <div className={stl.modalWrap}>
         <div className={stl.supportModal}>
           <h1 className={stl.hero}>Support OSRS Help</h1>
-          <p className={stl.supportPar}>
-            Players like you help support the upkeep of this site!
-          </p>
+          <p className={stl.supportPar}>Contribute to keep this site alive!</p>
           {!etherModal && <OptionTiles setEtherModal={setEtherModal} />}
           {etherModal && <EtherDonateForm setEtherModal={setEtherModal} />}
         </div>

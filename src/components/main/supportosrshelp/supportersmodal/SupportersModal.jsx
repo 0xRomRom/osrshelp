@@ -70,7 +70,7 @@ const SupportersModal = () => {
           </div>
           <div className={stl.becomeFirstSupporter}>
             <span className={stl.firstSupporter}>
-              Become the first Lobster supporter!
+              Become the first Lobster supporter
             </span>
           </div>
         </>
@@ -105,7 +105,7 @@ const SupportersModal = () => {
           </div>
           <div className={stl.becomeFirstSupporter}>
             <span className={stl.firstSupporter}>
-              Become the first Ethereum supporter!
+              Become the first Ethereum supporter
             </span>
           </div>
         </>

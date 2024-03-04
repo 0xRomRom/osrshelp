@@ -43,7 +43,7 @@ const ResultBox = ({ bonusState }) => {
             <span className={stl.title}>Attack bonus</span>
             <span className={stl.statValue}>
               <img
-                src="./gearcalculator/icons/White_dagger.webp"
+                src="/gearcalculator/icons/White_dagger.webp"
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
@@ -52,7 +52,7 @@ const ResultBox = ({ bonusState }) => {
             </span>
             <span className={stl.statValue}>
               <img
-                src="./gearcalculator/icons/White_scimitar.webp"
+                src="/gearcalculator/icons/White_scimitar.webp"
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
@@ -61,7 +61,7 @@ const ResultBox = ({ bonusState }) => {
             </span>
             <span className={stl.statValue}>
               <img
-                src="./gearcalculator/icons/White_warhammer.webp"
+                src="/gearcalculator/icons/White_warhammer.webp"
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
@@ -70,7 +70,7 @@ const ResultBox = ({ bonusState }) => {
             </span>
             <span className={stl.statValue}>
               <img
-                src="./gearcalculator/icons/Magic_icon.webp"
+                src="/gearcalculator/icons/Magic_icon.webp"
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
@@ -79,7 +79,7 @@ const ResultBox = ({ bonusState }) => {
             </span>
             <span className={stl.statValue}>
               <img
-                src="./gearcalculator/icons/Ranged_icon.webp"
+                src="/gearcalculator/icons/Ranged_icon.webp"
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
@@ -91,12 +91,12 @@ const ResultBox = ({ bonusState }) => {
             <span className={stl.titleDef}>Defence bonus</span>
             <span className={stl.statValue}>
               <img
-                src="./gearcalculator/icons/White_dagger.webp"
+                src="/gearcalculator/icons/White_dagger.webp"
                 alt="Stab attack"
                 className={stl.miniIconDef}
               />
               <img
-                src="./gearcalculator/icons/Defence_icon.webp"
+                src="/gearcalculator/icons/Defence_icon.webp"
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
@@ -105,12 +105,12 @@ const ResultBox = ({ bonusState }) => {
             </span>
             <span className={stl.statValue}>
               <img
-                src="./gearcalculator/icons/White_scimitar.webp"
+                src="/gearcalculator/icons/White_scimitar.webp"
                 alt="Stab attack"
                 className={stl.miniIconDef}
               />
               <img
-                src="./gearcalculator/icons/Defence_icon.webp"
+                src="/gearcalculator/icons/Defence_icon.webp"
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
@@ -119,12 +119,12 @@ const ResultBox = ({ bonusState }) => {
             </span>
             <span className={stl.statValue}>
               <img
-                src="./gearcalculator/icons/White_warhammer.webp"
+                src="/gearcalculator/icons/White_warhammer.webp"
                 alt="Stab attack"
                 className={stl.miniIconDef}
               />
               <img
-                src="./gearcalculator/icons/Defence_icon.webp"
+                src="/gearcalculator/icons/Defence_icon.webp"
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
@@ -133,12 +133,12 @@ const ResultBox = ({ bonusState }) => {
             </span>
             <span className={stl.statValue}>
               <img
-                src="./gearcalculator/icons/Magic_icon.webp"
+                src="/gearcalculator/icons/Magic_icon.webp"
                 alt="Stab attack"
                 className={stl.miniIconDef}
               />
               <img
-                src="./gearcalculator/icons/Defence_icon.webp"
+                src="/gearcalculator/icons/Defence_icon.webp"
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
@@ -147,12 +147,12 @@ const ResultBox = ({ bonusState }) => {
             </span>
             <span className={stl.statValue}>
               <img
-                src="./gearcalculator/icons/Ranged_icon.webp"
+                src="/gearcalculator/icons/Ranged_icon.webp"
                 alt="Stab attack"
                 className={stl.miniIconDef}
               />
               <img
-                src="./gearcalculator/icons/Defence_icon.webp"
+                src="/gearcalculator/icons/Defence_icon.webp"
                 alt="Stab attack"
                 className={stl.miniIcon}
               />
@@ -165,7 +165,7 @@ const ResultBox = ({ bonusState }) => {
           <span className={stl.title}>Other bonuses</span>
           <span className={stl.statValue}>
             <img
-              src="./gearcalculator/icons/Ranged_Strength_icon.webp"
+              src="/gearcalculator/icons/Ranged_Strength_icon.webp"
               alt="Stab attack"
               className={stl.miniIcon}
             />
@@ -174,7 +174,7 @@ const ResultBox = ({ bonusState }) => {
           </span>
           <span className={stl.statValue}>
             <img
-              src="./gearcalculator/icons/Magic_Damage_icon.webp"
+              src="/gearcalculator/icons/Magic_Damage_icon.webp"
               alt="Stab attack"
               className={stl.miniIcon}
             />
@@ -183,7 +183,7 @@ const ResultBox = ({ bonusState }) => {
           </span>
           <span className={stl.statValue}>
             <img
-              src="./gearcalculator/icons/Strength_icon.webp"
+              src="/gearcalculator/icons/Strength_icon.webp"
               alt="Stab attack"
               className={stl.miniIcon}
             />
@@ -192,7 +192,7 @@ const ResultBox = ({ bonusState }) => {
           </span>
           <span className={stl.statValue}>
             <img
-              src="./gearcalculator/icons/Prayer_icon.webp"
+              src="/gearcalculator/icons/Prayer_icon.webp"
               alt="Stab attack"
               className={stl.miniIcon}
             />
@@ -211,7 +211,7 @@ const ResultBox = ({ bonusState }) => {
 
           <span className={stl.statValue}>
             <img
-              src="./gearcalculator/icons/Weight_icon.webp"
+              src="/gearcalculator/icons/Weight_icon.webp"
               alt="Stab attack"
               className={stl.miniIcon}
             />

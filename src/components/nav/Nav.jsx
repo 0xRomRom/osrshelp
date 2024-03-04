@@ -1,4 +1,10 @@
 import stl from "./Nav.module.css";
+import { Link } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useEffect, useState, useContext } from "react";
+import { PaginationContext } from "../../utils/paginationstate/PaginationProvider";
+import { IoIosArrowBack } from "react-icons/io";
+import { RiTwitterXLine } from "react-icons/ri";
 import hometeleport from "../../assets/icons/Hometeleport.webp";
 import stats from "../../assets/icons/Stats.webp";
 import combatoptions from "../../assets/icons/Combatoptions.webp";
@@ -8,15 +14,64 @@ import mills from "../../assets/icons/Mills.webp";
 import worldicon from "../../assets/icons/World_map_icon.webp";
 import inventory from "../../assets/icons/Inventory.webp";
 import scroll from "../../assets/icons/Scroll.webp";
-import { Link } from "react-router-dom";
-import { useNavigate, useLocation } from "react-router-dom";
-import { useEffect } from "react";
-import { useState } from "react";
-import { useContext } from "react";
-import { PaginationContext } from "../../utils/paginationstate/PaginationProvider";
 import mainlogo from "../../assets/characters/Ancient_staff_equipped_male.webp";
-import { IoIosArrowBack } from "react-icons/io";
-import { RiTwitterXLine } from "react-icons/ri";
+const navItems = [
+  {
+    path: "/",
+    label: "Home",
+    icon: hometeleport,
+  },
+  {
+    path: "/skillcalculators",
+    label: "Skill Calculators",
+    icon: stats,
+  },
+  {
+    path: "/gearcalculator",
+    label: "Gear Calculator",
+    icon: gear,
+  },
+  {
+    path: "/inventorybuilder",
+    label: "Inventory Builder",
+    icon: inventory,
+  },
+  {
+    path: "/combatcalculator",
+    label: "Combat Calculator",
+    icon: combatoptions,
+  },
+  {
+    path: "/moneymakers",
+    label: "Money Makers",
+    icon: mills,
+  },
+  {
+    path: "/profitalching",
+    label: "Profit Alching",
+    icon: "/staves/Staff_of_fire.webp",
+  },
+  {
+    path: "/xptable",
+    label: "XP Table",
+    icon: xptable,
+  },
+  {
+    path: "/worldmap",
+    label: "World map",
+    icon: worldicon,
+  },
+  {
+    path: "/blog",
+    label: "Blog",
+    icon: scroll,
+  },
+  {
+    path: "/supportosrshelp",
+    label: "Support OSRS Help",
+    icon: "/skillicons/Hitpoints.webp",
+  },
+];
 
 const Nav = (props) => {
   const location = useLocation();
@@ -28,68 +83,21 @@ const Nav = (props) => {
   const path = location.pathname;
 
   useEffect(() => {
-    if (
-      window.location.href.includes("payment_intent") ||
-      window.location.href.includes("secret")
-      // || window.location.href.includes("access_token")
-    ) {
-      window.location.href = `${window.location.origin}/#/`;
-    }
-  }, []);
-
-  useEffect(() => {
     setSubState(null);
 
-    if (path === "/") {
-      setActiveTab("/");
-      setMainState("Home");
-      setSubState(null);
-    }
-    if (path.includes("/skillcalculators")) {
-      setActiveTab("skills");
-      setMainState("Skill Calculators");
-    }
-    if (path.includes("/blog")) {
-      setActiveTab("blog");
-      setMainState("Blog");
-    }
-    if (path.includes("/inventorybuilder")) {
-      setActiveTab("inventorybuilder");
-      setMainState("Inventory Builder");
-    }
-    if (path.includes("/gearcalculator")) {
-      setActiveTab("gearcalculator");
-      setMainState("Gear Calculator");
-    }
-    if (path.includes("/xptable")) {
-      setActiveTab("xptable");
-      setMainState("XP Table");
-    }
-    if (path.includes("/moneymakers")) {
-      setActiveTab("moneymakers");
-      setMainState("Money Makers");
-    }
-    if (path.includes("/combatcalculator")) {
-      setActiveTab("combatcalculator");
-      setMainState("Combat Calculator");
-    }
-    if (path.includes("/worldmap")) {
-      setActiveTab("worldmap");
-      setMainState("World map");
-    }
-    if (path.includes("/profitalching")) {
-      setActiveTab("profitalching");
-      setMainState("Profit Alching");
-    }
-    if (path.includes("/supportosrshelp")) {
-      setActiveTab("supportosrshelp");
-      setMainState("Support OSRS Help");
-    }
+    navItems.forEach((item) => {
+      if (path.includes(item.path)) {
+        setActiveTab(item.path);
+        setMainState(item.label);
+      }
+    });
 
     window.scrollTo(0, 0);
-  }, [path, props, setMainState, setSubState]);
+  }, [path, setMainState, setSubState]);
 
-  const handleTabSwitch = (path) => {
+  const handleTabSwitch = (path, label) => {
+    setActiveTab(path);
+    setMainState(label);
     navigate(path);
   };
 
@@ -97,8 +105,30 @@ const Nav = (props) => {
     setNavFolded(!navFolded);
   };
 
+  const renderNavItems = () => {
+    return navItems.map((item, index) => (
+      <Link to={item.path} className={stl.link} key={index}>
+        <li
+          className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
+            activeTab === item.path ? stl.active : ""
+          }`}
+          onClick={() => handleTabSwitch(item.path, item.label)}
+        >
+          <img
+            src={item.icon}
+            alt={`${item.label} Icon`}
+            className={stl.icon}
+          />
+          <span className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}>
+            {item.label}
+          </span>
+        </li>
+      </Link>
+    ));
+  };
+
   return (
-    <div className={`${stl.modal}  ${navFolded ? stl.foldedNav : ""}`}>
+    <div className={`${stl.modal} ${navFolded ? stl.foldedNav : ""}`}>
       <div className={stl.homeBox} onClick={() => navigate("/")}>
         <div className={stl.logoWrapper}>
           <img
@@ -147,195 +177,7 @@ const Nav = (props) => {
       </div>
       <nav className={stl.nav}>
         <ul className={`${stl.navlist} ${navFolded ? stl.foldedList : ""}`}>
-          <Link to="/" className={stl.link}>
-            <li
-              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
-                activeTab === "/" ? stl.active : ""
-              }`}
-              onClick={() => handleTabSwitch("/")}
-            >
-              <img
-                src={hometeleport}
-                alt="Home Teleport Icon"
-                className={stl.icon}
-              />
-              <span
-                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
-              >
-                Home
-              </span>
-            </li>
-          </Link>
-          <Link to="/skillcalculators" className={stl.link}>
-            <li
-              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
-                activeTab === "skills" ? stl.active : ""
-              }`}
-              onClick={() => handleTabSwitch("/skillcalculators")}
-            >
-              <img src={stats} alt="Skills Icon" className={stl.icon} />
-              <span
-                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
-              >
-                Skill Calculators
-              </span>
-            </li>
-          </Link>
-
-          <Link to="/gearcalculator" className={stl.link}>
-            <li
-              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
-                activeTab === "gearcalculator" ? stl.active : ""
-              }`}
-              onClick={() =>
-                handleTabSwitch("gearcalculator", "Gear Calculator")
-              }
-            >
-              <img src={gear} alt="Gear Icon" className={stl.icon} />
-              <span
-                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
-              >
-                Gear Calculator
-              </span>
-            </li>
-          </Link>
-
-          <Link to="/inventorybuilder" className={stl.link}>
-            <li
-              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
-                activeTab === "inventorybuilder" ? stl.active : ""
-              }`}
-              onClick={() =>
-                handleTabSwitch("inventorybuilder", "Inventory Builder")
-              }
-            >
-              <img src={inventory} alt="Inventory Icon" className={stl.icon} />
-              <span
-                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
-              >
-                Inventory Builder
-              </span>
-            </li>
-          </Link>
-
-          <Link to="/combatcalculator" className={stl.link}>
-            <li
-              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
-                activeTab === "combatcalculator" ? stl.active : ""
-              }`}
-              onClick={() =>
-                handleTabSwitch("combatcalculator", "Combat Calculator")
-              }
-            >
-              <img src={combatoptions} alt="Combat Icon" className={stl.icon} />
-              <span
-                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
-              >
-                Combat Calculator
-              </span>
-            </li>
-          </Link>
-          <Link to="/moneymakers" className={stl.link}>
-            <li
-              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
-                activeTab === "moneymakers" ? stl.active : ""
-              }`}
-              onClick={() => handleTabSwitch("moneymakers", "Money Makers")}
-            >
-              <img src={mills} alt="Millions Icon" className={stl.icon} />
-              <span
-                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
-              >
-                Money Makers
-              </span>
-            </li>
-          </Link>
-          <Link to="/profitalching" className={stl.link}>
-            <li
-              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
-                activeTab === "profitalching" ? stl.active : ""
-              }`}
-              onClick={() => handleTabSwitch("profitalching", "Profit Alching")}
-            >
-              <img
-                src="/staves/Staff_of_fire.webp"
-                alt="Staff of fire icon"
-                className={stl.icon}
-              />
-              <span
-                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
-              >
-                Profit Alching
-              </span>
-            </li>
-          </Link>
-
-          <Link to="/xptable" className={stl.link}>
-            <li
-              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
-                activeTab === "xptable" ? stl.active : ""
-              }`}
-              onClick={() => handleTabSwitch("xptable", "XP Table")}
-            >
-              <img src={xptable} alt="XP Icon" className={stl.icon} />
-              <span
-                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
-              >
-                XP Table
-              </span>
-            </li>
-          </Link>
-          <Link to="/worldmap" className={stl.link}>
-            <li
-              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
-                activeTab === "worldmap" ? stl.active : ""
-              }`}
-              onClick={() => handleTabSwitch("worldmap", "World map")}
-            >
-              <img src={worldicon} alt="World map icon" className={stl.icon} />
-              <span
-                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
-              >
-                World map
-              </span>
-            </li>
-          </Link>
-          <Link to="/blog" className={stl.link}>
-            <li
-              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
-                activeTab === "blog" ? stl.active : ""
-              }`}
-              onClick={() => handleTabSwitch("blog", "Blog")}
-            >
-              <img src={scroll} alt="Blog icon" className={stl.icon} />
-              <span
-                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
-              >
-                Blog
-              </span>
-            </li>
-          </Link>
-          <Link to="/supportosrshelp" className={stl.link}>
-            <li
-              className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
-                activeTab === "supportosrshelp" ? stl.active : ""
-              }`}
-              onClick={() =>
-                handleTabSwitch("supportosrshelp", "Support OSRS Help")
-              }
-            >
-              <img
-                src="/skillicons/Hitpoints.webp"
-                alt="World map icon"
-                className={stl.icon}
-              />
-              <span
-                className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}
-              >
-                Support OSRS Help
-              </span>
-            </li>
-          </Link>
+          {renderNavItems()}
         </ul>
       </nav>
       <div className={`${stl.fixedBox} ${navFolded ? stl.colCtas : ""}`}>

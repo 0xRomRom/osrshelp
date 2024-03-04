@@ -160,3 +160,10 @@ label {
   align-items: center;
   box-shadow: var(--box-shadow);
 }
+
+@media (max-width: 800px) {
+  .hero {
+    font-size: 15vw;
+    letter-spacing: 5px;
+  }
+}
