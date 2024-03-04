@@ -81,6 +81,7 @@ const Nav = (props) => {
   const [navFolded, setNavFolded] = useState(false);
 
   const path = location.pathname;
+  const width = +window.innerWidth;
 
   useEffect(() => {
     setSubState(null);
@@ -176,7 +177,11 @@ const Nav = (props) => {
         </div>
       </div>
       <nav className={stl.nav}>
-        <ul className={`${stl.navlist} ${navFolded ? stl.foldedList : ""}`}>
+        <ul
+          className={`${stl.navlist} ${navFolded ? stl.foldedList : ""} ${
+            navFolded && width < 800 ? stl.noInteract : ""
+          }`}
+        >
           {renderNavItems()}
         </ul>
       </nav>

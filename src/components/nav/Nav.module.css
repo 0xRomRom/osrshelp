@@ -262,6 +262,10 @@
   user-select: none;
 }
 
+.noInteract {
+  display: none !important;
+}
+
 @media (max-width: 1200px) {
   .osrshelpLogo {
     margin-left: 0rem;
