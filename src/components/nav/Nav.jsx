@@ -84,6 +84,9 @@ const Nav = (props) => {
   const width = +window.innerWidth;
 
   useEffect(() => {
+    if (width < 1200) {
+      setNavFolded(true);
+    }
     setSubState(null);
 
     navItems.forEach((item) => {
