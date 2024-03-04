@@ -62,16 +62,21 @@ const TopBar = (props) => {
           </div>
 
           <div className={stl.remainderBlock}>
-            <span className={stl.expToGo}>Xp / level</span>
+            <div className={stl.toGoBlock}>
+              <span className={stl.expToGo}>XP</span>
+              <span className={stl.expToGoLevel}>Level</span>
+            </div>
             <span className={stl.remaining}>
               {props.skills && calculateExpUntilNextLevel()}
             </span>
           </div>
-          <FontAwesomeIcon
-            icon={faTrashCan}
-            className={stl.trashcan}
-            onClick={handleUserReset}
-          />
+          <div className={stl.canWrapper}>
+            <FontAwesomeIcon
+              icon={faTrashCan}
+              className={stl.trashcan}
+              onClick={handleUserReset}
+            />
+          </div>
         </div>
       ) : (
         <FetchUsername

@@ -1,5 +1,4 @@
 .topBar {
-  /* background: linear-gradient(110deg, white, red, red, rgba(255, 0, 0, 0.747)); */
   background-color: rgb(32, 46, 57);
 
   width: 100%;
@@ -29,10 +28,6 @@
   color: rgb(255, 255, 255);
 }
 
-.skillImg {
-  width: 30px;
-}
-
 .skillTitle {
   font-family: RSFont;
   font-size: 50px;
@@ -45,25 +40,28 @@
   width: 100%;
   height: 100%;
   margin-left: 5rem;
-  margin-top: 1.5rem;
   display: flex;
 }
 
 .playerName {
   position: relative;
   font-size: 25px;
-  margin-top: 0.2rem;
   font-weight: 800;
+  line-height: 22px;
 }
 
 .playerLvl {
   position: relative;
-  font-size: 25px;
+  line-height: 22px;
+  color: gray;
 }
 
 .userBlock {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 0.3rem;
 }
 
 .remainderBlock {
@@ -72,17 +70,23 @@
   margin-left: 3rem;
   display: flex;
   flex-direction: column;
-  margin-top: 0.2rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .expToGo {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 800;
+  line-height: 10px;
+}
+
+.expToGoLevel {
+  color: gray;
+  font-weight: 400;
 }
 
 .remaining {
   font-size: 1.2rem;
-  margin-top: 0.3rem;
 }
 
 .fetchUserBox {
@@ -133,7 +137,7 @@
   margin-left: 2rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: rgb(233, 227, 227);
+  color: gray;
   transition: all 0.1s ease-in-out;
 }
 
@@ -148,4 +152,18 @@
   display: flex;
   justify-content: flex-start;
   margin: 1rem 0rem;
+}
+
+.toGoBlock {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.canWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
