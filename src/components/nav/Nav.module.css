@@ -259,3 +259,19 @@
   font-weight: bold;
   user-select: none;
 }
+
+@media (max-width: 1200px) {
+  .foldedNav {
+    min-width: none;
+    max-width: 1rem !important;
+  }
+  .foldedList {
+    display: none;
+  }
+  .colCtas {
+    display: none;
+  }
+  .imgHidden {
+    display: none;
+  }
+}

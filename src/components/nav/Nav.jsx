@@ -104,7 +104,7 @@ const Nav = (props) => {
           <img
             src={mainlogo}
             alt="OSRS Help logo"
-            className={stl.osrshelpLogo}
+            className={`${stl.osrshelpLogo} ${navFolded ? stl.imgHidden : ""}`}
           />
           <span
             className={stl.navLogoSpan}
