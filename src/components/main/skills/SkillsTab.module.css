@@ -311,3 +311,10 @@
   color: gray;
   font-size: 2rem;
 }
+
+@media (max-width: 1200px) {
+  .modal {
+    padding-right: calc(2rem - 15px);
+    padding-bottom: 2rem;
+  }
+}
