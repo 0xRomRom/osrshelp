@@ -227,7 +227,6 @@
   outline: none;
   border: 1px solid var(--border);
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
   box-shadow: 0px 0px 3px black;
 }
 
@@ -337,8 +336,8 @@
   .loggedUser {
     padding-left: 0.5rem;
   }
-  .navList {
-    gap: 0.5rem;
+  .navlist {
+    gap: 0rem;
   }
   .nav {
     position: absolute;
@@ -347,5 +346,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .fixedBox {
+    position: absolute;
+    bottom: 2rem;
+  }
+  .homeBox {
+    display: none;
+  }
+  .loggedUser {
+    padding-top: 1.5rem;
+    padding-bottom: 0rem;
   }
 }
