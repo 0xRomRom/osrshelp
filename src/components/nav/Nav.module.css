@@ -331,4 +331,21 @@
   .link {
     width: 222px;
   }
+  .homeBox {
+    height: 3.75rem;
+  }
+  .loggedUser {
+    padding-left: 0.5rem;
+  }
+  .navList {
+    gap: 0.5rem;
+  }
+  .nav {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
