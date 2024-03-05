@@ -6,8 +6,46 @@
 
 .configRow {
   position: relative;
-  width: 100%;
   display: flex;
   justify-content: flex-start;
   margin: 1rem 0rem;
+}
+.configRow2 {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem 0rem;
+  margin-left: 1rem;
+}
+
+.configRows {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 1050px) {
+  .configRows {
+    flex-direction: column;
+  }
+  .configRow {
+    margin-bottom: 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .configRow2 {
+    margin-left: 0rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .configRow2 {
+    flex-direction: column;
+  }
+  .modal {
+    padding-bottom: 2rem;
+  }
 }

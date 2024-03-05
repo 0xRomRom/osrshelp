@@ -35,31 +35,35 @@ const FletchingCalculator = (props) => {
           currentExp={props.skillsExp && props.skillsExp}
         />
 
-        <div className={stl.configRow}>
-          {arePropsDefined ? (
-            <TargetLevel
-              skills={props.skills}
-              skillsExp={props.skillsExp}
-              skillName={"fletching"}
-              currentLvl={props.skills["fletching"]}
-              currentExp={props.skillsExp}
-              setRemainingExp={setRemainingExp}
-              remainingExp={remainingExp}
+        <div className={stl.configRows}>
+          <div className={stl.configRow}>
+            {arePropsDefined ? (
+              <TargetLevel
+                skills={props.skills}
+                skillsExp={props.skillsExp}
+                skillName={"fletching"}
+                currentLvl={props.skills["fletching"]}
+                currentExp={props.skillsExp}
+                setRemainingExp={setRemainingExp}
+                remainingExp={remainingExp}
+              />
+            ) : (
+              <NoPropsTargetLevel
+                setRemainingExp={setRemainingExp}
+                remainingExp={remainingExp}
+              />
+            )}
+          </div>
+          <div className={stl.configRow2}>
+            <SearchFilter
+              setSearchState={setSearchState}
+              searchType="Search Item"
             />
-          ) : (
-            <NoPropsTargetLevel
-              setRemainingExp={setRemainingExp}
-              remainingExp={remainingExp}
+            <TypeFilter
+              setActiveFilter={setActiveFilter}
+              activeFilter={activeFilter}
             />
-          )}
-          <SearchFilter
-            setSearchState={setSearchState}
-            searchType="Search Item"
-          />
-          <TypeFilter
-            setActiveFilter={setActiveFilter}
-            activeFilter={activeFilter}
-          />
+          </div>
         </div>
         <FletchingGrid
           remainingExp={remainingExp}

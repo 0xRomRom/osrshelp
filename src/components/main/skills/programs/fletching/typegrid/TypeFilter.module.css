@@ -82,3 +82,16 @@
 .innerRow2 div {
   width: 20%;
 }
+
+@media (max-width: 1000px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .modal {
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+}

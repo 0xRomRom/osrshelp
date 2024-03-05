@@ -146,9 +146,9 @@
   padding-right: 0.25rem;
 }
 
-@media (max-width: 810px) {
-  .userDefined {
-    width: 50%;
+@media (max-width: 1000px) {
+  .modal {
+    width: 100%;
   }
   .userLvlBox {
     width: 50%;
@@ -156,7 +156,11 @@
     justify-content: center;
     align-items: center;
   }
+  .userDefined {
+    width: 50%;
+  }
 }
+
 @media (max-width: 500px) {
   .userDefined {
     padding: 0rem 0.5rem;
@@ -179,9 +183,6 @@
   .remainderRow {
     flex-direction: column;
   }
-}
-
-@media (max-width: 500px) {
   .curExpInput {
     width: 5.4rem;
   }
