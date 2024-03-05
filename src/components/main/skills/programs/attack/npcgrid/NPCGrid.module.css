@@ -119,6 +119,11 @@
     align-items: center;
     text-align: center;
   }
+  .row span:nth-child(1) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+  }
 }
 
 @media (max-width: 410px) {

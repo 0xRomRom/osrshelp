@@ -53,14 +53,14 @@ const ConstructionCalculator = (props) => {
               remainingExp={remainingExp}
             />
           )}
-          <SearchFilter
-            setSearchState={setSearchState}
-            searchType="Search Object"
-          />
           <ConstructionFilters
             setMultiplier={setMultiplier}
             setFilterChanged={setFilterChanged}
             filterChanged={filterChanged}
+          />{" "}
+          <SearchFilter
+            setSearchState={setSearchState}
+            searchType="Search Object"
           />
         </div>
         <ConstructionGrid

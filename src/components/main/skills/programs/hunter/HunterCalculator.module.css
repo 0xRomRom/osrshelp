@@ -9,4 +9,18 @@
   display: flex;
   justify-content: flex-start;
   margin: 1rem 0rem;
+  gap: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .modal {
+    padding-right: calc(2rem - 15px);
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .configRow {
+    flex-direction: column;
+  }
 }

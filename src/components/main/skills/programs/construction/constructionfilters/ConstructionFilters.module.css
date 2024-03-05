@@ -8,6 +8,7 @@
   flex-direction: column;
   border-radius: 0.8rem;
   margin-left: 1rem;
+  margin-right: 1rem;
   padding-top: 0.5rem;
 
   padding-bottom: 0.5rem;
@@ -68,4 +69,15 @@ label::before {
 input[type="checkbox"]:checked + label::before {
   background-color: #aeafaf;
   border: 2px solid #aeafaf;
+}
+
+@media (max-width: 1000px) {
+  .modal {
+    margin: 1rem 0rem;
+  }
+  .checkRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
