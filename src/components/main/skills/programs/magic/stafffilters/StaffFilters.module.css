@@ -7,35 +7,21 @@
   align-items: center;
   flex-direction: column;
   border-radius: 0.8rem;
-  /* padding-top: 0.5rem; */
   width: 224px;
-
   overflow-x: hidden;
   padding-left: 1rem;
   scroll-behavior: smooth;
+  margin-right: 1rem;
 }
 
 .innerWrap {
   position: relative;
   width: 97.5%;
   height: 72%;
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  margin-right: 1rem;
-  /* padding-top: 11rem; */
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   overflow-y: scroll;
-}
-
-.checkRow {
-  width: 100%;
-  display: inline-block;
-  gap: 3rem;
-
-  position: relative;
 }
 
 .checkDesc {
@@ -77,4 +63,39 @@ input[type="checkbox"]:checked + label::before {
 .staffImg {
   max-width: 20px;
   max-height: 20px;
+}
+
+@media (max-width: 810px) {
+  .modal {
+    width: 50%;
+  }
+
+  .checkRow {
+    display: inline;
+    min-width: 12rem;
+    max-width: 12rem;
+  }
+  .innerWrap {
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .modal {
+    padding-left: 0rem;
+  }
+
+  .checkRow label {
+    font-size: 12px;
+  }
+
+  .checkRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 8rem;
+    max-width: 8rem;
+  }
 }

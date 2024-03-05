@@ -53,3 +53,33 @@
   color: white;
   border-radius: 5px;
 }
+
+@media (max-width: 910px) {
+  .modal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .innerWrap {
+    gap: 0.5rem;
+  }
+
+  .spellChoice {
+    width: 55px;
+  }
+  .spellChoice span {
+    font-size: 12px;
+  }
+
+  .innerWrap {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 810px) {
+  .modal {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+}

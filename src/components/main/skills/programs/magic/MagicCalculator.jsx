@@ -66,15 +66,17 @@ const MagicCalculator = (props) => {
           />
         </div>
         <div className={stl.configRow2}>
-          <StaffFilters
-            setSelectedStaff={setSelectedStaff}
-            setStaffFilterChanged={setStaffFilterChanged}
-            staffFilterChanged={staffFilterChanged}
-          />
-          <SearchFilter
-            setSearchState={setSearchState}
-            searchType="Search Spell"
-          />
+          <div className={stl.wrapper}>
+            <StaffFilters
+              setSelectedStaff={setSelectedStaff}
+              setStaffFilterChanged={setStaffFilterChanged}
+              staffFilterChanged={staffFilterChanged}
+            />
+            <SearchFilter
+              setSearchState={setSearchState}
+              searchType="Search Spell"
+            />
+          </div>
           <SpellBookFilter
             setActiveSpellbook={setActiveSpellbook}
             activeSpellbook={activeSpellbook}

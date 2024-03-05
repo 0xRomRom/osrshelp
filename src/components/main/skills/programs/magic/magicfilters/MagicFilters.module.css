@@ -68,3 +68,14 @@ input[type="checkbox"]:checked + label::before {
   background-color: #aeafaf;
   border: 2px solid #aeafaf;
 }
+
+@media (max-width: 810px) {
+  .modal {
+    margin-left: 0rem;
+  }
+  .checkRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
