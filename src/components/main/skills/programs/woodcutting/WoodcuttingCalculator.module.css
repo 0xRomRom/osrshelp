@@ -12,3 +12,12 @@
   justify-content: flex-start;
   margin: 1rem 0rem;
 }
+
+@media (max-width: 810px) {
+  .configRow {
+    flex-direction: column;
+  }
+  .modal {
+    padding-bottom: 2rem;
+  }
+}

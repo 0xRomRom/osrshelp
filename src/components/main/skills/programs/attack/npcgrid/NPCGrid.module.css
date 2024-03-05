@@ -89,6 +89,7 @@
   .grid {
     padding: 1rem 0rem;
     margin-bottom: 2rem;
+    padding-top: 0.5rem;
   }
   .resultGrid {
     padding-left: 0.5rem;

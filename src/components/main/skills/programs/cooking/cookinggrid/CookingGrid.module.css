@@ -149,6 +149,7 @@
 
   .grid {
     padding: 0.5rem;
+    padding-right: 0rem;
   }
   .typeRow span {
     font-size: 14px;

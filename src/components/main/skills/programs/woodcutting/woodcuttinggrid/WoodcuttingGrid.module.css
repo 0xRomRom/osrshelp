@@ -7,6 +7,10 @@
   padding: 1rem 0.5rem;
   border-radius: 0.8rem;
   padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .typeRow {
@@ -30,8 +34,7 @@
 .resultGrid {
   position: relative;
   width: 100%;
-  height: 100%;
-  /* background-color: red; */
+  flex: 1;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -112,4 +115,44 @@
 .orange {
   color: var(--orange-main);
   font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .rowItem span {
+    font-size: 14px;
+  }
+  .green,
+  .orange {
+    font-size: 14px;
+  }
+  .grid {
+    padding-left: 0rem;
+    padding-bottom: 1rem;
+    padding-right: 0rem;
+    padding-top: 0.5rem;
+  }
+  .lvlSpan {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .typeRow {
+    padding-left: 0rem;
+    padding-bottom: 1rem;
+  }
+  .typeRow span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  .imgWrapper {
+    min-width: 40px;
+  }
+
+  .minifood {
+    max-width: 20px;
+  }
 }

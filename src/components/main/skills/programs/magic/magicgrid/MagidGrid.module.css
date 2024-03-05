@@ -139,6 +139,8 @@
   }
   .grid {
     padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 0.5rem;
   }
   .imgWrapper {
     min-width: 29px;
