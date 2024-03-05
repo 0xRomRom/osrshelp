@@ -8,6 +8,8 @@
   border-radius: 0.8rem;
   padding-bottom: 2.5rem;
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .typeRow {
@@ -148,4 +150,36 @@
 .lastFlex {
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 810px) {
+  .typeRow {
+    padding-bottom: 0.5rem;
+  }
+  .grid {
+    padding: 0.5rem 0rem;
+  }
+
+  .typeRow span {
+    font-size: 14px;
+  }
+  .monsterTitleRow {
+    justify-content: center !important;
+  }
+  .innerSpan,
+  .orange,
+  .green,
+  .red,
+  .bonename {
+    font-size: 12px;
+  }
+  .magelvl {
+    display: none;
+  }
+  .imgWrapper img {
+    width: 20px;
+  }
+  .imgWrapper {
+    min-width: 25px;
+  }
 }
