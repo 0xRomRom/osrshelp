@@ -7,6 +7,8 @@
   padding: 1rem 0.5rem;
   border-radius: 0.8rem;
   padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .typeRow {
@@ -42,7 +44,6 @@
   justify-content: center;
   align-items: center;
   user-select: none;
-  min-height: 2.5rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -113,4 +114,44 @@
   display: flex;
   justify-content: flex-start !important;
   align-items: center;
+}
+
+@media (max-width: 800px) {
+  .innerSpan,
+  .orange,
+  .red,
+  .green,
+  .expRow,
+  .bonename {
+    font-size: 12px;
+  }
+  .lvlSpan {
+    display: none;
+  }
+
+  .innerSpan {
+    padding: 2px 0px;
+    padding-left: 0.25rem;
+  }
+  .monsterTitleRow {
+    justify-content: center !important;
+  }
+  .grid {
+    padding: 0.5rem 0rem;
+  }
+  .typeRow {
+    padding-bottom: 0.5rem;
+  }
+  .typeRow span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .minifood {
+    width: 20px;
+  }
+  .imgWrapper {
+    width: 25px;
+  }
 }
