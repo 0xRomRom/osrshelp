@@ -158,4 +158,7 @@
   .expRow {
     font-size: 12px;
   }
+  .typeRow span {
+    font-size: 14px;
+  }
 }

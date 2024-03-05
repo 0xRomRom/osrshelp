@@ -7,6 +7,10 @@
   padding: 1rem 0.5rem;
   border-radius: 0.8rem;
   padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .typeRow {
@@ -28,7 +32,7 @@
 .resultGrid {
   position: relative;
   width: 100%;
-  height: 100%;
+  flex: 1;
   /* background-color: red; */
   display: flex;
   flex-direction: column;
@@ -91,7 +95,7 @@
 }
 
 .imgWrapper {
-  width: 45px;
+  min-width: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,4 +112,45 @@
 .orange {
   color: var(--orange-main);
   font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .row span {
+    font-size: 12px;
+  }
+  .imgWrapper {
+    min-width: 25px;
+    max-width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lvlSpan {
+    margin-right: 0.5rem;
+  }
+  .minifood {
+    transform: scale(0.8);
+  }
+  .lvlSpan {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .typeRow span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .typeRow {
+    padding-left: 0rem;
+  }
+
+  .grid {
+    padding: 0.5rem;
+  }
+  .typeRow span {
+    font-size: 14px;
+  }
 }

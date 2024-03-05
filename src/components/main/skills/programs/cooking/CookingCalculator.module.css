@@ -7,8 +7,17 @@
 .configRow {
   position: relative;
   width: 100%;
-  /* background-color: red; */
+  gap: 1rem;
   display: flex;
   justify-content: flex-start;
   margin: 1rem 0rem;
+}
+
+@media (max-width: 800px) {
+  .configRow {
+    flex-direction: column;
+  }
+  .modal {
+    padding-bottom: 2rem;
+  }
 }
