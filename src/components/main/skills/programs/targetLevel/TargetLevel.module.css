@@ -10,12 +10,12 @@
 }
 
 .targetlvl {
-  color: rgb(221, 215, 215);
+  color: gray;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 20px;
   margin-left: 1rem;
   border-radius: 0.8rem;
   /* background: linear-gradient(130deg, rgb(32, 46, 57), rgb(26, 35, 41)); */
@@ -43,7 +43,6 @@
   background-color: var(--main-bg);
   border: 1px solid var(--border);
   border-radius: 0.8rem;
-  padding-right: 1rem;
   margin-right: 1rem;
   min-width: 14.6rem;
 }
@@ -53,18 +52,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
-  margin-left: 1rem;
+  font-size: 24px;
+  padding-left: 0.5rem;
 }
 
 .requiredExp {
-  color: rgb(168, 166, 166);
+  color: gray;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 17px;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .sliderBox {
@@ -80,6 +79,7 @@
   padding: 1rem 1rem;
   height: 6rem;
   border-radius: 0.8rem;
+  min-width: 14rem;
 }
 
 .sliderValue {
@@ -90,7 +90,7 @@
 }
 
 .rangeSlider {
-  width: 15rem;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -106,4 +106,33 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+}
+
+.expLeft {
+  color: white;
+  margin-left: 1rem;
+}
+
+@media (max-width: 810px) {
+  .sliderBox {
+    width: 50%;
+  }
+  .levelRow {
+    width: 50%;
+  }
+}
+
+@media (max-width: 530px) {
+  .userDefined {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+  }
+  .levelRow {
+    height: 96px;
+    width: 100%;
+  }
+  .sliderBox {
+    width: 100%;
+  }
 }

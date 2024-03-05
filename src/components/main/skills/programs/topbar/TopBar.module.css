@@ -60,12 +60,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 0.9rem;
+  padding-top: 0.7rem;
 }
 
 .remainderBlock {
   position: relative;
-  margin-left: 3rem;
+  margin-left: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,7 +134,7 @@
 .trashcan {
   position: relative;
   margin-top: 0.4rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   font-size: 1.5rem;
   cursor: pointer;
   color: gray;
@@ -219,7 +219,7 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
   .playerName {
     font-size: 16px;
     line-height: 15px;

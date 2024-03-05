@@ -45,16 +45,16 @@ const TargetLevel = ({
         <div className={stl.userDefined}>
           <div className={stl.levelRow}>
             <div className={stl.targetRow}>
-              <span className={stl.targetlvl}>Target level:</span>
+              <span className={stl.targetlvl}>Target Level</span>
               <span className={stl.wantedLvl}>
                 {+currentLvl === 99 ? "None" : currentSliderValue}
               </span>
             </div>
             <div className={stl.remainderRow}>
-              <span className={stl.requiredExp}>
-                {isNaN(remainingExp) ? "?" : remainingExp.toLocaleString()} {""}
-                EXP Remaining
+              <span className={stl.expLeft}>
+                {isNaN(remainingExp) ? "?" : remainingExp.toLocaleString()}
               </span>
+              <span className={stl.requiredExp}>EXP Remaining</span>
             </div>
           </div>
           <div className={stl.sliderBox}>
