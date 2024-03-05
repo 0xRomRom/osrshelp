@@ -115,6 +115,13 @@
 }
 
 @media (max-width: 800px) {
+  .typeRow {
+    padding-bottom: 0.5rem;
+  }
+  .grid {
+    padding: 0rem 0.5rem;
+    padding-top: 0.5rem;
+  }
   .row span {
     font-size: 12px;
   }

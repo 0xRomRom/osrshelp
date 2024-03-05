@@ -82,6 +82,15 @@
   font-weight: bold;
 }
 
+@media (max-width: 800px) {
+  .typeRow {
+    padding-bottom: 0.5rem;
+  }
+  .grid {
+    padding: 0.5rem 0rem;
+    padding-left: 0.5rem;
+  }
+}
 @media (max-width: 500px) {
   .rowItem {
     font-size: 14px;

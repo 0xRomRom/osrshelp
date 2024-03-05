@@ -8,6 +8,8 @@
   padding-bottom: 2.5rem;
   background-color: var(--main-bg);
   border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
 }
 
 .typeRow {
@@ -155,4 +157,36 @@
   display: flex;
   justify-content: flex-start !important;
   gap: 0.35rem;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    padding: 0.5rem 0rem;
+  }
+  .monsterTitleRow {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid {
+    padding: 0.5rem 0rem;
+    padding-left: 0.25rem;
+  }
+  .innerSpan,
+  .orange,
+  .green,
+  .red {
+    font-size: 12px;
+  }
+  .monsterRow span {
+    font-size: 12px;
+    padding-left: 0.25rem;
+  }
+  .lvlSpan {
+    display: none;
+  }
+  .typeRow {
+    padding-bottom: 0.5rem;
+  }
 }

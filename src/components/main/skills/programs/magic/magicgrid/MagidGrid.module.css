@@ -163,4 +163,7 @@
   .typeRow span {
     font-size: 14px;
   }
+  .typeRow {
+    padding-bottom: 0.5rem;
+  }
 }

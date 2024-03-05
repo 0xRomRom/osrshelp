@@ -3,7 +3,7 @@
   border: 1px solid var(--border);
   height: 6rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border-radius: 0.8rem;
 }

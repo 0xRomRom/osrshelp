@@ -11,7 +11,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-  scroll-behavior: smooth;
+  margin-right: 1rem;
 }
 
 .innerWrap {
@@ -66,4 +66,18 @@ label::before {
 input[type="checkbox"]:checked + label::before {
   background-color: #aeafaf;
   border: 2px solid #aeafaf;
+}
+
+@media (max-width: 1000px) {
+  .modal {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+  .checkRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

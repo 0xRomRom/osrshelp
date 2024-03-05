@@ -134,6 +134,14 @@
   .lvlSpan {
     display: none;
   }
+  .typeRow {
+    padding-bottom: 0.5rem;
+  }
+  .monsterTitleRow {
+    display: flex;
+    justify-content: center !important;
+    gap: 5px;
+  }
 }
 
 @media (max-width: 500px) {

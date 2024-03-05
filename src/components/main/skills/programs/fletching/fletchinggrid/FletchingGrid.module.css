@@ -138,6 +138,9 @@
 }
 
 @media (max-width: 800px) {
+  .typeRow {
+    padding-bottom: 0.5rem;
+  }
   .grid {
     padding: 0.5rem 0rem;
   }
@@ -157,5 +160,8 @@
   .imgWrapper {
     padding-right: 0.25rem;
     padding-left: 0.25rem;
+  }
+  .monsterTitleRow {
+    justify-content: center !important;
   }
 }
