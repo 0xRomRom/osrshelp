@@ -1,10 +1,9 @@
 .topBar {
   background-color: rgb(32, 46, 57);
-
   width: 100%;
-  height: 6rem;
-  padding-left: 1rem;
+  min-height: 6rem;
   display: flex;
+  padding-left: 1rem;
   justify-content: flex-start;
   align-items: center;
   border-radius: 0.8rem;
@@ -32,7 +31,7 @@
   font-family: RSFont;
   font-size: 50px;
   margin-left: 0.75rem;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
 }
 
 .userStatsBox {
@@ -61,12 +60,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 0.3rem;
+  padding-top: 0.9rem;
 }
 
 .remainderBlock {
   position: relative;
-  height: 100%;
   margin-left: 3rem;
   display: flex;
   flex-direction: column;
@@ -83,10 +81,12 @@
 .expToGoLevel {
   color: gray;
   font-weight: 400;
+  padding-top: 0.1rem;
 }
 
 .remaining {
   font-size: 1.2rem;
+  line-height: 15px;
 }
 
 .fetchUserBox {
@@ -166,4 +166,78 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.playerInfo {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .topBar {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .backArrow {
+    margin-right: 1rem;
+    overflow: visible;
+    box-sizing: content-box;
+    margin: auto 0;
+    position: relative;
+    top: 0;
+    margin-right: 0.5rem;
+  }
+  .skillTitle {
+    margin-left: 0.25rem;
+    font-size: 30px;
+  }
+  .skillImg {
+    width: 20px;
+  }
+  .userStatsBox {
+    margin-left: 1rem;
+  }
+  .remainderBlock {
+    margin-left: 1rem;
+  }
+  .trashcan {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .remainderBlock {
+    margin-left: 0rem;
+  }
+  .trashcan {
+    margin-left: 0.5rem;
+  }
+  .playerInfo {
+    flex-direction: column;
+  }
+  .userBlock {
+    padding-top: 0rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .playerName {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  .playerLvl {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .expToGo {
+    font-size: 16px;
+  }
+  .expToGoLevel {
+    font-size: 12px;
+  }
+  .remaining {
+    font-size: 12px;
+  }
+  .trashcan {
+    font-size: 20px;
+  }
 }

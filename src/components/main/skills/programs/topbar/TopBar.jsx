@@ -54,21 +54,23 @@ const TopBar = (props) => {
       <span className={stl.skillTitle}>{props.title}</span>
       {arePropsDefined ? (
         <div className={stl.userStatsBox}>
-          <div className={stl.userBlock}>
-            <span className={stl.playerName}>{props?.playerName}</span>
-            <span className={stl.playerLvl}>
-              Level {props?.skills && props?.skills[props.skillname]}
-            </span>
-          </div>
-
-          <div className={stl.remainderBlock}>
-            <div className={stl.toGoBlock}>
-              <span className={stl.expToGo}>XP</span>
-              <span className={stl.expToGoLevel}>Level</span>
+          <div className={stl.playerInfo}>
+            <div className={stl.userBlock}>
+              <span className={stl.playerName}>{props?.playerName}</span>
+              <span className={stl.playerLvl}>
+                Level {props?.skills && props?.skills[props.skillname]}
+              </span>
             </div>
-            <span className={stl.remaining}>
-              {props.skills && calculateExpUntilNextLevel()}
-            </span>
+
+            <div className={stl.remainderBlock}>
+              <div className={stl.toGoBlock}>
+                <span className={stl.expToGo}>XP</span>
+                <span className={stl.expToGoLevel}>Level</span>
+              </div>
+              <span className={stl.remaining}>
+                {props.skills && calculateExpUntilNextLevel()}
+              </span>
+            </div>
           </div>
           <div className={stl.canWrapper}>
             <FontAwesomeIcon

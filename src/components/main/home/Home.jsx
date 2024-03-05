@@ -20,11 +20,10 @@ import { useContext } from "react";
 
 import { playerStats } from "../../../utils/playerStats";
 import { useCallback } from "react";
-import Spinner from "../../../utils/loadingspinner/Spinner";
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
-  const { storedUsername, userID } = useContext(AuthContext);
+  const { storedUsername } = useContext(AuthContext);
   const [fetched, setFetched] = useState(false);
 
   const updateSkills = useCallback(

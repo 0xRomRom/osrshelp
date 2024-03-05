@@ -8,20 +8,19 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .nameInput {
   border: none;
   outline: none;
   background-color: transparent;
-  border-bottom: 1px solid white;
+  border: 1px solid gray;
   color: white;
-  /* font-family: RSFont; */
-  font-size: 1.25rem;
   width: 7rem;
-  margin-top: 0.8rem;
-  margin-left: 0.8rem;
-  padding-left: 0.4rem;
+  height: 36px;
+  padding-left: 0.5rem;
+  border-radius: 0.275rem;
 }
 
 .goArrow {
@@ -31,17 +30,35 @@
 }
 
 .cta {
-  padding: 0.3rem 1.2rem;
+  width: 7rem;
+  height: 36px;
   background-color: transparent;
   outline: none;
-  border: none;
   color: white;
   cursor: pointer;
   position: relative;
-  /* background: linear-gradient(130deg, brown, red); */
-  border-radius: 0.5rem;
+  border-radius: 0.275rem;
   color: white;
-  background-color: rgb(112, 176, 31);
-  margin-left: 1.5rem;
-  margin-top: 0.8rem;
+  background-color: var(--blue-main);
+  border: 1px solid var(--border);
+}
+
+.cta:hover {
+  background-color: #004cff;
+  border: 1px solid #004cff;
+}
+
+@media (max-width: 800px) {
+  .fetchUserBox {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .fetchUserBox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0rem;
+  }
 }

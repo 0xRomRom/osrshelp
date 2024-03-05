@@ -97,7 +97,7 @@ const Nav = (props) => {
     });
 
     window.scrollTo(0, 0);
-  }, [path, setMainState, setSubState]);
+  }, [path, setMainState, setSubState, width]);
 
   const handleTabSwitch = (path, label) => {
     setActiveTab(path);

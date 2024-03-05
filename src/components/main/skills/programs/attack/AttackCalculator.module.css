@@ -12,3 +12,8 @@
   justify-content: flex-start;
   margin: 1rem 0rem;
 }
+@media (max-width: 1200px) {
+  .modal {
+    padding-right: calc(2rem - 15px);
+  }
+}
