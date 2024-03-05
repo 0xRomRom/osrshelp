@@ -7,6 +7,10 @@
   padding: 1rem 0.5rem;
   border-radius: 0.8rem;
   padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .typeRow {
@@ -31,8 +35,7 @@
 .resultGrid {
   position: relative;
   width: 100%;
-  height: 100%;
-  /* background-color: red; */
+
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -121,4 +124,40 @@
 .gpcost {
   color: rgb(175, 175, 175);
   margin-left: 3px;
+}
+
+@media (max-width: 800px) {
+  .lvlSpan {
+    display: none;
+  }
+  .innerSpan,
+  .orange,
+  .green,
+  .red {
+    font-size: 12px;
+  }
+  .grid {
+    padding: 0.5rem 0rem;
+    padding-left: 0.25rem;
+  }
+  .typeRow {
+    padding-left: 0rem;
+  }
+
+  .typeRow span {
+    font-size: 14px;
+  }
+  .monsterTitleRow {
+    justify-content: center !important;
+    display: flex;
+  }
+  .typeRow > span {
+    width: 25%;
+  }
+  .rowItem > span {
+    width: 25%;
+  }
+  .minifood {
+    width: 25px;
+  }
 }

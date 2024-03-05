@@ -114,10 +114,12 @@ const FishingGrid = (props) => {
           />{" "}
           Fish
         </span>
-        <span onClick={sortMembers}>
-          <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
-          Member
-        </span>
+        {window.innerWidth > 800 && (
+          <span onClick={sortMembers}>
+            <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
+            Member
+          </span>
+        )}
         <span onClick={sortExp}>
           <img src={statsLogo} alt="Experience Logo" className={stl.miniLogo} />{" "}
           Exp
@@ -145,13 +147,15 @@ const FishingGrid = (props) => {
                   {food.food}
                 </span>
               </span>
-              <span
-                className={`${stl.rowItem} ${
-                  food.member ? stl.red : stl.green
-                }`}
-              >
-                {food.member ? "Yes" : "No"}
-              </span>
+              {window.innerWidth > 800 && (
+                <span
+                  className={`${stl.rowItem} ${
+                    food.member ? stl.red : stl.green
+                  }`}
+                >
+                  {food.member ? "Yes" : "No"}
+                </span>
+              )}
               <span className={`${stl.rowItem} ${stl.green}`}>
                 {+props.multiplier > 0 &&
                   (food.exp * (1 + 2.5 / 100)).toFixed(2)}

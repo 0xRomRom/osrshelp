@@ -23,6 +23,11 @@
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 1200px) {
+  .modal {
+    padding-right: calc(2rem - 15px);
+  }
+}
 
 @media (max-width: 1050px) {
   .configRows {

@@ -9,7 +9,7 @@
   border-radius: 0.8rem;
   margin-left: 1rem;
   padding-top: 0.5rem;
-
+  margin-right: 1rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   scroll-behavior: smooth;
@@ -68,4 +68,23 @@ label::before {
 input[type="checkbox"]:checked + label::before {
   background-color: #aeafaf;
   border: 2px solid #aeafaf;
+}
+
+@media (max-width: 1000px) {
+  .modal {
+    margin-top: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+  .checkRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .checkRow label {
+    font-size: 14px;
+  }
 }
