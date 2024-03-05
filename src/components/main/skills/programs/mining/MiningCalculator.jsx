@@ -36,32 +36,36 @@ const MiningCalculator = (props) => {
           currentExp={props.skillsExp && props.skillsExp}
         />
 
-        <div className={stl.configRow}>
-          {arePropsDefined ? (
-            <TargetLevel
-              skills={props.skills}
-              skillsExp={props.skillsExp}
-              skillName={"mining"}
-              currentLvl={props.skills["mining"]}
-              currentExp={props.skillsExp}
-              setRemainingExp={setRemainingExp}
-              remainingExp={remainingExp}
+        <div className={stl.rowsWrapper}>
+          <div className={stl.configRow}>
+            {arePropsDefined ? (
+              <TargetLevel
+                skills={props.skills}
+                skillsExp={props.skillsExp}
+                skillName={"mining"}
+                currentLvl={props.skills["mining"]}
+                currentExp={props.skillsExp}
+                setRemainingExp={setRemainingExp}
+                remainingExp={remainingExp}
+              />
+            ) : (
+              <NoPropsTargetLevel
+                setRemainingExp={setRemainingExp}
+                remainingExp={remainingExp}
+              />
+            )}
+          </div>
+          <div className={stl.configRow2}>
+            <MiningFilters
+              setMultiplier={setMultiplier}
+              setFilterChanged={setFilterChanged}
+              filterChanged={filterChanged}
             />
-          ) : (
-            <NoPropsTargetLevel
-              setRemainingExp={setRemainingExp}
-              remainingExp={remainingExp}
+            <SearchFilter
+              setSearchState={setSearchState}
+              searchType="Search Ore"
             />
-          )}
-          <MiningFilters
-            setMultiplier={setMultiplier}
-            setFilterChanged={setFilterChanged}
-            filterChanged={filterChanged}
-          />
-          <SearchFilter
-            setSearchState={setSearchState}
-            searchType="Search Ore"
-          />
+          </div>
         </div>
         <MiningGrid
           searchState={searchState}

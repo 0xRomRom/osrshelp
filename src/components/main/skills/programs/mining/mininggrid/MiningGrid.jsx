@@ -96,7 +96,6 @@ const MiningGrid = (props) => {
 
     sorter.sort((a, b) => {
       const aToGo = calcOresToMine(a);
-      console.log(aToGo);
       const bToGo = calcOresToMine(b);
       const aSortValue = aToGo;
       const bSortValue = bToGo;
@@ -112,7 +111,6 @@ const MiningGrid = (props) => {
 
     sorter.sort((a, b) => {
       const aToGo = calcOresToMine(a);
-      console.log(aToGo);
       const bToGo = calcOresToMine(b);
       const aSortValue = a.profit * aToGo;
       const bSortValue = b.profit * bToGo;
@@ -133,10 +131,12 @@ const MiningGrid = (props) => {
           />{" "}
           Yield
         </span>
-        <span onClick={sortMembers}>
-          <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
-          Member
-        </span>
+        {window.innerWidth > 1000 && (
+          <span onClick={sortMembers}>
+            <img src={memberLogo} alt="Member Logo" className={stl.miniLogo} />{" "}
+            Member
+          </span>
+        )}
         <span onClick={sortExp}>
           <img src={statsLogo} alt="Health Logo" className={stl.miniLogo} /> Exp
         </span>
@@ -167,13 +167,15 @@ const MiningGrid = (props) => {
                   {ore.name}
                 </span>
               </span>
-              <span
-                className={`${stl.rowItem} ${
-                  ore.members ? stl.red : stl.green
-                }`}
-              >
-                {ore.members ? "Yes" : "No"}
-              </span>
+              {window.innerWidth > 1000 && (
+                <span
+                  className={`${stl.rowItem} ${
+                    ore.members ? stl.red : stl.green
+                  }`}
+                >
+                  {ore.members ? "Yes" : "No"}
+                </span>
+              )}
               <span className={`${stl.rowItem} ${stl.green}`}>
                 {+props.multiplier > 0 &&
                   (ore.exp * (1 + 2.5 / 100)).toFixed(2)}

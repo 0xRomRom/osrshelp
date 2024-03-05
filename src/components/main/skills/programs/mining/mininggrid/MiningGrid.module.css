@@ -7,6 +7,8 @@
   padding: 1rem 0.5rem;
   border-radius: 0.8rem;
   padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .typeRow {
@@ -69,7 +71,6 @@
 .minifood {
   max-width: 25px;
   max-height: 25px;
-  margin-right: 0.4rem;
   position: relative;
 }
 
@@ -135,4 +136,43 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .typeRow > span {
+    width: 25%;
+  }
+  .rowItem > span {
+    width: 25%;
+  }
+  .row {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 810px) {
+  .grid {
+    padding: 0.5rem 0rem;
+  }
+  .typeRow {
+    padding-bottom: 0.5rem;
+  }
+  .typeRow span {
+    font-size: 14px;
+  }
+  .monsterTitleRow {
+    justify-content: center !important;
+  }
+  .innerSpan,
+  .orange,
+  .red,
+  .green,
+  .expRow {
+    font-size: 12px;
+  }
+  .lvlSpan {
+    display: none;
+  }
+  .gpcost {
+    width: initial !important;
+  }
 }
