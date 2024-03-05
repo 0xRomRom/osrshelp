@@ -213,6 +213,7 @@
   }
   .playerInfo {
     flex-direction: column;
+    gap: 0.25rem;
   }
   .userBlock {
     padding-top: 0rem;
@@ -239,5 +240,8 @@
   }
   .trashcan {
     font-size: 20px;
+  }
+  .userStatsBox {
+    justify-content: center;
   }
 }

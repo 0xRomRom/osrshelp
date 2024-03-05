@@ -52,7 +52,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 20px;
   padding-left: 0.5rem;
 }
 
@@ -134,5 +134,8 @@
   }
   .sliderBox {
     width: 100%;
+  }
+  .levelRow {
+    align-items: center;
   }
 }
