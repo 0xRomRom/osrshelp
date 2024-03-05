@@ -76,7 +76,7 @@ const NoPropsTargetLevel = ({ setRemainingExp, remainingExp }) => {
         <div className={stl.levelRow}>
           <div className={stl.targetRow}>
             <div className={stl.currLvlRow}>
-              <span className={stl.targetlvl}>Current level</span>
+              <span className={stl.targetlvl}>Current Level</span>
               <input
                 type="text"
                 className={stl.currentLvlInput}
@@ -87,7 +87,7 @@ const NoPropsTargetLevel = ({ setRemainingExp, remainingExp }) => {
             </div>
             {selectedLvl && (
               <div className={stl.xpDiv}>
-                <span className={stl.toGoExp}>Exp</span>
+                <span className={stl.toGoExp}>EXP</span>
                 <input
                   type="text"
                   className={stl.curExpInput}
@@ -104,7 +104,7 @@ const NoPropsTargetLevel = ({ setRemainingExp, remainingExp }) => {
         <div className={stl.levelRow}>
           <div className={stl.targetRow}>
             <span className={stl.targetlvl}>
-              Target level
+              Target Level
               <input
                 type="text"
                 className={stl.currentLvlInput}

@@ -8,6 +8,8 @@
   padding-bottom: 2.5rem;
   background-color: var(--main-bg);
   border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
 }
 
 .typeRow {
@@ -22,7 +24,7 @@
 }
 
 .typeRow > span {
-  width: 25%;
+  width: 30%;
   text-align: center;
   gap: 0.35rem;
   display: flex;
@@ -46,7 +48,6 @@
   justify-content: center;
   align-items: center;
   user-select: none;
-  min-height: 2.5rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -130,4 +131,36 @@
 .amountRow {
   color: var(--orange-main);
   font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .rowItem {
+    font-size: 14px;
+  }
+  .grid {
+    padding: 1rem 0rem;
+    margin-bottom: 2rem;
+  }
+  .resultGrid {
+    padding-left: 0.5rem;
+  }
+  .typeRow {
+    padding-left: 0.5rem;
+  }
+  .typeRow span {
+    font-size: 14px;
+  }
+  .row {
+    min-height: auto;
+    padding: 3px 0px;
+  }
+  .imgWrapper {
+    padding-right: 0.25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .rowItem {
+    font-size: 12px;
+  }
 }
