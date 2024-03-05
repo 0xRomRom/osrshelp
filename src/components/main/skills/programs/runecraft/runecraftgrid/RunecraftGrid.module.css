@@ -7,6 +7,8 @@
   padding: 1rem 0.5rem;
   border-radius: 0.8rem;
   padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .typeRow {
@@ -101,7 +103,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .orange {
@@ -121,4 +122,36 @@
 .gpcost {
   color: rgb(175, 175, 175);
   margin-left: 3px;
+}
+
+@media (max-width: 800px) {
+  .innerSpan,
+  .orange,
+  .red,
+  .green,
+  .expRow,
+  .bonename {
+    font-size: 12px;
+  }
+  .lvlSpan {
+    display: none;
+  }
+
+  .innerSpan {
+    padding: 2px 0px;
+    padding-left: 0.25rem;
+  }
+  .monsterTitleRow {
+    justify-content: center !important;
+  }
+  .grid {
+    padding: 0.5rem 0rem;
+  }
+  .typeRow {
+    padding-bottom: 0.5rem;
+  }
+  .typeRow span {
+    font-size: 12px;
+    gap: 0.15rem;
+  }
 }

@@ -61,3 +61,14 @@
   color: rgb(221, 215, 215);
   padding-top: 0.2rem;
 }
+
+@media (max-width: 1000px) {
+  .modal {
+    margin-top: 1rem;
+    margin-left: 0rem;
+  }
+  .gearRow {
+    width: 13rem;
+    margin: 0 auto;
+  }
+}
