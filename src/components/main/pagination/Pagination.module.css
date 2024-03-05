@@ -51,7 +51,6 @@
   border: none;
   outline: none;
   color: white;
-  font-weight: bold;
   cursor: pointer;
   /* font-size: 16px; */
   transition: all 0.2s ease-in-out;
@@ -75,7 +74,6 @@
   color: black;
   border: none;
   outline: none;
-  font-weight: bold;
   cursor: pointer;
   margin-right: 1rem;
   border: 1px solid transparent;
@@ -95,7 +93,6 @@
   color: black;
   border: none;
   outline: none;
-  font-weight: bold;
   cursor: pointer;
   margin-right: 1rem;
   border: 1px solid transparent;
@@ -120,7 +117,6 @@
   color: rgb(199, 194, 194);
   transition: all 0.2s ease-in-out;
   user-select: none;
-  font-weight: bold;
 }
 
 .showConfig {
@@ -140,7 +136,6 @@
   border: none;
   outline: none;
   color: white;
-  font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   font-family: Inter;
