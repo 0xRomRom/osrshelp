@@ -29,7 +29,7 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1090px) {
   .configRows {
     flex-direction: column;
   }
@@ -43,6 +43,9 @@
   .configRow2 {
     margin-left: 0rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

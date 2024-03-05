@@ -12,6 +12,7 @@
   padding-left: 1rem;
   scroll-behavior: smooth;
   margin-right: 1rem;
+  min-width: 224px;
 }
 
 .innerWrap {
@@ -85,6 +86,7 @@ input[type="checkbox"]:checked + label::before {
 @media (max-width: 520px) {
   .modal {
     padding-left: 0rem;
+    min-width: 160px;
   }
 
   .checkRow label {

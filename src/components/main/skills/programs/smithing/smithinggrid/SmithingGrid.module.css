@@ -159,6 +159,7 @@
   .grid {
     padding: 0.5rem 0rem;
     padding-right: 0rem;
+    padding-left: 0.25rem;
   }
 
   .typeRow span {
@@ -178,9 +179,14 @@
     display: none;
   }
   .imgWrapper img {
-    width: 20px;
+    object-fit: contain;
+    transform: scale(0.8);
   }
   .imgWrapper {
     min-width: 25px;
+    margin-right: 3px;
+  }
+  .bonename {
+    padding: 2px 0px;
   }
 }

@@ -1,6 +1,7 @@
 import stl from "./FetchUsername.module.css";
 import { useRef, useState } from "react";
 import { playerStats } from "../../../../../utils/playerStats";
+import { LuSendHorizonal } from "react-icons/lu";
 
 const FetchUsername = (props) => {
   const [loading, setLoading] = useState(false);
@@ -69,19 +70,22 @@ const FetchUsername = (props) => {
 
   return (
     <form className={stl.fetchUserBox} id="usernameform">
-      <input
-        type="text"
-        className={stl.nameInput}
-        ref={nameRef}
-        placeholder="Username"
-      ></input>
-      <button
-        className={stl.cta}
-        onClick={handleNameRegister}
-        disabled={loading ? true : false}
-      >
-        {loading ? "Loading" : "Get Stats"}
-      </button>
+      <div className={stl.inputwrap}>
+        <input
+          type="text"
+          className={stl.nameInput}
+          ref={nameRef}
+          placeholder="Username"
+        />
+        <button
+          className={stl.cta}
+          onClick={handleNameRegister}
+          disabled={loading ? true : false}
+          style={{ pointerEvents: loading ? "none" : "" }}
+        >
+          <LuSendHorizonal />
+        </button>
+      </div>
     </form>
   );
 };
