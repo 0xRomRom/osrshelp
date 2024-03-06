@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 40rem;
 }
 
 .bannerBG {
@@ -62,4 +63,12 @@
   font-size: 58px;
   font-weight: bold;
   font-family: RSFont;
+}
+
+@media (max-width: 500px) {
+  .bannerHero,
+  .rune {
+    font-size: 40px;
+    line-height: 25px;
+  }
 }
