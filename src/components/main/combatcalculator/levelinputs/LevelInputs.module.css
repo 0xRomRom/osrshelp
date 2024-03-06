@@ -34,6 +34,7 @@
   position: relative;
   top: 0;
   padding-left: 10px;
+  margin-left: 1rem;
 }
 
 .numberInput::placeholder {
@@ -52,9 +53,12 @@
 }
 
 .inputIcon {
-  padding: 15px 0px 15px 15px;
+  width: 20px;
+  height: 20px;
   position: relative;
   user-select: none;
+  margin: auto;
+  left: 0.8rem;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -78,6 +82,12 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .numberInput {
     font-size: 16px;
+    margin-left: 0.3rem;
+  }
+
+  .numberInput::placeholder {
+    font-size: 10px;
+    padding-left: 3px;
   }
   .currentLvls {
     font-size: 14px;
