@@ -58,6 +58,7 @@
 }
 .queueBlock {
   flex: 1;
+  max-width: 33%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -66,8 +67,10 @@
   text-align: center;
   position: relative;
 }
+
 .profitBox {
   flex: 1;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,6 +219,7 @@
 
 .storedItemName {
   color: rgb(222, 222, 222);
+  font-size: 12px;
 }
 
 .storedItem {
@@ -324,4 +328,72 @@
   align-items: center;
   gap: 0.5rem;
   user-select: none;
+}
+
+@media (max-width: 1000px) {
+  .calculatorbox {
+    width: 100%;
+  }
+  .storedItemName {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .itemBlock {
+    padding-top: 7rem;
+  }
+  .calculatorModal {
+    flex-direction: column;
+    height: auto;
+  }
+  .queueBlock {
+    width: 100%;
+    display: block;
+    max-width: initial;
+  }
+  .storedItem {
+    justify-content: space-between;
+  }
+  .queueConfigRow {
+    display: none;
+  }
+  .profitBox {
+    min-height: 10rem;
+    flex-direction: column;
+    display: flex;
+
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    text-align: center;
+    padding-top: 1rem;
+    background-color: var(--main-bg);
+    position: relative;
+    height: 98%;
+    top: 1%;
+    border-radius: 0.375rem;
+  }
+
+  .millsLarge {
+    transform: scale(1.75);
+    margin: 0;
+    margin-bottom: 1.25rem;
+    position: relative;
+  }
+  .profitBottomBox {
+    padding: 0;
+    position: relative;
+  }
+  .queueList {
+    height: auto;
+  }
+  .activeImg {
+    transform: scale(1.75);
+    margin-bottom: 1rem;
+  }
+  .totalCostBox {
+    padding-bottom: 0.5rem;
+  }
 }

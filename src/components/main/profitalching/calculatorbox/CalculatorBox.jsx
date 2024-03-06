@@ -189,8 +189,8 @@ const CalculatorBox = ({ selectedItem }) => {
               </>
             )}
           </div>
-          <div className={stl.queueBlock}>
-            {Object.keys(storedItems).length > 0 && (
+          {Object.keys(storedItems).length > 0 && (
+            <div className={stl.queueBlock}>
               <>
                 <div className={stl.queueList}>
                   <div className={stl.queueConfigRow}>
@@ -246,15 +246,15 @@ const CalculatorBox = ({ selectedItem }) => {
                   </span>
                 </div>
               </>
-            )}
-            {Object.keys(storedItems).length === 0 && (
-              <div className={stl.addItemFallback}>
-                <span className={stl.fallBackSpan}>
-                  Add items <CiSquarePlus className={stl.plusLarge} />
-                </span>
-              </div>
-            )}
-          </div>
+              {Object.keys(storedItems).length === 0 && totalProfit > 0 && (
+                <div className={stl.addItemFallback}>
+                  <span className={stl.fallBackSpan}>
+                    Add items <CiSquarePlus className={stl.plusLarge} />
+                  </span>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
     </div>

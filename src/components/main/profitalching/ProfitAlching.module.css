@@ -91,7 +91,7 @@
 }
 
 .griditem {
-  height: 2.5rem;
+  min-height: 2.5rem;
   color: rgb(217, 217, 217);
   display: flex;
   justify-content: flex-start;
@@ -241,4 +241,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .modalWrap {
+    margin: 0rem 1rem;
+    margin-left: calc(1rem + 10px);
+  }
+  .griditem span {
+    font-size: 12px;
+  }
+  .imgWrapper {
+    width: 15px;
+  }
+  .imgWrapper img {
+    object-fit: contain;
+    transform: scale(0.8);
+  }
+  .itemsGrid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .configRow span {
+    font-size: 12px;
+  }
+  .griditem span {
+    gap: 0.15rem;
+  }
+  .modalWrap {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .griditem span {
+    font-size: 10px;
+  }
 }
