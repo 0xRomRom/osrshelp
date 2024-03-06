@@ -33,7 +33,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Ancient_bracers.webp",
+    src: "/gearcalculator/gloves/Ancient_bracers.webp",
     slot: "Gloves",
   },
   {
@@ -70,7 +70,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Armadyl_bracers.webp",
+    src: "/gearcalculator/gloves/Armadyl_bracers.webp",
     slot: "Gloves",
   },
   {
@@ -107,7 +107,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Bandos_bracers.webp",
+    src: "/gearcalculator/gloves/Bandos_bracers.webp",
     slot: "Gloves",
   },
   {
@@ -144,7 +144,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Zamorak_bracers.webp",
+    src: "/gearcalculator/gloves/Zamorak_bracers.webp",
     slot: "Gloves",
   },
   {
@@ -181,7 +181,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Saradomin_bracers.webp",
+    src: "/gearcalculator/gloves/Saradomin_bracers.webp",
     slot: "Gloves",
   },
   {
@@ -218,7 +218,7 @@ const GLOVES = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/gloves/Black_d'hide_vambraces.webp",
+    src: "/gearcalculator/gloves/Black_d'hide_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -255,7 +255,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Barrows_gloves.webp",
+    src: "/gearcalculator/gloves/Barrows_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -292,7 +292,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Dragon_gloves.webp",
+    src: "/gearcalculator/gloves/Dragon_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -329,7 +329,7 @@ const GLOVES = [
         Weight: 0.2,
       },
     ],
-    src: "./gearcalculator/gloves/Ancient_ceremonial_gloves.webp",
+    src: "/gearcalculator/gloves/Ancient_ceremonial_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -366,7 +366,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Black_gloves.webp",
+    src: "/gearcalculator/gloves/Black_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -403,7 +403,7 @@ const GLOVES = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/gloves/Black_spiky_vambraces.webp",
+    src: "/gearcalculator/gloves/Black_spiky_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -440,7 +440,7 @@ const GLOVES = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/gloves/Blue_d'hide_vambraces.webp",
+    src: "/gearcalculator/gloves/Blue_d'hide_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -477,7 +477,7 @@ const GLOVES = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/gloves/Blue_spiky_vambraces.webp",
+    src: "/gearcalculator/gloves/Blue_spiky_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -514,7 +514,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Bronze_gloves.webp",
+    src: "/gearcalculator/gloves/Bronze_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -551,7 +551,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Chaos_gauntlets.webp",
+    src: "/gearcalculator/gloves/Chaos_gauntlets.webp",
     slot: "Gloves",
   },
   {
@@ -588,7 +588,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Cooking_gauntlets.webp",
+    src: "/gearcalculator/gloves/Cooking_gauntlets.webp",
     slot: "Gloves",
   },
   {
@@ -625,7 +625,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Goldsmith_gauntlets.webp",
+    src: "/gearcalculator/gloves/Goldsmith_gauntlets.webp",
     slot: "Gloves",
   },
   {
@@ -662,7 +662,7 @@ const GLOVES = [
         Weight: 0.25,
       },
     ],
-    src: "./gearcalculator/gloves/Combat_bracelet.webp",
+    src: "/gearcalculator/gloves/Combat_bracelet.webp",
     slot: "Gloves",
   },
   {
@@ -699,7 +699,7 @@ const GLOVES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/gloves/Crab_claw.webp",
+    src: "/gearcalculator/gloves/Crab_claw.webp",
     slot: "Gloves",
   },
   {
@@ -736,7 +736,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Crabclaw_hook.webp",
+    src: "/gearcalculator/gloves/Crabclaw_hook.webp",
     slot: "Gloves",
   },
   {
@@ -773,7 +773,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Expert_mining_gloves.webp",
+    src: "/gearcalculator/gloves/Expert_mining_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -810,7 +810,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Fremennik_gloves.webp",
+    src: "/gearcalculator/gloves/Fremennik_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -847,7 +847,7 @@ const GLOVES = [
         Weight: 0.001,
       },
     ],
-    src: "./gearcalculator/gloves/Ghostly_gloves.webp",
+    src: "/gearcalculator/gloves/Ghostly_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -884,7 +884,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Gilded_d'hide_vambraces.webp",
+    src: "/gearcalculator/gloves/Gilded_d'hide_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -921,7 +921,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Gloves_of_silence.webp",
+    src: "/gearcalculator/gloves/Gloves_of_silence.webp",
     slot: "Gloves",
   },
   {
@@ -958,7 +958,7 @@ const GLOVES = [
         Weight: -3,
       },
     ],
-    src: "./gearcalculator/gloves/Graceful_gloves.webp",
+    src: "/gearcalculator/gloves/Graceful_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -995,7 +995,7 @@ const GLOVES = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/gloves/Green_d'hide_vambraces.webp",
+    src: "/gearcalculator/gloves/Green_d'hide_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -1032,7 +1032,7 @@ const GLOVES = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/gloves/Green_spiky_vambraces.webp",
+    src: "/gearcalculator/gloves/Green_spiky_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -1069,7 +1069,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Grey_gloves.webp",
+    src: "/gearcalculator/gloves/Grey_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1106,7 +1106,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Mourner_gloves.webp",
+    src: "/gearcalculator/gloves/Mourner_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1143,7 +1143,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Leather_gloves.webp",
+    src: "/gearcalculator/gloves/Leather_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1180,7 +1180,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Teal_gloves.webp",
+    src: "/gearcalculator/gloves/Teal_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1217,7 +1217,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/White_gloves.webp",
+    src: "/gearcalculator/gloves/White_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1254,7 +1254,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Yellow_gloves.webp",
+    src: "/gearcalculator/gloves/Yellow_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1291,7 +1291,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Red_gloves.webp",
+    src: "/gearcalculator/gloves/Red_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1328,7 +1328,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Ham_gloves.webp",
+    src: "/gearcalculator/gloves/Ham_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1365,7 +1365,7 @@ const GLOVES = [
         Weight: 0.2,
       },
     ],
-    src: "./gearcalculator/gloves/Group_iron_bracers.webp",
+    src: "/gearcalculator/gloves/Group_iron_bracers.webp",
     slot: "Gloves",
   },
   {
@@ -1402,7 +1402,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Guthix_bracers.webp",
+    src: "/gearcalculator/gloves/Guthix_bracers.webp",
     slot: "Gloves",
   },
   {
@@ -1439,7 +1439,7 @@ const GLOVES = [
         Weight: 0.2,
       },
     ],
-    src: "./gearcalculator/gloves/Hardcore_group_iron_bracers.webp",
+    src: "/gearcalculator/gloves/Hardcore_group_iron_bracers.webp",
     slot: "Gloves",
   },
   {
@@ -1476,7 +1476,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Hardleather_gloves.webp",
+    src: "/gearcalculator/gloves/Hardleather_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1513,7 +1513,7 @@ const GLOVES = [
         Weight: 0.5,
       },
     ],
-    src: "./gearcalculator/gloves/Holy_wraps.webp",
+    src: "/gearcalculator/gloves/Holy_wraps.webp",
     slot: "Gloves",
   },
   {
@@ -1550,7 +1550,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Ice_gloves.webp",
+    src: "/gearcalculator/gloves/Ice_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1587,7 +1587,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Iron_gloves.webp",
+    src: "/gearcalculator/gloves/Iron_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1624,7 +1624,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Karamja_gloves_1.webp",
+    src: "/gearcalculator/gloves/Karamja_gloves_1.webp",
     slot: "Gloves",
   },
   {
@@ -1661,7 +1661,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Karamja_gloves_2.webp",
+    src: "/gearcalculator/gloves/Karamja_gloves_2.webp",
     slot: "Gloves",
   },
   {
@@ -1698,7 +1698,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Karamja_gloves_3.webp",
+    src: "/gearcalculator/gloves/Karamja_gloves_3.webp",
     slot: "Gloves",
   },
   {
@@ -1735,7 +1735,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Karamja_gloves_4.webp",
+    src: "/gearcalculator/gloves/Karamja_gloves_4.webp",
     slot: "Gloves",
   },
   {
@@ -1772,7 +1772,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Klank's_gauntlets.webp",
+    src: "/gearcalculator/gloves/Klank's_gauntlets.webp",
     slot: "Gloves",
   },
   {
@@ -1809,7 +1809,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Leather_vambraces.webp",
+    src: "/gearcalculator/gloves/Leather_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -1846,7 +1846,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Mithril_gloves.webp",
+    src: "/gearcalculator/gloves/Mithril_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1883,7 +1883,7 @@ const GLOVES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/gloves/Moonclan_gloves.webp",
+    src: "/gearcalculator/gloves/Moonclan_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -1920,7 +1920,7 @@ const GLOVES = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/gloves/Red_spiky_vambraces.webp",
+    src: "/gearcalculator/gloves/Red_spiky_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -1957,7 +1957,7 @@ const GLOVES = [
         Weight: 0.25,
       },
     ],
-    src: "./gearcalculator/gloves/Regen_bracelet.webp",
+    src: "/gearcalculator/gloves/Regen_bracelet.webp",
     slot: "Gloves",
   },
   {
@@ -1994,7 +1994,7 @@ const GLOVES = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/gloves/Rock-shell_gloves.webp",
+    src: "/gearcalculator/gloves/Rock-shell_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2031,7 +2031,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Rogue_gloves.webp",
+    src: "/gearcalculator/gloves/Rogue_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2068,7 +2068,7 @@ const GLOVES = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/gloves/Samurai_gloves.webp",
+    src: "/gearcalculator/gloves/Samurai_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2105,7 +2105,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Shayzien_gloves_(1).webp",
+    src: "/gearcalculator/gloves/Shayzien_gloves_(1).webp",
     slot: "Gloves",
   },
   {
@@ -2142,7 +2142,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Shayzien_gloves_(2).webp",
+    src: "/gearcalculator/gloves/Shayzien_gloves_(2).webp",
     slot: "Gloves",
   },
   {
@@ -2179,7 +2179,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Shayzien_gloves_(3).webp",
+    src: "/gearcalculator/gloves/Shayzien_gloves_(3).webp",
     slot: "Gloves",
   },
   {
@@ -2216,7 +2216,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Shayzien_gloves_(4).webp",
+    src: "/gearcalculator/gloves/Shayzien_gloves_(4).webp",
     slot: "Gloves",
   },
   {
@@ -2253,7 +2253,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Shayzien_gloves_(5).webp",
+    src: "/gearcalculator/gloves/Shayzien_gloves_(5).webp",
     slot: "Gloves",
   },
   {
@@ -2290,7 +2290,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Slayer_gloves.webp",
+    src: "/gearcalculator/gloves/Slayer_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2327,7 +2327,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Spiky_vambraces.webp",
+    src: "/gearcalculator/gloves/Spiky_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -2364,7 +2364,7 @@ const GLOVES = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/gloves/Spined_gloves.webp",
+    src: "/gearcalculator/gloves/Spined_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2401,7 +2401,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Steel_gauntlets.webp",
+    src: "/gearcalculator/gloves/Steel_gauntlets.webp",
     slot: "Gloves",
   },
   {
@@ -2438,7 +2438,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Steel_gloves.webp",
+    src: "/gearcalculator/gloves/Steel_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2475,7 +2475,7 @@ const GLOVES = [
         Weight: 0.25,
       },
     ],
-    src: "./gearcalculator/gloves/Tormented_bracelet.webp",
+    src: "/gearcalculator/gloves/Tormented_bracelet.webp",
     slot: "Gloves",
   },
   {
@@ -2512,7 +2512,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Adamant_gloves.webp",
+    src: "/gearcalculator/gloves/Adamant_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2549,7 +2549,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Rune_gloves.webp",
+    src: "/gearcalculator/gloves/Rune_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2586,7 +2586,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Gloves_of_darkness.webp",
+    src: "/gearcalculator/gloves/Gloves_of_darkness.webp",
     slot: "Gloves",
   },
   {
@@ -2623,7 +2623,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Mystic_gloves.webp",
+    src: "/gearcalculator/gloves/Mystic_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2660,7 +2660,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Mystic_gloves_(dark).webp",
+    src: "/gearcalculator/gloves/Mystic_gloves_(dark).webp",
     slot: "Gloves",
   },
   {
@@ -2697,7 +2697,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Mystic_gloves_(dusk).webp",
+    src: "/gearcalculator/gloves/Mystic_gloves_(dusk).webp",
     slot: "Gloves",
   },
   {
@@ -2734,7 +2734,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Mystic_gloves_(light).webp",
+    src: "/gearcalculator/gloves/Mystic_gloves_(light).webp",
     slot: "Gloves",
   },
   {
@@ -2771,7 +2771,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Mystic_gloves_(or).webp",
+    src: "/gearcalculator/gloves/Mystic_gloves_(or).webp",
     slot: "Gloves",
   },
   {
@@ -2808,7 +2808,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Infinity_gloves.webp",
+    src: "/gearcalculator/gloves/Infinity_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2845,7 +2845,7 @@ const GLOVES = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/gloves/Snakeskin_vambraces.webp",
+    src: "/gearcalculator/gloves/Snakeskin_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -2882,7 +2882,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Dragonstone_gauntlets.webp",
+    src: "/gearcalculator/gloves/Dragonstone_gauntlets.webp",
     slot: "Gloves",
   },
   {
@@ -2919,7 +2919,7 @@ const GLOVES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/gloves/Lunar_gloves.webp",
+    src: "/gearcalculator/gloves/Lunar_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2956,7 +2956,7 @@ const GLOVES = [
         Weight: -4.535,
       },
     ],
-    src: "./gearcalculator/gloves/Penance_gloves.webp",
+    src: "/gearcalculator/gloves/Penance_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -2993,7 +2993,7 @@ const GLOVES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/gloves/Splitbark_gauntlets.webp",
+    src: "/gearcalculator/gloves/Splitbark_gauntlets.webp",
     slot: "Gloves",
   },
   {
@@ -3030,7 +3030,7 @@ const GLOVES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/gloves/Void_knight_gloves.webp",
+    src: "/gearcalculator/gloves/Void_knight_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -3067,7 +3067,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/3rd_age_vambraces.webp",
+    src: "/gearcalculator/gloves/3rd_age_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -3104,7 +3104,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Zaryte_vambraces.webp",
+    src: "/gearcalculator/gloves/Zaryte_vambraces.webp",
     slot: "Gloves",
   },
   {
@@ -3141,7 +3141,7 @@ const GLOVES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/gloves/Granite_gloves.webp",
+    src: "/gearcalculator/gloves/Granite_gloves.webp",
     slot: "Gloves",
   },
   {
@@ -3178,7 +3178,7 @@ const GLOVES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/gloves/Swampbark_gauntlets.webp",
+    src: "/gearcalculator/gloves/Swampbark_gauntlets.webp",
     slot: "Gloves",
   },
   {
@@ -3215,7 +3215,7 @@ const GLOVES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/gloves/Bloodbark_gauntlets.webp",
+    src: "/gearcalculator/gloves/Bloodbark_gauntlets.webp",
     slot: "Gloves",
   },
   {
@@ -3252,7 +3252,7 @@ const GLOVES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/gloves/Ferocious_gloves.webp",
+    src: "/gearcalculator/gloves/Ferocious_gloves.webp",
     slot: "Gloves",
   },
 ];

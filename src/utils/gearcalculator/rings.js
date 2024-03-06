@@ -36,7 +36,7 @@ const RINGS = [
         Weight: 0.004,
       },
     ],
-    src: "./gearcalculator/rings/Archers_ring.webp",
+    src: "/gearcalculator/rings/Archers_ring.webp",
     slot: "Ring",
   },
   {
@@ -76,7 +76,7 @@ const RINGS = [
         Weight: 0.004,
       },
     ],
-    src: "./gearcalculator/rings/Archers_ring_(i).webp",
+    src: "/gearcalculator/rings/Archers_ring_(i).webp",
     slot: "Ring",
   },
   {
@@ -116,7 +116,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Beacon_ring.webp",
+    src: "/gearcalculator/rings/Beacon_ring.webp",
     slot: "Ring",
   },
   {
@@ -156,7 +156,7 @@ const RINGS = [
         Weight: 0.012,
       },
     ],
-    src: "./gearcalculator/rings/Bellator_ring.webp",
+    src: "/gearcalculator/rings/Bellator_ring.webp",
     slot: "Ring",
   },
   {
@@ -196,7 +196,7 @@ const RINGS = [
         Weight: 0.004,
       },
     ],
-    src: "./gearcalculator/rings/Berserker_ring.webp",
+    src: "/gearcalculator/rings/Berserker_ring.webp",
     slot: "Ring",
   },
   {
@@ -236,7 +236,7 @@ const RINGS = [
         Weight: 0.004,
       },
     ],
-    src: "./gearcalculator/rings/Berserker_ring_(i).webp",
+    src: "/gearcalculator/rings/Berserker_ring_(i).webp",
     slot: "Ring",
   },
   {
@@ -276,7 +276,7 @@ const RINGS = [
         Weight: 0.004,
       },
     ],
-    src: "./gearcalculator/rings/Brimstone_ring.webp",
+    src: "/gearcalculator/rings/Brimstone_ring.webp",
     slot: "Ring",
   },
   {
@@ -316,7 +316,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Explorer's_ring_1.webp",
+    src: "/gearcalculator/rings/Explorer's_ring_1.webp",
     slot: "Ring",
   },
   {
@@ -356,7 +356,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Explorer's_ring_2.webp",
+    src: "/gearcalculator/rings/Explorer's_ring_2.webp",
     slot: "Ring",
   },
   {
@@ -396,7 +396,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Explorer's_ring_3.webp",
+    src: "/gearcalculator/rings/Explorer's_ring_3.webp",
     slot: "Ring",
   },
   {
@@ -436,7 +436,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Explorer's_ring_4.webp",
+    src: "/gearcalculator/rings/Explorer's_ring_4.webp",
     slot: "Ring",
   },
   {
@@ -476,7 +476,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Ring_of_life.webp",
+    src: "/gearcalculator/rings/Ring_of_life.webp",
     slot: "Ring",
   },
   {
@@ -516,7 +516,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Ring_of_recoil.webp",
+    src: "/gearcalculator/rings/Ring_of_recoil.webp",
     slot: "Ring",
   },
   {
@@ -556,7 +556,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Ring_of_dueling(8).webp",
+    src: "/gearcalculator/rings/Ring_of_dueling(8).webp",
     slot: "Ring",
   },
   {
@@ -596,7 +596,7 @@ const RINGS = [
         Weight: 3,
       },
     ],
-    src: "./gearcalculator/rings/Granite_ring.webp",
+    src: "/gearcalculator/rings/Granite_ring.webp",
     slot: "Ring",
   },
   {
@@ -636,7 +636,7 @@ const RINGS = [
         Weight: 3,
       },
     ],
-    src: "./gearcalculator/rings/Granite_ring_(i).webp",
+    src: "/gearcalculator/rings/Granite_ring_(i).webp",
     slot: "Ring",
   },
   {
@@ -676,7 +676,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Lunar_ring.webp",
+    src: "/gearcalculator/rings/Lunar_ring.webp",
     slot: "Ring",
   },
   {
@@ -716,7 +716,7 @@ const RINGS = [
         Weight: 0.012,
       },
     ],
-    src: "./gearcalculator/rings/Magus_ring.webp",
+    src: "/gearcalculator/rings/Magus_ring.webp",
     slot: "Ring",
   },
   {
@@ -756,7 +756,7 @@ const RINGS = [
         Weight: 0.004,
       },
     ],
-    src: "./gearcalculator/rings/Ring_of_shadows.webp",
+    src: "/gearcalculator/rings/Ring_of_shadows.webp",
     slot: "Ring",
   },
   {
@@ -796,7 +796,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Ring_of_suffering.webp",
+    src: "/gearcalculator/rings/Ring_of_suffering.webp",
     slot: "Ring",
   },
   {
@@ -836,7 +836,7 @@ const RINGS = [
         Weight: 0.006,
       },
     ],
-    src: "./gearcalculator/rings/Ring_of_suffering_(i).webp",
+    src: "/gearcalculator/rings/Ring_of_suffering_(i).webp",
     slot: "Ring",
   },
   {
@@ -876,7 +876,7 @@ const RINGS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/rings/Ring_of_the_gods.webp",
+    src: "/gearcalculator/rings/Ring_of_the_gods.webp",
     slot: "Ring",
   },
   {
@@ -916,7 +916,7 @@ const RINGS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/rings/Ring_of_the_gods_(i).webp",
+    src: "/gearcalculator/rings/Ring_of_the_gods_(i).webp",
     slot: "Ring",
   },
   {
@@ -956,7 +956,7 @@ const RINGS = [
         Weight: 0.004,
       },
     ],
-    src: "./gearcalculator/rings/Seers_ring.webp",
+    src: "/gearcalculator/rings/Seers_ring.webp",
     slot: "Ring",
   },
   {
@@ -996,7 +996,7 @@ const RINGS = [
         Weight: 0.004,
       },
     ],
-    src: "./gearcalculator/rings/Seers_ring_(i).webp",
+    src: "/gearcalculator/rings/Seers_ring_(i).webp",
     slot: "Ring",
   },
   {
@@ -1036,7 +1036,7 @@ const RINGS = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/rings/Treasonous_ring.webp",
+    src: "/gearcalculator/rings/Treasonous_ring.webp",
     slot: "Ring",
   },
   {
@@ -1076,7 +1076,7 @@ const RINGS = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/rings/Treasonous_ring_(i).webp",
+    src: "/gearcalculator/rings/Treasonous_ring_(i).webp",
     slot: "Ring",
   },
   {
@@ -1116,7 +1116,7 @@ const RINGS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/rings/Tyrannical_ring.webp",
+    src: "/gearcalculator/rings/Tyrannical_ring.webp",
     slot: "Ring",
   },
   {
@@ -1156,7 +1156,7 @@ const RINGS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/rings/Tyrannical_ring_(i).webp",
+    src: "/gearcalculator/rings/Tyrannical_ring_(i).webp",
     slot: "Ring",
   },
   {
@@ -1196,7 +1196,7 @@ const RINGS = [
         Weight: 0.012,
       },
     ],
-    src: "./gearcalculator/rings/Ultor_ring.webp",
+    src: "/gearcalculator/rings/Ultor_ring.webp",
     slot: "Ring",
   },
   {
@@ -1236,7 +1236,7 @@ const RINGS = [
         Weight: 0.012,
       },
     ],
-    src: "./gearcalculator/rings/Venator_ring.webp",
+    src: "/gearcalculator/rings/Venator_ring.webp",
     slot: "Ring",
   },
   {
@@ -1276,7 +1276,7 @@ const RINGS = [
         Weight: 0.004,
       },
     ],
-    src: "./gearcalculator/rings/Warrior_ring.webp",
+    src: "/gearcalculator/rings/Warrior_ring.webp",
     slot: "Ring",
   },
   {
@@ -1316,7 +1316,7 @@ const RINGS = [
         Weight: 0.004,
       },
     ],
-    src: "./gearcalculator/rings/Warrior_ring_(i).webp",
+    src: "/gearcalculator/rings/Warrior_ring_(i).webp",
     slot: "Ring",
   },
 ];

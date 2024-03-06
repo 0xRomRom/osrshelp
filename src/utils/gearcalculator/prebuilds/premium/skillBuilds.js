@@ -1,7 +1,7 @@
 const SKILLBUILDS = [
   {
     name: "Weight reduction",
-    src: "./gearcalculator/helms/Graceful_hood.webp",
+    src: "/gearcalculator/helms/Graceful_hood.webp",
     alt: "Weight reduction",
     itemState: {
       Headpiece: {
@@ -38,7 +38,7 @@ const SKILLBUILDS = [
             Weight: 0.6,
           },
         ],
-        src: "./gearcalculator/helms/Graceful_hood.webp",
+        src: "/gearcalculator/helms/Graceful_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -75,7 +75,7 @@ const SKILLBUILDS = [
             Weight: -4.535,
           },
         ],
-        src: "./gearcalculator/capes/Spottier_cape.webp",
+        src: "/gearcalculator/capes/Spottier_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -112,7 +112,7 @@ const SKILLBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {},
@@ -151,7 +151,7 @@ const SKILLBUILDS = [
             Weight: -5,
           },
         ],
-        src: "./gearcalculator/bodies/Graceful_top.webp",
+        src: "/gearcalculator/bodies/Graceful_top.webp",
         slot: "Body",
       },
       Shield: {},
@@ -189,7 +189,7 @@ const SKILLBUILDS = [
             Weight: -6,
           },
         ],
-        src: "./gearcalculator/legs/Graceful_legs.webp",
+        src: "/gearcalculator/legs/Graceful_legs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -226,7 +226,7 @@ const SKILLBUILDS = [
             Weight: -4.535,
           },
         ],
-        src: "./gearcalculator/gloves/Penance_gloves.webp",
+        src: "/gearcalculator/gloves/Penance_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -263,7 +263,7 @@ const SKILLBUILDS = [
             Weight: -4,
           },
         ],
-        src: "./gearcalculator/boots/Graceful_boots.webp",
+        src: "/gearcalculator/boots/Graceful_boots.webp",
         slot: "Boots",
       },
       Ring: {},
@@ -271,7 +271,7 @@ const SKILLBUILDS = [
   },
   {
     name: "Woodcutting",
-    src: "./gearcalculator/weapons/Dragon_axe.webp",
+    src: "/gearcalculator/weapons/Dragon_axe.webp",
     alt: "Woodcutting",
     itemState: {
       Headpiece: {
@@ -308,7 +308,7 @@ const SKILLBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/helms/Lumberjack_hat.webp",
+        src: "/gearcalculator/helms/Lumberjack_hat.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -345,7 +345,7 @@ const SKILLBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -382,7 +382,7 @@ const SKILLBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -419,7 +419,7 @@ const SKILLBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Ancient_blessing.webp",
+        src: "/gearcalculator/amunition/Ancient_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -456,7 +456,7 @@ const SKILLBUILDS = [
             Weight: 1.36,
           },
         ],
-        src: "./gearcalculator/weapons/Dragon_axe.webp",
+        src: "/gearcalculator/weapons/Dragon_axe.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -494,7 +494,7 @@ const SKILLBUILDS = [
             Weight: 1.36,
           },
         ],
-        src: "./gearcalculator/bodies/Lumberjack_top.webp",
+        src: "/gearcalculator/bodies/Lumberjack_top.webp",
         slot: "Body",
       },
       Shield: {
@@ -531,7 +531,7 @@ const SKILLBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Unholy_book.webp",
+        src: "/gearcalculator/shields/Unholy_book.webp",
         slot: "Shield",
       },
       Legs: {
@@ -568,7 +568,7 @@ const SKILLBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/legs/Lumberjack_legs.webp",
+        src: "/gearcalculator/legs/Lumberjack_legs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -605,7 +605,7 @@ const SKILLBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -642,7 +642,7 @@ const SKILLBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/boots/Lumberjack_boots.webp",
+        src: "/gearcalculator/boots/Lumberjack_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -679,14 +679,14 @@ const SKILLBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Explorer's_ring_4.webp",
+        src: "/gearcalculator/rings/Explorer's_ring_4.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Fishing",
-    src: "./gearcalculator/weapons/Dragon_harpoon.webp",
+    src: "/gearcalculator/weapons/Dragon_harpoon.webp",
     alt: "Fishing",
     itemState: {
       Headpiece: {
@@ -723,7 +723,7 @@ const SKILLBUILDS = [
             Weight: 0.5,
           },
         ],
-        src: "./gearcalculator/helms/Angler_hat.webp",
+        src: "/gearcalculator/helms/Angler_hat.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -760,7 +760,7 @@ const SKILLBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -797,7 +797,7 @@ const SKILLBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -834,7 +834,7 @@ const SKILLBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/amunition/Rada's_blessing_4.webp",
+        src: "/gearcalculator/amunition/Rada's_blessing_4.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -871,7 +871,7 @@ const SKILLBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/weapons/Dragon_harpoon.webp",
+        src: "/gearcalculator/weapons/Dragon_harpoon.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -909,7 +909,7 @@ const SKILLBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/bodies/Angler_top.webp",
+        src: "/gearcalculator/bodies/Angler_top.webp",
         slot: "Body",
       },
       Shield: {
@@ -946,7 +946,7 @@ const SKILLBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Unholy_book.webp",
+        src: "/gearcalculator/shields/Unholy_book.webp",
         slot: "Shield",
       },
       Legs: {
@@ -983,7 +983,7 @@ const SKILLBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/legs/Angler_waders.webp",
+        src: "/gearcalculator/legs/Angler_waders.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1020,7 +1020,7 @@ const SKILLBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1057,7 +1057,7 @@ const SKILLBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/boots/Angler_boots.webp",
+        src: "/gearcalculator/boots/Angler_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -1094,14 +1094,14 @@ const SKILLBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Explorer's_ring_4.webp",
+        src: "/gearcalculator/rings/Explorer's_ring_4.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Mining",
-    src: "./gearcalculator/weapons/Dragon_pickaxe.webp",
+    src: "/gearcalculator/weapons/Dragon_pickaxe.webp",
     alt: "Mining",
     itemState: {
       Headpiece: {
@@ -1138,7 +1138,7 @@ const SKILLBUILDS = [
             Weight: 0.6,
           },
         ],
-        src: "./gearcalculator/helms/Graceful_hood.webp",
+        src: "/gearcalculator/helms/Graceful_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -1175,7 +1175,7 @@ const SKILLBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -1212,7 +1212,7 @@ const SKILLBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -1249,7 +1249,7 @@ const SKILLBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Holy_blessing.webp",
+        src: "/gearcalculator/amunition/Holy_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -1286,7 +1286,7 @@ const SKILLBUILDS = [
             Weight: 2.4,
           },
         ],
-        src: "./gearcalculator/weapons/Dragon_pickaxe.webp",
+        src: "/gearcalculator/weapons/Dragon_pickaxe.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -1324,7 +1324,7 @@ const SKILLBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/bodies/Varrock_armour_4.webp",
+        src: "/gearcalculator/bodies/Varrock_armour_4.webp",
         slot: "Body",
       },
       Shield: {
@@ -1361,7 +1361,7 @@ const SKILLBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Holy_book.webp",
+        src: "/gearcalculator/shields/Holy_book.webp",
         slot: "Shield",
       },
       Legs: {
@@ -1398,7 +1398,7 @@ const SKILLBUILDS = [
             Weight: -6,
           },
         ],
-        src: "./gearcalculator/legs/Graceful_legs.webp",
+        src: "/gearcalculator/legs/Graceful_legs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1435,7 +1435,7 @@ const SKILLBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Expert_mining_gloves.webp",
+        src: "/gearcalculator/gloves/Expert_mining_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1472,7 +1472,7 @@ const SKILLBUILDS = [
             Weight: -4,
           },
         ],
-        src: "./gearcalculator/boots/Graceful_boots.webp",
+        src: "/gearcalculator/boots/Graceful_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -1509,14 +1509,14 @@ const SKILLBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Explorer's_ring_4.webp",
+        src: "/gearcalculator/rings/Explorer's_ring_4.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Cooking",
-    src: "./gearcalculator/gloves/Cooking_gauntlets.webp",
+    src: "/gearcalculator/gloves/Cooking_gauntlets.webp",
     alt: "Cookig",
     itemState: {
       Headpiece: {
@@ -1553,7 +1553,7 @@ const SKILLBUILDS = [
             Weight: 0.001,
           },
         ],
-        src: "./gearcalculator/helms/Ghostly_hood.webp",
+        src: "/gearcalculator/helms/Ghostly_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -1590,7 +1590,7 @@ const SKILLBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Cooking_cape.webp",
+        src: "/gearcalculator/capes/Cooking_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -1627,7 +1627,7 @@ const SKILLBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_fury.webp",
+        src: "/gearcalculator/necklace/Amulet_of_fury.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -1664,7 +1664,7 @@ const SKILLBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Holy_blessing.webp",
+        src: "/gearcalculator/amunition/Holy_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {},
@@ -1702,7 +1702,7 @@ const SKILLBUILDS = [
             Weight: 0.001,
           },
         ],
-        src: "./gearcalculator/bodies/Ghostly_robe_(top).webp",
+        src: "/gearcalculator/bodies/Ghostly_robe_(top).webp",
         slot: "Body",
       },
       Shield: {},
@@ -1740,7 +1740,7 @@ const SKILLBUILDS = [
             Weight: 0.001,
           },
         ],
-        src: "./gearcalculator/legs/Ghostly_robe_(bottom).webp",
+        src: "/gearcalculator/legs/Ghostly_robe_(bottom).webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1777,7 +1777,7 @@ const SKILLBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Cooking_gauntlets.webp",
+        src: "/gearcalculator/gloves/Cooking_gauntlets.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1814,7 +1814,7 @@ const SKILLBUILDS = [
             Weight: 0.001,
           },
         ],
-        src: "./gearcalculator/boots/Ghostly_boots.webp",
+        src: "/gearcalculator/boots/Ghostly_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -1851,14 +1851,14 @@ const SKILLBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Explorer's_ring_4.webp",
+        src: "/gearcalculator/rings/Explorer's_ring_4.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Agility",
-    src: "./gearcalculator/helms/Graceful_hood.webp",
+    src: "/gearcalculator/helms/Graceful_hood.webp",
     alt: "Agility",
     itemState: {
       Headpiece: {
@@ -1895,7 +1895,7 @@ const SKILLBUILDS = [
             Weight: 0.6,
           },
         ],
-        src: "./gearcalculator/helms/Graceful_hood.webp",
+        src: "/gearcalculator/helms/Graceful_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -1932,7 +1932,7 @@ const SKILLBUILDS = [
             Weight: -4.535,
           },
         ],
-        src: "./gearcalculator/capes/Spottier_cape.webp",
+        src: "/gearcalculator/capes/Spottier_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -1969,7 +1969,7 @@ const SKILLBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -2006,7 +2006,7 @@ const SKILLBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Ancient_blessing.webp",
+        src: "/gearcalculator/amunition/Ancient_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {},
@@ -2044,7 +2044,7 @@ const SKILLBUILDS = [
             Weight: -5,
           },
         ],
-        src: "./gearcalculator/bodies/Graceful_top.webp",
+        src: "/gearcalculator/bodies/Graceful_top.webp",
         slot: "Body",
       },
       Shield: {},
@@ -2082,7 +2082,7 @@ const SKILLBUILDS = [
             Weight: -6,
           },
         ],
-        src: "./gearcalculator/legs/Graceful_legs.webp",
+        src: "/gearcalculator/legs/Graceful_legs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -2119,7 +2119,7 @@ const SKILLBUILDS = [
             Weight: -3,
           },
         ],
-        src: "./gearcalculator/gloves/Graceful_gloves.webp",
+        src: "/gearcalculator/gloves/Graceful_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -2156,7 +2156,7 @@ const SKILLBUILDS = [
             Weight: -4,
           },
         ],
-        src: "./gearcalculator/boots/Graceful_boots.webp",
+        src: "/gearcalculator/boots/Graceful_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -2193,7 +2193,7 @@ const SKILLBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Explorer's_ring_4.webp",
+        src: "/gearcalculator/rings/Explorer's_ring_4.webp",
         slot: "Ring",
       },
     },
@@ -2201,7 +2201,7 @@ const SKILLBUILDS = [
 
   {
     name: "Farming",
-    src: "./gearcalculator/helms/Farmer's_strawhat.webp",
+    src: "/gearcalculator/helms/Farmer's_strawhat.webp",
     alt: "Farming",
     itemState: {
       Headpiece: {
@@ -2238,7 +2238,7 @@ const SKILLBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/helms/Farmer's_strawhat.webp",
+        src: "/gearcalculator/helms/Farmer's_strawhat.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -2275,7 +2275,7 @@ const SKILLBUILDS = [
             Weight: -4.535,
           },
         ],
-        src: "./gearcalculator/capes/Spottier_cape.webp",
+        src: "/gearcalculator/capes/Spottier_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -2312,7 +2312,7 @@ const SKILLBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -2349,7 +2349,7 @@ const SKILLBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Ancient_blessing.webp",
+        src: "/gearcalculator/amunition/Ancient_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -2386,7 +2386,7 @@ const SKILLBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/weapons/Magic_secateurs.webp",
+        src: "/gearcalculator/weapons/Magic_secateurs.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -2424,7 +2424,7 @@ const SKILLBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/bodies/Farmer's_jacket.webp",
+        src: "/gearcalculator/bodies/Farmer's_jacket.webp",
         slot: "Body",
       },
       Shield: {
@@ -2461,7 +2461,7 @@ const SKILLBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_balance.webp",
+        src: "/gearcalculator/shields/Book_of_balance.webp",
         slot: "Shield",
       },
       Legs: {
@@ -2498,7 +2498,7 @@ const SKILLBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/legs/Farmer's_boro_trousers.webp",
+        src: "/gearcalculator/legs/Farmer's_boro_trousers.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -2535,7 +2535,7 @@ const SKILLBUILDS = [
             Weight: -4.535,
           },
         ],
-        src: "./gearcalculator/gloves/Penance_gloves.webp",
+        src: "/gearcalculator/gloves/Penance_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -2572,7 +2572,7 @@ const SKILLBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/boots/Farmer's_boots.webp",
+        src: "/gearcalculator/boots/Farmer's_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -2609,14 +2609,14 @@ const SKILLBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_dueling(8).webp",
+        src: "/gearcalculator/rings/Ring_of_dueling(8).webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Thieving",
-    src: "./gearcalculator/helms/Rogue_mask.webp",
+    src: "/gearcalculator/helms/Rogue_mask.webp",
     alt: "Thieving",
     itemState: {
       Headpiece: {
@@ -2653,7 +2653,7 @@ const SKILLBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/helms/Rogue_mask.webp",
+        src: "/gearcalculator/helms/Rogue_mask.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -2690,7 +2690,7 @@ const SKILLBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Thieving_cape(t).webp",
+        src: "/gearcalculator/capes/Thieving_cape(t).webp",
         slot: "Cape",
       },
       Necklace: {
@@ -2727,7 +2727,7 @@ const SKILLBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Dodgy_necklace.webp",
+        src: "/gearcalculator/necklace/Dodgy_necklace.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -2764,7 +2764,7 @@ const SKILLBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {},
@@ -2802,7 +2802,7 @@ const SKILLBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/bodies/Rogue_top.webp",
+        src: "/gearcalculator/bodies/Rogue_top.webp",
         slot: "Body",
       },
       Shield: {},
@@ -2840,7 +2840,7 @@ const SKILLBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/legs/Rogue_trousers.webp",
+        src: "/gearcalculator/legs/Rogue_trousers.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -2877,7 +2877,7 @@ const SKILLBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Gloves_of_silence.webp",
+        src: "/gearcalculator/gloves/Gloves_of_silence.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -2914,7 +2914,7 @@ const SKILLBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/boots/Rogue_boots.webp",
+        src: "/gearcalculator/boots/Rogue_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -2951,7 +2951,7 @@ const SKILLBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_dueling(8).webp",
+        src: "/gearcalculator/rings/Ring_of_dueling(8).webp",
         slot: "Ring",
       },
     },

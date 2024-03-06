@@ -1,7 +1,7 @@
 const RECOVERYBUILDS = [
   {
     name: "Health Recovery",
-    src: "./gearcalculator/capes/Hitpoints_cape(t).webp",
+    src: "/gearcalculator/capes/Hitpoints_cape(t).webp",
     alt: "Health Recovery",
     itemState: {
       Headpiece: {
@@ -38,7 +38,7 @@ const RECOVERYBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Guthan's_helm.webp",
+        src: "/gearcalculator/helms/Guthan's_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -75,7 +75,7 @@ const RECOVERYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Hitpoints_cape(t).webp",
+        src: "/gearcalculator/capes/Hitpoints_cape(t).webp",
         slot: "Cape",
       },
       Necklace: {
@@ -112,7 +112,7 @@ const RECOVERYBUILDS = [
             Weight: 0.02,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_blood_fury.webp",
+        src: "/gearcalculator/necklace/Amulet_of_blood_fury.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -149,7 +149,7 @@ const RECOVERYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -186,7 +186,7 @@ const RECOVERYBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/weapons/Guthan's_warspear.webp",
+        src: "/gearcalculator/weapons/Guthan's_warspear.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -224,7 +224,7 @@ const RECOVERYBUILDS = [
             Weight: 9.979,
           },
         ],
-        src: "./gearcalculator/bodies/Guthan's_platebody.webp",
+        src: "/gearcalculator/bodies/Guthan's_platebody.webp",
         slot: "Body",
       },
       Legs: {
@@ -261,7 +261,7 @@ const RECOVERYBUILDS = [
             Weight: 8.164,
           },
         ],
-        src: "./gearcalculator/legs/Guthan's_chainskirt.webp",
+        src: "/gearcalculator/legs/Guthan's_chainskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -298,7 +298,7 @@ const RECOVERYBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Regen_bracelet.webp",
+        src: "/gearcalculator/gloves/Regen_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -335,7 +335,7 @@ const RECOVERYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/boots/Dragon_boots.webp",
+        src: "/gearcalculator/boots/Dragon_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -372,7 +372,7 @@ const RECOVERYBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Berserker_ring_(i).webp",
+        src: "/gearcalculator/rings/Berserker_ring_(i).webp",
         slot: "Ring",
       },
       Shield: {},
@@ -380,7 +380,7 @@ const RECOVERYBUILDS = [
   },
   {
     name: "Prayer Recovery",
-    src: "./gearcalculator/weapons/Zamorak_crozier.webp",
+    src: "/gearcalculator/weapons/Zamorak_crozier.webp",
     alt: "Prayer Recovery",
     itemState: {
       Headpiece: {
@@ -417,7 +417,7 @@ const RECOVERYBUILDS = [
             Weight: 0.3,
           },
         ],
-        src: "./gearcalculator/helms/Zamorak_mitre.webp",
+        src: "/gearcalculator/helms/Zamorak_mitre.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -454,7 +454,7 @@ const RECOVERYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Ardougne_cloak_4.webp",
+        src: "/gearcalculator/capes/Ardougne_cloak_4.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -491,7 +491,7 @@ const RECOVERYBUILDS = [
             Weight: 0.002,
           },
         ],
-        src: "./gearcalculator/necklace/Zamorak_stole.webp",
+        src: "/gearcalculator/necklace/Zamorak_stole.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -528,7 +528,7 @@ const RECOVERYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Unholy_blessing.webp",
+        src: "/gearcalculator/amunition/Unholy_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -565,7 +565,7 @@ const RECOVERYBUILDS = [
             Weight: 2,
           },
         ],
-        src: "./gearcalculator/weapons/Zamorak_crozier.webp",
+        src: "/gearcalculator/weapons/Zamorak_crozier.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -603,7 +603,7 @@ const RECOVERYBUILDS = [
             Weight: 0.005,
           },
         ],
-        src: "./gearcalculator/bodies/Zamorak_robe_top.webp",
+        src: "/gearcalculator/bodies/Zamorak_robe_top.webp",
         slot: "Body",
       },
       Shield: {
@@ -640,7 +640,7 @@ const RECOVERYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_law.webp",
+        src: "/gearcalculator/shields/Book_of_law.webp",
         slot: "Shield",
       },
       Legs: {
@@ -677,7 +677,7 @@ const RECOVERYBUILDS = [
             Weight: 0.005,
           },
         ],
-        src: "./gearcalculator/legs/Zamorak_robe_legs.webp",
+        src: "/gearcalculator/legs/Zamorak_robe_legs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -714,7 +714,7 @@ const RECOVERYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -751,7 +751,7 @@ const RECOVERYBUILDS = [
             Weight: 0.5,
           },
         ],
-        src: "./gearcalculator/boots/Holy_sandals.webp",
+        src: "/gearcalculator/boots/Holy_sandals.webp",
         slot: "Boots",
       },
       Ring: {
@@ -788,14 +788,14 @@ const RECOVERYBUILDS = [
             Weight: 0.3,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_the_gods_(i).webp",
+        src: "/gearcalculator/rings/Ring_of_the_gods_(i).webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Run Energy Recovery",
-    src: "./gearcalculator/helms/Graceful_hood.webp",
+    src: "/gearcalculator/helms/Graceful_hood.webp",
     alt: "Run Energy Recovery",
     itemState: {
       Headpiece: {
@@ -832,7 +832,7 @@ const RECOVERYBUILDS = [
             Weight: 0.6,
           },
         ],
-        src: "./gearcalculator/helms/Graceful_hood.webp",
+        src: "/gearcalculator/helms/Graceful_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -869,7 +869,7 @@ const RECOVERYBUILDS = [
             Weight: -4.535,
           },
         ],
-        src: "./gearcalculator/capes/Spottier_cape.webp",
+        src: "/gearcalculator/capes/Spottier_cape.webp",
         slot: "Cape",
       },
       Necklace: {},
@@ -909,7 +909,7 @@ const RECOVERYBUILDS = [
             Weight: -5,
           },
         ],
-        src: "./gearcalculator/bodies/Graceful_top.webp",
+        src: "/gearcalculator/bodies/Graceful_top.webp",
         slot: "Body",
       },
       Shield: {},
@@ -947,7 +947,7 @@ const RECOVERYBUILDS = [
             Weight: -6,
           },
         ],
-        src: "./gearcalculator/legs/Graceful_legs.webp",
+        src: "/gearcalculator/legs/Graceful_legs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -984,7 +984,7 @@ const RECOVERYBUILDS = [
             Weight: -3,
           },
         ],
-        src: "./gearcalculator/gloves/Graceful_gloves.webp",
+        src: "/gearcalculator/gloves/Graceful_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1021,7 +1021,7 @@ const RECOVERYBUILDS = [
             Weight: -4,
           },
         ],
-        src: "./gearcalculator/boots/Graceful_boots.webp",
+        src: "/gearcalculator/boots/Graceful_boots.webp",
         slot: "Boots",
       },
       Ring: {},

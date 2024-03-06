@@ -33,7 +33,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Farmer's_jacket.webp",
+    src: "/gearcalculator/bodies/Farmer's_jacket.webp",
     slot: "Body",
   },
   {
@@ -70,7 +70,7 @@ const BODIES = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/bodies/Lumberjack_top.webp",
+    src: "/gearcalculator/bodies/Lumberjack_top.webp",
     slot: "Body",
   },
   {
@@ -107,7 +107,7 @@ const BODIES = [
         Weight: 1.5,
       },
     ],
-    src: "./gearcalculator/bodies/3rd_age_druidic_robe_top.webp",
+    src: "/gearcalculator/bodies/3rd_age_druidic_robe_top.webp",
     slot: "Body",
   },
   {
@@ -144,7 +144,7 @@ const BODIES = [
         Weight: 0.9,
       },
     ],
-    src: "./gearcalculator/bodies/Ancient_ceremonial_top.webp",
+    src: "/gearcalculator/bodies/Ancient_ceremonial_top.webp",
     slot: "Body",
   },
   {
@@ -181,7 +181,7 @@ const BODIES = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/bodies/Ancient_robe_top.webp",
+    src: "/gearcalculator/bodies/Ancient_robe_top.webp",
     slot: "Body",
   },
   {
@@ -218,7 +218,7 @@ const BODIES = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/bodies/Saradomin_robe_top.webp",
+    src: "/gearcalculator/bodies/Saradomin_robe_top.webp",
     slot: "Body",
   },
   {
@@ -255,7 +255,7 @@ const BODIES = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/bodies/Zamorak_robe_top.webp",
+    src: "/gearcalculator/bodies/Zamorak_robe_top.webp",
     slot: "Body",
   },
   {
@@ -292,7 +292,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Shade_robe_top.webp",
+    src: "/gearcalculator/bodies/Shade_robe_top.webp",
     slot: "Body",
   },
   {
@@ -329,7 +329,7 @@ const BODIES = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/bodies/Guthix_robe_top.webp",
+    src: "/gearcalculator/bodies/Guthix_robe_top.webp",
     slot: "Body",
   },
   {
@@ -366,7 +366,7 @@ const BODIES = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/bodies/Bandos_robe_top.webp",
+    src: "/gearcalculator/bodies/Bandos_robe_top.webp",
     slot: "Body",
   },
   {
@@ -403,7 +403,7 @@ const BODIES = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/bodies/Armadyl_robe_top.webp",
+    src: "/gearcalculator/bodies/Armadyl_robe_top.webp",
     slot: "Body",
   },
   {
@@ -440,7 +440,7 @@ const BODIES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/bodies/Angler_top.webp",
+    src: "/gearcalculator/bodies/Angler_top.webp",
     slot: "Body",
   },
   {
@@ -477,7 +477,7 @@ const BODIES = [
         Weight: 0.5,
       },
     ],
-    src: "./gearcalculator/bodies/Ankou_top.webp",
+    src: "/gearcalculator/bodies/Ankou_top.webp",
     slot: "Body",
   },
   {
@@ -514,7 +514,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Ardougne_knight_platebody.webp",
+    src: "/gearcalculator/bodies/Ardougne_knight_platebody.webp",
     slot: "Body",
   },
   {
@@ -551,7 +551,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Black_robe.webp",
+    src: "/gearcalculator/bodies/Black_robe.webp",
     slot: "Body",
   },
   {
@@ -588,7 +588,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Black_wizard_robe_(g).webp",
+    src: "/gearcalculator/bodies/Black_wizard_robe_(g).webp",
     slot: "Body",
   },
   {
@@ -625,7 +625,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Black_wizard_robe_(t).webp",
+    src: "/gearcalculator/bodies/Black_wizard_robe_(t).webp",
     slot: "Body",
   },
   {
@@ -662,7 +662,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Blue_robe_top.webp",
+    src: "/gearcalculator/bodies/Blue_robe_top.webp",
     slot: "Body",
   },
   {
@@ -699,7 +699,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Teal_robe_top.webp",
+    src: "/gearcalculator/bodies/Teal_robe_top.webp",
     slot: "Body",
   },
   {
@@ -736,7 +736,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Yellow_robe_top.webp",
+    src: "/gearcalculator/bodies/Yellow_robe_top.webp",
     slot: "Body",
   },
   {
@@ -773,7 +773,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Turquoise_robe_top.webp",
+    src: "/gearcalculator/bodies/Turquoise_robe_top.webp",
     slot: "Body",
   },
   {
@@ -810,7 +810,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Pink_robe_top.webp",
+    src: "/gearcalculator/bodies/Pink_robe_top.webp",
     slot: "Body",
   },
   {
@@ -847,7 +847,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Red_robe_top.webp",
+    src: "/gearcalculator/bodies/Red_robe_top.webp",
     slot: "Body",
   },
   {
@@ -884,7 +884,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Purple_robe_top.webp",
+    src: "/gearcalculator/bodies/Purple_robe_top.webp",
     slot: "Body",
   },
   {
@@ -921,7 +921,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Green_robe_top.webp",
+    src: "/gearcalculator/bodies/Green_robe_top.webp",
     slot: "Body",
   },
   {
@@ -958,7 +958,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Grey_robe_top.webp",
+    src: "/gearcalculator/bodies/Grey_robe_top.webp",
     slot: "Body",
   },
   {
@@ -995,7 +995,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Blue_wizard_robe.webp",
+    src: "/gearcalculator/bodies/Blue_wizard_robe.webp",
     slot: "Body",
   },
   {
@@ -1032,7 +1032,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Blue_wizard_robe_(g).webp",
+    src: "/gearcalculator/bodies/Blue_wizard_robe_(g).webp",
     slot: "Body",
   },
   {
@@ -1069,7 +1069,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Blue_wizard_robe_(t).webp",
+    src: "/gearcalculator/bodies/Blue_wizard_robe_(t).webp",
     slot: "Body",
   },
   {
@@ -1106,7 +1106,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Bronze_chainbody.webp",
+    src: "/gearcalculator/bodies/Bronze_chainbody.webp",
     slot: "Body",
   },
   {
@@ -1143,7 +1143,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Bronze_platebody.webp",
+    src: "/gearcalculator/bodies/Bronze_platebody.webp",
     slot: "Body",
   },
   {
@@ -1180,7 +1180,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Bronze_platebody_(g).webp",
+    src: "/gearcalculator/bodies/Bronze_platebody_(g).webp",
     slot: "Body",
   },
   {
@@ -1217,7 +1217,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Bronze_platebody_(t).webp",
+    src: "/gearcalculator/bodies/Bronze_platebody_(t).webp",
     slot: "Body",
   },
   {
@@ -1254,7 +1254,7 @@ const BODIES = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/bodies/Carnillean_armour.webp",
+    src: "/gearcalculator/bodies/Carnillean_armour.webp",
     slot: "Body",
   },
   {
@@ -1291,7 +1291,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Citizen_top.webp",
+    src: "/gearcalculator/bodies/Citizen_top.webp",
     slot: "Body",
   },
   {
@@ -1328,7 +1328,7 @@ const BODIES = [
         Weight: 2,
       },
     ],
-    src: "./gearcalculator/bodies/Clue_hunter_garb.webp",
+    src: "/gearcalculator/bodies/Clue_hunter_garb.webp",
     slot: "Body",
   },
   {
@@ -1365,7 +1365,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Cream_robe_top.webp",
+    src: "/gearcalculator/bodies/Cream_robe_top.webp",
     slot: "Body",
   },
   {
@@ -1402,7 +1402,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Decorative_armour_(magic_top).webp",
+    src: "/gearcalculator/bodies/Decorative_armour_(magic_top).webp",
     slot: "Body",
   },
   {
@@ -1439,7 +1439,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Decorative_armour_(ranged_top).webp",
+    src: "/gearcalculator/bodies/Decorative_armour_(ranged_top).webp",
     slot: "Body",
   },
   {
@@ -1476,7 +1476,7 @@ const BODIES = [
         Weight: 8.618,
       },
     ],
-    src: "./gearcalculator/bodies/Decorative_armour_(red_platebody).webp",
+    src: "/gearcalculator/bodies/Decorative_armour_(red_platebody).webp",
     slot: "Body",
   },
   {
@@ -1513,7 +1513,7 @@ const BODIES = [
         Weight: 8.618,
       },
     ],
-    src: "./gearcalculator/bodies/Decorative_armour_(white_platebody).webp",
+    src: "/gearcalculator/bodies/Decorative_armour_(white_platebody).webp",
     slot: "Body",
   },
   {
@@ -1550,7 +1550,7 @@ const BODIES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/bodies/Desert_camo_top.webp",
+    src: "/gearcalculator/bodies/Desert_camo_top.webp",
     slot: "Body",
   },
   {
@@ -1587,7 +1587,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Druid's_robe_top.webp",
+    src: "/gearcalculator/bodies/Druid's_robe_top.webp",
     slot: "Body",
   },
   {
@@ -1624,7 +1624,7 @@ const BODIES = [
         Weight: 0.2,
       },
     ],
-    src: "./gearcalculator/bodies/Elder_chaos_top.webp",
+    src: "/gearcalculator/bodies/Elder_chaos_top.webp",
     slot: "Body",
   },
   {
@@ -1661,7 +1661,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Fremennik_beige_shirt.webp",
+    src: "/gearcalculator/bodies/Fremennik_beige_shirt.webp",
     slot: "Body",
   },
   {
@@ -1698,7 +1698,7 @@ const BODIES = [
         Weight: 0.001,
       },
     ],
-    src: "./gearcalculator/bodies/Ghostly_robe_(top).webp",
+    src: "/gearcalculator/bodies/Ghostly_robe_(top).webp",
     slot: "Body",
   },
   {
@@ -1735,7 +1735,7 @@ const BODIES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/bodies/Graahk_top.webp",
+    src: "/gearcalculator/bodies/Graahk_top.webp",
     slot: "Body",
   },
   {
@@ -1772,7 +1772,7 @@ const BODIES = [
         Weight: -5,
       },
     ],
-    src: "./gearcalculator/bodies/Graceful_top.webp",
+    src: "/gearcalculator/bodies/Graceful_top.webp",
     slot: "Body",
   },
   {
@@ -1809,7 +1809,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Group_iron_platebody_(V).webp",
+    src: "/gearcalculator/bodies/Group_iron_platebody_(V).webp",
     slot: "Body",
   },
   {
@@ -1846,7 +1846,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Ham_shirt.webp",
+    src: "/gearcalculator/bodies/Ham_shirt.webp",
     slot: "Body",
   },
   {
@@ -1883,7 +1883,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Hardcore_group_iron_platebody_(V).webp",
+    src: "/gearcalculator/bodies/Hardcore_group_iron_platebody_(V).webp",
     slot: "Body",
   },
   {
@@ -1920,7 +1920,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Hardcore_ironman_platebody.webp",
+    src: "/gearcalculator/bodies/Hardcore_ironman_platebody.webp",
     slot: "Body",
   },
   {
@@ -1957,7 +1957,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Iron_chainbody.webp",
+    src: "/gearcalculator/bodies/Iron_chainbody.webp",
     slot: "Body",
   },
   {
@@ -1994,7 +1994,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Iron_platebody.webp",
+    src: "/gearcalculator/bodies/Iron_platebody.webp",
     slot: "Body",
   },
   {
@@ -2031,7 +2031,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Iron_platebody_(g).webp",
+    src: "/gearcalculator/bodies/Iron_platebody_(g).webp",
     slot: "Body",
   },
   {
@@ -2068,7 +2068,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Iron_platebody_(t).webp",
+    src: "/gearcalculator/bodies/Iron_platebody_(t).webp",
     slot: "Body",
   },
   {
@@ -2105,7 +2105,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Ironman_platebody.webp",
+    src: "/gearcalculator/bodies/Ironman_platebody.webp",
     slot: "Body",
   },
   {
@@ -2142,7 +2142,7 @@ const BODIES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/bodies/Jungle_camo_top.webp",
+    src: "/gearcalculator/bodies/Jungle_camo_top.webp",
     slot: "Body",
   },
   {
@@ -2179,7 +2179,7 @@ const BODIES = [
         Weight: 0.566,
       },
     ],
-    src: "./gearcalculator/bodies/Khazard_armour.webp",
+    src: "/gearcalculator/bodies/Khazard_armour.webp",
     slot: "Body",
   },
   {
@@ -2216,7 +2216,7 @@ const BODIES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/bodies/Kyatt_top.webp",
+    src: "/gearcalculator/bodies/Kyatt_top.webp",
     slot: "Body",
   },
   {
@@ -2253,7 +2253,7 @@ const BODIES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/bodies/Larupia_top.webp",
+    src: "/gearcalculator/bodies/Larupia_top.webp",
     slot: "Body",
   },
   {
@@ -2290,7 +2290,7 @@ const BODIES = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/bodies/Leather_body.webp",
+    src: "/gearcalculator/bodies/Leather_body.webp",
     slot: "Body",
   },
   {
@@ -2327,7 +2327,7 @@ const BODIES = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/bodies/Leather_body_(g).webp",
+    src: "/gearcalculator/bodies/Leather_body_(g).webp",
     slot: "Body",
   },
   {
@@ -2364,7 +2364,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Monk's_robe_top.webp",
+    src: "/gearcalculator/bodies/Monk's_robe_top.webp",
     slot: "Body",
   },
   {
@@ -2401,7 +2401,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Monk's_robe_top_(g).webp",
+    src: "/gearcalculator/bodies/Monk's_robe_top_(g).webp",
     slot: "Body",
   },
   {
@@ -2438,7 +2438,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Monk's_robe_top_(t).webp",
+    src: "/gearcalculator/bodies/Monk's_robe_top_(t).webp",
     slot: "Body",
   },
   {
@@ -2475,7 +2475,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Moonclan_armour.webp",
+    src: "/gearcalculator/bodies/Moonclan_armour.webp",
     slot: "Body",
   },
   {
@@ -2512,7 +2512,7 @@ const BODIES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/bodies/Polar_camo_top.webp",
+    src: "/gearcalculator/bodies/Polar_camo_top.webp",
     slot: "Body",
   },
   {
@@ -2549,7 +2549,7 @@ const BODIES = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/bodies/Priest_gown_(top).webp",
+    src: "/gearcalculator/bodies/Priest_gown_(top).webp",
     slot: "Body",
   },
   {
@@ -2586,7 +2586,7 @@ const BODIES = [
         Weight: 8.618,
       },
     ],
-    src: "./gearcalculator/bodies/Proselyte_hauberk.webp",
+    src: "/gearcalculator/bodies/Proselyte_hauberk.webp",
     slot: "Body",
   },
   {
@@ -2623,7 +2623,7 @@ const BODIES = [
         Weight: 3,
       },
     ],
-    src: "./gearcalculator/bodies/Rangers'_tunic.webp",
+    src: "/gearcalculator/bodies/Rangers'_tunic.webp",
     slot: "Body",
   },
   {
@@ -2660,7 +2660,7 @@ const BODIES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/bodies/Rogue_top.webp",
+    src: "/gearcalculator/bodies/Rogue_top.webp",
     slot: "Body",
   },
   {
@@ -2697,7 +2697,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Rune_platebody.webp",
+    src: "/gearcalculator/bodies/Rune_platebody.webp",
     slot: "Body",
   },
   {
@@ -2734,7 +2734,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Rune_platebody_(g).webp",
+    src: "/gearcalculator/bodies/Rune_platebody_(g).webp",
     slot: "Body",
   },
   {
@@ -2771,7 +2771,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Rune_platebody_(t).webp",
+    src: "/gearcalculator/bodies/Rune_platebody_(t).webp",
     slot: "Body",
   },
   {
@@ -2808,7 +2808,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Silly_jester_top.webp",
+    src: "/gearcalculator/bodies/Silly_jester_top.webp",
     slot: "Body",
   },
   {
@@ -2845,7 +2845,7 @@ const BODIES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/bodies/Spirit_angler_top.webp",
+    src: "/gearcalculator/bodies/Spirit_angler_top.webp",
     slot: "Body",
   },
   {
@@ -2882,7 +2882,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Ultimate_ironman_platebody.webp",
+    src: "/gearcalculator/bodies/Ultimate_ironman_platebody.webp",
     slot: "Body",
   },
   {
@@ -2919,7 +2919,7 @@ const BODIES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/bodies/Varrock_armour_1.webp",
+    src: "/gearcalculator/bodies/Varrock_armour_1.webp",
     slot: "Body",
   },
   {
@@ -2956,7 +2956,7 @@ const BODIES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/bodies/Varrock_armour_2.webp",
+    src: "/gearcalculator/bodies/Varrock_armour_2.webp",
     slot: "Body",
   },
   {
@@ -2993,7 +2993,7 @@ const BODIES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/bodies/Varrock_armour_3.webp",
+    src: "/gearcalculator/bodies/Varrock_armour_3.webp",
     slot: "Body",
   },
   {
@@ -3030,7 +3030,7 @@ const BODIES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/bodies/Varrock_armour_4.webp",
+    src: "/gearcalculator/bodies/Varrock_armour_4.webp",
     slot: "Body",
   },
   {
@@ -3067,7 +3067,7 @@ const BODIES = [
         Weight: 2,
       },
     ],
-    src: "./gearcalculator/bodies/Crystal_body.webp",
+    src: "/gearcalculator/bodies/Crystal_body.webp",
     slot: "Body",
   },
   {
@@ -3104,7 +3104,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Vyrewatch_top.webp",
+    src: "/gearcalculator/bodies/Vyrewatch_top.webp",
     slot: "Body",
   },
   {
@@ -3141,7 +3141,7 @@ const BODIES = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/bodies/Wood_camo_top.webp",
+    src: "/gearcalculator/bodies/Wood_camo_top.webp",
     slot: "Body",
   },
   {
@@ -3178,7 +3178,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Zamorak_monk_top.webp",
+    src: "/gearcalculator/bodies/Zamorak_monk_top.webp",
     slot: "Body",
   },
   {
@@ -3215,7 +3215,7 @@ const BODIES = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/bodies/Zealot's_robe_top.webp",
+    src: "/gearcalculator/bodies/Zealot's_robe_top.webp",
     slot: "Body",
   },
   {
@@ -3252,7 +3252,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Steel_chainbody.webp",
+    src: "/gearcalculator/bodies/Steel_chainbody.webp",
     slot: "Body",
   },
   {
@@ -3289,7 +3289,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Steel_platebody.webp",
+    src: "/gearcalculator/bodies/Steel_platebody.webp",
     slot: "Body",
   },
   {
@@ -3326,7 +3326,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Steel_platebody_(g).webp",
+    src: "/gearcalculator/bodies/Steel_platebody_(g).webp",
     slot: "Body",
   },
   {
@@ -3363,7 +3363,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Steel_platebody_(t).webp",
+    src: "/gearcalculator/bodies/Steel_platebody_(t).webp",
     slot: "Body",
   },
   {
@@ -3400,7 +3400,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Black_chainbody.webp",
+    src: "/gearcalculator/bodies/Black_chainbody.webp",
     slot: "Body",
   },
   {
@@ -3437,7 +3437,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Black_platebody.webp",
+    src: "/gearcalculator/bodies/Black_platebody.webp",
     slot: "Body",
   },
   {
@@ -3474,7 +3474,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Black_platebody_(g).webp",
+    src: "/gearcalculator/bodies/Black_platebody_(g).webp",
     slot: "Body",
   },
   {
@@ -3511,7 +3511,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Black_platebody_(t).webp",
+    src: "/gearcalculator/bodies/Black_platebody_(t).webp",
     slot: "Body",
   },
   {
@@ -3548,7 +3548,7 @@ const BODIES = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/bodies/Hardleather_body.webp",
+    src: "/gearcalculator/bodies/Hardleather_body.webp",
     slot: "Body",
   },
   {
@@ -3585,7 +3585,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/White_chainbody.webp",
+    src: "/gearcalculator/bodies/White_chainbody.webp",
     slot: "Body",
   },
   {
@@ -3622,7 +3622,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/White_platebody.webp",
+    src: "/gearcalculator/bodies/White_platebody.webp",
     slot: "Body",
   },
   {
@@ -3659,7 +3659,7 @@ const BODIES = [
         Weight: 0.2,
       },
     ],
-    src: "./gearcalculator/bodies/Xerician_top.webp",
+    src: "/gearcalculator/bodies/Xerician_top.webp",
     slot: "Body",
   },
   {
@@ -3696,7 +3696,7 @@ const BODIES = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/bodies/Enchanted_top.webp",
+    src: "/gearcalculator/bodies/Enchanted_top.webp",
     slot: "Body",
   },
   {
@@ -3733,7 +3733,7 @@ const BODIES = [
         Weight: 8.618,
       },
     ],
-    src: "./gearcalculator/bodies/Initiate_hauberk.webp",
+    src: "/gearcalculator/bodies/Initiate_hauberk.webp",
     slot: "Body",
   },
   {
@@ -3770,7 +3770,7 @@ const BODIES = [
         Weight: 5.896,
       },
     ],
-    src: "./gearcalculator/bodies/Mithril_chainbody.webp",
+    src: "/gearcalculator/bodies/Mithril_chainbody.webp",
     slot: "Body",
   },
   {
@@ -3807,7 +3807,7 @@ const BODIES = [
         Weight: 8.618,
       },
     ],
-    src: "./gearcalculator/bodies/Mithril_platebody.webp",
+    src: "/gearcalculator/bodies/Mithril_platebody.webp",
     slot: "Body",
   },
   {
@@ -3844,7 +3844,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Mithril_platebody_(g).webp",
+    src: "/gearcalculator/bodies/Mithril_platebody_(g).webp",
     slot: "Body",
   },
   {
@@ -3881,7 +3881,7 @@ const BODIES = [
         Weight: 8.618,
       },
     ],
-    src: "./gearcalculator/bodies/Mithril_platebody_(t).webp",
+    src: "/gearcalculator/bodies/Mithril_platebody_(t).webp",
     slot: "Body",
   },
   {
@@ -3918,7 +3918,7 @@ const BODIES = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/bodies/Mystic_robe_top.webp",
+    src: "/gearcalculator/bodies/Mystic_robe_top.webp",
     slot: "Body",
   },
   {
@@ -3955,7 +3955,7 @@ const BODIES = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/bodies/Mystic_robe_top_(dark).webp",
+    src: "/gearcalculator/bodies/Mystic_robe_top_(dark).webp",
     slot: "Body",
   },
   {
@@ -3992,7 +3992,7 @@ const BODIES = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/bodies/Mystic_robe_top_(dusk).webp",
+    src: "/gearcalculator/bodies/Mystic_robe_top_(dusk).webp",
     slot: "Body",
   },
   {
@@ -4029,7 +4029,7 @@ const BODIES = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/bodies/Mystic_robe_top_(light).webp",
+    src: "/gearcalculator/bodies/Mystic_robe_top_(light).webp",
     slot: "Body",
   },
   {
@@ -4066,7 +4066,7 @@ const BODIES = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/bodies/Mystic_robe_top_(or).webp",
+    src: "/gearcalculator/bodies/Mystic_robe_top_(or).webp",
     slot: "Body",
   },
   {
@@ -4103,7 +4103,7 @@ const BODIES = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/bodies/Robe_top_of_darkness.webp",
+    src: "/gearcalculator/bodies/Robe_top_of_darkness.webp",
     slot: "Body",
   },
   {
@@ -4140,7 +4140,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Shayzien_platebody_(1).webp",
+    src: "/gearcalculator/bodies/Shayzien_platebody_(1).webp",
     slot: "Body",
   },
   {
@@ -4177,7 +4177,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Shayzien_platebody_(2).webp",
+    src: "/gearcalculator/bodies/Shayzien_platebody_(2).webp",
     slot: "Body",
   },
   {
@@ -4214,7 +4214,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Shayzien_platebody_(3).webp",
+    src: "/gearcalculator/bodies/Shayzien_platebody_(3).webp",
     slot: "Body",
   },
   {
@@ -4251,7 +4251,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Shayzien_platebody_(4).webp",
+    src: "/gearcalculator/bodies/Shayzien_platebody_(4).webp",
     slot: "Body",
   },
   {
@@ -4288,7 +4288,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Shayzien_platebody_(5).webp",
+    src: "/gearcalculator/bodies/Shayzien_platebody_(5).webp",
     slot: "Body",
   },
   {
@@ -4325,7 +4325,7 @@ const BODIES = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/bodies/Studded_body.webp",
+    src: "/gearcalculator/bodies/Studded_body.webp",
     slot: "Body",
   },
   {
@@ -4362,7 +4362,7 @@ const BODIES = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/bodies/Studded_body_(g).webp",
+    src: "/gearcalculator/bodies/Studded_body_(g).webp",
     slot: "Body",
   },
   {
@@ -4399,7 +4399,7 @@ const BODIES = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/bodies/Studded_body_(t).webp",
+    src: "/gearcalculator/bodies/Studded_body_(t).webp",
     slot: "Body",
   },
   {
@@ -4436,7 +4436,7 @@ const BODIES = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/bodies/Yak-hide_armour_(top).webp",
+    src: "/gearcalculator/bodies/Yak-hide_armour_(top).webp",
     slot: "Body",
   },
   {
@@ -4473,7 +4473,7 @@ const BODIES = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/bodies/Dark_infinity_top.webp",
+    src: "/gearcalculator/bodies/Dark_infinity_top.webp",
     slot: "Body",
   },
   {
@@ -4510,7 +4510,7 @@ const BODIES = [
         Weight: 5,
       },
     ],
-    src: "./gearcalculator/bodies/Frog-leather_body.webp",
+    src: "/gearcalculator/bodies/Frog-leather_body.webp",
     slot: "Body",
   },
   {
@@ -4547,7 +4547,7 @@ const BODIES = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/bodies/Infinity_top.webp",
+    src: "/gearcalculator/bodies/Infinity_top.webp",
     slot: "Body",
   },
   {
@@ -4584,7 +4584,7 @@ const BODIES = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/bodies/Light_infinity_top.webp",
+    src: "/gearcalculator/bodies/Light_infinity_top.webp",
     slot: "Body",
   },
   {
@@ -4621,7 +4621,7 @@ const BODIES = [
         Weight: 2.7,
       },
     ],
-    src: "./gearcalculator/bodies/3rd_age_robe_top.webp",
+    src: "/gearcalculator/bodies/3rd_age_robe_top.webp",
     slot: "Body",
   },
   {
@@ -4658,7 +4658,7 @@ const BODIES = [
         Weight: 11.339,
       },
     ],
-    src: "./gearcalculator/bodies/Adamant_platebody.webp",
+    src: "/gearcalculator/bodies/Adamant_platebody.webp",
     slot: "Body",
   },
   {
@@ -4695,7 +4695,7 @@ const BODIES = [
         Weight: 11.339,
       },
     ],
-    src: "./gearcalculator/bodies/Adamant_platebody_(g).webp",
+    src: "/gearcalculator/bodies/Adamant_platebody_(g).webp",
     slot: "Body",
   },
   {
@@ -4732,7 +4732,7 @@ const BODIES = [
         Weight: 11.339,
       },
     ],
-    src: "./gearcalculator/bodies/Adamant_platebody_(t).webp",
+    src: "/gearcalculator/bodies/Adamant_platebody_(t).webp",
     slot: "Body",
   },
   {
@@ -4769,7 +4769,7 @@ const BODIES = [
         Weight: 8.618,
       },
     ],
-    src: "./gearcalculator/bodies/Decorative_armour_(gold_platebody).webp",
+    src: "/gearcalculator/bodies/Decorative_armour_(gold_platebody).webp",
     slot: "Body",
   },
   {
@@ -4806,7 +4806,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Inquisitor's_hauberk.webp",
+    src: "/gearcalculator/bodies/Inquisitor's_hauberk.webp",
     slot: "Body",
   },
   {
@@ -4843,7 +4843,7 @@ const BODIES = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/bodies/Masori_body.webp",
+    src: "/gearcalculator/bodies/Masori_body.webp",
     slot: "Body",
   },
   {
@@ -4880,7 +4880,7 @@ const BODIES = [
         Weight: 10,
       },
     ],
-    src: "./gearcalculator/bodies/Masori_body_(f).webp",
+    src: "/gearcalculator/bodies/Masori_body_(f).webp",
     slot: "Body",
   },
   {
@@ -4917,7 +4917,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Snakeskin_body.webp",
+    src: "/gearcalculator/bodies/Snakeskin_body.webp",
     slot: "Body",
   },
   {
@@ -4954,7 +4954,7 @@ const BODIES = [
         Weight: 6,
       },
     ],
-    src: "./gearcalculator/bodies/Ancient_d'hide_body.webp",
+    src: "/gearcalculator/bodies/Ancient_d'hide_body.webp",
     slot: "Body",
   },
   {
@@ -4991,7 +4991,7 @@ const BODIES = [
         Weight: 6,
       },
     ],
-    src: "./gearcalculator/bodies/Zamorak_d'hide_body.webp",
+    src: "/gearcalculator/bodies/Zamorak_d'hide_body.webp",
     slot: "Body",
   },
   {
@@ -5028,7 +5028,7 @@ const BODIES = [
         Weight: 6,
       },
     ],
-    src: "./gearcalculator/bodies/Saradomin_d'hide_body.webp",
+    src: "/gearcalculator/bodies/Saradomin_d'hide_body.webp",
     slot: "Body",
   },
   {
@@ -5065,7 +5065,7 @@ const BODIES = [
         Weight: 6,
       },
     ],
-    src: "./gearcalculator/bodies/Guthix_d'hide_body.webp",
+    src: "/gearcalculator/bodies/Guthix_d'hide_body.webp",
     slot: "Body",
   },
   {
@@ -5102,7 +5102,7 @@ const BODIES = [
         Weight: 6,
       },
     ],
-    src: "./gearcalculator/bodies/Armadyl_d'hide_body.webp",
+    src: "/gearcalculator/bodies/Armadyl_d'hide_body.webp",
     slot: "Body",
   },
   {
@@ -5139,7 +5139,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Ancient_platebody.webp",
+    src: "/gearcalculator/bodies/Ancient_platebody.webp",
     slot: "Body",
   },
   {
@@ -5176,7 +5176,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Saradomin_platebody.webp",
+    src: "/gearcalculator/bodies/Saradomin_platebody.webp",
     slot: "Body",
   },
   {
@@ -5213,7 +5213,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Zamorak_platebody.webp",
+    src: "/gearcalculator/bodies/Zamorak_platebody.webp",
     slot: "Body",
   },
   {
@@ -5250,7 +5250,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Guthix_platebody.webp",
+    src: "/gearcalculator/bodies/Guthix_platebody.webp",
     slot: "Body",
   },
   {
@@ -5287,7 +5287,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Bandos_platebody.webp",
+    src: "/gearcalculator/bodies/Bandos_platebody.webp",
     slot: "Body",
   },
   {
@@ -5324,7 +5324,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Armadyl_platebody.webp",
+    src: "/gearcalculator/bodies/Armadyl_platebody.webp",
     slot: "Body",
   },
   {
@@ -5361,7 +5361,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Black_d'hide_body.webp",
+    src: "/gearcalculator/bodies/Black_d'hide_body.webp",
     slot: "Body",
   },
   {
@@ -5398,7 +5398,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Black_d'hide_body_(g).webp",
+    src: "/gearcalculator/bodies/Black_d'hide_body_(g).webp",
     slot: "Body",
   },
   {
@@ -5435,7 +5435,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Black_d'hide_body_(t).webp",
+    src: "/gearcalculator/bodies/Black_d'hide_body_(t).webp",
     slot: "Body",
   },
   {
@@ -5472,7 +5472,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Blue_d'hide_body.webp",
+    src: "/gearcalculator/bodies/Blue_d'hide_body.webp",
     slot: "Body",
   },
   {
@@ -5509,7 +5509,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Blue_d'hide_body_(g).webp",
+    src: "/gearcalculator/bodies/Blue_d'hide_body_(g).webp",
     slot: "Body",
   },
   {
@@ -5546,7 +5546,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Blue_d'hide_body_(t).webp",
+    src: "/gearcalculator/bodies/Blue_d'hide_body_(t).webp",
     slot: "Body",
   },
   {
@@ -5583,7 +5583,7 @@ const BODIES = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/bodies/Dagon'hai_robe_top.webp",
+    src: "/gearcalculator/bodies/Dagon'hai_robe_top.webp",
     slot: "Body",
   },
   {
@@ -5620,7 +5620,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Dragonstone_platebody.webp",
+    src: "/gearcalculator/bodies/Dragonstone_platebody.webp",
     slot: "Body",
   },
   {
@@ -5657,7 +5657,7 @@ const BODIES = [
         Weight: 4,
       },
     ],
-    src: "./gearcalculator/bodies/Fighter_torso.webp",
+    src: "/gearcalculator/bodies/Fighter_torso.webp",
     slot: "Body",
   },
   {
@@ -5694,7 +5694,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Gilded_chainbody.webp",
+    src: "/gearcalculator/bodies/Gilded_chainbody.webp",
     slot: "Body",
   },
   {
@@ -5731,7 +5731,7 @@ const BODIES = [
         Weight: 6,
       },
     ],
-    src: "./gearcalculator/bodies/Gilded_d'hide_body.webp",
+    src: "/gearcalculator/bodies/Gilded_d'hide_body.webp",
     slot: "Body",
   },
   {
@@ -5768,7 +5768,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Gilded_platebody.webp",
+    src: "/gearcalculator/bodies/Gilded_platebody.webp",
     slot: "Body",
   },
   {
@@ -5805,7 +5805,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Lunar_torso.webp",
+    src: "/gearcalculator/bodies/Lunar_torso.webp",
     slot: "Body",
   },
   {
@@ -5842,7 +5842,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Red_d'hide_body.webp",
+    src: "/gearcalculator/bodies/Red_d'hide_body.webp",
     slot: "Body",
   },
   {
@@ -5879,7 +5879,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Red_d'hide_body_(g).webp",
+    src: "/gearcalculator/bodies/Red_d'hide_body_(g).webp",
     slot: "Body",
   },
   {
@@ -5916,7 +5916,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Red_d'hide_body_(t).webp",
+    src: "/gearcalculator/bodies/Red_d'hide_body_(t).webp",
     slot: "Body",
   },
   {
@@ -5953,7 +5953,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Rock-shell_plate.webp",
+    src: "/gearcalculator/bodies/Rock-shell_plate.webp",
     slot: "Body",
   },
   {
@@ -5990,7 +5990,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Rune_chainbody.webp",
+    src: "/gearcalculator/bodies/Rune_chainbody.webp",
     slot: "Body",
   },
   {
@@ -6027,7 +6027,7 @@ const BODIES = [
         Weight: 4.989,
       },
     ],
-    src: "./gearcalculator/bodies/Skeletal_top.webp",
+    src: "/gearcalculator/bodies/Skeletal_top.webp",
     slot: "Body",
   },
   {
@@ -6064,7 +6064,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Spined_body.webp",
+    src: "/gearcalculator/bodies/Spined_body.webp",
     slot: "Body",
   },
   {
@@ -6101,7 +6101,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Splitbark_body.webp",
+    src: "/gearcalculator/bodies/Splitbark_body.webp",
     slot: "Body",
   },
   {
@@ -6138,7 +6138,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Elite_void_top.webp",
+    src: "/gearcalculator/bodies/Elite_void_top.webp",
     slot: "Body",
   },
   {
@@ -6175,7 +6175,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Void_knight_top.webp",
+    src: "/gearcalculator/bodies/Void_knight_top.webp",
     slot: "Body",
   },
   {
@@ -6212,7 +6212,7 @@ const BODIES = [
         Weight: 4,
       },
     ],
-    src: "./gearcalculator/bodies/3rd_age_range_top.webp",
+    src: "/gearcalculator/bodies/3rd_age_range_top.webp",
     slot: "Body",
   },
   {
@@ -6249,7 +6249,7 @@ const BODIES = [
         Weight: 22.679,
       },
     ],
-    src: "./gearcalculator/bodies/Granite_body.webp",
+    src: "/gearcalculator/bodies/Granite_body.webp",
     slot: "Body",
   },
   {
@@ -6286,7 +6286,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Green_d'hide_body.webp",
+    src: "/gearcalculator/bodies/Green_d'hide_body.webp",
     slot: "Body",
   },
   {
@@ -6323,7 +6323,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Green_d'hide_body_(g).webp",
+    src: "/gearcalculator/bodies/Green_d'hide_body_(g).webp",
     slot: "Body",
   },
   {
@@ -6360,7 +6360,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Green_d'hide_body_(t).webp",
+    src: "/gearcalculator/bodies/Green_d'hide_body_(t).webp",
     slot: "Body",
   },
   {
@@ -6397,7 +6397,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Swampbark_body.webp",
+    src: "/gearcalculator/bodies/Swampbark_body.webp",
     slot: "Body",
   },
   {
@@ -6434,7 +6434,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Bloodbark_body.webp",
+    src: "/gearcalculator/bodies/Bloodbark_body.webp",
     slot: "Body",
   },
   {
@@ -6471,7 +6471,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Dragon_chainbody.webp",
+    src: "/gearcalculator/bodies/Dragon_chainbody.webp",
     slot: "Body",
   },
   {
@@ -6508,7 +6508,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Dragon_chainbody_(g).webp",
+    src: "/gearcalculator/bodies/Dragon_chainbody_(g).webp",
     slot: "Body",
   },
   {
@@ -6545,7 +6545,7 @@ const BODIES = [
         Weight: 11.339,
       },
     ],
-    src: "./gearcalculator/bodies/Dragon_platebody.webp",
+    src: "/gearcalculator/bodies/Dragon_platebody.webp",
     slot: "Body",
   },
   {
@@ -6582,7 +6582,7 @@ const BODIES = [
         Weight: 11.339,
       },
     ],
-    src: "./gearcalculator/bodies/Dragon_platebody_(g).webp",
+    src: "/gearcalculator/bodies/Dragon_platebody_(g).webp",
     slot: "Body",
   },
   {
@@ -6619,7 +6619,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Obsidian_platebody.webp",
+    src: "/gearcalculator/bodies/Obsidian_platebody.webp",
     slot: "Body",
   },
   {
@@ -6656,7 +6656,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/3rd_age_platebody.webp",
+    src: "/gearcalculator/bodies/3rd_age_platebody.webp",
     slot: "Body",
   },
   {
@@ -6693,7 +6693,7 @@ const BODIES = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/bodies/Ancestral_robe_top.webp",
+    src: "/gearcalculator/bodies/Ancestral_robe_top.webp",
     slot: "Body",
   },
   {
@@ -6730,7 +6730,7 @@ const BODIES = [
         Weight: 12,
       },
     ],
-    src: "./gearcalculator/bodies/Bandos_chestplate.webp",
+    src: "/gearcalculator/bodies/Bandos_chestplate.webp",
     slot: "Body",
   },
   {
@@ -6767,7 +6767,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Ahrim's_robetop.webp",
+    src: "/gearcalculator/bodies/Ahrim's_robetop.webp",
     slot: "Body",
   },
   {
@@ -6804,7 +6804,7 @@ const BODIES = [
         Weight: 4,
       },
     ],
-    src: "./gearcalculator/bodies/Armadyl_chestplate.webp",
+    src: "/gearcalculator/bodies/Armadyl_chestplate.webp",
     slot: "Body",
   },
   {
@@ -6841,7 +6841,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Dharok's_platebody.webp",
+    src: "/gearcalculator/bodies/Dharok's_platebody.webp",
     slot: "Body",
   },
   {
@@ -6878,7 +6878,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Guthan's_platebody.webp",
+    src: "/gearcalculator/bodies/Guthan's_platebody.webp",
     slot: "Body",
   },
   {
@@ -6915,7 +6915,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Karil's_leathertop.webp",
+    src: "/gearcalculator/bodies/Karil's_leathertop.webp",
     slot: "Body",
   },
   {
@@ -6952,7 +6952,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Torag's_platebody.webp",
+    src: "/gearcalculator/bodies/Torag's_platebody.webp",
     slot: "Body",
   },
   {
@@ -6989,7 +6989,7 @@ const BODIES = [
         Weight: 4.989,
       },
     ],
-    src: "./gearcalculator/bodies/Verac's_brassard.webp",
+    src: "/gearcalculator/bodies/Verac's_brassard.webp",
     slot: "Body",
   },
   {
@@ -7026,7 +7026,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Justiciar_chestguard.webp",
+    src: "/gearcalculator/bodies/Justiciar_chestguard.webp",
     slot: "Body",
   },
   {
@@ -7063,7 +7063,7 @@ const BODIES = [
         Weight: 2.895,
       },
     ],
-    src: "./gearcalculator/bodies/Virtus_robe_top.webp",
+    src: "/gearcalculator/bodies/Virtus_robe_top.webp",
     slot: "Body",
   },
   {
@@ -7100,7 +7100,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Morrigan's_leather_body_(bh).webp",
+    src: "/gearcalculator/bodies/Morrigan's_leather_body_(bh).webp",
     slot: "Body",
   },
   {
@@ -7137,7 +7137,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Statius's_platebody_(bh).webp",
+    src: "/gearcalculator/bodies/Statius's_platebody_(bh).webp",
     slot: "Body",
   },
   {
@@ -7174,7 +7174,7 @@ const BODIES = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/bodies/Vesta's_chainbody_(bh).webp",
+    src: "/gearcalculator/bodies/Vesta's_chainbody_(bh).webp",
     slot: "Body",
   },
   {
@@ -7211,7 +7211,7 @@ const BODIES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/bodies/Zuriel's_robe_top_(bh).webp",
+    src: "/gearcalculator/bodies/Zuriel's_robe_top_(bh).webp",
     slot: "Body",
   },
   {
@@ -7248,7 +7248,7 @@ const BODIES = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/bodies/Torva_platebody.webp",
+    src: "/gearcalculator/bodies/Torva_platebody.webp",
     slot: "Body",
   },
 ];

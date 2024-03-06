@@ -33,7 +33,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Farmer's_boro_trousers.webp",
+    src: "/gearcalculator/legs/Farmer's_boro_trousers.webp",
     slot: "Legs",
   },
   {
@@ -70,7 +70,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Lumberjack_legs.webp",
+    src: "/gearcalculator/legs/Lumberjack_legs.webp",
     slot: "Legs",
   },
   {
@@ -107,7 +107,7 @@ const LEGS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/legs/Angler_waders.webp",
+    src: "/gearcalculator/legs/Angler_waders.webp",
     slot: "Legs",
   },
   {
@@ -144,7 +144,7 @@ const LEGS = [
         Weight: 1.5,
       },
     ],
-    src: "./gearcalculator/legs/3rd_age_druidic_robe_bottoms.webp",
+    src: "/gearcalculator/legs/3rd_age_druidic_robe_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -181,7 +181,7 @@ const LEGS = [
         Weight: 0.8,
       },
     ],
-    src: "./gearcalculator/legs/Ancient_ceremonial_legs.webp",
+    src: "/gearcalculator/legs/Ancient_ceremonial_legs.webp",
     slot: "Legs",
   },
   {
@@ -218,7 +218,7 @@ const LEGS = [
         Weight: 5,
       },
     ],
-    src: "./gearcalculator/legs/Ancient_chaps.webp",
+    src: "/gearcalculator/legs/Ancient_chaps.webp",
     slot: "Legs",
   },
   {
@@ -255,7 +255,7 @@ const LEGS = [
         Weight: 5,
       },
     ],
-    src: "./gearcalculator/legs/Saradomin_chaps.webp",
+    src: "/gearcalculator/legs/Saradomin_chaps.webp",
     slot: "Legs",
   },
   {
@@ -292,7 +292,7 @@ const LEGS = [
         Weight: 5,
       },
     ],
-    src: "./gearcalculator/legs/Guthix_chaps.webp",
+    src: "/gearcalculator/legs/Guthix_chaps.webp",
     slot: "Legs",
   },
   {
@@ -329,7 +329,7 @@ const LEGS = [
         Weight: 5,
       },
     ],
-    src: "./gearcalculator/legs/Zamorak_chaps.webp",
+    src: "/gearcalculator/legs/Zamorak_chaps.webp",
     slot: "Legs",
   },
   {
@@ -366,7 +366,7 @@ const LEGS = [
         Weight: 5,
       },
     ],
-    src: "./gearcalculator/legs/Bandos_chaps.webp",
+    src: "/gearcalculator/legs/Bandos_chaps.webp",
     slot: "Legs",
   },
   {
@@ -403,7 +403,7 @@ const LEGS = [
         Weight: 5,
       },
     ],
-    src: "./gearcalculator/legs/Armadyl_chaps.webp",
+    src: "/gearcalculator/legs/Armadyl_chaps.webp",
     slot: "Legs",
   },
   {
@@ -440,7 +440,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Ardougne_knight_platelegs.webp",
+    src: "/gearcalculator/legs/Ardougne_knight_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -477,7 +477,7 @@ const LEGS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/legs/Armadyl_chainskirt.webp",
+    src: "/gearcalculator/legs/Armadyl_chainskirt.webp",
     slot: "Legs",
   },
   {
@@ -514,7 +514,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+    src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
     slot: "Legs",
   },
   {
@@ -551,7 +551,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Black_d'hide_chaps_(g).webp",
+    src: "/gearcalculator/legs/Black_d'hide_chaps_(g).webp",
     slot: "Legs",
   },
   {
@@ -588,7 +588,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Black_d'hide_chaps_(t).webp",
+    src: "/gearcalculator/legs/Black_d'hide_chaps_(t).webp",
     slot: "Legs",
   },
   {
@@ -625,7 +625,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Blue_d'hide_chaps.webp",
+    src: "/gearcalculator/legs/Blue_d'hide_chaps.webp",
     slot: "Legs",
   },
   {
@@ -662,7 +662,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Blue_d'hide_chaps_(g).webp",
+    src: "/gearcalculator/legs/Blue_d'hide_chaps_(g).webp",
     slot: "Legs",
   },
   {
@@ -699,7 +699,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Blue_d'hide_chaps_(t).webp",
+    src: "/gearcalculator/legs/Blue_d'hide_chaps_(t).webp",
     slot: "Legs",
   },
   {
@@ -736,7 +736,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Blue_skirt.webp",
+    src: "/gearcalculator/legs/Blue_skirt.webp",
     slot: "Legs",
   },
   {
@@ -773,7 +773,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Blue_skirt_(g).webp",
+    src: "/gearcalculator/legs/Blue_skirt_(g).webp",
     slot: "Legs",
   },
   {
@@ -810,7 +810,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Blue_skirt_(t).webp",
+    src: "/gearcalculator/legs/Blue_skirt_(t).webp",
     slot: "Legs",
   },
   {
@@ -847,7 +847,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Bronze_platelegs.webp",
+    src: "/gearcalculator/legs/Bronze_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -884,7 +884,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Bronze_plateskirt.webp",
+    src: "/gearcalculator/legs/Bronze_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -921,7 +921,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Bronze_plateskirt_(g).webp",
+    src: "/gearcalculator/legs/Bronze_plateskirt_(g).webp",
     slot: "Legs",
   },
   {
@@ -958,7 +958,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Bronze_plateskirt_(t).webp",
+    src: "/gearcalculator/legs/Bronze_plateskirt_(t).webp",
     slot: "Legs",
   },
   {
@@ -995,7 +995,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Bronze_platelegs_(g).webp",
+    src: "/gearcalculator/legs/Bronze_platelegs_(g).webp",
     slot: "Legs",
   },
   {
@@ -1032,7 +1032,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Bronze_platelegs_(t).webp",
+    src: "/gearcalculator/legs/Bronze_platelegs_(t).webp",
     slot: "Legs",
   },
   {
@@ -1069,7 +1069,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Citizen_trousers.webp",
+    src: "/gearcalculator/legs/Citizen_trousers.webp",
     slot: "Legs",
   },
   {
@@ -1106,7 +1106,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Cream_robe_bottoms.webp",
+    src: "/gearcalculator/legs/Cream_robe_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -1143,7 +1143,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Purple_robe_bottoms.webp",
+    src: "/gearcalculator/legs/Purple_robe_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -1180,7 +1180,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Yellow_robe_bottoms.webp",
+    src: "/gearcalculator/legs/Yellow_robe_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -1217,7 +1217,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Turquoise_robe_bottoms.webp",
+    src: "/gearcalculator/legs/Turquoise_robe_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -1254,7 +1254,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Teal_robe_bottoms.webp",
+    src: "/gearcalculator/legs/Teal_robe_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -1291,7 +1291,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Red_robe_bottoms.webp",
+    src: "/gearcalculator/legs/Red_robe_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -1328,7 +1328,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Pink_robe_bottoms.webp",
+    src: "/gearcalculator/legs/Pink_robe_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -1365,7 +1365,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Green_robe_bottoms.webp",
+    src: "/gearcalculator/legs/Green_robe_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -1402,7 +1402,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Grey_robe_bottoms.webp",
+    src: "/gearcalculator/legs/Grey_robe_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -1439,7 +1439,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Decorative_armour_(magic_legs).webp",
+    src: "/gearcalculator/legs/Decorative_armour_(magic_legs).webp",
     slot: "Legs",
   },
   {
@@ -1476,7 +1476,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Decorative_armour_(ranged_legs).webp",
+    src: "/gearcalculator/legs/Decorative_armour_(ranged_legs).webp",
     slot: "Legs",
   },
   {
@@ -1513,7 +1513,7 @@ const LEGS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/legs/Desert_camo_legs.webp",
+    src: "/gearcalculator/legs/Desert_camo_legs.webp",
     slot: "Legs",
   },
   {
@@ -1550,7 +1550,7 @@ const LEGS = [
         Weight: 3,
       },
     ],
-    src: "./gearcalculator/legs/Fremennik_kilt.webp",
+    src: "/gearcalculator/legs/Fremennik_kilt.webp",
     slot: "Legs",
   },
   {
@@ -1587,7 +1587,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Fremennik_skirt.webp",
+    src: "/gearcalculator/legs/Fremennik_skirt.webp",
     slot: "Legs",
   },
   {
@@ -1624,7 +1624,7 @@ const LEGS = [
         Weight: 0.001,
       },
     ],
-    src: "./gearcalculator/legs/Ghostly_robe_(bottom).webp",
+    src: "/gearcalculator/legs/Ghostly_robe_(bottom).webp",
     slot: "Legs",
   },
   {
@@ -1661,7 +1661,7 @@ const LEGS = [
         Weight: 5,
       },
     ],
-    src: "./gearcalculator/legs/Gilded_d'hide_chaps.webp",
+    src: "/gearcalculator/legs/Gilded_d'hide_chaps.webp",
     slot: "Legs",
   },
   {
@@ -1698,7 +1698,7 @@ const LEGS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/legs/Graahk_legs.webp",
+    src: "/gearcalculator/legs/Graahk_legs.webp",
     slot: "Legs",
   },
   {
@@ -1735,7 +1735,7 @@ const LEGS = [
         Weight: -6,
       },
     ],
-    src: "./gearcalculator/legs/Graceful_legs.webp",
+    src: "/gearcalculator/legs/Graceful_legs.webp",
     slot: "Legs",
   },
   {
@@ -1772,7 +1772,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Green_d'hide_chaps.webp",
+    src: "/gearcalculator/legs/Green_d'hide_chaps.webp",
     slot: "Legs",
   },
   {
@@ -1809,7 +1809,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Green_d'hide_chaps_(g).webp",
+    src: "/gearcalculator/legs/Green_d'hide_chaps_(g).webp",
     slot: "Legs",
   },
   {
@@ -1846,7 +1846,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Green_d'hide_chaps_(t).webp",
+    src: "/gearcalculator/legs/Green_d'hide_chaps_(t).webp",
     slot: "Legs",
   },
   {
@@ -1883,7 +1883,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Ham_robe.webp",
+    src: "/gearcalculator/legs/Ham_robe.webp",
     slot: "Legs",
   },
   {
@@ -1920,7 +1920,7 @@ const LEGS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/legs/Hardcore_group_iron_platelegs.webp",
+    src: "/gearcalculator/legs/Hardcore_group_iron_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -1957,7 +1957,7 @@ const LEGS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/legs/Hardcore_ironman_platelegs.webp",
+    src: "/gearcalculator/legs/Hardcore_ironman_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -1994,7 +1994,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Iron_platelegs.webp",
+    src: "/gearcalculator/legs/Iron_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -2031,7 +2031,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Iron_plateskirt.webp",
+    src: "/gearcalculator/legs/Iron_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -2068,7 +2068,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Iron_platelegs_(g).webp",
+    src: "/gearcalculator/legs/Iron_platelegs_(g).webp",
     slot: "Legs",
   },
   {
@@ -2105,7 +2105,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Iron_platelegs_(t).webp",
+    src: "/gearcalculator/legs/Iron_platelegs_(t).webp",
     slot: "Legs",
   },
   {
@@ -2142,7 +2142,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Iron_plateskirt_(g).webp",
+    src: "/gearcalculator/legs/Iron_plateskirt_(g).webp",
     slot: "Legs",
   },
   {
@@ -2179,7 +2179,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Iron_plateskirt_(t).webp",
+    src: "/gearcalculator/legs/Iron_plateskirt_(t).webp",
     slot: "Legs",
   },
   {
@@ -2216,7 +2216,7 @@ const LEGS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/legs/Ironman_platelegs.webp",
+    src: "/gearcalculator/legs/Ironman_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -2253,7 +2253,7 @@ const LEGS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/legs/Jungle_camo_legs.webp",
+    src: "/gearcalculator/legs/Jungle_camo_legs.webp",
     slot: "Legs",
   },
   {
@@ -2290,7 +2290,7 @@ const LEGS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/legs/Kyatt_legs.webp",
+    src: "/gearcalculator/legs/Kyatt_legs.webp",
     slot: "Legs",
   },
   {
@@ -2327,7 +2327,7 @@ const LEGS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/legs/Larupia_legs.webp",
+    src: "/gearcalculator/legs/Larupia_legs.webp",
     slot: "Legs",
   },
   {
@@ -2364,7 +2364,7 @@ const LEGS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/legs/Leather_chaps.webp",
+    src: "/gearcalculator/legs/Leather_chaps.webp",
     slot: "Legs",
   },
   {
@@ -2401,7 +2401,7 @@ const LEGS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/legs/Leather_chaps_(g).webp",
+    src: "/gearcalculator/legs/Leather_chaps_(g).webp",
     slot: "Legs",
   },
   {
@@ -2438,7 +2438,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Monk's_robe.webp",
+    src: "/gearcalculator/legs/Monk's_robe.webp",
     slot: "Legs",
   },
   {
@@ -2475,7 +2475,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Monk's_robe_(g).webp",
+    src: "/gearcalculator/legs/Monk's_robe_(g).webp",
     slot: "Legs",
   },
   {
@@ -2512,7 +2512,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Monk's_robe_(t).webp",
+    src: "/gearcalculator/legs/Monk's_robe_(t).webp",
     slot: "Legs",
   },
   {
@@ -2549,7 +2549,7 @@ const LEGS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/legs/Moonclan_skirt.webp",
+    src: "/gearcalculator/legs/Moonclan_skirt.webp",
     slot: "Legs",
   },
   {
@@ -2586,7 +2586,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Morytania_legs_1.webp",
+    src: "/gearcalculator/legs/Morytania_legs_1.webp",
     slot: "Legs",
   },
   {
@@ -2623,7 +2623,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Morytania_legs_2.webp",
+    src: "/gearcalculator/legs/Morytania_legs_2.webp",
     slot: "Legs",
   },
   {
@@ -2660,7 +2660,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Morytania_legs_3.webp",
+    src: "/gearcalculator/legs/Morytania_legs_3.webp",
     slot: "Legs",
   },
   {
@@ -2697,7 +2697,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Morytania_legs_4.webp",
+    src: "/gearcalculator/legs/Morytania_legs_4.webp",
     slot: "Legs",
   },
   {
@@ -2734,7 +2734,7 @@ const LEGS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/legs/Polar_camo_legs.webp",
+    src: "/gearcalculator/legs/Polar_camo_legs.webp",
     slot: "Legs",
   },
   {
@@ -2771,7 +2771,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Priest_gown_(bottom).webp",
+    src: "/gearcalculator/legs/Priest_gown_(bottom).webp",
     slot: "Legs",
   },
   {
@@ -2808,7 +2808,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Red_d'hide_chaps.webp",
+    src: "/gearcalculator/legs/Red_d'hide_chaps.webp",
     slot: "Legs",
   },
   {
@@ -2845,7 +2845,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Red_d'hide_chaps_(g).webp",
+    src: "/gearcalculator/legs/Red_d'hide_chaps_(g).webp",
     slot: "Legs",
   },
   {
@@ -2882,7 +2882,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Red_d'hide_chaps_(t).webp",
+    src: "/gearcalculator/legs/Red_d'hide_chaps_(t).webp",
     slot: "Legs",
   },
   {
@@ -2919,7 +2919,7 @@ const LEGS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/legs/Rogue_trousers.webp",
+    src: "/gearcalculator/legs/Rogue_trousers.webp",
     slot: "Legs",
   },
   {
@@ -2956,7 +2956,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Shade_robe.webp",
+    src: "/gearcalculator/legs/Shade_robe.webp",
     slot: "Legs",
   },
   {
@@ -2993,7 +2993,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Silly_jester_tights.webp",
+    src: "/gearcalculator/legs/Silly_jester_tights.webp",
     slot: "Legs",
   },
   {
@@ -3030,7 +3030,7 @@ const LEGS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/legs/Studded_chaps.webp",
+    src: "/gearcalculator/legs/Studded_chaps.webp",
     slot: "Legs",
   },
   {
@@ -3067,7 +3067,7 @@ const LEGS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/legs/Studded_chaps_(g).webp",
+    src: "/gearcalculator/legs/Studded_chaps_(g).webp",
     slot: "Legs",
   },
   {
@@ -3104,7 +3104,7 @@ const LEGS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/legs/Studded_chaps_(t).webp",
+    src: "/gearcalculator/legs/Studded_chaps_(t).webp",
     slot: "Legs",
   },
   {
@@ -3141,7 +3141,7 @@ const LEGS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/legs/Ultimate_ironman_platelegs.webp",
+    src: "/gearcalculator/legs/Ultimate_ironman_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -3178,7 +3178,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Vyrewatch_legs.webp",
+    src: "/gearcalculator/legs/Vyrewatch_legs.webp",
     slot: "Legs",
   },
   {
@@ -3215,7 +3215,7 @@ const LEGS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/legs/Wood_camo_legs.webp",
+    src: "/gearcalculator/legs/Wood_camo_legs.webp",
     slot: "Legs",
   },
   {
@@ -3252,7 +3252,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Zamorak_monk_bottom.webp",
+    src: "/gearcalculator/legs/Zamorak_monk_bottom.webp",
     slot: "Legs",
   },
   {
@@ -3289,7 +3289,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Zealot's_robe_bottom.webp",
+    src: "/gearcalculator/legs/Zealot's_robe_bottom.webp",
     slot: "Legs",
   },
   {
@@ -3326,7 +3326,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Decorative_armour_(red_platelegs).webp",
+    src: "/gearcalculator/legs/Decorative_armour_(red_platelegs).webp",
     slot: "Legs",
   },
   {
@@ -3363,7 +3363,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Decorative_armour_(red_plateskirt).webp",
+    src: "/gearcalculator/legs/Decorative_armour_(red_plateskirt).webp",
     slot: "Legs",
   },
   {
@@ -3400,7 +3400,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Steel_platelegs.webp",
+    src: "/gearcalculator/legs/Steel_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -3437,7 +3437,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Steel_platelegs_(g).webp",
+    src: "/gearcalculator/legs/Steel_platelegs_(g).webp",
     slot: "Legs",
   },
   {
@@ -3474,7 +3474,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Steel_platelegs_(t).webp",
+    src: "/gearcalculator/legs/Steel_platelegs_(t).webp",
     slot: "Legs",
   },
   {
@@ -3511,7 +3511,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Steel_plateskirt.webp",
+    src: "/gearcalculator/legs/Steel_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -3548,7 +3548,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Steel_plateskirt_(g).webp",
+    src: "/gearcalculator/legs/Steel_plateskirt_(g).webp",
     slot: "Legs",
   },
   {
@@ -3585,7 +3585,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Steel_plateskirt_(t).webp",
+    src: "/gearcalculator/legs/Steel_plateskirt_(t).webp",
     slot: "Legs",
   },
   {
@@ -3622,7 +3622,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Black_platelegs.webp",
+    src: "/gearcalculator/legs/Black_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -3659,7 +3659,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Black_plateskirt.webp",
+    src: "/gearcalculator/legs/Black_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -3696,7 +3696,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Black_platelegs_(g).webp",
+    src: "/gearcalculator/legs/Black_platelegs_(g).webp",
     slot: "Legs",
   },
   {
@@ -3733,7 +3733,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Black_plateskirt_(g).webp",
+    src: "/gearcalculator/legs/Black_plateskirt_(g).webp",
     slot: "Legs",
   },
   {
@@ -3770,7 +3770,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Black_platelegs_(t).webp",
+    src: "/gearcalculator/legs/Black_platelegs_(t).webp",
     slot: "Legs",
   },
   {
@@ -3807,7 +3807,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Black_plateskirt_(t).webp",
+    src: "/gearcalculator/legs/Black_plateskirt_(t).webp",
     slot: "Legs",
   },
   {
@@ -3844,7 +3844,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/White_platelegs.webp",
+    src: "/gearcalculator/legs/White_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -3881,7 +3881,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/White_plateskirt.webp",
+    src: "/gearcalculator/legs/White_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -3918,7 +3918,7 @@ const LEGS = [
         Weight: 0.18,
       },
     ],
-    src: "./gearcalculator/legs/Xerician_robe.webp",
+    src: "/gearcalculator/legs/Xerician_robe.webp",
     slot: "Legs",
   },
   {
@@ -3955,7 +3955,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Corrupted_morrigan's_leather_chaps_(bh).webp",
+    src: "/gearcalculator/legs/Corrupted_morrigan's_leather_chaps_(bh).webp",
     slot: "Legs",
   },
   {
@@ -3992,7 +3992,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Corrupted_statius's_platelegs_(bh).webp",
+    src: "/gearcalculator/legs/Corrupted_statius's_platelegs_(bh).webp",
     slot: "Legs",
   },
   {
@@ -4029,7 +4029,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Corrupted_vesta's_plateskirt_(bh).webp",
+    src: "/gearcalculator/legs/Corrupted_vesta's_plateskirt_(bh).webp",
     slot: "Legs",
   },
   {
@@ -4066,7 +4066,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Corrupted_zuriel's_robe_bottom_(bh).webp",
+    src: "/gearcalculator/legs/Corrupted_zuriel's_robe_bottom_(bh).webp",
     slot: "Legs",
   },
   {
@@ -4103,7 +4103,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Decorative_armour_(white_platelegs).webp",
+    src: "/gearcalculator/legs/Decorative_armour_(white_platelegs).webp",
     slot: "Legs",
   },
   {
@@ -4140,7 +4140,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Decorative_armour_(white_plateskirt).webp",
+    src: "/gearcalculator/legs/Decorative_armour_(white_plateskirt).webp",
     slot: "Legs",
   },
   {
@@ -4177,7 +4177,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Enchanted_robe.webp",
+    src: "/gearcalculator/legs/Enchanted_robe.webp",
     slot: "Legs",
   },
   {
@@ -4214,7 +4214,7 @@ const LEGS = [
         Weight: 7.711,
       },
     ],
-    src: "./gearcalculator/legs/Initiate_cuisse.webp",
+    src: "/gearcalculator/legs/Initiate_cuisse.webp",
     slot: "Legs",
   },
   {
@@ -4251,7 +4251,7 @@ const LEGS = [
         Weight: 7.711,
       },
     ],
-    src: "./gearcalculator/legs/Mithril_platelegs.webp",
+    src: "/gearcalculator/legs/Mithril_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -4288,7 +4288,7 @@ const LEGS = [
         Weight: 7.711,
       },
     ],
-    src: "./gearcalculator/legs/Mithril_platelegs_(g).webp",
+    src: "/gearcalculator/legs/Mithril_platelegs_(g).webp",
     slot: "Legs",
   },
   {
@@ -4325,7 +4325,7 @@ const LEGS = [
         Weight: 7.711,
       },
     ],
-    src: "./gearcalculator/legs/Mithril_platelegs_(t).webp",
+    src: "/gearcalculator/legs/Mithril_platelegs_(t).webp",
     slot: "Legs",
   },
   {
@@ -4362,7 +4362,7 @@ const LEGS = [
         Weight: 7.257,
       },
     ],
-    src: "./gearcalculator/legs/Mithril_plateskirt.webp",
+    src: "/gearcalculator/legs/Mithril_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -4399,7 +4399,7 @@ const LEGS = [
         Weight: 7.257,
       },
     ],
-    src: "./gearcalculator/legs/Mithril_plateskirt_(g).webp",
+    src: "/gearcalculator/legs/Mithril_plateskirt_(g).webp",
     slot: "Legs",
   },
   {
@@ -4436,7 +4436,7 @@ const LEGS = [
         Weight: 7.257,
       },
     ],
-    src: "./gearcalculator/legs/Mithril_plateskirt_(t).webp",
+    src: "/gearcalculator/legs/Mithril_plateskirt_(t).webp",
     slot: "Legs",
   },
   {
@@ -4473,7 +4473,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Mystic_robe_bottom.webp",
+    src: "/gearcalculator/legs/Mystic_robe_bottom.webp",
     slot: "Legs",
   },
   {
@@ -4510,7 +4510,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Mystic_robe_bottom_(dark).webp",
+    src: "/gearcalculator/legs/Mystic_robe_bottom_(dark).webp",
     slot: "Legs",
   },
   {
@@ -4547,7 +4547,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Mystic_robe_bottom_(dusk).webp",
+    src: "/gearcalculator/legs/Mystic_robe_bottom_(dusk).webp",
     slot: "Legs",
   },
   {
@@ -4584,7 +4584,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Mystic_robe_bottom_(light).webp",
+    src: "/gearcalculator/legs/Mystic_robe_bottom_(light).webp",
     slot: "Legs",
   },
   {
@@ -4621,7 +4621,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Mystic_robe_bottom_(or).webp",
+    src: "/gearcalculator/legs/Mystic_robe_bottom_(or).webp",
     slot: "Legs",
   },
   {
@@ -4658,7 +4658,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Robe_bottom_of_darkness.webp",
+    src: "/gearcalculator/legs/Robe_bottom_of_darkness.webp",
     slot: "Legs",
   },
   {
@@ -4695,7 +4695,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Shayzien_greaves_(1).webp",
+    src: "/gearcalculator/legs/Shayzien_greaves_(1).webp",
     slot: "Legs",
   },
   {
@@ -4732,7 +4732,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Shayzien_greaves_(2).webp",
+    src: "/gearcalculator/legs/Shayzien_greaves_(2).webp",
     slot: "Legs",
   },
   {
@@ -4769,7 +4769,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Shayzien_greaves_(3).webp",
+    src: "/gearcalculator/legs/Shayzien_greaves_(3).webp",
     slot: "Legs",
   },
   {
@@ -4806,7 +4806,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Shayzien_greaves_(4).webp",
+    src: "/gearcalculator/legs/Shayzien_greaves_(4).webp",
     slot: "Legs",
   },
   {
@@ -4843,7 +4843,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Shayzien_greaves_(5).webp",
+    src: "/gearcalculator/legs/Shayzien_greaves_(5).webp",
     slot: "Legs",
   },
   {
@@ -4880,7 +4880,7 @@ const LEGS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/legs/Yak-hide_armour_(legs).webp",
+    src: "/gearcalculator/legs/Yak-hide_armour_(legs).webp",
     slot: "Legs",
   },
   {
@@ -4917,7 +4917,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Dark_infinity_bottoms.webp",
+    src: "/gearcalculator/legs/Dark_infinity_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -4954,7 +4954,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Light_infinity_bottoms.webp",
+    src: "/gearcalculator/legs/Light_infinity_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -4991,7 +4991,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Infinity_bottoms.webp",
+    src: "/gearcalculator/legs/Infinity_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -5028,7 +5028,7 @@ const LEGS = [
         Weight: 3,
       },
     ],
-    src: "./gearcalculator/legs/Frog-leather_chaps.webp",
+    src: "/gearcalculator/legs/Frog-leather_chaps.webp",
     slot: "Legs",
   },
   {
@@ -5065,7 +5065,7 @@ const LEGS = [
         Weight: 1.8,
       },
     ],
-    src: "./gearcalculator/legs/3rd_age_robe.webp",
+    src: "/gearcalculator/legs/3rd_age_robe.webp",
     slot: "Legs",
   },
   {
@@ -5102,7 +5102,7 @@ const LEGS = [
         Weight: 10.432,
       },
     ],
-    src: "./gearcalculator/legs/Adamant_platelegs.webp",
+    src: "/gearcalculator/legs/Adamant_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -5139,7 +5139,7 @@ const LEGS = [
         Weight: 10.432,
       },
     ],
-    src: "./gearcalculator/legs/Adamant_platelegs_(g).webp",
+    src: "/gearcalculator/legs/Adamant_platelegs_(g).webp",
     slot: "Legs",
   },
   {
@@ -5176,7 +5176,7 @@ const LEGS = [
         Weight: 10.432,
       },
     ],
-    src: "./gearcalculator/legs/Adamant_platelegs_(t).webp",
+    src: "/gearcalculator/legs/Adamant_platelegs_(t).webp",
     slot: "Legs",
   },
   {
@@ -5213,7 +5213,7 @@ const LEGS = [
         Weight: 10.432,
       },
     ],
-    src: "./gearcalculator/legs/Adamant_plateskirt.webp",
+    src: "/gearcalculator/legs/Adamant_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -5250,7 +5250,7 @@ const LEGS = [
         Weight: 10.432,
       },
     ],
-    src: "./gearcalculator/legs/Adamant_plateskirt_(g).webp",
+    src: "/gearcalculator/legs/Adamant_plateskirt_(g).webp",
     slot: "Legs",
   },
   {
@@ -5287,7 +5287,7 @@ const LEGS = [
         Weight: 10.432,
       },
     ],
-    src: "./gearcalculator/legs/Adamant_plateskirt_(t).webp",
+    src: "/gearcalculator/legs/Adamant_plateskirt_(t).webp",
     slot: "Legs",
   },
   {
@@ -5324,7 +5324,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Decorative_armour_(gold_platelegs).webp",
+    src: "/gearcalculator/legs/Decorative_armour_(gold_platelegs).webp",
     slot: "Legs",
   },
   {
@@ -5361,7 +5361,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Decorative_armour_(gold_plateskirt).webp",
+    src: "/gearcalculator/legs/Decorative_armour_(gold_plateskirt).webp",
     slot: "Legs",
   },
   {
@@ -5398,7 +5398,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Inquisitor's_plateskirt.webp",
+    src: "/gearcalculator/legs/Inquisitor's_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -5435,7 +5435,7 @@ const LEGS = [
         Weight: 7,
       },
     ],
-    src: "./gearcalculator/legs/Masori_chaps.webp",
+    src: "/gearcalculator/legs/Masori_chaps.webp",
     slot: "Legs",
   },
   {
@@ -5472,7 +5472,7 @@ const LEGS = [
         Weight: 7.711,
       },
     ],
-    src: "./gearcalculator/legs/Proselyte_cuisse.webp",
+    src: "/gearcalculator/legs/Proselyte_cuisse.webp",
     slot: "Legs",
   },
   {
@@ -5509,7 +5509,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Proselyte_tasset.webp",
+    src: "/gearcalculator/legs/Proselyte_tasset.webp",
     slot: "Legs",
   },
   {
@@ -5546,7 +5546,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Rangers'_tights.webp",
+    src: "/gearcalculator/legs/Rangers'_tights.webp",
     slot: "Legs",
   },
   {
@@ -5583,7 +5583,7 @@ const LEGS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/legs/Snakeskin_chaps.webp",
+    src: "/gearcalculator/legs/Snakeskin_chaps.webp",
     slot: "Legs",
   },
   {
@@ -5620,7 +5620,7 @@ const LEGS = [
         Weight: 1.5,
       },
     ],
-    src: "./gearcalculator/legs/Samurai_greaves.webp",
+    src: "/gearcalculator/legs/Samurai_greaves.webp",
     slot: "Legs",
   },
   {
@@ -5657,7 +5657,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Ancient_platelegs.webp",
+    src: "/gearcalculator/legs/Ancient_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -5694,7 +5694,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Saradomin_platelegs.webp",
+    src: "/gearcalculator/legs/Saradomin_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -5731,7 +5731,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Guthix_platelegs.webp",
+    src: "/gearcalculator/legs/Guthix_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -5768,7 +5768,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Zamorak_platelegs.webp",
+    src: "/gearcalculator/legs/Zamorak_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -5805,7 +5805,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Zamorak_plateskirt.webp",
+    src: "/gearcalculator/legs/Zamorak_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -5842,7 +5842,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Guthix_plateskirt.webp",
+    src: "/gearcalculator/legs/Guthix_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -5879,7 +5879,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Saradomin_plateskirt.webp",
+    src: "/gearcalculator/legs/Saradomin_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -5916,7 +5916,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Bandos_platelegs.webp",
+    src: "/gearcalculator/legs/Bandos_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -5953,7 +5953,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Bandos_plateskirt.webp",
+    src: "/gearcalculator/legs/Bandos_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -5990,7 +5990,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Armadyl_platelegs.webp",
+    src: "/gearcalculator/legs/Armadyl_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -6027,7 +6027,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Armadyl_plateskirt.webp",
+    src: "/gearcalculator/legs/Armadyl_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -6064,7 +6064,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Ancient_plateskirt.webp",
+    src: "/gearcalculator/legs/Ancient_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -6101,7 +6101,7 @@ const LEGS = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/legs/Ancient_robe_legs.webp",
+    src: "/gearcalculator/legs/Ancient_robe_legs.webp",
     slot: "Legs",
   },
   {
@@ -6138,7 +6138,7 @@ const LEGS = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/legs/Zamorak_robe_legs.webp",
+    src: "/gearcalculator/legs/Zamorak_robe_legs.webp",
     slot: "Legs",
   },
   {
@@ -6175,7 +6175,7 @@ const LEGS = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/legs/Saradomin_robe_legs.webp",
+    src: "/gearcalculator/legs/Saradomin_robe_legs.webp",
     slot: "Legs",
   },
   {
@@ -6212,7 +6212,7 @@ const LEGS = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/legs/Guthix_robe_legs.webp",
+    src: "/gearcalculator/legs/Guthix_robe_legs.webp",
     slot: "Legs",
   },
   {
@@ -6249,7 +6249,7 @@ const LEGS = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/legs/Bandos_robe_legs.webp",
+    src: "/gearcalculator/legs/Bandos_robe_legs.webp",
     slot: "Legs",
   },
   {
@@ -6286,7 +6286,7 @@ const LEGS = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/legs/Armadyl_robe_legs.webp",
+    src: "/gearcalculator/legs/Armadyl_robe_legs.webp",
     slot: "Legs",
   },
   {
@@ -6323,7 +6323,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Dagon'hai_robe_bottom.webp",
+    src: "/gearcalculator/legs/Dagon'hai_robe_bottom.webp",
     slot: "Legs",
   },
   {
@@ -6360,7 +6360,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Dragonstone_platelegs.webp",
+    src: "/gearcalculator/legs/Dragonstone_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -6397,7 +6397,7 @@ const LEGS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/legs/Druid's_robe.webp",
+    src: "/gearcalculator/legs/Druid's_robe.webp",
     slot: "Legs",
   },
   {
@@ -6434,7 +6434,7 @@ const LEGS = [
         Weight: 0.18,
       },
     ],
-    src: "./gearcalculator/legs/Elder_chaos_robe.webp",
+    src: "/gearcalculator/legs/Elder_chaos_robe.webp",
     slot: "Legs",
   },
   {
@@ -6471,7 +6471,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Gilded_platelegs.webp",
+    src: "/gearcalculator/legs/Gilded_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -6508,7 +6508,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Gilded_plateskirt.webp",
+    src: "/gearcalculator/legs/Gilded_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -6545,7 +6545,7 @@ const LEGS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/legs/Lunar_legs.webp",
+    src: "/gearcalculator/legs/Lunar_legs.webp",
     slot: "Legs",
   },
   {
@@ -6582,7 +6582,7 @@ const LEGS = [
         Weight: 3,
       },
     ],
-    src: "./gearcalculator/legs/Penance_skirt.webp",
+    src: "/gearcalculator/legs/Penance_skirt.webp",
     slot: "Legs",
   },
   {
@@ -6619,7 +6619,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Rock-shell_legs.webp",
+    src: "/gearcalculator/legs/Rock-shell_legs.webp",
     slot: "Legs",
   },
   {
@@ -6656,7 +6656,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Rune_platelegs.webp",
+    src: "/gearcalculator/legs/Rune_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -6693,7 +6693,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Rune_platelegs_(g).webp",
+    src: "/gearcalculator/legs/Rune_platelegs_(g).webp",
     slot: "Legs",
   },
   {
@@ -6730,7 +6730,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Rune_platelegs_(t).webp",
+    src: "/gearcalculator/legs/Rune_platelegs_(t).webp",
     slot: "Legs",
   },
   {
@@ -6767,7 +6767,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Rune_plateskirt.webp",
+    src: "/gearcalculator/legs/Rune_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -6804,7 +6804,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Rune_plateskirt_(g).webp",
+    src: "/gearcalculator/legs/Rune_plateskirt_(g).webp",
     slot: "Legs",
   },
   {
@@ -6841,7 +6841,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Rune_plateskirt_(t).webp",
+    src: "/gearcalculator/legs/Rune_plateskirt_(t).webp",
     slot: "Legs",
   },
   {
@@ -6878,7 +6878,7 @@ const LEGS = [
         Weight: 4.082,
       },
     ],
-    src: "./gearcalculator/legs/Skeletal_bottoms.webp",
+    src: "/gearcalculator/legs/Skeletal_bottoms.webp",
     slot: "Legs",
   },
   {
@@ -6915,7 +6915,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Spined_chaps.webp",
+    src: "/gearcalculator/legs/Spined_chaps.webp",
     slot: "Legs",
   },
   {
@@ -6952,7 +6952,7 @@ const LEGS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/legs/Splitbark_legs.webp",
+    src: "/gearcalculator/legs/Splitbark_legs.webp",
     slot: "Legs",
   },
   {
@@ -6989,7 +6989,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Elite_void_robe.webp",
+    src: "/gearcalculator/legs/Elite_void_robe.webp",
     slot: "Legs",
   },
   {
@@ -7026,7 +7026,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Void_knight_robe.webp",
+    src: "/gearcalculator/legs/Void_knight_robe.webp",
     slot: "Legs",
   },
   {
@@ -7063,7 +7063,7 @@ const LEGS = [
         Weight: 3,
       },
     ],
-    src: "./gearcalculator/legs/3rd_age_range_legs.webp",
+    src: "/gearcalculator/legs/3rd_age_range_legs.webp",
     slot: "Legs",
   },
   {
@@ -7100,7 +7100,7 @@ const LEGS = [
         Weight: 15.875,
       },
     ],
-    src: "./gearcalculator/legs/Granite_legs.webp",
+    src: "/gearcalculator/legs/Granite_legs.webp",
     slot: "Legs",
   },
   {
@@ -7137,7 +7137,7 @@ const LEGS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/legs/Swampbark_legs.webp",
+    src: "/gearcalculator/legs/Swampbark_legs.webp",
     slot: "Legs",
   },
   {
@@ -7174,7 +7174,7 @@ const LEGS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/legs/Bloodbark_legs.webp",
+    src: "/gearcalculator/legs/Bloodbark_legs.webp",
     slot: "Legs",
   },
   {
@@ -7211,7 +7211,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Dragon_platelegs.webp",
+    src: "/gearcalculator/legs/Dragon_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -7248,7 +7248,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Dragon_platelegs_(g).webp",
+    src: "/gearcalculator/legs/Dragon_platelegs_(g).webp",
     slot: "Legs",
   },
   {
@@ -7285,7 +7285,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Dragon_plateskirt.webp",
+    src: "/gearcalculator/legs/Dragon_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -7322,7 +7322,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Dragon_plateskirt_(g).webp",
+    src: "/gearcalculator/legs/Dragon_plateskirt_(g).webp",
     slot: "Legs",
   },
   {
@@ -7359,7 +7359,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Obsidian_platelegs.webp",
+    src: "/gearcalculator/legs/Obsidian_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -7396,7 +7396,7 @@ const LEGS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/legs/3rd_age_platelegs.webp",
+    src: "/gearcalculator/legs/3rd_age_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -7433,7 +7433,7 @@ const LEGS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/legs/3rd_age_plateskirt.webp",
+    src: "/gearcalculator/legs/3rd_age_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -7470,7 +7470,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Ancestral_robe_bottom.webp",
+    src: "/gearcalculator/legs/Ancestral_robe_bottom.webp",
     slot: "Legs",
   },
   {
@@ -7507,7 +7507,7 @@ const LEGS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/legs/Bandos_tassets.webp",
+    src: "/gearcalculator/legs/Bandos_tassets.webp",
     slot: "Legs",
   },
   {
@@ -7544,7 +7544,7 @@ const LEGS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/legs/Twisted_ancestral_robe_bottom.webp",
+    src: "/gearcalculator/legs/Twisted_ancestral_robe_bottom.webp",
     slot: "Legs",
   },
   {
@@ -7581,7 +7581,7 @@ const LEGS = [
         Weight: 11.339,
       },
     ],
-    src: "./gearcalculator/legs/Ahrim's_robeskirt.webp",
+    src: "/gearcalculator/legs/Ahrim's_robeskirt.webp",
     slot: "Legs",
   },
   {
@@ -7618,7 +7618,7 @@ const LEGS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/legs/Crystal_legs.webp",
+    src: "/gearcalculator/legs/Crystal_legs.webp",
     slot: "Legs",
   },
   {
@@ -7655,7 +7655,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Dharok's_platelegs.webp",
+    src: "/gearcalculator/legs/Dharok's_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -7692,7 +7692,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Guthan's_chainskirt.webp",
+    src: "/gearcalculator/legs/Guthan's_chainskirt.webp",
     slot: "Legs",
   },
   {
@@ -7729,7 +7729,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Karil's_leatherskirt.webp",
+    src: "/gearcalculator/legs/Karil's_leatherskirt.webp",
     slot: "Legs",
   },
   {
@@ -7766,7 +7766,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Torag's_platelegs.webp",
+    src: "/gearcalculator/legs/Torag's_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -7803,7 +7803,7 @@ const LEGS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/legs/Verac's_plateskirt.webp",
+    src: "/gearcalculator/legs/Verac's_plateskirt.webp",
     slot: "Legs",
   },
   {
@@ -7840,7 +7840,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Justiciar_legguards.webp",
+    src: "/gearcalculator/legs/Justiciar_legguards.webp",
     slot: "Legs",
   },
   {
@@ -7877,7 +7877,7 @@ const LEGS = [
         Weight: 3.79,
       },
     ],
-    src: "./gearcalculator/legs/Virtus_robe_bottom.webp",
+    src: "/gearcalculator/legs/Virtus_robe_bottom.webp",
     slot: "Legs",
   },
   {
@@ -7914,7 +7914,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Morrigan's_leather_chaps_(bh).webp",
+    src: "/gearcalculator/legs/Morrigan's_leather_chaps_(bh).webp",
     slot: "Legs",
   },
   {
@@ -7951,7 +7951,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Statius's_platelegs_(bh).webp",
+    src: "/gearcalculator/legs/Statius's_platelegs_(bh).webp",
     slot: "Legs",
   },
   {
@@ -7988,7 +7988,7 @@ const LEGS = [
         Weight: 8.164,
       },
     ],
-    src: "./gearcalculator/legs/Vesta's_plateskirt_(bh).webp",
+    src: "/gearcalculator/legs/Vesta's_plateskirt_(bh).webp",
     slot: "Legs",
   },
   {
@@ -8025,7 +8025,7 @@ const LEGS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/legs/Zuriel's_robe_bottom_(bh).webp",
+    src: "/gearcalculator/legs/Zuriel's_robe_bottom_(bh).webp",
     slot: "Legs",
   },
   {
@@ -8062,7 +8062,7 @@ const LEGS = [
         Weight: 8.5,
       },
     ],
-    src: "./gearcalculator/legs/Masori_chaps_(f).webp",
+    src: "/gearcalculator/legs/Masori_chaps_(f).webp",
     slot: "Legs",
   },
   {
@@ -8099,7 +8099,7 @@ const LEGS = [
         Weight: 9.979,
       },
     ],
-    src: "./gearcalculator/legs/Sanguine_torva_platelegs.webp",
+    src: "/gearcalculator/legs/Sanguine_torva_platelegs.webp",
     slot: "Legs",
   },
   {
@@ -8136,7 +8136,7 @@ const LEGS = [
         Weight: 9.071,
       },
     ],
-    src: "./gearcalculator/legs/Torva_platelegs.webp",
+    src: "/gearcalculator/legs/Torva_platelegs.webp",
     slot: "Legs",
   },
 ];

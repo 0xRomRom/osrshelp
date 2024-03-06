@@ -33,7 +33,7 @@ const CAPES = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/capes/3rd_age_cloak.webp",
+    src: "/gearcalculator/capes/3rd_age_cloak.webp",
     slot: "Cape",
   },
   {
@@ -70,7 +70,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Achievement_diary_cape_(t).webp",
+    src: "/gearcalculator/capes/Achievement_diary_cape_(t).webp",
     slot: "Cape",
   },
   {
@@ -107,7 +107,7 @@ const CAPES = [
         Weight: -4,
       },
     ],
-    src: "./gearcalculator/capes/Agility_cape.webp",
+    src: "/gearcalculator/capes/Agility_cape.webp",
     slot: "Cape",
   },
   {
@@ -144,7 +144,7 @@ const CAPES = [
         Weight: -4,
       },
     ],
-    src: "./gearcalculator/capes/Agility_cape(t).webp",
+    src: "/gearcalculator/capes/Agility_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -181,7 +181,7 @@ const CAPES = [
         Weight: 0.003,
       },
     ],
-    src: "./gearcalculator/capes/Ancient_cloak.webp",
+    src: "/gearcalculator/capes/Ancient_cloak.webp",
     slot: "Cape",
   },
   {
@@ -218,7 +218,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Ardougne_cloak_1.webp",
+    src: "/gearcalculator/capes/Ardougne_cloak_1.webp",
     slot: "Cape",
   },
   {
@@ -255,7 +255,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Ardougne_cloak_2.webp",
+    src: "/gearcalculator/capes/Ardougne_cloak_2.webp",
     slot: "Cape",
   },
   {
@@ -292,7 +292,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Ardougne_cloak_3.webp",
+    src: "/gearcalculator/capes/Ardougne_cloak_3.webp",
     slot: "Cape",
   },
   {
@@ -329,7 +329,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Ardougne_cloak_4.webp",
+    src: "/gearcalculator/capes/Ardougne_cloak_4.webp",
     slot: "Cape",
   },
   {
@@ -366,7 +366,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Ardougne_max_cape.webp",
+    src: "/gearcalculator/capes/Ardougne_max_cape.webp",
     slot: "Cape",
   },
   {
@@ -403,7 +403,7 @@ const CAPES = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/capes/Armadyl_cloak.webp",
+    src: "/gearcalculator/capes/Armadyl_cloak.webp",
     slot: "Cape",
   },
   {
@@ -440,7 +440,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Assembler_max_cape.webp",
+    src: "/gearcalculator/capes/Assembler_max_cape.webp",
     slot: "Cape",
   },
   {
@@ -477,7 +477,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Attack_cape.webp",
+    src: "/gearcalculator/capes/Attack_cape.webp",
     slot: "Cape",
   },
   {
@@ -514,7 +514,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Attack_cape(t).webp",
+    src: "/gearcalculator/capes/Attack_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -551,7 +551,7 @@ const CAPES = [
         Weight: 0.435,
       },
     ],
-    src: "./gearcalculator/capes/Ava's_accumulator.webp",
+    src: "/gearcalculator/capes/Ava's_accumulator.webp",
     slot: "Cape",
   },
   {
@@ -588,7 +588,7 @@ const CAPES = [
         Weight: 5.896,
       },
     ],
-    src: "./gearcalculator/capes/Ava's_assembler.webp",
+    src: "/gearcalculator/capes/Ava's_assembler.webp",
     slot: "Cape",
   },
   {
@@ -625,7 +625,7 @@ const CAPES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/capes/Ava's_attractor.webp",
+    src: "/gearcalculator/capes/Ava's_attractor.webp",
     slot: "Cape",
   },
   {
@@ -662,7 +662,7 @@ const CAPES = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/capes/Bandos_cloak.webp",
+    src: "/gearcalculator/capes/Bandos_cloak.webp",
     slot: "Cape",
   },
   {
@@ -699,7 +699,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Black_cape.webp",
+    src: "/gearcalculator/capes/Black_cape.webp",
     slot: "Cape",
   },
   {
@@ -736,7 +736,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Blue_cape.webp",
+    src: "/gearcalculator/capes/Blue_cape.webp",
     slot: "Cape",
   },
   {
@@ -773,7 +773,7 @@ const CAPES = [
         Weight: 0.003,
       },
     ],
-    src: "./gearcalculator/capes/Bonesack.webp",
+    src: "/gearcalculator/capes/Bonesack.webp",
     slot: "Cape",
   },
   {
@@ -810,7 +810,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Cabbage_cape.webp",
+    src: "/gearcalculator/capes/Cabbage_cape.webp",
     slot: "Cape",
   },
   {
@@ -847,7 +847,7 @@ const CAPES = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/capes/Cape_of_legends.webp",
+    src: "/gearcalculator/capes/Cape_of_legends.webp",
     slot: "Cape",
   },
   {
@@ -884,7 +884,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Cape_of_skulls.webp",
+    src: "/gearcalculator/capes/Cape_of_skulls.webp",
     slot: "Cape",
   },
   {
@@ -921,7 +921,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Castlewars_cloak_(Saradomin).webp",
+    src: "/gearcalculator/capes/Castlewars_cloak_(Saradomin).webp",
     slot: "Cape",
   },
   {
@@ -958,7 +958,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Castlewars_cloak_(Zamorak).webp",
+    src: "/gearcalculator/capes/Castlewars_cloak_(Zamorak).webp",
     slot: "Cape",
   },
   {
@@ -995,7 +995,7 @@ const CAPES = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/capes/Clue_hunter_cloak.webp",
+    src: "/gearcalculator/capes/Clue_hunter_cloak.webp",
     slot: "Cape",
   },
   {
@@ -1032,7 +1032,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Construct (1).webp",
+    src: "/gearcalculator/capes/Construct (1).webp",
     slot: "Cape",
   },
   {
@@ -1069,7 +1069,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Construct.webp",
+    src: "/gearcalculator/capes/Construct.webp",
     slot: "Cape",
   },
   {
@@ -1106,7 +1106,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Cooking_cape.webp",
+    src: "/gearcalculator/capes/Cooking_cape.webp",
     slot: "Cape",
   },
   {
@@ -1143,7 +1143,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Cooking_cape(t).webp",
+    src: "/gearcalculator/capes/Cooking_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -1180,7 +1180,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Crafting_cape.webp",
+    src: "/gearcalculator/capes/Crafting_cape.webp",
     slot: "Cape",
   },
   {
@@ -1217,7 +1217,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Crafting_cape(t).webp",
+    src: "/gearcalculator/capes/Crafting_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -1254,7 +1254,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Defence_cape.webp",
+    src: "/gearcalculator/capes/Defence_cape.webp",
     slot: "Cape",
   },
   {
@@ -1291,7 +1291,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Defence_cape(t).webp",
+    src: "/gearcalculator/capes/Defence_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -1328,7 +1328,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Farming_cape.webp",
+    src: "/gearcalculator/capes/Farming_cape.webp",
     slot: "Cape",
   },
   {
@@ -1365,7 +1365,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Farming_cape(t).webp",
+    src: "/gearcalculator/capes/Farming_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -1402,7 +1402,7 @@ const CAPES = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/capes/Fire_cape.webp",
+    src: "/gearcalculator/capes/Fire_cape.webp",
     slot: "Cape",
   },
   {
@@ -1439,7 +1439,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Fire_max_cape.webp",
+    src: "/gearcalculator/capes/Fire_max_cape.webp",
     slot: "Cape",
   },
   {
@@ -1476,7 +1476,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Firemaking_cape.webp",
+    src: "/gearcalculator/capes/Firemaking_cape.webp",
     slot: "Cape",
   },
   {
@@ -1513,7 +1513,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Firemaking_cape(t).webp",
+    src: "/gearcalculator/capes/Firemaking_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -1550,7 +1550,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Fishing_cape.webp",
+    src: "/gearcalculator/capes/Fishing_cape.webp",
     slot: "Cape",
   },
   {
@@ -1587,7 +1587,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Fishing_cape(t).webp",
+    src: "/gearcalculator/capes/Fishing_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -1624,7 +1624,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Fletching_cape.webp",
+    src: "/gearcalculator/capes/Fletching_cape.webp",
     slot: "Cape",
   },
   {
@@ -1661,7 +1661,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Fletching_cape(t).webp",
+    src: "/gearcalculator/capes/Fletching_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -1698,7 +1698,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Fremennik_black_cloak.webp",
+    src: "/gearcalculator/capes/Fremennik_black_cloak.webp",
     slot: "Cape",
   },
   {
@@ -1735,7 +1735,7 @@ const CAPES = [
         Weight: 0.001,
       },
     ],
-    src: "./gearcalculator/capes/Ghostly_cloak.webp",
+    src: "/gearcalculator/capes/Ghostly_cloak.webp",
     slot: "Cape",
   },
   {
@@ -1772,7 +1772,7 @@ const CAPES = [
         Weight: -4,
       },
     ],
-    src: "./gearcalculator/capes/Graceful_cape.webp",
+    src: "/gearcalculator/capes/Graceful_cape.webp",
     slot: "Cape",
   },
   {
@@ -1809,7 +1809,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Guthix_cape.webp",
+    src: "/gearcalculator/capes/Guthix_cape.webp",
     slot: "Cape",
   },
   {
@@ -1846,7 +1846,7 @@ const CAPES = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/capes/Guthix_cloak.webp",
+    src: "/gearcalculator/capes/Guthix_cloak.webp",
     slot: "Cape",
   },
   {
@@ -1883,7 +1883,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Guthix_max_cape.webp",
+    src: "/gearcalculator/capes/Guthix_max_cape.webp",
     slot: "Cape",
   },
   {
@@ -1920,7 +1920,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Herblore_cape.webp",
+    src: "/gearcalculator/capes/Herblore_cape.webp",
     slot: "Cape",
   },
   {
@@ -1957,7 +1957,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Herblore_cape(t).webp",
+    src: "/gearcalculator/capes/Herblore_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -1994,7 +1994,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Hitpoints_cape.webp",
+    src: "/gearcalculator/capes/Hitpoints_cape.webp",
     slot: "Cape",
   },
   {
@@ -2031,7 +2031,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Hitpoints_cape(t).webp",
+    src: "/gearcalculator/capes/Hitpoints_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -2068,7 +2068,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Hunter_cape.webp",
+    src: "/gearcalculator/capes/Hunter_cape.webp",
     slot: "Cape",
   },
   {
@@ -2105,7 +2105,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Hunter_cape(t).webp",
+    src: "/gearcalculator/capes/Hunter_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -2142,7 +2142,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Imbued_guthix_cape.webp",
+    src: "/gearcalculator/capes/Imbued_guthix_cape.webp",
     slot: "Cape",
   },
   {
@@ -2179,7 +2179,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Imbued_saradomin_cape.webp",
+    src: "/gearcalculator/capes/Imbued_saradomin_cape.webp",
     slot: "Cape",
   },
   {
@@ -2216,7 +2216,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Imbued_saradomin_max_cape.webp",
+    src: "/gearcalculator/capes/Imbued_saradomin_max_cape.webp",
     slot: "Cape",
   },
   {
@@ -2253,7 +2253,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+    src: "/gearcalculator/capes/Imbued_zamorak_cape.webp",
     slot: "Cape",
   },
   {
@@ -2290,7 +2290,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Imbued_zamorak_max_cape.webp",
+    src: "/gearcalculator/capes/Imbued_zamorak_max_cape.webp",
     slot: "Cape",
   },
   {
@@ -2327,7 +2327,7 @@ const CAPES = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/capes/Infernal_cape.webp",
+    src: "/gearcalculator/capes/Infernal_cape.webp",
     slot: "Cape",
   },
   {
@@ -2364,7 +2364,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Infernal_max_cape.webp",
+    src: "/gearcalculator/capes/Infernal_max_cape.webp",
     slot: "Cape",
   },
   {
@@ -2401,7 +2401,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Lunar_cape.webp",
+    src: "/gearcalculator/capes/Lunar_cape.webp",
     slot: "Cape",
   },
   {
@@ -2438,7 +2438,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Magic_cape.webp",
+    src: "/gearcalculator/capes/Magic_cape.webp",
     slot: "Cape",
   },
   {
@@ -2475,7 +2475,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Magic_cape(t).webp",
+    src: "/gearcalculator/capes/Magic_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -2512,7 +2512,7 @@ const CAPES = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/capes/Masori_assembler.webp",
+    src: "/gearcalculator/capes/Masori_assembler.webp",
     slot: "Cape",
   },
   {
@@ -2549,7 +2549,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Masori_assembler_max_cape.webp",
+    src: "/gearcalculator/capes/Masori_assembler_max_cape.webp",
     slot: "Cape",
   },
   {
@@ -2586,7 +2586,7 @@ const CAPES = [
         Weight: -4,
       },
     ],
-    src: "./gearcalculator/capes/Max_cape.webp",
+    src: "/gearcalculator/capes/Max_cape.webp",
     slot: "Cape",
   },
   {
@@ -2623,7 +2623,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Mining_cape.webp",
+    src: "/gearcalculator/capes/Mining_cape.webp",
     slot: "Cape",
   },
   {
@@ -2660,7 +2660,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Mining_cape(t).webp",
+    src: "/gearcalculator/capes/Mining_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -2697,7 +2697,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Moonclan_cape.webp",
+    src: "/gearcalculator/capes/Moonclan_cape.webp",
     slot: "Cape",
   },
   {
@@ -2734,7 +2734,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Music_cape.webp",
+    src: "/gearcalculator/capes/Music_cape.webp",
     slot: "Cape",
   },
   {
@@ -2771,7 +2771,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Music_cape(t).webp",
+    src: "/gearcalculator/capes/Music_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -2808,7 +2808,7 @@ const CAPES = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/capes/Mythical_cape.webp",
+    src: "/gearcalculator/capes/Mythical_cape.webp",
     slot: "Cape",
   },
   {
@@ -2845,7 +2845,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Mythical_max_cape.webp",
+    src: "/gearcalculator/capes/Mythical_max_cape.webp",
     slot: "Cape",
   },
   {
@@ -2882,7 +2882,7 @@ const CAPES = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/capes/Obsidian_cape.webp",
+    src: "/gearcalculator/capes/Obsidian_cape.webp",
     slot: "Cape",
   },
   {
@@ -2919,7 +2919,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Prayer_cape.webp",
+    src: "/gearcalculator/capes/Prayer_cape.webp",
     slot: "Cape",
   },
   {
@@ -2956,7 +2956,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Prayer_cape(t).webp",
+    src: "/gearcalculator/capes/Prayer_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -2993,7 +2993,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Quest_point_cape.webp",
+    src: "/gearcalculator/capes/Quest_point_cape.webp",
     slot: "Cape",
   },
   {
@@ -3030,7 +3030,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Quest_point_cape_(t).webp",
+    src: "/gearcalculator/capes/Quest_point_cape_(t).webp",
     slot: "Cape",
   },
   {
@@ -3067,7 +3067,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Ranging_cape.webp",
+    src: "/gearcalculator/capes/Ranging_cape.webp",
     slot: "Cape",
   },
   {
@@ -3104,7 +3104,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Ranging_cape(t).webp",
+    src: "/gearcalculator/capes/Ranging_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -3141,7 +3141,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Runecraft_cape.webp",
+    src: "/gearcalculator/capes/Runecraft_cape.webp",
     slot: "Cape",
   },
   {
@@ -3178,7 +3178,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Runecraft_cape(t).webp",
+    src: "/gearcalculator/capes/Runecraft_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -3215,7 +3215,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Saradomin_cape.webp",
+    src: "/gearcalculator/capes/Saradomin_cape.webp",
     slot: "Cape",
   },
   {
@@ -3252,7 +3252,7 @@ const CAPES = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/capes/Saradomin_cloak.webp",
+    src: "/gearcalculator/capes/Saradomin_cloak.webp",
     slot: "Cape",
   },
   {
@@ -3289,7 +3289,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Slayer_cape.webp",
+    src: "/gearcalculator/capes/Slayer_cape.webp",
     slot: "Cape",
   },
   {
@@ -3326,7 +3326,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Slayer_cape(t).webp",
+    src: "/gearcalculator/capes/Slayer_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -3363,7 +3363,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Smithing_cape.webp",
+    src: "/gearcalculator/capes/Smithing_cape.webp",
     slot: "Cape",
   },
   {
@@ -3400,7 +3400,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Smithing_cape(t).webp",
+    src: "/gearcalculator/capes/Smithing_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -3437,7 +3437,7 @@ const CAPES = [
         Weight: -2.267,
       },
     ],
-    src: "./gearcalculator/capes/Spotted_cape.webp",
+    src: "/gearcalculator/capes/Spotted_cape.webp",
     slot: "Cape",
   },
   {
@@ -3474,7 +3474,7 @@ const CAPES = [
         Weight: -4.535,
       },
     ],
-    src: "./gearcalculator/capes/Spottier_cape.webp",
+    src: "/gearcalculator/capes/Spottier_cape.webp",
     slot: "Cape",
   },
   {
@@ -3511,7 +3511,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Strength_cape.webp",
+    src: "/gearcalculator/capes/Strength_cape.webp",
     slot: "Cape",
   },
   {
@@ -3548,7 +3548,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Strength_cape(t).webp",
+    src: "/gearcalculator/capes/Strength_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -3585,7 +3585,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Team-48_cape.webp",
+    src: "/gearcalculator/capes/Team-48_cape.webp",
     slot: "Cape",
   },
   {
@@ -3622,7 +3622,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Thieving_cape.webp",
+    src: "/gearcalculator/capes/Thieving_cape.webp",
     slot: "Cape",
   },
   {
@@ -3659,7 +3659,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Thieving_cape(t).webp",
+    src: "/gearcalculator/capes/Thieving_cape(t).webp",
     slot: "Cape",
   },
   {
@@ -3696,7 +3696,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Woodcutting_cape.webp",
+    src: "/gearcalculator/capes/Woodcutting_cape.webp",
     slot: "Cape",
   },
   {
@@ -3733,7 +3733,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Woodcut.webp",
+    src: "/gearcalculator/capes/Woodcut.webp",
     slot: "Cape",
   },
   {
@@ -3770,7 +3770,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Zamorak_cape.webp",
+    src: "/gearcalculator/capes/Zamorak_cape.webp",
     slot: "Cape",
   },
   {
@@ -3807,7 +3807,7 @@ const CAPES = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/capes/Zamorak_cloak.webp",
+    src: "/gearcalculator/capes/Zamorak_cloak.webp",
     slot: "Cape",
   },
   {
@@ -3844,7 +3844,7 @@ const CAPES = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/capes/Zamorak_max_cape.webp",
+    src: "/gearcalculator/capes/Zamorak_max_cape.webp",
     slot: "Cape",
   },
 ];

@@ -1,7 +1,7 @@
 const PVPBUILDS = [
   {
     name: "1 Def Mage",
-    src: "./gearcalculator/helms/Blue_wizard_hat.webp",
+    src: "/gearcalculator/helms/Blue_wizard_hat.webp",
     alt: "1 Defence Mage",
     itemState: {
       Headpiece: {
@@ -38,7 +38,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/helms/Blue_wizard_hat.webp",
+        src: "/gearcalculator/helms/Blue_wizard_hat.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -75,7 +75,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Zamorak_cape.webp",
+        src: "/gearcalculator/capes/Zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -112,7 +112,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -149,7 +149,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -186,7 +186,7 @@ const PVPBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/weapons/Ancient_staff.webp",
+        src: "/gearcalculator/weapons/Ancient_staff.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -224,7 +224,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/bodies/Zamorak_monk_top.webp",
+        src: "/gearcalculator/bodies/Zamorak_monk_top.webp",
         slot: "Body",
       },
       Shield: {
@@ -261,7 +261,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_darkness.webp",
+        src: "/gearcalculator/shields/Book_of_darkness.webp",
         slot: "Shield",
       },
       Legs: {
@@ -298,7 +298,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/legs/Zamorak_monk_bottom.webp",
+        src: "/gearcalculator/legs/Zamorak_monk_bottom.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -335,7 +335,7 @@ const PVPBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Combat_bracelet.webp",
+        src: "/gearcalculator/gloves/Combat_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -372,7 +372,7 @@ const PVPBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Climbing_boots.webp",
+        src: "/gearcalculator/boots/Climbing_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -409,14 +409,14 @@ const PVPBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "1 Def Range",
-    src: "./gearcalculator/helms/Coif.webp",
+    src: "/gearcalculator/helms/Coif.webp",
     alt: "1 Def Range",
     itemState: {
       Headpiece: {
@@ -453,7 +453,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/helms/Coif.webp",
+        src: "/gearcalculator/helms/Coif.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -490,7 +490,7 @@ const PVPBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -527,7 +527,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -564,7 +564,7 @@ const PVPBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Rune_arrow_5.webp",
+        src: "/gearcalculator/amunition/Rune_arrow_5.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -601,7 +601,7 @@ const PVPBUILDS = [
             Weight: 1.36,
           },
         ],
-        src: "./gearcalculator/weapons/Magic_shortbow.webp",
+        src: "/gearcalculator/weapons/Magic_shortbow.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -639,7 +639,7 @@ const PVPBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/bodies/Leather_body.webp",
+        src: "/gearcalculator/bodies/Leather_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -676,7 +676,7 @@ const PVPBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -713,7 +713,7 @@ const PVPBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Combat_bracelet.webp",
+        src: "/gearcalculator/gloves/Combat_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -750,7 +750,7 @@ const PVPBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Climbing_boots.webp",
+        src: "/gearcalculator/boots/Climbing_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -787,7 +787,7 @@ const PVPBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {},
@@ -795,7 +795,7 @@ const PVPBUILDS = [
   },
   {
     name: "1 Def Melee",
-    src: "./gearcalculator/helms/Iron_full_helm.webp",
+    src: "/gearcalculator/helms/Iron_full_helm.webp",
     alt: "1 Def Melee",
     itemState: {
       Headpiece: {
@@ -832,7 +832,7 @@ const PVPBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Iron_full_helm.webp",
+        src: "/gearcalculator/helms/Iron_full_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -869,7 +869,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -906,7 +906,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -943,7 +943,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -980,7 +980,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/weapons/Dragon_scimitar.webp",
+        src: "/gearcalculator/weapons/Dragon_scimitar.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -1018,7 +1018,7 @@ const PVPBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/bodies/Leather_body.webp",
+        src: "/gearcalculator/bodies/Leather_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -1055,7 +1055,7 @@ const PVPBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1092,7 +1092,7 @@ const PVPBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Combat_bracelet.webp",
+        src: "/gearcalculator/gloves/Combat_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1129,7 +1129,7 @@ const PVPBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Climbing_boots.webp",
+        src: "/gearcalculator/boots/Climbing_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -1166,7 +1166,7 @@ const PVPBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -1203,14 +1203,14 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Unholy_book.webp",
+        src: "/gearcalculator/shields/Unholy_book.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "1 Def Mage Rusher",
-    src: "./gearcalculator/helms/Elder_chaos_hood.webp",
+    src: "/gearcalculator/helms/Elder_chaos_hood.webp",
     alt: "Guthan's Equipment",
     itemState: {
       Headpiece: {
@@ -1247,7 +1247,7 @@ const PVPBUILDS = [
             Weight: 0.18,
           },
         ],
-        src: "./gearcalculator/helms/Elder_chaos_hood.webp",
+        src: "/gearcalculator/helms/Elder_chaos_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -1284,7 +1284,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+        src: "/gearcalculator/capes/Imbued_zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -1321,7 +1321,7 @@ const PVPBUILDS = [
             Weight: 0.005,
           },
         ],
-        src: "./gearcalculator/necklace/Occult_necklace.webp",
+        src: "/gearcalculator/necklace/Occult_necklace.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -1358,7 +1358,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -1395,7 +1395,7 @@ const PVPBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+        src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -1433,7 +1433,7 @@ const PVPBUILDS = [
             Weight: 0.2,
           },
         ],
-        src: "./gearcalculator/bodies/Elder_chaos_top.webp",
+        src: "/gearcalculator/bodies/Elder_chaos_top.webp",
         slot: "Body",
       },
       Legs: {
@@ -1470,7 +1470,7 @@ const PVPBUILDS = [
             Weight: 0.18,
           },
         ],
-        src: "./gearcalculator/legs/Elder_chaos_robe.webp",
+        src: "/gearcalculator/legs/Elder_chaos_robe.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1507,7 +1507,7 @@ const PVPBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Tormented_bracelet.webp",
+        src: "/gearcalculator/gloves/Tormented_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1544,7 +1544,7 @@ const PVPBUILDS = [
             Weight: 0.283,
           },
         ],
-        src: "./gearcalculator/boots/Wizard_boots.webp",
+        src: "/gearcalculator/boots/Wizard_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -1581,7 +1581,7 @@ const PVPBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Magus_ring.webp",
+        src: "/gearcalculator/rings/Magus_ring.webp",
         slot: "Ring",
       },
       Shield: {
@@ -1618,14 +1618,14 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Mage's_book.webp",
+        src: "/gearcalculator/shields/Mage's_book.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "1 Def Range Rusher",
-    src: "./gearcalculator/helms/Robin_hood_hat.webp",
+    src: "/gearcalculator/helms/Robin_hood_hat.webp",
     alt: "Torag's Equipment",
     itemState: {
       Headpiece: {
@@ -1662,7 +1662,7 @@ const PVPBUILDS = [
             Weight: 0.283,
           },
         ],
-        src: "./gearcalculator/helms/Robin_hood_hat.webp",
+        src: "/gearcalculator/helms/Robin_hood_hat.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -1699,7 +1699,7 @@ const PVPBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -1736,7 +1736,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Necklace_of_anguish.webp",
+        src: "/gearcalculator/necklace/Necklace_of_anguish.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -1773,7 +1773,7 @@ const PVPBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Dragon_arrow(p++)_1.webp",
+        src: "/gearcalculator/amunition/Dragon_arrow(p++)_1.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -1810,7 +1810,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/weapons/Dark_bow_(bh).webp",
+        src: "/gearcalculator/weapons/Dark_bow_(bh).webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -1848,7 +1848,7 @@ const PVPBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/bodies/Leather_body.webp",
+        src: "/gearcalculator/bodies/Leather_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -1885,7 +1885,7 @@ const PVPBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1922,7 +1922,7 @@ const PVPBUILDS = [
             Weight: 0.283,
           },
         ],
-        src: "./gearcalculator/gloves/Black_d'hide_vambraces.webp",
+        src: "/gearcalculator/gloves/Black_d'hide_vambraces.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1959,7 +1959,7 @@ const PVPBUILDS = [
             Weight: 0.283,
           },
         ],
-        src: "./gearcalculator/boots/Ranger_boots.webp",
+        src: "/gearcalculator/boots/Ranger_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -1996,7 +1996,7 @@ const PVPBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Archers_ring_(i).webp",
+        src: "/gearcalculator/rings/Archers_ring_(i).webp",
         slot: "Ring",
       },
       Shield: {},
@@ -2004,7 +2004,7 @@ const PVPBUILDS = [
   },
   {
     name: "1 Def Melee Rusher",
-    src: "./gearcalculator/helms/Seren_halo.webp",
+    src: "/gearcalculator/helms/Seren_halo.webp",
     alt: "1 Def Melee Rusher",
     itemState: {
       Headpiece: {
@@ -2041,7 +2041,7 @@ const PVPBUILDS = [
             Weight: 0.3,
           },
         ],
-        src: "./gearcalculator/helms/Seren_halo.webp",
+        src: "/gearcalculator/helms/Seren_halo.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -2078,7 +2078,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -2115,7 +2115,7 @@ const PVPBUILDS = [
             Weight: 0.1,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_torture.webp",
+        src: "/gearcalculator/necklace/Amulet_of_torture.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -2152,7 +2152,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -2189,7 +2189,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/weapons/Dragon_claws.webp",
+        src: "/gearcalculator/weapons/Dragon_claws.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -2227,7 +2227,7 @@ const PVPBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/bodies/Leather_body.webp",
+        src: "/gearcalculator/bodies/Leather_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -2264,7 +2264,7 @@ const PVPBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -2301,7 +2301,7 @@ const PVPBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Regen_bracelet.webp",
+        src: "/gearcalculator/gloves/Regen_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -2338,7 +2338,7 @@ const PVPBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Climbing_boots.webp",
+        src: "/gearcalculator/boots/Climbing_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -2375,7 +2375,7 @@ const PVPBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Berserker_ring_(i).webp",
+        src: "/gearcalculator/rings/Berserker_ring_(i).webp",
         slot: "Ring",
       },
       Shield: {},
@@ -2384,7 +2384,7 @@ const PVPBUILDS = [
 
   {
     name: "45 Def Mage",
-    src: "./gearcalculator/helms/Farseer_helm.webp",
+    src: "/gearcalculator/helms/Farseer_helm.webp",
     alt: "45 Def Mage",
     itemState: {
       Headpiece: {
@@ -2421,7 +2421,7 @@ const PVPBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Farseer_helm.webp",
+        src: "/gearcalculator/helms/Farseer_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -2458,7 +2458,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_saradomin_cape.webp",
+        src: "/gearcalculator/capes/Imbued_saradomin_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -2495,7 +2495,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -2532,7 +2532,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -2569,7 +2569,7 @@ const PVPBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+        src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -2607,7 +2607,7 @@ const PVPBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/bodies/Mystic_robe_top.webp",
+        src: "/gearcalculator/bodies/Mystic_robe_top.webp",
         slot: "Body",
       },
       Shield: {
@@ -2644,7 +2644,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_darkness.webp",
+        src: "/gearcalculator/shields/Book_of_darkness.webp",
         slot: "Shield",
       },
       Legs: {
@@ -2681,7 +2681,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/legs/Mystic_robe_bottom.webp",
+        src: "/gearcalculator/legs/Mystic_robe_bottom.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -2718,7 +2718,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -2755,7 +2755,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/boots/Mystic_boots.webp",
+        src: "/gearcalculator/boots/Mystic_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -2792,14 +2792,14 @@ const PVPBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Seers_ring.webp",
+        src: "/gearcalculator/rings/Seers_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "45 Def Range",
-    src: "./gearcalculator/helms/Archer_helm.webp",
+    src: "/gearcalculator/helms/Archer_helm.webp",
     alt: "45 Def Range",
     itemState: {
       Headpiece: {
@@ -2836,7 +2836,7 @@ const PVPBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Archer_helm.webp",
+        src: "/gearcalculator/helms/Archer_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -2873,7 +2873,7 @@ const PVPBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -2910,7 +2910,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -2947,7 +2947,7 @@ const PVPBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Onyx_dragon_bolts_(e)_5.webp",
+        src: "/gearcalculator/amunition/Onyx_dragon_bolts_(e)_5.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -2984,7 +2984,7 @@ const PVPBUILDS = [
             Weight: 6,
           },
         ],
-        src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+        src: "/gearcalculator/weapons/Armadyl_crossbow.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -3022,7 +3022,7 @@ const PVPBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Black_d'hide_body.webp",
+        src: "/gearcalculator/bodies/Black_d'hide_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -3059,7 +3059,7 @@ const PVPBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -3096,7 +3096,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -3133,7 +3133,7 @@ const PVPBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Snakeskin_boots.webp",
+        src: "/gearcalculator/boots/Snakeskin_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -3170,7 +3170,7 @@ const PVPBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -3207,14 +3207,14 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_law.webp",
+        src: "/gearcalculator/shields/Book_of_law.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "45 Def Melee",
-    src: "./gearcalculator/helms/Berserker_helm.webp",
+    src: "/gearcalculator/helms/Berserker_helm.webp",
     alt: "45 Def Melee",
     itemState: {
       Headpiece: {
@@ -3251,7 +3251,7 @@ const PVPBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Berserker_helm.webp",
+        src: "/gearcalculator/helms/Berserker_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -3288,7 +3288,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -3325,7 +3325,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_strength.webp",
+        src: "/gearcalculator/necklace/Amulet_of_strength.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -3362,7 +3362,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -3399,7 +3399,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/weapons/Dragon_scimitar.webp",
+        src: "/gearcalculator/weapons/Dragon_scimitar.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -3437,7 +3437,7 @@ const PVPBUILDS = [
             Weight: 4,
           },
         ],
-        src: "./gearcalculator/bodies/Fighter_torso.webp",
+        src: "/gearcalculator/bodies/Fighter_torso.webp",
         slot: "Body",
       },
       Shield: {
@@ -3474,7 +3474,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/shields/Rune_defender.webp",
+        src: "/gearcalculator/shields/Rune_defender.webp",
         slot: "Shield",
       },
       Legs: {
@@ -3511,7 +3511,7 @@ const PVPBUILDS = [
             Weight: 9.071,
           },
         ],
-        src: "./gearcalculator/legs/Rune_plateskirt_(g).webp",
+        src: "/gearcalculator/legs/Rune_plateskirt_(g).webp",
         slot: "Legs",
       },
       Gloves: {
@@ -3548,7 +3548,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -3585,7 +3585,7 @@ const PVPBUILDS = [
             Weight: 1.36,
           },
         ],
-        src: "./gearcalculator/boots/Rune_boots.webp",
+        src: "/gearcalculator/boots/Rune_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -3622,14 +3622,14 @@ const PVPBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "45 Def Mage Rusher",
-    src: "./gearcalculator/helms/Void_mage_helm.webp",
+    src: "/gearcalculator/helms/Void_mage_helm.webp",
     alt: "45 Def Mage Rusher",
     itemState: {
       Headpiece: {
@@ -3666,7 +3666,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/helms/Void_mage_helm.webp",
+        src: "/gearcalculator/helms/Void_mage_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -3703,7 +3703,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_saradomin_cape.webp",
+        src: "/gearcalculator/capes/Imbued_saradomin_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -3740,7 +3740,7 @@ const PVPBUILDS = [
             Weight: 0.005,
           },
         ],
-        src: "./gearcalculator/necklace/Occult_necklace.webp",
+        src: "/gearcalculator/necklace/Occult_necklace.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -3777,7 +3777,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -3814,7 +3814,7 @@ const PVPBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+        src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -3852,7 +3852,7 @@ const PVPBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Void_knight_top.webp",
+        src: "/gearcalculator/bodies/Void_knight_top.webp",
         slot: "Body",
       },
       Shield: {
@@ -3889,7 +3889,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Mage's_book.webp",
+        src: "/gearcalculator/shields/Mage's_book.webp",
         slot: "Shield",
       },
       Legs: {
@@ -3926,7 +3926,7 @@ const PVPBUILDS = [
             Weight: 8.164,
           },
         ],
-        src: "./gearcalculator/legs/Void_knight_robe.webp",
+        src: "/gearcalculator/legs/Void_knight_robe.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -3963,7 +3963,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/gloves/Void_knight_gloves.webp",
+        src: "/gearcalculator/gloves/Void_knight_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -4000,7 +4000,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/boots/Infinity_boots.webp",
+        src: "/gearcalculator/boots/Infinity_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -4037,7 +4037,7 @@ const PVPBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Magus_ring.webp",
+        src: "/gearcalculator/rings/Magus_ring.webp",
         slot: "Ring",
       },
     },
@@ -4045,7 +4045,7 @@ const PVPBUILDS = [
 
   {
     name: "45 Def Range Rusher",
-    src: "./gearcalculator/helms/Void_ranger_helm.webp",
+    src: "/gearcalculator/helms/Void_ranger_helm.webp",
     alt: "45 Def Range Rusher",
     itemState: {
       Headpiece: {
@@ -4082,7 +4082,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/helms/Void_ranger_helm.webp",
+        src: "/gearcalculator/helms/Void_ranger_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -4119,7 +4119,7 @@ const PVPBUILDS = [
             Weight: 5.896,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_assembler.webp",
+        src: "/gearcalculator/capes/Ava's_assembler.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -4156,7 +4156,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Necklace_of_anguish.webp",
+        src: "/gearcalculator/necklace/Necklace_of_anguish.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -4193,7 +4193,7 @@ const PVPBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Dragon_arrow(p++)_1.webp",
+        src: "/gearcalculator/amunition/Dragon_arrow(p++)_1.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -4230,7 +4230,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/weapons/Dark_bow_(bh).webp",
+        src: "/gearcalculator/weapons/Dark_bow_(bh).webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -4268,7 +4268,7 @@ const PVPBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Void_knight_top.webp",
+        src: "/gearcalculator/bodies/Void_knight_top.webp",
         slot: "Body",
       },
       Legs: {
@@ -4305,7 +4305,7 @@ const PVPBUILDS = [
             Weight: 8.164,
           },
         ],
-        src: "./gearcalculator/legs/Void_knight_robe.webp",
+        src: "/gearcalculator/legs/Void_knight_robe.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -4342,7 +4342,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/gloves/Void_knight_gloves.webp",
+        src: "/gearcalculator/gloves/Void_knight_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -4379,7 +4379,7 @@ const PVPBUILDS = [
             Weight: 0.283,
           },
         ],
-        src: "./gearcalculator/boots/Ranger_boots.webp",
+        src: "/gearcalculator/boots/Ranger_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -4416,7 +4416,7 @@ const PVPBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Venator_ring.webp",
+        src: "/gearcalculator/rings/Venator_ring.webp",
         slot: "Ring",
       },
       Shield: {},
@@ -4424,7 +4424,7 @@ const PVPBUILDS = [
   },
   {
     name: "45 Def Melee Rusher",
-    src: "./gearcalculator/helms/Void_mage_helm.webp",
+    src: "/gearcalculator/helms/Void_mage_helm.webp",
     alt: "45 Def Melee Rusher",
     itemState: {
       Headpiece: {
@@ -4461,7 +4461,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/helms/Void_melee_helm.webp",
+        src: "/gearcalculator/helms/Void_melee_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -4498,7 +4498,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -4535,7 +4535,7 @@ const PVPBUILDS = [
             Weight: 0.1,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_torture.webp",
+        src: "/gearcalculator/necklace/Amulet_of_torture.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -4572,7 +4572,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Ancient_blessing.webp",
+        src: "/gearcalculator/amunition/Ancient_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -4609,7 +4609,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/weapons/Dragon_claws.webp",
+        src: "/gearcalculator/weapons/Dragon_claws.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -4647,7 +4647,7 @@ const PVPBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Void_knight_top.webp",
+        src: "/gearcalculator/bodies/Void_knight_top.webp",
         slot: "Body",
       },
       Legs: {
@@ -4684,7 +4684,7 @@ const PVPBUILDS = [
             Weight: 8.164,
           },
         ],
-        src: "./gearcalculator/legs/Void_knight_robe.webp",
+        src: "/gearcalculator/legs/Void_knight_robe.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -4721,7 +4721,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/gloves/Void_knight_gloves.webp",
+        src: "/gearcalculator/gloves/Void_knight_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -4758,7 +4758,7 @@ const PVPBUILDS = [
             Weight: 1.36,
           },
         ],
-        src: "./gearcalculator/boots/Rune_boots.webp",
+        src: "/gearcalculator/boots/Rune_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -4795,7 +4795,7 @@ const PVPBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Berserker_ring_(i).webp",
+        src: "/gearcalculator/rings/Berserker_ring_(i).webp",
         slot: "Ring",
       },
       Shield: {},
@@ -4803,7 +4803,7 @@ const PVPBUILDS = [
   },
   {
     name: "70 Def Mage",
-    src: "./gearcalculator/helms/Ahrim's_hood.webp",
+    src: "/gearcalculator/helms/Ahrim's_hood.webp",
     alt: "70 Def mage",
     itemState: {
       Headpiece: {
@@ -4840,7 +4840,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/helms/Ahrim's_hood.webp",
+        src: "/gearcalculator/helms/Ahrim's_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -4877,7 +4877,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+        src: "/gearcalculator/capes/Imbued_zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -4914,7 +4914,7 @@ const PVPBUILDS = [
             Weight: 0.005,
           },
         ],
-        src: "./gearcalculator/necklace/Occult_necklace.webp",
+        src: "/gearcalculator/necklace/Occult_necklace.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -4951,7 +4951,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -4988,7 +4988,7 @@ const PVPBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+        src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -5026,7 +5026,7 @@ const PVPBUILDS = [
             Weight: 4.535,
           },
         ],
-        src: "./gearcalculator/bodies/Ahrim's_robetop.webp",
+        src: "/gearcalculator/bodies/Ahrim's_robetop.webp",
         slot: "Body",
       },
       Shield: {
@@ -5063,7 +5063,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_darkness.webp",
+        src: "/gearcalculator/shields/Book_of_darkness.webp",
         slot: "Shield",
       },
       Legs: {
@@ -5100,7 +5100,7 @@ const PVPBUILDS = [
             Weight: 11.339,
           },
         ],
-        src: "./gearcalculator/legs/Ahrim's_robeskirt.webp",
+        src: "/gearcalculator/legs/Ahrim's_robeskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -5137,7 +5137,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -5174,7 +5174,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/boots/Bloodbark_boots.webp",
+        src: "/gearcalculator/boots/Bloodbark_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -5211,14 +5211,14 @@ const PVPBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Seers_ring.webp",
+        src: "/gearcalculator/rings/Seers_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "70 Def Range",
-    src: "./gearcalculator/helms/Karil's_coif.webp",
+    src: "/gearcalculator/helms/Karil's_coif.webp",
     alt: "70 Def Range",
     itemState: {
       Headpiece: {
@@ -5255,7 +5255,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/helms/Karil's_coif.webp",
+        src: "/gearcalculator/helms/Karil's_coif.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -5292,7 +5292,7 @@ const PVPBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -5329,7 +5329,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -5366,7 +5366,7 @@ const PVPBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Onyx_dragon_bolts_(e)_5.webp",
+        src: "/gearcalculator/amunition/Onyx_dragon_bolts_(e)_5.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -5403,7 +5403,7 @@ const PVPBUILDS = [
             Weight: 6,
           },
         ],
-        src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+        src: "/gearcalculator/weapons/Armadyl_crossbow.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -5441,7 +5441,7 @@ const PVPBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Black_d'hide_body.webp",
+        src: "/gearcalculator/bodies/Black_d'hide_body.webp",
         slot: "Body",
       },
       Shield: {
@@ -5478,7 +5478,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_law.webp",
+        src: "/gearcalculator/shields/Book_of_law.webp",
         slot: "Shield",
       },
       Legs: {
@@ -5515,7 +5515,7 @@ const PVPBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -5552,7 +5552,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -5589,7 +5589,7 @@ const PVPBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Snakeskin_boots.webp",
+        src: "/gearcalculator/boots/Snakeskin_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -5626,14 +5626,14 @@ const PVPBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "70 Def Melee",
-    src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+    src: "/gearcalculator/helms/Helm_of_neitiznot.webp",
     alt: "70 Def Melee",
     itemState: {
       Headpiece: {
@@ -5670,7 +5670,7 @@ const PVPBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+        src: "/gearcalculator/helms/Helm_of_neitiznot.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -5707,7 +5707,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -5744,7 +5744,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -5781,7 +5781,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -5818,7 +5818,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/weapons/Abyssal_whip.webp",
+        src: "/gearcalculator/weapons/Abyssal_whip.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -5856,7 +5856,7 @@ const PVPBUILDS = [
             Weight: 4,
           },
         ],
-        src: "./gearcalculator/bodies/Fighter_torso.webp",
+        src: "/gearcalculator/bodies/Fighter_torso.webp",
         slot: "Body",
       },
       Shield: {
@@ -5893,7 +5893,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/shields/Dragon_defender.webp",
+        src: "/gearcalculator/shields/Dragon_defender.webp",
         slot: "Shield",
       },
       Legs: {
@@ -5930,7 +5930,7 @@ const PVPBUILDS = [
             Weight: 4.535,
           },
         ],
-        src: "./gearcalculator/legs/Verac's_plateskirt.webp",
+        src: "/gearcalculator/legs/Verac's_plateskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -5967,7 +5967,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -6004,7 +6004,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/boots/Dragon_boots.webp",
+        src: "/gearcalculator/boots/Dragon_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -6041,14 +6041,14 @@ const PVPBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "70 Def Mage Rusher",
-    src: "./gearcalculator/helms/Ancestral_hat.webp",
+    src: "/gearcalculator/helms/Ancestral_hat.webp",
     alt: "70 Def Mage Rusher",
     itemState: {
       Headpiece: {
@@ -6085,7 +6085,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/helms/Ancestral_hat.webp",
+        src: "/gearcalculator/helms/Ancestral_hat.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -6122,7 +6122,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+        src: "/gearcalculator/capes/Imbued_zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -6159,7 +6159,7 @@ const PVPBUILDS = [
             Weight: 0.005,
           },
         ],
-        src: "./gearcalculator/necklace/Occult_necklace.webp",
+        src: "/gearcalculator/necklace/Occult_necklace.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -6196,7 +6196,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -6233,7 +6233,7 @@ const PVPBUILDS = [
             Weight: 1.6,
           },
         ],
-        src: "./gearcalculator/weapons/Nightmare_staff.webp",
+        src: "/gearcalculator/weapons/Nightmare_staff.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -6271,7 +6271,7 @@ const PVPBUILDS = [
             Weight: 4.535,
           },
         ],
-        src: "./gearcalculator/bodies/Ahrim's_robetop.webp",
+        src: "/gearcalculator/bodies/Ahrim's_robetop.webp",
         slot: "Body",
       },
       Shield: {
@@ -6308,7 +6308,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Mage's_book.webp",
+        src: "/gearcalculator/shields/Mage's_book.webp",
         slot: "Shield",
       },
       Legs: {
@@ -6345,7 +6345,7 @@ const PVPBUILDS = [
             Weight: 11.339,
           },
         ],
-        src: "./gearcalculator/legs/Ahrim's_robeskirt.webp",
+        src: "/gearcalculator/legs/Ahrim's_robeskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -6382,7 +6382,7 @@ const PVPBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Tormented_bracelet.webp",
+        src: "/gearcalculator/gloves/Tormented_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -6419,7 +6419,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/boots/Infinity_boots.webp",
+        src: "/gearcalculator/boots/Infinity_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -6456,14 +6456,14 @@ const PVPBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Magus_ring.webp",
+        src: "/gearcalculator/rings/Magus_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "70 Def Range Rusher",
-    src: "./gearcalculator/helms/Armadyl_helmet.webp",
+    src: "/gearcalculator/helms/Armadyl_helmet.webp",
     alt: "70 Def Range Rusher",
     itemState: {
       Headpiece: {
@@ -6500,7 +6500,7 @@ const PVPBUILDS = [
             Weight: 0.5,
           },
         ],
-        src: "./gearcalculator/helms/Armadyl_helmet.webp",
+        src: "/gearcalculator/helms/Armadyl_helmet.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -6537,7 +6537,7 @@ const PVPBUILDS = [
             Weight: 5.896,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_assembler.webp",
+        src: "/gearcalculator/capes/Ava's_assembler.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -6574,7 +6574,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Necklace_of_anguish.webp",
+        src: "/gearcalculator/necklace/Necklace_of_anguish.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -6611,7 +6611,7 @@ const PVPBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Dragon_arrow(p++)_1.webp",
+        src: "/gearcalculator/amunition/Dragon_arrow(p++)_1.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -6648,7 +6648,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/weapons/Dark_bow_(bh).webp",
+        src: "/gearcalculator/weapons/Dark_bow_(bh).webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -6686,7 +6686,7 @@ const PVPBUILDS = [
             Weight: 4,
           },
         ],
-        src: "./gearcalculator/bodies/Armadyl_chestplate.webp",
+        src: "/gearcalculator/bodies/Armadyl_chestplate.webp",
         slot: "Body",
       },
       Legs: {
@@ -6723,7 +6723,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/legs/Armadyl_chainskirt.webp",
+        src: "/gearcalculator/legs/Armadyl_chainskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -6760,7 +6760,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -6797,7 +6797,7 @@ const PVPBUILDS = [
             Weight: 0.283,
           },
         ],
-        src: "./gearcalculator/boots/Ranger_boots.webp",
+        src: "/gearcalculator/boots/Ranger_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -6834,7 +6834,7 @@ const PVPBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Venator_ring.webp",
+        src: "/gearcalculator/rings/Venator_ring.webp",
         slot: "Ring",
       },
       Shield: {},
@@ -6842,7 +6842,7 @@ const PVPBUILDS = [
   },
   {
     name: "70 Def Melee Rusher",
-    src: "./gearcalculator/helms/Neitiznot_faceguard.webp",
+    src: "/gearcalculator/helms/Neitiznot_faceguard.webp",
     alt: "70 Def Melee Rusher",
     itemState: {
       Headpiece: {
@@ -6879,7 +6879,7 @@ const PVPBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Neitiznot_faceguard.webp",
+        src: "/gearcalculator/helms/Neitiznot_faceguard.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -6916,7 +6916,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -6953,7 +6953,7 @@ const PVPBUILDS = [
             Weight: 0.1,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_torture.webp",
+        src: "/gearcalculator/necklace/Amulet_of_torture.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -6990,7 +6990,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Ancient_blessing.webp",
+        src: "/gearcalculator/amunition/Ancient_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -7027,7 +7027,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/weapons/Dragon_claws.webp",
+        src: "/gearcalculator/weapons/Dragon_claws.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -7065,7 +7065,7 @@ const PVPBUILDS = [
             Weight: 4,
           },
         ],
-        src: "./gearcalculator/bodies/Fighter_torso.webp",
+        src: "/gearcalculator/bodies/Fighter_torso.webp",
         slot: "Body",
       },
       Legs: {
@@ -7102,7 +7102,7 @@ const PVPBUILDS = [
             Weight: 8,
           },
         ],
-        src: "./gearcalculator/legs/Bandos_tassets.webp",
+        src: "/gearcalculator/legs/Bandos_tassets.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -7139,7 +7139,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -7176,7 +7176,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/boots/Dragon_boots.webp",
+        src: "/gearcalculator/boots/Dragon_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -7213,7 +7213,7 @@ const PVPBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Berserker_ring_(i).webp",
+        src: "/gearcalculator/rings/Berserker_ring_(i).webp",
         slot: "Ring",
       },
       Shield: {},
@@ -7221,7 +7221,7 @@ const PVPBUILDS = [
   },
   {
     name: "99 Def Mage",
-    src: "./gearcalculator/helms/Ahrim's_hood.webp",
+    src: "/gearcalculator/helms/Ahrim's_hood.webp",
     alt: "99 Def mage",
     itemState: {
       Headpiece: {
@@ -7258,7 +7258,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/helms/Ahrim's_hood.webp",
+        src: "/gearcalculator/helms/Ahrim's_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -7295,7 +7295,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+        src: "/gearcalculator/capes/Imbued_zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -7332,7 +7332,7 @@ const PVPBUILDS = [
             Weight: 0.005,
           },
         ],
-        src: "./gearcalculator/necklace/Occult_necklace.webp",
+        src: "/gearcalculator/necklace/Occult_necklace.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -7369,7 +7369,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -7406,7 +7406,7 @@ const PVPBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+        src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -7444,7 +7444,7 @@ const PVPBUILDS = [
             Weight: 4.535,
           },
         ],
-        src: "./gearcalculator/bodies/Ahrim's_robetop.webp",
+        src: "/gearcalculator/bodies/Ahrim's_robetop.webp",
         slot: "Body",
       },
       Shield: {
@@ -7481,7 +7481,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_darkness.webp",
+        src: "/gearcalculator/shields/Book_of_darkness.webp",
         slot: "Shield",
       },
       Legs: {
@@ -7518,7 +7518,7 @@ const PVPBUILDS = [
             Weight: 11.339,
           },
         ],
-        src: "./gearcalculator/legs/Ahrim's_robeskirt.webp",
+        src: "/gearcalculator/legs/Ahrim's_robeskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -7555,7 +7555,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -7592,7 +7592,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/boots/Bloodbark_boots.webp",
+        src: "/gearcalculator/boots/Bloodbark_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -7629,14 +7629,14 @@ const PVPBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Seers_ring.webp",
+        src: "/gearcalculator/rings/Seers_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "99 Def Range",
-    src: "./gearcalculator/helms/Karil's_coif.webp",
+    src: "/gearcalculator/helms/Karil's_coif.webp",
     alt: "99 Def Range",
     itemState: {
       Headpiece: {
@@ -7673,7 +7673,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/helms/Karil's_coif.webp",
+        src: "/gearcalculator/helms/Karil's_coif.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -7710,7 +7710,7 @@ const PVPBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -7747,7 +7747,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -7784,7 +7784,7 @@ const PVPBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Onyx_dragon_bolts_(e)_5.webp",
+        src: "/gearcalculator/amunition/Onyx_dragon_bolts_(e)_5.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -7821,7 +7821,7 @@ const PVPBUILDS = [
             Weight: 6,
           },
         ],
-        src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+        src: "/gearcalculator/weapons/Armadyl_crossbow.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -7859,7 +7859,7 @@ const PVPBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Black_d'hide_body.webp",
+        src: "/gearcalculator/bodies/Black_d'hide_body.webp",
         slot: "Body",
       },
       Shield: {
@@ -7896,7 +7896,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_law.webp",
+        src: "/gearcalculator/shields/Book_of_law.webp",
         slot: "Shield",
       },
       Legs: {
@@ -7933,7 +7933,7 @@ const PVPBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -7970,7 +7970,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -8007,7 +8007,7 @@ const PVPBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Snakeskin_boots.webp",
+        src: "/gearcalculator/boots/Snakeskin_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -8044,14 +8044,14 @@ const PVPBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "99 Def Melee",
-    src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+    src: "/gearcalculator/helms/Helm_of_neitiznot.webp",
     alt: "99 Def Melee",
     itemState: {
       Headpiece: {
@@ -8088,7 +8088,7 @@ const PVPBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+        src: "/gearcalculator/helms/Helm_of_neitiznot.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -8125,7 +8125,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -8162,7 +8162,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -8199,7 +8199,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -8236,7 +8236,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/weapons/Abyssal_whip.webp",
+        src: "/gearcalculator/weapons/Abyssal_whip.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -8274,7 +8274,7 @@ const PVPBUILDS = [
             Weight: 4,
           },
         ],
-        src: "./gearcalculator/bodies/Fighter_torso.webp",
+        src: "/gearcalculator/bodies/Fighter_torso.webp",
         slot: "Body",
       },
       Shield: {
@@ -8311,7 +8311,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/shields/Dragon_defender.webp",
+        src: "/gearcalculator/shields/Dragon_defender.webp",
         slot: "Shield",
       },
       Legs: {
@@ -8348,7 +8348,7 @@ const PVPBUILDS = [
             Weight: 4.535,
           },
         ],
-        src: "./gearcalculator/legs/Verac's_plateskirt.webp",
+        src: "/gearcalculator/legs/Verac's_plateskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -8385,7 +8385,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -8422,7 +8422,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/boots/Dragon_boots.webp",
+        src: "/gearcalculator/boots/Dragon_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -8459,14 +8459,14 @@ const PVPBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "99 Def Mage Rusher",
-    src: "./gearcalculator/helms/Virtus_mask.webp",
+    src: "/gearcalculator/helms/Virtus_mask.webp",
     alt: "99 Def Mage Rusher",
     itemState: {
       Headpiece: {
@@ -8503,7 +8503,7 @@ const PVPBUILDS = [
             Weight: 1.206,
           },
         ],
-        src: "./gearcalculator/helms/Virtus_mask.webp",
+        src: "/gearcalculator/helms/Virtus_mask.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -8540,7 +8540,7 @@ const PVPBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+        src: "/gearcalculator/capes/Imbued_zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -8577,7 +8577,7 @@ const PVPBUILDS = [
             Weight: 0.005,
           },
         ],
-        src: "./gearcalculator/necklace/Occult_necklace_(or).webp",
+        src: "/gearcalculator/necklace/Occult_necklace_(or).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -8614,7 +8614,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -8651,7 +8651,7 @@ const PVPBUILDS = [
             Weight: 1.6,
           },
         ],
-        src: "./gearcalculator/weapons/Nightmare_staff.webp",
+        src: "/gearcalculator/weapons/Nightmare_staff.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -8689,7 +8689,7 @@ const PVPBUILDS = [
             Weight: 2.895,
           },
         ],
-        src: "./gearcalculator/bodies/Virtus_robe_top.webp",
+        src: "/gearcalculator/bodies/Virtus_robe_top.webp",
         slot: "Body",
       },
       Shield: {
@@ -8726,7 +8726,7 @@ const PVPBUILDS = [
             Weight: 3.708,
           },
         ],
-        src: "./gearcalculator/shields/Elidinis'_ward_(f).webp",
+        src: "/gearcalculator/shields/Elidinis'_ward_(f).webp",
         slot: "Shield",
       },
       Legs: {
@@ -8763,7 +8763,7 @@ const PVPBUILDS = [
             Weight: 3.79,
           },
         ],
-        src: "./gearcalculator/legs/Virtus_robe_bottom.webp",
+        src: "/gearcalculator/legs/Virtus_robe_bottom.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -8800,7 +8800,7 @@ const PVPBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Tormented_bracelet.webp",
+        src: "/gearcalculator/gloves/Tormented_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -8837,7 +8837,7 @@ const PVPBUILDS = [
             Weight: 1.84,
           },
         ],
-        src: "./gearcalculator/boots/Eternal_boots.webp",
+        src: "/gearcalculator/boots/Eternal_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -8874,14 +8874,14 @@ const PVPBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Magus_ring.webp",
+        src: "/gearcalculator/rings/Magus_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "99 Def Range Rusher",
-    src: "./gearcalculator/helms/Armadyl_helmet.webp",
+    src: "/gearcalculator/helms/Armadyl_helmet.webp",
     alt: "99 Def Range Rusher",
     itemState: {
       Headpiece: {
@@ -8918,7 +8918,7 @@ const PVPBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/helms/Masori_mask_(f).webp",
+        src: "/gearcalculator/helms/Masori_mask_(f).webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -8955,7 +8955,7 @@ const PVPBUILDS = [
             Weight: 5.896,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_assembler.webp",
+        src: "/gearcalculator/capes/Ava's_assembler.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -8992,7 +8992,7 @@ const PVPBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Necklace_of_anguish.webp",
+        src: "/gearcalculator/necklace/Necklace_of_anguish.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -9029,7 +9029,7 @@ const PVPBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Dragon_arrow(p++)_1.webp",
+        src: "/gearcalculator/amunition/Dragon_arrow(p++)_1.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -9066,7 +9066,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/weapons/Dark_bow_(bh).webp",
+        src: "/gearcalculator/weapons/Dark_bow_(bh).webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -9104,7 +9104,7 @@ const PVPBUILDS = [
             Weight: 10,
           },
         ],
-        src: "./gearcalculator/bodies/Masori_body_(f).webp",
+        src: "/gearcalculator/bodies/Masori_body_(f).webp",
         slot: "Body",
       },
       Legs: {
@@ -9141,7 +9141,7 @@ const PVPBUILDS = [
             Weight: 8.5,
           },
         ],
-        src: "./gearcalculator/legs/Masori_chaps_(f).webp",
+        src: "/gearcalculator/legs/Masori_chaps_(f).webp",
         slot: "Legs",
       },
       Gloves: {
@@ -9178,7 +9178,7 @@ const PVPBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/gloves/Zaryte_vambraces.webp",
+        src: "/gearcalculator/gloves/Zaryte_vambraces.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -9215,7 +9215,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/boots/Pegasian_boots.webp",
+        src: "/gearcalculator/boots/Pegasian_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -9252,7 +9252,7 @@ const PVPBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Venator_ring.webp",
+        src: "/gearcalculator/rings/Venator_ring.webp",
         slot: "Ring",
       },
       Shield: {},
@@ -9260,7 +9260,7 @@ const PVPBUILDS = [
   },
   {
     name: "99 Def Melee Rusher",
-    src: "./gearcalculator/helms/Torva_full_helm.webp",
+    src: "/gearcalculator/helms/Torva_full_helm.webp",
     alt: "99 Def Melee Rusher",
     itemState: {
       Headpiece: {
@@ -9297,7 +9297,7 @@ const PVPBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Torva_full_helm.webp",
+        src: "/gearcalculator/helms/Torva_full_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -9334,7 +9334,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Infernal_cape.webp",
+        src: "/gearcalculator/capes/Infernal_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -9371,7 +9371,7 @@ const PVPBUILDS = [
             Weight: 0.1,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_torture.webp",
+        src: "/gearcalculator/necklace/Amulet_of_torture.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -9408,7 +9408,7 @@ const PVPBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Ancient_blessing.webp",
+        src: "/gearcalculator/amunition/Ancient_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -9445,7 +9445,7 @@ const PVPBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/weapons/Dragon_claws.webp",
+        src: "/gearcalculator/weapons/Dragon_claws.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -9483,7 +9483,7 @@ const PVPBUILDS = [
             Weight: 9.979,
           },
         ],
-        src: "./gearcalculator/bodies/Torva_platebody.webp",
+        src: "/gearcalculator/bodies/Torva_platebody.webp",
         slot: "Body",
       },
       Legs: {
@@ -9520,7 +9520,7 @@ const PVPBUILDS = [
             Weight: 9.071,
           },
         ],
-        src: "./gearcalculator/legs/Torva_platelegs.webp",
+        src: "/gearcalculator/legs/Torva_platelegs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -9557,7 +9557,7 @@ const PVPBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Ferocious_gloves.webp",
+        src: "/gearcalculator/gloves/Ferocious_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -9594,7 +9594,7 @@ const PVPBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/boots/Primordial_boots.webp",
+        src: "/gearcalculator/boots/Primordial_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -9631,7 +9631,7 @@ const PVPBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Berserker_ring_(i).webp",
+        src: "/gearcalculator/rings/Berserker_ring_(i).webp",
         slot: "Ring",
       },
       Shield: {},

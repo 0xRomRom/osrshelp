@@ -33,7 +33,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Rogue_mask.webp",
+    src: "/gearcalculator/helms/Rogue_mask.webp",
     slot: "Headpiece",
   },
   {
@@ -70,7 +70,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/Farmer's_strawhat.webp",
+    src: "/gearcalculator/helms/Farmer's_strawhat.webp",
     slot: "Headpiece",
   },
   {
@@ -107,7 +107,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Lumberjack_hat.webp",
+    src: "/gearcalculator/helms/Lumberjack_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -144,7 +144,7 @@ const HELMS = [
         Weight: 0.6,
       },
     ],
-    src: "./gearcalculator/helms/Graceful_hood.webp",
+    src: "/gearcalculator/helms/Graceful_hood.webp",
     slot: "Headpiece",
   },
   {
@@ -181,7 +181,7 @@ const HELMS = [
         Weight: 0.5,
       },
     ],
-    src: "./gearcalculator/helms/Angler_hat.webp",
+    src: "/gearcalculator/helms/Angler_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -218,7 +218,7 @@ const HELMS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/helms/Bronze_med_helm.webp",
+    src: "/gearcalculator/helms/Bronze_med_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -255,7 +255,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Bronze_full_helm.webp",
+    src: "/gearcalculator/helms/Bronze_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -292,7 +292,7 @@ const HELMS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/helms/Iron_med_helm.webp",
+    src: "/gearcalculator/helms/Iron_med_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -329,7 +329,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Iron_full_helm.webp",
+    src: "/gearcalculator/helms/Iron_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -366,7 +366,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Guthix_halo.webp",
+    src: "/gearcalculator/helms/Guthix_halo.webp",
     slot: "Headpiece",
   },
   {
@@ -403,7 +403,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Saradomin_halo.webp",
+    src: "/gearcalculator/helms/Saradomin_halo.webp",
     slot: "Headpiece",
   },
   {
@@ -440,7 +440,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Zamorak_halo.webp",
+    src: "/gearcalculator/helms/Zamorak_halo.webp",
     slot: "Headpiece",
   },
   {
@@ -477,7 +477,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Armadyl_halo.webp",
+    src: "/gearcalculator/helms/Armadyl_halo.webp",
     slot: "Headpiece",
   },
   {
@@ -514,7 +514,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Bandos_halo.webp",
+    src: "/gearcalculator/helms/Bandos_halo.webp",
     slot: "Headpiece",
   },
   {
@@ -551,7 +551,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Ancient_halo.webp",
+    src: "/gearcalculator/helms/Ancient_halo.webp",
     slot: "Headpiece",
   },
   {
@@ -588,7 +588,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Seren_halo.webp",
+    src: "/gearcalculator/helms/Seren_halo.webp",
     slot: "Headpiece",
   },
   {
@@ -625,7 +625,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Brassica_halo.webp",
+    src: "/gearcalculator/helms/Brassica_halo.webp",
     slot: "Headpiece",
   },
   {
@@ -662,7 +662,7 @@ const HELMS = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/helms/Zealot's_helm.webp",
+    src: "/gearcalculator/helms/Zealot's_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -699,7 +699,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/Crab_helmet.webp",
+    src: "/gearcalculator/helms/Crab_helmet.webp",
     slot: "Headpiece",
   },
   {
@@ -736,7 +736,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Khazard_helmet.webp",
+    src: "/gearcalculator/helms/Khazard_helmet.webp",
     slot: "Headpiece",
   },
   {
@@ -773,7 +773,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/Leather_cowl.webp",
+    src: "/gearcalculator/helms/Leather_cowl.webp",
     slot: "Headpiece",
   },
   {
@@ -810,7 +810,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/Coif.webp",
+    src: "/gearcalculator/helms/Coif.webp",
     slot: "Headpiece",
   },
   {
@@ -847,7 +847,7 @@ const HELMS = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/helms/Robin_hood_hat.webp",
+    src: "/gearcalculator/helms/Robin_hood_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -884,7 +884,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Blue_wizard_hat.webp",
+    src: "/gearcalculator/helms/Blue_wizard_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -921,7 +921,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Wizard_hat.webp",
+    src: "/gearcalculator/helms/Wizard_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -958,7 +958,7 @@ const HELMS = [
         Weight: 0.001,
       },
     ],
-    src: "./gearcalculator/helms/Ghostly_hood.webp",
+    src: "/gearcalculator/helms/Ghostly_hood.webp",
     slot: "Headpiece",
   },
   {
@@ -995,7 +995,7 @@ const HELMS = [
         Weight: 0.18,
       },
     ],
-    src: "./gearcalculator/helms/Elder_chaos_hood.webp",
+    src: "/gearcalculator/helms/Elder_chaos_hood.webp",
     slot: "Headpiece",
   },
   {
@@ -1032,7 +1032,7 @@ const HELMS = [
         Weight: 0.2,
       },
     ],
-    src: "./gearcalculator/helms/Xerician_hat.webp",
+    src: "/gearcalculator/helms/Xerician_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -1069,7 +1069,7 @@ const HELMS = [
         Weight: 0.113,
       },
     ],
-    src: "./gearcalculator/helms/Elemental_helmet.webp",
+    src: "/gearcalculator/helms/Elemental_helmet.webp",
     slot: "Headpiece",
   },
   {
@@ -1106,7 +1106,7 @@ const HELMS = [
         Weight: 0.113,
       },
     ],
-    src: "./gearcalculator/helms/Mind_helmet.webp",
+    src: "/gearcalculator/helms/Mind_helmet.webp",
     slot: "Headpiece",
   },
   {
@@ -1143,7 +1143,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Zamorak_mitre.webp",
+    src: "/gearcalculator/helms/Zamorak_mitre.webp",
     slot: "Headpiece",
   },
   {
@@ -1180,7 +1180,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Saradomin_mitre.webp",
+    src: "/gearcalculator/helms/Saradomin_mitre.webp",
     slot: "Headpiece",
   },
   {
@@ -1217,7 +1217,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Guthix_mitre.webp",
+    src: "/gearcalculator/helms/Guthix_mitre.webp",
     slot: "Headpiece",
   },
   {
@@ -1254,7 +1254,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Armadyl_mitre.webp",
+    src: "/gearcalculator/helms/Armadyl_mitre.webp",
     slot: "Headpiece",
   },
   {
@@ -1291,7 +1291,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Bandos_mitre.webp",
+    src: "/gearcalculator/helms/Bandos_mitre.webp",
     slot: "Headpiece",
   },
   {
@@ -1328,7 +1328,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Ancient_mitre.webp",
+    src: "/gearcalculator/helms/Ancient_mitre.webp",
     slot: "Headpiece",
   },
   {
@@ -1365,7 +1365,7 @@ const HELMS = [
         Weight: 0.3,
       },
     ],
-    src: "./gearcalculator/helms/Ancient_ceremonial_mask.webp",
+    src: "/gearcalculator/helms/Ancient_ceremonial_mask.webp",
     slot: "Headpiece",
   },
   {
@@ -1402,7 +1402,7 @@ const HELMS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/helms/Steel_med_helm.webp",
+    src: "/gearcalculator/helms/Steel_med_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -1439,7 +1439,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Steel_full_helm.webp",
+    src: "/gearcalculator/helms/Steel_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -1476,7 +1476,7 @@ const HELMS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/helms/Black_med_helm.webp",
+    src: "/gearcalculator/helms/Black_med_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -1513,7 +1513,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Black_full_helm.webp",
+    src: "/gearcalculator/helms/Black_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -1550,7 +1550,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/Tyras_helm.webp",
+    src: "/gearcalculator/helms/Tyras_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -1587,7 +1587,7 @@ const HELMS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/helms/Decorative_helm_(red).webp",
+    src: "/gearcalculator/helms/Decorative_helm_(red).webp",
     slot: "Headpiece",
   },
   {
@@ -1624,7 +1624,7 @@ const HELMS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/helms/White_med_helm.webp",
+    src: "/gearcalculator/helms/White_med_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -1661,7 +1661,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/White_full_helm.webp",
+    src: "/gearcalculator/helms/White_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -1698,7 +1698,7 @@ const HELMS = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/helms/Slayer_helmet.webp",
+    src: "/gearcalculator/helms/Slayer_helmet.webp",
     slot: "Headpiece",
   },
   {
@@ -1735,7 +1735,7 @@ const HELMS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/helms/Mithril_med_helm.webp",
+    src: "/gearcalculator/helms/Mithril_med_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -1772,7 +1772,7 @@ const HELMS = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/helms/Mithril_full_helm.webp",
+    src: "/gearcalculator/helms/Mithril_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -1809,7 +1809,7 @@ const HELMS = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/helms/Initiate_sallet.webp",
+    src: "/gearcalculator/helms/Initiate_sallet.webp",
     slot: "Headpiece",
   },
   {
@@ -1846,7 +1846,7 @@ const HELMS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/helms/Decorative_helm_(white).webp",
+    src: "/gearcalculator/helms/Decorative_helm_(white).webp",
     slot: "Headpiece",
   },
   {
@@ -1883,7 +1883,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Mystic_hat.webp",
+    src: "/gearcalculator/helms/Mystic_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -1920,7 +1920,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Mystic_hat_(or).webp",
+    src: "/gearcalculator/helms/Mystic_hat_(or).webp",
     slot: "Headpiece",
   },
   {
@@ -1957,7 +1957,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Mystic_hat_(light).webp",
+    src: "/gearcalculator/helms/Mystic_hat_(light).webp",
     slot: "Headpiece",
   },
   {
@@ -1994,7 +1994,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Mystic_hat_(dark).webp",
+    src: "/gearcalculator/helms/Mystic_hat_(dark).webp",
     slot: "Headpiece",
   },
   {
@@ -2031,7 +2031,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Mystic_hat_(dusk).webp",
+    src: "/gearcalculator/helms/Mystic_hat_(dusk).webp",
     slot: "Headpiece",
   },
   {
@@ -2068,7 +2068,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Enchanted_hat.webp",
+    src: "/gearcalculator/helms/Enchanted_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -2105,7 +2105,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Hood_of_darkness.webp",
+    src: "/gearcalculator/helms/Hood_of_darkness.webp",
     slot: "Headpiece",
   },
   {
@@ -2142,7 +2142,7 @@ const HELMS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/helms/Skeletal_helm.webp",
+    src: "/gearcalculator/helms/Skeletal_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2179,7 +2179,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Infinity_hat.webp",
+    src: "/gearcalculator/helms/Infinity_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -2216,7 +2216,7 @@ const HELMS = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/helms/Adamant_med_helm.webp",
+    src: "/gearcalculator/helms/Adamant_med_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2253,7 +2253,7 @@ const HELMS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/helms/Adamant_full_helm.webp",
+    src: "/gearcalculator/helms/Adamant_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2290,7 +2290,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Inquisitor's_great_helm.webp",
+    src: "/gearcalculator/helms/Inquisitor's_great_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2327,7 +2327,7 @@ const HELMS = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/helms/Proselyte_sallet.webp",
+    src: "/gearcalculator/helms/Proselyte_sallet.webp",
     slot: "Headpiece",
   },
   {
@@ -2364,7 +2364,7 @@ const HELMS = [
         Weight: 31.751,
       },
     ],
-    src: "./gearcalculator/helms/Gold_helmet.webp",
+    src: "/gearcalculator/helms/Gold_helmet.webp",
     slot: "Headpiece",
   },
   {
@@ -2401,7 +2401,7 @@ const HELMS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/helms/Decorative_helm_(gold).webp",
+    src: "/gearcalculator/helms/Decorative_helm_(gold).webp",
     slot: "Headpiece",
   },
   {
@@ -2438,7 +2438,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/Snakeskin_bandana.webp",
+    src: "/gearcalculator/helms/Snakeskin_bandana.webp",
     slot: "Headpiece",
   },
   {
@@ -2475,7 +2475,7 @@ const HELMS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/helms/Masori_mask.webp",
+    src: "/gearcalculator/helms/Masori_mask.webp",
     slot: "Headpiece",
   },
   {
@@ -2512,7 +2512,7 @@ const HELMS = [
         Weight: 1.5,
       },
     ],
-    src: "./gearcalculator/helms/Masori_mask_(f).webp",
+    src: "/gearcalculator/helms/Masori_mask_(f).webp",
     slot: "Headpiece",
   },
   {
@@ -2549,7 +2549,7 @@ const HELMS = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/helms/3rd_age_mage_hat.webp",
+    src: "/gearcalculator/helms/3rd_age_mage_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -2586,7 +2586,7 @@ const HELMS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/helms/Rune_med_helm.webp",
+    src: "/gearcalculator/helms/Rune_med_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2623,7 +2623,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Rune_full_helm.webp",
+    src: "/gearcalculator/helms/Rune_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2660,7 +2660,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Guthix_full_helm.webp",
+    src: "/gearcalculator/helms/Guthix_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2697,7 +2697,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Saradomin_full_helm.webp",
+    src: "/gearcalculator/helms/Saradomin_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2734,7 +2734,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Zamorak_full_helm.webp",
+    src: "/gearcalculator/helms/Zamorak_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2771,7 +2771,7 @@ const HELMS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/helms/Granite_helm.webp",
+    src: "/gearcalculator/helms/Granite_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2808,7 +2808,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Armadyl_full_helm.webp",
+    src: "/gearcalculator/helms/Armadyl_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2845,7 +2845,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Bandos_full_helm.webp",
+    src: "/gearcalculator/helms/Bandos_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2882,7 +2882,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Ancient_full_helm.webp",
+    src: "/gearcalculator/helms/Ancient_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2919,7 +2919,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Dragonstone_full_helm.webp",
+    src: "/gearcalculator/helms/Dragonstone_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -2956,7 +2956,7 @@ const HELMS = [
         Weight: 1.9,
       },
     ],
-    src: "./gearcalculator/helms/Dwarven_helmet.webp",
+    src: "/gearcalculator/helms/Dwarven_helmet.webp",
     slot: "Headpiece",
   },
   {
@@ -2993,7 +2993,7 @@ const HELMS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/helms/Gilded_med_helm.webp",
+    src: "/gearcalculator/helms/Gilded_med_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3030,7 +3030,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Spined_helm.webp",
+    src: "/gearcalculator/helms/Spined_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3067,7 +3067,7 @@ const HELMS = [
         Weight: 0.9,
       },
     ],
-    src: "./gearcalculator/helms/Ancient_coif.webp",
+    src: "/gearcalculator/helms/Ancient_coif.webp",
     slot: "Headpiece",
   },
   {
@@ -3104,7 +3104,7 @@ const HELMS = [
         Weight: 0.9,
       },
     ],
-    src: "./gearcalculator/helms/Armadyl_coif.webp",
+    src: "/gearcalculator/helms/Armadyl_coif.webp",
     slot: "Headpiece",
   },
   {
@@ -3141,7 +3141,7 @@ const HELMS = [
         Weight: 0.9,
       },
     ],
-    src: "./gearcalculator/helms/Bandos_coif.webp",
+    src: "/gearcalculator/helms/Bandos_coif.webp",
     slot: "Headpiece",
   },
   {
@@ -3178,7 +3178,7 @@ const HELMS = [
         Weight: 0.9,
       },
     ],
-    src: "./gearcalculator/helms/Guthix_coif.webp",
+    src: "/gearcalculator/helms/Guthix_coif.webp",
     slot: "Headpiece",
   },
   {
@@ -3215,7 +3215,7 @@ const HELMS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/helms/Larupia_hat.webp",
+    src: "/gearcalculator/helms/Larupia_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -3252,7 +3252,7 @@ const HELMS = [
         Weight: 0.9,
       },
     ],
-    src: "./gearcalculator/helms/Saradomin_coif.webp",
+    src: "/gearcalculator/helms/Saradomin_coif.webp",
     slot: "Headpiece",
   },
   {
@@ -3289,7 +3289,7 @@ const HELMS = [
         Weight: 0.9,
       },
     ],
-    src: "./gearcalculator/helms/Zamorak_coif.webp",
+    src: "/gearcalculator/helms/Zamorak_coif.webp",
     slot: "Headpiece",
   },
   {
@@ -3326,7 +3326,7 @@ const HELMS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/helms/Splitbark_helm.webp",
+    src: "/gearcalculator/helms/Splitbark_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3363,7 +3363,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/Lunar_helm.webp",
+    src: "/gearcalculator/helms/Lunar_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3400,7 +3400,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Dagon'hai_hat.webp",
+    src: "/gearcalculator/helms/Dagon'hai_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -3437,7 +3437,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Void_ranger_helm.webp",
+    src: "/gearcalculator/helms/Void_ranger_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3474,7 +3474,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Void_mage_helm.webp",
+    src: "/gearcalculator/helms/Void_mage_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3511,7 +3511,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Void_melee_helm.webp",
+    src: "/gearcalculator/helms/Void_melee_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3548,7 +3548,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Berserker_helm.webp",
+    src: "/gearcalculator/helms/Berserker_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3585,7 +3585,7 @@ const HELMS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/helms/3rd_age_range_coif.webp",
+    src: "/gearcalculator/helms/3rd_age_range_coif.webp",
     slot: "Headpiece",
   },
   {
@@ -3622,7 +3622,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Archer_helm.webp",
+    src: "/gearcalculator/helms/Archer_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3659,7 +3659,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Farseer_helm.webp",
+    src: "/gearcalculator/helms/Farseer_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3696,7 +3696,7 @@ const HELMS = [
         Weight: 2,
       },
     ],
-    src: "./gearcalculator/helms/Healer_hat.webp",
+    src: "/gearcalculator/helms/Healer_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -3733,7 +3733,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/Swampbark_helm.webp",
+    src: "/gearcalculator/helms/Swampbark_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3770,7 +3770,7 @@ const HELMS = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+    src: "/gearcalculator/helms/Helm_of_neitiznot.webp",
     slot: "Headpiece",
   },
   {
@@ -3807,7 +3807,7 @@ const HELMS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/helms/Dragon_med_helm.webp",
+    src: "/gearcalculator/helms/Dragon_med_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3844,7 +3844,7 @@ const HELMS = [
         Weight: 2,
       },
     ],
-    src: "./gearcalculator/helms/Dragon_full_helm.webp",
+    src: "/gearcalculator/helms/Dragon_full_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3881,7 +3881,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/Bloodbark_helm.webp",
+    src: "/gearcalculator/helms/Bloodbark_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -3918,7 +3918,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/3rd_age_full_helmet.webp",
+    src: "/gearcalculator/helms/3rd_age_full_helmet.webp",
     slot: "Headpiece",
   },
   {
@@ -3955,7 +3955,7 @@ const HELMS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/helms/Ancestral_hat.webp",
+    src: "/gearcalculator/helms/Ancestral_hat.webp",
     slot: "Headpiece",
   },
   {
@@ -3992,7 +3992,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Neitiznot_faceguard.webp",
+    src: "/gearcalculator/helms/Neitiznot_faceguard.webp",
     slot: "Headpiece",
   },
   {
@@ -4029,7 +4029,7 @@ const HELMS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/helms/Dharok's_helm.webp",
+    src: "/gearcalculator/helms/Dharok's_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -4066,7 +4066,7 @@ const HELMS = [
         Weight: 0.5,
       },
     ],
-    src: "./gearcalculator/helms/Crystal_helm.webp",
+    src: "/gearcalculator/helms/Crystal_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -4103,7 +4103,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/Karil's_coif.webp",
+    src: "/gearcalculator/helms/Karil's_coif.webp",
     slot: "Headpiece",
   },
   {
@@ -4140,7 +4140,7 @@ const HELMS = [
         Weight: 0.5,
       },
     ],
-    src: "./gearcalculator/helms/Armadyl_helmet.webp",
+    src: "/gearcalculator/helms/Armadyl_helmet.webp",
     slot: "Headpiece",
   },
   {
@@ -4177,7 +4177,7 @@ const HELMS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/helms/Ahrim's_hood.webp",
+    src: "/gearcalculator/helms/Ahrim's_hood.webp",
     slot: "Headpiece",
   },
   {
@@ -4214,7 +4214,7 @@ const HELMS = [
         Weight: 0.9,
       },
     ],
-    src: "./gearcalculator/helms/Serpentine_helm.webp",
+    src: "/gearcalculator/helms/Serpentine_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -4251,7 +4251,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Guthan's_helm.webp",
+    src: "/gearcalculator/helms/Guthan's_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -4288,7 +4288,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Torag's_helm.webp",
+    src: "/gearcalculator/helms/Torag's_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -4325,7 +4325,7 @@ const HELMS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/helms/Verac's_helm.webp",
+    src: "/gearcalculator/helms/Verac's_helm.webp",
     slot: "Headpiece",
   },
   {
@@ -4362,7 +4362,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Justiciar_faceguard.webp",
+    src: "/gearcalculator/helms/Justiciar_faceguard.webp",
     slot: "Headpiece",
   },
   {
@@ -4399,7 +4399,7 @@ const HELMS = [
         Weight: 1.206,
       },
     ],
-    src: "./gearcalculator/helms/Virtus_mask.webp",
+    src: "/gearcalculator/helms/Virtus_mask.webp",
     slot: "Headpiece",
   },
   {
@@ -4436,7 +4436,7 @@ const HELMS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/helms/Torva_full_helm.webp",
+    src: "/gearcalculator/helms/Torva_full_helm.webp",
     slot: "Headpiece",
   },
 ];

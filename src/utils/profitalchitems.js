@@ -1,7 +1,7 @@
 const PROFITALCHITEMS = [
   {
     name: "Dragon med helm",
-    imgSrc: "./gearcalculator/helms/Dragon_med_helm.webp",
+    imgSrc: "/gearcalculator/helms/Dragon_med_helm.webp",
     price: 0,
     geLimit: 8,
     alchPrice: 60000,
@@ -17,7 +17,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Dragon halberd",
-    imgSrc: "./gearcalculator/weapons/Dragon_halberd.webp",
+    imgSrc: "/gearcalculator/weapons/Dragon_halberd.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 150000,
@@ -33,7 +33,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Verac's flail 0",
-    imgSrc: "./gearcalculator/weapons/Verac's_flail.webp",
+    imgSrc: "/gearcalculator/weapons/Verac's_flail.webp",
     price: 0,
     geLimit: 15,
     alchPrice: 96000,
@@ -41,7 +41,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Dragon plateskirt",
-    imgSrc: "./gearcalculator/legs/Dragon_plateskirt.webp",
+    imgSrc: "/gearcalculator/legs/Dragon_plateskirt.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 162000,
@@ -49,7 +49,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Lava battlestaff",
-    imgSrc: "./gearcalculator/weapons/Lava_battlestaff.webp",
+    imgSrc: "/gearcalculator/weapons/Lava_battlestaff.webp",
     price: 0,
     geLimit: 8,
     alchPrice: 10200,
@@ -57,7 +57,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune halberd",
-    imgSrc: "./gearcalculator/weapons/Rune_halberd.webp",
+    imgSrc: "/gearcalculator/weapons/Rune_halberd.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 38400,
@@ -65,7 +65,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Karil's crossbow 0",
-    imgSrc: "./gearcalculator/weapons/Karil's_crossbow.webp",
+    imgSrc: "/gearcalculator/weapons/Karil's_crossbow.webp",
     price: 0,
     geLimit: 15,
     alchPrice: 96000,
@@ -73,7 +73,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Dragon battleaxe",
-    imgSrc: "./gearcalculator/weapons/Dragon_battleaxe.webp",
+    imgSrc: "/gearcalculator/weapons/Dragon_battleaxe.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 120000,
@@ -81,7 +81,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Dragon platelegs",
-    imgSrc: "./gearcalculator/legs/Dragon_platelegs.webp",
+    imgSrc: "/gearcalculator/legs/Dragon_platelegs.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 162000,
@@ -89,7 +89,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Dragon longsword",
-    imgSrc: "./gearcalculator/weapons/Dragon_longsword.webp",
+    imgSrc: "/gearcalculator/weapons/Dragon_longsword.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 60000,
@@ -97,7 +97,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Mystic lava staff",
-    imgSrc: "./gearcalculator/weapons/Mystic_lava_staff.webp",
+    imgSrc: "/gearcalculator/weapons/Mystic_lava_staff.webp",
     price: 0,
     geLimit: 8,
     alchPrice: 27000,
@@ -105,7 +105,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Black d'hide body",
-    imgSrc: "./gearcalculator/bodies/Black_d'hide_body.webp",
+    imgSrc: "/gearcalculator/bodies/Black_d'hide_body.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 8088,
@@ -113,7 +113,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Green d'hide body",
-    imgSrc: "./gearcalculator/bodies/Green_d'hide_body.webp",
+    imgSrc: "/gearcalculator/bodies/Green_d'hide_body.webp",
     price: 0,
     geLimit: 125,
     alchPrice: 4680,
@@ -129,7 +129,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Red d'hide body",
-    imgSrc: "./gearcalculator/bodies/Red_d'hide_body.webp",
+    imgSrc: "/gearcalculator/bodies/Red_d'hide_body.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 6738,
@@ -137,7 +137,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Blue d'hide body",
-    imgSrc: "./gearcalculator/bodies/Blue_d'hide_body.webp",
+    imgSrc: "/gearcalculator/bodies/Blue_d'hide_body.webp",
     price: 0,
     geLimit: 125,
     alchPrice: 5616,
@@ -145,7 +145,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Blue d'hide body (t)",
-    imgSrc: "./gearcalculator/bodies/Blue_d'hide_body_(t).webp",
+    imgSrc: "/gearcalculator/bodies/Blue_d'hide_body_(t).webp",
     price: 0,
     geLimit: 8,
     alchPrice: 5616,
@@ -169,7 +169,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Skeletal bottoms",
-    imgSrc: "./gearcalculator/legs/Skeletal_bottoms.webp",
+    imgSrc: "/gearcalculator/legs/Skeletal_bottoms.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 24000,
@@ -177,7 +177,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Skeletal top",
-    imgSrc: "./gearcalculator/bodies/Skeletal_top.webp",
+    imgSrc: "/gearcalculator/bodies/Skeletal_top.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 27000,
@@ -185,7 +185,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Dragon dagger",
-    imgSrc: "./gearcalculator/weapons/Dragon_dagger.webp",
+    imgSrc: "/gearcalculator/weapons/Dragon_dagger.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 18000,
@@ -201,7 +201,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Dragon 2h sword",
-    imgSrc: "./gearcalculator/weapons/Dragon_2h_sword.webp",
+    imgSrc: "/gearcalculator/weapons/Dragon_2h_sword.webp",
     price: 0,
     geLimit: 8,
     alchPrice: 132000,
@@ -209,7 +209,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Leaf-bladed sword",
-    imgSrc: "./gearcalculator/weapons/Leaf-bladed_sword.webp",
+    imgSrc: "/gearcalculator/weapons/Leaf-bladed_sword.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 40800,
@@ -217,7 +217,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune kiteshield",
-    imgSrc: "./gearcalculator/shields/Rune_kiteshield.webp",
+    imgSrc: "/gearcalculator/shields/Rune_kiteshield.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 32640,
@@ -225,7 +225,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune spear",
-    imgSrc: "./gearcalculator/weapons/Rune_spear.webp",
+    imgSrc: "/gearcalculator/weapons/Rune_spear.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 12480,
@@ -233,7 +233,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune pickaxe",
-    imgSrc: "./gearcalculator/weapons/Rune_pickaxe.webp",
+    imgSrc: "/gearcalculator/weapons/Rune_pickaxe.webp",
     price: 0,
     geLimit: 40,
     alchPrice: 19200,
@@ -241,7 +241,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Climbing boots (g)",
-    imgSrc: "./gearcalculator/boots/Climbing_boots_(g).webp",
+    imgSrc: "/gearcalculator/boots/Climbing_boots_(g).webp",
     price: 0,
     geLimit: 4,
     alchPrice: 45000,
@@ -249,7 +249,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Adamant platebody",
-    imgSrc: "./gearcalculator/bodies/Adamant_platebody.webp",
+    imgSrc: "/gearcalculator/bodies/Adamant_platebody.webp",
     price: 0,
     geLimit: 125,
     alchPrice: 9984,
@@ -257,7 +257,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune med helm",
-    imgSrc: "./gearcalculator/helms/Rune_med_helm.webp",
+    imgSrc: "/gearcalculator/helms/Rune_med_helm.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 11520,
@@ -265,7 +265,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rock-shell plate",
-    imgSrc: "./gearcalculator/bodies/Rock-shell_plate.webp",
+    imgSrc: "/gearcalculator/bodies/Rock-shell_plate.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 39000,
@@ -273,7 +273,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Enchanted hat",
-    imgSrc: "./gearcalculator/helms/Enchanted_hat.webp",
+    imgSrc: "/gearcalculator/helms/Enchanted_hat.webp",
     price: 0,
     geLimit: 8,
     alchPrice: 9000,
@@ -281,7 +281,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune platelegs",
-    imgSrc: "./gearcalculator/legs/Rune_platelegs.webp",
+    imgSrc: "/gearcalculator/legs/Rune_platelegs.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 38400,
@@ -289,7 +289,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune chainbody",
-    imgSrc: "./gearcalculator/bodies/Rune_chainbody.webp",
+    imgSrc: "/gearcalculator/bodies/Rune_chainbody.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 30000,
@@ -297,7 +297,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune plateskirt",
-    imgSrc: "./gearcalculator/legs/Rune_plateskirt.webp",
+    imgSrc: "/gearcalculator/legs/Rune_plateskirt.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 38400,
@@ -305,7 +305,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Mystic robe top (light)",
-    imgSrc: "./gearcalculator/bodies/Mystic_robe_top_(light).webp",
+    imgSrc: "/gearcalculator/bodies/Mystic_robe_top_(light).webp",
     price: 0,
     geLimit: 70,
     alchPrice: 72000,
@@ -321,7 +321,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune hasta",
-    imgSrc: "./gearcalculator/weapons/Rune_hasta.webp",
+    imgSrc: "/gearcalculator/weapons/Rune_hasta.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 12480,
@@ -329,7 +329,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Mystic earth staff",
-    imgSrc: "./gearcalculator/weapons/Mystic_earth_staff.webp",
+    imgSrc: "/gearcalculator/weapons/Mystic_earth_staff.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 25500,
@@ -337,7 +337,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Mystic air staff",
-    imgSrc: "./gearcalculator/weapons/Mystic_air_staff.webp",
+    imgSrc: "/gearcalculator/weapons/Mystic_air_staff.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 25500,
@@ -345,7 +345,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Mystic water staff",
-    imgSrc: "./gearcalculator/weapons/Mystic_water_staff.webp",
+    imgSrc: "/gearcalculator/weapons/Mystic_water_staff.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 25500,
@@ -353,7 +353,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Mystic fire staff",
-    imgSrc: "./gearcalculator/weapons/Mystic_fire_staff.webp",
+    imgSrc: "/gearcalculator/weapons/Mystic_fire_staff.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 25500,
@@ -361,7 +361,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Air battlestaff",
-    imgSrc: "./gearcalculator/weapons/Air_battlestaff.webp",
+    imgSrc: "/gearcalculator/weapons/Air_battlestaff.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 9300,
@@ -369,7 +369,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Earth battlestaff",
-    imgSrc: "./gearcalculator/weapons/Earth_battlestaff.webp",
+    imgSrc: "/gearcalculator/weapons/Earth_battlestaff.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 9300,
@@ -377,7 +377,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Water battlestaff",
-    imgSrc: "./gearcalculator/weapons/Water_battlestaff.webp",
+    imgSrc: "/gearcalculator/weapons/Water_battlestaff.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 9300,
@@ -385,7 +385,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Fire battlestaff",
-    imgSrc: "./gearcalculator/weapons/Fire_battlestaff.webp",
+    imgSrc: "/gearcalculator/weapons/Fire_battlestaff.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 9300,
@@ -393,7 +393,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Magic longbow",
-    imgSrc: "./gearcalculator/weapons/Magic_longbow.webp",
+    imgSrc: "/gearcalculator/weapons/Magic_longbow.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 1536,
@@ -401,7 +401,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Yew longbow",
-    imgSrc: "./gearcalculator/weapons/Yew_longbow.webp",
+    imgSrc: "/gearcalculator/weapons/Yew_longbow.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 768,
@@ -409,7 +409,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Magic shortbow",
-    imgSrc: "./gearcalculator/weapons/Magic_shortbow.webp",
+    imgSrc: "/gearcalculator/weapons/Magic_shortbow.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 960,
@@ -417,7 +417,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Yew shortbow",
-    imgSrc: "./gearcalculator/weapons/Yew_shortbow.webp",
+    imgSrc: "/gearcalculator/weapons/Yew_shortbow.webp",
     price: 0,
     geLimit: 18000,
     alchPrice: 480,
@@ -441,7 +441,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune full helm",
-    imgSrc: "./gearcalculator/helms/Rune_full_helm.webp",
+    imgSrc: "/gearcalculator/helms/Rune_full_helm.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 21120,
@@ -449,7 +449,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune platebody",
-    imgSrc: "./gearcalculator/bodies/Rune_platebody.webp",
+    imgSrc: "/gearcalculator/bodies/Rune_platebody.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 39000,
@@ -457,7 +457,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Dragon mace",
-    imgSrc: "./gearcalculator/weapons/Dragon_mace.webp",
+    imgSrc: "/gearcalculator/weapons/Dragon_mace.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 30000,
@@ -465,7 +465,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune longsword",
-    imgSrc: "./gearcalculator/weapons/Rune_longsword.webp",
+    imgSrc: "/gearcalculator/weapons/Rune_longsword.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 19200,
@@ -473,7 +473,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune dagger",
-    imgSrc: "./gearcalculator/weapons/Rune_dagger.webp",
+    imgSrc: "/gearcalculator/weapons/Rune_dagger.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 4800,
@@ -481,7 +481,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune sword",
-    imgSrc: "./gearcalculator/weapons/Rune_sword.webp",
+    imgSrc: "/gearcalculator/weapons/Rune_sword.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 12480,
@@ -489,7 +489,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Dragon scimitar",
-    imgSrc: "./gearcalculator/weapons/Dragon_scimitar.webp",
+    imgSrc: "/gearcalculator/weapons/Dragon_scimitar.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 60000,
@@ -497,7 +497,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune mace",
-    imgSrc: "./gearcalculator/weapons/Rune_mace.webp",
+    imgSrc: "/gearcalculator/weapons/Rune_mace.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 8640,
@@ -505,7 +505,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune battleaxe",
-    imgSrc: "./gearcalculator/weapons/Rune_battleaxe.webp",
+    imgSrc: "/gearcalculator/weapons/Rune_battleaxe.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 24960,
@@ -513,7 +513,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Mithril platebody",
-    imgSrc: "./gearcalculator/bodies/Mithril_platebody.webp",
+    imgSrc: "/gearcalculator/bodies/Mithril_platebody.webp",
     price: 0,
     geLimit: 125,
     alchPrice: 3120,
@@ -521,7 +521,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Proselyte sallet",
-    imgSrc: "./gearcalculator/helms/Proselyte_sallet.webp",
+    imgSrc: "/gearcalculator/helms/Proselyte_sallet.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 4800,
@@ -529,7 +529,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Proselyte hauberk",
-    imgSrc: "./gearcalculator/bodies/Proselyte_hauberk.webp",
+    imgSrc: "/gearcalculator/bodies/Proselyte_hauberk.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 7200,
@@ -537,7 +537,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Proselyte cuisse",
-    imgSrc: "./gearcalculator/legs/Proselyte_cuisse.webp",
+    imgSrc: "/gearcalculator/legs/Proselyte_cuisse.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 6000,
@@ -545,7 +545,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Splitbark gauntlets",
-    imgSrc: "./gearcalculator/gloves/Splitbark_gauntlets.webp",
+    imgSrc: "/gearcalculator/gloves/Splitbark_gauntlets.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 3000,
@@ -553,7 +553,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Rune axe",
-    imgSrc: "./gearcalculator/weapons/Rune_axe.webp",
+    imgSrc: "/gearcalculator/weapons/Rune_axe.webp",
     price: 0,
     geLimit: 70,
     alchPrice: 7680,
@@ -561,7 +561,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Onyx bolts (e)",
-    imgSrc: "./gearcalculator/amunition/Onyx_bolts_(e)_5.webp",
+    imgSrc: "/gearcalculator/amunition/Onyx_bolts_(e)_5.webp",
     price: 0,
     geLimit: 11000,
     alchPrice: 9000,
@@ -569,7 +569,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Redwood shield",
-    imgSrc: "./gearcalculator/shields/Redwood_shield.webp",
+    imgSrc: "/gearcalculator/shields/Redwood_shield.webp",
     price: 0,
     geLimit: 125,
     alchPrice: 768,
@@ -577,7 +577,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Dwarven helmet",
-    imgSrc: "./gearcalculator/helms/Dwarven_helmet.webp",
+    imgSrc: "/gearcalculator/helms/Dwarven_helmet.webp",
     price: 0,
     geLimit: 50,
     alchPrice: 36000,
@@ -585,7 +585,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Adamant spear",
-    imgSrc: "./gearcalculator/weapons/Adamant_spear.webp",
+    imgSrc: "/gearcalculator/weapons/Adamant_spear.webp",
     price: 0,
     geLimit: 125,
     alchPrice: 1248,
@@ -593,7 +593,7 @@ const PROFITALCHITEMS = [
   },
   {
     name: "Ring of life",
-    imgSrc: "./gearcalculator/rings/Ring_of_life.webp",
+    imgSrc: "/gearcalculator/rings/Ring_of_life.webp",
     price: 0,
     geLimit: 10000,
     alchPrice: 2115,

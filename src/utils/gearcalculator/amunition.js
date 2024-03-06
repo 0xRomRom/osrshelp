@@ -33,7 +33,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_arrow_5.webp",
+    src: "/gearcalculator/amunition/Adamant_arrow_5.webp",
     slot: "Amunition",
   },
   {
@@ -70,7 +70,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_arrow(p)_1.webp",
+    src: "/gearcalculator/amunition/Adamant_arrow(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -107,7 +107,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_arrow(p+)_1.webp",
+    src: "/gearcalculator/amunition/Adamant_arrow(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -144,7 +144,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_arrow(p++)_1.webp",
+    src: "/gearcalculator/amunition/Adamant_arrow(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -181,7 +181,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_bolts_1.webp",
+    src: "/gearcalculator/amunition/Adamant_bolts_1.webp",
     slot: "Amunition",
   },
   {
@@ -218,7 +218,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_bolts_(p)_1.webp",
+    src: "/gearcalculator/amunition/Adamant_bolts_(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -255,7 +255,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_bolts_(p+)_1.webp",
+    src: "/gearcalculator/amunition/Adamant_bolts_(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -292,7 +292,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_bolts_(p++)_1.webp",
+    src: "/gearcalculator/amunition/Adamant_bolts_(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -329,7 +329,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_brutal_5.webp",
+    src: "/gearcalculator/amunition/Adamant_brutal_5.webp",
     slot: "Amunition",
   },
   {
@@ -366,7 +366,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_fire_arrow_(lit)_5.webp",
+    src: "/gearcalculator/amunition/Adamant_fire_arrow_(lit)_5.webp",
     slot: "Amunition",
   },
   {
@@ -403,7 +403,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_javelin.webp",
+    src: "/gearcalculator/amunition/Adamant_javelin.webp",
     slot: "Amunition",
   },
   {
@@ -440,7 +440,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_javelin(p).webp",
+    src: "/gearcalculator/amunition/Adamant_javelin(p).webp",
     slot: "Amunition",
   },
   {
@@ -477,7 +477,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_javelin(p+).webp",
+    src: "/gearcalculator/amunition/Adamant_javelin(p+).webp",
     slot: "Amunition",
   },
   {
@@ -514,7 +514,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Adamant_javelin(p++).webp",
+    src: "/gearcalculator/amunition/Adamant_javelin(p++).webp",
     slot: "Amunition",
   },
   {
@@ -551,7 +551,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Amethyst_arrow_1.webp",
+    src: "/gearcalculator/amunition/Amethyst_arrow_1.webp",
     slot: "Amunition",
   },
   {
@@ -588,7 +588,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Amethyst_arrow(p)_1.webp",
+    src: "/gearcalculator/amunition/Amethyst_arrow(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -625,7 +625,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Amethyst_arrow(p+)_1.webp",
+    src: "/gearcalculator/amunition/Amethyst_arrow(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -662,7 +662,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Amethyst_arrow(p++)_1.webp",
+    src: "/gearcalculator/amunition/Amethyst_arrow(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -699,7 +699,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Amethyst_broad_bolts_1.webp",
+    src: "/gearcalculator/amunition/Amethyst_broad_bolts_1.webp",
     slot: "Amunition",
   },
   {
@@ -736,7 +736,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Amethyst_fire_arrow_(lit)_5.webp",
+    src: "/gearcalculator/amunition/Amethyst_fire_arrow_(lit)_5.webp",
     slot: "Amunition",
   },
   {
@@ -773,7 +773,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Amethyst_javelin.webp",
+    src: "/gearcalculator/amunition/Amethyst_javelin.webp",
     slot: "Amunition",
   },
   {
@@ -810,7 +810,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Amethyst_javelin(p).webp",
+    src: "/gearcalculator/amunition/Amethyst_javelin(p).webp",
     slot: "Amunition",
   },
   {
@@ -847,7 +847,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Amethyst_javelin(p+).webp",
+    src: "/gearcalculator/amunition/Amethyst_javelin(p+).webp",
     slot: "Amunition",
   },
   {
@@ -884,7 +884,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Amethyst_javelin(p++).webp",
+    src: "/gearcalculator/amunition/Amethyst_javelin(p++).webp",
     slot: "Amunition",
   },
   {
@@ -921,7 +921,7 @@ const AMUNITION = [
         Weight: 0.51,
       },
     ],
-    src: "./gearcalculator/amunition/Ancient_blessing.webp",
+    src: "/gearcalculator/amunition/Ancient_blessing.webp",
     slot: "Amunition",
   },
   {
@@ -958,7 +958,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Barbed_arrow_1.webp",
+    src: "/gearcalculator/amunition/Barbed_arrow_1.webp",
     slot: "Amunition",
   },
   {
@@ -995,7 +995,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Barbed_bolts_1.webp",
+    src: "/gearcalculator/amunition/Barbed_bolts_1.webp",
     slot: "Amunition",
   },
   {
@@ -1032,7 +1032,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Black_brutal_5.webp",
+    src: "/gearcalculator/amunition/Black_brutal_5.webp",
     slot: "Amunition",
   },
   {
@@ -1069,7 +1069,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Blunt_arrow_1.webp",
+    src: "/gearcalculator/amunition/Blunt_arrow_1.webp",
     slot: "Amunition",
   },
   {
@@ -1106,7 +1106,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Blurite_bolts_5.webp",
+    src: "/gearcalculator/amunition/Blurite_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -1143,7 +1143,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Blurite_bolts_(p)_1.webp",
+    src: "/gearcalculator/amunition/Blurite_bolts_(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -1180,7 +1180,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Blurite_bolts_(p+)_1.webp",
+    src: "/gearcalculator/amunition/Blurite_bolts_(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -1217,7 +1217,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Blurite_bolts_(p++)_1.webp",
+    src: "/gearcalculator/amunition/Blurite_bolts_(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -1254,7 +1254,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bolt_rack_1.webp",
+    src: "/gearcalculator/amunition/Bolt_rack_1.webp",
     slot: "Amunition",
   },
   {
@@ -1291,7 +1291,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bone_bolts_1.webp",
+    src: "/gearcalculator/amunition/Bone_bolts_1.webp",
     slot: "Amunition",
   },
   {
@@ -1328,7 +1328,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Broad_arrows_1.webp",
+    src: "/gearcalculator/amunition/Broad_arrows_1.webp",
     slot: "Amunition",
   },
   {
@@ -1365,7 +1365,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Broad_bolts_5.webp",
+    src: "/gearcalculator/amunition/Broad_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -1402,7 +1402,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_arrow_5.webp",
+    src: "/gearcalculator/amunition/Bronze_arrow_5.webp",
     slot: "Amunition",
   },
   {
@@ -1439,7 +1439,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_arrow(p)_1.webp",
+    src: "/gearcalculator/amunition/Bronze_arrow(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -1476,7 +1476,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_arrow(p+)_1.webp",
+    src: "/gearcalculator/amunition/Bronze_arrow(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -1513,7 +1513,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_arrow(p++)_1.webp",
+    src: "/gearcalculator/amunition/Bronze_arrow(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -1550,7 +1550,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_bolts_5.webp",
+    src: "/gearcalculator/amunition/Bronze_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -1587,7 +1587,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_bolts_(p)_1.webp",
+    src: "/gearcalculator/amunition/Bronze_bolts_(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -1624,7 +1624,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_bolts_(p+)_1.webp",
+    src: "/gearcalculator/amunition/Bronze_bolts_(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -1661,7 +1661,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_bolts_(p++)_2.webp",
+    src: "/gearcalculator/amunition/Bronze_bolts_(p++)_2.webp",
     slot: "Amunition",
   },
   {
@@ -1698,7 +1698,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_brutal_5.webp",
+    src: "/gearcalculator/amunition/Bronze_brutal_5.webp",
     slot: "Amunition",
   },
   {
@@ -1735,7 +1735,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_fire_arrow_(lit)_1.webp",
+    src: "/gearcalculator/amunition/Bronze_fire_arrow_(lit)_1.webp",
     slot: "Amunition",
   },
   {
@@ -1772,7 +1772,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_javelin.webp",
+    src: "/gearcalculator/amunition/Bronze_javelin.webp",
     slot: "Amunition",
   },
   {
@@ -1809,7 +1809,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_javelin(p).webp",
+    src: "/gearcalculator/amunition/Bronze_javelin(p).webp",
     slot: "Amunition",
   },
   {
@@ -1846,7 +1846,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_javelin(p+).webp",
+    src: "/gearcalculator/amunition/Bronze_javelin(p+).webp",
     slot: "Amunition",
   },
   {
@@ -1883,7 +1883,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bronze_javelin(p++).webp",
+    src: "/gearcalculator/amunition/Bronze_javelin(p++).webp",
     slot: "Amunition",
   },
   {
@@ -1920,7 +1920,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Bullet_arrow_1.webp",
+    src: "/gearcalculator/amunition/Bullet_arrow_1.webp",
     slot: "Amunition",
   },
   {
@@ -1957,7 +1957,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Diamond_bolts_5.webp",
+    src: "/gearcalculator/amunition/Diamond_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -1994,7 +1994,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Diamond_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Diamond_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -2031,7 +2031,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Diamond_dragon_bolts_5.webp",
+    src: "/gearcalculator/amunition/Diamond_dragon_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -2068,7 +2068,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -2105,7 +2105,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_arrow.webp",
+    src: "/gearcalculator/amunition/Dragon_arrow.webp",
     slot: "Amunition",
   },
   {
@@ -2142,7 +2142,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_arrow(p+)_1.webp",
+    src: "/gearcalculator/amunition/Dragon_arrow(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -2179,7 +2179,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_arrow(p)_1.webp",
+    src: "/gearcalculator/amunition/Dragon_arrow(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -2216,7 +2216,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_arrow(p++)_1.webp",
+    src: "/gearcalculator/amunition/Dragon_arrow(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -2253,7 +2253,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_bolts_5.webp",
+    src: "/gearcalculator/amunition/Dragon_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -2290,7 +2290,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_bolts_(p)_5.webp",
+    src: "/gearcalculator/amunition/Dragon_bolts_(p)_5.webp",
     slot: "Amunition",
   },
   {
@@ -2327,7 +2327,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_bolts_(p+)_1.webp",
+    src: "/gearcalculator/amunition/Dragon_bolts_(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -2364,7 +2364,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_bolts_(p++)_1.webp",
+    src: "/gearcalculator/amunition/Dragon_bolts_(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -2401,7 +2401,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_fire_arrow_(lit)_5.webp",
+    src: "/gearcalculator/amunition/Dragon_fire_arrow_(lit)_5.webp",
     slot: "Amunition",
   },
   {
@@ -2438,7 +2438,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_javelin.webp",
+    src: "/gearcalculator/amunition/Dragon_javelin.webp",
     slot: "Amunition",
   },
   {
@@ -2475,7 +2475,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_javelin(p).webp",
+    src: "/gearcalculator/amunition/Dragon_javelin(p).webp",
     slot: "Amunition",
   },
   {
@@ -2512,7 +2512,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_javelin(p+).webp",
+    src: "/gearcalculator/amunition/Dragon_javelin(p+).webp",
     slot: "Amunition",
   },
   {
@@ -2549,7 +2549,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragon_javelin(p++).webp",
+    src: "/gearcalculator/amunition/Dragon_javelin(p++).webp",
     slot: "Amunition",
   },
   {
@@ -2586,7 +2586,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragonstone_bolts_5.webp",
+    src: "/gearcalculator/amunition/Dragonstone_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -2623,7 +2623,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragonstone_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Dragonstone_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -2660,7 +2660,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragonstone_dragon_bolts_5.webp",
+    src: "/gearcalculator/amunition/Dragonstone_dragon_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -2697,7 +2697,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Dragonstone_dragon_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Dragonstone_dragon_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -2734,7 +2734,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Emerald_bolts_1.webp",
+    src: "/gearcalculator/amunition/Emerald_bolts_1.webp",
     slot: "Amunition",
   },
   {
@@ -2771,7 +2771,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Emerald_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Emerald_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -2808,7 +2808,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Emerald_dragon_bolts_5.webp",
+    src: "/gearcalculator/amunition/Emerald_dragon_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -2845,7 +2845,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Emerald_dragon_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Emerald_dragon_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -2882,7 +2882,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Field_arrow_1.webp",
+    src: "/gearcalculator/amunition/Field_arrow_1.webp",
     slot: "Amunition",
   },
   {
@@ -2919,7 +2919,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Guam_tar.webp",
+    src: "/gearcalculator/amunition/Guam_tar.webp",
     slot: "Amunition",
   },
   {
@@ -2956,7 +2956,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Harralander_tar.webp",
+    src: "/gearcalculator/amunition/Harralander_tar.webp",
     slot: "Amunition",
   },
   {
@@ -2993,7 +2993,7 @@ const AMUNITION = [
         Weight: 0.51,
       },
     ],
-    src: "./gearcalculator/amunition/Holy_blessing.webp",
+    src: "/gearcalculator/amunition/Holy_blessing.webp",
     slot: "Amunition",
   },
   {
@@ -3030,7 +3030,7 @@ const AMUNITION = [
         Weight: 0.51,
       },
     ],
-    src: "./gearcalculator/amunition/Honourable_blessing.webp",
+    src: "/gearcalculator/amunition/Honourable_blessing.webp",
     slot: "Amunition",
   },
   {
@@ -3067,7 +3067,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Ice_arrows_5.webp",
+    src: "/gearcalculator/amunition/Ice_arrows_5.webp",
     slot: "Amunition",
   },
   {
@@ -3104,7 +3104,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_arrow_1.webp",
+    src: "/gearcalculator/amunition/Iron_arrow_1.webp",
     slot: "Amunition",
   },
   {
@@ -3141,7 +3141,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_arrow(p)_1.webp",
+    src: "/gearcalculator/amunition/Iron_arrow(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -3178,7 +3178,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_arrow(p+)_1.webp",
+    src: "/gearcalculator/amunition/Iron_arrow(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -3215,7 +3215,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_arrow(p++)_1.webp",
+    src: "/gearcalculator/amunition/Iron_arrow(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -3252,7 +3252,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_bolts_5.webp",
+    src: "/gearcalculator/amunition/Iron_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -3289,7 +3289,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_bolts_(p)_1.webp",
+    src: "/gearcalculator/amunition/Iron_bolts_(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -3326,7 +3326,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_bolts_(p+)_1.webp",
+    src: "/gearcalculator/amunition/Iron_bolts_(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -3363,7 +3363,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_bolts_(p++)_5.webp",
+    src: "/gearcalculator/amunition/Iron_bolts_(p++)_5.webp",
     slot: "Amunition",
   },
   {
@@ -3400,7 +3400,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_brutal_5.webp",
+    src: "/gearcalculator/amunition/Iron_brutal_5.webp",
     slot: "Amunition",
   },
   {
@@ -3437,7 +3437,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_fire_arrow_(lit)_5.webp",
+    src: "/gearcalculator/amunition/Iron_fire_arrow_(lit)_5.webp",
     slot: "Amunition",
   },
   {
@@ -3474,7 +3474,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_javelin.webp",
+    src: "/gearcalculator/amunition/Iron_javelin.webp",
     slot: "Amunition",
   },
   {
@@ -3511,7 +3511,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_javelin(p).webp",
+    src: "/gearcalculator/amunition/Iron_javelin(p).webp",
     slot: "Amunition",
   },
   {
@@ -3548,7 +3548,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_javelin(p+).webp",
+    src: "/gearcalculator/amunition/Iron_javelin(p+).webp",
     slot: "Amunition",
   },
   {
@@ -3585,7 +3585,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Iron_javelin(p++).webp",
+    src: "/gearcalculator/amunition/Iron_javelin(p++).webp",
     slot: "Amunition",
   },
   {
@@ -3622,7 +3622,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Jade_bolts_1.webp",
+    src: "/gearcalculator/amunition/Jade_bolts_1.webp",
     slot: "Amunition",
   },
   {
@@ -3659,7 +3659,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Jade_bolts_(e)_1.webp",
+    src: "/gearcalculator/amunition/Jade_bolts_(e)_1.webp",
     slot: "Amunition",
   },
   {
@@ -3696,7 +3696,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Jade_dragon_bolts_5.webp",
+    src: "/gearcalculator/amunition/Jade_dragon_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -3733,7 +3733,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Jade_dragon_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Jade_dragon_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -3770,7 +3770,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Kebbit_bolts.webp",
+    src: "/gearcalculator/amunition/Kebbit_bolts.webp",
     slot: "Amunition",
   },
   {
@@ -3807,7 +3807,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Long_kebbit_bolts.webp",
+    src: "/gearcalculator/amunition/Long_kebbit_bolts.webp",
     slot: "Amunition",
   },
   {
@@ -3844,7 +3844,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Marrentill_tar.webp",
+    src: "/gearcalculator/amunition/Marrentill_tar.webp",
     slot: "Amunition",
   },
   {
@@ -3881,7 +3881,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_arrow_5.webp",
+    src: "/gearcalculator/amunition/Mithril_arrow_5.webp",
     slot: "Amunition",
   },
   {
@@ -3918,7 +3918,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_arrow(p)_1.webp",
+    src: "/gearcalculator/amunition/Mithril_arrow(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -3955,7 +3955,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_arrow(p+)_2.webp",
+    src: "/gearcalculator/amunition/Mithril_arrow(p+)_2.webp",
     slot: "Amunition",
   },
   {
@@ -3992,7 +3992,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_arrow(p++)_4.webp",
+    src: "/gearcalculator/amunition/Mithril_arrow(p++)_4.webp",
     slot: "Amunition",
   },
   {
@@ -4029,7 +4029,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_bolts_5.webp",
+    src: "/gearcalculator/amunition/Mithril_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -4066,7 +4066,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_bolts_(p)_1.webp",
+    src: "/gearcalculator/amunition/Mithril_bolts_(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -4103,7 +4103,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_bolts_(p+)_2.webp",
+    src: "/gearcalculator/amunition/Mithril_bolts_(p+)_2.webp",
     slot: "Amunition",
   },
   {
@@ -4140,7 +4140,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_bolts_(p++)_1.webp",
+    src: "/gearcalculator/amunition/Mithril_bolts_(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -4177,7 +4177,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_brutal_5.webp",
+    src: "/gearcalculator/amunition/Mithril_brutal_5.webp",
     slot: "Amunition",
   },
   {
@@ -4214,7 +4214,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_fire_arrow_(lit)_5.webp",
+    src: "/gearcalculator/amunition/Mithril_fire_arrow_(lit)_5.webp",
     slot: "Amunition",
   },
   {
@@ -4251,7 +4251,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_javelin.webp",
+    src: "/gearcalculator/amunition/Mithril_javelin.webp",
     slot: "Amunition",
   },
   {
@@ -4288,7 +4288,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_javelin(p).webp",
+    src: "/gearcalculator/amunition/Mithril_javelin(p).webp",
     slot: "Amunition",
   },
   {
@@ -4325,7 +4325,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_javelin(p+).webp",
+    src: "/gearcalculator/amunition/Mithril_javelin(p+).webp",
     slot: "Amunition",
   },
   {
@@ -4362,7 +4362,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Mithril_javelin(p++).webp",
+    src: "/gearcalculator/amunition/Mithril_javelin(p++).webp",
     slot: "Amunition",
   },
   {
@@ -4399,7 +4399,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Ogre_arrow_5.webp",
+    src: "/gearcalculator/amunition/Ogre_arrow_5.webp",
     slot: "Amunition",
   },
   {
@@ -4436,7 +4436,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Onyx_bolts_5.webp",
+    src: "/gearcalculator/amunition/Onyx_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -4473,7 +4473,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Onyx_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Onyx_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -4510,7 +4510,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Onyx_dragon_bolts_5.webp",
+    src: "/gearcalculator/amunition/Onyx_dragon_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -4547,7 +4547,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Onyx_dragon_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Onyx_dragon_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -4584,7 +4584,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Opal_bolts_5.webp",
+    src: "/gearcalculator/amunition/Opal_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -4621,7 +4621,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Opal_bolts_(e)_1.webp",
+    src: "/gearcalculator/amunition/Opal_bolts_(e)_1.webp",
     slot: "Amunition",
   },
   {
@@ -4658,7 +4658,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Opal_dragon_bolts_5.webp",
+    src: "/gearcalculator/amunition/Opal_dragon_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -4695,7 +4695,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Opal_dragon_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Opal_dragon_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -4732,7 +4732,7 @@ const AMUNITION = [
         Weight: 0.51,
       },
     ],
-    src: "./gearcalculator/amunition/Peaceful_blessing.webp",
+    src: "/gearcalculator/amunition/Peaceful_blessing.webp",
     slot: "Amunition",
   },
   {
@@ -4769,7 +4769,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Pearl_bolts_5.webp",
+    src: "/gearcalculator/amunition/Pearl_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -4806,7 +4806,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Pearl_bolts_(e)_1.webp",
+    src: "/gearcalculator/amunition/Pearl_bolts_(e)_1.webp",
     slot: "Amunition",
   },
   {
@@ -4843,7 +4843,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Pearl_dragon_bolts_5.webp",
+    src: "/gearcalculator/amunition/Pearl_dragon_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -4880,7 +4880,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Pearl_dragon_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Pearl_dragon_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -4917,7 +4917,7 @@ const AMUNITION = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/amunition/Rada's_blessing_1.webp",
+    src: "/gearcalculator/amunition/Rada's_blessing_1.webp",
     slot: "Amunition",
   },
   {
@@ -4954,7 +4954,7 @@ const AMUNITION = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/amunition/Rada's_blessing_2.webp",
+    src: "/gearcalculator/amunition/Rada's_blessing_2.webp",
     slot: "Amunition",
   },
   {
@@ -4991,7 +4991,7 @@ const AMUNITION = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/amunition/Rada's_blessing_3.webp",
+    src: "/gearcalculator/amunition/Rada's_blessing_3.webp",
     slot: "Amunition",
   },
   {
@@ -5028,7 +5028,7 @@ const AMUNITION = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/amunition/Rada's_blessing_4.webp",
+    src: "/gearcalculator/amunition/Rada's_blessing_4.webp",
     slot: "Amunition",
   },
   {
@@ -5065,7 +5065,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Ruby_bolts_5.webp",
+    src: "/gearcalculator/amunition/Ruby_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -5102,7 +5102,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Ruby_bolts_(e)_1.webp",
+    src: "/gearcalculator/amunition/Ruby_bolts_(e)_1.webp",
     slot: "Amunition",
   },
   {
@@ -5139,7 +5139,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Ruby_dragon_bolts_5.webp",
+    src: "/gearcalculator/amunition/Ruby_dragon_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -5176,7 +5176,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Ruby_dragon_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Ruby_dragon_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -5213,7 +5213,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Rune_arrow_5.webp",
+    src: "/gearcalculator/amunition/Rune_arrow_5.webp",
     slot: "Amunition",
   },
   {
@@ -5250,7 +5250,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Rune_arrow(p)_1.webp",
+    src: "/gearcalculator/amunition/Rune_arrow(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -5287,7 +5287,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Rune_arrow(p+)_2.webp",
+    src: "/gearcalculator/amunition/Rune_arrow(p+)_2.webp",
     slot: "Amunition",
   },
   {
@@ -5324,7 +5324,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Rune_arrow(p++)_4.webp",
+    src: "/gearcalculator/amunition/Rune_arrow(p++)_4.webp",
     slot: "Amunition",
   },
   {
@@ -5361,7 +5361,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Rune_brutal_5.webp",
+    src: "/gearcalculator/amunition/Rune_brutal_5.webp",
     slot: "Amunition",
   },
   {
@@ -5398,7 +5398,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Rune_fire_arrow_(lit)_1.webp",
+    src: "/gearcalculator/amunition/Rune_fire_arrow_(lit)_1.webp",
     slot: "Amunition",
   },
   {
@@ -5435,7 +5435,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Rune_javelin.webp",
+    src: "/gearcalculator/amunition/Rune_javelin.webp",
     slot: "Amunition",
   },
   {
@@ -5472,7 +5472,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Rune_javelin(p).webp",
+    src: "/gearcalculator/amunition/Rune_javelin(p).webp",
     slot: "Amunition",
   },
   {
@@ -5509,7 +5509,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Rune_javelin(p+).webp",
+    src: "/gearcalculator/amunition/Rune_javelin(p+).webp",
     slot: "Amunition",
   },
   {
@@ -5546,7 +5546,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Rune_javelin(p++).webp",
+    src: "/gearcalculator/amunition/Rune_javelin(p++).webp",
     slot: "Amunition",
   },
   {
@@ -5583,7 +5583,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Runite_bolts_5.webp",
+    src: "/gearcalculator/amunition/Runite_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -5620,7 +5620,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Runite_bolts_(p)_1.webp",
+    src: "/gearcalculator/amunition/Runite_bolts_(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -5657,7 +5657,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Runite_bolts_(p+)_3.webp",
+    src: "/gearcalculator/amunition/Runite_bolts_(p+)_3.webp",
     slot: "Amunition",
   },
   {
@@ -5694,7 +5694,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Runite_bolts_(p++)_3.webp",
+    src: "/gearcalculator/amunition/Runite_bolts_(p++)_3.webp",
     slot: "Amunition",
   },
   {
@@ -5731,7 +5731,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Sapphire_bolts_5.webp",
+    src: "/gearcalculator/amunition/Sapphire_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -5768,7 +5768,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Sapphire_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Sapphire_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -5805,7 +5805,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Sapphire_dragon_bolts_5.webp",
+    src: "/gearcalculator/amunition/Sapphire_dragon_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -5842,7 +5842,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Sapphire_dragon_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Sapphire_dragon_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -5879,7 +5879,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Silver_bolts_5.webp",
+    src: "/gearcalculator/amunition/Silver_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -5916,7 +5916,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Silver_bolts_(p)_1.webp",
+    src: "/gearcalculator/amunition/Silver_bolts_(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -5953,7 +5953,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Silver_bolts_(p+)_1.webp",
+    src: "/gearcalculator/amunition/Silver_bolts_(p+)_1.webp",
     slot: "Amunition",
   },
   {
@@ -5990,7 +5990,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Silver_bolts_(p++)_1.webp",
+    src: "/gearcalculator/amunition/Silver_bolts_(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -6027,7 +6027,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_arrow_5.webp",
+    src: "/gearcalculator/amunition/Steel_arrow_5.webp",
     slot: "Amunition",
   },
   {
@@ -6064,7 +6064,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_arrow(p)_1.webp",
+    src: "/gearcalculator/amunition/Steel_arrow(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -6101,7 +6101,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_arrow(p+)_5.webp",
+    src: "/gearcalculator/amunition/Steel_arrow(p+)_5.webp",
     slot: "Amunition",
   },
   {
@@ -6138,7 +6138,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_arrow(p++)_1.webp",
+    src: "/gearcalculator/amunition/Steel_arrow(p++)_1.webp",
     slot: "Amunition",
   },
   {
@@ -6175,7 +6175,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_bolts_5.webp",
+    src: "/gearcalculator/amunition/Steel_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -6212,7 +6212,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_bolts_(p)_1.webp",
+    src: "/gearcalculator/amunition/Steel_bolts_(p)_1.webp",
     slot: "Amunition",
   },
   {
@@ -6249,7 +6249,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_bolts_(p+)_5.webp",
+    src: "/gearcalculator/amunition/Steel_bolts_(p+)_5.webp",
     slot: "Amunition",
   },
   {
@@ -6286,7 +6286,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_bolts_(p++)_4.webp",
+    src: "/gearcalculator/amunition/Steel_bolts_(p++)_4.webp",
     slot: "Amunition",
   },
   {
@@ -6323,7 +6323,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_brutal_5.webp",
+    src: "/gearcalculator/amunition/Steel_brutal_5.webp",
     slot: "Amunition",
   },
   {
@@ -6360,7 +6360,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_fire_arrow_(lit)_5.webp",
+    src: "/gearcalculator/amunition/Steel_fire_arrow_(lit)_5.webp",
     slot: "Amunition",
   },
   {
@@ -6397,7 +6397,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_javelin.webp",
+    src: "/gearcalculator/amunition/Steel_javelin.webp",
     slot: "Amunition",
   },
   {
@@ -6434,7 +6434,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_javelin(p).webp",
+    src: "/gearcalculator/amunition/Steel_javelin(p).webp",
     slot: "Amunition",
   },
   {
@@ -6471,7 +6471,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_javelin(p+).webp",
+    src: "/gearcalculator/amunition/Steel_javelin(p+).webp",
     slot: "Amunition",
   },
   {
@@ -6508,7 +6508,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Steel_javelin(p++).webp",
+    src: "/gearcalculator/amunition/Steel_javelin(p++).webp",
     slot: "Amunition",
   },
   {
@@ -6545,7 +6545,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Tarromin_tar.webp",
+    src: "/gearcalculator/amunition/Tarromin_tar.webp",
     slot: "Amunition",
   },
   {
@@ -6582,7 +6582,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Topaz_bolts_1.webp",
+    src: "/gearcalculator/amunition/Topaz_bolts_1.webp",
     slot: "Amunition",
   },
   {
@@ -6619,7 +6619,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Topaz_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Topaz_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -6656,7 +6656,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Topaz_dragon_bolts_5.webp",
+    src: "/gearcalculator/amunition/Topaz_dragon_bolts_5.webp",
     slot: "Amunition",
   },
   {
@@ -6693,7 +6693,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Topaz_dragon_bolts_(e)_5.webp",
+    src: "/gearcalculator/amunition/Topaz_dragon_bolts_(e)_5.webp",
     slot: "Amunition",
   },
   {
@@ -6730,7 +6730,7 @@ const AMUNITION = [
         Weight: 0,
       },
     ],
-    src: "./gearcalculator/amunition/Training_arrows_5.webp",
+    src: "/gearcalculator/amunition/Training_arrows_5.webp",
     slot: "Amunition",
   },
   {
@@ -6767,7 +6767,7 @@ const AMUNITION = [
         Weight: 0.51,
       },
     ],
-    src: "./gearcalculator/amunition/Unholy_blessing.webp",
+    src: "/gearcalculator/amunition/Unholy_blessing.webp",
     slot: "Amunition",
   },
   {
@@ -6804,7 +6804,7 @@ const AMUNITION = [
         Weight: 0.51,
       },
     ],
-    src: "./gearcalculator/amunition/War_blessing.webp",
+    src: "/gearcalculator/amunition/War_blessing.webp",
     slot: "Amunition",
   },
 ];

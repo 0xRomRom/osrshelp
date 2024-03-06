@@ -1,7 +1,7 @@
 const WILDYBUILDS = [
   {
     name: "1 Def Mage",
-    src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+    src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
     alt: "1 Def Mage",
     itemState: {
       Headpiece: {
@@ -38,7 +38,7 @@ const WILDYBUILDS = [
             Weight: 0.001,
           },
         ],
-        src: "./gearcalculator/helms/Ghostly_hood.webp",
+        src: "/gearcalculator/helms/Ghostly_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -75,7 +75,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+        src: "/gearcalculator/capes/Imbued_zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -112,7 +112,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -149,7 +149,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -186,7 +186,7 @@ const WILDYBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+        src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -224,7 +224,7 @@ const WILDYBUILDS = [
             Weight: 0.001,
           },
         ],
-        src: "./gearcalculator/bodies/Ghostly_robe_(top).webp",
+        src: "/gearcalculator/bodies/Ghostly_robe_(top).webp",
         slot: "Body",
       },
       Legs: {
@@ -261,7 +261,7 @@ const WILDYBUILDS = [
             Weight: 0.001,
           },
         ],
-        src: "./gearcalculator/legs/Ghostly_robe_(bottom).webp",
+        src: "/gearcalculator/legs/Ghostly_robe_(bottom).webp",
         slot: "Legs",
       },
       Gloves: {
@@ -298,7 +298,7 @@ const WILDYBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Combat_bracelet.webp",
+        src: "/gearcalculator/gloves/Combat_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -335,7 +335,7 @@ const WILDYBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Climbing_boots.webp",
+        src: "/gearcalculator/boots/Climbing_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -372,7 +372,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -409,14 +409,14 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_darkness.webp",
+        src: "/gearcalculator/shields/Book_of_darkness.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "1 Def Range",
-    src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+    src: "/gearcalculator/weapons/Armadyl_crossbow.webp",
     alt: "1 Def Range",
     itemState: {
       Headpiece: {
@@ -453,7 +453,7 @@ const WILDYBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/helms/Coif.webp",
+        src: "/gearcalculator/helms/Coif.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -490,7 +490,7 @@ const WILDYBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -527,7 +527,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -564,7 +564,7 @@ const WILDYBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
+        src: "/gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -601,7 +601,7 @@ const WILDYBUILDS = [
             Weight: 6,
           },
         ],
-        src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+        src: "/gearcalculator/weapons/Armadyl_crossbow.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -639,7 +639,7 @@ const WILDYBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/bodies/Leather_body.webp",
+        src: "/gearcalculator/bodies/Leather_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -676,7 +676,7 @@ const WILDYBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -713,7 +713,7 @@ const WILDYBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Combat_bracelet.webp",
+        src: "/gearcalculator/gloves/Combat_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -750,7 +750,7 @@ const WILDYBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Climbing_boots.webp",
+        src: "/gearcalculator/boots/Climbing_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -787,7 +787,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -824,14 +824,14 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_law.webp",
+        src: "/gearcalculator/shields/Book_of_law.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "1 Def Melee",
-    src: "./gearcalculator/weapons/Dragon_scimitar.webp",
+    src: "/gearcalculator/weapons/Dragon_scimitar.webp",
     alt: "1 Def Melee",
     itemState: {
       Headpiece: {
@@ -868,7 +868,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/helms/Blue_wizard_hat.webp",
+        src: "/gearcalculator/helms/Blue_wizard_hat.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -905,7 +905,7 @@ const WILDYBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -942,7 +942,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -979,7 +979,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -1016,7 +1016,7 @@ const WILDYBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/weapons/Dragon_scimitar.webp",
+        src: "/gearcalculator/weapons/Dragon_scimitar.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -1054,7 +1054,7 @@ const WILDYBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/bodies/Leather_body.webp",
+        src: "/gearcalculator/bodies/Leather_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -1091,7 +1091,7 @@ const WILDYBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1128,7 +1128,7 @@ const WILDYBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Combat_bracelet.webp",
+        src: "/gearcalculator/gloves/Combat_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1165,7 +1165,7 @@ const WILDYBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Climbing_boots.webp",
+        src: "/gearcalculator/boots/Climbing_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -1202,7 +1202,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -1239,14 +1239,14 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Unholy_book.webp",
+        src: "/gearcalculator/shields/Unholy_book.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "45 Def Mage",
-    src: "./gearcalculator/helms/Farseer_helm.webp",
+    src: "/gearcalculator/helms/Farseer_helm.webp",
     alt: "45 Def Mage",
     itemState: {
       Headpiece: {
@@ -1283,7 +1283,7 @@ const WILDYBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Farseer_helm.webp",
+        src: "/gearcalculator/helms/Farseer_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -1320,7 +1320,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+        src: "/gearcalculator/capes/Imbued_zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -1357,7 +1357,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -1394,7 +1394,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Holy_blessing.webp",
+        src: "/gearcalculator/amunition/Holy_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -1431,7 +1431,7 @@ const WILDYBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+        src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -1469,7 +1469,7 @@ const WILDYBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/bodies/Mystic_robe_top_(dark).webp",
+        src: "/gearcalculator/bodies/Mystic_robe_top_(dark).webp",
         slot: "Body",
       },
       Shield: {
@@ -1506,7 +1506,7 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_darkness.webp",
+        src: "/gearcalculator/shields/Book_of_darkness.webp",
         slot: "Shield",
       },
       Legs: {
@@ -1543,7 +1543,7 @@ const WILDYBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/legs/Mystic_robe_bottom_(dark).webp",
+        src: "/gearcalculator/legs/Mystic_robe_bottom_(dark).webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1580,7 +1580,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1617,7 +1617,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/boots/Mystic_boots_(dark).webp",
+        src: "/gearcalculator/boots/Mystic_boots_(dark).webp",
         slot: "Boots",
       },
       Ring: {
@@ -1654,14 +1654,14 @@ const WILDYBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Seers_ring.webp",
+        src: "/gearcalculator/rings/Seers_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "45 Def Range",
-    src: "./gearcalculator/helms/Archer_helm.webp",
+    src: "/gearcalculator/helms/Archer_helm.webp",
     alt: "45 Def Range",
     itemState: {
       Headpiece: {
@@ -1698,7 +1698,7 @@ const WILDYBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Archer_helm.webp",
+        src: "/gearcalculator/helms/Archer_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -1735,7 +1735,7 @@ const WILDYBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -1772,7 +1772,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -1809,7 +1809,7 @@ const WILDYBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
+        src: "/gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -1846,7 +1846,7 @@ const WILDYBUILDS = [
             Weight: 6,
           },
         ],
-        src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+        src: "/gearcalculator/weapons/Armadyl_crossbow.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -1884,7 +1884,7 @@ const WILDYBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Black_d'hide_body.webp",
+        src: "/gearcalculator/bodies/Black_d'hide_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -1921,7 +1921,7 @@ const WILDYBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1958,7 +1958,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1995,7 +1995,7 @@ const WILDYBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Snakeskin_boots.webp",
+        src: "/gearcalculator/boots/Snakeskin_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -2032,7 +2032,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -2069,14 +2069,14 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_law.webp",
+        src: "/gearcalculator/shields/Book_of_law.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "45 Def Melee",
-    src: "./gearcalculator/helms/Berserker_helm.webp",
+    src: "/gearcalculator/helms/Berserker_helm.webp",
     alt: "45 Def Melee",
     itemState: {
       Headpiece: {
@@ -2113,7 +2113,7 @@ const WILDYBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Berserker_helm.webp",
+        src: "/gearcalculator/helms/Berserker_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -2150,7 +2150,7 @@ const WILDYBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Cape_of_legends.webp",
+        src: "/gearcalculator/capes/Cape_of_legends.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -2187,7 +2187,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -2224,7 +2224,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -2261,7 +2261,7 @@ const WILDYBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/weapons/Dragon_scimitar.webp",
+        src: "/gearcalculator/weapons/Dragon_scimitar.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -2299,7 +2299,7 @@ const WILDYBUILDS = [
             Weight: 9.979,
           },
         ],
-        src: "./gearcalculator/bodies/Rune_platebody.webp",
+        src: "/gearcalculator/bodies/Rune_platebody.webp",
         slot: "Body",
       },
       Legs: {
@@ -2336,7 +2336,7 @@ const WILDYBUILDS = [
             Weight: 9.071,
           },
         ],
-        src: "./gearcalculator/legs/Rune_platelegs.webp",
+        src: "/gearcalculator/legs/Rune_platelegs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -2373,7 +2373,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -2410,7 +2410,7 @@ const WILDYBUILDS = [
             Weight: 1.36,
           },
         ],
-        src: "./gearcalculator/boots/Rune_boots.webp",
+        src: "/gearcalculator/boots/Rune_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -2447,7 +2447,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -2484,14 +2484,14 @@ const WILDYBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/shields/Rune_kiteshield.webp",
+        src: "/gearcalculator/shields/Rune_kiteshield.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "70 Def Mage",
-    src: "./gearcalculator/helms/Ahrim's_hood.webp",
+    src: "/gearcalculator/helms/Ahrim's_hood.webp",
     alt: "70 Def Mage",
     itemState: {
       Headpiece: {
@@ -2528,7 +2528,7 @@ const WILDYBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/helms/Ahrim's_hood.webp",
+        src: "/gearcalculator/helms/Ahrim's_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -2565,7 +2565,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+        src: "/gearcalculator/capes/Imbued_zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -2602,7 +2602,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -2639,7 +2639,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Holy_blessing.webp",
+        src: "/gearcalculator/amunition/Holy_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -2676,7 +2676,7 @@ const WILDYBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+        src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -2714,7 +2714,7 @@ const WILDYBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/bodies/Mystic_robe_top_(dark).webp",
+        src: "/gearcalculator/bodies/Mystic_robe_top_(dark).webp",
         slot: "Body",
       },
       Shield: {
@@ -2751,7 +2751,7 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_darkness.webp",
+        src: "/gearcalculator/shields/Book_of_darkness.webp",
         slot: "Shield",
       },
       Legs: {
@@ -2788,7 +2788,7 @@ const WILDYBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/legs/Mystic_robe_bottom_(dark).webp",
+        src: "/gearcalculator/legs/Mystic_robe_bottom_(dark).webp",
         slot: "Legs",
       },
       Gloves: {
@@ -2825,7 +2825,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -2862,7 +2862,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/boots/Mystic_boots_(dark).webp",
+        src: "/gearcalculator/boots/Mystic_boots_(dark).webp",
         slot: "Boots",
       },
       Ring: {
@@ -2899,14 +2899,14 @@ const WILDYBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Seers_ring.webp",
+        src: "/gearcalculator/rings/Seers_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "70 Def Range",
-    src: "./gearcalculator/helms/Archer_helm.webp",
+    src: "/gearcalculator/helms/Archer_helm.webp",
     alt: "70 Def Range",
     itemState: {
       Headpiece: {
@@ -2943,7 +2943,7 @@ const WILDYBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Archer_helm.webp",
+        src: "/gearcalculator/helms/Archer_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -2980,7 +2980,7 @@ const WILDYBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -3017,7 +3017,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -3054,7 +3054,7 @@ const WILDYBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
+        src: "/gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -3091,7 +3091,7 @@ const WILDYBUILDS = [
             Weight: 6,
           },
         ],
-        src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+        src: "/gearcalculator/weapons/Armadyl_crossbow.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -3129,7 +3129,7 @@ const WILDYBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Black_d'hide_body.webp",
+        src: "/gearcalculator/bodies/Black_d'hide_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -3166,7 +3166,7 @@ const WILDYBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -3203,7 +3203,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -3240,7 +3240,7 @@ const WILDYBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Snakeskin_boots.webp",
+        src: "/gearcalculator/boots/Snakeskin_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -3277,7 +3277,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -3314,14 +3314,14 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_law.webp",
+        src: "/gearcalculator/shields/Book_of_law.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "70 Def Melee",
-    src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+    src: "/gearcalculator/helms/Helm_of_neitiznot.webp",
     alt: "70 Def Melee",
     itemState: {
       Headpiece: {
@@ -3358,7 +3358,7 @@ const WILDYBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+        src: "/gearcalculator/helms/Helm_of_neitiznot.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -3395,7 +3395,7 @@ const WILDYBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Cape_of_legends.webp",
+        src: "/gearcalculator/capes/Cape_of_legends.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -3432,7 +3432,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -3469,7 +3469,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -3506,7 +3506,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/weapons/Abyssal_whip.webp",
+        src: "/gearcalculator/weapons/Abyssal_whip.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -3544,7 +3544,7 @@ const WILDYBUILDS = [
             Weight: 9.979,
           },
         ],
-        src: "./gearcalculator/bodies/Torag's_platebody.webp",
+        src: "/gearcalculator/bodies/Torag's_platebody.webp",
         slot: "Body",
       },
       Legs: {
@@ -3581,7 +3581,7 @@ const WILDYBUILDS = [
             Weight: 9.071,
           },
         ],
-        src: "./gearcalculator/legs/Torag's_platelegs.webp",
+        src: "/gearcalculator/legs/Torag's_platelegs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -3618,7 +3618,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -3655,7 +3655,7 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/boots/Dragon_boots.webp",
+        src: "/gearcalculator/boots/Dragon_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -3692,7 +3692,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -3729,14 +3729,14 @@ const WILDYBUILDS = [
             Weight: 3.628,
           },
         ],
-        src: "./gearcalculator/shields/Toktz-ket-xil.webp",
+        src: "/gearcalculator/shields/Toktz-ket-xil.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "99 Def Mage",
-    src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+    src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
     alt: "99 Def Mage",
     itemState: {
       Headpiece: {
@@ -3773,7 +3773,7 @@ const WILDYBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+        src: "/gearcalculator/helms/Helm_of_neitiznot.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -3810,7 +3810,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+        src: "/gearcalculator/capes/Imbued_zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -3847,7 +3847,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -3884,7 +3884,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Holy_blessing.webp",
+        src: "/gearcalculator/amunition/Holy_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -3921,7 +3921,7 @@ const WILDYBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+        src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -3959,7 +3959,7 @@ const WILDYBUILDS = [
             Weight: 4.535,
           },
         ],
-        src: "./gearcalculator/bodies/Ahrim's_robetop.webp",
+        src: "/gearcalculator/bodies/Ahrim's_robetop.webp",
         slot: "Body",
       },
       Shield: {
@@ -3996,7 +3996,7 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_darkness.webp",
+        src: "/gearcalculator/shields/Book_of_darkness.webp",
         slot: "Shield",
       },
       Legs: {
@@ -4033,7 +4033,7 @@ const WILDYBUILDS = [
             Weight: 11.339,
           },
         ],
-        src: "./gearcalculator/legs/Ahrim's_robeskirt.webp",
+        src: "/gearcalculator/legs/Ahrim's_robeskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -4070,7 +4070,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -4107,7 +4107,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/boots/Infinity_boots.webp",
+        src: "/gearcalculator/boots/Infinity_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -4144,14 +4144,14 @@ const WILDYBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Seers_ring.webp",
+        src: "/gearcalculator/rings/Seers_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "99 Def Range",
-    src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+    src: "/gearcalculator/weapons/Armadyl_crossbow.webp",
     alt: "99 Def Range",
     itemState: {
       Headpiece: {
@@ -4188,7 +4188,7 @@ const WILDYBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Archer_helm.webp",
+        src: "/gearcalculator/helms/Archer_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -4225,7 +4225,7 @@ const WILDYBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -4262,7 +4262,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -4299,7 +4299,7 @@ const WILDYBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
+        src: "/gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -4336,7 +4336,7 @@ const WILDYBUILDS = [
             Weight: 6,
           },
         ],
-        src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+        src: "/gearcalculator/weapons/Armadyl_crossbow.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -4374,7 +4374,7 @@ const WILDYBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Karil's_leathertop.webp",
+        src: "/gearcalculator/bodies/Karil's_leathertop.webp",
         slot: "Body",
       },
       Legs: {
@@ -4411,7 +4411,7 @@ const WILDYBUILDS = [
             Weight: 4.535,
           },
         ],
-        src: "./gearcalculator/legs/Verac's_plateskirt.webp",
+        src: "/gearcalculator/legs/Verac's_plateskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -4448,7 +4448,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -4485,7 +4485,7 @@ const WILDYBUILDS = [
             Weight: 1.4,
           },
         ],
-        src: "./gearcalculator/boots/Zamorak_d'hide_boots.webp",
+        src: "/gearcalculator/boots/Zamorak_d'hide_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -4522,7 +4522,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -4559,14 +4559,14 @@ const WILDYBUILDS = [
             Weight: 2,
           },
         ],
-        src: "./gearcalculator/shields/Blessed_spirit_shield.webp",
+        src: "/gearcalculator/shields/Blessed_spirit_shield.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "99 Def Melee",
-    src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+    src: "/gearcalculator/helms/Helm_of_neitiznot.webp",
     alt: "99 Def Melee",
     itemState: {
       Headpiece: {
@@ -4603,7 +4603,7 @@ const WILDYBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/helms/Helm_of_neitiznot.webp",
+        src: "/gearcalculator/helms/Helm_of_neitiznot.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -4640,7 +4640,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Defence_cape(t).webp",
+        src: "/gearcalculator/capes/Defence_cape(t).webp",
         slot: "Cape",
       },
       Necklace: {
@@ -4677,7 +4677,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -4714,7 +4714,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -4751,7 +4751,7 @@ const WILDYBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/weapons/Osmumten's_fang.webp",
+        src: "/gearcalculator/weapons/Osmumten's_fang.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -4789,7 +4789,7 @@ const WILDYBUILDS = [
             Weight: 9.979,
           },
         ],
-        src: "./gearcalculator/bodies/Torag's_platebody.webp",
+        src: "/gearcalculator/bodies/Torag's_platebody.webp",
         slot: "Body",
       },
       Legs: {
@@ -4826,7 +4826,7 @@ const WILDYBUILDS = [
             Weight: 9.071,
           },
         ],
-        src: "./gearcalculator/legs/Torag's_platelegs.webp",
+        src: "/gearcalculator/legs/Torag's_platelegs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -4863,7 +4863,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -4900,7 +4900,7 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/boots/Dragon_boots.webp",
+        src: "/gearcalculator/boots/Dragon_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -4937,7 +4937,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -4974,14 +4974,14 @@ const WILDYBUILDS = [
             Weight: 3.628,
           },
         ],
-        src: "./gearcalculator/shields/Toktz-ket-xil.webp",
+        src: "/gearcalculator/shields/Toktz-ket-xil.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "Range rag",
-    src: "./gearcalculator/helms/Coif.webp",
+    src: "/gearcalculator/helms/Coif.webp",
     alt: "Range rag",
     itemState: {
       Headpiece: {
@@ -5018,7 +5018,7 @@ const WILDYBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/helms/Coif.webp",
+        src: "/gearcalculator/helms/Coif.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -5055,7 +5055,7 @@ const WILDYBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -5092,7 +5092,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -5129,7 +5129,7 @@ const WILDYBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Rune_arrow(p++)_4.webp",
+        src: "/gearcalculator/amunition/Rune_arrow(p++)_4.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -5166,7 +5166,7 @@ const WILDYBUILDS = [
             Weight: 1.36,
           },
         ],
-        src: "./gearcalculator/weapons/Magic_shortbow.webp",
+        src: "/gearcalculator/weapons/Magic_shortbow.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -5204,7 +5204,7 @@ const WILDYBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Black_d'hide_body.webp",
+        src: "/gearcalculator/bodies/Black_d'hide_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -5241,7 +5241,7 @@ const WILDYBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -5278,7 +5278,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Rune_gloves.webp",
+        src: "/gearcalculator/gloves/Rune_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -5315,7 +5315,7 @@ const WILDYBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Snakeskin_boots.webp",
+        src: "/gearcalculator/boots/Snakeskin_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -5352,7 +5352,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {},
@@ -5360,7 +5360,7 @@ const WILDYBUILDS = [
   },
   {
     name: "Melee rag",
-    src: "./gearcalculator/helms/Initiate_sallet.webp",
+    src: "/gearcalculator/helms/Initiate_sallet.webp",
     alt: "Melee rag",
     itemState: {
       Headpiece: {
@@ -5397,7 +5397,7 @@ const WILDYBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/helms/Initiate_sallet.webp",
+        src: "/gearcalculator/helms/Initiate_sallet.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -5434,7 +5434,7 @@ const WILDYBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Cape_of_legends.webp",
+        src: "/gearcalculator/capes/Cape_of_legends.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -5471,7 +5471,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_strength.webp",
+        src: "/gearcalculator/necklace/Amulet_of_strength.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -5508,7 +5508,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -5545,7 +5545,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/weapons/Abyssal_whip.webp",
+        src: "/gearcalculator/weapons/Abyssal_whip.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -5583,7 +5583,7 @@ const WILDYBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Black_d'hide_body.webp",
+        src: "/gearcalculator/bodies/Black_d'hide_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -5620,7 +5620,7 @@ const WILDYBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -5657,7 +5657,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Rune_gloves.webp",
+        src: "/gearcalculator/gloves/Rune_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -5694,7 +5694,7 @@ const WILDYBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Climbing_boots.webp",
+        src: "/gearcalculator/boots/Climbing_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -5731,7 +5731,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -5768,14 +5768,14 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Unholy_book.webp",
+        src: "/gearcalculator/shields/Unholy_book.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "Mage rag",
-    src: "./gearcalculator/helms/Ghostly_hood.webp",
+    src: "/gearcalculator/helms/Ghostly_hood.webp",
     alt: "Mage rag",
     itemState: {
       Headpiece: {
@@ -5812,7 +5812,7 @@ const WILDYBUILDS = [
             Weight: 0.001,
           },
         ],
-        src: "./gearcalculator/helms/Ghostly_hood.webp",
+        src: "/gearcalculator/helms/Ghostly_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -5849,7 +5849,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Zamorak_cape.webp",
+        src: "/gearcalculator/capes/Zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -5886,7 +5886,7 @@ const WILDYBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -5923,7 +5923,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -5960,7 +5960,7 @@ const WILDYBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+        src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -5998,7 +5998,7 @@ const WILDYBUILDS = [
             Weight: 0.001,
           },
         ],
-        src: "./gearcalculator/bodies/Ghostly_robe_(top).webp",
+        src: "/gearcalculator/bodies/Ghostly_robe_(top).webp",
         slot: "Body",
       },
       Legs: {
@@ -6035,7 +6035,7 @@ const WILDYBUILDS = [
             Weight: 0.001,
           },
         ],
-        src: "./gearcalculator/legs/Ghostly_robe_(bottom).webp",
+        src: "/gearcalculator/legs/Ghostly_robe_(bottom).webp",
         slot: "Legs",
       },
       Gloves: {
@@ -6072,7 +6072,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Rune_gloves.webp",
+        src: "/gearcalculator/gloves/Rune_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -6109,7 +6109,7 @@ const WILDYBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Climbing_boots.webp",
+        src: "/gearcalculator/boots/Climbing_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -6146,7 +6146,7 @@ const WILDYBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
       Shield: {
@@ -6183,14 +6183,14 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_darkness.webp",
+        src: "/gearcalculator/shields/Book_of_darkness.webp",
         slot: "Shield",
       },
     },
   },
   {
     name: "Revenants setup",
-    src: "./gearcalculator/weapons/Craw's_bow.webp",
+    src: "/gearcalculator/weapons/Craw's_bow.webp",
     alt: "Revenants setup",
     itemState: {
       Headpiece: {
@@ -6227,7 +6227,7 @@ const WILDYBUILDS = [
             Weight: 0.9,
           },
         ],
-        src: "./gearcalculator/helms/Armadyl_coif.webp",
+        src: "/gearcalculator/helms/Armadyl_coif.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -6264,7 +6264,7 @@ const WILDYBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -6301,7 +6301,7 @@ const WILDYBUILDS = [
             Weight: 0.007,
           },
         ],
-        src: "./gearcalculator/necklace/Salve_amulet_(e).webp",
+        src: "/gearcalculator/necklace/Salve_amulet_(e).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -6338,7 +6338,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -6375,7 +6375,7 @@ const WILDYBUILDS = [
             Weight: 3.175,
           },
         ],
-        src: "./gearcalculator/weapons/Craw's_bow.webp",
+        src: "/gearcalculator/weapons/Craw's_bow.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -6413,7 +6413,7 @@ const WILDYBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Black_d'hide_body.webp",
+        src: "/gearcalculator/bodies/Black_d'hide_body.webp",
         slot: "Body",
       },
       Legs: {
@@ -6450,7 +6450,7 @@ const WILDYBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -6487,7 +6487,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -6524,7 +6524,7 @@ const WILDYBUILDS = [
             Weight: 1.4,
           },
         ],
-        src: "./gearcalculator/boots/Armadyl_d'hide_boots.webp",
+        src: "/gearcalculator/boots/Armadyl_d'hide_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -6561,7 +6561,7 @@ const WILDYBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Archers_ring_(i).webp",
+        src: "/gearcalculator/rings/Archers_ring_(i).webp",
         slot: "Ring",
       },
       Shield: {},
@@ -6569,7 +6569,7 @@ const WILDYBUILDS = [
   },
   {
     name: "Lavadragons setup",
-    src: "./gearcalculator/weapons/Trident_of_the_swamp.webp",
+    src: "/gearcalculator/weapons/Trident_of_the_swamp.webp",
     alt: "Lavadragons setup",
     itemState: {
       Headpiece: {
@@ -6606,7 +6606,7 @@ const WILDYBUILDS = [
             Weight: 0.2,
           },
         ],
-        src: "./gearcalculator/helms/Xerician_hat.webp",
+        src: "/gearcalculator/helms/Xerician_hat.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -6643,7 +6643,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Guthix_cape.webp",
+        src: "/gearcalculator/capes/Guthix_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -6680,7 +6680,7 @@ const WILDYBUILDS = [
             Weight: 0.005,
           },
         ],
-        src: "./gearcalculator/necklace/Occult_necklace.webp",
+        src: "/gearcalculator/necklace/Occult_necklace.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -6717,7 +6717,7 @@ const WILDYBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -6754,7 +6754,7 @@ const WILDYBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/weapons/Trident_of_the_swamp.webp",
+        src: "/gearcalculator/weapons/Trident_of_the_swamp.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -6792,7 +6792,7 @@ const WILDYBUILDS = [
             Weight: 0.2,
           },
         ],
-        src: "./gearcalculator/bodies/Xerician_top.webp",
+        src: "/gearcalculator/bodies/Xerician_top.webp",
         slot: "Body",
       },
       Legs: {
@@ -6829,7 +6829,7 @@ const WILDYBUILDS = [
             Weight: 0.18,
           },
         ],
-        src: "./gearcalculator/legs/Xerician_robe.webp",
+        src: "/gearcalculator/legs/Xerician_robe.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -6866,7 +6866,7 @@ const WILDYBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -6903,7 +6903,7 @@ const WILDYBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/boots/Mystic_boots.webp",
+        src: "/gearcalculator/boots/Mystic_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -6940,7 +6940,7 @@ const WILDYBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Seers_ring_(i).webp",
+        src: "/gearcalculator/rings/Seers_ring_(i).webp",
         slot: "Ring",
       },
       Shield: {
@@ -6977,7 +6977,7 @@ const WILDYBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_darkness.webp",
+        src: "/gearcalculator/shields/Book_of_darkness.webp",
         slot: "Shield",
       },
     },

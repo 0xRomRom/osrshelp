@@ -33,7 +33,7 @@ const NECKLACE = [
         Weight: 0.003,
       },
     ],
-    src: "./gearcalculator/necklace/3rd_age_amulet.webp",
+    src: "/gearcalculator/necklace/3rd_age_amulet.webp",
     slot: "Necklace",
   },
   {
@@ -70,7 +70,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_accuracy.webp",
+    src: "/gearcalculator/necklace/Amulet_of_accuracy.webp",
     slot: "Necklace",
   },
   {
@@ -107,7 +107,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_avarice.webp",
+    src: "/gearcalculator/necklace/Amulet_of_avarice.webp",
     slot: "Necklace",
   },
   {
@@ -144,7 +144,7 @@ const NECKLACE = [
         Weight: 0.02,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_blood_fury.webp",
+    src: "/gearcalculator/necklace/Amulet_of_blood_fury.webp",
     slot: "Necklace",
   },
   {
@@ -181,7 +181,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_defence.webp",
+    src: "/gearcalculator/necklace/Amulet_of_defence.webp",
     slot: "Necklace",
   },
   {
@@ -218,7 +218,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_defence_(t).webp",
+    src: "/gearcalculator/necklace/Amulet_of_defence_(t).webp",
     slot: "Necklace",
   },
   {
@@ -255,7 +255,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_eternal_glory.webp",
+    src: "/gearcalculator/necklace/Amulet_of_eternal_glory.webp",
     slot: "Necklace",
   },
   {
@@ -292,7 +292,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_fury.webp",
+    src: "/gearcalculator/necklace/Amulet_of_fury.webp",
     slot: "Necklace",
   },
   {
@@ -329,7 +329,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+    src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
     slot: "Necklace",
   },
   {
@@ -366,7 +366,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_glory_(t)_(uncharged).webp",
+    src: "/gearcalculator/necklace/Amulet_of_glory_(t)_(uncharged).webp",
     slot: "Necklace",
   },
   {
@@ -403,7 +403,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_magic.webp",
+    src: "/gearcalculator/necklace/Amulet_of_magic.webp",
     slot: "Necklace",
   },
   {
@@ -440,7 +440,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_magic_(t).webp",
+    src: "/gearcalculator/necklace/Amulet_of_magic_(t).webp",
     slot: "Necklace",
   },
   {
@@ -477,7 +477,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_power.webp",
+    src: "/gearcalculator/necklace/Amulet_of_power.webp",
     slot: "Necklace",
   },
   {
@@ -514,7 +514,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_strength.webp",
+    src: "/gearcalculator/necklace/Amulet_of_strength.webp",
     slot: "Necklace",
   },
   {
@@ -551,7 +551,7 @@ const NECKLACE = [
         Weight: 0.1,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
+    src: "/gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
     slot: "Necklace",
   },
   {
@@ -588,7 +588,7 @@ const NECKLACE = [
         Weight: 0.1,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_torture.webp",
+    src: "/gearcalculator/necklace/Amulet_of_torture.webp",
     slot: "Necklace",
   },
   {
@@ -625,7 +625,7 @@ const NECKLACE = [
         Weight: 0.1,
       },
     ],
-    src: "./gearcalculator/necklace/Amulet_of_torture_(or).webp",
+    src: "/gearcalculator/necklace/Amulet_of_torture_(or).webp",
     slot: "Necklace",
   },
   {
@@ -662,7 +662,7 @@ const NECKLACE = [
         Weight: 0.002,
       },
     ],
-    src: "./gearcalculator/necklace/Ancient_stole.webp",
+    src: "/gearcalculator/necklace/Ancient_stole.webp",
     slot: "Necklace",
   },
   {
@@ -699,7 +699,7 @@ const NECKLACE = [
         Weight: 0.002,
       },
     ],
-    src: "./gearcalculator/necklace/Armadyl_stole.webp",
+    src: "/gearcalculator/necklace/Armadyl_stole.webp",
     slot: "Necklace",
   },
   {
@@ -736,7 +736,7 @@ const NECKLACE = [
         Weight: 0.002,
       },
     ],
-    src: "./gearcalculator/necklace/Bandos_stole.webp",
+    src: "/gearcalculator/necklace/Bandos_stole.webp",
     slot: "Necklace",
   },
   {
@@ -773,7 +773,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Beads_of_the_dead.webp",
+    src: "/gearcalculator/necklace/Beads_of_the_dead.webp",
     slot: "Necklace",
   },
   {
@@ -810,7 +810,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Berserker_necklace.webp",
+    src: "/gearcalculator/necklace/Berserker_necklace.webp",
     slot: "Necklace",
   },
   {
@@ -847,7 +847,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Berserker_necklace_(or).webp",
+    src: "/gearcalculator/necklace/Berserker_necklace_(or).webp",
     slot: "Necklace",
   },
   {
@@ -884,7 +884,7 @@ const NECKLACE = [
         Weight: 0.025,
       },
     ],
-    src: "./gearcalculator/necklace/Bonecrusher_necklace.webp",
+    src: "/gearcalculator/necklace/Bonecrusher_necklace.webp",
     slot: "Necklace",
   },
   {
@@ -921,7 +921,7 @@ const NECKLACE = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/necklace/Dragonbone_necklace.webp",
+    src: "/gearcalculator/necklace/Dragonbone_necklace.webp",
     slot: "Necklace",
   },
   {
@@ -958,7 +958,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Dodgy_necklace.webp",
+    src: "/gearcalculator/necklace/Dodgy_necklace.webp",
     slot: "Necklace",
   },
   {
@@ -995,7 +995,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Gnome_amulet.webp",
+    src: "/gearcalculator/necklace/Gnome_amulet.webp",
     slot: "Necklace",
   },
   {
@@ -1032,7 +1032,7 @@ const NECKLACE = [
         Weight: 0.002,
       },
     ],
-    src: "./gearcalculator/necklace/Guthix_stole.webp",
+    src: "/gearcalculator/necklace/Guthix_stole.webp",
     slot: "Necklace",
   },
   {
@@ -1069,7 +1069,7 @@ const NECKLACE = [
         Weight: 0.007,
       },
     ],
-    src: "./gearcalculator/necklace/Holy_symbol.webp",
+    src: "/gearcalculator/necklace/Holy_symbol.webp",
     slot: "Necklace",
   },
   {
@@ -1106,7 +1106,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Lunar_amulet.webp",
+    src: "/gearcalculator/necklace/Lunar_amulet.webp",
     slot: "Necklace",
   },
   {
@@ -1143,7 +1143,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Necklace_of_anguish.webp",
+    src: "/gearcalculator/necklace/Necklace_of_anguish.webp",
     slot: "Necklace",
   },
   {
@@ -1180,7 +1180,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Necklace_of_anguish_(or).webp",
+    src: "/gearcalculator/necklace/Necklace_of_anguish_(or).webp",
     slot: "Necklace",
   },
   {
@@ -1217,7 +1217,7 @@ const NECKLACE = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/necklace/Occult_necklace.webp",
+    src: "/gearcalculator/necklace/Occult_necklace.webp",
     slot: "Necklace",
   },
   {
@@ -1254,7 +1254,7 @@ const NECKLACE = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/necklace/Occult_necklace_(or).webp",
+    src: "/gearcalculator/necklace/Occult_necklace_(or).webp",
     slot: "Necklace",
   },
   {
@@ -1291,7 +1291,7 @@ const NECKLACE = [
         Weight: 0.007,
       },
     ],
-    src: "./gearcalculator/necklace/Salve_amulet.webp",
+    src: "/gearcalculator/necklace/Salve_amulet.webp",
     slot: "Necklace",
   },
   {
@@ -1328,7 +1328,7 @@ const NECKLACE = [
         Weight: 0.007,
       },
     ],
-    src: "./gearcalculator/necklace/Salve_amulet_(e).webp",
+    src: "/gearcalculator/necklace/Salve_amulet_(e).webp",
     slot: "Necklace",
   },
   {
@@ -1365,7 +1365,7 @@ const NECKLACE = [
         Weight: 0.002,
       },
     ],
-    src: "./gearcalculator/necklace/Saradomin_stole.webp",
+    src: "/gearcalculator/necklace/Saradomin_stole.webp",
     slot: "Necklace",
   },
   {
@@ -1402,7 +1402,7 @@ const NECKLACE = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/necklace/Strength_amulet_(t).webp",
+    src: "/gearcalculator/necklace/Strength_amulet_(t).webp",
     slot: "Necklace",
   },
   {
@@ -1439,7 +1439,7 @@ const NECKLACE = [
         Weight: 0.007,
       },
     ],
-    src: "./gearcalculator/necklace/Unholy_symbol.webp",
+    src: "/gearcalculator/necklace/Unholy_symbol.webp",
     slot: "Necklace",
   },
   {
@@ -1476,7 +1476,7 @@ const NECKLACE = [
         Weight: 0.005,
       },
     ],
-    src: "./gearcalculator/necklace/Void_seal.webp",
+    src: "/gearcalculator/necklace/Void_seal.webp",
     slot: "Necklace",
   },
   {
@@ -1513,7 +1513,7 @@ const NECKLACE = [
         Weight: 0.007,
       },
     ],
-    src: "./gearcalculator/necklace/Witchwood_icon.webp",
+    src: "/gearcalculator/necklace/Witchwood_icon.webp",
     slot: "Necklace",
   },
   {
@@ -1550,7 +1550,7 @@ const NECKLACE = [
         Weight: 0.06,
       },
     ],
-    src: "./gearcalculator/necklace/Xeric's_talisman.webp",
+    src: "/gearcalculator/necklace/Xeric's_talisman.webp",
     slot: "Necklace",
   },
   {
@@ -1587,7 +1587,7 @@ const NECKLACE = [
         Weight: 0.06,
       },
     ],
-    src: "./gearcalculator/necklace/Xeric's_talisman_(inert).webp",
+    src: "/gearcalculator/necklace/Xeric's_talisman_(inert).webp",
     slot: "Necklace",
   },
   {
@@ -1624,7 +1624,7 @@ const NECKLACE = [
         Weight: 0.002,
       },
     ],
-    src: "./gearcalculator/necklace/Zamorak_stole.webp",
+    src: "/gearcalculator/necklace/Zamorak_stole.webp",
     slot: "Necklace",
   },
 ];

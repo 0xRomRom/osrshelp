@@ -33,7 +33,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Anti-dragon_shield.webp",
+    src: "/gearcalculator/shields/Anti-dragon_shield.webp",
     slot: "Shield",
   },
   {
@@ -70,7 +70,7 @@ const SHIELDS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/shields/Book_of_balance.webp",
+    src: "/gearcalculator/shields/Book_of_balance.webp",
     slot: "Shield",
   },
   {
@@ -107,7 +107,7 @@ const SHIELDS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/shields/Holy_book.webp",
+    src: "/gearcalculator/shields/Holy_book.webp",
     slot: "Shield",
   },
   {
@@ -144,7 +144,7 @@ const SHIELDS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/shields/Book_of_darkness.webp",
+    src: "/gearcalculator/shields/Book_of_darkness.webp",
     slot: "Shield",
   },
   {
@@ -181,7 +181,7 @@ const SHIELDS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/shields/Book_of_law.webp",
+    src: "/gearcalculator/shields/Book_of_law.webp",
     slot: "Shield",
   },
   {
@@ -218,7 +218,7 @@ const SHIELDS = [
         Weight: 0.2,
       },
     ],
-    src: "./gearcalculator/shields/Book_of_the_dead.webp",
+    src: "/gearcalculator/shields/Book_of_the_dead.webp",
     slot: "Shield",
   },
   {
@@ -255,7 +255,7 @@ const SHIELDS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/shields/Book_of_war.webp",
+    src: "/gearcalculator/shields/Book_of_war.webp",
     slot: "Shield",
   },
   {
@@ -292,7 +292,7 @@ const SHIELDS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/shields/Bronze_defender.webp",
+    src: "/gearcalculator/shields/Bronze_defender.webp",
     slot: "Shield",
   },
   {
@@ -329,7 +329,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Bronze_kiteshield.webp",
+    src: "/gearcalculator/shields/Bronze_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -366,7 +366,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Bronze_kiteshield_(g).webp",
+    src: "/gearcalculator/shields/Bronze_kiteshield_(g).webp",
     slot: "Shield",
   },
   {
@@ -403,7 +403,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Bronze_kiteshield_(t).webp",
+    src: "/gearcalculator/shields/Bronze_kiteshield_(t).webp",
     slot: "Shield",
   },
   {
@@ -440,7 +440,7 @@ const SHIELDS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/Bronze_sq_shield.webp",
+    src: "/gearcalculator/shields/Bronze_sq_shield.webp",
     slot: "Shield",
   },
   {
@@ -477,7 +477,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Broodoo_shield_(poison).webp",
+    src: "/gearcalculator/shields/Broodoo_shield_(poison).webp",
     slot: "Shield",
   },
   {
@@ -514,7 +514,7 @@ const SHIELDS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/shields/Elemental_shield.webp",
+    src: "/gearcalculator/shields/Elemental_shield.webp",
     slot: "Shield",
   },
   {
@@ -551,7 +551,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Falador_shield_1.webp",
+    src: "/gearcalculator/shields/Falador_shield_1.webp",
     slot: "Shield",
   },
   {
@@ -588,7 +588,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Falador_shield_2.webp",
+    src: "/gearcalculator/shields/Falador_shield_2.webp",
     slot: "Shield",
   },
   {
@@ -625,7 +625,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Falador_shield_3.webp",
+    src: "/gearcalculator/shields/Falador_shield_3.webp",
     slot: "Shield",
   },
   {
@@ -662,7 +662,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Falador_shield_4.webp",
+    src: "/gearcalculator/shields/Falador_shield_4.webp",
     slot: "Shield",
   },
   {
@@ -699,7 +699,7 @@ const SHIELDS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/shields/Iron_defender.webp",
+    src: "/gearcalculator/shields/Iron_defender.webp",
     slot: "Shield",
   },
   {
@@ -736,7 +736,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Iron_kiteshield.webp",
+    src: "/gearcalculator/shields/Iron_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -773,7 +773,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Iron_kiteshield_(g).webp",
+    src: "/gearcalculator/shields/Iron_kiteshield_(g).webp",
     slot: "Shield",
   },
   {
@@ -810,7 +810,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Iron_kiteshield_(t).webp",
+    src: "/gearcalculator/shields/Iron_kiteshield_(t).webp",
     slot: "Shield",
   },
   {
@@ -847,7 +847,7 @@ const SHIELDS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/Iron_sq_shield.webp",
+    src: "/gearcalculator/shields/Iron_sq_shield.webp",
     slot: "Shield",
   },
   {
@@ -884,7 +884,7 @@ const SHIELDS = [
         Weight: 0.2,
       },
     ],
-    src: "./gearcalculator/shields/Kharedst's_memoirs.webp",
+    src: "/gearcalculator/shields/Kharedst's_memoirs.webp",
     slot: "Shield",
   },
   {
@@ -921,7 +921,7 @@ const SHIELDS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/shields/Mage's_book.webp",
+    src: "/gearcalculator/shields/Mage's_book.webp",
     slot: "Shield",
   },
   {
@@ -958,7 +958,7 @@ const SHIELDS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/shields/Mind_shield.webp",
+    src: "/gearcalculator/shields/Mind_shield.webp",
     slot: "Shield",
   },
   {
@@ -995,7 +995,7 @@ const SHIELDS = [
         Weight: 0.226,
       },
     ],
-    src: "./gearcalculator/shields/Mirror_shield.webp",
+    src: "/gearcalculator/shields/Mirror_shield.webp",
     slot: "Shield",
   },
   {
@@ -1032,7 +1032,7 @@ const SHIELDS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/shields/Tome_of_fire.webp",
+    src: "/gearcalculator/shields/Tome_of_fire.webp",
     slot: "Shield",
   },
   {
@@ -1069,7 +1069,7 @@ const SHIELDS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/shields/Tome_of_water.webp",
+    src: "/gearcalculator/shields/Tome_of_water.webp",
     slot: "Shield",
   },
   {
@@ -1106,7 +1106,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Training_shield.webp",
+    src: "/gearcalculator/shields/Training_shield.webp",
     slot: "Shield",
   },
   {
@@ -1143,7 +1143,7 @@ const SHIELDS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/shields/Unholy_book.webp",
+    src: "/gearcalculator/shields/Unholy_book.webp",
     slot: "Shield",
   },
   {
@@ -1180,7 +1180,7 @@ const SHIELDS = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/shields/Wooden_shield.webp",
+    src: "/gearcalculator/shields/Wooden_shield.webp",
     slot: "Shield",
   },
   {
@@ -1217,7 +1217,7 @@ const SHIELDS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/shields/Decorative_shield_(red).webp",
+    src: "/gearcalculator/shields/Decorative_shield_(red).webp",
     slot: "Shield",
   },
   {
@@ -1254,7 +1254,7 @@ const SHIELDS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/shields/Steel_defender.webp",
+    src: "/gearcalculator/shields/Steel_defender.webp",
     slot: "Shield",
   },
   {
@@ -1291,7 +1291,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Steel_kiteshield.webp",
+    src: "/gearcalculator/shields/Steel_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -1328,7 +1328,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Steel_kiteshield_(g).webp",
+    src: "/gearcalculator/shields/Steel_kiteshield_(g).webp",
     slot: "Shield",
   },
   {
@@ -1365,7 +1365,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Steel_kiteshield_(t).webp",
+    src: "/gearcalculator/shields/Steel_kiteshield_(t).webp",
     slot: "Shield",
   },
   {
@@ -1402,7 +1402,7 @@ const SHIELDS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/Steel_sq_shield.webp",
+    src: "/gearcalculator/shields/Steel_sq_shield.webp",
     slot: "Shield",
   },
   {
@@ -1439,7 +1439,7 @@ const SHIELDS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/shields/Black_defender.webp",
+    src: "/gearcalculator/shields/Black_defender.webp",
     slot: "Shield",
   },
   {
@@ -1476,7 +1476,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Black_kiteshield.webp",
+    src: "/gearcalculator/shields/Black_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -1513,7 +1513,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Black_kiteshield_(g).webp",
+    src: "/gearcalculator/shields/Black_kiteshield_(g).webp",
     slot: "Shield",
   },
   {
@@ -1550,7 +1550,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Black_kiteshield_(t).webp",
+    src: "/gearcalculator/shields/Black_kiteshield_(t).webp",
     slot: "Shield",
   },
   {
@@ -1587,7 +1587,7 @@ const SHIELDS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/Black_sq_shield.webp",
+    src: "/gearcalculator/shields/Black_sq_shield.webp",
     slot: "Shield",
   },
   {
@@ -1624,7 +1624,7 @@ const SHIELDS = [
         Weight: 7,
       },
     ],
-    src: "./gearcalculator/shields/Hard_leather_shield.webp",
+    src: "/gearcalculator/shields/Hard_leather_shield.webp",
     slot: "Shield",
   },
   {
@@ -1661,7 +1661,7 @@ const SHIELDS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/shields/Oak_shield.webp",
+    src: "/gearcalculator/shields/Oak_shield.webp",
     slot: "Shield",
   },
   {
@@ -1698,7 +1698,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/White_kiteshield.webp",
+    src: "/gearcalculator/shields/White_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -1735,7 +1735,7 @@ const SHIELDS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/White_sq_shield.webp",
+    src: "/gearcalculator/shields/White_sq_shield.webp",
     slot: "Shield",
   },
   {
@@ -1772,7 +1772,7 @@ const SHIELDS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/shields/Decorative_shield_(white).webp",
+    src: "/gearcalculator/shields/Decorative_shield_(white).webp",
     slot: "Shield",
   },
   {
@@ -1809,7 +1809,7 @@ const SHIELDS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/shields/Mithril_defender.webp",
+    src: "/gearcalculator/shields/Mithril_defender.webp",
     slot: "Shield",
   },
   {
@@ -1846,7 +1846,7 @@ const SHIELDS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/shields/Mithril_kiteshield.webp",
+    src: "/gearcalculator/shields/Mithril_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -1883,7 +1883,7 @@ const SHIELDS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/shields/Mithril_kiteshield_(g).webp",
+    src: "/gearcalculator/shields/Mithril_kiteshield_(g).webp",
     slot: "Shield",
   },
   {
@@ -1920,7 +1920,7 @@ const SHIELDS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/shields/Mithril_kiteshield_(t).webp",
+    src: "/gearcalculator/shields/Mithril_kiteshield_(t).webp",
     slot: "Shield",
   },
   {
@@ -1957,7 +1957,7 @@ const SHIELDS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/shields/Mithril_sq_shield.webp",
+    src: "/gearcalculator/shields/Mithril_sq_shield.webp",
     slot: "Shield",
   },
   {
@@ -1994,7 +1994,7 @@ const SHIELDS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/Neitiznot_shield.webp",
+    src: "/gearcalculator/shields/Neitiznot_shield.webp",
     slot: "Shield",
   },
   {
@@ -2031,7 +2031,7 @@ const SHIELDS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/shields/Adamant_defender.webp",
+    src: "/gearcalculator/shields/Adamant_defender.webp",
     slot: "Shield",
   },
   {
@@ -2068,7 +2068,7 @@ const SHIELDS = [
         Weight: 5.896,
       },
     ],
-    src: "./gearcalculator/shields/Adamant_kiteshield.webp",
+    src: "/gearcalculator/shields/Adamant_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -2105,7 +2105,7 @@ const SHIELDS = [
         Weight: 5.896,
       },
     ],
-    src: "./gearcalculator/shields/Adamant_kiteshield_(g).webp",
+    src: "/gearcalculator/shields/Adamant_kiteshield_(g).webp",
     slot: "Shield",
   },
   {
@@ -2142,7 +2142,7 @@ const SHIELDS = [
         Weight: 5.896,
       },
     ],
-    src: "./gearcalculator/shields/Adamant_kiteshield_(t).webp",
+    src: "/gearcalculator/shields/Adamant_kiteshield_(t).webp",
     slot: "Shield",
   },
   {
@@ -2179,7 +2179,7 @@ const SHIELDS = [
         Weight: 4.082,
       },
     ],
-    src: "./gearcalculator/shields/Adamant_sq_shield.webp",
+    src: "/gearcalculator/shields/Adamant_sq_shield.webp",
     slot: "Shield",
   },
   {
@@ -2216,7 +2216,7 @@ const SHIELDS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/shields/Cabbage_round_shield.webp",
+    src: "/gearcalculator/shields/Cabbage_round_shield.webp",
     slot: "Shield",
   },
   {
@@ -2253,7 +2253,7 @@ const SHIELDS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/shields/Decorative_shield_(gold).webp",
+    src: "/gearcalculator/shields/Decorative_shield_(gold).webp",
     slot: "Shield",
   },
   {
@@ -2290,7 +2290,7 @@ const SHIELDS = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/shields/Fremennik_shield.webp",
+    src: "/gearcalculator/shields/Fremennik_shield.webp",
     slot: "Shield",
   },
   {
@@ -2327,7 +2327,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Snakeskin_shield.webp",
+    src: "/gearcalculator/shields/Snakeskin_shield.webp",
     slot: "Shield",
   },
   {
@@ -2364,7 +2364,7 @@ const SHIELDS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/shields/Willow_shield.webp",
+    src: "/gearcalculator/shields/Willow_shield.webp",
     slot: "Shield",
   },
   {
@@ -2401,7 +2401,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Ancient_d'hide_shield.webp",
+    src: "/gearcalculator/shields/Ancient_d'hide_shield.webp",
     slot: "Shield",
   },
   {
@@ -2438,7 +2438,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Bandos_d'hide_shield.webp",
+    src: "/gearcalculator/shields/Bandos_d'hide_shield.webp",
     slot: "Shield",
   },
   {
@@ -2475,7 +2475,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Ancient_kiteshield.webp",
+    src: "/gearcalculator/shields/Ancient_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -2512,7 +2512,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Saradomin_kiteshield.webp",
+    src: "/gearcalculator/shields/Saradomin_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -2549,7 +2549,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Bandos_kiteshield.webp",
+    src: "/gearcalculator/shields/Bandos_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -2586,7 +2586,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Zamorak_kiteshield.webp",
+    src: "/gearcalculator/shields/Zamorak_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -2623,7 +2623,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Guthix_kiteshield.webp",
+    src: "/gearcalculator/shields/Guthix_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -2660,7 +2660,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Armadyl_kiteshield.webp",
+    src: "/gearcalculator/shields/Armadyl_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -2697,7 +2697,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Armadyl_d'hide_shield.webp",
+    src: "/gearcalculator/shields/Armadyl_d'hide_shield.webp",
     slot: "Shield",
   },
   {
@@ -2734,7 +2734,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Black_d'hide_shield.webp",
+    src: "/gearcalculator/shields/Black_d'hide_shield.webp",
     slot: "Shield",
   },
   {
@@ -2771,7 +2771,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Blue_d'hide_shield.webp",
+    src: "/gearcalculator/shields/Blue_d'hide_shield.webp",
     slot: "Shield",
   },
   {
@@ -2808,7 +2808,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Gilded_kiteshield.webp",
+    src: "/gearcalculator/shields/Gilded_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -2845,7 +2845,7 @@ const SHIELDS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/Gilded_sq_shield.webp",
+    src: "/gearcalculator/shields/Gilded_sq_shield.webp",
     slot: "Shield",
   },
   {
@@ -2882,7 +2882,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Green_d'hide_shield.webp",
+    src: "/gearcalculator/shields/Green_d'hide_shield.webp",
     slot: "Shield",
   },
   {
@@ -2919,7 +2919,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Guthix_d'hide_shield.webp",
+    src: "/gearcalculator/shields/Guthix_d'hide_shield.webp",
     slot: "Shield",
   },
   {
@@ -2956,7 +2956,7 @@ const SHIELDS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/shields/Magic_shield.webp",
+    src: "/gearcalculator/shields/Magic_shield.webp",
     slot: "Shield",
   },
   {
@@ -2993,7 +2993,7 @@ const SHIELDS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/shields/Maple_shield.webp",
+    src: "/gearcalculator/shields/Maple_shield.webp",
     slot: "Shield",
   },
   {
@@ -3030,7 +3030,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Red_d'hide_shield.webp",
+    src: "/gearcalculator/shields/Red_d'hide_shield.webp",
     slot: "Shield",
   },
   {
@@ -3067,7 +3067,7 @@ const SHIELDS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/shields/Redwood_shield.webp",
+    src: "/gearcalculator/shields/Redwood_shield.webp",
     slot: "Shield",
   },
   {
@@ -3104,7 +3104,7 @@ const SHIELDS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/shields/Rune_defender.webp",
+    src: "/gearcalculator/shields/Rune_defender.webp",
     slot: "Shield",
   },
   {
@@ -3141,7 +3141,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Rune_kiteshield.webp",
+    src: "/gearcalculator/shields/Rune_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -3178,7 +3178,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Rune_kiteshield_(g).webp",
+    src: "/gearcalculator/shields/Rune_kiteshield_(g).webp",
     slot: "Shield",
   },
   {
@@ -3215,7 +3215,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Rune_kiteshield_(t).webp",
+    src: "/gearcalculator/shields/Rune_kiteshield_(t).webp",
     slot: "Shield",
   },
   {
@@ -3252,7 +3252,7 @@ const SHIELDS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/Rune_sq_shield.webp",
+    src: "/gearcalculator/shields/Rune_sq_shield.webp",
     slot: "Shield",
   },
   {
@@ -3289,7 +3289,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Saradomin_d'hide_shield.webp",
+    src: "/gearcalculator/shields/Saradomin_d'hide_shield.webp",
     slot: "Shield",
   },
   {
@@ -3326,7 +3326,7 @@ const SHIELDS = [
         Weight: 2.267,
       },
     ],
-    src: "./gearcalculator/shields/V's_shield.webp",
+    src: "/gearcalculator/shields/V's_shield.webp",
     slot: "Shield",
   },
   {
@@ -3363,7 +3363,7 @@ const SHIELDS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/shields/Yew_shield.webp",
+    src: "/gearcalculator/shields/Yew_shield.webp",
     slot: "Shield",
   },
   {
@@ -3400,7 +3400,7 @@ const SHIELDS = [
         Weight: 8,
       },
     ],
-    src: "./gearcalculator/shields/Zamorak_d'hide_shield.webp",
+    src: "/gearcalculator/shields/Zamorak_d'hide_shield.webp",
     slot: "Shield",
   },
   {
@@ -3437,7 +3437,7 @@ const SHIELDS = [
         Weight: 2,
       },
     ],
-    src: "./gearcalculator/shields/Spirit_shield.webp",
+    src: "/gearcalculator/shields/Spirit_shield.webp",
     slot: "Shield",
   },
   {
@@ -3474,7 +3474,7 @@ const SHIELDS = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/shields/Granite_shield.webp",
+    src: "/gearcalculator/shields/Granite_shield.webp",
     slot: "Shield",
   },
   {
@@ -3511,7 +3511,7 @@ const SHIELDS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/shields/Dragon_defender.webp",
+    src: "/gearcalculator/shields/Dragon_defender.webp",
     slot: "Shield",
   },
   {
@@ -3548,7 +3548,7 @@ const SHIELDS = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/shields/Dragon_kiteshield.webp",
+    src: "/gearcalculator/shields/Dragon_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -3585,7 +3585,7 @@ const SHIELDS = [
         Weight: 6.803,
       },
     ],
-    src: "./gearcalculator/shields/Dragon_kiteshield_(g).webp",
+    src: "/gearcalculator/shields/Dragon_kiteshield_(g).webp",
     slot: "Shield",
   },
   {
@@ -3622,7 +3622,7 @@ const SHIELDS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/shields/Dragon_sq_shield.webp",
+    src: "/gearcalculator/shields/Dragon_sq_shield.webp",
     slot: "Shield",
   },
   {
@@ -3659,7 +3659,7 @@ const SHIELDS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/shields/Dragon_sq_shield_(g).webp",
+    src: "/gearcalculator/shields/Dragon_sq_shield_(g).webp",
     slot: "Shield",
   },
   {
@@ -3696,7 +3696,7 @@ const SHIELDS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/Malediction_ward.webp",
+    src: "/gearcalculator/shields/Malediction_ward.webp",
     slot: "Shield",
   },
   {
@@ -3733,7 +3733,7 @@ const SHIELDS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/Odium_ward.webp",
+    src: "/gearcalculator/shields/Odium_ward.webp",
     slot: "Shield",
   },
   {
@@ -3770,7 +3770,7 @@ const SHIELDS = [
         Weight: 3.628,
       },
     ],
-    src: "./gearcalculator/shields/Toktz-ket-xil.webp",
+    src: "/gearcalculator/shields/Toktz-ket-xil.webp",
     slot: "Shield",
   },
   {
@@ -3807,7 +3807,7 @@ const SHIELDS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/shields/3rd_age_kiteshield.webp",
+    src: "/gearcalculator/shields/3rd_age_kiteshield.webp",
     slot: "Shield",
   },
   {
@@ -3844,7 +3844,7 @@ const SHIELDS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/shields/Avernic_defender.webp",
+    src: "/gearcalculator/shields/Avernic_defender.webp",
     slot: "Shield",
   },
   {
@@ -3881,7 +3881,7 @@ const SHIELDS = [
         Weight: 2,
       },
     ],
-    src: "./gearcalculator/shields/Blessed_spirit_shield.webp",
+    src: "/gearcalculator/shields/Blessed_spirit_shield.webp",
     slot: "Shield",
   },
   {
@@ -3918,7 +3918,7 @@ const SHIELDS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/shields/Crystal_shield.webp",
+    src: "/gearcalculator/shields/Crystal_shield.webp",
     slot: "Shield",
   },
   {
@@ -3955,7 +3955,7 @@ const SHIELDS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/shields/Ghommal's_avernic_defender_6.webp",
+    src: "/gearcalculator/shields/Ghommal's_avernic_defender_6.webp",
     slot: "Shield",
   },
   {
@@ -3992,7 +3992,7 @@ const SHIELDS = [
         Weight: 4.535,
       },
     ],
-    src: "./gearcalculator/shields/Ancient_wyvern_shield.webp",
+    src: "/gearcalculator/shields/Ancient_wyvern_shield.webp",
     slot: "Shield",
   },
   {
@@ -4029,7 +4029,7 @@ const SHIELDS = [
         Weight: 2,
       },
     ],
-    src: "./gearcalculator/shields/Arcane_spirit_shield.webp",
+    src: "/gearcalculator/shields/Arcane_spirit_shield.webp",
     slot: "Shield",
   },
   {
@@ -4066,7 +4066,7 @@ const SHIELDS = [
         Weight: 7.257,
       },
     ],
-    src: "./gearcalculator/shields/Dragonfire_shield_(uncharged).webp",
+    src: "/gearcalculator/shields/Dragonfire_shield_(uncharged).webp",
     slot: "Shield",
   },
   {
@@ -4103,7 +4103,7 @@ const SHIELDS = [
         Weight: 4.082,
       },
     ],
-    src: "./gearcalculator/shields/Dragonfire_ward_(uncharged).webp",
+    src: "/gearcalculator/shields/Dragonfire_ward_(uncharged).webp",
     slot: "Shield",
   },
   {
@@ -4140,7 +4140,7 @@ const SHIELDS = [
         Weight: 4.082,
       },
     ],
-    src: "./gearcalculator/shields/Dragonfire_ward.webp",
+    src: "/gearcalculator/shields/Dragonfire_ward.webp",
     slot: "Shield",
   },
   {
@@ -4177,7 +4177,7 @@ const SHIELDS = [
         Weight: 7.257,
       },
     ],
-    src: "./gearcalculator/shields/Dragonfire_shield.webp",
+    src: "/gearcalculator/shields/Dragonfire_shield.webp",
     slot: "Shield",
   },
   {
@@ -4214,7 +4214,7 @@ const SHIELDS = [
         Weight: 2,
       },
     ],
-    src: "./gearcalculator/shields/Elysian_spirit_shield.webp",
+    src: "/gearcalculator/shields/Elysian_spirit_shield.webp",
     slot: "Shield",
   },
   {
@@ -4251,7 +4251,7 @@ const SHIELDS = [
         Weight: 2,
       },
     ],
-    src: "./gearcalculator/shields/Spectral_spirit_shield.webp",
+    src: "/gearcalculator/shields/Spectral_spirit_shield.webp",
     slot: "Shield",
   },
   {
@@ -4288,7 +4288,7 @@ const SHIELDS = [
         Weight: 5.443,
       },
     ],
-    src: "./gearcalculator/shields/Twisted_buckler.webp",
+    src: "/gearcalculator/shields/Twisted_buckler.webp",
     slot: "Shield",
   },
   {
@@ -4325,7 +4325,7 @@ const SHIELDS = [
         Weight: 0.708,
       },
     ],
-    src: "./gearcalculator/shields/Elidinis'_ward.webp",
+    src: "/gearcalculator/shields/Elidinis'_ward.webp",
     slot: "Shield",
   },
   {
@@ -4362,7 +4362,7 @@ const SHIELDS = [
         Weight: 3.708,
       },
     ],
-    src: "./gearcalculator/shields/Elidinis'_ward_(f).webp",
+    src: "/gearcalculator/shields/Elidinis'_ward_(f).webp",
     slot: "Shield",
   },
 ];

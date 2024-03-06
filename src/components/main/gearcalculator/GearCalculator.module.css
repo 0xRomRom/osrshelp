@@ -80,3 +80,12 @@
   color: gray;
   font-size: 2rem;
 }
+
+@media (max-width: 1400px) {
+  .topWrap {
+    flex-direction: column;
+  }
+  .savedBuilds {
+    width: 100%;
+  }
+}

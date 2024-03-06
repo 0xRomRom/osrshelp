@@ -1,7 +1,7 @@
 const FREEBUILDS = [
   {
     name: "Dharok's",
-    src: "./gearcalculator/helms/Dharok's_helm.webp",
+    src: "/gearcalculator/helms/Dharok's_helm.webp",
     alt: "Dharok's Equipment",
     itemState: {
       Headpiece: {
@@ -38,7 +38,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/helms/Dharok's_helm.webp",
+        src: "/gearcalculator/helms/Dharok's_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -75,7 +75,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -112,7 +112,7 @@ const FREEBUILDS = [
             Weight: 0.1,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
+        src: "/gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -149,7 +149,7 @@ const FREEBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -186,7 +186,7 @@ const FREEBUILDS = [
             Weight: 3.175,
           },
         ],
-        src: "./gearcalculator/weapons/Dharok's_greataxe.webp",
+        src: "/gearcalculator/weapons/Dharok's_greataxe.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -224,7 +224,7 @@ const FREEBUILDS = [
             Weight: 9.979,
           },
         ],
-        src: "./gearcalculator/bodies/Dharok's_platebody.webp",
+        src: "/gearcalculator/bodies/Dharok's_platebody.webp",
         slot: "Body",
       },
       Shield: {},
@@ -262,7 +262,7 @@ const FREEBUILDS = [
             Weight: 9.071,
           },
         ],
-        src: "./gearcalculator/legs/Dharok's_platelegs.webp",
+        src: "/gearcalculator/legs/Dharok's_platelegs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -299,7 +299,7 @@ const FREEBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -336,7 +336,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/boots/Primordial_boots.webp",
+        src: "/gearcalculator/boots/Primordial_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -373,14 +373,14 @@ const FREEBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Berserker_ring_(i).webp",
+        src: "/gearcalculator/rings/Berserker_ring_(i).webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Verac's",
-    src: "./gearcalculator/helms/Verac's_helm.webp",
+    src: "/gearcalculator/helms/Verac's_helm.webp",
     alt: "Verac's Equipment",
     itemState: {
       Headpiece: {
@@ -417,7 +417,7 @@ const FREEBUILDS = [
             Weight: 1.36,
           },
         ],
-        src: "./gearcalculator/helms/Verac's_helm.webp",
+        src: "/gearcalculator/helms/Verac's_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -454,7 +454,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -491,7 +491,7 @@ const FREEBUILDS = [
             Weight: 0.1,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
+        src: "/gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -528,7 +528,7 @@ const FREEBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -565,7 +565,7 @@ const FREEBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/weapons/Verac's_flail.webp",
+        src: "/gearcalculator/weapons/Verac's_flail.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -603,7 +603,7 @@ const FREEBUILDS = [
             Weight: 4.989,
           },
         ],
-        src: "./gearcalculator/bodies/Verac's_brassard.webp",
+        src: "/gearcalculator/bodies/Verac's_brassard.webp",
         slot: "Body",
       },
       Shield: {},
@@ -641,7 +641,7 @@ const FREEBUILDS = [
             Weight: 4.535,
           },
         ],
-        src: "./gearcalculator/legs/Verac's_plateskirt.webp",
+        src: "/gearcalculator/legs/Verac's_plateskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -678,7 +678,7 @@ const FREEBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -715,7 +715,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/boots/Primordial_boots.webp",
+        src: "/gearcalculator/boots/Primordial_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -752,14 +752,14 @@ const FREEBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Berserker_ring_(i).webp",
+        src: "/gearcalculator/rings/Berserker_ring_(i).webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Karil's",
-    src: "./gearcalculator/helms/Karil's_coif.webp",
+    src: "/gearcalculator/helms/Karil's_coif.webp",
     alt: "Karil's Equipment",
     itemState: {
       Headpiece: {
@@ -796,7 +796,7 @@ const FREEBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/helms/Karil's_coif.webp",
+        src: "/gearcalculator/helms/Karil's_coif.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -833,7 +833,7 @@ const FREEBUILDS = [
             Weight: 5.896,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_assembler.webp",
+        src: "/gearcalculator/capes/Ava's_assembler.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -870,7 +870,7 @@ const FREEBUILDS = [
             Weight: 0.1,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
+        src: "/gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -907,7 +907,7 @@ const FREEBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Bolt_rack_1.webp",
+        src: "/gearcalculator/amunition/Bolt_rack_1.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -944,7 +944,7 @@ const FREEBUILDS = [
             Weight: 3.628,
           },
         ],
-        src: "./gearcalculator/weapons/Karil's_crossbow.webp",
+        src: "/gearcalculator/weapons/Karil's_crossbow.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -982,7 +982,7 @@ const FREEBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Karil's_leathertop.webp",
+        src: "/gearcalculator/bodies/Karil's_leathertop.webp",
         slot: "Body",
       },
       Shield: {},
@@ -1020,7 +1020,7 @@ const FREEBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Karil's_leatherskirt.webp",
+        src: "/gearcalculator/legs/Karil's_leatherskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1057,7 +1057,7 @@ const FREEBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1094,7 +1094,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/boots/Pegasian_boots.webp",
+        src: "/gearcalculator/boots/Pegasian_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -1131,14 +1131,14 @@ const FREEBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Archers_ring_(i).webp",
+        src: "/gearcalculator/rings/Archers_ring_(i).webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Torag's",
-    src: "./gearcalculator/helms/Torag's_helm.webp",
+    src: "/gearcalculator/helms/Torag's_helm.webp",
     alt: "Torag's Equipment",
     itemState: {
       Headpiece: {
@@ -1175,7 +1175,7 @@ const FREEBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Torag's_helm.webp",
+        src: "/gearcalculator/helms/Torag's_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -1212,7 +1212,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -1249,7 +1249,7 @@ const FREEBUILDS = [
             Weight: 0.1,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
+        src: "/gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -1286,7 +1286,7 @@ const FREEBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -1323,7 +1323,7 @@ const FREEBUILDS = [
             Weight: 3.628,
           },
         ],
-        src: "./gearcalculator/weapons/Torag's_hammers.webp",
+        src: "/gearcalculator/weapons/Torag's_hammers.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -1361,7 +1361,7 @@ const FREEBUILDS = [
             Weight: 9.979,
           },
         ],
-        src: "./gearcalculator/bodies/Torag's_platebody.webp",
+        src: "/gearcalculator/bodies/Torag's_platebody.webp",
         slot: "Body",
       },
       Shield: {},
@@ -1399,7 +1399,7 @@ const FREEBUILDS = [
             Weight: 9.071,
           },
         ],
-        src: "./gearcalculator/legs/Torag's_platelegs.webp",
+        src: "/gearcalculator/legs/Torag's_platelegs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1436,7 +1436,7 @@ const FREEBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1473,7 +1473,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/boots/Primordial_boots.webp",
+        src: "/gearcalculator/boots/Primordial_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -1510,14 +1510,14 @@ const FREEBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Berserker_ring_(i).webp",
+        src: "/gearcalculator/rings/Berserker_ring_(i).webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Ahrim's",
-    src: "./gearcalculator/helms/Ahrim's_hood.webp",
+    src: "/gearcalculator/helms/Ahrim's_hood.webp",
     alt: "Ahrim's Equipment",
     itemState: {
       Headpiece: {
@@ -1554,7 +1554,7 @@ const FREEBUILDS = [
             Weight: 0.907,
           },
         ],
-        src: "./gearcalculator/helms/Ahrim's_hood.webp",
+        src: "/gearcalculator/helms/Ahrim's_hood.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -1591,7 +1591,7 @@ const FREEBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_saradomin_cape.webp",
+        src: "/gearcalculator/capes/Imbued_saradomin_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -1628,7 +1628,7 @@ const FREEBUILDS = [
             Weight: 0.1,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
+        src: "/gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -1665,7 +1665,7 @@ const FREEBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -1702,7 +1702,7 @@ const FREEBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/weapons/Ahrim's_staff.webp",
+        src: "/gearcalculator/weapons/Ahrim's_staff.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -1740,7 +1740,7 @@ const FREEBUILDS = [
             Weight: 4.535,
           },
         ],
-        src: "./gearcalculator/bodies/Ahrim's_robetop.webp",
+        src: "/gearcalculator/bodies/Ahrim's_robetop.webp",
         slot: "Body",
       },
       Shield: {},
@@ -1778,7 +1778,7 @@ const FREEBUILDS = [
             Weight: 11.339,
           },
         ],
-        src: "./gearcalculator/legs/Ahrim's_robeskirt.webp",
+        src: "/gearcalculator/legs/Ahrim's_robeskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -1815,7 +1815,7 @@ const FREEBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -1852,7 +1852,7 @@ const FREEBUILDS = [
             Weight: 1.84,
           },
         ],
-        src: "./gearcalculator/boots/Eternal_boots.webp",
+        src: "/gearcalculator/boots/Eternal_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -1889,14 +1889,14 @@ const FREEBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Magus_ring.webp",
+        src: "/gearcalculator/rings/Magus_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Guthan's",
-    src: "./gearcalculator/helms/Guthan's_helm.webp",
+    src: "/gearcalculator/helms/Guthan's_helm.webp",
     alt: "Guthan's Equipment",
     itemState: {
       Headpiece: {
@@ -1933,7 +1933,7 @@ const FREEBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/helms/Guthan's_helm.webp",
+        src: "/gearcalculator/helms/Guthan's_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -1970,7 +1970,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -2007,7 +2007,7 @@ const FREEBUILDS = [
             Weight: 0.1,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
+        src: "/gearcalculator/necklace/Amulet_of_the_damned_(full).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -2044,7 +2044,7 @@ const FREEBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -2081,7 +2081,7 @@ const FREEBUILDS = [
             Weight: 2.267,
           },
         ],
-        src: "./gearcalculator/weapons/Guthan's_warspear.webp",
+        src: "/gearcalculator/weapons/Guthan's_warspear.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -2119,7 +2119,7 @@ const FREEBUILDS = [
             Weight: 9.979,
           },
         ],
-        src: "./gearcalculator/bodies/Guthan's_platebody.webp",
+        src: "/gearcalculator/bodies/Guthan's_platebody.webp",
         slot: "Body",
       },
       Shield: {},
@@ -2157,7 +2157,7 @@ const FREEBUILDS = [
             Weight: 8.164,
           },
         ],
-        src: "./gearcalculator/legs/Guthan's_chainskirt.webp",
+        src: "/gearcalculator/legs/Guthan's_chainskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -2194,7 +2194,7 @@ const FREEBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -2231,7 +2231,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/boots/Primordial_boots.webp",
+        src: "/gearcalculator/boots/Primordial_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -2268,14 +2268,14 @@ const FREEBUILDS = [
             Weight: 0.004,
           },
         ],
-        src: "./gearcalculator/rings/Berserker_ring_(i).webp",
+        src: "/gearcalculator/rings/Berserker_ring_(i).webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Crystal",
-    src: "./gearcalculator/helms/Crystal_helm.webp",
+    src: "/gearcalculator/helms/Crystal_helm.webp",
     alt: "Crystal's Equipment",
     itemState: {
       Headpiece: {
@@ -2312,7 +2312,7 @@ const FREEBUILDS = [
             Weight: 0.5,
           },
         ],
-        src: "./gearcalculator/helms/Crystal_helm.webp",
+        src: "/gearcalculator/helms/Crystal_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -2349,7 +2349,7 @@ const FREEBUILDS = [
             Weight: 5.896,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_assembler.webp",
+        src: "/gearcalculator/capes/Ava's_assembler.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -2386,7 +2386,7 @@ const FREEBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Necklace_of_anguish.webp",
+        src: "/gearcalculator/necklace/Necklace_of_anguish.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -2423,7 +2423,7 @@ const FREEBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Unholy_blessing.webp",
+        src: "/gearcalculator/amunition/Unholy_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -2460,7 +2460,7 @@ const FREEBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Bow_of_faerdhinen.webp",
+        src: "/gearcalculator/weapons/Bow_of_faerdhinen.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -2498,7 +2498,7 @@ const FREEBUILDS = [
             Weight: 2,
           },
         ],
-        src: "./gearcalculator/bodies/Crystal_body.webp",
+        src: "/gearcalculator/bodies/Crystal_body.webp",
         slot: "Body",
       },
       Shield: {},
@@ -2536,7 +2536,7 @@ const FREEBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/legs/Crystal_legs.webp",
+        src: "/gearcalculator/legs/Crystal_legs.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -2573,7 +2573,7 @@ const FREEBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -2610,7 +2610,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/boots/Pegasian_boots.webp",
+        src: "/gearcalculator/boots/Pegasian_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -2647,14 +2647,14 @@ const FREEBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Venator_ring.webp",
+        src: "/gearcalculator/rings/Venator_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Armadyl",
-    src: "./gearcalculator/helms/Armadyl_helmet.webp",
+    src: "/gearcalculator/helms/Armadyl_helmet.webp",
     alt: "Armadyl's Equipment",
     itemState: {
       Headpiece: {
@@ -2691,7 +2691,7 @@ const FREEBUILDS = [
             Weight: 0.5,
           },
         ],
-        src: "./gearcalculator/helms/Armadyl_helmet.webp",
+        src: "/gearcalculator/helms/Armadyl_helmet.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -2728,7 +2728,7 @@ const FREEBUILDS = [
             Weight: 5.896,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_assembler.webp",
+        src: "/gearcalculator/capes/Ava's_assembler.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -2765,7 +2765,7 @@ const FREEBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Necklace_of_anguish.webp",
+        src: "/gearcalculator/necklace/Necklace_of_anguish.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -2802,7 +2802,7 @@ const FREEBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
+        src: "/gearcalculator/amunition/Diamond_dragon_bolts_(e)_5.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -2839,7 +2839,7 @@ const FREEBUILDS = [
             Weight: 6,
           },
         ],
-        src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+        src: "/gearcalculator/weapons/Armadyl_crossbow.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -2877,7 +2877,7 @@ const FREEBUILDS = [
             Weight: 4,
           },
         ],
-        src: "./gearcalculator/bodies/Armadyl_chestplate.webp",
+        src: "/gearcalculator/bodies/Armadyl_chestplate.webp",
         slot: "Body",
       },
       Shield: {
@@ -2914,7 +2914,7 @@ const FREEBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/shields/Twisted_buckler.webp",
+        src: "/gearcalculator/shields/Twisted_buckler.webp",
         slot: "Shield",
       },
       Legs: {
@@ -2951,7 +2951,7 @@ const FREEBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/legs/Armadyl_chainskirt.webp",
+        src: "/gearcalculator/legs/Armadyl_chainskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -2988,7 +2988,7 @@ const FREEBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -3025,7 +3025,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/boots/Pegasian_boots.webp",
+        src: "/gearcalculator/boots/Pegasian_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -3062,14 +3062,14 @@ const FREEBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Venator_ring.webp",
+        src: "/gearcalculator/rings/Venator_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Bandos",
-    src: "./gearcalculator/bodies/Bandos_chestplate.webp",
+    src: "/gearcalculator/bodies/Bandos_chestplate.webp",
     alt: "Bandos's Equipment",
     itemState: {
       Headpiece: {
@@ -3106,7 +3106,7 @@ const FREEBUILDS = [
             Weight: 0.9,
           },
         ],
-        src: "./gearcalculator/helms/Serpentine_helm.webp",
+        src: "/gearcalculator/helms/Serpentine_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -3143,7 +3143,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/capes/Fire_cape.webp",
+        src: "/gearcalculator/capes/Fire_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -3180,7 +3180,7 @@ const FREEBUILDS = [
             Weight: 0.02,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_blood_fury.webp",
+        src: "/gearcalculator/necklace/Amulet_of_blood_fury.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -3217,7 +3217,7 @@ const FREEBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Honourable_blessing.webp",
+        src: "/gearcalculator/amunition/Honourable_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -3254,7 +3254,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/weapons/Ghrazi_rapier.webp",
+        src: "/gearcalculator/weapons/Ghrazi_rapier.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -3292,7 +3292,7 @@ const FREEBUILDS = [
             Weight: 12,
           },
         ],
-        src: "./gearcalculator/bodies/Bandos_chestplate.webp",
+        src: "/gearcalculator/bodies/Bandos_chestplate.webp",
         slot: "Body",
       },
       Shield: {
@@ -3329,7 +3329,7 @@ const FREEBUILDS = [
             Weight: 7.257,
           },
         ],
-        src: "./gearcalculator/shields/Dragonfire_shield.webp",
+        src: "/gearcalculator/shields/Dragonfire_shield.webp",
         slot: "Shield",
       },
       Legs: {
@@ -3366,7 +3366,7 @@ const FREEBUILDS = [
             Weight: 8,
           },
         ],
-        src: "./gearcalculator/legs/Bandos_tassets.webp",
+        src: "/gearcalculator/legs/Bandos_tassets.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -3403,7 +3403,7 @@ const FREEBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Ferocious_gloves.webp",
+        src: "/gearcalculator/gloves/Ferocious_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -3440,7 +3440,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/boots/Primordial_boots.webp",
+        src: "/gearcalculator/boots/Primordial_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -3477,14 +3477,14 @@ const FREEBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_suffering_(i).webp",
+        src: "/gearcalculator/rings/Ring_of_suffering_(i).webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Mystic",
-    src: "./gearcalculator/helms/Mystic_hat.webp",
+    src: "/gearcalculator/helms/Mystic_hat.webp",
     alt: "Mystic's Equipment",
     itemState: {
       Headpiece: {
@@ -3521,7 +3521,7 @@ const FREEBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/helms/Mystic_hat.webp",
+        src: "/gearcalculator/helms/Mystic_hat.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -3558,7 +3558,7 @@ const FREEBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_saradomin_cape.webp",
+        src: "/gearcalculator/capes/Imbued_saradomin_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -3595,7 +3595,7 @@ const FREEBUILDS = [
             Weight: 0.005,
           },
         ],
-        src: "./gearcalculator/necklace/Occult_necklace_(or).webp",
+        src: "/gearcalculator/necklace/Occult_necklace_(or).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -3632,7 +3632,7 @@ const FREEBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Holy_blessing.webp",
+        src: "/gearcalculator/amunition/Holy_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -3669,7 +3669,7 @@ const FREEBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Staff_of_light.webp",
+        src: "/gearcalculator/weapons/Staff_of_light.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -3707,7 +3707,7 @@ const FREEBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/bodies/Mystic_robe_top.webp",
+        src: "/gearcalculator/bodies/Mystic_robe_top.webp",
         slot: "Body",
       },
       Shield: {
@@ -3744,7 +3744,7 @@ const FREEBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/shields/Book_of_darkness.webp",
+        src: "/gearcalculator/shields/Book_of_darkness.webp",
         slot: "Shield",
       },
       Legs: {
@@ -3781,7 +3781,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/legs/Mystic_robe_bottom.webp",
+        src: "/gearcalculator/legs/Mystic_robe_bottom.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -3818,7 +3818,7 @@ const FREEBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/gloves/Mystic_gloves.webp",
+        src: "/gearcalculator/gloves/Mystic_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -3855,7 +3855,7 @@ const FREEBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/boots/Mystic_boots.webp",
+        src: "/gearcalculator/boots/Mystic_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -3892,7 +3892,7 @@ const FREEBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Magus_ring.webp",
+        src: "/gearcalculator/rings/Magus_ring.webp",
         slot: "Ring",
       },
     },
@@ -3900,8 +3900,8 @@ const FREEBUILDS = [
 
   {
     name: "Range Tank",
-    src: "./gearcalculator/shields/Dragonfire_shield.webp",
-    src2: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+    src: "/gearcalculator/shields/Dragonfire_shield.webp",
+    src2: "/gearcalculator/weapons/Armadyl_crossbow.webp",
     alt: "Range Tank Equipment",
     itemState: {
       Headpiece: {
@@ -3938,7 +3938,7 @@ const FREEBUILDS = [
             Weight: 0.9,
           },
         ],
-        src: "./gearcalculator/helms/Serpentine_helm.webp",
+        src: "/gearcalculator/helms/Serpentine_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -3975,7 +3975,7 @@ const FREEBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Ranging_cape(t).webp",
+        src: "/gearcalculator/capes/Ranging_cape(t).webp",
         slot: "Cape",
       },
       Necklace: {
@@ -4012,7 +4012,7 @@ const FREEBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Necklace_of_anguish.webp",
+        src: "/gearcalculator/necklace/Necklace_of_anguish.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -4049,7 +4049,7 @@ const FREEBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Opal_dragon_bolts_(e)_5.webp",
+        src: "/gearcalculator/amunition/Opal_dragon_bolts_(e)_5.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -4086,7 +4086,7 @@ const FREEBUILDS = [
             Weight: 6,
           },
         ],
-        src: "./gearcalculator/weapons/Armadyl_crossbow.webp",
+        src: "/gearcalculator/weapons/Armadyl_crossbow.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -4124,7 +4124,7 @@ const FREEBUILDS = [
             Weight: 4,
           },
         ],
-        src: "./gearcalculator/bodies/Armadyl_chestplate.webp",
+        src: "/gearcalculator/bodies/Armadyl_chestplate.webp",
         slot: "Body",
       },
       Shield: {
@@ -4161,7 +4161,7 @@ const FREEBUILDS = [
             Weight: 7.257,
           },
         ],
-        src: "./gearcalculator/shields/Dragonfire_shield.webp",
+        src: "/gearcalculator/shields/Dragonfire_shield.webp",
         slot: "Shield",
       },
       Legs: {
@@ -4198,7 +4198,7 @@ const FREEBUILDS = [
             Weight: 4.535,
           },
         ],
-        src: "./gearcalculator/legs/Verac's_plateskirt.webp",
+        src: "/gearcalculator/legs/Verac's_plateskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -4235,7 +4235,7 @@ const FREEBUILDS = [
             Weight: 1,
           },
         ],
-        src: "./gearcalculator/gloves/Zaryte_vambraces.webp",
+        src: "/gearcalculator/gloves/Zaryte_vambraces.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -4272,7 +4272,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/boots/Pegasian_boots.webp",
+        src: "/gearcalculator/boots/Pegasian_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -4309,15 +4309,15 @@ const FREEBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Venator_ring.webp",
+        src: "/gearcalculator/rings/Venator_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Mage Tank",
-    src: "./gearcalculator/shields/Arcane_spirit_shield.webp",
-    src2: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+    src: "/gearcalculator/shields/Arcane_spirit_shield.webp",
+    src2: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
     alt: "Mage Tank Equipment",
     itemState: {
       Headpiece: {
@@ -4354,7 +4354,7 @@ const FREEBUILDS = [
             Weight: 0.9,
           },
         ],
-        src: "./gearcalculator/helms/Serpentine_helm.webp",
+        src: "/gearcalculator/helms/Serpentine_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -4391,7 +4391,7 @@ const FREEBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Imbued_zamorak_cape.webp",
+        src: "/gearcalculator/capes/Imbued_zamorak_cape.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -4428,7 +4428,7 @@ const FREEBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_fury.webp",
+        src: "/gearcalculator/necklace/Amulet_of_fury.webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -4465,7 +4465,7 @@ const FREEBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/Ancient_blessing.webp",
+        src: "/gearcalculator/amunition/Ancient_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -4502,7 +4502,7 @@ const FREEBUILDS = [
             Weight: 1.5,
           },
         ],
-        src: "./gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
+        src: "/gearcalculator/weapons/Toxic_staff_of_the_dead.webp",
         slot: "Weapon",
         twoHanded: false,
       },
@@ -4540,7 +4540,7 @@ const FREEBUILDS = [
             Weight: 2.721,
           },
         ],
-        src: "./gearcalculator/bodies/Ancestral_robe_top.webp",
+        src: "/gearcalculator/bodies/Ancestral_robe_top.webp",
         slot: "Body",
       },
       Shield: {
@@ -4577,7 +4577,7 @@ const FREEBUILDS = [
             Weight: 2,
           },
         ],
-        src: "./gearcalculator/shields/Arcane_spirit_shield.webp",
+        src: "/gearcalculator/shields/Arcane_spirit_shield.webp",
         slot: "Shield",
       },
       Legs: {
@@ -4614,7 +4614,7 @@ const FREEBUILDS = [
             Weight: 1.814,
           },
         ],
-        src: "./gearcalculator/legs/Ancestral_robe_bottom.webp",
+        src: "/gearcalculator/legs/Ancestral_robe_bottom.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -4651,7 +4651,7 @@ const FREEBUILDS = [
             Weight: 0.25,
           },
         ],
-        src: "./gearcalculator/gloves/Tormented_bracelet.webp",
+        src: "/gearcalculator/gloves/Tormented_bracelet.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -4688,7 +4688,7 @@ const FREEBUILDS = [
             Weight: 1.84,
           },
         ],
-        src: "./gearcalculator/boots/Eternal_boots.webp",
+        src: "/gearcalculator/boots/Eternal_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -4725,15 +4725,15 @@ const FREEBUILDS = [
             Weight: 0.012,
           },
         ],
-        src: "./gearcalculator/rings/Magus_ring.webp",
+        src: "/gearcalculator/rings/Magus_ring.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Wildy Tank",
-    src: "./gearcalculator/weapons/Dinh's_bulwark.webp",
-    src2: "./gearcalculator/bodies/Karil's_leathertop.webp",
+    src: "/gearcalculator/weapons/Dinh's_bulwark.webp",
+    src2: "/gearcalculator/bodies/Karil's_leathertop.webp",
     alt: "Mage Tank Equipment",
     itemState: {
       Headpiece: {
@@ -4770,7 +4770,7 @@ const FREEBUILDS = [
             Weight: 0.9,
           },
         ],
-        src: "./gearcalculator/helms/Serpentine_helm.webp",
+        src: "/gearcalculator/helms/Serpentine_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -4807,7 +4807,7 @@ const FREEBUILDS = [
             Weight: 0.453,
           },
         ],
-        src: "./gearcalculator/capes/Defence_cape(t).webp",
+        src: "/gearcalculator/capes/Defence_cape(t).webp",
         slot: "Cape",
       },
       Necklace: {
@@ -4844,7 +4844,7 @@ const FREEBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -4881,7 +4881,7 @@ const FREEBUILDS = [
             Weight: 0.51,
           },
         ],
-        src: "./gearcalculator/amunition/War_blessing.webp",
+        src: "/gearcalculator/amunition/War_blessing.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -4918,7 +4918,7 @@ const FREEBUILDS = [
             Weight: 30,
           },
         ],
-        src: "./gearcalculator/weapons/Dinh's_bulwark.webp",
+        src: "/gearcalculator/weapons/Dinh's_bulwark.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -4956,7 +4956,7 @@ const FREEBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Karil's_leathertop.webp",
+        src: "/gearcalculator/bodies/Karil's_leathertop.webp",
         slot: "Body",
       },
       Shield: {},
@@ -4994,7 +4994,7 @@ const FREEBUILDS = [
             Weight: 4.535,
           },
         ],
-        src: "./gearcalculator/legs/Verac's_plateskirt.webp",
+        src: "/gearcalculator/legs/Verac's_plateskirt.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -5031,7 +5031,7 @@ const FREEBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -5068,7 +5068,7 @@ const FREEBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Climbing_boots.webp",
+        src: "/gearcalculator/boots/Climbing_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -5105,15 +5105,15 @@ const FREEBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_life.webp",
+        src: "/gearcalculator/rings/Ring_of_life.webp",
         slot: "Ring",
       },
     },
   },
   {
     name: "Wildy Rag",
-    src: "./gearcalculator/bodies/Black_d'hide_body.webp",
-    src2: "./gearcalculator/weapons/Magic_shortbow.webp",
+    src: "/gearcalculator/bodies/Black_d'hide_body.webp",
+    src2: "/gearcalculator/weapons/Magic_shortbow.webp",
     alt: "Mage Tank Equipment",
     itemState: {
       Headpiece: {
@@ -5150,7 +5150,7 @@ const FREEBUILDS = [
             Weight: 0.9,
           },
         ],
-        src: "./gearcalculator/helms/Serpentine_helm.webp",
+        src: "/gearcalculator/helms/Serpentine_helm.webp",
         slot: "Headpiece",
       },
       Cape: {
@@ -5187,7 +5187,7 @@ const FREEBUILDS = [
             Weight: 0.435,
           },
         ],
-        src: "./gearcalculator/capes/Ava's_accumulator.webp",
+        src: "/gearcalculator/capes/Ava's_accumulator.webp",
         slot: "Cape",
       },
       Necklace: {
@@ -5224,7 +5224,7 @@ const FREEBUILDS = [
             Weight: 0.01,
           },
         ],
-        src: "./gearcalculator/necklace/Amulet_of_glory(1).webp",
+        src: "/gearcalculator/necklace/Amulet_of_glory(1).webp",
         slot: "Necklace",
       },
       Amunition: {
@@ -5261,7 +5261,7 @@ const FREEBUILDS = [
             Weight: 0,
           },
         ],
-        src: "./gearcalculator/amunition/Rune_arrow_5.webp",
+        src: "/gearcalculator/amunition/Rune_arrow_5.webp",
         slot: "Amunition",
       },
       Weapon: {
@@ -5298,7 +5298,7 @@ const FREEBUILDS = [
             Weight: 1.36,
           },
         ],
-        src: "./gearcalculator/weapons/Magic_shortbow.webp",
+        src: "/gearcalculator/weapons/Magic_shortbow.webp",
         slot: "Weapon",
         twoHanded: true,
       },
@@ -5336,7 +5336,7 @@ const FREEBUILDS = [
             Weight: 6.803,
           },
         ],
-        src: "./gearcalculator/bodies/Black_d'hide_body.webp",
+        src: "/gearcalculator/bodies/Black_d'hide_body.webp",
         slot: "Body",
       },
       Shield: {},
@@ -5374,7 +5374,7 @@ const FREEBUILDS = [
             Weight: 5.443,
           },
         ],
-        src: "./gearcalculator/legs/Black_d'hide_chaps.webp",
+        src: "/gearcalculator/legs/Black_d'hide_chaps.webp",
         slot: "Legs",
       },
       Gloves: {
@@ -5411,7 +5411,7 @@ const FREEBUILDS = [
             Weight: 0.226,
           },
         ],
-        src: "./gearcalculator/gloves/Barrows_gloves.webp",
+        src: "/gearcalculator/gloves/Barrows_gloves.webp",
         slot: "Gloves",
       },
       Boots: {
@@ -5448,7 +5448,7 @@ const FREEBUILDS = [
             Weight: 0.34,
           },
         ],
-        src: "./gearcalculator/boots/Climbing_boots.webp",
+        src: "/gearcalculator/boots/Climbing_boots.webp",
         slot: "Boots",
       },
       Ring: {
@@ -5485,7 +5485,7 @@ const FREEBUILDS = [
             Weight: 0.006,
           },
         ],
-        src: "./gearcalculator/rings/Ring_of_recoil.webp",
+        src: "/gearcalculator/rings/Ring_of_recoil.webp",
         slot: "Ring",
       },
     },

@@ -57,7 +57,7 @@ const OptionTiles = ({ setEtherModal }) => {
       </div>
       <div className={stl.option} onClick={handleSignUp}>
         <img
-          src="./gearcalculator/helms/Saradomin_full_helm.webp"
+          src="/gearcalculator/helms/Saradomin_full_helm.webp"
           alt="Ethereum"
           className={stl.runeHelm}
         />

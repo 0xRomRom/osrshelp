@@ -33,7 +33,7 @@ const BOOTS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/boots/Farmer's_boots.webp",
+    src: "/gearcalculator/boots/Farmer's_boots.webp",
     slot: "Boots",
   },
   {
@@ -70,7 +70,7 @@ const BOOTS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/boots/Lumberjack_boots.webp",
+    src: "/gearcalculator/boots/Lumberjack_boots.webp",
     slot: "Boots",
   },
   {
@@ -107,7 +107,7 @@ const BOOTS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/boots/Angler_boots.webp",
+    src: "/gearcalculator/boots/Angler_boots.webp",
     slot: "Boots",
   },
   {
@@ -144,7 +144,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Blue_boots.webp",
+    src: "/gearcalculator/boots/Blue_boots.webp",
     slot: "Boots",
   },
   {
@@ -181,7 +181,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Green_boots.webp",
+    src: "/gearcalculator/boots/Green_boots.webp",
     slot: "Boots",
   },
   {
@@ -218,7 +218,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Red_boots.webp",
+    src: "/gearcalculator/boots/Red_boots.webp",
     slot: "Boots",
   },
   {
@@ -255,7 +255,7 @@ const BOOTS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/boots/Rock-shell_boots.webp",
+    src: "/gearcalculator/boots/Rock-shell_boots.webp",
     slot: "Boots",
   },
   {
@@ -292,7 +292,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Purple_boots.webp",
+    src: "/gearcalculator/boots/Purple_boots.webp",
     slot: "Boots",
   },
   {
@@ -329,7 +329,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Pink_boots.webp",
+    src: "/gearcalculator/boots/Pink_boots.webp",
     slot: "Boots",
   },
   {
@@ -366,7 +366,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Yellow_boots.webp",
+    src: "/gearcalculator/boots/Yellow_boots.webp",
     slot: "Boots",
   },
   {
@@ -403,7 +403,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Teal_boots.webp",
+    src: "/gearcalculator/boots/Teal_boots.webp",
     slot: "Boots",
   },
   {
@@ -440,7 +440,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Turquoise_boots.webp",
+    src: "/gearcalculator/boots/Turquoise_boots.webp",
     slot: "Boots",
   },
   {
@@ -477,7 +477,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Ham_boots.webp",
+    src: "/gearcalculator/boots/Ham_boots.webp",
     slot: "Boots",
   },
   {
@@ -514,7 +514,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Grey_boots.webp",
+    src: "/gearcalculator/boots/Grey_boots.webp",
     slot: "Boots",
   },
   {
@@ -551,7 +551,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Leather_boots.webp",
+    src: "/gearcalculator/boots/Leather_boots.webp",
     slot: "Boots",
   },
   {
@@ -588,7 +588,7 @@ const BOOTS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/boots/Spined_boots.webp",
+    src: "/gearcalculator/boots/Spined_boots.webp",
     slot: "Boots",
   },
   {
@@ -625,7 +625,7 @@ const BOOTS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/boots/Skeletal_boots.webp",
+    src: "/gearcalculator/boots/Skeletal_boots.webp",
     slot: "Boots",
   },
   {
@@ -662,7 +662,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Mourner_boots.webp",
+    src: "/gearcalculator/boots/Mourner_boots.webp",
     slot: "Boots",
   },
   {
@@ -699,7 +699,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Ornate_boots.webp",
+    src: "/gearcalculator/boots/Ornate_boots.webp",
     slot: "Boots",
   },
   {
@@ -736,7 +736,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Cream_boots.webp",
+    src: "/gearcalculator/boots/Cream_boots.webp",
     slot: "Boots",
   },
   {
@@ -773,7 +773,7 @@ const BOOTS = [
         Weight: -4.535,
       },
     ],
-    src: "./gearcalculator/boots/Boots_of_lightness.webp",
+    src: "/gearcalculator/boots/Boots_of_lightness.webp",
     slot: "Boots",
   },
   {
@@ -810,7 +810,7 @@ const BOOTS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/boots/Boots_of_stone.webp",
+    src: "/gearcalculator/boots/Boots_of_stone.webp",
     slot: "Boots",
   },
   {
@@ -847,7 +847,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Bronze_boots.webp",
+    src: "/gearcalculator/boots/Bronze_boots.webp",
     slot: "Boots",
   },
   {
@@ -884,7 +884,7 @@ const BOOTS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/boots/Citizen_shoes.webp",
+    src: "/gearcalculator/boots/Citizen_shoes.webp",
     slot: "Boots",
   },
   {
@@ -921,7 +921,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Climbing_boots.webp",
+    src: "/gearcalculator/boots/Climbing_boots.webp",
     slot: "Boots",
   },
   {
@@ -958,7 +958,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Climbing_boots_(g).webp",
+    src: "/gearcalculator/boots/Climbing_boots_(g).webp",
     slot: "Boots",
   },
   {
@@ -995,7 +995,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Dark_flippers.webp",
+    src: "/gearcalculator/boots/Dark_flippers.webp",
     slot: "Boots",
   },
   {
@@ -1032,7 +1032,7 @@ const BOOTS = [
         Weight: 0.5,
       },
     ],
-    src: "./gearcalculator/boots/Devout_boots.webp",
+    src: "/gearcalculator/boots/Devout_boots.webp",
     slot: "Boots",
   },
   {
@@ -1069,7 +1069,7 @@ const BOOTS = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/boots/Fancier_boots.webp",
+    src: "/gearcalculator/boots/Fancier_boots.webp",
     slot: "Boots",
   },
   {
@@ -1106,7 +1106,7 @@ const BOOTS = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/boots/Fancy_boots.webp",
+    src: "/gearcalculator/boots/Fancy_boots.webp",
     slot: "Boots",
   },
   {
@@ -1143,7 +1143,7 @@ const BOOTS = [
         Weight: 0.01,
       },
     ],
-    src: "./gearcalculator/boots/Fighting_boots.webp",
+    src: "/gearcalculator/boots/Fighting_boots.webp",
     slot: "Boots",
   },
   {
@@ -1180,7 +1180,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Flippers.webp",
+    src: "/gearcalculator/boots/Flippers.webp",
     slot: "Boots",
   },
   {
@@ -1217,7 +1217,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Fremennik_boots.webp",
+    src: "/gearcalculator/boots/Fremennik_boots.webp",
     slot: "Boots",
   },
   {
@@ -1254,7 +1254,7 @@ const BOOTS = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/boots/Fremennik_sea_boots_1.webp",
+    src: "/gearcalculator/boots/Fremennik_sea_boots_1.webp",
     slot: "Boots",
   },
   {
@@ -1291,7 +1291,7 @@ const BOOTS = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/boots/Fremennik_sea_boots_2.webp",
+    src: "/gearcalculator/boots/Fremennik_sea_boots_2.webp",
     slot: "Boots",
   },
   {
@@ -1328,7 +1328,7 @@ const BOOTS = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/boots/Fremennik_sea_boots_3.webp",
+    src: "/gearcalculator/boots/Fremennik_sea_boots_3.webp",
     slot: "Boots",
   },
   {
@@ -1365,7 +1365,7 @@ const BOOTS = [
         Weight: 0.4,
       },
     ],
-    src: "./gearcalculator/boots/Fremennik_sea_boots_4.webp",
+    src: "/gearcalculator/boots/Fremennik_sea_boots_4.webp",
     slot: "Boots",
   },
   {
@@ -1402,7 +1402,7 @@ const BOOTS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/boots/Frog-leather_boots.webp",
+    src: "/gearcalculator/boots/Frog-leather_boots.webp",
     slot: "Boots",
   },
   {
@@ -1439,7 +1439,7 @@ const BOOTS = [
         Weight: 0.001,
       },
     ],
-    src: "./gearcalculator/boots/Ghostly_boots.webp",
+    src: "/gearcalculator/boots/Ghostly_boots.webp",
     slot: "Boots",
   },
   {
@@ -1476,7 +1476,7 @@ const BOOTS = [
         Weight: -4,
       },
     ],
-    src: "./gearcalculator/boots/Graceful_boots.webp",
+    src: "/gearcalculator/boots/Graceful_boots.webp",
     slot: "Boots",
   },
   {
@@ -1513,7 +1513,7 @@ const BOOTS = [
         Weight: 0.5,
       },
     ],
-    src: "./gearcalculator/boots/Holy_sandals.webp",
+    src: "/gearcalculator/boots/Holy_sandals.webp",
     slot: "Boots",
   },
   {
@@ -1550,7 +1550,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Insulated_boots.webp",
+    src: "/gearcalculator/boots/Insulated_boots.webp",
     slot: "Boots",
   },
   {
@@ -1587,7 +1587,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Iron_boots.webp",
+    src: "/gearcalculator/boots/Iron_boots.webp",
     slot: "Boots",
   },
   {
@@ -1624,7 +1624,7 @@ const BOOTS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/boots/Lunar_boots.webp",
+    src: "/gearcalculator/boots/Lunar_boots.webp",
     slot: "Boots",
   },
   {
@@ -1661,7 +1661,7 @@ const BOOTS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/boots/Moonclan_boots.webp",
+    src: "/gearcalculator/boots/Moonclan_boots.webp",
     slot: "Boots",
   },
   {
@@ -1698,7 +1698,7 @@ const BOOTS = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/boots/Ranger_boots.webp",
+    src: "/gearcalculator/boots/Ranger_boots.webp",
     slot: "Boots",
   },
   {
@@ -1735,7 +1735,7 @@ const BOOTS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/boots/Rogue_boots.webp",
+    src: "/gearcalculator/boots/Rogue_boots.webp",
     slot: "Boots",
   },
   {
@@ -1772,7 +1772,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Shayzien_boots_(1).webp",
+    src: "/gearcalculator/boots/Shayzien_boots_(1).webp",
     slot: "Boots",
   },
   {
@@ -1809,7 +1809,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Shayzien_boots_(2).webp",
+    src: "/gearcalculator/boots/Shayzien_boots_(2).webp",
     slot: "Boots",
   },
   {
@@ -1846,7 +1846,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Shayzien_boots_(3).webp",
+    src: "/gearcalculator/boots/Shayzien_boots_(3).webp",
     slot: "Boots",
   },
   {
@@ -1883,7 +1883,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Shayzien_boots_(4).webp",
+    src: "/gearcalculator/boots/Shayzien_boots_(4).webp",
     slot: "Boots",
   },
   {
@@ -1920,7 +1920,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Shayzien_boots_(5).webp",
+    src: "/gearcalculator/boots/Shayzien_boots_(5).webp",
     slot: "Boots",
   },
   {
@@ -1957,7 +1957,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Silly_jester_boots.webp",
+    src: "/gearcalculator/boots/Silly_jester_boots.webp",
     slot: "Boots",
   },
   {
@@ -1994,7 +1994,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Spiked_boots.webp",
+    src: "/gearcalculator/boots/Spiked_boots.webp",
     slot: "Boots",
   },
   {
@@ -2031,7 +2031,7 @@ const BOOTS = [
         Weight: 3,
       },
     ],
-    src: "./gearcalculator/boots/Spiked_manacles.webp",
+    src: "/gearcalculator/boots/Spiked_manacles.webp",
     slot: "Boots",
   },
   {
@@ -2068,7 +2068,7 @@ const BOOTS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/boots/Splitbark_boots.webp",
+    src: "/gearcalculator/boots/Splitbark_boots.webp",
     slot: "Boots",
   },
   {
@@ -2105,7 +2105,7 @@ const BOOTS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/boots/Vyrewatch_shoes.webp",
+    src: "/gearcalculator/boots/Vyrewatch_shoes.webp",
     slot: "Boots",
   },
   {
@@ -2142,7 +2142,7 @@ const BOOTS = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/boots/Wizard_boots.webp",
+    src: "/gearcalculator/boots/Wizard_boots.webp",
     slot: "Boots",
   },
   {
@@ -2179,7 +2179,7 @@ const BOOTS = [
         Weight: 0.283,
       },
     ],
-    src: "./gearcalculator/boots/Zealot's_boots.webp",
+    src: "/gearcalculator/boots/Zealot's_boots.webp",
     slot: "Boots",
   },
   {
@@ -2216,7 +2216,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Decorative_boots_(red).webp",
+    src: "/gearcalculator/boots/Decorative_boots_(red).webp",
     slot: "Boots",
   },
   {
@@ -2253,7 +2253,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Steel_boots.webp",
+    src: "/gearcalculator/boots/Steel_boots.webp",
     slot: "Boots",
   },
   {
@@ -2290,7 +2290,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Black_boots.webp",
+    src: "/gearcalculator/boots/Black_boots.webp",
     slot: "Boots",
   },
   {
@@ -2327,7 +2327,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/White_boots.webp",
+    src: "/gearcalculator/boots/White_boots.webp",
     slot: "Boots",
   },
   {
@@ -2364,7 +2364,7 @@ const BOOTS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/boots/Boots_of_darkness.webp",
+    src: "/gearcalculator/boots/Boots_of_darkness.webp",
     slot: "Boots",
   },
   {
@@ -2401,7 +2401,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Decorative_boots_(white).webp",
+    src: "/gearcalculator/boots/Decorative_boots_(white).webp",
     slot: "Boots",
   },
   {
@@ -2438,7 +2438,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Mithril_boots.webp",
+    src: "/gearcalculator/boots/Mithril_boots.webp",
     slot: "Boots",
   },
   {
@@ -2475,7 +2475,7 @@ const BOOTS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/boots/Mystic_boots.webp",
+    src: "/gearcalculator/boots/Mystic_boots.webp",
     slot: "Boots",
   },
   {
@@ -2512,7 +2512,7 @@ const BOOTS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/boots/Mystic_boots_(dark).webp",
+    src: "/gearcalculator/boots/Mystic_boots_(dark).webp",
     slot: "Boots",
   },
   {
@@ -2549,7 +2549,7 @@ const BOOTS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/boots/Mystic_boots_(dusk).webp",
+    src: "/gearcalculator/boots/Mystic_boots_(dusk).webp",
     slot: "Boots",
   },
   {
@@ -2586,7 +2586,7 @@ const BOOTS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/boots/Mystic_boots_(light).webp",
+    src: "/gearcalculator/boots/Mystic_boots_(light).webp",
     slot: "Boots",
   },
   {
@@ -2623,7 +2623,7 @@ const BOOTS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/boots/Mystic_boots_(or).webp",
+    src: "/gearcalculator/boots/Mystic_boots_(or).webp",
     slot: "Boots",
   },
   {
@@ -2660,7 +2660,7 @@ const BOOTS = [
         Weight: 0.453,
       },
     ],
-    src: "./gearcalculator/boots/Infinity_boots.webp",
+    src: "/gearcalculator/boots/Infinity_boots.webp",
     slot: "Boots",
   },
   {
@@ -2697,7 +2697,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Adamant_boots.webp",
+    src: "/gearcalculator/boots/Adamant_boots.webp",
     slot: "Boots",
   },
   {
@@ -2734,7 +2734,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Decorative_boots_(gold).webp",
+    src: "/gearcalculator/boots/Decorative_boots_(gold).webp",
     slot: "Boots",
   },
   {
@@ -2771,7 +2771,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Snakeskin_boots.webp",
+    src: "/gearcalculator/boots/Snakeskin_boots.webp",
     slot: "Boots",
   },
   {
@@ -2808,7 +2808,7 @@ const BOOTS = [
         Weight: 0.95,
       },
     ],
-    src: "./gearcalculator/boots/Samurai_boots.webp",
+    src: "/gearcalculator/boots/Samurai_boots.webp",
     slot: "Boots",
   },
   {
@@ -2845,7 +2845,7 @@ const BOOTS = [
         Weight: 1.4,
       },
     ],
-    src: "./gearcalculator/boots/Ancient_d'hide_boots.webp",
+    src: "/gearcalculator/boots/Ancient_d'hide_boots.webp",
     slot: "Boots",
   },
   {
@@ -2882,7 +2882,7 @@ const BOOTS = [
         Weight: 1.4,
       },
     ],
-    src: "./gearcalculator/boots/Armadyl_d'hide_boots.webp",
+    src: "/gearcalculator/boots/Armadyl_d'hide_boots.webp",
     slot: "Boots",
   },
   {
@@ -2919,7 +2919,7 @@ const BOOTS = [
         Weight: 1.4,
       },
     ],
-    src: "./gearcalculator/boots/Bandos_d'hide_boots.webp",
+    src: "/gearcalculator/boots/Bandos_d'hide_boots.webp",
     slot: "Boots",
   },
   {
@@ -2956,7 +2956,7 @@ const BOOTS = [
         Weight: 1.4,
       },
     ],
-    src: "./gearcalculator/boots/Zamorak_d'hide_boots.webp",
+    src: "/gearcalculator/boots/Zamorak_d'hide_boots.webp",
     slot: "Boots",
   },
   {
@@ -2993,7 +2993,7 @@ const BOOTS = [
         Weight: 1.4,
       },
     ],
-    src: "./gearcalculator/boots/Saradomin_d'hide_boots.webp",
+    src: "/gearcalculator/boots/Saradomin_d'hide_boots.webp",
     slot: "Boots",
   },
   {
@@ -3030,7 +3030,7 @@ const BOOTS = [
         Weight: 1.4,
       },
     ],
-    src: "./gearcalculator/boots/Guthix_d'hide_boots.webp",
+    src: "/gearcalculator/boots/Guthix_d'hide_boots.webp",
     slot: "Boots",
   },
   {
@@ -3067,7 +3067,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Dragonstone_boots.webp",
+    src: "/gearcalculator/boots/Dragonstone_boots.webp",
     slot: "Boots",
   },
   {
@@ -3104,7 +3104,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Gilded_boots.webp",
+    src: "/gearcalculator/boots/Gilded_boots.webp",
     slot: "Boots",
   },
   {
@@ -3141,7 +3141,7 @@ const BOOTS = [
         Weight: 1.36,
       },
     ],
-    src: "./gearcalculator/boots/Rune_boots.webp",
+    src: "/gearcalculator/boots/Rune_boots.webp",
     slot: "Boots",
   },
   {
@@ -3178,7 +3178,7 @@ const BOOTS = [
         Weight: 0.34,
       },
     ],
-    src: "./gearcalculator/boots/Runner_boots.webp",
+    src: "/gearcalculator/boots/Runner_boots.webp",
     slot: "Boots",
   },
   {
@@ -3215,7 +3215,7 @@ const BOOTS = [
         Weight: 2.721,
       },
     ],
-    src: "./gearcalculator/boots/Granite_boots.webp",
+    src: "/gearcalculator/boots/Granite_boots.webp",
     slot: "Boots",
   },
   {
@@ -3252,7 +3252,7 @@ const BOOTS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/boots/Swampbark_boots.webp",
+    src: "/gearcalculator/boots/Swampbark_boots.webp",
     slot: "Boots",
   },
   {
@@ -3289,7 +3289,7 @@ const BOOTS = [
         Weight: 0.907,
       },
     ],
-    src: "./gearcalculator/boots/Bloodbark_boots.webp",
+    src: "/gearcalculator/boots/Bloodbark_boots.webp",
     slot: "Boots",
   },
   {
@@ -3326,7 +3326,7 @@ const BOOTS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/boots/Dragon_boots.webp",
+    src: "/gearcalculator/boots/Dragon_boots.webp",
     slot: "Boots",
   },
   {
@@ -3363,7 +3363,7 @@ const BOOTS = [
         Weight: 1,
       },
     ],
-    src: "./gearcalculator/boots/Dragon_boots_(g).webp",
+    src: "/gearcalculator/boots/Dragon_boots_(g).webp",
     slot: "Boots",
   },
   {
@@ -3400,7 +3400,7 @@ const BOOTS = [
         Weight: 6,
       },
     ],
-    src: "./gearcalculator/boots/Bandos_boots.webp",
+    src: "/gearcalculator/boots/Bandos_boots.webp",
     slot: "Boots",
   },
   {
@@ -3437,7 +3437,7 @@ const BOOTS = [
         Weight: 3.175,
       },
     ],
-    src: "./gearcalculator/boots/Boots_of_brimstone.webp",
+    src: "/gearcalculator/boots/Boots_of_brimstone.webp",
     slot: "Boots",
   },
   {
@@ -3474,7 +3474,7 @@ const BOOTS = [
         Weight: 1.84,
       },
     ],
-    src: "./gearcalculator/boots/Eternal_boots.webp",
+    src: "/gearcalculator/boots/Eternal_boots.webp",
     slot: "Boots",
   },
   {
@@ -3511,7 +3511,7 @@ const BOOTS = [
         Weight: 7,
       },
     ],
-    src: "./gearcalculator/boots/Guardian_boots.webp",
+    src: "/gearcalculator/boots/Guardian_boots.webp",
     slot: "Boots",
   },
   {
@@ -3548,7 +3548,7 @@ const BOOTS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/boots/Pegasian_boots.webp",
+    src: "/gearcalculator/boots/Pegasian_boots.webp",
     slot: "Boots",
   },
   {
@@ -3585,7 +3585,7 @@ const BOOTS = [
         Weight: 1.814,
       },
     ],
-    src: "./gearcalculator/boots/Primordial_boots.webp",
+    src: "/gearcalculator/boots/Primordial_boots.webp",
     slot: "Boots",
   },
 ];
