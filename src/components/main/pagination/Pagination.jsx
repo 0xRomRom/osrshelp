@@ -81,7 +81,7 @@ const Pagination = ({ navTo, setShowAdmin, setShowUserProfile }) => {
           </span>
         </div>
         <div className={stl.subStateWrap}>
-          {cachedSubstate && (
+          {cachedSubstate && window.innerWidth > 1000 && (
             <>
               <FontAwesomeIcon icon={faAngleRight} className={stl.arrowRight} />
               <span className={stl.subMenu}>{cachedSubstate}</span>

@@ -176,4 +176,7 @@ label {
   .modal {
     padding-bottom: 2rem;
   }
+  .imageBox {
+    padding: 0rem 1rem;
+  }
 }
