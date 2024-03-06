@@ -1,6 +1,6 @@
 import stl from "./Admin.module.css";
 import { useState } from "react";
-import Home from "./Home/Home";
+import AdminHome from "./home/AdminHome";
 import Users from "./users/Users";
 import Contact from "./contact/Contact";
 import Issues from "./issues/Issues";
@@ -52,7 +52,7 @@ const Admin = ({ setShowAdmin }) => {
             Close
           </button>
         </div>
-        {activeBtn === "Home" && <Home />}
+        {activeBtn === "Home" && <AdminHome />}
         {activeBtn === "Users" && <Users />}
         {activeBtn === "Contact" && <Contact />}
         {activeBtn === "Issues" && <Issues />}

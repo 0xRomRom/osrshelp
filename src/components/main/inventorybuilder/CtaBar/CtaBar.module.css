@@ -43,3 +43,17 @@
   font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
 }
+
+@media (max-width: 900px) {
+  .ctabar {
+    width: 400px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .ctabar {
+    margin-top: -2rem;
+    width: 325px;
+  }
+}
