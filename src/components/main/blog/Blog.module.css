@@ -42,6 +42,7 @@
   cursor: pointer;
   box-shadow: 0px 0px 3px black;
   transition: all 0.2s ease-in-out;
+  margin-left: 5px;
 }
 
 .blogItem:hover {
@@ -114,4 +115,32 @@
   top: 0.25rem;
   font-size: 14px;
   font-weight: 1000;
+}
+
+@media (max-width: 925px) {
+  .blogItem {
+    width: 100%;
+  }
+  .blogList {
+    margin: 0 2rem;
+  }
+  .imgWrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .blogTeaser {
+    font-size: 16px;
+    margin-bottom: 3rem;
+  }
+  .blogItem {
+    min-height: 15rem;
+  }
+  .blogIndex {
+    display: none;
+  }
+  .blogItemHero {
+    font-size: 20px;
+  }
 }

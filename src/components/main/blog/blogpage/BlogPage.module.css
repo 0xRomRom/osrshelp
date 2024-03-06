@@ -25,14 +25,11 @@
 .blogModal {
   position: relative;
   width: 95%;
-  /* background-color: var(--dark-bg); */
-  /* background-color: rgb(21, 26, 35); */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-left: 17.5rem;
-  padding-right: 17.5rem;
+  padding: 0rem 10rem;
   padding-top: 2rem;
 }
 
@@ -120,4 +117,17 @@
   font-size: 28px;
   transition: all 0.3s ease-in-out;
   user-select: none;
+}
+
+@media (max-width: 800px) {
+  .blogModal {
+    padding: 0rem 3rem;
+  }
+  .copy {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .blogTitle {
+    line-height: 40px;
+  }
 }
