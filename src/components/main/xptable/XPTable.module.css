@@ -136,3 +136,9 @@
 .levelGrid {
   overflow-y: scroll;
 }
+
+@media (max-width: 500px) {
+  .xpGridWrapper {
+    padding-bottom: 2rem;
+  }
+}
