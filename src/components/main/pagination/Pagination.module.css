@@ -188,7 +188,9 @@
   .subMenu {
     padding-left: 0.3rem;
   }
-  .mainMenu {
+  .mainMenu,
+  .subMenu {
+    line-height: 5px;
     font-size: 14px;
   }
 }
