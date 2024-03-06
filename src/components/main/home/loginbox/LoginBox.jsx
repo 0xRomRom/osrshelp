@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import stl from "./LoginBox.module.css";
 import { playerStats } from "../../../../utils/playerStats.js";
+import { LuSendHorizonal } from "react-icons/lu";
 
 const LoginBox = (props) => {
   const usernameRef = useRef(null);
@@ -77,24 +78,27 @@ const LoginBox = (props) => {
     <div className={stl.userbox}>
       <form>
         <h2 className={stl.getStarted}>
-          Get started by <br />
-          entering your username
+          Enter username <br />
+          to load stats
         </h2>
         <div className={stl.inputRow}>
-          <input
-            type="text"
-            className={stl.nameinput}
-            ref={usernameRef}
-            placeholder="username"
-          />
+          <div className={stl.inputwrap}>
+            <input
+              type="text"
+              className={stl.nameInput}
+              placeholder="Username"
+              ref={usernameRef}
+            />
+            <button
+              className={stl.cta}
+              onClick={fetchUserData}
+              disabled={loading ? true : false}
+              style={{ pointerEvents: loading ? "none" : "" }}
+            >
+              <LuSendHorizonal />
+            </button>
+          </div>
           {error && <span className={stl.notFound}>Username not found</span>}
-          <button
-            className={stl.cta}
-            onClick={fetchUserData}
-            disabled={loading ? true : false}
-          >
-            {loading ? "Loading" : "Get Stats"}
-          </button>
         </div>
       </form>
     </div>

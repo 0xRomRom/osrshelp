@@ -1,6 +1,7 @@
 import stl from "./GetStats.module.css";
 import { useRef, useState } from "react";
 import { playerStats } from "../../../../utils/playerStats";
+import { LuSendHorizonal } from "react-icons/lu";
 
 const GetStats = (props) => {
   const usernameRef = useRef(null);
@@ -76,15 +77,22 @@ const GetStats = (props) => {
   return (
     <div className={stl.getstats}>
       <form className={stl.form}>
-        <input
-          type="text"
-          className={stl.nameInput}
-          placeholder="Username"
-          ref={usernameRef}
-        />
-        <button className={stl.cta} onClick={fetchUserData}>
-          {loading ? "Loading" : "Get stats"}
-        </button>
+        <div className={stl.inputwrap}>
+          <input
+            type="text"
+            className={stl.nameInput}
+            placeholder="Username"
+            ref={usernameRef}
+          />
+          <button
+            className={stl.cta}
+            onClick={fetchUserData}
+            disabled={loading ? true : false}
+            style={{ pointerEvents: loading ? "none" : "" }}
+          >
+            <LuSendHorizonal />
+          </button>
+        </div>
       </form>
       {error && <span className={stl.notFound}>Username not found</span>}
     </div>

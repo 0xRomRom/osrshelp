@@ -62,3 +62,48 @@
   justify-content: space-between;
   /* border: 1px solid red; */
 }
+
+.nameInput {
+  border: none;
+  outline: none;
+  background-color: rgb(16, 19, 25);
+  border: 1px solid rgb(29, 35, 47);
+  color: white;
+  padding: 12px;
+  padding-left: 0.5rem;
+  border-radius: 8px;
+}
+.cta {
+  height: 37px;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--blue-main);
+  border: 1px solid var(--border);
+  position: absolute;
+  opacity: 0.5;
+  padding: 0px 10px;
+  margin-right: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta:hover {
+  opacity: 1;
+}
+
+.cta:active svg {
+  transform: scale(0.8);
+}
+
+.inputwrap {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

@@ -87,3 +87,9 @@
   padding-left: 9px;
   position: relative;
 }
+
+@media (max-width: 600px) {
+  .phaseSpan {
+    font-size: 10px;
+  }
+}

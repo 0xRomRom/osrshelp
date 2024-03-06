@@ -33,10 +33,11 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  position: relative;
+  position: absolute;
   z-index: 10;
   width: 100%;
-  padding: 10px 0px;
+  padding: 10px;
+  bottom: 0;
 }
 
 .filterBtn {
@@ -137,4 +138,10 @@
   top: 10px;
   font-size: 14px;
   user-select: none;
+}
+
+@media (max-width: 600px) {
+  .filterBtn {
+    font-size: 11px;
+  }
 }
