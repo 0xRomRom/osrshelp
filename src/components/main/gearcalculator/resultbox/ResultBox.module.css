@@ -96,3 +96,23 @@
     height: initial;
   }
 }
+
+@media (max-width: 500px) {
+  .title,
+  .titleDef {
+    font-size: 12px;
+  }
+
+  .statValue {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 410px) {
+  .topBlock {
+    gap: 1.25rem;
+  }
+  .statsList {
+    gap: 0;
+  }
+}

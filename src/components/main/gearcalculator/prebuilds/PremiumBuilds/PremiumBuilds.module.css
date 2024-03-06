@@ -51,11 +51,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   /* background-color: red; */
-  padding-top: 3rem;
+  padding-top: 1rem;
 }
 
 .typeTitle {
-  top: 0rem;
+  top: -2rem;
   position: absolute;
   color: gray;
 }
@@ -68,11 +68,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .btn {
-  width: 5rem;
+  /* width: 5rem; */
   height: 2.25rem;
   outline: none;
   color: gray;
@@ -124,8 +124,6 @@
 .tileGear2 {
   transform: scale(1.25);
   position: relative;
-  /* padding-right: 1rem; */
-  /* padding-top: 0.75rem; */
   z-index: 10;
 }
 
@@ -144,4 +142,51 @@
   background-color: var(--main-bg);
   padding-bottom: 1rem;
   user-select: none;
+}
+.imgCenter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .btn {
+    padding: 0px 10px;
+    margin: 0;
+  }
+  .filterBar {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    font-size: 10px;
+    padding: 0px 4px;
+    border-radius: 4px;
+    min-width: 35px;
+  }
+  .filterBar {
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .gridTile {
+    width: 75px;
+    height: 75px;
+  }
+  .gearName {
+    line-height: 10px;
+    font-size: 10px;
+  }
+  .tileGear {
+    transform: scale(0.8);
+  }
+  .typeBlock {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }

@@ -2,7 +2,6 @@
   position: relative;
   width: 250px;
   user-select: none;
-  max-height: 730px;
   border-radius: 0.375rem;
   background: var(--main-bg);
   border: 1px solid var(--border);

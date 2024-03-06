@@ -425,75 +425,77 @@ const AddGear = ({
               </div>
             </div>
           </div>
-          <input
-            ref={inputRef}
-            type="text"
-            placeholder="Setup name"
-            className={stl.gearInput}
-            onChange={updateGearName}
-            value={gearName}
-          />
-          <div className={stl.setupTypeBox}>
-            <button
-              className={`${stl.setupCta} ${
-                gearType === "All" ? stl.ctaActive : ""
-              }`}
-              onClick={() => setGearType("All")}
-            >
-              <img
-                src="/skillicons/Attack.webp"
-                alt="Attack skill"
-                className={stl.stackLogo1}
-              />
-              <img
-                src="/skillicons/Ranged.webp"
-                alt="Ranged skill"
-                className={stl.stackLogo2}
-              />
-              <img
-                src="/skillicons/Magic.webp"
-                alt="Magic skill"
-                className={stl.stackLogo3}
-              />
-            </button>
-            <button
-              className={`${stl.setupCta} ${
-                gearType === "Melee" ? stl.ctaActive : ""
-              }`}
-              onClick={() => setGearType("Melee")}
-            >
-              <img
-                src="/skillicons/Attack.webp"
-                alt="Attack skill"
-                className={stl.skillMiniLogo}
-              />
-            </button>
-            <button
-              className={`${stl.setupCta} ${
-                gearType === "Ranged" ? stl.ctaActive : ""
-              }`}
-              onClick={() => setGearType("Ranged")}
-            >
-              <img
-                src="/skillicons/Ranged.webp"
-                alt="Ranged skill"
-                className={stl.skillMiniLogo}
-              />
-            </button>
-            <button
-              className={`${stl.setupCta} ${
-                gearType === "Magic" ? stl.ctaActive : ""
-              }`}
-              onClick={() => setGearType("Magic")}
-            >
-              <img
-                src="/skillicons/Magic.webp"
-                alt="Magic skill"
-                className={stl.skillMiniLogo}
-              />
-            </button>
+          <div className={stl.innerWrapper}>
+            <input
+              ref={inputRef}
+              type="text"
+              placeholder="Setup name"
+              className={stl.gearInput}
+              onChange={updateGearName}
+              value={gearName}
+            />
+            {inputError && <span className={stl.inputError}>{inputError}</span>}
+            <div className={stl.setupTypeBox}>
+              <button
+                className={`${stl.setupCta} ${
+                  gearType === "All" ? stl.ctaActive : ""
+                }`}
+                onClick={() => setGearType("All")}
+              >
+                <img
+                  src="/skillicons/Attack.webp"
+                  alt="Attack skill"
+                  className={stl.stackLogo1}
+                />
+                <img
+                  src="/skillicons/Ranged.webp"
+                  alt="Ranged skill"
+                  className={stl.stackLogo2}
+                />
+                <img
+                  src="/skillicons/Magic.webp"
+                  alt="Magic skill"
+                  className={stl.stackLogo3}
+                />
+              </button>
+              <button
+                className={`${stl.setupCta} ${
+                  gearType === "Melee" ? stl.ctaActive : ""
+                }`}
+                onClick={() => setGearType("Melee")}
+              >
+                <img
+                  src="/skillicons/Attack.webp"
+                  alt="Attack skill"
+                  className={stl.skillMiniLogo}
+                />
+              </button>
+              <button
+                className={`${stl.setupCta} ${
+                  gearType === "Ranged" ? stl.ctaActive : ""
+                }`}
+                onClick={() => setGearType("Ranged")}
+              >
+                <img
+                  src="/skillicons/Ranged.webp"
+                  alt="Ranged skill"
+                  className={stl.skillMiniLogo}
+                />
+              </button>
+              <button
+                className={`${stl.setupCta} ${
+                  gearType === "Magic" ? stl.ctaActive : ""
+                }`}
+                onClick={() => setGearType("Magic")}
+              >
+                <img
+                  src="/skillicons/Magic.webp"
+                  alt="Magic skill"
+                  className={stl.skillMiniLogo}
+                />
+              </button>
+            </div>
           </div>
-          {inputError && <span className={stl.inputError}>{inputError}</span>}
         </div>
 
         <div className={stl.gearSlots}>
