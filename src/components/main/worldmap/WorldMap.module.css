@@ -68,3 +68,13 @@
   padding-bottom: 0rem !important;
   border-radius: 0 !important;
 }
+
+@media (max-width: 800px) {
+  .mapContainers {
+    padding-bottom: 2rem;
+  }
+  .mapFull {
+    width: 99% !important;
+    left: 1% !important;
+  }
+}
