@@ -1,7 +1,7 @@
 .prebuilds {
   width: 1130px;
   border-radius: 0.375rem;
-  /* border: 1px solid var(--border); */
+  padding-bottom: 2rem;
 }
 
 .hero {
@@ -121,4 +121,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 1400px) {
+  .prebuilds {
+    width: 54rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .prebuilds {
+    width: 100%;
+  }
 }

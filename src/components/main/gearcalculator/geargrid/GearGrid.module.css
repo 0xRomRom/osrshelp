@@ -155,3 +155,13 @@
   align-items: center;
   cursor: not-allowed !important;
 }
+
+@media (max-width: 720px) {
+  .gearGrid {
+    width: 100%;
+    justify-content: center;
+  }
+  .innerGrid {
+    margin-top: 0rem;
+  }
+}

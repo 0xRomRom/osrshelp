@@ -129,24 +129,26 @@ const GearCalculator = () => {
             />
             <div className={stl.midBlock} ref={targetDivRef}>
               <div className={stl.rowWrap}>
-                <GearGrid
-                  activeSlot={activeSlot}
-                  setActiveSlot={setActiveSlot}
-                  bonusState={bonusState}
-                  setBonusState={setBonusState}
-                  setGridActive={setGridActive}
-                  setGearFilter={setGearFilter}
-                />
-                <ConfigBar
-                  activeSlot={activeSlot}
-                  bonusState={bonusState}
-                  setBonusState={setBonusState}
-                  gridActive={gridActive}
-                  setGearFilter={setGearFilter}
-                  gearFilter={gearFilter}
-                  setActiveSlot={setActiveSlot}
-                  setGridActive={setGridActive}
-                />
+                <div className={stl.innerRow}>
+                  <GearGrid
+                    activeSlot={activeSlot}
+                    setActiveSlot={setActiveSlot}
+                    bonusState={bonusState}
+                    setBonusState={setBonusState}
+                    setGridActive={setGridActive}
+                    setGearFilter={setGearFilter}
+                  />
+                  <ConfigBar
+                    activeSlot={activeSlot}
+                    bonusState={bonusState}
+                    setBonusState={setBonusState}
+                    gridActive={gridActive}
+                    setGearFilter={setGearFilter}
+                    gearFilter={gearFilter}
+                    setActiveSlot={setActiveSlot}
+                    setGridActive={setGridActive}
+                  />
+                </div>
                 <ResultBox bonusState={bonusState} />
               </div>
               <div className={stl.brandBox}>

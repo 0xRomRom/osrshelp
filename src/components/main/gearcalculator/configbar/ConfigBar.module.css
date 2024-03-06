@@ -112,3 +112,22 @@
   /* background-color: red; */
   min-width: 15rem;
 }
+
+@media (max-width: 720px) {
+  .configbar {
+    padding-top: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .activeWrapper {
+    width: 300px;
+  }
+  .itemWrap span {
+    font-size: 14px;
+  }
+  .itemWrap {
+    min-width: 14.5rem;
+  }
+}

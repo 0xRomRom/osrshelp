@@ -112,3 +112,29 @@
 .gearIcon:hover {
   color: rgb(229, 229, 229);
 }
+
+@media (max-width: 1400px) {
+  .savedBuilds {
+    width: 54rem;
+    flex-direction: row;
+  }
+  .buildsList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  .buildSlot {
+    width: 9rem;
+    height: 5rem;
+  }
+  .savedHero {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .savedBuilds {
+    width: 100%;
+  }
+}
