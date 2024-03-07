@@ -11,13 +11,17 @@ const PaymentSucces = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    window.location.href = `${window.location.origin}/#/successful-payment`;
+    if (window.location.href.includes("intent")) {
+      window.location.href = `${window.location.origin}/successful-payment`;
+    }
   }, []);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setLoadingDone(true);
     }, 12500);
+
+    return () => clearTimeout(timeout);
   }, [setLoadingDone]);
 
   return (
@@ -35,6 +39,7 @@ const PaymentSucces = () => {
               className={stl.goHome}
               style={{
                 backgroundColor: !loadingDone ? "rgb(189, 41, 189)" : "white",
+                pointerEvents: !loadingDone ? "none" : "initial",
               }}
             >
               <Spinner />

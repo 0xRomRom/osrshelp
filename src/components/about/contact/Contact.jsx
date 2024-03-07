@@ -3,7 +3,6 @@ import HomeButton from "../../../utils/homebutton/HomeButton";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useEffect } from "react";
 import supabase from "../../../utils/supabase/supabase";
 
 const Contact = () => {
