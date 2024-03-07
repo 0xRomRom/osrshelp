@@ -27,20 +27,25 @@ const EtherDonateForm = ({ setEtherModal }) => {
 
   const submitDonateForm = async (e) => {
     e.preventDefault();
-    try {
-      console.log(addyRef.current.value);
-      console.log(rsnRef.current.value);
-      await supabase.from("ethersubmissions").insert([
-        {
-          wallet: addyRef.current.value,
-          rsn: rsnRef.current.value,
-        },
-      ]);
-    } catch (err) {
-      console.error(err);
-    }
+    if (addyRef.current.value.length > 0 && rsnRef.current.value.length > 0) {
+      try {
+        const { error } = await supabase.from("ethersubmissions").insert([
+          {
+            wallet: addyRef.current.value,
+            rsn: rsnRef.current.value,
+          },
+        ]);
 
-    setFormSubmitted(true);
+        if (error) {
+          throw new Error(error);
+        }
+        setFormSubmitted(true);
+      } catch (err) {
+        console.error(err);
+      }
+    } else {
+      setFormSubmitted(true);
+    }
   };
 
   const resetModals = () => {
