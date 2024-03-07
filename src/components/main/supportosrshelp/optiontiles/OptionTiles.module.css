@@ -107,8 +107,8 @@
     flex-direction: column;
   }
   .option {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
   }
   .optionSpan {
     font-size: 10px;
