@@ -57,6 +57,12 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
 
         {!purchasingCredits && (
           <div className={stl.configGrid}>
+            <span
+              className={stl.closeBtn}
+              onClick={() => setShowUserProfile(false)}
+            >
+              x
+            </span>
             {!deletingAccount && (
               <ResponsiveMasonry
                 className={stl.masonry}

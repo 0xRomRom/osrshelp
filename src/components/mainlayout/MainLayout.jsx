@@ -10,7 +10,7 @@ const MainLayout = ({ children, ...props }) => {
         setSubState={props.setSubState}
         playerName={props.playerName}
       />
-      <div className={stl.colWrap}>
+      <div className={`${stl.colWrap} ${props.hideScroll ? stl.noScroll : ""}`}>
         <div className={stl.app}>{children}</div>
         <Footer />
       </div>

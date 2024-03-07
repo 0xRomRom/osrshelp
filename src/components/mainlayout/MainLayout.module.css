@@ -13,3 +13,7 @@
   flex-direction: row;
   flex-direction: column;
 }
+
+.noScroll {
+  height: 100vh;
+}

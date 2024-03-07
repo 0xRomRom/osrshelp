@@ -182,7 +182,10 @@ const App = () => {
                 index
                 path="/"
                 element={
-                  <MainLayout playerName={playerName}>
+                  <MainLayout
+                    playerName={playerName}
+                    hideScroll={showUserProfile}
+                  >
                     <Helmet>
                       <title>OSRS Help</title>
                       <meta

@@ -10,7 +10,6 @@
 
 .modal {
   width: 40rem;
-  /* height: 40rem; */
   border-radius: 0.375rem;
   background-color: var(--input);
   border: 1px solid var(--border);
@@ -19,6 +18,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
 }
 
 .hero {
@@ -49,6 +49,14 @@
 
 .masonry {
   width: 100%;
+}
+.closeBtn {
+  color: gray;
+  font-size: 18px;
+  position: absolute;
+  top: 0rem;
+  left: 1rem;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
