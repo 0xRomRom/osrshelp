@@ -19,7 +19,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  min-height: 545.59px;
 }
 
 .hero {
@@ -50,4 +49,28 @@
 
 .masonry {
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .modal {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .modal {
+    width: 20rem;
+    height: 100vh;
+  }
+  .masonGap {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .masonGap div {
+    width: 100% !important;
+  }
+  .configGrid {
+    overflow-y: scroll;
+    padding-bottom: 1rem;
+  }
 }

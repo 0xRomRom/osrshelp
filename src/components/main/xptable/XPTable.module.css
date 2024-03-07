@@ -139,6 +139,7 @@
 
 @media (max-width: 500px) {
   .xpGridWrapper {
+    margin-top: 1rem;
     padding-bottom: 2rem;
   }
 }
