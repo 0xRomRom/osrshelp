@@ -109,10 +109,14 @@
     left: 5px;
     width: 35rem;
     padding-top: 0rem;
+    /* margin-top: -14rem; */
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
   .contentWrap {
     margin: 0 1.5rem;
     padding-bottom: 0rem;
+    min-height: 35rem;
   }
   .contentWrapper {
     padding-bottom: 1rem;

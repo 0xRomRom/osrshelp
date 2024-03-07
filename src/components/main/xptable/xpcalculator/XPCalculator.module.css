@@ -160,4 +160,8 @@
     display: flex;
     flex-direction: column;
   }
+  .userLvlBox,
+  .userDefined {
+    width: 19rem;
+  }
 }
