@@ -200,15 +200,17 @@ const CookieBanner = () => {
                     {navigated && "Go home"}
                   </span>
                 </span>
-                <button className={stl.acceptCta} onClick={acceptCookies}>
-                  Accept
-                </button>
-                <button
-                  className={stl.prefCta}
-                  onClick={() => setShowPreferences(!showPreferences)}
-                >
-                  Preferences
-                </button>
+                <div className={stl.btnsWrap}>
+                  <button className={stl.acceptCta} onClick={acceptCookies}>
+                    Accept
+                  </button>
+                  <button
+                    className={stl.prefCta}
+                    onClick={() => setShowPreferences(!showPreferences)}
+                  >
+                    Preferences
+                  </button>
+                </div>
               </div>
             </div>
           </div>
