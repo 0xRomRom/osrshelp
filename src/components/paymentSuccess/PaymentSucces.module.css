@@ -49,6 +49,7 @@
   border-radius: 0.5rem;
   border: 4px solid rgb(189, 41, 189);
   box-shadow: 0px 0px 20px rgb(189, 41, 189);
+  margin: 0rem 1rem;
 }
 
 .innerModal {
@@ -67,7 +68,7 @@
   font-weight: bold;
   text-align: center;
   font-family: RSFont;
-  line-height: 42.5px;
+  line-height: 40px;
 }
 
 .goHome {
@@ -121,4 +122,11 @@
 .upgrading:hover {
   background-color: rgb(189, 41, 189);
   color: white;
+}
+
+@media (max-width: 500px) {
+  .enjoy,
+  .rune {
+    font-size: 9vw;
+  }
 }
