@@ -1,6 +1,6 @@
 const FAQS = {
   0: {
-    text: ["Welcome to OSRS Help's Frequently Asked Questions."],
+    text: ["Welcome to OSRS Help's Frequently Asked Questions"],
   },
   1: {
     text: [

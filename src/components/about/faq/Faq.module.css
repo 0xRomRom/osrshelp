@@ -11,13 +11,16 @@
 
 .faqModal {
   position: relative;
-  width: 40rem;
-  height: 40rem;
+  width: 35rem;
   background-color: rgb(32, 46, 57);
   border-radius: 0.375rem;
   background-image: url("../../../../public/backgrounds/Tzhaar.webp");
-  background-position: 40%;
-  background-size: contain;
+  /* background-position: 40%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0rem 1rem;
+  padding-bottom: 1rem;
+  height: 624px;
 }
 
 .faqHero {
@@ -32,8 +35,8 @@
   background-color: var(--dark-bg);
   background-color: transparent;
   height: 10rem;
-  width: 90%;
-  left: 5%;
+  width: 95%;
+  left: 2.5%;
   position: relative;
   margin-top: 1rem;
   border-radius: 0.375rem;
@@ -70,9 +73,8 @@
 
 .answerBlock {
   background-color: #090909;
-  height: 22.5rem;
-  width: 90%;
-  left: 5%;
+  width: 95%;
+  left: 2.5%;
   position: relative;
   margin-top: 1rem;
   border-radius: 0.375rem;
@@ -87,7 +89,7 @@
 
 .answerPar {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .answerMappedSpan {
@@ -126,4 +128,29 @@
   color: rgb(226, 226, 226);
   transition: all 0.2s ease-in-out;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  .question {
+    font-size: 14px;
+  }
+  .answerPar {
+    margin-bottom: 3rem;
+  }
+  .answerBlock {
+    height: initial;
+  }
+  .faqModal {
+    height: auto;
+    min-height: 620px;
+  }
+  .homeTxt {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .question {
+    font-size: 12px;
+  }
 }
