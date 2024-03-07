@@ -169,4 +169,8 @@
   .gridTile {
     min-height: 5rem;
   }
+  .bannerSpan,
+  .runeUser {
+    font-size: 8vw;
+  }
 }
