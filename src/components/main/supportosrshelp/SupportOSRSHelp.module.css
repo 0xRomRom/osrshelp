@@ -17,8 +17,7 @@
 
 .modalWrap {
   position: relative;
-  width: 95%;
-  left: 2.5%;
+  margin: 0rem 2rem;
   background-color: var(--dark-bg);
   padding: 5rem 0rem;
   border-radius: 0.375rem;
@@ -29,6 +28,7 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+
   margin-bottom: 7rem;
 }
 
@@ -39,6 +39,7 @@
   border-radius: 0.375rem;
   display: flex;
   flex-direction: column;
+  margin-left: 2rem;
 }
 
 .hero {
@@ -51,5 +52,28 @@
 .supportPar {
   color: rgb(209, 209, 209);
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 750px) {
+  .supportModal {
+    margin-left: 0.5rem;
+  }
+  .modalWrap {
+    gap: 0.5rem;
+    margin-right: calc(2rem - 15px);
+  }
+}
+
+@media (max-width: 650px) {
+  .supportModal {
+    margin-left: 0rem;
+    width: 20rem;
+  }
+  .modalWrap {
+    flex-direction: column;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+  }
 }

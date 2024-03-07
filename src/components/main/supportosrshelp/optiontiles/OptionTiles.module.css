@@ -89,3 +89,49 @@
   color: rgb(127, 174, 184);
   transition: all 0.2s ease-in-out;
 }
+
+@media (max-width: 1000px) {
+  .optionsBlock {
+    padding: 110px 40px;
+    overflow-y: scroll;
+  }
+  .option {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .optionsBlock {
+    padding: 40px;
+    flex-direction: column;
+  }
+  .option {
+    width: 5rem;
+    height: 5rem;
+  }
+  .optionSpan {
+    font-size: 10px;
+    padding: 0px 4px;
+    text-align: center;
+  }
+  .lobsterImg {
+    width: 25px;
+    padding-bottom: 10px;
+  }
+  .xIcon {
+    width: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+  .etherIcon {
+    width: 19px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+  .runeHelm {
+    width: 19px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+}
