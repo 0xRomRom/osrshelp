@@ -1,9 +1,12 @@
 import stl from "./EtherDonateForm.module.css";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { BsCopy } from "react-icons/bs";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import supabase from "../../../../utils/supabase/supabase";
 
 const EtherDonateForm = ({ setEtherModal }) => {
+  const addyRef = useRef();
+  const rsnRef = useRef();
   const [isCopied, setIsCopied] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
 
@@ -22,8 +25,21 @@ const EtherDonateForm = ({ setEtherModal }) => {
     }, 2000);
   };
 
-  const submitDonateForm = (e) => {
+  const submitDonateForm = async (e) => {
     e.preventDefault();
+    try {
+      console.log(addyRef.current.value);
+      console.log(rsnRef.current.value);
+      await supabase.from("ethersubmissions").insert([
+        {
+          wallet: addyRef.current.value,
+          rsn: rsnRef.current.value,
+        },
+      ]);
+    } catch (err) {
+      console.error(err);
+    }
+
     setFormSubmitted(true);
   };
 
@@ -50,12 +66,14 @@ const EtherDonateForm = ({ setEtherModal }) => {
               type="text"
               className={stl.addyInput}
               placeholder="0xf65ab3..."
+              ref={addyRef}
             />
             <span className={stl.formSpan}>Your RSN</span>
             <input
               type="text"
               className={stl.addyInput}
               placeholder="i.e. King Rom II"
+              ref={rsnRef}
             />
             <button className={stl.submitCta} onClick={submitDonateForm}>
               Submit Donation

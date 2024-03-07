@@ -21,7 +21,7 @@ export const LOBSTERSUPPORTERS = [
 ];
 
 export const ETHEREUMSUPPORTERS = [
-  { name: "AdamantMan", amount: 1.34 },
-  { name: "VCrypt", amount: 0.98 },
-  { name: "Stacks44", amount: 0.22 },
+  // { name: "AdamantMan", amount: 1.34 },
+  // { name: "VCrypt", amount: 0.98 },
+  // { name: "Stacks44", amount: 0.22 },
 ];

@@ -103,11 +103,11 @@ const SupportersModal = () => {
               );
             })}
           </div>
-          {/* <div className={stl.becomeFirstSupporter}>
+          <div className={stl.becomeFirstSupporter}>
             <span className={stl.firstSupporter}>
               Become the first Ethereum supporter
             </span>
-          </div> */}
+          </div>
         </>
       )}
     </div>
