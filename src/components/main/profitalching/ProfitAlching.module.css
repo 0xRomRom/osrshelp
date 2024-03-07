@@ -273,6 +273,19 @@
   .modalWrap {
     padding-bottom: 3rem;
   }
+  .bannerSpan {
+    font-size: 6vw;
+    line-height: 30px;
+    /* background-color: red; */
+    width: 20rem;
+    font-family: "Open Sans";
+    padding: 0rem 20px;
+  }
+  .rune {
+    font-size: 6vw;
+    font-family: "Open Sans";
+    font-weight: bold;
+  }
 }
 
 @media (max-width: 400px) {

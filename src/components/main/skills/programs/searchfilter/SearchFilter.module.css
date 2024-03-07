@@ -49,5 +49,9 @@
     width: 6.5rem;
     font-size: 16px;
     margin-right: 0rem;
+    margin-left: 0.4rem;
+  }
+  .monsterInput::placeholder {
+    font-size: 13px;
   }
 }
