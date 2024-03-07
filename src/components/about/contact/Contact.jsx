@@ -8,7 +8,7 @@ import supabase from "../../../utils/supabase/supabase";
 
 const Contact = () => {
   const [anonForm, setAnonForm] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(true);
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const [error, setError] = useState("");
 
   const emailError = "Please enter your email or submit as anon";
@@ -75,10 +75,6 @@ const Contact = () => {
     }
   };
 
-  useEffect(() => {
-    setFormSubmitted(false);
-  }, []);
-
   const navigate = useNavigate();
   return (
     <div className={stl.contact}>
@@ -126,8 +122,8 @@ const Contact = () => {
                 </button>
               </div>
             </div>
-            <span className={stl.inputSpan}>Message</span>
             <div className={stl.textAreaWrap}>
+              <span className={stl.inputSpan}>Message</span>
               <textarea
                 maxLength="500"
                 className={stl.textAreaInput}

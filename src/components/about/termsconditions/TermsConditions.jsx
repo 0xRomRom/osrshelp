@@ -8,7 +8,9 @@ const TermsConditions = () => {
   const navigate = useNavigate();
   return (
     <div className={stl.termsconditions}>
-      <HomeButton />
+      <div className={stl.homeWrap}>
+        <HomeButton />
+      </div>
       <div className={stl.mainWrapper}>
         <span className={stl.homeSpan} onClick={() => navigate("/")}>
           <FaLongArrowAltLeft className={stl.homeArrow} />

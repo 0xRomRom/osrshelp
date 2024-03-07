@@ -234,6 +234,8 @@ input:-webkit-autofill:active {
   margin-top: 3rem;
   color: white;
   font-size: 32px;
+  text-align: center;
+  line-height: 32px;
 }
 
 .dwarf {

@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import supabase from "../../../utils/supabase/supabase";
 
 const ReportIssue = () => {
-  const [formSubmitted, setFormSubmitted] = useState(true);
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const [error, setError] = useState("");
 
   const issueError = "Please enter your email or submit as anon";
@@ -57,10 +57,6 @@ const ReportIssue = () => {
 
     setFormSubmitted(true);
   };
-
-  useEffect(() => {
-    setFormSubmitted(false);
-  }, []);
 
   const navigate = useNavigate();
   return (
