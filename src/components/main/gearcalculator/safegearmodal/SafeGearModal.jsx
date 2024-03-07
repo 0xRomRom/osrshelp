@@ -10,9 +10,11 @@ const SafeGearModal = ({
   userID,
   savedSlots,
   setSavedSlots,
+  setSaveGearModal,
 }) => {
   const closeModal = () => {
     setAddingGear(false);
+    setSaveGearModal(false);
   };
 
   return (

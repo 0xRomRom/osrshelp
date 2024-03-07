@@ -497,18 +497,13 @@ const AddGear = ({
             </div>
           </div>
         </div>
-
+        {selected !== null && copiedSlots[`slot${selected || 1}`]?.Geartype && (
+          <div className={stl.trashWrap}>
+            <FaTrashCan className={stl.trashIcon} onClick={deleteGearSlot} />
+          </div>
+        )}
         <div className={stl.gearSlots}>
           {slotsError && <span className={stl.slotError}>{slotsError}</span>}
-          {selected !== null &&
-            copiedSlots[`slot${selected || 1}`]?.Geartype && (
-              <div className={stl.trashWrap}>
-                <FaTrashCan
-                  className={stl.trashIcon}
-                  onClick={deleteGearSlot}
-                />
-              </div>
-            )}
 
           <div
             className={`${stl.gearSlot} ${

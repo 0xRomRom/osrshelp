@@ -2,7 +2,12 @@ import stl from "./SavedBuilds.module.css";
 import { CiSquarePlus } from "react-icons/ci";
 import { BsGearFill } from "react-icons/bs";
 
-const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
+const SavedBuilds = ({
+  savedSlots,
+  setBonusState,
+  setAddingGear,
+  setSaveGearModal,
+}) => {
   const gearTypeCheck = (geartype) => {
     switch (geartype) {
       case "All":
@@ -32,6 +37,7 @@ const SavedBuilds = ({ savedSlots, setBonusState, setAddingGear }) => {
   const handleGearDisplay = (slot) => {
     if (slot.Gearslot === undefined) {
       setAddingGear(true);
+      setSaveGearModal(true);
       return;
     }
     const savedState = JSON.parse(slot.Gearslot);

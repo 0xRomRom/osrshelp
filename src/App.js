@@ -46,6 +46,7 @@ const App = () => {
   const [blogPost, setBlogPost] = useState(null);
   const [showAdmin, setShowAdmin] = useState(false);
   const [showUserProfile, setShowUserProfile] = useState(false);
+  const [saveGearModal, setSaveGearModal] = useState(false);
 
   return (
     <>
@@ -232,7 +233,10 @@ const App = () => {
               <Route
                 path="/gearcalculator"
                 element={
-                  <MainLayout playerName={playerName}>
+                  <MainLayout
+                    playerName={playerName}
+                    hideScroll={saveGearModal}
+                  >
                     <Helmet>
                       <title>Gear Calculator</title>
                       <meta
@@ -240,7 +244,7 @@ const App = () => {
                         content="Build & save custom gear builds"
                       />
                     </Helmet>
-                    <GearCalculator />
+                    <GearCalculator setSaveGearModal={setSaveGearModal} />
                   </MainLayout>
                 }
               />

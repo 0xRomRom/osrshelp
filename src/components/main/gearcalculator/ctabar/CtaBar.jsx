@@ -7,6 +7,7 @@ const CtaBar = ({
   captureScreenshot,
   setActiveSlot,
   setAddingGear,
+  setSaveGearModal,
 }) => {
   const handleClearSlots = () => {
     setBonusState({
@@ -27,6 +28,7 @@ const CtaBar = ({
 
   const handleSlotSave = () => {
     setAddingGear(true);
+    setSaveGearModal(true);
   };
 
   return (

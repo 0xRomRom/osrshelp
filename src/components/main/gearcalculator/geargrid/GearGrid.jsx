@@ -24,6 +24,7 @@ const GearGrid = ({
   setBonusState,
   setGridActive,
   setGearFilter,
+  setSaveGearModal,
 }) => {
   const [balloonActive, setBalloonActive] = useState(true);
   const [slotHovered, setSlotHovered] = useState(null);
@@ -41,6 +42,7 @@ const GearGrid = ({
     }
     setGearFilter("All");
     setGridActive(true);
+    setSaveGearModal(true);
     setActiveSlot(slot);
   };
 
@@ -429,7 +431,7 @@ const GearGrid = ({
           </div>
         </div>
       </div>
-      {balloonActive && (
+      {balloonActive && window.width > 1000 && (
         <div className={stl.alertBalloon}>
           <IoIosClose className={stl.alertHide} onClick={handleAlertHide} />
           <span className={stl.alertSpan}>Hold slot for 1 second to clear</span>

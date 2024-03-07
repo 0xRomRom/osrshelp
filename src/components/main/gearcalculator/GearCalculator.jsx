@@ -20,7 +20,7 @@ import { initState } from "../../../utils/gearcalculator/emptyslots";
 import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
-const GearCalculator = () => {
+const GearCalculator = ({ setSaveGearModal }) => {
   const { premiumUser, userID } = useContext(AuthContext);
   const targetDivRef = useRef(null);
   const [activeSlot, setActiveSlot] = useState(null);
@@ -107,6 +107,7 @@ const GearCalculator = () => {
       {addingGear && (
         <SafeGearModal
           setAddingGear={setAddingGear}
+          setSaveGearModal={setSaveGearModal}
           premiumUser={premiumUser}
           bonusState={bonusState}
           userID={userID}
@@ -126,6 +127,7 @@ const GearCalculator = () => {
               setActiveSlot={setActiveSlot}
               activeSlot={activeSlot}
               setAddingGear={setAddingGear}
+              setSaveGearModal={setSaveGearModal}
             />
             <div className={stl.midBlock} ref={targetDivRef}>
               <div className={stl.rowWrap}>
@@ -137,6 +139,7 @@ const GearCalculator = () => {
                     setBonusState={setBonusState}
                     setGridActive={setGridActive}
                     setGearFilter={setGearFilter}
+                    setSaveGearModal={setSaveGearModal}
                   />
                   <ConfigBar
                     activeSlot={activeSlot}
@@ -165,6 +168,7 @@ const GearCalculator = () => {
             savedSlots={savedSlots}
             setBonusState={setBonusState}
             setAddingGear={setAddingGear}
+            setSaveGearModal={setSaveGearModal}
           />
         </div>
         <PreBuilds
