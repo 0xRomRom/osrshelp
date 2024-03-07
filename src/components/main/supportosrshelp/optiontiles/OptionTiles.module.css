@@ -103,12 +103,12 @@
 
 @media (max-width: 750px) {
   .optionsBlock {
-    padding: 40px;
+    padding: 20px;
     flex-direction: column;
   }
   .option {
-    width: 6rem;
-    height: 6rem;
+    width: 7.5rem;
+    height: 7.5rem;
   }
   .optionSpan {
     font-size: 10px;

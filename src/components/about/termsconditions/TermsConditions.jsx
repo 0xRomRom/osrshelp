@@ -8,7 +8,7 @@ const TermsConditions = () => {
   const navigate = useNavigate();
   return (
     <div className={stl.termsconditions}>
-      <div className={stl.homeWrap}>
+      <div className={stl.homeWraps}>
         <HomeButton />
       </div>
       <div className={stl.mainWrapper}>
