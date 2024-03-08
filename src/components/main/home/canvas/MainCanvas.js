@@ -12,8 +12,8 @@ const MainCanvas = ({
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    const imgWidth = 92;
-    const imgHeight = 92;
+    const imgWidth = 72;
+    const imgHeight = 75;
 
     const yBegin = -50;
     const yEnd = 220;
