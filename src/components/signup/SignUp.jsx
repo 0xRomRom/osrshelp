@@ -214,7 +214,7 @@ const SignUp = () => {
       const { error } = await supabase.auth.resetPasswordForEmail(
         recoverMail.current.value,
         {
-          redirectTo: `${window.location.origin}/#/recoverpassword`,
+          redirectTo: `${window.location.origin}/recoverpassword`,
         }
       );
       if (error) {
