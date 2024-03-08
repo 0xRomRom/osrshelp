@@ -30,6 +30,7 @@ const UpdatePoll = () => {
   const [userVoteIndex, setUserVoteIndex] = useState(null);
 
   useEffect(() => {
+    if (activePhase === "Idle") return;
     if (!userID) {
       setAlreadyVoted(false);
       return;
@@ -55,38 +56,11 @@ const UpdatePoll = () => {
       }
     };
     checkIfAlreadyVoted();
-  }, [alreadyVoted, userID]);
+  }, [alreadyVoted, userID, activePhase]);
 
   useEffect(() => {
     setCheckedQuestion(null);
   }, [voted]);
-
-  const handleVote = async () => {
-    if (!userID) {
-      navigate("/login");
-    }
-    if (!checkedQuestion) {
-      return;
-    }
-    try {
-      const { error } = await supabase.from("poll_votes").insert([
-        {
-          uid: userID,
-          uservote: checkedQuestion,
-        },
-      ]);
-
-      if (error) {
-        throw new Error(error);
-      }
-    } catch (err) {
-      console.error(err);
-    }
-
-    setVoted(!voted);
-    setAlreadyVoted(true);
-    setTotalVotes(() => totalVotes + 1);
-  };
 
   useEffect(() => {
     const initFetcher = async () => {
@@ -112,6 +86,7 @@ const UpdatePoll = () => {
   }, []);
 
   useEffect(() => {
+    if (activePhase === "Idle") return;
     const updateVoteCount = async () => {
       try {
         const { data, error } = await supabase.from("poll_votes").select("*");
@@ -143,7 +118,34 @@ const UpdatePoll = () => {
     if (pollQuestions.length > 0) {
       updateVoteCount();
     }
-  }, [pollQuestions, voted]);
+  }, [pollQuestions, voted, activePhase]);
+
+  const handleVote = async () => {
+    if (!userID) {
+      navigate("/login");
+    }
+    if (!checkedQuestion) {
+      return;
+    }
+    try {
+      const { error } = await supabase.from("poll_votes").insert([
+        {
+          uid: userID,
+          uservote: checkedQuestion,
+        },
+      ]);
+
+      if (error) {
+        throw new Error(error);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+
+    setVoted(!voted);
+    setAlreadyVoted(true);
+    setTotalVotes(() => totalVotes + 1);
+  };
 
   return (
     <div className={stl.modal}>

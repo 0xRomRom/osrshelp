@@ -74,7 +74,7 @@ const OnlineUsers = () => {
     };
     updateActivity();
 
-    const updater = setInterval(updateActivity, 10000);
+    const updater = setInterval(updateActivity, 20000);
     return () => {
       clearInterval(updater);
     };

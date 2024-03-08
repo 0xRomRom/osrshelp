@@ -152,7 +152,7 @@ const AddGear = ({
 
   const deleteGearSlot = async () => {
     const gearName = savedSlots[`slot${selected}`].Setupname;
-    const { data, error } = await supabase
+    await supabase
       .from("saved_builds")
       .delete()
       .eq("Username", userID)
