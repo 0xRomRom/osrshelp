@@ -33,7 +33,7 @@ const OnlineUsers = () => {
 
       //Remove inactive users
       const filteredUsers = currentUsers.filter(
-        (user) => user.timestamp + 300 > currentStamp
+        (user) => user.timestamp + 600 > currentStamp
       );
 
       //Handle new entry
@@ -74,7 +74,7 @@ const OnlineUsers = () => {
     };
     updateActivity();
 
-    const updater = setInterval(updateActivity, 20000);
+    const updater = setInterval(updateActivity, 30000);
     return () => {
       clearInterval(updater);
     };

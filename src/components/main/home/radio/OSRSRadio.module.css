@@ -2,10 +2,9 @@
   color: rgb(205, 205, 205);
   font-size: 18px;
   padding: 2rem;
-  min-height: 250px;
-  max-height: 250px;
   margin-left: 0rem;
   border-radius: 0.8rem;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
