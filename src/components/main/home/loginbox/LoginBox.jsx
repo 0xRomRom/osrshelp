@@ -21,7 +21,6 @@ const LoginBox = (props) => {
     for (let i = 0; i < playerStats.length; i++) {
       currentStats[playerStats[i]] = filteredSkills[i];
     }
-    console.log(currentStats);
     props.setSkills(currentStats);
   };
 
@@ -38,7 +37,6 @@ const LoginBox = (props) => {
     for (let i = 0; i < playerStats.length; i++) {
       currentStats[playerStats[i]] = filteredSkills[i];
     }
-    console.log(currentStats);
     props.setSkillsExp(currentStats);
   };
 

@@ -9,7 +9,6 @@ const PremiumBanner = () => {
   const { userID } = useContext(AuthContext);
 
   const handleNavigate = () => {
-    console.log("clicked");
     if (!userID) {
       navigate("/login");
       return;

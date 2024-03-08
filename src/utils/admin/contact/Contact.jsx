@@ -10,7 +10,6 @@ const Contact = () => {
     const messageFetcher = async () => {
       try {
         const { data, error } = await supabase.from("contact_form").select("*");
-        console.log(data);
 
         if (error) {
           throw new Error(error);

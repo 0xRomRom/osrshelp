@@ -82,7 +82,6 @@ const AddGear = ({
       } else {
         setSelected(null);
         setGearName("");
-        console.log("Gear build saved successfully!");
         try {
           const { data, error } = await supabase
             .from("saved_builds")
@@ -158,18 +157,6 @@ const AddGear = ({
       .delete()
       .eq("Username", userID)
       .eq("Setupname", gearName);
-
-    if (error) {
-      // Handle the error
-      console.error("Error deleting data:", error.message);
-    } else {
-      // Check if any data was deleted
-      if (data && data.length > 0) {
-        console.log("Deleted successfully:", data);
-      } else {
-        console.log("No data matching the deletion criteria found.");
-      }
-    }
 
     try {
       const { data, error } = await supabase

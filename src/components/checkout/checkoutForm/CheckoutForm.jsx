@@ -27,14 +27,10 @@ const CheckoutForm = () => {
       const { error } = await stripe.confirmPayment({
         elements,
         confirmParams: {
-          // Make sure to change this to your payment completion page
-          // return_url: `https://osrshelp.netlify.app/#/successful-payment`,
           return_url: `${window.location.origin}/successful-payment`,
         },
       });
-      console.log(error);
     } catch (err) {
-      console.error(err);
       if (err.type === "card_error" || err.type === "validation_error") {
         setMessage(err.message);
       } else {

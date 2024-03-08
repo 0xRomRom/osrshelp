@@ -33,7 +33,6 @@ const ThievingGrid = (props) => {
   const sortNPC = () => {
     setMonsterSorted(!monsterSorted);
     let sorter = [...thievDB];
-    console.log(sorter);
     sorter.sort((a, b) =>
       monsterSorted ? a.level - b.level : b.level - a.level
     );

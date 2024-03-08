@@ -94,7 +94,6 @@ const CraftingGrid = (props) => {
 
         for (let i = 0; i < itemCount; i++) {
           const itemName = item.names[i];
-          // console.log(itemName);
           const itemCounts = item.amounts[i];
           const craftPrice = craftingItemPrices[itemName].price * itemCounts;
           count += craftPrice;
@@ -163,7 +162,6 @@ const CraftingGrid = (props) => {
   const sortCost = () => {
     setCostSorted(!costSorted);
     let sorter = [...filteredCraftDB];
-    console.log(sorter);
     sorter.sort((a, b) =>
       costSorted
         ? a.price * (+props.remainingExp / a.exp) -

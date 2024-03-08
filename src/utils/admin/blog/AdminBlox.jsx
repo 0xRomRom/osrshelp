@@ -45,7 +45,6 @@ const AdminBlog = () => {
       // Once the file is read, set it to the state
       setImageBase64(reader.result);
       blogObjectUpdater("imgsrc", reader.result);
-      console.log(imageBase64);
     };
 
     if (file) {

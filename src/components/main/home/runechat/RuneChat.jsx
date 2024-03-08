@@ -44,7 +44,7 @@ const RuneChat = () => {
         throw new Error(error);
       }
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
   };
 

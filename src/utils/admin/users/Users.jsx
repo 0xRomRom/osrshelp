@@ -39,13 +39,11 @@ const Users = () => {
         .eq("email", username);
 
       if (error) {
-        console.log(error);
         throw new Error(error);
       }
     } catch (err) {
       console.error(err);
     }
-    console.log(selectedUser);
   };
 
   const upgradeUser = async () => {
@@ -58,13 +56,11 @@ const Users = () => {
         .eq("email", username);
 
       if (error) {
-        console.log(error);
         throw new Error(error);
       }
     } catch (err) {
       console.error(err);
     }
-    console.log(selectedUser);
   };
 
   const handleUserDelete = async () => {
@@ -77,13 +73,11 @@ const Users = () => {
         .eq("email", username);
 
       if (error) {
-        console.log(error);
         throw new Error(error);
       }
     } catch (err) {
       console.error(err);
     }
-    console.log(selectedUser);
   };
 
   return (

@@ -81,8 +81,6 @@ const Overview = () => {
         .select("*")
         .eq("Entry", "Entry");
 
-      console.log(error);
-
       if (error) {
         throw new Error(error);
       }
@@ -100,8 +98,6 @@ const Overview = () => {
         .delete()
         .select("*")
         .eq("Entry", "Entry");
-
-      console.log(error);
 
       if (error) {
         throw new Error(error);

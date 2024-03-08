@@ -155,7 +155,6 @@ const SaveOverlay = ({ setSavingInventory, currentGrid }) => {
           return;
         } else {
           const parsed = JSON.parse(data[0].saved_invs);
-          console.log(parsed);
           setSavedBuilds(parsed);
           setLoading(false);
         }

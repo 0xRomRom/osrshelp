@@ -110,7 +110,6 @@ const SignUp = () => {
 
     if (error) {
       const message = error.message;
-      console.log(message);
 
       setLoading(false);
       switch (message) {

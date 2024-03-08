@@ -25,7 +25,6 @@ const WoodcuttingGrid = (props) => {
   const sortTree = () => {
     setMonsterSorted(!monsterSorted);
     let sorter = [...treeDB];
-    console.log(sorter);
     sorter.sort((a, b) =>
       monsterSorted ? a.level - b.level : b.level - a.level
     );

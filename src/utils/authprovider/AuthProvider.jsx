@@ -61,7 +61,6 @@ const AuthProvider = ({ children, setPlayerName }) => {
 
   useEffect(() => {
     supabase.auth.onAuthStateChange(async (event, session) => {
-      console.log(event);
       if (session) {
         if (event === "INITIAL_SESSION") {
           setLoggedInUser(true);

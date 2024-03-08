@@ -80,7 +80,7 @@ const UpdatePoll = () => {
         throw new Error(error);
       }
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
 
     setVoted(!voted);
@@ -102,7 +102,6 @@ const UpdatePoll = () => {
         setActivePhase(data.pollstate);
 
         if (error) {
-          console.log(error);
           throw new Error(error);
         }
       } catch (err) {
@@ -117,7 +116,6 @@ const UpdatePoll = () => {
       try {
         const { data, error } = await supabase.from("poll_votes").select("*");
         if (error) {
-          console.log(error);
           throw new Error(error);
         }
 

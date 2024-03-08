@@ -70,12 +70,10 @@ const Food = ({
   };
 
   const addNotedItems = (imgSrc) => {
-    console.log(notedAmount);
     if (!notedAmount) {
       return;
     }
     let updatedGrid = [...currentGrid];
-    console.log(updatedGrid);
 
     // Check for existing item to increment rather than duplicate
     for (let i = 0; i < Object.keys(updatedGrid).length; i++) {

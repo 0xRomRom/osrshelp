@@ -41,7 +41,6 @@ const HunterGrid = (props) => {
   const sortLevel = () => {
     setMonsterSorted(!monsterSorted);
     let sorter = [...hunterDB];
-    console.log(sorter);
     sorter.sort((a, b) =>
       monsterSorted ? a.level - b.level : b.level - a.level
     );
