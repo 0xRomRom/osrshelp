@@ -7,6 +7,7 @@ import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import supabase from "../../../utils/supabase/supabase";
 import { PaginationContext } from "../../../utils/paginationstate/PaginationProvider";
 import { FaCog } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const Pagination = ({ navTo, setShowAdmin, setShowUserProfile }) => {
   const { loggedInUser, setLoggedInUser, premiumUser, userEmail } =
@@ -16,6 +17,7 @@ const Pagination = ({ navTo, setShowAdmin, setShowUserProfile }) => {
   const navigate = useNavigate();
   const [showSignup, setShowSignup] = useState(false);
   const [toggleConfig, setToggleConfig] = useState(false);
+  const { pathname } = useLocation();
 
   // Update cachedSubstate only when subState is initially set
   useEffect(() => {
@@ -71,6 +73,8 @@ const Pagination = ({ navTo, setShowAdmin, setShowUserProfile }) => {
     setShowUserProfile(true);
   };
 
+  const showCog = pathname === "/";
+
   return (
     <div className={stl.paginationBar}>
       <div className={stl.leftBar}>
@@ -96,7 +100,7 @@ const Pagination = ({ navTo, setShowAdmin, setShowUserProfile }) => {
         >
           Config
         </button>
-        {loggedInUser && (
+        {loggedInUser && showCog && (
           <button className={stl.cogBtn} onClick={handleUserProfile}>
             <FaCog />
           </button>
