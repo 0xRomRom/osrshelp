@@ -3,8 +3,11 @@ import stl from "./SubmissionsState.module.css";
 import supabase from "../../../../../utils/supabase/supabase";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../../../../utils/authprovider/AuthProvider";
 
-const SubmissionsState = ({ userID }) => {
+const SubmissionsState = () => {
+  const { userID } = useContext(AuthContext);
   const navigate = useNavigate();
   const [submission, setSubmission] = useState(null);
   const [alreadySubmitted, setAlreadySubmitted] = useState(null);
@@ -33,9 +36,7 @@ const SubmissionsState = ({ userID }) => {
         }
       } catch (err) {}
     };
-    if (1 > 2) {
-      initialFetch();
-    }
+    initialFetch();
   }, [userID]);
 
   const handleFormSubmission = async (e) => {

@@ -49,7 +49,7 @@ const UpdatePoll = () => {
           setAlreadyVoted(true);
         }
         if (error) {
-          // throw new Error("No vote recorded.");
+          throw new Error(error);
         }
       } catch (err) {
         console.error(err);
@@ -171,9 +171,7 @@ const UpdatePoll = () => {
           {activePhase === "Construction" && (
             <ConstructionState userID={userID} />
           )}
-          {activePhase === "Submissions" && (
-            <SubmissionsState userID={userID} />
-          )}
+          {activePhase === "Submissions" && <SubmissionsState />}
           {activePhase === "Idle" && <IdleState />}
 
           {activePhase === "Poll" && (
