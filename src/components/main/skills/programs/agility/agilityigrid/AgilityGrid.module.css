@@ -6,7 +6,7 @@
   border: 1px solid var(--border);
   padding: 1rem 0.5rem;
   border-radius: 0.8rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }

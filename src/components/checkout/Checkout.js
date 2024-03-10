@@ -18,12 +18,12 @@ const Checkout = () => {
   const [clientSecret, setClientSecret] = useState("");
 
   useEffect(() => {
-    fetch(
-      "https://osrshelpstripe.netlify.app/.netlify/functions/server/config"
-    ).then(async (r) => {
-      const { publishableKey } = await r.json();
-      setStripePromise(loadStripe(publishableKey));
-    });
+    fetch("https://osrshelpstripe.netlify.app/.netlify/functions/server/config")
+      .then(async (r) => {
+        const { publishableKey } = await r.json();
+        setStripePromise(loadStripe(publishableKey));
+      })
+      .catch((err) => console.error(err));
   }, []);
 
   useEffect(() => {

@@ -1,4 +1,3 @@
 -- Update api private keys
--- Add URLs to supabase allow for password recovery
--- Add cors headers with allow url to routes
+-- Remove localhost header before production
 -- Toggle Stripe dash to production
