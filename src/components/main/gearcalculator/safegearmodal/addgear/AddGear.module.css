@@ -337,10 +337,10 @@
 
 .trashWrap {
   position: absolute;
-  top: -3.3rem;
+  top: -2.5rem;
   right: 7.5rem;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   background-color: var(--dark-bg);
   display: flex;
   justify-content: center;
@@ -356,7 +356,7 @@
 .trashIcon {
   position: relative;
   color: rgb(176, 176, 176);
-  font-size: 35px;
+  font-size: 25px;
   transition: all 0.3s ease-in-out;
 }
 

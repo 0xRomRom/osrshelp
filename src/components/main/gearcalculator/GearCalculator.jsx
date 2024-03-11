@@ -139,7 +139,6 @@ const GearCalculator = ({ setSaveGearModal }) => {
                     setBonusState={setBonusState}
                     setGridActive={setGridActive}
                     setGearFilter={setGearFilter}
-                    setSaveGearModal={setSaveGearModal}
                   />
                   <ConfigBar
                     activeSlot={activeSlot}

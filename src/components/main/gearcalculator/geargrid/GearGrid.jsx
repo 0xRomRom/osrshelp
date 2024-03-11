@@ -24,7 +24,6 @@ const GearGrid = ({
   setBonusState,
   setGridActive,
   setGearFilter,
-  setSaveGearModal,
 }) => {
   const [balloonActive, setBalloonActive] = useState(true);
   const [slotHovered, setSlotHovered] = useState(null);
@@ -42,7 +41,6 @@ const GearGrid = ({
     }
     setGearFilter("All");
     setGridActive(true);
-    setSaveGearModal(true);
     setActiveSlot(slot);
   };
 
