@@ -37,6 +37,7 @@ import Admin from "./utils/admin/Admin";
 import UserProfile from "./utils/userprofile/UserProfile";
 import RecoverPassword from "./components/signup/reocoverpassword/RecoverPassword";
 import { Helmet } from "react-helmet";
+import CreditsPurchased from "./components/paymentSuccess/CreditsPurchased";
 
 const App = () => {
   const [skills, setSkills] = useState(null);
@@ -143,6 +144,19 @@ const App = () => {
                   </>
                 }
               />
+              <Route
+                path="/credits-purchased"
+                element={
+                  <>
+                    <Helmet>
+                      <title>Credits Purchased</title>
+                      <meta name="description" content="Payment Successful" />
+                    </Helmet>
+                    <CreditsPurchased />
+                  </>
+                }
+              />
+
               <Route
                 path="/checkout"
                 element={

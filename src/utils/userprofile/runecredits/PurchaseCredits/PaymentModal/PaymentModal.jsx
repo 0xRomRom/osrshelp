@@ -29,6 +29,8 @@ const PaymentModal = ({ purchaseAmount }) => {
   useEffect(() => {
     const uid = userID;
     const amount = purchaseAmount;
+    console.log(amount);
+    console.log(uid);
     fetch(
       "https://osrshelpstripe.netlify.app/.netlify/functions/server/create-payment-intent",
       {

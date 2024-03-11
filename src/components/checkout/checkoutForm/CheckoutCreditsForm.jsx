@@ -28,11 +28,16 @@ const CheckoutCreditsForm = ({ purchaseAmount }) => {
     }
 
     setIsProcessing(true);
+
+    const returnUrl =
+      +purchaseAmount === 1499
+        ? `${window.location.origin}/successful-payment`
+        : `${window.location.origin}/credits-purchased`;
     try {
       await stripe.confirmPayment({
         elements,
         confirmParams: {
-          return_url: `${window.location.origin}/successful-payment`,
+          return_url: returnUrl,
         },
       });
     } catch (err) {
