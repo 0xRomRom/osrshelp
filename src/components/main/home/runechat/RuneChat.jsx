@@ -7,7 +7,7 @@ import { FaCog } from "react-icons/fa";
 import Spinner from "../../../../utils/loadingspinner/Spinner";
 import ChatConfig from "./chatconfig/ChatConfig";
 
-const RuneChat = () => {
+const RuneChat = ({ setShowUserProfile }) => {
   const outputBottom = useRef(null);
   const { userID, premiumUser, storedColor, storedUsername } =
     useContext(AuthContext);
@@ -25,6 +25,11 @@ const RuneChat = () => {
     e.preventDefault();
     setUserMessage("");
     const now = new Date().toLocaleString("en-US").split(",")[1].slice(1, -3);
+
+    if (storedUsername === "" || !storedUsername) {
+      setShowUserProfile(true);
+      return;
+    }
 
     if (userMessage === "" || userMessage === " " || !premiumUser) {
       return;

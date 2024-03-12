@@ -143,7 +143,7 @@ const Home = (props) => {
                 )}
               </>
               <TotalUsers />
-              <RuneChat />
+              <RuneChat setShowUserProfile={props.setShowUserProfile} />
               <BlogModal setBlogPost={props.setBlogPost} />
               <UpdatePoll />
               <OSRSRadio />
