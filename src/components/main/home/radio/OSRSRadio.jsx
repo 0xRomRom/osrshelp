@@ -2,28 +2,23 @@ import stl from "./OSRSRadio.module.css";
 import { FaPlay } from "react-icons/fa";
 import { MdSkipPrevious, MdSkipNext } from "react-icons/md";
 import { IoMdPause } from "react-icons/io";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import song1 from "../../../../assets/tracks/7th_Realm.mp3";
 import song2 from "../../../../assets/tracks/Adventure.mp3";
 import song3 from "../../../../assets/tracks/Al_Kharid.mp3";
 
 const OSRSRadio = () => {
-  const audioRef = useRef(new Audio(song1));
+  const audioRef = useRef(new Audio());
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(null);
   const [songIndex, setSongIndex] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
-  const [songName, setSongName] = useState(null);
 
-  const memoizedSongs = useMemo(() => [song1, song2, song3], []);
+  const memoizedSongs = [song1, song2, song3];
 
   useEffect(() => {
     const audio = audioRef.current;
-
-    const fileName = audio.src.substring(audio.src.lastIndexOf("/") + 1);
-    const clearName = fileName.split(".")[0].replaceAll("_", " ");
-    setSongName(clearName);
 
     const handleTimeUpdate = () => {
       setCurrentTime(audio.currentTime);
@@ -38,14 +33,16 @@ const OSRSRadio = () => {
 
     return () => {
       audio.removeEventListener("timeupdate", handleTimeUpdate);
+      audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
     };
-  }, [audioRef, songIndex]);
+  }, [audioRef]);
 
   const handlePlayPause = () => {
     setIsPlaying((prevState) => {
       if (prevState) {
         audioRef.current.pause();
       } else {
+        audioRef.current.src = memoizedSongs[songIndex];
         audioRef.current.play();
       }
       return !prevState;
@@ -78,7 +75,13 @@ const OSRSRadio = () => {
 
   return (
     <div className={stl.radio}>
-      <div className={stl.titleRow}>{songName}</div>
+      <div className={stl.titleRow}>
+        {memoizedSongs[songIndex]
+          .split("/")
+          .pop()
+          .split(".")[0]
+          .replaceAll("_", " ")}
+      </div>
       <div className={stl.btnRow}>
         <button className={stl.cta} onClick={handlePrev}>
           <MdSkipPrevious className={stl.enlarge} />
