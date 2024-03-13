@@ -9,6 +9,11 @@ import song2 from "../../../../assets/tracks/Adventure.mp3";
 import song3 from "../../../../assets/tracks/Al_Kharid.mp3";
 
 const memoizedSongs = [song1, song2, song3];
+const bgSources = {
+  0: "radiobg/Varrock.webp",
+  1: "radiobg/Alkharid.webp",
+};
+
 const OSRSRadio = () => {
   const audioRef = useRef(new Audio());
   const [isPlaying, setIsPlaying] = useState(false);
@@ -33,7 +38,6 @@ const OSRSRadio = () => {
     return () => {
       audio.removeEventListener("timeupdate", handleTimeUpdate);
       audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
-      audioRef.current = null;
     };
   }, [audioRef]);
 
@@ -120,6 +124,13 @@ const OSRSRadio = () => {
           style={{ width: `${(currentTime / duration) * 100}%` }}
         ></div>
       </div>
+      {isPlaying && (
+        <img
+          src={bgSources[songIndex - 1]}
+          alt="Alkharid"
+          className={stl.gateBg}
+        />
+      )}
     </div>
   );
 };
