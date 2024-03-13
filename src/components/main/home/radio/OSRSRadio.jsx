@@ -7,12 +7,22 @@ import { useEffect, useRef, useState } from "react";
 import song1 from "../../../../assets/tracks/Adventure.mp3";
 import song2 from "../../../../assets/tracks/Al_Kharid.mp3";
 import song3 from "../../../../assets/tracks/Flute_salad.mp3";
+import song4 from "../../../../assets/tracks/Baroque.mp3";
+import song5 from "../../../../assets/tracks/Newbie_melodie.mp3";
+import song6 from "../../../../assets/tracks/Sea_Shanty_2.mp3";
+import song7 from "../../../../assets/tracks/Scape_Soft.mp3";
+import song8 from "../../../../assets/tracks/Long_Way_Home.mp3";
 
-const memoizedSongs = [song1, song2, song3];
+const memoizedSongs = [song1, song2, song3, song4, song5, song6, song7, song8];
 const bgSources = {
   0: "radiobg/Varrock.webp",
   1: "radiobg/Alkharid.webp",
   2: "radiobg/Draynor.webp",
+  3: "radiobg/Baroque.webp",
+  4: "radiobg/Newbie_melodie.webp",
+  5: "radiobg/Sea_Shanty_2.webp",
+  6: "radiobg/Scape_soft.webp",
+  7: "radiobg/Long_Way_Home.webp",
 };
 
 const OSRSRadio = () => {
