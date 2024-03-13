@@ -49,12 +49,13 @@
   width: 184px;
   height: 0.75rem;
   height: 1rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--blue-main);
   border-radius: 0.25rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
+  z-index: 10;
 }
 
 .innerBar {

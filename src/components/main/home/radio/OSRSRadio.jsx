@@ -4,14 +4,15 @@ import { MdSkipPrevious, MdSkipNext } from "react-icons/md";
 import { IoMdPause } from "react-icons/io";
 import { useEffect, useRef, useState } from "react";
 
-import song1 from "../../../../assets/tracks/7th_Realm.mp3";
-import song2 from "../../../../assets/tracks/Adventure.mp3";
-import song3 from "../../../../assets/tracks/Al_Kharid.mp3";
+import song1 from "../../../../assets/tracks/Adventure.mp3";
+import song2 from "../../../../assets/tracks/Al_Kharid.mp3";
+import song3 from "../../../../assets/tracks/Flute_salad.mp3";
 
 const memoizedSongs = [song1, song2, song3];
 const bgSources = {
   0: "radiobg/Varrock.webp",
   1: "radiobg/Alkharid.webp",
+  2: "radiobg/Draynor.webp",
 };
 
 const OSRSRadio = () => {
@@ -126,8 +127,9 @@ const OSRSRadio = () => {
       </div>
       {isPlaying && (
         <img
-          src={bgSources[songIndex - 1]}
-          alt="Alkharid"
+          loading="lazy"
+          src={bgSources[songIndex]}
+          alt="Radio Background"
           className={stl.gateBg}
         />
       )}
