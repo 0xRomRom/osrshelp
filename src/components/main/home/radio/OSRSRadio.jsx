@@ -33,13 +33,14 @@ const OSRSRadio = () => {
     return () => {
       audio.removeEventListener("timeupdate", handleTimeUpdate);
       audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
+      audioRef.current = null;
     };
   }, [audioRef]);
 
   const handlePlayPause = () => {
     setIsPlaying((prevState) => {
       if (currentTime === 0) {
-        audioRef.current.src = memoizedSongs[songIndex];
+        // audioRef.current.src = memoizedSongs[songIndex];
       }
       return !prevState;
     });
@@ -79,10 +80,11 @@ const OSRSRadio = () => {
   };
 
   useEffect(() => {
-    if (currentTime - 1 >= currentTime) {
+    if (currentTime + 1 >= duration) {
       setSongIndex((prevIndex) => (prevIndex + 1) % memoizedSongs.length);
+      setCurrentTime(0);
     }
-  }, [currentTime]);
+  }, [currentTime, duration, setCurrentTime]);
 
   return (
     <div className={stl.radio}>
