@@ -42,7 +42,9 @@ const OSRSRadio = () => {
       if (prevState) {
         audioRef.current.pause();
       } else {
-        audioRef.current.src = memoizedSongs[songIndex];
+        if (currentTime === 0) {
+          audioRef.current.src = memoizedSongs[songIndex];
+        }
         audioRef.current.play();
       }
       return !prevState;
@@ -51,8 +53,9 @@ const OSRSRadio = () => {
 
   const handleNext = () => {
     setSongIndex((prevIndex) => (prevIndex + 1) % memoizedSongs.length);
-    audioRef.current.src = memoizedSongs[songIndex];
-    audioRef.current.play();
+    // audioRef.current.src = memoizedSongs[songIndex];
+    // audioRef.current.play();
+    // setIsPlaying(true);
   };
 
   const handlePrev = () => {
@@ -60,9 +63,18 @@ const OSRSRadio = () => {
       (prevIndex) =>
         (prevIndex - 1 + memoizedSongs.length) % memoizedSongs.length
     );
-    audioRef.current.src = memoizedSongs[songIndex];
-    audioRef.current.play();
+    // audioRef.current.src = memoizedSongs[songIndex];
+    // audioRef.current.play();
+    // setIsPlaying(true);
   };
+
+  useEffect(() => {
+    if (isPlaying) {
+      audioRef.current.src = memoizedSongs[songIndex];
+      audioRef.current.play();
+      setIsPlaying(true);
+    }
+  }, [songIndex]);
 
   const handleClick = (event) => {
     const rect = event.target.getBoundingClientRect();
