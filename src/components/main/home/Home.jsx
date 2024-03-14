@@ -15,95 +15,12 @@ import MainCanvas from "./canvas/MainCanvas";
 import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
-import { AuthContext } from "../../../utils/authprovider/AuthProvider";
-import { useContext } from "react";
-
-import { playerStats } from "../../../utils/playerStats";
-import { useCallback } from "react";
-
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
-  const { storedUsername } = useContext(AuthContext);
-  const [fetched, setFetched] = useState(false);
-
-  const updateSkills = useCallback(
-    (data) => {
-      let currentStats = {};
-
-      const skillsArray = data.split(/\n/);
-
-      let filteredSkills = [];
-      for (let i = 0; i < playerStats.length; i++) {
-        const value = skillsArray[i].split(",")[1];
-        filteredSkills.push(value);
-      }
-
-      for (let i = 0; i < playerStats.length; i++) {
-        currentStats[playerStats[i]] = filteredSkills[i];
-      }
-      props.setSkills(currentStats);
-    },
-    [props]
-  );
-
-  const updateSkillsExp = useCallback(
-    (data) => {
-      let currentStats = {};
-      const skillsArray = data.split(/\n/);
-
-      let filteredSkills = [];
-      for (let i = 0; i < playerStats.length; i++) {
-        const value = skillsArray[i].split(",")[2];
-        filteredSkills.push(value);
-      }
-
-      for (let i = 0; i < playerStats.length; i++) {
-        currentStats[playerStats[i]] = filteredSkills[i];
-      }
-      props.setSkillsExp(currentStats);
-    },
-    [props]
-  );
-
-  useEffect(() => {
-    if (storedUsername && !fetched) {
-      const fetchers = async () => {
-        try {
-          const filteredUser = storedUsername?.replaceAll(" ", "_");
-          const obj = { user: filteredUser };
-          const fetcher = await fetch(
-            "https://osrshiscoreapi.netlify.app/.netlify/functions/api",
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(obj),
-            }
-          );
-          const data = await fetcher.json();
-
-          if (data.error) {
-            throw new Error(data.error);
-          }
-
-          props.setPlayerName(storedUsername);
-          updateSkills(data.result);
-          updateSkillsExp(data.result);
-          setSkillsFetched(true);
-          setFetched(true);
-        } catch (err) {
-          console.error(err);
-        }
-      };
-      fetchers();
-    }
-  }, [storedUsername, props, fetched, updateSkills, updateSkillsExp]);
 
   useEffect(() => {
     if (props.skills || props.skillsExp) {
       setSkillsFetched(true);
-    } else {
     }
   }, [props.skills, props.skillsExp]);
 

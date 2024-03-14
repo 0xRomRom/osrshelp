@@ -40,14 +40,14 @@ const AuthProvider = ({ children, setPlayerName }) => {
       try {
         const { data } = await supabase
           .from("users_meta")
-          .select("*")
+          .select("username")
           .eq("uid", uid)
           .single();
 
         if (data) {
-          setPlayerName(data.username);
+          // setPlayerName(data.username);
           setStoredUsername(data.username);
-          setStoredColor(data.usercolor);
+          // setStoredColor(data.usercolor);
         }
       } catch (err) {
         console.error(err);

@@ -13,7 +13,7 @@ const NPCGrid = (props) => {
 
   const calculateMonstersToKill = useCallback(
     (monster) => {
-      const expToGo = props.remainingExp || 83;
+      const expToGo = props.remainingExp || 0;
       const monsterExp = +monster * 4;
       const result = Math.ceil(expToGo / monsterExp);
       return result ? result : "?";
