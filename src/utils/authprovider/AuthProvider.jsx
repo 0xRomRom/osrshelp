@@ -14,50 +14,46 @@ const AuthProvider = ({ children, setPlayerName }) => {
   const [ethereumDonateCount, setEthereumDonateCount] = useState(null);
   const [runeCredits, setRuneCredits] = useState(null);
 
-  const getPremium = useCallback(
-    async (uid) => {
-      try {
-        const { data } = await supabase
-          .from("users")
-          .select("*")
-          .eq("uid", uid)
-          .single();
+  const getPremium = useCallback(async (uid) => {
+    try {
+      const { data } = await supabase
+        .from("users")
+        .select("*")
+        .eq("uid", uid)
+        .single();
 
-        if (data) {
-          setEthereumDonateCount(data.etherdonate);
-          setLobsterDonateCount(data.lobsterdonate);
-          setRuneCredits(data.runecredits);
-        }
-        if (data?.premium) {
-          setPremiumUser(true);
-        } else {
-          setPremiumUser(false);
-        }
-      } catch (err) {
-        console.error(err);
+      if (data) {
+        setEthereumDonateCount(data.etherdonate);
+        setLobsterDonateCount(data.lobsterdonate);
+        setRuneCredits(data.runecredits);
       }
-
-      try {
-        const { data } = await supabase
-          .from("users_meta")
-          .select("username")
-          .eq("uid", uid)
-          .single();
-
-        if (data) {
-          // setPlayerName(data.username);
-          setStoredUsername(data.username);
-          // setStoredColor(data.usercolor);
-        }
-      } catch (err) {
-        console.error(err);
-        setPlayerName("");
-        setStoredUsername("");
-        setStoredColor("#808080");
+      if (data?.premium) {
+        setPremiumUser(true);
+      } else {
+        setPremiumUser(false);
       }
-    },
-    [setPlayerName]
-  );
+    } catch (err) {
+      console.error(err);
+    }
+
+    try {
+      const { data } = await supabase
+        .from("users_meta")
+        .select("*")
+        .eq("uid", uid)
+        .single();
+
+      if (data) {
+        setStoredUsername(data.username);
+        setStoredColor(data.usercolor);
+        console.log(data.usercolor);
+      }
+    } catch (err) {
+      console.error(err);
+      setStoredUsername("");
+      setStoredColor("#808080");
+    }
+  }, []);
 
   useEffect(() => {
     supabase.auth.onAuthStateChange(async (event, session) => {
