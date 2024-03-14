@@ -48,8 +48,10 @@ const OSRSRadio = ({ radioPlaying, setRadioPlaying }) => {
     return () => {
       audio.removeEventListener("timeupdate", handleTimeUpdate);
       audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
+      audio.pause();
+      setRadioPlaying(false);
     };
-  }, [audioRef]);
+  }, [audioRef, setRadioPlaying]);
 
   const handlePlayPause = () => {
     if (!audioRef.current.src) {
@@ -98,6 +100,10 @@ const OSRSRadio = ({ radioPlaying, setRadioPlaying }) => {
       audioRef.current.play();
     }
   }, [songIndex]);
+
+  useEffect(() => {
+    setSongIndex(0);
+  }, []);
 
   return (
     <div className={stl.radio}>

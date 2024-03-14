@@ -195,8 +195,8 @@ const App = () => {
                 }
               />
               <Route
-                index
                 path="/"
+                exact
                 element={
                   <MainLayout
                     playerName={playerName}
