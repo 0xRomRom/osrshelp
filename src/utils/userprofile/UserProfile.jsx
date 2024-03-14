@@ -19,7 +19,7 @@ import { AuthContext } from "../authprovider/AuthProvider";
 import { useContext } from "react";
 import { useCallback } from "react";
 
-const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
+const UserProfile = ({ setShowUserProfile }) => {
   const { userEmail, premiumUser } = useContext(AuthContext);
   const [userStoredProfile, setUserStoredProfile] = useState({});
   const [updatedColor, setUpdatedColor] = useState(false);
@@ -71,10 +71,7 @@ const UserProfile = ({ setShowUserProfile, setPlayerName }) => {
                 columnsCountBreakPoints={{ 500: 2 }}
               >
                 <Masonry className={stl.masonGap} gutter="15px">
-                  <Username
-                    setPlayerName={setPlayerName}
-                    userEmail={userEmail}
-                  />
+                  <Username userEmail={userEmail} />
                   <ChatColor
                     userColor={userStoredProfile.usercolor}
                     userEmail={userEmail}

@@ -46,7 +46,6 @@ const AuthProvider = ({ children, setPlayerName }) => {
       if (data) {
         setStoredUsername(data.username);
         setStoredColor(data.usercolor);
-        console.log(data.usercolor);
       }
     } catch (err) {
       console.error(err);

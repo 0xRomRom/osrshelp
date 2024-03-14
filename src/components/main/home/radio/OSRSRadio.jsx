@@ -67,6 +67,7 @@ const OSRSRadio = ({ radioPlaying, setRadioPlaying }) => {
 
   const handleNext = () => {
     setSongIndex((prevIndex) => (prevIndex + 1) % memoizedSongs.length);
+    setRadioPlaying(true);
   };
 
   const handlePrev = () => {
@@ -74,6 +75,7 @@ const OSRSRadio = ({ radioPlaying, setRadioPlaying }) => {
       (prevIndex) =>
         (prevIndex - 1 + memoizedSongs.length) % memoizedSongs.length
     );
+    setRadioPlaying(true);
   };
 
   const handleProgressBarClick = (event) => {
