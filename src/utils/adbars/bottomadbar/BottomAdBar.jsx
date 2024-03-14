@@ -10,7 +10,8 @@ const BottomAdBar = () => {
       <div
         className={stl.adbar}
         style={{
-          height: premiumUser === true ? "0px" : "105px",
+          // height: premiumUser === true ? "0px" : "105px",
+          height: premiumUser === true ? "0px" : "0px",
           opacity: premiumUser === true ? "0" : "1",
         }}
       >

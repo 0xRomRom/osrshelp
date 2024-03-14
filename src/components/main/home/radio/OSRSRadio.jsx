@@ -120,7 +120,11 @@ const OSRSRadio = ({ radioPlaying, setRadioPlaying }) => {
         </button>
 
         <button className={stl.cta} onClick={handlePlayPause}>
-          {radioPlaying ? <IoMdPause /> : <FaPlay />}
+          {radioPlaying ? (
+            <IoMdPause className={stl.actionIcon} />
+          ) : (
+            <FaPlay className={stl.actionIcon} />
+          )}
         </button>
 
         <button className={stl.cta} onClick={handleNext}>
