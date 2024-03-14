@@ -146,7 +146,10 @@ const Home = (props) => {
               <RuneChat setShowUserProfile={props.setShowUserProfile} />
               <BlogModal setBlogPost={props.setBlogPost} />
               <UpdatePoll />
-              <OSRSRadio />
+              <OSRSRadio
+                radioPlaying={props.radioPlaying}
+                setRadioPlaying={props.setRadioPlaying}
+              />
             </Masonry>
           </ResponsiveMasonry>
         </div>

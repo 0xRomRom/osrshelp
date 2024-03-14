@@ -48,6 +48,7 @@ const App = () => {
   const [showAdmin, setShowAdmin] = useState(false);
   const [showUserProfile, setShowUserProfile] = useState(false);
   const [saveGearModal, setSaveGearModal] = useState(false);
+  const [radioPlaying, setRadioPlaying] = useState(false);
 
   return (
     <>
@@ -218,6 +219,8 @@ const App = () => {
                       setBlogPost={setBlogPost}
                       setShowAdmin={setShowAdmin}
                       setShowUserProfile={setShowUserProfile}
+                      radioPlaying={radioPlaying}
+                      setRadioPlaying={setRadioPlaying}
                     />
                   </MainLayout>
                 }

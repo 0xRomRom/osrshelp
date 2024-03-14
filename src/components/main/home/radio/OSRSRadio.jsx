@@ -25,9 +25,8 @@ const bgSources = {
   7: "radiobg/Long_Way_Home.webp",
 };
 
-const OSRSRadio = () => {
+const OSRSRadio = ({ radioPlaying, setRadioPlaying }) => {
   const audioRef = useRef(new Audio());
-  const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(null);
   const [songIndex, setSongIndex] = useState(0);
   const [currentTime, setCurrentTime] = useState(0);
@@ -53,17 +52,19 @@ const OSRSRadio = () => {
   }, [audioRef]);
 
   const handlePlayPause = () => {
-    setIsPlaying((prevState) => {
-      if (currentTime === 0) {
-        // audioRef.current.src = memoizedSongs[songIndex];
-      }
-      return !prevState;
-    });
+    if (!audioRef.current.src) {
+      audioRef.current.src = memoizedSongs[0];
+    }
+    setRadioPlaying((prevState) => !prevState);
+    if (radioPlaying) {
+      audioRef.current.pause();
+      return;
+    }
+    audioRef.current.play();
   };
 
   const handleNext = () => {
     setSongIndex((prevIndex) => (prevIndex + 1) % memoizedSongs.length);
-    setCurrentTime(0);
   };
 
   const handlePrev = () => {
@@ -71,21 +72,9 @@ const OSRSRadio = () => {
       (prevIndex) =>
         (prevIndex - 1 + memoizedSongs.length) % memoizedSongs.length
     );
-    setCurrentTime(0);
   };
 
-  useEffect(() => {
-    if (isPlaying) {
-      if (currentTime === 0) {
-        audioRef.current.src = memoizedSongs[songIndex];
-      }
-      audioRef.current.play();
-      return;
-    }
-    audioRef.current.pause();
-  }, [songIndex, isPlaying, currentTime]);
-
-  const handleClick = (event) => {
+  const handleProgressBarClick = (event) => {
     const rect = event.target.getBoundingClientRect();
     const offsetX = event.clientX - rect.left;
     const width = 184; // Hardcoded to current container width
@@ -94,12 +83,21 @@ const OSRSRadio = () => {
     audioRef.current.currentTime = newTime;
   };
 
+  // Skip to mext song after finish
   useEffect(() => {
     if (currentTime + 1 >= duration) {
       setSongIndex((prevIndex) => (prevIndex + 1) % memoizedSongs.length);
       setCurrentTime(0);
     }
   }, [currentTime, duration, setCurrentTime]);
+
+  useEffect(() => {
+    if (audioRef.current.src) {
+      setCurrentTime(0);
+      audioRef.current.src = memoizedSongs[songIndex];
+      audioRef.current.play();
+    }
+  }, [songIndex]);
 
   return (
     <div className={stl.radio}>
@@ -115,27 +113,21 @@ const OSRSRadio = () => {
           <MdSkipPrevious className={stl.enlarge} />
         </button>
 
-        {!isPlaying ? (
-          <button className={stl.cta} onClick={handlePlayPause}>
-            <FaPlay />
-          </button>
-        ) : (
-          <button className={stl.cta} onClick={handlePlayPause}>
-            <IoMdPause />
-          </button>
-        )}
+        <button className={stl.cta} onClick={handlePlayPause}>
+          {radioPlaying ? <IoMdPause /> : <FaPlay />}
+        </button>
 
         <button className={stl.cta} onClick={handleNext}>
           <MdSkipNext className={stl.enlarge} />
         </button>
       </div>
-      <div className={stl.durationbar} onClick={handleClick}>
+      <div className={stl.durationbar} onClick={handleProgressBarClick}>
         <div
           className={stl.innerBar}
           style={{ width: `${(currentTime / duration) * 100}%` }}
         ></div>
       </div>
-      {isPlaying && (
+      {radioPlaying && (
         <img
           loading="lazy"
           src={bgSources[songIndex]}
