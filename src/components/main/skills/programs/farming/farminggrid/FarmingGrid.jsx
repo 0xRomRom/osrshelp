@@ -279,7 +279,7 @@ const FarmingGrid = (props) => {
     (craft) => {
       const expToGo = props.remainingExp;
       const result = Math.ceil(expToGo / craft.exp);
-      return result ? result : "?";
+      return result;
     },
     [props.remainingExp]
   );
@@ -356,8 +356,10 @@ const FarmingGrid = (props) => {
               >
                 {craft.profit * craftAmount > 0
                   ? (craft.profit * craftAmount).toLocaleString()
-                  : Math.abs(craft.profit * craftAmount).toLocaleString()}
-                <span className={stl.gpcost}>gp</span>
+                  : Math.abs(craft.profit * craftAmount) || "?"}
+                {props.remainingExp > 0 && (
+                  <span className={stl.gpcost}>gp</span>
+                )}
               </span>
             </div>
           );

@@ -214,16 +214,9 @@ const AgilityGrid = (props) => {
               </span>
 
               <span className={`${stl.rowItem} ${stl.green} ${stl.lastFlex}`}>
-                {+props.remainingexp
-                  ? isNaN(totalProfit)
-                    ? "?"
-                    : totalProfit > 0
-                    ? "?"
-                    : 0
-                  : isNaN(totalProfit)
-                  ? "?"
-                  : totalProfit.toLocaleString()}{" "}
-                <span className={stl.gpcost}>gp</span>
+                {totalProfit ? totalProfit.toLocaleString() : "?"}
+
+                {totalProfit > 0 && <span className={stl.gpcost}>gp</span>}
               </span>
             </div>
           );

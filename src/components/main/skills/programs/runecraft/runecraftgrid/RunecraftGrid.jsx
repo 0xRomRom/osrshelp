@@ -244,8 +244,10 @@ const RunecraftGrid = (props) => {
                   ? Math.abs(
                       calcCraftAmount(tree) * calcPrice(tree)
                     ).toLocaleString()
-                  : 0}
-                <span className={stl.gpcost}>gp</span>
+                  : "?"}
+                {props.remainingExp > 0 && (
+                  <span className={stl.gpcost}>gp</span>
+                )}
               </span>
             </div>
           );
