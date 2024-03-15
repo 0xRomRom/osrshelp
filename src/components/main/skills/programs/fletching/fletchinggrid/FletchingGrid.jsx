@@ -285,7 +285,7 @@ const FletchingGrid = (props) => {
 
                 {Object.entries(reqItemPrices).length > 0 && (
                   <>
-                    {fletch.cost * fletchAmount && (
+                    {fletch.cost * fletchAmount > 0 && (
                       <span className={stl.gpcost}>gp</span>
                     )}
                   </>

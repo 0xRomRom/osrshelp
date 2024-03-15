@@ -200,13 +200,15 @@ const MiningGrid = (props) => {
                   ? "?"
                   : (+props.multiplier === 0 || props.multiplier === null) &&
                     Math.round(ore.profit * oreAmount) === 0
-                  ? "0"
+                  ? "?"
                   : +props.multiplier === 0
                   ? Math.round(ore.profit * oreAmount).toLocaleString()
                   : Math.round(
                       (ore.profit * oreAmount) / (1 + 2.5 / 100)
                     ).toLocaleString()}
-                <span className={stl.gpcost}>gp</span>
+                {ore.profit * oreAmount > 0 && (
+                  <span className={stl.gpcost}>gp</span>
+                )}
               </span>
             </div>
           );

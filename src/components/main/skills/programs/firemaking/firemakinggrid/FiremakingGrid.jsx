@@ -194,7 +194,9 @@ const FiremakingGrid = (props) => {
                   !isNaN(logsAmount) &&
                   (logsAmount * logs.price).toLocaleString()}
                 {isNaN(logsAmount) && " ? "}
-                <span className={stl.gpcost}>gp</span>
+                {logsAmount * logs.price > 0 && (
+                  <span className={stl.gpcost}>gp</span>
+                )}
               </span>
             </div>
           );

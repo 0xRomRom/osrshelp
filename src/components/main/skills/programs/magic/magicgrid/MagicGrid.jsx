@@ -316,10 +316,10 @@ const MagicGrid = (props) => {
                         )
                       )
                       ? "?"
-                      : `${Math.abs(
+                      : Math.abs(
                           Math.ceil(mage.toGo * mage.price) /
                             (+props.multiplier / 100)
-                        ).toLocaleString()}`
+                        ).toLocaleString()
                     : isNaN(-(mage.toGo * mage.price))
                     ? "?"
                     : `${(mage.toGo * mage.price).toLocaleString()}`)}
@@ -329,11 +329,11 @@ const MagicGrid = (props) => {
                     ? isNaN(Math.abs(mage.toGo * mage.price))
                       ? "?"
                       : `${Math.abs(mage.toGo * mage.price).toLocaleString()}`
-                    : isNaN(-(mage.toGo * mage.price))
+                    : isNaN(-(mage.toGo * mage.price)) || "?"
                     ? "?"
-                    : `${Math.abs(mage.toGo * mage.price).toLocaleString()}`)}
+                    : Math.abs(mage.toGo * mage.price).toLocaleString())}
 
-                {mage.toGo * mage.price && (
+                {mage.toGo * mage.price > 0 && (
                   <span className={stl.gpcost}>gp</span>
                 )}
               </span>

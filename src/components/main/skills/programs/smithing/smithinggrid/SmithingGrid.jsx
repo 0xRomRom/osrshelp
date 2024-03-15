@@ -259,7 +259,9 @@ const SmithingGrid = (props) => {
                 {craft.price * craftAmount
                   ? Math.abs(craft.price * craftAmount).toLocaleString()
                   : "?"}
-                <span className={stl.gpcost}>gp</span>
+                {craft.price * craftAmount > 0 && (
+                  <span className={stl.gpcost}>gp</span>
+                )}
               </span>
             </div>
           );

@@ -1,5 +1,5 @@
 import { PaymentElement } from "@stripe/react-stripe-js";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useStripe, useElements } from "@stripe/react-stripe-js";
 import stl from "./CheckoutCreditsForm.module.css";
 
@@ -10,8 +10,6 @@ const paymentPlans = {
 };
 
 const CheckoutCreditsForm = ({ purchaseAmount }) => {
-  useEffect(() => {}, []);
-
   const stripe = useStripe();
   const elements = useElements();
 
