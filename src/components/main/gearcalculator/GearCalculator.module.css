@@ -86,6 +86,90 @@
   font-size: 2rem;
 }
 
+.infoModal {
+  min-height: 12rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--box-shadow);
+  background-image: var(--gradient);
+  margin: 1rem auto;
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  /* max-width: 600px; */
+  color: rgb(198, 198, 198);
+  padding: 2rem 0;
+  padding-right: 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.modalWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0rem 2rem;
+  margin-right: calc(2rem - 15px);
+  padding: 0rem 2rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.lantern {
+  width: 75px;
+}
+
+.lanternWrap {
+  height: 100%;
+  min-width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sphere {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-color: blue;
+  filter: blur(3rem);
+}
+
+@media (max-width: 1200px) {
+  .modal {
+    padding-right: calc(2rem - 15px);
+  }
+  .modalWrapper {
+    margin: 0rem 2rem;
+    margin-right: calc(2rem - 15px);
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 680px) {
+  .modal {
+    margin: 0 2rem;
+  }
+  .infoModal {
+    padding: 1rem;
+    padding-left: 0rem;
+  }
+  .modalWrapper {
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  .lanternWrap {
+    max-width: 5rem;
+  }
+  .lantern {
+    width: 60px;
+  }
+  .infoModal {
+    text-align: start;
+  }
+}
+
 @media (max-width: 1400px) {
   .topWrap {
     flex-direction: column;

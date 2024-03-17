@@ -176,6 +176,25 @@ const GearCalculator = ({ setSaveGearModal }) => {
           savedSlots={savedSlots}
         />
       </div>
+
+      <div className={stl.modalWrapper}>
+        <div className={stl.infoModal}>
+          <div className={stl.lanternWrap}>
+            <img
+              src="/gearcalculator/bosses/General_Graardor.webp"
+              alt="General Graardor"
+              className={stl.lantern}
+            />
+          </div>
+          <p>
+            Gear Calculator allows you to compare between equipment on Oldschool
+            Runescape.
+            <br /> Additionally we've provided gear suggestions for activies
+            such as PVM or skilling. <br />
+            Save your custom builds as a Rune user.
+          </p>
+        </div>
+      </div>
       <BottomAdBar />
     </>
   );
