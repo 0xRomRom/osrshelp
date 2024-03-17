@@ -61,6 +61,24 @@ const SkillsTab = (props) => {
                   ))}
                 </div>
               </div>
+              <div className={stl.modalWrapper}>
+                <div className={stl.infoModal}>
+                  <div className={stl.lanternWrap}>
+                    <img
+                      src="/random/Lantern.webp"
+                      alt="Lantern"
+                      className={stl.lantern}
+                    />
+                    <div className={stl.sphere}></div>
+                  </div>
+                  <p>
+                    Custom Oldschool Runescape skill calculators allow you to
+                    access relevant information quickly regarding your skill
+                    advancements. Whether you seek cost breakdowns, GP/XP
+                    ratios, or simply quantities, our tools got you covered.
+                  </p>
+                </div>
+              </div>
               <BottomAdBar />
             </>
           }

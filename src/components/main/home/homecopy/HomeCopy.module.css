@@ -69,6 +69,9 @@
   .modal {
     font-size: 16px;
   }
+  .heroCopy {
+    font-size: initial;
+  }
 }
 
 @media (max-width: 530px) {
