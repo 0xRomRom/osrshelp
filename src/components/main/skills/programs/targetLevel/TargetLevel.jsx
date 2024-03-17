@@ -41,7 +41,7 @@ const TargetLevel = ({
 
   return (
     <div className={stl.modal}>
-      {propsDefined ? (
+      {propsDefined && currentLvl < 99 && (
         <div className={stl.userDefined}>
           <div className={stl.levelRow}>
             <div className={stl.targetRow}>
@@ -75,8 +75,11 @@ const TargetLevel = ({
             </div>
           </div>
         </div>
-      ) : (
-        ""
+      )}
+      {propsDefined && +currentLvl === 99 && (
+        <div className={stl.levelDif}>
+          <span className={stl.maxLevel}>Max Level</span>
+        </div>
       )}
     </div>
   );

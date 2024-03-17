@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 0.8rem;
-  padding-left: 0.75rem;
 }
 
 .magnifyer {
@@ -21,11 +20,15 @@
   border: none;
   border-bottom: 1px solid rgb(127, 130, 133);
   margin-left: 1rem;
-  width: 7rem;
+  width: 8rem;
   margin-right: 1rem;
   padding-left: 0.25rem;
   color: white;
   font-size: 1.1rem;
+}
+
+.monsterInput::placeholder {
+  font-size: 16px;
 }
 
 @media (max-width: 1000px) {

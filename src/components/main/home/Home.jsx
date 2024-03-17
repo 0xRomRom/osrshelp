@@ -14,6 +14,7 @@ import UpdatePoll from "./updatepoll/UpdatePoll";
 import MainCanvas from "./canvas/MainCanvas";
 import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
+import HomeCopy from "./homecopy/HomeCopy";
 
 const Home = (props) => {
   const [skillsFetched, setSkillsFetched] = useState(false);
@@ -36,6 +37,7 @@ const Home = (props) => {
           <h1 className={stl.hero}>OSRS Help</h1>
           <MainCanvas sourceImgs={SKILLLINKS} renderCount={6} />
         </div>
+        <HomeCopy />
         <div className={stl.modalbottom}>
           <ResponsiveMasonry
             className={stl.masonry}

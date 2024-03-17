@@ -61,16 +61,17 @@ const TopBar = (props) => {
                 Level {props?.skills && props?.skills[props.skillname]}
               </span>
             </div>
-
-            <div className={stl.remainderBlock}>
-              <div className={stl.toGoBlock}>
-                <span className={stl.expToGo}>XP</span>
-                <span className={stl.expToGoLevel}>Level</span>
+            {props.skills && calculateExpUntilNextLevel() > 0 && (
+              <div className={stl.remainderBlock}>
+                <div className={stl.toGoBlock}>
+                  <span className={stl.expToGo}>XP</span>
+                  <span className={stl.expToGoLevel}>Level</span>
+                </div>
+                <span className={stl.remaining}>
+                  {props.skills && calculateExpUntilNextLevel()}
+                </span>
               </div>
-              <span className={stl.remaining}>
-                {props.skills && calculateExpUntilNextLevel()}
-              </span>
-            </div>
+            )}
           </div>
           <div className={stl.canWrapper}>
             <FontAwesomeIcon
