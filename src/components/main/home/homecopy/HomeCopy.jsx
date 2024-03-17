@@ -1,6 +1,9 @@
 import stl from "./HomeCopy.module.css";
+import { useNavigate } from "react-router-dom";
 
 const HomeCopy = () => {
+  const navigate = useNavigate();
+
   return (
     <div className={stl.modal}>
       <p className={stl.heroCopy}>
@@ -11,10 +14,30 @@ const HomeCopy = () => {
       </p>
       <div className={stl.quickCtas}>
         <div className={stl.btnRow}>
-          <button className={stl.quickCta}>Skill Calculation</button>
-          <button className={stl.quickCta}>Money Making</button>
-          <button className={stl.quickCta}>Gear Calculator</button>
-          <button className={stl.quickCta}>Inventory Builder</button>
+          <button
+            className={stl.quickCta}
+            onClick={() => navigate("/skillcalculators")}
+          >
+            Skill Calculation
+          </button>
+          <button
+            className={stl.quickCta}
+            onClick={() => navigate("/moneymakers")}
+          >
+            Money Making
+          </button>
+          <button
+            className={stl.quickCta}
+            onClick={() => navigate("/gearcalculator")}
+          >
+            Gear Calculator
+          </button>
+          <button
+            className={stl.quickCta}
+            onClick={() => navigate("/inventorybuilder")}
+          >
+            Inventory Builder
+          </button>
         </div>
       </div>
     </div>
