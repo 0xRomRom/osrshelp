@@ -97,7 +97,6 @@
   justify-content: center;
   align-items: center;
   user-select: none;
-  /* max-width: 600px; */
   color: rgb(198, 198, 198);
   padding: 2rem 0;
   padding-right: 1rem;
@@ -111,7 +110,7 @@
   margin: 0rem 2rem;
   margin-right: calc(2rem - 15px);
   padding: 0rem 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   overflow: hidden;
 }
 
@@ -126,14 +125,6 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
-
-.sphere {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  background-color: blue;
-  filter: blur(3rem);
 }
 
 @media (max-width: 1200px) {

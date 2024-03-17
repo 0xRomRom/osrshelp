@@ -10,6 +10,7 @@ import SavedInventorys from "./SavedInventorys/SavedInventorys";
 import SaveOverlay from "./SaveOverlay/SaveOverlay";
 import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
+import inventory from "../../../assets/icons/Inventory.webp";
 
 const InventoryBuilder = () => {
   const [currentGrid, setCurrentGrid] = useState(EMPTYGRID);
@@ -81,6 +82,23 @@ const InventoryBuilder = () => {
               setCurrentGrid={setCurrentGrid}
             />
           </div>
+        </div>
+      </div>
+
+      <div className={stl.modalWrapper}>
+        <div className={stl.infoModal}>
+          <div className={stl.lanternWrap}>
+            <img
+              src={inventory}
+              alt="General Graardor"
+              className={stl.lantern}
+            />
+          </div>
+          <p>
+            Inventory Builder lets you compose all sorts of inventories using
+            our suggested items or through search functionality. Save your
+            inventory builds as a Rune user.
+          </p>
         </div>
       </div>
       <BottomAdBar />

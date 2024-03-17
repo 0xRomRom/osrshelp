@@ -19,7 +19,7 @@
   align-items: center;
   flex-direction: column;
   user-select: none;
-  padding-bottom: 7rem;
+  padding-bottom: 2rem;
 }
 
 .inventoryWrapper {
@@ -68,12 +68,71 @@
   align-items: center;
 }
 
+.infoModal {
+  min-height: 12rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--box-shadow);
+  background-image: var(--gradient);
+  margin: 1rem auto;
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  /* max-width: 600px; */
+  color: rgb(198, 198, 198);
+  padding: 2rem 0;
+  padding-right: 1rem;
+  overflow: hidden;
+  width: 820px;
+  margin-bottom: 3rem;
+}
+
+.modalWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0rem 2rem;
+  padding: 0rem 2rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.lantern {
+  width: 50px;
+}
+
+.lanternWrap {
+  height: 100%;
+  min-width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sphere {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background-color: blue;
+  filter: blur(3rem);
+}
+
 @media (max-width: 900px) {
   .innerWrapper {
     flex-direction: column;
   }
-  .mainContainer {
-    padding-bottom: 4rem;
+  .modalWrapper {
+    margin: 0rem 2rem;
+  }
+  .lanternWrap {
+    min-width: 5rem;
+  }
+  .modalWrapper {
+    padding: 0rem;
+  }
+  .infoModal {
+    max-width: 400px;
   }
 }
 
@@ -84,5 +143,8 @@
   }
   .rightBar {
     width: 325px;
+  }
+  .infoModal {
+    max-width: 325px;
   }
 }
