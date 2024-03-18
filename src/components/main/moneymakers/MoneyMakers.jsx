@@ -76,7 +76,7 @@ const MoneyMakers = (props) => {
           <div className={stl.lanternWrap}>
             <img
               src="/skillicons/Combat.webp"
-              alt="General Graardor"
+              alt="Oldschool Runescape Combat Level"
               className={stl.lantern}
             />
           </div>

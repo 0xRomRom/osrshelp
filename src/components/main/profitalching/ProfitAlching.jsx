@@ -169,6 +169,32 @@ const ProfitAlching = () => {
           </div>
         </div>
       </div>
+
+      <div className={stl.modalWrapper}>
+        <div className={stl.infoModal}>
+          <div className={stl.lanternWrap}>
+            <img
+              src="/random/Alchemy.webp"
+              alt="High Alchemy"
+              className={stl.lantern}
+            />
+          </div>
+          <p>
+            A selection of the most profitable items to use for high alchemy.
+            G.E. limit refers to the 4 hour buying quantity restriction of
+            items.
+            <br /> Check the{" "}
+            <a
+              href="https://oldschool.runescape.wiki/"
+              target="_blank"
+              className={stl.wikiLink}
+            >
+              Official Wiki
+            </a>{" "}
+            for item specifics.
+          </p>
+        </div>
+      </div>
       <BottomAdBar />
     </div>
   );
