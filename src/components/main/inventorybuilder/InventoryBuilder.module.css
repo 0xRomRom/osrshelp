@@ -85,7 +85,7 @@
   padding-right: 1rem;
   overflow: hidden;
   width: 820px;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .modalWrapper {
@@ -110,14 +110,6 @@
   overflow: hidden;
 }
 
-.sphere {
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  background-color: blue;
-  filter: blur(3rem);
-}
-
 @media (max-width: 900px) {
   .innerWrapper {
     flex-direction: column;
@@ -133,6 +125,7 @@
   }
   .infoModal {
     max-width: 400px;
+    margin-bottom: 3rem;
   }
 }
 

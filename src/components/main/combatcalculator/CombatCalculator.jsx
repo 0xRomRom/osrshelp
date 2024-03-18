@@ -118,6 +118,30 @@ const CombatCalculator = ({
           </div>
         </div>
       </div>
+
+      <div className={stl.modalWrapper}>
+        <div className={stl.infoModal}>
+          <div className={stl.lanternWrap}>
+            <img
+              src="/skillicons/Combat.webp"
+              alt="General Graardor"
+              className={stl.lantern}
+            />
+          </div>
+          <p>
+            Calculate your Oldschool Runescape combat level by providing a
+            username or manually entering your stats. Official game algorithm is
+            used to determine the outcome. See{" "}
+            <a
+              href="https://oldschool.runescape.wiki/w/Combat_level"
+              target="_blank"
+              className={stl.wikiLink}
+            >
+              Wiki
+            </a>
+          </p>
+        </div>
+      </div>
       <BottomAdBar />
     </div>
   );
