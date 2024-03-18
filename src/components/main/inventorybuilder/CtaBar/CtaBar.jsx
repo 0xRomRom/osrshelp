@@ -14,7 +14,7 @@ const CtaBar = ({ setCurrentGrid, setScreenshotting, setSavingInventory }) => {
       cachedGrid[i].amount = 0;
       cachedGrid[i].noted = false;
     }
-    setCurrentGrid(EMPTYGRID);
+    setCurrentGrid(cachedGrid);
   };
 
   const makeScreenshot = () => {
