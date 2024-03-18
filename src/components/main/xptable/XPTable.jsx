@@ -33,6 +33,23 @@ const XPTable = () => {
           </div>
         </div>
       </div>
+      <div className={stl.modalWrapper}>
+        <div className={stl.infoModal}>
+          <div className={stl.lanternWrap}>
+            <img
+              src="https://oldschool.runescape.wiki/images/Stats_icon.png"
+              alt="High Alchemy"
+              className={stl.lantern}
+            />
+          </div>
+          <p>
+            Oldschool Runescape skills start at level 1 (except for Hitpoints).
+            The maximum level is 99 at 13m experience. Use our table to view the
+            requirements per level, or use the calculator to quickly do the math
+            for you.
+          </p>
+        </div>
+      </div>
       {/* <BottomAdBar /> */}
     </div>
   );
