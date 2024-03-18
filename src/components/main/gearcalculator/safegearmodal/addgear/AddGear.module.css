@@ -15,6 +15,7 @@
   display: flex;
   min-height: 510px;
   display: flex;
+  padding-bottom: 0.5rem;
 }
 
 .ctaBar {
@@ -276,7 +277,7 @@
   gap: 1rem;
   background-color: var(--input);
   border: 1px solid var(--border);
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .setupCta {

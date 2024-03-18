@@ -18,7 +18,7 @@
   background-color: var(--main-bg);
   border: 1px solid var(--border);
   padding: 1rem;
-  padding-top: 0.15rem;
+  padding-top: 0.35rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
