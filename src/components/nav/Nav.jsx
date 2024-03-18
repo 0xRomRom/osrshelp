@@ -78,14 +78,13 @@ const Nav = (props) => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("/");
   const { setMainState, setSubState } = useContext(PaginationContext);
-  const [navFolded, setNavFolded] = useState(false);
 
   const path = location.pathname;
   const width = +window.innerWidth;
 
   useEffect(() => {
     if (width < 1200) {
-      setNavFolded(true);
+      props.setNavFolded(true);
     }
     setSubState(null);
 
@@ -106,12 +105,12 @@ const Nav = (props) => {
   };
 
   const toggleNavFold = () => {
-    setNavFolded(!navFolded);
+    props.setNavFolded(!props.navFolded);
   };
 
   const handleMenuHide = () => {
     if (width > 1000) return;
-    setNavFolded(true);
+    props.setNavFolded(true);
   };
 
   const renderNavItems = () => {
@@ -123,7 +122,7 @@ const Nav = (props) => {
         onClick={handleMenuHide}
       >
         <li
-          className={`${stl.navitem} ${navFolded ? stl.navFold : ""} ${
+          className={`${stl.navitem} ${props.navFolded ? stl.navFold : ""} ${
             activeTab === item.path ? stl.active : ""
           }`}
           onClick={() => handleTabSwitch(item.path, item.label)}
@@ -133,7 +132,9 @@ const Nav = (props) => {
             alt={`${item.label} Icon`}
             className={stl.icon}
           />
-          <span className={`${stl.navTxt} ${navFolded ? stl.textHidden : ""}`}>
+          <span
+            className={`${stl.navTxt} ${props.navFolded ? stl.textHidden : ""}`}
+          >
             {item.label}
           </span>
         </li>
@@ -142,17 +143,19 @@ const Nav = (props) => {
   };
 
   return (
-    <div className={`${stl.modal} ${navFolded ? stl.foldedNav : ""}`}>
+    <div className={`${stl.modal} ${props.navFolded ? stl.foldedNav : ""}`}>
       <div className={stl.homeBox} onClick={() => navigate("/")}>
         <div className={stl.logoWrapper}>
           <img
             src={mainlogo}
             alt="OSRS Help logo"
-            className={`${stl.osrshelpLogo} ${navFolded ? stl.imgHidden : ""}`}
+            className={`${stl.osrshelpLogo} ${
+              props.navFolded ? stl.imgHidden : ""
+            }`}
           />
           <span
             className={stl.navLogoSpan}
-            style={{ opacity: navFolded ? "0" : "1" }}
+            style={{ opacity: props.navFolded ? "0" : "1" }}
           >
             OSRS Help
           </span>
@@ -165,7 +168,7 @@ const Nav = (props) => {
           opacity: props.playerName ? "1" : "0",
         }}
       >
-        {!navFolded && (
+        {!props.navFolded && (
           <>
             <div className={stl.blueDot}></div>
             <span className={stl.loggedInUser}>{props.playerName}</span>
@@ -173,32 +176,34 @@ const Nav = (props) => {
         )}
       </div>
       <div
-        className={`${stl.borderHugger} ${!navFolded ? stl.foldedRight : ""}`}
+        className={`${stl.borderHugger} ${
+          !props.navFolded ? stl.foldedRight : ""
+        }`}
       >
         <div
           className={`${stl.foldNavBtn} ${
-            navFolded ? stl.ctaLeft : stl.ctaRight
+            props.navFolded ? stl.ctaLeft : stl.ctaRight
           }`}
           onClick={toggleNavFold}
         >
           <IoIosArrowBack
             className={stl.foldNav}
             style={{
-              transform: navFolded ? "rotate(180deg)" : "rotate(0deg)",
+              transform: props.navFolded ? "rotate(180deg)" : "rotate(0deg)",
             }}
           />
         </div>
       </div>
       <nav className={stl.nav}>
         <ul
-          className={`${stl.navlist} ${navFolded ? stl.foldedList : ""} ${
-            navFolded && width < 800 ? stl.noInteract : ""
+          className={`${stl.navlist} ${props.navFolded ? stl.foldedList : ""} ${
+            props.navFolded && width < 800 ? stl.noInteract : ""
           }`}
         >
           {renderNavItems()}
         </ul>
       </nav>
-      <div className={`${stl.fixedBox} ${navFolded ? stl.colCtas : ""}`}>
+      <div className={`${stl.fixedBox} ${props.navFolded ? stl.colCtas : ""}`}>
         <a
           href="https://twitter.com/OldschoolRSHelp"
           target="_blank"
