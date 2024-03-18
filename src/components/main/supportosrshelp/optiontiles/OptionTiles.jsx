@@ -6,13 +6,14 @@ import { useNavigate } from "react-router-dom";
 
 const OptionTiles = ({ setEtherModal }) => {
   const navigate = useNavigate();
-  const { userID } = useContext(AuthContext);
+  const { userID, premiumUser } = useContext(AuthContext);
 
   const handleSignUp = () => {
     if (!userID) {
       navigate("/login");
       return;
     }
+    if (premiumUser) return;
     navigate("/checkout");
   };
 
@@ -61,9 +62,16 @@ const OptionTiles = ({ setEtherModal }) => {
           alt="Ethereum"
           className={stl.runeHelm}
         />
-        <span className={stl.optionSpan}>
-          Become a <span className={stl.rune}>Rune</span> user
-        </span>
+        {!premiumUser && (
+          <span className={stl.optionSpan}>
+            Become a <span className={stl.rune}>Rune</span> user
+          </span>
+        )}
+        {premiumUser && (
+          <span className={stl.optionSpan}>
+            Already a <span className={stl.rune}>Rune</span> user ✓
+          </span>
+        )}
       </div>
     </div>
   );
