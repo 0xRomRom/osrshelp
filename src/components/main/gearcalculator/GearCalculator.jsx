@@ -43,6 +43,7 @@ const GearCalculator = ({ setSaveGearModal }) => {
   });
 
   useEffect(() => {
+    setSaveGearModal(false);
     if (premiumUser) {
       const getStoredBuilds = async () => {
         try {
@@ -70,7 +71,7 @@ const GearCalculator = ({ setSaveGearModal }) => {
       };
       getStoredBuilds();
     }
-  }, [userID, premiumUser]);
+  }, [userID, premiumUser, setSaveGearModal]);
 
   const captureScreenshot = () => {
     setGridActive(false);

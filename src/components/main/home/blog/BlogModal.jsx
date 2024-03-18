@@ -5,10 +5,8 @@ import { useNavigate } from "react-router-dom";
 import supabase from "../../../../utils/supabase/supabase";
 import Spinner from "../../../../utils/loadingspinner/Spinner";
 
-const btnStates = ["All", "Updates", "Patchnotes", "Other"];
 const BlogModal = ({ setBlogPost }) => {
   const navigate = useNavigate();
-  const [activeFilter, setActiveFilter] = useState("All");
   const [currentBlogs, setCurrentBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -56,19 +54,6 @@ const BlogModal = ({ setBlogPost }) => {
               </div>
             );
           })}
-      </div>
-      <div className={stl.filterBox}>
-        {btnStates.map((btn) => (
-          <button
-            key={btn}
-            onClick={() => setActiveFilter(btn)}
-            className={`${stl.filterBtn} ${
-              activeFilter === btn ? stl.activeBtn : ""
-            }`}
-          >
-            {btn}
-          </button>
-        ))}
       </div>
     </div>
   );
