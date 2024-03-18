@@ -138,7 +138,8 @@ const CombatCalculator = ({
               className={stl.wikiLink}
             >
               Wiki
-            </a>
+            </a>{" "}
+            for more information.
           </p>
         </div>
       </div>
