@@ -2,14 +2,13 @@
   position: relative;
   width: 95%;
   left: 2.5%;
-  /* border: 1px solid gray; */
   padding: 2rem;
   min-height: 25rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem;
-  /* overflow-y: scroll; */
+  padding-bottom: 1rem;
 }
 
 .gridTile {

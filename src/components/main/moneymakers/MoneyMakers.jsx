@@ -61,31 +61,38 @@ const MoneyMakers = (props) => {
               Rune User
             </button>
           </div>
-          {showWarningModal && !premiumUser && activeModal === "Free" && (
-            <div className={stl.disclaimerBox}>
-              <div className={stl.exclamBox}>
-                <FaExclamationTriangle className={stl.exlam} />
-              </div>
-              <div className={stl.explainWrap}>
-                <span className={stl.disclaimerTxt}>
-                  All money making methods are calculated based on realtime G.E.
-                  prices.
-                  <br />
-                  Before committing to any method, make sure trading volumes are
-                  present for output items.
-                </span>
-              </div>
-              <div className={stl.closeWrapper}>
-                <IoClose className={stl.closeWarning} onClick={hideWarning} />
-              </div>
-            </div>
-          )}
+
           {activeModal === "Free" && (
             <FreeMoneyMakers setMoneyMaker={props.setMoneyMaker} />
           )}
           {activeModal === "Rune" && (
             <PremiumMoneyMakers setMoneyMaker={props.setMoneyMaker} />
           )}
+        </div>
+      </div>
+
+      <div className={stl.modalWrapper}>
+        <div className={stl.infoModal}>
+          <div className={stl.lanternWrap}>
+            <img
+              src="/skillicons/Combat.webp"
+              alt="General Graardor"
+              className={stl.lantern}
+            />
+          </div>
+          <p>
+            All money making methods are calculated based on realtime G.E.
+            prices. Before committing to any method, make sure trading volumes
+            are present for output items. See{" "}
+            <a
+              href="https://secure.runescape.com/m=itemdb_oldschool/"
+              target="_blank"
+              className={stl.wikiLink}
+            >
+              G.E.
+            </a>{" "}
+            for latest prices.
+          </p>
         </div>
       </div>
       <BottomAdBar />
