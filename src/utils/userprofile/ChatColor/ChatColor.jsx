@@ -8,7 +8,7 @@ import { AuthContext } from "../../authprovider/AuthProvider";
 import { useContext } from "react";
 import Spinner from "../../loadingspinner/Spinner";
 
-const ChatColor = ({ userColor, userEmail, setUpdatedColor, updatedColor }) => {
+const ChatColor = ({ userColor, userEmail }) => {
   const { setStoredColor } = useContext(AuthContext);
   const [color, setColor] = useState(null);
   const [pickingColor, setPickingColor] = useState(false);
@@ -19,7 +19,7 @@ const ChatColor = ({ userColor, userEmail, setUpdatedColor, updatedColor }) => {
 
   useEffect(() => {
     setColor(userColor);
-  }, [updatedColor, userColor]);
+  }, [userColor]);
 
   const handleSaveColor = async () => {
     try {
@@ -27,12 +27,11 @@ const ChatColor = ({ userColor, userEmail, setUpdatedColor, updatedColor }) => {
         .from("users_meta")
         .update([{ usercolor: color }])
         .eq("email", userEmail);
-
       if (error) {
         throw new Error(error);
       }
       setPickingColor(false);
-      setUpdatedColor(true);
+      setColor(color);
       setStoredColor(color);
     } catch (err) {
       console.error(err);

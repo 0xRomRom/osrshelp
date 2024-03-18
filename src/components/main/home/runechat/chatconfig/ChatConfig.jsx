@@ -7,10 +7,7 @@ const ChatConfig = () => {
   const { storedColor } = useContext(AuthContext);
   return (
     <div className={stl.chatconfig}>
-      <ChatColor
-        userColor={storedColor || "#808080"}
-        className={stl.chatColor}
-      />
+      <ChatColor userColor={storedColor} className={stl.chatColor} />
     </div>
   );
 };

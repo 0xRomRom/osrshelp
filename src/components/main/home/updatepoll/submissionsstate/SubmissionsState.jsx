@@ -22,11 +22,8 @@ const SubmissionsState = () => {
         const { data, error } = await supabase
           .from("poll_submissions")
           .select()
-          .eq("uid", userID)
-          .single();
-        if (!data) {
-          return;
-        }
+          .eq("uid", userID);
+
         if (data.submission) {
           setAlreadySubmitted(data.submission);
         }

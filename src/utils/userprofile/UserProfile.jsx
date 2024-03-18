@@ -20,9 +20,8 @@ import { useContext } from "react";
 import { useCallback } from "react";
 
 const UserProfile = ({ setShowUserProfile }) => {
-  const { userEmail, premiumUser } = useContext(AuthContext);
+  const { userEmail, premiumUser, storedColor } = useContext(AuthContext);
   const [userStoredProfile, setUserStoredProfile] = useState({});
-  const [updatedColor, setUpdatedColor] = useState(false);
   const [purchasingCredits, setPurchasingCredits] = useState(false);
   const [deletingAccount, setDeletingAccount] = useState(false);
 
@@ -42,11 +41,10 @@ const UserProfile = ({ setShowUserProfile }) => {
   }, [userEmail]);
 
   useEffect(() => {
-    if (Object.entries(userStoredProfile).length === 0 || updatedColor) {
+    if (Object.entries(userStoredProfile).length === 0) {
       fetchUserData();
-      setUpdatedColor(false);
     }
-  }, [userStoredProfile, updatedColor, fetchUserData]);
+  }, [userStoredProfile, fetchUserData]);
 
   return (
     <div className={stl.userprofile} onClick={() => setShowUserProfile(false)}>
@@ -72,12 +70,7 @@ const UserProfile = ({ setShowUserProfile }) => {
               >
                 <Masonry className={stl.masonGap} gutter="15px">
                   <Username userEmail={userEmail} />
-                  <ChatColor
-                    userColor={userStoredProfile.usercolor}
-                    userEmail={userEmail}
-                    setUpdatedColor={setUpdatedColor}
-                    updatedColor={updatedColor}
-                  />
+                  <ChatColor userColor={storedColor} userEmail={userEmail} />
                   <AccountStatus
                     isRuneUser={premiumUser}
                     setShowUserProfile={setShowUserProfile}
