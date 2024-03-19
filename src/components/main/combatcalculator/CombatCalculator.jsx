@@ -135,6 +135,7 @@ const CombatCalculator = ({
             <a
               href="https://oldschool.runescape.wiki/w/Combat_level"
               target="_blank"
+              rel="noreferrer"
               className={stl.wikiLink}
             >
               Wiki

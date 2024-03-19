@@ -2,12 +2,8 @@ import stl from "./CreditsPurchased.module.css";
 import { useNavigate } from "react-router-dom";
 import parthat from "../../assets/random/Blue_partyhat.webp";
 import { useEffect } from "react";
-import Spinner from "../../utils/loadingspinner/Spinner";
-import { useState } from "react";
 
 const CreditsPurchased = () => {
-  const [loadingDone, setLoadingDone] = useState(false);
-
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -15,14 +11,6 @@ const CreditsPurchased = () => {
       window.location.href = `${window.location.origin}/credits-purchased`;
     }
   }, []);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setLoadingDone(true);
-    }, 12500);
-
-    return () => clearTimeout(timeout);
-  }, [setLoadingDone]);
 
   return (
     <div className={stl.paymentSucces}>

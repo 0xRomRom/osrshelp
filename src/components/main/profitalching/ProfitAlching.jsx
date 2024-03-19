@@ -187,6 +187,7 @@ const ProfitAlching = () => {
             <a
               href="https://oldschool.runescape.wiki/"
               target="_blank"
+              rel="noreferrer"
               className={stl.wikiLink}
             >
               Official Wiki

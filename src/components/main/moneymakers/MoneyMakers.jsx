@@ -3,38 +3,15 @@ import Pagination from "../pagination/Pagination";
 import { useState } from "react";
 import FreeMoneyMakers from "./freemoneymakers/FreeMoneyMakers";
 import PremiumMoneyMakers from "./premiummoneymakers/PremiumMoneyMakers";
-import { useEffect, useContext } from "react";
-import { FaExclamationTriangle } from "react-icons/fa";
-import { IoClose } from "react-icons/io5";
-import { AuthContext } from "../../../utils/authprovider/AuthProvider";
 import TopAdBar from "../../../utils/adbars/topadbar/TopAdBar";
 import BottomAdBar from "../../../utils/adbars/bottomadbar/BottomAdBar";
 
 const MoneyMakers = (props) => {
   const [activeModal, setActiveModal] = useState("Free");
-  const [showWarningModal, setShowWarningModal] = useState(false);
-  const { premiumUser } = useContext(AuthContext);
-
-  const rememberedButtonState = localStorage.getItem("ModalState");
-  const showWarning = localStorage.getItem("ShowWarning");
-
-  useEffect(() => {
-    setActiveModal(rememberedButtonState || "Free");
-    if (showWarning === "false") {
-      setShowWarningModal(false);
-    } else {
-      setShowWarningModal(true);
-    }
-  }, [rememberedButtonState, showWarning]);
 
   const switchModal = (newState) => {
     setActiveModal(newState);
     localStorage.setItem("ModalState", newState);
-  };
-
-  const hideWarning = () => {
-    setShowWarningModal(false);
-    localStorage.setItem("ShowWarning", false);
   };
 
   return (
@@ -87,6 +64,7 @@ const MoneyMakers = (props) => {
             <a
               href="https://secure.runescape.com/m=itemdb_oldschool/"
               target="_blank"
+              rel="noreferrer"
               className={stl.wikiLink}
             >
               G.E.

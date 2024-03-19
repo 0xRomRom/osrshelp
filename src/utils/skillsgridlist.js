@@ -71,7 +71,7 @@ const SKILLSGRIDLIST = [
   },
   {
     name: "Mining",
-    icon: "/skillicons/mining.webp",
+    icon: "/skillicons/Mining.webp",
     path: "/skillcalculators/mining",
   },
   {
